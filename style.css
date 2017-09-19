@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'BebasNeue Book';
+  src: url('BebasNeue Book.eot');
+  src: url('BebasNeue Book.woff2') format('woff2'),
+       url('BebasNeue Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeueBook';
+  src: url('BebasNeueBook.woff') format('woff'),
+       url('BebasNeueBook.ttf') format('truetype'),
+       url('BebasNeueBook.svg#BebasNeueBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue Light';
+  src: url('BebasNeue Light.eot');
+  src: url('BebasNeue Light.woff2') format('woff2'),
+       url('BebasNeue Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Light';
+  src: url('BebasNeue-Light.woff') format('woff'),
+       url('BebasNeue-Light.ttf') format('truetype'),
+       url('BebasNeue-Light.svg#BebasNeue-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue-Thin';
+  src: url('BebasNeue-Thin.eot');
+  src: url('BebasNeue-Thin.woff2') format('woff2'),
+       url('BebasNeue-Thin.woff') format('woff'),
+       url('BebasNeue-Thin.ttf') format('truetype'),
+       url('BebasNeue-Thin.svg#BebasNeue-Thin') format('svg'),
+       url('BebasNeue-Thin.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+.font__layout {
+  width: 60%;
+  margin: 40px auto 0;
+}
+
+.font__layout .font__title {
+  font-size: 26px;
+  font-family: sans-serif;
+  margin-bottom: 4px;
+}
+
+.font-item {
+  position: relative;
+}
+
+.font-info {
+  position: absolute;
+  left: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color:#111;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+
+.font__layout div {
+  margin-bottom: 14px;
+}
+
+.font__layout span {
+  text-transform: lowercase;
+}
+
+.font__layout .font__serif {
+  font-family: 'PT Serif Caption', serif;
+}
+
+.font__layout .font__sans-serif {
+  font-family: 'BebasNeueBook', sans-serif;
+  margin-bottom: 60px;
+}
+
+.font__layout .font-light {
+  font-family: 'BebasNeue-Light', sans-serif;
+  margin-bottom: 60px;
+}
+
+.font__layout .font-thin {
+  font-family: 'BebasNeue-Thin', sans-serif;
+  margin-bottom: 60px;
+}
+
+
+
+.font__serif .font-big {
+  font-size: 20px;
+}
+
+.font__serif .font-medium {
+  font-size: 16px;
+}
+
+.font__serif .font-small {
+  font-size: 12px;
+}
