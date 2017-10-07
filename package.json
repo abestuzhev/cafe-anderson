@@ -1,0 +1,22 @@
+{
+  "name": "cafe-anderson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abestuzhev/cafe-anderson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abestuzhev/cafe-anderson/issues"
+  },
+  "homepage": "https://github.com/abestuzhev/cafe-anderson#readme",
+  "devDependencies": {
+    "bower": "^1.8.2"
+  }
+}

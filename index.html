@@ -1,49 +1,163 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="ru">
+<head>
     <meta charset="utf-8">
-    <title>Шрифты Андерсен</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="font.css"> -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="font__layout">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cписок страниц АндерСон</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
 
-      <div class="font__sans-serif font-thin">
-        <div class="font__title">Bebas Neue Thin</div>
-        <hr>
-        <h1 class="font-item font-big"><div class="font-info">32px</div>Первый детский квест в АндерСоне!</h1>
-        <h2 class="font-item font-medium"><div class="font-info">24px</div>Первый детский квест в АндерСоне!</h2>
-        <h3 class="font-item font-small"><div class="font-info">18px</div>Первый детский квест в АндерСоне!</h3>
-      </div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
-      <div class="font__sans-serif font-light">
-        <div class="font__title">Bebas Neue Light</div>
-        <hr>
-        <h1 class="font-item font-big"><div class="font-info">32px</div>Первый детский квест в АндерСоне!</h1>
-        <h2 class="font-item font-medium"><div class="font-info">24px</div>Первый детский квест в АндерСоне!</h2>
-        <h3 class="font-item font-small"><div class="font-info">18px</div>Первый детский квест в АндерСоне!</h3>
-      </div>
+<style>
+    html {
+      min-height: 100%;
+    }
 
-      <div class="font__sans-serif">
-        <div class="font__title">Bebas Neue Book</div>
-        <hr>
-        <h1 class="font-item font-big"><div class="font-info">32px</div>Первый детский квест в АндерСоне!</h1>
-        <h2 class="font-item font-medium"><div class="font-info">24px</div>Первый детский квест в АндерСоне!</h2>
-        <h3 class="font-item font-small"><div class="font-info">18px</div>Первый детский квест в АндерСоне!</h3>
-      </div>
+    body {
+        color: #292929;
+        padding: 0;
+        margin: 0;
+        min-height: 100%;
+        font: 16px/32px 'Roboto', sans-serif;
+        background: url('body-bg.jpg') repeat;
+
+    }
+
+    /*.bg {
+      width: 100%;
+      min-height: 100%;
+
+      -webkit-filter: blur(5px);
+      -moz-filter: blur(5px);
+      -o-filter: blur(5px);
+      -ms-filter: blur(5px);
+      filter: blur(5px);
+    }*/
 
 
 
-      <div class="font__serif">
-        <div class="font__title">PT Serif Caption</div>
-        <hr>
-        <div class="font-item font-big"><div class="font-info">20px</div>Закажи праздник на сумму от 50 тысяч рублей в следующих кафе: АндерСон на Тульская, АндерСон на Ярцевская, АндерСон в Крылатском, АндерСон Братиславская, АндерСон на Даче</div>
-        <div class="font-item font-medium"><div class="font-info">16px</div>Закажи праздник на сумму от 50 тысяч рублей в следующих кафе: АндерСон на Тульская, АндерСон на Ярцевская, АндерСон в Крылатском, АндерСон Братиславская, АндерСон на Даче</div>
-        <div class="font-item font-small"><div class="font-info">12px</div>Закажи праздник на сумму от 50 тысяч рублей в следующих кафе: АндерСон на Тульская, АндерСон на Ярцевская, АндерСон в Крылатском, АндерСон Братиславская, АндерСон на Даче</div>
-      </div>
-    </div>
+    h1 {
+        color: #292929;
+        margin: 0 0 20px;
+        padding-bottom: 10px;
+        font-size: 28px;
+        border-bottom: 1px solid #292929;
+        font-weight: 700;
+        font-family: Roboto, Arial, sans-serif;
+    }
 
-  </body>
+    ol {
+        padding: 0;
+        list-style-position: inside;
+    }
+
+    .item {
+      position: relative;
+      padding-left: 25px;
+      color: #292929;
+      font-size: 1em;
+      margin: 0;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+	.block-date {
+		border: 1px solid #eee;
+		border-radius: 2px;
+		padding-top: 10px;
+		margin-bottom: 10px;
+	}
+	.block-date_title {
+		font-size: 10px;
+		line-height: 1;
+		padding-left: 25px;
+		margin-bottom: 10px;
+	}
+
+    .corrected::before {
+      content: '⌘';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #292929;
+    }
+
+    .disable {
+      opacity: .6;
+      cursor: default;
+    }
+
+    .disable:hover {
+      color: #292929;
+      opacity: .6;
+      text-decoration: none;
+    }
+
+
+    section {
+        margin: 50px auto;
+        max-width: 400px;
+        /*background: rgba(255, 255, 255, .95);*/
+        background-color: #fff;
+        padding: 40px 60px;
+        /*padding-left: 0;*/
+        border-radius: 6px;
+        box-shadow: 0 20px 20px rgba(0,0,0,.2)
+    }
+
+    @media screen and (max-width: 700px) {
+      section {
+        width: 100%;
+        padding: 10px;
+        max-width: none;
+      }
+
+      .item {
+        padding: 0;
+      }
+
+    body {
+        background: none !important;
+    }
+    }
+
+    a {
+        text-decoration: none;
+        color: #292929;
+        font-weight: 500;
+    }
+
+    a:hover { color: #8dc746; text-decoration: underline;}
+
+    .logo {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+    }
+</style>
+</head>
+
+<body>
+  <div class="bg"></div>
+
+<section>
+
+    <a href="home.html" class="logo" target="_blank">
+        <img src="img/logonew.png" alt="">
+    </a>
+
+
+
+    <ol>
+        <li class="item"><a target="_blank" href="home.html">Главная</a></li>
+    </ol>
+  <!--<a href="components.html">Компоненты</a>-->
+</section>
+
+</body>
 </html>

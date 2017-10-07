@@ -1,0 +1,74 @@
+//------------------------------------------------------------base styles
+html {
+	height: 100%;
+	font: 400 10px/1.33 $font_1;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	font-size: $font_size_base;
+	color: $color_text_base;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: $body_bg;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+}
+
+.base {
+	position: relative;
+	padding: $height_header 0 $height_footer;
+}
+
+a {
+	text-decoration: none;
+	color: $color_link_base;
+	border-bottom: 1px dotted $color_link_base;
+	&:hover,
+	&:focus {
+
+	}
+}
+
+.elements_list {
+	padding: 3rem;
+}
+
+//------------------------------------------------------------base styles###
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+	font-family: $font_serif;
+}
+
+.c-layout {
+	position: relative;
+	width: 1320px;
+	margin: 0 auto;
+	padding: 0 32px;
+}
+
