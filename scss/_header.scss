@@ -1,67 +1,155 @@
-//------------------------------------------------------------layout
+//------------------------------------------------------------header
 .header {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	right: 0;
-	will-change: transform;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    will-change: transform;
 
-	@include z-index(header);
+    @include z-index(header);
 }
 
-//------------------------------------------------------------layout###
-
 .header {
-	background: $custom_bg url($img_path + 'bg-header.png') repeat;
-	font-family: $font_serif;
+    background: $custom_bg url($img_path + 'bg-header.png') repeat;
+    font-family: $font_serif;
+    padding: 1rem 0 .4rem;
 
-	-webkit-box-shadow: 0px 0px 30px -4px rgba(27,27,59,1);
-	-moz-box-shadow: 0px 0px 30px -4px rgba(27,27,59,1);
-	box-shadow: 0px 0px 30px -4px rgba(27,27,59,1);
+    -webkit-box-shadow: 0px 0px 30px -4px rgba(27, 27, 59, 1);
+    -moz-box-shadow: 0px 0px 30px -4px rgba(27, 27, 59, 1);
+    box-shadow: 0px 0px 30px -4px rgba(27, 27, 59, 1);
+    color: $color_text_bg;
 
-	&-layout {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: stretch;
-	}
+    &-layout {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
 
-	/*колонки*/
-	&-col__left {
-		width: 35%;
-		text-align: left;
-	}
+    &-col__left { /*колонки*/
+        width: 33%;
+        text-align: left;
+    }
 
-	&-col__center {
-		width: 30%;
-		text-align: center;
-	}
+    &-col__center {
+        width: 30%;
+        text-align: center;
+    }
 
-	&-col__right {
-		width: 35%;
-		text-align: right;
-	}
+    &-col__right {
+        width: 33%;
+        text-align: right;
+    }
 
-	/*логотип*/
-	&-logo {
-		border: none;
-	}
+    &-top {
+        margin-bottom: .4rem;
+    }
 
-	/*меню*/
-	&-menu {
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		justify-content: space-between;
+    &-logo { /*логотип*/
+        display: block;
+        border: none;
+        width: 380px;
+        padding: .3rem 0;
+        margin: 0 auto;
+    }
 
-		&__item {
-			padding: 1rem;
+    &-menu { /*меню*/
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.8rem;
 
-		}
+        &__item {
+            padding: 1rem;
 
-		&__link {
-			text-transform: lowercase;
-		}
-	}
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+        }
+
+        &__link {
+            text-transform: lowercase;
+        }
+    }
+
+    &-personal {
+        margin-bottom: .5rem;
+        font-size: 0;
+        //display: flex;
+        //flex-flow: row nowrap;
+        //justify-content: flex-start;
+        //align-content: flex-end;
+    }
+
+    &-cabinet {
+        font-size: 1.3rem;
+        text-transform: lowercase;
+        margin-right: 1.8rem;
+        display: inline-block;
+        vertical-align: bottom;
+
+        &__text {
+            color: $color_text_bg;
+        }
+
+    }
+
+    &-basket {
+        display: inline-block;
+        vertical-align: bottom;
+        cursor: pointer;
+        position: relative;
+
+        &__count {
+            position: absolute;
+            top: -3px;
+            left:85%;
+            width: 33px;
+            text-align: center;
+            color: $white;
+            font-size: 1.1rem;
+
+            span {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &-city {/*выбор города*/
+        font-size: 1.2rem;
+    }
 
 }
+
+//------------------------------------------------------------icons
+.icon-basket {
+    position: relative;
+    width: 22px;
+    fill: $color_text_bg;
+}
+
+.icon-cabinet {
+    position: relative;
+    width: 19px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+@media screen and (min-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1600px) {
+
+}
+
+//------------------------------------------------------------header###

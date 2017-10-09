@@ -65,10 +65,23 @@ p {
 	font-family: $font_serif;
 }
 
-.c-layout {
-	position: relative;
-	width: 1320px;
-	margin: 0 auto;
-	padding: 0 32px;
+
+
+
+@media screen and (min-width: 1600px) {
+  .c-layout {
+    position: relative;
+    width: 1600px;
+    margin: 0 auto;
+  }
 }
 
+@media screen and (max-width: 1600px) {
+  .c-layout {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+}
