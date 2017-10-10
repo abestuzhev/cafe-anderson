@@ -67,6 +67,145 @@ p {
 
 
 
+//------------------------------------------------------------icons
+.c-icon {
+    &.is-active {
+        fill: $color_brand;
+    }
+}
+
+
+.icon-basket {
+    position: relative;
+    width: 22px;
+    fill: $color_text_bg;
+}
+
+.icon-cabinet {
+    position: relative;
+    width: 19px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-phone {
+    position: relative;
+    width: 16px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+.icon-email {
+    position: relative;
+    width: 19px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-search {
+    position: relative;
+    width: 20px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-vk {
+    position: relative;
+    width: 21px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-fb {
+    position: relative;
+    width: 18px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+.icon-o {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-site-map {
+    position: relative;
+    width: 21px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-info {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-ru {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-en {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.logo-uniteller {
+    position: relative;
+    width: 39px;
+    height: 25px;
+    vertical-align: top;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(../img/logo-uniteller.svg);
+}
+
+.logo-mir {
+    position: relative;
+    width: 56px;
+    height: 16px;
+    vertical-align: top;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-image: url(../img/logo-mir.svg);
+}
+
+.logo-visa {
+    position: relative;
+    width: 95px;
+    height: 23px;
+    vertical-align: top;
+    background-image: url(../img/logo-visa-mastercard.svg);
+}
+
+.icon-positive {
+    position: relative;
+    width: 17px;
+    height: 27px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+.icon-negative {
+    position: relative;
+    width: 17px;
+    height: 27px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
 
 @media screen and (min-width: 1600px) {
   .c-layout {

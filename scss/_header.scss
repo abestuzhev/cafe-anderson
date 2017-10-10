@@ -12,7 +12,7 @@
 .header {
     background: $custom_bg url($img_path + 'bg-header.png') repeat;
     font-family: $font_serif;
-    padding: 1rem 0 .4rem;
+    padding: 1rem 0 0;
 
     -webkit-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.25);
@@ -163,39 +163,6 @@
 
 }
 
-//------------------------------------------------------------icons
-.icon-basket {
-    position: relative;
-    width: 22px;
-    fill: $color_text_bg;
-}
-
-.icon-cabinet {
-    position: relative;
-    width: 19px;
-    fill: $color_text_bg;
-    vertical-align: bottom;
-}
-
-.icon-phone {
-    position: relative;
-    width: 16px;
-    fill: $color_text_bg;
-    vertical-align: bottom;
-}
-.icon-email {
-    position: relative;
-    width: 19px;
-    fill: $color_text_bg;
-    vertical-align: bottom;
-}
-
-.icon-search {
-    position: relative;
-    width: 20px;
-    fill: $color_text_bg;
-    vertical-align: bottom;
-}
 
 @media screen and (min-width: 1600px) {
 

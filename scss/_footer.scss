@@ -8,21 +8,85 @@
     background: $custom_bg url($img_path + 'bg-header.png') repeat;
     font-family: $font_serif;
     padding: 2.3rem 0;
-    -webkit-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.25);
-    box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.20);
+    box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.20);
     color: $color_text_bg;
 
     &-layout {
-
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &-col__left {
-
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     &-col__right {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
 
+    &-reviews {
+        font-size: 0;
+        margin-right: 4rem;
+
+        &__text {
+            font-size: 1.4rem;
+            margin-right: 1.1rem;
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-right: .8rem;
+            border: none;
+            vertical-align: bottom;
+        }
+    }
+
+    &-partners {/*блок платежных партнеров*/
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 2rem;
+        &__item {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &-social {
+        margin-right: 2.4rem;
+
+        &__item {
+            border: none;
+        }
+    }
+
+    &-site-map {
+        margin-right: 2.4rem;
+        border: none;
+    }
+
+    &-info {
+        border: none;
+    }
+
+    &-lang {
+        &__item {
+            border: none;
+
+        }
+        .is-active  svg {
+            fill: #67af26;
+        }
     }
 }
 
