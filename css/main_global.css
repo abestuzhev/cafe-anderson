@@ -228,8 +228,8 @@ p {
   background: #fdf7e8 url("../img/bg-header.png") repeat;
   font-family: "PT Serif Caption";
   padding: 1rem 0 .4rem;
-  -webkit-box-shadow: 0px 0px 30px -4px #1b1b3b;
-  box-shadow: 0px 0px 30px -4px #1b1b3b;
+  -webkit-box-shadow: 0px 3px 18px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 18px 8px rgba(0, 0, 0, 0.25);
   color: #9b9696; }
   .header-layout {
     display: -webkit-box;
@@ -322,6 +322,28 @@ p {
   .header-city {
     /*выбор города*/
     font-size: 1.2rem; }
+  .header-contact {
+    /*правая часть шапки*/
+    font-size: 0;
+    text-align: right; }
+  .header-search {
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer; }
+  .header-email {
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer; }
+  .header-phone {
+    display: inline-block;
+    cursor: pointer; }
+  .header-tel {
+    display: inline-block;
+    color: #9acc4e;
+    font-size: 2.3rem;
+    margin-left: 1.9rem; }
+  .header-time {
+    font-size: 1.2rem; }
 
 .icon-basket {
   position: relative;
@@ -334,13 +356,36 @@ p {
   fill: #9b9696;
   vertical-align: bottom; }
 
+.icon-phone {
+  position: relative;
+  width: 16px;
+  fill: #9b9696;
+  vertical-align: bottom; }
+
+.icon-email {
+  position: relative;
+  width: 19px;
+  fill: #9b9696;
+  vertical-align: bottom; }
+
+.icon-search {
+  position: relative;
+  width: 20px;
+  fill: #9b9696;
+  vertical-align: bottom; }
+
 .footer {
-  height: 10rem;
   position: absolute;
-  bottom: 0;
+  bottom: 1.6rem;
   left: 0;
   right: 0;
-  will-change: transform; }
+  will-change: transform;
+  background: #fdf7e8 url("../img/bg-header.png") repeat;
+  font-family: "PT Serif Caption";
+  padding: 2.3rem 0;
+  -webkit-box-shadow: 0px 3px 18px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 18px 8px rgba(0, 0, 0, 0.25);
+  color: #9b9696; }
 
 .form_field.default_mod:not(.select_rediz_chosen) {
   display: block;
