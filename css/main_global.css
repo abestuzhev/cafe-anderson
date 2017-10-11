@@ -340,14 +340,81 @@ p {
 
 .home-cafe {
   position: absolute;
+  z-index: 2;
   top: 21%;
-  left: 5.5%; }
+  left: 10.5%; }
   .home-cafe__line {
     position: absolute;
-    top: 29.3rem;
-    left: 4.8rem;
+    top: 51%;
+    left: 10%;
     fill: #201600;
-    width: 44.3rem; }
+    width: 91.2%; }
+  .home-cafe__bird {
+    position: absolute;
+    top: 39%;
+    left: 9.6%;
+    fill: #201600;
+    width: 14.5%; }
+  .home-cafe__rabbit {
+    position: absolute;
+    z-index: -1;
+    top: -13.3%;
+    left: 50.6%;
+    fill: #201600;
+    width: 10.3%; }
+  .home-cafe__auto {
+    position: absolute;
+    top: -10.8%;
+    left: 91.6%;
+    fill: #201600;
+    width: 18.1%; }
+  .home-cafe__plane {
+    position: absolute;
+    top: 24.4%;
+    left: -14%;
+    fill: #201600;
+    width: 18.2%; }
+  .home-cafe__arrow {
+    position: absolute;
+    top: 18.7%;
+    left: 90.4%;
+    fill: #201600; }
+  .home-cafe__map {
+    width: 100%;
+    height: auto; }
+
+.home-celebration {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 30%; }
+  .home-celebration__packege {
+    width: 100%;
+    height: auto; }
+  .home-celebration__star-1 {
+    position: absolute;
+    bottom: 17.7%;
+    left: 20.4%;
+    fill: #201600;
+    width: 10%; }
+  .home-celebration__star-2 {
+    position: absolute;
+    bottom: 67.2%;
+    left: 64%;
+    fill: #201600;
+    width: 5.8%; }
+  .home-celebration__star-3 {
+    position: absolute;
+    bottom: 54.2%;
+    left: 82%;
+    fill: #201600;
+    width: 8.1%; }
+  .home-celebration__heart {
+    position: absolute;
+    top: 5.2%;
+    left: 39%;
+    fill: #201600;
+    width: 13.1%; }
 
 .header {
   position: fixed;
@@ -480,6 +547,7 @@ p {
 
 .footer {
   position: absolute;
+  z-index: 999;
   bottom: 1.6rem;
   left: 0;
   right: 0;

@@ -9,15 +9,61 @@
 
 .home-cafe {
     position: absolute;
+    z-index: 2;
     top: 21%;
-    left: 5.5%;
+    left: 10.5%;
 
     &__line {
         position: absolute;
-        top: 29.3rem;
-        left: 4.8rem;
+        top: 51%;
+        left: 10%;
         fill: #201600;
-        width: 44.3rem;
+        width: 91.2%;
+    }
+
+    &__bird {
+        position: absolute;
+        top: 39%;
+        left: 9.6%;
+        fill: #201600;
+        width: 14.5%;
+    }
+
+    &__rabbit {
+        position: absolute;
+        z-index: -1;
+        top: -13.3%;
+        left: 50.6%;
+        fill: #201600;
+        width: 10.3%;
+    }
+
+    &__auto {
+        position: absolute;
+        top: -10.8%;
+        left: 91.6%;
+        fill: #201600;
+        width: 18.1%;
+    }
+
+    &__plane {
+        position: absolute;
+        top: 24.4%;
+        left: -14%;
+        fill: #201600;
+        width: 18.2%;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 18.7%;
+        left: 90.4%;
+        fill: #201600;
+    }
+
+    &__map {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -25,7 +71,47 @@
 
 //------------------------------------------------праздники на главной*/
 .home-celebration {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 30%;
 
+    &__packege {
+        width: 100%;
+        height: auto;
+    }
+
+    &__star-1 {
+        position: absolute;
+        bottom: 17.7%;
+        left: 20.4%;
+        fill: #201600;
+        width: 10%;
+    }
+
+    &__star-2 {
+        position: absolute;
+        bottom: 67.2%;
+        left: 64%;
+        fill: #201600;
+        width: 5.8%;
+    }
+
+    &__star-3 {
+        position: absolute;
+        bottom: 54.2%;
+        left: 82%;
+        fill: #201600;
+        width: 8.1%;
+    }
+
+    &__heart {
+        position: absolute;
+        top: 5.2%;
+        left: 39%;
+        fill: #201600;
+        width: 13.1%;
+    }
 }
 
 //------------------------------------------------заказ тортов на главной*/
