@@ -6,7 +6,33 @@ var $body,
 	mediaPoint3 = 480,
 	mediaPoint4 = 320;
 
+
+
 $(document).ready(function ($) {
+    //------------------------------------------------------------custom
+
+    /*функция показа модального окна*/
+    function showPopup(icon, popup){
+        $(icon).on('click',function(e) {
+            e.preventDefault();
+            $(popup).addClass('popup-show');
+            $('.popup-bg').addClass('is-visible');
+            $('body').addClass('body-popup');
+        });
+    }
+
+    showPopup(".header-phone", '.popup__request-call');
+    showPopup(".header-email", '.popup__write-to-us');
+    showPopup(".header-cabinet", '.popup-authorization');
+
+    $(".popup-close").click(function(e) {
+        e.preventDefault();
+        $(this).parents('.popup').removeClass('popup-show');
+        $('.popup-bg').removeClass('is-visible');
+        $('body').removeClass('body-popup');
+    });
+    //------------------------------------------------------------custom###
+
 	$body = $('body');
 	windowWidth = $(window).width();
 	windowHeight = $(window).height();

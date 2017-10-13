@@ -1,7 +1,7 @@
 .footer {
 	//height: $height_footer;
 	position: absolute;
-    z-index: 999;
+    z-index: 9;
 	bottom: 1.6rem;
 	left: 0;
 	right: 0;
@@ -25,7 +25,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: center;
     }
 
     &-col__right {
@@ -66,14 +66,54 @@
     &-social {
         margin-right: 2.4rem;
 
+        &__title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
         &__item {
             border: none;
         }
+
     }
 
     &-site-map {
         margin-right: 2.4rem;
         border: none;
+    }
+
+    &-search {
+        font-size: 0;
+        margin-right: .8rem;
+        
+        &__input {
+            display: inline-block;
+            border: 2px solid $color_text_bg;
+            outline: none;
+            background-color: transparent;
+            font-size: 1.2rem;
+            color: $color_text_bg;
+            padding: .4rem .8rem;
+            border-radius: .4rem;
+            width: 190px !important;
+        }
+
+        &__btn {
+            display: inline-block;
+            margin-left: .5rem;
+            background-color: $color_btn;
+            font-size: 1.1rem;
+            color: $white;
+            padding: .6rem 1.5rem;
+            border-radius: .4rem;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .9;
+                @extend %transition_all;
+            }
+        }
     }
 
     &-info {

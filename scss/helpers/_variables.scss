@@ -10,12 +10,16 @@ $font_size_base: 1.6rem;
 
 //---------------------------------------------colors
 $white: #fff;
-$black: #231300;
+$black: #555451;
 
 $color_text_bg: #9b9696;
 $color_text_base: $black;
+//$color_text_popup: #555451;
 $color_link_base: #9b806f;
+$color_link_error: #b62922;
 $color_brand: #9acc4e;
+$color_active: #67af26;
+$color_btn: #7cbd41;
 $body_bg: $white url($img_path + 'bg-page.png') no-repeat 50% 50%;
 $custom_bg: #fdf7e8;
 //---------------------------------------------colors###
