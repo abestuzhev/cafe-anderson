@@ -114,14 +114,18 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-input {
     display: block;
     border: 1px solid $color_link_base;
+    outline: none;
     //border: none;
     //box-shadow: 0 0 0 1px $color_link_base;
     @extend %transition_all;
     border-radius: .4rem;
-    padding: 1.27rem 1.6rem;
+    padding: 1.3rem 1.6rem;
     font-size: 1.3rem;
     color: $color_text_bg;
-    background-color: #fff;
+    //color: $black;
+    //background-color: #fff;
+    background-color: transparent;
+
     background-color: rgba(255,255,255,.5);
 
     &:focus {

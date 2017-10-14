@@ -252,11 +252,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-input {
   display: block;
   border: 1px solid #9b806f;
+  outline: none;
   border-radius: .4rem;
-  padding: 1.27rem 1.6rem;
+  padding: 1.3rem 1.6rem;
   font-size: 1.3rem;
   color: #9b9696;
-  background-color: #fff;
+  background-color: transparent;
   background-color: rgba(255, 255, 255, 0.5); }
   .c-input:focus {
     border-color: #9acc4e; }
