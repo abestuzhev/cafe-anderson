@@ -550,7 +550,7 @@ l-button__center {
     font-family: "BebasNeue"; }
   .home-cafe__title {
     font-size: 6.5rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
     text-transform: uppercase; }
@@ -675,7 +675,7 @@ l-button__center {
             transform: rotate(-23deg); }
   .home-celebration__title {
     font-size: 6.5rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
     text-transform: uppercase; }
