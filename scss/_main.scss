@@ -505,8 +505,8 @@
 
 /*popup show*/
 .popup-show {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
     -webkit-animation: scaleUp 0.2s;
     -o-animation: scaleUp 0.2s;
     animation: scaleUp 0.2s;
@@ -570,6 +570,337 @@
         padding: 2.3rem 6rem 2.3rem;
         text-align: left;
     }
+}
+
+.popup-reg {
+    margin-top: -383px;
+    //opacity: 1 !important;
+    //visibility: visible !important;
+    background: #fff url(../img/popup-bg_authorization.jpg) no-repeat 100% 100%;
+
+    .icon-bird-up {
+        position: absolute;
+        bottom: 0;
+        right: 25.4%;
+        width: 15%;
+    }
+
+    .popup-title {
+        padding: 2.3rem 6rem 2.3rem;
+        text-align: left;
+    }
+}
+
+.popup-city {
+    width: 620px;
+    margin-top: -253px;
+    //opacity: 1 !important;
+    //visibility: visible !important;
+
+    &__title-text {
+        font-size: 1.3rem;
+        color: $black;
+    }
+
+    &__title-place {
+        font-size: 1.8rem;
+        color: $color_link_base;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: $font_sans-serif;
+    }
+
+    &__item {
+        width: 50%;
+        padding: 2px;
+
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 1;
+        color: $black;
+        margin: 1.4rem 0;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+
+        span {
+            background-color: $white;
+            padding: 0 1.5rem;
+        }
+        
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #cec9c0;
+        }
+    }
+
+    &__link {
+        border: none;
+        font-size: 2.5rem;
+        padding: .7rem .9rem;
+        background-color: #f3efe4;
+        display: block;
+        width: 100%;
+
+        &:hover {
+            color:$white;
+            background-color: $color_btn;
+        }
+    }
+}
+
+.popup-basket {
+    opacity: 0;
+    visibility: hidden;
+    width: 25.5rem;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    left: 7.7%;
+    background-color: $white;
+    padding: 1.4rem 1.5rem;
+    font-family: $font_serif;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 5px 29px 0 rgba(0, 0, 0, 0.25);
+
+    .header-basket {
+        position: absolute;
+        top: 1%;
+        right: 31%;
+    }
+
+
+    &__title {
+        color: #231300;
+        font-size: 1.5rem;
+        margin-bottom: .6rem;
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+        background: url(../img/icons/icon-close.svg) no-repeat 50% 50%;
+    }
+
+    &__top {
+        font-size: 1.2rem;
+        color: $color_text_bg;
+        margin: 1rem 0;
+    }
+
+    &__scroll {
+        position: relative;
+        height: 748px;
+        margin-right: -6px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 4px;
+            background-color: #e4e4e4;
+        }
+    }
+
+    &__all-sum {
+        font-size: 1.4rem;
+        color: $black;
+        font-weight: 700;
+    }
+
+    &__form {
+
+    }
+
+    .c-button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__type {
+
+    }
+
+    &__list {
+        border-top: 1px solid $black;
+    }
+
+    &__item {
+        border-bottom: 1px solid $black;
+        padding: 1rem 0;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+
+    /*карточка в попаке корзины*/
+
+
+   &-card {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-end;
+       align-items: flex-end;
+
+       &__close {
+           position: absolute;
+           top: 0;
+           right: 2px;
+           cursor: pointer;
+           //fill: $black;
+           background: url(../img/icons/icon-basket__close.png) 0 0 no-repeat;
+           width: 1.2rem;
+           height: 1.8rem;
+           //-webkit-background-size: cover;
+           //background-size: cover;
+       }
+
+       &__grid {
+
+           display: flex;
+           flex-flow: row nowrap;
+           justify-content: space-around;
+           align-items: flex-start;
+       }
+
+       &__img {
+           margin-right: 1rem;
+           border: 1px solid $color_text_bg;
+           border-radius: .4rem;
+           display: flex;
+           flex-flow: row nowrap;
+           justify-content: center;
+           align-items: center;
+
+           &-layout {
+               width: 8.6rem;
+               height: 7.3rem;
+               overflow: hidden;
+               position: relative;
+           }
+
+           img {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+               width: 95%;
+               height: auto;
+           }
+
+           img.foto {
+               width: auto;
+               height: auto;
+           }
+       }
+
+       &__body {
+       }
+
+       &__title {
+           font-size: 1.2rem;
+           color: $black;
+           padding-right: 2rem;
+           margin-bottom: .4rem;
+       }
+
+       &__list {
+           font-size: 1.2rem;
+           color: $black;
+           margin-bottom: 1rem;
+       }
+
+       &__item {
+            &::before {
+                content: '✓';
+                margin-right: .4rem;
+            }
+       }
+
+       .c-counter {
+           width: 5.2rem;
+           display: inline-block;
+       }
+
+       &__footer {
+           width: 11.3rem;
+           text-align: justify;
+           font-size: 0;
+
+           &::after {
+               content: '';
+               display: inline-block;
+               width: 100%;
+           }
+       }
+
+       &__price {
+           display: inline-block;
+           color: $black;
+            font-size: 1.3rem;
+           font-weight: 700;
+       }
+
+       &__attribute {
+           font-size: 1.2rem;
+           color: $color_text_bg;
+           margin-bottom: .6rem;
+            &-value {
+                color: $black;
+
+            }
+        }
+
+       &__date {
+           font-size: 1.2rem;
+           background-color: $custom_bg;
+           padding: .6rem;
+           border-radius: .2rem;
+           margin-bottom: .6rem;
+
+           img {
+               vertical-align: middle;
+           }
+       }
+   }
+
+    &__footer {
+        padding: 0 1.4rem;
+        text-align: center;
+        margin-right: 2px;
+
+        a {
+            font-size: 1.2rem;
+            color: $color_text_bg;
+            border: none;
+        }
+    }
+
+
+
 }
 
 //------------------------------------------------custom popup###

@@ -153,6 +153,42 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
+.c-counter {
+    border-radius: .2rem;
+    border: 1px solid $color_text_bg;
+    font-family: $font_serif;
+    position: relative;
+    font-size: 0;
+
+    &__field {
+        border: none;
+        background-color: $white;
+        outline: none;
+        text-align: center;
+        //padding: 0 1.2rem;
+        display: inline-block;
+        width: 50% !important;
+    }
+
+    &__btn {
+        font-size: 1.2rem;
+        color: $black;
+        display: inline-block;
+        //top: .5rem;
+        padding: .4rem 0;
+        text-align: center;
+        width: 25%;
+        cursor: pointer;
+    }
+
+    .dec {
+        left: .6rem;
+    }
+    .inc {
+        right: .6rem;
+    }
+}
+
 //------------------------------------------------------------icons
 .c-icon {
     &.is-active {
@@ -318,7 +354,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 }
 
 //------------------------------------------------------------buttons
-l-button {
+.l-button {
 
     &__left {
         text-align: left;
@@ -347,6 +383,8 @@ l-button {
         line-height: 1;
         color: $white;
         text-transform: uppercase;
+
+        display: inline-block;
     }
 
     &__width {

@@ -24,6 +24,21 @@ $(document).ready(function ($) {
     showPopup(".header-phone", '.popup__request-call');
     showPopup(".header-email", '.popup__write-to-us');
     showPopup(".header-cabinet", '.popup-authorization');
+    showPopup(".header-city", '.popup-city');
+
+
+
+    $('.popup-authorization .popup-authorization__reg').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.popup').removeClass('popup-show');
+        $('.popup-reg').addClass('popup-show');
+    });
+
+    $('.popup-reg .popup-authorization__auth').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.popup').removeClass('popup-show');
+        $('.popup-authorization').addClass('popup-show');
+    });
 
     $(".popup-close").click(function(e) {
         e.preventDefault();
@@ -31,6 +46,69 @@ $(document).ready(function ($) {
         $('.popup-bg').removeClass('is-visible');
         $('body').removeClass('body-popup');
     });
+
+    /*попап корзины*/
+    $('.header-basket').on('click', function(){
+        $('.popup-basket').addClass('popup-show');
+    });
+    $('.popup-basket__close').on('click', function(){
+        $('.popup-basket').removeClass('popup-show');
+    });
+
+    function catalogItemCounter(field){
+        var fieldCount = function(el) {
+            var
+                // Мин. значение
+                min = el.data('min') || false,
+
+                // Макс. значение
+                max = el.data('max') || false,
+                // Кнопка уменьшения кол-ва
+                dec = el.prev('.dec'),
+                // Кнопка увеличения кол-ва
+                inc = el.next('.inc');
+
+            function init(el) {
+                if(!el.attr('disabled')){
+                    dec.on('click', decrement);
+                    inc.on('click', increment);
+                }
+
+                // Уменьшим значение
+                function decrement() {
+                    var value = parseInt(el[0].value);
+                    value--;
+
+                    if(!min || value >= min) {
+                        el[0].value = value;
+                    }
+                };
+
+                // Увеличим значение
+                function increment() {
+                    var value = parseInt(el[0].value);
+
+                    value++;
+
+                    if(!max || value <= max) {
+                        el[0].value = value++;
+                    }
+                };
+
+            }
+
+            el.each(function() {
+                init($(this));
+            });
+        };
+
+        $(field).each(function(){
+            fieldCount($(this));
+        });
+    }
+
+    catalogItemCounter('.fieldCount');
+
     //------------------------------------------------------------custom###
 
 	$body = $('body');
