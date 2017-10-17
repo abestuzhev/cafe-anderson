@@ -935,6 +935,15 @@
 }
 
 //------------------------------------------------custom popup###
+@media (min-width:1600px) {
+    .home-page {
+        width: 1920px;
+    }
+}
+
+@media (max-width:1600px) {
+
+}
 
 
 @media (max-width:760px) {
@@ -962,4 +971,6 @@
         display: inline-block;
     }
 }
+
+
 

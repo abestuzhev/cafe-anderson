@@ -1172,6 +1172,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       color: #9b9696;
       border: none; }
 
+@media (min-width: 1600px) {
+  .home-page {
+    width: 1920px; } }
+
 @media (max-width: 760px) {
   .popup {
     position: fixed;
@@ -1320,8 +1324,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     display: inline-block;
     color: #9acc4e;
     font-size: 2.3rem;
-    margin-left: 1.9rem;
-    border: none; }
+    margin-left: 1.9rem; }
   .header-time {
     font-size: 1.2rem; }
 
