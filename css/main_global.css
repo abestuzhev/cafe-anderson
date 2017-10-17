@@ -1320,7 +1320,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     display: inline-block;
     color: #9acc4e;
     font-size: 2.3rem;
-    margin-left: 1.9rem; }
+    margin-left: 1.9rem;
+    border: none; }
   .header-time {
     font-size: 1.2rem; }
 
