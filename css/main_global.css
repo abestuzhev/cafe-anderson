@@ -2,9 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
 a, a:hover, a:focus, .c-input, .c-input:focus, .c-icon:hover, .c-button, .c-button:hover, .home-cafe:hover,
 .home-celebration:hover,
-.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__rabbit, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__rabbit, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__packege, .home-celebration:hover .home-celebration__text, .home-celebration__packege, .home-celebration__text, .home-cake, .popup-show, .is-visible, .body-popup, .footer-search__btn:hover {
+.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__rabbit, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__rabbit, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__packege, .home-celebration:hover .home-celebration__text, .home-celebration__packege, .home-celebration__text, .home-cake, .popup-show, .popup-basket__show, .is-visible, .body-popup, .footer-search__btn:hover {
   -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
   transition: all .2s ease;
   will-change: transform; }
 
@@ -487,7 +486,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   opacity: 1;
   visibility: visible;
   -webkit-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
   transition: all .3s ease-out; }
   .preloader.done {
     opacity: 0;
@@ -498,7 +496,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 65px;
   height: 65px;
@@ -511,7 +508,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
 @-webkit-keyframes spin {
@@ -539,7 +535,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .home-celebration:hover,
 .home-cake:hover {
   -webkit-transform: scale(0.99);
-      -ms-transform: scale(0.99);
           transform: scale(0.99);
   cursor: pointer; }
 
@@ -553,17 +548,14 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .home-cafe:hover .home-cafe__text {
     z-index: 10;
     -webkit-transform: rotate(8deg);
-        -ms-transform: rotate(8deg);
             transform: rotate(8deg);
     -webkit-transition: -webkit-transform .2s ease-out;
     transition: -webkit-transform .2s ease-out;
-    -o-transition: transform .2s ease-out;
     transition: transform .2s ease-out;
     transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-cafe:hover .home-cafe__map {
     z-index: -1;
     -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
             transform: rotate(1deg); }
   .home-cafe__text {
     text-align: center;
@@ -572,7 +564,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     top: 8.2%;
     left: 37.2%;
     -webkit-transform: rotate(7deg);
-        -ms-transform: rotate(7deg);
             transform: rotate(7deg);
     font-family: "BebasNeue"; }
   .home-cafe__title {
@@ -637,11 +628,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .home-celebration:hover .home-celebration__packege {
     z-index: -1;
     -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
             transform: rotate(1deg); }
   .home-celebration:hover .home-celebration__text {
     -webkit-transform: rotate(-22deg);
-        -ms-transform: rotate(-22deg);
             transform: rotate(-22deg); }
   .home-celebration__packege {
     position: relative;
@@ -698,7 +687,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     bottom: 23.2%;
     left: 36.2%;
     -webkit-transform: rotate(-23deg);
-        -ms-transform: rotate(-23deg);
             transform: rotate(-23deg); }
   .home-celebration__title {
     font-size: 6.5rem;
@@ -849,22 +837,34 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 @-webkit-keyframes scaleUp {
   0% {
     -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
     transform: scale(0.6); }
   100% {
     -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1); } }
 
 @keyframes scaleUp {
   0% {
     -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
     transform: scale(0.6); }
   100% {
     -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1); } }
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
 
 /*popup show*/
 .popup-show {
@@ -872,6 +872,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   visibility: visible !important;
   -webkit-animation: scaleUp 0.2s;
   animation: scaleUp 0.2s; }
+
+.popup-basket__show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  -webkit-animation: slideDown 0.2s;
+  animation: slideDown 0.2s; }
 
 .is-visible {
   opacity: .4;
@@ -989,8 +995,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   width: 25.5rem;
   position: absolute;
   z-index: 99999;
-  top: 0;
-  left: 7.7%;
+  top: -9px;
+  left: 0;
   background-color: #fff;
   padding: 1.4rem 1.5rem;
   font-family: "PT Serif Caption";
@@ -1020,7 +1026,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     margin: 1rem 0; }
   .popup-basket__scroll {
     position: relative;
-    height: 748px;
+    height: calc(100vh - 190px);
     margin-right: -6px; }
     .popup-basket__scroll::after {
       content: '';
@@ -1037,6 +1043,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .popup-basket .c-button {
     width: 100%;
     margin-bottom: 1rem; }
+  .popup-basket__type {
+    margin-right: .3rem; }
   .popup-basket__list {
     border-top: 1px solid #555451; }
   .popup-basket__item {
@@ -1107,7 +1115,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         width: 95%;
         height: auto; }
@@ -1212,7 +1219,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             justify-content: space-between;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch; }
+            align-items: stretch;
+    position: relative; }
   .header-col__left {
     /*колонки*/
     width: 33%;
@@ -1289,7 +1297,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         top: 40%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
   .header-city {
     /*выбор города*/
@@ -1319,7 +1326,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 .footer {
   position: absolute;
-  z-index: 9;
+  z-index: 8;
   bottom: 1.6rem;
   left: 0;
   right: 0;

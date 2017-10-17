@@ -26,6 +26,7 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: stretch;
+        position: relative;
     }
 
     &-col__left { /*колонки*/
