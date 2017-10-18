@@ -104,7 +104,8 @@
     }
 
     &__title {
-        font-size: 6.5rem;
+        //font-size: 6.5rem;
+        font-size: 3.5vw;
         font-weight: 300;
         line-height: .9;
         margin-bottom: .1em;
@@ -112,7 +113,8 @@
     }
 
     &__sub-title {
-        font-size: 2.7rem;
+        //font-size: 2.7rem;
+        font-size: 1.6vw;
         font-weight: 700;
         line-height: 1;
         text-transform: uppercase;
@@ -167,6 +169,7 @@
         left: 90.4%;
         fill: #201600;
         @extend %transition_all;
+        width: 12%;
     }
 
     &__map {
@@ -181,6 +184,16 @@
 
 
 //------------------------------------------------праздники на главной*/
+
+@keyframes helloBear {
+    0%,100% {transform: rotateZ(0);}
+
+    50% {
+        transform: rotateZ(-14deg);
+
+    }
+}
+
 .home-celebration {
     position: absolute;
     z-index: 1;
@@ -197,6 +210,15 @@
 
     &:hover .home-celebration__text {
         transform: rotate(-22deg);
+        @extend %transition_all;
+    }
+
+
+    &:hover .home-celebration__paw-bear {
+        -webkit-animation: helloBear 1s infinite linear;
+        -o-animation: helloBear 1s infinite linear;
+        transform-origin: -50% center;
+        animation: helloBear 3s infinite;
         @extend %transition_all;
     }
 
@@ -262,6 +284,7 @@
         position: absolute;
         bottom: 40.7%;
         right: 8.8%;
+        width: 9.5%;
     }
 
     &__text {
@@ -276,7 +299,8 @@
     }
 
     &__title {
-        font-size: 6.5rem;
+        //font-size: 6.5rem;
+        font-size: 3.5vw;
         font-weight: 300;
         line-height: .9;
         margin-bottom: .1em;
@@ -284,7 +308,8 @@
     }
 
     &__sub-title {
-        font-size: 2.7rem;
+        //font-size: 2.7rem;
+        font-size: 1.6vw;
         font-weight: 700;
         line-height: 1;
         text-transform: uppercase;
@@ -294,6 +319,15 @@
 }
 
 //------------------------------------------------заказ тортов на главной*/
+@keyframes bearMoon {
+    0%,100% {transform: rotateZ(0);}
+
+    50% {
+        transform: rotateZ(-14deg);
+
+    }
+}
+
 .home-cake {
     position: absolute;
     z-index: 1;
@@ -302,6 +336,17 @@
     @extend %transition_all;
 
     &__bg {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    &:hover .home-cake__bear {
+        -webkit-animation: bearMoon 1s infinite linear;
+        -o-animation: bearMoon 1s infinite linear;
+        transform-origin: top center;
+        animation: bearMoon 3s infinite;
+        @extend %transition_all;
     }
 
     &__pie-1 {
@@ -339,6 +384,15 @@
         position: absolute;
         top: 27.4%;
         right: 37.6%;
+        width: 7%;
+    }
+
+    &__text {
+        position: absolute;
+        top: 10%;
+        right: 47.4%;
+        fill: #201600;
+        width: 46%;
     }
 }
 
@@ -362,6 +416,8 @@
     border-radius: 1rem;
     //transform: translate(-50%, -50%);
     box-shadow: 0 16px 57px 0 rgba(0,0,0,.47);
+    transform: scale(1);
+    @extend %transition_all;
     
     &-close {
         position: absolute;
@@ -533,7 +589,7 @@
 }
 
 
-.popup-basket__show {
+.popup-slide__show {
     opacity: 1 !important;
     visibility: visible !important;
     -webkit-animation: slideDown 0.2s;
@@ -554,6 +610,13 @@
     //padding-right: 17px;
     @extend %transition_all;
 }
+
+.header-top__hide {
+   transform: translateY(-40px);
+    @extend %transition_all;
+}
+
+
 //------------------------------------------------custom popup*/
 
 .popup__write-to-us {
@@ -706,6 +769,8 @@
     font-family: $font_serif;
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 5px 29px 0 rgba(0, 0, 0, 0.25);
+    //transform: transitionY(0);
+    @extend %transition_all;
 
     .header-basket {
         position: absolute;
@@ -933,44 +998,5 @@
 
 
 }
-
-//------------------------------------------------custom popup###
-@media (min-width:1600px) {
-    .home-page {
-        width: 1920px;
-    }
-}
-
-@media (max-width:1600px) {
-
-}
-
-
-@media (max-width:760px) {
-    .popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        overflow-y: scroll;
-    }
-
-    .popup .l-button {
-        text-align: justify;
-
-        &::after {
-            content: '';
-            width: 100%;
-            display: inline-block;
-        }
-    }
-
-    .popup-back {
-        display: inline-block;
-    }
-}
-
 
 

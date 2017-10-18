@@ -2,17 +2,21 @@
 @import "helpers/helpers_all";
 @import "family";
 
+
 // base
 @import "reset";
 @import "fonts";
 @import "base";
-@import "main";
-//@import "print";
 
 // blocks
 @import "header";
 @import "footer";
 @import "forms";
+
+// main
+@import "main";
+//@import "print";
+
 
 // grid
 @import "grid";

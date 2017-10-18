@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function(){
     return gulp.src('scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(prefix('last 2 version'))
+        .pipe(prefix('last 3 version'))
         .pipe(gulp.dest('css/'))
         .pipe(minifyCSS())
         .pipe(browserSync.stream())

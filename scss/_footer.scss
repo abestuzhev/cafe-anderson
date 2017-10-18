@@ -35,36 +35,9 @@
         align-items: flex-end;
     }
 
-    &-reviews {
-        font-size: 0;
-        margin-right: 4rem;
-
-        &__text {
-            font-size: 1.4rem;
-            margin-right: 1.1rem;
-        }
-
-        &__icon {
-            display: inline-block;
-            margin-right: .8rem;
-            border: none;
-            vertical-align: bottom;
-        }
-    }
-
-    &-partners {/*блок платежных партнеров*/
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        margin-right: 2rem;
-        &__item {
-            margin-right: 1.5rem;
-        }
-    }
-
     &-social {
         margin-right: 2.4rem;
+        //float: left;
 
         &__title {
             font-size: 1.3rem;
@@ -78,11 +51,13 @@
     }
 
     &-site-map {
+        //float: left;
         margin-right: 2.4rem;
         border: none;
     }
 
     &-search {
+        //float: left;
         font-size: 0;
         margin-right: .8rem;
         
@@ -117,10 +92,43 @@
     }
 
     &-info {
+        //float: left;
         border: none;
     }
 
+
+    &-reviews {
+        //float: right;
+        font-size: 0;
+        margin-right: 4rem;
+
+        &__text {
+            font-size: 1.4rem;
+            margin-right: 1.1rem;
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-right: .8rem;
+            border: none;
+            vertical-align: bottom;
+        }
+    }
+
+    &-partners {/*блок платежных партнеров*/
+        //float: right;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 2rem;
+        &__item {
+            margin-right: 1.5rem;
+        }
+    }
+
     &-lang {
+        //float: right;
         &__item {
             border: none;
 

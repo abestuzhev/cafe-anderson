@@ -326,10 +326,25 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     fill: $color_text_bg;
     vertical-align: bottom;
 }
+
 .icon-negative {
     position: relative;
     width: 17px;
     height: 27px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-city {
+    position: relative;
+    width: 15px;
+    height: 21px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+.icon-menu {
+    position: relative;
+    width: 18px;
     fill: $color_text_bg;
     vertical-align: bottom;
 }
