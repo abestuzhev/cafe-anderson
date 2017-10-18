@@ -1,4 +1,10 @@
-//------------------------------------------------custom popup###
+.mobile-celebration__text,
+.mobile-cake__text,
+.mobile-cafe__text {
+    display: none;
+}
+
+/*------------------------------------------------custom popup###*/
 @media (min-width:1920px) {
     .home-page {
         width: 1920px;
@@ -38,7 +44,7 @@
 
     .home-cake {
         width: 43%;
-        top: 17.8%;
+        top: 12.8%;
     }
 
     .footer {
@@ -47,8 +53,10 @@
 
     .header-col__center {
         position: absolute;
+        z-index: -1;
         left: 50%;
         transform: translateX(-50%);
+        height: 5rem;
     }
 
     .header-logo {
@@ -82,6 +90,10 @@
 
     .footer-layout {
         flex-flow: column nowrap;
+    }
+
+    .home-celebration {
+        bottom: 10%;
     }
 
     /*.footer-layout {*/
@@ -130,12 +142,12 @@
 
     .home-celebration {
         width: 34%;
-        bottom: 7%;
+        bottom: 10%;
     }
 
     .home-cake {
         width: 43%;
-        top: 17.8%;
+        top: 12.8%;
     }
 
     .footer {
@@ -151,7 +163,7 @@
 
     .home-celebration {
         width: 34%;
-        bottom: 7%;
+        bottom: 10%;
     }
 
     .home-cake {
@@ -189,6 +201,149 @@
     .header-layout {
         padding: 1rem 0 .5rem;
     }
+
+    /*сбрасываем контент в скрол*/
+
+    .footer {
+        position: relative;
+    }
+
+    html {
+        height: auto;
+    }
+
+    .home-page {
+        padding-top: 19rem;
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+
+    .home-cafe {
+        width: 48%;
+    }
+
+    .mobile-item {
+        margin: 2rem 0;
+        height: 34rem;
+        position: relative;
+    }
+
+    .mobile-item:last-child {
+        height: 40rem;
+    }
+
+    .mobile-celebration__text,
+    .mobile-cake__text,
+    .mobile-cafe__text {
+        display: block;
+    }
+
+
+    .home-cake__text,
+    .home-celebration__text,
+    .home-cafe__text {
+        display: none;
+    }
+
+    .mobile-celebration__text,
+    .mobile-cake__text,
+    .mobile-cafe__text {
+        position: absolute;
+        /*padding: 3rem;*/
+    }
+
+    .mobile-cake__title,
+    .mobile-celebration__title,
+    .mobile-cafe__title {
+        text-align: center;
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 1;
+        color: #231300;
+    }
+
+    .mobile-cake__sub-title,
+    .mobile-celebration__sub-title,
+    .mobile-cafe__sub-title {
+        text-align: center;
+        font-family: 'BebasNeue', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 1;
+        color: #231300;
+    }
+
+    .mobile-cafe__text {
+        top: 7%;
+        left: 11%;
+    }
+
+    .mobile-celebration__text {
+        bottom: 12%;
+        right: 14%;
+    }
+
+    .mobile-cake__text {
+        top: 37%;
+        left: 5%;
+    }
+
+    .home-cafe {
+        left: auto;
+        right: 0;
+        top: -4%;
+        width: 40rem;
+    }
+
+    .home-cafe__plane {
+        display: none;
+    }
+
+    .home-celebration {
+        transform: rotate(90deg);
+        width: 40rem;
+        left: -2%;
+        bottom: -8%;
+    }
+
+    .home-celebration:hover {
+        transform: rotate(90deg);
+    }
+
+    .home-cake {
+        width: 78rem;
+        top: -43.2%;
+        right: -47%;
+    }
+}
+
+@media (max-width:730px) {
+    .home-cafe {
+        right: -9%;
+        top: -5%;
+    }
+
+    .home-celebration {
+        transform: rotate(74deg);
+        left: -13%;
+        bottom: -8%;
+    }
+    .home-celebration:hover {
+        transform: rotate(74deg);
+    }
+
+    .mobile-celebration__text {
+        bottom: 29%;
+    }
+
+
+    .home-cake {
+        top: -50.2%;
+        right: -64%;
+    }
 }
 
 @media (max-width:760px) {
@@ -218,6 +373,74 @@
 }
 
 
+@media (max-width:640px) {
+    .home-cafe {
+        right: -19%;
+        top: -5%;
+    }
+
+    .home-celebration {
+        transform: rotate(74deg);
+        left: -23%;
+        bottom: -8%;
+    }
+    .home-celebration:hover {
+        transform: rotate(74deg);
+    }
+
+    .mobile-celebration__text {
+        bottom: 29%;
+    }
+
+    .home-cake__pie-1 {
+        bottom: -7.1%;
+        left: 10%;
+    }
+
+    .mobile-cake__text {
+        top: 21%;
+    }
+
+    .home-cake {
+        top: -50.2%;
+        right: -74%;
+    }
+}
+
+
+@media (max-width:540px) {
+    .home-cafe {
+        right: -36%;
+        top: -5%;
+    }
+
+    .home-celebration {
+        transform: rotate(46deg);
+        left: -41%;
+        bottom: 9%;
+    }
+    .home-celebration:hover {
+        transform: rotate(46deg);
+    }
+
+    .mobile-celebration__text {
+        right: 6%;
+    }
+
+    .home-cake__pie-1 {
+        bottom: -7.1%;
+        left: 10%;
+    }
+
+    .mobile-cake__text {
+        top: 21%;
+    }
+
+    .home-cake {
+        right: -105%;
+    }
+}
+
 
 @media (max-width:540px) {
 
@@ -239,6 +462,20 @@
 }
 
 
+@media (max-width:470px) {
+    .mobile-cafe__title,
+    .mobile-celebration__title,
+    .mobile-cake__title {
+        font-size: 3em;
+    }
+
+    .mobile-cafe__sub-title,
+    .mobile-celebration__sub-title,
+    .mobile-cake__sub-title {
+        font-size: 2.3rem;
+    }
+}
+
 @media (max-width:440px) {
     .header-col__center {
         left: 36%;
@@ -249,4 +486,60 @@
     }
 }
 
+
+@media (max-width:430px) {
+    .home-cafe {
+        right: -58%;
+    }
+
+    .home-celebration {
+        transform: rotate(33deg);
+        left: -65%;
+    }
+    .home-celebration:hover {
+        transform: rotate(33deg);
+    }
+
+    .home-cake {
+        right: -150%;
+    }
+
+    .home-cake__pie-1 {
+        bottom: 3.9%;
+        left: 5%;
+        transform: rotate(-29deg);
+    }
+}
+
+
+@media (max-width:370px) {
+    .home-cafe {
+        right: -75%;
+        transform: rotate(17deg);
+        top: 7%;
+    }
+
+    .home-cafe:hover {
+        transform: rotate(17deg);
+    }
+
+    .home-celebration {
+        bottom: 26%;
+        left: -108%;
+        width: 47rem;
+    }
+
+
+    .home-cake {
+        top: -21%;
+        right: -141%;
+        width: 56rem;
+    }
+
+    .home-cake__pie-1 {
+        bottom: 3.9%;
+        left: 5%;
+        transform: rotate(-29deg);
+    }
+}
 
