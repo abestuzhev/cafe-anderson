@@ -629,6 +629,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     .header-mobile__item-top {
       display: block;
       padding: 1.2rem 0;
+      border-bottom: 1px solid #e9e0cb;
       -webkit-box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 0.35);
               box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 0.35);
       text-align: center; }
@@ -668,6 +669,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     .header-mobile__link {
       text-transform: lowercase;
       cursor: pointer; }
+      .header-mobile__link:hover {
+        color: #231300;
+        border-color: #231300; }
     .header-mobile__auth {
       opacity: 0;
       visibility: hidden;
@@ -1316,18 +1320,21 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             animation: bearMoon 3s infinite; }
   .home-cake__pie-1 {
     position: absolute;
+    z-index: 99;
     bottom: 40.9%;
     left: -4%;
     fill: #201600;
     width: 15.3%; }
   .home-cake__pie-2 {
     position: absolute;
+    z-index: 99;
     bottom: .5%;
     right: 18.2%;
     fill: #201600;
     width: 14.4%; }
   .home-cake__brownie {
     position: absolute;
+    z-index: 99;
     top: 30.6%;
     right: 20.1%;
     fill: #201600;

@@ -207,7 +207,6 @@
     }
 
     /*сбрасываем контент в скрол*/
-
     .footer {
         position: relative;
     }
@@ -339,6 +338,10 @@
         width: 78rem;
         top: -43.2%;
         right: -47%;
+    }
+
+    .popup-basket {
+        top: -39px;
     }
 }
 

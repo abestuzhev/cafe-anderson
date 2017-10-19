@@ -351,6 +351,7 @@
 
     &__pie-1 {
         position: absolute;
+        z-index: 99;
         bottom: 40.9%;
         left: -4%;
         fill: #201600;
@@ -358,6 +359,7 @@
     }
     &__pie-2 {
         position: absolute;
+        z-index: 99;
         bottom: .5%;
         right: 18.2%;
         fill: #201600;
@@ -366,6 +368,7 @@
 
     &__brownie {
         position: absolute;
+        z-index: 99;
         top: 30.6%;
         right: 20.1%;
         fill: #201600;

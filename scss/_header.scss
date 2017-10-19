@@ -156,7 +156,7 @@
     &__item-top {
       display: block;
       padding: 1.2rem 0;
-      //border-bottom: 1px solid $color_line;
+      border-bottom: 1px solid $color_line;
       box-shadow: 0 3px 18px 0 rgba(0,0,0,.35);
         text-align: center;
 
@@ -220,6 +220,11 @@
     &__link {
       text-transform: lowercase;
       cursor: pointer;
+
+        &:hover {
+            color: #231300;
+            border-color: #231300;
+        }
 
     }
 
