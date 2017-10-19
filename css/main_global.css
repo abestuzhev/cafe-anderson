@@ -444,15 +444,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   vertical-align: bottom; }
 
 .icon-pencil {
-  width: 43px;
+  width: 23px;
   fill: #9b9696; }
 
 .icon-candy {
-  width: 125px;
+  width: 3.5rem;
   fill: #9b9696; }
 
 .icon-cake-menu {
-  width: 171px;
+  width: 1.9rem;
   fill: #9b9696; }
 
 @media screen and (min-width: 1600px) {
@@ -634,6 +634,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       text-align: center; }
       .header-mobile__item-top:hover {
         border-bottom: 1px solid #e9e0cb; }
+      .header-mobile__item-top:hover svg {
+        fill: #9acc4e; }
       .header-mobile__item-top:last-child {
         margin-bottom: 1rem; }
     .header-mobile__item-title {
@@ -648,9 +650,16 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       font-weight: 700;
       text-align: center; }
     .header-mobile__item-icon {
-      position: absolute;
-      left: -4.5rem;
-      top: .6rem; }
+      position: absolute; }
+      .header-mobile__item-icon--cake {
+        left: -2.5rem;
+        top: -1px; }
+      .header-mobile__item-icon--candy {
+        left: -4.4rem;
+        top: -1px; }
+      .header-mobile__item-icon--pencil {
+        left: -3rem;
+        top: -1px; }
     .header-mobile__list {
       padding-top: 1em; }
     .header-mobile__item {

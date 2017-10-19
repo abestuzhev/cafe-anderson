@@ -164,6 +164,10 @@
         border-bottom: 1px solid $color_line;
       }
 
+      &:hover svg {
+        fill: $color_brand;
+      }
+
       &:last-child {
         margin-bottom: 1rem;
       }
@@ -186,8 +190,22 @@
 
     &__item-icon {
         position: absolute;
-        left: -4.5rem;
-        top: .6rem;
+
+
+        &--cake {
+            left: -2.5rem;
+            top: -1px;
+        }
+
+        &--candy {
+            left: -4.4rem;
+            top: -1px;
+        }
+
+        &--pencil {
+            left: -3rem;
+            top: -1px;
+        }
     }
 
     &__list {
