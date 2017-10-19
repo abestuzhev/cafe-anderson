@@ -26,6 +26,13 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
+
+        &-item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
     }
 
     &-col__right {
@@ -33,6 +40,13 @@
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: flex-end;
+
+        &-item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
     }
 
     &-social {
@@ -107,11 +121,18 @@
             margin-right: 1.1rem;
         }
 
+        &__icons {
+            display: inline-block;
+            //margin-right: .8rem;
+            vertical-align: bottom;
+        }
+
         &__icon {
             display: inline-block;
             margin-right: .8rem;
             border: none;
             vertical-align: bottom;
+
         }
     }
 
@@ -129,6 +150,7 @@
 
     &-lang {
         //float: right;
+        //display: inline-block;
         &__item {
             border: none;
 

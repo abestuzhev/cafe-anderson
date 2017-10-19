@@ -25,6 +25,7 @@ $(document).ready(function ($) {
     showPopup(".header-email", '.popup__write-to-us');
     showPopup(".header-cabinet", '.popup-authorization');
     showPopup(".header-city", '.popup-city');
+    showPopup(".header-mobile__city", '.popup-city');
 
 
     $('.popup-authorization .popup-authorization__reg').on('click', function (e) {
@@ -46,6 +47,46 @@ $(document).ready(function ($) {
         $('body').removeClass('body-popup');
     });
 
+
+    $("#mobile-reg").click(function (e) {
+        e.preventDefault();
+        $('.popup').removeClass('popup-show');
+        $('.popup-reg').addClass('popup-show');
+        $('.popup-bg').addClass('is-visible');
+        $('body').addClass('body-popup');
+    });
+
+    $("#mobile-auth").click(function (e) {
+        e.preventDefault();
+        $('.popup').removeClass('popup-show');
+        $('.popup-authorization').addClass('popup-show');
+        $('.popup-bg').addClass('is-visible');
+        $('body').addClass('body-popup');
+    });
+
+    /*показ мобильного поиска*/
+    $(".header-mobile__search .icon-search").click(function (e) {
+        e.preventDefault();
+        $('.header-mobile__search-box').show();
+        $('.header-mobile__menu').hide();
+        $('.header-mobile__search .icon-search').hide();
+        $('.icon-search-mobile').show();
+        $('.header-mobile__search-input').focus();
+
+        $('.header-mobile__auth').removeClass('popup-slide__show');
+        $('.header').addClass('header-top__hide');
+    });
+
+    /*скрываем мобильного поиска*/
+    $(".icon-search-mobile").click(function (e) {
+        e.preventDefault();
+        $('.header-mobile__search-box').hide();
+        $('.header-mobile__menu').show();
+        $('.header-mobile__search .icon-search').show();
+        $(this).hide();
+        $('.header').removeClass('header-top__hide');
+    });
+
     // закрытие по клику все области экрана
     $(".popup-bg").click(function (e) {
         e.preventDefault();
@@ -64,14 +105,46 @@ $(document).ready(function ($) {
     });
 
 
+    // мобильный заказать звонок, показываем форму и удаляем надпись
+    $(".mobile-request-call_inquiry").click(function (e) {
+        e.preventDefault();
+        $(this).css({
+            'opacity': '0',
+            'visibility': 'hidden',
+            'display':'none'
+        });
+        $('.mobile-request-call__form').css({
+            'opacity': '1',
+            'visibility': 'visible',
+            'display':'block'
+        });
+    });
 
+    /*показываем в попапе закзать звонок список городов*/
+
+    $(".mobile-request-call_city").click(function (e) {
+        e.preventDefault();
+        $('.popup-request-city').show();
+    });
+
+    $(".popup-request-city").click(function (e) {
+        e.preventDefault();
+        $(this).hide();
+    });
+
+    /*появление модального окна города в мобильной версии*/
+    // $('.header-mobile__city').on('click',function(){
+    //
+    // });
 
     /*попап корзины*/
     $('.header-basket').on('click', function () {
         $('.popup-basket').addClass('popup-slide__show');
+        $('.header').addClass('header-top__no-hide');
     });
     $('.popup-basket__close').on('click', function () {
         $('.popup-basket').removeClass('popup-slide__show');
+        $('.header').removeClass('header-top__no-hide');
     });
 
     function catalogItemCounter(field) {
@@ -139,6 +212,40 @@ $(document).ready(function ($) {
 	$('.header-mobile__cabinet').on('click', function(){
 		$('.header-mobile__auth').toggleClass('popup-slide__show');
 	});
+
+    //кнопка вверх
+    var offset = 300,
+        offset_opacity = 1200,
+        scroll_top_duration = 700,
+        $back_to_top = $('.cd-top');
+    //кнопка назад
+    $(window).scroll(function(){
+        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+        if( $(this).scrollTop() > offset_opacity ) {
+            $back_to_top.addClass('cd-fade-out');
+        }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+        event.preventDefault();
+        $('body,html').animate({
+                scrollTop: 0
+            }, scroll_top_duration
+        );
+    });
+
+    /*липкая шапка*/
+    $(window).scroll(function(){
+        var bo = $('html').scrollTop();
+        if ( bo > 20 ) {
+            $(".header").addClass('header-top__hide');
+        } else {
+            $(".header").removeClass('header-top__hide');
+        }
+    });
+
+    
 
 // });
 

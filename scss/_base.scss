@@ -253,7 +253,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 }
 .icon-o {
     position: relative;
-    width: 19px;
+    width: 20px;
     height: 19px;
     fill: $color_text_bg;
     vertical-align: top;
@@ -350,11 +350,42 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 }
 
 
+.icon-search-mobile {
+    display: none;
+    position: relative;
+    width: 11px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-pencil{
+
+    width: 43px;
+    fill: $color_text_bg;
+}
+
+.icon-candy {
+    width: 125px;
+    fill: $color_text_bg;
+}
+
+.icon-cake-menu {
+    width: 171px;
+    fill: $color_text_bg;
+}
+
+
 @media screen and (min-width: 1600px) {
   .c-layout {
     position: relative;
     width: 1600px;
     margin: 0 auto;
+
+      &::after {
+          content: '';
+          clear: both;
+          display: table;
+      }
   }
 }
 
@@ -365,6 +396,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 22px;
+
+      &::after {
+          content: '';
+          clear: both;
+          display: table;
+      }
   }
 }
 
