@@ -119,22 +119,25 @@ $(document).ready(function ($) {
             if (!div.is(e.target) // если клик был не по нашему блоку
                 && div.has(e.target).length === 0) { // и не по его дочерним элементам
                 div.removeClass(instrumentHide); // скрываем его
-                $('.fixed-overlay').removeClass('is-visible');
-                $('body').removeClass('body-popup');
+                // $('.fixed-overlay').removeClass('is-visible');
+                // $('body').removeClass('body-popup');
             }
         });
     }
 
     hidePopup('.popup-basket', 'popup-slide__show');
-    hidePopup('.popup', 'popup-show');
-    //
-    // $(document).mouseup(function (e) { // событие клика по веб-документу
-    //     var div = $('.popup'); // тут указываем ID элемента
-    //     if (!div.is(e.target) // если клик был не по нашему блоку
-    //         && div.has(e.target).length === 0) { // и не по его дочерним элементам
-    //         div.removeClass(instrumentHide); // скрываем его
-    //     }
-    // });
+    // hidePopup('.popup', 'popup-show');
+    hidePopup('.header-mobile__auth', 'popup-slide__show');
+
+    $(document).mouseup(function (e) { // событие клика по веб-документу
+        var div = $('.popup-body'); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.parents('.popup').removeClass('popup-show'); // скрываем его
+            $('.fixed-overlay').removeClass('is-visible');
+            $('body').removeClass('body-popup');
+        }
+    });
 
     // мобильный заказать звонок, показываем форму и удаляем надпись
     $(".mobile-request-call_inquiry").click(function (e) {
