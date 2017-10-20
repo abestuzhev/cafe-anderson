@@ -154,6 +154,10 @@
             visibility: hidden;
             @extend %transition_all;
             transform: scale(1);
+
+            &-close {
+                display: none;
+            }
         }
 
         &__item-top {

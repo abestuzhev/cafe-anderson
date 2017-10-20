@@ -238,8 +238,9 @@ $(document).ready(function ($) {
         // $('body').addClass('body-popup');
 	});
 
-    $('.icon-menu__transform').on('click', function(){
-        $('body').removeClass('body-popup');
+    $('.header-mobile__dropdown-close').on('click', function(){
+        $('.header-mobile__menu').toggleClass('icon-menu__transform');
+        $('.header-mobile__dropdown').toggleClass('popup-show');
 	});
 
 

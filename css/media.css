@@ -664,6 +664,32 @@
         left: 5%;
         transform: rotate(-29deg);
     }
+
+    .header-mobile__dropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .header-mobile__dropdown {
+        box-shadow: none;
+    }
+
+    .header-mobile__dropdown-close {
+        display: block;
+        padding: 1.4rem 1.6rem 3.5rem;
+        border-radius: 0 0 50px 50px;
+        position: absolute;
+        z-index: 9999;
+        width: 10px;
+        height: 10px;
+        right: 9px;
+        top: 0;
+        background: #7cbd41 url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+        background-size: 10px 11px;
+        cursor: pointer;
+    }
 }
 
 
@@ -718,8 +744,8 @@
 
 @media (max-height:640px) {
     .header-mobile__dropdown {
-        height: 460px;
-        overflow-y: scroll;
+        /*height: 460px;*/
+        /*overflow-y: scroll;*/
     }
 }
 

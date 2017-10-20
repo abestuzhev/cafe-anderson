@@ -614,8 +614,9 @@
     @extend %transition_all;
 }
 
-.header-top__hide {
-   transform: translateY(-40px);
+.header-top__hide .header-mobile__top {
+   //transform: translateY(-40px);
+    display: none !important;
     @extend %transition_all;
 }
 
