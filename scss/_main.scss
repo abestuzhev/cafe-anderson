@@ -1,8 +1,7 @@
 //-------------------------------------------------preloader*/
 .preloader {
     position: fixed;
-    z-index: 99999;
-    z-index: 99;
+    z-index: 9999999;
     top: 0;
     left: 0;
     height: 100%;
@@ -403,15 +402,15 @@
 //------------------------------------------------модальные окна*/
 
 .popup {
-    position: fixed;
-    z-index: 102;
-    top: 50%;
-    left: 50%;
-    margin-left: -250px;
-    margin-top: -300px;
+    //position: fixed;
+    //z-index: 102;
+    //top: 50%;
+    //left: 50%;
+    //margin-left: -250px;
+    //margin-top: -300px;
     width: 500px;
     background-color: #FFF;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+    //box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
@@ -421,7 +420,7 @@
     box-shadow: 0 16px 57px 0 rgba(0,0,0,.47);
     transform: scale(1);
     //@extend %transition_all;
-    
+
     &-close {
         position: absolute;
         right: 1.5rem;
@@ -508,6 +507,7 @@
     &-form {
         &__item {
             margin-bottom: 1.6rem;
+            text-align: left;
 
             &:last-child {
                 margin-bottom: 0;
@@ -603,8 +603,8 @@
 
 
 .is-visible {
-    opacity: .4;
-    z-index: 100;
+    opacity: 1 !important;
+    z-index: 99999 !important;
     @extend %transition_all;
 }
 
@@ -808,7 +808,7 @@
 }
 
 .popup-reg {
-    margin-top: -383px;
+    //margin-top: -383px;
     //opacity: 1 !important;
     //visibility: visible !important;
     background: #fff url(../img/popup-bg_authorization.jpg) no-repeat 100% 100%;
@@ -828,7 +828,6 @@
 
 .popup-city {
     width: 620px;
-    margin-top: -253px;
     //opacity: 1 !important;
     //visibility: visible !important;
 
@@ -870,7 +869,7 @@
             background-color: $white;
             padding: 0 1.5rem;
         }
-        
+
         &::before {
             content: '';
             position: absolute;
@@ -986,6 +985,7 @@
     &__item {
         border-bottom: 1px solid $black;
         padding: 1rem 0;
+        padding-right: .4rem;
 
         &:last-child {
             border-bottom: none;
@@ -1140,3 +1140,152 @@
 }
 
 
+/*----------------------------------------------*/
+
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+[data-tooltip]:before, [data-tooltip]:after {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.15s cubic-bezier(0.5, 1, 0.25, 1);
+    z-index: 1;
+}
+[data-tooltip]:before {
+    padding: 5px;
+    width: 110px;
+    border-radius: 3px;
+    background: #7cbd41;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+[data-tooltip]:after {
+    border: 8px solid transparent;
+    width: 0;
+    content: "";
+    font-size: 0;
+    line-height: 0;
+}
+[data-tooltip]:hover:before, [data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+[data-tooltip].t-xl:before {
+    width: 200px;
+}
+[data-tooltip].t-lg:before {
+    width: 170px;
+}
+[data-tooltip].t-md:before {
+    width: 140px;
+}
+[data-tooltip].t-sm:before {
+    width: 110px;
+}
+[data-tooltip].t-xs:before {
+    width: 80px;
+}
+[data-tooltip].t-top:before {
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 5px;
+    transform: translateX(-50%);
+}
+[data-tooltip].t-top:after {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 8px solid #7cbd41;
+    border-bottom: none;
+}
+[data-tooltip].t-top:hover:before, [data-tooltip].t-top:hover:after {
+    transform: translateX(-50%) translateY(-5px);
+}
+[data-tooltip].t-right:before {
+    top: 50%;
+    left: 100%;
+    margin-left: 5px;
+    transform: translateY(-50%);
+}
+[data-tooltip].t-right:after {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    border-right: 8px solid #000;
+    border-left: none;
+}
+[data-tooltip].t-right:hover:before, [data-tooltip].t-right:hover:after {
+    transform: translateX(5px) translateY(-50%);
+}
+[data-tooltip].t-bottom:before {
+    top: 100%;
+    left: 50%;
+    margin-top: 5px;
+    transform: translateX(-50%);
+}
+[data-tooltip].t-bottom:after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 8px solid #000;
+    border-top: none;
+}
+[data-tooltip].t-bottom:hover:before, [data-tooltip].t-bottom:hover:after {
+    transform: translateX(-50%) translateY(5px);
+}
+[data-tooltip].t-left:before {
+    top: 50%;
+    right: 100%;
+    margin-right: 5px;
+    transform: translateY(-50%);
+}
+[data-tooltip].t-left:after {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-left: 8px solid #000;
+    border-right: none;
+}
+[data-tooltip].t-left:hover:before, [data-tooltip].t-left:hover:after {
+    transform: translateX(-5px) translateY(-50%);
+}
+
+/*----------------------------------------------*/
+
+/*тестирование попапа*/
+.fixed-overlay {
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.fixed-overlay__modal {
+    text-align: center;
+    //white-space: nowrap;
+}
+
+.fixed-overlay__modal::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+}
+
+.modal {
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -93,47 +93,35 @@
     }
 
     .home-celebration {
-        bottom: 10%;
+        bottom: 7%;
     }
 
     .footer-reviews {
         margin-right: .5rem;
     }
+}
 
-    /*.footer-layout {*/
-        /*display: flex;*/
-        /*flex-flow: row wrap;*/
-        /*justify-content: space-between;*/
-        /*align-items: center;*/
-    /*}*/
-    /*.footer-social {*/
-        /*order:1;*/
-        /*flex: 0 1 auto;*/
-    /*}*/
+@media (min-width:1940px) and (min-height: 1200px) {
+    .home-cafe {
+        width: 29%;
+    }
 
-    /*.footer-site-map {*/
-        /*order:2;*/
-    /*}*/
+    .home-cake {
+        width: 50%;
+    }
 
-    /*.footer-search {*/
-        /*order:4;*/
-        /*flex: 0 1 50%;*/
-    /*}*/
+    .home-celebration {
+        width: 40%;
+    }
+    .home-celebration__title,
+    .home-cafe__title {
+        font-size: 3.8vw;
+    }
 
-    /*.footer-lang {*/
-        /*order:7;*/
-    /*}*/
-
-    /*.footer-partners {*/
-        /*order:6;*/
-    /*}*/
-
-    /*.footer-reviews {*/
-        /*order:3;*/
-    /*}*/
-    /*.footer-info {*/
-        /*order:5;*/
-    /*}*/
+    .home-celebration__sub-title,
+    .home-cafe__sub-title {
+        font-size: 1.9vw;
+    }
 }
 
 
@@ -146,12 +134,13 @@
 
     .home-celebration {
         width: 34%;
-        bottom: 10%;
+        bottom: 5%;
     }
 
     .home-cake {
         width: 43%;
         top: 12.8%;
+        right: -6.2%;
     }
 
     .footer {
@@ -159,7 +148,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width:1026px) {
     .home-cafe {
         width: 26%;
         top: 28%;
@@ -231,6 +220,9 @@
         height: 34rem;
         position: relative;
     }
+    .mobile-item:nth-child(2) {
+        height: 18rem;
+    }
 
     .mobile-item:last-child {
         height: 40rem;
@@ -253,7 +245,7 @@
     .mobile-cake__text,
     .mobile-cafe__text {
         position: absolute;
-        /*padding: 3rem;*/
+        z-index: 99;
     }
 
     .mobile-cake__title,
@@ -263,7 +255,7 @@
         font-family: 'BebasNeue', sans-serif;
         font-size: 6rem;
         font-weight: 300;
-        line-height: 1;
+        line-height: .9;
         color: #231300;
     }
 
@@ -280,18 +272,18 @@
     }
 
     .mobile-cafe__text {
-        top: 7%;
+        top: -4%;
         left: 11%;
     }
 
     .mobile-celebration__text {
-        bottom: 12%;
-        right: 14%;
+        bottom: 15%;
+        right: 27%;
     }
 
     .mobile-cake__text {
         top: 37%;
-        left: 5%;
+        left: 19%;
     }
 
     /*прячем зеленые указатели на главной и добавляем их к тексту*/
@@ -315,7 +307,7 @@
     .home-cafe {
         left: auto;
         right: 0;
-        top: -4%;
+        top: -39%;
         width: 40rem;
     }
 
@@ -326,8 +318,12 @@
     .home-celebration {
         transform: rotate(90deg);
         width: 40rem;
-        left: -2%;
-        bottom: -8%;
+        bottom: -49%;
+        left: -6%;
+    }
+
+    .home-celebration__heart {
+        display: none;
     }
 
     .home-celebration:hover {
@@ -342,6 +338,16 @@
 
     .popup-basket {
         top: -39px;
+    }
+}
+
+@media (max-width:800px) {
+    .mobile-cake__text {
+        left: 3%;
+    }
+
+    .mobile-celebration__text {
+        right: 20%;
     }
 }
 
@@ -368,6 +374,17 @@
     .home-cake {
         top: -50.2%;
         right: -64%;
+    }
+}
+
+@media (max-width:780px) {
+    .home-cafe {
+        transform: rotate(17deg);
+        top: -37%;
+        width: 35rem;
+    }
+    .home-cafe:hover {
+        transform: rotate(17deg);
     }
 }
 
@@ -401,7 +418,6 @@
 @media (max-width:640px) {
     .home-cafe {
         right: -19%;
-        top: -5%;
     }
 
     .home-celebration {
@@ -414,12 +430,13 @@
     }
 
     .mobile-celebration__text {
-        bottom: 29%;
+        bottom: 48%;
     }
 
     .home-cake__pie-1 {
-        bottom: -7.1%;
-        left: 10%;
+        bottom: 3.9%;
+        left: 5%;
+        transform: rotate(-29deg);
     }
 
     .mobile-cake__text {
@@ -463,7 +480,7 @@
 @media (max-width:540px) {
     .home-cafe {
         right: -36%;
-        top: -5%;
+        top: -36%;
     }
 
     .home-celebration {
@@ -476,7 +493,7 @@
     }
 
     .mobile-celebration__text {
-        right: 6%;
+        right: 12%;
     }
 
     .home-cake__pie-1 {
@@ -485,7 +502,7 @@
     }
 
     .mobile-cake__text {
-        top: 21%;
+        top: 25%;
     }
 
     .home-cake {
@@ -522,11 +539,11 @@
     }
 
     .footer-col__left-item:first-child {
-        margin-bottom: 2rem;
+        margin-bottom: 1.6rem;
     }
 
     .footer-col__left-item:last-child {
-        margin-bottom: 1.2rem;
+        margin-bottom: .4rem;
     }
 
     .footer-reviews {
@@ -594,13 +611,13 @@
     .mobile-cafe__title,
     .mobile-celebration__title,
     .mobile-cake__title {
-        font-size: 3em;
+        font-size: 2.8em;
     }
 
     .mobile-cafe__sub-title,
     .mobile-celebration__sub-title,
     .mobile-cake__sub-title {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 }
 
@@ -627,19 +644,19 @@
 
 @media (max-width:430px) {
     .home-cafe {
-        right: -58%;
+        /*right: -58%;*/
     }
 
     .home-celebration {
-        transform: rotate(33deg);
-        left: -65%;
+        transform: rotate(37deg);
+        left: -59%;
     }
     .home-celebration:hover {
-        transform: rotate(33deg);
+        transform: rotate(37deg);
     }
 
     .home-cake {
-        right: -150%;
+        right: -124%;
     }
 
     .home-cake__pie-1 {
@@ -652,9 +669,10 @@
 
 @media (max-width:370px) {
     .home-cafe {
-        right: -75%;
+        right: -52%;
         transform: rotate(17deg);
-        top: 7%;
+        top: -27%;
+        width: 35rem;
     }
 
     .home-cafe:hover {
@@ -663,21 +681,45 @@
 
     .home-celebration {
         bottom: 26%;
-        left: -108%;
+        left: -85%;
         width: 47rem;
     }
 
-
     .home-cake {
-        top: -21%;
-        right: -141%;
+        top: -31%;
+        right: -100%;
         width: 56rem;
     }
 
     .home-cake__pie-1 {
-        bottom: 3.9%;
-        left: 5%;
-        transform: rotate(-29deg);
+        bottom: 2.9%;
+        left: 2%;
+        transform: rotate(-15deg);
+    }
+
+    .mobile-item:nth-child(2) {
+        height: 16rem;
+    }
+
+    .mobile-item:last-child {
+        height: 32rem;
+    }
+
+    .home-celebration__star-3 {
+        bottom: 34%;
+        left: 104%;
+    }
+
+    .home-cake__brownie {;
+        top: 0;
+        right: 73.1%;
+    }
+}
+
+@media (max-height:640px) {
+    .header-mobile__dropdown {
+        height: 460px;
+        overflow-y: scroll;
     }
 }
 
@@ -697,6 +739,18 @@
     .popup-basket__scroll {
         height: calc(100vh - 152px);
         margin-right: -6px;
+    }
+
+    .home-cafe {
+        right: -62%;
+    }
+
+    .home-celebration {
+        left: -92%;
+    }
+
+    .home-cake {
+        right: -121%;
     }
 }
 

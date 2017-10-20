@@ -16,7 +16,7 @@ $(document).ready(function ($) {
         $(icon).on('click', function (e) {
             e.preventDefault();
             $(popup).addClass('popup-show');
-            $('.popup-bg').addClass('is-visible');
+            $(popup).parents('.fixed-overlay').addClass('is-visible');
             $('body').addClass('body-popup');
         });
     }
@@ -31,19 +31,23 @@ $(document).ready(function ($) {
     $('.popup-authorization .popup-authorization__reg').on('click', function (e) {
         e.preventDefault();
         $(this).parents('.popup').removeClass('popup-show');
+        $(this).parents('.fixed-overlay').removeClass('is-visible');
         $('.popup-reg').addClass('popup-show');
+        $('.popup-reg').parents('.fixed-overlay').addClass('is-visible');
     });
 
     $('.popup-reg .popup-authorization__auth').on('click', function (e) {
         e.preventDefault();
         $(this).parents('.popup').removeClass('popup-show');
+        $(this).parents('.fixed-overlay').removeClass('is-visible');
         $('.popup-authorization').addClass('popup-show');
+        $('.popup-authorization').parents('.fixed-overlay').addClass('is-visible');
     });
 
     $(".popup-close").click(function (e) {
         e.preventDefault();
         $(this).parents('.popup').removeClass('popup-show');
-        $('.popup-bg').removeClass('is-visible');
+        $('.fixed-overlay').removeClass('is-visible');
         $('body').removeClass('body-popup');
     });
 
@@ -52,7 +56,7 @@ $(document).ready(function ($) {
         e.preventDefault();
         $('.popup').removeClass('popup-show');
         $('.popup-reg').addClass('popup-show');
-        $('.popup-bg').addClass('is-visible');
+        $('.popup-reg').parents('.fixed-overlay').addClass('is-visible');
         $('body').addClass('body-popup');
     });
 
@@ -60,7 +64,7 @@ $(document).ready(function ($) {
         e.preventDefault();
         $('.popup').removeClass('popup-show');
         $('.popup-authorization').addClass('popup-show');
-        $('.popup-bg').addClass('is-visible');
+        $('.popup-authorization').parents('.fixed-overlay').addClass('is-visible');
         $('body').addClass('body-popup');
     });
 
@@ -72,7 +76,6 @@ $(document).ready(function ($) {
         $('.header-mobile__search .icon-search').hide();
         $('.icon-search-mobile').show();
         $('.header-mobile__search-input').focus();
-
         $('.header-mobile__auth').removeClass('popup-slide__show');
         $('.header').addClass('header-top__hide');
     });
@@ -87,6 +90,19 @@ $(document).ready(function ($) {
         $('.header').removeClass('header-top__hide');
     });
 
+    $(document).mouseup(function (e) { // событие клика по веб-документу
+        var div = $('.header-mobile__search-box'); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            
+            $('.header-mobile__menu').show();
+            $('.header-mobile__search-box').hide();
+            $('.header-mobile__search .icon-search').show();
+            $('.header-mobile__search .icon-search-mobile').hide();
+            $('.header').removeClass('header-top__hide');
+        }
+    });
+
     // закрытие по клику все области экрана
     $(".popup-bg").click(function (e) {
         e.preventDefault();
@@ -96,14 +112,29 @@ $(document).ready(function ($) {
     });
 
     /*клик вне области экрана для корзины*/
-    $(document).mouseup(function (e) { // событие клика по веб-документу
-        var div = $(".popup-basket"); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            div.removeClass('popup-slide__show'); // скрываем его
-        }
-    });
 
+    function hidePopup (element, instrumentHide){
+        $(document).mouseup(function (e) { // событие клика по веб-документу
+            var div = $(element); // тут указываем ID элемента
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0) { // и не по его дочерним элементам
+                div.removeClass(instrumentHide); // скрываем его
+                $('.fixed-overlay').removeClass('is-visible');
+                $('body').removeClass('body-popup');
+            }
+        });
+    }
+
+    hidePopup('.popup-basket', 'popup-slide__show');
+    hidePopup('.popup', 'popup-show');
+    //
+    // $(document).mouseup(function (e) { // событие клика по веб-документу
+    //     var div = $('.popup'); // тут указываем ID элемента
+    //     if (!div.is(e.target) // если клик был не по нашему блоку
+    //         && div.has(e.target).length === 0) { // и не по его дочерним элементам
+    //         div.removeClass(instrumentHide); // скрываем его
+    //     }
+    // });
 
     // мобильный заказать звонок, показываем форму и удаляем надпись
     $(".mobile-request-call_inquiry").click(function (e) {
@@ -121,7 +152,6 @@ $(document).ready(function ($) {
     });
 
     /*показываем в попапе закзать звонок список городов*/
-
     $(".mobile-request-call_city").click(function (e) {
         e.preventDefault();
         $('.popup-request-city').show();
@@ -131,11 +161,6 @@ $(document).ready(function ($) {
         e.preventDefault();
         $(this).hide();
     });
-
-    /*появление модального окна города в мобильной версии*/
-    // $('.header-mobile__city').on('click',function(){
-    //
-    // });
 
     /*попап корзины*/
     $('.header-basket').on('click', function () {
@@ -205,7 +230,13 @@ $(document).ready(function ($) {
 	$('.header-mobile__menu').on('click', function(){
 		$(this).toggleClass('icon-menu__transform');
 		$('.header-mobile__dropdown').toggleClass('popup-show');
-		$('.header').toggleClass('header-top__hide');/*прячем верхнюю полоску в шапке*/
+		$('.header').toggleClass('header-top__hide');
+		/*прячем верхнюю полоску в шапке*/
+        // $('body').addClass('body-popup');
+	});
+
+    $('.icon-menu__transform').on('click', function(){
+        $('body').removeClass('body-popup');
 	});
 
 
@@ -245,7 +276,11 @@ $(document).ready(function ($) {
         }
     });
 
-    
+
+
+    /*-------------------------------------------------------------*/
+
+    /*-------------------------------------------------------------*/
 
 // });
 
