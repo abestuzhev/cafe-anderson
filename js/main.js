@@ -272,7 +272,7 @@ $(document).ready(function ($) {
 
     /*липкая шапка*/
     $(window).scroll(function(){
-        var bo = $('html').scrollTop();
+        var bo = $(window).scrollTop();
         if ( bo > 20 ) {
             $(".header").addClass('header-top__hide');
         } else {

@@ -203,15 +203,23 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 }
 
 
+.icon-logo {
+    position: relative;
+    width: 380px;
+    height: 79px;
+}
+
 .icon-basket {
     position: relative;
     width: 22px;
+    height: 23px;
     fill: $color_text_bg;
 }
 
 .icon-cabinet {
     position: relative;
     width: 19px;
+    height: 19px;
     fill: $color_text_bg;
     vertical-align: bottom;
 }
@@ -219,12 +227,14 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .icon-phone {
     position: relative;
     width: 16px;
+    height: 19px;
     fill: $color_text_bg;
     vertical-align: bottom;
 }
 .icon-email {
     position: relative;
     width: 19px;
+    height: 19px;
     fill: $color_text_bg;
     vertical-align: bottom;
 }
@@ -232,6 +242,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .icon-search {
     position: relative;
     width: 20px;
+    height: 19px;
     fill: $color_text_bg;
     vertical-align: bottom;
 }
