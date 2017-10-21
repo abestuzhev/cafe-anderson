@@ -205,8 +205,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 .icon-logo {
     position: relative;
-    width: 380px;
-    height: 79px;
+    width: 38rem;
+    height: 7.9rem;
+    cursor: pointer;
 }
 
 .icon-basket {

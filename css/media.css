@@ -99,6 +99,11 @@
     .footer-reviews {
         margin-right: .5rem;
     }
+
+    .icon-logo {
+        width: 19rem;
+        height: 3.9rem;
+    }
 }
 
 @media (min-width:1940px) and (min-height: 1200px) {
@@ -667,7 +672,7 @@
 
     .header-mobile__dropdown {
         position: fixed;
-        top: 0;
+        top: 43px;
         left: 0;
         width: 100%;
     }

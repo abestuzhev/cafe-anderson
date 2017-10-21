@@ -155,9 +155,11 @@ $(document).ready(function ($) {
     });
 
     /*показываем в попапе закзать звонок список городов*/
-    $(".mobile-request-call_city").click(function (e) {
+    $(".mobile-request-call_city").on('click', function (e) {
         e.preventDefault();
-        $('.popup-request-city').show();
+        console.log('click click');
+        // $('.popup-request-city').show();
+        $('.popup-request-city').addClass('popup-show');
     });
 
     $(".popup-request-city").click(function (e) {

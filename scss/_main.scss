@@ -615,7 +615,7 @@
 }
 
 .header-top__hide {
-   transform: translateY(-40px);
+   transform: translateY(-43px);
    // display: none !important;
     @extend %transition_all;
 }
@@ -683,6 +683,7 @@
 
     .mobile-request-call {
         display: none;
+        text-align: left;
 
         &__form {
             @extend %transition_all;
@@ -744,16 +745,16 @@
 .popup-request-city {
     //opacity: 1;
     //visibility: visible;
-    //opacity: 0;
-    //visibility: hidden;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    //display: none;
     padding: 1.3rem;
     border-radius: .6rem;
     background-color: $white;
     margin: 1rem;
     width: 93vw;
     position: fixed;
-    z-index: 999;
+    z-index: 999999;
     //left: 47%;
     top: 0;
     //transform: translate(-50%,-50%);
