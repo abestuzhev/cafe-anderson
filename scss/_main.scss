@@ -1,4 +1,8 @@
 //-------------------------------------------------preloader*/
+html {
+    overflow-y: scroll;
+}
+
 .preloader {
     position: fixed;
     z-index: 9999999;
@@ -402,7 +406,7 @@
 //------------------------------------------------модальные окна*/
 
 .popup {
-    //position: fixed;
+    //position: absolute;
     //z-index: 102;
     //top: 50%;
     //left: 50%;
@@ -411,15 +415,17 @@
     width: 500px;
     background-color: #FFF;
     //box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
-    opacity: 0;
-    visibility: hidden;
+    //opacity: 0;
+    //visibility: hidden;
     overflow: hidden;
     font-family: $font_serif;
     border-radius: 1rem;
     //transform: translate(-50%, -50%);
     box-shadow: 0 16px 57px 0 rgba(0,0,0,.47);
     transform: scale(1);
-    //@extend %transition_all;
+    //transition: transform .2s ease;
+    @extend %transition_all;
+    margin: 0 auto;
 
     &-close {
         position: absolute;
@@ -437,18 +443,6 @@
         padding: 3rem 6rem 4.5rem;
         position: relative;
         z-index: 10;
-    }
-
-    &-bg {
-        position: fixed;
-        z-index: -100;
-        top: 0;
-        left: 0;
-        background-color: #000;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        visibility: visible;
     }
 
     &-back {
@@ -609,8 +603,8 @@
 }
 
 .body-popup {
-    overflow: hidden;
-    //padding-right: 17px;
+    overflow: hidden !important;
+    padding-right: 16px;
     @extend %transition_all;
 }
 
@@ -633,7 +627,7 @@
 
 //------------------------------------------------custom popup*/
 
-.popup__write-to-us {
+.popup__write-to-us .popup {
     background: #fff url(../img/popup-bg_write-to-us.jpg) no-repeat 100% 100%;
     .icon-berry {
         position: absolute;
@@ -644,7 +638,7 @@
     }
 }
 
-.popup__request-call {
+.popup__request-call .popup {
     background: #fff url(../img/popup-bg_request-call.png) no-repeat 100% 100%;
 
     .icon-bird-down {
@@ -815,10 +809,7 @@
     }
 }
 
-.popup-reg {
-    //margin-top: -383px;
-    //opacity: 1 !important;
-    //visibility: visible !important;
+.popup-reg  .popup {
     background: #fff url(../img/popup-bg_authorization.jpg) no-repeat 100% 100%;
 
     .icon-bird-up {
@@ -834,8 +825,11 @@
     }
 }
 
-.popup-city {
+.popup-city .popup {
     width: 620px;
+}
+
+.popup-city {
     //opacity: 1 !important;
     //visibility: visible !important;
 
@@ -1203,28 +1197,179 @@
     position: fixed;
     z-index: -1;
     opacity: 0;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    //background-color: rgba(0,0,0,0.4);
+}
+//
+//body, html {
+//    height: auto !important;
+//    min-height: auto !important;
+//    max-height: none !important;
+//}
+
+
+.fixed-overlay__layout {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.4);
 }
 
+
+.fixed-overlay__layout::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+.popup-bg {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+
 .fixed-overlay__modal {
-    text-align: center;
+    //text-align: center;
     //white-space: nowrap;
 }
 
 .fixed-overlay__modal::after {
-    display: inline-block;
-    vertical-align: middle;
-    width: 0;
-    height: 100%;
-    content: '';
+    //display: inline-block;
+    //vertical-align: middle;
+    //width: 0;
+    //height: 100%;
+    //content: '';
 }
 
 .modal {
+    position: relative;
     display: inline-block;
     vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.test {
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    left: 45%;
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+}
+
+
+
+/*
+*
+*
+test popup
+**/
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mfp-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1042;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0,0,0,.4);
+    filter: alpha(opacity=80);
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+    transform: scale(1);
+    @extend %transition_all;
+}
+
+.mfp-wrap {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1043;
+    position: fixed;
+    outline: 0!important;
+    -webkit-backface-visibility: hidden;
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+
+.mfp-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mfp-container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
+    width: 100%;
+    cursor: auto;
+}
+
+.mfp-content {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 1045;
+}
+
+.white-popup-block {
+    background: #FFF;
+    padding: 20px 30px;
+    text-align: left;
+    max-width: 650px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.visible-test {
+    opacity: 1;
+    visibility: visible;
+    transition: all .2s ease;
 }

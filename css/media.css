@@ -197,7 +197,7 @@
     }
 
     .header-layout {
-        padding: 1rem 0 .5rem;
+        padding: .9rem 0 0;
     }
 
     /*сбрасываем контент в скрол*/
@@ -205,7 +205,9 @@
         position: relative;
     }
 
-    html {
+    html,
+    body,
+    .home-page {
         height: auto;
     }
 
