@@ -948,17 +948,17 @@ html {
         position: relative;
         //height: 748px;
         height: calc(100vh - 190px);
-        margin-right: -6px;
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 4px;
-            background-color: #e4e4e4;
-        }
+        //margin-right: -6px;
+        //
+        //&::after {
+        //    content: '';
+        //    position: absolute;
+        //    top: 0;
+        //    right: 0;
+        //    height: 100%;
+        //    width: 4px;
+        //    background-color: #e4e4e4;
+        //}
     }
 
     &__all-sum {

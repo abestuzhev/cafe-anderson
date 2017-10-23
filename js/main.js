@@ -10,6 +10,10 @@ var $body,
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
+/*crhjkk*/
+    $(".popup-basket__scroll").scrollBox();
+
+
 
     /*функция показа модального окна*/
     function showPopup(icon, popup) {

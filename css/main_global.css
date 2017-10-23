@@ -1764,16 +1764,7 @@ html {
     margin: 1rem 0; }
   .popup-basket__scroll {
     position: relative;
-    height: calc(100vh - 190px);
-    margin-right: -6px; }
-    .popup-basket__scroll::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 4px;
-      background-color: #e4e4e4; }
+    height: calc(100vh - 190px); }
   .popup-basket__all-sum {
     font-size: 1.4rem;
     color: #555451;
