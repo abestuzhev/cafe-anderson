@@ -575,60 +575,11 @@ html {
     }
 }
 
-/*popup show*/
-.popup-show {
-    opacity: 1 !important;
-    visibility: visible !important;
-    -webkit-animation: scaleUp 0.2s;
-    -o-animation: scaleUp 0.2s;
-    animation: scaleUp 0.2s;
-    @extend %transition_all;
-}
-
-
-.popup-slide__show {
-    opacity: 1 !important;
-    visibility: visible !important;
-    -webkit-animation: slideDown 0.2s;
-    -o-animation: slideDown 0.2s;
-    animation: slideDown 0.2s;
-    @extend %transition_all;
-}
-
-
-.is-visible {
-    opacity: 1 !important;
-    z-index: 99999 !important;
-    @extend %transition_all;
-}
-
-.body-popup {
-    overflow: hidden !important;
-    padding-right: 16px;
-    @extend %transition_all;
-}
-
-.header-top__hide {
-   transform: translateY(-43px);
-   // display: none !important;
-    @extend %transition_all;
-}
-//
-//.header-top__hide .header-mobile__top {
-//   transform: translateY(-40px);
-//    display: none !important;
-//    @extend %transition_all;
-//}
-
-.header-top__no-hide {
-   transform: translateY(0) !important;
-}
-
 
 //------------------------------------------------custom popup*/
 
-.popup__write-to-us .popup {
-    background: #fff url(../img/popup-bg_write-to-us.jpg) no-repeat 100% 100%;
+.popup__write-to-us {
+    //background: #fff url(../img/popup-bg_write-to-us.jpg) no-repeat 100% 100%;
     .icon-berry {
         position: absolute;
         bottom: 2.6%;
@@ -638,8 +589,8 @@ html {
     }
 }
 
-.popup__request-call .popup {
-    background: #fff url(../img/popup-bg_request-call.png) no-repeat 100% 100%;
+.popup__request-call  {
+    //background: #fff url(../img/popup-bg_request-call.png) no-repeat 100% 100%;
 
     .icon-bird-down {
         position: absolute;
@@ -655,25 +606,17 @@ html {
     }
 }
 
+.popup {
+
+    .popup-bg__img {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0rem;
+    }
+}
+
 .popup__request-call {
-    //opacity: 1 !important;
-    //visibility: visible !important;
-    //opacity: 0;
-    //visibility: hidden;
-    //background: #fff url(../img/popup-bg_request-call.png) no-repeat 100% 100%;
-    //
-    //.icon-bird-down {
-    //    position: absolute;
-    //    bottom: 0;
-    //    right: 27.4%;
-    //    width: 15%;
-    //}
-    //.icon-giraffe {
-    //    position: absolute;
-    //    bottom: -2.1%;
-    //    right: -3.8%;
-    //    width: 22%;
-    //}
 
     .mobile-request-call {
         display: none;
@@ -794,7 +737,6 @@ html {
 .popup-authorization {
     //opacity: 1 !important;
     //visibility: visible !important;
-    background: #fff url(../img/popup-bg_authorization.jpg) no-repeat 100% 100%;
 
     .icon-bird-up {
         position: absolute;
@@ -809,8 +751,8 @@ html {
     }
 }
 
-.popup-reg  .popup {
-    background: #fff url(../img/popup-bg_authorization.jpg) no-repeat 100% 100%;
+.popup-reg  {
+    //background: #fff url(../img/popup-bg_authorization.jpg) no-repeat 100% 100%;
 
     .icon-bird-up {
         position: absolute;
@@ -847,7 +789,7 @@ html {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        align-items: center;
+        align-items: stretch;
         font-family: $font_sans-serif;
     }
 
@@ -888,9 +830,10 @@ html {
         border: none;
         font-size: 2.5rem;
         padding: .7rem .9rem;
-        background-color: #f3efe4;
         display: block;
         width: 100%;
+        height: 100%;
+        background-color: #f3efe4;
 
         &:hover {
             color:$white;
@@ -1369,8 +1312,52 @@ test popup
     position: relative;
 }
 
-.visible-test {
-    opacity: 1;
-    visibility: visible;
-    transition: all .2s ease;
+/*popup show*/
+.popup-show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    -webkit-animation: scaleUp 0.2s;
+    -o-animation: scaleUp 0.2s;
+    animation: scaleUp 0.2s;
+    @extend %transition_all;
 }
+
+
+.popup-slide__show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    -webkit-animation: slideDown 0.2s;
+    -o-animation: slideDown 0.2s;
+    animation: slideDown 0.2s;
+    @extend %transition_all;
+}
+
+
+.is-visible {
+    opacity: 1 !important;
+    visibility: visible;
+    @extend %transition_all;
+}
+
+.body-popup {
+    overflow: hidden !important;
+    padding-right: 16px;
+    @extend %transition_all;
+}
+
+.header-top__hide {
+    transform: translateY(-43px);
+    // display: none !important;
+    @extend %transition_all;
+}
+//
+//.header-top__hide .header-mobile__top {
+//   transform: translateY(-40px);
+//    display: none !important;
+//    @extend %transition_all;
+//}
+
+.header-top__no-hide {
+    transform: translateY(0) !important;
+}
+
