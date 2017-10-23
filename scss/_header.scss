@@ -362,8 +362,11 @@
     position: relative;
 
     &:hover .header-basket__count {
-      transform-origin: -50% center;
-      animation: leafWaving 5s infinite;
+      transform-origin: 0 center;
+        transform: rotateZ(-6deg);
+        @extend %transition_all;
+      //animation: leafWaving 5s infinite;
+
     }
 
     &__count {
@@ -374,6 +377,7 @@
       text-align: center;
       color: $white;
       font-size: 1.1rem;
+        @extend %transition_all;
 
       span {
         position: absolute;

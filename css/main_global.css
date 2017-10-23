@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
-a, a:hover, a:focus, .c-input, .c-input:focus, .c-icon:hover, .c-button, .c-button:hover, .header, .header-mobile__dropdown, .header-mobile__auth, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
+a, a:hover, a:focus, .c-input, .c-input:focus, .c-icon:hover, .c-button, .c-button:hover, .header, .header-mobile__dropdown, .header-mobile__auth, .header-basket:hover .header-basket__count, .header-basket__count, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
 .home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__rabbit, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__rabbit, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__packege, .home-celebration:hover .home-celebration__text, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .popup-basket, .mfp-bg, .popup-show, .popup-slide__show, .is-visible, .body-popup, .header-top__hide {
   -webkit-transition: all .2s ease;
@@ -784,11 +784,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     cursor: pointer;
     position: relative; }
     .header-basket:hover .header-basket__count {
-      -webkit-transform-origin: -50% center;
-          -ms-transform-origin: -50% center;
-              transform-origin: -50% center;
-      -webkit-animation: leafWaving 5s infinite;
-              animation: leafWaving 5s infinite; }
+      -webkit-transform-origin: 0 center;
+          -ms-transform-origin: 0 center;
+              transform-origin: 0 center;
+      -webkit-transform: rotateZ(-6deg);
+          -ms-transform: rotate(-6deg);
+              transform: rotateZ(-6deg); }
     .header-basket__count {
       position: absolute;
       top: -3px;
