@@ -570,7 +570,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       margin-left: 1.9rem;
       border: none; }
     .header-mobile__bottom {
-      padding: 1.3rem 0;
+      padding: 1rem 0;
       background-color: #fff;
       display: none; }
       .header-mobile__bottom::after {
@@ -1850,6 +1850,8 @@ html {
       .popup-basket-card__img img.foto {
         width: auto;
         height: auto; }
+    .popup-basket-card__body {
+      overflow: hidden; }
     .popup-basket-card__title {
       font-size: 1.2rem;
       color: #555451;

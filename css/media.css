@@ -767,6 +767,10 @@
         left: 0;
     }
 
+    .popup-basket-card__footer {
+        width: 17.3rem;
+    }
+
     .popup-basket-card {
         width: 27.8rem;
     }
