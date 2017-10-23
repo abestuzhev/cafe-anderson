@@ -868,7 +868,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .header-contact {
     /*правая часть шапки*/
     font-size: 0;
-    text-align: right; }
+    text-align: right;
+    margin-bottom: .2rem; }
   .header-search {
     display: inline-block;
     margin-right: 1rem;
@@ -887,7 +888,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     margin-left: 1.9rem;
     border: none; }
   .header-time {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin-bottom: .4rem; }
 
 @-webkit-keyframes leafWaving {
   0%, 67% {

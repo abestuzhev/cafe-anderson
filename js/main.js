@@ -38,10 +38,11 @@ $(document).ready(function ($) {
         $('.mfp-bg').removeClass('is-visible');
         $('html').css({
             'overflow':'auto'
-            // 'margin-right':'0'
         });
-        // $('html').removeClass('body-popup');
     });
+    /*клик в свободное поле для попапа*/
+
+
 
     showPopup(".header-phone", '.popup__request-call');
     showPopup(".header-email", '.popup__write-to-us');
@@ -135,6 +136,20 @@ $(document).ready(function ($) {
             }
         });
     }
+
+    /*скрываем попапы вне зоны элемента*/
+    $(document).mouseup(function (e) { // событие клика по веб-документу
+        var div = $('.popup'); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            // div.removeClass(instrumentHide); // скрываем его
+            div.parents('.mfp-wrap').removeClass('is-visible');
+            $('.mfp-bg ').removeClass('is-visible');
+            $('html').css({
+                'overflow':'auto'
+            });
+        }
+    });
 
     hidePopup('.popup-basket', 'popup-slide__show');
     // hidePopup('.popup', 'popup-show');
