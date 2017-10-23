@@ -12,7 +12,7 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 /*crhjkk*/
     $(".popup-basket__scroll").scrollBox();
-
+    // $('#scrollbarY').tinyscrollbar();
 
 
     /*функция показа модального окна*/
