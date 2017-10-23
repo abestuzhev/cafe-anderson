@@ -10,9 +10,11 @@ var $body,
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
-/*crhjkk*/
-    $(".popup-basket__scroll").scrollBox();
+/*scroll*/
+    // $(".popup-basket__scroll").scrollBox();
     // $('#scrollbarY').tinyscrollbar();
+
+    $('.popup-basket__scroll').jScrollPane();
 
 
     /*функция показа модального окна*/
