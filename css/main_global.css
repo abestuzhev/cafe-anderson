@@ -979,9 +979,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
   .footer-col__right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1048,7 +1048,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .footer-info {
     border: none;
     width: 1.9rem;
-    height: 1.9rem; }
+    height: 1.9rem;
+    display: block; }
   .footer-reviews {
     font-size: 0;
     margin-right: 4rem; }
