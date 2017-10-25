@@ -31,7 +31,6 @@ $(document).ready(function ($) {
         });
     }
 
-
     $(".popup-close").click(function (e) {
         e.preventDefault();
         $(this).parents('.mfp-wrap').removeClass('is-visible');
@@ -40,8 +39,6 @@ $(document).ready(function ($) {
             'overflow':'auto'
         });
     });
-    /*клик в свободное поле для попапа*/
-
 
 
     showPopup(".header-phone", '.popup__request-call');
@@ -63,8 +60,7 @@ $(document).ready(function ($) {
         $('.popup-authorization').addClass('is-visible');
     });
 
-
-
+    /*мобильные кнопки показа попапов Регистрация/Авторизация*/
     $("#mobile-reg").click(function (e) {
         e.preventDefault();
         $('.popup').removeClass('is-visible');
@@ -99,7 +95,7 @@ $(document).ready(function ($) {
         $('.header').addClass('header-top__hide');
     });
 
-    /*скрываем мобильного поиска*/
+    /*скрываем мобильный поиск*/
     $(".icon-search-mobile").click(function (e) {
         e.preventDefault();
         $('.header-mobile__search-box').hide();
@@ -158,19 +154,9 @@ $(document).ready(function ($) {
     });
 
     hidePopup('.popup-basket', 'popup-slide__show');
-    // hidePopup('.popup', 'popup-show');
     hidePopup('.header-mobile__auth', 'popup-slide__show');
     hidePopup('.header-search__form', 'is-visible');
-    //
-    // $(document).mouseup(function (e) { // событие клика по веб-документу
-    //     var div = $('.popup-body'); // тут указываем ID элемента
-    //     if (!div.is(e.target) // если клик был не по нашему блоку
-    //         && div.has(e.target).length === 0) { // и не по его дочерним элементам
-    //         div.parents('.popup').removeClass('popup-show'); // скрываем его
-    //         $('.fixed-overlay').removeClass('is-visible');
-    //         $('body').removeClass('body-popup');
-    //     }
-    // });
+
 
     // мобильный заказать звонок, показываем форму и удаляем надпись
     $(".mobile-request-call_inquiry").click(function (e) {
@@ -187,7 +173,24 @@ $(document).ready(function ($) {
         });
     });
 
-    /*показываем в попапе закзать звонок список городов*/
+    /*соглашение на обработку персональных данных*/
+    function DisabledFormButton(form, check, btn_form){
+        $("form input[type='checkbox']").on('change', function(){
+            if($(check).prop('checked')){
+                $(btn_form).removeAttr('disabled');
+            }else {
+                $(btn_form).attr('disabled', 'disabled');
+            }
+        });
+    }
+
+    DisabledFormButton('#popup-reg','#reg__regulations','#popup-reg button');
+    DisabledFormButton('#popup__write-to-us','#write-to-us__regulations','#popup__write-to-us button');
+    DisabledFormButton('#popup__request-call','#request-call__regulations','#popup__request-call button');
+
+
+
+    /*показываем в попапе заказать звонок список городов*/
     $(".mobile-request-call_city").on('click', function (e) {
         e.preventDefault();
         console.log('click click');
@@ -210,25 +213,24 @@ $(document).ready(function ($) {
         $('.header').removeClass('header-top__no-hide');
     });
 
+
+
     function catalogItemCounter(field) {
         var fieldCount = function (el) {
             var
                 // Мин. значение
                 min = el.data('min') || false,
-
                 // Макс. значение
                 max = el.data('max') || false,
                 // Кнопка уменьшения кол-ва
                 dec = el.prev('.dec'),
                 // Кнопка увеличения кол-ва
                 inc = el.next('.inc');
-
             function init(el) {
                 if (!el.attr('disabled')) {
                     dec.on('click', decrement);
                     inc.on('click', increment);
                 }
-
                 // Уменьшим значение
                 function decrement() {
                     var value = parseInt(el[0].value);
@@ -238,7 +240,6 @@ $(document).ready(function ($) {
                         el[0].value = value;
                     }
                 };
-
                 // Увеличим значение
                 function increment() {
                     var value = parseInt(el[0].value);
@@ -249,14 +250,11 @@ $(document).ready(function ($) {
                         el[0].value = value++;
                     }
                 };
-
             }
-
             el.each(function () {
                 init($(this));
             });
         };
-
         $(field).each(function () {
             fieldCount($(this));
         });
@@ -269,8 +267,6 @@ $(document).ready(function ($) {
 		$(this).toggleClass('icon-menu__transform');
 		$('.header-mobile__dropdown').toggleClass('popup-show');
 		$('.header').toggleClass('header-top__hide');
-		/*прячем верхнюю полоску в шапке*/
-        // $('body').addClass('body-popup');
 	});
 
     $('.header-mobile__dropdown-close').on('click', function(){
@@ -296,7 +292,7 @@ $(document).ready(function ($) {
         }
     });
 
-    //smooth scroll to top
+
     $back_to_top.on('click', function(event){
         event.preventDefault();
         $('body,html').animate({

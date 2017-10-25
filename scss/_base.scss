@@ -80,6 +80,14 @@ input[type="checkbox"] {
     display: none;
 }
 
+button:disabled {
+    opacity: .4;
+    cursor: auto;
+}
+button:disabled:hover {
+    opacity: .4;
+}
+
 .c-checkbox {
     display: inline-block;
     position: relative;
@@ -130,6 +138,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
     &:focus {
         border-color: $color_brand;
+        box-shadow: 0 0 10px 0 $color_brand;
         @extend %transition_all
     }
 }

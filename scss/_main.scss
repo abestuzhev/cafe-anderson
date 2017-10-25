@@ -1264,6 +1264,7 @@ test popup
     /*display: none;*/
     opacity: 0;
     visibility: hidden;
+    transform: scale(.9);
     transition: all .2s ease;
 }
 
@@ -1334,6 +1335,7 @@ test popup
 .is-visible {
     opacity: 1 !important;
     visibility: visible;
+    transform: scale(1);
     @extend %transition_all;
 }
 

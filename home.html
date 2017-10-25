@@ -1105,17 +1105,6 @@
 
 
 </main>
-<!--<section>-->
-
-<!--<div style="font-family: 'BebasNeue', sans-serif; font-size: 4rem;">Hello www</div>-->
-<!--<div style="font-family: 'BebasNeue', sans-serif; font-size: 4rem;">Hello www</div>-->
-<!--<div style="font-family: 'BebasNeue', sans-serif;font-weight: 300; font-size: 4rem;">Hello www</div>-->
-<!--<div style="font-family: 'BebasNeue', sans-serif;font-weight: 100; font-size: 4rem;">Hello www</div>-->
-
-<!--<div style="font-family: 'PT Serif Caption', serif; font-size: 4rem;">Hello www Рр</div>-->
-<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias assumenda dolore doloribus error facere iure labore nihil nostrum recusandae? Accusamus aspernatur eaque et facere maxime quos similique tempora ut?</p>-->
-
-<!--</section>-->
 
 <footer class="footer">
     <section class="c-layout">
@@ -1237,16 +1226,16 @@
                 <div class="popup-body">
                     <form action="#" class="popup-form" id="popup-authorization">
                         <div class="popup-form__item">
-                            <label class="c-label" for="authorization__email">Email или телефон*</label>
+                            <label class="c-label" for="authorization__email">Email или телефон<span class="c-obligatory-field">*</span></label>
                             <input class="c-input" type="text" placeholder="ваш email" name="authorization__email"
-                                   id="authorization__email">
+                                   id="authorization__email" required>
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="authorization__pass">Пароль<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="authorization__pass" id="authorization__pass">
+                            <input class="c-input" type="password" name="authorization__pass" id="authorization__pass" required>
                         </div>
                         <div class="popup-form__item">
-                            <input type="checkbox" name="remember_authorization" id="remember_authorization">
+                            <input type="checkbox" name="remember_authorization" id="remember_authorization" required>
                             <label class="c-checkbox" for="remember_authorization">Запомнить меня</label>
                             <a class="popup-forgot-password" href="#">Забыли пароль?</a>
                         </div>
@@ -1324,32 +1313,30 @@
                     <form action="#" class="popup-form" id="popup-reg">
                         <div class="popup-form__item">
                             <label class="c-label" for="reg__email">Email<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="reg__email" id="reg__email">
+                            <input class="c-input" type="text" placeholder="ваш email" name="reg__email" id="reg__email" required>
                         </div>
                         <div class="popup-form__item">
-                            <label class="c-label" for="reg__phone">Мобильный телефон<span
-                                    class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="reg__phone" id="reg__phone">
+                            <label class="c-label" for="reg__phone">Мобильный телефон<span class="c-obligatory-field">*</span></label>
+                            <input class="c-input" type="text" placeholder="ваш email" name="reg__phone" id="reg__phone" required>
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="reg__pass">Пароль<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="write-to-us__email" id="reg__pass">
+                            <input class="c-input" type="password" name="reg__pass" id="reg__pass" required>
                         </div>
                         <div class="popup-form__item">
-                            <label class="c-label" for="reg__pass-remember">Повторить пароль<span
-                                    class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="reg__pass-remember" id="reg__pass-remember">
+                            <label class="c-label" for="reg__pass-remember">Повторить пароль<span class="c-obligatory-field">*</span></label>
+                            <input class="c-input" type="password" name="reg__pass-remember" id="reg__pass-remember" required>
                         </div>
                         <div class="popup-form__item">
                             <div class="c-personal-data">
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data__regulations" id="request-call__regulations" checked>
-                                    <label class="c-checkbox" for="request-call__regulations">Я ознакомлен с <a href="#">правилами
+                                    <input type="checkbox" name="reg__regulations" id="reg__regulations" checked>
+                                    <label class="c-checkbox" for="reg__regulations">Я ознакомлен с <a href="#">правилами
                                         обработки</a> моих персональных данных.</label>
                                 </div>
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data__dispatch" id="request-call__dispatch">
-                                    <label class="c-checkbox" for="request-call__dispatch">Я согласен получать рассылку с сайта на
+                                    <input type="checkbox" name="reg__dispatch" id="reg__dispatch">
+                                    <label class="c-checkbox" for="reg__dispatch">Я согласен получать рассылку с сайта на
                                         электронную почту</label>
                                 </div>
                             </div>
@@ -1523,18 +1510,17 @@
                     <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
                         <div class="popup-form__item">
                             <label class="c-label" for="request-call__name">Ваше имя</label>
-                            <input class="c-input" type="text" placeholder="ваше имя" name="request-call__name"
-                                   id="request-call__name">
+                            <input class="c-input" type="text" placeholder="ваше имя" name="request-call__name" id="request-call__name" autofocus>
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
                             <input class="c-input" type="text" placeholder="укажите номер телефона" name="request-call__tel"
-                                   id="request-call__tel">
+                                   id="request-call__tel" required>
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="request-call__comment">Комментарий<span class="c-obligatory-field">*</span></label>
                             <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4"
-                                      placeholder="желательно заполнить"></textarea>
+                                      placeholder="желательно заполнить" required></textarea>
                         </div>
                         <div class="popup-form__item">
                             <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
@@ -1604,14 +1590,13 @@
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="write-to-us__email">Email<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email"
-                                   id="write-to-us__email">
+                            <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="write-to-us__message">Ваше сообщение<span
                                     class="c-obligatory-field">*</span></label>
                             <textarea class="c-input" name="write-to-us__message" id="write-to-us__message" rows="4"
-                                      placeholder="текст сообщения"></textarea>
+                                      placeholder="текст сообщения" required></textarea>
                         </div>
                         <div class="popup-form__item">
                             <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
@@ -1619,13 +1604,13 @@
                         <div class="popup-form__item">
                             <div class="c-personal-data">
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data" id="personal-data__regulations" checked>
-                                    <label class="c-checkbox" for="personal-data__regulations">Я ознакомлен с <a href="#">правилами
+                                    <input type="checkbox" name="write-to-us__regulations" id="write-to-us__regulations" checked>
+                                    <label class="c-checkbox" for="write-to-us__regulations">Я ознакомлен с <a href="#">правилами
                                         обработки</a> моих персональных данных.</label>
                                 </div>
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data" id="personal-data__dispatch">
-                                    <label class="c-checkbox" for="personal-data__dispatch">Я согласен получать рассылку с сайта на
+                                    <input type="checkbox" name="write-to-us__dispatch" id="write-to-us__dispatch">
+                                    <label class="c-checkbox" for="write-to-us__dispatch">Я согласен получать рассылку с сайта на
                                         электронную почту</label>
                                 </div>
                             </div>
@@ -1679,7 +1664,6 @@
         </a>
     </div>
 </div>
-
 
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>

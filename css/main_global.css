@@ -222,6 +222,13 @@ textarea {
 input[type="checkbox"] {
   display: none; }
 
+button:disabled {
+  opacity: .4;
+  cursor: auto; }
+
+button:disabled:hover {
+  opacity: .4; }
+
 .c-checkbox {
   display: inline-block;
   position: relative;
@@ -260,7 +267,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   background-color: transparent;
   background-color: rgba(255, 255, 255, 0.5); }
   .c-input:focus {
-    border-color: #9acc4e; }
+    border-color: #9acc4e;
+    -webkit-box-shadow: 0 0 10px 0 #9acc4e;
+            box-shadow: 0 0 10px 0 #9acc4e; }
 
 .c-label {
   display: block;
@@ -2085,6 +2094,9 @@ test popup
   /*display: none;*/
   opacity: 0;
   visibility: hidden;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease; }
@@ -2141,7 +2153,10 @@ test popup
 
 .is-visible {
   opacity: 1 !important;
-  visibility: visible; }
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
 
 .body-popup {
   overflow: hidden !important;
