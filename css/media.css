@@ -114,6 +114,14 @@
         width: 19rem;
         height: 3.9rem;
     }
+
+    main {
+        padding-bottom: 11rem;
+    }
+
+    .footer {
+        margin-top: -11rem;
+    }
 }
 
 @media (min-width:1940px) and (min-height: 1200px) {

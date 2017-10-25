@@ -603,7 +603,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
           transform: translateY(0);
   -webkit-box-shadow: 0px 3px 18px 8px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 3px 18px 8px rgba(0, 0, 0, 0.25);
-  color: #9b9696; }
+  color: #9b9696;
+  border-bottom: 1px solid #9b9696; }
   .header-mobile {
     /*мобильная аунтификация*/ }
     .header-mobile__top {
@@ -821,6 +822,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         padding-left: 0; }
       .header-menu__item:last-child {
         padding-right: 0; }
+      .header-menu__item .active .header-menu__link {
+        color: #7e5847; }
     .header-menu__link {
       text-transform: lowercase; }
   .header-personal {
@@ -950,11 +953,11 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   left: 0; }
 
 .footer {
-  position: absolute;
+  margin-top: -7.6rem;
+  position: relative;
+  z-index: 999999;
   z-index: 8;
   bottom: 1.6rem;
-  left: 0;
-  right: 0;
   will-change: transform;
   background: #fdf7e8 url("../img/bg-header.png") repeat;
   font-family: "PT Serif Caption";
@@ -1199,6 +1202,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   position: relative;
   height: 100%;
   overflow: hidden; }
+
+main {
+  padding-bottom: 8rem; }
 
 .home-cafe:hover,
 .home-celebration:hover,
