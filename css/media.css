@@ -110,9 +110,15 @@
         margin-right: .5rem;
     }
 
-    .icon-logo {
-        width: 19rem;
+    .icon-logo,
+    .header-top__hide .icon-logo {
+        width: 19rem ;
         height: 3.9rem;
+        margin-top: .5rem;
+    }
+
+    .header-top__hide .header-layout {
+        margin-top: 0;
     }
 
     main {

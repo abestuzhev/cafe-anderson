@@ -303,14 +303,14 @@ $(document).ready(function ($) {
     });
 
     /*липкая шапка*/
-    // $(window).scroll(function(){
-    //     var bo = $(window).scrollTop();
-    //     if ( bo > 20 ) {
-    //         $('.header-mobile__top').parents(".header").addClass('header-top__hide');
-    //     } else {
-    //         $('.header-mobile__top').parents(".header").removeClass('header-top__hide');
-    //     }
-    // });
+    $(window).scroll(function(){
+        var bo = $(window).scrollTop();
+        if ( bo > 20 ) {
+            $(".header").addClass('header-top__hide');
+        } else {
+            $(".header").removeClass('header-top__hide');
+        }
+    });
 
 });
 

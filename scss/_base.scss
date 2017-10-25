@@ -1,7 +1,7 @@
 //------------------------------------------------------------base styles
 html {
-	height: 100%;
-	font: 400 10px/1.33 $font_1;
+    height: 100%;
+    font: 400 10px/1.33 $font_1;
 }
 
 .home-body {
@@ -9,44 +9,44 @@ html {
 }
 
 body {
-	position: relative;
-	//height: 100%;
+    position: relative;
+    //height: 100%;
     max-height: 100%;
-	font-size: $font_size_base;
-	color: $color_text_base;
-	-webkit-text-size-adjust: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    font-size: $font_size_base;
+    color: $color_text_base;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background: $home-page_bg;
 }
 
 .wrapper {
-	position: relative;
-	min-height: 100%;
-	height: auto !important;
-	overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    overflow: hidden;
 }
 
 .base {
-	position: relative;
-	padding: $height_header 0 $height_footer;
+    position: relative;
+    padding: $height_header 0 $height_footer;
 }
 
 a {
-	text-decoration: none;
-	color: $color_link_base;
-	border-bottom: 1px dotted $color_link_base;
+    text-decoration: none;
+    color: $color_link_base;
+    border-bottom: 1px dotted $color_link_base;
     @extend %transition_all;
-	&:hover,
-	&:focus {
+    &:hover,
+    &:focus {
         color: $color_brand;
         border: none;
         @extend %transition_all;
-	}
+    }
 }
 
 .elements_list {
-	padding: 3rem;
+    padding: 3rem;
 }
 
 //------------------------------------------------------------base styles###
@@ -68,7 +68,7 @@ h4 {
 }
 
 p {
-	font-family: $font_serif;
+    font-family: $font_serif;
 }
 
 //------------------------------------------------------------form
@@ -87,6 +87,7 @@ button:disabled {
     opacity: .4;
     cursor: auto;
 }
+
 button:disabled:hover {
     opacity: .4;
 }
@@ -137,7 +138,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     //background-color: #fff;
     background-color: transparent;
 
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
 
     &:focus {
         border-color: $color_brand;
@@ -214,7 +215,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
-
 .icon-logo {
     position: relative;
     width: 38rem;
@@ -244,6 +244,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     fill: $color_text_bg;
     vertical-align: bottom;
 }
+
 .icon-email {
     position: relative;
     width: 19px;
@@ -275,6 +276,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     fill: $color_text_bg;
     vertical-align: top;
 }
+
 .icon-o {
     position: relative;
     width: 20px;
@@ -366,13 +368,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     fill: $color_text_bg;
     vertical-align: bottom;
 }
+
 .icon-menu {
     position: relative;
     width: 18px;
     fill: $color_text_bg;
     vertical-align: bottom;
 }
-
 
 .icon-search-mobile {
     display: none;
@@ -382,7 +384,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     vertical-align: bottom;
 }
 
-.icon-pencil{
+.icon-pencil {
     width: 23px;
     fill: $color_text_bg;
 }
@@ -410,7 +412,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
 }
 
-
 .advantages-coffe {
     background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat;
 }
@@ -421,22 +422,26 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     background: url(../img/icons/icon-veranda.svg) 50% 50% no-repeat;
     margin: 0 .5em .4rem 0;
 }
+
 .advantages-teddy {
     background: url(../img/icons/icon-teddy-bear.svg) 50% 50% no-repeat;
 }
+
 .advantages-nipple {
     background: url(../img/icons/icon-nipple.svg) 50% 50% no-repeat;
 }
+
 .advantages-balloon {
     background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat;
 }
+
 .advantages-umbrella {
     background: url(../img/icons/icon-umbrella.svg) 50% 50% no-repeat;
 }
+
 .advantages-bottle {
     background: url(../img/icons/icon-bottle.svg) 50% 50% no-repeat;
 }
-
 
 .icon-place {
     display: inline-block;
@@ -452,34 +457,41 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     background: url(../img/icons/icon-a.svg) 50% 50% no-repeat;
 }
 
-@media screen and (min-width: 1600px) {
-  .c-layout {
-    position: relative;
-    width: 1600px;
-    margin: 0 auto;
+.icon-arr-down {
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat;
+}
 
-      &::after {
-          content: '';
-          clear: both;
-          display: table;
-      }
-  }
+@media screen and (min-width: 1600px) {
+    .c-layout {
+        position: relative;
+        width: 1600px;
+        margin: 0 auto;
+
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
 }
 
 @media screen and (max-width: 1600px) {
-  .c-layout {
-    position: relative;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 22px;
+    .c-layout {
+        position: relative;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 22px;
 
-      &::after {
-          content: '';
-          clear: both;
-          display: table;
-      }
-  }
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+    }
 }
 
 //------------------------------------------------------------buttons
@@ -503,7 +515,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     outline: none;
     cursor: pointer;
     @extend %transition_all;
-    
+
     &__default {
         padding: 1.4rem 3.4rem;
         background-color: $color_btn;
@@ -549,7 +561,6 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     font-family: $font_serif;
     font-size: 0;
 
-
     &__item {
         border-radius: .6rem 0 0 .6rem;
         background: url(../img/bg-reviews__bg.jpg) 0 0 no-repeat;
@@ -570,9 +581,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         position: relative;
         border: none;
         color: $white;
-        -webkit-box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.15);
-        -moz-box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.15);
-        box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
 
         &:hover {
             color: #fff;
@@ -630,7 +641,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         position: relative;
         padding-right: 1.4rem;
         border: none;
-        color:$color_text_bg;
+        color: $color_text_bg;
         margin-right: .7rem;
         font-size: 1.3rem;
         vertical-align: middle;
@@ -663,7 +674,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     background-color: $white;
     font-size: 1.3rem;
     line-height: 1.2;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -740,7 +751,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
     &__subway {
         vertical-align: middle;
-        img  {
+        img {
             vertical-align: middle;
             margin-right: .6rem;
         }
