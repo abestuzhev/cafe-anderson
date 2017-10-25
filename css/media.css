@@ -274,7 +274,7 @@
     .mobile-cake__text,
     .mobile-cafe__text {
         position: absolute;
-        z-index: 99;
+        z-index: 9;
     }
 
     .mobile-cake__title,

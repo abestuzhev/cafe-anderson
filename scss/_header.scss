@@ -10,7 +10,7 @@
 }
 
 .header {
-    z-index: 999;
+    z-index: 10;
     background: $custom_bg url($img_path + 'bg-header.png') repeat;
     font-family: $font_serif;
     padding: 1rem 0 0;

@@ -474,6 +474,17 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   width: 1.9rem;
   fill: #9b9696; }
 
+.icon-house {
+  display: block;
+  width: 2.2rem;
+  height: 1.9rem;
+  fill: #9b9696; }
+
+.icon-arr-right {
+  width: .6rem;
+  height: .9rem;
+  background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat; }
+
 @media screen and (min-width: 1600px) {
   .c-layout {
     position: relative;
@@ -585,6 +596,26 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .c-reviews .reviews-negative {
     background-color: rgba(223, 75, 10, 0.8); }
 
+/*хлебные крошки*/
+.c-breadcrumb {
+  margin-bottom: 2.6rem; }
+  .c-breadcrumb__item {
+    position: relative;
+    padding-right: 1.4rem;
+    border: none;
+    color: #9b9696;
+    margin-right: .7rem; }
+    .c-breadcrumb__item::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: .4rem;
+      width: .6rem;
+      height: .9rem;
+      background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat; }
+    .c-breadcrumb__item:last-child::after {
+      display: none; }
+
 .header {
   position: fixed;
   width: 100%;
@@ -594,7 +625,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   z-index: 100; }
 
 .header {
-  z-index: 999;
+  z-index: 10;
   background: #fdf7e8 url("../img/bg-header.png") repeat;
   font-family: "PT Serif Caption";
   padding: 1rem 0 0;
@@ -967,8 +998,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .footer {
   margin-top: -7.6rem;
   position: relative;
-  z-index: 999999;
-  z-index: 8;
+  z-index: 11;
   bottom: 1.6rem;
   will-change: transform;
   background: #fdf7e8 url("../img/bg-header.png") repeat;
