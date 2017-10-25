@@ -1367,3 +1367,13 @@ test popup
     transform: translateY(0) !important;
 }
 
+
+.filter {
+    padding: 1.1rem;
+    background-color: $white;
+    border: 1px solid #e3e3e3;
+    border-radius: .6rem;
+    height: 60px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+    margin-bottom: 6rem;
+}

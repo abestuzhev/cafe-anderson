@@ -598,13 +598,24 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 /*хлебные крошки*/
 .c-breadcrumb {
-  margin-bottom: 2.6rem; }
+  margin-bottom: 2.6rem;
+  font-size: 0; }
+  .c-breadcrumb__home {
+    width: 3.6rem;
+    height: 1.9rem;
+    display: inline-block;
+    background: url(../img/icons/icon-house.svg) 0 0 no-repeat;
+    padding-right: 1.4rem;
+    vertical-align: middle; }
   .c-breadcrumb__item {
+    display: inline-block;
     position: relative;
     padding-right: 1.4rem;
     border: none;
     color: #9b9696;
-    margin-right: .7rem; }
+    margin-right: .7rem;
+    font-size: 1.3rem;
+    vertical-align: middle; }
     .c-breadcrumb__item::after {
       content: '';
       position: absolute;
@@ -2220,3 +2231,13 @@ test popup
   -webkit-transform: translateY(0) !important;
       -ms-transform: translateY(0) !important;
           transform: translateY(0) !important; }
+
+.filter {
+  padding: 1.1rem;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: .6rem;
+  height: 60px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 6rem; }
