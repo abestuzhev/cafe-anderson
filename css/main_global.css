@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
-a, a:hover, a:focus, .c-input, .c-input:focus, .c-icon:hover, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item:hover, .header, .header-mobile__dropdown, .header-mobile__auth, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
+a, a:hover, a:focus, .c-input, .c-input:focus, .c-icon:hover, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item:hover, .header, .header-mobile__dropdown, .header-mobile__auth, .header-search__form, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
 .home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__rabbit, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__rabbit, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__packege, .home-celebration:hover .home-celebration__text, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .popup-basket, .mfp-bg, .popup-show, .popup-slide__show, .is-visible, .body-popup, .header-top__hide {
   -webkit-transition: all .2s ease;
@@ -873,7 +873,21 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .header-search {
     display: inline-block;
     margin-right: 1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+    .header-search__form {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      z-index: 999;
+      right: 120%;
+      top: 0;
+      width: 13rem; }
+      .header-search__form input {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #9b9696; }
   .header-email {
     display: inline-block;
     margin-right: 1rem;

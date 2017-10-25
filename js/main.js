@@ -81,6 +81,12 @@ $(document).ready(function ($) {
         $(this).parents('.header-mobile__auth').removeClass('.popup-slide__show');
     });
 
+    /*поиск в шапке*/
+    $(".header-search .icon-search").click(function (e) {
+        e.preventDefault();
+        $('.header-search__form').toggleClass('is-visible');
+    });
+
     /*показ мобильного поиска*/
     $(".header-mobile__search .icon-search").click(function (e) {
         e.preventDefault();
@@ -154,6 +160,7 @@ $(document).ready(function ($) {
     hidePopup('.popup-basket', 'popup-slide__show');
     // hidePopup('.popup', 'popup-show');
     hidePopup('.header-mobile__auth', 'popup-slide__show');
+    hidePopup('.header-search__form', 'is-visible');
     //
     // $(document).mouseup(function (e) { // событие клика по веб-документу
     //     var div = $('.popup-body'); // тут указываем ID элемента
