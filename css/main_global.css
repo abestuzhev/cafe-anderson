@@ -627,6 +627,103 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     .c-breadcrumb__item:last-child::after {
       display: none; }
 
+/*card------------------------------------------------------------*/
+.c-card-cafe {
+  border: 2px solid #d1d1d1;
+  border-radius: .6rem;
+  width: 100%;
+  font-family: "PT Serif Caption";
+  color: #9b9696;
+  background-color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .c-card-cafe__img {
+    width: 35%;
+    overflow: hidden;
+    position: relative; }
+    .c-card-cafe__img img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .c-card-cafe__body {
+    padding: 1rem 1.5rem;
+    width: 65%; }
+  .c-card-cafe__item {
+    margin-bottom: .8rem; }
+  .c-card-cafe__subway {
+    vertical-align: middle; }
+    .c-card-cafe__subway img {
+      vertical-align: middle;
+      margin-right: .6rem; }
+  .c-card-cafe-advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding-top: 1.6rem;
+    border-top: 1px solid #cec9c0; }
+    .c-card-cafe-advantages__item {
+      background-color: #f3efe4;
+      padding: 1rem;
+      border-radius: .4rem;
+      min-height: 3.7rem;
+      font-size: 1.3rem;
+      vertical-align: bottom;
+      margin: 0 .4em .4rem 0; }
+      .c-card-cafe-advantages__item:last-child {
+        margin-right: 0; }
+      .c-card-cafe-advantages__item i {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 2rem;
+        height: 1.4rem; }
+  .c-card-cafe .advantages-coffe {
+    background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat; }
+  .c-card-cafe .advantages-guests {
+    width: 2.5rem;
+    height: 1.4rem;
+    background: url(../img/icons/icon-veranda.svg) 50% 50% no-repeat;
+    margin: 0 .5em .4rem 0; }
+  .c-card-cafe .advantages-teddy {
+    background: url(../img/icons/icon-teddy-bear.svg) 50% 50% no-repeat; }
+  .c-card-cafe .advantages-nipple {
+    background: url(../img/icons/icon-nipple.svg) 50% 50% no-repeat; }
+  .c-card-cafe .advantages-balloon {
+    background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat; }
+  .c-card-cafe .advantages-umbrella {
+    background: url(../img/icons/icon-umbrella.svg) 50% 50% no-repeat; }
+  .c-card-cafe .advantages-bottle {
+    background: url(../img/icons/icon-bottle.svg) 50% 50% no-repeat; }
+
 /*grid------------------------------------------------------------*/
 .c-grid {
   display: -webkit-box;
@@ -644,6 +741,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch; }
+
+.c-col {
+  padding: 1.4rem; }
 
 .c-col-6 {
   width: 50%; }

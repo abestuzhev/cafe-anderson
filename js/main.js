@@ -43,7 +43,7 @@ $(document).ready(function ($) {
 
     showPopup(".header-phone", '.popup__request-call');
     showPopup(".header-email", '.popup__write-to-us');
-    showPopup(".header-cabinet", '.popup-authorization');
+    showPopup(".js-header-cabinet", '.popup-authorization');
     showPopup(".header-city", '.popup-city');
     showPopup(".header-mobile__city", '.popup-city');
 

@@ -606,6 +606,117 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 }
 
+/*card------------------------------------------------------------*/
+.c-card-cafe {
+    border: 2px solid #d1d1d1;
+    border-radius: .6rem;
+    width: 100%;
+    font-family: $font_serif;
+    color: $color_text_bg;
+    background-color: $white;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    &__img {
+        width: 35%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            //vertical-align: middle;
+            //position: relative;
+            //left: 50%;
+            //transform: translateX(-50%);
+        }
+    }
+
+    &__body {
+        padding: 1rem 1.5rem;
+        width: 65%;
+
+    }
+
+    &__item {
+        margin-bottom: .8rem;
+    }
+
+    &__subway {
+        vertical-align: middle;
+        img  {
+            vertical-align: middle;
+            margin-right: .6rem;
+        }
+    }
+
+    &-advantages {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        padding-top: 1.6rem;
+        border-top: 1px solid #cec9c0;
+
+        &__item {
+            //background-color: $custom_bg;
+            background-color: #f3efe4;
+            padding: 1rem;
+            border-radius: .4rem;
+            min-height: 3.7rem;
+            font-size: 1.3rem;
+            vertical-align: bottom;
+            margin: 0 .4em .4rem 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            i {
+                display: inline-block;
+                vertical-align: bottom;
+                width: 2rem;
+                height: 1.4rem;
+            }
+        }
+    }
+
+    .advantages-coffe {
+        background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat;
+    }
+
+    .advantages-guests {
+        width: 2.5rem;
+        height: 1.4rem;
+        background: url(../img/icons/icon-veranda.svg) 50% 50% no-repeat;
+        margin: 0 .5em .4rem 0;
+    }
+    .advantages-teddy {
+        background: url(../img/icons/icon-teddy-bear.svg) 50% 50% no-repeat;
+    }
+    .advantages-nipple {
+        background: url(../img/icons/icon-nipple.svg) 50% 50% no-repeat;
+    }
+    .advantages-balloon {
+        background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat;
+    }
+    .advantages-umbrella {
+        background: url(../img/icons/icon-umbrella.svg) 50% 50% no-repeat;
+    }
+    .advantages-bottle {
+        background: url(../img/icons/icon-bottle.svg) 50% 50% no-repeat;
+    }
+}
+
 /*grid------------------------------------------------------------*/
 
 .c-grid {
@@ -616,6 +727,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-grid-between {
     justify-content: space-between;
     align-items: stretch;
+}
+
+.c-col {
+    padding: 1.4rem;
 }
 
 .c-col-6 {
