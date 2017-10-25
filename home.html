@@ -1235,18 +1235,18 @@
                     <span class="popup-close"></span>
                 </div>
                 <div class="popup-body">
-                    <form action="#" class="popup-form">
+                    <form action="#" class="popup-form" id="popup-authorization">
                         <div class="popup-form__item">
                             <label class="c-label" for="authorization__email">Email или телефон*</label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="write-to-us__name"
+                            <input class="c-input" type="text" placeholder="ваш email" name="authorization__email"
                                    id="authorization__email">
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="authorization__pass">Пароль<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="write-to-us__email" id="authorization__pass">
+                            <input class="c-input" type="password" name="authorization__pass" id="authorization__pass">
                         </div>
                         <div class="popup-form__item">
-                            <input type="checkbox" name="personal-data" id="remember_authorization">
+                            <input type="checkbox" name="remember_authorization" id="remember_authorization">
                             <label class="c-checkbox" for="remember_authorization">Запомнить меня</label>
                             <a class="popup-forgot-password" href="#">Забыли пароль?</a>
                         </div>
@@ -1321,15 +1321,15 @@
                     <span class="popup-close"></span>
                 </div>
                 <div class="popup-body">
-                    <form action="#" class="popup-form">
+                    <form action="#" class="popup-form" id="popup-reg">
                         <div class="popup-form__item">
                             <label class="c-label" for="reg__email">Email<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="write-to-us__name" id="reg__email">
+                            <input class="c-input" type="text" placeholder="ваш email" name="reg__email" id="reg__email">
                         </div>
                         <div class="popup-form__item">
-                            <label class="c-label" for="reg__email">Мобильный телефон<span
+                            <label class="c-label" for="reg__phone">Мобильный телефон<span
                                     class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="write-to-us__name" id="reg__email">
+                            <input class="c-input" type="text" placeholder="ваш email" name="reg__phone" id="reg__phone">
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="reg__pass">Пароль<span class="c-obligatory-field">*</span></label>
@@ -1338,17 +1338,17 @@
                         <div class="popup-form__item">
                             <label class="c-label" for="reg__pass-remember">Повторить пароль<span
                                     class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="write-to-us__email" id="reg__pass-remember">
+                            <input class="c-input" type="password" name="reg__pass-remember" id="reg__pass-remember">
                         </div>
                         <div class="popup-form__item">
                             <div class="c-personal-data">
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data" id="request-call__regulations" checked>
+                                    <input type="checkbox" name="personal-data__regulations" id="request-call__regulations" checked>
                                     <label class="c-checkbox" for="request-call__regulations">Я ознакомлен с <a href="#">правилами
                                         обработки</a> моих персональных данных.</label>
                                 </div>
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data" id="request-call__dispatch">
+                                    <input type="checkbox" name="personal-data__dispatch" id="request-call__dispatch">
                                     <label class="c-checkbox" for="request-call__dispatch">Я согласен получать рассылку с сайта на
                                         электронную почту</label>
                                 </div>
@@ -1520,20 +1520,20 @@
                         </a>
                     </div>
 
-                    <form action="#" class="popup-form mobile-request-call__form">
+                    <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
                         <div class="popup-form__item">
                             <label class="c-label" for="request-call__name">Ваше имя</label>
-                            <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
+                            <input class="c-input" type="text" placeholder="ваше имя" name="request-call__name"
                                    id="request-call__name">
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="укажите номер телефона" name="write-to-us__email"
+                            <input class="c-input" type="text" placeholder="укажите номер телефона" name="request-call__tel"
                                    id="request-call__tel">
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="request-call__comment">Комментарий<span class="c-obligatory-field">*</span></label>
-                            <textarea class="c-input" name="write-to-us__message" id="request-call__comment" rows="4"
+                            <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4"
                                       placeholder="желательно заполнить"></textarea>
                         </div>
                         <div class="popup-form__item">
@@ -1542,12 +1542,12 @@
                         <div class="popup-form__item">
                             <div class="c-personal-data">
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data" id="request-call__regulations" checked>
+                                    <input type="checkbox" name="request-call__regulations" id="request-call__regulations" checked>
                                     <label class="c-checkbox" for="request-call__regulations">Я ознакомлен с <a href="#">правилами
                                         обработки</a> моих персональных данных.</label>
                                 </div>
                                 <div class="c-personal-data__item">
-                                    <input type="checkbox" name="personal-data" id="request-call__dispatch">
+                                    <input type="checkbox" name="request-call__dispatch" id="request-call__dispatch">
                                     <label class="c-checkbox" for="request-call__dispatch">Я согласен получать рассылку с сайта на
                                         электронную почту</label>
                                 </div>
@@ -1596,7 +1596,7 @@
             <div class="popup">
                 <h3 class="popup-title">Написать нам <span class="popup-close"></span></h3>
                 <div class="popup-body">
-                    <form action="#" class="popup-form">
+                    <form action="#" class="popup-form" id="popup__write-to-us">
                         <div class="popup-form__item">
                             <label class="c-label" for="write-to-us__name">Ваше имя</label>
                             <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
@@ -1651,6 +1651,8 @@
 
 <!----------------------------------------------END popup-->
 
+
+<!--боковые кнопки пожаловаться/похвалить-->
 <div class="c-reviews">
     <div class="c-reviews__item">
         <a href="#" class="c-reviews__btn reviews-positive">
@@ -1681,10 +1683,6 @@
 
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>
-
-
-
-
 <script type="text/javascript" src="./js/jscrollpane/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="./js/jscrollpane/jquery.jscrollpane.min.js"></script>
 
