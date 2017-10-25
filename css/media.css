@@ -223,10 +223,14 @@
         position: relative;
     }
 
-    html,
-    body,
+    /*html,*/
+    /*body,*/
     .home-page {
         height: auto;
+    }
+
+    main {
+        padding-top: 12.2rem;
     }
 
     .home-page {
