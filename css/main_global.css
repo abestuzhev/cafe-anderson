@@ -625,7 +625,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   z-index: 100; }
 
 .header {
-  z-index: 10;
+  z-index: 12;
   background: #fdf7e8 url("../img/bg-header.png") repeat;
   font-family: "PT Serif Caption";
   padding: 1rem 0 0;
