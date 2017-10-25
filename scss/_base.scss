@@ -606,7 +606,18 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 }
 
+/*grid------------------------------------------------------------*/
 
-.c-breadcrumb__item {
+.c-grid {
+    display: flex;
+    flex-flow: row wrap;
+}
 
+.c-grid-between {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.c-col-6 {
+    width: 50%;
 }

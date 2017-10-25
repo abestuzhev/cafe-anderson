@@ -261,7 +261,7 @@ $(document).ready(function ($) {
         });
     }
 
-    catalogItemCounter('.fieldCount');
+    // catalogItemCounter('.fieldCount');
 
    /*мобильное меню*/
 	$('.header-mobile__menu').on('click', function(){
