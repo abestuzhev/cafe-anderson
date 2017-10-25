@@ -860,7 +860,7 @@ main {
     border-radius: 0 0 1rem 1rem;
     box-shadow: 0 5px 29px 0 rgba(0, 0, 0, 0.25);
     //transform: transitionY(0);
-    @extend %transition_all;
+    //@extend %transition_all;
 
     .header-basket {
         position: absolute;
@@ -1331,10 +1331,10 @@ test popup
 .popup-slide__show {
     opacity: 1 !important;
     visibility: visible !important;
-    -webkit-animation: slideDown 0.2s;
-    -o-animation: slideDown 0.2s;
-    animation: slideDown 0.2s;
-    @extend %transition_all;
+    //-webkit-animation: slideDown 0.2s;
+    //-o-animation: slideDown 0.2s;
+    //animation: slideDown 0.2s;
+    //@extend %transition_all;
 }
 
 
