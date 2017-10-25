@@ -59,7 +59,7 @@
 main {
     padding-top: 10.4rem;
     padding-bottom: 8rem;
-    height: 100%;
+    min-height: 100%;
 }
 
 //------------------------------------------------ховер блоков на главной*/
@@ -1407,7 +1407,7 @@ test popup
     box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
     margin-bottom: 6rem;
     font-family: $font_serif;
-    font-size: 0;
+    //font-size: 0;
     position: relative;
     z-index: 10;
 
@@ -1443,7 +1443,7 @@ test popup
 
     &-form {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -1499,6 +1499,16 @@ test popup
     }
 }
 
+.cafe-map {
+    width: 100%;
+    height: 64.2rem;
+    border: 7px solid $white;
+    border-radius: .4rem;
+    background-color: #eee;
+    box-shadow: 0 10px 20px 8px rgba(0,0,0,.1);
+    margin-bottom: 7rem;
+}
+
 
 /*-------------------*/
 .filter-radio {
@@ -1540,14 +1550,57 @@ test popup
 
 /*custom select----------------------------------------------------*/
 
-.select-city {
+/*sumoselect*/
+.SelectBox{
+    font-size: 1.2rem;
+    padding: .4rem 0 .4rem .8rem;
+    width: auto;
+}
+
+.SumoSelect {
+    width: auto;
+}
+
+.SumoSelect > .CaptionCont {
+    border: 1px solid #d2cdc4;
+}
+
+.SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont, .SumoSelect.open > .CaptionCont {
+    box-shadow: 0 0 2px $color_brand;
+    border-color: $color_brand;
+}
+
+.SumoSelect > .CaptionCont > label > i {
+    width: .8rem;
+    height: .8rem;
+    //right: 7px;
+    //top: 50%;
+    //margin-top: -3px;
+    background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat;
+}
+
+.optWrapper {
+    font-size: 1.2rem;
+}
+
+.SumoSelect.open > .optWrapper {
+    top: 2.6rem;
+    display: block;
+}
+
+.SumoSelect > .optWrapper > .options li.opt:hover {
+    color:#fff;
+    background-color: $color-active;
+}
+
+.select-city + .SelectBox {
     width: 14rem;
 }
 
-.select-cafe {
+.select-cafe + .SelectBox {
     width: 17.8rem;
 }
-.select-guest {
+.select-guest + .SelectBox {
     width: 6.7rem;
 }
 
@@ -1598,4 +1651,34 @@ test popup
     //pointer-events: none;
     //border-color: #656565 transparent transparent transparent;
     background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat;
+}
+
+/*tabs-------------------------------------------------*/
+.tabs-menu {
+    font-family: $font_serif;
+    text-align: right;
+    margin-bottom: 1.7rem;
+
+    &__item {
+        display: inline-block;
+        margin-right: 1.4rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__item.current a {
+        border: none;
+        //color: $color_dark-active;
+        color: #5a2a1b;
+    }
+}
+
+.tab-content {
+    display: none;
+}
+
+#list {
+    display: block;
 }

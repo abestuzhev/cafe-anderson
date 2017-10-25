@@ -14,6 +14,7 @@
 
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+    <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all" />
     <link rel="stylesheet" href="./css/main_global.css">
     <link rel="stylesheet" href="./css/media.css">
 
@@ -724,23 +725,37 @@
                 <div class="filter-item">
                     <div class="filter-item__title"><i class="icon-place"></i>Город</div>
                     <div class="filter-item__body">
-                        <div class="select select-city select-fancy-noimage">
-                            <select>
-                                <option>Все</option>
-                                <option>Москва</option>
-                            </select>
-                        </div>
+                        <select name="filter-city-select" class="c-select select-city">
+                            <option value="Все">Все</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Тюмень">Тюмень</option>
+                            <option value="Красногорск">Красногорск</option>
+                            <option value="Ярославль">Ярославль</option>
+                            <option value="Зеленоград">Зеленоград</option>
+                            <option value="Нижний Новгород">Нижний Новгород</option>
+                            <option value="Королёв">Королёв</option>
+                            <option value="Алматы">Алматы</option>
+                            <option value="Ногинск">Ногинск</option>
+                            <option value="Астана">Астана</option>
+                        </select>
                     </div>
                 </div>
                 <div class="filter-item">
                     <div class="filter-item__title"><i class="icon-a"></i>Кафе</div>
                     <div class="filter-item__body">
-                        <div class="select select-cafe select-fancy-noimage">
-                            <select>
-                                <option>Все</option>
-                                <option>Москва</option>
-                            </select>
-                        </div>
+                        <select name="filter-cafe-select" class="c-select select-cafe">
+                            <option value="Все">Все</option>
+                            <option value="Москва">Москва</option>
+                            <option value="Тюмень">Тюмень</option>
+                            <option value="Красногорск">Красногорск</option>
+                            <option value="Ярославль">Ярославль</option>
+                            <option value="Зеленоград">Зеленоград</option>
+                            <option value="Нижний Новгород">Нижний Новгород</option>
+                            <option value="Королёв">Королёв</option>
+                            <option value="Алматы">Алматы</option>
+                            <option value="Ногинск">Ногинск</option>
+                            <option value="Астана">Астана</option>
+                        </select>
                     </div>
                 </div>
                 <div class="filter-item">
@@ -761,17 +776,15 @@
                 <div class="filter-item">
                     <div class="filter-item__title"><i class="advantages-guests"></i>Гостей</div>
                     <div class="filter-item__body">
-                        <div class="select select-guest select-fancy-noimage">
-                            <select>
-                                <option>10</option>
-                                <option>50</option>
-                                <option>60</option>
-                                <option>70</option>
-                                <option>80</option>
-                                <option>90</option>
-                                <option>100</option>
-                            </select>
-                        </div>
+                        <select name="filter-cafe-select" class="c-select select-guest">
+                            <option value="50">50</option>
+                            <option value="60">60</option>
+                            <option value="70">70</option>
+                            <option value="80">80</option>
+                            <option value="90">90</option>
+                            <option value="100">100</option>
+                            <option value="120">120</option>
+                        </select>
                     </div>
                 </div>
                 <div class="filter-item">
@@ -853,151 +866,166 @@
             <div class="filter-more">подробный фильтр <i class="icon-arr-down"></i></div>
         </div>
 
-        <div class="cafe-list">
-            <div class="cafe-list__title">Москва</div>
-            <div class="c-grid c-grid-between">
-                <div class="c-col c-col-6">
-                    <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
-                    <div class="c-card-cafe">
-                        <div class="c-card-cafe__img">
-                            <img src="img/cafe-foto.jpg" alt="">
-                            <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                        </div>
-                        <div class="c-card-cafe__body">
-                           <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
-                               Новомосковский, вход со стороны пруда</div>
-                           <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
-                            <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
-                           <div class="c-card-cafe__item c-card-cafe__subway">
-                               <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-                           </div>
-                           <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
-                           <ul class="c-card-cafe-advantages">
-                               <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
-                               <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
-                               <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
-                               <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
-                               <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
-                               <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
-                               <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
-                           </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="c-col c-col-6">
-                    <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
-                    <div class="c-card-cafe">
-                        <div class="c-card-cafe__img">
-                            <img src="img/cafe-foto.jpg" alt="">
-                            <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                        </div>
-                        <div class="c-card-cafe__body">
-                            <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
-                                Новомосковский, вход со стороны пруда</div>
-                            <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
-                            <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
-                            <div class="c-card-cafe__item c-card-cafe__subway">
-                                <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+        <ul class="tabs-menu">
+            <li class="tabs-menu__item current"><a href="#list">Списком</a></li>
+            <li class="tabs-menu__item"><a href="#map">На карте</a></li>
+        </ul>
+
+        <div class="tab">
+            <div id="list" class="tab-content">
+                <div class="cafe-list">
+                    <div class="cafe-list__title">Москва</div>
+                    <div class="c-grid c-grid-between">
+                        <div class="c-col c-col-6">
+                            <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
+                            <div class="c-card-cafe">
+                                <div class="c-card-cafe__img">
+                                    <img src="img/cafe-foto.jpg" alt="">
+                                    <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
+                                </div>
+                                <div class="c-card-cafe__body">
+                                    <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
+                                        Новомосковский, вход со стороны пруда</div>
+                                    <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
+                                    <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
+                                    <div class="c-card-cafe__item c-card-cafe__subway">
+                                        <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                                    </div>
+                                    <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
+                                    <ul class="c-card-cafe-advantages">
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
-                            <ul class="c-card-cafe-advantages">
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
-                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="c-col c-col-6">
-                    <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
-                    <div class="c-card-cafe">
-                        <div class="c-card-cafe__img">
-                            <img src="img/cafe-foto.jpg" alt="">
-                            <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                        </div>
-                        <div class="c-card-cafe__body">
-                            <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
-                                Новомосковский, вход со стороны пруда</div>
-                            <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
-                            <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
-                            <div class="c-card-cafe__item c-card-cafe__subway">
-                                <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                        <div class="c-col c-col-6">
+                            <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
+                            <div class="c-card-cafe">
+                                <div class="c-card-cafe__img">
+                                    <img src="img/cafe-foto.jpg" alt="">
+                                    <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
+                                </div>
+                                <div class="c-card-cafe__body">
+                                    <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
+                                        Новомосковский, вход со стороны пруда</div>
+                                    <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
+                                    <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
+                                    <div class="c-card-cafe__item c-card-cafe__subway">
+                                        <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                                    </div>
+                                    <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
+                                    <ul class="c-card-cafe-advantages">
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
-                            <ul class="c-card-cafe-advantages">
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
-                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="c-col c-col-6">
-                    <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
-                    <div class="c-card-cafe">
-                        <div class="c-card-cafe__img">
-                            <img src="img/cafe-foto.jpg" alt="">
-                            <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                        </div>
-                        <div class="c-card-cafe__body">
-                            <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
-                                Новомосковский, вход со стороны пруда</div>
-                            <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
-                            <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
-                            <div class="c-card-cafe__item c-card-cafe__subway">
-                                <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                        <div class="c-col c-col-6">
+                            <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
+                            <div class="c-card-cafe">
+                                <div class="c-card-cafe__img">
+                                    <img src="img/cafe-foto.jpg" alt="">
+                                    <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
+                                </div>
+                                <div class="c-card-cafe__body">
+                                    <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
+                                        Новомосковский, вход со стороны пруда</div>
+                                    <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
+                                    <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
+                                    <div class="c-card-cafe__item c-card-cafe__subway">
+                                        <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                                    </div>
+                                    <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
+                                    <ul class="c-card-cafe-advantages">
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
-                            <ul class="c-card-cafe-advantages">
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
-                            </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="c-col c-col-6">
-                    <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
-                    <div class="c-card-cafe">
-                        <div class="c-card-cafe__img">
-                            <img src="img/cafe-foto.jpg" alt="">
-                            <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                        </div>
-                        <div class="c-card-cafe__body">
-                            <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
-                                Новомосковский, вход со стороны пруда</div>
-                            <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
-                            <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
-                            <div class="c-card-cafe__item c-card-cafe__subway">
-                                <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                        <div class="c-col c-col-6">
+                            <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
+                            <div class="c-card-cafe">
+                                <div class="c-card-cafe__img">
+                                    <img src="img/cafe-foto.jpg" alt="">
+                                    <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
+                                </div>
+                                <div class="c-card-cafe__body">
+                                    <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
+                                        Новомосковский, вход со стороны пруда</div>
+                                    <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
+                                    <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
+                                    <div class="c-card-cafe__item c-card-cafe__subway">
+                                        <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                                    </div>
+                                    <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
+                                    <ul class="c-card-cafe-advantages">
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
-                            <ul class="c-card-cafe-advantages">
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
-                                <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
-                            </ul>
+                        </div>
+                        <div class="c-col c-col-6">
+                            <a href="#" class="c-card-cafe__title">АндерСон на Митинской</a>
+                            <div class="c-card-cafe">
+                                <div class="c-card-cafe__img">
+                                    <img src="img/cafe-foto.jpg" alt="">
+                                    <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
+                                </div>
+                                <div class="c-card-cafe__body">
+                                    <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
+                                        Новомосковский, вход со стороны пруда</div>
+                                    <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
+                                    <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
+                                    <div class="c-card-cafe__item c-card-cafe__subway">
+                                        <img src="img/icons/icon-metro-1.png" alt="">Молодежная
+                                    </div>
+                                    <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
+                                    <ul class="c-card-cafe-advantages">
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
+                                        <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="map" class="tab-content">
+                <div class="cafe-map">
+
+                </div>
+            </div>
         </div>
+
     </div>
 </main>
 
@@ -1565,6 +1593,7 @@
 <script type="text/javascript" src="./js/jscrollpane/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="./js/jscrollpane/jquery.jscrollpane.min.js"></script>
 
+<script src='./bower_components/sumoselect/jquery.sumoselect.js'></script>
 <script src="./js/preloader.js"></script>
 <script src="./js/tooltip.js"></script>
 <script src="./js/main.js"></script>

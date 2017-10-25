@@ -178,12 +178,9 @@ html {
   height: 100%;
   font: 400 10px/1.33 sans-serif; }
 
-.home-body {
-  height: 100%; }
-
 body {
   position: relative;
-  max-height: 100%;
+  height: 100%;
   font-size: 1.6rem;
   color: #555451;
   -webkit-text-size-adjust: none;
@@ -1489,7 +1486,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 main {
   padding-top: 10.4rem;
   padding-bottom: 8rem;
-  height: 100%; }
+  min-height: 100%; }
 
 .home-cafe:hover,
 .home-celebration:hover,
@@ -2494,7 +2491,6 @@ test popup
           box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 6rem;
   font-family: "PT Serif Caption";
-  font-size: 0;
   position: relative;
   z-index: 10; }
   .filter-more {
@@ -2526,8 +2522,8 @@ test popup
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2568,6 +2564,16 @@ test popup
     color: #5c3321;
     margin-bottom: .6rem; }
 
+.cafe-map {
+  width: 100%;
+  height: 64.2rem;
+  border: 7px solid #fff;
+  border-radius: .4rem;
+  background-color: #eee;
+  -webkit-box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 7rem; }
+
 /*-------------------*/
 .filter-radio {
   display: none; }
@@ -2599,13 +2605,46 @@ test popup
   background-color: #5c3321; }
 
 /*custom select----------------------------------------------------*/
-.select-city {
+/*sumoselect*/
+.SelectBox {
+  font-size: 1.2rem;
+  padding: .4rem 0 .4rem .8rem;
+  width: auto; }
+
+.SumoSelect {
+  width: auto; }
+
+.SumoSelect > .CaptionCont {
+  border: 1px solid #d2cdc4; }
+
+.SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont, .SumoSelect.open > .CaptionCont {
+  -webkit-box-shadow: 0 0 2px #9acc4e;
+          box-shadow: 0 0 2px #9acc4e;
+  border-color: #9acc4e; }
+
+.SumoSelect > .CaptionCont > label > i {
+  width: .8rem;
+  height: .8rem;
+  background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat; }
+
+.optWrapper {
+  font-size: 1.2rem; }
+
+.SumoSelect.open > .optWrapper {
+  top: 2.6rem;
+  display: block; }
+
+.SumoSelect > .optWrapper > .options li.opt:hover {
+  color: #fff;
+  background-color: #67af26; }
+
+.select-city + .SelectBox {
   width: 14rem; }
 
-.select-cafe {
+.select-cafe + .SelectBox {
   width: 17.8rem; }
 
-.select-guest {
+.select-guest + .SelectBox {
   width: 6.7rem; }
 
 .select {
@@ -2644,3 +2683,23 @@ test popup
   top: 50%;
   margin-top: -3px;
   background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat; }
+
+/*tabs-------------------------------------------------*/
+.tabs-menu {
+  font-family: "PT Serif Caption";
+  text-align: right;
+  margin-bottom: 1.7rem; }
+  .tabs-menu__item {
+    display: inline-block;
+    margin-right: 1.4rem; }
+    .tabs-menu__item:last-child {
+      margin-right: 0; }
+  .tabs-menu__item.current a {
+    border: none;
+    color: #5a2a1b; }
+
+.tab-content {
+  display: none; }
+
+#list {
+  display: block; }
