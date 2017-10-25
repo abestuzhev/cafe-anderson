@@ -204,10 +204,11 @@ $(document).ready(function ($) {
     });
 
     /*попап корзины*/
-    $('.header-basket').on('click', function () {
+    $('.icon-basket').on('click', function () {
         $('.popup-basket').addClass('popup-slide__show');
         $('.header').addClass('header-top__no-hide');
     });
+    
     $('.popup-basket__close').on('click', function () {
         $('.popup-basket').removeClass('popup-slide__show');
         $('.header').removeClass('header-top__no-hide');
