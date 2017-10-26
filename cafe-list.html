@@ -17,7 +17,6 @@
     <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all" />
     <link rel="stylesheet" href="./css/main_global.css">
     <link rel="stylesheet" href="./css/media.css">
-
 </head>
 <body>
 
@@ -879,12 +878,12 @@
         </div>
 
         <ul class="tabs-menu">
-            <li class="tabs-menu__item current"><a href="#list">Списком</a></li>
-            <li class="tabs-menu__item"><a href="#map">На карте</a></li>
+            <li class="tabs-menu__item current"><a href="#cafe-list">Списком</a></li>
+            <li class="tabs-menu__item"><a href="#cafe-map">На карте</a></li>
         </ul>
 
         <div class="tab">
-            <div id="list" class="tab-content">
+            <div id="cafe-list" class="tab-content">
                 <div class="cafe-list">
                     <div class="cafe-list__title">Москва</div>
                     <div class="c-grid c-grid-between">
@@ -1031,10 +1030,8 @@
                     </div>
                 </div>
             </div>
-            <div id="map" class="tab-content">
-                <div class="cafe-map">
-
-                </div>
+            <div id="cafe-map" class="tab-content">
+                <div id="map" class="cafe-map"></div>
             </div>
         </div>
 
@@ -1600,38 +1597,154 @@
 
 
 <!--карта------------------------------------------------->
-<div class="c-card-cafe c-card-map">
-    <div class="c-card-map__header">
-        <span class="popup-close"></span>
-        <a href="" class="c-card-map__title">АндерСон для Пап</a>
-    </div>
-    <div class="c-card-map__body">
-        <div class="c-card-cafe__img">
-            <img src="img/cafe-foto.jpg" alt="">
-            <a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-        </div>
-        <div class="c-card-cafe__body">
-            <div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ
-                Новомосковский, вход со стороны пруда</div>
-            <div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>
-            <div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>
-            <div class="c-card-cafe__item c-card-cafe__subway">
-                <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-            </div>
-            <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
-            <ul class="c-card-cafe-advantages">
-                <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
-                <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
-                <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
-                <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
-                <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
-                <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
-                <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
-            </ul>
-        </div>
-    </div>
-</div>
+<!--<div class="c-card-cafe c-card-map">-->
+    <!--<div class="c-card-map__header">-->
+        <!--<span class="popup-close"></span>-->
+        <!--<a href="" class="c-card-map__title">АндерСон для Пап</a>-->
+    <!--</div>-->
+    <!--<div class="c-card-map__body">-->
+        <!--<div class="c-card-cafe__img">-->
+            <!--<img src="img/cafe-foto.jpg" alt="">-->
+            <!--<a  href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>-->
+        <!--</div>-->
+        <!--<div class="c-card-cafe__body">-->
+            <!--<div class="c-card-cafe__item"><b>Адрес: </b>Московский, ул. Хабарова, дом 2, ТРЦ-->
+                <!--Новомосковский, вход со стороны пруда</div>-->
+            <!--<div class="c-card-cafe__item"><b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07</div>-->
+            <!--<div class="c-card-cafe__item"><b>Время работы: </b> пн-вс с 09:00 до 23:00</div>-->
+            <!--<div class="c-card-cafe__item c-card-cafe__subway">-->
+                <!--<img src="img/icons/icon-metro-1.png" alt="">Молодежная-->
+            <!--</div>-->
+            <!--<div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>-->
+            <!--<ul class="c-card-cafe-advantages">-->
+                <!--<li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>-->
+                <!--<li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>-->
+                <!--<li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>-->
+                <!--<li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>-->
+                <!--<li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>-->
+                <!--<li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>-->
+                <!--<li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
+
+<!-- Подключаем API  карт 2.x  -->
+<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+
+<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+<script type="text/javascript">
+    // Как только будет загружен API и готов DOM, выполняем инициализацию
+    ymaps.ready(init);
+    var myMap;
+    function init () {
+        // Создание экземпляра карты и его привязка к контейнеру с
+        // заданным id ("map")
+        myMap = new ymaps.Map('map', {
+            // При инициализации карты, обязательно нужно указать
+            // ее центр и коэффициент масштабирования
+            center: [55.7745045087803,37.590385793792734],
+            zoom: 5,
+            behaviors: ['default', 'scrollZoom']
+        });
+
+        myMap.geoObjects.events.add([
+            'balloonopen'
+        ], function (e) {
+            var geoObject = e.get('target');
+            myMap.panTo(geoObject.geometry.getCoordinates(), {
+                delay: 0
+            });
+        });
+
+        cafe_1 = new ymaps.Placemark([55.74352990795752,37.56841313754272], {
+            name: 'АндерСон для Пап',
+            address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
+            phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+            timeWork: 'пн-вс с 09:00 до 23:00',
+            entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+            subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+        }, {
+            // Изображение иконки метки
+            iconImageHref: 'img/icons/icon-map-point.png',
+            // Размеры изображения иконки
+            iconImageSize: [44, 53],
+            // смещение картинки
+            iconImageOffset: [-22, -56],
+            // Размеры содержимого балуна
+            balloonContentSize: [660, 265],
+            // Задаем макет балуна - пользовательская картинка с контентом
+            balloonLayout: "default#imageWithContent",
+            // Смещение картинки балуна
+            balloonImageOffset: [-117, -300],
+            // Размеры картинки балуна
+            balloonImageSize: [660, 265],
+            // Балун не имеет тени
+            balloonShadow: false,
+            //Выравнивание по умолчанию
+            balloonAutoPan: false
+        }),
+
+            // Создаем коллекцию, в которую будем добавлять метки
+            myCollection = new ymaps.GeoObjectCollection();
+
+        //Добавляем метки в коллекцию геообъектов.
+        myCollection
+            .add(cafe_1);
+
+        // Создаем шаблон для отображения контента балуна
+        /*шаблон попапа*/
+        var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
+            '<div class="c-card-cafe c-card-map">'+
+                '<div class="c-card-map__header">'+
+                    '<span class="popup-close" id="close-balloon" onclick="myMap.balloon.close()"></span>'+
+                    '<a href="#" class="c-card-map__title">$[properties.name]</a>'+
+                '</div>'+
+                '<div class="c-card-map__body">'+
+                    '<div class="c-card-cafe__img">'+
+                    '<img src="img/cafe-foto.jpg" alt="">'+
+                    '<a  href="#" class="c-card-cafe__menu">'+'<i class="icon-food-menu"></i>'+'меню</a>'+
+                '</div>'+
+                '<div class="c-card-cafe__body">'+
+                    '<div class="c-card-cafe__item">' + '<b>Адрес: </b>' + '$[properties.address]</div>'+
+                    '<div class="c-card-cafe__item">'+'<b>Телефон: </b>'+'$[properties.phoneNumber]</div>'+
+                    '<div class="c-card-cafe__item">'+'<b>Время работы: </b>'+'$[properties.timeWork]</div>'+
+                    '<div class="c-card-cafe__item c-card-cafe__subway">'+
+                        '$[properties.subway]'+
+                    '</div>'+
+                    '<div class="c-card-cafe__item c-card-cafe__entertainment">$[properties.entertainment]</div>'+
+                    '<ul class="c-card-cafe-advantages">'+
+                        '<li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>'+
+                        '<li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>'+
+                        '<li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>'+
+                        '<li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>'+
+                        '<li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>'+
+                        '<li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>'+
+                        '<li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>'+
+                    '</ul>'+
+                    '</div>'+
+                '</div>'+
+            '</div>'
+        );
+        // Помещаем созданный шаблон в хранилище шаблонов. Теперь наш шаблон доступен по ключу 'my#cafelayout'.
+        ymaps.layout.storage.add('my#cafelayout', myBalloonLayout);
+
+        // Задаем наш шаблон для балунов геобъектов коллекции.
+        myCollection.options.set({
+            balloonContentBodyLayout:'my#cafelayout',
+            // Максимальная ширина балуна в пикселах
+            balloonMaxWidth: 660
+        });
+
+        // Добавляем коллекцию геообъектов на карту.
+        myMap.geoObjects.add(myCollection);
+
+        // Добавляем элементы управления.
+        myMap.controls.add('zoomControl');
+        myMap.controls.add('fullscreenControl');
+    }
+</script>
 
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>

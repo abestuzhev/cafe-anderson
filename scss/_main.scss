@@ -101,6 +101,14 @@ main {
         @extend %transition_all;
     }
 
+    a {
+        position: static;
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
     &__text {
         text-align: center;
         position: absolute;
@@ -210,6 +218,14 @@ main {
     left: 30%;
     cursor: pointer;
     @extend %transition_all;
+
+    a {
+        position: static;
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
 
     &:hover .home-celebration__packege {
         z-index: -1;
@@ -343,6 +359,15 @@ main {
     right: -2.2%;
     top: 4.8%;
     @extend %transition_all;
+
+    a {
+        position: static;
+
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
 
     &__bg {
         position: relative;
@@ -1738,6 +1763,6 @@ test popup
     display: none;
 }
 
-#list {
+#cafe-list {
     display: block;
 }

@@ -871,14 +871,17 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     display: block;
     border-color: rgba(0,0,0,.25);
     box-shadow: 0 3px 10px 2px rgba(0,0,0,.3);
+    position: relative;
 
     &__header {
+        text-align: left;
         padding: 1rem 1.2rem;
         position: relative;
         background-color: #f3efe4;
     }
 
     &__body {
+        text-align: left;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -886,14 +889,30 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 
     &__title {
+        text-align: left;
         display: inline-block;
         font-size: 1.7rem;
         color: #9b806f;
 
     }
 
+    .c-card-cafe__img img {
+        width: 100%;
+        height: auto;
+    }
+
     .popup-close {
         padding: 1.4rem 1.6rem 2rem;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        left: 90px;
+        border-style: solid;
+        border-width: 17px 16px 0 16px;
+        border-color: #7dbd41 transparent transparent transparent;
     }
 }
 

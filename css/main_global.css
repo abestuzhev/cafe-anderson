@@ -843,12 +843,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   display: block;
   border-color: rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.3); }
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.3);
+  position: relative; }
   .c-card-map__header {
+    text-align: left;
     padding: 1rem 1.2rem;
     position: relative;
     background-color: #f3efe4; }
   .c-card-map__body {
+    text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -863,11 +866,23 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         -ms-flex-align: stretch;
             align-items: stretch; }
   .c-card-map__title {
+    text-align: left;
     display: inline-block;
     font-size: 1.7rem;
     color: #9b806f; }
+  .c-card-map .c-card-cafe__img img {
+    width: 100%;
+    height: auto; }
   .c-card-map .popup-close {
     padding: 1.4rem 1.6rem 2rem; }
+  .c-card-map::after {
+    content: '';
+    position: absolute;
+    right: 100%;
+    left: 90px;
+    border-style: solid;
+    border-width: 17px 16px 0 16px;
+    border-color: #7dbd41 transparent transparent transparent; }
 
 /*grid------------------------------------------------------------*/
 .c-grid {
@@ -1638,6 +1653,11 @@ main {
     -webkit-transform: rotate(1deg);
         -ms-transform: rotate(1deg);
             transform: rotate(1deg); }
+  .home-cafe a {
+    position: static; }
+    .home-cafe a::after {
+      content: '';
+      border: none; }
   .home-cafe__text {
     text-align: center;
     position: absolute;
@@ -1724,6 +1744,11 @@ main {
   bottom: -10px;
   left: 30%;
   cursor: pointer; }
+  .home-celebration a {
+    position: static; }
+    .home-celebration a::after {
+      content: '';
+      border: none; }
   .home-celebration:hover .home-celebration__packege {
     z-index: -1;
     -webkit-transform: rotate(1deg);
@@ -1832,6 +1857,11 @@ main {
   z-index: 1;
   right: -2.2%;
   top: 4.8%; }
+  .home-cake a {
+    position: static; }
+    .home-cake a::after {
+      content: '';
+      border: none; }
   .home-cake__bg {
     position: relative;
     width: 100%;
@@ -2860,5 +2890,5 @@ test popup
 .tab-content {
   display: none; }
 
-#list {
+#cafe-list {
   display: block; }
