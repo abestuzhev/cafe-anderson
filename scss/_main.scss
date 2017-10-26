@@ -1571,6 +1571,7 @@ test popup
     padding-left: 2rem;
     font-size: 1.3rem;
     position: relative;
+    cursor: pointer;
 
     &::before {
         content: '';

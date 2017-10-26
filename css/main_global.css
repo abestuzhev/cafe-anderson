@@ -862,6 +862,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   z-index: 100; }
 
 .header {
+  position: relative;
   z-index: 12;
   background: #fdf7e8 url("../img/bg-header.png") repeat;
   font-family: "PT Serif Caption";
@@ -2666,7 +2667,8 @@ test popup
 .filter-label {
   padding-left: 2rem;
   font-size: 1.3rem;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .filter-label::before {
     content: '';
     position: absolute;
