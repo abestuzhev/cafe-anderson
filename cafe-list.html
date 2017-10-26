@@ -1631,9 +1631,29 @@
 
 
 <!-- Подключаем API  карт 2.x  -->
-<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+<!--<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>-->
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+<!--<div id="t-map" style="width:400px; height:350px;"></div>-->
+<!--<script>-->
+    <!--ymaps.ready(function () {-->
+        <!--var map = new ymaps.Map('t-map', {-->
+            <!--center: [54, 34],-->
+            <!--zoom: 10-->
+        <!--});-->
 
-<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
+        <!--// Создаем метку.-->
+        <!--var placemark = new ymaps.Placemark([54, 32], {-->
+            <!--balloonContent: '<img src="http://img-fotki.yandex.ru/get/6114/82599242.2d6/0_88b97_ec425cf5_M" />',-->
+            <!--iconContent: "Наша метка"-->
+        <!--}, {-->
+            <!--preset: "twirl#yellowStretchyIcon"-->
+        <!--});-->
+        <!--map.geoObjects.add(placemark);-->
+        <!--map.panTo(placemark.geometry.getCoordinates());-->
+    <!--});-->
+<!--</script>-->
+
+
 <script type="text/javascript">
     // Как только будет загружен API и готов DOM, выполняем инициализацию
     ymaps.ready(init);
@@ -1645,18 +1665,13 @@
             // При инициализации карты, обязательно нужно указать
             // ее центр и коэффициент масштабирования
             center: [55.7745045087803,37.590385793792734],
-            zoom: 5,
-            behaviors: ['default', 'scrollZoom']
+            zoom: 5
+//            behaviors: ['default', 'scrollZoom']
+        }, {
+            geoObjectBalloonAutoPan: false,
+            geoObjectBalloonPanelMaxMapArea: Infinity
         });
 
-        myMap.geoObjects.events.add([
-            'balloonopen'
-        ], function (e) {
-            var geoObject = e.get('target');
-            myMap.panTo(geoObject.geometry.getCoordinates(), {
-                delay: 0
-            });
-        });
 
         cafe_1 = new ymaps.Placemark([55.74352990795752,37.56841313754272], {
             name: 'АндерСон для Пап',
@@ -1684,7 +1699,7 @@
             balloonShadow: false,
             //Выравнивание по умолчанию
             balloonAutoPan: false
-        }),
+        });
 
             // Создаем коллекцию, в которую будем добавлять метки
             myCollection = new ymaps.GeoObjectCollection();
@@ -1737,8 +1752,19 @@
             balloonMaxWidth: 660
         });
 
+
+        myMap.geoObjects.events.add([
+            'balloonopen'
+        ], function (e) {
+            var geoObject = e.get('target');
+            myMap.panTo(geoObject.geometry.getCoordinates(), {
+                delay: 0
+            });
+        });
+
         // Добавляем коллекцию геообъектов на карту.
         myMap.geoObjects.add(myCollection);
+//        map.panTo(myCollection.geometry.getCoordinates());
 
         // Добавляем элементы управления.
         myMap.controls.add('zoomControl');
