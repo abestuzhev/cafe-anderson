@@ -8,7 +8,8 @@
 @media (min-width:1920px) {
     .home-page {
         width: 1920px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
