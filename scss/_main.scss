@@ -54,10 +54,12 @@
     position: relative;
     height: 100%;
     overflow: hidden;
+    margin-top: -10.8rem;
+    z-index: -1;
 }
 
 main {
-    padding-top: 10.4rem;
+    //padding-top: 10.4rem;
     padding-bottom: 8rem;
     min-height: 100%;
 }
@@ -1360,7 +1362,7 @@ test popup
     transform: translateY(-43px);
     // display: none !important;
     //@extend %transition_all;
-    transition: all .2s ease-out;
+    transition: transform .3s ease-out;
 }
 
 .header-top__hide .header-menu {
@@ -1405,6 +1407,7 @@ test popup
 
 
 .filter {
+    display: block;
     padding: 1.1rem 1.1rem .1rem;
     //padding: 1.1rem;
     background-color: $white;

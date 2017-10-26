@@ -102,7 +102,7 @@ $(document).ready(function ($) {
         $('.header-mobile__menu').show();
         $('.header-mobile__search .icon-search').show();
         $(this).hide();
-        $('.header').removeClass('header-top__hide');
+        // $('.header').removeClass('header-top__hide');
     });
 
     $(document).mouseup(function (e) { // событие клика по веб-документу
@@ -114,7 +114,7 @@ $(document).ready(function ($) {
             $('.header-mobile__search-box').hide();
             $('.header-mobile__search .icon-search').show();
             $('.header-mobile__search .icon-search-mobile').hide();
-            $('.header').removeClass('header-top__hide');
+            // $('.header').removeClass('header-top__hide');
         }
     });
 
@@ -318,10 +318,13 @@ $(document).ready(function ($) {
     /*липкая шапка*/
     $(window).scroll(function(){
         var bo = $(window).scrollTop();
+        var $header = $(".header");
         if ( bo > 20 ) {
-            $(".header").addClass('header-top__hide');
+            $header.addClass('header-top__hide');
+            $header.addClass('sticky');
         } else {
-            $(".header").removeClass('header-top__hide');
+            $header.removeClass('header-top__hide');
+            $header.removeClass('sticky');
         }
     });
 

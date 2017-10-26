@@ -419,6 +419,12 @@
     }
 }
 
+@media (min-width:730px) {
+    .filter{
+        display: block !important;
+    }
+}
+
 @media (max-width:730px) {
     .home-cafe {
         right: -9%;
