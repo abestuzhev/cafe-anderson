@@ -1608,10 +1608,12 @@ test popup
     font-size: 1.2rem;
     padding: .4rem 0 .4rem .8rem;
     width: auto;
+    cursor: pointer;
 }
 
 .SumoSelect {
     width: auto;
+    cursor: pointer;
 }
 
 .SumoSelect > .CaptionCont {
@@ -1725,6 +1727,10 @@ test popup
         border: none;
         //color: $color_dark-active;
         color: #5a2a1b;
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 }
 

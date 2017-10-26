@@ -64,6 +64,10 @@
 
         &__item {
             border: none;
+            &::after {
+                content: '';
+                border: none;
+            }
         }
 
     }
@@ -72,6 +76,10 @@
         //float: left;
         margin-right: 2.4rem;
         border: none;
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 
     &-search {
@@ -115,6 +123,10 @@
         width: 1.9rem;
         height: 1.9rem;
         display: block;
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 
 
@@ -139,6 +151,10 @@
             margin-right: .8rem;
             border: none;
             vertical-align: bottom;
+            &::after {
+                content: '';
+                border: none;
+            }
 
         }
     }
@@ -160,6 +176,10 @@
         //display: inline-block;
         &__item {
             border: none;
+            &::after {
+                content: '';
+                border: none;
+            }
 
         }
         .is-active  svg {

@@ -4,7 +4,7 @@
 }
 
 .sticky {
-    position: fixed;
+    position: fixed !important;
     width: 100%;
     top: 0;
     right: 0;
@@ -61,6 +61,10 @@
             font-size: 1.9rem;
             margin-left: 1.9rem;
             border: none;
+            &::after {
+                content: '';
+                border: none;
+            }
         }
 
         &__bottom {
@@ -303,6 +307,11 @@
         width: 380px;
         padding: .3rem 0;
         margin: 0 auto;
+
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 
     &-menu { /*меню*/
@@ -469,6 +478,10 @@
         font-size: 2.3rem;
         margin-left: 1.9rem;
         border: none;
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 
     &-time {
@@ -501,6 +514,7 @@
                 content: '';
                 position: absolute;
                 right: 0;
+                left: auto;
                 top: .6rem;
                 width: .3rem;
                 height: 6rem;
