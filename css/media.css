@@ -76,6 +76,9 @@
     .header-col__right .header-top {
         margin-bottom: 0;
     }
+
+
+
 }
 
 @media screen and (max-width: 1270px) {
@@ -85,6 +88,11 @@
         padding: 5px;
         right: auto;
         left: 2.4rem;
+    }
+
+    /*фильтр*/
+    .filter-item {
+
     }
 }
 
@@ -377,6 +385,26 @@
     }
 }
 
+@media (max-width:920px) {
+
+    .cafe-list .c-grid {
+        flex-flow: column nowrap;
+    }
+
+    .cafe-list .c-col {
+        width: 100%;
+    }
+
+    .c-card-cafe__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .c-card-cafe__title {
+        margin-bottom: 1.4rem;
+    }
+}
+
 @media (max-width:800px) {
     .mobile-cake__text {
         left: 3%;
@@ -411,6 +439,73 @@
         top: -50.2%;
         right: -64%;
     }
+
+    /*FILTER*/
+    .filter {
+        display: none;
+        padding-bottom: 1.4rem;
+    }
+
+    .filter-mobile-btn {
+        display: block;
+    }
+
+    .filter-form {
+        flex-direction: column;
+    }
+
+    .filter-item {
+        width: 100%;
+        margin: 0;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid #eee;
+        text-align: justify;
+        font-size: 0;
+
+    }
+
+    .filter-item:last-child {
+        border: none;
+    }
+
+    .filter .SelectBox,
+    .filter .SumoSelect {
+        width: 100%;
+    }
+
+    .filter .SumoSelect > .CaptionCont {
+        padding: 1.4rem 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    .SumoSelect.open > .optWrapper {
+        top: 4.8rem;
+    }
+
+    .SumoSelect > .optWrapper > .options  li.opt {
+        padding: .9rem 1.6rem;
+    }
+
+    .filter-item::after {
+         content: '';
+         display: inline-block;
+         width: 100%;
+    }
+
+    .filter-item__title,
+    .filter-item__body {
+        vertical-align: top;
+        display: inline-block;
+    }
+    .filter-more {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .filter-mobile-sort {
+        display: block;
+    }
+
 }
 
 @media (max-width:780px) {
@@ -535,6 +630,12 @@
     .popup-body {
         padding-left: 1.6rem !important;
         padding-right: 1.6rem !important;
+    }
+
+
+    .c-card-cafe__img img {
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -686,6 +787,28 @@
     .mobile-cake__sub-title {
         font-size: 2rem;
     }
+
+    .filter {
+        padding-bottom: .5em;
+    }
+
+    .filter-more {
+        display: none;
+    }
+
+    .filter-mobile__more {
+        display: block;
+    }
+
+    .filter .l-button__center {
+        display: block;
+        width: 100%;
+    }
+    .filter .c-button {
+        width: 100%;
+        display: block;
+        margin: 0 0 .4rem 0;
+    }
 }
 
 @media (max-width:440px) {
@@ -706,6 +829,22 @@
         width: 37%;
     }
 
+    .c-card-cafe {
+        flex-flow: column nowrap;
+    }
+
+    .c-card-cafe__img {
+        width: 100%;
+        height: 22.5rem;
+    }
+
+    .c-card-cafe__img img {
+        width: 100%;
+        height: auto;
+    }
+    .c-card-cafe__body {
+        width: 100%;
+    }
 }
 
 

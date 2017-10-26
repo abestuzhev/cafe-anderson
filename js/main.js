@@ -215,6 +215,19 @@ $(document).ready(function ($) {
     });
 
 
+    /*проверяет в фильтре наличие селекта и еслит есть делает родитель блочным для отображения в мобильной версии*/
+    $('.filter').each(function(){
+        var $filterBody =  $('.filter-item__body');
+        $filterBody.has('select').css('display', 'block');
+        $filterBody.has('select').parents('.filter-item').css('border','none')
+    });
+
+    /*появление фильтра в мобильной версии*/
+    $('.filter-mobile-btn').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('dropdown-show');
+        $('.filter').slideToggle()(200);
+    });
 
     function catalogItemCounter(field) {
         var fieldCount = function (el) {

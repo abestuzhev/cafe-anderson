@@ -411,6 +411,45 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
 }
 
+.icon-dropdown {
+    display: inline-block;
+    border: .1rem solid $white;
+    border-radius: 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    position: relative;
+    vertical-align: middle;
+}
+
+.icon-dropdown__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1.1rem;
+    height: .6rem;
+    fill: $white;
+}
+
+.icon-dropdown__down {
+
+}
+
+.icon-dropdown__right {
+
+}
+
+.icon-dropdown__left {
+
+}
+
+.icon-filter {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.1rem;
+    background: url(../img/icons/icon-filter.svg) 0 0 no-repeat;
+}
+
 .advantages-coffe {
     background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat;
 }
@@ -461,6 +500,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     width: .8rem;
     height: .8rem;
     background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat;
+}
+
+.icon-reset {
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: $color_text_bg;
 }
 
 @media screen and (min-width: 1600px) {
@@ -528,6 +574,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 
     &__width {
+        display: block;
         padding: 1.4rem 5.4rem;
         background-color: $color_btn;
         font-family: $font_serif;
@@ -552,18 +599,26 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 //c-reviews--------------------------------------------------
 
 .c-reviews {
-    position: fixed;
-    z-index: 99;
-    right: 0;
-    top: 50%;
-    margin-top: -60px;
-    font-family: $font_serif;
-    font-size: 0;
+
+    &-positive {
+        margin-top: -30px;
+    }
+
+    &-negative {
+        margin-top: 30px;
+    }
 
     &__item {
+        position: fixed;
+        z-index: 99;
+        right: 0;
+        top: 50%;
+        font-family: $font_serif;
+        font-size: 0;
+
         border-radius: .6rem 0 0 .6rem;
         background: url(../img/bg-reviews__bg.jpg) 0 0 no-repeat;
-        margin-bottom: 1.5rem;
+
         transform: translateX(15.6rem);
         @extend %transition_all;
         overflow: hidden;
@@ -591,6 +646,14 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         &:last-child {
             margin-bottom: 0;
         }
+
+        svg {
+            margin-right: 1rem;
+            fill: $white;
+            &:hover {
+                fill: $white;
+            }
+        }
     }
 
     &__text {
@@ -611,11 +674,11 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         height: 31px;
     }
 
-    .reviews-positive {
+    &-positive .c-reviews__btn {
         background-color: rgba(129, 199, 29, 0.87);
     }
 
-    .reviews-negative {
+    &-negative .c-reviews__btn {
         background-color: rgba(223, 75, 10, 0.8);;
     }
 }
@@ -695,8 +758,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         position: relative;
 
         img {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 100%;
             position: absolute;
             top: 50%;
             left: 50%;
