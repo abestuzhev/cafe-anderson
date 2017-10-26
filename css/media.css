@@ -383,6 +383,10 @@
         top: -48px;
         left: 0;
     }
+
+    .header-navigation {
+        display: none;
+    }
 }
 
 @media (max-width:920px) {
