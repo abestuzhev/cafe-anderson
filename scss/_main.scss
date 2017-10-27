@@ -1505,6 +1505,8 @@ test popup
 
     &-check {
         font-size: 0;
+        padding: .3rem 0;
+
         &__item {
             margin-right: .6rem;
             display: inline-block;
@@ -1743,7 +1745,7 @@ test popup
         line-height: 0.58;
         text-align: left;
         color: #9b806f;
-        margin-bottom: 1.2rem;
+        margin-bottom: 2.1rem;
     }
 
     &__body {
@@ -1806,6 +1808,105 @@ test popup
             background: url(../img/bg-slider-footer.jpg) 50% 50% no-repeat;
             -webkit-background-size: cover;
             background-size: cover;
+        }
+    }
+
+    &-timetable {
+        margin-bottom: 5.1rem;
+
+        &__title {
+            font-size: 2.6rem;
+            line-height: 0.58;
+            text-align: left;
+            color: #9b806f;
+            margin-bottom: 2.6rem;
+        }
+
+        &__item {
+            margin-bottom: 2.1rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-holiday {
+
+
+        &__title {
+            font-size: 2.6rem;
+            line-height: 0.58;
+            text-align: left;
+            color: #9b806f;
+            margin-bottom: 2.6rem;
+        }
+
+        &__body {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        &__slider {
+            width: 67%;
+            height: 46.3rem;
+        }
+
+        &-order {
+            width: 33%;
+        }
+
+
+        &-header {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+
+        &-count {
+            width: 48%;
+
+            &::after {
+                content: '';
+                clear: both;
+                display: table;
+            }
+
+            &__number {
+                font-family: $font_sans-serif;
+                font-size: 6rem;
+                line-height: .8;
+                font-weight: 700;
+                color: #553023;
+                float: left;
+
+            }
+
+            &__text {
+                padding-left: 7.9rem;
+
+                span {
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    line-height: 1.1rem;
+                    color: #a09393;
+                }
+
+                div {
+                    font-size: 1.4rem;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    color: #553023;
+                }
+            }
+        }
+
+        &__btn-order {
+            width: 52%;
         }
     }
 

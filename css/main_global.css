@@ -276,20 +276,25 @@ a {
 p {
   font-family: "PT Serif Caption"; }
 
-input[type="text"],
-input[type="password"],
-input[type="search"],
-textarea {
+.wrapper input[type="text"],
+.wrapper input[type="password"],
+.wrapper input[type="search"],
+.wrapper textarea,
+.popup input[type="text"],
+.popup input[type="password"],
+.popup input[type="search"],
+.popup textarea {
   width: 100%; }
 
-input[type="checkbox"] {
+.wrapper input[type="checkbox"],
+.popup input[type="checkbox"] {
   display: none; }
 
-button:disabled {
+.wrapper button:disabled {
   opacity: .4;
   cursor: auto; }
 
-button:disabled:hover {
+.wrapper button:disabled:hover {
   opacity: .4; }
 
 .c-checkbox {
@@ -579,10 +584,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat; }
 
 .advantages-guests {
+  display: inline-block;
   width: 2.5rem;
   height: 1.4rem;
-  background: url(../img/icons/icon-veranda.svg) 50% 50% no-repeat;
-  margin: 0 .5em .4rem 0; }
+  background: url(../img/icons/icon-veranda.svg) 50% 50% no-repeat; }
 
 .advantages-teddy {
   background: url(../img/icons/icon-teddy-bear.svg) 50% 50% no-repeat; }
@@ -598,6 +603,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 .advantages-bottle {
   background: url(../img/icons/icon-bottle.svg) 50% 50% no-repeat; }
+
+.icon-phoneNumber {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.8rem;
+  background: url(../img/icons/icon-phone.svg) 50% 50% no-repeat; }
 
 .icon-place {
   display: inline-block;
@@ -622,6 +633,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   width: 1.1rem;
   height: 1.1rem;
   fill: #9b9696; }
+
+.icon-uneven-circle {
+  display: inline-block;
+  width: 4.9rem;
+  height: 5rem;
+  background: url(../img/icons/icon-uneven-circle.svg) 50% 50% no-repeat; }
 
 @media screen and (min-width: 1600px) {
   .c-layout {
@@ -671,6 +688,43 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     color: #fff;
     text-transform: uppercase;
     display: inline-block; }
+  .c-button__small {
+    padding: .6rem 1.4rem;
+    background-color: #7cbd41;
+    font-family: "PT Serif Caption";
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #fff;
+    text-transform: lowercase;
+    display: inline-block; }
+    .c-button__small:hover {
+      color: #fff; }
+  .c-button__big {
+    display: inline-block;
+    background: url(../img/bg-reviews__bg.jpg) 0 0 no-repeat;
+    font-family: "PT Serif Caption";
+    font-size: 1.3rem;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: .6rem;
+    overflow: hidden; }
+    .c-button__big-layout {
+      display: block;
+      padding: 1.2rem 0 1.2rem;
+      background-color: rgba(129, 199, 29, 0.87); }
+    .c-button__big-text {
+      display: block;
+      text-align: center;
+      color: #fff;
+      padding: .8rem 2.3rem .8rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    .c-button__big::after {
+      content: '';
+      border: none; }
+    .c-button__big:hover {
+      color: #fff; }
   .c-button__width {
     display: block;
     padding: 1.4rem 5.4rem;
@@ -682,6 +736,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     text-transform: uppercase; }
   .c-button:hover {
     opacity: .9; }
+  .c-button--dark {
+    background-color: #7e5847; }
 
 .c-obligatory-field {
   color: #b62922;
@@ -896,6 +952,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       .c-card-cafe-advantages__item i {
         display: inline-block;
         vertical-align: bottom;
+        margin-bottom: 0;
         width: 2rem;
         height: 1.4rem; }
 
@@ -947,12 +1004,77 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     border-color: #7dbd41 transparent transparent transparent; }
 
 /*card-event------------------------------------------------------------*/
-.card-event {
+.c-card-event {
+  position: relative;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
   border: solid 2px rgba(0, 0, 0, 0.15);
   padding: 1.3rem 1.8rem 2.7rem 8.5rem; }
+  .c-card-event__price {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-weight: 300;
+    font-family: "BebasNeue";
+    font-size: 3.4rem;
+    line-height: 0.96;
+    color: #553023; }
+  .c-card-event__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1.4rem; }
+    .c-card-event__item:last-child {
+      margin-right: 0; }
+    .c-card-event__item i, .c-card-event__item img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: .9rem; }
+  .c-card-event__date {
+    display: inline-block;
+    padding: 1rem 1.8rem;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    color: #604e42;
+    background-color: #f3efe4;
+    margin-bottom: 1.4rem; }
+  .c-card-event__title {
+    margin-bottom: 1.3rem; }
+    .c-card-event__title a {
+      font-size: 2rem;
+      line-height: 0.75;
+      text-align: left;
+      color: #231300; }
+  .c-card-event__info {
+    margin-bottom: 1.3rem;
+    border-bottom: 1px solid #cec9c0;
+    padding: 1.3rem 0; }
+  .c-card-event__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7.3rem;
+    height: 11.5rem;
+    background: url(../img/bg-event-label.png) 0 0 no-repeat; }
+  .c-card-event__age {
+    padding: .9rem .8rem; }
+    .c-card-event__age i {
+      text-align: center;
+      font-size: 2rem;
+      line-height: 5rem;
+      color: #604e42;
+      font-style: normal; }
+  .c-card-event__text {
+    margin-bottom: 1.3rem;
+    font-size: 1.3rem;
+    line-height: 1.23;
+    text-align: left;
+    color: #9b9595;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden; }
 
 /*grid------------------------------------------------------------*/
 .c-grid {
@@ -2747,7 +2869,8 @@ test popup
     width: .9rem;
     height: 1.2rem; }
   .filter-check {
-    font-size: 0; }
+    font-size: 0;
+    padding: .3rem 0; }
     .filter-check__item {
       margin-right: .6rem;
       display: inline-block; }
@@ -2922,7 +3045,7 @@ test popup
     line-height: 0.58;
     text-align: left;
     color: #9b806f;
-    margin-bottom: 1.2rem; }
+    margin-bottom: 2.1rem; }
   .cafe__body {
     background-color: #fff;
     padding: 2.6rem 3rem;
@@ -2973,6 +3096,85 @@ test popup
       height: 2.9rem;
       background: url(../img/bg-slider-footer.jpg) 50% 50% no-repeat;
       background-size: cover; }
+  .cafe-timetable {
+    margin-bottom: 5.1rem; }
+    .cafe-timetable__title {
+      font-size: 2.6rem;
+      line-height: 0.58;
+      text-align: left;
+      color: #9b806f;
+      margin-bottom: 2.6rem; }
+    .cafe-timetable__item {
+      margin-bottom: 2.1rem; }
+      .cafe-timetable__item:last-child {
+        margin-bottom: 0; }
+  .cafe-holiday__title {
+    font-size: 2.6rem;
+    line-height: 0.58;
+    text-align: left;
+    color: #9b806f;
+    margin-bottom: 2.6rem; }
+  .cafe-holiday__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .cafe-holiday__slider {
+    width: 67%;
+    height: 46.3rem; }
+  .cafe-holiday-order {
+    width: 33%; }
+  .cafe-holiday-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2.5rem; }
+  .cafe-holiday-count {
+    width: 48%; }
+    .cafe-holiday-count::after {
+      content: '';
+      clear: both;
+      display: table; }
+    .cafe-holiday-count__number {
+      font-family: "BebasNeue";
+      font-size: 6rem;
+      line-height: .8;
+      font-weight: 700;
+      color: #553023;
+      float: left; }
+    .cafe-holiday-count__text {
+      padding-left: 7.9rem; }
+      .cafe-holiday-count__text span {
+        display: inline-block;
+        font-size: 1.2rem;
+        line-height: 1.1rem;
+        color: #a09393; }
+      .cafe-holiday-count__text div {
+        font-size: 1.4rem;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #553023; }
+  .cafe-holiday__btn-order {
+    width: 52%; }
   .cafe__footer {
     background-color: #7cbd41; }
 
