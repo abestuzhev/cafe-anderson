@@ -980,6 +980,23 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
+/*card-event------------------------------------------------------------*/
+
+.card-event {
+    background-color: $white;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    border: solid 2px rgba(0, 0, 0, 0.15);
+    padding: 1.3rem 1.8rem 2.7rem 8.5rem;
+
+    &__header {
+
+    }
+
+    &__body {
+
+    }
+}
+
 /*grid------------------------------------------------------------*/
 
 .c-grid {
