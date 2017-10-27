@@ -810,6 +810,24 @@
     .popup__request-call .mobile-request-call__form {
         display: none;
     }
+
+
+    .c-card-cafe {
+        flex-flow: column nowrap;
+    }
+
+    .c-card-cafe__img {
+        width: 100%;
+        height: 22.5rem;
+    }
+
+    .c-card-cafe__img img {
+        width: 100%;
+        height: auto;
+    }
+    .c-card-cafe__body {
+        width: 100%;
+    }
 }
 
 
@@ -872,23 +890,6 @@
     #mobile-auth {
         padding: 1.4rem 0;
         width: 37%;
-    }
-
-    .c-card-cafe {
-        flex-flow: column nowrap;
-    }
-
-    .c-card-cafe__img {
-        width: 100%;
-        height: 22.5rem;
-    }
-
-    .c-card-cafe__img img {
-        width: 100%;
-        height: auto;
-    }
-    .c-card-cafe__body {
-        width: 100%;
     }
 }
 
@@ -1042,3 +1043,6 @@
 }
 
 /**/
+/*.tab {*/
+    /*display: none;*/
+/*}*/

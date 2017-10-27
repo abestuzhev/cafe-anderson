@@ -24,11 +24,63 @@ body {
     min-height: 100%;
     height: auto !important;
     overflow: hidden;
+    //padding-bottom: 8rem;
 }
 
 .base {
     position: relative;
     padding: $height_header 0 $height_footer;
+}
+
+//-------------------------------------------------preloader*/
+
+
+.preloader {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    //background-color: #333;
+    //background: #fdf7e8 url(../img/bg-header.png) repeat;
+    background: #fdf7e8;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-out;
+
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-top-color: $color_brand;
+    animation: 1s spin infinite linear;
+
+    &-icon {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 a {
@@ -575,6 +627,11 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     cursor: pointer;
     @extend %transition_all;
 
+    &::after {
+        content: '';
+        border: none;
+    }
+
     &__default {
         padding: 1.4rem 3.4rem;
         background-color: $color_btn;
@@ -801,6 +858,11 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         line-height: 1.3;
         vertical-align: middle;
         border: none;
+
+        &::after {
+            content: '';
+            border: none;
+        }
 
         &:hover {
             color: $white;
