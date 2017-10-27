@@ -272,7 +272,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
-//------------------------------------------------------------icons
+//icons------------------------------------------------------------
 .c-icon {
     &.is-active {
         fill: $color_brand;
@@ -321,6 +321,20 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     height: 19px;
     fill: $color_text_bg;
     vertical-align: bottom;
+}
+
+.icon-mail {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.6rem;
+    background: url(../img/icons/icon-email.svg) 0 0 no-repeat;
+}
+
+.icon-mail {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(../img/icons/icon-clock.svg) 0 0 no-repeat;
 }
 
 .icon-search {
@@ -421,6 +435,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     height: 27px;
     fill: $color_text_bg;
     vertical-align: bottom;
+}
+.icon-rabbit-positive{
+    display: inline-block;
+    width: 2.2rem;
+    height: 3.1rem;
+    background: url(../img/icons/icon-positive.svg) 0 0 no-repeat;
 }
 
 .icon-negative {
@@ -592,7 +612,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     display: inline-block;
     width: 4.9rem;
     height: 5rem;
+    line-height: 5rem;
+    text-align: center;
     background: url(../img/icons/icon-uneven-circle.svg) 50% 50% no-repeat;
+}
+.icon-chair {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.8rem;
+    background: url(../img/icons/icon-chair.svg) 50% 50% no-repeat;
 }
 
 @media screen and (min-width: 1600px) {
@@ -1159,6 +1187,16 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+    }
+}
+
+/*grid------------------------------------------------------------*/
+.c-line {
+    &-horizontal {
+        width: 100%;
+        height: 3px;
+        background: url(../img/line-wave-horizontal.png) 0 0 repeat-x;
+        margin-bottom: 2rem;
     }
 }
 

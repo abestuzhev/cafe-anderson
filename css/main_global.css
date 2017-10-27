@@ -418,6 +418,18 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   fill: #9b9696;
   vertical-align: bottom; }
 
+.icon-mail {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.6rem;
+  background: url(../img/icons/icon-email.svg) 0 0 no-repeat; }
+
+.icon-mail {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(../img/icons/icon-clock.svg) 0 0 no-repeat; }
+
 .icon-search {
   position: relative;
   width: 20px;
@@ -503,6 +515,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   height: 27px;
   fill: #9b9696;
   vertical-align: bottom; }
+
+.icon-rabbit-positive {
+  display: inline-block;
+  width: 2.2rem;
+  height: 3.1rem;
+  background: url(../img/icons/icon-positive.svg) 0 0 no-repeat; }
 
 .icon-negative {
   position: relative;
@@ -638,7 +656,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   display: inline-block;
   width: 4.9rem;
   height: 5rem;
+  line-height: 5rem;
+  text-align: center;
   background: url(../img/icons/icon-uneven-circle.svg) 50% 50% no-repeat; }
+
+.icon-chair {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.8rem;
+  background: url(../img/icons/icon-chair.svg) 50% 50% no-repeat; }
 
 @media screen and (min-width: 1600px) {
   .c-layout {
@@ -1075,6 +1101,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
     overflow: hidden; }
+
+/*grid------------------------------------------------------------*/
+.c-line-horizontal {
+  width: 100%;
+  height: 3px;
+  background: url(../img/line-wave-horizontal.png) 0 0 repeat-x;
+  margin-bottom: 2rem; }
 
 /*grid------------------------------------------------------------*/
 .c-grid {
@@ -2104,6 +2137,7 @@ main {
           position: absolute;
           top: 5px;
           right: -2.2rem;
+          left: auto;
           width: .1rem;
           height: 1rem;
           background-color: #9b9696; }
@@ -3039,7 +3073,8 @@ test popup
 
 /*cafe----------------------------------------------------*/
 .cafe {
-  font-family: "PT Serif Caption"; }
+  font-family: "PT Serif Caption";
+  margin-bottom: 3rem; }
   .cafe__title {
     font-size: 2.6rem;
     line-height: 0.58;
@@ -3048,11 +3083,11 @@ test popup
     margin-bottom: 2.1rem; }
   .cafe__body {
     background-color: #fff;
-    padding: 2.6rem 3rem;
+    padding: 2.6rem 3rem 5.4rem;
     border: 2px solid rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
             box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
-    border-radius: .6rem; }
+    border-radius: .6rem .6rem 0 0; }
   .cafe-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3067,6 +3102,27 @@ test popup
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
+    .cafe-info__item {
+      position: relative;
+      font-size: 1.3rem;
+      line-height: 1.15;
+      text-align: left;
+      color: #9b9595;
+      margin-bottom: 1.8rem;
+      vertical-align: middle;
+      padding-left: 2.4rem; }
+      .cafe-info__item-col {
+        vertical-align: top;
+        display: inline-block; }
+      .cafe-info__item i, .cafe-info__item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-right: .9rem; }
+      .cafe-info__item-tel .cafe-info__item-col {
+        margin-right: 1.6rem; }
+      .cafe-info__item .c-button {
+        margin-top: .9rem; }
     .cafe-info-card {
       width: 69%;
       padding: 2.5rem 2.2rem 3.4rem;
@@ -3128,11 +3184,15 @@ test popup
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
-  .cafe-holiday__slider {
-    width: 67%;
+  .cafe-holiday-slider {
+    width: 66%;
     height: 46.3rem; }
+    .cafe-holiday-slider__item img {
+      width: 100%;
+      height: auto; }
   .cafe-holiday-order {
-    width: 33%; }
+    padding-left: 2rem;
+    width: 34%; }
   .cafe-holiday-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3175,8 +3235,123 @@ test popup
         color: #553023; }
   .cafe-holiday__btn-order {
     width: 52%; }
+  .cafe-holiday__text {
+    font-size: 1.3rem;
+    line-height: 1.15;
+    text-align: left;
+    color: #9b9595;
+    margin-bottom: 1.3rem; }
+  .cafe-holiday__tel {
+    vertical-align: middle;
+    font-size: 1.3rem;
+    line-height: 1.15;
+    text-align: left;
+    color: #9b9595;
+    margin-bottom: 1.5rem; }
+    .cafe-holiday__tel i {
+      vertical-align: middle;
+      margin-right: .9rem; }
+  .cafe-holiday-description__title {
+    font-size: 1.7rem;
+    line-height: 0.88;
+    text-align: left;
+    color: #9b806f;
+    margin-bottom: 1.5rem; }
+  .cafe-holiday-description__text {
+    font-size: 1.3rem;
+    line-height: 1.54;
+    text-align: left;
+    color: #9b9595; }
+  .cafe-holiday-description__item {
+    font-size: 1.3rem;
+    line-height: 0.75;
+    text-align: left;
+    color: #9b9595;
+    vertical-align: middle;
+    margin-bottom: 2rem; }
+    .cafe-holiday-description__item i {
+      vertical-align: middle;
+      margin-right: .5rem; }
   .cafe__footer {
-    background-color: #7cbd41; }
+    padding: 3.8rem 3rem;
+    background-color: #7cbd41;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2); }
+  .cafe-description {
+    width: 50%; }
+    .cafe-description__title {
+      font-size: 2.6rem;
+      line-height: 0.77;
+      text-align: left;
+      color: #ffffff;
+      margin-bottom: 2.5rem; }
+    .cafe-description__text {
+      font-size: 1.5rem;
+      line-height: 1.33;
+      text-align: left;
+      color: #ffffff; }
+      .cafe-description__text p {
+        margin-bottom: 2.3rem; }
+  .cafe-reviews {
+    padding: 1.8rem 0;
+    margin-left: 7%;
+    width: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    background: #f9f3e3 url(../img/bg-header.png) repeat;
+    border-radius: .6rem;
+    -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1); }
+    .cafe-reviews__title {
+      font-size: 2.6rem;
+      line-height: 0.58;
+      color: #9b806f;
+      margin-bottom: 1.5rem;
+      text-align: center; }
+  .cafe-review {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 38rem; }
+    .cafe-review__icon {
+      margin-bottom: 1.4rem; }
+      .cafe-review__icon i {
+        position: relative; }
+        .cafe-review__icon i i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+    .cafe-review__name {
+      font-size: 2rem;
+      line-height: 0.75;
+      color: #231300;
+      margin-bottom: 1.1rem; }
+    .cafe-review__date {
+      font-size: 13px;
+      line-height: 0.75;
+      color: #9b9595;
+      margin-bottom: 1.6rem; }
+    .cafe-review__text {
+      font-size: 1.3rem;
+      line-height: 1.38;
+      color: #9b9595; }
+  .cafe-fotorama {
+    width: 100%;
+    padding: .9rem 19.4rem; }
 
 #cafe-info-map {
   width: 34.8rem;

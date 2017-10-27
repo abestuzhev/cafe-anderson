@@ -12,6 +12,9 @@
 
     <link href="" rel="stylesheet">
 
+    <!--fotorama-->
+    <link rel="stylesheet" href="bower_components/fotorama/fotorama.css">
+
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />
     <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all" />
@@ -721,7 +724,31 @@
                 <h1 class="cafe__title">АндерСон на Красносельской</h1>
                 <div class="cafe__body">
                     <div class="cafe-info">
-                        <div class="cafe-info-card"></div>
+                        <div class="cafe-info-card">
+                            <div class="cafe-info__item"><i class="icon-place"></i><b>Адрес: </b>ул. Верхняя Красносельская, д. 7/2 </div>
+                            <div class="cafe-info__item">
+                                <div class="cafe-info__item-col"><i class="icon-clock"></i><b>Время работы: </b></div>
+                                <div class="cafe-info__item-col"><div>пн.-пт. с 8:00 до 23:00</div><div>сб.-вс. с 9:00 до 23:00</div></div>
+
+                            </div>
+                            <div class="cafe-info__item cafe-info__item-tel">
+                                <div class="cafe-info__item-col">
+                                    <i class="icon-phoneNumber"></i>Телефон кафе: +7 (499) ххх-хх-хх
+                                    <div class="l-button"><a class="c-button c-button__small c-button--dark" href="#">показать номер</a></div>
+                                </div>
+                                <div class="cafe-info__item-col">
+                                    Дополнительный телефон: +7 (499) ххх-хх-хх
+                                    <div class="l-button"><a class="c-button c-button__small c-button--dark" href="#">показать номер</a></div>
+                                </div>
+                            </div>
+                            <div class="cafe-info__item"><i class="icon-mail"></i><b>E-mail: </b>krasnoselskaya@cafe-anderson.ru</div>
+                            <div class="cafe-info__item"><b>Летняя веранда: </b>есть</div>
+                            <div class="cafe-info__item">Заказать праздник и обсудить детали вы можете с менеджером по праздникам,
+                                ежедневно с 11:00 до 20:00. Просим вас договориться о встрече заранее.</div>
+                            <div class="cafe-info__item"><i class="icon-phoneNumber"></i><b>Телефон: </b>+7 (495) 125-49-07</div>
+                            <div class="cafe-info__item"><i class="icon-mail"></i><b>E-mail банкетного менеджера: </b>prazdnik_krasnoselskaya@cafe-anderson.ru</div>
+                            <div class="cafe-info__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>
+                        </div>
                         <div class="cafe-info-map">
                             <div class="cafe-info-map__tabs">
                                 <ul class="tabs-menu" id="tabs-cafe-map">
@@ -744,7 +771,11 @@
                     </div>
                     <div class="cafe-slider">
                         <div class="cafe-slider__header"></div>
-                        <div class="cafe-slider__body"></div>
+                        <div class="cafe-slider__body">
+                            <div class="cafe-fotorama">
+                                <img src="img/cafe-slider-1.jpg" alt="">
+                            </div>
+                        </div>
                         <div class="cafe-slider__footer"></div>
                     </div>
                     <div class="cafe-timetable">
@@ -803,7 +834,9 @@
                     <div class="cafe-holiday">
                         <h3 class="cafe-holiday__title">Праздничные пространства</h3>
                         <div class="cafe-holiday__body">
-                            <div class="cafe-holiday__slider"></div>
+                            <div class="cafe-holiday-slider">
+                                <div class="cafe-holiday-slider__item"><img src="img/cafe-holiday-slide-1.jpg" alt=""></div>
+                            </div>
                             <div class="cafe-holiday-order">
                                 <div class="cafe-holiday-header">
                                     <div class="cafe-holiday-count">
@@ -821,8 +854,10 @@
                                 </div>
                                 <div class="cafe-holiday__text">Заказать праздник и обсудить детали вы можете с менеджером по праздникам, ежедневно с 11:00 до 20:00. Просим вас договориться о встрече заранее.</div>
                                 <div class="cafe-holiday__tel"><i class="icon-phoneNumber"></i>Телефон: +7 (495) 125-49-07</div>
+                                <div class="c-line-horizontal"></div>
                                 <div class="cafe-holiday-description">
                                     <div class="cafe-holiday-description__title">Мансарда</div>
+                                    <div class="cafe-holiday-description__item"><i class="icon-chair"></i>количество мест: 30</div>
                                     <div class="cafe-holiday-description__text">Рядом с банкетным залом располагается мансарда со стеклянной крышей. Она будто предлагает заглянуть в жизнь бегущего города, удобно устроившись на мягком диване. Кстати, для любителей провести время за книгой, здесь есть мини-библиотека. Утром и вечером, семь дней в неделю, если у вас есть повод для небольшого праздника или просто так - АндерСон на Красносельской ждет  вас в гости!</div>
                                 </div>
                             </div>
@@ -830,8 +865,46 @@
                     </div>
                 </div>
                 <div class="cafe__footer">
-                    <div class="cafe-description"></div>
-                    <div class="cafe-reviews"></div>
+                    <div class="cafe-description">
+                        <div class="cafe-description__title">АндерСон на Красносельской:</div>
+                        <div class="cafe-description__text">
+                            <p>Грузите все сладости на борт и этих…уж больно они много видели!» -
+                                после таких слов вам придется стать очень сплоченной командой
+                                иначе все пропало! Плечом к плечу и курсом на бегство!</p>
+                            <p>Уникальный квест «Дизельпанк Дирижабль» - это невероятная
+                                летающая машина, устройство и интерьер которой можно
+                                разглядывать часами, но время неумолимо к пленным. Необходимо
+                                выбираться из кандалов, приготовить моторную жидкость, подобрать
+                                ключ, привести штурвал в движение и…уметь принимать решения
+                                на месте! Захватывающие приключения превращаются в приятные
+                                воспоминания! Пройдите квест всей семьей!</p>
+                            <p>Новый АндерСон у метро Красносельская, расположен в старинном
+                                здании. В кафе четыре просторных зала, игровая для детей, отдельная
+                                зона для мастер-классов, стеклянная мансарда и комната-квест.</p>
+                        </div>
+                    </div>
+                    <div class="cafe-reviews">
+                        <div class="cafe-reviews__title">Отзывы</div>
+                        <div class="cafe-reviews-slider">
+                            <div class="cafe-reviews-slider__item">
+                                <div class="cafe-review">
+                                    <div class="cafe-review__icon">
+                                        <i class="icon-uneven-circle"><i class="icon-rabbit-positive"></i></i>
+                                    </div>
+                                    <div class="cafe-review__name">Татьяна</div>
+                                    <div class="cafe-review__date">05.09.2017 / 23:51:00</div>
+                                    <div class="cafe-review__text">Недавно отмечали свадьбу в Андерсоне на ВДНХа.
+                                        Уютный интерьер, очень вкусная кухня. Закуски,
+                                        салаты- просто объедение. Приветливый и тактичный
+                                        персонал. Дети тоже остались довольны. Особо
+                                        отметили сменные сиденья в туалетах. В андерсоне все
+                                        для вашего комфорта. Приятное место. В прошлом
+                                        году отмечали день рождения сына. За год кафе стало
+                                        лучше. Обязательно придём ещё! </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1404,6 +1477,7 @@
 <script type="text/javascript" src="./js/jscrollpane/jquery.jscrollpane.min.js"></script>
 
 <script src='./bower_components/sumoselect/jquery.sumoselect.js'></script>
+<script src='./bower_components/fotorama/fotorama.js'></script>
 <script src="./js/preloader.js"></script>
 <script src="./js/tooltip.js"></script>
 <script src="./js/main.js"></script>

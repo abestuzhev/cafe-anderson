@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "jquery": "^3.2.1",
-    "sumoselect": "^3.0.2"
+    "sumoselect": "^3.0.2",
+    "fotorama": "^4.6.4"
   }
 }
