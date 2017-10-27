@@ -198,10 +198,17 @@ $(document).ready(function ($) {
         $('.popup-request-city').addClass('popup-show');
     });
 
-    // $(".popup-request-city").click(function (e) {
-    //     e.preventDefault();
-    //     $(this).hide();
-    // });
+    $(".popup-request-city").click(function (e) {
+        e.preventDefault();
+        $('.popup-request-city').removeClass('popup-show');
+        // $('.popup-request-city').hide();
+        $('.popup__request-call').addClass('is-visible');
+        $('.mfp-bg').addClass('is-visible');
+        $('html').css({
+            'overflow':'hidden'
+            // 'margin-right':'14px'
+        });
+    });
 
     /*попап корзины*/
     $('.icon-basket').on('click', function () {
