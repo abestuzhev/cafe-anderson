@@ -1763,6 +1763,12 @@ test popup
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: stretch;
+        color: #9b9595;
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 1.3rem;
+        }
 
         &__item {
             position: relative;
@@ -1777,6 +1783,10 @@ test popup
             &-col {
                 vertical-align: top;
                 display: inline-block;
+
+                .cafe-info__phone-number {
+                    display: none;
+                }
             }
 
             i, img {
@@ -1802,8 +1812,41 @@ test popup
 
         &-card {
             width: 69%;
-            padding: 2.5rem 2.2rem 3.4rem;
+            padding: 2.5rem 0 1.4rem 2.2rem;
             background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+
+            &__left {
+                width: 78%;
+            }
+
+            &__right {
+                width: 22%;
+                text-align: right;
+
+                .c-button__big {
+                    border-radius: .6rem 0 0 .6rem;
+                }
+
+                .c-card-cafe-advantages {
+                    flex-flow: column wrap;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    border: none;
+                    width: 100%;
+                    padding-right: 1rem;
+                    max-height: 32rem;
+
+                    &__item {
+                        min-width: 6.8rem;
+                        text-align: center;
+                        margin-right: 0;
+                    }
+                }
+            }
         }
 
         &-map {
@@ -1815,11 +1858,18 @@ test popup
             &__tabs {
                 text-align: left;
                 margin: 1.2rem 0;
+                font-size: 1.3rem;
+
             }
         }
 
         &-way {
             min-height:33.8rem;
+        }
+
+        &__phone-number {
+            font-size: 1.6rem;
+            padding: 1.2rem 0 .5rem;
         }
     }
 
@@ -1836,8 +1886,10 @@ test popup
 
         &__body {
             width: 100%;
-            height: 59.5rem;
+            //height: 59.5rem;
             background: url(../img/bg-cafe-slider.jpg) 50% 50% no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
         }
 
         &__footer {
@@ -1889,7 +1941,7 @@ test popup
 
         &-slider {
             width: 66%;
-            height: 46.3rem;
+            height: auto;
 
             &__item {
 
@@ -1953,6 +2005,10 @@ test popup
 
         &__btn-order {
             width: 52%;
+
+            .c-button__big {
+                display: block;
+            }
         }
 
         &__text {
@@ -2036,6 +2092,9 @@ test popup
             line-height: 1.33;
             text-align: left;
             color: #ffffff;
+            //overflow-x: auto;
+            //overflow-y: scroll;
+            height: 28rem;
 
             p {
                 margin-bottom: 2.3rem;
@@ -2112,7 +2171,16 @@ test popup
 }
 
 #cafe-info-map {
-    width: 34.8rem;
+    width: 100%;
     height: 33.8rem;
     border: solid 3px #ffffff;
+}
+
+.ss-scroll {
+    width: 23px;
+    height: 23px !important;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,.15);
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
 }

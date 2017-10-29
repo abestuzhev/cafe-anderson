@@ -32,6 +32,13 @@
 }
 
 
+@media (max-width:1600px) {
+    .cafe-description__text {
+        height: 23rem;
+    }
+}
+
+
 @media (max-width:1380px) {
     .home-cafe {
         width: 26%;
@@ -94,6 +101,31 @@
     /*фильтр*/
     .filter-item {
 
+    }
+
+    .cafe-info__item-tel .cafe-info__item-col {
+        display: block;
+        margin-bottom: 1.3rem;
+    }
+
+    /*#cafe-info-map {*/
+        /*height: 37.8rem;*/
+    /*}*/
+
+    .cafe-holiday-slider {
+        width: 55%;
+    }
+
+    .cafe-holiday-order {
+        width: 45%;
+    }
+
+    .cafe-holiday-slider {
+        /*height: 40rem;*/
+    }
+
+    .cafe__body {
+        padding-bottom: 2rem;
     }
 }
 
@@ -417,6 +449,63 @@
     }
 }
 
+@media (max-width:980px) {
+
+
+    .cafe-info {
+        flex-flow: column nowrap;
+    }
+
+    .cafe-info-card,
+    .cafe-info-map {
+        width: 100%;
+    }
+
+    .cafe-holiday__body {
+        flex-flow: column nowrap;
+    }
+
+    .cafe-fotorama {
+        padding: 0;
+    }
+
+    .cafe-slider__footer {
+        height: 6.6rem;
+        background-position: 100% 0;
+    }
+
+
+    .cafe-holiday-order,
+    .cafe-holiday-slider,
+    .cafe-description {
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .cafe-reviews {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cafe-description__text {
+        overflow: auto;
+        height: auto;
+    }
+
+    .cafe-holiday-count {
+        width: 60%;
+    }
+
+    .cafe-holiday__btn-order {
+        width: 40%;
+    }
+
+    .cafe__footer {
+        flex-flow: column nowrap;
+    }
+}
+
 @media (max-width:920px) {
 
     .cafe-list .c-grid {
@@ -435,6 +524,12 @@
     .c-card-cafe__title {
         margin-bottom: 1.4rem;
     }
+
+    #cafe-info-map {
+        height: 27rem;
+    }
+
+
 }
 
 @media (max-width:800px) {
@@ -544,6 +639,53 @@
         display: block;
     }
 
+    .c-card-event {
+        padding: 1.4rem 1.4rem 2rem;
+    }
+
+    .c-card-event__label,
+    .c-card-event__price {
+        background: none;
+        position: static;
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+
+
+    .cafe-info-card {
+        flex-flow: column nowrap;
+        padding: 1.8rem 1.5rem;
+    }
+
+    .cafe-info-card__left,
+    .cafe-info-card__right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cafe-info-card__right .c-card-cafe-advantages {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .cafe-info-card__right .c-card-cafe-advantages__item{
+        margin-right: 1.1rem;
+    }
+
+    .cafe-info-card__right .c-button__big {
+        border-radius: .6rem;
+        display: block;
+    }
+
+    .cafe-holiday-count {
+        width: 50%;
+    }
+
+    .cafe-holiday__btn-order {
+        width: 50%;
+    }
 }
 
 @media (max-width:780px) {
@@ -675,6 +817,7 @@
         width: auto;
         height: 100%;
     }
+
 }
 
 
@@ -709,6 +852,21 @@
     .home-cake {
         right: -105%;
     }
+
+
+    .cafe-holiday-header {
+        flex-flow: column nowrap;
+    }
+
+    .cafe-holiday-count,
+    .cafe-holiday__btn-order {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cafe-holiday-count {
+        margin-bottom: 1.3rem;
+    }
 }
 
 
@@ -728,6 +886,10 @@
 
     .header-mobile__auth {
         padding: .5rem 0;
+    }
+
+    .cafe-reviews-slider {
+        height: auto;
     }
 }
 
@@ -803,6 +965,18 @@
     .c-layout{
         padding: 0 1.6rem;
     }
+
+    .cafe__body,
+    .cafe__footer {
+        padding: 1.5rem;
+        margin-left: -1.7rem;
+        margin-right: -1.7rem;
+    }
+
+    /*.cafe-holiday-slider {*/
+        /*margin-left: -1.5rem;*/
+        /*margin-right: -1.5rem;*/
+    /*}*/
 
     .popup__request-call .mobile-request-call {
         display: block;

@@ -7,6 +7,11 @@ var $body,
 	mediaPoint4 = 320;
 
 
+//
+// var el = document.querySelector('.cafe-description__text');
+// SimpleScrollbar.initEl(el);
+
+
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
@@ -14,8 +19,44 @@ $(document).ready(function ($) {
     // $(".popup-basket__scroll").scrollBox();
     // $('#scrollbarY').tinyscrollbar();
 
+    /*кастомный скролл*/
     $('.popup-basket__scroll').jScrollPane();
 
+    /*Фоторама, слайдер мероприятий, слайдер отзывов*/
+    $('.cafe-fotorama').fotorama({
+        width: '100%',
+        // maxwidth: '100%',
+        ratio: 17/11,
+        loop: true,
+        thumbwidth: 88,
+        allowfullscreen: true,
+        nav: 'thumbs',
+        fit:'cover'
+    });
+
+    $('.cafe-holiday-slider').fotorama({
+        width: '100%',
+        maxwidth: '100%',
+        // ratio: 16/9,
+        loop: true,
+        allowfullscreen: true,
+        fit:'cover'
+    });
+
+    $('.cafe-reviews-slider').fotorama({
+        width: '100%',
+        maxwidth: '100%',
+        loop: true,
+        ratio: 16/5
+    });
+
+
+    /*показ номера телефона в карточке кафе*/
+    $('.cafe-info__item-col .c-button').on('click', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $(this).parents('.l-button').siblings('.cafe-info__phone-number').show();
+    });
 
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
