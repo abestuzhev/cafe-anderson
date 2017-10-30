@@ -1893,7 +1893,7 @@ test popup
             }
 
             &:hover {
-                color: $white;
+
                 border: none;
             }
             &::after {
@@ -2132,6 +2132,8 @@ test popup
     }
 
     &-reviews {
+        overflow: hidden;
+        position: relative;
         padding: 1.8rem 0;
         margin-left: 4%;
         width: 50%;
@@ -2139,6 +2141,14 @@ test popup
         background: #f9f3e3 url(../img/bg-header.png) repeat;
         border-radius: .6rem;
         box-shadow: 0 3px 10px 2px rgba(0,0,0,.1);
+
+        &__icon {
+            position: absolute;
+            bottom: -4px;
+            right: 2.6rem;
+            width: 5.2rem;
+            height: 13.1rem;
+        }
 
         &__title {
             font-size: 2.6rem;

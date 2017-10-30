@@ -3220,7 +3220,6 @@ test popup
         display: block;
         margin-bottom: .8rem; }
       .cafe-slider__tour:hover {
-        color: #fff;
         border: none; }
       .cafe-slider__tour::after {
         content: '';
@@ -3397,6 +3396,8 @@ test popup
       .cafe-description__text p {
         margin-bottom: 2.3rem; }
   .cafe-reviews {
+    overflow: hidden;
+    position: relative;
     padding: 1.8rem 0;
     margin-left: 4%;
     width: 50%;
@@ -3405,6 +3406,12 @@ test popup
     border-radius: .6rem;
     -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1); }
+    .cafe-reviews__icon {
+      position: absolute;
+      bottom: -4px;
+      right: 2.6rem;
+      width: 5.2rem;
+      height: 13.1rem; }
     .cafe-reviews__title {
       font-size: 2.6rem;
       line-height: 0.58;

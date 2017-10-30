@@ -127,6 +127,10 @@
     .cafe__body {
         padding-bottom: 2rem;
     }
+
+    .cafe-reviews__icon {
+        right: -2rem;
+    }
 }
 
 @media (max-width:1178px) {
@@ -532,6 +536,10 @@
     .cafe__footer {
         flex-flow: column nowrap;
     }
+
+    .cafe-reviews__icon {
+        right: 2.6rem;
+    }
 }
 
 @media (max-width:920px) {
@@ -716,7 +724,7 @@
     }
 
     .c-card-event__text {
-        overflow: auto;
+        /*overflow: auto;*/
         /*text-overflow: clip;*/
         white-space: normal;
     }
@@ -852,6 +860,13 @@
         height: 100%;
     }
 
+    .cafe-reviews__icon {
+        right: -2.2rem;
+    }
+
+    .cafe-review {
+        max-width: 23rem;
+    }
 }
 
 
