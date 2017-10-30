@@ -3097,11 +3097,12 @@ test popup
   margin-bottom: 3rem; }
   .cafe__title {
     font-size: 2.6rem;
-    line-height: 0.58;
+    line-height: 1;
     text-align: left;
     color: #9b806f;
     margin-bottom: 2.1rem; }
   .cafe__body {
+    position: relative;
     background-color: #fff;
     padding: 2.6rem 3rem 5.4rem;
     border: 2px solid rgba(0, 0, 0, 0.2);
@@ -3207,12 +3208,30 @@ test popup
       padding: 1.2rem 0 .5rem; }
   .cafe-slider {
     margin-bottom: 4.8rem; }
+    .cafe-slider__tour {
+      position: absolute;
+      top: 1.5rem;
+      right: 2.2rem;
+      text-align: center;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: #fff; }
+      .cafe-slider__tour img {
+        display: block;
+        margin-bottom: .8rem; }
+      .cafe-slider__tour:hover {
+        color: #fff;
+        border: none; }
+      .cafe-slider__tour::after {
+        content: '';
+        border-color: #fff; }
     .cafe-slider__header {
       width: 100%;
       height: 2.9rem;
       background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
       background-size: cover; }
     .cafe-slider__body {
+      position: relative;
       width: 100%;
       background: url(../img/bg-cafe-slider.jpg) 50% 50% no-repeat;
       background-size: cover; }
@@ -3225,7 +3244,7 @@ test popup
     margin-bottom: 5.1rem; }
     .cafe-timetable__title {
       font-size: 2.6rem;
-      line-height: 0.58;
+      line-height: 1;
       text-align: left;
       color: #9b806f;
       margin-bottom: 2.6rem; }
@@ -3235,7 +3254,7 @@ test popup
         margin-bottom: 0; }
   .cafe-holiday__title {
     font-size: 2.6rem;
-    line-height: 0.58;
+    line-height: 1;
     text-align: left;
     color: #9b806f;
     margin-bottom: 2.6rem; }
@@ -3324,7 +3343,7 @@ test popup
       margin-right: .9rem; }
   .cafe-holiday-description__title {
     font-size: 1.7rem;
-    line-height: 0.88;
+    line-height: 1;
     text-align: left;
     color: #9b806f;
     margin-bottom: 1.5rem; }
@@ -3365,7 +3384,7 @@ test popup
     width: 50%; }
     .cafe-description__title {
       font-size: 2.6rem;
-      line-height: 0.77;
+      line-height: 1;
       text-align: left;
       color: #ffffff;
       margin-bottom: 2.5rem; }
@@ -3379,7 +3398,7 @@ test popup
         margin-bottom: 2.3rem; }
   .cafe-reviews {
     padding: 1.8rem 0;
-    margin-left: 7%;
+    margin-left: 4%;
     width: 50%;
     border: 2px solid rgba(0, 0, 0, 0.15);
     background: #f9f3e3 url(../img/bg-header.png) repeat;
@@ -3438,3 +3457,38 @@ test popup
   border: 2px solid rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1); }
+
+.simplebar-scrollbar {
+  background-color: #fff;
+  border-radius: 23px; }
+
+.simplebar-content {
+  padding-right: 3rem !important; }
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -1.7rem; }
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  right: 0;
+  width: 3.3rem;
+  height: 3.3rem;
+  text-indent: -99999px;
+  background: url(../img/icons/icon-green-arrow-right.svg) 0 0 no-repeat; }
+
+.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--next:not(:focus),
+.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--prev:not(:focus) {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1 !important; }
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  left: 0;
+  width: 3.3rem;
+  height: 3.3rem;
+  text-indent: -99999px;
+  background: url(../img/icons/icon-green-arrow-left.svg) 0 0 no-repeat; }

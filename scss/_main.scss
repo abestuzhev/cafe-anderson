@@ -1744,13 +1744,14 @@ test popup
 
     &__title {
         font-size: 2.6rem;
-        line-height: 0.58;
+        line-height: 1;
         text-align: left;
         color: #9b806f;
         margin-bottom: 2.1rem;
     }
 
     &__body {
+        position: relative;
         background-color: #fff;
         padding: 2.6rem 3rem 5.4rem;
         border: 2px solid rgba(0,0,0,.2);
@@ -1876,6 +1877,33 @@ test popup
     &-slider {
         margin-bottom: 4.8rem;
 
+
+        &__tour {
+            position: absolute;
+            top: 1.5rem;
+            right: 2.2rem;
+            text-align: center;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: $white;
+
+            img {
+                display: block;
+                margin-bottom: .8rem;
+            }
+
+            &:hover {
+                color: $white;
+                border: none;
+            }
+            &::after {
+                content: '';
+                border-color: $white;
+            }
+
+        }
+
+
         &__header {
             width: 100%;
             height: 2.9rem;
@@ -1885,6 +1913,7 @@ test popup
         }
 
         &__body {
+            position: relative;
             width: 100%;
             //height: 59.5rem;
             background: url(../img/bg-cafe-slider.jpg) 50% 50% no-repeat;
@@ -1906,7 +1935,7 @@ test popup
 
         &__title {
             font-size: 2.6rem;
-            line-height: 0.58;
+            line-height: 1;
             text-align: left;
             color: #9b806f;
             margin-bottom: 2.6rem;
@@ -1926,7 +1955,7 @@ test popup
 
         &__title {
             font-size: 2.6rem;
-            line-height: 0.58;
+            line-height: 1;
             text-align: left;
             color: #9b806f;
             margin-bottom: 2.6rem;
@@ -2036,7 +2065,7 @@ test popup
         &-description {
             &__title {
                 font-size: 1.7rem;
-                line-height: 0.88;
+                line-height: 1;
                 text-align: left;
                 color: #9b806f;
                 margin-bottom: 1.5rem;
@@ -2081,7 +2110,7 @@ test popup
 
         &__title {
             font-size: 2.6rem;
-            line-height: 0.77;
+            line-height: 1;
             text-align: left;
             color: #ffffff;
             margin-bottom: 2.5rem;
@@ -2104,7 +2133,7 @@ test popup
 
     &-reviews {
         padding: 1.8rem 0;
-        margin-left:7%;
+        margin-left: 4%;
         width: 50%;
         border: 2px solid rgba(0,0,0,.15);
         background: #f9f3e3 url(../img/bg-header.png) repeat;
@@ -2183,4 +2212,45 @@ test popup
     border-radius: 10px;
     border: 2px solid rgba(0,0,0,.15);
     box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
+}
+
+.simplebar-scrollbar {
+    background-color: #fff;
+    border-radius: 23px;
+
+}
+
+.simplebar-content {
+    padding-right: 3rem !important;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -1.7rem;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    right: 0;
+    width: 3.3rem;
+    height: 3.3rem;
+    text-indent: -99999px;
+    background: url(../img/icons/icon-green-arrow-right.svg) 0 0 no-repeat;
+}
+
+.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--next:not(:focus),
+.fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--prev:not(:focus) {
+    transform: translate3d(0,0,0);
+    opacity: 1 !important;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    left: 0;
+    width: 3.3rem;
+    height: 3.3rem;
+    text-indent: -99999px;
+    background: url(../img/icons/icon-green-arrow-left.svg) 0 0 no-repeat;
 }

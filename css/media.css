@@ -474,6 +474,27 @@
         background-position: 100% 0;
     }
 
+    .cafe-slider__tour {
+        right: auto;
+        top: auto;
+        left: 1.6rem;
+        bottom: -6.5rem;
+    }
+
+    .cafe-slider__tour::after {
+        content: '';
+        border: none;
+    }
+
+    .cafe-slider__tour img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+    .cafe-slider__tour span {
+        vertical-align: middle;
+    }
+
 
     .cafe-holiday-order,
     .cafe-holiday-slider,
@@ -486,6 +507,13 @@
     .cafe-reviews {
         width: 100%;
         margin: 0;
+    }
+
+    .simplebar-content,
+    .simplebar-scroll-content {
+        overflow: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .cafe-description__text {
@@ -685,6 +713,12 @@
 
     .cafe-holiday__btn-order {
         width: 50%;
+    }
+
+    .c-card-event__text {
+        overflow: auto;
+        /*text-overflow: clip;*/
+        white-space: normal;
     }
 }
 

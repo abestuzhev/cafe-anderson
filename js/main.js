@@ -22,6 +22,14 @@ $(document).ready(function ($) {
     /*кастомный скролл*/
     $('.popup-basket__scroll').jScrollPane();
 
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        autoHeight:true,
+        nav: true
+    });
+
     /*Фоторама, слайдер мероприятий, слайдер отзывов*/
     $('.cafe-fotorama').fotorama({
         width: '100%',
@@ -43,12 +51,13 @@ $(document).ready(function ($) {
         fit:'cover'
     });
 
-    $('.cafe-reviews-slider').fotorama({
-        width: '100%',
-        maxwidth: '100%',
-        loop: true,
-        ratio: 16/5
-    });
+    // $('.cafe-reviews-slider').fotorama({
+    //     width: '100%',
+    //     height: 'auto',
+    //     maxwidth: '100%',
+    //     loop: true,
+    //     ratio: 16/5
+    // });
 
 
     /*показ номера телефона в карточке кафе*/

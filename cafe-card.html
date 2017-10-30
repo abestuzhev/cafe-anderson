@@ -21,7 +21,14 @@
 
     <!--simplebar-->
     <link rel="stylesheet" href="./css/simplebar.css">
-    <script src="./js/simplebar.js"></script>
+
+
+
+    <!--owl carousel-->
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.green.css">
+
+
 
 
     <!-- styles needed by jScrollPane -->
@@ -803,6 +810,7 @@
                     <div class="cafe-slider">
                         <div class="cafe-slider__header"></div>
                         <div class="cafe-slider__body">
+                            <a href="#" class="cafe-slider__tour"><img src="./img/icons/icon-tour.png" alt=""><span>3D тур</span></a>
                             <div class="cafe-fotorama">
                                 <img src="img/cafe-slider-1.jpg" alt="">
                                 <img src="img/cafe-slider-2.jpg" alt="">
@@ -928,7 +936,7 @@
                     </div>
                     <div class="cafe-reviews">
                         <div class="cafe-reviews__title">Отзывы</div>
-                        <div class="cafe-reviews-slider" data-loop="true">
+                        <div class="cafe-reviews-slider owl-carousel">
                             <div class="cafe-reviews-slider__item">
                                 <div class="cafe-review">
                                     <div class="cafe-review__icon">
@@ -1555,6 +1563,8 @@
 <script type="text/javascript" src="./js/jscrollpane/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="./js/jscrollpane/jquery.jscrollpane.min.js"></script>
 
+<script src="./js/simplebar.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.js"></script>
 <script src='./bower_components/sumoselect/jquery.sumoselect.js'></script>
 <script src='./bower_components/fotorama/fotorama.js'></script>
 <script src="./js/preloader.js"></script>
