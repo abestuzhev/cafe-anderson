@@ -59,6 +59,8 @@ $(document).ready(function ($) {
     //     ratio: 16/5
     // });
 
+    /*маски для телефона*/
+    $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00');
 
     /*показ номера телефона в карточке кафе*/
     $('.cafe-info__item-col .c-button').on('click', function(e){
@@ -74,8 +76,8 @@ $(document).ready(function ($) {
             $(popup).addClass('is-visible');
             $('.mfp-bg').addClass('is-visible');
             $('html').css({
-                'overflow':'hidden'
-                // 'margin-right':'14px'
+                'overflow':'hidden',
+                'margin-right':'17px'
             });
             // $('html').addClass('body-popup');
         });
@@ -86,7 +88,8 @@ $(document).ready(function ($) {
         $(this).parents('.mfp-wrap').removeClass('is-visible');
         $('.mfp-bg').removeClass('is-visible');
         $('html').css({
-            'overflow':'auto'
+            'overflow':'auto',
+            'margin-right':'0'
         });
     });
 
@@ -198,7 +201,8 @@ $(document).ready(function ($) {
             div.parents('.mfp-wrap').removeClass('is-visible');
             $('.mfp-bg ').removeClass('is-visible');
             $('html').css({
-                'overflow':'auto'
+                'overflow':'auto',
+                'margin-right': '0'
             });
         }
     });
@@ -255,8 +259,8 @@ $(document).ready(function ($) {
         $('.popup__request-call').addClass('is-visible');
         $('.mfp-bg').addClass('is-visible');
         $('html').css({
-            'overflow':'hidden'
-            // 'margin-right':'14px'
+            'overflow':'hidden',
+            'margin-right':'17px'
         });
     });
 

@@ -153,12 +153,12 @@ p {
     display: none;
 }
 
-.wrapper button:disabled {
+.popup button:disabled {
     opacity: .4;
     cursor: auto;
 }
 
-.wrapper button:disabled:hover {
+.popup button:disabled:hover {
     opacity: .4;
 }
 

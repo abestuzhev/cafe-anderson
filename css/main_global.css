@@ -290,11 +290,11 @@ p {
 .popup input[type="checkbox"] {
   display: none; }
 
-.wrapper button:disabled {
+.popup button:disabled {
   opacity: .4;
   cursor: auto; }
 
-.wrapper button:disabled:hover {
+.popup button:disabled:hover {
   opacity: .4; }
 
 .c-checkbox {
@@ -1158,10 +1158,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .sticky {
   position: fixed !important;
   width: 100%;
-  top: 0;
+  top: -4rem;
   right: 0;
   will-change: transform;
-  z-index: 100; }
+  z-index: 100;
+  -webkit-transition: -webkit-transform .1s ease-out;
+  transition: -webkit-transform .1s ease-out;
+  -o-transition: transform .1s ease-out;
+  transition: transform .1s ease-out;
+  transition: transform .1s ease-out, -webkit-transform .1s ease-out; }
 
 .header {
   position: relative;
@@ -1175,11 +1180,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   -webkit-box-shadow: 0px 3px 14px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 14px 4px rgba(0, 0, 0, 0.2);
   color: #9b9696;
-  -webkit-transition: -webkit-transform .1s ease-out;
-  transition: -webkit-transform .1s ease-out;
-  -o-transition: transform .1s ease-out;
-  transition: transform .1s ease-out;
-  transition: transform .1s ease-out, -webkit-transform .1s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
   border-bottom: 2px solid #d4c89f; }
   .header-mobile {
     /*мобильная аунтификация*/ }
@@ -2799,14 +2802,33 @@ test popup
   padding-right: 16px; }
 
 .header-top__hide {
-  -webkit-transform: translateY(-43px);
-      -ms-transform: translateY(-43px);
-          transform: translateY(-43px);
   -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
   -o-transition: transform .3s ease-out;
   transition: transform .3s ease-out;
-  transition: transform .3s ease-out, -webkit-transform .3s ease-out; }
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+  -webkit-animation: slide-down 0.7s;
+          animation: slide-down 0.7s; }
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  100% {
+    opacity: 0.9;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 
 .header-top__hide .header-menu {
   font-size: 1.5rem; }

@@ -1345,10 +1345,22 @@ test popup
 }
 
 .header-top__hide {
-    transform: translateY(-43px);
+    //transform: translateY(-43px);
     // display: none !important;
     //@extend %transition_all;
     transition: transform .3s ease-out;
+    animation:slide-down 0.7s;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
 }
 
 .header-top__hide .header-menu {

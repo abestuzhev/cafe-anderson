@@ -6,10 +6,11 @@
 .sticky {
     position: fixed !important;
     width: 100%;
-    top: 0;
+    top: -4rem;
     right: 0;
     will-change: transform;
     @include z-index(header);
+    transition: transform .1s ease-out;
 }
 
 .header {
@@ -24,7 +25,7 @@
     -moz-box-shadow: 0px 3px 14px 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 14px 4px rgba(0, 0, 0, 0.2);
     color: $color_text_bg;
-    transition: transform .1s ease-out;
+    transition: all .3s ease-out;
     border-bottom: 2px solid #d4c89f;
 
     &-mobile {
