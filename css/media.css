@@ -1141,10 +1141,15 @@
 
     .header-mobile__dropdown {
         position: fixed;
-        top: 43px;
+        top: 0;
         left: 0;
         width: 100%;
     }
+
+    .header-mobile__dropdown.menu-sticky {
+        top: 3.8rem !important;
+    }
+
 
     .header-mobile__dropdown {
         box-shadow: none;

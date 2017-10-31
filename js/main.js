@@ -341,12 +341,21 @@ $(document).ready(function ($) {
 	$('.header-mobile__menu').on('click', function(){
 		$(this).toggleClass('icon-menu__transform');
 		$('.header-mobile__dropdown').toggleClass('popup-show');
-		$('.header').toggleClass('header-top__hide');
+		// $('.header').toggleClass('header-top__hide');
+        $('html').toggleClass('overflow');
+
+        if($('.header').hasClass('sticky')){
+            $('.header-mobile__dropdown').addClass('menu-sticky');
+        }else {
+            $('.header-mobile__dropdown').removeClass('menu-sticky');
+        }
 	});
+    // $('.header').hasClass('.sticky').children('.header-mobile__dropdown').addClass('menu-sticky');
 
     $('.header-mobile__dropdown-close').on('click', function(){
         $('.header-mobile__menu').toggleClass('icon-menu__transform');
         $('.header-mobile__dropdown').toggleClass('popup-show');
+        $('html').removeClass('overflow');
 	});
 
 

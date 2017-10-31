@@ -2879,6 +2879,9 @@ test popup
       -ms-transform: translateY(0) !important;
           transform: translateY(0) !important; }
 
+.overflow {
+  overflow: hidden !important; }
+
 .filter {
   display: block;
   padding: 1.1rem 1.1rem .1rem;
