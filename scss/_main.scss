@@ -1348,17 +1348,17 @@ test popup
     //transform: translateY(-43px);
     // display: none !important;
     //@extend %transition_all;
-    transition: transform .3s ease-out;
-    animation:slide-down 0.7s;
+    //transition: transform .3s ease-out;
+    animation:slide-down 0.4s;
 }
 
 @keyframes slide-down {
     0% {
-        opacity: 0;
+        //opacity: 0;
         transform: translateY(-100%);
     }
-    100% {
-        opacity: 0.9;
+    70%, 100% {
+        //opacity: 1;
         transform: translateY(0);
     }
 }
@@ -1389,6 +1389,10 @@ test popup
 .header-top__hide .header-city,
 .header-top__hide .header-time {
     display: none;
+}
+
+.header-top__hide  .header-layout {
+    padding: 0 0;
 }
 
 

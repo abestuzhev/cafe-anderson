@@ -186,7 +186,6 @@
     .header-top__hide .icon-logo {
         width: 19rem ;
         height: 3.9rem;
-        margin-top: .5rem;
     }
 
     .header-top__hide .header-layout {
@@ -922,16 +921,16 @@
 @media (max-width:540px) {
 
     .header {
-        padding: 1rem 0 0;
+        padding: .6rem 0 0;
     }
 
-    .header-layout {
-        padding: 1.8rem 0 1rem;
-    }
+    /*.header-layout {*/
+        /*padding: 1.8rem 0 1rem;*/
+    /*}*/
 
-    .header-mobile__top {
-        padding: 0 0 .8rem;
-    }
+    /*.header-mobile__top {*/
+        /*padding: 0 0 .8rem;*/
+    /*}*/
 
     .header-mobile__auth {
         padding: .5rem 0;
@@ -983,7 +982,7 @@
     }
 
     .footer-search {
-        width: 90%;
+        width: 86%;
         margin-right: 0;
     }
 
