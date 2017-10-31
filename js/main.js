@@ -287,7 +287,7 @@ $(document).ready(function ($) {
     $('.filter-mobile-btn').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('dropdown-show');
-        $('.filter').slideToggle()(200);
+        $('.filter').slideToggle(200);
     });
 
     function catalogItemCounter(field) {

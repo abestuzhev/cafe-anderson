@@ -1250,3 +1250,42 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .fotorama__thumb-border {
     border-color: #382015;
 }
+
+/*c-pagination------------------------------------------------------------*/
+.c-pagination {
+    font-size: 0;
+
+    &__item {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: $black;
+        width: 3.1rem;
+        height: 3.1rem;
+        border-radius: 3.1rem;
+        line-height: 3.1rem;
+        text-align: center;
+        word-wrap: break-word;
+        background-color: rgba(167, 167, 167, 0.3);
+        margin-right: .7rem;
+
+        &:after {
+            content: '';
+            border: none;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $color_active;
+        }
+
+    }
+}
+
+.c-pagination__item.active {
+    color: $white;
+    background-color: $color_active;
+}
