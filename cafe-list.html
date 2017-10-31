@@ -1719,6 +1719,9 @@
         // Добавляем элементы управления.
         myMap.controls.add('zoomControl');
         myMap.controls.add('fullscreenControl');
+
+        myMap.behaviors.disable('multiTouch');
+        myMap.behaviors.disable('drag');
     }
 </script>
 
