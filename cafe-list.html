@@ -1633,7 +1633,24 @@
         });
 
 //        myMap.behaviors.disable('multiTouch');
-        myMap.behaviors.disable('drag');
+//        myMap.behaviors.disable('drag');
+
+        var isMobile = {
+            Android: function() {return navigator.userAgent.match(/Android/i);},
+            BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
+            iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
+            Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
+            Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+            }
+        };
+
+// после вызова карты
+        if(isMobile.any()){
+//            myMap.behaviors.disable('scrollZoom');
+            myMap.behaviors.disable('drag');
+        }
 
 
         var cafe_1 = new ymaps.Placemark([55.74352990795752,37.56841313754272], {
