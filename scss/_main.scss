@@ -1077,6 +1077,38 @@ main {
     }
 }
 
+.popup__menu .popup {
+    width: 89rem;
+}
+
+.popup__menu .popup-title {
+    background-color: #f3efe4;
+}
+
+.popup__menu .popup-body {
+    padding: 2.4rem 1.4rem 3rem 3rem;
+    background: #eae2cd url(../img/bg-header.png) repeat;
+
+}
+
+.popup__menu {
+    opacity: 0;
+    visibility: hidden;
+    //display: block;
+}
+
+
+.popup-menu {
+
+    &__list {
+        height: 56.8rem;
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+    }
+}
+
 
 /*----------------------------------------------*/
 #tooltip
@@ -2246,16 +2278,6 @@ test popup
     border-radius: 10px;
     border: 2px solid rgba(0,0,0,.15);
     box-shadow: 0 3px 15px 0 rgba(0,0,0,.1);
-}
-
-.simplebar-scrollbar {
-    background-color: #fff;
-    border-radius: 23px;
-
-}
-
-.simplebar-content {
-    padding-right: 3rem !important;
 }
 
 .owl-carousel .owl-nav {

@@ -99,6 +99,7 @@ $(document).ready(function ($) {
     showPopup(".js-header-cabinet", '.popup-authorization');
     showPopup(".header-city", '.popup-city');
     showPopup(".header-mobile__city", '.popup-city');
+    showPopup(".c-card-cafe__menu", '.popup__menu');
 
 
     $('.popup-authorization .popup-authorization__reg').on('click', function (e) {

@@ -1104,6 +1104,71 @@ input[type="checkbox"]:checked + .c-checkbox::after {
        text-overflow: ellipsis;
     overflow: hidden; }
 
+/*menu-card------------------------------------------------------------*/
+.menu-card {
+  font-family: "PT Serif Caption"; }
+  .menu-card__title {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #a43c34;
+    margin-bottom: 1.3rem; }
+  .menu-card__body {
+    border-top: 1px solid #a38c7d;
+    border-bottom: 1px solid #a38c7d;
+    padding: 1.3rem 0; }
+  .menu-card__name {
+    font-size: 1.8rem;
+    color: #553023;
+    margin-bottom: 1rem; }
+  .menu-card__list-vert {
+    display: inline-block; }
+    .menu-card__list-vert-item::before {
+      content: '•';
+      margin-right: .3rem; }
+  .menu-card__list-hor {
+    display: inline-block; }
+    .menu-card__list-hor-item {
+      display: inline-block;
+      position: relative; }
+      .menu-card__list-hor-item::before {
+        content: '•';
+        margin-right: .3rem; }
+  .menu-card__product {
+    font-size: 1.3rem;
+    color: #76665c;
+    margin-bottom: .6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .menu-card__product-item {
+      width: 93%;
+      position: relative;
+      overflow: hidden; }
+      .menu-card__product-item::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        border-bottom: 1px dashed #76665c;
+        margin-left: .5rem; }
+  .menu-card__price {
+    width: 7%;
+    text-align: right;
+    font-size: 1.6rem;
+    color: #553023;
+    font-weight: 700;
+    white-space: nowrap; }
+
 /*grid------------------------------------------------------------*/
 .c-line-horizontal {
   width: 100%;
@@ -2621,6 +2686,26 @@ main {
       color: #9b9696;
       border: none; }
 
+.popup__menu .popup {
+  width: 89rem; }
+
+.popup__menu .popup-title {
+  background-color: #f3efe4; }
+
+.popup__menu .popup-body {
+  padding: 2.4rem 1.4rem 3rem 3rem;
+  background: #eae2cd url(../img/bg-header.png) repeat; }
+
+.popup__menu {
+  opacity: 0;
+  visibility: hidden; }
+
+.popup-menu__list {
+  height: 56.8rem; }
+
+.popup-menu__item {
+  margin-bottom: 1.5rem; }
+
 /*----------------------------------------------*/
 #tooltip {
   text-align: center;
@@ -3513,13 +3598,6 @@ test popup
   border: 2px solid rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1); }
-
-.simplebar-scrollbar {
-  background-color: #fff;
-  border-radius: 23px; }
-
-.simplebar-content {
-  padding-right: 3rem !important; }
 
 .owl-carousel .owl-nav {
   position: absolute;

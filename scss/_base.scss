@@ -1197,6 +1197,94 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
+/*menu-card------------------------------------------------------------*/
+.menu-card {
+    font-family: $font_serif;
+
+    &__title {
+        font-size: 1.8rem;
+        text-align: center;
+        color: #a43c34;
+        margin-bottom: 1.3rem;
+    }
+
+    &__body {
+        border-top: 1px solid #a38c7d;
+        border-bottom: 1px solid #a38c7d;
+        padding: 1.3rem 0;
+    }
+
+    &__name {
+        font-size: 1.8rem;
+        color: #553023;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+
+        &-vert {
+            display: inline-block;
+
+            &-item {
+                &::before {
+                    content: '•';
+                    margin-right: .3rem;
+                }
+            }
+        }
+
+        &-hor {
+            display: inline-block;
+
+            &-item {
+                display: inline-block;
+                position: relative;
+
+                &::before {
+                    content: '•';
+                    margin-right: .3rem;
+                }
+            }
+        }
+    }
+
+    &__product {
+        font-size: 1.3rem;
+        color: #76665c;
+        margin-bottom: .6rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &-item {
+            width: 93%;
+            position: relative;
+            overflow: hidden;
+
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 4px;
+                width: 100%;
+                border-bottom: 1px dashed #76665c;
+                margin-left: .5rem;
+            }
+        }
+    }
+
+    &__price {
+        width: 7%;
+        text-align: right;
+        font-size: 1.6rem;
+        color: #553023;
+        font-weight: 700;
+        white-space: nowrap;
+
+    }
+}
+
 /*grid------------------------------------------------------------*/
 .c-line {
     &-horizontal {
