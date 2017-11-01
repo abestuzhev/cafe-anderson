@@ -1632,8 +1632,11 @@
             geoObjectBalloonPanelMaxMapArea: Infinity
         });
 
+        myMap.behaviors.disable('multiTouch');
+//        myMap.behaviors.disable('drag');
 
-        cafe_1 = new ymaps.Placemark([55.74352990795752,37.56841313754272], {
+
+        var cafe_1 = new ymaps.Placemark([55.74352990795752,37.56841313754272], {
             name: 'АндерСон для Пап',
             address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
             phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
@@ -1730,8 +1733,8 @@
         myMap.controls.add('zoomControl');
         myMap.controls.add('fullscreenControl');
 
-        myMap.behaviors.disable('multiTouch');
-        myMap.behaviors.disable('drag');
+//        myMap.behaviors.disable('multiTouch');
+//        myMap.behaviors.disable('drag');
     }
 </script>
 
