@@ -63,7 +63,9 @@ $(document).ready(function ($) {
         .on('fotorama:show', function (e, fotorama) {
             // pick the active thumb by id
             var path = fotorama.activeFrame.img;
-            $('.bg-blur').attr('src', path);
+            $('.bg-blur').attr('src', path).animate({
+                'opacity': 1
+            });
         });
 
     // $slider.on('fotorama:ready', function (e, fotorama) {
