@@ -1859,17 +1859,16 @@
         height: 400px;
     }
 </style>
-<div id="box-map"></div>
+<!--<div id="box-map"></div>-->
 <!--карта------------------------------------------------->
 
 <!-- Подключаем API  карт 2.x  -->
-<!--<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>-->
+<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
+<!--<script src="./js/ymaps-touch-scroll.bundle.js"></script>-->
 
-<script src="./js/ymaps-touch-scroll.bundle.js"></script>
 
-<!--
 <script type="text/javascript">
     // Как только будет загружен API и готов DOM, выполняем инициализацию
     ymaps.ready(init);
@@ -1888,7 +1887,7 @@
             geoObjectBalloonPanelMaxMapArea: Infinity
         });
 
-        ymapsTouchScroll(myMap);
+
 
 //        myMap.behaviors.disable('multiTouch');
 //        myMap.behaviors.disable('drag');
@@ -2011,20 +2010,27 @@
 //        myMap.behaviors.disable('drag');
     }
 </script>
--->
-<script>
-    function ready() {
-        function mapInit() {
-            var map = new ymaps.Map('box-map', {
-                center: [55.76, 37.64],
-                zoom: 10
-            });
-            ymapsTouchScroll(map);
-        }
-        ymaps.ready(mapInit);
-    }
-    document.addEventListener('DOMContentLoaded', ready);
-</script>
+
+<!--<script>-->
+    <!--function ready() {-->
+        <!--function mapInit() {-->
+            <!--var map = new ymaps.Map('box-map', {-->
+                <!--center: [55.76, 37.64],-->
+                <!--zoom: 10,-->
+                <!--controls: ['zoomControl',    'fullscreenControl']-->
+            <!--});-->
+
+            <!--map.behaviors.disable('scrollZoom');-->
+            <!--ymapsTouchScroll(map);-->
+<!--//            var zoomDown = document.querySelector('.ymaps-12-1-56-_checked');-->
+<!--//            zoomDown.events.add('click', function () {-->
+<!--//                alert('О, событие!');-->
+<!--//            });-->
+        <!--}-->
+        <!--ymaps.ready(mapInit);-->
+    <!--}-->
+    <!--document.addEventListener('DOMContentLoaded', ready);-->
+<!--</script>-->
 
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>
