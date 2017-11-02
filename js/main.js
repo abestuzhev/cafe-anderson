@@ -63,37 +63,8 @@ $(document).ready(function ($) {
         .on('fotorama:show', function (e, fotorama) {
             // pick the active thumb by id
             var path = fotorama.activeFrame.img;
-            $('.bg-blur').attr('src', path).animate({
-                'opacity': 1
-            });
+            $('.bg-blur').attr('src', path);
         });
-
-    // $slider.on('fotorama:ready', function (e, fotorama) {
-    //     console.log(fotorama.activeFrame);
-    //     $('.bg-blur').attr('src', fotorama.activeFrame);
-    // });
-
-    // $slider.on('afterChange', function(e, slick, index) {
-    //     $('body').css('background', bgs[index]);
-    // });
-
-    // var fotorama = $fotoramaDiv.data('fotorama');
-    // console.log(fotorama);
-    // var imgActive = $fotoramaDiv.activeFrame['img'];
-    // console.log(imgActive);
-
-
-    /*изменение подложки в слайдере. Карточка кафе*/
-    // $('.fotorama__arr--next').on('click', function(){
-    //     var $pathIMg = $('.fotorama__active').next().find('img').attr('src');
-    //     console.log($pathIMg);
-    //     $('.bg-blur').attr('src', $pathIMg);
-    // });
-    // $('.fotorama__arr--prev').on('click', function(){
-    //     var $pathIMg = $('.fotorama__active').prev().find('img').attr('src');
-    //     console.log($pathIMg);
-    //     $('.bg-blur').attr('src', $pathIMg);
-    // });
 
 
     $('.cafe-holiday-slider').fotorama({
@@ -466,7 +437,18 @@ $(document).ready(function ($) {
         $(tab).fadeIn();
     });
 
-
+/*скрол карты*/
+    var target = $('#map');
+    var targetPos = target.offset().top;
+    var winHeight = $(window).height();
+    var scrollToElem = targetPos - winHeight;
+    $(window).scroll(function(){
+        var winScrollTop = $(this).scrollTop();
+        if(winScrollTop > scrollToElem){
+            //сработает когда пользователь доскроллит к элементу с классом .elem
+            $(window).offset(60);
+        }
+    });
 
 });
 
