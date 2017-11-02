@@ -16,7 +16,6 @@
     "jquery": "^3.2.1",
     "sumoselect": "^3.0.2",
     "fotorama": "^4.6.4",
-    "owl.carousel": "owl-carousel2#^2.2.1",
     "jquery-mask-plugin": "^1.14.12",
     "tooltipster": "^4.2.5"
   }
