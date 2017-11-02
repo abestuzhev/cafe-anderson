@@ -19,7 +19,7 @@ main {
 .home-celebration,
 .home-cake {
     &:hover {
-        transform: scale(.99);
+        //transform: scale(.99);
         @extend %transition_all;
         cursor: pointer;
     }
@@ -35,21 +35,26 @@ main {
     @extend %transition_all;
 
     &:hover .home-cafe__rabbit {
-        @extend %transition_all;
+        transition: all .1s ease-out;
         top: -16.3%;
     }
 
-    &:hover .home-cafe__text {
-        z-index: 10;
-        transform: rotate(8deg);
-        transition: transform .2s ease-out;
-    }
+    //&:hover svg {
+    //    transform: rotate(2deg);
+    //    transition: transform .2s ease-out;
+    //}
 
-    &:hover .home-cafe__map {
-        z-index: -1;
-        transform: rotate(1deg);
-        @extend %transition_all;
-    }
+    //&:hover .home-cafe__text {
+    //    z-index: 10;
+    //    transform: rotate(8deg);
+    //    transition: transform .2s ease-out;
+    //}
+
+    //&:hover .home-cafe__map {
+    //    z-index: -1;
+    //    transform: rotate(1deg);
+    //    @extend %transition_all;
+    //}
 
     a {
         position: static;
@@ -93,6 +98,7 @@ main {
         left: 10%;
         fill: #201600;
         width: 91.2%;
+        transition: transform .2s ease-out;
     }
 
     &__bird {
@@ -101,16 +107,17 @@ main {
         left: 9.6%;
         fill: #201600;
         width: 14.5%;
+        transition: transform .2s ease-out;
     }
 
     &__rabbit {
         position: absolute;
         z-index: -1;
-        top: -13.3%;
+        top: -3.3%;
         left: 50.6%;
         fill: #201600;
         width: 10.3%;
-        @extend %transition_all;
+        transition: transform .1s ease-out;
     }
 
     &__auto {
@@ -119,6 +126,7 @@ main {
         left: 91.6%;
         fill: #201600;
         width: 18.1%;
+        transition: transform .2s ease-out;
     }
 
     &__plane {
@@ -127,6 +135,7 @@ main {
         left: -14%;
         fill: #201600;
         width: 18.2%;
+        transition: transform .2s ease-out;
 
     }
 
@@ -177,23 +186,23 @@ main {
         }
     }
 
-    &:hover .home-celebration__packege {
-        z-index: -1;
-        transform: rotate(1deg);
-        @extend %transition_all;
-    }
+    //&:hover .home-celebration__packege {
+    //    z-index: -1;
+    //    transform: rotate(1deg);
+    //    @extend %transition_all;
+    //}
 
-    &:hover .home-celebration__text {
-        transform: rotate(-22deg);
-        @extend %transition_all;
-    }
+    //&:hover .home-celebration__text {
+    //    transform: rotate(-22deg);
+    //    @extend %transition_all;
+    //}
 
 
     &:hover .home-celebration__paw-bear {
         -webkit-animation: helloBear 1s infinite linear;
         -o-animation: helloBear 1s infinite linear;
         transform-origin: -50% center;
-        animation: helloBear 3s infinite;
+        animation: helloBear 2s infinite;
         @extend %transition_all;
     }
 
@@ -329,7 +338,7 @@ main {
         -webkit-animation: bearMoon 1s infinite linear;
         -o-animation: bearMoon 1s infinite linear;
         transform-origin: top center;
-        animation: bearMoon 3s infinite;
+        animation: bearMoon 2s infinite;
         @extend %transition_all;
     }
 
@@ -1971,10 +1980,13 @@ test popup
         &__body {
             position: relative;
             width: 100%;
+            overflow: hidden;
             //height: 59.5rem;
-            background: url(../img/bg-cafe-slider.jpg) 50% 50% no-repeat;
-            -webkit-background-size: cover;
-            background-size: cover;
+            //background-image: url(../img/cafe-slider-1.jpg);
+            //background-position: 50% 50%;
+            //background-repeat: no-repeat;
+            //-webkit-background-size: cover;
+            //background-size: cover;
         }
 
         &__footer {
@@ -2248,6 +2260,11 @@ test popup
             line-height: 0.75;
             color: #9b9595;
             margin-bottom: 1.6rem;
+            vertical-align: middle;
+
+            i {
+                margin-right: .6rem;
+            }
         }
 
         &__text {

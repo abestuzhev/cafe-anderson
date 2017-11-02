@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
 a, a:hover, a:focus, .c-input, .c-input:focus, .c-icon:hover, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item:hover, .header-mobile__dropdown, .header-mobile__auth, .header-search__form, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
-.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__rabbit, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__rabbit, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__packege, .home-celebration:hover .home-celebration__text, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .mfp-bg, .popup-show, .dropdown-show .icon-dropdown, .is-visible, .body-popup, .filter-mobile-btn .icon-dropdown {
+.home-cake:hover, .home-cafe, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .mfp-bg, .popup-show, .dropdown-show .icon-dropdown, .is-visible, .body-popup, .filter-mobile-btn .icon-dropdown {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -599,6 +599,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   background: url(../img/icons/icon-filter.svg) 0 0 no-repeat; }
 
 .advantages-coffe {
+  display: inline-block;
+  width: 2rem;
+  height: 1.4rem;
+  vertical-align: middle;
   background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat; }
 
 .advantages-guests {
@@ -608,18 +612,38 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   background: url(../img/icons/icon-veranda.svg) 50% 50% no-repeat; }
 
 .advantages-teddy {
+  display: inline-block;
+  width: 1rem;
+  height: 1.5rem;
+  vertical-align: middle;
   background: url(../img/icons/icon-teddy-bear.svg) 50% 50% no-repeat; }
 
 .advantages-nipple {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.6rem;
+  vertical-align: middle;
   background: url(../img/icons/icon-nipple.svg) 50% 50% no-repeat; }
 
 .advantages-balloon {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  vertical-align: middle;
   background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat; }
 
 .advantages-umbrella {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.5rem;
+  vertical-align: middle;
   background: url(../img/icons/icon-umbrella.svg) 50% 50% no-repeat; }
 
 .advantages-bottle {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.6rem;
+  vertical-align: middle;
   background: url(../img/icons/icon-bottle.svg) 50% 50% no-repeat; }
 
 .icon-phoneNumber {
@@ -660,11 +684,38 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   text-align: center;
   background: url(../img/icons/icon-uneven-circle.svg) 50% 50% no-repeat; }
 
-.icon-chair {
+i.icon-chair {
   display: inline-block;
   width: 1.3rem;
   height: 1.8rem;
   background: url(../img/icons/icon-chair.svg) 50% 50% no-repeat; }
+
+.icon-mark {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.9rem;
+  background: url(../img/icons/icon-mark.svg) 50% 50% no-repeat; }
+
+.icon-calendar-2 {
+  display: inline-block;
+  width: 2.1rem;
+  height: 1.9rem;
+  background: url(../img/icons/icon-calendar-2.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
+.icon-toy {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.4rem;
+  background: url(../img/icons/icon-toy.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
+.icon-glasses {
+  display: inline-block;
+  width: 1.9rem;
+  height: 1.7rem;
+  background: url(../img/icons/icon-glasses.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
 
 @media screen and (min-width: 1600px) {
   .c-layout {
@@ -973,15 +1024,18 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       font-size: 1.3rem;
       vertical-align: bottom;
       margin: 0 .4em .4rem 0;
-      cursor: pointer; }
+      cursor: pointer;
+      min-width: 44px;
+      text-align: center; }
       .c-card-cafe-advantages__item:last-child {
         margin-right: 0; }
       .c-card-cafe-advantages__item i {
         display: inline-block;
         vertical-align: bottom;
-        margin-bottom: 0;
-        width: 2rem;
-        height: 1.4rem; }
+        margin-bottom: 0; }
+      .c-card-cafe-advantages__item .icon-chair {
+        width: 1.5rem;
+        height: 1.7rem; }
 
 .c-card-map {
   width: 660px;
@@ -1270,7 +1324,16 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .tooltip_templates {
   display: none; }
 
+.tooltipster-box i {
+  display: inline-block;
+  width: 2rem;
+  height: 1.4rem;
+  position: relative;
+  top: 2px;
+  vertical-align: top; }
+
 .tooltipster-sidetip .tooltipster-content {
+  padding: .6rem 1.1rem;
   color: #555451;
   font-size: 1.3rem; }
 
@@ -1292,6 +1355,19 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
   border-top-color: #a8a4a2; }
+
+.bg-blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: scale(1.2) translate(-50%, -50%);
+      -ms-transform: scale(1.2) translate(-50%, -50%);
+          transform: scale(1.2) translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  opacity: 1; }
 
 .sticky {
   position: fixed !important;
@@ -1956,9 +2032,6 @@ main {
 .home-cafe:hover,
 .home-celebration:hover,
 .home-cake:hover {
-  -webkit-transform: scale(0.99);
-      -ms-transform: scale(0.99);
-          transform: scale(0.99);
   cursor: pointer; }
 
 .home-cafe {
@@ -1967,22 +2040,10 @@ main {
   top: 21%;
   left: 10.5%; }
   .home-cafe:hover .home-cafe__rabbit {
+    -webkit-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
     top: -16.3%; }
-  .home-cafe:hover .home-cafe__text {
-    z-index: 10;
-    -webkit-transform: rotate(8deg);
-        -ms-transform: rotate(8deg);
-            transform: rotate(8deg);
-    -webkit-transition: -webkit-transform .2s ease-out;
-    transition: -webkit-transform .2s ease-out;
-    -o-transition: transform .2s ease-out;
-    transition: transform .2s ease-out;
-    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
-  .home-cafe:hover .home-cafe__map {
-    z-index: -1;
-    -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-            transform: rotate(1deg); }
   .home-cafe a {
     position: static; }
     .home-cafe a::after {
@@ -2014,32 +2075,57 @@ main {
     top: 51%;
     left: 10%;
     fill: #201600;
-    width: 91.2%; }
+    width: 91.2%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-cafe__bird {
     position: absolute;
     top: 39%;
     left: 9.6%;
     fill: #201600;
-    width: 14.5%; }
+    width: 14.5%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-cafe__rabbit {
     position: absolute;
     z-index: -1;
-    top: -13.3%;
+    top: -3.3%;
     left: 50.6%;
     fill: #201600;
-    width: 10.3%; }
+    width: 10.3%;
+    -webkit-transition: -webkit-transform .1s ease-out;
+    transition: -webkit-transform .1s ease-out;
+    -o-transition: transform .1s ease-out;
+    transition: transform .1s ease-out;
+    transition: transform .1s ease-out, -webkit-transform .1s ease-out; }
   .home-cafe__auto {
     position: absolute;
     top: -10.8%;
     left: 91.6%;
     fill: #201600;
-    width: 18.1%; }
+    width: 18.1%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-cafe__plane {
     position: absolute;
     top: 24.4%;
     left: -14%;
     fill: #201600;
-    width: 18.2%; }
+    width: 18.2%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-cafe__arrow {
     position: absolute;
     top: 18.7%;
@@ -2079,23 +2165,14 @@ main {
     .home-celebration a::after {
       content: '';
       border: none; }
-  .home-celebration:hover .home-celebration__packege {
-    z-index: -1;
-    -webkit-transform: rotate(1deg);
-        -ms-transform: rotate(1deg);
-            transform: rotate(1deg); }
-  .home-celebration:hover .home-celebration__text {
-    -webkit-transform: rotate(-22deg);
-        -ms-transform: rotate(-22deg);
-            transform: rotate(-22deg); }
   .home-celebration:hover .home-celebration__paw-bear {
     -webkit-animation: helloBear 1s infinite linear;
     -o-animation: helloBear 1s infinite linear;
     -webkit-transform-origin: -50% center;
         -ms-transform-origin: -50% center;
             transform-origin: -50% center;
-    -webkit-animation: helloBear 3s infinite;
-            animation: helloBear 3s infinite; }
+    -webkit-animation: helloBear 2s infinite;
+            animation: helloBear 2s infinite; }
   .home-celebration__packege {
     position: relative;
     z-index: -1;
@@ -2202,8 +2279,8 @@ main {
     -webkit-transform-origin: top center;
         -ms-transform-origin: top center;
             transform-origin: top center;
-    -webkit-animation: bearMoon 3s infinite;
-            animation: bearMoon 3s infinite; }
+    -webkit-animation: bearMoon 2s infinite;
+            animation: bearMoon 2s infinite; }
   .home-cake__pie-1 {
     position: absolute;
     z-index: 99;
@@ -3411,8 +3488,7 @@ test popup
     .cafe-slider__body {
       position: relative;
       width: 100%;
-      background: url(../img/bg-cafe-slider.jpg) 50% 50% no-repeat;
-      background-size: cover; }
+      overflow: hidden; }
     .cafe-slider__footer {
       width: 100%;
       height: 2.9rem;
@@ -3621,7 +3697,10 @@ test popup
       font-size: 13px;
       line-height: 0.75;
       color: #9b9595;
-      margin-bottom: 1.6rem; }
+      margin-bottom: 1.6rem;
+      vertical-align: middle; }
+      .cafe-review__date i {
+        margin-right: .6rem; }
     .cafe-review__text {
       font-size: 1.3rem;
       line-height: 1.38;

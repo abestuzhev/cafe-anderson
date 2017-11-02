@@ -48,7 +48,7 @@ $(document).ready(function ($) {
     });
 
     /*Фоторама, слайдер мероприятий, слайдер отзывов*/
-    $('.cafe-fotorama').fotorama({
+    var $slider = $('.cafe-fotorama').fotorama({
         width: '100%',
         // maxwidth: '100%',
         ratio: 17/11,
@@ -58,6 +58,41 @@ $(document).ready(function ($) {
         nav: 'thumbs',
         fit:'cover'
     });
+
+    $slider
+        .on('fotorama:show', function (e, fotorama) {
+            // pick the active thumb by id
+            var path = fotorama.activeFrame.img;
+            $('.bg-blur').attr('src', path);
+        });
+
+    // $slider.on('fotorama:ready', function (e, fotorama) {
+    //     console.log(fotorama.activeFrame);
+    //     $('.bg-blur').attr('src', fotorama.activeFrame);
+    // });
+
+    // $slider.on('afterChange', function(e, slick, index) {
+    //     $('body').css('background', bgs[index]);
+    // });
+
+    // var fotorama = $fotoramaDiv.data('fotorama');
+    // console.log(fotorama);
+    // var imgActive = $fotoramaDiv.activeFrame['img'];
+    // console.log(imgActive);
+
+
+    /*изменение подложки в слайдере. Карточка кафе*/
+    // $('.fotorama__arr--next').on('click', function(){
+    //     var $pathIMg = $('.fotorama__active').next().find('img').attr('src');
+    //     console.log($pathIMg);
+    //     $('.bg-blur').attr('src', $pathIMg);
+    // });
+    // $('.fotorama__arr--prev').on('click', function(){
+    //     var $pathIMg = $('.fotorama__active').prev().find('img').attr('src');
+    //     console.log($pathIMg);
+    //     $('.bg-blur').attr('src', $pathIMg);
+    // });
+
 
     $('.cafe-holiday-slider').fotorama({
         width: '100%',
@@ -283,7 +318,7 @@ $(document).ready(function ($) {
     });
 
     /*попап корзины*/
-    $('.icon-basket').on('click', function () {
+    $('.icon-basket, .header-basket__count').on('click', function () {
         $('.popup-basket').addClass('popup-slide__show');
         $('.header').addClass('header-top__no-hide');
     });
@@ -308,6 +343,7 @@ $(document).ready(function ($) {
         $('.filter').slideToggle(200);
     });
 
+    /*функция счета больше/меньше*/
     function catalogItemCounter(field) {
         var fieldCount = function (el) {
             var
@@ -352,7 +388,6 @@ $(document).ready(function ($) {
             fieldCount($(this));
         });
     }
-
     // catalogItemCounter('.fieldCount');
 
    /*мобильное меню*/
@@ -429,16 +464,7 @@ $(document).ready(function ($) {
         $(tab).fadeIn();
     });
 
-    // function tabsContent(tabMenuLink,tab){
-    //     $(tab_menu_link).click(function(event) {
-    //         event.preventDefault();
-    //         $(this).parent().addClass("current");
-    //         $(this).parent().siblings().removeClass("current");
-    //         var tab = $(this).attr("href");
-    //         $(".tab-content").not(tab).css("display", "none");
-    //         $(tab).fadeIn();
-    //     });
-    // }
+
 
 });
 

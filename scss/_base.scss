@@ -542,6 +542,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 }
 
 .advantages-coffe {
+    display: inline-block;
+    width: 2rem;
+    height: 1.4rem;
+    vertical-align: middle;
     background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat;
 }
 
@@ -554,22 +558,42 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 }
 
 .advantages-teddy {
+    display: inline-block;
+    width: 1rem;
+    height: 1.5rem;
+    vertical-align: middle;
     background: url(../img/icons/icon-teddy-bear.svg) 50% 50% no-repeat;
 }
 
 .advantages-nipple {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.6rem;
+    vertical-align: middle;
     background: url(../img/icons/icon-nipple.svg) 50% 50% no-repeat;
 }
 
 .advantages-balloon {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    vertical-align: middle;
     background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat;
 }
 
 .advantages-umbrella {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.5rem;
+    vertical-align: middle;
     background: url(../img/icons/icon-umbrella.svg) 50% 50% no-repeat;
 }
 
 .advantages-bottle {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.6rem;
+    vertical-align: middle;
     background: url(../img/icons/icon-bottle.svg) 50% 50% no-repeat;
 }
 
@@ -616,7 +640,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     text-align: center;
     background: url(../img/icons/icon-uneven-circle.svg) 50% 50% no-repeat;
 }
-.icon-chair {
+i.icon-chair {
     display: inline-block;
     width: 1.3rem;
     height: 1.8rem;
@@ -626,6 +650,38 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .icon-tour {
 
 }
+
+.icon-mark {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.9rem;
+    background: url(../img/icons/icon-mark.svg) 50% 50% no-repeat;
+}
+
+.icon-calendar-2 {
+    display: inline-block;
+    width: 2.1rem;
+    height: 1.9rem;
+    background: url(../img/icons/icon-calendar-2.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-toy {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.4rem;
+    background: url(../img/icons/icon-toy.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-glasses {
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.7rem;
+    background: url(../img/icons/icon-glasses.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
 
 @media screen and (min-width: 1600px) {
     .c-layout {
@@ -1023,6 +1079,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             vertical-align: bottom;
             margin: 0 .4em .4rem 0;
             cursor: pointer;
+            min-width: 44px;
+            text-align: center;
 
             &:last-child {
                 margin-right: 0;
@@ -1032,8 +1090,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
                 display: inline-block;
                 vertical-align: bottom;
                 margin-bottom: 0;
-                width: 2rem;
-                height: 1.4rem;
+                //width: 2rem;
+                //height: 1.6rem;
+            }
+
+            .icon-chair {
+                width: 1.5rem;
+                height: 1.7rem;
             }
         }
     }
@@ -1406,8 +1469,17 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     display: none;
 }
 
-.tooltipster-sidetip .tooltipster-content {
+.tooltipster-box i {
+    display: inline-block;
+    width: 2rem;
+    height: 1.4rem;
+    position: relative;
+    top: 2px;
+    vertical-align: top;
+}
 
+.tooltipster-sidetip .tooltipster-content {
+    padding: .6rem 1.1rem;
     color: #555451;
     font-size: 1.3rem;
 }
@@ -1433,4 +1505,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
     border-top-color: #a8a4a2;
+}
+
+.bg-blur {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1.2) translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    filter: blur(8px);
+    opacity: 1;
 }
