@@ -1022,6 +1022,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             font-size: 1.3rem;
             vertical-align: bottom;
             margin: 0 .4em .4rem 0;
+            cursor: pointer;
 
             &:last-child {
                 margin-right: 0;
@@ -1376,4 +1377,60 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-pagination__item.active {
     color: $white;
     background-color: $color_active;
+}
+
+.tooltip {
+    position: relative;
+}
+
+[rel="tooltip-text"] {
+    position: relative;
+}
+
+.tooltiptext {
+    opacity: 0;
+    //min-width:20rem;
+    position: absolute;
+    //top: -2rem;
+    //left: 50%;
+    padding: .6rem 1.1rem;
+    border: 1px solid #a8a4a2;
+    color: #555451;
+    font-size: 1.3rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 2px rgba(0,0,0,.1);
+}
+
+.tooltip_templates {
+    display: none;
+}
+
+.tooltipster-sidetip .tooltipster-content {
+
+    color: #555451;
+    font-size: 1.3rem;
+}
+
+.tooltipster-sidetip .tooltipster-box {
+    //padding: .6rem 1.1rem;
+    border: 1px solid #a8a4a2;
+    color: #555451;
+    font-size: 1.3rem;
+    border-radius: .4rem;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 2px rgba(0,0,0,.1);
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: #fff;
+    top: -1px;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-uncropped {
+    top: 1px;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: #a8a4a2;
 }

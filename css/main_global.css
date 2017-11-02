@@ -972,7 +972,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
       min-height: 3.7rem;
       font-size: 1.3rem;
       vertical-align: bottom;
-      margin: 0 .4em .4rem 0; }
+      margin: 0 .4em .4rem 0;
+      cursor: pointer; }
       .c-card-cafe-advantages__item:last-child {
         margin-right: 0; }
       .c-card-cafe-advantages__item i {
@@ -1247,6 +1248,50 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-pagination__item.active {
   color: #fff;
   background-color: #67af26; }
+
+.tooltip {
+  position: relative; }
+
+[rel="tooltip-text"] {
+  position: relative; }
+
+.tooltiptext {
+  opacity: 0;
+  position: absolute;
+  padding: .6rem 1.1rem;
+  border: 1px solid #a8a4a2;
+  color: #555451;
+  font-size: 1.3rem;
+  border-radius: .4rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1); }
+
+.tooltip_templates {
+  display: none; }
+
+.tooltipster-sidetip .tooltipster-content {
+  color: #555451;
+  font-size: 1.3rem; }
+
+.tooltipster-sidetip .tooltipster-box {
+  border: 1px solid #a8a4a2;
+  color: #555451;
+  font-size: 1.3rem;
+  border-radius: .4rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1); }
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+  border-top-color: #fff;
+  top: -1px; }
+
+.tooltipster-sidetip .tooltipster-arrow-uncropped {
+  top: 1px; }
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+  border-top-color: #a8a4a2; }
 
 .sticky {
   position: fixed !important;

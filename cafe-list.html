@@ -22,6 +22,9 @@
     <!--simplebar-->
     <link rel="stylesheet" href="./css/simplebar.css">
 
+    <!--tooltipster-->
+    <link rel="stylesheet" href="bower_components/tooltipster/dist/css/tooltipster.bundle.css">
+
 
 
     <!--owl carousel-->
@@ -1039,13 +1042,35 @@
                                                 </div>
                                                 <div class="c-card-cafe__item c-card-cafe__entertainment">Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка</div>
                                                 <ul class="c-card-cafe-advantages">
-                                                    <li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>
+                                                    <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content = "#tooltip_content">
+
+                                                        <i class="advantages-coffe"></i>
+                                                        <!--<span class="tooltiptext">-->
+                                                            <!--<span class="in-popup"><i class="advantages-coffe"></i> какой то текст для теста</span>-->
+                                                        <!--</span>-->
+
+                                                        <div class="tooltip_templates">
+                                                            <span id="tooltip_content">
+                                                                <i class="advantages-coffe"></i>
+                                                                <span> Это содержимое моей подсказки! </span>
+                                                            </span>
+                                                        </div>
+
+                                                    </li>
                                                     <li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>
                                                     <li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>
                                                     <li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>
                                                     <li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>
                                                     <li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>
-                                                    <li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>
+                                                    <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content = "#tooltip_bottle">
+                                                        <i class="advantages-bottle"></i>
+                                                        <div class="tooltip_templates">
+                                                            <span id="tooltip_bottle">
+                                                                <i class="advantages-coffe"></i>
+                                                                <span> Это содержимое моей bottle! </span>
+                                                            </span>
+                                                        </div>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1887,12 +1912,17 @@
 <script type="text/javascript" src="./js/jscrollpane/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="./js/jscrollpane/jquery.jscrollpane.min.js"></script>
 
+<!--tooltipster-->
+
+<script src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>
+
 <script src="./js/simplebar.js"></script>
 <script src="./js/owlcarousel/owl.carousel.js"></script>
 <script src='./bower_components/sumoselect/jquery.sumoselect.js'></script>
 <script src='./bower_components/fotorama/fotorama.js'></script>
 <script src="./js/preloader.js"></script>
 <script src="./js/tooltip.js"></script>
+<!--<script src="./js/custom-tooltip.js"></script>-->
 <script src="./js/main.js"></script>
 
 </body>

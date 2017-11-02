@@ -19,6 +19,23 @@ $(document).ready(function ($) {
     // $(".popup-basket__scroll").scrollBox();
     // $('#scrollbarY').tinyscrollbar();
 
+    //подключение тултипа
+    $ ( '.tooltip' ).tooltipster({
+        animation: 'grow',
+        delay: 100,
+        trigger : 'custom' ,
+        triggerOpen : {
+            mouseenter : true ,
+            touchstart : true
+        },
+        triggerClose : {
+            mouseleave : true,
+            click : true ,
+            scroll : true ,
+            tap : true
+        }
+    });
+
     /*кастомный скролл*/
     $('.popup-basket__scroll').jScrollPane();
 

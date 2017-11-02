@@ -552,6 +552,8 @@
         height: 100vh;
         margin: 0;
         overflow-y: hidden;
+        border-radius: 0;
+
     }
 
     .popup__menu .popup-body {
@@ -771,6 +773,7 @@
         height: 100vh;
         margin: 0;
         overflow-y: scroll;
+        border-radius: 0;
     }
 
     .popup-city .popup {
