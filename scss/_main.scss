@@ -10,7 +10,7 @@
 
 main {
     //padding-top: 10.4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
     //min-height: 100%;
 }
 
@@ -1625,6 +1625,10 @@ test popup
             margin-right: .8rem;
             background-color: #e9e8e6;
             color: #929292;
+
+            &:hover {
+              color: #929292;
+            }
         }
     }
 }
@@ -2327,6 +2331,24 @@ test popup
     border: solid 3px #ffffff;
 }
 
+.vacancies {
+  margin-bottom: 3rem;
+  &-list {
+    margin-bottom: 5rem;
+  }
+
+  .select-city + .SelectBox,
+  .select-metro + .SelectBox {
+    width: 31rem;
+  }
+
+  .filter .l-button__center {
+    display: block;
+  }
+}
+
+
+/*служебные стили*/
 .ss-scroll {
     width: 23px;
     height: 23px !important;

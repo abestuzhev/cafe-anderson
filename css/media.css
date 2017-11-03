@@ -38,6 +38,13 @@
     }
 }
 
+@media (min-width:1600px) {
+  .vacancies .select-city + .SelectBox,
+  .vacancies .select-metro + .SelectBox {
+    width: 37rem;
+  }
+}
+
 
 @media (max-width:1380px) {
     .home-cafe {

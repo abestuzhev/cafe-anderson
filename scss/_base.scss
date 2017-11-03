@@ -682,6 +682,33 @@ i.icon-chair {
     vertical-align: middle;
 }
 
+.icon-metro {
+    display: inline-block;
+    width: 1.1rem;
+    height: .9rem;
+    background: url(../img/icons/icon-metro.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-in-office {
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon-in-office.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-factory {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon-factory.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+
+
+
 
 @media screen and (min-width: 1600px) {
     .c-layout {
@@ -757,6 +784,21 @@ i.icon-chair {
         background-color: $color_btn;
         font-family: $font_serif;
         font-size: 1.4rem;
+        line-height: 1;
+        color: $white;
+        text-transform: lowercase;
+        display: inline-block;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__medium {
+        padding: .9rem 2.2rem .9rem;
+        background-color: $color_btn;
+        font-family: $font_serif;
+        font-size: 1.3rem;
         line-height: 1;
         color: $white;
         text-transform: lowercase;
@@ -1261,6 +1303,114 @@ i.icon-chair {
     }
 }
 
+
+/*card-event------------------------------------------------------------*/
+
+.c-card-vacancy {
+    position: relative;
+    background-color: $white;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    border: solid 2px rgba(0, 0, 0, 0.15);
+    padding: 1.4rem 2.1rem 2.1rem 5.3rem;
+    font-family: $font_serif;
+    height: 100%;
+
+    &__header {
+      display: flex;
+      flex-flow:row nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__body {
+
+    }
+
+    &__sum {
+        // position: absolute;
+        // top: 2rem;
+        // right: 2rem;
+        font-weight: 400;
+        font-size: 3.6rem;
+        line-height: 1;
+        color: #553023;
+
+        font-family: $font_sans-serif;
+    }
+
+    &__place {
+      display: block;
+      margin-bottom: .7rem;
+    }
+
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1.4rem;
+        font-size: 1.3rem;
+        color: #9b9595;
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        i, img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: .9rem;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 0.75;
+        text-align: left;
+        color: #231300;
+    }
+
+    &__info {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #cec9c0;
+        padding: .6rem 0 1.4rem;
+    }
+
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3rem;
+        height: 100%;
+        background: url(../img/bg-label-vacancy.png) 0 0 no-repeat;
+    }
+
+    &__description {
+      font-size: 1.3rem;
+      line-height: 1.23;
+      text-align: left;
+      color: #9b9595;
+          padding-bottom: 31px;
+    }
+
+
+    &__caption {
+      margin-bottom: .4rem;
+      font-weight: 700;
+      color: $black;
+      font-size: 1.4rem;
+    }
+
+    &__text {
+        margin-bottom: 1.3rem;
+    }
+
+    .l-button {
+      position: absolute;
+      bottom: 2.1rem;
+    }
+}
+
+
 /*menu-card------------------------------------------------------------*/
 .menu-card {
     font-family: $font_serif;
@@ -1440,6 +1590,28 @@ i.icon-chair {
 .c-pagination__item.active {
     color: $white;
     background-color: $color_active;
+}
+
+/*title*/
+.c-title__h1 {
+  font-family: $font_serif;
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+
+/*c-city-list__title------------------------------------------------------------*/
+/*Компонент заголовок города. Используется в списках кафе, вакансий*/
+.c-city-list__title {
+  font-size: 2.6rem;
+  color: #5c3321;
+  margin-bottom: .6rem;
+  font-weight: 400;
+  font-family: $font_serif;
 }
 
 .tooltip {

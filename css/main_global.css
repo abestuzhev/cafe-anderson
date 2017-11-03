@@ -717,6 +717,27 @@ i.icon-chair {
   background: url(../img/icons/icon-glasses.svg) 50% 50% no-repeat;
   vertical-align: middle; }
 
+.icon-metro {
+  display: inline-block;
+  width: 1.1rem;
+  height: .9rem;
+  background: url(../img/icons/icon-metro.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
+.icon-in-office {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.2rem;
+  background: url(../img/icons/icon-in-office.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
+.icon-factory {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.2rem;
+  background: url(../img/icons/icon-factory.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
 @media screen and (min-width: 1600px) {
   .c-layout {
     position: relative;
@@ -775,6 +796,17 @@ i.icon-chair {
     text-transform: lowercase;
     display: inline-block; }
     .c-button__small:hover {
+      color: #fff; }
+  .c-button__medium {
+    padding: .9rem 2.2rem .9rem;
+    background-color: #7cbd41;
+    font-family: "PT Serif Caption";
+    font-size: 1.3rem;
+    line-height: 1;
+    color: #fff;
+    text-transform: lowercase;
+    display: inline-block; }
+    .c-button__medium:hover {
       color: #fff; }
   .c-button__big {
     display: inline-block;
@@ -1159,6 +1191,84 @@ i.icon-chair {
        text-overflow: ellipsis;
     overflow: hidden; }
 
+/*card-event------------------------------------------------------------*/
+.c-card-vacancy {
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+  border: solid 2px rgba(0, 0, 0, 0.15);
+  padding: 1.4rem 2.1rem 2.1rem 5.3rem;
+  font-family: "PT Serif Caption";
+  height: 100%; }
+  .c-card-vacancy__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .c-card-vacancy__sum {
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 1;
+    color: #553023;
+    font-family: "BebasNeue"; }
+  .c-card-vacancy__place {
+    display: block;
+    margin-bottom: .7rem; }
+  .c-card-vacancy__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1.4rem;
+    font-size: 1.3rem;
+    color: #9b9595; }
+    .c-card-vacancy__item:last-child {
+      margin-right: 0; }
+    .c-card-vacancy__item i, .c-card-vacancy__item img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: .9rem; }
+  .c-card-vacancy__title {
+    font-size: 2rem;
+    line-height: 0.75;
+    text-align: left;
+    color: #231300; }
+  .c-card-vacancy__info {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #cec9c0;
+    padding: .6rem 0 1.4rem; }
+  .c-card-vacancy__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 100%;
+    background: url(../img/bg-label-vacancy.png) 0 0 no-repeat; }
+  .c-card-vacancy__description {
+    font-size: 1.3rem;
+    line-height: 1.23;
+    text-align: left;
+    color: #9b9595;
+    padding-bottom: 31px; }
+  .c-card-vacancy__caption {
+    margin-bottom: .4rem;
+    font-weight: 700;
+    color: #555451;
+    font-size: 1.4rem; }
+  .c-card-vacancy__text {
+    margin-bottom: 1.3rem; }
+  .c-card-vacancy .l-button {
+    position: absolute;
+    bottom: 2.1rem; }
+
 /*menu-card------------------------------------------------------------*/
 .menu-card {
   font-family: "PT Serif Caption"; }
@@ -1302,6 +1412,25 @@ i.icon-chair {
 .c-pagination__item.active {
   color: #fff;
   background-color: #67af26; }
+
+/*title*/
+.c-title__h1 {
+  font-family: "PT Serif Caption";
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 5rem; }
+
+/*c-city-list__title------------------------------------------------------------*/
+/*Компонент заголовок города. Используется в списках кафе, вакансий*/
+.c-city-list__title {
+  font-size: 2.6rem;
+  color: #5c3321;
+  margin-bottom: .6rem;
+  font-weight: 400;
+  font-family: "PT Serif Caption"; }
 
 .tooltip {
   position: relative; }
@@ -2014,7 +2143,7 @@ i.icon-chair {
   z-index: 2; }
 
 main {
-  padding-bottom: 8rem; }
+  padding-bottom: 12rem; }
 
 .home-cafe:hover,
 .home-celebration:hover,
@@ -3254,6 +3383,8 @@ test popup
     margin-right: .8rem;
     background-color: #e9e8e6;
     color: #929292; }
+    .filter-btn__reset:hover {
+      color: #929292; }
 
 .cafe-list {
   font-family: "PT Serif Caption";
@@ -3782,6 +3913,17 @@ test popup
   height: 33.8rem;
   border: solid 3px #ffffff; }
 
+.vacancies {
+  margin-bottom: 3rem; }
+  .vacancies-list {
+    margin-bottom: 5rem; }
+  .vacancies .select-city + .SelectBox,
+  .vacancies .select-metro + .SelectBox {
+    width: 31rem; }
+  .vacancies .filter .l-button__center {
+    display: block; }
+
+/*служебные стили*/
 .ss-scroll {
   width: 23px;
   height: 23px !important;
