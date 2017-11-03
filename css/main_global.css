@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
 a, a:hover, a:focus, .c-input, .c-input:focus, .c-icon:hover, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item:hover, .header-mobile__dropdown, .header-mobile__auth, .header-search__form, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
-.home-cake:hover, .home-cafe, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .mfp-bg, .popup-show, .dropdown-show .icon-dropdown, .is-visible, .body-popup, .filter-mobile-btn .icon-dropdown {
+.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .mfp-bg, .popup-show, .dropdown-show .icon-dropdown, .is-visible, .body-popup, .filter-mobile-btn .icon-dropdown {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -1356,19 +1356,6 @@ i.icon-chair {
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
   border-top-color: #a8a4a2; }
 
-.bg-blur {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: scale(1.2) translate(-50%, -50%);
-      -ms-transform: scale(1.2) translate(-50%, -50%);
-          transform: scale(1.2) translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
-  opacity: 1; }
-
 .sticky {
   position: fixed !important;
   width: 100%;
@@ -2044,6 +2031,36 @@ main {
     -o-transition: all .1s ease-out;
     transition: all .1s ease-out;
     top: -16.3%; }
+  .home-cafe:hover .home-cafe__plane,
+  .home-cafe:hover .home-cafe__auto {
+    -webkit-transform: scale(0.99) rotate(5deg);
+        -ms-transform: scale(0.99) rotate(5deg);
+            transform: scale(0.99) rotate(5deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+  .home-cafe:hover .home-cafe__line {
+    -webkit-transform: scale(0.99) rotate(2deg);
+        -ms-transform: scale(0.99) rotate(2deg);
+            transform: scale(0.99) rotate(2deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+  .home-cafe:hover .home-cafe__bird {
+    -webkit-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+  .home-cafe:hover .home-cafe__map {
+    z-index: -1; }
   .home-cafe a {
     position: static; }
     .home-cafe a::after {
@@ -2165,6 +2182,18 @@ main {
     .home-celebration a::after {
       content: '';
       border: none; }
+  .home-celebration:hover .home-celebration__star-1,
+  .home-celebration:hover .home-celebration__star-2,
+  .home-celebration:hover .home-celebration__star-3,
+  .home-celebration:hover .home-celebration__heart {
+    -webkit-transform: scale(0.99) rotate(5deg);
+        -ms-transform: scale(0.99) rotate(5deg);
+            transform: scale(0.99) rotate(5deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-celebration:hover .home-celebration__paw-bear {
     -webkit-animation: helloBear 1s infinite linear;
     -o-animation: helloBear 1s infinite linear;
@@ -2183,25 +2212,45 @@ main {
     bottom: 17%;
     left: 16.8%;
     fill: #201600;
-    width: 10%; }
+    width: 10%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-celebration__star-2 {
     position: absolute;
     bottom: 66%;
     left: 64.2%;
     fill: #201600;
-    width: 5.8%; }
+    width: 5.8%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-celebration__star-3 {
     position: absolute;
     bottom: 54%;
     left: 81%;
     fill: #201600;
-    width: 8.1%; }
+    width: 8.1%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-celebration__heart {
     position: absolute;
     top: 4.2%;
     left: 38%;
     fill: #201600;
-    width: 14.5%; }
+    width: 14.5%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-celebration__bear {
     position: absolute;
     bottom: 19.5%;
@@ -2220,7 +2269,12 @@ main {
     position: absolute;
     bottom: 40.7%;
     right: 8.8%;
-    width: 9.5%; }
+    width: 9.5%;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-celebration__text {
     text-align: center;
     font-family: "BebasNeue";
@@ -2273,6 +2327,17 @@ main {
     position: relative;
     width: 100%;
     height: auto; }
+  .home-cake:hover .home-cake__brownie,
+  .home-cake:hover .home-cake__pie-1,
+  .home-cake:hover .home-cake__pie-2 {
+    -webkit-transform: scale(0.99) rotate(5deg);
+        -ms-transform: scale(0.99) rotate(5deg);
+            transform: scale(0.99) rotate(5deg);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    -o-transition: transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
   .home-cake:hover .home-cake__bear {
     -webkit-animation: bearMoon 1s infinite linear;
     -o-animation: bearMoon 1s infinite linear;
@@ -3488,7 +3553,10 @@ test popup
     .cafe-slider__body {
       position: relative;
       width: 100%;
-      overflow: hidden; }
+      background-image: url(../img/cafe-slider-1-blur.jpg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover; }
     .cafe-slider__footer {
       width: 100%;
       height: 2.9rem;

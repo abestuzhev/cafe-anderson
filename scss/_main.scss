@@ -19,12 +19,11 @@ main {
 .home-celebration,
 .home-cake {
     &:hover {
-        //transform: scale(.99);
+        // transform: scale(.99);
         @extend %transition_all;
         cursor: pointer;
     }
 }
-
 //------------------------------------------------кафе на главной*/
 
 .home-cafe {
@@ -39,10 +38,26 @@ main {
         top: -16.3%;
     }
 
-    //&:hover svg {
-    //    transform: rotate(2deg);
-    //    transition: transform .2s ease-out;
-    //}
+    &:hover svg {
+      //  transform: scale(.99) rotate(1deg);
+      //  transition: transform .2s ease-out;
+    }
+
+    &:hover .home-cafe__plane,
+    &:hover .home-cafe__auto {
+       transform: scale(.99) rotate(5deg);
+       transition: transform .2s ease-out;
+    }
+
+    &:hover .home-cafe__line {
+      transform: scale(.99) rotate(2deg);
+      transition: transform .2s ease-out;
+    }
+
+    &:hover .home-cafe__bird {
+      transform: rotate(3deg);
+      transition: transform .2s ease-out;
+    }
 
     //&:hover .home-cafe__text {
     //    z-index: 10;
@@ -50,11 +65,11 @@ main {
     //    transition: transform .2s ease-out;
     //}
 
-    //&:hover .home-cafe__map {
-    //    z-index: -1;
-    //    transform: rotate(1deg);
-    //    @extend %transition_all;
-    //}
+    &:hover .home-cafe__map {
+       z-index: -1;
+      //  transform: scale(1) rotate(1deg);
+       @extend %transition_all;
+    }
 
     a {
         position: static;
@@ -186,6 +201,14 @@ main {
         }
     }
 
+    &:hover .home-celebration__star-1,
+    &:hover .home-celebration__star-2,
+    &:hover .home-celebration__star-3,
+    &:hover .home-celebration__heart {
+       transform: scale(.99) rotate(5deg);
+       transition: transform .2s ease-out;
+    }
+
     //&:hover .home-celebration__packege {
     //    z-index: -1;
     //    transform: rotate(1deg);
@@ -220,6 +243,7 @@ main {
         left: 16.8%;
         fill: #201600;
         width: 10%;
+        transition: transform .2s ease-out;
     }
 
     &__star-2 {
@@ -228,6 +252,7 @@ main {
         left: 64.2%;
         fill: #201600;
         width: 5.8%;
+        transition: transform .2s ease-out;
     }
 
     &__star-3 {
@@ -236,6 +261,7 @@ main {
         left: 81%;
         fill: #201600;
         width: 8.1%;
+        transition: transform .2s ease-out;
     }
 
     &__heart {
@@ -244,6 +270,7 @@ main {
         left: 38%;
         fill: #201600;
         width: 14.5%;
+        transition: transform .2s ease-out;
     }
 
     &__bear {
@@ -269,6 +296,7 @@ main {
         bottom: 40.7%;
         right: 8.8%;
         width: 9.5%;
+        transition: transform .2s ease-out;
     }
 
     &__text {
@@ -334,6 +362,13 @@ main {
         height: auto;
     }
 
+    &:hover .home-cake__brownie,
+    &:hover .home-cake__pie-1,
+    &:hover .home-cake__pie-2 {
+       transform: scale(.99) rotate(5deg);
+       transition: transform .2s ease-out;
+    }
+
     &:hover .home-cake__bear {
         -webkit-animation: bearMoon 1s infinite linear;
         -o-animation: bearMoon 1s infinite linear;
@@ -349,6 +384,7 @@ main {
         left: -4%;
         fill: #201600;
         width: 15.3%;
+        @extend %transition_all;
     }
     &__pie-2 {
         position: absolute;
@@ -357,6 +393,7 @@ main {
         right: 18.2%;
         fill: #201600;
         width: 14.4%;
+        @extend %transition_all;
     }
 
     &__brownie {
@@ -366,6 +403,7 @@ main {
         right: 20.1%;
         fill: #201600;
         width: 9.8%;
+        @extend %transition_all;
     }
 
     &__bear {
@@ -375,12 +413,14 @@ main {
         right: 48.4%;
         fill: #201600;
         width: 17%;
+        @extend %transition_all;
     }
     &__arrow {
         position: absolute;
         top: 27.4%;
         right: 37.6%;
         width: 7%;
+        @extend %transition_all;
     }
 
     &__text {
@@ -1475,7 +1515,7 @@ test popup
         vertical-align: middle;
         position: relative;
         border: none;
-        
+
         &:hover {
             color: $white;
             //background-color: #fff;
@@ -1942,7 +1982,6 @@ test popup
     &-slider {
         margin-bottom: 4.8rem;
 
-
         &__tour {
             position: absolute;
             top: 1.5rem;
@@ -1980,13 +2019,13 @@ test popup
         &__body {
             position: relative;
             width: 100%;
-            overflow: hidden;
-            //height: 59.5rem;
-            //background-image: url(../img/cafe-slider-1.jpg);
-            //background-position: 50% 50%;
-            //background-repeat: no-repeat;
-            //-webkit-background-size: cover;
-            //background-size: cover;
+            // overflow: hidden;
+            // height: 59.5rem;
+            background-image: url(../img/cafe-slider-1-blur.jpg);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
         }
 
         &__footer {
