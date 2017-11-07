@@ -272,6 +272,36 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
+.c-inputfile__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.c-inputfile__input + label {
+    font-size: 1.2rem;
+    color: #9b9595;
+    display: inline-block;
+    cursor: pointer; /* "hand" cursor */
+    text-transform: lowercase;
+}
+.c-inputfile__input + label * {
+    pointer-events: none;
+}
+
+.c-inputfile__input:focus + label {
+    outline: 1px dotted #9b9595;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.c-inputfile__input:focus + label,
+.c-inputfile__input + label:hover {
+    //background-color: red;
+}
+
 //icons------------------------------------------------------------
 .c-icon {
     &.is-active {
@@ -706,6 +736,21 @@ i.icon-chair {
     vertical-align: middle;
 }
 
+.icon-clip {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url(../img/icons/icon-clip.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+//.icon-lollipop {
+//    display: inline-block;
+//    width: 1.4rem;
+//    height: 1.4rem;
+//    background: url(../img/icons/icon-clip.svg) 50% 50% no-repeat;
+//    vertical-align: middle;
+//}
 
 
 
@@ -1603,6 +1648,14 @@ i.icon-chair {
   margin-bottom: 5rem;
 }
 
+
+/*разделитель*/
+.c-delimiter {
+    width: 3.4rem;
+    height: 0.2rem;
+    background-color: #cec9c0;
+    margin: 1.4rem 0;
+}
 
 /*c-city-list__title------------------------------------------------------------*/
 /*Компонент заголовок города. Используется в списках кафе, вакансий*/

@@ -475,6 +475,11 @@ main {
         z-index: 10;
     }
 
+    &__desc {
+        margin-bottom: 2rem;
+        border-bottom: 6px solid #7e5847;
+    }
+
     &-back {
         display: none;
         vertical-align: middle;
@@ -1157,6 +1162,35 @@ main {
         margin-bottom: 1.5rem;
     }
 }
+
+/*модадбное окно вакансии*/
+.popup__vacancy {
+    .popup {
+        width: 62.2rem;
+    }
+
+    .c-card-vacancy__description {
+        padding-bottom: 2rem;
+    }
+
+    .c-inputfile {
+        margin-bottom: -10px;
+    }
+
+    .popup-bg__img {
+        right: -17.5rem;
+        bottom: -2rem;
+    }
+
+    .popup-bg__svg {
+        width: 9.2rem;
+        position: absolute;
+        bottom: -2rem;
+        right: 8rem;
+    }
+}
+
+
 
 
 /*----------------------------------------------*/

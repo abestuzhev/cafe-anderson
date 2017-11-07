@@ -827,7 +827,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100% !important;
         height: 100vh;
         margin: 0;
         overflow-y: scroll;
@@ -952,6 +952,14 @@
 
     .cafe-review {
         max-width: 23rem;
+    }
+
+    .popup__vacancy .popup-bg__img {
+        right: -22rem;
+    }
+    
+    .popup__vacancy .popup-bg__svg {
+        right: 1.5rem;
     }
 }
 
@@ -1138,6 +1146,15 @@
     .c-card-cafe__body {
         width: 100%;
     }
+
+    .popup .c-grid {
+        flex-flow: column nowrap;
+    }
+    .popup .c-col-6 {
+        width: 100%;
+    }
+
+
 }
 
 

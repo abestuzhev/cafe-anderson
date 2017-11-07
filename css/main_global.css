@@ -378,6 +378,29 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .c-counter .inc {
     right: .6rem; }
 
+.c-inputfile__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.c-inputfile__input + label {
+  font-size: 1.2rem;
+  color: #9b9595;
+  display: inline-block;
+  cursor: pointer;
+  /* "hand" cursor */
+  text-transform: lowercase; }
+
+.c-inputfile__input + label * {
+  pointer-events: none; }
+
+.c-inputfile__input:focus + label {
+  outline: 1px dotted #9b9595;
+  outline: -webkit-focus-ring-color auto 5px; }
+
 .c-icon.is-active {
   fill: #9acc4e; }
 
@@ -736,6 +759,13 @@ i.icon-chair {
   width: 1.3rem;
   height: 1.2rem;
   background: url(../img/icons/icon-factory.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
+.icon-clip {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../img/icons/icon-clip.svg) 50% 50% no-repeat;
   vertical-align: middle; }
 
 @media screen and (min-width: 1600px) {
@@ -1423,6 +1453,13 @@ i.icon-chair {
   margin: 0;
   font-weight: 400;
   margin-bottom: 5rem; }
+
+/*разделитель*/
+.c-delimiter {
+  width: 3.4rem;
+  height: 0.2rem;
+  background-color: #cec9c0;
+  margin: 1.4rem 0; }
 
 /*c-city-list__title------------------------------------------------------------*/
 /*Компонент заголовок города. Используется в списках кафе, вакансий*/
@@ -2541,6 +2578,9 @@ main {
     padding: 3rem 6rem 4.5rem;
     position: relative;
     z-index: 10; }
+  .popup__desc {
+    margin-bottom: 2rem;
+    border-bottom: 6px solid #7e5847; }
   .popup-back {
     display: none;
     vertical-align: middle; }
@@ -3022,6 +3062,26 @@ main {
 
 .popup-menu__item {
   margin-bottom: 1.5rem; }
+
+/*модадбное окно вакансии*/
+.popup__vacancy .popup {
+  width: 62.2rem; }
+
+.popup__vacancy .c-card-vacancy__description {
+  padding-bottom: 2rem; }
+
+.popup__vacancy .c-inputfile {
+  margin-bottom: -10px; }
+
+.popup__vacancy .popup-bg__img {
+  right: -17.5rem;
+  bottom: -2rem; }
+
+.popup__vacancy .popup-bg__svg {
+  width: 9.2rem;
+  position: absolute;
+  bottom: -2rem;
+  right: 8rem; }
 
 /*----------------------------------------------*/
 #tooltip {
