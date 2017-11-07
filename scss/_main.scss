@@ -1564,6 +1564,11 @@ test popup
         padding: 1rem 0;
         font-size: 1.4rem;
         border: none;
+
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 
     &-form {

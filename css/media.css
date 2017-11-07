@@ -206,6 +206,10 @@
     .footer {
         margin-top: -11rem;
     }
+
+    .vacancies-list .c-col-6 {
+        width: 100%;
+    }
 }
 
 @media (min-width:1940px) and (min-height: 1200px) {
@@ -643,6 +647,7 @@
     .filter {
         display: none;
         padding-bottom: 1.4rem;
+        margin-bottom: 2rem;
     }
 
     .filter-mobile-btn {
@@ -757,6 +762,52 @@
         /*overflow: auto;*/
         /*text-overflow: clip;*/
         white-space: normal;
+    }
+
+    .vacancies .select-city + .SelectBox,
+    .vacancies .select-metro + .SelectBox {
+        width: 100%;
+    }
+
+    .filter .c-button__small {
+        padding: 1.4rem 3.4rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    .c-title__h1 {
+        margin-bottom: 2rem;
+    }
+
+    .c-card-vacancy {
+        padding: 2.6rem 1.4rem 2rem 4rem;
+    }
+
+    .c-card-vacancy__item {
+        display: block;
+        margin: 0 0 1rem 0;
+        line-height: .9;
+    }
+
+    .c-card-vacancy__header {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .c-card-vacancy__title {
+        margin-bottom: 1rem;
+    }
+
+    .c-card-vacancy__header {
+        margin-bottom: 1.3rem;
+    }
+
+    .c-card-vacancy__info {
+        padding: .6rem 0 .7rem;
+    }
+
+    .vacancies-list {
+        margin-bottom: 1rem;
     }
 }
 
@@ -1083,6 +1134,7 @@
         width: 100%;
         height: auto;
     }
+
     .c-card-cafe__body {
         width: 100%;
     }

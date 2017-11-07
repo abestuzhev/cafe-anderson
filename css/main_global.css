@@ -1220,6 +1220,7 @@ i.icon-chair {
     font-size: 3.6rem;
     line-height: 1;
     color: #553023;
+    white-space: nowrap;
     font-family: "BebasNeue"; }
   .c-card-vacancy__place {
     display: block;
@@ -3336,6 +3337,9 @@ test popup
     padding: 1rem 0;
     font-size: 1.4rem;
     border: none; }
+    .filter-mobile__more::after {
+      content: '';
+      border: none; }
   .filter-form {
     display: -webkit-box;
     display: -ms-flexbox;
