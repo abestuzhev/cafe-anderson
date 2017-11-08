@@ -1509,6 +1509,9 @@ test popup
 .header-top__hide  .header-layout {
     padding: 0 0;
 }
+.header-top__hide  .header-logo {
+    padding: 0;
+}
 
 
 //
@@ -2256,7 +2259,7 @@ test popup
     }
 
     &-description {
-        width: 50%;
+        width: 100%;
 
         &__title {
             font-size: 2.6rem;
@@ -2273,10 +2276,14 @@ test popup
             color: #ffffff;
             //overflow-x: auto;
             //overflow-y: scroll;
-            height: 28rem;
+            //max-height: 28rem;
 
             p {
                 margin-bottom: 2.3rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }

@@ -34,7 +34,7 @@
 
 @media (max-width:1600px) {
     .cafe-description__text {
-        height: 23rem;
+        /*height: 23rem;*/
     }
 }
 
@@ -42,6 +42,11 @@
   .vacancies .select-city + .SelectBox,
   .vacancies .select-metro + .SelectBox {
     width: 37rem;
+  }
+
+  .c-card-cafe__img img {
+      width: 100%;
+      height: auto;
   }
 }
 
