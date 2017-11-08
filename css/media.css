@@ -584,7 +584,8 @@
     }
 
     .cafe-list .c-col {
-        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 
     .c-card-cafe__img img {

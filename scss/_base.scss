@@ -117,19 +117,19 @@ a {
 //------------------------------------------------------------base styles###
 
 h1 {
-
+font-weight: 400;
 }
 
 h2 {
-
+    font-weight: 400;
 }
 
 h3 {
-
+    font-weight: 400;
 }
 
 h4 {
-
+    font-weight: 400;
 }
 
 p {
@@ -1366,8 +1366,7 @@ i.icon-chair {
 }
 
 
-/*card-event------------------------------------------------------------*/
-
+/*card-vacancy------------------------------------------------------------*/
 .c-card-vacancy {
     position: relative;
     background-color: $white;
@@ -1561,6 +1560,27 @@ i.icon-chair {
     }
 }
 
+
+/*menu-card------------------------------------------------------------*/
+.c-card-partner {
+    height: 100%;
+    padding: 1.6rem;
+    background-color: #fff;
+    border-radius: .6rem;
+    border: 2px solid rgba(0,0,0,.15);
+    box-shadow: 0 5px 10px 2px rgba(0,0,0,.1);
+    min-height: 13.3rem;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 /*grid------------------------------------------------------------*/
 .c-line {
     &-horizontal {
@@ -1586,12 +1606,93 @@ i.icon-chair {
 }
 
 .c-col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
     padding: 1.4rem;
 }
 
-.c-col-6 {
-    width: 50%;
+.c-col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
 }
+
+.c-col-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.c-col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.c-col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.c-col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.c-col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.c-col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.c-col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.c-col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.c-col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.c-col-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.c-col-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.c-col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
 
 /*slider arrow------------------------------------------------------------*/
 .fotorama__arr {
