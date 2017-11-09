@@ -2373,7 +2373,7 @@ test popup
 
 
 /*partners----------------------------------------------------*/
-.partners {
+/*.partners {
     margin-bottom: 2rem;
 
    &__list {
@@ -2390,8 +2390,9 @@ test popup
        padding: 1rem;
    }
 }
-
+*/
 /*not-found----------------------------------------------------*/
+/*
 .not-found {
     font-family: $font_serif;
     text-align: center;
@@ -2423,7 +2424,7 @@ test popup
         }
     }
 
-    &-home {/*главная*/
+    &-home {//главная
         position: absolute;
         top: -11rem;
         left: 0;
@@ -2468,7 +2469,7 @@ test popup
             background: url(../img/404scene/home-branch.svg) 0 0 no-repeat;
         }
     }
-    &-cake {/*тортики*/
+    &-cake {//тортики
         position: absolute;
         top: 6.3rem;
         right: -33.5rem;
@@ -2523,7 +2524,7 @@ test popup
         }
     }
 
-    &-cafe {/*кафе 404*/
+    &-cafe {//кафе 404
         position: absolute;
         top: 2.9rem;
         left: -37.7rem;
@@ -2579,7 +2580,7 @@ test popup
         }
     }
 
-    &-celebration {/*праздничать 404*/
+    &-celebration {//праздничать 404
         position: absolute;
         top: 100%;
         left: 0;
@@ -2626,7 +2627,7 @@ test popup
         }
     }
 }
-
+*/
 
 #cafe-info-map {
     width: 100%;
