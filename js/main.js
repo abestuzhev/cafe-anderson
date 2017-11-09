@@ -12,6 +12,15 @@ var $body,
 // SimpleScrollbar.initEl(el);
 
 
+//загрузка скрипта
+var scriptMap = document.createElement('script');
+script.src = "https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU";
+document.documentElement.appendChild(scriptMap);
+
+var scriptTool = document.createElement('script');
+script.src = "bower_components/tooltipster/dist/js/tooltipster.bundle.js";
+document.documentElement.appendChild(scriptTool);
+
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
@@ -190,7 +199,7 @@ $(document).ready(function ($) {
         var div = $('.header-mobile__search-box'); // тут указываем ID элемента
         if (!div.is(e.target) // если клик был не по нашему блоку
             && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            
+
             $('.header-mobile__menu').show();
             $('.header-mobile__search-box').hide();
             $('.header-mobile__search .icon-search').show();
@@ -298,7 +307,7 @@ $(document).ready(function ($) {
         $('.popup-basket').addClass('popup-slide__show');
         $('.header').addClass('header-top__no-hide');
     });
-    
+
     $('.popup-basket__close').on('click', function () {
         $('.popup-basket').removeClass('popup-slide__show');
         $('.header').removeClass('header-top__no-hide');

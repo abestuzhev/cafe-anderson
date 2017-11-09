@@ -1550,7 +1550,12 @@
 <!--карта------------------------------------------------->
 <!-- Подключаем API  карт 2.x  -->
 <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+
+
+<script src="./bower_components/jquery/dist/jquery.js"></script>
 <script>
+
+//карта в карточке кафе
     ymaps.ready(function () {
         var map = new ymaps.Map('cafe-info-map', {
             center: [55.784926068932414,37.66125749999997],
@@ -1571,9 +1576,6 @@
         map.panTo(placemark.geometry.getCoordinates());
     });
 </script>
-
-<script src="./bower_components/jquery/dist/jquery.js"></script>
-
 
 <script type="text/javascript" src="bower_components/jquery-mask-plugin/dist/jquery.mask.js"></script>
 <script type="text/javascript" src="./js/jscrollpane/jquery.mousewheel.js"></script>
