@@ -1453,6 +1453,10 @@ test popup
     @extend %transition_all;
 }
 
+.is-hide {
+  display: none !important;
+}
+
 .body-popup {
     overflow: hidden !important;
     padding-right: 16px;

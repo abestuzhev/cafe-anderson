@@ -3321,6 +3321,9 @@ test popup
       -ms-transform: scale(1);
           transform: scale(1); }
 
+.is-hide {
+  display: none !important; }
+
 .body-popup {
   overflow: hidden !important;
   padding-right: 16px; }
