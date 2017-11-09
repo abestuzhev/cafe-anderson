@@ -1398,13 +1398,13 @@ test popup
 }
 
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
-    width: 100%;
+    //width: 100%;
     cursor: auto;
 }
 
 .mfp-content {
     position: relative;
-    display: inline-block;
+    display: inline-block !important;
     vertical-align: middle;
     margin: 0 auto;
     text-align: left;
@@ -2377,6 +2377,7 @@ test popup
 
 
 /*partners----------------------------------------------------*/
+
 .partners {
     margin-bottom: 2rem;
 
