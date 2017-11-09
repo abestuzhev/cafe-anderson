@@ -14,11 +14,11 @@ var $body,
 
 //загрузка скрипта
 var scriptMap = document.createElement('script');
-script.src = "https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU";
+scriptMap.src = "https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU";
 document.documentElement.appendChild(scriptMap);
 
 var scriptTool = document.createElement('script');
-script.src = "bower_components/tooltipster/dist/js/tooltipster.bundle.js";
+scriptTool.src = "bower_components/tooltipster/dist/js/tooltipster.bundle.js";
 document.documentElement.appendChild(scriptTool);
 
 
