@@ -18,7 +18,7 @@ scriptMap.src = "https://api-maps.yandex.ru/2.0/?load=package.standard,package.g
 document.documentElement.appendChild(scriptMap);
 
 var scriptTool = document.createElement('script');
-scriptTool.src = "bower_components/tooltipster/dist/js/tooltipster.bundle.js";
+scriptTool.src = "https://abestuzhev.github.io/cafe-anderson/bower_components/tooltipster/dist/js/tooltipster.bundle.js";
 document.documentElement.appendChild(scriptTool);
 
 
