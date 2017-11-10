@@ -2102,15 +2102,15 @@
 <!--карта------------------------------------------------->
 
 <!-- Подключаем API  карт 2.x  -->
-<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+<!-- <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script> -->
 
-<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <!--<script src="./js/ymaps-touch-scroll.bundle.js"></script>-->
 
 
 <script type="text/javascript">
     // Как только будет загружен API и готов DOM, выполняем инициализацию
-    ymaps.ready(init);
+
     var myMap;
     function init () {
         // Создание экземпляра карты и его привязка к контейнеру с
@@ -2233,6 +2233,8 @@
 //        myMap.behaviors.disable('multiTouch');
 //        myMap.behaviors.disable('drag');
     }
+
+      ymaps.ready(init);
 </script>
 
 
