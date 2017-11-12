@@ -2102,7 +2102,7 @@
 <!--карта------------------------------------------------->
 
 <!-- Подключаем API  карт 2.x  -->
-<!-- <script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script> -->
+ <!--<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>-->
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <!--<script src="./js/ymaps-touch-scroll.bundle.js"></script>-->
@@ -2110,7 +2110,7 @@
 
 <script type="text/javascript">
     // Как только будет загружен API и готов DOM, выполняем инициализацию
-
+    ymaps.ready(init);
     var myMap;
     function init () {
         // Создание экземпляра карты и его привязка к контейнеру с
@@ -2120,61 +2120,65 @@
             // ее центр и коэффициент масштабирования
             center: [55.7745045087803,37.590385793792734],
             zoom: 5
-//            behaviors: ['default', 'scrollZoom']
+//            behaviors: ['default', 'scrollZoom'],
+//            controls: ['zoomrControl']
         }, {
             geoObjectBalloonAutoPan: false,
             geoObjectBalloonPanelMaxMapArea: Infinity
         });
-//        myMap.behaviors.disable('multiTouch');
-//        myMap.behaviors.disable('drag');
-//        var isMobile = {
-//            Android: function() {return navigator.userAgent.match(/Android/i);},
-//            BlackBerry: function() {return navigator.userAgent.match(/BlackBerry/i);},
-//            iOS: function() {return navigator.userAgent.match(/iPhone|iPad|iPod/i);},
-//            Opera: function() {return navigator.userAgent.match(/Opera Mini/i);},
-//            Windows: function() {return navigator.userAgent.match(/IEMobile/i);},
-//            any: function() {
-//                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-//            }
-//        };
-//
-//// после вызова карты
-//        if(isMobile.any()){
-//            myMap.behaviors.disable('drag');
-//        }
-        var cafe_1 = new ymaps.Placemark([55.74352990795752,37.56841313754272], {
-            name: 'АндерСон для Пап',
-            address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
-            phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-            timeWork: 'пн-вс с 09:00 до 23:00',
-            entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-            subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-        }, {
-            // Изображение иконки метки
-            iconImageHref: 'img/icons/icon-map-point.png',
-            // Размеры изображения иконки
-            iconImageSize: [44, 53],
-            // смещение картинки
-            iconImageOffset: [-22, -56],
-            // Размеры содержимого балуна
-            balloonContentSize: [660, 265],
-            // Задаем макет балуна - пользовательская картинка с контентом
-            balloonLayout: "default#imageWithContent",
-            // Смещение картинки балуна
-            balloonImageOffset: [-117, -300],
-            // Размеры картинки балуна
-            balloonImageSize: [660, 265],
-            // Балун не имеет тени
-            balloonShadow: false,
-            //Выравнивание по умолчанию
-            balloonAutoPan: false
+        
+        var clusterIcons = [
+        {
+            href: 'm1.png',
+            size: [40, 40],
+            // Отступ, чтобы центр картинки совпадал с центром кластера.
+            offset: [-20, -20]
+        },
+        {
+            href: 'm1.png',
+            size: [40, 40],
+            offset: [-20, -20]
+        }];
+
+
+        
+        var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.geoObjects.length]</div>'
+        );
+
+
+        //START кластеризатор
+        var clusterer = new ymaps.Clusterer({
+            clusterIcons: clusterIcons,
+            clusterIconContentLayout: MyIconContentLayout,
+            groupByCoordinates: false,
+            clusterDisableClickZoom: true,
+            clusterHideIconOnBalloonOpen: false,
+            geoObjectHideIconOnBalloonOpen: false
         });
-        // Создаем коллекцию, в которую будем добавлять метки
-        myCollection = new ymaps.GeoObjectCollection();
-        //Добавляем метки в коллекцию геообъектов.
-        myCollection
-            .add(cafe_1);
-        // Создаем шаблон для отображения контента балуна
+
+       var getPointOptions = function () {
+            return {
+                iconImageHref: 'img/icons/icon-map-point.png',
+                // Размеры изображения иконки
+                iconImageSize: [44, 53],
+                // смещение картинки
+                iconImageOffset: [-22, -56],
+                // Размеры содержимого балуна
+                balloonContentSize: [660, 265],
+                // Задаем макет балуна - пользовательская картинка с контентом
+                balloonLayout: "default#imageWithContent",
+                // Смещение картинки балуна
+                balloonImageOffset: [-117, -300],
+                // Размеры картинки балуна
+                balloonImageSize: [660, 265],
+                // Балун не имеет тени
+                balloonShadow: false,
+                //Выравнивание по умолчанию
+                balloonAutoPan: false
+            };
+        };
+    
         /*шаблон попапа*/
         var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
             '<div class="c-card-cafe c-card-map">'+
@@ -2208,14 +2212,70 @@
             '</div>'+
             '</div>'
         );
+        
+        
+       
+       var placemarks = [
+           new ymaps.Placemark([55.74352990795752,37.56841313754272], {
+               name: 'АндерСон для Пап',
+               address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
+               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+               timeWork: 'пн-вс с 09:00 до 23:00',
+               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+           }, {
+               balloonContentLayout: myBalloonLayout
+           }, getPointOptions()),
+           new ymaps.Placemark([59,31], {
+               name: 'АндерСон для Пап2',
+               address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
+               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+               timeWork: 'пн-вс с 09:00 до 23:00',
+               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+           }, {
+               balloonContentLayout: myBalloonLayout
+           }, getPointOptions()),
+           new ymaps.Placemark([57,34], {
+               name: 'на Класносельской',
+               address: 'Московский, ул. Хабарова, дом 2',
+               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+               timeWork: 'пн-вс с 09:00 до 23:00',
+               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+           }, {
+               balloonContentLayout: myBalloonLayout
+           }, getPointOptions()),
+           new ymaps.Placemark([60,40], {
+               name: 'Тестовое кафе ',
+               address: 'Московский, ул. Хабарова, дом 2б Московский, ул. Хабарова, дом 2',
+               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+               timeWork: 'пн-вс с 09:00 до 23:00',
+               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+           }, {
+               balloonContentLayout: myBalloonLayout
+           }, getPointOptions())
+       ];
+        
+        
+        // Создаем коллекцию, в которую будем добавлять метки
+//        var myCollection = new ymaps.GeoObjectCollection();
+//
+//        //дбавляем все метки в коллекцию геообъектов
+//        for(var i = 0, len = placemarks.length; i < len; i++) {
+//            myCollection.add(placemarks[i]);
+//        }
+//        // Создаем шаблон для отображения контента балуна
+        
         // Помещаем созданный шаблон в хранилище шаблонов. Теперь наш шаблон доступен по ключу 'my#cafelayout'.
-        ymaps.layout.storage.add('my#cafelayout', myBalloonLayout);
-        // Задаем наш шаблон для балунов геобъектов коллекции.
-        myCollection.options.set({
-            balloonContentBodyLayout:'my#cafelayout',
-            // Максимальная ширина балуна в пикселах
-            balloonMaxWidth: 660
-        });
+//        ymaps.layout.storage.add('my#cafelayout', myBalloonLayout);
+//        // Задаем наш шаблон для балунов геобъектов коллекции.
+//        myCollection.options.set({
+//            balloonContentBodyLayout:'my#cafelayout',
+//            // Максимальная ширина балуна в пикселах
+//            balloonMaxWidth: 660
+//        });
         myMap.geoObjects.events.add([
             'balloonopen'
         ], function (e) {
@@ -2224,17 +2284,26 @@
                 delay: 0
             });
         });
+
+        clusterer.options.set({
+            gridSize: 80,
+            clusterDisableClickZoom: false
+        });
+        //END кластеризатор
+        
+        //добавляем коллекцию геообъектов в кластер
+        clusterer.add(placemarks);
+        
         // Добавляем коллекцию геообъектов на карту.
-        myMap.geoObjects.add(myCollection);
+        myMap.geoObjects.add(clusterer);
 //        map.panTo(myCollection.geometry.getCoordinates());
         // Добавляем элементы управления.
-        myMap.controls.add('zoomControl');
-        myMap.controls.add('fullscreenControl');
+        
 //        myMap.behaviors.disable('multiTouch');
 //        myMap.behaviors.disable('drag');
     }
 
-      ymaps.ready(init);
+    
 </script>
 
 
