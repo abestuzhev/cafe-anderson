@@ -146,11 +146,17 @@
 }
 
 @media (max-width:1178px) {
-    .c-card-map {
+    #map .c-card-map {
         width: 320px;
         height: auto;
-        margin-left: -53px;
-        margin-top: 62px;
+        margin-left: -52px;
+        /*margin-left: -53px;
+        margin-top: 62px;*/
+    }
+
+    #map .c-card-map__body {
+      height: 38.4rem;
+      display: block;
     }
 
     .c-card-map__body {
@@ -963,7 +969,7 @@
     .popup__vacancy .popup-bg__img {
         right: -22rem;
     }
-    
+
     .popup__vacancy .popup-bg__svg {
         right: 1.5rem;
     }
@@ -1388,3 +1394,8 @@
 /*.filter-mobile-btn {*/
     /*background-color: red;*/
 /*}*/
+
+
+#cafe-map {
+    display: block !important;
+}

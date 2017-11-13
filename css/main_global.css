@@ -1101,6 +1101,15 @@ i.icon-chair {
       .c-card-cafe-advantages__item .advantages-guests {
         margin-right: .5rem; }
 
+#map .c-card-cafe__item:nth-child(1),
+#map .c-card-cafe__entertainment {
+  height: 3rem;
+  overflow: hidden; }
+
+#map .c-card-map__body {
+  overflow: hidden;
+  height: 22.1rem; }
+
 .c-card-map {
   width: 660px;
   height: 265px;

@@ -2099,221 +2099,24 @@
 
 
 
-<!--карта------------------------------------------------->
-
-<!-- Подключаем API  карт 2.x  -->
- <!--<script type="text/javascript" src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>-->
-
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<!--<script src="./js/ymaps-touch-scroll.bundle.js"></script>-->
-
-
-<script type="text/javascript">
-    // Как только будет загружен API и готов DOM, выполняем инициализацию
-    ymaps.ready(init);
-    var myMap;
-    function init () {
-        // Создание экземпляра карты и его привязка к контейнеру с
-        // заданным id ("map")
-        myMap = new ymaps.Map('map', {
-            // При инициализации карты, обязательно нужно указать
-            // ее центр и коэффициент масштабирования
-            center: [55.7745045087803,37.590385793792734],
-            zoom: 5
-//            behaviors: ['default', 'scrollZoom'],
-//            controls: ['zoomrControl']
-        }, {
-            geoObjectBalloonAutoPan: false,
-            geoObjectBalloonPanelMaxMapArea: Infinity
-        });
-        
-        var clusterIcons = [
-        {
-            href: 'm1.png',
-            size: [40, 40],
-            // Отступ, чтобы центр картинки совпадал с центром кластера.
-            offset: [-20, -20]
-        },
-        {
-            href: 'm1.png',
-            size: [40, 40],
-            offset: [-20, -20]
-        }];
-
-
-        
-        var MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.geoObjects.length]</div>'
-        );
-
-
-        //START кластеризатор
-        var clusterer = new ymaps.Clusterer({
-            clusterIcons: clusterIcons,
-            clusterIconContentLayout: MyIconContentLayout,
-            groupByCoordinates: false,
-            clusterDisableClickZoom: true,
-            clusterHideIconOnBalloonOpen: false,
-            geoObjectHideIconOnBalloonOpen: false
-        });
-
-       var getPointOptions = function () {
-            return {
-                iconImageHref: 'img/icons/icon-map-point.png',
-                // Размеры изображения иконки
-                iconImageSize: [44, 53],
-                // смещение картинки
-                iconImageOffset: [-22, -56],
-                // Размеры содержимого балуна
-                balloonContentSize: [660, 265],
-                // Задаем макет балуна - пользовательская картинка с контентом
-                balloonLayout: "default#imageWithContent",
-                // Смещение картинки балуна
-                balloonImageOffset: [-117, -300],
-                // Размеры картинки балуна
-                balloonImageSize: [660, 265],
-                // Балун не имеет тени
-                balloonShadow: false,
-                //Выравнивание по умолчанию
-                balloonAutoPan: false
-            };
-        };
-    
-        /*шаблон попапа*/
-        var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
-            '<div class="c-card-cafe c-card-map">'+
-            '<div class="c-card-map__header">'+
-            '<span class="popup-close" id="close-balloon" onclick="myMap.balloon.close()"></span>'+
-            '<a href="#" class="c-card-map__title">$[properties.name]</a>'+
-            '</div>'+
-            '<div class="c-card-map__body">'+
-            '<div class="c-card-cafe__img">'+
-            '<img src="img/cafe-foto.jpg" alt="">'+
-            '<a  href="#" class="c-card-cafe__menu">'+'<i class="icon-food-menu"></i>'+'меню</a>'+
-            '</div>'+
-            '<div class="c-card-cafe__body">'+
-            '<div class="c-card-cafe__item">' + '<b>Адрес: </b>' + '$[properties.address]</div>'+
-            '<div class="c-card-cafe__item">'+'<b>Телефон: </b>'+'$[properties.phoneNumber]</div>'+
-            '<div class="c-card-cafe__item">'+'<b>Время работы: </b>'+'$[properties.timeWork]</div>'+
-            '<div class="c-card-cafe__item c-card-cafe__subway">'+
-            '$[properties.subway]'+
-            '</div>'+
-            '<div class="c-card-cafe__item c-card-cafe__entertainment">$[properties.entertainment]</div>'+
-            '<ul class="c-card-cafe-advantages">'+
-            '<li class="c-card-cafe-advantages__item"><i class="advantages-coffe"></i></li>'+
-            '<li class="c-card-cafe-advantages__item"><i class="advantages-guests"></i>150</li>'+
-            '<li class="c-card-cafe-advantages__item"><i class="advantages-teddy"></i></li>'+
-            '<li class="c-card-cafe-advantages__item"><i class="advantages-nipple"></i></li>'+
-            '<li class="c-card-cafe-advantages__item"><i class="advantages-balloon"></i></li>'+
-            '<li class="c-card-cafe-advantages__item"><i class="advantages-umbrella"></i></li>'+
-            '<li class="c-card-cafe-advantages__item"><i class="advantages-bottle"></i></li>'+
-            '</ul>'+
-            '</div>'+
-            '</div>'+
-            '</div>'
-        );
-        
-        
-       
-       var placemarks = [
-           new ymaps.Placemark([55.74352990795752,37.56841313754272], {
-               name: 'АндерСон для Пап',
-               address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, {
-               balloonContentLayout: myBalloonLayout
-           }, getPointOptions()),
-           new ymaps.Placemark([59,31], {
-               name: 'АндерСон для Пап2',
-               address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, {
-               balloonContentLayout: myBalloonLayout
-           }, getPointOptions()),
-           new ymaps.Placemark([57,34], {
-               name: 'на Класносельской',
-               address: 'Московский, ул. Хабарова, дом 2',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, {
-               balloonContentLayout: myBalloonLayout
-           }, getPointOptions()),
-           new ymaps.Placemark([60,40], {
-               name: 'Тестовое кафе ',
-               address: 'Московский, ул. Хабарова, дом 2б Московский, ул. Хабарова, дом 2',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, {
-               balloonContentLayout: myBalloonLayout
-           }, getPointOptions())
-       ];
-        
-        
-        // Создаем коллекцию, в которую будем добавлять метки
-//        var myCollection = new ymaps.GeoObjectCollection();
-//
-//        //дбавляем все метки в коллекцию геообъектов
-//        for(var i = 0, len = placemarks.length; i < len; i++) {
-//            myCollection.add(placemarks[i]);
-//        }
-//        // Создаем шаблон для отображения контента балуна
-        
-        // Помещаем созданный шаблон в хранилище шаблонов. Теперь наш шаблон доступен по ключу 'my#cafelayout'.
-//        ymaps.layout.storage.add('my#cafelayout', myBalloonLayout);
-//        // Задаем наш шаблон для балунов геобъектов коллекции.
-//        myCollection.options.set({
-//            balloonContentBodyLayout:'my#cafelayout',
-//            // Максимальная ширина балуна в пикселах
-//            balloonMaxWidth: 660
-//        });
-        myMap.geoObjects.events.add([
-            'balloonopen'
-        ], function (e) {
-            var geoObject = e.get('target');
-            myMap.panTo(geoObject.geometry.getCoordinates(), {
-                delay: 0
-            });
-        });
-
-        clusterer.options.set({
-            gridSize: 80,
-            clusterDisableClickZoom: false
-        });
-        //END кластеризатор
-        
-        //добавляем коллекцию геообъектов в кластер
-        clusterer.add(placemarks);
-        
-        // Добавляем коллекцию геообъектов на карту.
-        myMap.geoObjects.add(clusterer);
-//        map.panTo(myCollection.geometry.getCoordinates());
-        // Добавляем элементы управления.
-        
-//        myMap.behaviors.disable('multiTouch');
-//        myMap.behaviors.disable('drag');
-    }
-
-    
-</script>
-
-
 <script src="./bower_components/jquery/dist/jquery.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+<div class="scripts">
+    
+</div>
+<script src="./js/main.js"></script>
+    
 
-<script type="text/javascript" src="bower_components/jquery-mask-plugin/dist/jquery.mask.js"></script>
+<!-- Подключаем API  карт 2.1  -->
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="./js/ymaps-touch-scroll.bundle.js"></script>
+<script type="text/javascript" src="./js/custom-map.js"></script> -->
+
+
+
+<!-- <script type="text/javascript" src="bower_components/jquery-mask-plugin/dist/jquery.mask.js"></script>
 <script type="text/javascript" src="./js/jscrollpane/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="./js/jscrollpane/jquery.jscrollpane.min.js"></script>
-
-<!--tooltipster-->
 
 <script src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>
 
@@ -2323,8 +2126,9 @@
 <script src='./bower_components/fotorama/fotorama.js'></script>
 <script src="./js/preloader.js"></script>
 <script src="./js/tooltip.js"></script>
-<!--<script src="./js/custom-tooltip.js"></script>-->
-<script src="./js/main.js"></script>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="./js/custom-map.js"></script> -->
 
 </body>
 </html>
