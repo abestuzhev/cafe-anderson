@@ -11,7 +11,7 @@ document.body.onload = function(){
 function dynamicallyLoadScript() {
 
     var script,
-        // box = document.querySelector('.scripts'),
+        box = document.querySelector('.scripts'),
         src = [
             // 'https://api-maps.yandex.ru/2.1/?lang=ru_RU',
             'https://abestuzhev.github.io/cafe-anderson/js/custom-map.js',
@@ -22,14 +22,13 @@ function dynamicallyLoadScript() {
             'https://abestuzhev.github.io/cafe-anderson/js/simplebar.js',
             'https://abestuzhev.github.io/cafe-anderson/js/owlcarousel/owl.carousel.js',
             'https://abestuzhev.github.io/cafe-anderson/bower_components/sumoselect/jquery.sumoselect.js',
-            'https://abestuzhev.github.io/cafe-anderson/bower_components/fotorama/fotorama.js',
-            'https://abestuzhev.github.io/cafe-anderson/js/main.js'
+            'https://abestuzhev.github.io/cafe-anderson/bower_components/fotorama/fotorama.js'
         ];
 
     for(var i = 0; i < src.length; i++){
         script = document.createElement("script");
         script.src = src[i];
-        document.body.appendChild(script);
+        box.appendChild(script);
     }  
 };
 
