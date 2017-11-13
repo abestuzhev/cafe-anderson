@@ -8,31 +8,28 @@ document.body.onload = function(){
 };
 
 // функция подключения всех скриптов
-function dynamicallyLoadScript() {
+// function dynamicallyLoadScript() {
 
-    var script,
-        box = document.querySelector('.scripts'),
-        src = [
-            // 'https://api-maps.yandex.ru/2.1/?lang=ru_RU',
-            'https://abestuzhev.github.io/cafe-anderson/js/custom-map.js',
-            'https://abestuzhev.github.io/cafe-anderson/bower_components/jquery-mask-plugin/dist/jquery.mask.js',
-            'https://abestuzhev.github.io/cafe-anderson/js/jscrollpane/jquery.mousewheel.js',
-            'https://abestuzhev.github.io/cafe-anderson/js/jscrollpane/jquery.jscrollpane.min.js',
-            'https://abestuzhev.github.io/cafe-anderson/bower_components/tooltipster/dist/js/tooltipster.bundle.js',
-            'https://abestuzhev.github.io/cafe-anderson/js/simplebar.js',
-            'https://abestuzhev.github.io/cafe-anderson/js/owlcarousel/owl.carousel.js',
-            'https://abestuzhev.github.io/cafe-anderson/bower_components/sumoselect/jquery.sumoselect.js',
-            'https://abestuzhev.github.io/cafe-anderson/bower_components/fotorama/fotorama.js'
-        ];
+//     var script,
+//         listScripts = document.getElementById('listScripts'),
+//         src = [
+//             // 'https://api-maps.yandex.ru/2.1/?lang=ru_RU',
+//             './js/custom-map.js',
+//             './bower_components/jquery-mask-plugin/dist/jquery.mask.js',
+//             './js/jscrollpane/jquery.mousewheel.js',
+//             './js/jscrollpane/jquery.jscrollpane.min.js',
+//             // 'https://abestuzhev.github.io/cafe-anderson/bower_components/tooltipster/dist/js/tooltipster.bundle.js',
+//             './js/simplebar.js',
+//             './js/owlcarousel/owl.carousel.js',
+//             './bower_components/sumoselect/jquery.sumoselect.js',
+//             './bower_components/fotorama/fotorama.js'
+//         ];
 
-    for(var i = 0; i < src.length; i++){
-        script = document.createElement("script");
-        script.src = src[i];
-        box.appendChild(script);
-    }  
-};
-
-// document.body.onload = function() {
+//     for(var i = 0; i < src.length; i++){
+//         script = document.createElement("script");
+//         script.src = src[i];
+//         listScripts.appendChild(script);
+//     }  
 // };
 
-  dynamicallyLoadScript();
+//   dynamicallyLoadScript();
