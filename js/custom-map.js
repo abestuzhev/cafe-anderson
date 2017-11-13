@@ -1,7 +1,7 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.751574, 37.573856],
-            zoom: 9,
+            zoom: 4,
             behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
             controls: ['zoomControl', 'fullscreenControl']
         }, {
@@ -165,7 +165,7 @@ ymaps.ready(function () {
       myMap.geoObjects.add(clusterer);
 
       // Спозиционируем карту так, чтобы на ней были видны все объекты.
-      myMap.setBounds(clusterer.getBounds(), {
-          checkZoomRange: true
-      });
+      // myMap.setBounds(clusterer.getBounds(), {
+      //     checkZoomRange: true
+      // });
   });
