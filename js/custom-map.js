@@ -10,13 +10,13 @@ ymaps.ready(function () {
 
          clusterIcons = [
          {
-             href: '../img/m1.png',
+             href: 'img/m1.png',
              size: [40, 40],
              // Отступ, чтобы центр картинки совпадал с центром кластера.
              offset: [-20, -20]
          },
          {
-             href: '../img/m1.png',
+             href: 'img/m1.png',
              size: [40, 40],
              offset: [-20, -20]
          }],
