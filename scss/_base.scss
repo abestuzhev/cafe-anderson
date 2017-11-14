@@ -136,6 +136,27 @@ p {
     font-family: $font_serif;
 }
 
+/*title*/
+.c-title__h1 {
+    font-family: $font_serif;
+    font-size: 2.6rem;
+    line-height: 1;
+    color: #9b806f;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.c-title__h2 {
+    font-family: $font_serif;
+    font-size: 2rem;
+    line-height: 1;
+    color: #9b806f;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 2.3rem;
+}
+
 //------------------------------------------------------------form
 .wrapper input[type="text"],
 .wrapper input[type="password"],
@@ -146,6 +167,7 @@ p {
 .popup input[type="search"],
 .popup textarea {
     width: 100%;
+    font-family: $font_serif;
 }
 
 .wrapper input[type="checkbox"],
@@ -195,7 +217,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 .c-input {
     display: block;
-    border: 1px solid $color_link_base;
+    border: 1px solid #d2cdc4;
     outline: none;
     //border: none;
     //box-shadow: 0 0 0 1px $color_link_base;
@@ -300,6 +322,38 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-inputfile__input:focus + label,
 .c-inputfile__input + label:hover {
     //background-color: red;
+}
+
+.c-form {
+
+    &__item {
+        margin-bottom: 1.1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-left: -1.1rem;
+        margin-right: -1.1rem;
+    }
+
+    &__col {
+        width: 50%;
+        padding: 0 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__info {
+        font-size: 1.2rem;
+        text-align: left;
+        color: #9b9696;
+    }
 }
 
 //icons------------------------------------------------------------
@@ -1572,7 +1626,7 @@ i.icon-chair {
 }
 
 
-/*menu-card------------------------------------------------------------*/
+/*c-card-partner------------------------------------------------------------*/
 .c-card-partner {
     height: 100%;
     padding: 1.6rem;
@@ -1588,7 +1642,95 @@ i.icon-chair {
     align-items: center;
 }
 
+/*c-card-review------------------------------------------------------------*/
+.c-card-review {
+    padding: 1.6em 2.8rem 2.3rem 8.6rem;
+    border-radius: .4rem;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    border: solid 2px rgba(0, 0, 0, 0.15);
+    font-size: 1.3rem;
+    color: #9b9595;
+    position: relative;
 
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 7.3rem;
+        height: 11.5rem;
+        background: url(../img/bg-event-label.png) 0 0 no-repeat;
+    }
+
+    &__type {
+        padding: .9rem .8rem;
+    }
+
+    &__name {
+        font-family: $font_serif;
+        font-size: 2rem;
+        text-align: left;
+        color: #231300;
+        margin-bottom: .5rem;
+    }
+
+    &__body {
+
+    }
+
+    &__data {
+        margin-bottom: 1.6rem;
+    }
+
+    .icon-uneven-circle {
+        position: relative;
+
+        & > i {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    i {
+        display: inline-block;
+        margin-right: .6rem;
+    }
+
+    &__comment {
+        margin-bottom: 1.6rem;
+    }
+
+    &__answer {
+        padding-top: 1.6rem;
+        border-top: 1px solid #cec9c0;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 2rem;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            transform: rotate(-45deg);
+            border-top: 1px solid #cec9c0;
+            border-right: 1px solid #cec9c0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
 
 
 
@@ -1764,17 +1906,6 @@ i.icon-chair {
 .c-pagination__item.active {
     color: $white;
     background-color: $color_active;
-}
-
-/*title*/
-.c-title__h1 {
-  font-family: $font_serif;
-  font-size: 2.6rem;
-  line-height: 1;
-  color: #9b806f;
-  margin: 0;
-  font-weight: 400;
-  margin-bottom: 5rem;
 }
 
 

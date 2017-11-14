@@ -766,64 +766,206 @@
                 <a href="/" class="c-breadcrumb__item c-breadcrumb__home"></a>
                 <span class="c-breadcrumb__item">Наши партнеры</span>
             </nav>
-            <h1 class="c-title__h1">Наши партнеры</h1>
-            <div class="partners">
-                <div class="partners__list">
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-1.jpg" alt=""></div>
+            <div class="reviews">
+                <h2 class="c-title__h2">Оставить отзыв</h2>
+                <form action="#" class="reviews-form">
+                    <div class="c-form__item">
+                         <input type="checkbox" name="reviews-callback" id="reviews-callback" checked>
+                         <label class="c-checkbox" for="reviews-callback">Прошу срочно связаться со мной</label>
                     </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-2.jpg" alt=""></div>
+                    <div class="reviews-form__grid">
+                        <div class="reviews-form__left">
+                        <div class="c-form__grid">
+                            <div class="c-form__col">
+                                <label class="c-label">Тип отзыва<span class="c-obligatory-field">*</span></label>
+                                <select name="reviews-type" id="reviews-type" class="c-select" required>
+                                    <option value="Похвалить">Похвалить</option>
+                                    <option value="Пожаловаться">Пожаловаться</option>
+                                </select>
+                            </div>
+                            <div class="c-form__col">
+                                <label class="c-label">Кафе<span class="c-obligatory-field">*</span></label>
+                                <select name="reviews-cafe" id="reviews-cafe" class="c-select" required>
+                                    <option value="Все">Все</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Тюмень">Тюмень</option>
+                                    <option value="Красногорск">Красногорск</option>
+                                    <option value="Ярославль">Ярославль</option>
+                                    <option value="Зеленоград">Зеленоград</option>
+                                    <option value="Нижний Новгород">Нижний Новгород</option>
+                                    <option value="Королёв">Королёв</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-label" for="reviews-textarea">Отзыв<span class="c-obligatory-field">*</span></label>
+                            <textarea class="c-input" name="reviews-textarea" id="reviews-textarea" rows="5" placeholder="Пожалуйста, оставьте Ваш отзыв. Ваше мнение очень важно для нас." required></textarea>
+                        </div>
                     </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-3.jpg" alt=""></div>
+                        <div class="reviews-form__center">
+                        
+                         <div class="c-form__item">
+                            <label class="c-label" for="reviews-name">Имя<span class="c-obligatory-field">*</span></label>
+                            <input class="c-input" type="text" placeholder="Ваше имя" name="reviews-name" id="reviews-name" required>
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-label" for="reviews-email">Email<span class="c-obligatory-field">*</span></label>
+                            <input class="c-input" type="text" placeholder="Укажите email" name="reviews-email" id="reviews-email" required>
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-label" for="reviews-tel">Телефон</label>
+                            <input class="c-input" type="text" placeholder="Укажите телефон" name="reviews-tel" id="reviews-tel">
+                        </div>
+                        
                     </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-4.jpg" alt=""></div>
+                        <div class="reviews-form__right">
+                        <div class="l-button l-button__left">
+                            <button class="c-button c-button__default">Отправить</button>
+                        </div>
                     </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-5.jpg" alt=""></div>
                     </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-6.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-7.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-8.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-9.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-10.jpg" alt=""></div>
-                    </div>
+                    <div class="c-form__info"><span class="c-obligatory-field">*</span> обязательные поля</div>
                     
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-1.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-2.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-3.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-4.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-5.jpg" alt=""></div>
-                    </div>
-                     <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-6.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-7.jpg" alt=""></div>
-                    </div>
-                    <div class="partners__item">
-                        <div class="c-card-partner"><img src="img/partner-8.jpg" alt=""></div>
-                    </div>
+                    <div class="reviews-form__rabbit"></div>
+                </form>
+                <div class="c-pagination">
+                    <a href="#" class="c-pagination__item active">1</a>
+                    <a href="#" class="c-pagination__item">2</a>
+                    <a href="#" class="c-pagination__item">3</a>
+                    <a href="#" class="c-pagination__item">4</a>
+                    <span class="c-pagination__item">...</span>
+                    <a href="#" class="c-pagination__item">9</a>
+                </div>
+                <h2 class="c-title__h2">Оставить отзыв</h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <div class="c-card-review">
+                            <div class="c-card-review__label">
+                                <div class="c-card-review__type"><i class="icon-uneven-circle"><i class="icon-rabbit-positive"></i></i></div>
+                            </div>
+                            <div class="c-card-review__body">
+                                <div class="c-card-review__name">Сергей</div>
+                                <div class="c-card-review__data">
+                                    <i class="icon-calendar-2"></i> 10.10.2017 / 11:22 / Андерсон на Митинской
+                                </div>
+                                <div class="c-card-review__comment">
+                                    <p>
+                                        Замечательный вечер, отзывчивый и очень позитивный персонал! Отдельно хочу отметить вкус еды - все очень вкусно, и горячее и десерты. Отмечали день рождения супруги, ребята сделали комплимент от заведения и поздравили с хлопушками. Очень позитивное впечатление. Рекомендую!
+                                    </p>
+                                </div>
+                                
+                                <div class="c-card-review__answer">
+                                    <p>
+                                        Сергей, добрый день. <br> Благодарим Вас за теплые слова, после прочтения таких отзывов желание делать ещё лучше только растет. Мы очень рады, что Вы оценили нашу кухню, обслуживание и особенную атмосферу АндерСона. Ваш комментарий мы передали управляющему кафе. Ждем Вас в гости - на завтрак, обед и ужин :) <br>С уважением, команда АндерСон
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="c-card-review">
+                            <div class="c-card-review__label">
+                                <div class="c-card-review__type"><i class="icon-uneven-circle"><i class="icon-rabbit-positive"></i></i></div>
+                            </div>
+                            <div class="c-card-review__body">
+                                <div class="c-card-review__name">Ирина</div>
+                                <div class="c-card-review__data">
+                                    <i class="icon-calendar-2"></i> 10.10.2017 / 12:45 / Андерсон на Страстном
+                                </div>
+                                <div class="c-card-review__comment">
+                                    <p>
+                                    Добрый день! <br> В это воскресенье были в кафе с ребенком. Аниматор (могу ошибиться в имени, Вячеслав) очень харизматичен и зажигателен. Дочка в полном восторге. Обязательно придем к вам еще. Спасибо.
+                                    </p>
+                                </div>
+                                
+                                <div class="c-card-review__answer">
+                                    <p>
+                                        Елена, добрый день! <br> Нам очень приятно, когда гость подробно описывает свои эмоции. Это очень важно для нас. Наши аниматоры действительно не случайные люди, они едва ли не самые главные в команде - ведь они общаются с нашими маленькими гостями и создают атмосферу :) Обязательно передадим от Вас привет команде ВДНХ! Спасибо Вам за отношение к АндерСону, к следующему визиту обязательно придумаем что-нибудь удивительное снова) <br>С уважением, команда АндерСон
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="c-card-review">
+                            <div class="c-card-review__label">
+                                <div class="c-card-review__type"><i class="icon-uneven-circle"><i class="icon-rabbit-positive"></i></i></div>
+                            </div>
+                            <div class="c-card-review__body">
+                                <div class="c-card-review__name">Егор</div>
+                                <div class="c-card-review__data">
+                                    <i class="icon-calendar-2"></i> 10.10.2017 / 09:51 / Андерсон на Столетова
+                                </div>
+                                <div class="c-card-review__comment">
+                                    <p>
+                                        Отличное кофе . Выходные отдыхали всей семьёй очень понравилось . быстрое обслуживание , отзывчивый и доброжелательный персонал . Блюда приготовили очень быстро , при этом было всё вкусно. Лично моё мнение , это то место в которое хочется прейти ещё не раз . Большое спасибо за отличный вечер  персоналу, и поварам .
+                                    </p>
+                                </div>
+                                
+                                <div class="c-card-review__answer">
+                                    <p>
+                                        Егор, добрый день! <br> Благодарим Вас за такой душевный отзыв, нам очень приятно! Мы очень рады нашей дружбе :) Всегда рады видеть! <br>С уважением, команда АндерСон
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="c-card-review">
+                            <div class="c-card-review__label">
+                                <div class="c-card-review__type"><i class="icon-uneven-circle"><i class="icon-rabbit-positive"></i></i></div>
+                            </div>
+                            <div class="c-card-review__body">
+                                <div class="c-card-review__name">Сергей</div>
+                                <div class="c-card-review__data">
+                                    <i class="icon-calendar-2"></i> 10.10.2017 / 11:22 / Андерсон на Митинской
+                                </div>
+                                <div class="c-card-review__comment">
+                                    <p>
+                                        Замечательный вечер, отзывчивый и очень позитивный персонал! Отдельно хочу отметить вкус еды - все очень вкусно, и горячее и десерты. Отмечали день рождения супруги, ребята сделали комплимент от заведения и поздравили с хлопушками. Очень позитивное впечатление. Рекомендую!
+                                    </p>
+                                </div>
+                                
+                                <div class="c-card-review__answer">
+                                    <p>
+                                        Сергей, добрый день. <br> Благодарим Вас за теплые слова, после прочтения таких отзывов желание делать ещё лучше только растет. Мы очень рады, что Вы оценили нашу кухню, обслуживание и особенную атмосферу АндерСона. Ваш комментарий мы передали управляющему кафе. Ждем Вас в гости - на завтрак, обед и ужин :) <br>С уважением, команда АндерСон
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="c-card-review">
+                            <div class="c-card-review__label">
+                                <div class="c-card-review__type"><i class="icon-uneven-circle"><i class="icon-rabbit-positive"></i></i></div>
+                            </div>
+                            <div class="c-card-review__body">
+                                <div class="c-card-review__name">Ирина</div>
+                                <div class="c-card-review__data">
+                                    <i class="icon-calendar-2"></i> 10.10.2017 / 12:45 / Андерсон на Страстном
+                                </div>
+                                <div class="c-card-review__comment">
+                                    <p>
+                                    Добрый день! <br> В это воскресенье были в кафе с ребенком. Аниматор (могу ошибиться в имени, Вячеслав) очень харизматичен и зажигателен. Дочка в полном восторге. Обязательно придем к вам еще. Спасибо.
+                                    </p>
+                                </div>
+                                
+                                <div class="c-card-review__answer">
+                                    <p>
+                                        Елена, добрый день! <br> Нам очень приятно, когда гость подробно описывает свои эмоции. Это очень важно для нас. Наши аниматоры действительно не случайные люди, они едва ли не самые главные в команде - ведь они общаются с нашими маленькими гостями и создают атмосферу :) Обязательно передадим от Вас привет команде ВДНХ! Спасибо Вам за отношение к АндерСону, к следующему визиту обязательно придумаем что-нибудь удивительное снова) <br>С уважением, команда АндерСон
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="c-pagination">
+                    <a href="#" class="c-pagination__item active">1</a>
+                    <a href="#" class="c-pagination__item">2</a>
+                    <a href="#" class="c-pagination__item">3</a>
+                    <a href="#" class="c-pagination__item">4</a>
+                    <span class="c-pagination__item">...</span>
+                    <a href="#" class="c-pagination__item">9</a>
                 </div>
             </div>
         </div>

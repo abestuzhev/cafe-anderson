@@ -2633,7 +2633,6 @@ test popup
     }
 }
 
-
 #cafe-info-map {
     width: 100%;
     height: 33.8rem;
@@ -2696,4 +2695,104 @@ test popup
     height: 3.3rem;
     text-indent: -99999px;
     background: url(../img/icons/icon-green-arrow-left.svg) 0 0 no-repeat;
+}
+
+
+/*Отзывы (reviews)----------------------------------------------------*/
+.reviews {
+    font-family: $font_serif;
+
+    &__list {
+
+    }
+
+    &__item {
+        margin-bottom: 3.2rem;
+    }
+
+    &-form {
+        display: block;
+        padding: 2rem 2.8rem;
+        border-radius: .4rem;
+        box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+        border: solid 2px rgba(0, 0, 0, 0.15);
+        margin-bottom: 4.4rem;
+        overflow: hidden;
+        position: relative;
+        background: #ffffff url(../img/bg-reviews__form.jpg) 100% 100% no-repeat;
+
+        &__grid {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin-left: -1.1rem;
+            margin-right: -1.1rem;
+
+            & > div {
+                padding: 0 1.1rem;
+            }
+        }
+
+        &__left {
+            width: 55%;
+        }
+
+        &__center {
+            width: 27%;
+        }
+
+        &__right {
+            width: 18%;
+            display: flex;
+            //flex-flow: row nowrap;
+            //justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__rabbit {
+            position: absolute;
+            top: -42px;
+            right: 85px;
+            width: 5.1rem;
+            height: 12.6rem;
+            background: url(../img/scene/cafe/cafr-rabbit.svg) 0 0 no-repeat;
+            -webkit-transform: rotate(-167deg);
+            -ms-transform: rotate(-167deg);
+            transform: rotate(-166deg);
+        }
+    }
+
+    .SumoSelect,
+    .SelectBox {
+        width: 100%;
+    }
+
+    .SelectBox {
+        padding: 1.4rem 1.6rem;
+    }
+
+    .SumoSelect.open > .optWrapper {
+        top: 4.2rem;
+    }
+
+    .SumoSelect > .CaptionCont {
+        border-radius: .4rem;
+    }
+
+    .SumoSelect > .optWrapper > .options li.opt {
+        padding: 1rem 1.6rem;
+    }
+
+    textarea {
+        min-height: 12.8rem;
+    }
+
+    .c-button {
+        width: 100%;
+    }
+
+    .c-pagination {
+        margin-bottom: 2.1rem;
+    }
 }
