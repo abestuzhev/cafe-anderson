@@ -833,6 +833,13 @@ i.icon-chair {
   background: url(../img/icons/icon-clip.svg) 50% 50% no-repeat;
   vertical-align: middle; }
 
+.icon-reviews-all {
+  display: inline-block;
+  width: 4rem;
+  height: 2.5rem;
+  background: url(../img/icons/icon-reviews-all.svg) 0 0 no-repeat;
+  vertical-align: middle; }
+
 @media screen and (min-width: 1600px) {
   .c-layout {
     position: relative;
@@ -3517,9 +3524,9 @@ test popup
   visibility: visible !important; }
 
 .dropdown-show .icon-dropdown {
-  -webkit-transform: rotate(180deg) !important;
-      -ms-transform: rotate(180deg) !important;
-          transform: rotate(180deg) !important; }
+  -webkit-transform: rotate(180deg) translateY(50%) !important;
+      -ms-transform: rotate(180deg) translateY(50%) !important;
+          transform: rotate(180deg) translateY(50%) !important; }
 
 .is-visible {
   opacity: 1 !important;
@@ -3614,7 +3621,10 @@ test popup
       color: #fff; }
     .filter-mobile-btn .icon-dropdown {
       position: absolute;
-      top: 1rem;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
       right: 1.1rem; }
   .filter-more {
     font-size: 1.3rem;
@@ -4492,6 +4502,8 @@ test popup
 /*Отзывы (reviews)----------------------------------------------------*/
 .reviews {
   font-family: "PT Serif Caption"; }
+  .reviews .filter-mobile-btn i {
+    margin-right: 1rem; }
   .reviews__item {
     margin-bottom: 3.2rem; }
   .reviews-form {
@@ -4505,6 +4517,13 @@ test popup
     overflow: hidden;
     position: relative;
     background: #ffffff url(../img/bg-reviews__form.jpg) 100% 100% no-repeat; }
+    .reviews-form__type {
+      position: relative; }
+      .reviews-form__type-icon {
+        position: absolute;
+        z-index: 11;
+        top: .6rem;
+        left: 1.4rem; }
     .reviews-form__grid {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4550,6 +4569,8 @@ test popup
     width: 100%; }
   .reviews .SelectBox {
     padding: 1.4rem 1.6rem; }
+  .reviews .reviews-form__type .SelectBox {
+    padding-left: 4.1rem; }
   .reviews .SumoSelect.open > .optWrapper {
     top: 4.2rem; }
   .reviews .SumoSelect > .CaptionCont {

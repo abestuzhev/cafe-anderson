@@ -438,6 +438,17 @@ $(document).ready(function ($) {
 
     /*кастомный селект*/
     $('.c-select').SumoSelect();
+    
+    // var $positive = $( '.reviews-form__type select.SlectBox' )[0].sumo.selectItem('Похвалить');
+    // var $negative = $( '.reviews-form__type select.SlectBox' )[0].sumo.selectItem('Пожаловаться');
+    //
+    // console.log($positive, $negative);
+    // if(){
+    //
+    // }else{
+    //
+    // }
+
 
     /*простые табы*/
     $(".tabs-menu a").click(function(event) {

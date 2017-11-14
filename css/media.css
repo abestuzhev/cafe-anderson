@@ -219,7 +219,8 @@
     }
 
     .vacancies-list .c-col-6 {
-        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
@@ -472,6 +473,25 @@
     .header-navigation {
         display: none;
     }
+
+    /*отзывы*/
+    .reviews-form__left {
+        width: 47%;
+    }
+    .reviews-form__center {
+
+    }
+    .reviews-form__right {
+        width: 26%;
+    }
+
+    .reviews-form {
+        background-position: 105% 100%;
+    }
+
+    .reviews .c-form__info {
+        margin: 1rem 0;
+    }
 }
 
 @media (max-width:980px) {
@@ -607,7 +627,23 @@
         height: 27rem;
     }
 
+    /*отзывы*/
+    .reviews-form__grid {
+        flex-flow: column nowrap;
+    }
+    .reviews-form__left,
+    .reviews-form__center,
+    .reviews-form__right {
+        width: 100%;
+    }
 
+    .reviews-form {
+        background-position: 493px 100%;
+    }
+
+    .c-form__item:last-child {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width:800px) {
@@ -820,6 +856,39 @@
 
     .vacancies-list {
         margin-bottom: 1rem;
+    }
+
+    /*отзывы*/
+    .c-card-review {
+        padding: 1.4rem 1.4rem 2rem;
+    }
+    .c-card-review__label {
+        background: none;
+        position: static;
+        display: inline-block;
+        width: auto;
+        height: auto;
+    }
+
+    .reviews__item {
+        margin-bottom: 1.8rem;
+    }
+
+    .reviews-form__rabbit {
+        top: -66px;
+        right: 27px;
+    }
+
+    .reviews-form {
+        padding: 1.1rem 1.1rem .1rem;
+    }
+
+    .reviews-form__type-icon {
+        display: none;
+    }
+
+    .reviews .c-pagination {
+        display: none;
     }
 }
 
@@ -1166,7 +1235,13 @@
         width: 100%;
     }
 
-
+    /*отзывы*/
+    .reviews .c-form__grid {
+        flex-flow: column nowrap;
+    }
+    .reviews .c-form__col {
+        width: 100%;
+    }
 }
 
 
@@ -1195,6 +1270,7 @@
         display: block;
     }
 
+    .filter .l-button__left,
     .filter .l-button__center {
         display: block;
         width: 100%;
@@ -1211,6 +1287,10 @@
         margin-left: -15px;
         width: 109%;
     }
+    .reviews-form > .c-form__item:first-child {
+        width: 70%;
+    }
+
 }
 
 @media (max-width:440px) {

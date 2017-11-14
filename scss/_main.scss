@@ -1441,7 +1441,7 @@ test popup
 }
 
 .dropdown-show .icon-dropdown {
-    transform: rotate(180deg)!important;
+    transform: rotate(180deg) translateY(50%) !important;
     @extend %transition_all;
 }
 
@@ -1564,7 +1564,8 @@ test popup
 
         .icon-dropdown {
             position: absolute;
-            top: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
             right: 1.1rem;
             @extend %transition_all;
         }
@@ -2702,6 +2703,10 @@ test popup
 .reviews {
     font-family: $font_serif;
 
+    .filter-mobile-btn i {
+        margin-right: 1rem;
+    }
+
     &__list {
 
     }
@@ -2720,6 +2725,17 @@ test popup
         overflow: hidden;
         position: relative;
         background: #ffffff url(../img/bg-reviews__form.jpg) 100% 100% no-repeat;
+
+        &__type {
+            position: relative;
+
+            &-icon {
+                position: absolute;
+                z-index: 11;
+                top: .6rem;
+                left: 1.4rem;
+            }
+        }
 
         &__grid {
             display: flex;
@@ -2770,6 +2786,10 @@ test popup
 
     .SelectBox {
         padding: 1.4rem 1.6rem;
+    }
+
+    .reviews-form__type .SelectBox {
+        padding-left: 4.1rem;
     }
 
     .SumoSelect.open > .optWrapper {
