@@ -1542,6 +1542,22 @@ i.icon-chair {
       .c-card-review__answer p:last-child {
         margin-bottom: 0; }
 
+/*c-card-contact-office------------------------------------------------------------*/
+.c-card-contact-office {
+  color: #9b9595; }
+  .c-card-contact-office__title {
+    font-size: 1.6rem;
+    color: #604e42;
+    margin-bottom: 1.7rem; }
+  .c-card-contact-office__body {
+    border-left: 1px solid  #cec9c0;
+    padding-left: 1.7rem; }
+  .c-card-contact-office__item {
+    margin-bottom: 1rem;
+    font-size: 1.3rem; }
+    .c-card-contact-office__item i {
+      margin-right: .9rem; }
+
 /*grid------------------------------------------------------------*/
 .c-line-horizontal {
   width: 100%;
@@ -1565,6 +1581,14 @@ i.icon-chair {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.c-grid-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch; }
@@ -4630,3 +4654,21 @@ test popup
       color: #604e42;
       margin-bottom: .7rem;
       min-height: 2.7rem; }
+
+/*Контакты (contact)----------------------------------------------------*/
+.contact {
+  padding: 3.1rem 2.8rem;
+  font-family: "PT Serif Caption";
+  background-color: #fff; }
+  .contact-office {
+    padding: 3.1rem 2.4rem;
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+    .contact-office__item {
+      margin-bottom: 4rem; }
+  .contact__decor-line {
+    width: 100%;
+    height: 2.9rem;
+    background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
+    background-size: cover; }
+  .contact .c-grid {
+    margin: 0; }

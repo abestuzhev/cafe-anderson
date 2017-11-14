@@ -1741,6 +1741,32 @@ i.icon-chair {
 
 }
 
+/*c-card-contact-office------------------------------------------------------------*/
+.c-card-contact-office {
+    color: #9b9595;
+
+    &__title {
+        font-size: 1.6rem;
+        color: #604e42;
+        margin-bottom: 1.7rem;
+    }
+
+    &__body {
+        border-left: 1px solid  #cec9c0;
+        padding-left: 1.7rem;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+
+        i {
+            margin-right: .9rem;
+        }
+    }
+}
+
+
 
 
 /*grid------------------------------------------------------------*/
@@ -1764,6 +1790,11 @@ i.icon-chair {
 
 .c-grid-between {
     justify-content: space-between;
+    align-items: stretch;
+}
+
+.c-grid-start {
+    justify-content: flex-start;
     align-items: stretch;
 }
 
