@@ -1050,6 +1050,7 @@ i.icon-chair {
   border: 2px solid #d1d1d1;
   border-radius: .6rem;
   width: 100%;
+  height: 100%;
   font-family: "PT Serif Caption";
   color: #9b9696;
   background-color: #fff;
@@ -4561,3 +4562,50 @@ test popup
     width: 100%; }
   .reviews .c-pagination {
     margin-bottom: 2.1rem; }
+
+/*Звездыне гости (star-guests)----------------------------------------------------*/
+.star-guests {
+  font-family: "PT Serif Caption"; }
+  .star-guests__form {
+    display: block;
+    padding: 1.6rem 3rem;
+    background-color: #fff;
+    border-radius: .4rem;
+    color: #9b9595;
+    font-size: 1.5rem;
+    -webkit-box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+    border: solid 1px #e3e3e3;
+    margin-bottom: 4rem; }
+  .star-guests__seach {
+    border: none;
+    border-bottom: 1px solid #d2cdc4;
+    outline: none;
+    padding: .7rem 0;
+    color: #9b9595; }
+  .star-guests__photos {
+    margin-bottom: 3.8rem;
+    text-align: center;
+    font-size: 0;
+    margin-left: -.4rem;
+    margin-right: -.4rem; }
+    .star-guests__photos::after {
+      content: '';
+      display: inline-block;
+      width: 100%; }
+  .star-guests .ins-photo {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 2.2rem;
+    padding: 0 .4rem; }
+    .star-guests .ins-photo img {
+      width: 100%;
+      height: auto; }
+    .star-guests .ins-photo__hash {
+      font-size: 1.3rem;
+      line-height: 1;
+      text-align: left;
+      color: #604e42;
+      margin-bottom: .7rem;
+      min-height: 2.7rem; }

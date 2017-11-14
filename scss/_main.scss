@@ -2796,3 +2796,65 @@ test popup
         margin-bottom: 2.1rem;
     }
 }
+
+/*Звездыне гости (star-guests)----------------------------------------------------*/
+.star-guests {
+    font-family: $font_serif;
+
+    &__form {
+        display: block;
+        padding: 1.6rem 3rem;
+        background-color: #fff;
+        border-radius: .4rem;
+        color: #9b9595;
+        font-size: 1.5rem;
+        box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+        border: solid 1px #e3e3e3;
+        margin-bottom: 4rem;
+    }
+
+    &__seach {
+        border: none;
+        border-bottom: 1px solid #d2cdc4;
+        outline: none;
+        padding: .7rem 0;
+        color: #9b9595;
+    }
+
+    &__photos {
+        margin-bottom: 3.8rem;
+        text-align: center;
+        font-size: 0;
+        margin-left: -.4rem;
+        margin-right: -.4rem;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    .ins-photo {
+        width: 20%;
+        //max-width: 24.4rem;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 2.2rem;
+        padding: 0 .4rem;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__hash {
+            font-size: 1.3rem;
+            line-height: 1;
+            text-align: left;
+            color: #604e42;
+            margin-bottom: .7rem;
+            min-height: 2.7rem;
+        }
+    }
+}
