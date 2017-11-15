@@ -2886,11 +2886,21 @@ test popup
     background-color: #fff;
 
     &-office {
+        position: relative;
         padding: 3.1rem 2.4rem;
         background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
 
         &__list {
 
+        }
+
+        &__bg {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 45.1rem;
+          height: 32.2rem;
+          background: url(../img/bg-contact.png) 100% 100% no-repeat;
         }
 
         &__item {
@@ -2903,9 +2913,57 @@ test popup
         height: 2.9rem;
         background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
         background-size: cover;
+        margin-bottom: 5rem;
     }
 
     .c-grid {
         margin: 0;
     }
+
+    .filter {
+        display: inline-block !important;
+        width: auto;
+    }
+
+    .filter-form,
+    .filter-item {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .filter .l-button__center {
+        display: block;
+    }
+
+    .SelectBox {
+        width: 23.6rem;
+    }
+
+    &-cafe {
+
+        &-city {
+          &__title {
+            font-size: 2.6rem;
+            color: #5c3321;
+            margin-bottom: 2.3rem;
+          }
+
+        }
+
+
+
+        &__list {
+
+        }
+
+        &__item {
+          margin-bottom: 3.2rem;
+
+          span {
+            margin-left: 2.4rem;
+          }
+
+        }
+    }
+
 }

@@ -814,6 +814,27 @@ i.icon-chair {
     vertical-align: middle;
 }
 
+.icon-label-metro {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    margin-right: 5px;
+    position: relative;
+    background-color: #1504ca;
+}
+
+.icon-metro-2 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 8px;
+    background: url(../img/icons/icon-metro-2.svg) 0 0 no-repeat;
+}
+
 //.icon-lollipop {
 //    display: inline-block;
 //    width: 1.4rem;
@@ -1761,12 +1782,49 @@ i.icon-chair {
         font-size: 1.3rem;
 
         i {
-            margin-right: .9rem;
+            margin-right: .4rem;
+            vertical-align: top;
         }
     }
 }
 
+/*c-card-contact-cafe------------------------------------------------------------*/
+.c-card-contact-cafe {
+    font-size: 1.3rem;
+    color: #9b9595;
 
+    &__title {
+      display: inline-block;
+        margin-bottom: 2.4rem;
+        font-size: 1.7rem;
+        color: #9b806f;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        padding-left: 2.8rem;
+        position: relative;
+        margin-bottom: 1rem;
+
+        & > i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-right: .9rem;
+        }
+
+        i.icon-mark {
+
+        }
+    }
+
+    &__service {
+        margin-left: -2.8rem;
+    }
+}
 
 
 /*grid------------------------------------------------------------*/
