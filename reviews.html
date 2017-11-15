@@ -1720,8 +1720,8 @@
                 <div class="popup-body">
                     <form action="#" class="popup-form" id="popup__review">
                         <div class="c-form__item">
-                            <input type="checkbox" name="reviews-callback" id="reviews-callback" checked>
-                            <label class="c-checkbox" for="reviews-callback">Прошу срочно связаться со мной</label>
+                            <input type="checkbox" name="popup-reviews-callback" id="popup-reviews-callback" checked>
+                            <label class="c-checkbox" for="popup-reviews-callback">Прошу срочно связаться со мной</label>
                         </div>
                         <div class="popup-form__item">
                             <div class="c-form__grid">
@@ -1729,7 +1729,7 @@
                                     <label class="c-label">Тип отзыва<span class="c-obligatory-field">*</span></label>
                                     <div class="reviews-form__type">
                                         <i class="reviews-form__type-icon icon-rabbit-positive"></i>
-                                        <select name="reviews-type" id="reviews-type" class="c-select" required>
+                                        <select name="popup-reviews-type" id="popup-reviews-type" class="c-select" required>
                                             <option value="Похвалить">Похвалить</option>
                                             <option value="Пожаловаться">Пожаловаться</option>
                                         </select>
@@ -1737,7 +1737,7 @@
                                 </div>
                                 <div class="c-form__col">
                                     <label class="c-label">Кафе<span class="c-obligatory-field">*</span></label>
-                                    <select name="reviews-cafe" id="reviews-cafe" class="c-select" required>
+                                    <select name="reviews-cafe" id="popup-reviews-cafe" class="c-select" required>
                                         <option value="Все">Все</option>
                                         <option value="Москва">Москва</option>
                                         <option value="Тюмень">Тюмень</option>
@@ -1756,13 +1756,16 @@
                         </div>
                         <div class="c-grid c-grid-between">
                             <div class="c-col c-col-4">
-
+                                <label class="c-label" for="reviews-name">Имя<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="Ваше имя" name="reviews-name" id="reviews-name" required>
                             </div>
-                            <div class="c-col c-col-6">
-
+                            <div class="c-col c-col-4">
+                                <label class="c-label" for="reviews-email">Email<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="Укажите email" name="reviews-email" id="reviews-email" required>
                             </div>
-                            <div class="c-col c-col-6">
-
+                            <div class="c-col c-col-4">
+                                <label class="c-label" for="reviews-tel">Телефон</label>
+                                <input class="c-input" type="text" placeholder="Укажите телефон" name="reviews-tel" id="reviews-tel">
                             </div>
                         </div>
                         <div class="popup-form__item">

@@ -2063,7 +2063,7 @@ i.icon-chair {
     display: block;
     border: none;
     width: 380px;
-    padding: .3rem 0;
+    padding: .7rem 0 0;
     margin: 0 auto; }
     .header-logo::after {
       content: '';
