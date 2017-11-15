@@ -1078,7 +1078,6 @@ i.icon-chair {
   border: 2px solid #d1d1d1;
   border-radius: .6rem;
   width: 100%;
-  height: 100%;
   font-family: "PT Serif Caption";
   color: #9b9696;
   background-color: #fff;
@@ -3398,6 +3397,32 @@ main {
   position: absolute;
   bottom: -2rem;
   right: 8rem; }
+
+/*форма оставить отзыв*/
+.popup__review .popup {
+  width: 88.5rem; }
+
+.popup__review .c-form__col {
+  margin-bottom: 0; }
+
+.popup__review .SumoSelect,
+.popup__review .SelectBox {
+  width: 100%; }
+
+.popup__review .SelectBox {
+  padding: 1.4rem 1.6rem; }
+
+.popup__review .reviews-form__type .SelectBox {
+  padding-left: 4.1rem; }
+
+.popup__review .SumoSelect.open > .optWrapper {
+  top: 4.2rem; }
+
+.popup__review .SumoSelect > .CaptionCont {
+  border-radius: .4rem; }
+
+.popup__review .SumoSelect > .optWrapper > .options li.opt {
+  padding: 1rem 1.6rem; }
 
 /*----------------------------------------------*/
 #tooltip {

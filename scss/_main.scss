@@ -1189,6 +1189,42 @@ main {
         right: 8rem;
     }
 }
+/*форма оставить отзыв*/
+.popup__review {
+
+    .popup {
+        width: 88.5rem;
+    }
+
+    .c-form__col {
+        margin-bottom: 0;
+    }
+
+    .SumoSelect,
+    .SelectBox {
+        width: 100%;
+    }
+
+    .SelectBox {
+        padding: 1.4rem 1.6rem;
+    }
+
+    .reviews-form__type .SelectBox {
+        padding-left: 4.1rem;
+    }
+
+    .SumoSelect.open > .optWrapper {
+        top: 4.2rem;
+    }
+
+    .SumoSelect > .CaptionCont {
+        border-radius: .4rem;
+    }
+
+    .SumoSelect > .optWrapper > .options li.opt {
+        padding: 1rem 1.6rem;
+    }
+}
 
 
 

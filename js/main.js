@@ -137,6 +137,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-cafe__menu", '.popup__menu');
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');
     showPopup(".c-card_menu", '.popup__menu');
+    showPopup(".c-reviews__item", '.popup__review');
 
 
     $('.popup-authorization .popup-authorization__reg').on('click', function (e) {
