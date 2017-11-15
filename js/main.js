@@ -136,6 +136,7 @@ $(document).ready(function ($) {
     showPopup(".header-mobile__city", '.popup-city');
     showPopup(".c-card-cafe__menu", '.popup__menu');
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');
+    showPopup(".c-card_menu", '.popup-city');
 
 
     $('.popup-authorization .popup-authorization__reg').on('click', function (e) {
@@ -438,7 +439,7 @@ $(document).ready(function ($) {
 
     /*кастомный селект*/
     $('.c-select').SumoSelect();
-    
+
     // var $positive = $( '.reviews-form__type select.SlectBox' )[0].sumo.selectItem('Похвалить');
     // var $negative = $( '.reviews-form__type select.SlectBox' )[0].sumo.selectItem('Пожаловаться');
     //
