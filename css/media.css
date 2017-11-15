@@ -644,6 +644,18 @@
     .c-form__item:last-child {
         margin-bottom: 1rem;
     }
+
+
+    .popup__review .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100vh;
+        margin: 0;
+        overflow-y: scroll;
+        border-radius: 0;
+    }
 }
 
 @media (max-width:800px) {
@@ -928,26 +940,21 @@
         transition: none;
     }
 
-    /*.popup::after {*/
-         /*content: '';*/
-         /*width: 100%;*/
-         /*display: inline-block;*/
-    /*}*/
-
     .popup-back {
         display: inline-block;
     }
 
-    /*.popup__write-to-us .popup-bg__img {*/
-        /*position: absolute;*/
-        /*z-index: -1;*/
-        /*bottom: -7.8rem;*/
-        /*right: 0;*/
-    /*}*/
-
-
     .popup-reg .icon-bird-up {
         right: 10.4%;
+    }
+
+    .popup__request-call .icon-rabbit-earphone {
+        display: block;
+    }
+
+    .popup__request-call .icon-giraffe,
+    .popup__request-call .icon-bird-down {
+        display: none;
     }
 }
 
@@ -1090,6 +1097,15 @@
 
     .cafe-holiday-count {
         margin-bottom: 1.3rem;
+    }
+
+    .popup__review .c-grid {
+       flex-flow: column nowrap;
+    }
+    .popup__review .c-col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-top: 0;
     }
 }
 
@@ -1236,12 +1252,13 @@
     }
 
     /*отзывы*/
-    .reviews .c-form__grid {
+    .c-form__grid {
         flex-flow: column nowrap;
     }
-    .reviews .c-form__col {
+    .c-form__col {
         width: 100%;
     }
+
 }
 
 

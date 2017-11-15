@@ -861,6 +861,11 @@ i.icon-chair {
   height: 8px;
   background: url(../img/icons/icon-metro-2.svg) 0 0 no-repeat; }
 
+.icon-rabbit-earphone {
+  width: 12rem;
+  height: 14.9rem;
+  background: url(../img/icons/icon-rabbit-earphone.svg) 0 0 no-repeat; }
+
 @media screen and (min-width: 1600px) {
   .c-layout {
     position: relative;
@@ -2880,6 +2885,10 @@ main {
       -ms-transform: scale(1);
           transform: scale(1);
   margin: 0 auto; }
+  .popup-box {
+    position: relative;
+    min-height: 100%;
+    overflow: hidden; }
   .popup-close {
     position: absolute;
     right: 1.5rem;
@@ -2892,7 +2901,8 @@ main {
   .popup-body {
     padding: 3rem 6rem 4.5rem;
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    overflow: hidden; }
   .popup__desc {
     margin-bottom: 2rem;
     border-bottom: 6px solid #7e5847; }
@@ -3056,6 +3066,12 @@ main {
     color: #555451;
     border: none;
     cursor: pointer; }
+
+.popup__request-call .icon-rabbit-earphone {
+  display: none;
+  position: absolute;
+  bottom: -27px;
+  right: 31px; }
 
 .popup-request-city {
   opacity: 0;
@@ -3402,9 +3418,6 @@ main {
 .popup__review .popup {
   width: 88.5rem; }
 
-.popup__review .c-form__col {
-  margin-bottom: 0; }
-
 .popup__review .SumoSelect,
 .popup__review .SelectBox {
   width: 100%; }
@@ -3423,6 +3436,9 @@ main {
 
 .popup__review .SumoSelect > .optWrapper > .options li.opt {
   padding: 1rem 1.6rem; }
+
+.popup__review .popup-bg__img {
+  right: -4rem; }
 
 /*----------------------------------------------*/
 #tooltip {

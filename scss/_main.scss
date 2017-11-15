@@ -457,6 +457,12 @@ main {
     @extend %transition_all;
     margin: 0 auto;
 
+    &-box {
+        position: relative;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
     &-close {
         position: absolute;
         right: 1.5rem;
@@ -473,6 +479,7 @@ main {
         padding: 3rem 6rem 4.5rem;
         position: relative;
         z-index: 10;
+        overflow: hidden;
     }
 
     &__desc {
@@ -712,6 +719,13 @@ main {
             border: none;
             cursor: pointer;
         }
+    }
+
+    .icon-rabbit-earphone {
+        display: none;
+        position: absolute;
+        bottom: -27px;
+        right: 31px;
     }
 }
 
@@ -1189,6 +1203,8 @@ main {
         right: 8rem;
     }
 }
+
+
 /*форма оставить отзыв*/
 .popup__review {
 
@@ -1196,9 +1212,9 @@ main {
         width: 88.5rem;
     }
 
-    .c-form__col {
-        margin-bottom: 0;
-    }
+    //.c-form__col {
+    //    margin-bottom: 0;
+    //}
 
     .SumoSelect,
     .SelectBox {
@@ -1223,6 +1239,10 @@ main {
 
     .SumoSelect > .optWrapper > .options li.opt {
         padding: 1rem 1.6rem;
+    }
+
+    .popup-bg__img {
+        right: -4rem;
     }
 }
 
