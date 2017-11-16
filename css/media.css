@@ -1526,9 +1526,9 @@
     align-items: stretch;
 }
 
-.cafe-list__city .c-grid {
-    align-items: flex-end;
-}
+/*.cafe-list__city .c-grid {*/
+    /*align-items: flex-end;*/
+/*}*/
 
 .c-card-cafe {
     height: 100%;

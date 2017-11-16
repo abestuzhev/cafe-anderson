@@ -30,13 +30,9 @@ $(document).ready(function ($) {
 
 
     $('.cafe-list__city').each(function(){
-        var $this = $(this),
-            $parent = $('div.cafe-row');
-        console.log('each рфботает');
+        var $this = $(this);
         var countElem = $this.find('.c-col-6').length;
-        console.log(countElem);
         if(countElem == 1){
-            console.log('условите выполняется');
             $($this).addClass('cafe-list__one');
 
         }else{

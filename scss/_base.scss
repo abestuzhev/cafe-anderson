@@ -1179,6 +1179,7 @@ i.icon-chair {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
+    overflow: hidden;
 
     b {
         color: $black;

@@ -1115,7 +1115,8 @@ i.icon-chair {
           justify-content: space-between;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-          align-items: stretch; }
+          align-items: stretch;
+  overflow: hidden; }
   .c-card-cafe b {
     color: #555451; }
   .c-card-cafe__title {
