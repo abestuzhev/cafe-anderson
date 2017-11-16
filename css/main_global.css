@@ -859,20 +859,17 @@ i.icon-chair {
 .icon-label-metro {
   display: inline-block;
   vertical-align: middle;
-  width: 17px;
-  height: 17px;
-  border-radius: 17px;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
   margin-right: 5px;
   position: relative;
   background-color: #1504ca; }
 
 .icon-metro-2 {
   position: absolute;
-  top: 46%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: .4rem;
+  left: .3rem;
   width: 13px;
   height: 8px;
   background: url(../img/icons/icon-metro-2.svg) 0 0 no-repeat; }
