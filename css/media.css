@@ -143,6 +143,22 @@
     .cafe-reviews__icon {
         right: -2rem;
     }
+
+    .not-found__img img {
+        width: 80%;
+    }
+
+    .not-found__title {
+        font-size: 2.5rem;
+    }
+
+    .not-found-cake {
+        right: -27.5rem;
+    }
+
+    .not-found-cafe {
+        left: -29.7rem;
+    }
 }
 
 @media (max-width:1178px) {
@@ -175,6 +191,44 @@
     .c-card-map::after {
         content: '';
         display: none;
+    }
+}
+
+@media (max-width:1060px) {
+
+    .not-found-home,
+    .not-found-cafe,
+    .not-found-cake,
+    .not-found-celebration {
+        display: none;
+    }
+
+    .not-found-home-mobile,
+    .not-found-cafe-mobile,
+    .not-found-cake-mobile,
+    .not-found-celebration-mobile {
+        display: block;
+    }
+
+    .not-found-celebration-mobile {
+        position: relative;
+        top: -4rem;
+    }
+
+    .not-found__body {
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+
+    .not-found__img {
+        display: inline-block;
+        width: 43rem;
+    }
+
+    .not-found__img img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -671,6 +725,41 @@
     }
 }
 
+@media (max-width:840px) {
+    .not-found {
+        padding: 4rem 0 0;
+    }
+
+
+    .not-found-mobile {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .not-found-home-mobile, .not-found-cafe-mobile, .not-found-cake-mobile, .not-found-celebration-mobile {
+        display: inline-block;
+    }
+
+    .not-found-cafe-mobile {
+        left: -10rem;
+        top: -2rem;
+    }
+
+    .not-found-celebration-mobile {
+        left: -3rem;
+    }
+
+    .not-found__img {
+        width: 34rem;
+    }
+
+    .not-found__title {
+        font-size: 2.2rem;
+    }
+
+}
+
 @media (max-width:800px) {
     .mobile-cake__text {
         left: 3%;
@@ -1098,7 +1187,7 @@
         margin-right: -14px;
         margin-bottom: 2.4rem;
     }
-    
+
     .contact .filter-layout,
     .contact .c-title__h2,
     .contact-cafe {
@@ -1374,6 +1463,19 @@
         right: -32%;
     }
 
+
+    .not-found__title {
+        font-size: 1.8rem;
+    }
+
+    .not-found__text {
+        font-size: 1.2rem;
+    }
+
+    .not-found-mobile {
+        padding: 0;
+    }
+
 }
 
 @media (max-width:440px) {
@@ -1392,6 +1494,10 @@
     #mobile-auth {
         padding: 1.4rem 0;
         width: 37%;
+    }
+
+    .not-found__img {
+        width: 29rem;
     }
 }
 

@@ -4386,6 +4386,12 @@ test popup
 .not-found {
   font-family: "PT Serif Caption";
   text-align: center; }
+  .not-found-mobile {
+    display: inline-block;
+    padding: 40px; }
+    .not-found-mobile a::after {
+      content: '';
+      border: none; }
   .not-found__body {
     position: absolute;
     left: 50%;
@@ -4411,6 +4417,11 @@ test popup
     .not-found-home::after {
       content: '';
       border: none; }
+    .not-found-home-mobile {
+      display: none;
+      width: 21.2rem;
+      height: 5.7rem;
+      background: url(../img/404scene/mobile-home.svg) 0 0 no-repeat; }
     .not-found-home__title {
       position: absolute;
       top: 0;
@@ -4448,6 +4459,11 @@ test popup
     .not-found-cake::after {
       content: '';
       border: none; }
+    .not-found-cake-mobile {
+      display: none;
+      width: 35.2rem;
+      height: 18.4rem;
+      background: url(../img/404scene/mobile-cake.svg) 0 0 no-repeat; }
     .not-found-cake__title {
       position: absolute;
       top: 0;
@@ -4495,6 +4511,11 @@ test popup
     .not-found-cafe::after {
       content: '';
       border: none; }
+    .not-found-cafe-mobile {
+      display: none;
+      width: 22.6rem;
+      height: 7.8rem;
+      background: url(../img/404scene/mobile-cafe.svg) 0 0 no-repeat; }
     .not-found-cafe__title {
       position: absolute;
       top: 5%;
@@ -4545,12 +4566,17 @@ test popup
     .not-found-celebration::after {
       content: '';
       border: none; }
+    .not-found-celebration-mobile {
+      display: none;
+      width: 30.4rem;
+      height: 15.9rem;
+      background: url(../img/404scene/mobile-holiday.svg) 0 0 no-repeat; }
     .not-found-celebration__title {
       position: absolute;
       top: 35%;
       left: 19%;
-      width: 31.8rem;
-      height: 7.1rem;
+      width: 30.4rem;
+      height: 15.9rem;
       background: url(../img/404scene/celebration-title.svg) 0 0 no-repeat; }
     .not-found-celebration__point {
       position: absolute;
