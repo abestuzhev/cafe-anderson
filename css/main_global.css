@@ -4031,7 +4031,7 @@ test popup
         display: inline-block; }
         .cafe-info__item-col .cafe-info__phone-number {
           display: none; }
-      .cafe-info__item i:not(.icon-metro-2),
+      .cafe-info__item i:not(.icon-label-metro):not(.icon-metro-2),
       .cafe-info__item img {
         position: absolute;
         top: 0;

@@ -1985,7 +1985,7 @@ test popup
                 }
             }
             
-            i:not(.icon-metro-2),
+            i:not(.icon-label-metro, .icon-metro-2),
             img {
                 position: absolute;
                 top: 0;
