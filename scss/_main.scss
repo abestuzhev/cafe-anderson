@@ -1975,6 +1975,15 @@ test popup
             margin-bottom: 1.8rem;
             vertical-align: middle;
             padding-left: 2.4rem;
+    
+    
+            &-station {
+                margin-left: -2.4rem;
+                
+                span {
+                    margin-right: .5rem;
+                }
+            }
             
             &-col {
                 vertical-align: top;
@@ -1997,10 +2006,10 @@ test popup
             &-tel {
                 
                 .cafe-info__item-col {
-                    
                     margin-right: 1.6rem;
                 }
             }
+            
             
             .c-button {
                 margin-top: .9rem;

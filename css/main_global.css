@@ -4026,6 +4026,10 @@ test popup
       margin-bottom: 1.8rem;
       vertical-align: middle;
       padding-left: 2.4rem; }
+      .cafe-info__item-station {
+        margin-left: -2.4rem; }
+        .cafe-info__item-station span {
+          margin-right: .5rem; }
       .cafe-info__item-col {
         vertical-align: top;
         display: inline-block; }
