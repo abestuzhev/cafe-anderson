@@ -1179,7 +1179,7 @@ i.icon-chair {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
-    overflow: hidden;
+    //overflow: hidden;
 
     b {
         color: $black;
@@ -1328,7 +1328,7 @@ i.icon-chair {
     height: 22.1rem;
 }
 
-.c-card-map {
+#map .c-card-map {
     width: 660px;
     height: 265px;
     display: block;
