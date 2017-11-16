@@ -170,6 +170,24 @@ p {
     font-family: $font_serif;
 }
 
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-transform: capitalize;
+}
+input::-moz-placeholder:first-letter { /* Firefox 19+ */
+    text-transform: capitalize;
+}
+input:-ms-input-placeholder:first-letter { /* IE 10+ */
+    text-transform: capitalize;
+}
+input:-moz-placeholder:first-letter { /* Firefox 18- */
+    text-transform: capitalize;
+}
+
+//
+//{
+//text-transform: capitalize;
+//}
+
 .wrapper input[type="checkbox"],
 .popup input[type="checkbox"] {
     display: none;
@@ -1178,9 +1196,12 @@ i.icon-chair {
     }
 
     &__img {
+        display: block;
         width: 35%;
         overflow: hidden;
         position: relative;
+        
+       
 
         img {
             width: auto;

@@ -318,6 +318,22 @@ p {
   width: 100%;
   font-family: "PT Serif Caption"; }
 
+input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  text-transform: capitalize; }
+
+input::-moz-placeholder:first-letter {
+  /* Firefox 19+ */
+  text-transform: capitalize; }
+
+input:-ms-input-placeholder:first-letter {
+  /* IE 10+ */
+  text-transform: capitalize; }
+
+input:-moz-placeholder:first-letter {
+  /* Firefox 18- */
+  text-transform: capitalize; }
+
 .wrapper input[type="checkbox"],
 .popup input[type="checkbox"] {
   display: none; }
@@ -1113,6 +1129,7 @@ i.icon-chair {
     margin-bottom: 2.5rem;
     border: none; }
   .c-card-cafe__img {
+    display: block;
     width: 35%;
     overflow: hidden;
     position: relative; }
@@ -2933,17 +2950,14 @@ main {
         .popup-title__btn:first-child::after {
           content: '';
           position: absolute;
-          top: 5px;
-          right: -2.2rem;
-          left: auto;
-          width: .1rem;
-          height: 1rem;
-          background-color: #9b9696; }
+          top: 5px; }
       .popup-title__btn.active {
+        font-weight: 700;
         color: #555451;
-        border-color: #555451; }
-      .popup-title__btn.active:hover {
-        border-bottom: 1px dotted #555451; }
+        cursor: default; }
+        .popup-title__btn.active::after {
+          content: '';
+          border: none; }
   .popup-form__item {
     margin-bottom: 1.6rem;
     text-align: left; }
@@ -3754,7 +3768,7 @@ test popup
     background: -o-linear-gradient(top, #ededed 0%, #f6f6f6 16%, white 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(16%, #f6f6f6), to(white));
     background: linear-gradient(to bottom, #ededed 0%, #f6f6f6 16%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 ); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0); }
     .filter-more i {
       margin: 0 .6rem 0 0; }
   .filter-mobile__more {
@@ -4020,7 +4034,8 @@ test popup
         display: inline-block; }
         .cafe-info__item-col .cafe-info__phone-number {
           display: none; }
-      .cafe-info__item i, .cafe-info__item img {
+      .cafe-info__item i:not(.icon-metro-2),
+      .cafe-info__item img {
         position: absolute;
         top: 0;
         left: 0;
