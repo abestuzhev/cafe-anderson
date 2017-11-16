@@ -1496,3 +1496,81 @@
 /*#cafe-map {
     display: block !important;
 }*/
+
+/*стили для списка кафе*/
+.cafe-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.cafe-list__city {
+    width: 100%;
+}
+
+
+.cafe-list__one {
+    width: 49%;
+}
+
+.cafe-list__one .c-col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.cafe-list__box {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+.cafe-list__city .c-grid {
+    align-items: flex-end;
+}
+
+.c-card-cafe {
+    height: 100%;
+    min-height: 23rem;
+}
+
+.c-card-cafe__body {
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+.c-card-cafe-advantages {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+}
+
+.c-card-cafe__title::after {
+    content: '';
+    border: none;
+}
+
+.c-card-cafe__title span {
+    display: inline-block;
+    position: relative;
+}
+
+.c-card-cafe__title span::after {
+    content: '';
+    position: absolute;
+    bottom: -.1rem;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px dotted #9b806f;
+}
+.c-card-cafe__title span:hover::after {
+    content: '';
+    border-color: #9acc4e;
+}
+
+.c-pic_link {
+    display: block;
+    height: 100%;
+}
