@@ -1583,7 +1583,9 @@ i.icon-chair {
 
 /*c-card-contact-office------------------------------------------------------------*/
 .c-card-contact-office {
-  color: #9b9595; }
+  color: #9b9595;
+  position: relative;
+  z-index: 2; }
   .c-card-contact-office__title {
     font-size: 1.6rem;
     color: #604e42;
@@ -4777,15 +4779,14 @@ test popup
       height: 32.2rem;
       background: url(../img/bg-contact.png) 100% 100% no-repeat; }
     .contact-office__item {
-      margin-bottom: 4rem; }
+      margin-bottom: 4rem;
+      padding: 0 1.4rem; }
   .contact__decor-line {
     width: 100%;
     height: 2.9rem;
     background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
     background-size: cover;
     margin-bottom: 5rem; }
-  .contact .c-grid {
-    margin: 0; }
   .contact .filter {
     display: inline-block !important;
     width: auto; }
@@ -4802,6 +4803,7 @@ test popup
     color: #5c3321;
     margin-bottom: 2.3rem; }
   .contact-cafe__item {
-    margin-bottom: 3.2rem; }
+    margin-bottom: 3.2rem;
+    padding: 0 1.4rem; }
     .contact-cafe__item span {
       margin-left: 2.4rem; }

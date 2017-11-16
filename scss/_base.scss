@@ -1792,6 +1792,8 @@ i.icon-chair {
 /*c-card-contact-office------------------------------------------------------------*/
 .c-card-contact-office {
     color: #9b9595;
+    position: relative;
+    z-index: 2;
 
     &__title {
         font-size: 1.6rem;

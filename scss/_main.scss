@@ -2947,6 +2947,7 @@ test popup
         
         &__item {
             margin-bottom: 4rem;
+            padding: 0 1.4rem;
         }
     }
     
@@ -2958,9 +2959,9 @@ test popup
         margin-bottom: 5rem;
     }
     
-    .c-grid {
-        margin: 0;
-    }
+    //.c-grid {
+    //    margin: 0;
+    //}
     
     .filter {
         display: inline-block !important;
@@ -2998,6 +2999,7 @@ test popup
         
         &__item {
             margin-bottom: 3.2rem;
+            padding: 0 1.4rem;
             
             span {
                 margin-left: 2.4rem;
