@@ -175,6 +175,11 @@
             border-bottom: 1px solid $color_line;
             box-shadow: 0 3px 18px 0 rgba(0, 0, 0, .35);
             text-align: center;
+            
+            &::after {
+                content: '';
+                border: none;
+            }
 
             &:hover {
                 border-bottom: 1px solid $color_line;

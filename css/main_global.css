@@ -1990,6 +1990,9 @@ i.icon-chair {
       -webkit-box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 0.35);
               box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 0.35);
       text-align: center; }
+      .header-mobile__item-top::after {
+        content: '';
+        border: none; }
       .header-mobile__item-top:hover {
         border-bottom: 1px solid #e9e0cb; }
       .header-mobile__item-top:hover svg {
