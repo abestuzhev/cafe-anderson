@@ -319,20 +319,16 @@ p {
   font-family: "PT Serif Caption"; }
 
 input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  text-transform: capitalize; }
+  /* Chrome/Opera/Safari */ }
 
 input::-moz-placeholder:first-letter {
-  /* Firefox 19+ */
-  text-transform: capitalize; }
+  /* Firefox 19+ */ }
 
 input:-ms-input-placeholder:first-letter {
-  /* IE 10+ */
-  text-transform: capitalize; }
+  /* IE 10+ */ }
 
 input:-moz-placeholder:first-letter {
-  /* Firefox 18- */
-  text-transform: capitalize; }
+  /* Firefox 18- */ }
 
 .wrapper input[type="checkbox"],
 .popup input[type="checkbox"] {
@@ -3457,6 +3453,14 @@ main {
 
 .popup__review .popup-bg__img {
   right: -4rem; }
+
+.popup__review-elem {
+  position: absolute;
+  bottom: 0;
+  right: 24.7rem;
+  width: 11.7rem;
+  height: 7.8rem;
+  background: url(../img/icons/icon-bird-with-bubble.svg) 0 0 no-repeat; }
 
 /*----------------------------------------------*/
 #tooltip {

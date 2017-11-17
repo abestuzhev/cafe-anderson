@@ -1243,6 +1243,15 @@ main {
     .popup-bg__img {
         right: -4rem;
     }
+    
+    &-elem {
+        position: absolute;
+        bottom: 0;
+        right: 24.7rem;
+        width: 11.7rem;
+        height: 7.8rem;
+        background: url(../img/icons/icon-bird-with-bubble.svg) 0 0 no-repeat;
+    }
 }
 
 /*----------------------------------------------*/

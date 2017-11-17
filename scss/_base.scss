@@ -171,22 +171,18 @@ p {
 }
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    text-transform: capitalize;
+    //text-transform: capitalize;
 }
 input::-moz-placeholder:first-letter { /* Firefox 19+ */
-    text-transform: capitalize;
+    //text-transform: capitalize;
 }
 input:-ms-input-placeholder:first-letter { /* IE 10+ */
-    text-transform: capitalize;
+    //text-transform: capitalize;
 }
 input:-moz-placeholder:first-letter { /* Firefox 18- */
-    text-transform: capitalize;
+    //text-transform: capitalize;
 }
 
-//
-//{
-//text-transform: capitalize;
-//}
 
 .wrapper input[type="checkbox"],
 .popup input[type="checkbox"] {
