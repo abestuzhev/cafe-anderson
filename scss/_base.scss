@@ -2134,3 +2134,35 @@ i.icon-chair {
 //     filter: blur(8px);
 //     opacity: 1;
 // }
+
+
+/*кнопка вверх*/
+.cd-top {
+    display: inline-block;
+    position: fixed;
+    width: 4.5rem;
+    height: 4.5rem;
+    bottom: 12.4rem;
+    right: 0rem;
+    /* image replacement properties */
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s 0s, visibility 0s .3s;
+    background: url(../img/icons/icon-page-up.svg) 0 0 no-repeat;
+    cursor: pointer;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top.cd-fade-out {
+    opacity: .5;
+}
+.no-touch .cd-top:hover {
+    opacity: .9;
+}

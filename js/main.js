@@ -467,7 +467,6 @@ $(document).ready(function ($) {
         }
     });
 
-
     $back_to_top.on('click', function(event){
         event.preventDefault();
         $('body,html').animate({
@@ -480,7 +479,7 @@ $(document).ready(function ($) {
     $(window).scroll(function(){
         var bo = $(window).scrollTop();
         var $header = $(".header");
-        if ( bo > 10 ) {
+        if ( bo > 1 ) {
             $header.addClass('header-top__hide');
             $header.addClass('sticky');
         } else {

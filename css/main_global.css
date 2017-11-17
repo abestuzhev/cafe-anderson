@@ -1862,6 +1862,40 @@ i.icon-chair {
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
   border-top-color: #a8a4a2; }
 
+/*кнопка вверх*/
+.cd-top {
+  display: inline-block;
+  position: fixed;
+  width: 4.5rem;
+  height: 4.5rem;
+  bottom: 12.4rem;
+  right: 0rem;
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -o-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  background: url(../img/icons/icon-page-up.svg) 0 0 no-repeat;
+  cursor: pointer; }
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -o-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s; }
+
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  opacity: .5; }
+
+.no-touch .cd-top:hover {
+  opacity: .9; }
+
 .sticky {
   position: fixed !important;
   width: 100%;
@@ -1869,11 +1903,9 @@ i.icon-chair {
   right: 0;
   will-change: transform;
   z-index: 100;
-  -webkit-transition: -webkit-transform .1s ease-out;
-  transition: -webkit-transform .1s ease-out;
-  -o-transition: transform .1s ease-out;
-  transition: transform .1s ease-out;
-  transition: transform .1s ease-out, -webkit-transform .1s ease-out; }
+  -webkit-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out; }
 
 .header {
   position: relative;

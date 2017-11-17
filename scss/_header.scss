@@ -9,8 +9,8 @@
     top: -3.8rem;
     right: 0;
     will-change: transform;
-    @include z-index(header);
-    transition: transform .1s ease-out;
+    @include z-index (header);
+    transition: all .1s ease-out;
 }
 
 .header {

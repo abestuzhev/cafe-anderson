@@ -1713,72 +1713,74 @@
     </div>
 </div>
 
-<!--заявка на вакансии popup__vacancy-->
+<!--оставить отзыв-->
 <div class="mfp-wrap popup__review" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <h3 class="popup-title">Оставить отзыв <span class="popup-close"></span></h3>
-                <div class="popup-body">
-                    <form action="#" class="popup-form" id="popup__review">
-                        <div class="c-form__item">
-                            <input type="checkbox" name="popup-reviews-callback" id="popup-reviews-callback" checked>
-                            <label class="c-checkbox" for="popup-reviews-callback">Прошу срочно связаться со мной</label>
-                        </div>
-                        <div class="c-form__grid">
-                            <div class="c-form__col">
-                                <label class="c-label">Тип отзыва<span class="c-obligatory-field">*</span></label>
-                                <div class="reviews-form__type">
-                                    <i class="reviews-form__type-icon icon-rabbit-positive"></i>
-                                    <select name="popup-reviews-type" id="popup-reviews-type" class="c-select" required>
-                                        <option value="Похвалить">Похвалить</option>
-                                        <option value="Пожаловаться">Пожаловаться</option>
+                <div class="popup-box">
+                    <h3 class="popup-title">Оставить отзыв <span class="popup-close"></span></h3>
+                    <div class="popup-body">
+                        <form action="#" class="popup-form" id="popup__review">
+                            <div class="c-form__item">
+                                <input type="checkbox" name="popup-reviews-callback" id="popup-reviews-callback" checked>
+                                <label class="c-checkbox" for="popup-reviews-callback">Прошу срочно связаться со мной</label>
+                            </div>
+                            <div class="c-form__grid">
+                                <div class="c-form__col">
+                                    <label class="c-label">Тип отзыва<span class="c-obligatory-field">*</span></label>
+                                    <div class="reviews-form__type">
+                                        <i class="reviews-form__type-icon icon-rabbit-positive"></i>
+                                        <select name="popup-reviews-type" id="popup-reviews-type" class="c-select" required>
+                                            <option value="Похвалить">Похвалить</option>
+                                            <option value="Пожаловаться">Пожаловаться</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="c-form__col">
+                                    <label class="c-label">Кафе<span class="c-obligatory-field">*</span></label>
+                                    <select name="reviews-cafe" id="popup-reviews-cafe" class="c-select" required>
+                                        <option value="Все">Все</option>
+                                        <option value="Москва">Москва</option>
+                                        <option value="Тюмень">Тюмень</option>
+                                        <option value="Красногорск">Красногорск</option>
+                                        <option value="Ярославль">Ярославль</option>
+                                        <option value="Зеленоград">Зеленоград</option>
+                                        <option value="Нижний Новгород">Нижний Новгород</option>
+                                        <option value="Королёв">Королёв</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="c-form__col">
-                                <label class="c-label">Кафе<span class="c-obligatory-field">*</span></label>
-                                <select name="reviews-cafe" id="popup-reviews-cafe" class="c-select" required>
-                                    <option value="Все">Все</option>
-                                    <option value="Москва">Москва</option>
-                                    <option value="Тюмень">Тюмень</option>
-                                    <option value="Красногорск">Красногорск</option>
-                                    <option value="Ярославль">Ярославль</option>
-                                    <option value="Зеленоград">Зеленоград</option>
-                                    <option value="Нижний Новгород">Нижний Новгород</option>
-                                    <option value="Королёв">Королёв</option>
-                                </select>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="reviews-textarea">Отзыв<span class="c-obligatory-field">*</span></label>
+                                <textarea class="c-input" name="popup-reviews-textarea" id="popup-reviews-textarea" rows="5" placeholder="Пожалуйста, оставьте Ваш отзыв. Ваше мнение очень важно для нас." required></textarea>
                             </div>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="reviews-textarea">Отзыв<span class="c-obligatory-field">*</span></label>
-                            <textarea class="c-input" name="popup-reviews-textarea" id="popup-reviews-textarea" rows="5" placeholder="Пожалуйста, оставьте Ваш отзыв. Ваше мнение очень важно для нас." required></textarea>
-                        </div>
-                        <div class="c-grid c-grid-between">
-                            <div class="c-col c-col-4">
-                                <label class="c-label" for="popup-reviews-name">Имя<span class="c-obligatory-field">*</span></label>
-                                <input class="c-input" type="text" placeholder="Ваше имя" name="popup-reviews-name" id="popup-reviews-name" required>
+                            <div class="c-grid c-grid-between">
+                                <div class="c-col c-col-4">
+                                    <label class="c-label" for="popup-reviews-name">Имя<span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" placeholder="Ваше имя" name="popup-reviews-name" id="popup-reviews-name" required>
+                                </div>
+                                <div class="c-col c-col-4">
+                                    <label class="c-label" for="popup-reviews-email">Email<span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" placeholder="Укажите email" name="popup-reviews-email" id="popup-reviews-email" required>
+                                </div>
+                                <div class="c-col c-col-4">
+                                    <label class="c-label" for="popup-reviews-tel">Телефон</label>
+                                    <input class="c-input" type="text" placeholder="Укажите телефон" name="popup-reviews-tel" id="popup-reviews-tel">
+                                </div>
                             </div>
-                            <div class="c-col c-col-4">
-                                <label class="c-label" for="popup-reviews-email">Email<span class="c-obligatory-field">*</span></label>
-                                <input class="c-input" type="text" placeholder="Укажите email" name="popup-reviews-email" id="popup-reviews-email" required>
+                            <div class="popup-form__item">
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
                             </div>
-                            <div class="c-col c-col-4">
-                                <label class="c-label" for="popup-reviews-tel">Телефон</label>
-                                <input class="c-input" type="text" placeholder="Укажите телефон" name="popup-reviews-tel" id="popup-reviews-tel">
+                            <div class="l-button l-button__left">
+                                <button class="c-button c-button__default">Отправить</button>
                             </div>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
-                        </div>
-                        <div class="l-button l-button__left">
-                            <button class="c-button c-button__default">Откликнуться</button>
-                        </div>
-                    </form>
-                    <div class="reviews-form__rabbit"></div>
-                </div><!--popup-body-->
-                <img class="popup-bg__img" src="./img/bg-reviews__form.jpg" alt="">
-                <div class="popup__review-elem"></div>
+                        </form>
+                        <div class="reviews-form__rabbit"></div>
+                    </div><!--popup-body-->
+                    <img class="popup-bg__img" src="./img/bg-reviews__form.jpg" alt="">
+                    <div class="popup__review-elem"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -1789,6 +1791,9 @@
 
 <!----------------------------------------------END popup-->
 
+<!--START кнопка вверх-->
+<div class="cd-top"></div>
+<!--END кнопка вверх-->
 
 <!--боковые кнопки пожаловаться/похвалить-->
 <div class="c-reviews__item c-reviews-positive">

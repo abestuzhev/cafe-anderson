@@ -1356,6 +1356,10 @@
         max-width: 100%;
         padding-top: 0;
     }
+
+    .popup__review-elem {
+        display: none;
+    }
 }
 
 
@@ -1576,6 +1580,14 @@
 
     .not-found-mobile {
         padding: 0;
+    }
+
+    .popup__review .popup-bg__img {
+        right: -10rem;
+    }
+
+    .popup__review .c-button {
+        width: 100%;
     }
 
 }
