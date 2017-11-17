@@ -4387,8 +4387,7 @@ test popup
   font-family: "PT Serif Caption";
   text-align: center; }
   .not-found-mobile {
-    display: inline-block;
-    padding: 40px; }
+    display: inline-block; }
     .not-found-mobile a::after {
       content: '';
       border: none; }

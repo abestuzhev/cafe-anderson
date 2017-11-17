@@ -222,13 +222,24 @@
     }
 
     .not-found__img {
-        display: inline-block;
+        display: block;
+        margin: 0 auto;
         width: 43rem;
     }
 
     .not-found__img img {
         width: 100%;
         height: auto;
+    }
+
+
+    .not-found-mobile {
+        padding: 40px;
+    }
+
+
+    .not-found-mobile > a {
+        position: static;
     }
 }
 
@@ -322,6 +333,88 @@
 
     .footer {
         bottom: 0;
+    }
+
+}
+
+@media (max-height:920px) and (max-width: 1370px) {
+
+    /*страница 404*/
+    .not-found-home,
+    .not-found-cafe,
+    .not-found-cake,
+    .not-found-celebration {
+        display: none;
+    }
+
+    .not-found-home-mobile,
+    .not-found-cafe-mobile,
+    .not-found-cake-mobile,
+    .not-found-celebration-mobile {
+        display: block;
+    }
+
+    /*.not-found__box {*/
+        /*position: absolute;*/
+        /*right: 10%;*/
+        /*top: 25%;*/
+    /*}*/
+
+    /*.not-found-mobile {*/
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%,-50%);*/
+    /*}*/
+
+    .not-found-home-mobile {
+        position: absolute;
+        top: 29%;
+        left: -46%;
+    }
+
+    .not-found-cafe-mobile {
+        position: absolute;
+        top: 44%;
+        left: -64.6%;
+    }
+
+    .not-found-cake-mobile {
+        position: absolute;
+        right: -78.8%;
+        top: 5%;
+    }
+
+    .not-found-celebration-mobile {
+        position: absolute;
+        right: -66%;
+        top: 34%;
+    }
+
+    /*.not-found__box:first-child {*/
+        /*left: -56%;*/
+        /*top: 25%;*/
+    /*}*/
+
+    .not-found__body {
+        /*position: static;*/
+        /*transform: none;*/
+        /*text-align: center;*/
+        /*display: flex;*/
+        /*flex-flow: row nowrap;*/
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+    }
+
+    .not-found__img {
+        display: block;
+        margin: 0 auto;
+        width: 43rem;
+    }
+
+    .not-found__img img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -741,13 +834,16 @@
         display: inline-block;
     }
 
-    .not-found-cafe-mobile {
+    .not-found-mobile .not-found-cafe-mobile {
+        position: relative;
         left: -10rem;
         top: -2rem;
     }
 
-    .not-found-celebration-mobile {
+    .not-found-mobile .not-found-celebration-mobile {
+        position: relative;
         left: -3rem;
+        top: -6rem;
     }
 
     .not-found__img {
