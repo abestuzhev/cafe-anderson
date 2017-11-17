@@ -418,6 +418,12 @@
     }
 }
 
+@media (max-width:1306px) {
+    .c-card-cafe .c-card-cafe__body {
+        padding-bottom: 11rem;
+    }
+}
+
 @media (max-width:1026px) {
     .home-cafe {
         width: 26%;
@@ -774,10 +780,10 @@
         flex: 0 0 100%;
     }
 
-    .c-card-cafe__img img {
-        width: 100%;
-        height: auto;
-    }
+    /*.c-card-cafe__img img {*/
+        /*width: 100%;*/
+        /*height: auto;*/
+    /*}*/
 
     .c-card-cafe__title {
         margin-bottom: 1.4rem;
@@ -1227,10 +1233,10 @@
     }
 
 
-    .c-card-cafe__img img {
-        width: auto;
-        height: 100%;
-    }
+    /*.c-card-cafe__img img {*/
+        /*width: auto;*/
+        /*height: 100%;*/
+    /*}*/
 
     .cafe-reviews__icon {
         right: -2.2rem;
@@ -1478,10 +1484,10 @@
         height: 22.5rem;
     }
 
-    .c-card-cafe__img img {
-        width: 100%;
-        height: auto;
-    }
+    /*.c-card-cafe__img img {*/
+        /*width: 100%;*/
+        /*height: auto;*/
+    /*}*/
 
     .c-card-cafe__body {
         width: 100%;
@@ -1844,9 +1850,4 @@
 .c-card-cafe__title span:hover::after {
     content: '';
     border-color: #9acc4e;
-}
-
-.c-pic_link {
-    display: block;
-    height: 100%;
 }

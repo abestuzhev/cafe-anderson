@@ -29,6 +29,35 @@ $(document).ready(function ($) {
     // $('#scrollbarY').tinyscrollbar();
 
 
+    /*вписываем img в блок при любом размере изображения*/
+    function fix_size() {
+        var images = $('.c-pic_link img');
+        images.each(setsize);
+
+        function setsize() {
+            var img = $(this),
+                img_dom = img.get(0),
+                container = img.parents('.c-pic_link');
+            if (img_dom.complete) {
+                resize();
+            } else img.one('load', resize);
+
+            function resize() {
+                if ((container.width() / container.height()) < (img_dom.width / img_dom.height)) {
+                    img.width('auto');
+                    img.height('100%');
+                    return;
+                }
+                img.height('auto');
+                img.width('100%');
+            }
+        }
+    }
+    $(window).on('resize', fix_size);
+    fix_size();
+
+
+    /*если в городе одно кафе, делаем его inline*/
     $('.cafe-list__city').each(function(){
         var $this = $(this);
         var countElem = $this.find('.c-col-6').length;

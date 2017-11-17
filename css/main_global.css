@@ -1125,16 +1125,23 @@ i.icon-chair {
     display: block;
     width: 35%;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    border-radius: .4rem 0 0 .4rem; }
     .c-card-cafe__img img {
-      width: auto;
-      height: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+  .c-card-cafe .c-pic_link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 100%; }
+    .c-card-cafe .c-pic_link::after {
+      content: '';
+      border: none; }
   .c-card-cafe__menu {
     position: absolute;
     bottom: 1.6rem;

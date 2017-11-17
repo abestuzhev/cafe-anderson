@@ -1196,20 +1196,29 @@ i.icon-chair {
         width: 35%;
         overflow: hidden;
         position: relative;
+        border-radius: .4rem 0 0 .4rem;
         
        
 
         img {
-            width: auto;
-            height: 100%;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            //vertical-align: middle;
-            //position: relative;
-            //left: 50%;
-            //transform: translateX(-50%);
+            
+            
+        }
+    }
+    
+    .c-pic_link {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        
+        &::after {
+            content: '';
+            border: none;
         }
     }
 
