@@ -181,6 +181,14 @@ $(document).ready(function ($) {
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');
     showPopup(".c-card_menu", '.popup__menu');
     showPopup(".c-reviews__item", '.popup__review');
+    showPopup(".popup-forgot-password", '.popup__recovery-password');
+
+
+    $('.popup-forgot-password').on('click', function (e) {
+        e.preventDefault();
+        $(this).parents('.popup-authorization').removeClass('is-visible');
+        $('.popup__recovery-password').addClass('is-visible');
+    });
 
 
     $('.popup-authorization .popup-authorization__reg').on('click', function (e) {
