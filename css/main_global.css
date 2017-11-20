@@ -875,6 +875,14 @@ i.icon-chair {
   height: 14.9rem;
   background: url(../img/icons/icon-rabbit-earphone.svg) 0 0 no-repeat; }
 
+.icon-exit {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1.7rem;
+  height: 1.6rem;
+  background: url(../img/icons/icon-exit-with-hover.svg) 0 0 no-repeat scroll;
+  background-size: 3.4rem 1.6rem; }
+
 @media screen and (min-width: 1600px) {
   .c-layout {
     position: relative;
@@ -2222,14 +2230,17 @@ i.icon-chair {
     margin-bottom: .5rem; }
   .header-cabinet {
     font-size: 1.3rem;
-    text-transform: lowercase;
     margin-right: 1.8rem;
     display: inline-block;
-    vertical-align: bottom; }
+    vertical-align: bottom;
+    text-transform: capitalize; }
     .header-cabinet__text {
-      color: #9b9696; }
+      color: #9b9696;
+      margin-right: .3rem; }
     .header-cabinet:hover a {
       color: #67af26; }
+    .header-cabinet:hover i {
+      background-position: -17px 0; }
     .header-cabinet:hover .c-icon {
       fill: #67af26; }
   .header-basket {

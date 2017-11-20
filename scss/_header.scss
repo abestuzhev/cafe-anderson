@@ -445,19 +445,25 @@
 
     &-cabinet {
         font-size: 1.3rem;
-        text-transform: lowercase;
         margin-right: 1.8rem;
         display: inline-block;
         vertical-align: bottom;
+        text-transform: capitalize;
 
         &__text {
             color: $color_text_bg;
+            margin-right: .3rem;
         }
 
         &:hover a {
             color: $color_active;
 
         }
+        &:hover i {
+            background-position: -17px 0;
+        
+        }
+        
         &:hover .c-icon {
             fill: $color_active;
         }
