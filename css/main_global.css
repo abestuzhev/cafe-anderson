@@ -3827,7 +3827,6 @@ test popup
     right: 0;
     cursor: pointer;
     padding: 11px 22px;
-    border: 1px solid #f1f1f1;
     border-top-color: transparent;
     background-color: #fff;
     border-radius: 0 0 .6rem .6rem;
@@ -3840,6 +3839,9 @@ test popup
     background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(16%, #f6f6f6), to(white));
     background: linear-gradient(to bottom, #ededed 0%, #f6f6f6 16%, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0); }
+    .filter-more::after {
+      content: '';
+      border: none; }
     .filter-more i {
       margin: 0 .6rem 0 0; }
   .filter-mobile__more {

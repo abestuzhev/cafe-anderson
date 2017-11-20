@@ -1570,7 +1570,7 @@ test popup
         right: 0;
         cursor: pointer;
         padding: 11px 22px;
-        border: 1px solid #f1f1f1;
+        //border: 1px solid #f1f1f1;
         border-top-color: transparent;
         //background-color: #e9e9e9;
         background-color: #fff;
@@ -1585,6 +1585,11 @@ test popup
         background: -ms-linear-gradient(top, rgba(237, 237, 237, 1) 0%, rgba(246, 246, 246, 1) 16%, rgba(255, 255, 255, 1) 100%);
         background: linear-gradient(to bottom, rgba(237, 237, 237, 1) 0%, rgba(246, 246, 246, 1) 16%, rgba(255, 255, 255, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
+        
+        &::after {
+            content:'';
+            border: none;
+        }
         
         i {
             margin: 0 .6rem 0 0;
