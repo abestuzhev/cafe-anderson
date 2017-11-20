@@ -501,6 +501,31 @@ $(document).ready(function ($) {
     //
     // }
 
+    // var valReview = $('#popup-reviews-type').val();
+
+
+
+
+    function changeRabbitFace (form){
+        $(form).on("change",function() {
+            var valReview = $(this).val();
+            var $icon = $(this).parents('.reviews-form__type').find('.reviews-form__type-icon');
+
+            if (valReview == 'Пожаловаться' ) {
+                $icon.removeClass('icon-rabbit-positive');
+                $icon.addClass('icon-rabbit-negative');
+            } else {
+                $icon.removeClass('icon-rabbit-negative');
+                $icon.addClass('icon-rabbit-positive');
+            }
+        });
+    }
+
+    changeRabbitFace('#reviews-type');
+    changeRabbitFace('#popup-reviews-type');
+
+
+
 
     /*простые табы*/
     $(".tabs-menu a").click(function(event) {

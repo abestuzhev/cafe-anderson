@@ -2148,83 +2148,85 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <div class="popup-title">
-                    <div class="popup-title__layout">
-                        <a class="popup-title__btn popup-authorization__reg" href="#">Регистрация</a>
-                        <a class="popup-title__btn popup-authorization__auth active" href="#">Авторизация</a>
+                <div class="popup-box">
+                    <div class="popup-title">
+                        <div class="popup-title__layout">
+                            <a class="popup-title__btn popup-authorization__reg" href="#">Регистрация</a>
+                            <a class="popup-title__btn popup-authorization__auth active" href="#">Авторизация</a>
+                        </div>
+                        <span class="popup-close"></span>
                     </div>
-                    <span class="popup-close"></span>
-                </div>
-                <div class="popup-body">
-                    <form action="#" class="popup-form" id="popup-authorization">
-                        <div class="popup-form__item">
-                            <label class="c-label" for="authorization__email">Email или телефон<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="authorization__email"
-                                   id="authorization__email" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="authorization__pass">Пароль<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="authorization__pass" id="authorization__pass" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <input type="checkbox" name="remember_authorization" id="remember_authorization" required>
-                            <label class="c-checkbox" for="remember_authorization">Запомнить меня</label>
-                            <a class="popup-forgot-password" href="#">Забыли пароль?</a>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="l-button l-button__left">
-                                <button class="c-button c-button__width">Войти</button>
+                    <div class="popup-body">
+                        <form action="#" class="popup-form" id="popup-authorization">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="authorization__email">Email или телефон<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="ваш email" name="authorization__email"
+                                       id="authorization__email" required>
                             </div>
-                        </div>
-                        <div class="popup-form__item">
-                            <p class="popup-new-user">Я новый посетитель <a href="#">Зарегистрироваться</a></p>
-                        </div>
-                        <div class="popup-form__item">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="authorization__pass">Пароль<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="password" name="authorization__pass" id="authorization__pass" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <input type="checkbox" name="remember_authorization" id="remember_authorization" required>
+                                <label class="c-checkbox" for="remember_authorization">Запомнить меня</label>
+                                <a class="popup-forgot-password" href="#">Забыли пароль?</a>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="l-button l-button__left">
+                                    <button class="c-button c-button__width">Войти</button>
+                                </div>
+                            </div>
+                            <div class="popup-form__item">
+                                <p class="popup-new-user">Я новый посетитель <a href="#">Зарегистрироваться</a></p>
+                            </div>
+                            <div class="popup-form__item">
 
-                            <div class="footer-social">
-                                <p class="footer-social__title">Войдите, используя аккаунт в соцсети: </p>
-                                <a class="footer-social__item" href="https://vk.com/cafeanderson">
-                                    <svg class="c-icon icon-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.16 13.76">
-                                        <path d="M13.41,1C12-.3,3-.06,1.66,1c-2.17,1.73-1,10.2-.09,11.75.47.8,2.59,1.1,4.91,1.1,2.83,0,6-.44,6.87-1,.56-.32.93-1.29,1.11-3,.33-2.89,0-7.91-1-8.91m.26,8.82c-.17,1.54-.5,2.24-.72,2.37-1.58.91-10,1.26-10.7.14A16.84,16.84,0,0,1,1.24,7c-.15-2.75.19-4.73.91-5.31,1.19-.95,9.7-1,10.72,0,.64.6,1.16,5,.79,8.24"
-                                              transform="translate(-0.42 -0.12)"/>
-                                        <path d="M9.47,7.25a11.85,11.85,0,0,0,1.36-1.4.79.79,0,1,0-1.23-1A9.83,9.83,0,0,1,8.15,6.28C8.08,5.42,8,4.45,7.84,3.36a.79.79,0,0,0-1.57.2,36.34,36.34,0,0,1,.37,6.16A6.7,6.7,0,0,1,4.57,5.87.79.79,0,1,0,3,6c.22,2.43,2.47,5.53,4,5.53a1,1,0,0,0,.76-.35,4.72,4.72,0,0,0,.49-2.71,3.11,3.11,0,0,1,2.21,2.12.79.79,0,0,0,.75.55.77.77,0,0,0,.24,0,.79.79,0,0,0,.51-1,4.52,4.52,0,0,0-2.5-2.86"/>
-                                    </svg>
-                                </a>
-                                <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/">
-                                    <svg class="c-icon icon-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.25 14.34">
-                                        <path d="M12.84,1.32C10.61.09,3-.1,1.17,1.35-.13,2.36.41,11.64,1,13.06s4,1.61,6.15,1.61h.43c1.44,0,4.83-.25,5.38-1.62.61-1.53,1.07-11-.18-11.73m-.56,11.44c-.2.51-1.87,1.06-4.66,1.12-3.16.07-5.58-.53-5.85-1.14C1,11.09.94,2.64,1.66,2,3,.9,10.1.74,12.43,2c.62.81.51,9.09-.15,10.76"
-                                              transform="translate(-0.38 -0.33)"/>
-                                        <path d="M6.75,2.67A2.69,2.69,0,0,0,5.31,5.29c0,.41,0,.89.06,1.42h0A.79.79,0,0,0,5.41,8.3h.06c.13,1.82.28,3.57.29,3.69a.79.79,0,0,0,.79.72h.07a.79.79,0,0,0,.72-.86S7.18,10,7,8.13L8.36,8A.79.79,0,0,0,8.2,6.42l-1.25.13c0-.48,0-.92-.05-1.29a1.14,1.14,0,0,1,.55-1.17,1,1,0,0,1,.93,0,.79.79,0,0,0,1-1.23,2.53,2.53,0,0,0-2.63-.21"/>
-                                    </svg>
-                                </a>
-                                <a class="footer-social__item" href="">
-                                    <svg class="c-icon icon-o" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.97 13.81">
-                                        <path d="M13.39,1.09C12.39.17,8.25,0,5.88.13c-1.62.08-3.67.31-4.28,1C.15,2.71.16,11.41,1.6,12.89c.89.91,4.21,1,5.6,1h.29c2.19,0,5-.29,5.89-1s1.06-3.42,1.1-5c.05-2-.1-6-1.08-6.86m.29,6.83c-.07,2.62-.47,4.11-.81,4.39s-2.49.77-5.39.8c-3.09,0-4.92-.38-5.31-.77-1-1.07-1.28-9.26,0-10.69C2.44,1.36,3.7,1,5.92.92c3-.14,6.35.22,6.94.76s.92,3,.83,6.25"/>
-                                        <path d="M7.68,3c-1,0-2.69.38-3.93,3a3.22,3.22,0,0,0,.08,3A4.38,4.38,0,0,0,7.1,11.1a3,3,0,0,0,.43,0,3.82,3.82,0,0,0,3-1.66,4.13,4.13,0,0,0,.65-4.15A4,4,0,0,0,7.68,3M9.26,8.51a2.18,2.18,0,0,1-1.92,1,2.84,2.84,0,0,1-2.1-1.34,1.65,1.65,0,0,1,0-1.53c.64-1.36,1.51-2.11,2.47-2.11h0A2.39,2.39,0,0,1,9.73,6a2.6,2.6,0,0,1-.48,2.54"/>
-                                    </svg>
-                                </a>
+                                <div class="footer-social">
+                                    <p class="footer-social__title">Войдите, используя аккаунт в соцсети: </p>
+                                    <a class="footer-social__item" href="https://vk.com/cafeanderson">
+                                        <svg class="c-icon icon-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.16 13.76">
+                                            <path d="M13.41,1C12-.3,3-.06,1.66,1c-2.17,1.73-1,10.2-.09,11.75.47.8,2.59,1.1,4.91,1.1,2.83,0,6-.44,6.87-1,.56-.32.93-1.29,1.11-3,.33-2.89,0-7.91-1-8.91m.26,8.82c-.17,1.54-.5,2.24-.72,2.37-1.58.91-10,1.26-10.7.14A16.84,16.84,0,0,1,1.24,7c-.15-2.75.19-4.73.91-5.31,1.19-.95,9.7-1,10.72,0,.64.6,1.16,5,.79,8.24"
+                                                  transform="translate(-0.42 -0.12)"/>
+                                            <path d="M9.47,7.25a11.85,11.85,0,0,0,1.36-1.4.79.79,0,1,0-1.23-1A9.83,9.83,0,0,1,8.15,6.28C8.08,5.42,8,4.45,7.84,3.36a.79.79,0,0,0-1.57.2,36.34,36.34,0,0,1,.37,6.16A6.7,6.7,0,0,1,4.57,5.87.79.79,0,1,0,3,6c.22,2.43,2.47,5.53,4,5.53a1,1,0,0,0,.76-.35,4.72,4.72,0,0,0,.49-2.71,3.11,3.11,0,0,1,2.21,2.12.79.79,0,0,0,.75.55.77.77,0,0,0,.24,0,.79.79,0,0,0,.51-1,4.52,4.52,0,0,0-2.5-2.86"/>
+                                        </svg>
+                                    </a>
+                                    <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/">
+                                        <svg class="c-icon icon-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.25 14.34">
+                                            <path d="M12.84,1.32C10.61.09,3-.1,1.17,1.35-.13,2.36.41,11.64,1,13.06s4,1.61,6.15,1.61h.43c1.44,0,4.83-.25,5.38-1.62.61-1.53,1.07-11-.18-11.73m-.56,11.44c-.2.51-1.87,1.06-4.66,1.12-3.16.07-5.58-.53-5.85-1.14C1,11.09.94,2.64,1.66,2,3,.9,10.1.74,12.43,2c.62.81.51,9.09-.15,10.76"
+                                                  transform="translate(-0.38 -0.33)"/>
+                                            <path d="M6.75,2.67A2.69,2.69,0,0,0,5.31,5.29c0,.41,0,.89.06,1.42h0A.79.79,0,0,0,5.41,8.3h.06c.13,1.82.28,3.57.29,3.69a.79.79,0,0,0,.79.72h.07a.79.79,0,0,0,.72-.86S7.18,10,7,8.13L8.36,8A.79.79,0,0,0,8.2,6.42l-1.25.13c0-.48,0-.92-.05-1.29a1.14,1.14,0,0,1,.55-1.17,1,1,0,0,1,.93,0,.79.79,0,0,0,1-1.23,2.53,2.53,0,0,0-2.63-.21"/>
+                                        </svg>
+                                    </a>
+                                    <a class="footer-social__item" href="">
+                                        <svg class="c-icon icon-o" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.97 13.81">
+                                            <path d="M13.39,1.09C12.39.17,8.25,0,5.88.13c-1.62.08-3.67.31-4.28,1C.15,2.71.16,11.41,1.6,12.89c.89.91,4.21,1,5.6,1h.29c2.19,0,5-.29,5.89-1s1.06-3.42,1.1-5c.05-2-.1-6-1.08-6.86m.29,6.83c-.07,2.62-.47,4.11-.81,4.39s-2.49.77-5.39.8c-3.09,0-4.92-.38-5.31-.77-1-1.07-1.28-9.26,0-10.69C2.44,1.36,3.7,1,5.92.92c3-.14,6.35.22,6.94.76s.92,3,.83,6.25"/>
+                                            <path d="M7.68,3c-1,0-2.69.38-3.93,3a3.22,3.22,0,0,0,.08,3A4.38,4.38,0,0,0,7.1,11.1a3,3,0,0,0,.43,0,3.82,3.82,0,0,0,3-1.66,4.13,4.13,0,0,0,.65-4.15A4,4,0,0,0,7.68,3M9.26,8.51a2.18,2.18,0,0,1-1.92,1,2.84,2.84,0,0,1-2.1-1.34,1.65,1.65,0,0,1,0-1.53c.64-1.36,1.51-2.11,2.47-2.11h0A2.39,2.39,0,0,1,9.73,6a2.6,2.6,0,0,1-.48,2.54"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div><!--popup-body-->
-                <svg class="icon-bird-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.54 88.65">
-                    <title>icon-bird-up</title>
-                    <path d="M.65,78.8C5.31,81,11,80.35,16,80a90.75,90.75,0,0,0,20-3.45c17.8-5.21,40-15.07,44.86-34.9,2.09-8.57,1.34-18.47-3.09-26.22C75,10.7,70.31,6.23,64.89,4.76,59,3.16,55.09,6.09,51.17,10.14a39,39,0,0,0-6.86,9.73C40.76,27,36.89,33.92,33,40.87c-4.13,7.28-8.41,14.91-14.14,21.08a86.27,86.27,0,0,1-8.88,7.81c-3,2.46-5.83,5-9.28,6.88A1.23,1.23,0,0,0,.65,78.8Zm3.68-1.37a69.52,69.52,0,0,0,6.15-4.76c3-2.52,6.19-4.9,9-7.67C24.9,59.66,29,52.94,32.83,46.42c4.11-7,8.57-14.07,12-21.4a57,57,0,0,1,6.25-10.62C53,12,55.09,9.73,58,8.53c5.61-2.31,11.72,1.09,15.21,5.17S78.4,23.23,79,28.47c1.24,11.3-2.76,21.32-11.05,29S49,69.81,38.41,73.2a92.31,92.31,0,0,1-19.23,4.09C14.8,77.71,8.94,78.58,4.33,77.43Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M54.57,89.65a87.73,87.73,0,0,1-3.3-14.19c-.93-5.33-2-11-1.93-16.4,0-1.63,2.72-1.62,2.71,0,0,5.57,1,11.54,2.06,17a82.38,82.38,0,0,0,3.32,13.57Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M47.2,89.65c-.35-1.06-.67-2.12-1-3.12-2.17-6.82-3.29-13.9-5-20.83-.4-1.62,2.23-2.22,2.62-.66,1.4,5.68,2.4,11.46,3.91,17.11.52,1.94,1.12,4.87,2.08,7.5Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M5,57.78c3.18,2.75,8.71,3.08,12.72,3.17a33.43,33.43,0,0,0,13.71-2.2A29.31,29.31,0,0,0,47.89,39.69c.43-1.55,3.06-.93,2.61.68a31.75,31.75,0,0,1-19,21.07,38.17,38.17,0,0,1-15.45,2c-4.37-.26-9.56-.9-13-3.85C1.73,58.41,3.75,56.72,5,57.78Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M60.08,20.27a2.19,2.19,0,1,1,0,4.37A2.19,2.19,0,1,1,60.08,20.27Z" transform="translate(0 -1)"/>
-                    <path d="M71.78,9.86c3.54-2.77,6.88-5.79,10.41-8.56.87-.69,2.78-.13,2.26,1.23-1.81,4.8-3.67,9.61-6.73,13.78-.95,1.29-3.34.09-2.34-1.28A41.13,41.13,0,0,0,80,6.4c-2,1.67-4,3.34-6,4.94l-.06.09-.26.29a1.42,1.42,0,0,1-2.13-.26l0-.08A1.21,1.21,0,0,1,71.78,9.86Z"
-                          transform="translate(0 -1)"/>
-                </svg>
-                <img class="popup-bg__img" src="./img/popup-bg_authorization.jpg" alt="">
+                        </form>
+                    </div><!--popup-body-->
+                    <svg class="icon-bird-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.54 88.65">
+                        <title>icon-bird-up</title>
+                        <path d="M.65,78.8C5.31,81,11,80.35,16,80a90.75,90.75,0,0,0,20-3.45c17.8-5.21,40-15.07,44.86-34.9,2.09-8.57,1.34-18.47-3.09-26.22C75,10.7,70.31,6.23,64.89,4.76,59,3.16,55.09,6.09,51.17,10.14a39,39,0,0,0-6.86,9.73C40.76,27,36.89,33.92,33,40.87c-4.13,7.28-8.41,14.91-14.14,21.08a86.27,86.27,0,0,1-8.88,7.81c-3,2.46-5.83,5-9.28,6.88A1.23,1.23,0,0,0,.65,78.8Zm3.68-1.37a69.52,69.52,0,0,0,6.15-4.76c3-2.52,6.19-4.9,9-7.67C24.9,59.66,29,52.94,32.83,46.42c4.11-7,8.57-14.07,12-21.4a57,57,0,0,1,6.25-10.62C53,12,55.09,9.73,58,8.53c5.61-2.31,11.72,1.09,15.21,5.17S78.4,23.23,79,28.47c1.24,11.3-2.76,21.32-11.05,29S49,69.81,38.41,73.2a92.31,92.31,0,0,1-19.23,4.09C14.8,77.71,8.94,78.58,4.33,77.43Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M54.57,89.65a87.73,87.73,0,0,1-3.3-14.19c-.93-5.33-2-11-1.93-16.4,0-1.63,2.72-1.62,2.71,0,0,5.57,1,11.54,2.06,17a82.38,82.38,0,0,0,3.32,13.57Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M47.2,89.65c-.35-1.06-.67-2.12-1-3.12-2.17-6.82-3.29-13.9-5-20.83-.4-1.62,2.23-2.22,2.62-.66,1.4,5.68,2.4,11.46,3.91,17.11.52,1.94,1.12,4.87,2.08,7.5Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M5,57.78c3.18,2.75,8.71,3.08,12.72,3.17a33.43,33.43,0,0,0,13.71-2.2A29.31,29.31,0,0,0,47.89,39.69c.43-1.55,3.06-.93,2.61.68a31.75,31.75,0,0,1-19,21.07,38.17,38.17,0,0,1-15.45,2c-4.37-.26-9.56-.9-13-3.85C1.73,58.41,3.75,56.72,5,57.78Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M60.08,20.27a2.19,2.19,0,1,1,0,4.37A2.19,2.19,0,1,1,60.08,20.27Z" transform="translate(0 -1)"/>
+                        <path d="M71.78,9.86c3.54-2.77,6.88-5.79,10.41-8.56.87-.69,2.78-.13,2.26,1.23-1.81,4.8-3.67,9.61-6.73,13.78-.95,1.29-3.34.09-2.34-1.28A41.13,41.13,0,0,0,80,6.4c-2,1.67-4,3.34-6,4.94l-.06.09-.26.29a1.42,1.42,0,0,1-2.13-.26l0-.08A1.21,1.21,0,0,1,71.78,9.86Z"
+                              transform="translate(0 -1)"/>
+                    </svg>
+                    <img class="popup-bg__img" src="./img/popup-bg_authorization.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -2235,100 +2237,102 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <div class="popup-title">
-                    <div class="popup-title__layout">
-                        <a class="popup-title__btn popup-authorization__reg active" href="#">Регистрация</a>
-                        <a class="popup-title__btn popup-authorization__auth" href="#">Авторизация</a>
+                <div class="popup-box">
+                    <div class="popup-title">
+                        <div class="popup-title__layout">
+                            <a class="popup-title__btn popup-authorization__reg active" href="#">Регистрация</a>
+                            <a class="popup-title__btn popup-authorization__auth" href="#">Авторизация</a>
+                        </div>
+                        <span class="popup-close"></span>
                     </div>
-                    <span class="popup-close"></span>
-                </div>
-                <div class="popup-body">
-                    <form action="#" class="popup-form" id="popup-reg">
-                        <div class="popup-form__item">
-                            <label class="c-label" for="reg__email">Email<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="reg__email" id="reg__email" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="reg__phone">Мобильный телефон<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="ваш email" name="reg__phone" id="reg__phone" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="reg__pass">Пароль<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="reg__pass" id="reg__pass" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="reg__pass-remember">Повторить пароль<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="password" name="reg__pass-remember" id="reg__pass-remember" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="c-personal-data">
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="reg__regulations" id="reg__regulations" checked>
-                                    <label class="c-checkbox" for="reg__regulations">Я ознакомлен с <a href="#">правилами
-                                        обработки</a> моих персональных данных.</label>
-                                </div>
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="reg__dispatch" id="reg__dispatch">
-                                    <label class="c-checkbox" for="reg__dispatch">Я согласен получать рассылку с сайта на
-                                        электронную почту</label>
+                    <div class="popup-body">
+                        <form action="#" class="popup-form" id="popup-reg">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="reg__email">Email<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="ваш email" name="reg__email" id="reg__email" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="reg__phone">Мобильный телефон<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="ваш email" name="reg__phone" id="reg__phone" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="reg__pass">Пароль<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="password" name="reg__pass" id="reg__pass" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="reg__pass-remember">Повторить пароль<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="password" name="reg__pass-remember" id="reg__pass-remember" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="c-personal-data">
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="reg__regulations" id="reg__regulations" checked>
+                                        <label class="c-checkbox" for="reg__regulations">Я ознакомлен с <a href="#">правилами
+                                            обработки</a> моих персональных данных.</label>
+                                    </div>
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="reg__dispatch" id="reg__dispatch">
+                                        <label class="c-checkbox" for="reg__dispatch">Я согласен получать рассылку с сайта на
+                                            электронную почту</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="l-button l-button__left">
-                                <button class="c-button c-button__width">Зарегитрироваться</button>
+                            <div class="popup-form__item">
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
                             </div>
-                        </div>
-                        <div class="popup-form__item">
-                            <p class="popup-new-user">Уже зарегистрированы? <br/>
-                                <a href="#">Войдите в личный кабинет</a></p>
-                        </div>
-                        <div class="popup-form__item">
+                            <div class="popup-form__item">
+                                <div class="l-button l-button__left">
+                                    <button class="c-button c-button__width">Зарегитрироваться</button>
+                                </div>
+                            </div>
+                            <div class="popup-form__item">
+                                <p class="popup-new-user">Уже зарегистрированы? <br/>
+                                    <a href="#">Войдите в личный кабинет</a></p>
+                            </div>
+                            <div class="popup-form__item">
 
-                            <div class="footer-social">
-                                <p class="footer-social__title">Войдите, используя аккаунт в соцсети: </p>
-                                <a class="footer-social__item" href="https://vk.com/cafeanderson">
-                                    <svg class="c-icon icon-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.16 13.76">
-                                        <path d="M13.41,1C12-.3,3-.06,1.66,1c-2.17,1.73-1,10.2-.09,11.75.47.8,2.59,1.1,4.91,1.1,2.83,0,6-.44,6.87-1,.56-.32.93-1.29,1.11-3,.33-2.89,0-7.91-1-8.91m.26,8.82c-.17,1.54-.5,2.24-.72,2.37-1.58.91-10,1.26-10.7.14A16.84,16.84,0,0,1,1.24,7c-.15-2.75.19-4.73.91-5.31,1.19-.95,9.7-1,10.72,0,.64.6,1.16,5,.79,8.24"
-                                              transform="translate(-0.42 -0.12)"/>
-                                        <path d="M9.47,7.25a11.85,11.85,0,0,0,1.36-1.4.79.79,0,1,0-1.23-1A9.83,9.83,0,0,1,8.15,6.28C8.08,5.42,8,4.45,7.84,3.36a.79.79,0,0,0-1.57.2,36.34,36.34,0,0,1,.37,6.16A6.7,6.7,0,0,1,4.57,5.87.79.79,0,1,0,3,6c.22,2.43,2.47,5.53,4,5.53a1,1,0,0,0,.76-.35,4.72,4.72,0,0,0,.49-2.71,3.11,3.11,0,0,1,2.21,2.12.79.79,0,0,0,.75.55.77.77,0,0,0,.24,0,.79.79,0,0,0,.51-1,4.52,4.52,0,0,0-2.5-2.86"/>
-                                    </svg>
-                                </a>
-                                <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/">
-                                    <svg class="c-icon icon-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.25 14.34">
-                                        <path d="M12.84,1.32C10.61.09,3-.1,1.17,1.35-.13,2.36.41,11.64,1,13.06s4,1.61,6.15,1.61h.43c1.44,0,4.83-.25,5.38-1.62.61-1.53,1.07-11-.18-11.73m-.56,11.44c-.2.51-1.87,1.06-4.66,1.12-3.16.07-5.58-.53-5.85-1.14C1,11.09.94,2.64,1.66,2,3,.9,10.1.74,12.43,2c.62.81.51,9.09-.15,10.76"
-                                              transform="translate(-0.38 -0.33)"/>
-                                        <path d="M6.75,2.67A2.69,2.69,0,0,0,5.31,5.29c0,.41,0,.89.06,1.42h0A.79.79,0,0,0,5.41,8.3h.06c.13,1.82.28,3.57.29,3.69a.79.79,0,0,0,.79.72h.07a.79.79,0,0,0,.72-.86S7.18,10,7,8.13L8.36,8A.79.79,0,0,0,8.2,6.42l-1.25.13c0-.48,0-.92-.05-1.29a1.14,1.14,0,0,1,.55-1.17,1,1,0,0,1,.93,0,.79.79,0,0,0,1-1.23,2.53,2.53,0,0,0-2.63-.21"/>
-                                    </svg>
-                                </a>
-                                <a class="footer-social__item" href="">
-                                    <svg class="c-icon icon-o" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.97 13.81">
-                                        <path d="M13.39,1.09C12.39.17,8.25,0,5.88.13c-1.62.08-3.67.31-4.28,1C.15,2.71.16,11.41,1.6,12.89c.89.91,4.21,1,5.6,1h.29c2.19,0,5-.29,5.89-1s1.06-3.42,1.1-5c.05-2-.1-6-1.08-6.86m.29,6.83c-.07,2.62-.47,4.11-.81,4.39s-2.49.77-5.39.8c-3.09,0-4.92-.38-5.31-.77-1-1.07-1.28-9.26,0-10.69C2.44,1.36,3.7,1,5.92.92c3-.14,6.35.22,6.94.76s.92,3,.83,6.25"/>
-                                        <path d="M7.68,3c-1,0-2.69.38-3.93,3a3.22,3.22,0,0,0,.08,3A4.38,4.38,0,0,0,7.1,11.1a3,3,0,0,0,.43,0,3.82,3.82,0,0,0,3-1.66,4.13,4.13,0,0,0,.65-4.15A4,4,0,0,0,7.68,3M9.26,8.51a2.18,2.18,0,0,1-1.92,1,2.84,2.84,0,0,1-2.1-1.34,1.65,1.65,0,0,1,0-1.53c.64-1.36,1.51-2.11,2.47-2.11h0A2.39,2.39,0,0,1,9.73,6a2.6,2.6,0,0,1-.48,2.54"/>
-                                    </svg>
-                                </a>
+                                <div class="footer-social">
+                                    <p class="footer-social__title">Войдите, используя аккаунт в соцсети: </p>
+                                    <a class="footer-social__item" href="https://vk.com/cafeanderson">
+                                        <svg class="c-icon icon-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.16 13.76">
+                                            <path d="M13.41,1C12-.3,3-.06,1.66,1c-2.17,1.73-1,10.2-.09,11.75.47.8,2.59,1.1,4.91,1.1,2.83,0,6-.44,6.87-1,.56-.32.93-1.29,1.11-3,.33-2.89,0-7.91-1-8.91m.26,8.82c-.17,1.54-.5,2.24-.72,2.37-1.58.91-10,1.26-10.7.14A16.84,16.84,0,0,1,1.24,7c-.15-2.75.19-4.73.91-5.31,1.19-.95,9.7-1,10.72,0,.64.6,1.16,5,.79,8.24"
+                                                  transform="translate(-0.42 -0.12)"/>
+                                            <path d="M9.47,7.25a11.85,11.85,0,0,0,1.36-1.4.79.79,0,1,0-1.23-1A9.83,9.83,0,0,1,8.15,6.28C8.08,5.42,8,4.45,7.84,3.36a.79.79,0,0,0-1.57.2,36.34,36.34,0,0,1,.37,6.16A6.7,6.7,0,0,1,4.57,5.87.79.79,0,1,0,3,6c.22,2.43,2.47,5.53,4,5.53a1,1,0,0,0,.76-.35,4.72,4.72,0,0,0,.49-2.71,3.11,3.11,0,0,1,2.21,2.12.79.79,0,0,0,.75.55.77.77,0,0,0,.24,0,.79.79,0,0,0,.51-1,4.52,4.52,0,0,0-2.5-2.86"/>
+                                        </svg>
+                                    </a>
+                                    <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/">
+                                        <svg class="c-icon icon-fb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.25 14.34">
+                                            <path d="M12.84,1.32C10.61.09,3-.1,1.17,1.35-.13,2.36.41,11.64,1,13.06s4,1.61,6.15,1.61h.43c1.44,0,4.83-.25,5.38-1.62.61-1.53,1.07-11-.18-11.73m-.56,11.44c-.2.51-1.87,1.06-4.66,1.12-3.16.07-5.58-.53-5.85-1.14C1,11.09.94,2.64,1.66,2,3,.9,10.1.74,12.43,2c.62.81.51,9.09-.15,10.76"
+                                                  transform="translate(-0.38 -0.33)"/>
+                                            <path d="M6.75,2.67A2.69,2.69,0,0,0,5.31,5.29c0,.41,0,.89.06,1.42h0A.79.79,0,0,0,5.41,8.3h.06c.13,1.82.28,3.57.29,3.69a.79.79,0,0,0,.79.72h.07a.79.79,0,0,0,.72-.86S7.18,10,7,8.13L8.36,8A.79.79,0,0,0,8.2,6.42l-1.25.13c0-.48,0-.92-.05-1.29a1.14,1.14,0,0,1,.55-1.17,1,1,0,0,1,.93,0,.79.79,0,0,0,1-1.23,2.53,2.53,0,0,0-2.63-.21"/>
+                                        </svg>
+                                    </a>
+                                    <a class="footer-social__item" href="">
+                                        <svg class="c-icon icon-o" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.97 13.81">
+                                            <path d="M13.39,1.09C12.39.17,8.25,0,5.88.13c-1.62.08-3.67.31-4.28,1C.15,2.71.16,11.41,1.6,12.89c.89.91,4.21,1,5.6,1h.29c2.19,0,5-.29,5.89-1s1.06-3.42,1.1-5c.05-2-.1-6-1.08-6.86m.29,6.83c-.07,2.62-.47,4.11-.81,4.39s-2.49.77-5.39.8c-3.09,0-4.92-.38-5.31-.77-1-1.07-1.28-9.26,0-10.69C2.44,1.36,3.7,1,5.92.92c3-.14,6.35.22,6.94.76s.92,3,.83,6.25"/>
+                                            <path d="M7.68,3c-1,0-2.69.38-3.93,3a3.22,3.22,0,0,0,.08,3A4.38,4.38,0,0,0,7.1,11.1a3,3,0,0,0,.43,0,3.82,3.82,0,0,0,3-1.66,4.13,4.13,0,0,0,.65-4.15A4,4,0,0,0,7.68,3M9.26,8.51a2.18,2.18,0,0,1-1.92,1,2.84,2.84,0,0,1-2.1-1.34,1.65,1.65,0,0,1,0-1.53c.64-1.36,1.51-2.11,2.47-2.11h0A2.39,2.39,0,0,1,9.73,6a2.6,2.6,0,0,1-.48,2.54"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </div><!--popup-body-->
-                <svg class="icon-bird-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.54 88.65">
-                    <title>icon-bird-up</title>
-                    <path d="M.65,78.8C5.31,81,11,80.35,16,80a90.75,90.75,0,0,0,20-3.45c17.8-5.21,40-15.07,44.86-34.9,2.09-8.57,1.34-18.47-3.09-26.22C75,10.7,70.31,6.23,64.89,4.76,59,3.16,55.09,6.09,51.17,10.14a39,39,0,0,0-6.86,9.73C40.76,27,36.89,33.92,33,40.87c-4.13,7.28-8.41,14.91-14.14,21.08a86.27,86.27,0,0,1-8.88,7.81c-3,2.46-5.83,5-9.28,6.88A1.23,1.23,0,0,0,.65,78.8Zm3.68-1.37a69.52,69.52,0,0,0,6.15-4.76c3-2.52,6.19-4.9,9-7.67C24.9,59.66,29,52.94,32.83,46.42c4.11-7,8.57-14.07,12-21.4a57,57,0,0,1,6.25-10.62C53,12,55.09,9.73,58,8.53c5.61-2.31,11.72,1.09,15.21,5.17S78.4,23.23,79,28.47c1.24,11.3-2.76,21.32-11.05,29S49,69.81,38.41,73.2a92.31,92.31,0,0,1-19.23,4.09C14.8,77.71,8.94,78.58,4.33,77.43Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M54.57,89.65a87.73,87.73,0,0,1-3.3-14.19c-.93-5.33-2-11-1.93-16.4,0-1.63,2.72-1.62,2.71,0,0,5.57,1,11.54,2.06,17a82.38,82.38,0,0,0,3.32,13.57Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M47.2,89.65c-.35-1.06-.67-2.12-1-3.12-2.17-6.82-3.29-13.9-5-20.83-.4-1.62,2.23-2.22,2.62-.66,1.4,5.68,2.4,11.46,3.91,17.11.52,1.94,1.12,4.87,2.08,7.5Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M5,57.78c3.18,2.75,8.71,3.08,12.72,3.17a33.43,33.43,0,0,0,13.71-2.2A29.31,29.31,0,0,0,47.89,39.69c.43-1.55,3.06-.93,2.61.68a31.75,31.75,0,0,1-19,21.07,38.17,38.17,0,0,1-15.45,2c-4.37-.26-9.56-.9-13-3.85C1.73,58.41,3.75,56.72,5,57.78Z"
-                          transform="translate(0 -1)"/>
-                    <path d="M60.08,20.27a2.19,2.19,0,1,1,0,4.37A2.19,2.19,0,1,1,60.08,20.27Z" transform="translate(0 -1)"/>
-                    <path d="M71.78,9.86c3.54-2.77,6.88-5.79,10.41-8.56.87-.69,2.78-.13,2.26,1.23-1.81,4.8-3.67,9.61-6.73,13.78-.95,1.29-3.34.09-2.34-1.28A41.13,41.13,0,0,0,80,6.4c-2,1.67-4,3.34-6,4.94l-.06.09-.26.29a1.42,1.42,0,0,1-2.13-.26l0-.08A1.21,1.21,0,0,1,71.78,9.86Z"
-                          transform="translate(0 -1)"/>
-                </svg>
-                <img class="popup-bg__img" src="./img/popup-bg_authorization.jpg" alt="">
+                        </form>
+                    </div><!--popup-body-->
+                    <svg class="icon-bird-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.54 88.65">
+                        <title>icon-bird-up</title>
+                        <path d="M.65,78.8C5.31,81,11,80.35,16,80a90.75,90.75,0,0,0,20-3.45c17.8-5.21,40-15.07,44.86-34.9,2.09-8.57,1.34-18.47-3.09-26.22C75,10.7,70.31,6.23,64.89,4.76,59,3.16,55.09,6.09,51.17,10.14a39,39,0,0,0-6.86,9.73C40.76,27,36.89,33.92,33,40.87c-4.13,7.28-8.41,14.91-14.14,21.08a86.27,86.27,0,0,1-8.88,7.81c-3,2.46-5.83,5-9.28,6.88A1.23,1.23,0,0,0,.65,78.8Zm3.68-1.37a69.52,69.52,0,0,0,6.15-4.76c3-2.52,6.19-4.9,9-7.67C24.9,59.66,29,52.94,32.83,46.42c4.11-7,8.57-14.07,12-21.4a57,57,0,0,1,6.25-10.62C53,12,55.09,9.73,58,8.53c5.61-2.31,11.72,1.09,15.21,5.17S78.4,23.23,79,28.47c1.24,11.3-2.76,21.32-11.05,29S49,69.81,38.41,73.2a92.31,92.31,0,0,1-19.23,4.09C14.8,77.71,8.94,78.58,4.33,77.43Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M54.57,89.65a87.73,87.73,0,0,1-3.3-14.19c-.93-5.33-2-11-1.93-16.4,0-1.63,2.72-1.62,2.71,0,0,5.57,1,11.54,2.06,17a82.38,82.38,0,0,0,3.32,13.57Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M47.2,89.65c-.35-1.06-.67-2.12-1-3.12-2.17-6.82-3.29-13.9-5-20.83-.4-1.62,2.23-2.22,2.62-.66,1.4,5.68,2.4,11.46,3.91,17.11.52,1.94,1.12,4.87,2.08,7.5Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M5,57.78c3.18,2.75,8.71,3.08,12.72,3.17a33.43,33.43,0,0,0,13.71-2.2A29.31,29.31,0,0,0,47.89,39.69c.43-1.55,3.06-.93,2.61.68a31.75,31.75,0,0,1-19,21.07,38.17,38.17,0,0,1-15.45,2c-4.37-.26-9.56-.9-13-3.85C1.73,58.41,3.75,56.72,5,57.78Z"
+                              transform="translate(0 -1)"/>
+                        <path d="M60.08,20.27a2.19,2.19,0,1,1,0,4.37A2.19,2.19,0,1,1,60.08,20.27Z" transform="translate(0 -1)"/>
+                        <path d="M71.78,9.86c3.54-2.77,6.88-5.79,10.41-8.56.87-.69,2.78-.13,2.26,1.23-1.81,4.8-3.67,9.61-6.73,13.78-.95,1.29-3.34.09-2.34-1.28A41.13,41.13,0,0,0,80,6.4c-2,1.67-4,3.34-6,4.94l-.06.09-.26.29a1.42,1.42,0,0,1-2.13-.26l0-.08A1.21,1.21,0,0,1,71.78,9.86Z"
+                              transform="translate(0 -1)"/>
+                    </svg>
+                    <img class="popup-bg__img" src="./img/popup-bg_authorization.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -2339,33 +2343,34 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <div class="popup-title">
-                    <div class="popup-city__title">
-                        <div class="popup-city__title-text">Ваш город</div>
-                        <div class="popup-city__title-place">Александровск-Сахалинск?</div>
+                <div class="popup-box">
+                    <div class="popup-title">
+                        <div class="popup-city__title">
+                            <div class="popup-city__title-text">Ваш город</div>
+                            <div class="popup-city__title-place">Александровск-Сахалинск?</div>
+                        </div>
+                        <span class="popup-close"></span>
                     </div>
-                    <span class="popup-close"></span>
-                </div>
-                <div class="popup-body">
-                    <div class="l-button l-button__center">
-                        <button class="c-button c-button__default">Да</button>
-                    </div>
+                    <div class="popup-body">
+                        <div class="l-button l-button__center">
+                            <button class="c-button c-button__default">Да</button>
+                        </div>
 
-                    <div class="popup-city__text"><span>или, выберите другой город:</span></div>
-                    <div class="popup-city__list">
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">москва</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Тюмень</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Красногорск</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Ярославль</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Зеленоград</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Нижний Новгород</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Королёв</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Алматы</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Ногинск</a></div>
-                        <div class="popup-city__item"><a class="popup-city__link" href="#">Астана</a></div>
+                        <div class="popup-city__text"><span>или, выберите другой город:</span></div>
+                        <div class="popup-city__list">
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">москва</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Тюмень</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Красногорск</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Ярославль</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Зеленоград</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Нижний Новгород</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Королёв</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Алматы</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Ногинск</a></div>
+                            <div class="popup-city__item"><a class="popup-city__link" href="#">Астана</a></div>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -2422,91 +2427,93 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <h3 class="popup-title">Заказать звонок <span class="popup-close"></span></h3>
-                <div class="popup-body">
-                    <div class="mobile-request-call">
-                        <div class="mobile-request-call_sub-title">Ваш город</div>
-                        <div class="mobile-request-call_city">
-                            Алексанровск-Сахалинск
-                            <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
-                        </div>
-                        <div class="mobile-request-call__phone">
-                            <div class="mobile-request-call__phone-number">+7 (495) 125 4907</div>
-                            <div class="mobile-request-call__phone-icon">
-                                <img src="./img/icons/icon-recuest__phone.png" alt="">
+                <div class="popup-box">
+                    <h3 class="popup-title">Заказать звонок <span class="popup-close"></span></h3>
+                    <div class="popup-body">
+                        <div class="mobile-request-call">
+                            <div class="mobile-request-call_sub-title">Ваш город</div>
+                            <div class="mobile-request-call_city">
+                                Алексанровск-Сахалинск
+                                <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
                             </div>
+                            <div class="mobile-request-call__phone">
+                                <div class="mobile-request-call__phone-number">+7 (495) 125 4907</div>
+                                <div class="mobile-request-call__phone-icon">
+                                    <img src="./img/icons/icon-recuest__phone.png" alt="">
+                                </div>
+                            </div>
+                            <a class="mobile-request-call_inquiry">
+                                Запросить обратный звонок
+                                <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
+                            </a>
                         </div>
-                        <a class="mobile-request-call_inquiry">
-                            Запросить обратный звонок
-                            <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
-                        </a>
-                    </div>
 
-                    <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
-                        <div class="popup-form__item">
-                            <label class="c-label" for="request-call__name">Ваше имя</label>
-                            <input class="c-input" type="text" placeholder="ваше имя" name="request-call__name" id="request-call__name" autofocus>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="укажите номер телефона" name="request-call__tel"
-                                   id="request-call__tel" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="request-call__comment">Комментарий<span class="c-obligatory-field">*</span></label>
-                            <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4"
-                                      placeholder="желательно заполнить" required></textarea>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="c-personal-data">
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="request-call__regulations" id="request-call__regulations" checked>
-                                    <label class="c-checkbox" for="request-call__regulations">Я ознакомлен с
-                                        <a href="#">правилами
-                                            обработки</a> моих персональных данных.</label>
-                                </div>
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="request-call__dispatch" id="request-call__dispatch">
-                                    <label class="c-checkbox" for="request-call__dispatch">Я согласен получать рассылку с сайта на
-                                        электронную почту</label>
+                        <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="request-call__name">Ваше имя</label>
+                                <input class="c-input" type="text" placeholder="ваше имя" name="request-call__name" id="request-call__name" autofocus>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="укажите номер телефона" name="request-call__tel"
+                                       id="request-call__tel" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="request-call__comment">Комментарий<span class="c-obligatory-field">*</span></label>
+                                <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4"
+                                          placeholder="желательно заполнить" required></textarea>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="c-personal-data">
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="request-call__regulations" id="request-call__regulations" checked>
+                                        <label class="c-checkbox" for="request-call__regulations">Я ознакомлен с
+                                            <a href="#">правилами
+                                                обработки</a> моих персональных данных.</label>
+                                    </div>
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="request-call__dispatch" id="request-call__dispatch">
+                                        <label class="c-checkbox" for="request-call__dispatch">Я согласен получать рассылку с сайта на
+                                            электронную почту</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="l-button l-button__left">
-                            <button class="c-button c-button__default">Заказать</button>
-                        </div>
-                    </form>
-                </div><!--popup-body-->
-                <svg class="icon-giraffe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.98 155.66">
-                    <title>icon-giraffe</title>
-                    <path d="M46.83,125.18a25.2,25.2,0,0,0,10-9.33l0-.06a135.7,135.7,0,0,0,34,29.34c32.59,19.78,56.2,15.09,74.32-14.76s11.38-53-21.21-72.74A135.7,135.7,0,0,0,102.21,41l0-.06a25.2,25.2,0,0,0,3.67-13.17,34.6,34.6,0,0,0-5.5-17.5c-3.62-5.69-8-8.93-11.93-8.91C79.65,1.47,74.33,16.95,74.4,28A33.11,33.11,0,0,0,76.21,38.8q-3.55.19-6.83.69L56.88,19.92a9,9,0,1,0-3.54,2.22L65,40.33C54.32,42.79,46.3,47.92,41.72,55.47S36.29,72.42,39,82.93L17.59,81a8.81,8.81,0,1,0-.34,4.17l23,2.06q1.08,3.21,2.59,6.52a33.14,33.14,0,0,0-10.4,3.36C22.59,102.18,11.33,114,15.35,121.9c1.81,3.52,6.69,5.89,13.41,6.47A34.57,34.57,0,0,0,46.83,125.18ZM46.47,11.36A4.69,4.69,0,1,1,48,17.8,4.69,4.69,0,0,1,46.47,11.36Zm-40,75a4.69,4.69,0,1,1,6.44-1.57A4.69,4.69,0,0,1,6.44,86.35ZM42.6,115.06a18.11,18.11,0,0,1-8.6,1.76c-3.08-.12-4.51-1-4.72-1.42s0-1.15.61-2.11a21.57,21.57,0,0,1,8.16-7.11,16,16,0,0,1,7.23-1.92c1.66,0,2.88.5,3.27,1.26C49.47,107.32,47.64,112.47,42.6,115.06ZM161.55,128.2c-16.41,27-36.9,31.6-66.15,14.73-7.91-6.36-4-28.52,8.75-49.56s30.75-34.83,40-30.6C172.56,80.92,177.94,101.19,161.55,128.2ZM86.65,36.11A16,16,0,0,1,85,28.81c0-6.44,2.74-12,4.13-12,.46,0,1.9.86,3.44,3.53A18.09,18.09,0,0,1,95,28.75c0,5.66-3.69,9.67-5.72,9.68C88.42,38.43,87.44,37.57,86.65,36.11ZM78.58,28c-.07-10.85,5-22.36,9.92-22.39,2.38,0,5.67,2.72,8.38,7a30.27,30.27,0,0,1,4.85,15.28,21,21,0,0,1-4,12.35c-.93-.16-1.86-.31-2.79-.45a13.82,13.82,0,0,0,1.88-2.44,16.41,16.41,0,0,0,2.33-8.59,22.14,22.14,0,0,0-3-10.49c-1.21-2.11-3.74-5.66-7.09-5.64-5.47,0-8.33,9.45-8.29,16.24A20,20,0,0,0,83,38.11c.12.22.25.41.37.61-.91,0-1.81-.05-2.7-.05A28.12,28.12,0,0,1,78.58,28ZM45.3,57.64c12.19-20.09,54.7-19.42,91.36.65-11.11,2.44-25.08,14.77-36.09,32.91S85.1,127.39,88.05,138.39C53.32,115.13,33.11,77.73,45.3,57.64ZM19.08,120c-2.23-4.35,5.62-14.19,15.28-19.14a28.19,28.19,0,0,1,10.43-3.09c.41.78.85,1.58,1.29,2.37-.24,0-.47,0-.71,0a20,20,0,0,0-9.22,2.37c-6,3.1-13.08,10-10.58,14.85,1.53,3,5.84,3.59,8.28,3.69a22.14,22.14,0,0,0,10.67-2.21,16.41,16.41,0,0,0,6.54-6A13.82,13.82,0,0,0,52.34,110c.55.76,1.11,1.52,1.68,2.27a21,21,0,0,1-9.11,9.24,30.24,30.24,0,0,1-15.79,2.75C24.11,123.77,20.16,122.11,19.08,120Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M130.89,113.24c-4.93-1.53-9.4-.23-10.42,3.06s1.94,6.89,6.86,8.42c4.4,1.37,8.44.47,10-2.07a4.48,4.48,0,0,0,.44-1c1-3.27-1.94-6.88-6.87-8.42Zm2.87,7.18c-.15.46-2.13,1.25-5.19.3s-4.25-2.73-4.11-3.18l0-.06c.27-.45,2.23-1.15,5.16-.24S133.9,120,133.76,120.42Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M132.69,96.77c-2.69,2.11-2.34,6.76.83,10.83s7.6,5.55,10.3,3.44a4.36,4.36,0,0,0,1-1.18,6.07,6.07,0,0,0,.66-4.09,13.21,13.21,0,0,0-7.31-9.37A5.41,5.41,0,0,0,132.69,96.77Zm7,6h0a8.26,8.26,0,0,1,1.7,3.61c.13.84,0,1.27-.15,1.35-.37.29-2.46-.2-4.43-2.72-1.83-2.35-1.92-4.39-1.62-4.88a.26.26,0,0,1,.07-.08c.1-.08.56-.14,1.34.19A8.24,8.24,0,0,1,139.69,102.78Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M78.32,107.79a2.09,2.09,0,0,0-.7-2.87A6.06,6.06,0,0,1,83.9,94.56,2.09,2.09,0,1,0,86.07,91a10.24,10.24,0,0,0-10.63,17.51A2.09,2.09,0,0,0,78.32,107.79Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M96.57,77.73a2.09,2.09,0,0,0-.7-2.87,6.06,6.06,0,0,1,6.29-10.36,2.09,2.09,0,0,0,2.17-3.58A10.24,10.24,0,0,0,93.69,78.43,2.09,2.09,0,0,0,96.57,77.73Z"
-                          transform="translate(0 -1.42)"/>
-                </svg>
-                <svg class="icon-bird-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.4 73.91"><title>
-                    icon-bird-down</title>
-                    <path d="M1.44,9.87A54.13,54.13,0,0,0,11.5,12.42a77.94,77.94,0,0,0,10.4,1.74c7.43.49,14.9-.84,22.06-2.09,6.82-1.19,13.59-2.41,20.3-4a33.25,33.25,0,0,1,10.39-.73c5,.43,9.22,1.48,11.81,6.46,2.38,4.58,2.4,10.34,1,14.92-2.23,7.43-8.07,13.53-14.81,16.91-15.58,7.82-35.44-2-49.63-11.38A90.3,90.3,0,0,1,8.61,22.37C5.37,19.09,1.5,15.54.05,11.08A1,1,0,0,1,1.44,9.87ZM12.35,23A91.56,91.56,0,0,0,26.7,34c8.66,5.45,18.11,10.16,28,11.57S73.53,44.16,80,36.93a22.2,22.2,0,0,0,5.89-12.3c.47-4.72-1.1-10.86-6-13.44a15.65,15.65,0,0,0-8-1.47,47.72,47.72,0,0,0-10.58,1.65c-6.77,1.74-14,2.64-21,3.74-6.49,1-13.27,2-20,1.23C16.87,16,13.42,15.1,10,14.43a63.73,63.73,0,0,1-6.79-1.57C5.27,16.69,9.4,20.25,12.35,23Z"
-                          transform="translate(0 -0.85)"/>
-                    <path d="M56.88,21.63c-3,2-7.67,1.66-11.07,1.3a28.42,28.42,0,0,1-11.33-3.34A24.92,24.92,0,0,1,22.65,1.75C22.45.39,20.17.64,20.37,2A27,27,0,0,0,34.14,21.86,32.45,32.45,0,0,0,47,25.18c3.71.25,8.16.28,11.36-1.84C59.54,22.52,58,20.87,56.88,21.63Z"
-                          transform="translate(0 -0.85)"/>
-                    <path d="M73.33,24.45a1.86,1.86,0,1,0,0,3.72A1.86,1.86,0,1,0,73.33,24.45Z" transform="translate(0 -0.85)"/>
-                    <path d="M75.54,44.23c2.83,2.57,5.46,5.34,8.28,7.92.7.64,2.34.28,2-.9-1.23-4.18-2.5-8.38-4.83-12.11-.72-1.15-2.83-.29-2.06.94a35,35,0,0,1,3.4,7.61c-1.57-1.54-3.14-3.08-4.76-4.57l0-.08-.2-.26a1.21,1.21,0,0,0-1.82.09l0,.07A1,1,0,0,0,75.54,44.23Z"
-                          transform="translate(0 -0.85)"/>
-                    <path d="M56.23,73.61a82.62,82.62,0,0,1-9.68-29.18H44.2a85,85,0,0,0,10,30.28" transform="translate(0 -0.85)"/>
-                    <path d="M63.76,73.75A49.48,49.48,0,0,1,56.1,46.89H53.79a51.19,51.19,0,0,0,7.94,27.87"
-                          transform="translate(0 -0.85)"/>
-                </svg>
-                <img class="popup-bg__img" src="./img/popup-bg_request-call.png" alt="">
+                            <div class="l-button l-button__left">
+                                <button class="c-button c-button__default">Заказать</button>
+                            </div>
+                        </form>
+                    </div><!--popup-body-->
+                    <svg class="icon-giraffe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.98 155.66">
+                        <title>icon-giraffe</title>
+                        <path d="M46.83,125.18a25.2,25.2,0,0,0,10-9.33l0-.06a135.7,135.7,0,0,0,34,29.34c32.59,19.78,56.2,15.09,74.32-14.76s11.38-53-21.21-72.74A135.7,135.7,0,0,0,102.21,41l0-.06a25.2,25.2,0,0,0,3.67-13.17,34.6,34.6,0,0,0-5.5-17.5c-3.62-5.69-8-8.93-11.93-8.91C79.65,1.47,74.33,16.95,74.4,28A33.11,33.11,0,0,0,76.21,38.8q-3.55.19-6.83.69L56.88,19.92a9,9,0,1,0-3.54,2.22L65,40.33C54.32,42.79,46.3,47.92,41.72,55.47S36.29,72.42,39,82.93L17.59,81a8.81,8.81,0,1,0-.34,4.17l23,2.06q1.08,3.21,2.59,6.52a33.14,33.14,0,0,0-10.4,3.36C22.59,102.18,11.33,114,15.35,121.9c1.81,3.52,6.69,5.89,13.41,6.47A34.57,34.57,0,0,0,46.83,125.18ZM46.47,11.36A4.69,4.69,0,1,1,48,17.8,4.69,4.69,0,0,1,46.47,11.36Zm-40,75a4.69,4.69,0,1,1,6.44-1.57A4.69,4.69,0,0,1,6.44,86.35ZM42.6,115.06a18.11,18.11,0,0,1-8.6,1.76c-3.08-.12-4.51-1-4.72-1.42s0-1.15.61-2.11a21.57,21.57,0,0,1,8.16-7.11,16,16,0,0,1,7.23-1.92c1.66,0,2.88.5,3.27,1.26C49.47,107.32,47.64,112.47,42.6,115.06ZM161.55,128.2c-16.41,27-36.9,31.6-66.15,14.73-7.91-6.36-4-28.52,8.75-49.56s30.75-34.83,40-30.6C172.56,80.92,177.94,101.19,161.55,128.2ZM86.65,36.11A16,16,0,0,1,85,28.81c0-6.44,2.74-12,4.13-12,.46,0,1.9.86,3.44,3.53A18.09,18.09,0,0,1,95,28.75c0,5.66-3.69,9.67-5.72,9.68C88.42,38.43,87.44,37.57,86.65,36.11ZM78.58,28c-.07-10.85,5-22.36,9.92-22.39,2.38,0,5.67,2.72,8.38,7a30.27,30.27,0,0,1,4.85,15.28,21,21,0,0,1-4,12.35c-.93-.16-1.86-.31-2.79-.45a13.82,13.82,0,0,0,1.88-2.44,16.41,16.41,0,0,0,2.33-8.59,22.14,22.14,0,0,0-3-10.49c-1.21-2.11-3.74-5.66-7.09-5.64-5.47,0-8.33,9.45-8.29,16.24A20,20,0,0,0,83,38.11c.12.22.25.41.37.61-.91,0-1.81-.05-2.7-.05A28.12,28.12,0,0,1,78.58,28ZM45.3,57.64c12.19-20.09,54.7-19.42,91.36.65-11.11,2.44-25.08,14.77-36.09,32.91S85.1,127.39,88.05,138.39C53.32,115.13,33.11,77.73,45.3,57.64ZM19.08,120c-2.23-4.35,5.62-14.19,15.28-19.14a28.19,28.19,0,0,1,10.43-3.09c.41.78.85,1.58,1.29,2.37-.24,0-.47,0-.71,0a20,20,0,0,0-9.22,2.37c-6,3.1-13.08,10-10.58,14.85,1.53,3,5.84,3.59,8.28,3.69a22.14,22.14,0,0,0,10.67-2.21,16.41,16.41,0,0,0,6.54-6A13.82,13.82,0,0,0,52.34,110c.55.76,1.11,1.52,1.68,2.27a21,21,0,0,1-9.11,9.24,30.24,30.24,0,0,1-15.79,2.75C24.11,123.77,20.16,122.11,19.08,120Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M130.89,113.24c-4.93-1.53-9.4-.23-10.42,3.06s1.94,6.89,6.86,8.42c4.4,1.37,8.44.47,10-2.07a4.48,4.48,0,0,0,.44-1c1-3.27-1.94-6.88-6.87-8.42Zm2.87,7.18c-.15.46-2.13,1.25-5.19.3s-4.25-2.73-4.11-3.18l0-.06c.27-.45,2.23-1.15,5.16-.24S133.9,120,133.76,120.42Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M132.69,96.77c-2.69,2.11-2.34,6.76.83,10.83s7.6,5.55,10.3,3.44a4.36,4.36,0,0,0,1-1.18,6.07,6.07,0,0,0,.66-4.09,13.21,13.21,0,0,0-7.31-9.37A5.41,5.41,0,0,0,132.69,96.77Zm7,6h0a8.26,8.26,0,0,1,1.7,3.61c.13.84,0,1.27-.15,1.35-.37.29-2.46-.2-4.43-2.72-1.83-2.35-1.92-4.39-1.62-4.88a.26.26,0,0,1,.07-.08c.1-.08.56-.14,1.34.19A8.24,8.24,0,0,1,139.69,102.78Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M78.32,107.79a2.09,2.09,0,0,0-.7-2.87A6.06,6.06,0,0,1,83.9,94.56,2.09,2.09,0,1,0,86.07,91a10.24,10.24,0,0,0-10.63,17.51A2.09,2.09,0,0,0,78.32,107.79Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M96.57,77.73a2.09,2.09,0,0,0-.7-2.87,6.06,6.06,0,0,1,6.29-10.36,2.09,2.09,0,0,0,2.17-3.58A10.24,10.24,0,0,0,93.69,78.43,2.09,2.09,0,0,0,96.57,77.73Z"
+                              transform="translate(0 -1.42)"/>
+                    </svg>
+                    <svg class="icon-bird-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.4 73.91"><title>
+                        icon-bird-down</title>
+                        <path d="M1.44,9.87A54.13,54.13,0,0,0,11.5,12.42a77.94,77.94,0,0,0,10.4,1.74c7.43.49,14.9-.84,22.06-2.09,6.82-1.19,13.59-2.41,20.3-4a33.25,33.25,0,0,1,10.39-.73c5,.43,9.22,1.48,11.81,6.46,2.38,4.58,2.4,10.34,1,14.92-2.23,7.43-8.07,13.53-14.81,16.91-15.58,7.82-35.44-2-49.63-11.38A90.3,90.3,0,0,1,8.61,22.37C5.37,19.09,1.5,15.54.05,11.08A1,1,0,0,1,1.44,9.87ZM12.35,23A91.56,91.56,0,0,0,26.7,34c8.66,5.45,18.11,10.16,28,11.57S73.53,44.16,80,36.93a22.2,22.2,0,0,0,5.89-12.3c.47-4.72-1.1-10.86-6-13.44a15.65,15.65,0,0,0-8-1.47,47.72,47.72,0,0,0-10.58,1.65c-6.77,1.74-14,2.64-21,3.74-6.49,1-13.27,2-20,1.23C16.87,16,13.42,15.1,10,14.43a63.73,63.73,0,0,1-6.79-1.57C5.27,16.69,9.4,20.25,12.35,23Z"
+                              transform="translate(0 -0.85)"/>
+                        <path d="M56.88,21.63c-3,2-7.67,1.66-11.07,1.3a28.42,28.42,0,0,1-11.33-3.34A24.92,24.92,0,0,1,22.65,1.75C22.45.39,20.17.64,20.37,2A27,27,0,0,0,34.14,21.86,32.45,32.45,0,0,0,47,25.18c3.71.25,8.16.28,11.36-1.84C59.54,22.52,58,20.87,56.88,21.63Z"
+                              transform="translate(0 -0.85)"/>
+                        <path d="M73.33,24.45a1.86,1.86,0,1,0,0,3.72A1.86,1.86,0,1,0,73.33,24.45Z" transform="translate(0 -0.85)"/>
+                        <path d="M75.54,44.23c2.83,2.57,5.46,5.34,8.28,7.92.7.64,2.34.28,2-.9-1.23-4.18-2.5-8.38-4.83-12.11-.72-1.15-2.83-.29-2.06.94a35,35,0,0,1,3.4,7.61c-1.57-1.54-3.14-3.08-4.76-4.57l0-.08-.2-.26a1.21,1.21,0,0,0-1.82.09l0,.07A1,1,0,0,0,75.54,44.23Z"
+                              transform="translate(0 -0.85)"/>
+                        <path d="M56.23,73.61a82.62,82.62,0,0,1-9.68-29.18H44.2a85,85,0,0,0,10,30.28" transform="translate(0 -0.85)"/>
+                        <path d="M63.76,73.75A49.48,49.48,0,0,1,56.1,46.89H53.79a51.19,51.19,0,0,0,7.94,27.87"
+                              transform="translate(0 -0.85)"/>
+                    </svg>
+                    <img class="popup-bg__img" src="./img/popup-bg_request-call.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -2517,51 +2524,53 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <h3 class="popup-title">Написать нам <span class="popup-close"></span></h3>
-                <div class="popup-body">
-                    <form action="#" class="popup-form" id="popup__write-to-us">
-                        <div class="popup-form__item">
-                            <label class="c-label" for="write-to-us__name">Ваше имя</label>
-                            <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
-                                   id="write-to-us__name">
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="write-to-us__email">Email<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="write-to-us__message">Ваше сообщение<span
-                                    class="c-obligatory-field">*</span></label>
-                            <textarea class="c-input" name="write-to-us__message" id="write-to-us__message" rows="4"
-                                      placeholder="текст сообщения" required></textarea>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="c-personal-data">
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="write-to-us__regulations" id="write-to-us__regulations" checked>
-                                    <label class="c-checkbox" for="write-to-us__regulations">Я ознакомлен с <a href="#">правилами
-                                        обработки</a> моих персональных данных.</label>
-                                </div>
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="write-to-us__dispatch" id="write-to-us__dispatch">
-                                    <label class="c-checkbox" for="write-to-us__dispatch">Я согласен получать рассылку с сайта на
-                                        электронную почту</label>
+                <div class="popup-box">
+                    <h3 class="popup-title">Написать нам <span class="popup-close"></span></h3>
+                    <div class="popup-body">
+                        <form action="#" class="popup-form" id="popup__write-to-us">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="write-to-us__name">Ваше имя</label>
+                                <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
+                                       id="write-to-us__name">
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="write-to-us__email">Email<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="write-to-us__message">Ваше сообщение<span
+                                        class="c-obligatory-field">*</span></label>
+                                <textarea class="c-input" name="write-to-us__message" id="write-to-us__message" rows="4"
+                                          placeholder="текст сообщения" required></textarea>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="c-personal-data">
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="write-to-us__regulations" id="write-to-us__regulations" checked>
+                                        <label class="c-checkbox" for="write-to-us__regulations">Я ознакомлен с <a href="#">правилами
+                                            обработки</a> моих персональных данных.</label>
+                                    </div>
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="write-to-us__dispatch" id="write-to-us__dispatch">
+                                        <label class="c-checkbox" for="write-to-us__dispatch">Я согласен получать рассылку с сайта на
+                                            электронную почту</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="l-button l-button__left">
-                            <button class="c-button c-button__default">Отправить</button>
-                        </div>
-                    </form>
-                </div><!--popup-body-->
-                <svg class="icon-berry" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.28 99.89">
-                    <path d="M.87,31.29C5.52,23.38,13.66,14.9,23.43,17.73L13,3C12.17,1.72,14.22.28,15.1,1.52L45.73,45.06a.46.46,0,0,1-.24.7c-.7.19.14,1.67-1.8.76l-18-25.61c-.9,2.83-4.82,5.32-6.85,6.72-.67.46-1.36.88-2.06,1.28S15.58,29.67,15,30a22.7,22.7,0,0,1-13.25,2.9A1.1,1.1,0,0,1,.87,31.29Z"/>
-                    <path d="M62.73,100.11c-7.22,2.33-16.11-.3-26.43-7.82C21.48,81.48,16.79,68.86,23.45,57.66c4.74-8,14.63-13.32,21.07-11.79C45.17,39,53.17,29.75,62.41,28c6.22-1.21,17.64.13,24.26,22.67,2.3,7.82,4.94,22.51-3.14,33-3.43,4.44-7.73,6.61-10.65,6.9A17.08,17.08,0,0,1,66.94,98,15.66,15.66,0,0,1,62.73,100.11Zm9.39-11.79c2,.06,6.14-1.51,9.65-6.07,7.48-9.7,4.95-23.59,2.77-31C80,35.79,72.3,28.29,62.84,30.13,54,31.85,46.15,41.43,46.73,47.32l.19,2-1.78-.84c-4.68-2.22-14.94,2.21-19.79,10.37-3.53,5.93-6.63,17.93,12.25,31.7,9.57,7,18,9.58,24.44,7.5a14.39,14.39,0,0,0,9-8.91l.26-.79Z"/>
-                </svg>
-                <img class="popup-bg__img" src="./img/popup-bg_write-to-us.jpg" alt="">
+                            <div class="l-button l-button__left">
+                                <button class="c-button c-button__default">Отправить</button>
+                            </div>
+                        </form>
+                    </div><!--popup-body-->
+                    <svg class="icon-berry" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.28 99.89">
+                        <path d="M.87,31.29C5.52,23.38,13.66,14.9,23.43,17.73L13,3C12.17,1.72,14.22.28,15.1,1.52L45.73,45.06a.46.46,0,0,1-.24.7c-.7.19.14,1.67-1.8.76l-18-25.61c-.9,2.83-4.82,5.32-6.85,6.72-.67.46-1.36.88-2.06,1.28S15.58,29.67,15,30a22.7,22.7,0,0,1-13.25,2.9A1.1,1.1,0,0,1,.87,31.29Z"/>
+                        <path d="M62.73,100.11c-7.22,2.33-16.11-.3-26.43-7.82C21.48,81.48,16.79,68.86,23.45,57.66c4.74-8,14.63-13.32,21.07-11.79C45.17,39,53.17,29.75,62.41,28c6.22-1.21,17.64.13,24.26,22.67,2.3,7.82,4.94,22.51-3.14,33-3.43,4.44-7.73,6.61-10.65,6.9A17.08,17.08,0,0,1,66.94,98,15.66,15.66,0,0,1,62.73,100.11Zm9.39-11.79c2,.06,6.14-1.51,9.65-6.07,7.48-9.7,4.95-23.59,2.77-31C80,35.79,72.3,28.29,62.84,30.13,54,31.85,46.15,41.43,46.73,47.32l.19,2-1.78-.84c-4.68-2.22-14.94,2.21-19.79,10.37-3.53,5.93-6.63,17.93,12.25,31.7,9.57,7,18,9.58,24.44,7.5a14.39,14.39,0,0,0,9-8.91l.26-.79Z"/>
+                    </svg>
+                    <img class="popup-bg__img" src="./img/popup-bg_write-to-us.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -2572,101 +2581,102 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <h3 class="popup-title">Меню <span class="popup-close"></span></h3>
-                <div class="popup-body">
-                    <div class="popup-menu__list" data-simplebar>
-                        <div class="popup-menu__item">
-                            <div class="menu-card">
-                                <h2 class="menu-card__title">Зарядим радостью день!</h2>
-                                <div class="menu-card__body">
-                                    <h3 class="menu-card__name">КОМПЛЕКСНЫЙ ЗАВТРАК</h3>
-                                    <ul class="menu-card__list">
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">
-                                                <ul class="menu-card__list-vert">
-                                                    <li class="menu-card__list-vert-item">Апельсиновый свежевыжатый сок 0,2 л</li>
-                                                    <li class="menu-card__list-vert-item">Чай черный, зеленый или американо (на выбор)</li>
-                                                    <li class="menu-card__list-vert-item">Омлет классический, сырники, каша с вареньем и ягодами (на выбор)</li>
-                                                </ul>
-                                            </div>
-                                            <div class="menu-card__price">420.-</div>
-                                        </li>
-                                    </ul>
+                <div class="popup-box">
+                    <h3 class="popup-title">Меню <span class="popup-close"></span></h3>
+                    <div class="popup-body">
+                        <div class="popup-menu__list" data-simplebar>
+                            <div class="popup-menu__item">
+                                <div class="menu-card">
+                                    <h2 class="menu-card__title">Зарядим радостью день!</h2>
+                                    <div class="menu-card__body">
+                                        <h3 class="menu-card__name">КОМПЛЕКСНЫЙ ЗАВТРАК</h3>
+                                        <ul class="menu-card__list">
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">
+                                                    <ul class="menu-card__list-vert">
+                                                        <li class="menu-card__list-vert-item">Апельсиновый свежевыжатый сок 0,2 л</li>
+                                                        <li class="menu-card__list-vert-item">Чай черный, зеленый или американо (на выбор)</li>
+                                                        <li class="menu-card__list-vert-item">Омлет классический, сырники, каша с вареньем и ягодами (на выбор)</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="menu-card__price">420.-</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-menu__item">
+                                <div class="menu-card">
+                                    <h2 class="menu-card__title">Когда хочешь, тогда и завтрак!</h2>
+                                    <div class="menu-card__body">
+                                        <h3 class="menu-card__name">ЗАВТРАК ЦЕЛЫЙ ДЕНЬ</h3>
+                                        <ul class="menu-card__list">
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Горячий сэндвич с индейкой и миксом салатов</div>
+                                                <div class="menu-card__price">320.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Шотландская каша из овсянки с уткой конфи</div>
+                                                <div class="menu-card__price">290.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Домашняя гранола с йогуртом и малиной</div>
+                                                <div class="menu-card__price">340.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Йогуртовый десерт с манго</div>
+                                                <div class="menu-card__price">260.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Фирменные сырники от АндерСон с вареньем и сметаной</div>
+                                                <div class="menu-card__price">220.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Бельгийская вафля с кленовым сиропом (1 штука)*</div>
+                                                <div class="menu-card__price">270.-</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-menu__item">
+                                <div class="menu-card">
+                                    <h2 class="menu-card__title">Блин - лучший друг человека!</h2>
+                                    <div class="menu-card__body">
+                                        <h3 class="menu-card__name">ЗАВТРАК ЦЕЛЫЙ ДЕНЬ</h3>
+                                        <ul class="menu-card__list">
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Блины с уткой, соусом из манго и дижонской горчицы</div>
+                                                <div class="menu-card__price">390.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Блины с лососем и сметанным соусом с песто из зеленых трав</div>
+                                                <div class="menu-card__price">430.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">Блины с телятиной (подаются со сметаной)</div>
+                                                <div class="menu-card__price">380.-</div>
+                                            </li>
+                                            <li class="menu-card__product">
+                                                <div class="menu-card__product-item">
+                                                    <div>Блины классические и к ним на выбор:</div>
+                                                    <ul class="menu-card__list-hor">
+                                                        <li class="menu-card__list-hor-item">сметана</li>
+                                                        <li class="menu-card__list-hor-item">сгущенка</li>
+                                                        <li class="menu-card__list-hor-item">мед</li>
+                                                        <li class="menu-card__list-hor-item">кленовый сироп</li>
+                                                        <li class="menu-card__list-hor-item">варенье</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="menu-card__price">220.-</div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="popup-menu__item">
-                            <div class="menu-card">
-                                <h2 class="menu-card__title">Когда хочешь, тогда и завтрак!</h2>
-                                <div class="menu-card__body">
-                                    <h3 class="menu-card__name">ЗАВТРАК ЦЕЛЫЙ ДЕНЬ</h3>
-                                    <ul class="menu-card__list">
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Горячий сэндвич с индейкой и миксом салатов</div>
-                                            <div class="menu-card__price">320.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Шотландская каша из овсянки с уткой конфи</div>
-                                            <div class="menu-card__price">290.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Домашняя гранола с йогуртом и малиной</div>
-                                            <div class="menu-card__price">340.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Йогуртовый десерт с манго</div>
-                                            <div class="menu-card__price">260.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Фирменные сырники от АндерСон с вареньем и сметаной</div>
-                                            <div class="menu-card__price">220.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Бельгийская вафля с кленовым сиропом (1 штука)*</div>
-                                            <div class="menu-card__price">270.-</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="popup-menu__item">
-                            <div class="menu-card">
-                                <h2 class="menu-card__title">Блин - лучший друг человека!</h2>
-                                <div class="menu-card__body">
-                                    <h3 class="menu-card__name">ЗАВТРАК ЦЕЛЫЙ ДЕНЬ</h3>
-                                    <ul class="menu-card__list">
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Блины с уткой, соусом из манго и дижонской горчицы</div>
-                                            <div class="menu-card__price">390.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Блины с лососем и сметанным соусом с песто из зеленых трав</div>
-                                            <div class="menu-card__price">430.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">Блины с телятиной (подаются со сметаной)</div>
-                                            <div class="menu-card__price">380.-</div>
-                                        </li>
-                                        <li class="menu-card__product">
-                                            <div class="menu-card__product-item">
-                                                <div>Блины классические и к ним на выбор:</div>
-                                                <ul class="menu-card__list-hor">
-                                                    <li class="menu-card__list-hor-item">сметана</li>
-                                                    <li class="menu-card__list-hor-item">сгущенка</li>
-                                                    <li class="menu-card__list-hor-item">мед</li>
-                                                    <li class="menu-card__list-hor-item">кленовый сироп</li>
-                                                    <li class="menu-card__list-hor-item">варенье</li>
-                                                </ul>
-                                            </div>
-                                            <div class="menu-card__price">220.-</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--popup-body-->
-
+                    </div><!--popup-body-->
+                </div>
             </div>
         </div>
     </div>
@@ -2677,20 +2687,94 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <h3 class="popup-title">Восстановить пароль <span class="popup-close"></span></h3>
-                <div class="popup-body">
-                    <form action="#" class="popup-form mobile-request-call__form" id="popup__recovery-password">
-                        <div class="popup-form__item">
-                            <label class="c-label" for="popup__recovery-password-email">Для восстановления пароля введите email</label>
-                            <input class="c-input" type="text" placeholder="Укажите Ваш email" name="popup__recovery-password-email"
-                                   id="popup__recovery-password-email" required>
-                        </div>
-                        <div class="l-button l-button__left">
-                            <button class="c-button c-button__default">Отправить</button>
-                        </div>
-                    </form>
-                </div><!--popup-body-->
+                <div class="popup-box">
+                    <h3 class="popup-title">Восстановить пароль <span class="popup-close"></span></h3>
+                    <div class="popup-body">
+                        <form action="#" class="popup-form mobile-request-call__form" id="popup__recovery-password">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="popup__recovery-password-email">Для восстановления пароля введите email</label>
+                                <input class="c-input" type="text" placeholder="Укажите Ваш email" name="popup__recovery-password-email"
+                                       id="popup__recovery-password-email" required>
+                            </div>
+                            <div class="l-button l-button__left">
+                                <button class="c-button c-button__default">Отправить</button>
+                            </div>
+                        </form>
+                    </div><!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!--оставить отзыв-->
+<div class="mfp-wrap popup__review" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <div class="popup-box">
+                    <h3 class="popup-title">Оставить отзыв <span class="popup-close"></span></h3>
+                    <div class="popup-body">
+                        <form action="#" class="popup-form" id="popup__review">
+                            <div class="c-form__item">
+                                <input type="checkbox" name="popup-reviews-callback" id="popup-reviews-callback" checked>
+                                <label class="c-checkbox" for="popup-reviews-callback">Прошу срочно связаться со мной</label>
+                            </div>
+                            <div class="c-form__grid">
+                                <div class="c-form__col">
+                                    <label class="c-label">Тип отзыва<span class="c-obligatory-field">*</span></label>
+                                    <div class="reviews-form__type">
+                                        <i class="reviews-form__type-icon icon-rabbit-positive"></i>
+                                        <select name="popup-reviews-type" id="popup-reviews-type" class="c-select" required>
+                                            <option value="Похвалить">Похвалить</option>
+                                            <option value="Пожаловаться">Пожаловаться</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="c-form__col">
+                                    <label class="c-label">Кафе<span class="c-obligatory-field">*</span></label>
+                                    <select name="reviews-cafe" id="popup-reviews-cafe" class="c-select" required>
+                                        <option value="Все">Все</option>
+                                        <option value="Москва">Москва</option>
+                                        <option value="Тюмень">Тюмень</option>
+                                        <option value="Красногорск">Красногорск</option>
+                                        <option value="Ярославль">Ярославль</option>
+                                        <option value="Зеленоград">Зеленоград</option>
+                                        <option value="Нижний Новгород">Нижний Новгород</option>
+                                        <option value="Королёв">Королёв</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="reviews-textarea">Отзыв<span class="c-obligatory-field">*</span></label>
+                                <textarea class="c-input" name="popup-reviews-textarea" id="popup-reviews-textarea" rows="5" placeholder="Пожалуйста, оставьте Ваш отзыв. Ваше мнение очень важно для нас." required></textarea>
+                            </div>
+                            <div class="c-grid c-grid-between">
+                                <div class="c-col c-col-4">
+                                    <label class="c-label" for="popup-reviews-name">Имя<span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" placeholder="Ваше имя" name="popup-reviews-name" id="popup-reviews-name" required>
+                                </div>
+                                <div class="c-col c-col-4">
+                                    <label class="c-label" for="popup-reviews-email">Email<span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" placeholder="Укажите email" name="popup-reviews-email" id="popup-reviews-email" required>
+                                </div>
+                                <div class="c-col c-col-4">
+                                    <label class="c-label" for="popup-reviews-tel">Телефон</label>
+                                    <input class="c-input" type="text" placeholder="Укажите телефон" name="popup-reviews-tel" id="popup-reviews-tel">
+                                </div>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                            </div>
+                            <div class="l-button l-button__left">
+                                <button class="c-button c-button__default">Отправить</button>
+                            </div>
+                        </form>
+                        <div class="reviews-form__rabbit"></div>
+                    </div><!--popup-body-->
+                    <img class="popup-bg__img" src="./img/bg-reviews__form.jpg" alt="">
+                    <div class="popup__review-elem"></div>
+                </div>
             </div>
         </div>
     </div>

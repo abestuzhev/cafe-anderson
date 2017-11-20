@@ -541,6 +541,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     background: url(../img/icons/icon-positive.svg) 0 0 no-repeat;
 }
 
+.icon-rabbit-negative{
+    display: inline-block;
+    width: 2.2rem;
+    height: 3.1rem;
+    background: url(../img/icons/icon-negative.svg) 0 0 no-repeat;
+}
+
 .icon-negative {
     position: relative;
     width: 17px;
