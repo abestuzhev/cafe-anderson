@@ -32,6 +32,14 @@ body {
     padding: $height_header 0 $height_footer;
 }
 
+.page-text {
+    background-color: #fff !important;
+    padding: 3.1rem 2.8rem;
+    font-family: $font_serif;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+}
+
 //-------------------------------------------------preloader*/
 
 
