@@ -1878,9 +1878,10 @@ i.icon-chair {
 .cd-top {
   display: inline-block;
   position: fixed;
+  z-index: 11;
   width: 4.5rem;
   height: 4.5rem;
-  bottom: 12.4rem;
+  bottom: 14.9rem;
   right: 0rem;
   /* image replacement properties */
   overflow: hidden;
@@ -2438,7 +2439,8 @@ i.icon-chair {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative; }
   .footer-col__left {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1162,6 +1162,12 @@
     }
 }
 
+@media screen and (max-height:730px) {
+    .cafe-slider .fotorama__stage.fotorama__pointer {
+        height: 45rem !important;
+    }
+}
+
 @media screen and (max-height:600px) {
     .popup .popup-bg__img {
         right: -10rem;
@@ -1405,7 +1411,7 @@
     .footer-reviews {
         position: absolute;
         top: -.8rem;
-        right: 0rem;
+        right: -2rem;
         width: 12.4rem;
     }
 
