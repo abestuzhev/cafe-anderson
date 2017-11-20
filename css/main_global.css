@@ -1067,32 +1067,36 @@ i.icon-chair {
   margin-top: 40px;
   font-size: 0; }
   .c-breadcrumb__home {
-    width: 3.6rem;
+    width: 2.3rem;
     height: 1.9rem;
     display: inline-block;
     background: url(../img/icons/icon-house.svg) 0 0 no-repeat;
-    padding-right: 1.4rem;
     vertical-align: middle; }
+    .c-breadcrumb__home::after {
+      content: '';
+      border: none; }
   .c-breadcrumb__item {
     display: inline-block;
     position: relative;
-    padding-right: 1.4rem;
+    margin-right: 2rem;
     border: none;
     color: #9b9696;
-    margin-right: .7rem;
     font-size: 1.3rem;
     vertical-align: middle; }
-    .c-breadcrumb__item::after {
+    .c-breadcrumb__item::before {
       content: '';
       position: absolute;
-      right: 0;
+      right: -1.5rem;
       left: auto;
       top: .4rem;
       width: .6rem;
       height: .9rem;
       border: none;
       background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat; }
-    .c-breadcrumb__item:last-child::after {
+    .c-breadcrumb__item::after {
+      content: '';
+      right: 20px; }
+    .c-breadcrumb__item:last-child::before, .c-breadcrumb__item:last-child::after {
       display: none; }
 
 /*card------------------------------------------------------------*/

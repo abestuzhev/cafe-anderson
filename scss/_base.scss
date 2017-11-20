@@ -1131,28 +1131,33 @@ i.icon-chair {
     font-size: 0;
 
     &__home {
-        width: 3.6rem;
+        width: 2.3rem;
         height: 1.9rem;
         display: inline-block;
         background: url(../img/icons/icon-house.svg) 0 0 no-repeat;
-        padding-right: 1.4rem;
+        //padding-right: 1.4rem;
         vertical-align: middle;
+        
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 
     &__item {
         display: inline-block;
         position: relative;
-        padding-right: 1.4rem;
+        margin-right: 2rem;
         border: none;
         color: $color_text_bg;
-        margin-right: .7rem;
+        //margin-right: .7rem;
         font-size: 1.3rem;
         vertical-align: middle;
 
-        &::after {
+        &::before {
             content: '';
             position: absolute;
-            right: 0;
+            right: -1.5rem;
             left: auto;
             top: .4rem;
             width: .6rem;
@@ -1160,7 +1165,13 @@ i.icon-chair {
             border: none;
             background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
         }
+        
+        &::after {
+            content: '';
+            right: 20px;
+        }
 
+        &:last-child::before,
         &:last-child::after {
             display: none;
         }

@@ -1834,7 +1834,7 @@
     padding-bottom: 7rem;
 }
 
-.c-card-cafe-advantages {
+.c-card-cafe .c-card-cafe-advantages {
     position: absolute;
     bottom: 1rem;
     left: 1.5rem;
