@@ -822,6 +822,10 @@
         overflow-y: scroll;
         border-radius: 0;
     }
+
+    .cafe-list__one {
+        width: 100% !important;
+    }
 }
 
 @media (max-width:840px) {
