@@ -4276,9 +4276,11 @@ test popup
       line-height: .8;
       font-weight: 700;
       color: #553023;
-      float: left; }
+      float: left;
+      margin-right: .6rem; }
     .cafe-holiday-count__text {
-      padding-left: 7.9rem; }
+      float: left;
+      width: 52%; }
       .cafe-holiday-count__text span {
         display: inline-block;
         font-size: 1.2rem;

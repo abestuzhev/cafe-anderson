@@ -2165,11 +2165,13 @@ test popup
                 font-weight: 700;
                 color: #553023;
                 float: left;
+                margin-right: .6rem;
                 
             }
             
             &__text {
-                padding-left: 7.9rem;
+                float: left;
+                width: 52%;
                 
                 span {
                     display: inline-block;
