@@ -1127,7 +1127,7 @@ i.icon-chair {
     font-family: "PT Serif Caption";
     font-size: 1.7rem;
     color: #9b806f;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.9rem;
     border: none; }
   .c-card-cafe__img {
     display: block;
@@ -2278,7 +2278,8 @@ i.icon-chair {
                 transform: translate(-50%, -50%); }
   .header-city {
     /*выбор города*/
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    min-height: 1.5rem; }
   .header-contact {
     /*правая часть шапки*/
     font-size: 0;
@@ -2622,6 +2623,12 @@ i.icon-chair {
 
 main {
   padding-bottom: 12rem; }
+
+.mobile-item a {
+  color: #201600; }
+
+.mobile-item a:hover {
+  color: #201600; }
 
 .home-cafe:hover,
 .home-celebration:hover,
