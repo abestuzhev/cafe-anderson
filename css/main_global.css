@@ -2319,7 +2319,8 @@ i.icon-chair {
     display: inline-block;
     vertical-align: bottom;
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    min-height: 2.8rem; }
     .header-basket:hover .header-basket__count {
       -webkit-transform-origin: 0 center;
           -ms-transform-origin: 0 center;
@@ -2453,7 +2454,9 @@ i.icon-chair {
     top: 100%;
     left: 0;
     opacity: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    -webkit-box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2); }
   .header-submenu {
     font-family: "BebasNeue";
     display: -webkit-box;
