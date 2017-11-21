@@ -589,7 +589,7 @@
                     <ul class="header-menu">
                         <li class="header-menu__item"><a href="#" class="header-menu__link">Наши новости</a></li>
                         <li class="header-menu__item"><a href="#" class="header-menu__link">Бизнес с нами</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+                        <li class="header-menu__item header-menu__item--about"><a href="#" class="header-menu__link">О нас</a></li>
                     </ul>
                 </div>
 
@@ -723,7 +723,6 @@
                     <li class="header-mobile__item"><a class="header-mobile__link">Бизнес с нами</a></li>
                     <li class="header-mobile__item"><a class="header-mobile__link">Контакты</a></li>
                 </ul>
-
             </nav>
         </div>
 
@@ -745,14 +744,32 @@
         <section class="header-navigation">
             <div class="c-layout">
                 <nav class="header-navigation__list">
-                    <a href="#" class="header-navigation__item active">Вакансии</a>
-                    <a href="#" class="header-navigation__item">Отзывы</a>
-                    <a href="#" class="header-navigation__item">Наши партнеры</a>
-                    <a href="#" class="header-navigation__item">Контакты</a>
-
+                    <a href="#" class="header-navigation__item">
+                        <h2 class="header-navigation__title">Приходите в гости</h2>
+                        <h3 class="header-navigation__subtitle">Ближайшие к вам кафе</h3>
+                    </a>
+                    <a href="#" class="header-navigation__item">
+                        <h2 class="header-navigation__title">Праздничение</h2>
+                        <h3 class="header-navigation__subtitle">тортжество, банкеты и многое другое</h3>
+                    </a>
+                    <a href="#" class="header-navigation__item">
+                        <h2 class="header-navigation__title">тортики на заказ</h2>
+                        <h3 class="header-navigation__subtitle">на любой вкус, цвет и форму</h3>
+                    </a>
                 </nav>
             </div>
+            <section class="header-subnavigation">
+                <div class="c-layout">
+                    <nav class="header-submenu">
+                        <a href="#" class="header-submenu__item">Вакансии</a>
+                        <a href="#" class="header-submenu__item">Отзывы</a>
+                        <a href="#" class="header-submenu__item">Наши партнеры</a>
+                        <a href="#" class="header-submenu__item">Контакты</a>
+                    </nav>
+                </div>
+            </section>
         </section>
+
 
         <div class="c-layout">
             <nav class="c-breadcrumb">
@@ -2446,9 +2463,9 @@
                                 <label class="c-label" for="request-call__name">Ваше имя</label>
                                 <input class="c-input" type="text" placeholder="Ваше имя" name="request-call__name" id="request-call__name" autofocus>
                             </div>
-                            <div class="popup-form__item error">
+                            <div class="popup-form__item">
                                 <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
-                                <input class="c-input" type="text" placeholder="Укажите номер телефона" name="request-call__tel"
+                                <input class="c-input error" type="text" placeholder="Укажите номер телефона" name="request-call__tel"
                                        id="request-call__tel" required>
                             </div>
                             <div class="popup-form__item">

@@ -28,6 +28,15 @@ $(document).ready(function ($) {
     // $(".popup-basket__scroll").scrollBox();
     // $('#scrollbarY').tinyscrollbar();
 
+    /*hover в меню*/
+    $('.header-menu__item--about').hover( function(){
+       $('.header-subnavigation').addClass('is-visible');
+    });
+
+    $('.header-subnavigation').mouseleave(function(){
+        $(this).removeClass('is-visible');
+    });
+
 
     /*вписываем img в блок при любом размере изображения*/
     function fix_size() {
@@ -511,7 +520,7 @@ $(document).ready(function ($) {
             var valReview = $(this).val();
             var $icon = $(this).parents('.reviews-form__type').find('.reviews-form__type-icon');
 
-            if (valReview == 'Пожаловаться' ) {
+            if (valReview == 48 ) {
                 $icon.removeClass('icon-rabbit-positive');
                 $icon.addClass('icon-rabbit-negative');
             } else {

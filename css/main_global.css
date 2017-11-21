@@ -390,6 +390,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     border-color: #9acc4e;
     -webkit-box-shadow: 0 0 10px 0 #9acc4e;
             box-shadow: 0 0 10px 0 #9acc4e; }
+  .c-input::after {
+    content: '!!!!'; }
 
 .c-label {
   display: block;
@@ -485,38 +487,27 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   text-align: left;
   color: #9b9696; }
 
-.popup-form__item.error {
-  position: relative; }
-  .popup-form__item.error .c-input {
-    -webkit-box-shadow: 0 0 0 1px #ec3e3e;
-            box-shadow: 0 0 0 1px #ec3e3e;
-    border-color: #ec3e3e;
-    color: #ec3e3e; }
-    .popup-form__item.error .c-input:focus {
-      -webkit-box-shadow: 0 0 0 2px #ec3e3e, 0 0 10px 0 #ec3e3e;
-              box-shadow: 0 0 0 2px #ec3e3e, 0 0 10px 0 #ec3e3e; }
-  .popup-form__item.error::after {
-    content: '!';
-    position: absolute;
-    text-align: center;
-    line-height: 2.2rem;
-    color: #fff;
-    top: 3.9rem;
-    right: .8rem;
-    width: 2.2rem;
-    height: 2.2rem;
-    background-color: #ec3e3e;
-    border-radius: 5rem; }
-  .popup-form__item.error input::-webkit-input-placeholder {
+.c-input.error {
+  position: relative;
+  -webkit-box-shadow: 0 0 0 1px #ec3e3e;
+          box-shadow: 0 0 0 1px #ec3e3e;
+  border-color: #ec3e3e;
+  color: #ec3e3e;
+  background: url(../img/icons/icon-warning.png) 98% 50% no-repeat;
+  padding-right: 4rem; }
+  .c-input.error:focus {
+    -webkit-box-shadow: 0 0 0 2px #ec3e3e, 0 0 10px 0 #ec3e3e;
+            box-shadow: 0 0 0 2px #ec3e3e, 0 0 10px 0 #ec3e3e; }
+  .c-input.error input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #ec3e3e; }
-  .popup-form__item.error input::-moz-placeholder:first-letter {
+  .c-input.error input::-moz-placeholder:first-letter {
     /* Firefox 19+ */
     color: #ec3e3e; }
-  .popup-form__item.error input:-ms-input-placeholder:first-letter {
+  .c-input.error input:-ms-input-placeholder:first-letter {
     /* IE 10+ */
     color: #ec3e3e; }
-  .popup-form__item.error input:-moz-placeholder:first-letter {
+  .c-input.error input:-moz-placeholder:first-letter {
     /* Firefox 18- */
     color: #ec3e3e; }
 
@@ -2405,9 +2396,10 @@ i.icon-chair {
   .header-navigation {
     /*header--navigation*/
     font-family: "BebasNeue";
-    background-color: #7e5847;
+    background-color: #fdf7e8;
     -webkit-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
+    position: relative; }
     .header-navigation .active {
       color: #9acc4e; }
     .header-navigation__list {
@@ -2424,13 +2416,11 @@ i.icon-chair {
           -ms-flex-align: stretch;
               align-items: stretch; }
     .header-navigation__item {
-      width: 25%;
+      width: 33.3333%;
       text-align: center;
-      padding: 1.7rem 0;
+      padding: 1.3rem 0;
       border: none;
-      position: relative;
-      color: #fbf6e8;
-      font-size: 3rem; }
+      position: relative; }
       .header-navigation__item::after {
         content: '';
         position: absolute;
@@ -2440,7 +2430,7 @@ i.icon-chair {
         width: .3rem;
         height: 6rem;
         border: none;
-        background: url(../img/icons/icon-wave-white.svg) 0 0 no-repeat; }
+        background: url(../img/icons/icon-wave.svg) 0 0 no-repeat; }
       .header-navigation__item:last-child::after {
         content: '';
         display: none; }
@@ -2455,6 +2445,49 @@ i.icon-chair {
       font-size: 1.4rem;
       font-weight: 700;
       letter-spacing: .1rem; }
+  .header-subnavigation {
+    background-color: #7e5847;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden; }
+  .header-submenu {
+    font-family: "BebasNeue";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .header-submenu__item {
+      width: 25%;
+      text-align: center;
+      padding: 1.7rem 0;
+      border: none;
+      position: relative;
+      color: #fbf6e8;
+      font-size: 3rem; }
+      .header-submenu__item::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: auto;
+        top: .8rem;
+        width: .3rem;
+        height: 6rem;
+        border: none;
+        background: url(../img/icons/icon-wave-white.svg) 0 0 no-repeat; }
+      .header-submenu__item:last-child::after {
+        content: '';
+        display: none; }
 
 @-webkit-keyframes leafWaving {
   0%, 67% {
