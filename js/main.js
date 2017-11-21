@@ -189,8 +189,9 @@ $(document).ready(function ($) {
     showPopup(".c-card-cafe__menu", '.popup__menu');
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');
     showPopup(".c-card_menu", '.popup__menu');
-    showPopup(".c-reviews__item", '.popup__review');
+    // showPopup(".c-reviews__item", '.popup__review');
     showPopup(".popup-forgot-password", '.popup__recovery-password');
+
 
 
     $('.popup-forgot-password').on('click', function (e) {
@@ -512,11 +513,39 @@ $(document).ready(function ($) {
 
     // var valReview = $('#popup-reviews-type').val();
 
+    $('.c-reviews__item').on('click', function (e) {
+        e.preventDefault();
+        $('.popup__review').addClass('is-visible');
+        $('.mfp-bg').addClass('is-visible');
+        $('html').css({
+            'overflow':'hidden',
+            'margin-right':'17px'
+        });
+
+        var svgIcon = $(this).find('.c-icon');
+        console.log(svgIcon);
+        var sel = $('.popup__review select').val();
+        console.log(sel);
+
+        if(svgIcon.hasClass('icon-negative')) {
+
+            
+            $('.popup__review select').val('48');
+            // $("#form_dropdown_SIMPLE_QUESTION_868 option[value='48']").prop('selected', true);
+            console.log('мы попали в if, а вот селект не работает');
+            var selneg = $('.popup__review select').val();
+            console.log(selneg);
+        } else {
+            $('.popup__review select').val('47');
+        }
 
 
 
-    function changeRabbitFace (form){
-        $(form).on("change",function() {
+    });
+
+
+    function changeRabbitFace (select){
+        $(select).on("change",function() {
             var valReview = $(this).val();
             var $icon = $(this).parents('.reviews-form__type').find('.reviews-form__type-icon');
 
@@ -530,8 +559,10 @@ $(document).ready(function ($) {
         });
     }
 
-    changeRabbitFace('#reviews-type');
-    changeRabbitFace('#popup-reviews-type');
+    changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_868');
+    changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_867');
+
+
 
 
 
