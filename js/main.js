@@ -535,11 +535,11 @@ $(document).ready(function ($) {
             console.log('мы попали в if, а вот селект не работает');
             var selneg = $('.popup__review select').val();
             console.log(selneg);
+            $('.popup__review select')[0].sumo.selectItem('48');
         } else {
             $('.popup__review select').val('47');
+            $('#form_dropdown_SIMPLE_QUESTION_868')[0].sumo.selectItem('47');
         }
-
-
 
     });
 
@@ -560,7 +560,7 @@ $(document).ready(function ($) {
     }
 
     changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_868');
-    changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_867');
+    // changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_867');
 
 
 
