@@ -2451,20 +2451,20 @@
                         <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
                             <div class="popup-form__item">
                                 <label class="c-label" for="request-call__name">Ваше имя</label>
-                                <input class="c-input" type="text" placeholder="ваше имя" name="request-call__name" id="request-call__name" autofocus>
+                                <input class="c-input" type="text" placeholder="Ваше имя" name="request-call__name" id="request-call__name" autofocus>
                             </div>
-                            <div class="popup-form__item">
+                            <div class="popup-form__item error">
                                 <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
-                                <input class="c-input" type="text" placeholder="укажите номер телефона" name="request-call__tel"
+                                <input class="c-input" type="text" placeholder="Укажите номер телефона" name="request-call__tel"
                                        id="request-call__tel" required>
                             </div>
                             <div class="popup-form__item">
                                 <label class="c-label" for="request-call__comment">Комментарий<span class="c-obligatory-field">*</span></label>
                                 <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4"
-                                          placeholder="желательно заполнить" required></textarea>
+                                          placeholder="Желательно заполнить" required></textarea>
                             </div>
                             <div class="popup-form__item">
-                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> Обязательные поля</div>
                             </div>
                             <div class="popup-form__item">
                                 <div class="c-personal-data">
@@ -2484,6 +2484,11 @@
                             <div class="l-button l-button__left">
                                 <button class="c-button c-button__default">Заказать</button>
                             </div>
+                            <p>
+                                <div class="errortext"><div class="errortext__title">Внимание!</div>
+                                    Не заполнены следующие обязательные поля: Номер телефона для связи
+                                    Не заполнены следующие обязательные поля: Комментарий</div>
+                            </p>
                         </form>
                     </div><!--popup-body-->
                     <svg class="icon-giraffe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.98 155.66">
