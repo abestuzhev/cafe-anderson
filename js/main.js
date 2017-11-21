@@ -190,6 +190,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');
     showPopup(".c-card_menu", '.popup__menu');
     showPopup(".c-reviews__item", '.popup__review');
+    showPopup(".footer-reviews__icon", '.popup__review');
     showPopup(".popup-forgot-password", '.popup__recovery-password');
 
 
@@ -501,20 +502,7 @@ $(document).ready(function ($) {
     /*кастомный селект*/
     $('.c-select').SumoSelect();
 
-    // var $positive = $( '.reviews-form__type select.SlectBox' )[0].sumo.selectItem('Похвалить');
-    // var $negative = $( '.reviews-form__type select.SlectBox' )[0].sumo.selectItem('Пожаловаться');
-    //
-    // console.log($positive, $negative);
-    // if(){
-    //
-    // }else{
-    //
-    // }
-
-    // var valReview = $('#popup-reviews-type').val();
-
-
-    $('.c-reviews-negative').on('click', function(){
+    $('.js-negative').on('click', function(){
 
         var select = $('.popup__review .c-select');
         select.val('48');
@@ -523,10 +511,9 @@ $(document).ready(function ($) {
         var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
         $icon.removeClass('icon-rabbit-positive');
         $icon.addClass('icon-rabbit-negative');
-
-
     });
-    $('.c-reviews-positive').on('click', function(){
+
+    $('.js-positive').on('click', function(){
 
         var select = $('.popup__review .c-select');
         select.val('47');
@@ -534,7 +521,7 @@ $(document).ready(function ($) {
         var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
         $icon.removeClass('icon-rabbit-negative');
         $icon.addClass('icon-rabbit-positive');
-        // select[0].sumo.selectItem('48');
+        // select[0].sumo.selectItem('47');
     });
 
     // $('.c-reviews__item').on('click', function (e) {
