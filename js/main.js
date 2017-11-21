@@ -514,7 +514,7 @@ $(document).ready(function ($) {
     // var valReview = $('#popup-reviews-type').val();
 
 
-    $('.js-negative').on('click', function(){
+    $('.c-reviews-negative').on('click', function(){
 
         var select = $('.popup__review .c-select');
         select.val('48');
@@ -526,7 +526,7 @@ $(document).ready(function ($) {
 
 
     });
-    $('.js-positive').on('click', function(){
+    $('.c-reviews-positive').on('click', function(){
 
         var select = $('.popup__review .c-select');
         select.val('47');
