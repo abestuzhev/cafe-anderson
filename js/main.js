@@ -29,13 +29,13 @@ $(document).ready(function ($) {
     // $('#scrollbarY').tinyscrollbar();
 
     /*hover в меню*/
-    $('.header-menu__item--about').hover( function(){
-       $('.header-subnavigation').addClass('is-visible');
-    });
-
-    $('.header-subnavigation').mouseleave(function(){
-        $(this).removeClass('is-visible');
-    });
+    // $('.header-menu__item--about').hover( function(){
+    //    $('.header-subnavigation').addClass('is-visible');
+    // });
+    //
+    // $('.header-subnavigation').mouseleave(function(){
+    //     $(this).removeClass('is-visible');
+    // });
 
 
     /*вписываем img в блок при любом размере изображения*/

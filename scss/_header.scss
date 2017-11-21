@@ -94,6 +94,10 @@
     color: $color_text_bg;
     transition: all .3s ease-out;
     border-bottom: 2px solid #d4c89f;
+    
+    .c-layout {
+        position: static !important;
+    }
 
     &-mobile {
 
@@ -352,7 +356,7 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: stretch;
-        position: relative;
+        //position: relative;
     }
 
     &-col__left { /*колонки*/
@@ -634,7 +638,7 @@
         background-color: #7e5847;
         position: absolute;
         width: 100%;
-        top: 0;
+        top: 100%;
         left: 0;
         opacity: 0;
         visibility: hidden;
@@ -715,5 +719,11 @@
 @media screen and (max-width: 1600px) {
 
 }
+
+.header-menu__item:hover .header-subnavigation {
+    opacity: 1 !important;
+    visibility: visible;
+}
+
 
 //------------------------------------------------------------header###

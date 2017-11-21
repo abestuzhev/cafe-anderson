@@ -2054,6 +2054,8 @@ i.icon-chair {
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out;
   border-bottom: 2px solid #d4c89f; }
+  .header .c-layout {
+    position: static !important; }
   .header-mobile {
     /*мобильная аунтификация*/ }
     .header-mobile__top {
@@ -2234,8 +2236,7 @@ i.icon-chair {
             justify-content: space-between;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch;
-    position: relative; }
+            align-items: stretch; }
   .header-col__left {
     /*колонки*/
     width: 33%;
@@ -2449,7 +2450,7 @@ i.icon-chair {
     background-color: #7e5847;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 100%;
     left: 0;
     opacity: 0;
     visibility: hidden; }
@@ -2524,6 +2525,10 @@ i.icon-chair {
   position: absolute;
   top: 3px;
   left: 0; }
+
+.header-menu__item:hover .header-subnavigation {
+  opacity: 1 !important;
+  visibility: visible; }
 
 .footer {
   margin-top: -7.6rem;
