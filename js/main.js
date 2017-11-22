@@ -184,7 +184,7 @@ $(document).ready(function ($) {
     showPopup(".header-phone", '.popup__request-call');
     showPopup(".header-email", '.popup__write-to-us');
     showPopup(".js-header-cabinet", '.popup-authorization');
-    showPopup(".header-city", '.popup-city');
+    showPopup(".header-city > a", '.popup-city');
     showPopup(".header-mobile__city", '.popup-city');
     showPopup(".c-card-cafe__menu", '.popup__menu');
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');

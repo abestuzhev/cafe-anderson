@@ -979,6 +979,9 @@ i.icon-chair {
 .l-button__center {
   text-align: center; }
 
+a.c-button:hover {
+  color: #fff; }
+
 .c-button {
   border-radius: .4rem;
   border: none;
@@ -988,7 +991,7 @@ i.icon-chair {
     content: '';
     border: none; }
   .c-button__default {
-    padding: 1.4rem 3.4rem;
+    padding: 1.1rem 3.4rem;
     background-color: #7cbd41;
     font-family: "PT Serif Caption";
     font-size: 1.4rem;
@@ -2355,7 +2358,11 @@ i.icon-chair {
   .header-city {
     /*выбор города*/
     font-size: 1.2rem;
-    min-height: 1.5rem; }
+    min-height: 1.5rem;
+    position: relative; }
+    .header-city .popup-bubble {
+      left: 5%;
+      top: 2.9rem; }
   .header-contact {
     /*правая часть шапки*/
     font-size: 0;
@@ -3217,6 +3224,25 @@ main {
     color: #9b9696; }
     .popup-new-user a {
       color: #555451; }
+  .popup-bubble {
+    padding: 1.3rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    position: absolute;
+    z-index: 14; }
+  .popup-bubble.top::after {
+    content: '';
+    position: absolute;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: #fff;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: -.7rem;
+    left: 2.2rem; }
 
 @-webkit-keyframes scaleUp {
   0% {
@@ -3699,6 +3725,17 @@ main {
   width: 11.7rem;
   height: 7.8rem;
   background: url(../img/icons/icon-bird-with-bubble.svg) 0 0 no-repeat; }
+
+/*выбор города*/
+.popup-city-selection {
+  font-size: 1.3rem; }
+  .popup-city-selection__title {
+    color: #555451;
+    margin-bottom: .4rem; }
+  .popup-city-selection__town {
+    display: inline-block;
+    color: #a99383;
+    margin-bottom: .8rem; }
 
 /*----------------------------------------------*/
 #tooltip {

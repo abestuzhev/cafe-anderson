@@ -514,6 +514,12 @@
     &-city { /*выбор города*/
         font-size: 1.2rem;
         min-height: 1.5rem;
+        position: relative;
+        
+        .popup-bubble {
+            left: 5%;
+            top: 2.9rem;
+        }
     }
 
     &-contact { /*правая часть шапки*/

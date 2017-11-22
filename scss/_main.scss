@@ -592,6 +592,25 @@ main {
             color: $color_text_base;
         }
     }
+    
+    &-bubble {
+        padding: 1.3rem;
+        border-radius: 1rem;
+        box-shadow: 0 3px 7px 0 rgba(0,0,0,.3);
+        background-color: $white;
+        position: absolute;
+        z-index: 14;
+    }
+    &-bubble.top::after {
+        content: '';
+        position: absolute;
+        width: 1.3rem;
+        height: 1.3rem;
+        background-color: $white;
+        transform: rotate(-45deg);
+        top: -.7rem;
+        left: 2.2rem;
+    }
 }
 
 @keyframes scaleUp {
@@ -1258,6 +1277,23 @@ main {
         width: 11.7rem;
         height: 7.8rem;
         background: url(../img/icons/icon-bird-with-bubble.svg) 0 0 no-repeat;
+    }
+}
+
+
+/*выбор города*/
+.popup-city-selection {
+    font-size: 1.3rem;
+    
+    &__title {
+        color: $black;
+        margin-bottom: .4rem;
+    }
+    
+    &__town {
+        display: inline-block;
+        color: #a99383;
+        margin-bottom: .8rem;
     }
 }
 

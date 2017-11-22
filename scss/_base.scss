@@ -1010,6 +1010,12 @@ i.icon-chair {
     }
 }
 
+a.c-button {
+    &:hover {
+        color: #fff;
+    }
+}
+
 .c-button {
     border-radius: .4rem;
     border: none;
@@ -1023,7 +1029,7 @@ i.icon-chair {
     }
 
     &__default {
-        padding: 1.4rem 3.4rem;
+        padding: 1.1rem 3.4rem;
         background-color: $color_btn;
         font-family: $font_serif;
         font-size: 1.4rem;
