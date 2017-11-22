@@ -5062,3 +5062,13 @@ test popup
     padding: 0 1.4rem; }
     .contact-cafe__item span {
       margin-left: 2.4rem; }
+
+/*Поиск (search)----------------------------------------------------*/
+.search {
+  font-family: "PT Serif Caption"; }
+  .search__result {
+    font-size: 2rem;
+    color: #878584;
+    margin-bottom: 4rem; }
+  .search .cafe-list__tabs {
+    text-align: center; }

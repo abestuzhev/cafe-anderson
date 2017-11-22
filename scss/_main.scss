@@ -2991,10 +2991,6 @@ test popup
         margin-bottom: 5rem;
     }
     
-    //.c-grid {
-    //    margin: 0;
-    //}
-    
     .filter {
         display: inline-block !important;
         width: auto;
@@ -3040,4 +3036,20 @@ test popup
         }
     }
     
+}
+
+
+/*Поиск (search)----------------------------------------------------*/
+.search {
+    font-family: $font_serif;
+
+    &__result {
+        font-size: 2rem;
+        color: #878584;
+        margin-bottom: 4rem;
+    }
+    
+    .cafe-list__tabs {
+        text-align: center;
+    }
 }
