@@ -766,6 +766,9 @@
         max-width: 50%;
     }
 
+    .partners__item {
+        width: 25%;
+    }
 
 }
 
@@ -862,6 +865,10 @@
 
     .not-found__title {
         font-size: 2.2rem;
+    }
+
+    .partners__item {
+        width: 33.333333%;
     }
 
 }
@@ -1263,6 +1270,10 @@
     .popup__vacancy .popup-bg__svg {
         right: 1.5rem;
     }
+
+    .partners__item {
+        width: 50%;
+    }
 }
 
 
@@ -1624,6 +1635,10 @@
 
     .not-found__img {
         width: 29rem;
+    }
+
+    .partners__item {
+        width: 100%;
     }
 }
 

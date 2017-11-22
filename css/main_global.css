@@ -1595,6 +1595,9 @@ i.icon-chair {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .c-card-partner img {
+    max-width: 100%;
+    height: auto; }
 
 /*c-card-review------------------------------------------------------------*/
 .c-card-review {

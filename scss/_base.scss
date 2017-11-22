@@ -1813,6 +1813,11 @@ i.icon-chair {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /*c-card-review------------------------------------------------------------*/

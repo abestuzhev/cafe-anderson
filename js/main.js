@@ -521,6 +521,8 @@ $(document).ready(function ($) {
             var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
             $icon.removeClass('icon-rabbit-positive');
             $icon.addClass('icon-rabbit-negative');
+            console.log('функция сработала при клике js-negative');
+            console.log(select.val());
         });
     }
     showNegative('.js-negative');
@@ -546,6 +548,8 @@ $(document).ready(function ($) {
             $icon.removeClass('icon-rabbit-negative');
             $icon.addClass('icon-rabbit-positive');
             // select[0].sumo.selectItem('47');
+            console.log('функция сработала при клике js-positive');
+            console.log(select.val());
         });
     }
     showPositive('.js-positive');
