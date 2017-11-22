@@ -502,56 +502,55 @@ $(document).ready(function ($) {
     /*кастомный селект*/
     $('.c-select').SumoSelect();
 
-    $('.js-negative').on('click', function(){
-
-        var select = $('.popup__review .c-select');
-        select.val('48');
-        select[0].sumo.reload();
-        // select[0].sumo.selectItem('48');
-        var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
-        $icon.removeClass('icon-rabbit-positive');
-        $icon.addClass('icon-rabbit-negative');
-    });
-
-    $('.js-positive').on('click', function(){
-
-        var select = $('.popup__review .c-select');
-        select.val('47');
-        select[0].sumo.reload();
-        var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
-        $icon.removeClass('icon-rabbit-negative');
-        $icon.addClass('icon-rabbit-positive');
-        // select[0].sumo.selectItem('47');
-    });
-
-    // $('.c-reviews__item').on('click', function (e) {
-    //     e.preventDefault();
-    //     $('.popup__review').addClass('is-visible');
-    //     $('.mfp-bg').addClass('is-visible');
-    //     $('html').css({
-    //         'overflow':'hidden',
-    //         'margin-right':'17px'
-    //     });
-    //
-    //     var svgIcon = $(this).find('.c-icon');
-    //     console.log(svgIcon);
-    //     var sel = $('.popup__review select').val();
-    //     console.log(sel);
-    //     if(svgIcon.hasClass('icon-negative')) {
-    //
-    //
-    //         $('.popup__review .c-select').val('48');
-    //         // $("#form_dropdown_SIMPLE_QUESTION_868 option[value='48']").prop('selected', true);
-    //         var selneg = $('.c-select').val();
-    //         console.log(selneg);
-    //         // $('.popup__review select')[0].sumo.selectItem('48');
-    //         $('.c-select')[0].sumo.reload();
-    //     } else {
-    //         $('.popup__review select').val('47');
-    //         $('#form_dropdown_SIMPLE_QUESTION_868')[0].sumo.selectItem('47');
-    //     }
-    //
+    // $('.js-negative').on('click', function(){
+    //     var select = $('.popup__review .c-select');
+    //     select.val('48');
+    //     select[0].sumo.reload();
+    //     // select[0].sumo.selectItem('48');
+    //     var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
+    //     $icon.removeClass('icon-rabbit-positive');
+    //     $icon.addClass('icon-rabbit-negative');
     // });
+
+    function showNegative(clickElem){
+        $(clickElem).on('click', function(){
+            var select = $('.popup__review .c-select');
+            select.val('48');
+            select[0].sumo.reload();
+            // select[0].sumo.selectItem('48');
+            var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
+            $icon.removeClass('icon-rabbit-positive');
+            $icon.addClass('icon-rabbit-negative');
+        });
+    }
+    showNegative('.js-negative');
+    showNegative('.c-reviews-negative');
+
+
+    // $('.js-positive').on('click', function(){
+    //     var select = $('.popup__review .c-select');
+    //     select.val('47');
+    //     select[0].sumo.reload();
+    //     var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
+    //     $icon.removeClass('icon-rabbit-negative');
+    //     $icon.addClass('icon-rabbit-positive');
+    //     // select[0].sumo.selectItem('47');
+    // });
+
+    function showPositive(clickElem){
+        $(clickElem).on('click', function(){
+            var select = $('.popup__review .c-select');
+            select.val('47');
+            select[0].sumo.reload();
+            var $icon = select.parents('.reviews-form__type').find('.reviews-form__type-icon');
+            $icon.removeClass('icon-rabbit-negative');
+            $icon.addClass('icon-rabbit-positive');
+            // select[0].sumo.selectItem('47');
+        });
+    }
+    showPositive('.js-positive');
+    showPositive('.c-reviews-positive');
+
 
 
     function changeRabbitFace (select){
