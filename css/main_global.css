@@ -2336,7 +2336,8 @@ a.c-button:hover {
       border: none; }
     .header-cabinet__text {
       color: #9b9696;
-      margin-right: .3rem; }
+      margin-right: .3rem;
+      white-space: nowrap; }
       .header-cabinet__text::after {
         content: '';
         border-bottom: 1px dotted #9b806f !important; }
@@ -2528,6 +2529,7 @@ a.c-button:hover {
         content: '';
         display: none; }
   .header-search-result {
+    max-width: 51rem;
     position: absolute;
     z-index: 16;
     top: 10rem;
@@ -2536,18 +2538,49 @@ a.c-button:hover {
     border-radius: 1rem;
     -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
             box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
-    padding: 1.3rem;
     color: #555451;
     font-size: 1.3rem;
-    font-family: "PT Serif Caption"; }
+    font-family: "PT Serif Caption";
+    overflow: hidden; }
+    .header-search-result__card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
     .header-search-result__left {
       padding: 1.1rem 1.4rem;
-      background-color: #f7f4ec; }
+      background-color: #f7f4ec;
+      width: 25%; }
     .header-search-result__right {
+      padding: .3rem 0;
+      width: 75%; }
+    .header-search-result__item {
       padding: 1.1rem 1.7rem; }
-    .header-search-result__item a {
-      color: #555451;
-      font-size: 1.2rem; }
+      .header-search-result__item a {
+        color: #555451;
+        font-size: 1.3rem;
+        border-bottom: 1px dotted #555451; }
+        .header-search-result__item a::after {
+          content: '';
+          border: none; }
+      .header-search-result__item:hover {
+        background-color: #f1eee4; }
+    .header-search-result__all {
+      display: inline-block;
+      padding: .6rem 1.7rem 1.8rem;
+      color: #989494; }
+      .header-search-result__all::after {
+        content: '';
+        border: none; }
 
 @-webkit-keyframes leafWaving {
   0%, 67% {

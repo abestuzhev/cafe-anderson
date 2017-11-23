@@ -475,6 +475,7 @@
         &__text {
             color: $color_text_bg;
             margin-right: .3rem;
+            white-space: nowrap;
     
             &::after {
                 content: '';
@@ -710,6 +711,7 @@
     }
     
     &-search-result {
+        max-width: 51rem;
         position: absolute;
         z-index: 16;
         top: 10rem;
@@ -717,22 +719,27 @@
         background-color: #fff;
         border-radius: 1rem;
         box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
-        padding: 1.3rem;
         color: $black;
         font-size: 1.3rem;
         font-family: $font_serif;
+        overflow: hidden;
         
         &__card {
-        
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
         }
         
         &__left {
             padding: 1.1rem 1.4rem;
             background-color: #f7f4ec;
+            width: 25%;
         }
         
         &__right {
-            padding: 1.1rem 1.7rem;
+            padding: .3rem 0 ;
+            width: 75%;
         }
         
         &__list {
@@ -740,10 +747,32 @@
         }
         
         &__item {
+            padding: 1.1rem 1.7rem;
             
             a {
                 color: $black;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
+                border-bottom: 1px dotted $black;
+                
+                &::after {
+                    content: '';
+                    border: none;
+                }
+            }
+            
+            &:hover {
+                background-color: #f1eee4;
+            }
+        }
+        
+        &__all {
+            display: inline-block;
+            padding: .6rem 1.7rem 1.8rem;
+            color: #989494;
+            
+            &::after {
+                content: '';
+                border: none;
             }
         }
     }
