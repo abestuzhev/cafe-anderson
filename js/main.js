@@ -490,7 +490,7 @@ $(document).ready(function ($) {
     $(window).scroll(function(){
         var bo = $(window).scrollTop();
         var $header = $(".header");
-        if ( bo > 1 ) {
+        if ( bo > 50 ) {
             $header.addClass('header-top__hide');
             $header.addClass('sticky');
         } else {

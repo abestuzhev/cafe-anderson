@@ -3052,4 +3052,36 @@ test popup
     .cafe-list__tabs {
         text-align: center;
     }
+    
+    .tabs-menu__item {
+        padding: 1.1rem 4.5rem 1.1rem 1.5rem;
+        font-size: 1.6rem;
+        border-radius: .4rem;
+        position: relative;
+        
+        span {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            margin-top: -1.4rem;
+            width: 2.8rem;
+            height: 2.8rem;
+            background-color: $color-active;
+            border-radius: 5rem;
+            color: $white;
+            text-align: center;
+            line-height: 2.8rem;
+            font-size: 1.2rem;
+        }
+        
+        
+    }
+    
+    .tabs-menu__item.current {
+        background-color: $color-active;
+        
+        a {
+            color: $white;
+        }
+    }
 }
