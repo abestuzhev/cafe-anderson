@@ -2337,7 +2337,8 @@ a.c-button:hover {
     .header-cabinet__text {
       color: #9b9696;
       margin-right: .3rem;
-      white-space: nowrap; }
+      white-space: nowrap;
+      display: inline-block; }
       .header-cabinet__text::after {
         content: '';
         border-bottom: 1px dotted #9b806f !important; }
@@ -2489,8 +2490,8 @@ a.c-button:hover {
     width: 100%;
     top: 100%;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     -webkit-box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2);
             box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2); }
   .header-submenu {

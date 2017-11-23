@@ -476,6 +476,7 @@
             color: $color_text_bg;
             margin-right: .3rem;
             white-space: nowrap;
+            display: inline-block;
     
             &::after {
                 content: '';
@@ -670,8 +671,11 @@
         width: 100%;
         top: 100%;
         left: 0;
-        opacity: 0;
-        visibility: hidden;
+        //opacity: 0;
+        //visibility: hidden;
+        opacity: 1;
+        visibility: visible;
+        
         box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2);
     }
     

@@ -36,6 +36,21 @@
     .cafe-description__text {
         /*height: 23rem;*/
     }
+
+    .header-submenu {
+        height: 7.3rem;
+    }
+
+    .header-submenu__item {
+        padding: 0;
+        font-size: 2.2rem;
+    }
+
+    /*.header-submenu__item::after {*/
+        /*content: '';*/
+        /*display: inline-block;*/
+        /*height: 100%;*/
+    /*}*/
 }
 
 @media (min-width:1600px) {
