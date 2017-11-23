@@ -948,6 +948,13 @@ i.icon-chair {
   background: url(../img/icons/icon-exit-with-hover.svg) 0 0 no-repeat scroll;
   background-size: 3.4rem 1.6rem; }
 
+.icon-beta {
+  display: inline-block;
+  vertical-align: top;
+  width: 1rem;
+  height: 1.9rem;
+  background: url(../img/icons/icon-beta.svg) 0 0 no-repeat; }
+
 @media screen and (min-width: 1600px) {
   .c-layout {
     position: relative;
@@ -2248,7 +2255,7 @@ a.c-button:hover {
     width: 33%;
     text-align: left; }
   .header-col__center {
-    width: 30%;
+    width: 38rem;
     text-align: center; }
   .header-col__right {
     width: 33%;
@@ -2261,10 +2268,19 @@ a.c-button:hover {
     border: none;
     width: 380px;
     padding: .9rem 0 0;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     .header-logo::after {
       content: '';
       border: none; }
+    .header-logo__beta {
+      position: absolute;
+      left: 93%;
+      top: 2.3rem;
+      color: #6e6966;
+      font-size: 1.3rem;
+      font-family: "PT Serif Caption";
+      white-space: nowrap; }
   .header-menu {
     /*меню*/
     display: -webkit-box;
@@ -2312,9 +2328,15 @@ a.c-button:hover {
     display: inline-block;
     vertical-align: bottom;
     text-transform: capitalize; }
+    .header-cabinet a::after {
+      content: '';
+      border: none; }
     .header-cabinet__text {
       color: #9b9696;
       margin-right: .3rem; }
+      .header-cabinet__text::after {
+        content: '';
+        border-bottom: 1px dotted #9b806f !important; }
     .header-cabinet:hover a {
       color: #67af26; }
     .header-cabinet:hover i {

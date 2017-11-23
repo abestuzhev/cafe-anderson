@@ -159,6 +159,10 @@
     .not-found-cafe {
         left: -29.7rem;
     }
+
+    /*.header-logo__beta {*/
+        /*right: -5.2rem;*/
+    /*}*/
 }
 
 @media (max-width:1178px) {
@@ -190,6 +194,13 @@
 
     .c-card-map::after {
         content: '';
+        display: none;
+    }
+
+    /*.header-logo__beta {*/
+        /*right: -4rem;*/
+    /*}*/
+    .header-logo__beta span {
         display: none;
     }
 }
@@ -263,12 +274,6 @@
 
     .footer-reviews {
         margin-right: .5rem;
-    }
-
-    .icon-logo,
-    .header-top__hide .icon-logo {
-        width: 19rem ;
-        height: 3.9rem;
     }
 
     .header-top__hide .header-layout {
@@ -460,6 +465,18 @@
         padding: 0;
         width: 19rem;
     }
+
+
+    .icon-logo,
+    .header-top__hide .icon-logo {
+        width: 19rem ;
+        height: 3.9rem;
+    }
+
+    .header-logo__beta {
+        top: 0.4rem;
+    }
+
 
     /*новые стили для мобильного*/
     .header-mobile__top,
@@ -1617,7 +1634,7 @@
 
 @media (max-width:440px) {
     .header-col__center {
-        left: 36%;
+        left: 50%;
     }
 
     .header-mobile__auth-btn {
