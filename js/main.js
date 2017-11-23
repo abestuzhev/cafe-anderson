@@ -39,11 +39,12 @@ $(document).ready(function ($) {
 
 
     $('#filter-cafe-all').on('change', function(){
-        var $this = $(this);
+        var $this = $(this),
+            $elem = $('.filter-item');
         if($this.is(':checked')) {
-            $('.filter').addClass('disable');
+            $elem.addClass('disable');
         }else{
-            $('.filter').removeClass('disable');
+            $elem.removeClass('disable');
         }
     });
 

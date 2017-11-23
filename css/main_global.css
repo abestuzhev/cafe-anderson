@@ -4079,9 +4079,9 @@ test popup
 .overflow {
   overflow: hidden !important; }
 
-.filter.disable {
+.filter-item.disable {
   position: relative; }
-  .filter.disable::after {
+  .filter-item.disable::before {
     content: '';
     position: absolute;
     z-index: 17;

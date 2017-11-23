@@ -116,7 +116,7 @@
 
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) and (min-width: 730px) {
     .cafe-list-layout .filter,
     .vacancies .filter {
         width: 66rem;
