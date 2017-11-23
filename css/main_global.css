@@ -1972,6 +1972,9 @@ a.c-button:hover {
   background: url(../img/icons/icon-page-up.svg) 0 0 no-repeat;
   cursor: pointer; }
 
+.cd-top:hover {
+  opacity: 1 !important; }
+
 .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -o-transition: opacity .3s 0s, visibility 0s 0s;
