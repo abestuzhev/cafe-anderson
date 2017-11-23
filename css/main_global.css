@@ -2490,8 +2490,8 @@ a.c-button:hover {
     width: 100%;
     top: 100%;
     left: 0;
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility: visible;
     -webkit-box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2);
             box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2); }
   .header-submenu {
@@ -2507,15 +2507,29 @@ a.c-button:hover {
         justify-content: space-around;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch; }
+            align-items: stretch;
+    height: 7.3rem; }
     .header-submenu__item {
       width: 25%;
       text-align: center;
-      padding: 1.7rem 0;
+      padding: 0;
       border: none;
       position: relative;
       color: #fbf6e8;
-      font-size: 3rem; }
+      font-size: 2.6rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       .header-submenu__item::after {
         content: '';
         position: absolute;
