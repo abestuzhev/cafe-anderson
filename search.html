@@ -605,7 +605,6 @@
                 </div>
 
             </div>
-
         </section>
         <div class="header-mobile__bottom">
             <section class="c-layout">
@@ -755,6 +754,63 @@
     <main>
         <section class="header-navigation">
             <div class="c-layout">
+
+                <!--START поисковая выдача-->
+                <div class="header-search-result">
+
+                    <div class="header-search-result__card">
+                        <div class="header-search-result__left">
+                            <div class="header-search-result__category">Наше меню</div>
+                        </div>
+                        <div class="header-search-result__right">
+                            <ul class="header-search-result__list header-search-result__list-menu">
+                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
+                                <li class="header-search-result__item"><a href="#">Томленая утиная ножка с запеченным
+                                    картофелем и вешенками</a></li>
+                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-search-result__card">
+                        <div class="header-search-result__left">
+                            <div class="header-search-result__category">Тортики на заказ</div>
+                        </div>
+                        <div class="header-search-result__right">
+                            <ul class="header-search-result__list header-search-result__list-cake">
+                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
+                                <li class="header-search-result__item"><a href="#">Томленая утиная ножка с запеченным
+                                    картофелем и вешенками</a></li>
+                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-search-result__card">
+                        <div class="header-search-result__left">
+                            <div class="header-search-result__category">Заказ праздника</div>
+                        </div>
+                        <div class="header-search-result__right">
+                            <ul class="header-search-result__list">
+                                <li class="header-search-result__item"><a href="#">Детский праздник «Посвящение в именинники»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="header-search-result__card">
+                        <div class="header-search-result__left">
+                            <div class="header-search-result__category">Мастер-классы</div>
+                        </div>
+                        <div class="header-search-result__right">
+                            <ul class="header-search-result__list">
+                                <li class="header-search-result__item"><a href="#">Сила мысли: мозг и способности</a></li>
+                                <li class="header-search-result__item"><a href="#">Бизнес-завтрак для мам</a></li>
+                                <li class="header-search-result__item"><a href="#">Улетное мини-диско</a></li>
+                            </ul>
+                            <a href="#" class="header-search-result__all">Все результаты</a>
+                        </div>
+                    </div>
+                </div>
+                <!--END поисковая выдача-->
+
                 <nav class="header-navigation__list">
                     <a href="#" class="header-navigation__item">
                         <h2 class="header-navigation__title">Приходите в гости</h2>
@@ -778,13 +834,12 @@
                 <span class="c-breadcrumb__item">Поиск</span>
             </nav>
             <div class="search">
-                <form action="#" class="star-guests__form">
-                    <div id="w">
-                        <section id="sform">
-                            <input type="text" id="s" name="s" class="sfield star-guests__seach" placeholder="искать" autocomplete="off">
-                        </section>
-                    </div>
-                </form>
+                <div class="c-search-page">
+                    <form action="#" class="c-search-page__form">
+                        <input type="text" id="search" name="search" class="c-search-page__input" placeholder="искать" autocomplete="off">
+                    <button>Поиск</button>
+                    </form>
+                </div>
                 <div class="search__result">Найдено 5015 запросов в 5 категориях</div>
                 <section class="search-tab">
                     <div class="cafe-list__tabs">
@@ -793,6 +848,7 @@
                             <li class="tabs-menu__item"><a href="#search-result-cafe">Ближайнее к вам кафе</a><span>29</span></li>
                             <li class="tabs-menu__item"><a href="#search-result-events">События</a><span>666</span></li>
                             <li class="tabs-menu__item"><a href="#search-result-sale">Наши акции</a><span>7</span></li>
+                            <li class="tabs-menu__item"><a href="#search-result-other">Прочее</a><span>17</span></li>
                         </ul>
                     </div>
 
@@ -1402,6 +1458,9 @@
 
                         </div>
                         <div id="search-result-sale" class="tab-content">
+
+                        </div>
+                        <div id="search-result-other" class="tab-content">
 
                         </div>
                     </div>
@@ -2221,62 +2280,7 @@
 <!--END кнопка вверх-->
 
 
-<!--START поисковая выдача-->
-<div class="header-search-result">
 
-    <div class="header-search-result__card">
-        <div class="header-search-result__left">
-            <div class="header-search-result__category">Наше меню</div>
-        </div>
-        <div class="header-search-result__right">
-            <ul class="header-search-result__list">
-                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-                <li class="header-search-result__item"><a href="#">Томленая утиная ножка с запеченным
-                    картофелем и вешенками</a></li>
-                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header-search-result__card">
-        <div class="header-search-result__left">
-            <div class="header-search-result__category">Тортики на заказ</div>
-        </div>
-        <div class="header-search-result__right">
-            <ul class="header-search-result__list">
-                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-                <li class="header-search-result__item"><a href="#">Томленая утиная ножка с запеченным
-                    картофелем и вешенками</a></li>
-                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header-search-result__card">
-        <div class="header-search-result__left">
-            <div class="header-search-result__category">Заказ праздника</div>
-        </div>
-        <div class="header-search-result__right">
-            <ul class="header-search-result__list">
-                <li class="header-search-result__item"><a href="#">Детский праздник «Посвящение в именинники»</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="header-search-result__card">
-        <div class="header-search-result__left">
-            <div class="header-search-result__category">Мастер-классы</div>
-        </div>
-        <div class="header-search-result__right">
-            <ul class="header-search-result__list">
-                <li class="header-search-result__item"><a href="#">Детский праздник «Посвящение в именинники»</a></li>
-                <li class="header-search-result__item"><a href="#">Сила мысли: мозг и способности</a></li>
-                <li class="header-search-result__item"><a href="#">Бизнес-завтрак для мам</a></li>
-                <li class="header-search-result__item"><a href="#">Улетное мини-диско</a></li>
-            </ul>
-            <a href="#" class="header-search-result__all">Все результаты</a>
-        </div>
-    </div>
-</div>
-<!--END поисковая выдача-->
 
 
 

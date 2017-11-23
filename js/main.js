@@ -250,6 +250,7 @@ $(document).ready(function ($) {
     $(".header-search .icon-search").click(function (e) {
         e.preventDefault();
         $('.header-search__form').toggleClass('is-visible');
+        $('.header-search-result').toggleClass('is-visible');
     });
 
     /*показ мобильного поиска*/
@@ -326,6 +327,7 @@ $(document).ready(function ($) {
     hidePopup('.popup-basket', 'popup-slide__show');
     hidePopup('.header-mobile__auth', 'popup-slide__show');
     hidePopup('.header-search__form', 'is-visible');
+    hidePopup('.header-search-result', 'is-visible');
 
 
     // мобильный заказать звонок, показываем форму и удаляем надпись

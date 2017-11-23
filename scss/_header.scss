@@ -721,7 +721,7 @@
         max-width: 51rem;
         position: absolute;
         z-index: 16;
-        top: 10rem;
+        top: -6.5rem;
         right: 0;
         background-color: #fff;
         border-radius: 1rem;
@@ -730,6 +730,13 @@
         font-size: 1.3rem;
         font-family: $font_serif;
         overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        
+        i {
+            display: inline-block;
+            margin-right: .8rem;
+        }
         
         &__card {
             display: flex;
@@ -741,15 +748,47 @@
         &__left {
             padding: 1.1rem 1.4rem;
             background-color: #f7f4ec;
-            width: 25%;
+            width: 33%;
         }
         
         &__right {
             padding: .3rem 0 ;
-            width: 75%;
+            width: 67%;
         }
         
         &__list {
+            
+            &-menu .header-search-result__item {
+                position: relative;
+                padding-left: 4.4rem;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 1.7rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 2rem;
+                    height: 2rem;
+                    background: url(../img/icons/icon-result-product.svg) 0 0 no-repeat;
+                }
+            }
+            
+            &-cake .header-search-result__item {
+                position: relative;
+                padding-left: 4.4rem;
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 1.7rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1.6rem;
+                    height: 2.6rem;
+                    background: url(../img/icons/icon-cake.png) 0 0 no-repeat;
+                }
+            }
         
         }
         
