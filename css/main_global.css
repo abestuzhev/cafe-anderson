@@ -2527,6 +2527,27 @@ a.c-button:hover {
       .header-submenu__item:last-child::after {
         content: '';
         display: none; }
+  .header-search-result {
+    position: absolute;
+    z-index: 16;
+    top: 10rem;
+    right: 0;
+    background-color: #fff;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 1.3rem;
+    color: #555451;
+    font-size: 1.3rem;
+    font-family: "PT Serif Caption"; }
+    .header-search-result__left {
+      padding: 1.1rem 1.4rem;
+      background-color: #f7f4ec; }
+    .header-search-result__right {
+      padding: 1.1rem 1.7rem; }
+    .header-search-result__item a {
+      color: #555451;
+      font-size: 1.2rem; }
 
 @-webkit-keyframes leafWaving {
   0%, 67% {
@@ -2567,6 +2588,40 @@ a.c-button:hover {
 .header-menu__item:hover .header-subnavigation {
   opacity: 1 !important;
   visibility: visible; }
+
+.top-message {
+  background-color: #fffdf7;
+  display: block; }
+  .top-message a::after {
+    content: '';
+    border: none; }
+  .top-message__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .top-message__text {
+    display: inline-block;
+    padding: 1.2rem;
+    color: #6e6966;
+    font-size: 1.4rem; }
+  .top-message__close {
+    width: 2.6rem;
+    height: 2.6rem;
+    border: 1px solid #6e6966;
+    background: url(../img/icons/icon-close.svg) no-repeat 50% 50%;
+    background-size: 1rem;
+    border-radius: 2.6rem;
+    cursor: pointer; }
 
 .footer {
   margin-top: -7.6rem;
@@ -3760,7 +3815,8 @@ main {
   .popup-city-selection__town {
     display: inline-block;
     color: #a99383;
-    margin-bottom: .8rem; }
+    margin-bottom: .8rem;
+    cursor: pointer; }
 
 /*----------------------------------------------*/
 #tooltip {

@@ -37,6 +37,10 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+    $('.top-message__close').on('click',function(e){
+        e.preventDefault();
+        $('.top-message').hide();
+    });
 
     /*вписываем img в блок при любом размере изображения*/
     function fix_size() {
