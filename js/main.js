@@ -37,6 +37,16 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+
+    $('#filter-cafe-all').on('change', function(){
+        var $this = $(this);
+        if($this.is(':checked')) {
+            $('.filter').addClass('disable');
+        }else{
+            $('.filter').removeClass('disable');
+        }
+    });
+
     $('.top-message__close').on('click',function(e){
         e.preventDefault();
         $('.top-message').hide();

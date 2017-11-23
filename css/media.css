@@ -116,6 +116,13 @@
 
 }
 
+@media screen and (max-width: 1280px) {
+    .cafe-list-layout .filter,
+    .vacancies .filter {
+        width: 66rem;
+    }
+}
+
 @media screen and (max-width: 1270px) {
     .header-search__form {
         width: 28rem;
