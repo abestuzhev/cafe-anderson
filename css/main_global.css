@@ -2340,7 +2340,8 @@ a.c-button:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin-bottom: -.1rem; }
     .header-menu__item {
       padding: 1rem; }
       .header-menu__item:first-child {
@@ -2707,9 +2708,24 @@ a.c-button:hover {
   top: 3px;
   left: 0; }
 
+.header-menu__item,
+.header-subnavigation {
+  -webkit-transition: .1s ease-out;
+  -o-transition: .1s ease-out;
+  transition: .1s ease-out;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
+
 .header-menu__item:hover .header-subnavigation {
   opacity: 1 !important;
-  visibility: visible; }
+  visibility: visible;
+  -webkit-transition: .1s ease-out;
+  -o-transition: .1s ease-out;
+  transition: .1s ease-out;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
 
 .top-message {
   background-color: #fffdf7;

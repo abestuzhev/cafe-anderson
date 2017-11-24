@@ -409,6 +409,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 1.8rem;
+        margin-bottom: -.1rem;
 
         &__item {
             padding: 1rem;
@@ -864,9 +865,16 @@
 
 }
 
+.header-menu__item,
+.header-subnavigation {
+    transition: .1s ease-out;
+    transition-delay: 0.1s;
+}
 .header-menu__item:hover .header-subnavigation {
     opacity: 1 !important;
     visibility: visible;
+    transition: .1s ease-out;
+    transition-delay: 0.1s;
 }
 
 .top-message {
