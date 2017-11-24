@@ -186,7 +186,7 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #fff url("../img/bg-page.jpg") repeat-y 0 0; }
+  background: #fff url("../img/bg-page.jpg") repeat 0 0; }
 
 .wrapper {
   position: relative;
