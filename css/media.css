@@ -27,7 +27,10 @@
     .home-cake {
         width: 49%;
         top: 7.8%;
-    //top: 7.8%;
+    }
+
+    .home-cafe__text {
+        left: 32.2%;
     }
 }
 
@@ -362,8 +365,8 @@
 
 @media (max-height:920px) {
     .home-cafe {
-        width: 26%;
-        top: 28%;
+        width: 23%;
+        top: 19%;
     }
 
     .home-celebration {
