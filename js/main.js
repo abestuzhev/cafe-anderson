@@ -507,7 +507,7 @@ $(document).ready(function ($) {
     $(window).scroll(function(){
         var bo = $(window).scrollTop();
         var $header = $(".header");
-        if ( bo > 100 ) {
+        if ( bo > 250 ) {
             $header.addClass('header-top__hide');
             $header.addClass('sticky');
         } else {
