@@ -1640,11 +1640,18 @@
     }
 
     .filter-more {
-        display: none;
+        transform: none;
+        right: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .cafe-list-layout .filter {
+        border-radius: .6rem .6rem 0 0;
     }
 
     .filter-mobile__more {
-        display: block;
+        display: none;
     }
 
     .filter .l-button__left,

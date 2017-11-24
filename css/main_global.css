@@ -4217,6 +4217,7 @@ test popup
     -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
     color: #9b9595;
+    text-align: center;
     background: #ededed;
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #ededed), color-stop(16%, #f6f6f6), color-stop(100%, white));
     background: -o-linear-gradient(top, #ededed 0%, #f6f6f6 16%, white 100%);
