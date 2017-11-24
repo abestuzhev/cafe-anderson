@@ -94,6 +94,7 @@ main {
         transform: rotate(7deg);
         font-family: $font_sans-serif;
         @extend %transition_all;
+        color:#201600;
     }
     
     &__title {
@@ -314,6 +315,7 @@ main {
         left: 36.2%;
         transform: rotate(-23deg);
         @extend %transition_all;
+        color:#201600;
     }
     
     &__title {

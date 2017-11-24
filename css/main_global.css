@@ -3029,7 +3029,8 @@ main {
     -webkit-transform: rotate(7deg);
         -ms-transform: rotate(7deg);
             transform: rotate(7deg);
-    font-family: "BebasNeue"; }
+    font-family: "BebasNeue";
+    color: #201600; }
   .home-cafe__title {
     font-size: 3.5vw;
     font-weight: 300;
@@ -3241,7 +3242,8 @@ main {
     left: 36.2%;
     -webkit-transform: rotate(-23deg);
         -ms-transform: rotate(-23deg);
-            transform: rotate(-23deg); }
+            transform: rotate(-23deg);
+    color: #201600; }
   .home-celebration__title {
     font-size: 3.5vw;
     font-weight: 300;
