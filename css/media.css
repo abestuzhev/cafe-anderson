@@ -17,7 +17,7 @@
     .home-cafe {
         width: 28%;
         left: 3.8%;
-        top: 26%;
+        top: 18%;
     }
 
     .home-celebration {
@@ -118,10 +118,27 @@
 
 }
 
-@media screen and (max-width: 1280px) and (min-width: 730px) {
-    .cafe-list-layout .filter,
-    .vacancies .filter {
-        width: 66rem;
+@media screen and (max-width: 1280px) {
+    .select-city + .SelectBox,
+    .select-cafe + .SelectBox {
+        width: 33rem;
+    }
+
+    .cafe-list-layout .filter-item:nth-child(2) {width: 66%;}
+}
+
+@media screen and (max-width: 1100px) {
+    .cafe-list-layout .filter-item:nth-child(2) {width: 62%;}
+}
+
+@media screen and (max-width: 985px) {
+    .cafe-list-layout .filter-item:nth-child(2) {width: auto;}
+}
+
+@media screen and (max-width: 870px) and (min-width: 730px) {
+    .select-city + .SelectBox,
+    .select-cafe + .SelectBox {
+        width: 16rem;
     }
 }
 
@@ -630,8 +647,8 @@
     .home-cafe {
         left: auto;
         right: 0;
-        top: -39%;
-        width: 40rem;
+        top: -77%;
+        width: 37rem;
     }
 
     .home-cafe__plane {
@@ -640,7 +657,7 @@
 
     .home-celebration {
         transform: rotate(90deg);
-        width: 40rem;
+        width: 43rem;
         bottom: -49%;
         left: -6%;
     }
@@ -848,7 +865,7 @@
     }
 
     .reviews-form {
-        background-position: 112% 100%;
+        background-position: 117% 100%;
     }
 
     .c-form__item:last-child {
@@ -947,6 +964,10 @@
     }
     .home-celebration:hover {
         transform: rotate(74deg);
+    }
+
+    .cafe-list-layout .filter-item:nth-child(2) {
+        width: 100%;
     }
 
     .mobile-celebration__text {
@@ -1163,12 +1184,14 @@
 @media (max-width:780px) {
     .home-cafe {
         transform: rotate(17deg);
-        top: -37%;
-        width: 35rem;
+        top: -65%;
+        width: 30rem;
     }
     .home-cafe:hover {
         transform: rotate(17deg);
     }
+
+
 }
 
 @media (max-width:760px) {
@@ -1365,8 +1388,9 @@
 
 @media (max-width:540px) {
     .home-cafe {
-        right: -36%;
-        top: -36%;
+        right: -45%;
+        top: -41%;
+        width: 27rem;
     }
 
     .home-celebration {
@@ -1379,7 +1403,7 @@
     }
 
     .mobile-celebration__text {
-        right: 12%;
+        right: 9%;
     }
 
     .home-cake__pie-1 {
@@ -1576,6 +1600,22 @@
         width: 100%;
     }
 
+    .reviews-form {
+        background-position: 16rem 100%;
+    }
+
+    .search-tab .tabs-menu {
+        text-align: left;
+    }
+    .search-tab .tabs-menu__item {
+        display: block;
+        margin-right: 2rem;
+    }
+
+    .search__result {
+        margin-bottom: 1rem;
+    }
+
 }
 
 
@@ -1753,9 +1793,13 @@
 @media (max-width:370px) {
     .home-cafe {
         right: -52%;
-        transform: rotate(17deg);
-        top: -27%;
-        width: 35rem;
+        transform: rotate(14deg);
+        top: -40%;
+        width: 29rem;
+    }
+
+    .mobile-cafe__text {
+        left: 5%;
     }
 
     .home-cafe:hover {

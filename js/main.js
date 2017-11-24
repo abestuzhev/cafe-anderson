@@ -38,7 +38,7 @@ $(document).ready(function ($) {
     // });
 
 
-    $('#filter-cafe-all').on('change', function(){
+    $('#filter-cafe-all, #filter-cafe__mobile-all').on('change', function(){
         var $this = $(this),
             $elem = $('.filter-item');
         if($this.is(':checked')) {
