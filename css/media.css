@@ -1005,7 +1005,10 @@
         border-bottom: 1px solid #eee;
         text-align: justify;
         font-size: 0;
+    }
 
+    .filter-item:last-child {
+        border-bottom: none;
     }
 
     .filter-item:last-child {
