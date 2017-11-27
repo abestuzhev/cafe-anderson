@@ -516,10 +516,10 @@ $(document).ready(function ($) {
         var bo = $(window).scrollTop();
         var $header = $(".header");
         if ( bo > 250 ) {
-            $header.addClass('header-top__hide');
+            // $header.addClass('header-top__hide');
             $header.addClass('sticky');
         } else {
-            $header.removeClass('header-top__hide');
+            // $header.removeClass('header-top__hide');
             $header.removeClass('sticky');
         }
     });

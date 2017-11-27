@@ -93,14 +93,20 @@
 
     .header-col__center {
         position: absolute;
-        z-index: -1;
+        z-index: 20;
         left: 50%;
         transform: translateX(-50%);
-        height: 5rem;
+    }
+
+    .header-logo__beta span {
+        display: none;
     }
 
     .header-logo {
         width: auto;
+        padding-top: .4rem;
+        overflow: hidden;
+        height: 5.5rem;
     }
 
     .header-logo__mobile {
@@ -341,6 +347,14 @@
         max-width: 100%;
     }
 }
+@media (max-width:1020px) {
+    .header-col__left,
+    .header-col__right,
+    .header-col__center {
+        width: auto;
+    }
+}
+
 
 @media (min-width:1940px) and (min-height: 1200px) {
     .home-cafe {
@@ -512,11 +526,12 @@
     .header-logo {
         padding: 0;
         width: 19rem;
+        height: 2.5rem;
     }
 
 
     .icon-logo,
-    .header-top__hide .icon-logo {
+    .sticky .icon-logo{
         width: 19rem ;
         height: 3.9rem;
     }
