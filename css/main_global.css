@@ -2080,9 +2080,6 @@ a.c-button:hover {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); } }
 
-.sticky .header-mobile__top {
-  display: none; }
-
 .sticky .header-logo {
   overflow: hidden;
   height: 5rem; }
