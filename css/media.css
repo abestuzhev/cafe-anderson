@@ -1873,10 +1873,10 @@
     }
 }
 
-@media (max-height:640px) {
+@media (max-height:680px) {
     .header-mobile__dropdown {
         /*height: 460px;*/
-        /*overflow-y: scroll;*/
+        overflow-y: scroll !important;
     }
 }
 

@@ -408,6 +408,15 @@ $(document).ready(function ($) {
         $('.filter').slideToggle(200);
     });
 
+
+    /*показ подменю в мобильной версии меню*/
+    $('.header-mobile__list .icon-dropdown').on('click', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('dropdown-show');
+        $('.header-mobile__sublist').slideToggle(200);
+        $(this).parents('.header-mobile__item').toggleClass('active');
+    });
+
     /*функция счета больше/меньше*/
     function catalogItemCounter(field) {
         var fieldCount = function (el) {
