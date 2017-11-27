@@ -247,6 +247,10 @@
     .header-logo__beta span {
         display: none;
     }
+
+    .star-guests .ins-photo {
+        width: 25%;
+    }
 }
 
 @media (max-width:1060px) {
@@ -829,6 +833,10 @@
 
     .partners__item {
         width: 25%;
+    }
+
+    .star-guests .ins-photo {
+        width: 33.3333%;
     }
 
 }
@@ -1622,6 +1630,10 @@
         margin-bottom: 1rem;
     }
 
+    .star-guests .ins-photo {
+        width: 50%;
+    }
+
 }
 
 
@@ -1799,6 +1811,11 @@
 
     .contact-office__bg {
         right: -50%;
+    }
+
+
+    .star-guests .ins-photo {
+        width: 100%;
     }
 }
 
