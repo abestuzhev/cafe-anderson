@@ -779,7 +779,10 @@
     .cafe-description {
         width: 100%;
         padding: 0;
+    }
 
+    .cafe-holiday-slider {
+        margin-bottom: 2rem;
     }
 
     .cafe-reviews {
