@@ -1,12 +1,15 @@
 
-//gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css
+//gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-sourcemaps gulp-concat
 //plugins for development
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber'),
     livereload = require('gulp-livereload'),
-    minifyCSS = require('gulp-minify-css'),
+    //minifyCSS = require('gulp-minify-css'),
+    sourcemaps = require('gulp-sourcemaps'),
+    cleanCSS = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
     browserSync = require('browser-sync').create();
 
 
@@ -16,8 +19,10 @@ gulp.task('sass', function(){
     return gulp.src('scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(prefix('last 3 version'))
+        .pipe(sourcemaps.init())
+        .pipe(cleanCSS())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('css/'))
-        .pipe(minifyCSS())
         .pipe(browserSync.stream())
 });
 
@@ -34,6 +39,9 @@ gulp.task('html', function(){
 
 gulp.task('css', function(){
     return gulp.src('css/**/*.css')
+        .pipe(concat('main_global_all.min.css'))
+        .pipe(cleanCSS())
+        // .pipe(prefix('last 3 versions'))
         .pipe(browserSync.stream())
 });
 
