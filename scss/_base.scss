@@ -129,13 +129,13 @@ a {
 
 /*new preloader*/
 
-body .header,
-body main,
-body .footer {
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s ease-out;
-}
+//body .header,
+//body main,
+//body .footer {
+//    opacity: 0;
+//    visibility: hidden;
+//    transition: all .3s ease-out;
+//}
 
 body.done .header {
     opacity: 1;
