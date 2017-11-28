@@ -3025,8 +3025,8 @@ $.fn.tooltipster = function() {
 					go = true;
 				}
 				else if (debug) {
-					console.log('Tooltipster: one or more tooltips are already attached to the element below. Ignoring.');
-					console.log(this);
+					// console.log('Tooltipster: one or more tooltips are already attached to the element below. Ignoring.');
+					// console.log(this);
 				}
 				
 				if (go) {
