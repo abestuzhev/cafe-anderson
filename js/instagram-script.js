@@ -18,6 +18,9 @@ $(document).ready(function() {
         // filter: function(image) {
         //     return image.tags.indexOf('tag') >= 0;
         // },
+        success: function(json) {
+            console.log(json);
+        },
         template: '<div class="ins-photo">' +
         '<div class="ins-photo__hash"><a href="{{link}}">{{caption}}</a></div>' +
         '<a class="ins-photo__img" href="{{link}}" title="" target="_blank">' +
