@@ -2029,3 +2029,10 @@
 .row .column.column-triple {
     width: 100%;
 }
+
+@media (max-width: 530px) {
+    .pr-product .pr-holder-img {
+        float: none !important;
+        margin: 0 auto;
+    }
+}
