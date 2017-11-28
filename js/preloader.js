@@ -7,15 +7,13 @@
 //     }, 1000);
 // };
 
-document.body.onload = function(){
-
-    // setTimeout(function(){
-    //     var preloader = document.querySelectorAll('body');
-        if(!document.body.classList.contains('done')){
-            document.body.classList.add('done');
-        }
-    // }, 500);
-};
+/*новый прелоудер*/
+// document.body.onload = function(){
+//
+//     if(!document.body.classList.contains('done')){
+//         document.body.classList.add('done');
+//     }
+// };
 
 // функция подключения всех скриптов
 // function dynamicallyLoadScript() {
