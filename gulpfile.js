@@ -1,5 +1,5 @@
 
-//gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-sourcemaps gulp-concat
+//gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-sourcemaps gulp-concat gulp-concat-css
 //plugins for development
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
+    concatCss = require('gulp-concat-css'),
     browserSync = require('browser-sync').create();
 
 
@@ -39,8 +40,9 @@ gulp.task('html', function(){
 
 gulp.task('css', function(){
     return gulp.src('css/**/*.css')
-        .pipe(concat('main_global_all.min.css'))
+        .pipe(concatCss('main_global_all.min.css'))
         .pipe(cleanCSS())
+        .pipe(gulp.dest('css/'))
         // .pipe(prefix('last 3 versions'))
         .pipe(browserSync.stream())
 });
