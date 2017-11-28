@@ -2027,12 +2027,12 @@
 
 /*временные стили для вывода старой верстки*/
 .row .column.column-triple {
-    width: 100%;
+    width: 100% !important;
 }
 
 @media (max-width: 530px) {
     .pr-product .pr-holder-img {
         float: none !important;
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
 }
