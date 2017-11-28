@@ -1,0 +1,532 @@
+//icons------------------------------------------------------------
+.c-icon {
+    &.is-active {
+        fill: $color_brand;
+    }
+    
+    &:hover {
+        fill: #67af26;
+        @extend %transition_all;
+        cursor: pointer;
+    }
+}
+
+.icon-logo {
+    position: relative;
+    width: 38rem;
+    height: 7.9rem;
+    cursor: pointer;
+}
+
+.icon-basket {
+    position: relative;
+    width: 22px;
+    height: 23px;
+    fill: $color_text_bg;
+}
+
+.icon-cabinet {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-phone {
+    position: relative;
+    width: 16px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-email {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-mail {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.6rem;
+    background: url(../img/icons/icon-email.svg) 0 0 no-repeat;
+}
+
+.icon-clock {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url(../img/icons/icon-clock.svg) 0 0 no-repeat;
+}
+
+.icon-search {
+    position: relative;
+    width: 20px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-vk {
+    position: relative;
+    width: 21px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-fb {
+    position: relative;
+    width: 18px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-o {
+    position: relative;
+    width: 20px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-site-map {
+    position: relative;
+    width: 21px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-info {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-ru {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.icon-en {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
+.logo-uniteller {
+    position: relative;
+    width: 39px;
+    height: 25px;
+    vertical-align: top;
+    //-webkit-background-size: cover;
+    //background-size: cover;
+    //background-image: url(../img/logo-uniteller.svg);
+    background: url(../img/logo-pay-sprite.svg) -150px 0 no-repeat;
+    background-size: 19.1rem 2.5rem;
+}
+
+.logo-mir {
+    position: relative;
+    width: 56px;
+    height: 16px;
+    vertical-align: top;
+    //-webkit-background-size: cover;
+    //background-size: cover;
+    //background-image: url(../img/logo-mir.svg);
+    background: url(../img/logo-pay-sprite.svg)  -95px -5px no-repeat;
+    background-size: 19.1rem 2.5rem;
+}
+
+.logo-visa {
+    position: relative;
+    width: 95px;
+    height: 25px;
+    vertical-align: top;
+    //background-image: url(../img/logo-visa-mastercard.svg);
+    background: url(../img/logo-pay-sprite.svg) 0 0 no-repeat;
+    background-size: 19.1rem 2.5rem;
+}
+
+.icon-positive {
+    position: relative;
+    width: 17px;
+    height: 27px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+.icon-rabbit-positive{
+    display: inline-block;
+    width: 2.2rem;
+    height: 3.1rem;
+    background: url(../img/icons/icon-positive.svg) 0 0 no-repeat;
+}
+
+.icon-rabbit-negative{
+    display: inline-block;
+    width: 2.2rem;
+    height: 3.1rem;
+    background: url(../img/icons/icon-negative.svg) 0 0 no-repeat;
+}
+
+.icon-negative {
+    position: relative;
+    width: 17px;
+    height: 27px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-city {
+    position: relative;
+    width: 15px;
+    height: 21px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-menu {
+    position: relative;
+    width: 18px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-search-mobile {
+    display: none;
+    position: relative;
+    width: 11px;
+    fill: $color_text_bg;
+    vertical-align: bottom;
+}
+
+.icon-pencil {
+    width: 23px;
+    fill: $color_text_bg;
+}
+
+.icon-candy {
+    width: 3.5rem;
+    fill: $color_text_bg;
+}
+
+.icon-cake-menu {
+    width: 1.9rem;
+    fill: $color_text_bg;
+}
+
+.icon-house {
+    display: block;
+    width: 2.2rem;
+    height: 1.9rem;
+    fill: $color_text_bg;
+}
+
+.icon-arr-right {
+    width: .6rem;
+    height: .9rem;
+    background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
+}
+
+.icon-dropdown {
+    display: inline-block;
+    border: .1rem solid $white;
+    border-radius: 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    position: relative;
+    vertical-align: middle;
+}
+
+.icon-dropdown__arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1.1rem;
+    height: .6rem;
+    fill: $white;
+}
+
+.icon-dropdown__down {
+
+}
+
+.icon-dropdown__right {
+
+}
+
+.icon-dropdown__left {
+
+}
+
+.icon-filter {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.1rem;
+    background: url(../img/icons/icon-filter.svg) 0 0 no-repeat;
+}
+
+.advantages-coffe {
+    display: inline-block;
+    width: 2rem;
+    height: 1.4rem;
+    vertical-align: middle;
+    background: url(../img/icons/icon-coffe.svg) 50% 50% no-repeat;
+}
+
+//.advantages-guests {
+//display: inline-block;
+//width: 2.5rem;
+//height: 1.4rem;
+//background: url(../img/icons/icon-veranda.svg) 50% 50% no-repeat;
+//margin: 0 .5em .4rem 0;
+//}
+
+.advantages-guests {
+    display: inline-block;
+    width: 2.1rem;
+    height: 1.6rem;
+    background: url(../img/icons/icon-table.svg) 50% 50% no-repeat;
+    vertical-align: top;
+}
+
+.advantages-teddy {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.8rem;
+    vertical-align: middle;
+    background: url(../img/icons/icon-teddy-bear.svg) 50% 50% no-repeat;
+}
+
+.advantages-nipple {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    vertical-align: middle;
+    background: url(../img/icons/icon-nipple.svg) 50% 50% no-repeat;
+}
+
+.advantages-balloon {
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.9rem;
+    vertical-align: middle;
+    background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat;
+}
+
+.advantages-umbrella {
+    display: inline-block;
+    width: 2rem;
+    height: 1.7rem;
+    vertical-align: middle;
+    background: url(../img/icons/icon-umbrella.svg) 50% 50% no-repeat;
+}
+
+.advantages-bottle {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.8rem;
+    vertical-align: middle;
+    background: url(../img/icons/icon-bottle.svg) 50% 50% no-repeat;
+}
+
+.icon-phoneNumber {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.8rem;
+    background: url(../img/icons/icon-phone.svg) 50% 50% no-repeat;
+}
+
+.icon-place {
+    display: inline-block;
+    width: .9rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon-city.svg) 50% 50% no-repeat;
+}
+
+.icon-a {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1rem;
+    background: url(../img/icons/icon-a.svg) 50% 50% no-repeat;
+}
+
+.icon-arr-down {
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat;
+}
+
+.icon-reset {
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: $color_text_bg;
+}
+
+.icon-uneven-circle {
+    display: inline-block;
+    width: 4.9rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background: url(../img/icons/icon-uneven-circle.svg) 50% 50% no-repeat;
+}
+i.icon-chair {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.8rem;
+    background: url(../img/icons/icon-chair.svg) 50% 50% no-repeat;
+}
+
+.icon-tour {
+
+}
+
+.icon-mark {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.9rem;
+    background: url(../img/icons/icon-mark.svg) 50% 50% no-repeat;
+}
+
+.icon-calendar-2 {
+    display: inline-block;
+    width: 2.1rem;
+    height: 1.9rem;
+    background: url(../img/icons/icon-calendar-2.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-toy {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.4rem;
+    background: url(../img/icons/icon-toy.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-glasses {
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.7rem;
+    background: url(../img/icons/icon-glasses.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-metro {
+    display: inline-block;
+    width: 1.1rem;
+    height: .9rem;
+    background: url(../img/icons/icon-metro.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-in-office {
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon-in-office.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-factory {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.2rem;
+    background: url(../img/icons/icon-factory.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-clip {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url(../img/icons/icon-clip.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-reviews-all {
+    display: inline-block;
+    width: 4rem;
+    height: 2.5rem;
+    background: url(../img/icons/icon-reviews-all.svg) 0 0 no-repeat;
+    vertical-align: middle;
+}
+
+.icon-label-metro {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    margin-right: 5px;
+    position: relative;
+    background-color: #1504ca;
+}
+
+.icon-metro-2 {
+    position: absolute;
+    top: .4rem;
+    left: .3rem;
+    width: 13px;
+    height: 8px;
+    background: url(../img/icons/icon-metro-2.svg) 0 0 no-repeat;
+}
+
+.icon-rabbit-earphone {
+    width: 12rem;
+    height: 14.9rem;
+    background: url(../img/icons/icon-rabbit-earphone.svg) 0 0 no-repeat;
+}
+
+.icon-exit {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1.7rem;
+    height: 1.6rem;
+    background: url(../img/icons/icon-exit-with-hover.svg) 0 0 no-repeat scroll;
+    background-size: 3.4rem 1.6rem;
+    
+}
+
+.icon-beta {
+    display: inline-block;
+    vertical-align: top;
+    width: 1rem;
+    height: 1.9rem;
+    background: url(../img/icons/icon-beta.svg) 0 0 no-repeat;
+}
+
+.icon-result-product {
+    display: inline-block;
+    vertical-align: top;
+    width: 2rem;
+    height: 2rem;
+    background: url(../img/icons/icon-result-product.svg) 0 0 no-repeat;
+}
+
+//.icon-lollipop {
+//    display: inline-block;
+//    width: 1.4rem;
+//    height: 1.4rem;
+//    background: url(../img/icons/icon-clip.svg) 50% 50% no-repeat;
+//    vertical-align: middle;
+//}
+
+
