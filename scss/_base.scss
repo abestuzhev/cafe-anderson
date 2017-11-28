@@ -46,6 +46,7 @@ body {
 //-------------------------------------------------preloader*/
 
 
+
 .preloader {
     position: fixed;
     z-index: 9999999;
@@ -124,6 +125,34 @@ a {
 
 .elements_list {
     padding: 3rem;
+}
+
+/*new preloader*/
+
+body .header,
+body main,
+body .footer {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-out;
+}
+
+body.done .header {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-out .5s;
+}
+
+body.done main {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-out .8s;
+}
+
+body.done .footer {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-out 1s;
 }
 
 //------------------------------------------------------------base styles###

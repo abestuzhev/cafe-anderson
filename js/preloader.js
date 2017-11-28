@@ -7,6 +7,16 @@
 //     }, 1000);
 // };
 
+document.body.onload = function(){
+
+    // setTimeout(function(){
+    //     var preloader = document.querySelectorAll('body');
+        if(!document.body.classList.contains('done')){
+            document.body.classList.add('done');
+        }
+    // }, 500);
+};
+
 // функция подключения всех скриптов
 // function dynamicallyLoadScript() {
 

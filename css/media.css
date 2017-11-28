@@ -2027,7 +2027,7 @@
 
 /*временные стили для вывода старой верстки*/
 .row .column.column-triple {
-    width: 100% !important;
+    width: 84% !important;
 }
 
 @media (max-width: 530px) {

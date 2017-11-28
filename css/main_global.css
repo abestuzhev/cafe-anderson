@@ -284,6 +284,37 @@ a {
 .elements_list {
   padding: 3rem; }
 
+/*new preloader*/
+body .header,
+body main,
+body .footer {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+
+body.done .header {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .3s ease-out .5s;
+  -o-transition: all .3s ease-out .5s;
+  transition: all .3s ease-out .5s; }
+
+body.done main {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .3s ease-out .8s;
+  -o-transition: all .3s ease-out .8s;
+  transition: all .3s ease-out .8s; }
+
+body.done .footer {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all .3s ease-out 1s;
+  -o-transition: all .3s ease-out 1s;
+  transition: all .3s ease-out 1s; }
+
 h1 {
   font-weight: 400; }
 
