@@ -20,9 +20,9 @@ gulp.task('sass', function(){
     return gulp.src('scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(prefix('last 3 version'))
-        .pipe(sourcemaps.init())
-        .pipe(cleanCSS())
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.init())
+        // .pipe(cleanCSS())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest('css/'))
         .pipe(browserSync.stream())
 });
