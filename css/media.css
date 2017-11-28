@@ -2023,3 +2023,9 @@
     content: '';
     border-color: #9acc4e;
 }
+
+
+/*временные стили для вывода старой верстки*/
+.row .column.column-triple {
+    width: 100%;
+}

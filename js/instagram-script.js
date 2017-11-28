@@ -5,7 +5,7 @@ $(document).ready(function() {
     * userID: 309982629
     * clientId: b57e75ea6a1e4a30bdab8fe0829d30f0
     * */
-
+    var loadButton = document.getElementById('load-more');
     var userFeed = new Instafeed({
         // get: 'tagged',
         get: 'user',
@@ -21,6 +21,11 @@ $(document).ready(function() {
         success: function(json) {
             console.log(json);
         },
+        // after: function() {
+        //     if (!this.hasNext()) {
+        //         loadButton.setAttribute('disabled', 'disabled');
+        //     }
+        // },
         template: '<div class="ins-photo">' +
         '<div class="ins-photo__hash"><a href="{{link}}">{{caption}}</a></div>' +
         '<a class="ins-photo__img" href="{{link}}" title="" target="_blank">' +
@@ -30,6 +35,9 @@ $(document).ready(function() {
     });
 
 
+    // loadButton.addEventListener('click', function() {
+    //     feed.next();
+    // });
     userFeed.run();
 
 
