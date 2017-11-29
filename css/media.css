@@ -2024,10 +2024,20 @@
     border-color: #9acc4e;
 }
 
+@media (max-width: 1300px) {
+    .no-adaptive .wrapper,
+    .no-adaptive .footer {
+        overflow: visible;
+        width: 1300px;
+    }
 
-.page-container {
-    min-width: 1300px;
+    .no-adaptive .page-container {
+        min-width: 1200px;
+        box-sizing: border-box;
+    }
 }
+
+
 
 /*временные стили для вывода старой верстки*/
 /*.row .column.column-triple {*/

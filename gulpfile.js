@@ -39,13 +39,21 @@ gulp.task('html', function(){
 });
 
 gulp.task('css', function(){
-    return gulp.src('css/**/*.css')
+    return gulp.src(['./css/main_global.css', './css/media.css'])
         .pipe(concatCss('main_global_all.min.css'))
         .pipe(cleanCSS())
         .pipe(gulp.dest('css/'))
         // .pipe(prefix('last 3 versions'))
         .pipe(browserSync.stream())
 });
+
+// gulp.task('css', function(){
+//     return gulp.src('css/**/*.css')
+//         .pipe(concatCss('main_global_all.min.css'))
+//         .pipe(cleanCSS())
+//         .pipe(gulp.dest('css/'))
+//         .pipe(browserSync.stream())
+// });
 
 
 gulp.task('browser-sync', function(){
