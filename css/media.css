@@ -2025,14 +2025,18 @@
 }
 
 
-/*временные стили для вывода старой верстки*/
-.row .column.column-triple {
-    width: 84% !important;
+.page-container {
+    min-width: 1300px;
 }
 
-@media (max-width: 530px) {
-    .pr-product .pr-holder-img {
-        float: none !important;
-        margin: 0 auto !important;
-    }
-}
+/*временные стили для вывода старой верстки*/
+/*.row .column.column-triple {*/
+    /*width: 84% !important;*/
+/*}*/
+
+/*@media (max-width: 530px) {*/
+    /*.pr-product .pr-holder-img {*/
+        /*float: none !important;*/
+        /*margin: 0 auto !important;*/
+    /*}*/
+/*}*/
