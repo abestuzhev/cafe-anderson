@@ -1,5 +1,6 @@
 
 //gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-sourcemaps gulp-concat gulp-concat-css
+
 //plugins for development
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
@@ -11,8 +12,21 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
     concatCss = require('gulp-concat-css'),
+    critical = require('critical'),
     browserSync = require('browser-sync').create();
 
+
+gulp.task('critical', function () {
+    critical.generate({
+        inline: true,
+        // base: './',
+        src: 'home.html',
+        dest: 'home-critical.html',
+        minify: true,
+        width: 1300,
+        height: 760
+    });
+});
 
 // var srcDir = 'src/';
 
@@ -101,7 +115,8 @@ gulp.task('watch', function(){
     gulp.watch('scss/**/*.scss', ['sass']);
     gulp.watch('js/**/*.js', ['js']);
     gulp.watch('**/*.html', ['html']);
+    gulp.watch('home.html', ['critical']);
     gulp.watch('css/**/*.css', ['css']);
 });
 
-gulp.task('default', ['html', 'css', 'sass', 'js', 'browser-sync', 'watch']);
+gulp.task('default', ['html', 'critical', 'css', 'sass', 'js', 'browser-sync', 'watch']);

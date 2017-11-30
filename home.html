@@ -10,7 +10,34 @@
     <!--[if lt IE 10]>
     <script src="js/IE9.js"></script><![endif]-->
 
-    <link href="" rel="stylesheet">
+    <style>
+        .header {
+            position: relative;
+            z-index: 12;
+            background: #fdf7e8 url(img/bg-header.png) repeat;
+            font-family: "PT Serif Caption";
+            padding: 1rem 0 0;
+            -webkit-box-shadow: 0 3px 14px 4px rgba(0,0,0,.2);
+            box-shadow: 0 3px 14px 4px rgba(0,0,0,.2);
+            color: #9b9696;
+            -webkit-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            border-bottom: 2px solid #d4c89f;
+        }
+
+        .header-col__left {
+            /*колонки*/
+            width: 33%;
+            text-align: left; }
+        .header-col__center {
+            width: 38rem;
+            text-align: center; }
+        .header-col__right {
+            width: 33%;
+            text-align: right; }
+    </style>
+
 
     <!-- styles needed by jScrollPane -->
     <!--<link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />-->
@@ -20,11 +47,14 @@
 
 </head>
 <body>
+<!--<script>-->
+    <!--document.body.classList.add('hide');-->
+<!--</script>-->
 
-<div id="page-preloader" class="preloader">
-    <div class="loader">
-    </div>
-</div>
+<!--<div id="page-preloader" class="preloader">-->
+    <!--<div class="loader">-->
+    <!--</div>-->
+<!--</div>-->
 
 <div class="wrapper">
     <header class="header">

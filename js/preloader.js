@@ -10,9 +10,9 @@
 /*новый прелоудер*/
 document.body.onload = function(){
 
-    if(!document.body.classList.contains('done')){
-        document.body.classList.add('done');
-    }
+    // if(!document.body.classList.contains('done')){
+    //     document.body.classList.add('done');
+    // }
 };
 
 // функция подключения всех скриптов

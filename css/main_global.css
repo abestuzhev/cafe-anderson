@@ -712,6 +712,15 @@ a {
   padding: 3rem; }
 
 /*new preloader*/
+body.hide .header,
+body.hide main,
+body.hide .footer {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+
 body.done .header {
   opacity: 1;
   visibility: visible;
