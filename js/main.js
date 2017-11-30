@@ -21,6 +21,8 @@ var $body,
 // scriptTool.src = "https://abestuzhev.github.io/cafe-anderson/bower_components/tooltipster/dist/js/tooltipster.bundle.js";
 // document.documentElement.appendChild(scriptTool);
 
+/*main.js*/
+
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 /*scroll*/
