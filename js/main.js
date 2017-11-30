@@ -263,7 +263,7 @@ $(document).ready(function ($) {
         $('.icon-search-mobile').show();
         $('.header-mobile__search-input').focus();
         $('.header-mobile__auth').removeClass('popup-slide__show');
-        $('.header').addClass('header-top__hide');
+        // $('.header').addClass('header-top__hide');
     });
 
     /*скрываем мобильный поиск*/

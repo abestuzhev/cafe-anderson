@@ -2128,8 +2128,6 @@ a.c-button:hover {
           animation: slide-down 0.4s; }
 
 .header-top__hide .icon-logo {
-  width: 26rem;
-  height: 5.9rem;
   margin-top: 1rem; }
 
 .header-top__hide .header-personal,
@@ -2147,7 +2145,8 @@ a.c-button:hover {
   padding: 0 0; }
 
 .header-top__hide .header-logo {
-  padding: 0; }
+  padding: 0;
+  height: 5rem; }
 
 .header-top__no-hide {
   -webkit-transform: translateY(0) !important;
