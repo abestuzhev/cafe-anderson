@@ -1766,11 +1766,17 @@ test popup
             border-radius: 2.3rem;
             cursor: pointer;
             position: relative;
+            color: #9b9595;
+            span {
+                position: relative;
+                top: -.2rem;
+            }
         }
 
         &__up.active,
         &__down.active {
             background-color: #7cbd41;
+            color: #fff;
         }
     }
 

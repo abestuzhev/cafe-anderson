@@ -4583,9 +4583,14 @@ test popup
     height: 2.3rem;
     border-radius: 2.3rem;
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    color: #9b9595; }
+    .filter-btn__up span, .filter-btn__down span {
+      position: relative;
+      top: -.2rem; }
   .filter-btn__up.active, .filter-btn__down.active {
-    background-color: #7cbd41; }
+    background-color: #7cbd41;
+    color: #fff; }
   .filter-left, .filter-right {
     display: -webkit-box;
     display: -ms-flexbox;
