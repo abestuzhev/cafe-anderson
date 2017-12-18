@@ -68,6 +68,10 @@
       /*width: 100%;*/
       /*height: auto;*/
   /*}*/
+
+    .catalog-list .catalog-list__item {
+        width: 25%;
+    }
 }
 
 

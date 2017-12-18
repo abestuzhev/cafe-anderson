@@ -23,6 +23,9 @@ var $body,
 
 /*main.js*/
 
+var containerEl = document.querySelector('.mixed-list');
+var mixer = mixitup(containerEl);
+
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 /*scroll*/
@@ -37,6 +40,44 @@ $(document).ready(function ($) {
     // $('.header-subnavigation').mouseleave(function(){
     //     $(this).removeClass('is-visible');
     // });
+
+    /*показываем категории меню в каталоге*/
+    $('.filter-bage').on('click', function(e){
+        e.preventDefault();
+        $('.catalog-body').toggleClass('show-category');
+    });
+    $('.filter-hold__close').on('click', function(e){
+        e.preventDefault();
+        $('.catalog-body').removeClass('show-category');
+    });
+
+
+    /*слайдер карусель*/
+    $('.carousel-slider').owlCarousel({
+        loop:true,
+        // nav:true,
+        margin:20,
+        // items: 4,
+        // center: true,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                nav: true,
+                items:3
+            },
+            1200:{
+                nav: true,
+                items:4
+            },
+            1600:{
+                nav: true,
+                items:5
+            }
+        }
+    });
 
 
     $('#filter-cafe-all, #filter-cafe__mobile-all').on('change', function(){

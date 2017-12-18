@@ -1,11 +1,12 @@
 
 //gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-sourcemaps gulp-concat gulp-concat-css
+//gulp-sass gulp-autoprefixer gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-concat gulp-concat-css gulp-sourcemaps
 
 //plugins for development
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
-    plumber = require('gulp-plumber'),
+    // plumber = require('gulp-plumber'),
     livereload = require('gulp-livereload'),
     //minifyCSS = require('gulp-minify-css'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -54,8 +55,9 @@ gulp.task('js', function(){
         './bower_components/sumoselect/jquery.sumoselect.js',
         './bower_components/fotorama/fotorama.js',
         './js/tooltip.js',
-        './js/instafeed.min.js',
-        './js/instagram-script.js',
+        // './js/instafeed.min.js',
+        // './js/instagram-script.js',
+        './js/mixitup.min.js',
         './js/custom-map.js',
         './js/main.js'
     ])
