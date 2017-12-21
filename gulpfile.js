@@ -58,7 +58,7 @@ gulp.task('js', function(){
         // './js/instafeed.min.js',
         // './js/instagram-script.js',
         './js/mixitup.min.js',
-        './js/custom-map.js',
+        // './js/custom-map.js',
         './js/main.js'
     ])
         .pipe(sourcemaps.init())
