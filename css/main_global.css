@@ -5912,3 +5912,83 @@ test popup
 
 .owl-carousel .owl-stage-outer {
   height: 100%; }
+
+/*Создатели Андерсона (creators)------------------------------------------------*/
+.creators {
+  padding: 3.1rem 2.8rem;
+  font-family: "PT Serif Caption";
+  background-color: #fff; }
+  .creators-photo {
+    position: relative; }
+    .creators-photo img {
+      width: 100%;
+      height: auto; }
+  .creators .photo-point {
+    position: absolute; }
+    .creators .photo-point__icon {
+      border-radius: 10rem;
+      display: inline-block;
+      width: 3.1rem;
+      height: 3.1rem;
+      background-color: #91c346;
+      cursor: pointer; }
+      .creators .photo-point__icon::after {
+        content: '+';
+        display: block;
+        font-family: 'Arial', sans-serif;
+        font-size: 2rem;
+        color: #ffffff;
+        line-height: 3.1rem;
+        text-align: center; }
+    .creators .photo-point__description {
+      display: inline-block;
+      opacity: 0;
+      visibility: hidden; }
+    .creators .photo-point--tatulova {
+      top: 53%;
+      left: 24%; }
+  .creators-slogan {
+    margin-bottom: 3rem;
+    padding: 2rem 4rem;
+    background: url(../img/creators/slogan-img.jpg) 0 0 no-repeat; }
+    .creators-slogan__title {
+      font-size: 5.5rem;
+      color: #231300;
+      line-height: 1; }
+    .creators-slogan__subtitle {
+      color: #ffffff;
+      font-size: 2.6rem;
+      line-height: 1; }
+  .creators-history {
+    font-family: "PT Serif Caption"; }
+    .creators-history__box {
+      margin-bottom: 3rem; }
+    .creators-history__title {
+      font-size: 1.8rem;
+      color: #9b806f;
+      margin-bottom: 2rem;
+      text-transform: uppercase; }
+    .creators-history p {
+      font-size: 1.3rem;
+      color: #555451;
+      margin-bottom: 2rem; }
+    .creators-history-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      margin-right: -1.1rem;
+      margin-left: -1.1rem;
+      margin-bottom: 3rem; }
+      .creators-history-img__item {
+        width: 33.3333%;
+        padding: 0 1.1rem; }
