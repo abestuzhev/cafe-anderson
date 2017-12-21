@@ -23,8 +23,8 @@ var $body,
 
 /*main.js*/
 
-var containerEl = document.querySelector('.mixed-list');
-var mixer = mixitup(containerEl);
+// var containerEl = document.querySelector('.mixed-list');
+// var mixer = mixitup(containerEl);
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
