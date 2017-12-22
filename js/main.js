@@ -99,7 +99,7 @@ $(document).ready(function ($) {
             },
             1600:{
                 nav: true,
-                items:4
+                items:3
             }
         }
     });
