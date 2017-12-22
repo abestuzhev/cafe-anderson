@@ -79,6 +79,31 @@ $(document).ready(function ($) {
         }
     });
 
+    $('.c-card-product__slider').owlCarousel({
+        loop:true,
+        // nav:true,
+        margin:20,
+        // items: 4,
+        // center: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                nav: true,
+                items:2
+            },
+            1200:{
+                nav: true,
+                items:3
+            },
+            1600:{
+                nav: true,
+                items:4
+            }
+        }
+    });
+
     /*слайдер карусель*/
     $('.publications-slider').owlCarousel({
         loop:true,
@@ -281,7 +306,8 @@ $(document).ready(function ($) {
     showPopup(".c-reviews__item", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
     showPopup(".popup-forgot-password", '.popup__recovery-password');
-    showPopup(".click", '.popup-product');
+    showPopup(".c-card-catalog__img", '.popup-product');
+    showPopup(".c-card-catalog__title", '.popup-product');
 
 
 

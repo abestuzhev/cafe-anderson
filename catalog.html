@@ -1409,7 +1409,8 @@
 <div class="mfp-wrap popup-product" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
-            <div class="popup">
+            <div class="popup-layout">
+                <div class="popup">
                 <h3 class="popup-title">Фирменный салат «Цезарь» с листьями салата романо и домашней заправкой нам <span class="popup-close"></span></h3>
                 <div class="popup-body">
                     <div class="c-card-product">
@@ -1419,8 +1420,22 @@
                                 <div class="c-card-product__weight">Основной состав (250г.):</div>
                                 <div class="c-card-product__ingredients">Салат Романо, Рукколо, Домашняя заправка, Помидоры черри, Креветки,
 Кальмар, Пармезан</div>
-                                <div class="c-card-product__type">
-                                
+                                <div class="c-card-product-type">
+                                    <div class="c-card-product-type__item">
+                                        салат с креветками
+                                        <!--<label for="">салат с креветками</label>-->
+                                        <!--<input type="text">-->
+                                    </div>
+                                    <div class="c-card-product-type__item">
+                                        <a href="">салат с курицей</a>
+                                        <!--<label for="">салат с курицей</label>-->
+                                        <!--<input type="text">-->
+                                    </div>
+                                    <div class="c-card-product-type__item">
+                                        <a href="">салат с индейкой</a>
+                                        <!--<label for="">салат с индейкой</label>-->
+                                        <!--<input type="text">-->
+                                    </div>
                                 </div>
                                 <div class="c-card-product__buy">
                                     <div class="c-card-product__price">350.-</div>
@@ -1435,14 +1450,188 @@
                             </div>
                         </div>
                         <div class="c-card-product__body">
-                            <div class="c-card-product__supplements"></div>
+                            <h4 class="c-card-product__title">Добавьте блюду свою изюминку:</h4>
+                            <div class="c-card-product__note">У вас есть добавки :)</div>
+                            <div class="c-card-product-supplements">
+                                <div class="c-card-product-supplements__item">
+                                    <div class="c-card-supplements">
+                                        <div class="c-card-supplements__name">Индейка</div>
+                                        <div class="c-card-supplements__count">
+                                            <div class="c-counter">
+                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                            <div class="c-counter__box">
+                                                <input type="text" class="c-counter__field fieldCount" value="100" data-min="50" data-max="1000">
+                                            </div>
+                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                        </div>
+                                        </div>
+                                        <div class="c-card-supplements__price">100.-</div>
+                                        <a href="#" class="c-card-supplements__btn">Добавить</a>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-supplements__item">
+                                    <div class="c-card-supplements">
+                                        <div class="c-card-supplements__name">Курица</div>
+                                        <div class="c-card-supplements__count">
+                                            <div class="c-counter">
+                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                            <div class="c-counter__box">
+                                                <input type="text" class="c-counter__field fieldCount" value="100" data-min="50" data-max="1000">
+                                            </div>
+                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                        </div>
+                                        </div>
+                                        <div class="c-card-supplements__price">100.-</div>
+                                        <a href="#" class="c-card-supplements__btn">Добавить</a>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-supplements__item">
+                                    <div class="c-card-supplements">
+                                        <div class="c-card-supplements__name">Лосось</div>
+                                        <div class="c-card-supplements__count">
+                                            <div class="c-counter">
+                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                            <div class="c-counter__box">
+                                                <input type="text" class="c-counter__field fieldCount" value="100" data-min="50" data-max="1000">
+                                            </div>
+                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                        </div>
+                                        </div>
+                                        <div class="c-card-supplements__price">100.-</div>
+                                        <a href="#" class="c-card-supplements__btn">Добавить</a>
+                                    </div>
+                                </div>
+                                <div class="c-card-product-supplements__item">
+                                    <div class="c-card-supplements">
+                                        <div class="c-card-supplements__name">Мята</div>
+                                        <div class="c-card-supplements__count">
+                                            <div class="c-counter">
+                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                            <div class="c-counter__box">
+                                                <input type="text" class="c-counter__field fieldCount" value="100" data-min="50" data-max="1000">
+                                            </div>
+                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                        </div>
+                                        </div>
+                                        <div class="c-card-supplements__price">100.-</div>
+                                        <a href="#" class="c-card-supplements__btn">Добавить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="c-card-product__title">Вкусно вместе с блюдом!</h4>
+                            <div class="catalog-recommend">
+                                <div class="c-card-product__slider owl-carousel">
+                                    <div class="carousel-slider__item">
+                                        <a href="#" class="c-card-catalog c-card-catalog--mini">
+                                            <div class="c-card-catalog__header">
+                                                <div class="c-card-catalog__title">Черный хлеб</div>
+                                                <div class="c-card-catalog__weight">Вес: 300 г.</div>
+                                                
+                                            </div>
+                                            <div class="c-card-catalog__footer">
+                                                <div class="c-card-catalog__price">590.-</div>
+                                                <div class="c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="c-card-catalog__img" src="./img/catalog-img-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-slider__item">
+                                        <a href="#" class="c-card-catalog c-card-catalog--mini">
+                                            <div class="c-card-catalog__header">
+                                                <div class="c-card-catalog__title">Салат с ростбифом, листьями шпината и ореховым соусом</div>
+                                            </div>
+                                            <div class="c-card-catalog__footer">
+                                                <div class="c-card-catalog__price">590.-</div>
+                                                <div class="c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="c-card-catalog__img" src="./img/catalog-img-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-slider__item">
+                                        <a href="#" class="c-card-catalog c-card-catalog--mini">
+                                            <div class="c-card-catalog__header">
+                                                <div class="c-card-catalog__title">Салат с ростбифом, листьями шпината и ореховым соусом</div>
+                                            </div>
+                                            <div class="c-card-catalog__footer">
+                                                <div class="c-card-catalog__price">590.-</div>
+                                                <div class="c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="c-card-catalog__img" src="./img/catalog-img-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-slider__item">
+                                        <a href="#" class="c-card-catalog c-card-catalog--mini">
+                                            <div class="c-card-catalog__header">
+                                                <div class="c-card-catalog__title">Салат с ростбифом, листьями шпината и ореховым соусом</div>
+                                            </div>
+                                            <div class="c-card-catalog__footer">
+                                                <div class="c-card-catalog__price">590.-</div>
+                                                <div class="c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="c-card-catalog__img" src="./img/catalog-img-4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="c-card-product__footer">
-                        
+                            <h4 class="c-card-product__title">Где попробовать?</h4>
+                            <div id="map" class="cafe-map"></div>
+                            <div class="c-card-product__text"><b>Блюдо не подается в: </b>Андерсон на Вологодской (г.Москва), Андерсон на Ленинградской (г.Санкт-Петербург),</div>
                         </div>
                     </div>
                 </div><!--popup-body-->
             </div>
+                <div class="popup-mini">
+                <h3 class="popup-title">Вы хотите</h3>
+                <div class="popup-body">
+                    <ul class="popup-mini__list">
+                        <li class="popup-mini-product">
+                            <div class="popup-mini-product__name">Порция 250г. <span>1 шт.</span></div>
+                            <div class="popup-mini-product__price">350.-</div>
+                        </li>
+                        <li class="popup-mini-product">
+                            <div class="popup-mini-product__name">Добавки <span>Лосось 100г.</span></div>
+                            <div class="popup-mini-product__price">150.-</div>
+                        </li>
+                        <li class="popup-mini-product">
+                            <div class="popup-mini-product__name">Добавки <span>Курица 50г</span></div>
+                            <div class="popup-mini-product__price">50.-</div>
+                        </li>
+                        <li class="popup-mini-product">
+                            <div class="popup-mini-product__name">Вкусно вместе <span>Долька лимона 10г</span></div>
+                            <div class="popup-mini-product__price">5.-</div>
+                        </li>
+                    </ul>
+                    <a href="" class="popup-mini__btn">Добавить в корзину <i class="icon-shopping-cart"></i></a>
+                </div>
+            </div>
+            </div>
+            
         </div>
     </div>
 </div>

@@ -1308,8 +1308,85 @@ main {
     //visibility: visible !important;
 
     .popup {
-        min-width: 88.5rem;
+        //width: 88.4rem;
+        min-width: 98.4rem;
     }
+
+    .popup-title {
+        padding: 2rem;
+        font-size: 1.9rem;
+        text-align: left;
+    }
+
+    .popup-body {
+        padding: 2rem;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat
+    }
+}
+
+.popup-layout {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.popup-mini {
+    font-family: $font_serif;
+    width: 26.4rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 1.2rem;
+
+    &__list {
+        //margin-bottom: 2.6rem;
+    }
+
+    &-product {
+        margin-bottom: 1.6rem;
+        &__name {
+            font-style: italic;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: #553023;
+
+            span {
+                font-size: 1.4rem;
+                line-height: 1.71;
+                color: #646464;
+                white-space: nowrap;
+            }
+        }
+
+        &__price {
+            font-size: 1.6rem;
+            font-style: italic;
+            line-height: 1.5;
+            color: #553023;
+        }
+    }
+    
+    &__btn {
+        display: block;
+        padding: 1.6rem 1.4rem;
+        border-radius: .4rem;
+        background-color: #7cbd41;
+        font-size: 1.6rem;
+        line-height: 1.56;
+        text-align: center;
+        color: #ffffff;
+        
+        &:hover {
+            color: #ffffff;
+            background-color: rgb(111, 170, 58);
+        }
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
 
 }
 
