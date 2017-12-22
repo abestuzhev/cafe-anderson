@@ -704,7 +704,7 @@
 
     &-navigation {/*header--navigation*/
         font-family: $font_sans-serif;
-        background-color: #b81f79cc;
+        background-color: #c44890;
         -webkit-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
@@ -728,6 +728,13 @@
             border: none;
             position: relative;
             color: #ffffff;
+            @extend %transition_all;
+            
+            &:hover {
+                color: #ffffff;
+                //background-color: #9e2f70;
+                @extend %transition_all;
+            }
 
             &::after {
                 content: '';
@@ -738,7 +745,7 @@
                 width: .3rem;
                 height: 6rem;
                 border: none;
-                background: url(../img/icons/icon-wave.svg) 0 0 no-repeat;
+                background: url(../img/icons/icon-wave-white.svg) 0 0 no-repeat;
             }
 
             &:last-child::after {
