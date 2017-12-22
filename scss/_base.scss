@@ -1704,6 +1704,30 @@ a.c-button {
 
 .c-card-product {
 
+    &__header {
+
+    }
+    &__img {
+
+    }
+
+    &__info {
+
+    }
+
+
+    &__wight {
+        color: #553023;
+        font-style: italic;
+        font-size: 1.6rem;
+    }
+
+
+    &__ingredients {
+        font-style: italic;
+        font-size: 1.4rem;
+        color: #646464;
+    }
 
     &__buy {
         display: flex;
