@@ -79,6 +79,38 @@ $(document).ready(function ($) {
         }
     });
 
+    /*слайдер карусель*/
+    $('.publications-slider').owlCarousel({
+        loop:true,
+        nav:true,
+        margin:20,
+        items: 7,
+        // center: true,
+        stagePadding: 10,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                nav: true,
+                items:5
+            },
+            1200:{
+                nav: true,
+                items:6
+            },
+            1600:{
+                nav: true,
+                items:7
+            },
+            1920:{
+                nav: true,
+                items:7
+            }
+        }
+    });
+
 
     $('#filter-cafe-all, #filter-cafe__mobile-all').on('change', function(){
         var $this = $(this),
@@ -249,6 +281,7 @@ $(document).ready(function ($) {
     showPopup(".c-reviews__item", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
     showPopup(".popup-forgot-password", '.popup__recovery-password');
+    showPopup(".click", '.popup-product');
 
 
 
