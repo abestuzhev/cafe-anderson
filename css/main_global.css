@@ -6066,13 +6066,20 @@ test popup
       position: absolute;
       top: 1.5rem;
       right: 2rem;
-      width: 24rem;
+      width: 25rem;
       font-size: 1.3rem;
       line-height: 1.1;
-      color: #ffffff;
       border-top: .2rem solid #91c346;
       padding-top: .5rem;
       padding-right: 3rem; }
+      .creators .photo-point__description span {
+        display: inline-block;
+        padding: 4px 10px 10px;
+        border-radius: 6px;
+        color: #ffffff;
+        background-color: #91c346;
+        -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+                box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3); }
     .creators .photo-point--tatulova {
       top: 51%;
       left: 24%; }
@@ -6082,21 +6089,21 @@ test popup
       .creators .photo-point--woman-2 .photo-point__description {
         left: 2rem;
         padding-right: 0;
-        padding-left: 3rem; }
+        padding-left: 2.5rem; }
     .creators .photo-point--woman-3 {
       top: 29%;
       left: 50%; }
       .creators .photo-point--woman-3 .photo-point__description {
         left: 2rem;
         padding-right: 0;
-        padding-left: 3rem; }
+        padding-left: 2.5rem; }
     .creators .photo-point--woman-4 {
       top: 58%;
       left: 52%; }
       .creators .photo-point--woman-4 .photo-point__description {
         left: 2rem;
         padding-right: 0;
-        padding-left: 3rem; }
+        padding-left: 2.5rem; }
     .creators .photo-point--woman-5 {
       top: 41%;
       left: 60%; }
