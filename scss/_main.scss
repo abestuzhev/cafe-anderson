@@ -1313,13 +1313,13 @@ main {
     }
 
     .popup-title {
-        padding: 2rem;
+        padding: 2rem 2rem 1.6rem;
         font-size: 1.9rem;
         text-align: left;
     }
 
     .popup-body {
-        padding: 2rem;
+        padding: 1.4rem 2rem;
         background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat
     }
 }
@@ -1327,6 +1327,10 @@ main {
 .popup-layout {
     position: relative;
     margin: 2rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .popup-mini {
@@ -1334,9 +1338,9 @@ main {
     width: 26.4rem;
     overflow: hidden;
     border-radius: 1rem;
-    position: absolute;
-    top: 0;
-    left: 100%;
+    //position: absolute;
+    //top: 0;
+    //left: 100%;
     margin-left: 1.2rem;
 
     &__list {
@@ -1347,7 +1351,7 @@ main {
         margin-bottom: 1.6rem;
         &__name {
             font-style: italic;
-            font-size: 1.6rem;
+            font-size: .8rem;
             line-height: 1.5;
             color: #553023;
 

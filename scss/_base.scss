@@ -1711,7 +1711,7 @@ a.c-button {
         flex-flow: row nowrap;
         align-items: stretch;
         justify-content: flex-start;
-        margin-bottom: 2.3rem;
+        margin-bottom: 1.7rem;
         margin-right: 4.1rem;
     }
     &__img {
@@ -1727,7 +1727,7 @@ a.c-button {
         color: #553023;
         font-style: italic;
         font-size: 1.6rem;
-        margin-bottom: .5rem;
+        margin-bottom: .3rem;
     }
 
 
@@ -1739,7 +1739,7 @@ a.c-button {
     }
 
     &-type {
-        margin-bottom: 1.7rem;
+        margin-bottom: 1.5rem;
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-start;
@@ -1793,7 +1793,7 @@ a.c-button {
         font-family: $font_sans-serif;
         font-size: 4.4rem;
         color: #553023;
-        margin-right: 1.8rem;
+        margin-right: 1.1rem;
     }
 
     &__count {
@@ -1806,7 +1806,7 @@ a.c-button {
         margin: 0 .4rem;
 
         .c-counter {
-            padding: .4rem 1.2rem;
+            padding: .7rem 1.2rem;
             border-radius: .8rem;
             background-color: #7cbd41;
             border: none;
@@ -1840,7 +1840,6 @@ a.c-button {
         line-height: 1.33;
         text-align: left;
         color: #553023;
-        margin-bottom: .4rem;
     }
 
     &__note {
@@ -1848,7 +1847,7 @@ a.c-button {
         font-style: italic;
         line-height: 2;
         color: #515151;
-        margin-bottom: 2.4rem;
+        margin-bottom: 1.6rem;
     }
 
     &-supplements {
@@ -1856,7 +1855,7 @@ a.c-button {
         flex-flow: row wrap;
         align-items: stretch;
         justify-content: space-between;
-        margin-bottom: 5.3rem;
+        margin-bottom: 4rem;
         margin-right: 4.1rem;
 
         &__item {

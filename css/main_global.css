@@ -1987,7 +1987,7 @@ a.c-button:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 2.3rem;
+  margin-bottom: 1.7rem;
   margin-right: 4.1rem; }
 
 .c-card-product__img {
@@ -1997,7 +1997,7 @@ a.c-button:hover {
   color: #553023;
   font-style: italic;
   font-size: 1.6rem;
-  margin-bottom: .5rem; }
+  margin-bottom: .3rem; }
 
 .c-card-product__ingredients {
   font-style: italic;
@@ -2006,7 +2006,7 @@ a.c-button:hover {
   margin-bottom: 1rem; }
 
 .c-card-product-type {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2068,7 +2068,7 @@ a.c-button:hover {
   font-family: "BebasNeue";
   font-size: 4.4rem;
   color: #553023;
-  margin-right: 1.8rem; }
+  margin-right: 1.1rem; }
 
 .c-card-product__count {
   border-radius: .8rem;
@@ -2088,7 +2088,7 @@ a.c-button:hover {
           align-items: center;
   margin: 0 .4rem; }
   .c-card-product__count .c-counter {
-    padding: .4rem 1.2rem;
+    padding: .7rem 1.2rem;
     border-radius: .8rem;
     background-color: #7cbd41;
     border: none; }
@@ -2111,15 +2111,14 @@ a.c-button:hover {
   font-size: 1.8rem;
   line-height: 1.33;
   text-align: left;
-  color: #553023;
-  margin-bottom: .4rem; }
+  color: #553023; }
 
 .c-card-product__note {
   font-size: 1.2rem;
   font-style: italic;
   line-height: 2;
   color: #515151;
-  margin-bottom: 2.4rem; }
+  margin-bottom: 1.6rem; }
 
 .c-card-product-supplements {
   display: -webkit-box;
@@ -2135,7 +2134,7 @@ a.c-button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 5.3rem;
+  margin-bottom: 4rem;
   margin-right: 4.1rem; }
   .c-card-product-supplements__item {
     width: 50%;
@@ -4589,32 +4588,42 @@ main {
   min-width: 88.4rem; }
 
 .popup-product .popup-title {
-  padding: 2rem;
+  padding: 2rem 2rem 1.6rem;
   font-size: 1.9rem;
   text-align: left; }
 
 .popup-product .popup-body {
-  padding: 2rem;
+  padding: 1.4rem 2rem;
   background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
 
 .popup-layout {
   position: relative;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .popup-mini {
   font-family: "PT Serif Caption";
   width: 26.4rem;
   overflow: hidden;
   border-radius: 1rem;
-  position: absolute;
-  top: 0;
-  left: 100%;
   margin-left: 1.2rem; }
   .popup-mini-product {
     margin-bottom: 1.6rem; }
     .popup-mini-product__name {
       font-style: italic;
-      font-size: 1.6rem;
+      font-size: .8rem;
       line-height: 1.5;
       color: #553023; }
       .popup-mini-product__name span {
