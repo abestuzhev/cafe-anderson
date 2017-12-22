@@ -6144,7 +6144,7 @@ test popup
     .creators-slogan__title {
       font-size: 5.5rem;
       color: #231300;
-      line-height: 1;
+      line-height: 1.3;
       position: relative;
       z-index: 3;
       padding-right: 4rem; }
