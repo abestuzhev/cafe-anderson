@@ -1881,6 +1881,10 @@ a.c-button {
             margin-bottom: 0;
         }
 
+        .c-card-catalog__footer {
+            align-items: center;
+        }
+
         .owl-stage {
             padding: 1rem 0;
         }
@@ -1897,7 +1901,7 @@ a.c-button {
         }
 
         .c-counter {
-            padding: .2rem .6rem;
+            padding: .4rem .6rem;
         }
 
         .c-counter__field {
@@ -1959,7 +1963,7 @@ a.c-button {
     &__count {
 
         .c-counter {
-            padding: .4rem 1.2rem;
+            //padding: .4rem 1.2rem;
             border-radius: .8rem;
             border: none;
         }
