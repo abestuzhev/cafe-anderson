@@ -1848,7 +1848,6 @@ test popup
         }
 
         &__down {
-
         }
 
         &__up,
@@ -1863,6 +1862,7 @@ test popup
             span {
                 position: relative;
                 top: -.2rem;
+                font-size: 1.4rem;
             }
         }
 
@@ -3101,7 +3101,7 @@ test popup
     width: 3.3rem;
     height: 3.3rem;
     text-indent: -99999px;
-    background: url(../img/icons/icon-green-arrow-right.svg) 0 0 no-repeat;
+    background: url(../img/icons/icon-green-arrow-left.svg) 0 0 no-repeat;
 }
 
 .fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--next:not(:focus),
@@ -3116,7 +3116,7 @@ test popup
     width: 3.3rem;
     height: 3.3rem;
     text-indent: -99999px;
-    background: url(../img/icons/icon-green-arrow-left.svg) 0 0 no-repeat;
+    background: url(../img/icons/icon-green-arrow-right.svg) 0 0 no-repeat;
 }
 
 /*Отзывы (reviews)----------------------------------------------------*/
@@ -3588,10 +3588,12 @@ test popup
     //}
 
     .owl-nav .owl-prev {
-        right: -3%;
+        right: auto;
+        left: -3%;
     }
     .owl-nav .owl-next {
-        left: -3%;
+        left: auto;
+        right: -3%;
     }
 
     &.owl-carousel .owl-nav.disabled {

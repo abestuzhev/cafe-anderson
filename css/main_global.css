@@ -2161,9 +2161,11 @@ a.c-button:hover {
   .c-card-product__slider .owl-nav {
     display: block !important; }
   .c-card-product__slider .owl-nav .owl-prev {
-    right: -4rem !important; }
+    right: auto;
+    left: -4rem; }
   .c-card-product__slider .owl-nav .owl-next {
-    left: -4rem !important; }
+    left: auto !important;
+    right: -4rem; }
   .c-card-product__slider .c-counter {
     padding: .4rem .6rem; }
   .c-card-product__slider .c-counter__field {
@@ -2745,7 +2747,6 @@ a.c-button:hover {
         position: relative; }
         .header-mobile__menu-btn .icon-menu__line-1 svg,
         .header-mobile__menu-btn .icon-menu__line-2 svg {
-          width: 18px;
           margin-bottom: 4px; }
       .header-mobile__menu-text {
         display: inline-block;
@@ -2756,6 +2757,8 @@ a.c-button:hover {
         color: #67af26; }
       .header-mobile__menu:hover .icon-menu {
         fill: #67af26; }
+      .header-mobile__menu .icon-menu {
+        height: auto; }
     .header-mobile__search {
       float: right; }
       .header-mobile__search-box {
@@ -5004,7 +5007,8 @@ test popup
     color: #9b9595; }
     .filter-btn__up span, .filter-btn__down span {
       position: relative;
-      top: -.2rem; }
+      top: -.2rem;
+      font-size: 1.4rem; }
   .filter-btn__up.active, .filter-btn__down.active {
     background-color: #7cbd41;
     color: #fff; }
@@ -5967,7 +5971,7 @@ test popup
   width: 3.3rem;
   height: 3.3rem;
   text-indent: -99999px;
-  background: url(../img/icons/icon-green-arrow-right.svg) 0 0 no-repeat; }
+  background: url(../img/icons/icon-green-arrow-left.svg) 0 0 no-repeat; }
 
 .fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--next:not(:focus),
 .fotorama__wrap--css3.fotorama__wrap--no-controls.fotorama__wrap--slide.fotorama__wrap--toggle-arrows .fotorama__arr--prev:not(:focus) {
@@ -5981,7 +5985,7 @@ test popup
   width: 3.3rem;
   height: 3.3rem;
   text-indent: -99999px;
-  background: url(../img/icons/icon-green-arrow-left.svg) 0 0 no-repeat; }
+  background: url(../img/icons/icon-green-arrow-right.svg) 0 0 no-repeat; }
 
 /*Отзывы (reviews)----------------------------------------------------*/
 .reviews {
@@ -6332,9 +6336,11 @@ test popup
   width: 94%;
   margin: 0 auto; }
   .carousel-slider .owl-nav .owl-prev {
-    right: -3%; }
-  .carousel-slider .owl-nav .owl-next {
+    right: auto;
     left: -3%; }
+  .carousel-slider .owl-nav .owl-next {
+    left: auto;
+    right: -3%; }
   .carousel-slider.owl-carousel .owl-nav.disabled {
     display: block; }
 

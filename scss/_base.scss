@@ -1893,10 +1893,12 @@ a.c-button {
         }
 
         .owl-nav .owl-prev {
-            right: -4rem !important;
+            right: auto;
+            left: -4rem;
         }
         .owl-nav .owl-next {
-            left: -4rem !important;
+            left: auto !important;
+            right: -4rem;
         }
 
         .c-counter {
