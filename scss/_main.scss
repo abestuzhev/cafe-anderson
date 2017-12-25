@@ -2008,6 +2008,11 @@ test popup
             &:last-child {
                 margin-right: 0;
             }
+            
+            &::after {
+                content: '';
+                border: none;
+            }
 
             svg {
                 margin-right: .8rem;
@@ -2018,12 +2023,25 @@ test popup
                 font-family: $font_serif;
             }
 
-            &.mixitup-control-active {
+            &.active,
+            &:hover {
                 background-color: #7cbd41;
                 color: #fff;
+                position: relative;
+                
+                &::before {
+                    content:'';
+                    position: absolute;
+                    border: 2px dashed #7cbd41;
+                    top: -4px;
+                    left: -4px;
+                    right: -4px;
+                    bottom: -4px;
+                }
+                
                 svg {
                     fill: #fff;
-                    margin-right: .8rem;
+                    //margin-right: .8rem;
                 }
                 a {
                     font-family: $font_serif;
@@ -3486,22 +3504,7 @@ test popup
             .catalog-list {
                 min-height: 66rem;
             }
-
-            //.c-card-catalog__count .c-counter__btn {
-            //    width: 2.4rem;
-            //    height: 2.4rem;
-            //    font-size: 2rem;
-            //    line-height: 1.4rem;
-            //}
-            //
-            //.c-card-catalog__count .c-counter__field {
-            //    width: 2.6rem !important;
-            //    font-size: 2.2rem;
-            //}
-            //
-            //.c-card-catalog__price {
-            //    font-size: 4rem;
-            //}
+            
             .catalog-list {
                 margin-left: -.5rem;
                 margin-right: -.5rem;

@@ -5130,21 +5130,32 @@ test popup
       margin-right: 2rem; }
       .filter-mix__item:last-child {
         margin-right: 0; }
+      .filter-mix__item::after {
+        content: '';
+        border: none; }
       .filter-mix__item svg {
         margin-right: .8rem;
         vertical-align: middle; }
       .filter-mix__item a {
         font-family: "PT Serif Caption"; }
-      .filter-mix__item.mixitup-control-active {
+      .filter-mix__item.active, .filter-mix__item:hover {
         background-color: #7cbd41;
-        color: #fff; }
-        .filter-mix__item.mixitup-control-active svg {
-          fill: #fff;
-          margin-right: .8rem; }
-        .filter-mix__item.mixitup-control-active a {
+        color: #fff;
+        position: relative; }
+        .filter-mix__item.active::before, .filter-mix__item:hover::before {
+          content: '';
+          position: absolute;
+          border: 2px dashed #7cbd41;
+          top: -4px;
+          left: -4px;
+          right: -4px;
+          bottom: -4px; }
+        .filter-mix__item.active svg, .filter-mix__item:hover svg {
+          fill: #fff; }
+        .filter-mix__item.active a, .filter-mix__item:hover a {
           font-family: "PT Serif Caption";
           color: #fff; }
-          .filter-mix__item.mixitup-control-active a::after {
+          .filter-mix__item.active a::after, .filter-mix__item:hover a::after {
             content: '';
             border: none; }
 

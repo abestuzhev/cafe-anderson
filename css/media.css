@@ -138,6 +138,10 @@
     }
 
     .cafe-list-layout .filter-item:nth-child(2) {width: 66%;}
+
+    .catalog-body.show-category .catalog-list__item {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -309,6 +313,10 @@
 
     .not-found-mobile > a {
         position: static;
+    }
+
+    .catalog-list__item {
+        width: 50%;
     }
 }
 
@@ -861,6 +869,17 @@
         width: 33.3333%;
     }
 
+    .catalog-body.show-category .catalog-list__item {
+        width: auto;
+    }
+
+    .catalog-body .filter-hold {
+        z-index: 11;
+    }
+    .catalog-body.show-category .catalog-product {
+        margin-left: 0;
+    }
+
 }
 
 @media (max-width:920px) {
@@ -1276,6 +1295,12 @@
 @media screen and (max-height:730px) {
     .cafe-slider .fotorama__stage.fotorama__pointer {
         height: 45rem !important;
+    }
+}
+
+@media screen and (max-height:720px) {
+    .catalog-list__item {
+        width: 50%;
     }
 }
 
