@@ -2010,8 +2010,8 @@ a.c-button:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -4590,7 +4590,7 @@ main {
   width: 100%; }
 
 .popup-product .popup-title {
-  padding: 2rem 2rem 1.6rem;
+  padding: 2rem 6rem 1.6rem 2rem !important;
   font-size: 1.9rem;
   text-align: left; }
 
