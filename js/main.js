@@ -310,6 +310,9 @@ $(document).ready(function ($) {
                 'overflow':'hidden',
                 'margin-right':'17px'
             });
+            $('.header.sticky').css({
+                'right':'17px'
+            });
 
 
             // $('html').addClass('body-popup');
@@ -323,6 +326,9 @@ $(document).ready(function ($) {
         $('html').css({
             'overflow':'auto',
             'margin-right':'0'
+        });
+        $('.header.sticky').css({
+            'right':'0'
         });
     });
 

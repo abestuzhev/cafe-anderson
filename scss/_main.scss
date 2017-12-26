@@ -451,7 +451,7 @@ main {
     //left: 50%;
     //margin-left: -250px;
     //margin-top: -300px;
-    width: 500px;
+    max-width: 500px;
     background-color: #FFF;
     //box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
     //opacity: 0;
@@ -1309,7 +1309,8 @@ main {
 
     .popup {
         //width: 88.4rem;
-        min-width: 88.4rem;
+        max-width: 88.4rem;
+        width: 100%;
     }
 
     .popup-title {
@@ -1591,7 +1592,7 @@ test popup
 }
 
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
-    //width: 100%;
+    width: 100%;
     cursor: auto;
 }
 

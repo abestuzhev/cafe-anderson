@@ -3982,7 +3982,7 @@ main {
     width: 46%; }
 
 .popup {
-  width: 500px;
+  max-width: 500px;
   background-color: #FFF;
   overflow: hidden;
   font-family: "PT Serif Caption";
@@ -4586,7 +4586,8 @@ main {
 
 /*карточка товара*/
 .popup-product .popup {
-  min-width: 88.4rem; }
+  max-width: 88.4rem;
+  width: 100%; }
 
 .popup-product .popup-title {
   padding: 2rem 2rem 1.6rem;
@@ -4813,6 +4814,7 @@ test popup
   vertical-align: middle; }
 
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
+  width: 100%;
   cursor: auto; }
 
 .mfp-content {

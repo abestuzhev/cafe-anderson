@@ -236,6 +236,10 @@
     /*.header-logo__beta {*/
         /*right: -5.2rem;*/
     /*}*/
+
+    .popup-product .popup-mini {
+        display: none;
+    }
 }
 
 @media (max-width:1178px) {
@@ -1357,6 +1361,7 @@
         top: 0;
         left: 0;
         width: 100% !important;
+        max-width: 100% !important;
         height: 100vh;
         margin: 0;
         overflow-y: scroll;
