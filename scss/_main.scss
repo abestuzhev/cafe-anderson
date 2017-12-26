@@ -2767,6 +2767,10 @@ test popup
         
         width: 100%;
         padding: .9rem 19.4rem;
+    
+        .fotorama__stage.fotorama__pointer {
+            height: 60rem !important;
+        }
     }
 }
 

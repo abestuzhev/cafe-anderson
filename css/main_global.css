@@ -5693,6 +5693,8 @@ test popup
   .cafe-fotorama {
     width: 100%;
     padding: .9rem 19.4rem; }
+    .cafe-fotorama .fotorama__stage.fotorama__pointer {
+      height: 60rem !important; }
 
 /*partners----------------------------------------------------*/
 .partners {
