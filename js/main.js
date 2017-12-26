@@ -304,10 +304,14 @@ $(document).ready(function ($) {
             e.preventDefault();
             $(popup).addClass('is-visible');
             $('.mfp-bg').addClass('is-visible');
+
+
             $('html').css({
                 'overflow':'hidden',
                 'margin-right':'17px'
             });
+
+
             // $('html').addClass('body-popup');
         });
     }

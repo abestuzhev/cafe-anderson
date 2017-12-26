@@ -1548,9 +1548,10 @@ test popup
     /*display: none;*/
     opacity: 0;
     visibility: hidden;
-    transition: all .2s ease;
-    transform: scale(1);
-    @extend %transition_all;
+    transition: all .1s ease;
+    //transform: scale(1);
+    //@extend %transition_all;
+    overflow-y: scroll !important;
 }
 
 .mfp-wrap {
@@ -1640,6 +1641,13 @@ test popup
     opacity: 1 !important;
     visibility: visible;
     transform: scale(1);
+    //@extend %transition_all;
+    transition: all .1s ease;
+}
+
+.is-show__smoothly {
+    opacity: 1 !important;
+    visibility: visible;
     @extend %transition_all;
 }
 

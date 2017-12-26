@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
 .c-icon:hover, a, a:hover, a:focus, .c-input, .c-input:focus, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item:hover, .c-card-publication, .c-card-publication:hover, .header-mobile__dropdown, .header-mobile__auth, .header-search__form, .header-navigation__item, .header-navigation__item:hover, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
-.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .mfp-bg, .popup-show, .dropdown-show .icon-dropdown, .is-visible, .body-popup, .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover {
+.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .popup-show, .dropdown-show .icon-dropdown, .is-show__smoothly, .body-popup, .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -4771,12 +4771,10 @@ test popup
   /*display: none;*/
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1); }
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+  overflow-y: scroll !important; }
 
 .mfp-wrap {
   top: 0;
@@ -4854,7 +4852,14 @@ test popup
   visibility: visible;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
-          transform: scale(1); }
+          transform: scale(1);
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease; }
+
+.is-show__smoothly {
+  opacity: 1 !important;
+  visibility: visible; }
 
 .is-hide {
   display: none !important; }
