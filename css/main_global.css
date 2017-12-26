@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
 .c-icon:hover, a, a:hover, a:focus, .c-input, .c-input:focus, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item:hover, .c-card-publication, .c-card-publication:hover, .header-mobile__dropdown, .header-mobile__auth, .header-search__form, .header-navigation__item, .header-navigation__item:hover, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
-.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .mfp-bg, .popup-show, .dropdown-show .icon-dropdown, .is-visible, .body-popup, .filter-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover {
+.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .mfp-bg, .popup-show, .dropdown-show .icon-dropdown, .is-visible, .body-popup, .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -1809,11 +1809,9 @@ a.c-button:hover {
   position: relative;
   width: 100%;
   height: 39rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f2f6f9), to(#fafafc));
-  background-image: -o-linear-gradient(left, #f2f6f9, #fafafc);
-  background-image: linear-gradient(to right, #f2f6f9, #fafafc);
   -webkit-box-shadow: 0px 3px 13.8px 1.2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 13.8px 1.2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
   overflow: hidden;
   text-align: left;
   color: #515151; }
@@ -4893,16 +4891,16 @@ test popup
   font-family: "PT Serif Caption";
   position: relative;
   z-index: 10; }
-  .filter-mobile-btn {
+  .filter-mobile-btn, .filter-hold-mobile-btn {
     display: none;
     padding: 1.4rem 1.6rem;
     margin-bottom: 1rem;
     vertical-align: middle;
     position: relative;
     border: none; }
-    .filter-mobile-btn:hover {
+    .filter-mobile-btn:hover, .filter-hold-mobile-btn:hover {
       color: #fff; }
-    .filter-mobile-btn .icon-dropdown {
+    .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -5077,6 +5075,21 @@ test popup
     -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
     border: solid 1px rgba(115, 115, 115, 0.15); }
+    .filter-hold__close {
+      display: block;
+      padding: 1.4rem 1.6rem 3.5rem;
+      border-radius: 0 0 50px 50px;
+      position: absolute;
+      z-index: 9999;
+      width: 10px;
+      height: 10px;
+      right: 9px;
+      top: 0;
+      background: url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+      border: 1px solid #9b806f;
+      border-top: transparent;
+      background-size: 10px 11px;
+      cursor: pointer; }
     .filter-hold__item {
       color: #555451;
       display: block;
@@ -6276,11 +6289,6 @@ test popup
     transition: margin-left .2s ease-out; }
   .catalog-body.show-category .catalog-list {
     min-height: 66rem; }
-  .catalog-body.show-category .catalog-list {
-    margin-left: -.5rem;
-    margin-right: -.5rem; }
-  .catalog-body.show-category .catalog-list__item {
-    padding: 0 .5rem; }
 
 .catalog-product {
   width: 100%;

@@ -1687,7 +1687,8 @@ test popup
     position: relative;
     z-index: 10;
     
-    &-mobile-btn {
+    &-mobile-btn,
+    &-hold-mobile-btn {
         display: none;
         padding: 1.4rem 1.6rem;
         margin-bottom: 1rem;
@@ -1940,6 +1941,23 @@ test popup
         background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
         box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
         border: solid 1px rgba(115, 115, 115, 0.15);
+        
+        &__close {
+            display: block;
+            padding: 1.4rem 1.6rem 3.5rem;
+            border-radius: 0 0 50px 50px;
+            position: absolute;
+            z-index: 9999;
+            width: 10px;
+            height: 10px;
+            right: 9px;
+            top: 0;
+            background: url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+            border: 1px solid #9b806f;
+            border-top: transparent;
+            background-size: 10px 11px;
+            cursor: pointer;
+        }
 
         &__item {
             color: $black;
@@ -3505,13 +3523,13 @@ test popup
                 min-height: 66rem;
             }
             
-            .catalog-list {
-                margin-left: -.5rem;
-                margin-right: -.5rem;
-            }
-            .catalog-list__item {
-                padding: 0 .5rem;
-            }
+            //.catalog-list {
+            //    margin-left: -.5rem;
+            //    margin-right: -.5rem;
+            //}
+            //.catalog-list__item {
+            //    padding: 0 .5rem;
+            //}
         }
     }
 

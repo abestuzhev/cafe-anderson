@@ -13,6 +13,24 @@
     }
 }
 
+@media (max-width: 1280px) and (min-width: 980px)  {
+
+    .catalog-body.show-category .catalog-list__item {
+        width: 50%;
+    }
+}
+@media (min-width: 980px)  {
+
+    .catalog-body.show-category .catalog-list {
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    .catalog-body.show-category .catalog-list__item {
+        padding: 0 .5rem;
+    }
+}
+
 @media (max-width:1820px) {
     .home-cafe {
         width: 28%;
@@ -139,9 +157,6 @@
 
     .cafe-list-layout .filter-item:nth-child(2) {width: 66%;}
 
-    .catalog-body.show-category .catalog-list__item {
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -894,9 +909,10 @@
         width: 33.3333%;
     }
 
-    .catalog-body.show-category .catalog-list__item {
-        width: auto;
-    }
+    /*.catalog-body.show-category .catalog-list__item {*/
+        /*width: 50%;*/
+        /*padding: 0 1.5rem;*/
+    /*}*/
 
     .catalog-body .filter-hold {
         z-index: 11;
@@ -1058,13 +1074,15 @@
     }
 
     /*FILTER*/
-    .filter {
+    .filter,
+    .filter-hold {
         display: none;
         padding-bottom: 1.4rem;
         margin-bottom: 2rem;
     }
 
-    .filter-mobile-btn {
+    .filter-mobile-btn,
+    .filter-hold-mobile-btn {
         display: block;
     }
 
@@ -1076,7 +1094,7 @@
     .filter-hold {
         position: static;
         width: 100%;
-        padding: 1.1rem 1.1rem .1rem;
+        padding: 1.1rem 1.1rem 1.4rem;
         margin-bottom: 2.6rem;
     }
 
@@ -1282,6 +1300,30 @@
         flex-flow: column nowrap;
         justify-content: flex-start;
         width: 100%;
+    }
+
+    /*каталог*/
+    .catalog-body {
+        display: block;
+    }
+
+    .c-breadcrumb {
+        margin-top: 1.2rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .catalog-nav {
+        margin-bottom: 0;
+    }
+
+    .filter-mix__item {
+        border-radius: .4rem .4rem 0 0;
+        background-color: transparent;
+        margin: 0;
+    }
+
+    .filter-mix {
+        margin-left: 1.2rem;
     }
 }
 
@@ -1966,6 +2008,15 @@
     .home-cake__brownie {
         top: 0;
         right: 73.1%;
+    }
+
+    .c-card-catalog__price {
+        font-size: 3.4rem;
+    }
+
+    .c-card-catalog__count .c-counter__field {
+        font-size: 2rem;
+        width: 2.6rem;
     }
 }
 

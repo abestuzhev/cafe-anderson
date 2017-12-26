@@ -504,11 +504,17 @@ $(document).ready(function ($) {
     });
 
     /*появление фильтра в мобильной версии*/
-    $('.filter-mobile-btn').on('click', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('dropdown-show');
-        $('.filter').slideToggle(200);
-    });
+
+    function ShowMobileBtnFilter (btn, showBlock) {
+        $(btn).on('click', function (e) {
+            e.preventDefault();
+            $(this).toggleClass('dropdown-show');
+            $(this).siblings(showBlock).slideToggle(200);
+        });
+    }
+    ShowMobileBtnFilter('.filter-mobile-btn', '.filter');
+    ShowMobileBtnFilter('.filter-hold-mobile-btn', '.filter-hold');
+
 
 
     /*показ подменю в мобильной версии меню*/
