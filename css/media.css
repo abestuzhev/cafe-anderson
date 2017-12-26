@@ -1092,14 +1092,25 @@
     }
 
     .filter-hold {
-        position: static;
+        position: relative;
+        left: auto;
         width: 100%;
         padding: 1.1rem 1.1rem 1.4rem;
         margin-bottom: 2.6rem;
     }
 
     .filter-hold__close {
-        display: none;
+        z-index: 12;
+        width: 3.3rem;
+        height: 4rem;
+        top: auto;
+        bottom: 0;
+        right: 1.6rem;
+        border: none;
+        border-radius: 50px 50px 0 0;
+        background: #d6d6d6 url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+        background-size: 10px 11px;
+        cursor: pointer;
     }
 
 
@@ -1538,6 +1549,23 @@
     }
 }
 
+@media (max-width:600px) {
+    .carousel-slider {
+        width: 100%;
+    }
+    .carousel-slider .owl-nav {
+        top: 100%;
+        margin: 0;
+    }
+
+    .carousel-slider .owl-nav .owl-prev {
+        left: 0;
+    }
+    .carousel-slider .owl-nav .owl-next {
+        right: 0;
+    }
+
+}
 @media (max-width:540px) {
     .home-cafe {
         right: -45%;

@@ -5075,21 +5075,6 @@ test popup
     -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
     border: solid 1px rgba(115, 115, 115, 0.15); }
-    .filter-hold__close {
-      display: block;
-      padding: 1.4rem 1.6rem 3.5rem;
-      border-radius: 0 0 50px 50px;
-      position: absolute;
-      z-index: 9999;
-      width: 10px;
-      height: 10px;
-      right: 9px;
-      top: 0;
-      background: url(../img/icons/icon-close.svg) no-repeat 50% 46%;
-      border: 1px solid #9b806f;
-      border-top: transparent;
-      background-size: 10px 11px;
-      cursor: pointer; }
     .filter-hold__item {
       color: #555451;
       display: block;
@@ -6334,7 +6319,7 @@ test popup
   margin-bottom: 6rem; }
   .catalog-recommend__title {
     font-size: 2.6rem;
-    line-height: 0.58;
+    line-height: 1;
     text-align: left;
     color: #9b806f;
     margin-bottom: 1.8rem; }
