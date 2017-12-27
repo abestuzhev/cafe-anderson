@@ -960,6 +960,11 @@
     .c-card-product__footer {
         margin-bottom: 2rem;
     }
+
+    .popup-product__btn-back,
+    .popup-product__btn-close {
+        display: inline-block;
+    }
 }
 
 @media (max-width:920px) {

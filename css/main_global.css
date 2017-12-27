@@ -4631,6 +4631,7 @@ main {
   cursor: pointer; }
 
 .popup-product__btn-back, .popup-product__btn-close {
+  display: none;
   position: relative;
   padding: 1.8rem 5.2rem 1.2rem 1.8rem;
   background-color: #f3efe4;
@@ -4648,7 +4649,7 @@ main {
 .popup-product__btn-back i,
 .popup-product__btn-close i {
   display: block;
-  width: 3.2em;
+  width: 3.2rem;
   height: 3.8rem;
   position: absolute;
   right: 1rem;
