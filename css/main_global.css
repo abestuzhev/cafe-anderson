@@ -3002,6 +3002,9 @@ a.c-button:hover {
           position: absolute;
           top: -.7rem;
           right: 0; }
+        .header-menu__link.header-menu__openAnderson::after {
+          content: '';
+          border-color: #b81f79; }
     .header-menu__link.active {
       color: #7e5847;
       border: none; }

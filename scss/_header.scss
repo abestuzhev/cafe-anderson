@@ -543,6 +543,10 @@
                     top: -.7rem;
                     right: 0;
                 }
+                &::after {
+                    content: '';
+                    border-color: #b81f79;
+                }
             }
             
             
