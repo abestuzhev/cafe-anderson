@@ -337,7 +337,7 @@ $(document).ready(function ($) {
         });
     }
 
-    $(".popup-close").click(function (e) {
+    $(".popup-close, .js-popup-close").click(function (e) {
         e.preventDefault();
         $(this).parents('.mfp-wrap').removeClass('is-visible');
         $('.mfp-bg').removeClass('is-visible');
@@ -675,25 +675,32 @@ $(document).ready(function ($) {
 	});
 
     //кнопка вверх
-    var offset = 300,
-        offset_opacity = 1200,
-        scroll_top_duration = 700,
-        $back_to_top = $('.cd-top');
-    //кнопка назад
-    $(window).scroll(function(){
-        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-        if( $(this).scrollTop() > offset_opacity ) {
-            $back_to_top.addClass('cd-fade-out');
-        }
-    });
+    function backToTop (btnElem, parentElem){
+        var offset = 300,
+            offset_opacity = 1200,
+            scroll_top_duration = 700,
+            $back_to_top = $(btnElem);
+        //кнопка назад
+        $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) {
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
 
-    $back_to_top.on('click', function(event){
-        event.preventDefault();
-        $('body,html').animate({
-                scrollTop: 0
-            }, scroll_top_duration
-        );
-    });
+        $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $(parentElem).animate({
+                    scrollTop: 0
+                }, scroll_top_duration
+            );
+        });
+    }
+
+    backToTop('.cd-top', 'body,html');
+    backToTop('.popup-product__btn-back', '.popup');
+
+
 
     /*липкая шапка*/
     $(window).scroll(function(){
