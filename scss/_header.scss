@@ -72,6 +72,18 @@
 
 /*равномерное заполнение пунктов меню*/
 
+.sticky .header-col__left,
+.sticky .header-col__right {
+    width: 46%;
+}
+
+.sticky .header-col__center {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .header-top__hide {
     //transform: translateY(-43px);
     // display: none !important;
@@ -548,8 +560,6 @@
                     border-color: #b81f79;
                 }
             }
-            
-            
 
         }
 
@@ -568,7 +578,7 @@
                 width: 100%;
                 height: .4rem;
                 background-color: $color_dark-active;
-                bottom: -12px;
+                bottom: -1.4rem;
                 border: none;
             }
         }

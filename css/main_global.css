@@ -2679,6 +2679,18 @@ a.c-button:hover {
   padding: .8rem; }
 
 /*равномерное заполнение пунктов меню*/
+.sticky .header-col__left,
+.sticky .header-col__right {
+  width: 46%; }
+
+.sticky .header-col__center {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
 .header-top__hide {
   -webkit-animation: slide-down 0.4s;
           animation: slide-down 0.4s; }
@@ -3017,7 +3029,7 @@ a.c-button:hover {
         width: 100%;
         height: .4rem;
         background-color: #7e5847;
-        bottom: -12px;
+        bottom: -1.4rem;
         border: none; }
   .header-personal {
     margin-bottom: .5rem; }
