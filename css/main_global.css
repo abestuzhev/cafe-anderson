@@ -3019,10 +3019,11 @@ a.c-button:hover {
           border-color: #b81f79; }
     .header-menu__link.active {
       color: #7e5847;
-      border: none; }
+      border: none;
+      font-weight: 700; }
       .header-menu__link.active:hover {
         border: none; }
-      .header-menu__link.active::after {
+      .header-menu__link.active:hover::after {
         content: '';
         position: absolute;
         left: 0;

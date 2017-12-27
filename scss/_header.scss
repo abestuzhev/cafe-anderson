@@ -566,12 +566,13 @@
         &__link.active {
             color: $color_dark-active;
             border: none;
+            font-weight: 700;
 
             &:hover {
                 border: none;
             }
-
-            &::after {
+    
+            &:hover::after {
                 content: '';
                 position: absolute;
                 left: 0;
