@@ -2678,6 +2678,7 @@ a.c-button:hover {
 .sticky .header-menu__item {
   padding: .8rem; }
 
+/*равномерное заполнение пунктов меню*/
 .header-top__hide {
   -webkit-animation: slide-down 0.4s;
           animation: slide-down 0.4s; }
@@ -2991,6 +2992,16 @@ a.c-button:hover {
     .header-menu__link {
       position: relative;
       text-transform: lowercase; }
+      .header-menu__link.header-menu__openAnderson {
+        text-transform: none;
+        color: #b81f79;
+        position: relative; }
+        .header-menu__link.header-menu__openAnderson::before {
+          content: '→ открой';
+          font-size: 1.2rem;
+          position: absolute;
+          top: -.7rem;
+          right: 0; }
     .header-menu__link.active {
       color: #7e5847;
       border: none; }
@@ -3121,9 +3132,6 @@ a.c-button:hover {
     -webkit-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
     position: relative; }
-    .header-navigation .active .header-navigation__title {
-      display: inline-block;
-      position: relative; }
     .header-navigation .active .header-navigation__title::after {
       content: '';
       position: absolute;
@@ -3154,6 +3162,14 @@ a.c-button:hover {
       color: #ffffff; }
       .header-navigation__item:hover {
         color: #ffffff; }
+      .header-navigation__item:hover .header-navigation__title::after {
+        content: '';
+        position: absolute;
+        bottom: -.2rem;
+        left: 0;
+        width: 100%;
+        height: .1rem;
+        border: .1rem dotted #fff; }
       .header-navigation__item::after {
         content: '';
         position: absolute;
@@ -3172,13 +3188,15 @@ a.c-button:hover {
       font-size: 2.7rem;
       line-height: 1;
       font-weight: 300;
-      letter-spacing: .1rem; }
+      letter-spacing: .1rem;
+      margin-bottom: .3rem;
+      display: inline-block;
+      position: relative; }
     .header-navigation__subtitle {
       text-transform: uppercase;
       font-size: 1.4rem;
       font-weight: 700;
-      letter-spacing: .1rem;
-      margin-bottom: .3rem; }
+      letter-spacing: .1rem; }
   .header-subnavigation {
     background-color: #7e5847;
     position: absolute;
@@ -3203,7 +3221,7 @@ a.c-button:hover {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    height: 7.3rem; }
+    height: 7.6rem; }
     .header-submenu__item {
       width: 25%;
       text-align: center;
@@ -5169,7 +5187,7 @@ test popup
         left: 0; }
   .filter-hold {
     position: absolute;
-    left: -1000px;
+    left: -3000px;
     display: block;
     width: 25rem;
     padding: 4rem 2.7rem;
