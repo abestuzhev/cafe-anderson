@@ -327,7 +327,7 @@ $(document).ready(function ($) {
                 // 'overflow':'hidden'
                 // 'margin-right':'17px'
             }).addClass('lock-html');
-            $('.c-layout').addClass('popup-fix');
+            // $('.c-layout').addClass('popup-fix');
             $('.header.sticky').css({
                 // 'right':'17px'
             });
@@ -345,7 +345,7 @@ $(document).ready(function ($) {
             // 'overflow':'auto'
             // 'margin-right':'0'
         }).removeClass('lock-html');
-        $('.c-layout').removeClass('popup-fix');
+        // $('.c-layout').removeClass('popup-fix');
         $('.header.sticky').css({
             // 'right':'0'
         });
