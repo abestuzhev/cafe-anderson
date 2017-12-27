@@ -166,6 +166,14 @@
   fill: #9b9696;
   vertical-align: bottom; }
 
+.icon-tree2018 {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  vertical-align: bottom;
+  background: url(../img/icons/icon-tree2018.svg) 0 0 no-repeat; }
+
 .icon-city {
   position: relative;
   width: 15px;
@@ -1167,6 +1175,9 @@ a.c-button:hover {
 .c-reviews-negative {
   margin-top: 30px; }
 
+.c-reviews-tree2018 {
+  margin-top: -120px; }
+
 .c-reviews__item {
   position: fixed;
   z-index: 99;
@@ -1220,10 +1231,23 @@ a.c-button:hover {
   height: 31px; }
 
 .c-reviews-positive .c-reviews__btn {
+  background-color: #92c647;
   background-color: rgba(129, 199, 29, 0.87); }
 
 .c-reviews-negative .c-reviews__btn {
+  background-color: #b34d84;
   background-color: rgba(184, 31, 121, 0.8); }
+
+.c-reviews-tree2018 .c-reviews__btn {
+  background-color: #3fa254;
+  background-color: rgba(27, 150, 60, 0.8);
+  padding: 1.2rem 1.7rem 1.4rem 1.2rem; }
+
+.c-reviews-tree2018 .icon-tree2018 {
+  margin-right: 5px; }
+
+.c-reviews-tree2018 .c-reviews__text {
+  margin-bottom: 4px; }
 
 /*хлебные крошки*/
 .c-breadcrumb {

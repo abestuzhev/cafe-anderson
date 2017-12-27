@@ -665,6 +665,10 @@ a.c-button {
     &-negative {
         margin-top: 30px;
     }
+    
+    &-tree2018 {
+        margin-top: -120px;
+    }
 
     &__item {
         position: fixed;
@@ -733,12 +737,27 @@ a.c-button {
     }
 
     &-positive .c-reviews__btn {
+        background-color: #92c647;
         background-color: rgba(129, 199, 29, 0.87);
     }
 
     &-negative .c-reviews__btn {
-        //background-color: rgba(223, 75, 10, 0.8);
+        background-color: #b34d84;
         background-color: rgba(184, 31, 121, 0.8);
+    }
+    
+    &-tree2018 .c-reviews__btn {
+        background-color: #3fa254;
+        background-color: rgba(27, 150, 60, 0.8);
+        padding: 1.2rem 1.7rem 1.4rem 1.2rem;
+    }
+    
+    &-tree2018 .icon-tree2018 {
+        margin-right: 5px;
+    }
+    
+    &-tree2018 .c-reviews__text {
+        margin-bottom: 4px;
     }
 }
 
