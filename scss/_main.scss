@@ -1238,6 +1238,7 @@ main {
     
     .popup {
         width: 88.5rem;
+        max-width: 88.5rem;
     }
     
     //.c-form__col {
@@ -1311,6 +1312,7 @@ main {
         //width: 88.4rem;
         max-width: 88.4rem;
         width: 100%;
+        //position: relative;
     }
 
     .popup-title {
@@ -1323,6 +1325,79 @@ main {
         padding: 1.4rem 2rem;
         background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat
     }
+    
+    &__check-mobile {
+        display: none;
+        position: absolute;
+        z-index: 1060;
+        right: 0;
+        top: 3rem;
+        text-decoration: none;
+        padding: 1.4rem 1.7rem 1.4rem 1rem;
+        background-color: #7cbd41;
+        border-radius: .4rem 0 0 .4rem;
+        color: #ffffff;
+        font-family: $font_serif;
+        font-size: 1.4rem;
+        
+        &:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+    
+    &__check-close {
+        display: none;
+        position: absolute;
+        right: 1.5rem;
+        bottom: 0;
+        padding: 1.4rem 1.6rem 3.5rem;
+        border-radius: 50px 50px 0 0;
+        background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+        background-size: 10px 11px;
+        cursor: pointer;
+    }
+    
+    &__btn-back,
+    &__btn-close {
+        position: relative;
+        padding: 1.8rem 5.2rem 1.2rem 1.8rem;
+        background-color: #f3efe4;
+        color: #553023;
+        
+        &:hover {
+            background-color: #dfdacc;
+            color: #553023 !important;
+        }
+    }
+    
+    
+    
+    &__btn-back i {
+        background: #fff url(../img/icons/icon-dropdown__up.svg) no-repeat 50% 46%;
+    }
+    
+    &__btn-close i {
+        background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+    }
+    
+    &__btn-back i,
+    &__btn-close i {
+        display: block;
+        width: 3.2em;
+        height: 3.8rem;
+        position: absolute;
+        right: 1rem;
+        bottom: 0;
+        //padding: 1.4rem 1.6rem 3.5rem;
+        border-radius: 50px 50px 0 0;
+        background-size: 10px 11px;
+    }
 }
 
 .popup-layout {
@@ -1332,6 +1407,7 @@ main {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 .popup-mini {
@@ -1536,6 +1612,15 @@ test popup
     padding: 10px;
 }
 
+.lock-html {
+    overflow: hidden;
+    //overflow-y: scroll;
+}
+
+.popup-fix {
+    //margin-right: 17px;
+}
+
 .mfp-bg {
     top: 0;
     left: 0;
@@ -1552,7 +1637,7 @@ test popup
     transition: all .1s ease;
     //transform: scale(1);
     //@extend %transition_all;
-    overflow-y: scroll !important;
+    //overflow-y: hidden !important;
 }
 
 .mfp-wrap {
@@ -1592,7 +1677,7 @@ test popup
 }
 
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
-    //width: 100%;
+    //width: 100%;gu
     cursor: auto;
 }
 

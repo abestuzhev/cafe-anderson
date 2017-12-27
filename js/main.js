@@ -41,6 +41,23 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+
+    /*показываем маленький блок с выбранными товарами в карточке товара (мобильная версия)*/
+    $('.popup-product__check-mobile').on('click', function(e){
+        e.preventDefault();
+        $('.popup-product .popup-mini').addClass('active');
+    });
+    /*закрываем маленький попап с товарами*/
+    $('.popup-product__check-close').on('click', function(e){
+        e.preventDefault();
+        $('.popup-product .popup-mini').removeClass('active');
+    });
+
+    $('.popup-mini').on('click', function(e){
+        e.preventDefault();
+
+    });
+
     /*показываем категории меню в каталоге*/
     $('.filter-bage').on('click', function(e){
         e.preventDefault();
@@ -307,11 +324,12 @@ $(document).ready(function ($) {
 
 
             $('html').css({
-                'overflow':'hidden',
-                'margin-right':'17px'
-            });
+                // 'overflow':'hidden'
+                // 'margin-right':'17px'
+            }).addClass('lock-html');
+            $('.c-layout').addClass('popup-fix');
             $('.header.sticky').css({
-                'right':'17px'
+                // 'right':'17px'
             });
 
 
@@ -324,11 +342,12 @@ $(document).ready(function ($) {
         $(this).parents('.mfp-wrap').removeClass('is-visible');
         $('.mfp-bg').removeClass('is-visible');
         $('html').css({
-            'overflow':'auto',
-            'margin-right':'0'
-        });
+            // 'overflow':'auto'
+            // 'margin-right':'0'
+        }).removeClass('lock-html');
+        $('.c-layout').removeClass('popup-fix');
         $('.header.sticky').css({
-            'right':'0'
+            // 'right':'0'
         });
     });
 
@@ -449,19 +468,38 @@ $(document).ready(function ($) {
     }
 
     /*скрываем попапы вне зоны элемента*/
+
     $(document).mouseup(function (e) { // событие клика по веб-документу
         var div = $('.popup'); // тут указываем ID элемента
-        if (!div.is(e.target) // если клик был не по нашему блоку
-            && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            // div.removeClass(instrumentHide); // скрываем его
-            div.parents('.mfp-wrap').removeClass('is-visible');
-            $('.mfp-bg ').removeClass('is-visible');
-            $('html').css({
-                'overflow':'auto',
-                'margin-right': '0'
-            });
+        // var div2 = $('.popup-mini');
+
+        function hideOutZone(elem, elem2){
+            var div = $(elem);
+            var div2 = $(elem2);
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0
+                && !div2.is(e.target) // если клик был не по нашему блоку
+                && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+                // div.removeClass(instrumentHide); // скрываем его
+                console.log('прошел');
+                div.parents('.mfp-wrap').removeClass('is-visible');
+                div2.parents('.mfp-wrap').removeClass('is-visible');
+                $('.mfp-bg ').removeClass('is-visible');
+                $('html').css({
+                    // 'overflow':'auto',
+                    // 'margin-right': '0'
+                });
+            }
         }
+        hideOutZone('.popup', '.popup-mini');
+
     });
+
+
+
+
+
+
 
     hidePopup('.popup-basket', 'popup-slide__show');
     hidePopup('.header-mobile__auth', 'popup-slide__show');

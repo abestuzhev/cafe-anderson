@@ -4540,7 +4540,8 @@ main {
 
 /*форма оставить отзыв*/
 .popup__review .popup {
-  width: 88.5rem; }
+  width: 88.5rem;
+  max-width: 88.5rem; }
 
 .popup__review .SumoSelect,
 .popup__review .SelectBox {
@@ -4598,6 +4599,63 @@ main {
   padding: 1.4rem 2rem;
   background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
 
+.popup-product__check-mobile {
+  display: none;
+  position: absolute;
+  z-index: 1060;
+  right: 0;
+  top: 3rem;
+  text-decoration: none;
+  padding: 1.4rem 1.7rem 1.4rem 1rem;
+  background-color: #7cbd41;
+  border-radius: .4rem 0 0 .4rem;
+  color: #ffffff;
+  font-family: "PT Serif Caption";
+  font-size: 1.4rem; }
+  .popup-product__check-mobile:hover {
+    color: #ffffff;
+    text-decoration: underline; }
+  .popup-product__check-mobile::after {
+    content: '';
+    border: none; }
+
+.popup-product__check-close {
+  display: none;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0;
+  padding: 1.4rem 1.6rem 3.5rem;
+  border-radius: 50px 50px 0 0;
+  background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+  background-size: 10px 11px;
+  cursor: pointer; }
+
+.popup-product__btn-back, .popup-product__btn-close {
+  position: relative;
+  padding: 1.8rem 5.2rem 1.2rem 1.8rem;
+  background-color: #f3efe4;
+  color: #553023; }
+  .popup-product__btn-back:hover, .popup-product__btn-close:hover {
+    background-color: #dfdacc;
+    color: #553023 !important; }
+
+.popup-product__btn-back i {
+  background: #fff url(../img/icons/icon-dropdown__up.svg) no-repeat 50% 46%; }
+
+.popup-product__btn-close i {
+  background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%; }
+
+.popup-product__btn-back i,
+.popup-product__btn-close i {
+  display: block;
+  width: 3.2em;
+  height: 3.8rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  border-radius: 50px 50px 0 0;
+  background-size: 10px 11px; }
+
 .popup-layout {
   position: relative;
   margin: 2rem 0;
@@ -4613,7 +4671,8 @@ main {
           align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+  overflow: hidden; }
 
 .popup-mini {
   font-family: "PT Serif Caption";
@@ -4759,6 +4818,9 @@ test popup
   cursor: pointer;
   padding: 10px; }
 
+.lock-html {
+  overflow: hidden; }
+
 .mfp-bg {
   top: 0;
   left: 0;
@@ -4774,8 +4836,7 @@ test popup
   visibility: hidden;
   -webkit-transition: all .1s ease;
   -o-transition: all .1s ease;
-  transition: all .1s ease;
-  overflow-y: scroll !important; }
+  transition: all .1s ease; }
 
 .mfp-wrap {
   top: 0;
