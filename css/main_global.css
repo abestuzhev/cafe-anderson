@@ -6753,3 +6753,8 @@ test popup
         right: -3rem; }
       .creators-publications .publications-slider .owl-nav .owl-next {
         left: -3rem; }
+
+/*Фабрика счаситя (factory-happiness)------------------------------------------------*/
+.factory-map {
+  width: 100%;
+  height: auto; }

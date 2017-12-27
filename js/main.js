@@ -482,10 +482,7 @@ $(document).ready(function ($) {
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 $('.mfp-bg ').removeClass('is-visible');
-                $('html').css({
-                    // 'overflow':'auto',
-                    // 'margin-right': '0'
-                });
+                $('html').removeClass('lock-html');
             }
         }
         hideOutZone('.popup', '.popup-mini');
