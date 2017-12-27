@@ -3121,8 +3121,17 @@ a.c-button:hover {
     -webkit-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
     position: relative; }
-    .header-navigation .active {
-      color: #9acc4e; }
+    .header-navigation .active .header-navigation__title {
+      display: inline-block;
+      position: relative; }
+    .header-navigation .active .header-navigation__title::after {
+      content: '';
+      position: absolute;
+      bottom: -.2rem;
+      left: 0;
+      width: 100%;
+      height: .1rem;
+      border: .1rem dotted #fff; }
     .header-navigation__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3168,7 +3177,8 @@ a.c-button:hover {
       text-transform: uppercase;
       font-size: 1.4rem;
       font-weight: 700;
-      letter-spacing: .1rem; }
+      letter-spacing: .1rem;
+      margin-bottom: .3rem; }
   .header-subnavigation {
     background-color: #7e5847;
     position: absolute;

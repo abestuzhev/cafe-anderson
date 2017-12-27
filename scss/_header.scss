@@ -713,9 +713,20 @@
         -moz-box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 3px 18px 2px rgba(0, 0, 0, 0.2);
         position: relative;
+    
+        .active .header-navigation__title {
+            display: inline-block;
+            position: relative;
+        }
         
-        .active {
-            color: #9acc4e;
+        .active .header-navigation__title::after {
+            content: '';
+            position: absolute;
+            bottom: -.2rem;
+            left: 0;
+            width: 100%;
+            height: .1rem;
+            border:.1rem dotted #fff;
         }
 
         &__list {
@@ -771,6 +782,7 @@
             font-size: 1.4rem;
             font-weight: 700;
             letter-spacing: .1rem;
+            margin-bottom: .3rem;
         }
     }
     

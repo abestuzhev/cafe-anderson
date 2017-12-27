@@ -360,7 +360,8 @@ $(document).ready(function ($) {
     showPopup(".c-card-cafe__menu", '.popup__menu');
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');
     showPopup(".c-card_menu", '.popup__menu');
-    showPopup(".c-reviews__item", '.popup__review');
+    showPopup(".c-reviews-positive", '.popup__review');
+    showPopup(".c-reviews-negative", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
     showPopup(".popup-forgot-password", '.popup__recovery-password');
     showPopup(".c-card-catalog__img", '.popup-product');
