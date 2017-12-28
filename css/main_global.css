@@ -3029,7 +3029,7 @@ a.c-button:hover {
         width: 100%;
         height: .4rem;
         background-color: #7e5847;
-        bottom: -1.4rem;
+        bottom: -1.2rem;
         border: none; }
   .header-personal {
     margin-bottom: .5rem; }
@@ -4046,6 +4046,7 @@ main {
 
 .popup {
   max-width: 500px;
+  width: 500px;
   background-color: #FFF;
   overflow: hidden;
   font-family: "PT Serif Caption";
@@ -4064,11 +4065,14 @@ main {
     position: absolute;
     right: 1.5rem;
     bottom: 0;
-    padding: 1.4rem 1.6rem 3.5rem;
+    padding: 1.4rem 1.6rem 3rem;
     border-radius: 50px 50px 0 0;
     background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
     background-size: 10px 11px;
     cursor: pointer; }
+    .popup-close::after {
+      content: '';
+      border: none; }
   .popup-body {
     padding: 3rem 6rem 4.5rem;
     position: relative;
@@ -4975,7 +4979,7 @@ test popup
 
 .is-visible {
   opacity: 1 !important;
-  visibility: visible;
+  visibility: visible !important;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -6750,6 +6754,45 @@ test popup
         left: -3rem; }
 
 /*Фабрика счаситя (factory-happiness)------------------------------------------------*/
-.factory-map {
-  width: 100%;
-  height: auto; }
+.factory {
+  position: relative; }
+  .factory-map {
+    width: 100%;
+    height: auto; }
+  .factory-point {
+    display: inline-block;
+    position: absolute; }
+    .factory-point__img {
+      width: 4.4rem;
+      height: 5.3rem;
+      background: url(../img/icon-map-point.png) 0 0 no-repeat;
+      cursor: pointer; }
+  .factory .popup {
+    position: absolute;
+    bottom: 3.3rem;
+    left: -9.8rem;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    overflow: visible; }
+    .factory .popup.is-visible {
+      z-index: 10; }
+    .factory .popup-body {
+      padding: 1.4rem; }
+    .factory .popup-title {
+      text-align: left;
+      padding: 1rem 1.4rem; }
+    .factory .popup p {
+      font-size: 1.3rem;
+      line-height: 1.3;
+      color: #9b9595;
+      margin-bottom: 1rem; }
+    .factory .popup::after {
+      content: '';
+      position: absolute;
+      width: 3.3rem;
+      height: 1.7rem;
+      top: 100%;
+      left: 9rem;
+      border: 3rem solid transparent;
+      border-top: 2.3rem solid #7cbd41; }

@@ -46,6 +46,18 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+    /*фабрика счастья, клик по поинту*/
+    $('.factory-point__img').on('click', function(){
+        $('.popup').removeClass('is-visible');
+        $(this).siblings('.popup').addClass('is-visible');
+    });
+
+    $('.factory-point .popup-close').on('click', function(e){
+        e.preventDefault();
+        console.log('click');
+        $('.popup').removeClass('is-visible');
+    });
+
     /*показываем маленький блок с выбранными товарами в карточке товара (мобильная версия)*/
     $('.popup-product__check-mobile').on('click', function(e){
         e.preventDefault();
@@ -704,7 +716,7 @@ $(document).ready(function ($) {
     $(window).scroll(function(){
         var bo = $(window).scrollTop();
         var $header = $(".header");
-        if ( bo > 250 ) {
+        if ( bo > 0 ) {
             $header.addClass('header-top__hide');
             $header.addClass('sticky');
         } else {
