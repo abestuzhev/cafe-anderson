@@ -1655,6 +1655,7 @@ test popup
     visibility: hidden;
     transform: scale(.9);
     transition: all .2s ease;
+    //overflow-y: scroll;
 }
 
 .mfp-container {

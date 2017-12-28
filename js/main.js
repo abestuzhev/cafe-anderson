@@ -26,6 +26,9 @@ var $body,
 // var containerEl = document.querySelector('.mixed-list');
 // var mixer = mixitup(containerEl);
 
+var windowWidth = (window.innerWidth ); // вся ширина окна
+var documentWidth = (document.documentElement.clientWidth ); // ширина минус прокрутка
+
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 /*scroll*/
@@ -40,6 +43,23 @@ $(document).ready(function ($) {
     // $('.header-subnavigation').mouseleave(function(){
     //     $(this).removeClass('is-visible');
     // });
+    var w = $(window).width();
+    var d = $(document).width();
+    console.log('Высота w: ' + w);
+    console.log('Высота d: ' + d);
+    // var $window = $(window);
+    //     var  $wrapper = $('.wrapper');
+        // $document = $(document);
+    // var windowWidth = $window.innerWidth();
+    // var wrapperWidth = $document.innerWidth();
+
+    // var windowHeight = $window.height();
+    // var bodyHeight = $wrapper.height();
+    // console.log('Высота экрана: ' + windowHeight);
+    // console.log('Высота wrapper: ' + bodyHeight);
+
+    console.log('Ширина window: ' + windowWidth);
+    console.log('Ширина wrapper: ' + documentWidth);
 
 
     /*показываем маленький блок с выбранными товарами в карточке товара (мобильная версия)*/
@@ -68,14 +88,13 @@ $(document).ready(function ($) {
         $('.catalog-body').removeClass('show-category');
     });
 
-    var windowWidth = $(window).width();
+
 
 
     $(window).on('resize', function () {
     	if(windowWidth <= 730){
     	    $('.filter-hold__close').on('click', function(e){
                 e.preventDefault();
-                console.log('close');
     	        $(this).parents('.filter-hold').slideUp(300);
             });
         }
@@ -84,7 +103,6 @@ $(document).ready(function ($) {
     if(windowWidth <= 730){
         $('.filter-hold__close').on('click', function(e){
             e.preventDefault();
-            console.log('close');
             $(this).parents('.filter-hold').slideUp(300);
         });
     }
@@ -327,9 +345,18 @@ $(document).ready(function ($) {
 
             $('html').addClass('lock-html');
             // $('.c-layout').addClass('popup-fix');
-            $('.header.sticky').css({
-                // 'right':'17px'
-            });
+            if(windowWidth > documentWidth){
+                $('html').css({
+                    'margin-right':'17px'
+                });
+                $('.mfp-wrap').css({
+                    'overflow-y':'scroll'
+                });
+                console.log('Есть полоса прокрутки');
+            }else {
+                console.log('Нет полосы прокрутки');
+            }
+
 
 
             // $('html').addClass('body-popup');
@@ -338,12 +365,17 @@ $(document).ready(function ($) {
 
     $(".popup-close, .js-popup-close").click(function (e) {
         e.preventDefault();
+        // var =
         $(this).parents('.mfp-wrap').removeClass('is-visible');
         $('.mfp-bg').removeClass('is-visible');
         $('html').removeClass('lock-html');
         // $('.c-layout').removeClass('popup-fix');
         $('.header.sticky').css({
             // 'right':'0'
+        });
+
+        $('html').css({
+            'margin-right':'0'
         });
     });
 
@@ -478,7 +510,7 @@ $(document).ready(function ($) {
                 && !div2.is(e.target) // если клик был не по нашему блоку
                 && div2.has(e.target).length === 0) { // и не по его дочерним элементам
                 // div.removeClass(instrumentHide); // скрываем его
-                console.log('прошел');
+                // console.log('прошел');
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 $('.mfp-bg ').removeClass('is-visible');
@@ -488,11 +520,6 @@ $(document).ready(function ($) {
         hideOutZone('.popup', '.popup-mini');
 
     });
-
-
-
-
-
 
 
     hidePopup('.popup-basket', 'popup-slide__show');
@@ -792,6 +819,26 @@ $(document).ready(function ($) {
     //     }
     // });
 
+    /*Порой на страницах с «резиновой» версткой необходимо знать ширину скролбара, чтобы правильно вычислить размеры внутренних элементов и их положение. Эта задача решается с помощью следующего алгоритма:
+
+добавить два div в body и разместить их за пределами экрана;
+определить ширину внутреннего div;
+установить значение «scroll» свойства overflow у внешнего div;
+опять определить ширину внутреннего div;
+удалить оба div;
+вернуть разницу между измеренными ранее значениями ширины.*/
+    // function scrollbarWidth() {
+    //     var div = $('<div style="width:50px; height:50px; overflow:hidden; position:absolute; top:-200px; left:-200px;"><div style="height:100px;"></div></div>').appendTo('body');
+    //     var w1 = $('div', div).innerWidth();
+    //     div.css('overflow-y', 'scroll');
+    //     var w2 = $('div', div).innerWidth();
+    //     $(div).remove();
+    //     return (w1 - w2);
+    // }
+    //
+    // var resScrollWidtn = scrollbarWidth();
+    // console.log('Ширина скролбара страницы: ' + resScrollWidtn);
+
 });
 
 
@@ -957,3 +1004,6 @@ function pageWidget(pages) {
         input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
     });
 }( document, window, 0 ));
+
+
+
