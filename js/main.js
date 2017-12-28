@@ -322,44 +322,37 @@ $(document).ready(function ($) {
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
         $(icon).on('click', function (e) {
+            var $html = $('html');
             e.preventDefault();
             $(popup).addClass('is-visible');
             $('.mfp-bg').addClass('is-visible');
 
 
-            $('html').addClass('lock-html');
-            // $('.c-layout').addClass('popup-fix');
+            $html.addClass('lock-html');
             if(windowWidth > documentWidth){
-                $('html').css({
+                $html.css({
                     'margin-right':'17px'
                 });
                 $('.mfp-wrap').css({
                     'overflow-y':'scroll'
                 });
-                console.log('Есть полоса прокрутки');
+                // console.log('Есть полоса прокрутки');
             }else {
-                console.log('Нет полосы прокрутки');
+                // console.log('Нет полосы прокрутки');
             }
-
-
-
-            // $('html').addClass('body-popup');
         });
     }
 
     $(".popup-close, .js-popup-close").click(function (e) {
         e.preventDefault();
-        // var =
+        var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
         $('.mfp-bg').removeClass('is-visible');
-        $('html').removeClass('lock-html');
-        // $('.c-layout').removeClass('popup-fix');
+        $html.css({
+            'margin-right':'0'
+        }).removeClass('lock-html');
         $('.header.sticky').css({
             // 'right':'0'
-        });
-
-        $('html').css({
-            'margin-right':'0'
         });
     });
 
