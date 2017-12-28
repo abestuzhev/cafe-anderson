@@ -566,13 +566,12 @@
         &__link.active {
             color: $color_dark-active;
             border: none;
-            font-weight: 700;
 
             &:hover {
                 border: none;
             }
     
-            &:hover::after {
+            &::after {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -749,14 +748,14 @@
     
         
         
-        .active .header-navigation__title::after {
-            content: '';
-            position: absolute;
-            bottom: -.2rem;
-            left: 0;
-            width: 100%;
-            height: .1rem;
-            border:.1rem dotted #fff;
+        .active .header-navigation__title,
+        .active .header-navigation__subtitle {
+            font-weight: 700;
+        }
+        
+        
+        &:focus {
+            color: #ffffff;
         }
 
         &__list {
@@ -775,6 +774,16 @@
             color: #ffffff;
             @extend %transition_all;
     
+            //&:hover .header-navigation__title::after {
+            //    content: '';
+            //    position: absolute;
+            //    bottom: -.2rem;
+            //    left: 0;
+            //    width: 100%;
+            //    height: .1rem;
+            //    border:.1rem dotted #fff;
+            //}
+            //
             &:hover {
                 color: #ffffff;
                 @extend %transition_all;
@@ -822,7 +831,7 @@
         &__subtitle {
             text-transform: uppercase;
             font-size: 1.4rem;
-            font-weight: 700;
+            //font-weight: 700;
             letter-spacing: .1rem;
         }
     }
