@@ -28,6 +28,8 @@ var $body,
 
 var windowWidth = (window.innerWidth ); // вся ширина окна
 var documentWidth = (document.documentElement.clientWidth ); // ширина минус прокрутка
+// console.log('Ширина window: ' + windowWidth);
+// console.log('Ширина wrapper: ' + documentWidth);
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
@@ -43,24 +45,6 @@ $(document).ready(function ($) {
     // $('.header-subnavigation').mouseleave(function(){
     //     $(this).removeClass('is-visible');
     // });
-    var w = $(window).width();
-    var d = $(document).width();
-    console.log('Высота w: ' + w);
-    console.log('Высота d: ' + d);
-    // var $window = $(window);
-    //     var  $wrapper = $('.wrapper');
-        // $document = $(document);
-    // var windowWidth = $window.innerWidth();
-    // var wrapperWidth = $document.innerWidth();
-
-    // var windowHeight = $window.height();
-    // var bodyHeight = $wrapper.height();
-    // console.log('Высота экрана: ' + windowHeight);
-    // console.log('Высота wrapper: ' + bodyHeight);
-
-    console.log('Ширина window: ' + windowWidth);
-    console.log('Ширина wrapper: ' + documentWidth);
-
 
     /*показываем маленький блок с выбранными товарами в карточке товара (мобильная версия)*/
     $('.popup-product__check-mobile').on('click', function(e){
