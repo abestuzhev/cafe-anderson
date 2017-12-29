@@ -1495,6 +1495,10 @@
     .popup__request-call .icon-bird-down {
         display: none;
     }
+
+    .popup {
+        width: 500px !important;
+    }
 }
 
 @media screen and (max-height:730px) {
@@ -1834,6 +1838,10 @@
 
     .popup__review-elem {
         display: none;
+    }
+
+    .popup {
+        width: 87% !important;
     }
 }
 

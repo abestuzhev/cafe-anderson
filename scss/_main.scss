@@ -4103,10 +4103,12 @@ test popup
     .popup {
         opacity: 0;
         visibility: hidden;
-        position: absolute;
+        position: absolute !important;
+        height: auto !important;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        overflow: hidden !important;
     }
     
     .popup-body {
