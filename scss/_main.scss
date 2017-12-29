@@ -3783,6 +3783,7 @@ test popup
         &__description {
             display: none;
             position: absolute;
+            z-index: 1010;
             top: 1.5rem;
             right: 2rem;
             //opacity: 0;
@@ -3909,7 +3910,7 @@ test popup
         &__subtitle {
             color: #ffffff;
             font-size: 2.6rem;
-            line-height: 1;
+            line-height: 1.2;
             padding-right: 4rem;
             position: relative;
             z-index: 3;
@@ -4097,6 +4098,30 @@ test popup
                 right: -3rem;
             }
         }
+    }
+    
+    .popup {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .popup-body {
+        padding: 1.5rem;
+    }
+    
+    .popup-title {
+        font-size: 1.7rem;
+        color: #9b806f;
+        text-align: left;
+        padding: 1.2rem 1.4rem;
+    }
+    
+    .popup-close {
+        padding: 1.4rem 1.6rem 2rem;
     }
 }
 

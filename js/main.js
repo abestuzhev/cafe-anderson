@@ -46,6 +46,25 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+    /*показываем попап на странице Создатели Андерсон*/
+    $('.photo-point__icon').on('click', function(){
+        var str = $(this).siblings('.photo-point__description').find('span').text().trim(),
+            arr = str.split(' '),
+            name = arr[0] + ' ' + arr[1],
+            desc = '';
+        arr.splice(0, 2);
+        desc = arr.join(' ');
+        $('.creators .popup-title').find('span').text(name);
+        $('.creators .popup-body').find('p').text(desc);
+        var popup = $('.creators .popup');
+        popup.removeClass('is-visible');
+        popup.addClass('is-visible');
+    });
+
+    $('.creators .popup-close').on('click', function(){
+        $('.creators .popup').removeClass('is-visible');
+    });
+
     /*фабрика счастья, клик по поинту*/
     $('.factory-point__img').on('click', function(){
         $('.popup').removeClass('is-visible');
@@ -173,16 +192,23 @@ $(document).ready(function ($) {
         stagePadding: 10,
         responsiveClass: true,
         responsive:{
-            0:{
+            380:{
                 items:1
             },
-            600:{
+            480:{
+                items:2
+            },
+            780:{
                 nav: true,
-                items:5
+                items:3
+            },
+            980:{
+                nav: true,
+                items:4
             },
             1200:{
                 nav: true,
-                items:6
+                items:4
             },
             1600:{
                 nav: true,

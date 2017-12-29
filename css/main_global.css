@@ -6529,6 +6529,7 @@ test popup
     .creators .photo-point__description {
       display: none;
       position: absolute;
+      z-index: 1010;
       top: 1.5rem;
       right: 2rem;
       width: 25rem;
@@ -6616,7 +6617,7 @@ test popup
     .creators-slogan__subtitle {
       color: #ffffff;
       font-size: 2.6rem;
-      line-height: 1;
+      line-height: 1.2;
       padding-right: 4rem;
       position: relative;
       z-index: 3; }
@@ -6763,6 +6764,24 @@ test popup
       .creators-publications .publications-slider .owl-nav .owl-next {
         left: auto;
         right: -3rem; }
+  .creators .popup {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .creators .popup-body {
+    padding: 1.5rem; }
+  .creators .popup-title {
+    font-size: 1.7rem;
+    color: #9b806f;
+    text-align: left;
+    padding: 1.2rem 1.4rem; }
+  .creators .popup-close {
+    padding: 1.4rem 1.6rem 2rem; }
 
 /*Фабрика счаситя (factory-happiness)------------------------------------------------*/
 .factory {
