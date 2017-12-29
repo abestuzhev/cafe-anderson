@@ -1472,6 +1472,15 @@
     .catalog-list__item {
         width: 100%;
     }
+
+    .creators-history__grid {
+        flex-flow: column nowrap;
+    }
+
+    .creators-history__col {
+        width: 100%;
+        /*margin-bottom: 2rem;*/
+    }
 }
 
 @media screen and (max-height:600px) {

@@ -672,6 +672,15 @@ body {
   background-repeat: repeat;
   background-position: 0 0; }
 
+.c-ul-list {
+  font-family: "PT Serif Caption";
+  padding-left: 14px;
+  width: 100px; }
+
+.c-ul-list li {
+  list-style: circle outside;
+  margin-bottom: .2rem; }
+
 .wrapper {
   position: relative;
   min-height: 100%;
@@ -6749,9 +6758,11 @@ test popup
       .creators-publications .publications-slider .owl-nav {
         display: block !important; }
       .creators-publications .publications-slider .owl-nav .owl-prev {
-        right: -3rem; }
-      .creators-publications .publications-slider .owl-nav .owl-next {
+        right: auto;
         left: -3rem; }
+      .creators-publications .publications-slider .owl-nav .owl-next {
+        left: auto;
+        right: -3rem; }
 
 /*Фабрика счаситя (factory-happiness)------------------------------------------------*/
 .factory {

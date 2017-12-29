@@ -4089,10 +4089,12 @@ test popup
             }
 
             .owl-nav .owl-prev {
-                right: -3rem;
+                right: auto;
+                left: -3rem;
             }
             .owl-nav .owl-next {
-                left: -3rem;
+                left: auto;
+                right: -3rem;
             }
         }
     }
