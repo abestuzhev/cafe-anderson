@@ -20,8 +20,9 @@
 
 .icon-basket {
     position: relative;
-    width: 22px;
-    height: 23px;
+    font-size: 1rem;
+    width: 2.2em;
+    height: 2.3em;
     fill: $color_text_bg;
 }
 
@@ -329,13 +330,24 @@
     background: url(../img/icons/icon-nipple.svg) 50% 50% no-repeat;
 }
 
-.advantages-balloon {
-    display: inline-block;
-    width: 1.9rem;
-    height: 1.9rem;
-    vertical-align: middle;
-    background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat;
+.advantages-balloon,
+.icon-balloon {
+     display: inline-block;
+     font-size: 1rem;
+     width: 1.9em;
+     height: 1.9em;
+     vertical-align: middle;
+     background: url(../img/icons/icon-balloon.svg) 50% 50% no-repeat;
 }
+
+.icon-balloon-inline {
+    display: inline-block;
+    font-size: 1rem;
+    width: 1.9em;
+    height: 1.9em;
+    vertical-align: top;
+}
+
 
 .advantages-umbrella {
     display: inline-block;
@@ -416,9 +428,18 @@ i.icon-chair {
 
 .icon-calendar-2 {
     display: inline-block;
-    width: 2.1rem;
-    height: 1.9rem;
+    font-size: 1rem;
+    width: 2.1em;
+    height: 1.9em;
     background: url(../img/icons/icon-calendar-2.svg) 50% 50% no-repeat;
+    vertical-align: middle;
+}
+
+.icon-calendar-2-inline {
+    display: inline-block;
+    font-size: 1rem;
+    width: 2.1em;
+    height: 1.9em;
     vertical-align: middle;
 }
 
@@ -594,3 +615,49 @@ i.icon-chair {
     height: 1.5em;
     background: #fff url(../img/icons/icon-flower.svg) 0 0 no-repeat;
 }
+
+.icon-delete-basket {
+    display: inline-block;
+    vertical-align: top;
+    width: 1.4rem;
+    height: 1.7rem;
+    background: url(../img/icons/delete-basket.svg) 0 0 no-repeat;
+}
+
+.icon-cutlery {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    width: 2.6em;
+    height: 2.6em;
+    background: url(../img/icons/icon-cutlery.svg) 0 0 no-repeat;
+}
+
+
+.icon-cutlery-inline {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    width: 2.6em;
+    height: 2.6em;
+    fill: #9B806F;
+}
+
+.icon-birthday-cake {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    width: 2.8em;
+    height: 2.8em;
+    background: url(../img/icons/icon-birthday-cake.svg) 0 0 no-repeat;
+}
+
+.icon-birthday-cake-inline {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    width: 2.8em;
+    height: 2.8em;
+}
+
+

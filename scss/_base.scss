@@ -363,6 +363,52 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
+.c-counter-big {
+    padding: .4rem 1.2rem;
+    border-radius: .8rem;
+    background-color: #7cbd41;
+    border: none;
+    position: relative;
+    font-size: 0;
+
+    &__btn {
+        display: inline-block;
+        padding: .4rem 0;
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 3.4rem;
+        font-size: 2.2rem;
+        text-align: center;
+        line-height: 1.6rem;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #6faa3a;
+        }
+    }
+
+    .dec {
+        left: .6rem;
+    }
+
+    .inc {
+        right: .6rem;
+    }
+
+    &__field {
+        width: 2.3rem !important;
+        font-size: 1.8rem;
+        line-height: 1;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        text-align: center;
+        display: inline-block;
+    }
+}
+
 .c-inputfile__input {
     width: 0.1px;
     height: 0.1px;
@@ -549,7 +595,7 @@ a.c-button {
 }
 
 .c-button {
-    border-radius: .4rem;
+    border-radius: .6rem;
     border: none;
     outline: none;
     cursor: pointer;
@@ -1159,6 +1205,25 @@ a.c-button {
         text-overflow: ellipsis;
         overflow: hidden;
     }
+
+    &__footer {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+
+        & > div {
+            margin-right: 1.3rem;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        .c-button {
+            padding: .9rem 1rem;
+        }
+    }
 }
 
 
@@ -1735,6 +1800,7 @@ a.c-button {
     }
 }
 
+/*c-card-product---------------------------------------------*/
 .c-card-product {
 
     &__header {
@@ -1971,6 +2037,96 @@ a.c-button {
     }
 }
 
+.c-card-product-line {
+    border-radius: .8rem;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    &__left {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__img {
+        width: 6.3rem;
+        min-height: 5.6rem;
+        position: relative;
+        font-size: 0;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-51%,-50%);
+            height: 100%;
+            font-size: 0;
+            display: block;
+        }
+    }
+
+    &__body {
+        padding: .7rem 1rem;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        text-align: left;
+        color: #231300;
+    }
+
+    &__text {
+        display: inline-block;
+        margin-right: 1.8rem;
+        font-size: 1.2rem;
+        font-style: italic;
+        text-align: left;
+        color: #9b9595;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: 21.5rem;
+        padding-right: 1rem;
+
+        & > div {
+            margin-right: 1.3rem;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        .c-button {
+            padding: .9rem 1rem;
+        }
+    }
+
+    &__price {
+        min-width: 6.6rem;
+        text-align: center;
+        font-family: $font_sans-serif;
+        font-size: 2.6rem;
+        line-height: 1;
+        color: #553023;
+    }
+
+}
 
 /*c-card-supplements--------------------*/
 
@@ -2435,4 +2591,72 @@ a.c-button {
     background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+/*c-all-price----------------------------------------*/
+.c-all-price {
+    min-width: 24.4rem;
+    font-family: $font_serif;
+    overflow: hidden;
+    border-radius: .8rem;
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+    border: .2rem solid #d2d2d2;
+
+    &__title {
+        font-size: 1.7rem;
+        color: #553023;
+        line-height: 1;
+        padding: 2.5rem 2.5rem 2rem;
+        background: #fdf7e8 url(../img/bg-header.png);
+    }
+
+    &__body {
+        font-style: italic;
+        color: #231300;
+        font-size: 1.6rem;
+        padding: 2rem 2.5rem;
+    }
+
+    &__list {
+        border-bottom: .5rem double #e3e3e3;
+
+    }
+
+    &-product {
+        margin-bottom: 2rem;
+
+        &__name {
+            margin-bottom: .2rem;
+
+            span {
+                color: #646464;
+            }
+        }
+
+        &__num {
+
+        }
+
+        &:last-child {
+            //margin-bottom: 0;
+        }
+    }
+
+    &__total {
+        font-style: normal;
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+
+        span {
+            color: #553023;
+        }
+    }
+
+    &__footer {
+
+    }
+    .c-button {
+        font-style: normal;
+    }
 }

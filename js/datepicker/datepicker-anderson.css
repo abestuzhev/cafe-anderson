@@ -1,0 +1,54 @@
+.datepicker-layout {
+    position: relative;
+}
+.datepicker-layout::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    background: url(./icon-datepicker.png) 0 0 no-repeat;
+}
+.datepicker-layout.active-datepicker::after {
+    content: '';
+    background-position: -18px 0;
+}
+/*.datepicker-layout:hover::after {*/
+    /*content: '';*/
+    /*background-position: -18px 0;*/
+    /*-webkit-transition: all .1s ease;*/
+    /*-moz-transition: all .1s ease;*/
+    /*-ms-transition: all .1s ease;*/
+    /*-o-transition: all .1s ease;*/
+    /*transition: all .1s ease;*/
+/*}*/
+
+
+.datepicker--day-name {
+    color: #5b6877;
+}
+
+.datepicker--cell,
+.datepicker--cell-day {
+    border-radius: 50px;
+    background-color: #eeeff1;
+}
+
+.datepicker--cell.-disabled- {
+    background-color: #f8f7f6 !important;
+}
+
+.datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
+    background-color: transparent !important;
+}
+
+.datepicker--cell.-current- {
+    /*background-color: #3ca6df;*/
+    color: #173e7f;
+}
+
+.datepicker--nav-action:hover path {
+    stroke: #3ca6df;
+}

@@ -23,8 +23,6 @@ var $body,
 
 /*main.js*/
 
-// var containerEl = document.querySelector('.mixed-list');
-// var mixer = mixitup(containerEl);
 
 var windowWidth = (window.innerWidth ); // вся ширина окна
 var documentWidth = (document.documentElement.clientWidth ); // ширина минус прокрутка
@@ -45,6 +43,15 @@ $(document).ready(function ($) {
     // $('.header-subnavigation').mouseleave(function(){
     //     $(this).removeClass('is-visible');
     // });
+
+    //datepicker
+    var $datepicker = $('.datepicker-here');
+    $datepicker.datepicker({
+        minDate: new Date()
+    });
+    $datepicker.on('focus', function(){
+        $(this).parents('.datepicker-layout').addClass('active-datepicker');
+    });
 
     /*показываем попап на странице Создатели Андерсон*/
     $('.photo-point__icon').on('click', function(){
@@ -812,7 +819,7 @@ $(document).ready(function ($) {
 
 
     /*простые табы*/
-    $(".cafe-list-layout .tabs-menu a").click(function(event) {
+    $(".tabs-menu a").click(function(event) {
         event.preventDefault();
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");

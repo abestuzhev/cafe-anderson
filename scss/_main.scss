@@ -1788,6 +1788,15 @@ test popup
     //font-size: 0;
     position: relative;
     z-index: 10;
+
+    .c-input {
+        border: 1px solid #d2cdc4;
+        font-size: 1.2rem;
+        padding: .4rem 0 .4rem .8rem;
+        min-height: 14px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
     
     &-mobile-btn,
     &-hold-mobile-btn {
@@ -2339,6 +2348,11 @@ test popup
 /*tabs-------------------------------------------------*/
 .tabs-menu {
     font-family: $font_serif;
+
+    &__list {
+        text-align: right;
+        margin-bottom: 1.7rem;
+    }
     
     &__item {
         display: inline-block;
@@ -4198,4 +4212,253 @@ test popup
             //border-top: 2.3rem solid #ffffff;
         }
     }
+}
+
+
+/*Мероприятия (events)------------------------------------------------*/
+.events {
+
+    &__list {
+
+    }
+
+    &__item {
+        margin-bottom: 2.4rem;
+    }
+
+    .filter-form {
+        justify-content: flex-start;
+    }
+
+    .filter .l-button__center {
+        display: block;
+    }
+
+    &-list__tabs {
+
+    }
+
+    .select-city + .SelectBox {
+        width: 14rem;
+    }
+
+    .select-age + .SelectBox {
+        width: 7.6rem;
+    }
+
+    .select-cafe + .SelectBox, .select-theme + .SelectBox {
+        width: 19.4rem;
+    }
+}
+
+/*Корзина (basket)------------------------------------------------*/
+.basket {
+    font-family: $font_serif;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__body {
+        width: 100%;
+        padding-right: 1.6rem;
+    }
+
+    &__aside {
+
+    }
+
+    &-mix {
+        margin-bottom: 1.4rem;
+
+        &__item {
+            display: inline-block;
+            padding: .8rem 1.4rem;
+            margin-right: 1rem;
+
+            &:last-child {
+                margin: 0;
+            }
+            &::after {
+                content: '';
+                border:none;
+            }
+        }
+
+        .c-icon {
+            margin-right: .3rem;
+            fill: #9b806f;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .mixitup-control-active {
+            border-radius: .4rem;
+            background-color: #7cbd41;
+            color: #ffffff;
+
+            svg {
+                fill: #fff !important;
+            }
+        }
+
+        &__number {
+            display: inline-block;
+            width: 2.8rem;
+            height: 2.8rem;
+            background-color: #7cbd41;
+            border-radius: 5rem;
+            color: #fff;
+            text-align: center;
+            line-height: 2.8rem;
+            font-size: 1.2rem;
+        }
+
+        .icon-cutlery-inline {
+            font-size: .6rem;
+            vertical-align: baseline;
+        }
+
+        .icon-calendar-2-inline {
+            font-size: .8rem;
+        }
+
+        .icon-birthday-cake-inline {
+            font-size: .7rem;
+        }
+
+    }
+
+    &__list {
+        padding: 3.1rem 2.8rem;
+        font-family: $font_serif;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+        border-radius: .8rem;
+        border: .2rem solid #d2d2d2;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    }
+
+    &-item {
+        margin: 0;
+        position: relative;
+        padding: 3.2rem 0 3.7rem;
+
+        &:first-child {
+            margin-top: -3.2rem;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: .4rem;
+            background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        }
+
+        &__header {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 1.8rem;
+
+            .c-icon {
+                margin-right: .8rem;
+            }
+        }
+
+        &__title {
+            font-size: 1.9rem;
+            line-height: 1;
+            text-align: left;
+            color: #9b806f;
+            text-transform: uppercase;
+            margin-right: 1rem;
+        }
+
+        &__number {
+            margin-right: 1rem;
+            font-size: 1.4rem;
+            line-height: 1;
+            color: #9b9595;
+        }
+
+        &__list {
+            &-item {
+                margin-bottom: 1rem;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            margin-bottom: 1.8rem;
+        }
+
+        &__price {
+            font-family: $font_sans-serif;
+            font-size: 3.6rem;
+            line-height: 1;
+            color: #553023;
+            margin-right: 2rem;
+        }
+
+        &__footer {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        font-size: 2.4rem;
+        line-height: 1;
+        text-align: center;
+        color: #ffffff;
+        padding: 1.6rem 0;
+        text-transform: uppercase;
+        background-color: #7cbd41;
+        margin-top: -3.2rem;
+        border-radius: 0 0 .8rem .8rem;
+
+        &::after {
+            content: '';
+            border:none;
+        }
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    .icon-balloon {
+        font-size: 1.4rem;
+    }
+
+    .icon-calendar-2 {
+        font-size: 1.3rem;
+    }
+
+    .c-button__medium {
+        font-size: 1.6rem;
+        text-transform: none;
+    }
+
+    .c-card-event__title {
+        margin-bottom: 0;
+    }
+    .c-card-event__title a {
+        font-size: 1.6rem;
+    }
+
+    .c-card-event {
+        border: none;
+        border-radius: .6rem;
+    }
+
 }
