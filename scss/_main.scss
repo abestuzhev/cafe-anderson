@@ -4460,5 +4460,19 @@ test popup
         border: none;
         border-radius: .6rem;
     }
+    
+    .c-button {
+        white-space: nowrap;
+        vertical-align: middle;
+        
+        &__width {
+            padding: 1.4rem 2rem;
+        }
+        svg {
+            fill: #fff;
+            margin-left: .6rem;
+        }
+    }
+    
 
 }

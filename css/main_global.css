@@ -7271,3 +7271,11 @@ test popup
   .basket .c-card-event {
     border: none;
     border-radius: .6rem; }
+  .basket .c-button {
+    white-space: nowrap;
+    vertical-align: middle; }
+    .basket .c-button__width {
+      padding: 1.4rem 2rem; }
+    .basket .c-button svg {
+      fill: #fff;
+      margin-left: .6rem; }

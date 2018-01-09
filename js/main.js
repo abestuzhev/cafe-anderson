@@ -44,14 +44,7 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
-    //datepicker
-    var $datepicker = $('.datepicker-here');
-    $datepicker.datepicker({
-        minDate: new Date()
-    });
-    $datepicker.on('focus', function(){
-        $(this).parents('.datepicker-layout').addClass('active-datepicker');
-    });
+
 
     /*показываем попап на странице Создатели Андерсон*/
     $('.photo-point__icon').on('click', function(){
