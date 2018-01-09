@@ -44,6 +44,12 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+    //свернуть/развернуть блок в корзине
+    $('.basket-item__header').on('click', function(){
+        $(this).parents('.basket-item').toggleClass('basket-body__show');
+        $(this).siblings('.basket-item__body').slideToggle(100);
+    });
+
 
 
     /*показываем попап на странице Создатели Андерсон*/

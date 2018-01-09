@@ -4342,6 +4342,10 @@ test popup
         margin: 0;
         position: relative;
         padding: 3.2rem 0 3.7rem;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
 
         &:first-child {
             margin-top: -3.2rem;
@@ -4363,6 +4367,7 @@ test popup
             align-items: center;
             justify-content: flex-start;
             margin-bottom: 1.8rem;
+            cursor: pointer;
 
             .c-icon {
                 margin-right: .8rem;
@@ -4384,8 +4389,13 @@ test popup
             line-height: 1;
             color: #9b9595;
         }
+        
+        &__body {
+            display: none;
+        }
 
         &__list {
+            
             &-item {
                 margin-bottom: 1rem;
 
@@ -4411,6 +4421,22 @@ test popup
             justify-content: flex-end;
         }
 
+    }
+    
+    &-body {
+        
+        &__show {
+            display: block;
+            //flex-flow: column wrap;
+            //align-items: baseline;
+            .basket-item__body {
+                //display: block;
+            }
+            
+            .icon-dropdown__down {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     &__btn {
@@ -4473,6 +4499,8 @@ test popup
             margin-left: .6rem;
         }
     }
-    
+    .icon-dropdown__down {
+        fill: #9b9595;
+    }
 
 }

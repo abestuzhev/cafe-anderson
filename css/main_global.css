@@ -238,6 +238,14 @@
   height: .6rem;
   fill: #fff; }
 
+.icon-dropdown__down {
+  font-size: 1rem;
+  width: 1.1em;
+  height: .6em;
+  display: inline-block;
+  vertical-align: top;
+  position: relative; }
+
 .icon-filter {
   display: inline-block;
   width: 1.3rem;
@@ -7174,7 +7182,20 @@ test popup
   .basket-item {
     margin: 0;
     position: relative;
-    padding: 3.2rem 0 3.7rem; }
+    padding: 3.2rem 0 3.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .basket-item:first-child {
       margin-top: -3.2rem; }
     .basket-item::after {
@@ -7199,7 +7220,8 @@ test popup
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      margin-bottom: 1.8rem; }
+      margin-bottom: 1.8rem;
+      cursor: pointer; }
       .basket-item__header .c-icon {
         margin-right: .8rem; }
     .basket-item__title {
@@ -7214,6 +7236,8 @@ test popup
       font-size: 1.4rem;
       line-height: 1;
       color: #9b9595; }
+    .basket-item__body {
+      display: none; }
     .basket-item__list {
       margin-bottom: 1.8rem; }
       .basket-item__list-item {
@@ -7240,6 +7264,12 @@ test popup
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
+  .basket-body__show {
+    display: block; }
+    .basket-body__show .icon-dropdown__down {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
   .basket__btn {
     display: block;
     width: 100%;
@@ -7279,3 +7309,5 @@ test popup
     .basket .c-button svg {
       fill: #fff;
       margin-left: .6rem; }
+  .basket .icon-dropdown__down {
+    fill: #9b9595; }
