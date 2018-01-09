@@ -1119,6 +1119,10 @@
     .filter{
         display: block !important;
     }
+
+    .events .filter{
+        display: inline-block !important;
+    }
 }
 
 @media (max-width:730px) {

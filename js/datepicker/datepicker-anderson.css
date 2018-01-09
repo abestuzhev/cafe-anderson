@@ -7,9 +7,9 @@
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-    width: 18px;
-    height: 18px;
-    background: url(./icon-datepicker.png) 0 0 no-repeat;
+    width: .8rem;
+    height: .8rem;
+    background: url(../../img/icons/icon-arr-down.svg) 0 0 no-repeat;
 }
 .datepicker-layout.active-datepicker::after {
     content: '';
@@ -33,7 +33,7 @@
 .datepicker--cell,
 .datepicker--cell-day {
     border-radius: 50px;
-    background-color: #eeeff1;
+    background-color: #f9f3e3;
 }
 
 .datepicker--cell.-disabled- {
@@ -46,9 +46,14 @@
 
 .datepicker--cell.-current- {
     /*background-color: #3ca6df;*/
-    color: #173e7f;
+    color: #9acc4e;
 }
 
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current-,
+.datepicker--cell.-selected-.-focus-{
+    background: #9acc4e;
+}
 .datepicker--nav-action:hover path {
-    stroke: #3ca6df;
+    stroke: #9acc4e;
 }
