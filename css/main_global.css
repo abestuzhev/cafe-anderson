@@ -368,6 +368,14 @@ i.icon-chair {
   background: url(../img/icons/icon-calendar-2.svg) 50% 50% no-repeat;
   vertical-align: middle; }
 
+.icon-calendar-3 {
+  display: inline-block;
+  font-size: 1rem;
+  width: 1.9em;
+  height: 1.9em;
+  background: url(../img/icons/icon-calendar-3.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
 .icon-calendar-2-inline {
   display: inline-block;
   font-size: 1rem;
@@ -7172,7 +7180,7 @@ test popup
     .basket-mix .icon-birthday-cake-inline {
       font-size: .7rem; }
   .basket__list {
-    padding: 3.1rem 2.8rem;
+    padding: 0 2.8rem 3.1rem 2.8rem;
     font-family: "PT Serif Caption";
     -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
@@ -7196,8 +7204,6 @@ test popup
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .basket-item:first-child {
-      margin-top: -3.2rem; }
     .basket-item::after {
       content: '';
       position: absolute;
@@ -7220,7 +7226,6 @@ test popup
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      margin-bottom: 1.8rem;
       cursor: pointer; }
       .basket-item__header .c-icon {
         margin-right: .8rem; }
@@ -7237,7 +7242,8 @@ test popup
       line-height: 1;
       color: #9b9595; }
     .basket-item__body {
-      display: none; }
+      display: none;
+      width: 100%; }
     .basket-item__list {
       margin-bottom: 1.8rem; }
       .basket-item__list-item {
@@ -7263,13 +7269,20 @@ test popup
               align-items: center;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      position: absolute;
+      top: 32px;
+      right: 0; }
   .basket-body__show {
     display: block; }
     .basket-body__show .icon-dropdown__down {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
+    .basket-body__show .basket-item__header {
+      margin-bottom: 1.8rem; }
+    .basket-body__show .basket-item__footer {
+      position: static; }
   .basket__btn {
     display: block;
     width: 100%;

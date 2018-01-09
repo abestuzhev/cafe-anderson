@@ -46,8 +46,19 @@ $(document).ready(function ($) {
 
     //свернуть/развернуть блок в корзине
     $('.basket-item__header').on('click', function(){
-        $(this).parents('.basket-item').toggleClass('basket-body__show');
+        var $this =  $(this);
+        $this.parents('.basket-item').toggleClass('basket-body__show');
+        setTimeout(function(){
+
+        }, 150);
+
         $(this).siblings('.basket-item__body').slideToggle(100);
+    });
+
+    $('.basket-mix__item').on('click', function(){
+
+        $('.basket-item__header').parents('.basket-item').addClass('basket-body__show');
+        $('.basket-item__body').slideDown(100);
     });
 
 
