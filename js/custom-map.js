@@ -169,51 +169,45 @@ ymaps.ready(function () {
       //     checkZoomRange: true
       // });
 
-  });
-
-/*--------------------------------------------------------------------*/
-ymaps.ready(init);
-
-function init() {
-
+    /*--------------------------------------------------------------------*/
     var mapDelivery = new ymaps.Map('order-delivery__map', {
-        center: [55.73, 37.75],
-        zoom: 9,
-        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
-        controls: ['zoomControl', 'fullscreenControl']
-    },
-    {
-        searchControlProvider: 'yandex#search'
-    });
+            center: [55.73, 37.75],
+            zoom: 9,
+            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+            controls: ['zoomControl', 'fullscreenControl']
+        },
+        {
+            searchControlProvider: 'yandex#search'
+        });
     var mapPickup = new ymaps.Map('order-pickup__map', {
-        center: [55.73, 37.75],
-        zoom: 9,
-        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
-        controls: ['zoomControl', 'fullscreenControl']
-    },
-    {
-        searchControlProvider: 'yandex#search'
-    });
+            center: [55.73, 37.75],
+            zoom: 9,
+            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+            controls: ['zoomControl', 'fullscreenControl']
+        },
+        {
+            searchControlProvider: 'yandex#search'
+        });
 
     var mapDeliveryCake = new ymaps.Map('order-cake-delivery__map', {
-        center: [55.73, 37.75],
-        zoom: 9,
-        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
-        controls: ['zoomControl', 'fullscreenControl']
-    },
-    {
-        searchControlProvider: 'yandex#search'
-    });
+            center: [55.73, 37.75],
+            zoom: 9,
+            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+            controls: ['zoomControl', 'fullscreenControl']
+        },
+        {
+            searchControlProvider: 'yandex#search'
+        });
 
     var mapPickupCake = new ymaps.Map('order-cake-pickup__map', {
-        center: [55.73, 37.75],
-        zoom: 9,
-        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
-        controls: ['zoomControl', 'fullscreenControl']
-    },
-    {
-        searchControlProvider: 'yandex#search'
-    });
+            center: [55.73, 37.75],
+            zoom: 9,
+            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+            controls: ['zoomControl', 'fullscreenControl']
+        },
+        {
+            searchControlProvider: 'yandex#search'
+        });
 
     var deliveryCollection = new ymaps.GeoObjectCollection(),
         pickupCollection = new ymaps.GeoObjectCollection(),
@@ -251,6 +245,14 @@ function init() {
     mapPickup.geoObjects.add(pickupCollection);
     mapDeliveryCake.geoObjects.add(deliveryCakeCollection);
     mapPickupCake.geoObjects.add(pickupCakeCollection);
-}
+
+  });
+
+
+// ymaps.ready(init);
+//
+// function init() {
+//
+// }
 
 

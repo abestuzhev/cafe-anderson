@@ -857,7 +857,7 @@ $(document).ready(function ($) {
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");
         var tab = $(this).attr("href");
-        $(this).parents('.order-tabs').find(".tab-content").not(tab).css("display", "none");
+        $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
 
