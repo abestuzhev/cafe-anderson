@@ -988,16 +988,20 @@ p {
   font-family: "PT Serif Caption"; }
 
 input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */ }
+  /* Chrome/Opera/Safari */
+  color: #9b9696; }
 
 input::-moz-placeholder:first-letter {
-  /* Firefox 19+ */ }
+  /* Firefox 19+ */
+  color: #9b9696; }
 
 input:-ms-input-placeholder:first-letter {
-  /* IE 10+ */ }
+  /* IE 10+ */
+  color: #9b9696; }
 
 input:-moz-placeholder:first-letter {
-  /* Firefox 18- */ }
+  /* Firefox 18- */
+  color: #9b9696; }
 
 .wrapper input[type="checkbox"],
 .popup input[type="checkbox"] {
@@ -2259,7 +2263,7 @@ a.c-button:hover {
       .c-card-product-type__item a::after {
         content: '';
         border-color: #515151; }
-  .c-card-product-type__item:nth-child(1) {
+  .c-card-product-type__item.selected {
     padding: .2em 1.4rem .3rem;
     border-radius: 12px;
     background-color: #7cbd41;
@@ -7445,7 +7449,8 @@ test popup
             box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
     border-radius: .8rem;
     padding: 1.3rem 1.7rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    overflow: hidden; }
     .order-item__header {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -7494,6 +7499,114 @@ test popup
         margin-right: 0; }
   .order-delivery {
     margin-top: 4rem; }
+    .order-delivery__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .order-delivery__col {
+      width: 50%; }
+      .order-delivery__col:nth-child(2) {
+        padding-left: 2.2rem; }
+    .order-delivery__map {
+      width: 100%;
+      height: 100%;
+      -webkit-box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
+      min-height: 26rem; }
+    .order-delivery__layout {
+      margin: 0 0 1.2rem 1.7rem; }
+    .order-delivery__time-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .order-delivery__time-item {
+      margin-right: 1.9rem; }
+      .order-delivery__time-item:last-child {
+        margin-right: 0; }
+      .order-delivery__time-item .c-input {
+        padding: .6rem 1.4rem; }
+    .order-delivery .c-select + .SelectBox {
+      width: 17.6rem;
+      padding: .8rem 1.4rem;
+      border-radius: .4rem; }
+    .order-delivery .select-delivery + .CaptionCont > label > i {
+      right: 1.5rem;
+      width: 1.7rem;
+      height: 1.7rem;
+      background: url(../img/icons/icon-clock-2.svg) 0 0 no-repeat; }
+    .order-delivery .SumoSelect.open > .optWrapper {
+      top: 3.2rem; }
+    .order-delivery .SumoSelect > .CaptionCont > span {
+      color: #9b9696; }
+    .order-delivery .datepicker-layout {
+      width: 17.6rem; }
+    .order-delivery .datepicker-layout::after {
+      content: '';
+      position: absolute;
+      right: 1.5rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
+    .order-delivery-address__item {
+      margin-bottom: 1.6rem;
+      font-size: 1.4rem;
+      color: #231300; }
+    .order-delivery-address__point {
+      display: block;
+      padding-left: 2.1rem;
+      position: relative; }
+      .order-delivery-address__point::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -.4rem;
+        width: 2.4rem;
+        height: 3rem;
+        background: url(../img/icon-map-point.png) 0 0 no-repeat;
+        background-size: cover; }
+    .order-delivery-custom__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .order-delivery-custom__grid .order-delivery-custom__item:first-child {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 75%;
+                flex: 0 0 75%;
+        margin-right: 3%; }
+    .order-delivery-custom__item {
+      margin-bottom: 1rem; }
+      .order-delivery-custom__item:last-child {
+        margin-bottom: 0; }
   .order-box__title {
     font-size: 1.6rem;
     line-height: 1;
@@ -7520,7 +7633,8 @@ test popup
   .order-pay__item {
     margin-right: 4rem; }
   .order-tabs {
-    margin-bottom: 4.8rem; }
+    margin-bottom: 4.8rem;
+    margin-left: -1.7rem; }
     .order-tabs__item {
       display: inline-block;
       padding: 1.4rem 1.6rem .8rem 3.3rem;
@@ -7536,6 +7650,12 @@ test popup
         background-color: #7cbd41; }
         .order-tabs__item.current a {
           color: #fff; }
+      .order-tabs__item a::after {
+        content: '';
+        border: none; }
+  .order .tab {
+    padding-top: 1.4rem;
+    border-top: .5rem solid #7cbd41; }
   .order input[type="radio"] {
     display: none; }
     .order input[type="radio"]:checked + .order-radio::after {
@@ -7573,6 +7693,18 @@ test popup
       height: .9rem;
       border-radius: 5rem;
       background-color: #dedcd6; }
+    .order-radio--top::after {
+      content: '';
+      top: .8rem;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+    .order-radio--top::before {
+      content: '';
+      top: 1.2rem;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
   .order__btn {
     display: block;
     width: 100%;

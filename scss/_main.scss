@@ -4588,6 +4588,7 @@ test popup
         border-radius: .8rem;
         padding: 1.3rem 1.7rem;
         margin-bottom: 3rem;
+        overflow: hidden;
         
         &__header {
             display: flex;
@@ -4656,8 +4657,142 @@ test popup
     
         margin-top: 4rem;
         
-        &__title {
+        &__grid {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            justify-content: space-between;
+        }
         
+        &__col {
+            width: 50%;
+            
+            &:nth-child(2) {
+                padding-left: 2.2rem;
+            }
+        }
+        
+        &__map {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 10px 20px 8px rgba(0,0,0,.1);
+            min-height: 26rem;
+        }
+        
+        &__layout {
+            margin: 0 0 1.2rem 1.7rem;
+        }
+        
+        &__time {
+            &-list {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: stretch;
+                justify-content: flex-start;
+            }
+            
+            &-item {
+                margin-right: 1.9rem;
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+    
+                .c-input {
+                    padding: .6rem 1.4rem;
+                }
+            }
+            
+        }
+    
+        .c-select + .SelectBox {
+            width: 17.6rem;
+            padding: .8rem 1.4rem;
+            border-radius: .4rem;
+        }
+    
+        .select-delivery + .CaptionCont > label > i {
+            right: 1.5rem;
+            width: 1.7rem;
+            height: 1.7rem;
+            background: url(../img/icons/icon-clock-2.svg) 0 0 no-repeat;
+        }
+    
+        .SumoSelect.open > .optWrapper {
+            top: 3.2rem;
+        }
+    
+        .SumoSelect > .CaptionCont > span {
+            color: #9b9696;
+        }
+        
+        
+        .datepicker-layout {
+            width: 17.6rem;
+        }
+        
+        .datepicker-layout::after {
+            content: '';
+            position: absolute;
+            right: 1.5rem;
+            width: 2.2rem;
+            height: 2.2rem;
+            background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat;
+        }
+        
+        &-address {
+    
+            
+            
+            &__item {
+                margin-bottom: 1.6rem;
+                font-size: 1.4rem;
+                color: #231300;
+            }
+            
+            &__point {
+                display: block;
+                padding-left: 2.1rem;
+                position: relative;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -.4rem;
+                    width: 2.4rem;
+                    height: 3rem;
+                    background: url(../img/icon-map-point.png) 0 0 no-repeat;
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                }
+            }
+        }
+        
+        &-custom {
+            &__list {
+            
+            }
+            
+            &__grid {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: stretch;
+                justify-content: space-between;
+                
+                .order-delivery-custom__item:first-child {
+                    flex: 0 0 75%;
+                    margin-right: 3%;
+                }
+            }
+            
+            &__item {
+                margin-bottom: 1rem;
+                
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
     
@@ -4691,7 +4826,7 @@ test popup
     
     &-tabs {
         margin-bottom: 4.8rem;
-        margin-left: -3.2rem;
+        margin-left: -1.7rem;
         
         &__item {
             display: inline-block;
@@ -4732,6 +4867,11 @@ test popup
                 border: none ;
             }
         }
+    }
+    
+    .tab {
+        padding-top: 1.4rem;
+        border-top: .5rem solid #7cbd41;
     }
     
     input[type="radio"] {
@@ -4778,6 +4918,18 @@ test popup
             border-radius: 5rem;
             background-color: #dedcd6;
         }
+        
+        &--top::after {
+            content: '';
+            top: .8rem;
+            transform: none;
+        }
+        &--top::before {
+            content: '';
+            top: 1.2rem;
+            transform: none;
+        }
+        
     }
     
     

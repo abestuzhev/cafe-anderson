@@ -870,13 +870,70 @@
                                     <div class="order-delivery">
                                         <h4 class="order-box__title"><i class="icon-truck"></i>Доставка:</h4>
                                         <div class="order-tabs">
-                                            <ul class="tabs-menu" id="tabs-cafe-list">
+                                            <ul class="tabs-menu" id="tabs-delivery-list">
                                                 <li class="order-tabs__item current"><a href="#order-delivery">Доставка</a></li>
                                                 <li class="order-tabs__item"><a href="#order-pickup">Самовывоз</a></li>
                                             </ul>
                                             <div class="tab">
                                                 <div id="order-delivery" class="tab-content">
-                                                    delivery
+                                                    <div class="order-delivery__layout">
+                                                        <ul class="order-delivery__time-list">
+                                                            <li class="order-delivery__time-item">
+                                                                <div class="datepicker-layout">
+                                                                    <input type='text' class="c-input datepicker-here form-control" placeholder="Дата доставки"/>
+                                                                </div>
+                                                            </li>
+                                                            <li class="order-delivery__time-item">
+                                                                <select name="order-deliver-time" class="c-select select-delivery">
+                                                                    <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                                                    <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                                                    <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="order-delivery__grid">
+                                                        <div class="order-delivery__col">
+                                                            <div class="order-delivery__map" id="order-delivery__map"></div>
+                                                        </div>
+                                                        <div class="order-delivery__col">
+                                                            <ul class="order-delivery-address__list">
+                                                                <li class="order-delivery-address__item">
+                                                                    <span class="order-delivery-address__point">-АндерСоны рядом</span>
+                                                                </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-delivery__address" id="order-delivery__address-default" checked>
+                                                                    <label class="order-radio" for="order-delivery__address-default">г. Москва, ул. Улица, д. 17, дом 27 (адрес по умолчанию)</label>
+                                                                </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-delivery__address" id="order-delivery__address-custom">
+                                                                    <label class="order-radio order-radio--top" for="order-delivery__address-custom">
+                                                                        <ul class="order-delivery-custom__list">
+                                                                            <li class="order-delivery-custom__item">
+                                                                                <input type="text" name="order-delivery-custom__city" class="c-input" placeholder="Введите Ваш город:">
+                                                                            </li>
+                                                                            <ul class="order-delivery-custom__grid">
+                                                                                <li class="order-delivery-custom__item">
+                                                                                    <input type="text" name="order-delivery-custom__street" class="c-input" placeholder="Улица:">
+                                                                                </li>
+                                                                                <li class="order-delivery-custom__item">
+                                                                                    <input type="text" name="order-delivery-custom__house" class="c-input" placeholder="Дом:">
+                                                                                </li>
+                                                                            </ul>
+
+                                                                            <li class="order-delivery-custom__item">
+                                                                                <textarea class="c-input" name="order-delivery-custom__note" id="order-delivery-custom__note" rows="4"></textarea>
+                                                                            </li>
+                                                                        </ul>
+
+                                                                    </label>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+
 
                                                 </div>
                                                 <div id="order-pickup" class="tab-content">

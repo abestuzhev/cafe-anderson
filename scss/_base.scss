@@ -233,15 +233,19 @@ p {
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     //text-transform: capitalize;
+    color: #9b9696;
 }
 input::-moz-placeholder:first-letter { /* Firefox 19+ */
     //text-transform: capitalize;
+    color: #9b9696;
 }
 input:-ms-input-placeholder:first-letter { /* IE 10+ */
     //text-transform: capitalize;
+    color: #9b9696;
 }
 input:-moz-placeholder:first-letter { /* Firefox 18- */
     //text-transform: capitalize;
+    color: #9b9696;
 }
 
 
@@ -1873,18 +1877,20 @@ a.c-button {
             }
         }
 
-        &__item:nth-child(1) {
-            padding: .2em 1.4rem .3rem;
-            border-radius: 12px;
-            background-color: #7cbd41;
-            font-size: 14px;
-            font-weight: normal;
-            font-style: italic;
-            font-stretch: normal;
-            line-height: 1.29;
-            letter-spacing: normal;
-            text-align: left;
-            color: #ffffff;
+        &__item {
+            &.selected {
+                padding: .2em 1.4rem .3rem;
+                border-radius: 12px;
+                background-color: #7cbd41;
+                font-size: 14px;
+                font-weight: normal;
+                font-style: italic;
+                font-stretch: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+            }
         }
     }
 

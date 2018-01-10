@@ -1,5 +1,6 @@
 .datepicker-layout {
     position: relative;
+    cursor: pointer;
 }
 .datepicker-layout::after {
     content: '';

@@ -169,3 +169,40 @@ ymaps.ready(function () {
       //     checkZoomRange: true
       // });
   });
+
+
+ymaps.ready(init);
+
+function init() {
+    var mapDelivery = new ymaps.Map("map", {
+            center: [55.73, 37.75],
+            zoom: 9
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        yellowCollection = new ymaps.GeoObjectCollection(null, {
+            preset: 'islands#yellowIcon'
+        }),
+
+        placemarks = [
+            [55.74352990795752,37.56841313754272],
+            [55.8,37.9],
+            [59,31],
+            [57,34],
+            [60,40]
+        ];
+
+    for (var i = 0, l = placemarks.length; i < l; i++) {
+        yellowCollection.add(new ymaps.Placemark(placemarks[i], {
+            iconImageHref: 'img/icon-map-point.png',
+            iconImageSize: [30, 42],
+            iconImageOffset: [-5, -38]
+        }));
+    }
+
+    mapDelivery.geoObjects.add(yellowCollection);
+
+
+}
+
+

@@ -44,6 +44,18 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+    //страница Оформление заказа. При фокусе на инпут с адресом, делаем активный radio button
+
+
+        $('.order-delivery-custom__item input, .order-delivery-custom__item textarea').focus(function(){
+            var $this = $('.order-delivery-custom__item input, .order-delivery-custom__item textarea');
+            if ($('.order-delivery-custom__list input[type="radio"]').attr("checked") != "checked"){
+                $this.parents('label').siblings('input[type="radio"]').attr('checked', 'checked');
+            }
+        });
+
+
+
     //свернуть/развернуть блок в корзине
     $('.basket-item__header').on('click', function(){
         var $this =  $(this);
