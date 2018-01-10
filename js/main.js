@@ -843,7 +843,7 @@ $(document).ready(function ($) {
         });
     }
 
-    changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_868');
+    changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_257');
     // changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_867');
 
 
