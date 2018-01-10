@@ -102,7 +102,6 @@ $(document).ready(function ($) {
 
     $('.factory-point .popup-close').on('click', function(e){
         e.preventDefault();
-        console.log('click');
         $('.popup').removeClass('is-visible');
     });
 
@@ -410,7 +409,7 @@ $(document).ready(function ($) {
         });
     }
 
-    $(".popup-close, .js-popup-close").click(function (e) {
+    $(document).on('click', '.popup-close', '.js-popup-close', function (e) {
         e.preventDefault();
         var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
