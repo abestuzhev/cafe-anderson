@@ -174,17 +174,17 @@ ymaps.ready(function () {
 ymaps.ready(init);
 
 function init() {
-    var mapDelivery = new ymaps.Map("map", {
+    var mapDelivery = new ymaps.Map("order-delivery__map", {
             center: [55.73, 37.75],
-            zoom: 9
+            zoom: 9,
+            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+            controls: ['zoomControl', 'fullscreenControl']
         }, {
             searchControlProvider: 'yandex#search'
         }),
-        yellowCollection = new ymaps.GeoObjectCollection(null, {
-            preset: 'islands#yellowIcon'
-        }),
+        yellowCollection = new ymaps.GeoObjectCollection(),
 
-        placemarks = [
+        placemarksOrder = [
             [55.74352990795752,37.56841313754272],
             [55.8,37.9],
             [59,31],
@@ -192,12 +192,16 @@ function init() {
             [60,40]
         ];
 
-    for (var i = 0, l = placemarks.length; i < l; i++) {
-        yellowCollection.add(new ymaps.Placemark(placemarks[i], {
+    for (var i = 0, l = placemarksOrder.length; i < l; i++) {
+        yellowCollection.add(new ymaps.Placemark(placemarksOrder[i], {
+            iconLayout: 'default#image',
             iconImageHref: 'img/icon-map-point.png',
-            iconImageSize: [30, 42],
+            iconImageSize: [44, 53],
             iconImageOffset: [-5, -38]
         }));
+
+        // console.log(placemarksOrder[i]);
+        console.log(yellowCollection[i]);
     }
 
     mapDelivery.geoObjects.add(yellowCollection);

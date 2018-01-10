@@ -1890,6 +1890,29 @@ a.c-button {
                 letter-spacing: normal;
                 text-align: left;
                 color: #ffffff;
+    
+                span::after {
+                    content: '';
+                    border: none;
+                }
+            }
+            
+            span {
+                position: relative;
+                cursor: pointer;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -.1rem;
+                    left: 0;
+                    width: 100%;
+                    border-bottom: 1px dotted #9b806f;
+                }
+                
+                &:hover::after {
+                    content: '';
+                    border: none;
+                }
             }
         }
     }
