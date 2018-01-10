@@ -219,6 +219,18 @@ p {
 }
 
 //------------------------------------------------------------form
+
+.wrapper select,
+.popup select {
+    padding: .6rem 1.4rem .7rem;
+    border-radius: .4rem;
+    border: 1px solid #d2cdc4;
+    color: #9b9696;
+    -ms-appearance: none;
+    appearance: none!important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
 .wrapper input[type="text"],
 .wrapper input[type="password"],
 .wrapper input[type="search"],

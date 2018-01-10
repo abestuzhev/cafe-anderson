@@ -168,21 +168,57 @@ ymaps.ready(function () {
       // myMap.setBounds(clusterer.getBounds(), {
       //     checkZoomRange: true
       // });
+
   });
 
-
+/*--------------------------------------------------------------------*/
 ymaps.ready(init);
 
 function init() {
-    var mapDelivery = new ymaps.Map("order-delivery__map", {
-            center: [55.73, 37.75],
-            zoom: 9,
-            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
-            controls: ['zoomControl', 'fullscreenControl']
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-        yellowCollection = new ymaps.GeoObjectCollection(),
+
+    var mapDelivery = new ymaps.Map('order-delivery__map', {
+        center: [55.73, 37.75],
+        zoom: 9,
+        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+        controls: ['zoomControl', 'fullscreenControl']
+    },
+    {
+        searchControlProvider: 'yandex#search'
+    });
+    var mapPickup = new ymaps.Map('order-pickup__map', {
+        center: [55.73, 37.75],
+        zoom: 9,
+        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+        controls: ['zoomControl', 'fullscreenControl']
+    },
+    {
+        searchControlProvider: 'yandex#search'
+    });
+
+    var mapDeliveryCake = new ymaps.Map('order-cake-delivery__map', {
+        center: [55.73, 37.75],
+        zoom: 9,
+        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+        controls: ['zoomControl', 'fullscreenControl']
+    },
+    {
+        searchControlProvider: 'yandex#search'
+    });
+
+    var mapPickupCake = new ymaps.Map('order-cake-pickup__map', {
+        center: [55.73, 37.75],
+        zoom: 9,
+        behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+        controls: ['zoomControl', 'fullscreenControl']
+    },
+    {
+        searchControlProvider: 'yandex#search'
+    });
+
+    var deliveryCollection = new ymaps.GeoObjectCollection(),
+        pickupCollection = new ymaps.GeoObjectCollection(),
+        deliveryCakeCollection = new ymaps.GeoObjectCollection(),
+        pickupCakeCollection = new ymaps.GeoObjectCollection(),
 
         placemarksOrder = [
             [55.74352990795752,37.56841313754272],
@@ -192,21 +228,29 @@ function init() {
             [60,40]
         ];
 
-    for (var i = 0, l = placemarksOrder.length; i < l; i++) {
-        yellowCollection.add(new ymaps.Placemark(placemarksOrder[i], {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/icon-map-point.png',
-            iconImageSize: [44, 53],
-            iconImageOffset: [-5, -38]
-        }));
-
-        // console.log(placemarksOrder[i]);
-        console.log(yellowCollection[i]);
+    function addPlacemark (collection){
+        for (var i = 0, l = placemarksOrder.length; i < l; i++) {
+            collection.add(new ymaps.Placemark(placemarksOrder[i], {
+                iconContent: "Кафе АндерСон на Красносельской"
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: '../img/icon-map-point.png',
+                // iconImageHref: 'https://image.ibb.co/fpL27R/icon_map_point.png',
+                iconImageSize: [44, 53],
+                iconImageOffset: [-5, -38]
+            }));
+        }
     }
+    addPlacemark(deliveryCollection);
+    addPlacemark(pickupCollection);
+    addPlacemark(deliveryCakeCollection);
+    addPlacemark(pickupCakeCollection);
 
-    mapDelivery.geoObjects.add(yellowCollection);
 
-
+    mapDelivery.geoObjects.add(deliveryCollection);
+    mapPickup.geoObjects.add(pickupCollection);
+    mapDeliveryCake.geoObjects.add(deliveryCakeCollection);
+    mapPickupCake.geoObjects.add(pickupCakeCollection);
 }
 
 

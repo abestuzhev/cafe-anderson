@@ -44,15 +44,27 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
-    //страница Оформление заказа. При фокусе на инпут с адресом, делаем активный radio button
+    //очистить форму поиска
+    $('.order-delivery-search__clear').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.order-delivery-search__item').siblings().find('input').val('');
+    });
 
-
-        $('.order-delivery-custom__item input, .order-delivery-custom__item textarea').focus(function(){
-            var $this = $('.order-delivery-custom__item input, .order-delivery-custom__item textarea');
-            if ($('.order-delivery-custom__list input[type="radio"]').attr("checked") != "checked"){
-                $this.parents('label').siblings('input[type="radio"]').attr('checked', 'checked');
-            }
+    //показать все адреса кафе в заказе
+    $('#order-pickup .order-delivery-address__all').on('click', function(e){
+        e.preventDefault();
+        $(this).siblings('.order-delivery-address__list').find('.order-delivery-address__item').css({
+            'display':'block'
         });
+    });
+
+    //страница Оформление заказа. При фокусе на инпут с адресом, делаем активный radio button
+    $('.order-delivery-custom__item input, .order-delivery-custom__item textarea').focus(function(){
+        var $this = $('.order-delivery-custom__item input, .order-delivery-custom__item textarea');
+        if ($('.order-delivery-custom__list input[type="radio"]').attr("checked") != "checked"){
+            $this.parents('label').siblings('input[type="radio"]').attr('checked', 'checked');
+        }
+    });
 
 
 
@@ -845,7 +857,7 @@ $(document).ready(function ($) {
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");
         var tab = $(this).attr("href");
-        $(".tab-content").not(tab).css("display", "none");
+        $(this).parents('.order-tabs').find(".tab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
 

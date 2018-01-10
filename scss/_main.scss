@@ -21,6 +21,7 @@ main {
         border: none;
     }
 }
+
 .mobile-item a:hover {
     color: #201600;
 }
@@ -94,7 +95,7 @@ main {
         transform: rotate(7deg);
         font-family: $font_sans-serif;
         @extend %transition_all;
-        color:#201600;
+        color: #201600;
     }
     
     &__title {
@@ -315,7 +316,7 @@ main {
         left: 36.2%;
         transform: rotate(-23deg);
         @extend %transition_all;
-        color:#201600;
+        color: #201600;
     }
     
     &__title {
@@ -605,7 +606,7 @@ main {
     &-bubble {
         padding: 1.3rem;
         border-radius: 1rem;
-        box-shadow: 0 3px 7px 0 rgba(0,0,0,.3);
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .3);
         background-color: $white;
         position: absolute;
         z-index: 14;
@@ -1290,7 +1291,6 @@ main {
     }
 }
 
-
 /*выбор города*/
 .popup-city-selection {
     font-size: 1.3rem;
@@ -1308,25 +1308,24 @@ main {
     }
 }
 
-
 /*карточка товара*/
 .popup-product {
     //opacity: 1 !important;
     //visibility: visible !important;
-
+    
     .popup {
         //width: 88.4rem;
         max-width: 88.4rem;
         width: 100%;
         //position: relative;
     }
-
+    
     .popup-title {
         padding: 2rem 6rem 1.6rem 2rem !important;
         font-size: 1.9rem;
         text-align: left;
     }
-
+    
     .popup-body {
         padding: 1.4rem 2rem;
         background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat
@@ -1383,8 +1382,6 @@ main {
         }
     }
     
-    
-    
     &__btn-back i {
         background: #fff url(../img/icons/icon-dropdown__up.svg) no-repeat 50% 46%;
     }
@@ -1426,11 +1423,11 @@ main {
     //top: 0;
     //left: 100%;
     margin-left: 1.2rem;
-
+    
     &__list {
         //margin-bottom: 2.6rem;
     }
-
+    
     &-product {
         margin-bottom: .8rem;
         &__name {
@@ -1438,7 +1435,7 @@ main {
             font-size: 1.6rem;
             line-height: 1.5;
             color: #553023;
-
+            
             span {
                 font-size: 1.4rem;
                 line-height: 1.71;
@@ -1446,7 +1443,7 @@ main {
                 white-space: nowrap;
             }
         }
-
+        
         &__price {
             font-size: 1.6rem;
             font-style: italic;
@@ -1474,8 +1471,7 @@ main {
             border: none;
         }
     }
-
-
+    
 }
 
 /*----------------------------------------------*/
@@ -1755,7 +1751,6 @@ test popup
     @extend %transition_all;
 }
 
-
 .overflow {
     overflow: hidden !important;
 }
@@ -1788,7 +1783,7 @@ test popup
     //font-size: 0;
     position: relative;
     z-index: 10;
-
+    
     .c-input {
         border: 1px solid #d2cdc4;
         font-size: 1.2rem;
@@ -1820,7 +1815,7 @@ test popup
             @extend %transition_all;
         }
     }
-
+    
     &-text {
         font-size: 1.4rem;
         color: #9b9595;
@@ -1853,7 +1848,7 @@ test popup
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0);
         
         &::after {
-            content:'';
+            content: '';
             border: none;
         }
         
@@ -1921,7 +1916,7 @@ test popup
                 margin: 0 .6rem 0 0;
                 vertical-align: top;
             }
-    
+            
             .icon-ghost {
                 font-size: 1rem;
                 width: 1.3em;
@@ -1960,14 +1955,14 @@ test popup
                 color: #929292;
             }
         }
-
+        
         &__up {
             margin: 0 .3rem;
         }
-
+        
         &__down {
         }
-
+        
         &__up,
         &__down {
             background-color: #e2e2e2;
@@ -1983,14 +1978,14 @@ test popup
                 font-size: 1.4rem;
             }
         }
-
+        
         &__up.active,
         &__down.active {
             background-color: #7cbd41;
             color: #fff;
         }
     }
-
+    
     &-left,
     &-right {
         display: flex;
@@ -1998,13 +1993,13 @@ test popup
         justify-content: space-between;
         align-items: flex-start;
     }
-
+    
     &-box {
-        display:flex;
+        display: flex;
         flex-flow: row nowrap;
         align-items: center;
     }
-
+    
     &-bage {
         //width: 14rem;
         padding: 1rem 1.7rem;
@@ -2020,13 +2015,13 @@ test popup
         //top: 0;
         //left: 0;
         margin-right: 2rem;
-
+        
         .icon-menu {
             position: absolute;
             top: 1.9rem;
             left: 1.7rem;
         }
-
+        
         &__title {
             font-size: 1.6rem;
             text-align: left;
@@ -2035,7 +2030,7 @@ test popup
             padding-left: 2.7rem;
             position: relative;
             line-height: 1.1;
-
+            
             &:before {
                 content: '';
                 width: 1.6rem;
@@ -2043,12 +2038,12 @@ test popup
                 position: absolute;
                 top: 0;
                 left: 0;
-
+                
             }
-
+            
         }
     }
-
+    
     &-hold {
         position: absolute;
         left: -3000px;
@@ -2058,24 +2053,24 @@ test popup
         background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
         box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
         border: solid 1px rgba(115, 115, 115, 0.15);
-
+        
         &__item {
             color: $black;
             display: block;
             font-size: 1.6rem;
             padding: .8rem 0;
             text-transform: lowercase;
-
+            
             &::after {
                 content: '';
                 border: none;
             }
-
+            
             &.active {
                 //color: #75ae1f;
                 position: relative;
                 padding-left: 1.4rem;
-
+                
                 &::before {
                     content: '';
                     position: absolute;
@@ -2087,7 +2082,7 @@ test popup
                 }
             }
         }
-
+        
         &__close {
             position: absolute;
             right: 2rem;
@@ -2095,14 +2090,13 @@ test popup
             border: 10px solid transparent;
             border-right-color: #817878;
             cursor: pointer;
-
-
+            
             &:hover {
                 border-right-color: #7cbd41;
             }
         }
     }
-
+    
     &-mix {
         display: flex;
         flex-flow: row wrap;
@@ -2110,7 +2104,7 @@ test popup
         justify-content: flex-start;
         //margin-bottom: 4.1rem;
         font-family: $font_serif;
-
+        
         &__item {
             display: block;
             padding: 1rem 1.5rem;
@@ -2122,7 +2116,7 @@ test popup
             color: #9b9595;
             cursor: pointer;
             margin-right: 2rem;
-
+            
             &:last-child {
                 margin-right: 0;
             }
@@ -2131,16 +2125,16 @@ test popup
                 content: '';
                 border: none;
             }
-
+            
             svg {
                 margin-right: .8rem;
                 vertical-align: middle;
             }
-
+            
             a {
                 font-family: $font_serif;
             }
-
+            
             &.active,
             &:hover {
                 background-color: #7cbd41;
@@ -2148,7 +2142,7 @@ test popup
                 position: relative;
                 
                 &::before {
-                    content:'';
+                    content: '';
                     position: absolute;
                     border: 2px dashed #7cbd41;
                     top: -4px;
@@ -2164,7 +2158,7 @@ test popup
                 a {
                     font-family: $font_serif;
                     color: #fff;
-
+                    
                     &::after {
                         content: '';
                         border: none;
@@ -2354,7 +2348,7 @@ test popup
 /*tabs-------------------------------------------------*/
 .tabs-menu {
     font-family: $font_serif;
-
+    
     &__list {
         text-align: right;
         margin-bottom: 1.7rem;
@@ -2436,8 +2430,7 @@ test popup
             margin-bottom: 1.8rem;
             vertical-align: middle;
             padding-left: 2.4rem;
-    
-    
+            
             &-station {
                 margin-left: -2.4rem;
                 
@@ -2470,7 +2463,6 @@ test popup
                     margin-right: 1.6rem;
                 }
             }
-            
             
             .c-button {
                 margin-top: .9rem;
@@ -2881,7 +2873,7 @@ test popup
         
         width: 100%;
         padding: .9rem 19.4rem;
-    
+        
         .fotorama__stage.fotorama__pointer {
             height: 60rem !important;
         }
@@ -3014,7 +3006,7 @@ test popup
             content: '';
             border: none;
         }
-    
+        
         &-mobile {
             display: none;
             width: 35.2rem;
@@ -3076,7 +3068,7 @@ test popup
             content: '';
             border: none;
         }
-    
+        
         &-mobile {
             display: none;
             width: 22.6rem;
@@ -3426,7 +3418,7 @@ test popup
             z-index: 20;
             bottom: -100%;
             left: 0;
-            background-color: rgba(255,255,255,1);
+            background-color: rgba(255, 255, 255, 1);
             padding: .8rem 1.2rem .8rem;
             transition: all .1s ease;
             margin: 0 .4rem;
@@ -3447,13 +3439,13 @@ test popup
                     width: 100%;
                     height: 3rem;
                     border: none;
-                    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)));
-                    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+                    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+                    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+                    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+                    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+                    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
                 }
             }
         }
@@ -3551,11 +3543,10 @@ test popup
     
 }
 
-
 /*Поиск (search)----------------------------------------------------*/
 .search {
     font-family: $font_serif;
-
+    
     &__result {
         font-size: 2rem;
         color: #878584;
@@ -3587,7 +3578,6 @@ test popup
             font-size: 1.2rem;
         }
         
-        
     }
     
     .tabs-menu__item.current {
@@ -3601,7 +3591,7 @@ test popup
 
 /*Каталог (catalog)----------------------------------------------------*/
 .catalog {
-
+    
     &-nav {
         display: flex;
         flex-flow: row wrap;
@@ -3609,25 +3599,25 @@ test popup
         justify-content: flex-start;
         margin-bottom: 4.1rem;
     }
-
+    
     &-body {
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-start;
         justify-content: flex-start;
         margin-bottom: 2.8rem;
-
+        
         &.show-category {
             .filter-hold {
                 left: auto;
                 transition: left .2s ease-out;
             }
-
+            
             .catalog-product {
                 margin-left: 27rem;
                 transition: margin-left .2s ease-out;
             }
-
+            
             .catalog-list {
                 min-height: 66rem;
             }
@@ -3641,13 +3631,13 @@ test popup
             //}
         }
     }
-
+    
     &-product {
         width: 100%;
         margin-left: 0;
         transition: margin-left .2s ease-out;
     }
-
+    
     &-list {
         display: flex;
         flex-flow: row wrap;
@@ -3655,30 +3645,30 @@ test popup
         align-items: stretch;
         margin-left: -1.5rem;
         margin-right: -1.5rem;
-
+        
         &__item {
             padding: 0 1.5rem;
             margin-bottom: 3.4rem;
             width: 33.333333%;
         }
     }
-
+    
     .filter {
         margin-bottom: 2.1rem;
-
+        
         &-form {
             justify-content: space-between;
         }
-
+        
         &-item {
             margin-right: 2rem;
-
+            
             &:last-child {
                 margin-right: 0;
             }
         }
     }
-
+    
     &-recommend {
         font-family: $font_serif;
         margin-bottom: 6rem;
@@ -3690,7 +3680,7 @@ test popup
             margin-bottom: 1.8rem;
         }
     }
-
+    
     //.filter-layout {
     //    display: flex;
     //    flex-flow: row nowrap;
@@ -3709,11 +3699,11 @@ test popup
         //height: 120px;
         //background-color: #eee;
     }
-
+    
     //.owl-stage-outer {
     //    margin: 0 5rem;
     //}
-
+    
     .owl-nav .owl-prev {
         right: auto;
         left: -3%;
@@ -3722,7 +3712,7 @@ test popup
         left: auto;
         right: -3%;
     }
-
+    
     &.owl-carousel .owl-nav.disabled {
         display: block;
     }
@@ -3751,15 +3741,14 @@ test popup
     
     .photo-point {
         position: absolute;
-
-
+        
         &:hover .photo-point__description {
             //opacity: 1;
             //visibility: visible;
             display: block;
-
+            
         }
-
+        
         &__icon {
             border-radius: 10rem;
             display: inline-block;
@@ -3788,14 +3777,13 @@ test popup
                 text-align: center;
                 @extend %transition_all;
             }
-
+            
             &:hover {
                 //background-color: #82b338;
                 @extend %transition_all;
-
-
+                
                 &::after {
-                    transform:rotate(45deg);
+                    transform: rotate(45deg);
                 }
             }
         }
@@ -3815,7 +3803,7 @@ test popup
             padding-top: .5rem;
             padding-right: 3rem;
             //text-shadow: 0 1px 1px rgba(0,0,0,.5);
-
+            
             span {
                 display: inline-block;
                 padding: 4px 10px 10px;
@@ -3823,7 +3811,7 @@ test popup
                 //margin-top: 6px;
                 color: #ffffff;
                 background-color: #91c346;
-                box-shadow: 0 3px 10px 0 rgba(0,0,0,.3);
+                box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
             }
         }
         
@@ -3831,18 +3819,18 @@ test popup
             top: 51%;
             left: 24%;
         }
-
+        
         &--woman-2 {
             top: 41%;
             left: 39%;
-
+            
             .photo-point__description {
                 left: 2rem;
                 padding-right: 0;
                 padding-left: 2.5rem;
             }
         }
-
+        
         &--woman-3 {
             top: 29%;
             left: 50%;
@@ -3852,29 +3840,29 @@ test popup
                 padding-left: 2.5rem;
             }
         }
-
+        
         &--woman-4 {
             top: 58%;
             left: 52%;
-
+            
             .photo-point__description {
                 left: 2rem;
                 padding-right: 0;
                 padding-left: 2.5rem;
             }
         }
-
+        
         &--woman-5 {
             top: 41%;
             left: 60%;
-
+            
             .photo-point__description {
                 left: 2rem;
                 padding-right: 0;
                 padding-left: 3rem;
             }
         }
-
+        
         &--woman-6 {
             top: 63%;
             left: 78%;
@@ -3886,13 +3874,13 @@ test popup
         }
     }
     
-    &-slogan{
+    &-slogan {
         margin-bottom: 3rem;
         padding: 2rem 4rem;
         background-color: #91c346;
         position: relative;
         overflow: hidden;
-
+        
         &__mark-1 {
             width: 15.3rem;
             position: absolute;
@@ -3900,7 +3888,7 @@ test popup
             left: 1.3rem;
             z-index: 2;
         }
-
+        
         &__mark-2 {
             width: 13.8rem;
             position: absolute;
@@ -3908,7 +3896,7 @@ test popup
             right: -1.3rem;
             z-index: 2;
         }
-
+        
         &__wineglass {
             position: absolute;
             width: 6rem;
@@ -3917,7 +3905,7 @@ test popup
             transform: rotate(10deg);
             z-index: 4;
         }
-
+        
         &__title {
             font-size: 5.5rem;
             color: #231300;
@@ -3957,7 +3945,7 @@ test popup
             color: $black;
             margin-bottom: 1.5rem;
         }
-
+        
         .c-icon {
             position: relative;
             top: .4rem;
@@ -3977,14 +3965,14 @@ test popup
             &__item {
                 width: 33.3333%;
                 padding: 0 1.1rem;
-
+                
                 img {
                     width: 100%;
-                    height:auto;
+                    height: auto;
                 }
             }
         }
-
+        
         &__grid {
             margin-left: -1.2rem;
             margin-right: -1.2rem;
@@ -3993,13 +3981,13 @@ test popup
             align-items: stretch;
             justify-content: space-between;
         }
-
+        
         &__col {
             width: 50%;
             padding: 0 1.2rem;
         }
     }
-
+    
     &-contact {
         /*border-top: 1px dotted $black;
         border-bottom: 1px dotted $black;*/
@@ -4007,7 +3995,7 @@ test popup
         text-align: center;
         margin-bottom: 3.1rem;
         position: relative;
-
+        
         &::after,
         &::before {
             content: '';
@@ -4017,15 +4005,15 @@ test popup
             height: .4rem;
             background: url(../img/pattern-round.jpg) 0 0 repeat-x;
         }
-
+        
         &::after {
             top: 0;
         }
-
+        
         &::before {
             bottom: 0;
         }
-
+        
         &__title {
             text-transform: uppercase;
             font-size: 1.8rem;
@@ -4033,47 +4021,47 @@ test popup
             color: #9b806f;
             margin-bottom: .5rem;
         }
-
+        
         &__text {
             font-size: 1.3rem;
             line-height: 1.15;
             color: #555451;
             margin-bottom: 1rem;
         }
-
+        
         &__links {
-
+        
         }
-
+        
         &__link {
             color: #82b338;
             font-size: 1.6rem;
             border-right: 1px solid #cec9c0;
             padding: .3rem 2rem .6rem;
             margin-bottom: .5rem;
-
+            
             &:hover {
                 border-right: 1px solid #cec9c0;
             }
-
+            
             &:last-child {
-                border:none;
+                border: none;
             }
             span {
-
+            
             }
-
+            
             &::after {
                 content: '';
                 border: none;
             }
         }
     }
-
+    
     &-publications {
         padding: 3.5rem 1rem;
         background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
-
+        
         &__title {
             font-size: 1.8rem;
             line-height: 1;
@@ -4082,9 +4070,7 @@ test popup
             margin-bottom: 2.2rem;
             text-transform: uppercase;
         }
-
-
-
+        
         .publications-slider {
             width: 92% !important;
             margin: 0 4%;
@@ -4098,17 +4084,17 @@ test popup
             &__item {
                 display: block;
                 height: 100%;
-
+                
                 &::after {
                     content: '';
                     border: none;
                 }
             }
-
+            
             .owl-nav {
                 display: block !important;
             }
-
+            
             .owl-nav .owl-prev {
                 right: auto;
                 left: -3rem;
@@ -4127,7 +4113,7 @@ test popup
         height: auto !important;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         overflow: hidden !important;
     }
     
@@ -4147,13 +4133,11 @@ test popup
     }
 }
 
-
 /*Фабрика счаситя (factory-happiness)------------------------------------------------*/
 
 .factory {
     
     position: relative;
-    
     
     &-map {
         width: 100%;
@@ -4171,7 +4155,7 @@ test popup
         &__img {
             width: 4.4rem;
             height: 5.3rem;
-            background:  url(../img/icon-map-point.png) 0 0 no-repeat;
+            background: url(../img/icon-map-point.png) 0 0 no-repeat;
             cursor: pointer;
         }
     }
@@ -4220,38 +4204,37 @@ test popup
     }
 }
 
-
 /*Мероприятия (events)------------------------------------------------*/
 .events {
-
+    
     &__list {
-
+    
     }
-
+    
     &__item {
         margin-bottom: 2.4rem;
     }
-
+    
     .filter-form {
         justify-content: flex-start;
     }
-
+    
     .filter .l-button__center {
         display: block;
     }
-
+    
     &-list__tabs {
-
+    
     }
-
+    
     .select-city + .SelectBox {
         width: 14rem;
     }
-
+    
     .select-age + .SelectBox {
         width: 7.6rem;
     }
-
+    
     .select-cafe + .SelectBox, .select-theme + .SelectBox {
         width: 19.4rem;
     }
@@ -4268,50 +4251,50 @@ test popup
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-
+    
     &__body {
         width: 100%;
         padding-right: 1.6rem;
     }
-
+    
     &__aside {
-
+    
     }
-
+    
     &-mix {
         margin-bottom: 1.4rem;
-
+        
         &__item {
             display: inline-block;
             padding: .8rem 1.4rem;
             margin-right: 1rem;
-
+            
             &:last-child {
                 margin: 0;
             }
             &::after {
                 content: '';
-                border:none;
+                border: none;
             }
         }
-
+        
         .c-icon {
             margin-right: .3rem;
             fill: #9b806f;
             display: inline-block;
             vertical-align: top;
         }
-
+        
         .mixitup-control-active {
             border-radius: .4rem;
             background-color: #7cbd41;
             color: #ffffff;
-
+            
             svg {
                 fill: #fff !important;
             }
         }
-
+        
         &__number {
             display: inline-block;
             width: 2.8rem;
@@ -4323,22 +4306,22 @@ test popup
             line-height: 2.8rem;
             font-size: 1.2rem;
         }
-
+        
         .icon-cutlery-inline {
             font-size: .6rem;
             vertical-align: baseline;
         }
-
+        
         .icon-calendar-2-inline {
             font-size: .8rem;
         }
-
+        
         .icon-birthday-cake-inline {
             font-size: .7rem;
         }
-
+        
     }
-
+    
     &__list {
         padding: 0 2.8rem 3.1rem 2.8rem;
         font-family: $font_serif;
@@ -4347,7 +4330,7 @@ test popup
         border: .2rem solid #d2d2d2;
         background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
     }
-
+    
     &-item {
         margin: 0;
         position: relative;
@@ -4356,11 +4339,11 @@ test popup
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
-
+        
         //&:first-child {
         //    margin-top: -3.2rem;
         //}
-
+        
         &::after {
             content: '';
             position: absolute;
@@ -4370,19 +4353,19 @@ test popup
             height: .4rem;
             background: url(../img/pattern-round.jpg) 0 0 repeat-x;
         }
-
+        
         &__header {
             display: flex;
             flex-flow: row wrap;
             align-items: center;
             justify-content: flex-start;
             cursor: pointer;
-
+            
             .c-icon {
                 margin-right: .8rem;
             }
         }
-
+        
         &__title {
             font-size: 1.9rem;
             line-height: 1;
@@ -4391,7 +4374,7 @@ test popup
             text-transform: uppercase;
             margin-right: 1rem;
         }
-
+        
         &__number {
             margin-right: 1rem;
             font-size: 1.4rem;
@@ -4403,19 +4386,19 @@ test popup
             display: none;
             width: 100%;
         }
-
+        
         &__list {
             
             &-item {
                 margin-bottom: 1rem;
-
+                
                 &:last-child {
                     margin: 0;
                 }
             }
             margin-bottom: 1.8rem;
         }
-
+        
         &__price {
             font-family: $font_sans-serif;
             font-size: 3.6rem;
@@ -4423,7 +4406,7 @@ test popup
             color: #553023;
             margin-right: 2rem;
         }
-
+        
         &__footer {
             display: flex;
             flex-flow: row wrap;
@@ -4433,14 +4416,14 @@ test popup
             top: 32px;
             right: 0;
         }
-
-    }
         
+    }
+    
     &-body__show {
         display: block;
         .basket-item__body {
             //display: block;
-           
+            
         }
         
         .icon-dropdown__down {
@@ -4450,14 +4433,13 @@ test popup
         .basket-item__header {
             margin-bottom: 1.8rem;
         }
-    
+        
         .basket-item__footer {
             //width: 100%;
             position: static;
         }
     }
     
-
     &__btn {
         display: block;
         width: 100%;
@@ -4470,37 +4452,37 @@ test popup
         background-color: #7cbd41;
         margin-top: -3.2rem;
         border-radius: 0 0 .8rem .8rem;
-
+        
         &::after {
             content: '';
-            border:none;
+            border: none;
         }
-
+        
         &:hover {
             color: #ffffff;
         }
     }
-
+    
     .icon-balloon {
         font-size: 1.4rem;
     }
-
+    
     .icon-calendar-2 {
         font-size: 1.3rem;
     }
-
+    
     .c-button__medium {
         font-size: 1.6rem;
         text-transform: none;
     }
-
+    
     .c-card-event__title {
         margin-bottom: 0;
     }
     .c-card-event__title a {
         font-size: 1.6rem;
     }
-
+    
     .c-card-event {
         border: none;
         border-radius: .6rem;
@@ -4521,9 +4503,8 @@ test popup
     .icon-dropdown__down {
         fill: #9b9595;
     }
-
+    
 }
-
 
 /*Оформление заказа (ordering)----------------------------------------------------*/
 .order {
@@ -4604,8 +4585,6 @@ test popup
             }
         }
         
-        
-        
         &__title {
             font-size: 1.6rem;
             line-height: 1;
@@ -4654,7 +4633,7 @@ test popup
     }
     
     &-delivery {
-    
+        
         margin-top: 4rem;
         
         &__grid {
@@ -4675,7 +4654,7 @@ test popup
         &__map {
             width: 100%;
             max-height: 100%;
-            box-shadow: 0 10px 20px 8px rgba(0,0,0,.1);
+            box-shadow: 0 10px 20px 8px rgba(0, 0, 0, .1);
             height: 28rem;
         }
         
@@ -4697,35 +4676,34 @@ test popup
                 &:last-child {
                     margin-right: 0;
                 }
-    
+                
                 .c-input {
                     padding: .6rem 1.4rem;
                 }
             }
             
         }
-    
+        
         .c-select + .SelectBox {
             width: 17.6rem;
             padding: .8rem 1.4rem;
             border-radius: .4rem;
         }
-    
+        
         .select-delivery + .CaptionCont > label > i {
             right: 1.5rem;
             width: 1.7rem;
             height: 1.7rem;
             background: url(../img/icons/icon-clock-2.svg) 0 0 no-repeat;
         }
-    
+        
         .SumoSelect.open > .optWrapper {
             top: 3.2rem;
         }
-    
+        
         .SumoSelect > .CaptionCont > span {
             color: #9b9696;
         }
-        
         
         .datepicker-layout {
             width: 17.6rem;
@@ -4741,8 +4719,6 @@ test popup
         }
         
         &-address {
-    
-            
             
             &__item {
                 margin-bottom: 1.6rem;
@@ -4766,6 +4742,12 @@ test popup
                     -webkit-background-size: cover;
                     background-size: cover;
                 }
+            }
+            
+            &__all {
+                color: #9b9595;
+                font-style: italic;
+                margin-left: 2.7rem;
             }
         }
         
@@ -4794,6 +4776,58 @@ test popup
                 }
             }
         }
+        
+        &-search {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding-right: 1rem;
+            
+            input {
+                outline: none;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #9b9696;
+                width: 100%;
+            }
+            
+            button {
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+                width: 2rem;
+                height: 1.9rem;
+                background: url(../img/icons/icon-search.svg) 0 0 no-repeat;
+                cursor: pointer;
+                text-indent: -99999rem;
+            }
+            
+            &__item {
+                position: relative;
+                
+                &:nth-child(1) {
+                    width: 100%;
+                    margin-right: 3rem;
+                }
+                
+            }
+            
+            &__clear {
+                display: block;
+                max-width: 5.9rem;
+                font-size: 1.2rem;
+                font-style: italic;
+                color: #9b9696;
+                
+                &::after {
+                    content: '';
+                    border: none;
+                }
+            }
+        }
     }
     
     &-box {
@@ -4803,7 +4837,7 @@ test popup
             text-align: left;
             color: #9b806f;
             margin-bottom: .8rem;
-    
+            
             i {
                 margin-right: .8rem;
             }
@@ -4833,7 +4867,7 @@ test popup
             padding: 1.4rem 1.6rem .8rem 3.3rem;
             background-color: #efefef;
             //border-radius: 0 1.7rem 0 0;
-    
+            
             &:nth-child(1) {
                 &.current {
                     //border-radius: 0;
@@ -4842,7 +4876,7 @@ test popup
             
             &:nth-child(2) {
                 margin-left: -1rem;
-    
+                
                 &.current {
                     border-radius: 1.7rem 1.7rem 0 0;
                 }
@@ -4857,14 +4891,13 @@ test popup
                 a {
                     color: #fff;
                     
-                    
                 }
                 
             }
             
             a::after {
                 content: '';
-                border: none ;
+                border: none;
             }
         }
     }
@@ -4878,6 +4911,7 @@ test popup
         display: none;
         
         &:checked + .order-radio {
+            color: $black;
             &::after {
                 content: '';
                 border-color: #7cbd41;
@@ -4895,6 +4929,7 @@ test popup
         position: relative;
         padding-left: 2.6rem;
         cursor: pointer;
+        color: #9b9696;
         
         &::after {
             content: '';
@@ -4932,9 +4967,6 @@ test popup
         
     }
     
-    
-    
-    
     &__btn {
         display: block;
         width: 100%;
@@ -4950,12 +4982,88 @@ test popup
         
         &::after {
             content: '';
-            border:none;
+            border: none;
         }
-    
+        
         &:hover {
             color: #ffffff;
         }
     }
     
+    &-user {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+        position: relative;
+        margin-bottom: 2rem;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: .4rem;
+            background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        }
+        
+        &__col {
+            width: 50%;
+            
+        }
+        
+        &__list {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-left: 2.4rem;
+            
+            &-text {
+                font-size: 1.4rem;
+                font-style: italic;
+                line-height: 1;
+                color: #231300;
+                margin-right: 1.6rem;
+                
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            
+        }
+        &__name {
+            font-size: 1.9rem;
+            color: #9b806f;
+            text-transform: uppercase;
+            margin-bottom: .6rem;
+        }
+        
+        &__other {
+            font-size: 1.6rem;
+            text-transform: none;
+            font-style: italic;
+        }
+    }
+    
+}
+
+#order-pickup .order-delivery-address__item,
+#order-pickup-cake .order-delivery-address__item {
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#order-pickup .order-delivery-address__item,
+#order-pickup-cake .order-delivery-address__item {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+        display: block;
+    }
 }

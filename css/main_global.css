@@ -976,6 +976,17 @@ p {
   font-weight: 400;
   margin-bottom: 2.3rem; }
 
+.wrapper select,
+.popup select {
+  padding: .6rem 1.4rem .7rem;
+  border-radius: .4rem;
+  border: 1px solid #d2cdc4;
+  color: #9b9696;
+  -ms-appearance: none;
+  appearance: none !important;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
 .wrapper input[type="text"],
 .wrapper input[type="password"],
 .wrapper input[type="search"],
@@ -6650,7 +6661,7 @@ test popup
           background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
           background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white));
           background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); }
     .star-guests .ins-photo:hover .ins-photo__hash {
       bottom: 0%;
       -webkit-transition: all .1s ease;
@@ -7600,6 +7611,10 @@ test popup
         height: 3rem;
         background: url(../img/icon-map-point.png) 0 0 no-repeat;
         background-size: cover; }
+    .order-delivery-address__all {
+      color: #9b9595;
+      font-style: italic;
+      margin-left: 2.7rem; }
     .order-delivery-custom__grid {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -7623,6 +7638,54 @@ test popup
       margin-bottom: 1rem; }
       .order-delivery-custom__item:last-child {
         margin-bottom: 0; }
+    .order-delivery-search {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 2rem;
+      padding-right: 1rem; }
+      .order-delivery-search input {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #9b9696;
+        width: 100%; }
+      .order-delivery-search button {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 2rem;
+        height: 1.9rem;
+        background: url(../img/icons/icon-search.svg) 0 0 no-repeat;
+        cursor: pointer;
+        text-indent: -99999rem; }
+      .order-delivery-search__item {
+        position: relative; }
+        .order-delivery-search__item:nth-child(1) {
+          width: 100%;
+          margin-right: 3rem; }
+      .order-delivery-search__clear {
+        display: block;
+        max-width: 5.9rem;
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #9b9696; }
+        .order-delivery-search__clear::after {
+          content: '';
+          border: none; }
   .order-box__title {
     font-size: 1.6rem;
     line-height: 1;
@@ -7674,17 +7737,20 @@ test popup
     border-top: .5rem solid #7cbd41; }
   .order input[type="radio"] {
     display: none; }
-    .order input[type="radio"]:checked + .order-radio::after {
-      content: '';
-      border-color: #7cbd41; }
-    .order input[type="radio"]:checked + .order-radio::before {
-      content: '';
-      background-color: #7cbd41; }
+    .order input[type="radio"]:checked + .order-radio {
+      color: #555451; }
+      .order input[type="radio"]:checked + .order-radio::after {
+        content: '';
+        border-color: #7cbd41; }
+      .order input[type="radio"]:checked + .order-radio::before {
+        content: '';
+        background-color: #7cbd41; }
   .order-radio {
     display: block;
     position: relative;
     padding-left: 2.6rem;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #9b9696; }
     .order-radio::after {
       content: '';
       position: absolute;
@@ -7738,3 +7804,76 @@ test popup
       border: none; }
     .order__btn:hover {
       color: #ffffff; }
+  .order-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2rem;
+    position: relative;
+    margin-bottom: 2rem; }
+    .order-user::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+    .order-user__col {
+      width: 50%; }
+    .order-user__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-left: 2.4rem; }
+      .order-user__list-text {
+        font-size: 1.4rem;
+        font-style: italic;
+        line-height: 1;
+        color: #231300;
+        margin-right: 1.6rem; }
+        .order-user__list-text:last-child {
+          margin: 0; }
+    .order-user__name {
+      font-size: 1.9rem;
+      color: #9b806f;
+      text-transform: uppercase;
+      margin-bottom: .6rem; }
+    .order-user__other {
+      font-size: 1.6rem;
+      text-transform: none;
+      font-style: italic; }
+
+#order-pickup .order-delivery-address__item,
+#order-pickup-cake .order-delivery-address__item {
+  margin-bottom: 1rem;
+  display: none; }
+
+#order-pickup .order-delivery-address__item:nth-child(1), #order-pickup .order-delivery-address__item:nth-child(2), #order-pickup .order-delivery-address__item:nth-child(3), #order-pickup .order-delivery-address__item:nth-child(4), #order-pickup .order-delivery-address__item:nth-child(5), #order-pickup .order-delivery-address__item:nth-child(6),
+#order-pickup-cake .order-delivery-address__item:nth-child(1),
+#order-pickup-cake .order-delivery-address__item:nth-child(2),
+#order-pickup-cake .order-delivery-address__item:nth-child(3),
+#order-pickup-cake .order-delivery-address__item:nth-child(4),
+#order-pickup-cake .order-delivery-address__item:nth-child(5),
+#order-pickup-cake .order-delivery-address__item:nth-child(6) {
+  display: block; }
