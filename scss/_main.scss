@@ -5076,6 +5076,7 @@ test popup
         padding-bottom: 3.2rem;
         margin-bottom: 2.5rem;
         position: relative;
+        text-align: center;
 
         &::after {
              content: '';
@@ -5089,7 +5090,23 @@ test popup
     }
     
     &__title {
+        font-size: 2.6rem;
+        line-height: 1;
+        color: #9b806f;
+        margin-bottom: .8rem;
+    }
+    &__subtitle {
+        font-size: 1.6rem;
+        font-style: italic;
+        line-height: 1.2;
+        color: #231300;
+        max-width: 55.5rem;
+        margin: 0 auto;
         
+        span {
+            color: #7cbd41;
+            font-size: 1.8rem;
+        }
     }
     
     &-list {
