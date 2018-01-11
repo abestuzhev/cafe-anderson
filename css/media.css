@@ -1500,7 +1500,7 @@
         display: none;
     }
 
-    .popup {
+    .creators .popup {
         width: 500px !important;
     }
 }
@@ -1844,8 +1844,8 @@
         display: none;
     }
 
-    .popup {
-        width: 87% !important;
+    .creators .popup {
+       width: 87% !important;
     }
 }
 

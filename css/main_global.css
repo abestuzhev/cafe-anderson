@@ -7876,3 +7876,13 @@ test popup
 #order-pickup-cake .order-delivery-address__item:nth-child(5),
 #order-pickup-cake .order-delivery-address__item:nth-child(6) {
   display: block; }
+
+/*Оформление заказа. Финальная страница (ordering-finish)----------------------------------------------------*/
+.order-finish-item {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+  border-radius: .8rem;
+  padding: 1.3rem 1.7rem;
+  margin-bottom: 3rem;
+  overflow: hidden; }
