@@ -801,8 +801,7 @@ body {
 
 .c-ul-list {
   font-family: "PT Serif Caption";
-  padding-left: 14px;
-  width: 100px; }
+  padding-left: 14px; }
 
 .c-ul-list li {
   list-style: circle outside;
