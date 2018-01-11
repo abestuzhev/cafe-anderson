@@ -1184,6 +1184,7 @@ main {
 
 .popup__menu .popup {
     width: 89rem;
+    max-width: 100%;
 }
 
 .popup__menu .popup-title {
@@ -5087,13 +5088,49 @@ test popup
         margin-bottom: 3rem;
         overflow: hidden;
     }
+    
+    &__grid {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    
+    &__col {
+        width: 50%;
+        padding-right: 2rem;
+        
+        &:last-child {
+            padding: 0;
+        }
+    }
+    
+    &-info {
+        &__item {
+            margin-bottom: 2.2rem;
+        }
+        
+        &__list {
+            &-item {
+                display: inline-block;
+                font-size: 1.4rem;
+                font-style: italic;
+                line-height: 1;
+                color: #231300;
+                margin-right: .4rem;
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        
+        &__text {
+            font-size: 1.4rem;
+            font-style: italic;
+            line-height: 1;
+            color: #231300;
+        }
+    }
 }
 
-.js-tap {
-    position: relative;
-}
-
-.click {
-    left: 40px;
-    padding: 10px;
-}

@@ -357,10 +357,16 @@ $(document).ready(function ($) {
                 img.width('100%');
             }
         }
+
     }
     $(window).on('resize', fix_size);
     fix_size();
 
+    if (typeof _current != 'undefined') {
+        var mapImages = _current;
+    } else {
+        var mapImages = $('.c-card-cafe__img img');
+    }
 
     /*если в городе одно кафе, делаем его inline*/
     $('.cafe-list__city').each(function(){
@@ -456,7 +462,7 @@ $(document).ready(function ($) {
 
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
-        $(icon).on('click', function (e) {
+        $(document).on('click', icon, function (e) {
             var $html = $('html');
             e.preventDefault();
             $(popup).addClass('is-visible');

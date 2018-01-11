@@ -169,6 +169,14 @@ ymaps.ready(function () {
       //     checkZoomRange: true
       // });
 
+
+
+  });
+
+
+ymaps.ready(init);
+
+function init() {
     /*--------------------------------------------------------------------*/
     var mapDelivery = new ymaps.Map('order-delivery__map', {
             center: [55.73, 37.75],
@@ -245,14 +253,6 @@ ymaps.ready(function () {
     mapPickup.geoObjects.add(pickupCollection);
     mapDeliveryCake.geoObjects.add(deliveryCakeCollection);
     mapPickupCake.geoObjects.add(pickupCakeCollection);
-
-  });
-
-
-// ymaps.ready(init);
-//
-// function init() {
-//
-// }
+}
 
 
