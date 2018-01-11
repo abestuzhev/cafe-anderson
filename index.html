@@ -57,7 +57,7 @@
 
     .item {
       position: relative;
-      padding-left: 25px;
+      /*padding-left: 25px;*/
       color: #292929;
       font-size: 1em;
       margin: 0;
@@ -99,31 +99,18 @@
 
 
     section {
-        margin: 50px auto;
+        margin: 10px auto;
         max-width: 400px;
         /*background: rgba(255, 255, 255, .95);*/
         background-color: #fff;
         padding: 40px 60px;
         /*padding-left: 0;*/
         border-radius: 6px;
-        box-shadow: 0 20px 20px rgba(0,0,0,.2)
+        box-shadow: 0 20px 20px rgba(0,0,0,.2);
+        min-width: 200px;
     }
 
-    @media screen and (max-width: 700px) {
-      section {
-        width: 100%;
-        padding: 10px;
-        max-width: none;
-      }
 
-      .item {
-        padding: 0;
-      }
-
-    body {
-        background: none !important;
-    }
-    }
 
     a {
         text-decoration: none;
@@ -139,43 +126,128 @@
         text-decoration: none;
         color: #333;
     }
+
+    body {
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    section {
+        display: inline-block;
+        vertical-align: top;
+        padding: 20px 40px;
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+
+    .item span {
+        display: block;
+        font-size: 13px;
+        font-style: italic;
+        margin-left: 18px;
+        color: #969696;
+    }
+
+    .item:hover span {
+        color: #8dc746;
+    }
+
+    h3 {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 26px;
+        font-weight: 400;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .layout {
+        /*position: fixed;*/
+        /*top: 40%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 700px) {
+        section {
+            width: 100%;
+            padding: 20px;
+            max-width: none;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .item {
+            padding: 0;
+        }
+
+        body {
+            background: #fdf7e8 !important;
+        }
+
+        .layout {
+            padding: 0 20px;
+        }
+    }
 </style>
 </head>
 
 <body>
   <div class="bg"></div>
 
-<section>
+  <div class="layout">
+      <a href="home.html" class="logo" target="_blank">
+          <img src="img/logonew.png" alt="">
+      </a>
+      <section>
 
-    <a href="home.html" class="logo" target="_blank">
-        <img src="img/logonew.png" alt="">
-    </a>
+          <h3>1 этап</h3>
 
 
+          <ol>
+              <li class="item"><a target="_blank" href="home.html">Главная</a></li>
+              <li class="item"><a target="_blank" href="cafe-list.html">Список кафе</a></li>
+              <li class="item"><a target="_blank" href="cafe-card.html">Карточка кафе</a></li>
+              <li class="item"><a target="_blank" href="vacancies.html">Вакансии</a></li>
+              <li class="item"><a target="_blank" href="partners.html">Наши партнеры</a></li>
+              <li class="item"><a target="_blank" href="404.html">Ошибка 404</a></li>
+              <li class="item"><a target="_blank" href="reviews.html">Отзывы</a></li>
+              <li class="item"><a target="_blank" href="star-guests.html">Звездные гости</a></li>
+              <li class="item"><a target="_blank" href="contact.html">Контакты</a></li>
+              <li class="item"><a target="_blank" href="search.html">Поисковая выдача</a></li>
+              <li class="item"><a target="_blank" href="creators.html">Создатели Андерсон</a></li>
+              <li class="item"><a target="_blank" href="factory-happiness.html">Фабрика счастья</a></li>
+              <!--<hr>-->
+              <!--<li class="item"><a target="_blank" href="catalog.html">Каталог</a></li>-->
+              <!--<li class="item"><a target="_blank" href="basket.html">Корзина</a></li>-->
+              <!--<li class="item"><a target="_blank" href="ordering.html">Оформление заказа</a></li>-->
+              <!--<li class="item"><a target="_blank" href="ordering-auth.html">Оформление заказа. Форма входа</a></li>-->
+              <!--<li class="item"><a target="_blank" href="ordering-finish.html">Оформление заказа. Результирующая страница</a></li>-->
+              <!--<li class="item"><a target="_blank" href="events.html">Мероприятия</a></li>-->
+          </ol>
 
-    <ol>
-        <li class="item"><a target="_blank" href="home.html">Главная</a></li>
-        <li class="item"><a target="_blank" href="cafe-list.html">Список кафе</a></li>
-        <li class="item"><a target="_blank" href="cafe-card.html">Карточка кафе</a></li>
-        <li class="item"><a target="_blank" href="vacancies.html">Вакансии</a></li>
-        <li class="item"><a target="_blank" href="partners.html">Наши партнеры</a></li>
-        <li class="item"><a target="_blank" href="404.html">Ошибка 404</a></li>
-        <li class="item"><a target="_blank" href="reviews.html">Отзывы</a></li>
-        <li class="item"><a target="_blank" href="star-guests.html">Звездные гости</a></li>
-        <li class="item"><a target="_blank" href="contact.html">Контакты</a></li>
-        <li class="item"><a target="_blank" href="search.html">Поисковая выдача</a></li>
-        <li class="item"><a target="_blank" href="creators.html">Создатели Андерсон</a></li>
-        <li class="item"><a target="_blank" href="factory-happiness.html">Фабрика счастья</a></li>
-        <hr>
-        <li class="item"><a target="_blank" href="catalog.html">Каталог</a></li>
-        <li class="item"><a target="_blank" href="basket.html">Корзина</a></li>
-        <li class="item"><a target="_blank" href="ordering.html">Оформление заказа</a></li>
-        <li class="item"><a target="_blank" href="ordering-auth.html">Оформление заказа. Форма входа</a></li>
-        <li class="item"><a target="_blank" href="ordering-finish.html">Оформление заказа. Результирующая страница</a></li>
-        <li class="item"><a target="_blank" href="events.html">Мероприятия</a></li>
-    </ol>
-  <!--<a href="components.html">Компоненты</a>-->
-</section>
+      </section>
+
+      <section>
+          <h3>4 этап</h3>
+          <ol>
+              <li class="item"><a target="_blank" href="catalog.html">Каталог</a></li>
+              <li class="item"><a target="_blank" href="basket.html">Корзина</a></li>
+              <li class="item"><a target="_blank" href="ordering.html">Оформление заказа</a></li>
+              <li class="item"><a target="_blank" href="ordering-auth.html">Оформление заказа <span>Форма входа</span></a></li>
+              <li class="item"><a target="_blank" href="ordering-finish.html">Оформление заказа <span>Результирующая страница</span></a></li>
+              <li class="item"><a target="_blank" href="events.html">Мероприятия</a></li>
+          </ol>
+
+      </section>
+  </div>
+
+
 
 </body>
 </html>

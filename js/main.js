@@ -44,6 +44,63 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
+    /*юоковые кнопки отзыва*/
+
+    var $reviews_btn = $(".c-reviews__btn"),
+        clickCount;
+
+    $reviews_btn.attr("data-count", "0");
+
+
+
+    var isMobile = {
+        Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
+        BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
+        iOS:            function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false; },
+        Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
+        any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
+    };
+
+    if ( isMobile.any() ) {
+        $reviews_btn.on("click", function(){
+            clickCount = $(this).attr("data-count");
+            clickCount ++;
+            if (clickCount == 1) {
+                $(this).attr("data-count", clickCount);
+                $(this).parent('.c-reviews__item').addClass('active');
+                return false;
+            } else if (clickCount == 2){
+                $(this).parent('.c-reviews__item').removeClass('active');
+                $(this).attr("data-count", "0");
+                showPopup(".c-reviews-positive", '.popup__review');
+                showPopup(".c-reviews-negative", '.popup__review');
+            }else {
+                return true;
+            }
+        });
+    }
+
+    if ( !isMobile.any() ) {
+        $reviews_btn.hover(function(){
+            clickCount = $(this).attr("data-count");
+            clickCount ++;
+            if (clickCount == 1) {
+                $(this).attr("data-count", clickCount);
+                $(this).parent('.c-reviews__item').addClass('active');
+                return false;
+            } else if (clickCount == 2){
+                showPopup(".c-reviews-positive", '.popup__review');
+                showPopup(".c-reviews-negative", '.popup__review');
+                $(this).parent('.c-reviews__item').removeClass('active');
+                $(this).attr("data-count", "0");
+            }else {
+                return true;
+            }
+        });
+    }
+
+
+
     //очистить форму поиска
     $('.order-delivery-search__clear').on('click', function(e){
         e.preventDefault();
@@ -443,8 +500,8 @@ $(document).ready(function ($) {
     showPopup(".c-card-cafe__menu", '.popup__menu');
     showPopup(".c-card-vacancy .c-button", '.popup__vacancy');
     showPopup(".c-card_menu", '.popup__menu');
-    showPopup(".c-reviews-positive", '.popup__review');
-    showPopup(".c-reviews-negative", '.popup__review');
+    // showPopup(".c-reviews-positive", '.popup__review');
+    // showPopup(".c-reviews-negative", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
     showPopup(".popup-forgot-password", '.popup__recovery-password');
     showPopup(".c-card-catalog__img", '.popup-product');

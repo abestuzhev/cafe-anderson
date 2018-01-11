@@ -766,10 +766,14 @@ a.c-button {
         @extend %transition_all;
         overflow: hidden;
 
-        &:hover {
-            transform: translateX(0);
-            @extend %transition_all;
+        
+        &.active {
+            //&:hover {
+                transform: translateX(0);
+                @extend %transition_all;
+            //}
         }
+        
     }
 
     &__btn {
@@ -781,6 +785,10 @@ a.c-button {
         -webkit-box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
         -moz-box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
         box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
+        
+        &:active {
+            color: #fff;
+        }
 
         &:hover {
             color: #fff;
