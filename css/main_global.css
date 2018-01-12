@@ -89,6 +89,36 @@
   fill: #9b9696;
   vertical-align: top; }
 
+.icon-vk-bg {
+  display: inline-block;
+  font-size: 1rem;
+  width: 2.1em;
+  height: 1.9em;
+  fill: #9b9696;
+  vertical-align: top;
+  background: url(../img/icons/icon-fb.svg) 0 0 no-repeat;
+  background-size: 2.1em 1.9em; }
+
+.icon-vk-bg:hover {
+  background-position: -2.1rem 0; }
+
+.icon-fb-bg {
+  display: inline-block;
+  font-size: 1rem;
+  width: 1.8em;
+  height: 1.9em;
+  fill: #9b9696;
+  vertical-align: top;
+  background: url(../img/icons/icon-fb.svg) 0 0 no-repeat; }
+
+.icon-o-bg {
+  display: inline-block;
+  font-size: 1rem;
+  width: 2em;
+  height: 1.9em;
+  fill: #9b9696;
+  vertical-align: top; }
+
 .icon-site-map {
   position: relative;
   width: 21px;
@@ -7728,9 +7758,11 @@ test popup
     .order-tabs__item {
       display: inline-block;
       padding: 1.4rem 1.6rem .8rem 3.3rem;
-      background-color: #efefef; }
+      background-color: #efefef;
+      border-radius: 0 1.7rem 0 0; }
       .order-tabs__item:nth-child(2) {
-        margin-left: -1rem; }
+        margin-left: -1rem;
+        border-radius: 1.7rem 1.7rem 0 0; }
         .order-tabs__item:nth-child(2).current {
           border-radius: 1.7rem 1.7rem 0 0; }
       .order-tabs__item.current {
@@ -7969,3 +8001,67 @@ test popup
   font-style: italic;
   line-height: 1;
   color: #231300; }
+
+/*Оформление заказа. Форма входа (ordering-auth)----------------------------------------------------*/
+.order-auth {
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: .8rem;
+  border: .2rem solid #d2d2d2;
+  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+  overflow: hidden;
+  position: relative; }
+  .order-auth__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .order-auth__col:nth-child(1) {
+    width: 40%; }
+    .order-auth__col:nth-child(1) .order-auth__body {
+      position: relative; }
+      .order-auth__col:nth-child(1) .order-auth__body::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: .4rem;
+        height: 100%;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+  .order-auth__col:nth-child(2) {
+    width: 60%; }
+    .order-auth__col:nth-child(2) .order-auth__body {
+      width: 67%; }
+  .order-auth__header {
+    padding: 2rem 5.9rem;
+    background-color: #fdf7e8; }
+  .order-auth__title {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: left;
+    color: #555451;
+    text-transform: uppercase;
+    position: relative; }
+    .order-auth__title span::after {
+      content: '';
+      position: absolute;
+      bottom: -.1rem;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px dotted #555451; }
+  .order-auth__body {
+    padding: 3.4rem 5.9rem; }
+  .order-auth__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0; }

@@ -96,6 +96,41 @@
     vertical-align: top;
 }
 
+.icon-vk-bg {
+    display: inline-block;
+    font-size: 1rem;
+    width: 2.1em;
+    height: 1.9em;
+    fill: $color_text_bg;
+    vertical-align: top;
+    background: url(../img/icons/icon-fb.svg) 0 0 no-repeat;
+    background-size: 2.1em 1.9em;
+}
+
+.icon-vk-bg:hover {
+    background-position: -2.1rem 0;
+}
+
+.icon-fb-bg {
+    display: inline-block;
+    font-size: 1rem;
+    width: 1.8em;
+    height: 1.9em;
+    fill: $color_text_bg;
+    vertical-align: top;
+    background: url(../img/icons/icon-fb.svg) 0 0 no-repeat;
+    
+}
+
+.icon-o-bg {
+    display: inline-block;
+    font-size: 1rem;
+    width: 2em;
+    height: 1.9em;
+    fill: $color_text_bg;
+    vertical-align: top;
+}
+
 .icon-site-map {
     position: relative;
     width: 21px;
