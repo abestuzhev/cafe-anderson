@@ -5182,6 +5182,8 @@ test popup
         flex-flow: row wrap;
         align-items: stretch;
         justify-content: flex-start;
+        position: relative;
+        z-index: 2;
     }
     
     &__col {
@@ -5249,5 +5251,20 @@ test popup
         position: absolute;
         right: 0;
         bottom: 0;
+        z-index: 1;
+    }
+    
+    .icon-bird-up {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        right: 26.4rem;
+        width: 6.9rem;
+        height: 7.2rem;
+    }
+    
+    form button:disabled {
+        opacity: .4;
+        cursor: auto;
     }
 }

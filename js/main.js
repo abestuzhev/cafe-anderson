@@ -666,8 +666,10 @@ $(document).ready(function ($) {
         $("form input[type='checkbox']").on('change', function(){
             if($(check).prop('checked')){
                 $(btn_form).removeAttr('disabled');
+                // console.log('check');
             }else {
                 $(btn_form).attr('disabled', 'disabled');
+                // console.log('check else');
             }
         });
     }
@@ -676,6 +678,7 @@ $(document).ready(function ($) {
     DisabledFormButton('#popup__write-to-us','#write-to-us__regulations','#popup__write-to-us button');
     DisabledFormButton('#popup__request-call','#request-call__regulations','#popup__request-call button');
     DisabledFormButton('#popup__vacancy','#vacancy__regulations','#popup__vacancy button');
+    DisabledFormButton('#order-auth-new','#order-auth-new__regulations','#order-auth-new button');
 
 
 

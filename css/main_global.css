@@ -8025,7 +8025,9 @@ test popup
             align-items: stretch;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    position: relative;
+    z-index: 2; }
   .order-auth__col:nth-child(1) {
     width: 40%; }
     .order-auth__col:nth-child(1) .order-auth__body {
@@ -8065,4 +8067,15 @@ test popup
   .order-auth__bg {
     position: absolute;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    z-index: 1; }
+  .order-auth .icon-bird-up {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 26.4rem;
+    width: 6.9rem;
+    height: 7.2rem; }
+  .order-auth form button:disabled {
+    opacity: .4;
+    cursor: auto; }
