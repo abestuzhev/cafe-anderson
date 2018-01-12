@@ -2622,12 +2622,12 @@ a.c-button:hover {
   .c-card-supplements__count .c-counter__box {
     display: inline-block;
     margin: 0 .5rem; }
-    .c-card-supplements__count .c-counter__box::after {
-      content: 'г';
-      font-size: 1.4rem;
-      line-height: 1;
-      color: #515151;
-      font-style: italic; }
+  .c-card-supplements__count .piece::after {
+    content: 'г';
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #515151;
+    font-style: italic; }
   .c-card-supplements__count .c-counter__field {
     width: 2.6rem !important;
     font-size: 1.4rem;

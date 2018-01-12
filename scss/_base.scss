@@ -2232,13 +2232,15 @@ a.c-button {
         .c-counter__box {
             display: inline-block;
             margin: 0 .5rem;
-            &::after {
-                content: 'г';
-                font-size: 1.4rem;
-                line-height: 1;
-                color: #515151;
-                font-style: italic;
-            }
+            
+        }
+    
+        .piece::after {
+            content: 'г';
+            font-size: 1.4rem;
+            line-height: 1;
+            color: #515151;
+            font-style: italic;
         }
 
         .c-counter__field {
