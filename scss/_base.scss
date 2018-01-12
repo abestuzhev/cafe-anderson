@@ -2233,10 +2233,20 @@ a.c-button {
             display: inline-block;
             margin: 0 .5rem;
             
+            &::after {
+            content: 'г';
+                //display: inline-block;
+                //min-width: 26px;
+            font-size: 1.4rem;
+            line-height: 1;
+            color: #515151;
+            font-style: italic;
+        }
+            
         }
     
         .piece::after {
-            content: 'г';
+            content: 'шт';
             font-size: 1.4rem;
             line-height: 1;
             color: #515151;
