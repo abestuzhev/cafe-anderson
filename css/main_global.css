@@ -7762,7 +7762,8 @@ test popup
       border-radius: 0 1.7rem 0 0; }
       .order-tabs__item:nth-child(2) {
         margin-left: -1rem;
-        border-radius: 1.7rem 1.7rem 0 0; }
+        border-radius: 1.7rem 1.7rem 0 0;
+        padding: 1.4rem 1.6rem .8rem; }
         .order-tabs__item:nth-child(2).current {
           border-radius: 1.7rem 1.7rem 0 0; }
       .order-tabs__item.current {
