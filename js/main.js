@@ -44,15 +44,17 @@ $(document).ready(function ($) {
     //     $(this).removeClass('is-visible');
     // });
 
-    /*юоковые кнопки отзыва*/
+    //скрыть/показать заказ в истории заказов
+    $('.lk-history-item__header').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.lk-history-item').toggleClass('lk-history-item__body-show');
+        $(this).siblings('.lk-history-item__body').slideToggle(300);
+    });
 
+    /*юоковые кнопки отзыва*/
     var $reviews_btn = $(".c-reviews__btn"),
         clickCount;
-
     $reviews_btn.attr("data-count", "0");
-
-
-
     var isMobile = {
         Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
         BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
@@ -60,7 +62,6 @@ $(document).ready(function ($) {
         Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
         any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
     };
-
     if ( isMobile.any() ) {
         $reviews_btn.on("click", function(){
             clickCount = $(this).attr("data-count");
@@ -98,8 +99,6 @@ $(document).ready(function ($) {
             }
         });
     }
-
-
 
     //очистить форму поиска
     $('.order-delivery-search__clear').on('click', function(e){

@@ -131,7 +131,7 @@ a {
     @extend %transition_all;
     &:hover,
     &:focus {
-        color: $color_brand;
+        color: $color_active;
         border: none;
         @extend %transition_all;
 
@@ -628,6 +628,17 @@ a.c-button {
     &::after {
         content: '';
         border: none;
+    }
+    
+    &.disabled {
+        background-color: #929490;
+        opacity: .5;
+        cursor: auto;
+        
+        &:hover {
+            background-color: #929490;
+            opacity: .5;
+        }
     }
 
     &__default {
@@ -2134,6 +2145,7 @@ a.c-button {
     }
 
     &__title {
+        font-family: $font_serif;
         font-size: 1.6rem;
         line-height: 1.3;
         text-align: left;
@@ -2181,6 +2193,13 @@ a.c-button {
         font-size: 2.6rem;
         line-height: 1;
         color: #553023;
+    }
+    
+    &__quantity {
+        font-family: $font_serif;
+        color: #231300;
+        font-size: 1.6rem;
+        margin-right: 0 !important;
     }
 
 }
