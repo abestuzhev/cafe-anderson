@@ -117,10 +117,10 @@ $(document).ready(function ($) {
 
     //страница Оформление заказа. При фокусе на инпут с адресом, делаем активный radio button
     $('.order-delivery-custom__item input, .order-delivery-custom__item textarea').focus(function(){
-        var $this = $('.order-delivery-custom__item input, .order-delivery-custom__item textarea');
-        if ($('.order-delivery-custom__list input[type="radio"]').attr("checked") != "checked"){
-            $this.parents('label').siblings('input[type="radio"]').attr('checked', 'checked');
-        }
+        var $this = $(this);
+        // var $thisRadioInput = $(this).parents('label').siblings('input[type="radio"]');
+        $this.parents('label').siblings('input[type="radio"]').prop( "checked",true);
+
     });
 
 
