@@ -481,6 +481,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         margin-left: -1.1rem;
         margin-right: -1.1rem;
     }
+    
+    &__grid--left{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
     &__col {
         width: 50%;
@@ -492,6 +499,19 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         font-size: 1.2rem;
         text-align: left;
         color: #9b9696;
+    }
+    
+    &__del {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-style: italic;
+        line-height: 1;
+        color: #96928a;
+        
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 }
 

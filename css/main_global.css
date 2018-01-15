@@ -1226,6 +1226,21 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   margin-left: -1.1rem;
   margin-right: -1.1rem; }
 
+.c-form__grid--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .c-form__col {
   width: 50%;
   padding: 0 1.1rem;
@@ -1235,6 +1250,16 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   font-size: 1.2rem;
   text-align: left;
   color: #9b9696; }
+
+.c-form__del {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1;
+  color: #96928a; }
+  .c-form__del::after {
+    content: '';
+    border: none; }
 
 .c-input.error {
   position: relative;
@@ -8119,6 +8144,7 @@ test popup
     opacity: .4;
     cursor: auto; }
 
+/*Личный кабинет (lk)----------------------------------------------------*/
 .lk-history__hold {
   display: block;
   width: 22%;
@@ -8343,3 +8369,40 @@ test popup
     color: #78b73f; }
   .lk-exit:hover i {
     background-position: -17px 0; }
+
+/*Личный кабинет. Ред профиль (lk-profile-edit)----------------------------------------------------*/
+.lk-profile-edit {
+  font-family: "PT Serif Caption";
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: .8rem;
+  border: .2rem solid #d2d2d2;
+  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+  .lk-profile-edit__item {
+    padding: 3.1rem 2.8rem 3.1rem 2.8rem;
+    position: relative; }
+    .lk-profile-edit__item::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+  .lk-profile-edit__title {
+    font-size: 1.9rem;
+    line-height: 1;
+    color: #9b806f;
+    margin-bottom: 1.2rem; }
+  .lk-profile-edit .c-form__grid--left .c-form__item {
+    margin-right: 1.2rem; }
+    .lk-profile-edit .c-form__grid--left .c-form__item:last-child {
+      margin-right: 0; }
+  .lk-profile-edit .c-form__item input {
+    width: 34rem; }
+
+.lk-profile-input--date {
+  width: 12.6rem; }
+
+.lk-profile-input--small {
+  width: 6.7rem; }

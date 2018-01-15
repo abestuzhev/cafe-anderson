@@ -849,6 +849,84 @@
                     <div class="order-nav__col"><a href="#" class="lk-exit"><i class="c-icon icon-exit"></i><span>Выйти</span></a></div>
                 </nav>
                 <section class="lk-profile-edit">
+                    <form action="" method="POST" class="lk-profile-edit__list c-form">
+                        <div class="lk-profile-edit__item">
+                            <h4 class="lk-profile-edit__title">Представьтесь, пожалуйста!</h4>
+                            <div class="c-form__grid--left">
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__user">Ф.И.О.<span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" placeholder="Представьтесь, пожалуйста" name="lk-profile__user" id="lk-profile__user" required>
+                                </div>
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__user-date">Дата рождения</label>
+                                    <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__user-date" id="lk-profile__user-date">
+                                </div>
+                            </div>
+
+                            <button class="c-button c-button__medium">Сохранить</button>
+                        </div>
+                        <div class="lk-profile-edit__item">
+                            <h4 class="lk-profile-edit__title">Введите контактные данные для связи с вами</h4>
+                            <div class="c-form__item">
+                                <label class="c-label" for="lk-profile__email">Email<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__email" id="lk-profile__email" required>
+                            </div>
+                            <div class="c-form__item">
+                                <label class="c-label" for="lk-profile__phone">Мобильный телефон</label>
+                                <input class="c-input js-input--tel" type="text" placeholder="+7(___)___-__-__" name="lk-profile__phone" id="lk-profile__phone">
+                            </div>
+                            <div class="c-form__item">
+                                <label class="c-label" for="lk-profile__loyalty">Карта лояльности</label>
+                                <input class="c-input js-input--loyalty" type="text" placeholder="Введите номер карты" name="lk-profile__loyalty" id="lk-profile__loyalty">
+                            </div>
+
+                            <button class="c-button c-button__medium">Сохранить</button>
+                        </div>
+                        <div class="lk-profile-edit__item">
+                            <h4 class="lk-profile-edit__title">Дети:</h4>
+                            <div class="c-form__grid--left">
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__child-gender">Пол</label>
+                                    <select name="lk-profile__child-gender" id="lk-profile__child-gender" class="c-select">
+                                        <option value="boy">м</option>
+                                        <option value="girl">ж</option>
+                                    </select>
+                                </div>
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__child-name">Имя ребенка</label>
+                                    <input class="c-input" type="text" placeholder="Имя ребенка" name="lk-profile__child-name" id="lk-profile__child-name">
+                                </div>
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__child-date">Дата рождения</label>
+                                    <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__child-date" id="lk-profile__child-date">
+                                </div>
+                                <div class="c-form__item"><a href="#" class="c-form__del">Удалить [х]</a></div>
+                            </div>
+                            <button class="c-button c-button__medium">Сохранить</button>
+                        </div>
+                        <div class="lk-profile-edit__item">
+                            <h4 class="lk-profile-edit__title">Адрес доставки</h4>
+                            <div class="c-form__grid--left">
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__city">Город</label>
+                                    <input class="c-input" type="text" placeholder="Введите город" name="lk-profile__city" id="lk-profile__city">
+                                </div>
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__streat">Улица</label>
+                                    <input class="c-input" type="text" placeholder="Введите улицу" name="lk-profile__streat" id="lk-profile__streat">
+                                </div>
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__house">Дом</label>
+                                    <input class="c-input" type="text" placeholder="Дом" name="lk-profile__house" id="lk-profile__house">
+                                </div>
+                                <div class="c-form__item">
+
+                                </div>
+                                <div class="c-form__item"><a href="#" class="c-form__del">Удалить [х]</a></div>
+                            </div>
+                            <button class="c-button c-button__medium">Сохранить</button>
+                        </div>
+                    </form>
                 </section>
             </div>
         </div>
