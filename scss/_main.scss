@@ -2055,8 +2055,28 @@ test popup
         background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
         box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
         border: solid 1px rgba(115, 115, 115, 0.15);
-        
+    
         &__item {
+            &.active > a {
+                color: #75ae1f;
+                position: relative;
+                padding-left: 2rem;
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 1rem;
+                    left: 0;
+                    width: 1.8rem;
+                    height: 1.6rem;
+                    background: url(../img/icons/icon-check-2.svg) no-repeat 50% 50%;
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                }
+            }
+        }
+        
+        &__link {
             color: $black;
             display: block;
             font-size: 1.6rem;
@@ -2068,21 +2088,7 @@ test popup
                 border: none;
             }
             
-            &.active {
-                //color: #75ae1f;
-                position: relative;
-                padding-left: 1.4rem;
-                
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 1.4rem;
-                    left: 0;
-                    width: .8rem;
-                    height: .8rem;
-                    background: url(../img/icons/icon-chek.svg) no-repeat 50% 50%;
-                }
-            }
+            
         }
         
         &__close {
@@ -2097,6 +2103,24 @@ test popup
                 border-right-color: #7cbd41;
             }
         }
+        
+        &__submenu {
+            list-style: square;
+            margin: .2rem 0 .6rem 2.3rem;
+        }
+        
+        &__subitem {
+            margin-bottom: .6rem;
+            a {
+                font-size: 1.4rem;
+                text-transform: lowercase;
+            }
+            
+            &:hover {
+                color: #7cbd41;
+            }
+        }
+        
     }
     
     &-mix {
@@ -5590,6 +5614,24 @@ test popup
         
         }
         
+        &__box {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            margin-bottom: 1.1rem;
+            margin-right: 1.2rem;
+            align-items: flex-start;
+            
+            .c-form__item {
+                margin-bottom: 1.1rem;
+                margin-right: 1.2rem;
+                
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        
         &__item {
             padding: 3.1rem 2.8rem 3.1rem 2.8rem;
             position: relative;
@@ -5602,13 +5644,20 @@ test popup
                 height: .4rem;
                 background: url(../img/pattern-round.jpg) 0 0 repeat-x;
             }
+            
+            &:last-child {
+                &::after {
+                    content: '';
+                    display: none;
+                }
+            }
         }
         
         &__title {
             font-size: 1.9rem;
             line-height: 1;
             color: #9b806f;
-            margin-bottom: 1.2rem;
+            margin-bottom: 2.3rem;
         }
         
         .c-form__grid--left {
@@ -5624,23 +5673,102 @@ test popup
         .c-form__item input {
             width: 34rem;
         }
-    }
     
-    &-input {
-        &--date {
-            width: 12.6rem;
+        &__contact {/*блок с контактами*/
+            .c-form__grid--left > .c-form__item:last-child {
+                align-self: center;
+                //position: relative;
+                //bottom: -8px;
+            }
+            
+            .c-form__del {
+                position: absolute;
+                top: .5rem;
+                right: 0;
+            }
+        }
+    
+        &__child { /*блок с детьми*/
+            .c-form__item:last-child {
+                align-self: center;
+                position: relative;
+                bottom: -8px;
+            }
+            
+            .c-select,
+            .SumoSelect > .CaptionCont {
+                padding: 13px 0 13px 40px;
+            }
+    
+            .SumoSelect.open > .optWrapper {
+                top: 4.5rem;
+            }
+    
+            .SumoSelect > .CaptionCont > span {
+                font-style: italic;
+                font-size: 1.4rem;
+                display: block;
+                min-width: 4.4rem;
+            }
+        }
+        &__address {/*блок с адресом*/
+            .c-form__item input {
+                width: 100%;
+            }
+            .c-form__item:nth-child(1),
+            .c-form__item:nth-child(2),
+            .c-form__item:nth-child(6) {
+                flex: 0 1 24%;
+            }
+            
+            .c-form__item:nth-child(3),
+            .c-form__item:nth-child(4),
+            .c-form__item:nth-child(5) {
+                flex: 0 1 6%;
+            }
+    
+            .c-form__item:last-child {
+                align-self: center;
+                position: relative;
+                bottom: -8px;
+            }
+        
         }
         
-        &--small {
-            width: 6.7rem;
+        
+        &__subscription {/*блок с подпиской*/
+            background: #fdf7e8 url(../img/bg-header.png) repeat;
         }
     
+        input.lk-profile-input {
+            &--date {
+                width: 12.6rem;
+            }
+        
+            &--small {
+                width: 6.7rem;
+            }
+        }
+        .c-form__item {
+            position: relative;
+        }
+        .c-form__grid {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .c-select__icon {
+            position: absolute;
+            z-index: 11;
+            top: .8rem;
+            left: .9rem;
+        }
     }
+    
+    
     
     
 }
-
-
 
 
 

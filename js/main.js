@@ -31,18 +31,70 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
-/*scroll*/
-    // $(".popup-basket__scroll").scrollBox();
-    // $('#scrollbarY').tinyscrollbar();
 
-    /*hover в меню*/
-    // $('.header-menu__item--about').hover( function(){
-    //    $('.header-subnavigation').addClass('is-visible');
-    // });
-    //
-    // $('.header-subnavigation').mouseleave(function(){
-    //     $(this).removeClass('is-visible');
-    // });
+
+    //добавляем элементы в профиле личного кабинета
+    //добавление второго email
+
+
+    var parent_email = $('#lk-profile-edit__contact-email');
+    var i_email = parent_email.children().length + 1;
+    var parent_tel = $('#lk-profile-edit__contact-tel');
+    var i_tel = parent_tel.children().length + 1;
+
+    /*инпут с email*/
+    var $lkProfileEmail = $(
+        '<div class="c-form__item">' +
+            '<label class="c-label" for="lk-profile__email-' + i_email + '">Email</label>' +
+            '<input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__email-' + i_email + '" id="lk-profile__email-'+ i_email +'">'+
+            '<a href="#" class="c-form__del">Удалить [х]</a>' +
+        '</div>');
+
+    /*инпут с телефоном*/
+    var $lkProfileTel = $(
+        '<div class="c-form__item">' +
+        '<label class="c-label" for="lk-profile__tel-' + i_tel + '">Телефон</label>' +
+        '<input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__tel-' + i_tel + '" id="lk-profile__tel-'+ i_tel +'">'+
+        '<a href="#" class="c-form__del">Удалить [х]</a>' +
+        '</div>');
+
+
+
+    function addElementProfile (btnAdd, elemCopy, parent){
+        $(document).on('click', btnAdd, function(e) {
+
+            e.preventDefault();
+            elemCopy.appendTo(parent);
+            i_email++;
+            return false;
+        });
+    }
+    addElementProfile('#js-lk-profile__add-email', $lkProfileEmail, parent_email);
+    addElementProfile('#js-lk-profile__add-tel', $lkProfileTel, parent_tel);
+
+
+
+    function removeElementProfile (count){
+        if( count > 2 ) {
+            $(this).parents('.c-form__item').remove();
+            count--;
+        }
+        return false;
+    }
+
+    $(document).on('click', '.c-form__del', function(e) {
+        e.preventDefault();
+        removeElementProfile(i_email);
+    });
+
+    $(document).on('click', '.c-form__del', function(e) {
+        e.preventDefault();
+        removeElementProfile(i_tel);
+    });
+
+    console.log(i_email);
+    console.log(i_tel);
+
 
     //скрыть/показать заказ в истории заказов
     $('.lk-history-item__header').on('click', function(e){
@@ -911,7 +963,26 @@ $(document).ready(function ($) {
     }
 
     changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_257');
-    // changeRabbitFace('#form_dropdown_SIMPLE_QUESTION_867');
+
+    function changeSelectFace (select, value, icon_1, icon_2){
+        $(select).on("change",function() {
+            var valReview = $(this).val();
+            var $icon = $(this).parents('.c-select-layout').find('.c-select__icon');
+            console.log('changeSelectFace');
+
+            if (valReview == value ) {
+                $icon.removeClass(icon_2);
+                $icon.addClass(icon_1);
+                console.log('boy');
+            } else {
+                $icon.removeClass(icon_1);
+                $icon.addClass(icon_2);
+                console.log('girl');
+            }
+        });
+    }
+
+    changeSelectFace('.lk-profile__child-gender', 'boy','icon-boy-smiling','icon-girl-smiling');
 
 
 
@@ -927,6 +998,19 @@ $(document).ready(function ($) {
         $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
+
+    /*scroll*/
+    // $(".popup-basket__scroll").scrollBox();
+    // $('#scrollbarY').tinyscrollbar();
+
+    /*hover в меню*/
+    // $('.header-menu__item--about').hover( function(){
+    //    $('.header-subnavigation').addClass('is-visible');
+    // });
+    //
+    // $('.header-subnavigation').mouseleave(function(){
+    //     $(this).removeClass('is-visible');
+    // });
 
 /*скрол карты*/
     // var target = $('#map');

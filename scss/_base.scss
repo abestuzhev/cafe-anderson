@@ -486,7 +486,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-start;
     }
 
     &__col {
@@ -501,6 +501,35 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         color: #9b9696;
     }
     
+    &__add {
+        display: inline-block;
+        width: 2.9rem;
+        height: 2.9rem;
+        border-radius: 5rem;
+        background-color: #e3e3e3;
+        text-align: center;
+        @extend %transition_all;
+        cursor: pointer;
+        
+        &::before {
+            content: '+';
+            font-size: 2.7rem;
+            font-weight: bold;
+            line-height: 2.9rem;
+            color: #ffffff;
+        }
+        
+        &::after {
+            content: '';
+            border: none;
+        }
+        
+        &:hover {
+            @extend %transition_all;
+            background-color: #c1c1c1;
+        }
+    }
+    
     &__del {
         display: inline-block;
         font-size: 1.2rem;
@@ -512,6 +541,23 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             content: '';
             border: none;
         }
+    }
+    
+    &__attention {
+        font-size: 1.4rem;
+        font-style: italic;
+        line-height: 1.1;
+        color: #96928a;
+        
+        span {
+            color: #7cbd41;
+        }
+    }
+}
+
+.c-select {
+    &-layout {
+        position: relative;
     }
 }
 
@@ -2767,4 +2813,10 @@ a.c-button {
     .c-button {
         font-style: normal;
     }
+}
+
+
+/*Стили--------------------------------------------------*/
+.styles {
+    padding: 5rem 0;
 }
