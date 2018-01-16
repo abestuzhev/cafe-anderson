@@ -2119,6 +2119,18 @@ test popup
             &:hover {
                 color: #7cbd41;
             }
+            
+            &.active {
+                color: #7cbd41;
+                a {
+                    color: #7cbd41;
+                    
+                    &::after {
+                        content: '';
+                        border: none;
+                    }
+                }
+            }
         }
         
     }

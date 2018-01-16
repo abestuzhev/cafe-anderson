@@ -5766,6 +5766,13 @@ test popup
         text-transform: lowercase; }
       .filter-hold__subitem:hover {
         color: #7cbd41; }
+      .filter-hold__subitem.active {
+        color: #7cbd41; }
+        .filter-hold__subitem.active a {
+          color: #7cbd41; }
+          .filter-hold__subitem.active a::after {
+            content: '';
+            border: none; }
   .filter-mix {
     display: -webkit-box;
     display: -ms-flexbox;
