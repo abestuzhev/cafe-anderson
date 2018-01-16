@@ -800,6 +800,10 @@
     .reviews .c-form__info {
         margin: 1rem 0;
     }
+
+    .lk-profile-edit__address .c-form__grid{
+
+    }
 }
 
 @media (max-width:980px) {

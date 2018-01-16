@@ -8443,13 +8443,27 @@ test popup
     background-position: -17px 0; }
 
 /*Личный кабинет. Ред профиль (lk-profile-edit)----------------------------------------------------*/
-.lk-profile-edit {
+.lk-profile {
   font-family: "PT Serif Caption";
   -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: .8rem;
   border: .2rem solid #d2d2d2;
   background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+  .lk-profile__item {
+    padding: 3.1rem 2.8rem 3.1rem 2.8rem;
+    position: relative; }
+    .lk-profile__item::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+    .lk-profile__item:last-child::after {
+      content: '';
+      display: none; }
   .lk-profile-edit__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8471,20 +8485,6 @@ test popup
       margin-right: 1.2rem; }
       .lk-profile-edit__box .c-form__item:last-child {
         margin-right: 0; }
-  .lk-profile-edit__item {
-    padding: 3.1rem 2.8rem 3.1rem 2.8rem;
-    position: relative; }
-    .lk-profile-edit__item::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: .4rem;
-      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
-    .lk-profile-edit__item:last-child::after {
-      content: '';
-      display: none; }
   .lk-profile-edit__title {
     font-size: 1.9rem;
     line-height: 1;
