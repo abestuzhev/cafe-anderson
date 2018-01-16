@@ -900,57 +900,63 @@
                         </div>
                         <div class="lk-profile-edit__item lk-profile-edit__child">
                             <h4 class="lk-profile-edit__title">Дети:</h4>
-                            <div class="c-form__grid--left">
-                                <div class="c-form__item">
-                                    <label class="c-label">Пол</label>
-                                    <div class="c-select-layout">
-                                        <i class="c-select__icon icon-boy-smiling"></i>
-                                        <select name="lk-profile__child-gender" id="lk-profile__child-gender" class="c-select lk-profile__child-gender" required>
-                                            <option value="boy">м</option>
-                                            <option value="girl">ж</option>
-                                        </select>
+                            <div id="lk-profile-edit__child">
+                                <div class="lk-profile-edit__line c-form__grid--left">
+                                    <div class="c-form__item">
+                                        <label class="c-label">Пол</label>
+                                        <div class="c-select-layout">
+                                            <i class="c-select__icon icon-boy-smiling"></i>
+                                            <select name="lk-profile__child-gender" id="lk-profile__child-gender" class="c-select lk-profile__child-gender" required>
+                                                <option value="boy">м</option>
+                                                <option value="girl">ж</option>
+                                            </select>
+                                        </div>
                                     </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__child-name">Имя ребенка</label>
+                                        <input class="c-input" type="text" placeholder="Имя ребенка" name="lk-profile__child-name" id="lk-profile__child-name">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__child-date">Дата рождения</label>
+                                        <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__child-date" id="lk-profile__child-date">
+                                    </div>
+                                    <div class="c-form__item"><a href="#" class="c-form__add" id="js-lk-profile__add-child"></a></div>
                                 </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__child-name">Имя ребенка</label>
-                                    <input class="c-input" type="text" placeholder="Имя ребенка" name="lk-profile__child-name" id="lk-profile__child-name">
-                                </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__child-date">Дата рождения</label>
-                                    <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__child-date" id="lk-profile__child-date">
-                                </div>
-                                <div class="c-form__item"><a href="#" class="c-form__add" id="js-lk-profile__add-child"></a></div>
                             </div>
+
                             <button class="c-button c-button__medium">Сохранить</button>
                         </div>
                         <div class="lk-profile-edit__item lk-profile-edit__address">
                             <h4 class="lk-profile-edit__title">Адрес доставки</h4>
-                            <div class="c-form__grid">
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__city">Город</label>
-                                    <input class="c-input" type="text" placeholder="Введите город" name="lk-profile__city" id="lk-profile__city">
+
+                            <div id="lk-profile-edit__address">
+                                <div class="lk-profile-edit__line c-form__grid">
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__city">Город</label>
+                                        <input class="c-input" type="text" placeholder="Введите город" name="lk-profile__city" id="lk-profile__city">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__street">Улица</label>
+                                        <input class="c-input" type="text" placeholder="Введите улицу" name="lk-profile__street" id="lk-profile__street">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__house">Дом</label>
+                                        <input class="c-input lk-profile-input--small" type="text" placeholder="Дом" name="lk-profile__house" id="lk-profile__house">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__housing">Корпус</label>
+                                        <input class="c-input lk-profile-input--small" type="text" placeholder="Корп." name="lk-profile__housing" id="lk-profile__housing">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__apartment">Кв.</label>
+                                        <input class="c-input lk-profile-input--small" type="text" placeholder="Кв." name="lk-profile__apartment" id="lk-profile__apartment">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__more">Подробности</label>
+                                        <input class="c-input" type="text" placeholder="Подробности" name="lk-profile__more" id="lk-profile__more">
+                                    </div>
+                                    <div class="c-form__item"><a href="#" class="c-form__add" id="js-lk-profile-edit__address"></a></div>
                                 </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__street">Улица</label>
-                                    <input class="c-input" type="text" placeholder="Введите улицу" name="lk-profile__street" id="lk-profile__street">
-                                </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__house">Дом</label>
-                                    <input class="c-input lk-profile-input--small" type="text" placeholder="Дом" name="lk-profile__house" id="lk-profile__house">
-                                </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__housing">Корпус</label>
-                                    <input class="c-input lk-profile-input--small" type="text" placeholder="Корп." name="lk-profile__housing" id="lk-profile__housing">
-                                </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__apartment">Кв.</label>
-                                    <input class="c-input lk-profile-input--small" type="text" placeholder="Кв." name="lk-profile__apartment" id="lk-profile__apartment">
-                                </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__more">Подробности</label>
-                                    <input class="c-input" type="text" placeholder="Подробности" name="lk-profile__more" id="lk-profile__more">
-                                </div>
-                                <div class="c-form__item"><a href="#" class="c-form__add"></a></div>
                             </div>
                             <button class="c-button c-button__medium">Сохранить</button>
                         </div>
