@@ -5621,6 +5621,21 @@ test popup
     border: .2rem solid #d2d2d2;
     background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
     
+    &__header {
+        margin-bottom: 1.4rem;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    
+    &__title {
+        font-size: 1.8rem;
+        line-height: 1;
+        color: #9b806f;
+        text-transform: uppercase;
+    }
+    
     &__item {
         padding: 3.1rem 2.8rem 3.1rem 2.8rem;
         position: relative;
@@ -5635,6 +5650,8 @@ test popup
         }
         
         &:last-child {
+            background: #fdf7e8 url(../img/bg-header.png) repeat;
+           
             &::after {
                 content: '';
                 display: none;
@@ -5642,9 +5659,36 @@ test popup
         }
     }
     
+    &__link-edit {
+        font-size: 1.2rem;
+        font-style: italic;
+        line-height: 1;
+        color: #96928a;
+        text-transform: lowercase;
+        padding-left: 1.1rem;
+        
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+    
+    &__password-edit {
+        font-size: 1.2rem;
+        font-style: italic;
+        line-height: 1;
+        color: #96928a;
+        text-transform: lowercase;
+        
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+    
+    
+    
     &-edit {
-        
-        
         
         &__list {
         

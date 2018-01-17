@@ -77,6 +77,13 @@
     width: 46%;
 }
 
+.sticky .header-col__left {
+    
+    .header-top {
+        margin-bottom: .6rem;
+    }
+}
+
 .sticky .header-col__center {
     position: absolute;
     z-index: 20;

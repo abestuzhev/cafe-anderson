@@ -3185,6 +3185,9 @@ a.c-button:hover {
 .sticky .header-col__right {
   width: 46%; }
 
+.sticky .header-col__left .header-top {
+  margin-bottom: .6rem; }
+
 .sticky .header-col__center {
   position: absolute;
   z-index: 20;
@@ -8450,6 +8453,26 @@ test popup
   border-radius: .8rem;
   border: .2rem solid #d2d2d2;
   background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+  .lk-profile__header {
+    margin-bottom: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .lk-profile__title {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #9b806f;
+    text-transform: uppercase; }
   .lk-profile__item {
     padding: 3.1rem 2.8rem 3.1rem 2.8rem;
     position: relative; }
@@ -8461,9 +8484,30 @@ test popup
       width: 100%;
       height: .4rem;
       background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
-    .lk-profile__item:last-child::after {
+    .lk-profile__item:last-child {
+      background: #fdf7e8 url(../img/bg-header.png) repeat; }
+      .lk-profile__item:last-child::after {
+        content: '';
+        display: none; }
+  .lk-profile__link-edit {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1;
+    color: #96928a;
+    text-transform: lowercase;
+    padding-left: 1.1rem; }
+    .lk-profile__link-edit::after {
       content: '';
-      display: none; }
+      border: none; }
+  .lk-profile__password-edit {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1;
+    color: #96928a;
+    text-transform: lowercase; }
+    .lk-profile__password-edit::after {
+      content: '';
+      border: none; }
   .lk-profile-edit__box {
     display: -webkit-box;
     display: -ms-flexbox;
