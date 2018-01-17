@@ -33,6 +33,16 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    //изменнеие пароля в профиле личного кабинета
+    $('#lk-profile__change-pass').on('click', function(e){
+        e.preventDefault();
+        $(this)
+        .parents('.lk-profile-user')
+        .css('display', 'none')
+        .siblings('.lk-profile-edit')
+        .css('display', 'block');
+    }); 
+
     //добавляем элементы в профиле личного кабинета
     //добавление второго email
 

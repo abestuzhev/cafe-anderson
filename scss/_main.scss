@@ -5615,6 +5615,25 @@ test popup
 /*Личный кабинет. Ред профиль (lk-profile-edit)----------------------------------------------------*/
 .lk-profile {
     
+    input[type="radio"] {
+        display: none;
+    }
+
+    input[type="radio"]:checked + .order-radio::after {
+        content: '';
+        border-color: #7cbd41;
+    }
+
+    input[type="radio"]:checked + .order-radio::before {
+        content: '';
+        background-color: #7cbd41;
+    }
+
+    .c-grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
     font-family: $font_serif;
     box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
     border-radius: .8rem;
@@ -5634,6 +5653,7 @@ test popup
         line-height: 1;
         color: #9b806f;
         text-transform: uppercase;
+        margin-right: 1rem;
     }
     
     &__item {
@@ -5657,6 +5677,131 @@ test popup
                 display: none;
             }
         }
+
+
+        
+    }
+    
+    &__body,
+    &__text {
+        display: block;
+        font-size: 1.4rem;
+        font-style: italic;
+        line-height: 1.5;
+        color: #231300;
+    }
+    
+    &-user {
+        .lk-profile__body {
+            font-size: 1.6rem;
+            line-height: 1;
+            color: #231300;
+        }
+    }
+    
+    &-user + .lk-profile-edit {
+        display: none;
+    }
+    
+    &-contact {
+        //.lk-profile__body {
+        //    font-size: 1.4rem;
+        //    font-style: italic;
+        //    line-height: 1.5;
+        //    color: #231300;
+        //}
+    }
+    &-subscription {
+        position: relative;
+        
+        &__title {
+            font-size: 1.8rem;
+            line-height: 1;
+            color: #553023;
+            margin-bottom: 1rem;
+        }
+        
+        &__type {
+            font-style: italic;
+            margin-bottom: .4rem;
+        }
+        &__email {
+            font-style: italic;
+            margin-bottom: .6rem;
+            
+            span {
+                color: #96928a;
+            }
+        }
+        
+        &__close {
+            position: absolute;
+            top: 2.6rem;
+            right: 1.6rem;
+            font-size: 1.4rem;
+            font-style: italic;
+            line-height: 1;
+            color: #96928a;
+            
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+    }
+    
+    &-child {
+        
+        &__list {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        
+        &__item {
+            margin-right: 4.5rem;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+        &-card {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+            &__icon {
+                margin-top: .3rem;
+                margin-right: .8rem;
+            }
+            
+            &__body {
+            
+            }
+            
+            &__name {
+                font-size: 1.4rem;
+                font-style: italic;
+                line-height: 1.29;
+                color: #231300;
+            }
+    
+            &__date {
+                font-size: 1.4rem;
+                font-style: italic;
+                line-height: 1.29;
+                color: #96928a;
+            }
+        }
+    
+    }
+    
+    &-address {
+        
+    
+    
     }
     
     &__link-edit {
@@ -5665,11 +5810,18 @@ test popup
         line-height: 1;
         color: #96928a;
         text-transform: lowercase;
-        padding-left: 1.1rem;
+        margin-right: 2.2rem;
         
         &::after {
             content: '';
             border: none;
+        }
+        
+        &:hover {
+            .icon-pencil-2 {
+                background-position: -12px 0;
+            }
+            
         }
     }
     
@@ -5685,6 +5837,8 @@ test popup
             border: none;
         }
     }
+    
+    
     
     
     
@@ -5834,8 +5988,53 @@ test popup
 
 
 
+/*Торты (cake)----------------------------------------------------*/
 
+.cake {
+    &-sale {
+        position: relative;
+        img {
+            width: 100%;
+            height: auto;
+        }
 
+        &-description {
+            max-width: 38rem;
+            position: absolute;
+            right: 3rem;
+            top: 50%;
+            top:10%;
+            bottom: 10%;
+            // height: 100%;
+            padding: 2rem;
+            background-color: rgba(255,255,255,.8);
+
+            &__text {
+
+            }
+        }
+    }
+
+    &-order {
+
+    }
+
+    &-stuffing {
+
+    }
+
+    &-new-toy {
+
+    }
+
+    &-toy-one-day {
+
+    }
+
+    .c-title__h2 {
+        margin-bottom: 2rem;
+    }
+}
 
 
 

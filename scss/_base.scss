@@ -32,6 +32,15 @@ body {
     margin-bottom: .2rem;
 }
 
+.c-ol-list {
+    font-family: $font_serif;
+    margin-left: 2rem;
+    li {
+        list-style-type: decimal;
+        margin-bottom: .2rem;
+    }
+}
+
 .wrapper {
     position: relative;
     min-height: 100%;
@@ -544,6 +553,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
     
     &__attention {
+        display: block;
         font-size: 1.4rem;
         font-style: italic;
         line-height: 1.1;

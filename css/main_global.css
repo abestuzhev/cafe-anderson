@@ -674,6 +674,15 @@ i.icon-chair {
   background: url(../img/icons/icon-girl-smiling.svg) 0 0 no-repeat;
   background-size: cover; }
 
+.icon-pencil-2 {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1rem;
+  width: 1.2em;
+  height: 1.8em;
+  background: url(../img/icons/icon-pencil-2.svg) 0 0 no-repeat;
+  background-size: 1.2rem 1.8rem; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -863,6 +872,13 @@ body {
 .c-ul-list li {
   list-style: circle outside;
   margin-bottom: .2rem; }
+
+.c-ol-list {
+  font-family: "PT Serif Caption";
+  margin-left: 2rem; }
+  .c-ol-list li {
+    list-style-type: decimal;
+    margin-bottom: .2rem; }
 
 .wrapper {
   position: relative;
@@ -1300,6 +1316,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     border: none; }
 
 .c-form__attention {
+  display: block;
   font-size: 1.4rem;
   font-style: italic;
   line-height: 1.1;
@@ -8453,6 +8470,17 @@ test popup
   border-radius: .8rem;
   border: .2rem solid #d2d2d2;
   background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+  .lk-profile input[type="radio"] {
+    display: none; }
+  .lk-profile input[type="radio"]:checked + .order-radio::after {
+    content: '';
+    border-color: #7cbd41; }
+  .lk-profile input[type="radio"]:checked + .order-radio::before {
+    content: '';
+    background-color: #7cbd41; }
+  .lk-profile .c-grid {
+    margin-left: 0;
+    margin-right: 0; }
   .lk-profile__header {
     margin-bottom: 1.4rem;
     display: -webkit-box;
@@ -8472,7 +8500,8 @@ test popup
     font-size: 1.8rem;
     line-height: 1;
     color: #9b806f;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-right: 1rem; }
   .lk-profile__item {
     padding: 3.1rem 2.8rem 3.1rem 2.8rem;
     position: relative; }
@@ -8489,16 +8518,101 @@ test popup
       .lk-profile__item:last-child::after {
         content: '';
         display: none; }
+  .lk-profile__body, .lk-profile__text {
+    display: block;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.5;
+    color: #231300; }
+  .lk-profile-user .lk-profile__body {
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #231300; }
+  .lk-profile-user + .lk-profile-edit {
+    display: none; }
+  .lk-profile-subscription {
+    position: relative; }
+    .lk-profile-subscription__title {
+      font-size: 1.8rem;
+      line-height: 1;
+      color: #553023;
+      margin-bottom: 1rem; }
+    .lk-profile-subscription__type {
+      font-style: italic;
+      margin-bottom: .4rem; }
+    .lk-profile-subscription__email {
+      font-style: italic;
+      margin-bottom: .6rem; }
+      .lk-profile-subscription__email span {
+        color: #96928a; }
+    .lk-profile-subscription__close {
+      position: absolute;
+      top: 2.6rem;
+      right: 1.6rem;
+      font-size: 1.4rem;
+      font-style: italic;
+      line-height: 1;
+      color: #96928a; }
+      .lk-profile-subscription__close::after {
+        content: '';
+        border: none; }
+  .lk-profile-child__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .lk-profile-child__item {
+    margin-right: 4.5rem; }
+    .lk-profile-child__item:last-child {
+      margin-right: 0; }
+  .lk-profile-child-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .lk-profile-child-card__icon {
+      margin-top: .3rem;
+      margin-right: .8rem; }
+    .lk-profile-child-card__name {
+      font-size: 1.4rem;
+      font-style: italic;
+      line-height: 1.29;
+      color: #231300; }
+    .lk-profile-child-card__date {
+      font-size: 1.4rem;
+      font-style: italic;
+      line-height: 1.29;
+      color: #96928a; }
   .lk-profile__link-edit {
     font-size: 1.2rem;
     font-style: italic;
     line-height: 1;
     color: #96928a;
     text-transform: lowercase;
-    padding-left: 1.1rem; }
+    margin-right: 2.2rem; }
     .lk-profile__link-edit::after {
       content: '';
       border: none; }
+    .lk-profile__link-edit:hover .icon-pencil-2 {
+      background-position: -12px 0; }
   .lk-profile__password-edit {
     font-size: 1.2rem;
     font-style: italic;
@@ -8604,3 +8718,22 @@ test popup
     z-index: 11;
     top: .8rem;
     left: .9rem; }
+
+/*Торты (cake)----------------------------------------------------*/
+.cake-sale {
+  position: relative; }
+  .cake-sale img {
+    width: 100%;
+    height: auto; }
+  .cake-sale-description {
+    max-width: 38rem;
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    top: 10%;
+    bottom: 10%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8); }
+
+.cake .c-title__h2 {
+  margin-bottom: 2rem; }
