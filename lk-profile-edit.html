@@ -863,7 +863,7 @@
                                         <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__user-date" id="lk-profile__user-date">
                                     </div>
                                 </div>
-                                <button class="c-button c-button__medium">Сохранить</button>
+                                <!--<button class="c-button c-button__medium">Сохранить</button>-->
                             </div>
 
                         </div>
@@ -871,23 +871,37 @@
                             <div class="lk-profile-edit">
                                 <h4 class="lk-profile-edit__title">Введите контактные данные для связи с вами</h4>
                                 <div class="c-form__grid--left">
-                                    <div class="lk-profile-edit__box" id="lk-profile-edit__contact-email">
+                                    <div class="lk-profile-edit__email-list" id="lk-profile-edit__contact-email">
                                         <div class="c-form__item">
                                             <label class="c-label" for="lk-profile__email">Email</label>
                                             <input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__email" id="lk-profile__email">
 
                                         </div>
                                     </div>
+                                    <div class="c-form__item lk-profile-edit__copy">
+                                        <label class="c-label" for="lk-profile__email">
+                                            <span>Email</span>
+                                            <input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__email">
+                                            <a href="#" class="c-form__del">Удалить [х]</a>
+                                        </label>
+                                    </div>
                                     <div class="c-form__item">
                                         <a href="#" class="c-form__add" id="js-lk-profile__add-email"></a>
                                     </div>
                                 </div>
                                 <div class="c-form__grid--left">
-                                    <div class="lk-profile-edit__box" id="lk-profile-edit__contact-tel">
+                                    <div class="lk-profile-edit__tel-list" id="lk-profile-edit__contact-tel">
                                         <div class="c-form__item">
                                             <label class="c-label" for="lk-profile__phone">Телефон</label>
                                             <input class="c-input js-input--tel" type="text" placeholder="+7(___)___-__-__" name="lk-profile__phone" id="lk-profile__phone">
                                         </div>
+
+                                    </div>
+                                    <div class="c-form__item lk-profile-edit__copy">
+                                        <label class="c-label"><span>Телефон</span>
+                                            <input class="c-input js-input--tel" type="text" placeholder="+7(___)___-__-__" name="lk-profile__phone">
+                                            <a href="#" class="c-form__del">Удалить [х]</a>
+                                        </label>
                                     </div>
                                     <div class="c-form__item">
                                         <a href="#" class="c-form__add" id="js-lk-profile__add-tel"></a>
@@ -897,7 +911,7 @@
                                     <label class="c-label" for="lk-profile__loyalty">Карта лояльности</label>
                                     <input class="c-input js-input--loyalty" type="text" placeholder="Введите номер карты" name="lk-profile__loyalty" id="lk-profile__loyalty">
                                 </div>
-                                <button class="c-button c-button__medium">Сохранить</button>
+                                <!--<button class="c-button c-button__medium">Сохранить</button>-->
                             </div>
 
                         </div>
@@ -905,6 +919,7 @@
                             <div class="lk-profile-edit">
                                 <h4 class="lk-profile-edit__title">Дети:</h4>
                                 <div id="lk-profile-edit__child">
+
                                     <div class="lk-profile-edit__line c-form__grid--left">
                                         <div class="c-form__item">
                                             <label class="c-label">Пол</label>
@@ -926,11 +941,12 @@
                                         </div>
                                         <div class="c-form__item"><a href="#" class="c-form__add" id="js-lk-profile__add-child"></a></div>
                                     </div>
-                                    <div class="lk-profile-edit__line lk-profile-edit__child-copy c-form__grid--left">
+
+                                    <div class="lk-profile-edit__line lk-profile-edit__copy c-form__grid--left">
                                         <div class="c-form__item">
                                             <div class="c-select-layout">
                                                 <i class="c-select__icon icon-boy-smiling"></i>
-                                                <select name="lk-profile__child-gender" class="c-select lk-profile__child-gender" required>
+                                                <select name="lk-profile__child-gender" class="js-select--child lk-profile__child-gender" required>
                                                     <option value="boy">м</option>
                                                     <option value="girl">ж</option>
                                                 </select>
@@ -944,8 +960,11 @@
                                         </div>
                                         <div class="c-form__item"><a href="#" class="c-form__del">Удалить [х]</a></div>
                                     </div>
+                                    <div class="lk-profile-edit__child-list">
+
+                                    </div>
                                 </div>
-                                <button class="c-button c-button__medium">Сохранить</button>
+                                <!--<button class="c-button c-button__medium">Сохранить</button>-->
                             </div>
 
                         </div>
@@ -980,8 +999,31 @@
                                         </div>
                                         <div class="c-form__item"><a href="#" class="c-form__add" id="js-lk-profile-edit__address"></a></div>
                                     </div>
+
+                                    <div class="lk-profile-edit__line lk-profile-edit__copy c-form__grid">
+                                        <div class="c-form__item">
+                                            <input class="c-input" type="text" placeholder="Введите город" name="lk-profile__city">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input" type="text" placeholder="Введите улицу" name="lk-profile__street">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Дом" name="lk-profile__house">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Корп." name="lk-profile__housing">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Кв." name="lk-profile__apartment">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input" type="text" placeholder="Подробности" name="lk-profile__more">
+                                        </div>
+                                        <div class="c-form__item"><a href="#" class="c-form__del">Удалить [х]</a></div>
+                                    </div>
+                                    <div class="lk-profile-edit__address-list"></div>
                                 </div>
-                                <button class="c-button c-button__medium">Сохранить</button>
+                                <!--<button class="c-button c-button__medium">Сохранить</button>-->
                             </div>
 
                         </div>

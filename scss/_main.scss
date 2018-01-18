@@ -5803,6 +5803,12 @@ test popup
     
     
     }
+
+    &-subscription {
+        .lk-profile-edit {
+            display: none;
+        }
+    }
     
     &__link-edit {
         font-size: 1.2rem;
@@ -5838,6 +5844,11 @@ test popup
         }
     }
     
+    .l-button__left {
+        .lk-profile-subscription__close {
+            position: static;
+        }
+    }
     
     
     
@@ -5846,6 +5857,19 @@ test popup
         
         &__list {
         
+        }
+
+        &__copy {
+            display: none;
+            .c-form__item:last-child {
+                bottom: 0 !important;
+                
+                
+            }
+            .c-label span {
+                display: inline-block;
+                 margin-bottom: .9rem;
+            }
         }
         
         &__box {
@@ -5892,8 +5916,8 @@ test popup
         &__contact {/*блок с контактами*/
             .c-form__grid--left > .c-form__item:last-child {
                 align-self: center;
-                //position: relative;
-                //bottom: -8px;
+                position: relative;
+                bottom: -8px;
             }
             
             .c-form__del {
@@ -5902,12 +5926,27 @@ test popup
                 right: 0;
             }
         }
+        
+        &__email-list,
+        &__tel-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            margin-bottom: 1.1rem;
+            margin-right: 1.2rem;
+            align-items: flex-start;
+    
+            .lk-profile-edit__copy {
+                display: flex;
+                margin-bottom: 0;
+            }
+        }
     
         &__child { /*блок с детьми*/
             .c-form__item:last-child {
                 align-self: center;
                 position: relative;
-                bottom: -8px;
+                bottom: -13px;
             }
             
             .c-select,
@@ -5924,6 +5963,12 @@ test popup
                 font-size: 1.4rem;
                 display: block;
                 min-width: 4.4rem;
+            }
+            
+            &-list {
+                .lk-profile-edit__copy {
+                    display: flex;
+                }
             }
         }
         &__address {/*блок с адресом*/
@@ -5945,7 +5990,14 @@ test popup
             .c-form__item:last-child {
                 align-self: center;
                 position: relative;
-                bottom: -8px;
+                bottom: -1.3rem;
+                width: 7rem;
+            }
+            
+            &-list {
+                .lk-profile-edit__copy {
+                    display: flex;
+                }
             }
         
         }
@@ -5978,13 +6030,11 @@ test popup
             top: .8rem;
             left: .9rem;
         }
+
+        
     }
     
-    
-    
-    
 }
-
 
 
 

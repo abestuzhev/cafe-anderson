@@ -854,7 +854,7 @@
                             <div class="lk-profile-user">
                                 <div class="lk-profile__header">
                                     <h3 class="lk-profile__title">Ирина Комарова</h3>
-                                    <a href="" class="lk-profile__link-edit">редактировать</a>
+                                    <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
                                     <a href="" class="lk-profile__password-edit" id="lk-profile__change-pass">*** изменить пароль</a>
                                 </div>
                                 <div class="lk-profile__body">
@@ -880,7 +880,7 @@
                         <div class="lk-profile__item lk-profile-contact">
                             <div class="lk-profile__header">
                                 <h3 class="lk-profile__title">Контактные данные:</h3>
-                                <a href="" class="lk-profile__link-edit"><i class="icon-pencil-2"></i>редактировать</a>
+                                <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
                             </div>
                             <div class="lk-profile__body">
                                 <div class="lk-profile__email">Email: ininakomarova87@gmail.com</div>
@@ -892,7 +892,7 @@
                         <div class="lk-profile__item lk-profile-child">
                             <div class="lk-profile__header">
                                 <h3 class="lk-profile__title">Дети:</h3>
-                                <a href="" class="lk-profile__link-edit">редактировать</a>
+                                <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
                             </div>
                             <div class="lk-profile__body">
                                 <ul class="lk-profile-child__list">
@@ -932,7 +932,7 @@
                         <div class="lk-profile__item lk-profile-address">
                             <div class="lk-profile__header">
                                 <h3 class="lk-profile__title">Адрес доставки:</h3>
-                                <a href="" class="lk-profile__link-edit">редактировать</a>
+                                <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
                             </div>
                             <div class="lk-profile__body">
                                 <div class="c-grid c-grid-between">
@@ -957,15 +957,56 @@
                             </div>
                         </div>
                         <div class="lk-profile__item lk-profile-subscription">
-                            <a href="#" class="lk-profile-subscription__close">Отписаться [х]</a>
-                            <h3 class="lk-profile-subscription__title">Ваши подписки:</h3>
-                            <div class="lk-profile-subscription__type">Новости, Акции, Мероприятия, Анонсы событий</div>
-                            <div class="lk-profile-subscription__email"><span>на email: </span>ininakomarova87@gmail.com</div>
-                            <div class="c-form__item">
-                                <p class="c-form__attention"><span>*Внимание!</span> Подписка абсолютно бесплатна, не требует персональных данных и несет лишь информационные цели</p>
+                            <div class="lk-profile-subscription__box">
+                                <a href="#" class="lk-profile-subscription__close">Отписаться [х]</a>
+                                <h3 class="lk-profile-subscription__title">Ваши подписки:</h3>
+                                <div class="lk-profile-subscription__type">Новости, Акции, Мероприятия, Анонсы событий</div>
+                                <div class="lk-profile-subscription__email"><span>на email: </span>ininakomarova87@gmail.com</div>
+                                <div class="c-form__item">
+                                    <p class="c-form__attention"><span>*Внимание!</span> Подписка абсолютно бесплатна, не требует персональных данных и несет лишь информационные цели</p>
+                                </div>
+                                <div class="c-form__item">
+                                    <a href="#" class="c-button c-button__medium" id="lk-profile_change-subscription">Изменить подписку</a>
+                                </div>
                             </div>
-                            <div class="c-form__item">
-                                <a href="#" class="c-button c-button__medium">Изменить подписку</a>
+                            
+
+                            <div class="lk-profile-edit">
+                                <h4 class="lk-profile-edit__title">Изменить подписку:</h4>
+                                <div class="c-form__grid--left">
+                                    <div class="c-form__item">
+                                        <input type="checkbox" name="lk-profile-subscription-type" id="lk-profile-subscription-all" checked="">
+                                        <label class="c-checkbox" for="lk-profile-subscription-all">Все</label>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <input type="checkbox" name="lk-profile-subscription-type" id="lk-profile-subscription-news">
+                                        <label class="c-checkbox" for="lk-profile-subscription-news">Новости</label>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <input type="checkbox" name="lk-profile-subscription-type" id="lk-profile-subscription-sale">
+                                        <label class="c-checkbox" for="lk-profile-subscription-sale">Акции</label>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <input type="checkbox" name="lk-profile-subscription-type" id="lk-profile-subscription-event">
+                                        <label class="c-checkbox" for="lk-profile-subscription-event">Мероприятия</label>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <input type="checkbox" name="lk-profile-subscription-type" id="lk-profile-subscription-preview-event">
+                                        <label class="c-checkbox" for="lk-profile-subscription-preview-event">Анонсы событий</label>
+                                    </div>
+                                </div>
+                                <div class="c-form__item">
+                                    <input class="c-input" type="text" placeholder="ininakomarova87@gmail.com" name="lk-profile__subscription" id="lk-profile__subscription">
+                                </div>
+                                <div class="c-form__item">
+                                    <p class="c-form__attention"><span>*Внимание!</span> Подписка абсолютно бесплатна, не требует персональных данных и несет лишь информационные цели</p>
+                                </div>
+
+                                <div class="l-button__left">
+                                    <button class="c-button c-button__medium">Сохранить изменения</button>
+                                    <a href="#" class="lk-profile-subscription__close" id="lk-profile_cancel-change">Отменить изменения [х]</a>
+                                </div>
+                                
                             </div>
                         </div>
                     </form>

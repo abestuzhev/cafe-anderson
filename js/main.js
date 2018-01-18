@@ -41,109 +41,75 @@ $(document).ready(function ($) {
         .css('display', 'none')
         .siblings('.lk-profile-edit')
         .css('display', 'block');
-    }); 
+    });
+
+    // изменение подписки в профиле пользователя
+    $('#lk-profile_change-subscription').on('click', function(e){
+        e.preventDefault();
+        $(this)
+        .parents('.lk-profile-subscription__box')
+        .css('display', 'none')
+        .siblings('.lk-profile-edit')
+        .css('display', 'block');
+    });
+    // отмена изменения подписки в профиле пользователя
+    $('#lk-profile_cancel-change').on('click', function(e){
+        e.preventDefault();
+        $(this)
+        .parents('.lk-profile-edit')
+        .css('display', 'none')
+        .siblings('.lk-profile-subscription__box')
+        .css('display', 'block');
+    });
 
     //добавляем элементы в профиле личного кабинета
     //добавление второго email
 
-
-
-    function addElementProfile (elemCopy, parent, count){
-        console.log(count);
-        elemCopy.appendTo(parent);
-        count++;
-        return false;
-    }
-
-    var $parent_email = $('#lk-profile-edit__contact-email'),
-        $count_email = $parent_email.children().length + 1,
-
-        $parent_tel = $('#lk-profile-edit__contact-tel'),
-        $count_tel = $parent_tel.children().length + 1,
-
-        $parent_child = $('#lk-profile-edit__child'),
-        $count_child = $parent_child.children().length + 1
-    ;
-
-    /*инпут с email*/
-    var $lkProfileEmail = $(
-        '<div class="c-form__item">' +
-            '<label class="c-label" for="lk-profile__email-' + $count_email + '">Email</label>' +
-            '<input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__email-' + $count_email + '" id="lk-profile__email-'+ $count_email +'">'+
-            '<a href="#" class="c-form__del">Удалить [х]</a>' +
-        '</div>');
-
-    /*инпут с телефоном*/
-    var $lkProfileTel = $(
-        '<div class="c-form__item">' +
-        '<label class="c-label" for="lk-profile__tel-' + $count_tel + '">Телефон</label>' +
-        '<input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__tel-' + $count_tel + '" id="lk-profile__tel-'+ $count_tel +'">'+
-        '<a href="#" class="c-form__del">Удалить [х]</a>' +
-        '</div>');
-
-    /*блок с ребенком*/
-    var $lkProfileChild = $(
-        '<div class="lk-profile-edit__line c-form__grid--left">'+
-            '<div class="c-form__item">'+
-                '<div class="c-select-layout">'+
-                    '<i class="c-select__icon icon-boy-smiling"></i>'+
-                    '<select name="lk-profile__child-gender-'+ $count_child +'" class="c-select lk-profile__child-gender" required>'+
-                        '<option value="boy">м</option>'+
-                        '<option value="girl">ж</option>'+
-                    '</select>'+
-                '</div>'+
-            '</div>'+
-            '<div class="c-form__item">'+
-                '<input class="c-input" type="text" placeholder="Имя ребенка" name="lk-profile__child-name-'+ $count_child +'">'+
-            '</div>'+
-            '<div class="c-form__item">'+
-                '<input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__child-date-'+ $count_child +'">'+
-            '</div>'+
-            '<div class="c-form__item"><a href="#" class="c-form__del">Удалить [х]</a></div>'+
-        '</div>');
-
-
-
-
     $(document).on('click', '#js-lk-profile__add-email', function(e) {
         e.preventDefault();
-        addElementProfile($lkProfileEmail, '#lk-profile-edit__contact-email', $count_email);
+        $(this)
+            .parents('.c-form__item')
+            .siblings('.lk-profile-edit__copy')
+            .clone().appendTo(".lk-profile-edit__email-list");
     });
 
     $(document).on('click', '#js-lk-profile__add-tel', function(e) {
         e.preventDefault();
-        addElementProfile($lkProfileTel, '#lk-profile-edit__contact-tel', $count_tel);
+        $(this)
+            .parents('.c-form__item')
+            .siblings('.lk-profile-edit__copy')
+            .clone().appendTo(".lk-profile-edit__tel-list");
     });
 
+    /*добавление ребенка в профиле пользователя*/
     $(document).on('click', '#js-lk-profile__add-child', function(e) {
         e.preventDefault();
-        // addElementProfile($lkProfileChild, '#lk-profile-edit__child', $count_child);
-        $(this).parents('.lk-profile-edit__line').clone().appendTo("#lk-profile-edit__child");
+        $(this)
+            .parents('.lk-profile-edit__line')
+            .siblings('.lk-profile-edit__copy')
+            .clone().appendTo(".lk-profile-edit__child-list");
 
+        $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
+        changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'boy','icon-boy-smiling','icon-girl-smiling');
     });
+
 
     $(document).on('click', '#js-lk-profile-edit__address', function(e) {
         e.preventDefault();
-        $(this).parents('.lk-profile-edit__line').clone().appendTo("#lk-profile-edit__address");
+        $(this)
+            .parents('.lk-profile-edit__line')
+            .siblings('.lk-profile-edit__copy')
+            .clone().appendTo(".lk-profile-edit__address-list");
     });
 
 
     $(document).on('click', '.c-form__del', function(e) {
         e.preventDefault();
-        var $item =  $(this).parents('.c-form__item');
-        var $itemBox =  $(this).parents('.lk-profile-edit__line');
-        $item.remove();
-        $itemBox.remove();
+        var $elem_item = $(this).parents('.c-form__item');
+        var $element =  $(this).parents('.lk-profile-edit__copy');
+        $element.remove();
+        $elem_item.remove();
     });
-
-    // function removeElementProfile (count, item){
-    //     if( count > 2 ) {
-    //         item.remove();
-    //         count--;
-    //     }
-    //     return false;
-    // }
-
 
     //скрыть/показать заказ в истории заказов
     $('.lk-history-item__header').on('click', function(e){

@@ -681,7 +681,7 @@ i.icon-chair {
   width: 1.2em;
   height: 1.8em;
   background: url(../img/icons/icon-pencil-2.svg) 0 0 no-repeat;
-  background-size: 1.2rem 1.8rem; }
+  background-size: 2.4rem 1.8rem; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1241,7 +1241,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-form__item {
   margin-bottom: 1.1rem; }
   .c-form__item:last-child {
-    margin-bottom: 0; }
+    margin-right: 0; }
 
 .c-form__grid {
   display: -webkit-box;
@@ -3201,9 +3201,6 @@ a.c-button:hover {
 .sticky .header-col__left,
 .sticky .header-col__right {
   width: 46%; }
-
-.sticky .header-col__left .header-top {
-  margin-bottom: .6rem; }
 
 .sticky .header-col__center {
   position: absolute;
@@ -8601,6 +8598,8 @@ test popup
       font-style: italic;
       line-height: 1.29;
       color: #96928a; }
+  .lk-profile-subscription .lk-profile-edit {
+    display: none; }
   .lk-profile__link-edit {
     font-size: 1.2rem;
     font-style: italic;
@@ -8622,6 +8621,15 @@ test popup
     .lk-profile__password-edit::after {
       content: '';
       border: none; }
+  .lk-profile .l-button__left .lk-profile-subscription__close {
+    position: static; }
+  .lk-profile-edit__copy {
+    display: none; }
+    .lk-profile-edit__copy .c-form__item:last-child {
+      bottom: 0 !important; }
+    .lk-profile-edit__copy .c-label span {
+      display: inline-block;
+      margin-bottom: .9rem; }
   .lk-profile-edit__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8658,18 +8666,41 @@ test popup
     /*блок с контактами*/ }
     .lk-profile-edit__contact .c-form__grid--left > .c-form__item:last-child {
       -ms-flex-item-align: center;
-          align-self: center; }
+          align-self: center;
+      position: relative;
+      bottom: -8px; }
     .lk-profile-edit__contact .c-form__del {
       position: absolute;
       top: .5rem;
       right: 0; }
+  .lk-profile-edit__email-list, .lk-profile-edit__tel-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 1.1rem;
+    margin-right: 1.2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .lk-profile-edit__email-list .lk-profile-edit__copy, .lk-profile-edit__tel-list .lk-profile-edit__copy {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 0; }
   .lk-profile-edit__child {
     /*блок с детьми*/ }
     .lk-profile-edit__child .c-form__item:last-child {
       -ms-flex-item-align: center;
           align-self: center;
       position: relative;
-      bottom: -8px; }
+      bottom: -13px; }
     .lk-profile-edit__child .c-select,
     .lk-profile-edit__child .SumoSelect > .CaptionCont {
       padding: 13px 0 13px 40px; }
@@ -8680,6 +8711,10 @@ test popup
       font-size: 1.4rem;
       display: block;
       min-width: 4.4rem; }
+    .lk-profile-edit__child-list .lk-profile-edit__copy {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .lk-profile-edit__address {
     /*блок с адресом*/ }
     .lk-profile-edit__address .c-form__item input {
@@ -8700,7 +8735,12 @@ test popup
       -ms-flex-item-align: center;
           align-self: center;
       position: relative;
-      bottom: -8px; }
+      bottom: -1.3rem;
+      width: 7rem; }
+    .lk-profile-edit__address-list .lk-profile-edit__copy {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .lk-profile-edit__subscription {
     /*блок с подпиской*/
     background: #fdf7e8 url(../img/bg-header.png) repeat; }
