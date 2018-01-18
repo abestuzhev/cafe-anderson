@@ -2160,16 +2160,17 @@
 <script async src="./js/scripts_all.js"></script>
 
 <script>
-//    $(function(){
-        //datepicker
-//        var $datepicker = document.querySelector('.datepicker-here');
-//        $datepicker.datepicker({
-//            minDate: new Date()
-//        });
-//        $datepicker.on('focus', function(){
-//            $(this).parents('.datepicker-layout').addClass('active-datepicker');
-//        });
-//    });
+    $(function(){
+        var $datepicker = $('.datepicker-here');
+        console.log();
+        $datepicker.datepicker({
+            minDate: new Date()
+
+        });
+        $datepicker.on('focus', function(){
+            $(this).parents('.datepicker-layout').addClass('active-datepicker');
+        });
+    });
 </script>
 </body>
 </html>

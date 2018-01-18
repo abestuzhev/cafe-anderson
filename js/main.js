@@ -32,7 +32,32 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-    
+    function a(){
+        function b(){
+            var i = 2+2;
+            return i;
+        }
+        var b1 = b();
+        console.log(b1);
+    }
+
+    function c(){
+        // var g = b();
+        // var j = g + 2;
+        // return g+j;
+
+        function b(){
+            var i = 2+2;
+            return i;
+        }
+        var b1 = b();
+        console.log(b1);
+    }
+
+
+    a();
+    c();
+
 
 
     //отписаться от подписки в личном кабинете
@@ -587,6 +612,7 @@ $(document).ready(function ($) {
     showPopup(".popup-forgot-password", '.popup__recovery-password');
     showPopup(".c-card-catalog__img", '.popup-product');
     showPopup(".c-card-catalog__title", '.popup-product');
+    showPopup(".cake-card__hover", '.popup-cake-order');
 
 
 

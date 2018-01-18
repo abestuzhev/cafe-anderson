@@ -1200,6 +1200,184 @@
 
 <!----------------------------------------------START popup-->
 
+<!--карточка торта-->
+<div class="mfp-wrap popup-cake-order is-visible" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <h3 class="popup-title">Написать нам <span class="popup-close"></span></h3>
+                <div class="popup-body">
+                    <form action="#" class="popup-form cake-order">
+                        <div class="cake-order__grid c-grid c-grid-between">
+                            <div class="c-col-6">
+                                <div class="cake-order__img"><img src="./img/cake-order-1.jpg" alt=""></div>
+                            </div>
+                            <div class="c-col-6">
+                                <div class="popup-form__item">
+                                    <label class="c-label">Выберем начинку по вкусу:</label>
+                                    <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                        <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                        <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                        <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                    </select>
+                                </div>
+                                <div class="popup-form__item">
+                                    <label class="c-label">А какого размера?</label>
+                                    <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                        <option value="20">Размер M — Диаметр 20 см</option>
+                                        <option value="30">Размер M — Диаметр 30 см</option>
+                                        <option value="40">Размер M — Диаметр 40 см</option>
+                                    </select>
+                                </div>
+                                <div class="popup-form__item">
+                                    <p>Стоимость вашего торта:</p>
+                                </div>
+                                <div class="popup-form__item">
+                                    <div class="datepicker-layout">
+                                        <input type='text' class="c-input datepicker-here form-control" placeholder="Дата доставки"/>
+                                    </div>
+                                </div>
+                                <div class="popup-form__item">
+                                    <div class="c-form__attention">Обращаем ваше внимание, что доставка торта возможна не раньше чем, за полных три дня. Торты одного дня возможно доставить через полный рабочий день.</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="c-grid c-grid-between">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="write-to-us__name">Представтесь пожалуйста</label>
+                                <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
+                                       id="write-to-us__name">
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="write-to-us__email">Как вам позвонить?<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="+7(___)___-__-__" name="write-to-us__email" id="write-to-us__email" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="write-to-us__email">Куда Вам написать?<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
+                            </div>
+                        </div>
+                        <div class="order-delivery">
+                            <div class="order-tabs">
+                                <div class="order-tabs__nav">
+                                    <ul class="tabs-menu" id="">
+                                        <li class="order-tabs__item current"><a href="#order-delivery-cake">Доставка</a></li>
+                                        <li class="order-tabs__item"><a href="#order-pickup-cake">Самовывоз</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab">
+                                    <div id="order-delivery-cake" class="tab-content">
+                                        <div class="order-delivery__grid">
+
+                                            <div class="order-delivery__col">
+                                                <ul class="order-delivery-address__list">
+                                                    <li class="order-delivery-address__item">
+                                                        <span class="order-delivery-address__point">-АндерСоны рядом</span>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address" id="order-delivery-cake__address-default" checked>
+                                                        <label class="order-radio" for="order-delivery-cake__address-default">г. Москва, ул. Улица, д. 17, дом 27 (адрес по умолчанию)</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address" id="order-delivery-cake__address-custom">
+                                                        <label class="order-radio order-radio--top" for="order-delivery-cake__address-custom">
+                                                            <ul class="order-delivery-custom__list">
+                                                                <li class="order-delivery-custom__item">
+                                                                    <input type="text" name="order-cake-delivery-custom__city" class="c-input" placeholder="Введите Ваш город:">
+                                                                </li>
+                                                                <ul class="order-delivery-custom__grid">
+                                                                    <li class="order-delivery-custom__item">
+                                                                        <input type="text" name="order-cake-delivery-custom__street" class="c-input" placeholder="Улица:">
+                                                                    </li>
+                                                                    <li class="order-delivery-custom__item">
+                                                                        <input type="text" name="order-cake-delivery-custom__house" class="c-input" placeholder="Дом:">
+                                                                    </li>
+                                                                </ul>
+
+                                                                <li class="order-delivery-custom__item">
+                                                                    <textarea class="c-input" name="order-cake-delivery-custom__note" id="order-delivery-cake-custom__note" rows="4"></textarea>
+                                                                </li>
+                                                            </ul>
+
+                                                        </label>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="order-pickup-cake" class="tab-content">
+                                        <div class="order-delivery__grid">
+                                            <div class="order-delivery__col">
+                                                <div class="order-delivery__map" id="order-cake-pickup__map"></div>
+                                            </div>
+                                            <div class="order-delivery__col">
+                                                <div class="order-delivery-search">
+                                                    <div class="order-delivery-search__item">
+                                                        <input type="text" id="search_cafe_in_order-cake" name="search_cafe_in_order" class="c-search-page__input" placeholder="искать" autocomplete="off">
+                                                        <button>Поиск</button>
+
+                                                    </div>
+                                                    <div class="order-delivery-search__item">
+                                                        <a href="#" class="order-delivery-search__clear">сбросить поиск <i class=""></i></a>
+                                                    </div>
+                                                </div>
+                                                <ul class="order-delivery-address__list">
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-1" checked>
+                                                        <label class="order-radio" for="order-delivery-cake__address-1">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-2">
+                                                        <label class="order-radio" for="order-delivery-cake__address-2">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-3">
+                                                        <label class="order-radio" for="order-delivery-cake__address-3">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-4">
+                                                        <label class="order-radio" for="order-delivery-cake__address-4">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-5">
+                                                        <label class="order-radio" for="order-delivery-cake__address-5">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-6">
+                                                        <label class="order-radio" for="order-delivery-cake__address-6">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-7">
+                                                        <label class="order-radio" for="order-delivery-cake__address-7">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                    </li>
+                                                    <li class="order-delivery-address__item">
+                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                        <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                    </li>
+                                                </ul>
+                                                <a href="#" class="order-delivery-address__all">показать все</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="l-button l-button__left">
+                            <button class="c-button c-button__default">Отправить</button>
+                        </div>
+
+                    </form>
+                </div><!--popup-body-->
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--авторизация-->
 <div class="mfp-wrap popup-authorization" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
@@ -1934,7 +2112,7 @@
 </div>
 
 
-<!--<script src="./bower_components/jquery/dist/jquery.js"></script>-->
+<script src="./bower_components/jquery/dist/jquery.js"></script>
 
 <!--<script src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
@@ -1954,5 +2132,18 @@
 <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
 <!--<script src="./js/custom-map.js"></script>-->
 <script async src="./js/scripts_all.js"></script>
+
+<script>
+//    $(function(){
+//        var $datepicker = document.querySelector('.datepicker-here');
+//        $datepicker.datepicker({
+//            minDate: new Date()
+//
+//        });
+//        $datepicker.on('focus', function(){
+//            $(this).parents('.datepicker-layout').addClass('active-datepicker');
+//        });
+//    });
+</script>
 </body>
 </html>
