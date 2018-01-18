@@ -35,8 +35,8 @@ $(document).ready(function ($) {
     var $datepicker = $('.datepicker-here');
     console.log();
     $datepicker.datepicker({
-        minDate: new Date(),
-        
+        minDate: new Date()
+
     });
     $datepicker.on('focus', function(){
         $(this).parents('.datepicker-layout').addClass('active-datepicker');
