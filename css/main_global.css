@@ -1042,7 +1042,7 @@ p {
 .c-title__h2 {
   font-family: "PT Serif Caption";
   font-size: 2rem;
-  line-height: 1;
+  line-height: 1.2;
   color: #9b806f;
   margin: 0;
   font-weight: 400;
@@ -8760,6 +8760,155 @@ test popup
     left: .9rem; }
 
 /*Торты (cake)----------------------------------------------------*/
+.cake-card {
+  position: relative;
+  height: 25rem;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  -webkit-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  -webkit-box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.2); }
+  .cake-card-stuffing {
+    width: 100%;
+    height: 39rem;
+    border-radius: .6rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out; }
+    .cake-card-stuffing__header {
+      padding: 2rem 3rem;
+      font-family: "PT Serif Caption";
+      background: white;
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(27%, white), color-stop(100%, rgba(255, 255, 255, 0.05)));
+      background: -o-linear-gradient(top, white 0%, white 27%, rgba(255, 255, 255, 0.05) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(27%, white), to(rgba(255, 255, 255, 0.05)));
+      background: linear-gradient(to bottom, white 0%, white 27%, rgba(255, 255, 255, 0.05) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
+    .cake-card-stuffing__title {
+      font-size: 1.7rem;
+      margin-bottom: .6rem; }
+    .cake-card-stuffing__info {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #515151;
+      margin-bottom: 3rem; }
+  .cake-card__title {
+    font-size: 1.9rem;
+    color: #553023;
+    font-family: "PT Serif Caption"; }
+  .cake-card__price {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+    font-family: "BebasNeue";
+    color: #553023;
+    font-size: 4rem;
+    line-height: 1;
+    padding: .4rem .8rem .4rem 2rem;
+    background-color: #fff;
+    border-radius: 0 .6rem .6rem 0; }
+  .cake-card__hover {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    .cake-card__hover::after {
+      content: '';
+      border: none; }
+    .cake-card__hover span {
+      font-family: "BebasNeue";
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color: #ffffff;
+      font-size: 3.3rem;
+      text-transform: uppercase;
+      -webkit-transform: scale(0.8);
+          -ms-transform: scale(0.8);
+              transform: scale(0.8);
+      -webkit-transition: all .1s ease-out;
+      -o-transition: all .1s ease-out;
+      transition: all .1s ease-out;
+      text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75); }
+  .cake-card:hover {
+    -webkit-box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.2); }
+  .cake-card:hover .cake-card__hover {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    .cake-card:hover .cake-card__hover span {
+      -webkit-transition: all .1s ease-out;
+      -o-transition: all .1s ease-out;
+      transition: all .1s ease-out;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1); }
+
+.cake__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: -1.4rem;
+  margin-right: -1.4rem; }
+
+.cake__col {
+  width: 20%;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-bottom: 2.8rem; }
+
+.cake-item {
+  margin-bottom: 2.5rem; }
+
+.cake-block__text {
+  padding: 2rem 1.8rem;
+  background-color: #fff;
+  border-radius: .6rem;
+  margin-bottom: 3rem; }
+
 .cake-sale {
   position: relative; }
   .cake-sale img {
@@ -8769,11 +8918,126 @@ test popup
     max-width: 38rem;
     position: absolute;
     right: 3rem;
-    top: 50%;
     top: 10%;
     bottom: 10%;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.8); }
 
+.cake-order__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.cake-order__col {
+  width: 20%;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem; }
+
+.cake-order .cake-card__title {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
+  width: 100%; }
+
+.cake-stuffing__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -1.4rem;
+  margin-left: -1.4rem; }
+
+.cake-stuffing__item {
+  padding: 0 1.4rem;
+  margin-bottom: 2.8rem;
+  width: 25%; }
+
+.cake-toy-one-day__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -1.4rem;
+  margin-right: -1.4rem; }
+
+.cake-toy-one-day__col {
+  width: 20%;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem; }
+
 .cake .c-title__h2 {
   margin-bottom: 2rem; }
+
+@media screen and (max-width: 1120px) {
+  .cake__col {
+    width: 25%; } }
+
+@media screen and (max-width: 930px) {
+  .cake-sale-description {
+    position: static;
+    max-width: 100%; }
+  .cake__col {
+    width: 33.3333%; } }
+
+@media screen and (max-width: 700px) {
+  .cake__list {
+    margin-left: -.5rem;
+    margin-right: -.5rem; }
+  .cake__col {
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem; } }
+
+@media screen and (max-width: 600px) {
+  .cake {
+    margin-left: -2.2rem;
+    margin-right: -2.2rem;
+    padding: 2.2rem 1.4rem; }
+  .cake-sale img {
+    display: block;
+    margin-left: -2.2rem;
+    margin-right: -2.2rem; }
+  .cake-sale-description {
+    background: transparent;
+    padding: 1rem 0 1rem; }
+  .cake .c-title__h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem; }
+  .cake-block__text,
+  .cake .c-ol-list {
+    font-size: 1.4rem; } }
+
+@media screen and (max-width: 380px) {
+  .cake__col {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; } }
