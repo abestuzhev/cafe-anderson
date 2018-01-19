@@ -32,33 +32,6 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-    function a(){
-        function b(){
-            var i = 2+2;
-            return i;
-        }
-        var b1 = b();
-        console.log(b1);
-    }
-
-    function c(){
-        // var g = b();
-        // var j = g + 2;
-        // return g+j;
-
-        function b(){
-            var i = 2+2;
-            return i;
-        }
-        var b1 = b();
-        console.log(b1);
-    }
-
-
-    a();
-    c();
-
-
 
     //отписаться от подписки в личном кабинете
     $('#lk-profile-subscription_unsubscribe').on('click', function(){

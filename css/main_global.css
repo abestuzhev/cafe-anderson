@@ -8770,6 +8770,14 @@ test popup
 .popup-cake-order .popup-form__item {
   margin-bottom: 1.2rem; }
 
+.popup-cake-order .datepicker-layout::after {
+  content: '';
+  position: absolute;
+  right: 1.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
+
 .cake-card {
   position: relative;
   height: 25rem;
@@ -8920,7 +8928,9 @@ test popup
   margin-bottom: 3rem; }
 
 .cake-sale {
-  position: relative; }
+  position: relative;
+  max-height: 58rem;
+  overflow: hidden; }
   .cake-sale img {
     width: 100%;
     height: auto; }

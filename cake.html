@@ -1201,7 +1201,7 @@
 <!----------------------------------------------START popup-->
 
 <!--карточка торта-->
-<div class="mfp-wrap popup-cake-order" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+<div class="mfp-wrap popup-cake-order is-visible" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
@@ -1236,9 +1236,9 @@
                                     </div>
                                 </div>
                                 <div class="popup-form__item">
+                                    <label class="c-label">Когда вам нужен торт?</label>
                                     <div class="datepicker-layout">
-                                        <label class="c-label">Когда вам нужен торт?</label>
-                                        <input type='text' class="c-input datepicker-here form-control" id="" placeholder="Дата доставки"/>
+                                        <input type='text' class="c-input datepicker-here form-control" id="cake-order-date" placeholder="Дата доставки"/>
                                     </div>
                                 </div>
                                 <div class="popup-form__item">
@@ -1250,17 +1250,17 @@
 
                         <div class="c-grid c-grid-between">
                             <div class="popup-form__item">
-                                <label class="c-label" for="write-to-us__name">Представтесь пожалуйста</label>
+                                <label class="c-label" for="cake-order__name">Представтесь пожалуйста</label>
                                 <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
-                                       id="write-to-us__name">
+                                       id="cake-order__name">
                             </div>
                             <div class="popup-form__item">
-                                <label class="c-label" for="write-to-us__email">Как вам позвонить?<span class="c-obligatory-field">*</span></label>
-                                <input class="c-input" type="text" placeholder="+7(___)___-__-__" name="write-to-us__email" id="write-to-us__email" required>
+                                <label class="c-label" for="cake-order__phone">Как вам позвонить?<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input js-input--tel" type="text" placeholder="+7(___)___-__-__" name="cake-order__phone" id="cake-order__phone" required>
                             </div>
                             <div class="popup-form__item">
-                                <label class="c-label" for="write-to-us__email">Куда Вам написать?<span class="c-obligatory-field">*</span></label>
-                                <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
+                                <label class="c-label" for="cake-order__email">Куда Вам написать?<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="укажите email" name="cake-order__email" id="cake-order__email" required>
                             </div>
                         </div>
 
@@ -2153,16 +2153,15 @@
 <script async src="./js/scripts_all.js"></script>
 
 <script>
-//    $(function(){
-//        var $datepicker = document.querySelector('.datepicker-here');
-//        $datepicker.datepicker({
-//            minDate: new Date()
-//
-//        });
-//        $datepicker.on('focus', function(){
-//            $(this).parents('.datepicker-layout').addClass('active-datepicker');
-//        });
-//    });
+    $(function(){
+        var $datepicker = $('.datepicker-here');
+        $datepicker.datepicker({
+            minDate: new Date()
+        });
+        $datepicker.on('focus', function(){
+            $(this).parents('.datepicker-layout').addClass('active-datepicker');
+        });
+    });
 </script>
 </body>
 </html>
