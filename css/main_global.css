@@ -5302,10 +5302,6 @@ main {
       content: '';
       border: none; }
 
-.popup-cake-order .popup {
-  max-width: 75rem;
-  width: 75rem; }
-
 /*----------------------------------------------*/
 #tooltip {
   text-align: center;
@@ -7826,7 +7822,7 @@ test popup
     .order-delivery-custom__item {
       margin-bottom: 1rem; }
       .order-delivery-custom__item:last-child {
-        margin-bottom: 0; }
+        margin-right: 0; }
     .order-delivery-search {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -8764,6 +8760,16 @@ test popup
     left: .9rem; }
 
 /*Торты (cake)----------------------------------------------------*/
+.popup-cake-order .popup {
+  max-width: 75rem;
+  width: 75rem; }
+
+.popup-cake-order .popup-body {
+  padding: 3rem 4rem 0; }
+
+.popup-cake-order .popup-form__item {
+  margin-bottom: 1.2rem; }
+
 .cake-card {
   position: relative;
   height: 25rem;
@@ -8953,6 +8959,15 @@ test popup
   left: 2rem;
   width: 100%; }
 
+.cake-order .order-tabs {
+  margin: 0; }
+
+.cake-order .order-tabs__nav {
+  border-bottom: 5px solid #7cbd41; }
+
+.cake-order .tab-content {
+  padding: 2rem 4rem 0; }
+
 .cake-stuffing__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9023,12 +9038,45 @@ test popup
 .cake-order .c-col-6 {
   padding: 0 1.4rem; }
 
+.cake-order .order-delivery {
+  margin: 0; }
+
 .cake-order__img img {
   width: 100%;
   height: auto; }
 
 .cake-order__grid {
-  margin-bottom: 3rem; }
+  margin-bottom: 1rem; }
+
+.cake-order-final {
+  padding: 1rem 4rem 2rem; }
+  .cake-order-final__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .cake-order-final__total {
+    vertical-align: middle;
+    font-size: 1.8rem; }
+    .cake-order-final__total span {
+      vertical-align: middle;
+      font-family: "BebasNeue";
+      font-size: 3.5rem;
+      color: #7cbd41; }
+  .cake-order-final .popup-form__item,
+  .cake-order-final .c-personal-data {
+    margin-bottom: 0;
+    width: 100%;
+    margin-bottom: .2rem; }
 
 @media screen and (max-width: 1210px) {
   .cake-stuffing__item {

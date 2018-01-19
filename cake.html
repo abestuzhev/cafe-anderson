@@ -1206,8 +1206,9 @@
         <div class="mfp-content">
             <div class="popup">
                 <h3 class="popup-title">Написать нам <span class="popup-close"></span></h3>
+                <form action="#" class="popup-form cake-order">
                 <div class="popup-body">
-                    <form action="#" class="popup-form cake-order">
+
                         <div class="cake-order__grid c-grid c-grid-between">
                             <div class="c-col-6">
                                 <div class="cake-order__img"><img src="./img/cake-order-1.jpg" alt=""></div>
@@ -1230,11 +1231,14 @@
                                     </select>
                                 </div>
                                 <div class="popup-form__item">
-                                    <p>Стоимость вашего торта:</p>
+                                    <div class="cake-order-final__total">
+                                        Стоимость торта: <span>2500.-</span>
+                                    </div>
                                 </div>
                                 <div class="popup-form__item">
                                     <div class="datepicker-layout">
-                                        <input type='text' class="c-input datepicker-here form-control" placeholder="Дата доставки"/>
+                                        <label class="c-label">Когда вам нужен торт?</label>
+                                        <input type='text' class="c-input datepicker-here form-control" id="" placeholder="Дата доставки"/>
                                     </div>
                                 </div>
                                 <div class="popup-form__item">
@@ -1259,6 +1263,11 @@
                                 <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
                             </div>
                         </div>
+
+
+
+                </div><!--popup-body-->
+                    <div class="popup-footer">
                         <div class="order-delivery">
                             <div class="order-tabs">
                                 <div class="order-tabs__nav">
@@ -1269,44 +1278,31 @@
                                 </div>
                                 <div class="tab">
                                     <div id="order-delivery-cake" class="tab-content">
-                                        <div class="order-delivery__grid">
+                                        <ul class="order-delivery-custom__list">
 
-                                            <div class="order-delivery__col">
-                                                <ul class="order-delivery-address__list">
-                                                    <li class="order-delivery-address__item">
-                                                        <span class="order-delivery-address__point">-АндерСоны рядом</span>
-                                                    </li>
-                                                    <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address" id="order-delivery-cake__address-default" checked>
-                                                        <label class="order-radio" for="order-delivery-cake__address-default">г. Москва, ул. Улица, д. 17, дом 27 (адрес по умолчанию)</label>
-                                                    </li>
-                                                    <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address" id="order-delivery-cake__address-custom">
-                                                        <label class="order-radio order-radio--top" for="order-delivery-cake__address-custom">
-                                                            <ul class="order-delivery-custom__list">
-                                                                <li class="order-delivery-custom__item">
-                                                                    <input type="text" name="order-cake-delivery-custom__city" class="c-input" placeholder="Введите Ваш город:">
-                                                                </li>
-                                                                <ul class="order-delivery-custom__grid">
-                                                                    <li class="order-delivery-custom__item">
-                                                                        <input type="text" name="order-cake-delivery-custom__street" class="c-input" placeholder="Улица:">
-                                                                    </li>
-                                                                    <li class="order-delivery-custom__item">
-                                                                        <input type="text" name="order-cake-delivery-custom__house" class="c-input" placeholder="Дом:">
-                                                                    </li>
-                                                                </ul>
+                                            <ul class="order-delivery-custom__grid">
+                                                <li class="order-delivery-custom__item">
+                                                    <div class="c-form__attention">Стоимость доставки в пределах МКАД 2000 рублей, доставка за пределы МКАД (не более 20 км) — 5000 рублей</div>
+                                                </li>
+                                                <li class="order-delivery-custom__item">
+                                                    <input type="text" name="order-cake-delivery-custom__city" class="c-input" placeholder="Город:">
+                                                </li>
+                                            </ul>
+                                            <ul class="order-delivery-custom__grid">
+                                                <li class="order-delivery-custom__item">
+                                                    <input type="text" name="order-cake-delivery-custom__street" class="c-input" placeholder="Улица:">
+                                                </li>
+                                                <li class="order-delivery-custom__item">
+                                                    <input type="text" name="order-cake-delivery-custom__house" class="c-input" placeholder="Дом:">
+                                                </li>
+                                            </ul>
 
-                                                                <li class="order-delivery-custom__item">
-                                                                    <textarea class="c-input" name="order-cake-delivery-custom__note" id="order-delivery-cake-custom__note" rows="4"></textarea>
-                                                                </li>
-                                                            </ul>
+                                            <li class="order-delivery-custom__item">
+                                                <textarea class="c-input" name="order-cake-delivery-custom__note" id="order-delivery-cake-custom__note" rows="3"></textarea>
+                                            </li>
+                                        </ul>
 
-                                                        </label>
 
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div id="order-pickup-cake" class="tab-content">
                                         <div class="order-delivery__grid">
@@ -1367,12 +1363,36 @@
 
                         </div>
 
-                        <div class="l-button l-button__left">
-                            <button class="c-button c-button__default">Отправить</button>
+
+                        <div class="cake-order-final">
+
+                            <div class="popup-form__item">
+                                <div class="c-personal-data">
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="cake-order__regulations" id="cake-order__regulations" checked>
+                                        <label class="c-checkbox" for="cake-order__regulations">Я ознакомлен с <a href="#">правилами
+                                            обработки</a> моих персональных данных.</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cake-order-final__list">
+                                <div class="cake-order-final__left">
+                                    <div class="cake-order-final__total">
+                                        Итого: торт <span>2500.-</span> + доставка <span>2000.-</span>
+                                    </div>
+                                </div>
+                                <div class="cake-order-final__right">
+                                    <div class="l-button l-button__left">
+                                        <button class="c-button c-button__default">Оформить и оплатить</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-form__attention">Самовывоз из кафе Москвы и МО бесплатный. Доставка до двери является платной и осуществляется на расстояние не дальше 20 км от МКАД.</div>
                         </div>
 
-                    </form>
-                </div><!--popup-body-->
+                    </div>
+                </form>
             </div>
         </div>
     </div>
