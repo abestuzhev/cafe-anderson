@@ -1201,7 +1201,7 @@
 <!----------------------------------------------START popup-->
 
 <!--карточка торта-->
-<div class="mfp-wrap popup-cake-order is-visible" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+<div class="mfp-wrap popup-cake-order" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
@@ -1272,38 +1272,11 @@
                             <div class="order-tabs">
                                 <div class="order-tabs__nav">
                                     <ul class="tabs-menu" id="">
-                                        <li class="order-tabs__item current"><a href="#order-delivery-cake">Доставка</a></li>
-                                        <li class="order-tabs__item"><a href="#order-pickup-cake">Самовывоз</a></li>
+                                        <li class="order-tabs__item current"><a href="#order-pickup-cake">Самовывоз</a></li>
+                                        <li class="order-tabs__item"><a href="#order-delivery-cake">Доставка</a></li>
                                     </ul>
                                 </div>
                                 <div class="tab">
-                                    <div id="order-delivery-cake" class="tab-content">
-                                        <ul class="order-delivery-custom__list">
-
-                                            <ul class="order-delivery-custom__grid">
-                                                <li class="order-delivery-custom__item">
-                                                    <div class="c-form__attention">Стоимость доставки в пределах МКАД 2000 рублей, доставка за пределы МКАД (не более 20 км) — 5000 рублей</div>
-                                                </li>
-                                                <li class="order-delivery-custom__item">
-                                                    <input type="text" name="order-cake-delivery-custom__city" class="c-input" placeholder="Город:">
-                                                </li>
-                                            </ul>
-                                            <ul class="order-delivery-custom__grid">
-                                                <li class="order-delivery-custom__item">
-                                                    <input type="text" name="order-cake-delivery-custom__street" class="c-input" placeholder="Улица:">
-                                                </li>
-                                                <li class="order-delivery-custom__item">
-                                                    <input type="text" name="order-cake-delivery-custom__house" class="c-input" placeholder="Дом:">
-                                                </li>
-                                            </ul>
-
-                                            <li class="order-delivery-custom__item">
-                                                <textarea class="c-input" name="order-cake-delivery-custom__note" id="order-delivery-cake-custom__note" rows="3"></textarea>
-                                            </li>
-                                        </ul>
-
-
-                                    </div>
                                     <div id="order-pickup-cake" class="tab-content">
                                         <div class="order-delivery__grid">
                                             <div class="order-delivery__col">
@@ -1358,6 +1331,32 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div id="order-delivery-cake" class="tab-content">
+                                        <ul class="order-delivery-custom__list">
+
+                                            <ul class="order-delivery-custom__grid">
+                                                <li class="order-delivery-custom__item">
+                                                    <div class="c-form__attention">Стоимость доставки в пределах МКАД 2000 рублей, доставка за пределы МКАД (не более 20 км) — 5000 рублей</div>
+                                                </li>
+                                                <li class="order-delivery-custom__item">
+                                                    <input type="text" name="order-cake-delivery-custom__city" class="c-input" placeholder="Город:">
+                                                </li>
+                                            </ul>
+                                            <ul class="order-delivery-custom__grid">
+                                                <li class="order-delivery-custom__item">
+                                                    <input type="text" name="order-cake-delivery-custom__street" class="c-input" placeholder="Улица:">
+                                                </li>
+                                                <li class="order-delivery-custom__item">
+                                                    <input type="text" name="order-cake-delivery-custom__house" class="c-input" placeholder="Дом:">
+                                                </li>
+                                            </ul>
+
+                                            <li class="order-delivery-custom__item">
+                                                <textarea class="c-input" name="order-cake-delivery-custom__note" id="order-delivery-cake-custom__note" rows="3"></textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+
                                 </div>
                             </div>
 
