@@ -55,7 +55,7 @@ gulp.task('js', function(){
         './bower_components/sumoselect/jquery.sumoselect.js',
         './bower_components/fotorama/fotorama.js',
         './js/tooltip.js',
-        './js/datepicker/datepicker.min.js',
+        // './js/datepicker/datepicker.min.js',
         // './js/instafeed.min.js',
         // './js/instagram-script.js',
         // './js/mixitup.min.js',

@@ -822,6 +822,9 @@
                 </div>
                 <div class="cake-item cake-order">
                     <h2 class="c-title__h2">Тортики на заказ</h2>
+                    <div class="datepicker-layout">
+                        <input type='text' class="c-input" id="minMaxExample" placeholder="Дата доставки"/>
+                    </div>
                     <ul class="cake__list">
                         <li class="cake__col">
                             <div class="cake-card" style="background-image:url('./img/cake-order-1.jpg')">
@@ -1255,9 +1258,9 @@
                                 </div>
                                 <div class="popup-form__item">
                                     <label class="c-label">Когда вам нужен торт?<span class="c-obligatory-field">*</span></label>
-                                    <div class="datepicker-layout">
-                                        <input type='text' class="c-input datepicker-here form-control" id="cake-order-date" placeholder="Дата доставки"/>
-                                    </div>
+                                    <!--<div class="datepicker-layout">-->
+                                        <!--<input type='text' class="c-input datepicker-here form-control" id="cake-order-date" placeholder="Дата доставки"/>-->
+                                    <!--</div>-->
                                 </div>
                                 <div class="popup-form__item">
                                     <div class="c-form__attention">Обращаем ваше внимание, что доставка торта возможна не раньше чем, за полных три дня. Торты одного дня возможно доставить через полный рабочий день.</div>
@@ -2151,7 +2154,7 @@
 </div>
 
 
-<!--<script src="./bower_components/jquery/dist/jquery.js"></script>-->
+<script src="./bower_components/jquery/dist/jquery.js"></script>
 
 <!--<script src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
@@ -2171,17 +2174,13 @@
 <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
 <!--<script src="./js/custom-map.js"></script>-->
 <script async src="./js/scripts_all.js"></script>
+<script src="./js/datepicker/datepicker.min.js"></script>
+<script async src="./js/datepicker-anderson.js"></script>
 
 <script>
-//    $(function(){
-//        var $datepicker = $('#cake-order-date');
-//        $datepicker.datepicker({
-//            minDate: new Date()
-//        });
-//        $datepicker.on('focus', function(){
-//            $(this).parents('.datepicker-layout').addClass('active-datepicker');
-//        });
-//    });
+
+
+
 </script>
 </body>
 </html>
