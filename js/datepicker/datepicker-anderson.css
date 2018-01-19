@@ -26,6 +26,9 @@
     /*transition: all .1s ease;*/
 /*}*/
 
+.datepicker {
+    z-index: 1070;
+}
 
 .datepicker--day-name {
     color: #5b6877;

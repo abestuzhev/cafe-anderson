@@ -217,10 +217,21 @@ function init() {
             searchControlProvider: 'yandex#search'
         });
 
+    var cakePageOrder = new ymaps.Map('cake-order__map', {
+            center: [55.73, 37.75],
+            zoom: 9,
+            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
+            controls: ['zoomControl', 'fullscreenControl']
+        },
+        {
+            searchControlProvider: 'yandex#search'
+        });
+
     var deliveryCollection = new ymaps.GeoObjectCollection(),
         pickupCollection = new ymaps.GeoObjectCollection(),
         deliveryCakeCollection = new ymaps.GeoObjectCollection(),
         pickupCakeCollection = new ymaps.GeoObjectCollection(),
+        cakePageOrderCollection = new ymaps.GeoObjectCollection(),
 
         placemarksOrder = [
             [55.74352990795752,37.56841313754272],
@@ -247,12 +258,14 @@ function init() {
     addPlacemark(pickupCollection);
     addPlacemark(deliveryCakeCollection);
     addPlacemark(pickupCakeCollection);
+    addPlacemark(cakePageOrderCollection);
 
 
     mapDelivery.geoObjects.add(deliveryCollection);
     mapPickup.geoObjects.add(pickupCollection);
     mapDeliveryCake.geoObjects.add(deliveryCakeCollection);
     mapPickupCake.geoObjects.add(pickupCakeCollection);
+    cakePageOrder.geoObjects.add(cakePageOrderCollection);
 }
 
 

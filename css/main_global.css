@@ -1351,6 +1351,14 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     /* Firefox 18- */
     color: #ec3e3e; }
 
+.order-input:checked + .order-radio::after {
+  content: '';
+  border-color: #7cbd41; }
+
+.order-input:checked + .order-radio::before {
+  content: '';
+  background-color: #7cbd41; }
+
 .errortext {
   display: block;
   font-size: 1.4rem;
@@ -8761,8 +8769,8 @@ test popup
 
 /*Торты (cake)----------------------------------------------------*/
 .popup-cake-order .popup {
-  max-width: 75rem;
-  width: 75rem; }
+  max-width: 78rem;
+  width: 78rem; }
 
 .popup-cake-order .popup-body {
   padding: 3rem 4rem 0; }
@@ -8777,6 +8785,10 @@ test popup
   width: 2.2rem;
   height: 2.2rem;
   background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
+
+.popup-cake-order .popup-title {
+  text-align: left;
+  padding: 1.8rem 4rem 1.4rem; }
 
 .cake-card {
   position: relative;
@@ -9045,8 +9057,8 @@ test popup
   margin-right: 0;
   margin-left: 0; }
 
-.cake-order .c-col-6 {
-  padding: 0 1.4rem; }
+.cake-order .c-col-6:nth-child(1) {
+  padding-right: 2.4rem; }
 
 .cake-order .order-delivery {
   margin: 0; }
@@ -9084,9 +9096,11 @@ test popup
       color: #7cbd41; }
   .cake-order-final .popup-form__item,
   .cake-order-final .c-personal-data {
-    margin-bottom: 0;
     width: 100%;
     margin-bottom: .2rem; }
+
+.cake-order-result {
+  display: inline-block; }
 
 @media screen and (max-width: 1210px) {
   .cake-stuffing__item {
@@ -9107,7 +9121,23 @@ test popup
   .cake__col {
     width: 33.3333%; }
   .cake-stuffing__item {
-    width: 50%; } }
+    width: 50%; }
+  .cake-sale {
+    max-height: none; } }
+
+@media screen and (max-width: 835px) {
+  .popup-cake-order {
+    overflow-y: hidden !important; }
+    .popup-cake-order .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100vh;
+      margin: 0;
+      overflow-y: scroll;
+      border-radius: 0; } }
 
 @media screen and (max-width: 700px) {
   .cake__list {
@@ -9117,7 +9147,61 @@ test popup
     width: 50%;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 1.5rem; } }
+    margin-bottom: 1.5rem; }
+  .popup-cake-order .c-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap; }
+  .popup-cake-order .c-col-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 0;
+    max-width: 100%;
+    display: block; }
+  .cake-order__img {
+    overflow: hidden;
+    display: block;
+    margin-bottom: 1rem; }
+  .popup-cake-order .order-delivery__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+  .popup-cake-order .order-delivery__col:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0; }
+  .popup-cake-order .order-delivery__col:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%; }
+  .cake-order-final__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .cake-order-final__right {
+    margin-bottom: 1rem; }
+  .cake-order-final__total {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .cake-order-result {
+    display: block;
+    line-height: 1; }
+  .cake-order .tab-content,
+  .cake-order-final {
+    padding: 2rem; }
+  .cake-order .c-col-6:nth-child(1) {
+    padding-right: 0; } }
 
 @media screen and (max-width: 600px) {
   .cake {
@@ -9141,7 +9225,14 @@ test popup
     width: 100%; }
   .cake-stuffing__list {
     margin-right: -.8rem;
-    margin-left: -.8rem; } }
+    margin-left: -.8rem; }
+  .order-delivery-custom__grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap; }
+  .order-delivery-custom__grid .order-delivery-custom__item:first-child {
+    margin-right: 0; } }
 
 @media screen and (max-width: 380px) {
   .cake__col {

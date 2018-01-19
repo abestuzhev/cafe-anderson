@@ -557,7 +557,20 @@ $(document).ready(function ($) {
         });
     }
 
-    $(document).on('click', '.popup-close', '.js-popup-close', function (e) {
+    $(document).on('click', '.popup-close', function (e) {
+        e.preventDefault();
+        var $html = $('html');
+        $(this).parents('.mfp-wrap').removeClass('is-visible');
+        $('.mfp-bg').removeClass('is-visible');
+        $html.css({
+            'margin-right':'0'
+        }).removeClass('lock-html');
+        $('.header.sticky').css({
+            // 'right':'0'
+        });
+    });
+
+    $(document).on('click', '.js-popup-close', function (e) {
         e.preventDefault();
         var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
@@ -588,6 +601,12 @@ $(document).ready(function ($) {
     showPopup(".cake-card__hover", '.popup-cake-order');
 
 
+
+    $('#cake-order-issue').on('click', function (e) {
+        e.preventDefault();
+        $(this).parents('.popup-cake-order').removeClass('is-visible');
+        $('.popup-cake-order-congratulation').addClass('is-visible');
+    });
 
     $('.popup-forgot-password').on('click', function (e) {
         e.preventDefault();
@@ -688,8 +707,7 @@ $(document).ready(function ($) {
         });
     }
 
-    /*скрываем попапы вне зоны элемента*/
-
+    /*скрываем попапы вне зоны элемента для карточки товара*/
     $(document).mouseup(function (e) { // событие клика по веб-документу
         var div = $('.popup'); // тут указываем ID элемента
         // var div2 = $('.popup-mini');
@@ -705,11 +723,11 @@ $(document).ready(function ($) {
                 // console.log('прошел');
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('.mfp-wrap').removeClass('is-visible');
-                $('.mfp-bg ').removeClass('is-visible');
-                $('html').removeClass('lock-html');
+                div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
+                div2.parents('html').removeClass('lock-html');
             }
         }
-        hideOutZone('.popup', '.popup-mini');
+        hideOutZone('.js-popup-mouseUp', '.popup-mini');
 
     });
 
@@ -753,6 +771,7 @@ $(document).ready(function ($) {
     DisabledFormButton('#popup__request-call','#request-call__regulations','#popup__request-call button');
     DisabledFormButton('#popup__vacancy','#vacancy__regulations','#popup__vacancy button');
     DisabledFormButton('#order-auth-new','#order-auth-new__regulations','#order-auth-new button');
+    DisabledFormButton('#cake-order-form','#cake-order__regulations','#cake-order-form button');
 
 
 

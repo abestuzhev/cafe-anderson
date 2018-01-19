@@ -1199,14 +1199,32 @@
 </footer>
 
 <!----------------------------------------------START popup-->
-
-<!--карточка торта-->
-<div class="mfp-wrap popup-cake-order " tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+<!--Всплывающее окно "Подтверждение заказа торта"-->
+<div class="mfp-wrap popup-cake-order-congratulation" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <h3 class="popup-title">Написать нам <span class="popup-close"></span></h3>
-                <form action="#" class="popup-form cake-order">
+                <h3 class="popup-title">Заказ оформлен <span class="popup-close"></span></h3>
+                <div class="popup-body">
+                    <p>
+                        Ваш заказ сформирован под номером №___, остался последний шаг и кондитеры начнут работу
+                    </p>
+                    <div class="l-button__center">
+                        <a href="#" class="c-button c-button__medium">Перейти к оплате</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--карточка торта-->
+<div class="mfp-wrap popup-cake-order" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <h3 class="popup-title">Заказ торта № 3<span class="popup-close"></span></h3>
+                <form action="#" class="popup-form cake-order" id="cake-order-form">
                 <div class="popup-body">
 
                         <div class="cake-order__grid c-grid c-grid-between">
@@ -1215,7 +1233,7 @@
                             </div>
                             <div class="c-col-6">
                                 <div class="popup-form__item">
-                                    <label class="c-label">Выберем начинку по вкусу:</label>
+                                    <label class="c-label">Выберем начинку по вкусу:<span class="c-obligatory-field">*</span></label>
                                     <select name="order-deliver-cake-time" class="c-select select-delivery">
                                         <option value="9.00-12.00">с 9.00 до 12.00</option>
                                         <option value="12.00-15.00">с 12.00 до 15.00</option>
@@ -1223,7 +1241,7 @@
                                     </select>
                                 </div>
                                 <div class="popup-form__item">
-                                    <label class="c-label">А какого размера?</label>
+                                    <label class="c-label">А какого размера?<span class="c-obligatory-field">*</span></label>
                                     <select name="order-deliver-cake-time" class="c-select select-delivery">
                                         <option value="20">Размер M — Диаметр 20 см</option>
                                         <option value="30">Размер M — Диаметр 30 см</option>
@@ -1236,7 +1254,7 @@
                                     </div>
                                 </div>
                                 <div class="popup-form__item">
-                                    <label class="c-label">Когда вам нужен торт?</label>
+                                    <label class="c-label">Когда вам нужен торт?<span class="c-obligatory-field">*</span></label>
                                     <div class="datepicker-layout">
                                         <input type='text' class="c-input datepicker-here form-control" id="cake-order-date" placeholder="Дата доставки"/>
                                     </div>
@@ -1250,8 +1268,8 @@
 
                         <div class="c-grid c-grid-between">
                             <div class="popup-form__item">
-                                <label class="c-label" for="cake-order__name">Представтесь пожалуйста</label>
-                                <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
+                                <label class="c-label" for="cake-order__name">Представтесь пожалуйста<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="Ваше имя" name="cake-order__name"
                                        id="cake-order__name">
                             </div>
                             <div class="popup-form__item">
@@ -1260,12 +1278,9 @@
                             </div>
                             <div class="popup-form__item">
                                 <label class="c-label" for="cake-order__email">Куда Вам написать?<span class="c-obligatory-field">*</span></label>
-                                <input class="c-input" type="text" placeholder="укажите email" name="cake-order__email" id="cake-order__email" required>
+                                <input class="c-input" type="text" placeholder="Укажите email" name="cake-order__email" id="cake-order__email" required>
                             </div>
                         </div>
-
-
-
                 </div><!--popup-body-->
                     <div class="popup-footer">
                         <div class="order-delivery">
@@ -1280,7 +1295,7 @@
                                     <div id="order-pickup-cake" class="tab-content">
                                         <div class="order-delivery__grid">
                                             <div class="order-delivery__col">
-                                                <div class="order-delivery__map" id="order-cake-pickup__map"></div>
+                                                <div class="order-delivery__map" id="cake-order__map"></div>
                                             </div>
                                             <div class="order-delivery__col">
                                                 <div class="order-delivery-search">
@@ -1295,31 +1310,31 @@
                                                 </div>
                                                 <ul class="order-delivery-address__list">
                                                     <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-1" checked>
+                                                        <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-1" checked>
                                                         <label class="order-radio" for="order-delivery-cake__address-1">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
                                                     </li>
                                                     <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-2">
+                                                        <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-2">
                                                         <label class="order-radio" for="order-delivery-cake__address-2">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
                                                     </li>
                                                     <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-3">
+                                                        <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-3">
                                                         <label class="order-radio" for="order-delivery-cake__address-3">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
                                                     </li>
                                                     <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-4">
+                                                        <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-4">
                                                         <label class="order-radio" for="order-delivery-cake__address-4">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
                                                     </li>
                                                     <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-5">
+                                                        <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-5">
                                                         <label class="order-radio" for="order-delivery-cake__address-5">Андерсон для Мам, ул.Синяя Роза, д. 89</label>
                                                     </li>
                                                     <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-6">
+                                                        <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-6">
                                                         <label class="order-radio" for="order-delivery-cake__address-6">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
                                                     </li>
                                                     <li class="order-delivery-address__item">
-                                                        <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-7">
+                                                        <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-7">
                                                         <label class="order-radio" for="order-delivery-cake__address-7">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
                                                     </li>
                                                     <li class="order-delivery-address__item">
@@ -1377,17 +1392,22 @@
                             <div class="cake-order-final__list">
                                 <div class="cake-order-final__left">
                                     <div class="cake-order-final__total">
-                                        Итого: торт <span>2500.-</span> + доставка <span>2000.-</span>
+                                        Итого: <div class="cake-order-result">торт <span>2500.-</span> + доставка <span>2000.-</span></div>
                                     </div>
                                 </div>
                                 <div class="cake-order-final__right">
                                     <div class="l-button l-button__left">
-                                        <button class="c-button c-button__default">Оформить и оплатить</button>
+                                        <button class="c-button c-button__default" id="cake-order-issue">Оформить и оплатить</button>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="c-form__attention">Самовывоз из кафе Москвы и МО бесплатный. Доставка до двери является платной и осуществляется на расстояние не дальше 20 км от МКАД.</div>
+                        </div>
+
+                        <div class="l-button__center">
+                            <a href="#" class="c-button c-button__default popup-product__btn-back">Наверх <i></i></a>
+                            <a href="#" class="c-button c-button__default popup-product__btn-close js-popup-close">Закрыть <i></i></a>
                         </div>
 
                     </div>
@@ -1778,12 +1798,12 @@
                     <form action="#" class="popup-form" id="popup__write-to-us">
                         <div class="popup-form__item">
                             <label class="c-label" for="write-to-us__name">Ваше имя</label>
-                            <input class="c-input" type="text" placeholder="ваше имя" name="write-to-us__name"
+                            <input class="c-input" type="text" placeholder="Ваше ФИО" name="write-to-us__name"
                                    id="write-to-us__name">
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="write-to-us__email">Email<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="укажите email" name="write-to-us__email" id="write-to-us__email" required>
+                            <input class="c-input" type="text" placeholder="Email:" name="write-to-us__email" id="write-to-us__email" required>
                         </div>
                         <div class="popup-form__item">
                             <label class="c-label" for="write-to-us__message">Ваше сообщение<span
@@ -2131,7 +2151,7 @@
 </div>
 
 
-<script src="./bower_components/jquery/dist/jquery.js"></script>
+<!--<script src="./bower_components/jquery/dist/jquery.js"></script>-->
 
 <!--<script src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
@@ -2153,15 +2173,15 @@
 <script async src="./js/scripts_all.js"></script>
 
 <script>
-    $(function(){
-        var $datepicker = $('.datepicker-here');
-        $datepicker.datepicker({
-            minDate: new Date()
-        });
-        $datepicker.on('focus', function(){
-            $(this).parents('.datepicker-layout').addClass('active-datepicker');
-        });
-    });
+//    $(function(){
+//        var $datepicker = $('#cake-order-date');
+//        $datepicker.datepicker({
+//            minDate: new Date()
+//        });
+//        $datepicker.on('focus', function(){
+//            $(this).parents('.datepicker-layout').addClass('active-datepicker');
+//        });
+//    });
 </script>
 </body>
 </html>
