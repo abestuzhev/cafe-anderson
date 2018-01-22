@@ -8074,6 +8074,9 @@ test popup
 #order-pickup-cake .order-delivery-address__item:nth-child(6) {
   display: block; }
 
+.js-order-delivery-address__show {
+  display: block !important; }
+
 /*Оформление заказа. Финальная страница (ordering-finish)----------------------------------------------------*/
 .order-finish__header {
   padding-bottom: 3.2rem;

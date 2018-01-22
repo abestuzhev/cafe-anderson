@@ -179,11 +179,16 @@ $(document).ready(function ($) {
     });
 
     //показать все адреса кафе в заказе
-    $('#order-pickup .order-delivery-address__all').on('click', function(e){
+    $('.order-delivery-address__all').on('click', function(e){
         e.preventDefault();
-        $(this).siblings('.order-delivery-address__list').find('.order-delivery-address__item').css({
-            'display':'block'
-        });
+        $(this).siblings('.order-delivery-address__list').find('.order-delivery-address__item').toggleClass('js-order-delivery-address__show');
+        var textBtn = $(this).html();
+        if(textBtn == "показать все"){
+            $(this).html("скрыть");
+        }else{
+            $(this).html("показать все");
+        }
+
     });
 
     //страница Оформление заказа. При фокусе на инпут с адресом, делаем активный radio button

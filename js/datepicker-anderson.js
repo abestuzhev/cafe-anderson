@@ -11,9 +11,9 @@ $(document).ready(function () {
     $today.setDate(+$dayPeriod);
     var disabledDays = [0, 6];
 
-    console.log('myd: ' + $todayNow);
-    console.log('mydDay: ' + $dayPeriod);
-    console.log('res: ' + $today);
+    // console.log('myd: ' + $todayNow);
+    // console.log('mydDay: ' + $dayPeriod);
+    // console.log('res: ' + $today);
 
     $('#minMaxExample').datepicker({
         minDate: $todayNow,

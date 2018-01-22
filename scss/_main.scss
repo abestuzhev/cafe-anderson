@@ -5116,6 +5116,7 @@ test popup
     
 }
 
+
 #order-pickup .order-delivery-address__item,
 #order-pickup-cake .order-delivery-address__item {
     margin-bottom: 1rem;
@@ -5132,6 +5133,10 @@ test popup
     &:nth-child(6) {
         display: block;
     }
+}
+
+.js-order-delivery-address__show {
+    display: block !important;
 }
 
 /*Оформление заказа. Финальная страница (ordering-finish)----------------------------------------------------*/
