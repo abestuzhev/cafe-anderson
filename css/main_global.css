@@ -8836,7 +8836,7 @@ test popup
       color: #515151;
       margin-bottom: 3rem; }
   .cake-card__title {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     color: #553023;
     font-family: "PT Serif Caption"; }
   .cake-card__price {
@@ -8982,7 +8982,9 @@ test popup
   position: absolute;
   bottom: 1.5rem;
   left: 2rem;
-  width: 100%; }
+  padding: .5rem;
+  border-radius: .6rem;
+  background-color: #ffffffe8; }
 
 .cake-order .order-tabs {
   margin: 0; }

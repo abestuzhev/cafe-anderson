@@ -179,7 +179,7 @@ $(document).ready(function ($) {
     });
 
     //показать все адреса кафе в заказе
-    $('.order-delivery-address__all').on('click', function(e){
+    $(document).on('click', '.order-delivery-address__all', function(e){
         e.preventDefault();
         $(this).siblings('.order-delivery-address__list').find('.order-delivery-address__item').toggleClass('js-order-delivery-address__show');
         var textBtn = $(this).html();

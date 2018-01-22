@@ -6130,7 +6130,7 @@ test popup
         }
         
         &__title {
-            font-size: 1.9rem;
+            font-size: 1.6rem;
             color: #553023;
             font-family: $font_serif;
         }
@@ -6272,7 +6272,10 @@ test popup
             position: absolute;
             bottom: 1.5rem;
             left: 2rem;
-            width: 100%;
+            //width: 100%;
+            padding: .5rem;
+            border-radius: .6rem;
+            background-color: #ffffffe8;
         }
     
         .order-tabs {
