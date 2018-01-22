@@ -1035,7 +1035,7 @@ $(document).ready(function ($) {
 
 
     /*простые табы*/
-    $(".tabs-menu a").click(function(event) {
+    $(document).on('click', '.tabs-menu a', function(event) {
         event.preventDefault();
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");
