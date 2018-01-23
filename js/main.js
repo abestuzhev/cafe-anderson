@@ -35,7 +35,7 @@ $(document).ready(function ($) {
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа
-    $(document).on('keyup change', '#search_cafe_in_order-cake', function(){
+    $(document).on('keyup change', '.c-search-page__input', function(){
         checkAll();
     });
 
@@ -57,7 +57,7 @@ $(document).ready(function ($) {
 
 
     //отписаться от подписки в личном кабинете
-    $('#lk-profile-subscription_unsubscribe').on('click', function(){
+    $(document).on('click', '#lk-profile-subscription_unsubscribe', function(){
 
     });
 
