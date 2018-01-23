@@ -847,6 +847,10 @@ a.c-button {
     &-tree2018 {
         margin-top: -120px;
     }
+    
+    &-graduation {
+        margin-top: -120px;
+    }
 
     &__item {
         position: fixed;
@@ -922,14 +926,38 @@ a.c-button {
         height: 31px;
     }
 
-    &-positive .c-reviews__btn {
-        background-color: #92c647;
-        background-color: rgba(129, 199, 29, 0.87);
+    &-positive {
+        .c-reviews__btn {
+            background-color: #92c647;
+            background-color: rgba(129, 199, 29, 0.87);
+            padding-left: 4.4rem;
+        }
+        
+        .icon-positive {
+            position: absolute;
+            left: 1.2rem;
+            top: .6rem;
+            width: 2.1rem;
+            height: 3.4rem;
+        }
     }
+    
 
-    &-negative .c-reviews__btn {
-        background-color: #b34d84;
-        background-color: rgba(184, 31, 121, 0.8);
+    &-negative {
+        .c-reviews__btn {
+            background-color: #b34d84;
+            background-color: rgba(184, 31, 121, 0.8);
+    
+            padding-left: 4.4rem;
+        }
+        .icon-negative {
+            position: absolute;
+            left: 1.2rem;
+            top: .6rem;
+            width: 2.1rem;
+            height: 3.4rem;
+        }
+        
     }
     
     &-tree2018 .c-reviews__btn {
@@ -944,6 +972,24 @@ a.c-button {
     
     &-tree2018 .c-reviews__text {
         margin-bottom: 4px;
+    }
+    
+    &-graduation {
+    
+        .icon-tree2018 {
+        
+        }
+        
+        .c-reviews__text {
+            margin-bottom: 4px;
+        }
+    
+        .c-reviews__btn {
+            background-color: #CE3102;
+            background-color: rgba(206, 49, 2, 0.8);;
+            padding: 1.2rem 1.7rem 1.4rem 1.2rem;
+        }
+    
     }
 }
 

@@ -683,6 +683,15 @@ i.icon-chair {
   background: url(../img/icons/icon-pencil-2.svg) 0 0 no-repeat;
   background-size: 2.4rem 1.8rem; }
 
+.icon-graduation {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1rem;
+  width: 3.1em;
+  height: 3.4em;
+  background: url(../img/icons/icon-graduation.svg) 0 0 no-repeat;
+  background-size: cover; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1517,6 +1526,9 @@ a.c-button:hover {
 .c-reviews-tree2018 {
   margin-top: -120px; }
 
+.c-reviews-graduation {
+  margin-top: -120px; }
+
 .c-reviews__item {
   position: fixed;
   z-index: 99;
@@ -1573,11 +1585,27 @@ a.c-button:hover {
 
 .c-reviews-positive .c-reviews__btn {
   background-color: #92c647;
-  background-color: rgba(129, 199, 29, 0.87); }
+  background-color: rgba(129, 199, 29, 0.87);
+  padding-left: 4.4rem; }
+
+.c-reviews-positive .icon-positive {
+  position: absolute;
+  left: 1.2rem;
+  top: .6rem;
+  width: 2.1rem;
+  height: 3.4rem; }
 
 .c-reviews-negative .c-reviews__btn {
   background-color: #b34d84;
-  background-color: rgba(184, 31, 121, 0.8); }
+  background-color: rgba(184, 31, 121, 0.8);
+  padding-left: 4.4rem; }
+
+.c-reviews-negative .icon-negative {
+  position: absolute;
+  left: 1.2rem;
+  top: .6rem;
+  width: 2.1rem;
+  height: 3.4rem; }
 
 .c-reviews-tree2018 .c-reviews__btn {
   background-color: #3fa254;
@@ -1589,6 +1617,14 @@ a.c-button:hover {
 
 .c-reviews-tree2018 .c-reviews__text {
   margin-bottom: 4px; }
+
+.c-reviews-graduation .c-reviews__text {
+  margin-bottom: 4px; }
+
+.c-reviews-graduation .c-reviews__btn {
+  background-color: #CE3102;
+  background-color: rgba(206, 49, 2, 0.8);
+  padding: 1.2rem 1.7rem 1.4rem 1.2rem; }
 
 /*хлебные крошки*/
 .c-breadcrumb {
