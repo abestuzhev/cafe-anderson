@@ -1117,6 +1117,10 @@
     .c-card-product-supplements__item {
         width: 100%;
     }
+
+    #delivery_map {
+        width: 100% !important;
+    }
 }
 
 @media (min-width:730px) {
