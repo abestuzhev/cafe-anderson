@@ -57,8 +57,16 @@ $(document).ready(function ($) {
 
 
     //отписаться от подписки в личном кабинете
-    $(document).on('click', '#lk-profile-subscription_unsubscribe', function(){
+    $(document).on('click', '#lk-profile-subscription_unsubscribe', function(e){
+        e.preventDefault();
+        $('.lk-profile .lk-profile-subscription__box').hide();
+        $('.lk-profile .lk-profile-subscription-del').show();
 
+    });
+    $(document).on('click', '#lk-profile-subscription-del__cancel', function(e){
+        e.preventDefault();
+        $('.lk-profile .lk-profile-subscription-del').hide();
+        $('.lk-profile .lk-profile-subscription__box').show();
     });
 
     //изменнеие пароля в профиле личного кабинета
@@ -634,6 +642,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-catalog__title", '.popup-product');
     showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
+    showPopup("#lk-profile-subscription-del__ok", '.popup-subscription-del');
 
 
 

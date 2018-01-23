@@ -1527,7 +1527,7 @@ a.c-button:hover {
   margin-top: -120px; }
 
 .c-reviews-graduation {
-  margin-top: -100px; }
+  margin-top: -120px; }
 
 .c-reviews__item {
   position: fixed;
@@ -8548,7 +8548,7 @@ test popup
     text-transform: uppercase;
     margin-right: 1rem; }
   .lk-profile__item {
-    padding: 3.1rem 2.8rem 3.1rem 2.8rem;
+    padding: 2.1rem;
     position: relative; }
     .lk-profile__item::after {
       content: '';
@@ -8601,6 +8601,27 @@ test popup
       .lk-profile-subscription__close::after {
         content: '';
         border: none; }
+    .lk-profile-subscription-del {
+      display: none; }
+      .lk-profile-subscription-del__message {
+        padding-left: 9.3rem;
+        position: relative; }
+        .lk-profile-subscription-del__message span {
+          display: inline-block;
+          font-size: 1.4rem;
+          color: #96928a;
+          font-style: italic;
+          margin-bottom: 1rem; }
+        .lk-profile-subscription-del__message .c-button__medium {
+          margin-right: 2rem; }
+        .lk-profile-subscription-del__message::before {
+          content: '';
+          position: absolute;
+          bottom: -2.2rem;
+          left: 0;
+          width: 7.9rem;
+          height: 7.7rem;
+          background: url(../img/outline-cat.png) 0 0 no-repeat; }
   .lk-profile-child__list {
     display: -webkit-box;
     display: -ms-flexbox;

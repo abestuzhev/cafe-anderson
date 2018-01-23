@@ -5665,7 +5665,8 @@ test popup
     }
     
     &__item {
-        padding: 3.1rem 2.8rem 3.1rem 2.8rem;
+        //padding: 3.1rem 2.8rem 3.1rem 2.8rem;
+        padding: 2.1rem;
         position: relative;
         &::after {
             content: '';
@@ -5754,6 +5755,35 @@ test popup
             &::after {
                 content: '';
                 border: none;
+            }
+        }
+        
+        &-del {
+            display: none;
+            &__message {
+                padding-left: 9.3rem;
+                position: relative;
+                span {
+                    display: inline-block;
+                    font-size: 1.4rem;
+                    color: #96928a;
+                    font-style: italic;
+                    margin-bottom: 1rem;
+                }
+                
+                .c-button__medium {
+                    margin-right: 2rem;
+                }
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -2.2rem;
+                    left: 0;
+                    width: 7.9rem;
+                    height: 7.7rem;
+                    background: url(../img/outline-cat.png) 0 0 no-repeat;
+                }
             }
         }
     }
