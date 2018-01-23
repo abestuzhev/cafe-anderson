@@ -194,9 +194,10 @@ $(document).ready(function ($) {
     }
 
     //очистить форму поиска
-    $('.order-delivery-search__clear').on('click', function(e){
+    $(document).on('click', '.order-delivery-search__clear', function(e){
         e.preventDefault();
         $(this).parents('.order-delivery-search__item').siblings().find('input').val('');
+        $(this).trigger('.order-delivery-address__all');
     });
 
     //показать все адреса кафе в заказе
@@ -628,11 +629,11 @@ $(document).ready(function ($) {
 
 
 
-    $(document).on('click', '#cake-order-issue', function (e) {
-        e.preventDefault();
-        $(this).parents('.popup-cake-order').removeClass('is-visible');
-        $('.popup-cake-order-congratulation').addClass('is-visible');
-    });
+    // $(document).on('click', '#cake-order-issue', function (e) {
+    //     e.preventDefault();
+    //     $(this).parents('.popup-cake-order').removeClass('is-visible');
+    //     $('.popup-cake-order-congratulation').addClass('is-visible');
+    // });
 
     $(document).on('click', '.popup-forgot-password', function (e) {
         e.preventDefault();
