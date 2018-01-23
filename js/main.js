@@ -552,12 +552,12 @@ $(document).ready(function ($) {
     // });
 
     /*маски для телефона*/
-    $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00');
-    $('.js-input--tel').mask('+7(000)000-00-00');
-    $('.js-input--date').mask('00.00.00');
-    $('.js-input--loyalty').mask('000-000');
-    $('input[name="form_text_30"]').mask('+7(000)000-00-00');
-    $('input[name="form_text_52"]').mask('+7(000)000-00-00');
+    $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+    $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+    $('.js-input--date').mask('00.00.00', {clearIfNotMatch: true});
+    $('.js-input--loyalty').mask('000-000', {clearIfNotMatch: true});
+    $('input[name="form_text_30"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+    $('input[name="form_text_52"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
 
     /*показ номера телефона в карточке кафе*/
     $('.cafe-info__item-col .c-button').on('click', function(e){
