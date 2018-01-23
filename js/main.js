@@ -553,6 +553,7 @@ $(document).ready(function ($) {
 
     /*маски для телефона*/
     $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+    $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('.js-input--date').mask('00.00.00', {clearIfNotMatch: true});
     $('.js-input--loyalty').mask('000-000', {clearIfNotMatch: true});
@@ -631,6 +632,7 @@ $(document).ready(function ($) {
     showPopup(".popup-forgot-password", '.popup__recovery-password');
     showPopup(".c-card-catalog__img", '.popup-product');
     showPopup(".c-card-catalog__title", '.popup-product');
+    showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
 
 

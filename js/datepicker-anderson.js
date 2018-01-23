@@ -23,8 +23,6 @@ $(document).ready(function () {
             if (cellType == 'day') {
                 var day = date.getDay(),
                     isDisabled = disabledDays.indexOf(day) != -1;
-
-                
                 return {
                     disabled: isDisabled
                 }
