@@ -4822,7 +4822,7 @@ test popup
             
             &__grid {
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: column nowrap;
                 align-items: stretch;
                 justify-content: space-between;
                 
@@ -4834,6 +4834,7 @@ test popup
             
             &__item {
                 margin-bottom: 1rem;
+                width: 100%;
                 
                 &:last-child {
                     margin-right: 0;

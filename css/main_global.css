@@ -7812,10 +7812,10 @@ test popup
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
               align-items: stretch;
@@ -7828,7 +7828,8 @@ test popup
                 flex: 0 0 75%;
         margin-right: 3%; }
     .order-delivery-custom__item {
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      width: 100%; }
       .order-delivery-custom__item:last-child {
         margin-right: 0; }
     .order-delivery-search {
