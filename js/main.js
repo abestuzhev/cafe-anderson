@@ -41,7 +41,7 @@ $(document).ready(function ($) {
 
     function checkAll() {
         $('.order-delivery-address__list li').each(function(i, item) {
-            var value = $(this).find('.order-radio').text().toLowerCase().indexOf($('#search_cafe_in_order-cake').val().toLowerCase());
+            var value = $(this).find('.order-radio').text().toLowerCase().indexOf($('.c-search-page__input').val().toLowerCase());
             if ( value >= 0 ) {
                 $(this).show();
                 // $(this).addClass('js-order-delivery-address__show');
