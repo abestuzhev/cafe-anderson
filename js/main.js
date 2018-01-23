@@ -33,13 +33,34 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+
+    //поиск по кафе на странице с тортами и в оформлении заказа
+    $(document).on('keyup change', '#search_cafe_in_order-cake', function(){
+        checkAll();
+    });
+
+    function checkAll() {
+        $('.order-delivery-address__list li').each(function(i, item) {
+            var value = $(this).find('.order-radio').text().toLowerCase().indexOf($('#search_cafe_in_order-cake').val().toLowerCase());
+            if ( value >= 0 ) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    }
+
+    checkAll();
+
+
+
     //отписаться от подписки в личном кабинете
     $('#lk-profile-subscription_unsubscribe').on('click', function(){
 
     });
 
     //изменнеие пароля в профиле личного кабинета
-    $('#lk-profile__change-pass').on('click', function(e){
+    $(document).on('click', '#lk-profile__change-pass', function(e){
         e.preventDefault();
         $(this)
         .parents('.lk-profile-user')
@@ -607,13 +628,13 @@ $(document).ready(function ($) {
 
 
 
-    $('#cake-order-issue').on('click', function (e) {
+    $(document).on('click', '#cake-order-issue', function (e) {
         e.preventDefault();
         $(this).parents('.popup-cake-order').removeClass('is-visible');
         $('.popup-cake-order-congratulation').addClass('is-visible');
     });
 
-    $('.popup-forgot-password').on('click', function (e) {
+    $(document).on('click', '.popup-forgot-password', function (e) {
         e.preventDefault();
         $(this).parents('.popup-authorization').removeClass('is-visible');
         $('.popup__recovery-password').addClass('is-visible');
