@@ -44,8 +44,10 @@ $(document).ready(function ($) {
             var value = $(this).find('.order-radio').text().toLowerCase().indexOf($('#search_cafe_in_order-cake').val().toLowerCase());
             if ( value >= 0 ) {
                 $(this).show();
+                // $(this).addClass('js-order-delivery-address__show');
             } else {
                 $(this).hide();
+                // $(this).removeClass('js-order-delivery-address__show');
             }
         });
     }
@@ -197,18 +199,22 @@ $(document).ready(function ($) {
     $(document).on('click', '.order-delivery-search__clear', function(e){
         e.preventDefault();
         $(this).parents('.order-delivery-search__item').siblings().find('input').val('');
-        $(this).trigger('.order-delivery-address__all');
+        $('.order-delivery-address__all').siblings('.order-delivery-address__list').find('.order-delivery-address__item').show();
     });
 
     //показать все адреса кафе в заказе
     $(document).on('click', '.order-delivery-address__all', function(e){
+        var $this = $('.order-delivery-address__all');
         e.preventDefault();
-        $(this).siblings('.order-delivery-address__list').find('.order-delivery-address__item').toggleClass('js-order-delivery-address__show');
-        var textBtn = $(this).html();
+        // $(this).siblings('.order-delivery-address__list').find('.order-delivery-address__item').toggleClass('js-order-delivery-address__show');
+
+        var textBtn = $this.html();
         if(textBtn == "показать все"){
-            $(this).html("скрыть");
+            $this.html("скрыть");
+            $this.siblings('.order-delivery-address__list').find('.order-delivery-address__item').show();
         }else{
-            $(this).html("показать все");
+            $this.html("показать все");
+            $this.siblings('.order-delivery-address__list').find('.order-delivery-address__item').hide();
         }
 
     });
