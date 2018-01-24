@@ -6661,7 +6661,29 @@ test popup
     }
 }
 
-
+/*Выпускные----------------------------------------------------------------*/
+.graduation-party {
+    
+    &-banner {
+        margin-bottom: 2.4rem;
+        &__header {
+            .c-caption-special {
+                margin-bottom: .4rem;
+            }
+        }
+        
+        &__slider {
+            //height: 420px;
+        }
+        
+        &__footer {
+            width: 100%;
+            height: 2.9rem;
+            background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
+            background-size: cover;
+        }
+    }
+}
 
 
 

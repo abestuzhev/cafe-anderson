@@ -3175,6 +3175,179 @@ a.c-button:hover {
 .styles {
   padding: 5rem 0; }
 
+/*c-title-special--------------------------------------------------*/
+.c-caption-special {
+  padding: 2.1rem;
+  background-color: #91c346;
+  position: relative;
+  overflow: hidden; }
+  .c-caption-special__title {
+    font-family: "PT Serif Caption";
+    text-align: center;
+    text-transform: uppercase;
+    color: #231300;
+    font-size: 5.5rem;
+    position: relative;
+    z-index: 3; }
+  .c-caption-special__subtitle {
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 1;
+    color: #ffffff;
+    position: relative;
+    z-index: 3; }
+  .c-caption-special__mark-1 {
+    width: 15.3rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 1.3rem;
+    z-index: 2; }
+  .c-caption-special__mark-2 {
+    width: 13.8rem;
+    position: absolute;
+    top: -2rem;
+    right: -1.3rem;
+    z-index: 2; }
+
+/*c-card-party--------------------------------------------------*/
+.c-card-party__header {
+  position: relative;
+  padding: 2rem 1.4rem;
+  margin-bottom: 2.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .c-card-party__header::after, .c-card-party__header::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: .4rem;
+    background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+  .c-card-party__header::before {
+    content: '';
+    top: 0; }
+  .c-card-party__header::after {
+    content: '';
+    bottom: 0; }
+
+.c-card-party__title {
+  font-size: 3.5rem;
+  color: #614f43; }
+
+.c-card-party-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.8rem; }
+  .c-card-party-info__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.c-card-party-description {
+  margin-bottom: 2.8rem; }
+  .c-card-party-description p {
+    font-size: 1.3rem;
+    margin-bottom: .8rem; }
+
+.c-card-party__item {
+  font-size: 1.3rem;
+  margin-bottom: .5rem; }
+  .c-card-party__item span {
+    font-size: 1.6rem;
+    color: #7cbd41;
+    text-transform: uppercase; }
+
+.c-card-party-photos {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -.2rem;
+  margin-right: -.2rem; }
+
+.c-card-party-photo {
+  overflow: hidden;
+  width: 50%;
+  padding: .1rem .4rem; }
+  .c-card-party-photo img {
+    width: 100%;
+    height: auto; }
+
+.c-card-party-box {
+  margin-bottom: 2rem; }
+  .c-card-party-box__title {
+    font-size: 1.8rem;
+    color: #7e5847;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 1.6rem; }
+    .c-card-party-box__title::after {
+      content: '';
+      width: 100%;
+      height: .1rem;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      border: 1px dotted #555451; }
+    .c-card-party-box__title span {
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      background-color: #fff;
+      padding: 0 2rem; }
+
+.c-card-party .c-col-6 {
+  padding: 0 1.4rem; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -9339,3 +9512,14 @@ test popup
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem; } }
+
+/*Выпускные----------------------------------------------------------------*/
+.graduation-party-banner {
+  margin-bottom: 2.4rem; }
+  .graduation-party-banner__header .c-caption-special {
+    margin-bottom: .4rem; }
+  .graduation-party-banner__footer {
+    width: 100%;
+    height: 2.9rem;
+    background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
+    background-size: cover; }

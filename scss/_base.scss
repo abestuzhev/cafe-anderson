@@ -2878,7 +2878,196 @@ a.c-button {
 }
 
 
+
+
 /*Стили--------------------------------------------------*/
 .styles {
     padding: 5rem 0;
+}
+
+/*c-title-special--------------------------------------------------*/
+.c-caption-special {
+    padding: 2.1rem;
+    background-color: #91c346;
+    position: relative;
+    overflow: hidden;
+    
+    &__title {
+        font-family: $font_serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #231300;
+        font-size: 5.5rem;
+        position: relative;
+        z-index: 3;
+    }
+    
+    &__subtitle {
+        text-align: center;
+        font-size: 2.6rem;
+        line-height: 1;
+        color: #ffffff;
+        position: relative;
+        z-index: 3;
+    }
+    
+    &__mark-1 {
+        width: 15.3rem;
+        position: absolute;
+        bottom: -2rem;
+        left: 1.3rem;
+        z-index: 2;
+    }
+    
+    &__mark-2 {
+        width: 13.8rem;
+        position: absolute;
+        top: -2rem;
+        right: -1.3rem;
+        z-index: 2;
+    }
+}
+
+/*c-card-party--------------------------------------------------*/
+.c-card-party {
+    &__header {
+        position: relative;
+        padding: 2rem 1.4rem;
+        margin-bottom: 2.1rem;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: .4rem;
+            background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        }
+        &::before {
+            content: '';
+            top: 0;
+        }
+        &::after {
+            content: '';
+            bottom: 0;
+        }
+    
+    }
+    
+    &__title {
+        font-size: 3.5rem;
+        color: #614f43;
+    }
+    
+    &__application {
+    
+    }
+    
+    &-info {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.8rem;
+        
+        &__list {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    
+    &__body {
+    
+    }
+    
+    &-description {
+        margin-bottom: 2.8rem;
+        p {
+            font-size: 1.3rem;
+            margin-bottom: .8rem;
+        }
+    }
+    
+    &__list {
+    
+    }
+    
+    &__item {
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+        
+        span {
+            font-size: 1.6rem;
+            color: #7cbd41;
+            text-transform: uppercase;
+        }
+    }
+    
+    &-photos {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: -.2rem;
+        margin-right: -.2rem;
+    }
+    
+    &-photo {
+        overflow: hidden;
+        width: 50%;
+        padding: .1rem .4rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    &-box {
+        margin-bottom: 2rem;
+        
+        &__title {
+            font-size: 1.8rem;
+            color: #7e5847;
+            text-transform: uppercase;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 1.6rem;
+           
+            
+            &::after {
+                content: '';
+                width: 100%;
+                height: .1rem;
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                border: 1px dotted #555451;
+            }
+            
+            span {
+                display: inline-block;
+                position: relative;
+                z-index: 2;
+                background-color: #fff;
+                padding: 0 2rem;
+            }
+        }
+    }
+    
+    .c-col-6 {
+        padding: 0 1.4rem;
+    }
+    
 }
