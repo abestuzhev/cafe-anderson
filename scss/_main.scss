@@ -1421,13 +1421,9 @@ main {
     width: 26.4rem;
     overflow: hidden;
     border-radius: 1rem;
-    //position: absolute;
-    //top: 0;
-    //left: 100%;
     margin-left: 1.2rem;
     
     &__list {
-        //margin-bottom: 2.6rem;
     }
     
     &-product {
@@ -1476,7 +1472,31 @@ main {
     
 }
 
-
+.popup-subscription-del {
+    .popup {
+        p {
+            padding-bottom: 4.3rem;
+        }
+        
+        &-body {
+            overflow: hidden;
+        }
+    }
+    
+    .icon-bird-up {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        right: 39%;
+        width: 15%;
+    }
+    
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
 
 /*----------------------------------------------*/
 #tooltip {
@@ -2665,7 +2685,8 @@ test popup
             align-items: stretch;
         }
         
-        &-slider {
+        &-slider,
+        &-no-image {
             width: 66%;
             height: auto;
             
@@ -2675,6 +2696,13 @@ test popup
                     width: 100%;
                     height: auto;
                 }
+            }
+        }
+    
+        &-no-image {
+            img {
+                width: 100%;
+                height: auto
             }
         }
         
@@ -2692,7 +2720,7 @@ test popup
         }
         
         &-count {
-            width: 48%;
+            width: 54%;
             
             &::after {
                 content: '';
@@ -2727,12 +2755,13 @@ test popup
                     line-height: 1;
                     text-transform: uppercase;
                     color: #553023;
+                    white-space: nowrap;
                 }
             }
         }
         
         &__btn-order {
-            width: 52%;
+            width: 47%;
             
             .c-button__big {
                 display: block;

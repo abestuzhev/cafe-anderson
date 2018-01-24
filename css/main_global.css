@@ -3233,7 +3233,7 @@ a.c-button:hover {
   height: 4.9rem; }
 
 .sticky .header-logo__beta {
-  display: none; }
+  top: 1.4rem; }
 
 .sticky .header-city,
 .sticky .header-time {
@@ -5347,6 +5347,24 @@ main {
       content: '';
       border: none; }
 
+.popup-subscription-del .popup p {
+  padding-bottom: 4.3rem; }
+
+.popup-subscription-del .popup-body {
+  overflow: hidden; }
+
+.popup-subscription-del .icon-bird-up {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 39%;
+  width: 15%; }
+
+.popup-subscription-del__bg {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
 /*----------------------------------------------*/
 #tooltip {
   text-align: center;
@@ -6237,12 +6255,15 @@ test popup
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
-  .cafe-holiday-slider {
+  .cafe-holiday-slider, .cafe-holiday-no-image {
     width: 66%;
     height: auto; }
-    .cafe-holiday-slider__item img {
+    .cafe-holiday-slider__item img, .cafe-holiday-no-image__item img {
       width: 100%;
       height: auto; }
+  .cafe-holiday-no-image img {
+    width: 100%;
+    height: auto; }
   .cafe-holiday-order {
     padding-left: 2rem;
     width: 34%; }
@@ -6262,7 +6283,7 @@ test popup
             align-items: center;
     margin-bottom: 2.5rem; }
   .cafe-holiday-count {
-    width: 48%; }
+    width: 54%; }
     .cafe-holiday-count::after {
       content: '';
       clear: both;
@@ -6287,9 +6308,10 @@ test popup
         font-size: 1.4rem;
         line-height: 1;
         text-transform: uppercase;
-        color: #553023; }
+        color: #553023;
+        white-space: nowrap; }
   .cafe-holiday__btn-order {
-    width: 52%; }
+    width: 47%; }
     .cafe-holiday__btn-order .c-button__big {
       display: block; }
   .cafe-holiday__text {

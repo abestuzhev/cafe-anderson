@@ -343,7 +343,6 @@
         height: auto;
     }
 
-
     .not-found-mobile {
         padding: 40px;
     }
@@ -359,7 +358,6 @@
 
     .filter-mix__item {
         margin-right: 1rem;
-
     }
 
     .filter-bage {
@@ -389,10 +387,6 @@
         margin-right: .5rem;
     }
 
-    .header-top__hide .header-layout {
-        margin-top: 0;
-    }
-
     main {
         padding-bottom: 11rem;
     }
@@ -406,6 +400,13 @@
         max-width: 100%;
     }
 }
+
+@media (min-width:1020px) {
+    .sticky .header-logo__beta {
+        left: 78%;
+    }
+}
+
 @media (max-width:1020px) {
     .header-col__left,
     .header-col__right,
@@ -427,6 +428,10 @@
     }
     .filter-mix__item span {
         display: none;
+    }
+
+    .header-top__hide .header-layout {
+        margin-top: 0;
     }
 }
 
@@ -855,7 +860,8 @@
 
     .cafe-holiday-order,
     .cafe-holiday-slider,
-    .cafe-description {
+    .cafe-description,
+    .cafe-holiday-no-image {
         width: 100%;
         padding: 0;
     }
