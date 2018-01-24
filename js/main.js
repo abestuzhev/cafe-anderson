@@ -34,14 +34,14 @@ $(document).ready(function ($) {
 
 
 //дайтпикер в оформлении закзаа
-//     var $datepicker = $('.datepicker-here');
-//     $datepicker.datepicker({
-//         minDate: new Date(),
-//         autoClose: true
-//     });
-//     $datepicker.on('focus', function () {
-//         $(this).parents('.datepicker-layout').addClass('active-datepicker');
-//     });
+    var $datepicker = $('.datepicker-here');
+    $datepicker.datepicker({
+        minDate: new Date(),
+        autoClose: true
+    });
+    $datepicker.on('focus', function () {
+        $(this).parents('.datepicker-layout').addClass('active-datepicker');
+    });
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа
