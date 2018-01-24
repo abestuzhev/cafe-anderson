@@ -1549,7 +1549,7 @@ a.c-button:hover {
 
 .c-reviews__btn {
   display: block;
-  padding: 1.2rem 1.7rem 1.4rem 1.7rem;
+  padding: 1.5rem 1.7rem 1.5rem 4.4rem;
   position: relative;
   border: none;
   color: #fff;
@@ -1585,25 +1585,23 @@ a.c-button:hover {
 
 .c-reviews-positive .c-reviews__btn {
   background-color: #92c647;
-  background-color: rgba(129, 199, 29, 0.87);
-  padding-left: 4.4rem; }
+  background-color: rgba(129, 199, 29, 0.87); }
 
 .c-reviews-positive .icon-positive {
   position: absolute;
   left: 1.2rem;
-  top: .6rem;
+  top: .9rem;
   width: 2.1rem;
   height: 3.4rem; }
 
 .c-reviews-negative .c-reviews__btn {
   background-color: #b34d84;
-  background-color: rgba(184, 31, 121, 0.8);
-  padding-left: 4.4rem; }
+  background-color: rgba(184, 31, 121, 0.8); }
 
 .c-reviews-negative .icon-negative {
   position: absolute;
   left: 1.2rem;
-  top: .6rem;
+  top: .9rem;
   width: 2.1rem;
   height: 3.4rem; }
 
@@ -1618,13 +1616,16 @@ a.c-button:hover {
 .c-reviews-tree2018 .c-reviews__text {
   margin-bottom: 4px; }
 
-.c-reviews-graduation .c-reviews__text {
-  margin-bottom: 4px; }
+.c-reviews-graduation .icon-graduation {
+  position: absolute;
+  left: 1rem;
+  top: .9rem;
+  width: 3.1rem;
+  height: 3.4rem; }
 
 .c-reviews-graduation .c-reviews__btn {
   background-color: #CE3102;
-  background-color: rgba(206, 49, 2, 0.8);
-  padding: 1.2rem 1.7rem 1.4rem 1.2rem; }
+  background-color: rgba(206, 49, 2, 0.8); }
 
 /*хлебные крошки*/
 .c-breadcrumb {

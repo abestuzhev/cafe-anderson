@@ -879,7 +879,7 @@ a.c-button {
 
     &__btn {
         display: block;
-        padding: 1.2rem 1.7rem 1.4rem 1.7rem;
+        padding: 1.5rem 1.7rem 1.5rem 4.4rem;
         position: relative;
         border: none;
         color: $white;
@@ -930,13 +930,12 @@ a.c-button {
         .c-reviews__btn {
             background-color: #92c647;
             background-color: rgba(129, 199, 29, 0.87);
-            padding-left: 4.4rem;
         }
         
         .icon-positive {
             position: absolute;
             left: 1.2rem;
-            top: .6rem;
+            top: .9rem;
             width: 2.1rem;
             height: 3.4rem;
         }
@@ -947,13 +946,11 @@ a.c-button {
         .c-reviews__btn {
             background-color: #b34d84;
             background-color: rgba(184, 31, 121, 0.8);
-    
-            padding-left: 4.4rem;
         }
         .icon-negative {
             position: absolute;
             left: 1.2rem;
-            top: .6rem;
+            top: .9rem;
             width: 2.1rem;
             height: 3.4rem;
         }
@@ -975,15 +972,18 @@ a.c-button {
     }
     
     &-graduation {
-        
-        .c-reviews__text {
-            margin-bottom: 4px;
-        }
     
+        .icon-graduation {
+            position: absolute;
+            left: 1rem;
+            top: .9rem;
+            width: 3.1rem;
+            height: 3.4rem;
+        }
+        
         .c-reviews__btn {
             background-color: #CE3102;
-            background-color: rgba(206, 49, 2, 0.8);;
-            padding: 1.2rem 1.7rem 1.4rem 1.2rem;
+            background-color: rgba(206, 49, 2, 0.8);
         }
     
     }
