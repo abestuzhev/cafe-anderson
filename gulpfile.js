@@ -45,7 +45,7 @@ gulp.task('sass', function(){
 gulp.task('js', function(){
     return gulp.src([
         './js/preloader.js',
-        './bower_components/jquery/dist/jquery.js',
+        // './bower_components/jquery/dist/jquery.js',
         './bower_components/tooltipster/dist/js/tooltipster.bundle.js',
         './bower_components/jquery-mask-plugin/dist/jquery.mask.js',
         './js/jscrollpane/jquery.mousewheel.js',

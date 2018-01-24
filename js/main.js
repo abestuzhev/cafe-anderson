@@ -587,7 +587,7 @@ $(document).ready(function ($) {
 
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
-        $(document).on('click', icon, function (e) {
+        $(icon).on('click', function (e) {
             var $html = $('html');
             e.preventDefault();
             $(popup).addClass('is-visible');
@@ -609,7 +609,7 @@ $(document).ready(function ($) {
         });
     }
 
-    $(document).on('click', '.popup-close', function (e) {
+    $('.popup-close').on('click', function (e) {
         e.preventDefault();
         var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
@@ -622,7 +622,7 @@ $(document).ready(function ($) {
         });
     });
 
-    $(document).on('click', '.js-popup-close', function (e) {
+    $('.js-popup-close').on('click', function (e) {
         e.preventDefault();
         var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
