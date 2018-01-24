@@ -34,14 +34,14 @@ $(document).ready(function ($) {
 
 
 //дайтпикер в оформлении закзаа
-    var $datepicker = $('.datepicker-here');
-    $datepicker.datepicker({
-        minDate: new Date(),
-        autoClose: true
-    });
-    $datepicker.on('focus', function () {
-        $(this).parents('.datepicker-layout').addClass('active-datepicker');
-    });
+//     var $datepicker = $('.datepicker-here');
+//     $datepicker.datepicker({
+//         minDate: new Date(),
+//         autoClose: true
+//     });
+//     $datepicker.on('focus', function () {
+//         $(this).parents('.datepicker-layout').addClass('active-datepicker');
+//     });
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа
@@ -587,7 +587,7 @@ $(document).ready(function ($) {
 
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
-        $(icon).on('click', function (e) {
+        $(document).on('click', icon, function (e) {
             var $html = $('html');
             e.preventDefault();
             $(popup).addClass('is-visible');
@@ -609,7 +609,7 @@ $(document).ready(function ($) {
         });
     }
 
-    $('.popup-close').on('click', function (e) {
+    $(document).on('click', '.popup-close', function (e) {
         e.preventDefault();
         var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
@@ -622,7 +622,7 @@ $(document).ready(function ($) {
         });
     });
 
-    $('.js-popup-close').on('click', function (e) {
+    $(document).on('click', '.js-popup-close', function (e) {
         e.preventDefault();
         var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
