@@ -433,6 +433,17 @@
     .header-top__hide .header-layout {
         margin-top: 0;
     }
+
+    .header .top-message {
+        margin-bottom: 1rem;
+        margin-top: -.5rem;
+    }
+
+    .header.sticky .top-message {
+        top: 2.9rem;
+        z-index: 1071;
+    }
+
 }
 
 

@@ -1090,5 +1090,20 @@
     }
 }
 
+.header .top-message {
+    //position: fixed;
+    //top: 0;
+    //left: 0;
+    //z-index: 9999999;
+    //width: 100%;
+    box-shadow: inset 0px -2px 10px 0px rgba(0,0,0,0.26);
+    margin-bottom: 1.5rem;
+    margin-top: -1.5rem;
+}
+.header.sticky .top-message {
+    position: relative;
+    top: 2.6rem;
+    margin:0;
+}
 
 //------------------------------------------------------------header###

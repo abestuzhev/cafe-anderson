@@ -4007,6 +4007,17 @@ a.c-button:hover {
     border-radius: 2.6rem;
     cursor: pointer; }
 
+.header .top-message {
+  -webkit-box-shadow: inset 0px -2px 10px 0px rgba(0, 0, 0, 0.26);
+          box-shadow: inset 0px -2px 10px 0px rgba(0, 0, 0, 0.26);
+  margin-bottom: 1.5rem;
+  margin-top: -1.5rem; }
+
+.header.sticky .top-message {
+  position: relative;
+  top: 2.6rem;
+  margin: 0; }
+
 .footer {
   margin-top: -7.6rem;
   position: relative;
