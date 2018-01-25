@@ -29,19 +29,28 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 // console.log('Ширина window: ' + windowWidth);
 // console.log('Ширина wrapper: ' + documentWidth);
 
+$(window).on('load', function(){
+    // if($('.datepicker-here')){
+        // var $datepicker = $('.datepicker-here');
+        var $datepicker = $('.datepicker-here');
+        $datepicker.datepicker({
+            minDate: new Date(),
+            autoClose: true
+        });
+        $datepicker.on('focus', function () {
+            $(this).parents('.datepicker-layout').addClass('active-datepicker');
+        });
+    // }
+});
+
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
 //дайтпикер в оформлении закзаа
-    var $datepicker = $('.datepicker-here');
-    $datepicker.datepicker({
-        minDate: new Date(),
-        autoClose: true
-    });
-    $datepicker.on('focus', function () {
-        $(this).parents('.datepicker-layout').addClass('active-datepicker');
-    });
+//     var pikerElem = $('.datepicker-here');
+
+
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа
@@ -748,6 +757,15 @@ $(document).ready(function ($) {
         $('html').removeClass('body-popup');
     });
 
+    $(".mfp-bg").on('click', function (e) {
+        e.preventDefault();
+        $('.popup').parents().removeClass('is-visible');
+        // $('.fixed-overlay').removeClass('is-visible');
+        $('html').removeClass('body-popup');
+    });
+
+
+
     /*клик вне области экрана для корзины*/
     function hidePopup (element, instrumentHide){
         $(document).mouseup(function (e) { // событие клика по веб-документу
@@ -781,6 +799,7 @@ $(document).ready(function ($) {
                 div2.parents('html').removeClass('lock-html');
             }
         }
+        hideOutZone('.js-popup-mouseUp', '.popup-mini');
         hideOutZone('.js-popup-mouseUp', '.popup-mini');
 
     });
