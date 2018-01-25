@@ -61,6 +61,13 @@
   height: 1.8rem;
   background: url(../img/icons/icon-clock.svg) 0 0 no-repeat; }
 
+.icon-clock-2 {
+  display: inline-block;
+  font-size: 1rem;
+  width: 1.7em;
+  height: 1.7em;
+  background: url(../img/icons/icon-clock-2.svg) 0 0 no-repeat; }
+
 .icon-search {
   position: relative;
   width: 20px;
@@ -604,6 +611,15 @@ i.icon-chair {
   background: url(../img/icons/icon-baby.svg) 0 0 no-repeat;
   background-size: cover; }
 
+.icon-baby-2 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+  width: 1.9em;
+  height: 1.7em;
+  background: url(../img/icons/icon-baby-2.svg) 0 0 no-repeat;
+  background-size: cover; }
+
 .icon-ghost {
   display: inline-block;
   vertical-align: top;
@@ -645,6 +661,15 @@ i.icon-chair {
   width: 2.2em;
   height: 1.8em;
   background: url(../img/icons/icon-credit-card.svg) 0 0 no-repeat;
+  background-size: cover; }
+
+.icon-credit-card-2 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+  width: 1.8em;
+  height: 1.8em;
+  background: url(../img/icons/icon-credit-card-2.svg) 0 0 no-repeat;
   background-size: cover; }
 
 .icon-wallet {
@@ -690,6 +715,24 @@ i.icon-chair {
   width: 3.1em;
   height: 3.4em;
   background: url(../img/icons/icon-graduation.svg) 0 0 no-repeat;
+  background-size: cover; }
+
+.icon-ice-cream-2 {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1rem;
+  width: 10.2em;
+  height: 14.4em;
+  background: url(../img/icons/icon-ice-cream-2.svg) 0 0 no-repeat;
+  background-size: cover; }
+
+.icon-balloon-2 {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1rem;
+  width: 7.8em;
+  height: 13.1em;
+  background: url(../img/icons/icon-balloon-2.svg) 0 0 no-repeat;
   background-size: cover; }
 
 html, body, div, span, object, iframe,
@@ -1472,6 +1515,17 @@ a.c-button:hover {
     text-transform: lowercase;
     display: inline-block; }
     .c-button__medium:hover {
+      color: #fff; }
+  .c-button__large {
+    padding: 1.4rem 3.2rem;
+    background-color: #7cbd41;
+    font-family: "PT Serif Caption";
+    font-size: 2.3rem;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block; }
+    .c-button__large:hover {
       color: #fff; }
   .c-button__big {
     display: inline-block;
@@ -3226,7 +3280,8 @@ a.c-button:hover {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
   .c-card-party__header::after, .c-card-party__header::before {
     content: '';
     position: absolute;
@@ -3243,7 +3298,37 @@ a.c-button:hover {
 
 .c-card-party__title {
   font-size: 3.5rem;
-  color: #614f43; }
+  color: #614f43;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .c-card-party__title .icon-uneven-circle {
+    width: 5.9rem;
+    height: 5.9rem;
+    line-height: .8;
+    text-align: center;
+    padding-top: .4rem;
+    font-style: normal;
+    position: relative;
+    margin-right: 1.7rem; }
+    .c-card-party__title .icon-uneven-circle span {
+      font-size: 1.6rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
 
 .c-card-party-info {
   display: -webkit-box;
@@ -3272,9 +3357,15 @@ a.c-button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .c-card-party-info__item {
+    margin-right: 1.8rem; }
+    .c-card-party-info__item i {
+      margin-right: .4rem; }
+    .c-card-party-info__item:last-child {
+      margin-right: 0; }
 
 .c-card-party-description {
   margin-bottom: 2.8rem; }
@@ -3315,6 +3406,32 @@ a.c-button:hover {
   .c-card-party-photo img {
     width: 100%;
     height: auto; }
+
+.c-card-party-schedule {
+  border-radius: .8rem;
+  border: .1rem solid #d2d2d2;
+  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+  padding: 2.7rem 2.7rem 2.7rem 10rem;
+  overflow: hidden;
+  position: relative; }
+  .c-card-party-schedule::before {
+    content: '';
+    position: absolute;
+    left: -3rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 11.5rem;
+    height: 11.5rem;
+    background: url(../img/icons/icon-birthday-label.svg) 0 0 no-repeat;
+    border-radius: 20rem; }
+  .c-card-party-schedule__title {
+    font-size: 1.8rem;
+    color: #555451;
+    margin-bottom: 1.5rem; }
+    .c-card-party-schedule__title i {
+      margin-right: .6rem; }
 
 .c-card-party-box {
   margin-bottom: 2rem; }
@@ -9514,12 +9631,101 @@ test popup
     padding-right: 1rem; } }
 
 /*Выпускные----------------------------------------------------------------*/
+.popup-party-order .popup {
+  width: 90rem;
+  max-width: 90rem; }
+
+.popup-party-order .party-order__grid {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.popup-party-order .party-order__left {
+  padding: 0 1.5rem;
+  width: 53%; }
+
+.popup-party-order .party-order__right {
+  padding: 0 1.5rem;
+  width: 47%; }
+
+.popup-party-order .party-order__note {
+  font-size: 1.2rem;
+  color: #555451; }
+
 .graduation-party-banner {
   margin-bottom: 2.4rem; }
-  .graduation-party-banner__header .c-caption-special {
-    margin-bottom: .4rem; }
+  .graduation-party-banner__slider {
+    height: 420px; }
+  .graduation-party-banner__slide {
+    width: 100%;
+    background-position: 50% 50%;
+    height: 420px;
+    background-size: cover;
+    overflow: hidden; }
   .graduation-party-banner__footer {
     width: 100%;
     height: 2.9rem;
     background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
     background-size: cover; }
+  .graduation-party-banner__btns {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .graduation-party-banner__btn {
+    padding: 1.2rem 1.8rem;
+    font-size: 2.3rem;
+    border-radius: .6rem;
+    background-color: #7cbd41;
+    color: #ffffff;
+    margin: 0 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1; }
+    .graduation-party-banner__btn span {
+      color: #231300;
+      display: block; }
+    .graduation-party-banner__btn::after {
+      content: '';
+      border: none; }
+    .graduation-party-banner__btn:hover {
+      background-color: #80c242;
+      color: #ffffff; }
+
+.graduation-party .c-caption-special {
+  margin-bottom: .4rem; }
+  .graduation-party .c-caption-special .icon-ice-cream-2 {
+    position: absolute;
+    z-index: 4;
+    -webkit-transform: rotate(-23deg);
+        -ms-transform: rotate(-23deg);
+            transform: rotate(-23deg);
+    right: 1.3rem;
+    bottom: -2.4rem; }
+  .graduation-party .c-caption-special .icon-balloon-2 {
+    position: absolute;
+    z-index: 4;
+    top: -3.2rem;
+    left: 4.3rem; }

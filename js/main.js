@@ -31,7 +31,6 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 
 $(window).on('load', function(){
     // if($('.datepicker-here')){
-        // var $datepicker = $('.datepicker-here');
         var $datepicker = $('.datepicker-here');
         $datepicker.datepicker({
             minDate: new Date(),
@@ -47,10 +46,21 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
-//дайтпикер в оформлении закзаа
-//     var pikerElem = $('.datepicker-here');
 
+    //плавный якорь
+    function scrollToAnchor (elem) {
+        $(document).on("click", elem, function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                menuHeight = 75,
+                top = $(id).offset().top,
+                topIndent = top - menuHeight;
+            console.log('top ' + top);
+            $('body').animate({scrollTop: topIndent}, 1000);
+        });
+    };
 
+    scrollToAnchor('.graduation-party-banner__btn');
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа

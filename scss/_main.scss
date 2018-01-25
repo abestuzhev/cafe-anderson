@@ -6662,18 +6662,56 @@ test popup
 }
 
 /*Выпускные----------------------------------------------------------------*/
+.popup-party-order {
+    .popup {
+        width: 90rem;
+        max-width: 90rem;
+    }
+    
+    .party-order {
+        &__grid {
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        
+        &__left {
+            padding: 0 1.5rem;
+            width: 53%;
+        }
+        &__right {
+            padding: 0 1.5rem;
+            width: 47%;
+        }
+        
+        &__note {
+            font-size: 1.2rem;
+            color: $black;
+        }
+    }
+}
+
 .graduation-party {
     
     &-banner {
         margin-bottom: 2.4rem;
         &__header {
-            .c-caption-special {
-                margin-bottom: .4rem;
-            }
+        
         }
         
         &__slider {
-            //height: 420px;
+            height: 420px;
+        }
+        &__slide {
+            width: 100%;
+            background-position: 50% 50%;
+            height: 420px;
+            -webkit-background-size: cover;
+            background-size: cover;
+            overflow: hidden;
         }
         
         &__footer {
@@ -6681,6 +6719,62 @@ test popup
             height: 2.9rem;
             background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
             background-size: cover;
+        }
+        
+        &__btns {
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &__btn {
+            padding: 1.2rem 1.8rem;
+            font-size: 2.3rem;
+            border-radius: .6rem;
+            background-color: #7cbd41;
+            color: #ffffff;
+            margin: 0 2.2rem;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1;
+            
+            span {
+                color: #231300;
+                display: block;
+            }
+            
+            &::after {
+                content: '';
+                border: none;
+            }
+            
+            &:hover {
+                background-color: #80c242;
+                color: #ffffff;
+            }
+        }
+    }
+    
+    .c-caption-special {
+        margin-bottom: .4rem;
+        
+        .icon-ice-cream-2 {
+            position: absolute;
+            z-index: 4;
+            transform: rotate(-23deg);
+            right: 1.3rem;
+            bottom: -2.4rem;
+            
+        }
+        
+        .icon-balloon-2 {
+            position: absolute;
+            z-index: 4;
+            top: -3.2rem;
+            left: 4.3rem;
+            
         }
     }
 }
