@@ -1010,6 +1010,10 @@
     .graduation-party .c-card-party .c-col-6 {
         width: 100%;
     }
+
+    .cafe-list__box {
+        height: auto !important;
+    }
 }
 
 @media (max-width:920px) {
