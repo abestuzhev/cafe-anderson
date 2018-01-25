@@ -30,7 +30,6 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 // console.log('Ширина wrapper: ' + documentWidth);
 
 $(window).on('load', function(){
-    // if($('.datepicker-here')){
         var $datepicker = $('.datepicker-here');
         $datepicker.datepicker({
             minDate: new Date(),
@@ -39,12 +38,33 @@ $(window).on('load', function(){
         $datepicker.on('focus', function () {
             $(this).parents('.datepicker-layout').addClass('active-datepicker');
         });
-    // }
+
+
+    var disabledPartyDays = [0, 5, 6];
+    $('#party-datepicker').datepicker({
+        minDate: new Date(),
+        onRenderCell: function (date, cellType) {
+            if (cellType == 'day') {
+                var day = date.getDay(),
+                    isDisabled = disabledPartyDays.indexOf(day) != -1;
+
+                return {
+                    disabled: isDisabled
+                }
+            }
+        }
+    });
 });
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    /*слайдер для страницы Выпускные*/
+    $('.graduation-party-banner__slider').owlCarousel({
+        loop:true,
+        items: 1,
+        autoheight: true
+    });
 
 
     //плавный якорь
@@ -52,11 +72,12 @@ $(document).ready(function ($) {
         $(document).on("click", elem, function (event) {
             event.preventDefault();
             var id  = $(this).attr('href'),
-                menuHeight = 75,
+                menuHeight = 200,
                 top = $(id).offset().top,
                 topIndent = top - menuHeight;
-            console.log('top ' + top);
-            $('body').animate({scrollTop: topIndent}, 1000);
+            console.log('top: ' + top);
+            console.log('topIndent: ' + topIndent);
+            $('html').animate({scrollTop: topIndent}, 1000);
         });
     };
 
@@ -672,6 +693,7 @@ $(document).ready(function ($) {
     showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
     showPopup("#lk-profile-subscription-del__ok", '.popup-subscription-del');
+    showPopup(".js-party-order", '.popup-party-order');
 
 
 

@@ -735,6 +735,22 @@ i.icon-chair {
   background: url(../img/icons/icon-balloon-2.svg) 0 0 no-repeat;
   background-size: cover; }
 
+.c-symbol {
+  fill: #231300;
+  display: inline-block;
+  width: auto;
+  height: auto; }
+
+.symbol-fireworks {
+  font-size: 8.3rem;
+  width: 1em;
+  height: 1em; }
+
+.symbol-rabbit {
+  font-size: 5.1rem;
+  width: 1em;
+  height: 2.7em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1185,7 +1201,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   font-size: 1.3rem;
   color: #9b9696;
   background-color: transparent;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.8); }
   .c-input:focus {
     border-color: #9acc4e;
     -webkit-box-shadow: 0 0 10px 0 #9acc4e;
@@ -3264,89 +3280,12 @@ a.c-button:hover {
     z-index: 2; }
 
 /*c-card-party--------------------------------------------------*/
-.c-card-party__header {
-  position: relative;
-  padding: 2rem 1.4rem;
-  margin-bottom: 2.1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
-  .c-card-party__header::after, .c-card-party__header::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: .4rem;
-    background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
-  .c-card-party__header::before {
-    content: '';
-    top: 0; }
-  .c-card-party__header::after {
-    content: '';
-    bottom: 0; }
-
-.c-card-party__title {
-  font-size: 3.5rem;
-  color: #614f43;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-  .c-card-party__title .icon-uneven-circle {
-    width: 5.9rem;
-    height: 5.9rem;
-    line-height: .8;
-    text-align: center;
-    padding-top: .4rem;
-    font-style: normal;
+.c-card-party {
+  margin-bottom: 4rem; }
+  .c-card-party__header {
     position: relative;
-    margin-right: 1.7rem; }
-    .c-card-party__title .icon-uneven-circle span {
-      font-size: 1.6rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-
-.c-card-party-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 1.8rem; }
-  .c-card-party-info__list {
-    width: 100%;
+    padding: 2rem 1.4rem;
+    margin-bottom: 2.1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3357,113 +3296,185 @@ a.c-button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+    .c-card-party__header::after, .c-card-party__header::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+    .c-card-party__header::before {
+      content: '';
+      top: 0; }
+    .c-card-party__header::after {
+      content: '';
+      bottom: 0; }
+  .c-card-party__title {
+    font-size: 3.5rem;
+    color: #614f43;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-  .c-card-party-info__item {
-    margin-right: 1.8rem; }
-    .c-card-party-info__item i {
-      margin-right: .4rem; }
-    .c-card-party-info__item:last-child {
-      margin-right: 0; }
-
-.c-card-party-description {
-  margin-bottom: 2.8rem; }
-  .c-card-party-description p {
-    font-size: 1.3rem;
-    margin-bottom: .8rem; }
-
-.c-card-party__item {
-  font-size: 1.3rem;
-  margin-bottom: .5rem; }
-  .c-card-party__item span {
-    font-size: 1.6rem;
-    color: #7cbd41;
-    text-transform: uppercase; }
-
-.c-card-party-photos {
-  margin-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: -.2rem;
-  margin-right: -.2rem; }
-
-.c-card-party-photo {
-  overflow: hidden;
-  width: 50%;
-  padding: .1rem .4rem; }
-  .c-card-party-photo img {
-    width: 100%;
-    height: auto; }
-
-.c-card-party-schedule {
-  border-radius: .8rem;
-  border: .1rem solid #d2d2d2;
-  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
-  padding: 2.7rem 2.7rem 2.7rem 10rem;
-  overflow: hidden;
-  position: relative; }
-  .c-card-party-schedule::before {
-    content: '';
-    position: absolute;
-    left: -3rem;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 11.5rem;
-    height: 11.5rem;
-    background: url(../img/icons/icon-birthday-label.svg) 0 0 no-repeat;
-    border-radius: 20rem; }
-  .c-card-party-schedule__title {
-    font-size: 1.8rem;
-    color: #555451;
-    margin-bottom: 1.5rem; }
-    .c-card-party-schedule__title i {
-      margin-right: .6rem; }
-
-.c-card-party-box {
-  margin-bottom: 2rem; }
-  .c-card-party-box__title {
-    font-size: 1.8rem;
-    color: #7e5847;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    margin-bottom: 1.6rem; }
-    .c-card-party-box__title::after {
-      content: '';
+    .c-card-party__title .icon-uneven-circle {
+      width: 5.9rem;
+      height: 5.9rem;
+      line-height: .8;
+      text-align: center;
+      padding-top: .4rem;
+      font-style: normal;
+      position: relative;
+      margin-right: 1.7rem; }
+      .c-card-party__title .icon-uneven-circle span {
+        font-size: 1.6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+  .c-card-party-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.8rem; }
+    .c-card-party-info__list {
       width: 100%;
-      height: .1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .c-card-party-info__item {
+      margin-right: 1.8rem; }
+      .c-card-party-info__item i {
+        margin-right: .4rem; }
+      .c-card-party-info__item:last-child {
+        margin-right: 0; }
+  .c-card-party-description {
+    margin-bottom: 2.8rem; }
+    .c-card-party-description p {
+      font-size: 1.3rem;
+      margin-bottom: .8rem; }
+  .c-card-party__item {
+    font-size: 1.3rem;
+    margin-bottom: .5rem; }
+    .c-card-party__item span {
+      font-size: 1.6rem;
+      color: #7cbd41;
+      text-transform: uppercase; }
+  .c-card-party-photos {
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: -.2rem;
+    margin-right: -.2rem; }
+  .c-card-party-photo {
+    overflow: hidden;
+    width: 50%;
+    padding: .1rem .4rem; }
+    .c-card-party-photo img {
+      width: 100%;
+      height: auto; }
+  .c-card-party-schedule {
+    border-radius: .8rem;
+    border: .1rem solid #d2d2d2;
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    padding: 2.7rem 2.7rem 2.7rem 10rem;
+    overflow: hidden;
+    position: relative; }
+    .c-card-party-schedule::before {
+      content: '';
       position: absolute;
-      z-index: 1;
+      left: -3rem;
       top: 50%;
-      left: 0;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      border: 1px dotted #555451; }
-    .c-card-party-box__title span {
-      display: inline-block;
+      width: 11.5rem;
+      height: 11.5rem;
+      background: url(../img/icons/icon-birthday-label.svg) 0 0 no-repeat;
+      border-radius: 20rem; }
+    .c-card-party-schedule__title {
+      font-size: 1.8rem;
+      color: #555451;
+      margin-bottom: 1.5rem; }
+      .c-card-party-schedule__title i {
+        margin-right: .6rem; }
+  .c-card-party-box {
+    margin-bottom: 2rem; }
+    .c-card-party-box__title {
+      font-size: 1.8rem;
+      color: #7e5847;
+      text-transform: uppercase;
       position: relative;
-      z-index: 2;
-      background-color: #fff;
-      padding: 0 2rem; }
-
-.c-card-party .c-col-6 {
-  padding: 0 1.4rem; }
+      text-align: center;
+      overflow: hidden;
+      margin-bottom: 1.6rem; }
+      .c-card-party-box__title::after {
+        content: '';
+        width: 100%;
+        height: .1rem;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        border: 1px dotted #555451; }
+      .c-card-party-box__title span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        padding: 0 2rem; }
+    .c-card-party-box:last-child {
+      margin-bottom: 0; }
+  .c-card-party .c-col-6 {
+    padding: 0 1.4rem; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -9654,7 +9665,8 @@ test popup
 
 .popup-party-order .party-order__left {
   padding: 0 1.5rem;
-  width: 53%; }
+  width: 53%;
+  position: relative; }
 
 .popup-party-order .party-order__right {
   padding: 0 1.5rem;
@@ -9664,16 +9676,56 @@ test popup
   font-size: 1.2rem;
   color: #555451; }
 
+.popup-party-order .party-order #party-datepicker {
+  margin-bottom: 1.6rem;
+  -webkit-box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1); }
+
+.popup-party-order .party-order .datepicker {
+  width: 100%; }
+
+.popup-party-order .party-order .datepicker--cell {
+  height: 5.1rem; }
+
+.popup-party-order .party-order .datepicker--cell-day {
+  width: 13.28571%;
+  margin: .8% .4%; }
+
+.popup-party-order .party-order .datepicker--nav {
+  padding: 1.4rem .4rem; }
+
+.popup-party-order .party-order .datepicker--content {
+  padding: 7px 11px 18px; }
+
+.popup-party-order .party-order .symbol-fireworks {
+  position: absolute;
+  right: 1.2rem;
+  bottom: -4.7rem; }
+
+.popup-party-order .popup-bg__img {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  background: url(../img/bg-party.jpg) 0 0 no-repeat; }
+
+.popup-party-order .symbol-rabbit {
+  position: absolute;
+  z-index: -1;
+  top: -5rem;
+  right: 8.5rem;
+  -webkit-transform: rotate(-166deg);
+      -ms-transform: rotate(-166deg);
+          transform: rotate(-166deg); }
+
 .graduation-party-banner {
   margin-bottom: 2.4rem; }
   .graduation-party-banner__slider {
     height: 420px; }
   .graduation-party-banner__slide {
-    width: 100%;
-    background-position: 50% 50%;
     height: 420px;
-    background-size: cover;
-    overflow: hidden; }
+    background-color: #8a5744;
+    position: relative; }
   .graduation-party-banner__footer {
     width: 100%;
     height: 2.9rem;
@@ -9693,7 +9745,13 @@ test popup
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%; }
   .graduation-party-banner__btn {
     padding: 1.2rem 1.8rem;
     font-size: 2.3rem;
@@ -9713,6 +9771,23 @@ test popup
     .graduation-party-banner__btn:hover {
       background-color: #80c242;
       color: #ffffff; }
+  .graduation-party-banner .owl-theme .owl-dots .owl-dot span {
+    width: .8rem;
+    height: .8rem;
+    background-color: #fff;
+    margin: 0 .5rem;
+    position: relative; }
+  .graduation-party-banner .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: .3rem; }
+  .graduation-party-banner .owl-theme .owl-dots .owl-dot.active span::after {
+    content: '';
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    width: .4rem;
+    height: .4rem;
+    background-color: #7e5847;
+    border-radius: 1rem; }
 
 .graduation-party .c-caption-special {
   margin-bottom: .4rem; }

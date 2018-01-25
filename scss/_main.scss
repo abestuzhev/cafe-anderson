@@ -6681,6 +6681,7 @@ test popup
         &__left {
             padding: 0 1.5rem;
             width: 53%;
+            position: relative;
         }
         &__right {
             padding: 0 1.5rem;
@@ -6691,7 +6692,57 @@ test popup
             font-size: 1.2rem;
             color: $black;
         }
+        
+        #party-datepicker {
+            margin-bottom: 1.6rem;
+            box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+        }
+    
+    
+        .datepicker {
+            width: 100%;
+        }
+    
+        .datepicker--cell {
+            height: 5.1rem;
+        }
+
+        .datepicker--cell-day {
+            width: 13.28571%;
+            margin: .8% .4%;
+        }
+    
+        .datepicker--nav {
+            padding: 1.4rem .4rem;
+        }
+    
+        .datepicker--content {
+            padding: 7px 11px 18px;
+        }
+    
+        .symbol-fireworks{
+            position: absolute;
+            right: 1.2rem;
+            bottom: -4.7rem;
+        }
     }
+    
+    .popup-bg__img {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+        background: url(../img/bg-party.jpg) 0 0 no-repeat;
+    }
+    
+    .symbol-rabbit {
+        position: absolute;
+        z-index: -1;
+        top: -5rem;
+        right: 8.5rem;
+        transform: rotate(-166deg);
+    }
+    
 }
 
 .graduation-party {
@@ -6706,12 +6757,14 @@ test popup
             height: 420px;
         }
         &__slide {
-            width: 100%;
-            background-position: 50% 50%;
+            //width: 100%;
+            //background-position: 50% 50%;
+            //-webkit-background-size: cover;
+            //background-size: cover;
+            //overflow: hidden;
             height: 420px;
-            -webkit-background-size: cover;
-            background-size: cover;
-            overflow: hidden;
+            background-color: #8a5744;
+            position: relative;
         }
         
         &__footer {
@@ -6727,6 +6780,11 @@ test popup
             flex-flow: row nowrap;
             align-items: center;
             justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            
         }
         
         &__btn {
@@ -6754,6 +6812,29 @@ test popup
                 background-color: #80c242;
                 color: #ffffff;
             }
+        }
+    
+        .owl-theme .owl-dots .owl-dot span {
+            width: .8rem;
+            height: .8rem;
+            background-color: #fff;
+            margin: 0 .5rem;
+            position: relative;
+        }
+    
+        .owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: .3rem;
+        }
+    
+        .owl-theme .owl-dots .owl-dot.active span::after {
+            content: '';
+            position: absolute;
+            top: .2rem;
+            left: .2rem;
+            width: .4rem;
+            height: .4rem;
+            background-color: #7e5847;
+            border-radius: 1rem;
         }
     }
     

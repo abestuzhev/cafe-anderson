@@ -1000,6 +1000,16 @@
     .popup-product__btn-close {
         display: inline-block;
     }
+
+    /*адаптивка выпускники*/
+    .graduation-party .c-card-party .c-grid {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .graduation-party .c-card-party .c-col-6 {
+        width: 100%;
+    }
 }
 
 @media (max-width:920px) {
@@ -2488,3 +2498,5 @@
         /*margin: 0 auto !important;*/
     /*}*/
 /*}*/
+
+
