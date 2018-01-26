@@ -7807,7 +7807,8 @@ test popup
     .basket-mix__item {
       display: inline-block;
       padding: .8rem 1.4rem;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      font-size: 1.6rem; }
       .basket-mix__item:last-child {
         margin: 0; }
       .basket-mix__item::after {

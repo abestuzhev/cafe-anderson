@@ -89,6 +89,16 @@ $(document).ready(function ($) {
 
     });
 
+    function initProfilePlugin(){
+        //маска
+        $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+        $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
+
+        /*селект*/
+        $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
+        changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'boy','icon-boy-smiling','icon-girl-smiling');
+    };
+
     // $(document).on('click', '.lk-profile__edit .c-button__medium', function(){
     //     $(this).parents('.lk-profile-edit').hide;
     //     $(this).parents('.lk-profile-item').children('div:first-child').show();

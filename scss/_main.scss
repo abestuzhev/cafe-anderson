@@ -4339,6 +4339,7 @@ test popup
             display: inline-block;
             padding: .8rem 1.4rem;
             margin-right: 1rem;
+            font-size: 1.6rem;
             
             &:last-child {
                 margin: 0;
@@ -4347,6 +4348,7 @@ test popup
                 content: '';
                 border: none;
             }
+            
         }
         
         .c-icon {

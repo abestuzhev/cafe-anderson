@@ -220,10 +220,6 @@
         margin-bottom: 1.3rem;
     }
 
-    /*#cafe-info-map {*/
-        /*height: 37.8rem;*/
-    /*}*/
-
     .cafe-holiday-slider {
         width: 55%;
     }
@@ -279,6 +275,13 @@
 
     .popup-product__check-close {
         display: block;
+    }
+
+    .basket-mix {
+        font-size: 0;
+    }
+    .basket-mix__item {
+         margin-right: 0;
     }
 }
 
