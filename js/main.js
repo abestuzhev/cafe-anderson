@@ -852,8 +852,12 @@ $(document).ready(function ($) {
 
     // событие клика по веб-документу
     // $(document).mouseup(function (e) {
+    //
     //     var popup = $('.popup');
-    //     if (!popup.is(e.target) && !popup.has(e.target).length) {
+    //     if (!popup.is(e.target)
+    //         && !popup.has(e.target).length
+    //         && !$('.popup-mini').is(e.target)
+    //     ) {
     //         popup.parents('.mfp-wrap').removeClass('is-visible');
     //         $('.mfp-bg').removeClass('is-visible');
     //         $('html').css({
@@ -871,10 +875,10 @@ $(document).ready(function ($) {
         function hideOutZone(elem, elem2){
             var div = $(elem);
             var div2 = $(elem2);
-            if (!div.is(e.target) // если клик был не по нашему блоку
+            if (!div.is(e.target)
                 && div.has(e.target).length === 0
-                && !div2.is(e.target) // если клик был не по нашему блоку
-                && div2.has(e.target).length === 0) { // и не по его дочерним элементам
+                && !div2.is(e.target)
+                && div2.has(e.target).length === 0) {
                 // div.removeClass(instrumentHide); // скрываем его
                 // console.log('прошел');
                 div.parents('.mfp-wrap').removeClass('is-visible');
