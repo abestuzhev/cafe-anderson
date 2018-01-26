@@ -60,6 +60,20 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    //изменение в оформлении заказа на другого пользователя
+    $(document).on('change', '#order-user_other', function(){
+        if($(this).prop( "checked" )){
+            $('.order-user__list').css('display','none');
+            $('.order-user__other-form').css('display','flex');
+        }
+    });
+    $(document).on('change', '#order-user_auth', function(){
+        if($(this).prop( "checked" )){
+            $('.order-user__list').css('display','flex');
+            $('.order-user__other-form').css('display','none');
+        }
+    });
+
     //редактировать профиль
     $(document).on('click', '.lk-profile__link-edit', function(e){
         e.preventDefault();

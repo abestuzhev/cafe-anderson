@@ -7986,6 +7986,21 @@ test popup
 /*Оформление заказа (ordering)----------------------------------------------------*/
 .order {
   font-family: "PT Serif Caption"; }
+  .order-header {
+    padding-bottom: 2rem;
+    position: relative;
+    margin-bottom: 2rem; }
+    .order-header::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+    .order-header .c-form__item {
+      margin-right: 2rem;
+      margin-bottom: 0; }
   .order-nav {
     margin-bottom: 1.4rem; }
     .order-nav__item {
@@ -8388,18 +8403,11 @@ test popup
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 2rem;
     position: relative; }
-    .order-user::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: .4rem;
-      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
     .order-user__col {
       width: 50%; }
+    .order-user__other-form {
+      display: none; }
     .order-user__list {
       display: -webkit-box;
       display: -ms-flexbox;

@@ -839,10 +839,6 @@
                                         <input type="radio" name="order-user" id="order-user_auth" checked>
                                         <label class="order-radio" for="order-user_auth">Ирина Комарова</label>
                                     </div>
-                                    <ul class="order-user__list">
-                                        <li class="order-user__list-text">Тел.: +7 (921) 256- 89- 56 ;</li>
-                                        <li class="order-user__list-text">Email: ininakomarova87@gmail.com</li>
-                                    </ul>
                                 </li>
                                 <li class="order-user__col">
                                     <div class="order-user__name">
@@ -851,20 +847,26 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="c-form__grid--left">
-                                <div class="c-form__item">
-                                    <label class="c-label" for="order-other-user">Ф.И.О.<span class="c-obligatory-field">*</span></label>
-                                    <input class="c-input" type="text" placeholder="Представьтесь, пожалуйста" name="lk-profile__user" id="lk-profile__user" required="">
-                                </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__user">Email:<span class="c-obligatory-field">*</span></label>
-                                    <input class="c-input" type="text" placeholder="Введите, email" name="lk-profile__user" id="lk-profile__user" required="">
-                                </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="lk-profile__user">Пароль<span class="c-obligatory-field">*</span></label>
-                                    <input class="c-input" type="text" placeholder="Введите пароль" name="lk-profile__user" id="lk-profile__user" required="">
-                                </div>
+                            <div class="order-user__body">
+                                <ul class="order-user__list">
+                                    <li class="order-user__list-text">Тел.: +7 (921) 256- 89- 56 ;</li>
+                                    <li class="order-user__list-text">Email: ininakomarova87@gmail.com</li>
+                                </ul>
 
+                                <div class="order-user__other-form c-form__grid--left">
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="order-other__user">Ф.И.О.<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Ф.И.О." name="order-other__user" id="order-other__user" required="">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="order-other__email">Email:<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Введите email" name="order-other__email" id="order-other__email" required="">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="order-other__password">Пароль<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Введите пароль" name="order-other__password" id="order-other__password" required="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

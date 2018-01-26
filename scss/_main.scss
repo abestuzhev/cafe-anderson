@@ -4581,6 +4581,27 @@ test popup
 .order {
     font-family: $font_serif;
     
+    &-header {
+        padding-bottom: 2rem;
+        position: relative;
+        margin-bottom: 2rem;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: .4rem;
+            background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        }
+        
+        .c-form__item {
+            margin-right: 2rem;
+            margin-bottom: 0;
+        }
+    }
+    
     &-nav {
         margin-bottom: 1.4rem;
         
@@ -5093,22 +5114,14 @@ test popup
         flex-flow: row nowrap;
         align-items: flex-start;
         justify-content: space-between;
-        padding-bottom: 2rem;
         position: relative;
-        
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: .4rem;
-            background: url(../img/pattern-round.jpg) 0 0 repeat-x;
-        }
         
         &__col {
             width: 50%;
-            
+        }
+        
+        &__other-form {
+            display: none;
         }
         
         &__list {
