@@ -1120,6 +1120,19 @@
     .creators-contact {
         padding: 3rem 2.4rem;
     }
+
+    .cafe-list .c-grid {
+        display: block;
+    }
+
+    .cafe-list .c-col {
+        width: 100%;
+        height: auto;
+    }
+
+    .cafe-list .cafe-list__box {
+        display: block;
+    }
 }
 
 @media (max-width:840px) {
