@@ -83,6 +83,10 @@ $(document).ready(function ($) {
         $(this).parents('.lk-profile__item')
             .children('.lk-profile-edit:eq(0)')
             .show();
+
+        $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
+        changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'boy','icon-boy-smiling','icon-girl-smiling');
+
     });
 
     // $(document).on('click', '.lk-profile__edit .c-button__medium', function(){

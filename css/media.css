@@ -330,6 +330,10 @@
     .creators .photo-point__description {
         display: none !important;
     }
+
+    .graduation-party-banner__btn {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:1060px) {
@@ -846,6 +850,10 @@
 
     .lk-profile-edit__address .c-form__grid{
 
+    }
+
+    .graduation-party-banner__btn {
+        font-size: 1.6rem;
     }
 }
 
@@ -1915,6 +1923,13 @@
     }
 }
 
+@media (max-width:650px) {
+    .graduation-party-banner__slider {
+        height: 20rem;
+    }
+}
+
+
 @media (max-width:600px) {
     .owl-carousel {
         width: 100%;
@@ -1952,6 +1967,21 @@
         background-position: 0 0;
     }
 
+    .c-caption-special__title {
+        font-size: 1.8rem;
+    }
+
+    .page-container {
+        padding: 2rem 1.5rem;
+        margin-right: -1.6rem;
+        margin-left: -1.6rem;
+    }
+
+    .graduation-party-banner,
+    .graduation-party .c-card-party__header {
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+    }
 
 
 }
@@ -2020,6 +2050,11 @@
 
     .creators .popup {
        width: 87% !important;
+    }
+
+    .graduation-party .c-caption-special__subtitle {
+        font-size: 1.3rem;
+        padding: 0 3rem;
     }
 }
 
