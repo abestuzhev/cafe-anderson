@@ -3330,7 +3330,8 @@ a.c-button:hover {
             align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    line-height: .9; }
     .c-card-party__title .icon-uneven-circle {
       width: 5.9rem;
       height: 5.9rem;
@@ -3341,6 +3342,7 @@ a.c-button:hover {
       position: relative;
       margin-right: 1.7rem; }
       .c-card-party__title .icon-uneven-circle span {
+        white-space: nowrap;
         font-size: 1.6rem;
         position: absolute;
         top: 50%;

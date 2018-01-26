@@ -2986,6 +2986,7 @@ a.c-button {
         flex-flow: row nowrap;
         align-items: center;
         justify-content: flex-start;
+        line-height: .9;
         
         .icon-uneven-circle {
             width: 5.9rem;
@@ -2998,6 +2999,7 @@ a.c-button {
             margin-right: 1.7rem;
             
             span {
+                white-space: nowrap;
                 font-size: 1.6rem;
                 position: absolute;
                 top: 50%;

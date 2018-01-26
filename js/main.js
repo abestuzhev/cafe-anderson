@@ -206,6 +206,7 @@ $(document).ready(function ($) {
             .parents('.lk-profile-edit__line')
             .siblings('.lk-profile-edit__copy')
             .clone().appendTo(".lk-profile-edit__child-list");
+        $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
 
         $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
         changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'boy','icon-boy-smiling','icon-girl-smiling');

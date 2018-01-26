@@ -161,10 +161,13 @@
 
     .cafe-list-layout .filter-item:nth-child(2) {width: 66%;}
 
+
+
 }
 
 @media screen and (max-width: 1100px) {
     .cafe-list-layout .filter-item:nth-child(2) {width: 62%;}
+
 }
 
 @media screen and (max-width: 985px) {
@@ -178,6 +181,26 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+
+    .c-caption-special__title {
+        font-size: 4.5rem;
+    }
+    .graduation-party .c-caption-special .icon-balloon-2,
+    .graduation-party .c-caption-special .icon-ice-cream-2 {
+        font-size: .9rem;
+    }
+    .graduation-party .c-caption-special .icon-balloon-2 {
+        top: 2.8rem;
+        left: -1.7rem;
+    }
+    .graduation-party .c-caption-special .icon-ice-cream-2 {
+        right: -3.7rem;
+    }
+    .graduation-party .c-caption-special__subtitle {
+        font-size: 2rem;
+    }
+}
 @media screen and (max-width: 1270px) {
     .header-search__form {
         width: 28rem;
@@ -1061,6 +1084,14 @@
     .c-card-party-photos {
         margin-bottom: 1rem;
     }
+
+    .c-card-party__title {
+        font-size: 2.6rem;
+    }
+
+    .c-button__large {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width:920px) {
@@ -1136,6 +1167,15 @@
 
     .cafe-list .cafe-list__box {
         display: block;
+    }
+
+    .graduation-party .c-caption-special__subtitle {
+        font-size: 1.7rem;
+        padding: 0 4rem;
+    }
+
+    .c-caption-special__title {
+        font-size: 3.5rem;
     }
 }
 
@@ -1542,7 +1582,6 @@
         font-size: 1.5rem;
     }
 
-
 }
 
 @media (max-width:780px) {
@@ -1686,6 +1725,19 @@
     .creators-slogan__mark-2 {
         width: 8rem;
     }
+
+    .c-caption-special__title {
+        font-size: 3rem;
+    }
+
+    .graduation-party .c-caption-special .icon-balloon-2, .graduation-party .c-caption-special .icon-ice-cream-2 {
+        font-size: .8rem;
+    }
+
+    .c-caption-special {
+        padding: .7rem 2.1rem 1rem;
+    }
+
 }
 
 @media screen and (max-height:600px) {
@@ -2250,6 +2302,11 @@
         width: 100%;
     }
 
+    .c-button__large,
+    .c-card-party__application {
+        width: 100%;
+    }
+
 }
 
 @media (max-width:440px) {
@@ -2348,6 +2405,7 @@
     .star-guests .ins-photo {
         width: 100%;
     }
+
 }
 
 
