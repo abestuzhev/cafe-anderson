@@ -4300,7 +4300,8 @@ a.c-button:hover {
     display: inline-block;
     padding: 1.2rem;
     color: #6e6966;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    width: 91%; }
   .top-message__close {
     width: 2.6rem;
     height: 2.6rem;
