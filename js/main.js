@@ -84,8 +84,7 @@ $(document).ready(function ($) {
             .children('.lk-profile-edit:eq(0)')
             .show();
 
-        $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
-        changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'boy','icon-boy-smiling','icon-girl-smiling');
+        initProfilePlugin();
 
     });
 
@@ -96,7 +95,7 @@ $(document).ready(function ($) {
 
         /*селект*/
         $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
-        changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'boy','icon-boy-smiling','icon-girl-smiling');
+        changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'M','icon-boy-smiling','icon-girl-smiling');
     };
 
     // $(document).on('click', '.lk-profile__edit .c-button__medium', function(){
@@ -222,8 +221,7 @@ $(document).ready(function ($) {
             .clone().appendTo(".lk-profile-edit__child-list");
         $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
 
-        $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
-        changeSelectFace('.lk-profile-edit__child-list .js-select--child', 'boy','icon-boy-smiling','icon-girl-smiling');
+        initProfilePlugin();
     });
 
 
@@ -888,6 +886,7 @@ $(document).ready(function ($) {
     hidePopup('.header-mobile__auth', 'popup-slide__show');
     hidePopup('.header-search__form', 'is-visible');
     hidePopup('.header-search-result', 'is-visible');
+    hidePopup('.mfp-wrap', 'is-visible');
 
 
     // мобильный заказать звонок, показываем форму и удаляем надпись
@@ -1174,7 +1173,7 @@ $(document).ready(function ($) {
         });
     }
 
-    changeSelectFace('.lk-profile__child-gender', 'boy','icon-boy-smiling','icon-girl-smiling');
+    changeSelectFace('.lk-profile__child-gender', 'M','icon-boy-smiling','icon-girl-smiling');
 
 
 
