@@ -6753,7 +6753,7 @@ test popup
         }
         
         &__slider {
-            height: 420px;
+            max-height: 42rem;
         }
         &__slide {
             //width: 100%;
@@ -6761,7 +6761,7 @@ test popup
             //-webkit-background-size: cover;
             //background-size: cover;
             //overflow: hidden;
-            height: 420px;
+            max-height: 42rem;
             background-color: #8a5744;
             position: relative;
         }
@@ -6823,6 +6823,9 @@ test popup
     
         .owl-theme .owl-nav.disabled + .owl-dots {
             margin-top: .3rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
     
         .owl-theme .owl-dots .owl-dot.active span::after {
