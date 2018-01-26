@@ -1774,7 +1774,9 @@ a.c-button:hover {
     width: 35%;
     overflow: hidden;
     position: relative;
-    border-radius: .4rem 0 0 .4rem; }
+    border-radius: .4rem 0 0 .4rem;
+    background-position: 50% 50%;
+    background-size: cover; }
     .c-card-cafe__img img {
       position: absolute;
       top: 50%;
@@ -8387,8 +8389,7 @@ test popup
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-bottom: 2rem;
-    position: relative;
-    margin-bottom: 2rem; }
+    position: relative; }
     .order-user::after {
       content: '';
       position: absolute;

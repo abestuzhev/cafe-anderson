@@ -1098,6 +1098,9 @@ a.c-button {
         overflow: hidden;
         position: relative;
         border-radius: .4rem 0 0 .4rem;
+        background-position: 50% 50%;
+        -webkit-background-size: cover;
+        background-size: cover;
         
        
 

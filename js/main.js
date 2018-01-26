@@ -521,14 +521,14 @@ $(document).ready(function ($) {
         }
 
     }
-    $(window).on('resize', fix_size);
-    fix_size();
-
-    if (typeof _current != 'undefined') {
-        var mapImages = _current;
-    } else {
-        var mapImages = $('.c-card-cafe__img img');
-    }
+    // $(window).on('resize', fix_size);
+    // fix_size();
+    //
+    // if (typeof _current != 'undefined') {
+    //     var mapImages = _current;
+    // } else {
+    //     var mapImages = $('.c-card-cafe__img img');
+    // }
 
     /*если в городе одно кафе, делаем его inline*/
     $('.cafe-list__city').each(function(){
