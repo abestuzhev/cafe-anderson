@@ -1008,6 +1008,10 @@
         font-size: 1.8rem;
     }
 
+    .graduation-party-banner__footer {
+        background-position: 0 50%;
+    }
+
 }
 
 @media (max-width:940px) {
@@ -1030,6 +1034,10 @@
 
     .popup-party-order .party-order .datepicker--cell {
         height: 6.4vw;
+    }
+
+    .graduation-party-banner__btn span {
+        display: inline-block;
     }
 }
 
@@ -1924,8 +1932,23 @@
 }
 
 @media (max-width:650px) {
-    .graduation-party-banner__slider {
+    /*.graduation-party-banner__slider,*/
+    .graduation-party-banner__slide {
         height: 20rem;
+    }
+
+    .graduation-party-banner__btns {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .graduation-party-banner__btn {
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+    }
+
+    .graduation-party-banner__slider.owl-carousel .owl-item img {
+        width: auto;
+        height: 100%;
     }
 }
 
