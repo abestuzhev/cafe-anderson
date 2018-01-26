@@ -3616,7 +3616,8 @@ a.c-button:hover {
         display: table; }
     .header-mobile__cabinet {
       float: left;
-      margin-right: 1.1rem; }
+      margin-right: 1.1rem;
+      display: none; }
       .header-mobile__cabinet .icon-cabinet {
         width: 21px; }
     .header-mobile__city {

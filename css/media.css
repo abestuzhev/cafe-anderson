@@ -1563,6 +1563,15 @@
     .popup-party-order .party-order__right {
         width: 100%;
     }
+    /*.popup-party-order .party-order__left {*/
+        /*order:2;*/
+    /*}*/
+
+    /*.popup-party-order .party-order__right {*/
+        /*order: 1;*/
+        /*margin-bottom: 2rem;*/
+    /*}*/
+
 
     .popup-party-order .party-order .datepicker--cell {
         height: 11vw;
