@@ -71,6 +71,11 @@ $(document).ready(function ($) {
             .show();
     });
 
+    // $(document).on('click', '.lk-profile__edit .c-button__medium', function(){
+    //     $(this).parents('.lk-profile-edit').hide;
+    //     $(this).parents('.lk-profile-item').children('div:first-child').show();
+    // });
+
     /*слайдер для страницы Выпускные*/
     $('.graduation-party-banner__slider').owlCarousel({
         loop:true,
