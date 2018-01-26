@@ -5723,14 +5723,6 @@ test popup
             background: url(../img/pattern-round.jpg) 0 0 repeat-x;
         }
         
-        &:last-child {
-            background: #fdf7e8 url(../img/bg-header.png) repeat;
-           
-            &::after {
-                content: '';
-                display: none;
-            }
-        }
         div:first-child + .lk-profile-edit,
         div:nth-child(2) + .lk-profile-edit{
             display: none;
@@ -5771,6 +5763,13 @@ test popup
     }
     &-subscription {
         position: relative;
+        background: #fdf7e8 url(../img/bg-header.png) repeat;
+    
+        &::after {
+            content: '';
+            display: none;
+        }
+       
         
         &__title {
             font-size: 1.8rem;

@@ -8907,11 +8907,6 @@ test popup
       width: 100%;
       height: .4rem;
       background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
-    .lk-profile__item:last-child {
-      background: #fdf7e8 url(../img/bg-header.png) repeat; }
-      .lk-profile__item:last-child::after {
-        content: '';
-        display: none; }
     .lk-profile__item div:first-child + .lk-profile-edit,
     .lk-profile__item div:nth-child(2) + .lk-profile-edit {
       display: none; }
@@ -8928,7 +8923,11 @@ test popup
   .lk-profile-user + .lk-profile-edit {
     display: none; }
   .lk-profile-subscription {
-    position: relative; }
+    position: relative;
+    background: #fdf7e8 url(../img/bg-header.png) repeat; }
+    .lk-profile-subscription::after {
+      content: '';
+      display: none; }
     .lk-profile-subscription__title {
       font-size: 1.8rem;
       line-height: 1;

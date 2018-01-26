@@ -834,12 +834,6 @@ $(document).ready(function ($) {
         $('html').removeClass('body-popup');
     });
 
-    $(".mfp-bg").on('click', function (e) {
-        e.preventDefault();
-        $('.popup').parents().removeClass('is-visible');
-        // $('.fixed-overlay').removeClass('is-visible');
-        $('html').removeClass('body-popup');
-    });
 
 
 
@@ -856,9 +850,22 @@ $(document).ready(function ($) {
         });
     }
 
+    // событие клика по веб-документу
+    // $(document).mouseup(function (e) {
+    //     var popup = $('.popup');
+    //     if (!popup.is(e.target) && !popup.has(e.target).length) {
+    //         popup.parents('.mfp-wrap').removeClass('is-visible');
+    //         $('.mfp-bg').removeClass('is-visible');
+    //         $('html').css({
+    //             'margin-right':'0'
+    //         }).removeClass('lock-html');
+    //     }
+    // });
+
     /*скрываем попапы вне зоны элемента для карточки товара*/
     $(document).mouseup(function (e) { // событие клика по веб-документу
-        var div = $('.popup'); // тут указываем ID элемента
+        // var div = $('.popup');
+        // тут указываем ID элемента
         // var div2 = $('.popup-mini');
 
         function hideOutZone(elem, elem2){
@@ -877,7 +884,6 @@ $(document).ready(function ($) {
             }
         }
         hideOutZone('.js-popup-mouseUp', '.popup-mini');
-        hideOutZone('.js-popup-mouseUp', '.popup-mini');
 
     });
 
@@ -886,7 +892,8 @@ $(document).ready(function ($) {
     hidePopup('.header-mobile__auth', 'popup-slide__show');
     hidePopup('.header-search__form', 'is-visible');
     hidePopup('.header-search-result', 'is-visible');
-    hidePopup('.mfp-wrap', 'is-visible');
+
+
 
 
     // мобильный заказать звонок, показываем форму и удаляем надпись
