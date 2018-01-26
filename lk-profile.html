@@ -850,6 +850,7 @@
                 </nav>
                 <section class="lk-profile">
                     <form action="" method="POST" class="lk-profile__list c-form">
+                        <!------------------------------------------------------------------------->
                         <div class="lk-profile__item">
                             <div class="lk-profile-user">
                                 <div class="lk-profile__header">
@@ -861,8 +862,22 @@
                                     <div class="lk-profile__date">18.08.1985г.</div>
                                 </div>
                             </div>
-                            
                             <div class="lk-profile-edit">
+                                <h4 class="lk-profile-edit__title">Представьтесь, пожалуйста!</h4>
+                                <div class="c-form__grid--left">
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__user">Ф.И.О.<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Представьтесь, пожалуйста" name="lk-profile__user" id="lk-profile__user" required>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__user-date">Дата рождения</label>
+                                        <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__user-date" id="lk-profile__user-date">
+                                    </div>
+                                </div>
+                                <button class="c-button c-button__medium">Сохранить</button>
+                            </div>
+                            
+                            <div class="lk-profile-edit lk-profile-edit__pass">
                                 <h4 class="lk-profile-edit__title">Изменить пароль</h4>
                                 <div class="c-form__grid--left">
                                     <div class="c-form__item">
@@ -877,85 +892,243 @@
                                 <button class="c-button c-button__medium">Сохранить</button>
                             </div>
                         </div>
-                        <div class="lk-profile__item lk-profile-contact">
-                            <div class="lk-profile__header">
-                                <h3 class="lk-profile__title">Контактные данные:</h3>
-                                <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
-                            </div>
-                            <div class="lk-profile__body">
-                                <div class="lk-profile__email">Email: ininakomarova87@gmail.com</div>
-                                <div class="lk-profile__phone">Тел.: +7 (921) 256- 89- 56</div>
-                                <div class="lk-profile__loyalty">№ карты лояльности: 895-63-89</div>
-                            </div>
-
-                        </div>
-                        <div class="lk-profile__item lk-profile-child">
-                            <div class="lk-profile__header">
-                                <h3 class="lk-profile__title">Дети:</h3>
-                                <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
-                            </div>
-                            <div class="lk-profile__body">
-                                <ul class="lk-profile-child__list">
-                                    <li class="lk-profile-child__item">
-                                        <div class="lk-profile-child-card lk-profile-child-card--boy">
-                                            <div class="lk-profile-child-card__icon"><i class="icon-boy-smiling"></i></div>
-                                            <div class="lk-profile-child-card__body">
-                                                <div class="lk-profile-child-card__name">Вячеслав</div>
-                                                <div class="lk-profile-child-card__date">17.01.1992г</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="lk-profile-child__item">
-                                        <div class="lk-profile-child-card lk-profile-child-card--boy">
-                                            <div class="lk-profile-child-card__icon"><i class="icon-boy-smiling"></i></div>
-                                            <div class="lk-profile-child-card__body">
-                                                <div class="lk-profile-child-card__name">Евгений</div>
-                                                <div class="lk-profile-child-card__date">17.01.1992г</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="lk-profile-child__item">
-                                        <div class="lk-profile-child-card lk-profile-child-card--girl">
-                                            <div class="lk-profile-child-card__icon"><i class="icon-girl-smiling"></i></div>
-                                            <div class="lk-profile-child-card__body">
-                                                <div class="lk-profile-child-card__name">Мария</div>
-                                                <div class="lk-profile-child-card__date">11.09.1995г</div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
-
-                            </div>
-
-                        </div>
-                        <div class="lk-profile__item lk-profile-address">
-                            <div class="lk-profile__header">
-                                <h3 class="lk-profile__title">Адрес доставки:</h3>
-                                <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
-                            </div>
-                            <div class="lk-profile__body">
-                                <div class="c-grid c-grid-between">
-                                   <div class="c-col-6">
-                                       <input type="radio" class="order-input" name="lk-profile__address" id="lk-profile__address-default" checked>
-                                       <label class="order-radio order-radio--top" for="lk-profile__address-default">
-                                           <span class="c-form__attention"><span>*! </span>Используется как адрес доставки заказ по умолчанию.</span>
-                                           <span class="lk-profile__text">Город: Москва</span>
-                                           <span class="lk-profile__text">Адрес: ул.Большая Пресненская, д.25, кв.56</span>
-                                           <span class="lk-profile__text">Подробности: 2 подъезд, домофон, 5 этаж, есть лифт</span>
-                                       </label>
-                                   </div>
-                                   <div class="c-col-6">
-                                       <input type="radio" class="order-input" name="lk-profile__address" id="lk-profile__address-custom">
-                                       <label class="order-radio order-radio--top" for="lk-profile__address-custom">
-                                           <span class="lk-profile__text">Город: Москва</span>
-                                           <span class="lk-profile__text">Адрес: ул.Большая Пресненская, д.25, кв.56</span>
-                                           <span class="lk-profile__text">Подробности: 2 подъезд, домофон, 5 этаж, есть лифт</span>
-                                       </label>
-                                   </div>
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <div class="lk-profile__item ">
+                            <div class="lk-profile-contact">
+                                <div class="lk-profile__header">
+                                    <h3 class="lk-profile__title">Контактные данные:</h3>
+                                    <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
+                                </div>
+                                <div class="lk-profile__body">
+                                    <div class="lk-profile__email">Email: ininakomarova87@gmail.com</div>
+                                    <div class="lk-profile__phone">Тел.: +7 (921) 256- 89- 56</div>
+                                    <div class="lk-profile__loyalty">№ карты лояльности: 895-63-89</div>
                                 </div>
                             </div>
+                            <div class="lk-profile-edit lk-profile-edit__contact">
+                                <h4 class="lk-profile-edit__title">Введите контактные данные для связи с вами</h4>
+                                <div class="c-form__grid--left">
+                                    <div class="lk-profile-edit__email-list" id="lk-profile-edit__contact-email">
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__email">Email</label>
+                                            <input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__email" id="lk-profile__email">
+                                        </div>
+                                    </div>
+                                    <div class="c-form__item lk-profile-edit__copy">
+                                        <label class="c-label" for="lk-profile__email">
+                                            <span>Email</span>
+                                            <input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__email">
+                                            <a href="#" class="c-form__del">Удалить [х]</a>
+                                        </label>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <a href="#" class="c-form__add" id="js-lk-profile__add-email"></a>
+                                    </div>
+                                </div>
+                                <div class="c-form__grid--left">
+                                    <div class="lk-profile-edit__tel-list" id="lk-profile-edit__contact-tel">
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__phone">Телефон</label>
+                                            <input class="c-input js-input--tel" type="text" placeholder="+7(___)___-__-__" name="lk-profile__phone" id="lk-profile__phone">
+                                        </div>
+
+                                    </div>
+                                    <div class="c-form__item lk-profile-edit__copy">
+                                        <label class="c-label"><span>Телефон</span>
+                                            <input class="c-input js-input--tel" type="text" placeholder="+7(___)___-__-__" name="lk-profile__phone">
+                                            <a href="#" class="c-form__del">Удалить [х]</a>
+                                        </label>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <a href="#" class="c-form__add" id="js-lk-profile__add-tel"></a>
+                                    </div>
+                                </div>
+                                <div class="c-form__item">
+                                    <label class="c-label" for="lk-profile__loyalty">Карта лояльности</label>
+                                    <input class="c-input js-input--loyalty" type="text" placeholder="Введите номер карты" name="lk-profile__loyalty" id="lk-profile__loyalty">
+                                </div>
+                                <button class="c-button c-button__medium">Сохранить</button>
+                            </div>
+
                         </div>
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <div class="lk-profile__item ">
+                            <div class="lk-profile-child">
+                                <div class="lk-profile__header">
+                                    <h3 class="lk-profile__title">Дети:</h3>
+                                    <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
+                                </div>
+                                <div class="lk-profile__body">
+                                    <ul class="lk-profile-child__list">
+                                        <li class="lk-profile-child__item">
+                                            <div class="lk-profile-child-card lk-profile-child-card--boy">
+                                                <div class="lk-profile-child-card__icon"><i class="icon-boy-smiling"></i></div>
+                                                <div class="lk-profile-child-card__body">
+                                                    <div class="lk-profile-child-card__name">Вячеслав</div>
+                                                    <div class="lk-profile-child-card__date">17.01.1992г</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lk-profile-child__item">
+                                            <div class="lk-profile-child-card lk-profile-child-card--boy">
+                                                <div class="lk-profile-child-card__icon"><i class="icon-boy-smiling"></i></div>
+                                                <div class="lk-profile-child-card__body">
+                                                    <div class="lk-profile-child-card__name">Евгений</div>
+                                                    <div class="lk-profile-child-card__date">17.01.1992г</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="lk-profile-child__item">
+                                            <div class="lk-profile-child-card lk-profile-child-card--girl">
+                                                <div class="lk-profile-child-card__icon"><i class="icon-girl-smiling"></i></div>
+                                                <div class="lk-profile-child-card__body">
+                                                    <div class="lk-profile-child-card__name">Мария</div>
+                                                    <div class="lk-profile-child-card__date">11.09.1995г</div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lk-profile-edit lk-profile-edit__child">
+                                <h4 class="lk-profile-edit__title">Дети:</h4>
+                                <div id="lk-profile-edit__child">
+                                    <div class="lk-profile-edit__line c-form__grid--left">
+                                        <div class="c-form__item">
+                                            <label class="c-label">Пол</label>
+                                            <div class="c-select-layout">
+                                                <i class="c-select__icon icon-boy-smiling"></i>
+                                                <select name="lk-profile__child-gender" id="lk-profile__child-gender" class="c-select lk-profile__child-gender" required>
+                                                    <option value="boy">м</option>
+                                                    <option value="girl">ж</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__child-name">Имя ребенка</label>
+                                            <input class="c-input" type="text" placeholder="Имя ребенка" name="lk-profile__child-name" id="lk-profile__child-name">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__child-date">Дата рождения</label>
+                                            <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__child-date" id="lk-profile__child-date">
+                                        </div>
+                                        <div class="c-form__item"><a href="#" class="c-form__add" id="js-lk-profile__add-child"></a></div>
+                                    </div>
+
+                                    <div class="lk-profile-edit__line lk-profile-edit__copy c-form__grid--left">
+                                        <div class="c-form__item">
+                                            <div class="c-select-layout">
+                                                <i class="c-select__icon icon-boy-smiling"></i>
+                                                <select name="lk-profile__child-gender" class="js-select--child lk-profile__child-gender" required>
+                                                    <option value="boy">м</option>
+                                                    <option value="girl">ж</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input" type="text" placeholder="Имя ребенка" name="lk-profile__child-name">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input lk-profile-input--date js-input--date" type="text" placeholder="чч.мм.гг." name="lk-profile__child-date">
+                                        </div>
+                                        <div class="c-form__item"><a href="#" class="c-form__del">Удалить [х]</a></div>
+                                    </div>
+                                    <div class="lk-profile-edit__child-list"></div>
+                                </div>
+                                <button class="c-button c-button__medium">Сохранить</button>
+                            </div>
+                        </div>
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <div class="lk-profile__item ">
+                            <div class="lk-profile-address">
+                                <div class="lk-profile__header">
+                                    <h3 class="lk-profile__title">Адрес доставки:</h3>
+                                    <a href="" class="lk-profile__link-edit"><i class="c-icon icon-pencil-2"></i>редактировать</a>
+                                </div>
+                                <div class="lk-profile__body">
+                                    <div class="c-grid c-grid-between">
+                                        <div class="c-col-6">
+                                            <input type="radio" class="order-input" name="lk-profile__address" id="lk-profile__address-default" checked>
+                                            <label class="order-radio order-radio--top" for="lk-profile__address-default">
+                                                <span class="c-form__attention"><span>*! </span>Используется как адрес доставки заказ по умолчанию.</span>
+                                                <span class="lk-profile__text">Город: Москва</span>
+                                                <span class="lk-profile__text">Адрес: ул.Большая Пресненская, д.25, кв.56</span>
+                                                <span class="lk-profile__text">Подробности: 2 подъезд, домофон, 5 этаж, есть лифт</span>
+                                            </label>
+                                        </div>
+                                        <div class="c-col-6">
+                                            <input type="radio" class="order-input" name="lk-profile__address" id="lk-profile__address-custom">
+                                            <label class="order-radio order-radio--top" for="lk-profile__address-custom">
+                                                <span class="lk-profile__text">Город: Москва</span>
+                                                <span class="lk-profile__text">Адрес: ул.Большая Пресненская, д.25, кв.56</span>
+                                                <span class="lk-profile__text">Подробности: 2 подъезд, домофон, 5 этаж, есть лифт</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lk-profile-edit lk-profile-edit__address">
+                                <h4 class="lk-profile-edit__title">Адрес доставки</h4>
+                                <div id="lk-profile-edit__address">
+                                    <div class="lk-profile-edit__line c-form__grid">
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__city">Город</label>
+                                            <input class="c-input" type="text" placeholder="Введите город" name="lk-profile__city" id="lk-profile__city">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__street">Улица</label>
+                                            <input class="c-input" type="text" placeholder="Введите улицу" name="lk-profile__street" id="lk-profile__street">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__house">Дом</label>
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Дом" name="lk-profile__house" id="lk-profile__house">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__housing">Корпус</label>
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Корп." name="lk-profile__housing" id="lk-profile__housing">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__apartment">Кв.</label>
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Кв." name="lk-profile__apartment" id="lk-profile__apartment">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="lk-profile__more">Подробности</label>
+                                            <input class="c-input" type="text" placeholder="Подробности" name="lk-profile__more" id="lk-profile__more">
+                                        </div>
+                                        <div class="c-form__item"><a href="#" class="c-form__add" id="js-lk-profile-edit__address"></a></div>
+                                    </div>
+
+                                    <div class="lk-profile-edit__line lk-profile-edit__copy c-form__grid">
+                                        <div class="c-form__item">
+                                            <input class="c-input" type="text" placeholder="Введите город" name="lk-profile__city">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input" type="text" placeholder="Введите улицу" name="lk-profile__street">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Дом" name="lk-profile__house">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Корп." name="lk-profile__housing">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input lk-profile-input--small" type="text" placeholder="Кв." name="lk-profile__apartment">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <input class="c-input" type="text" placeholder="Подробности" name="lk-profile__more">
+                                        </div>
+                                        <div class="c-form__item"><a href="#" class="c-form__del">Удалить [х]</a></div>
+                                    </div>
+                                    <div class="lk-profile-edit__address-list"></div>
+                                </div>
+                                <button class="c-button c-button__medium">Сохранить</button>
+                            </div>
+                        </div>
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
                         <div class="lk-profile__item lk-profile-subscription">
                             <div class="lk-profile-subscription__box">
                                 <a href="#" class="lk-profile-subscription__close" id="lk-profile-subscription_unsubscribe">Отписаться [х]</a>
@@ -1001,7 +1174,7 @@
                                 </div>
 
                                 <div class="l-button__left">
-                                    <button class="c-button c-button__medium">Сохранить изменения</button>
+                                    <button class="c-button c-button__medium">Подписаться</button>
                                     <a href="#" class="lk-profile-subscription__close" id="lk-profile_cancel-change">Отменить изменения [х]</a>
                                 </div>
                                 
@@ -1017,6 +1190,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!------------------------------------------------------------------------->
                     </form>
                 </section>
             </div>

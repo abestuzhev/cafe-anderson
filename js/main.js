@@ -59,6 +59,18 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    //редактировать профиль
+    $(document).on('click', '.lk-profile__link-edit', function(e){
+        e.preventDefault();
+        $(this).parents('.lk-profile__item')
+            .children('div:first-child')
+            .hide();
+        $(this).parents('.lk-profile__item')
+            .children('.lk-profile-edit:eq(0)')
+            .show();
+    });
+
     /*слайдер для страницы Выпускные*/
     $('.graduation-party-banner__slider').owlCarousel({
         loop:true,
@@ -125,7 +137,7 @@ $(document).ready(function ($) {
         $(this)
         .parents('.lk-profile-user')
         .css('display', 'none')
-        .siblings('.lk-profile-edit')
+        .siblings('.lk-profile-edit__pass')
         .css('display', 'block');
     });
 
@@ -613,7 +625,7 @@ $(document).ready(function ($) {
     $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
-    $('.js-input--date').mask('00.00.00', {clearIfNotMatch: true});
+    $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
     $('.js-input--loyalty').mask('000-000', {clearIfNotMatch: true});
     $('input[name="form_text_30"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('input[name="form_text_52"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});

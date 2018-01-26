@@ -5716,8 +5716,10 @@ test popup
                 display: none;
             }
         }
-
-
+        div:first-child + .lk-profile-edit,
+        div:nth-child(2) + .lk-profile-edit{
+            display: none;
+        }
         
     }
     
