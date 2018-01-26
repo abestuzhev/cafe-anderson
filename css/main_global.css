@@ -9721,9 +9721,9 @@ test popup
 .graduation-party-banner {
   margin-bottom: 2.4rem; }
   .graduation-party-banner__slider {
-    height: 420px; }
+    max-height: 42rem; }
   .graduation-party-banner__slide {
-    height: 420px;
+    max-height: 42rem;
     background-color: #8a5744;
     position: relative; }
   .graduation-party-banner__footer {
@@ -9778,7 +9778,12 @@ test popup
     margin: 0 .5rem;
     position: relative; }
   .graduation-party-banner .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: .3rem; }
+    margin-top: .3rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .graduation-party-banner .owl-theme .owl-dots .owl-dot.active span::after {
     content: '';
     position: absolute;

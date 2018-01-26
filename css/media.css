@@ -975,6 +975,29 @@
 
 }
 
+@media (max-width:940px) {
+    .popup-party-order .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100vh;
+        margin: 0;
+        overflow-y: scroll;
+        border-radius: 0;
+    }
+
+    .popup-party-order .popup-body {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+
+    .popup-party-order .party-order .datepicker--cell {
+        height: 6.4vw;
+    }
+}
+
 @media (max-width:930px) {
     .popup-product .popup {
         position: fixed;
@@ -1008,11 +1031,31 @@
     }
 
     .graduation-party .c-card-party .c-col-6 {
-        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 
     .cafe-list__box {
         height: auto !important;
+    }
+
+    .c-card-party__title {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .c-card-party__header {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .c-card-party__application {
+        text-align: center;
+    }
+
+    .c-card-party-schedule,
+    .c-card-party-photos {
+        margin-bottom: 1rem;
     }
 }
 
@@ -1481,6 +1524,8 @@
         left: 8px;
         font-size: 1.5rem;
     }
+
+
 }
 
 @media (max-width:780px) {
@@ -1493,6 +1538,18 @@
         transform: rotate(17deg);
     }
 
+    .popup-party-order .party-order__grid {
+        flex-flow: column wrap;
+    }
+
+    .popup-party-order .party-order__left,
+    .popup-party-order .party-order__right {
+        width: 100%;
+    }
+
+    .popup-party-order .party-order .datepicker--cell {
+        height: 11vw;
+    }
 
 }
 
