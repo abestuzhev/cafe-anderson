@@ -196,6 +196,7 @@ $(document).ready(function ($) {
             .parents('.c-form__item')
             .siblings('.lk-profile-edit__copy')
             .clone().appendTo(".lk-profile-edit__tel-list");
+        $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     });
 
     /*добавление ребенка в профиле пользователя*/
