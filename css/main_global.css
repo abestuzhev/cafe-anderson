@@ -8254,6 +8254,8 @@ test popup
       width: 2.2rem;
       height: 2.2rem;
       background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
+    .order-delivery-address__list.show-item-all .order-delivery-address__item {
+      display: block !important; }
     .order-delivery-address__item {
       margin-bottom: 1.6rem;
       font-size: 1.4rem;
@@ -8519,20 +8521,6 @@ test popup
       font-size: 1.6rem;
       text-transform: none;
       font-style: italic; }
-
-#order-pickup .order-delivery-address__item,
-#order-pickup-cake .order-delivery-address__item {
-  margin-bottom: 1rem;
-  display: none; }
-
-#order-pickup .order-delivery-address__item:nth-child(1), #order-pickup .order-delivery-address__item:nth-child(2), #order-pickup .order-delivery-address__item:nth-child(3), #order-pickup .order-delivery-address__item:nth-child(4), #order-pickup .order-delivery-address__item:nth-child(5), #order-pickup .order-delivery-address__item:nth-child(6),
-#order-pickup-cake .order-delivery-address__item:nth-child(1),
-#order-pickup-cake .order-delivery-address__item:nth-child(2),
-#order-pickup-cake .order-delivery-address__item:nth-child(3),
-#order-pickup-cake .order-delivery-address__item:nth-child(4),
-#order-pickup-cake .order-delivery-address__item:nth-child(5),
-#order-pickup-cake .order-delivery-address__item:nth-child(6) {
-  display: block; }
 
 #order-pickup-cake .order-delivery-address__list .js-order-delivery-address__show {
   display: block !important; }
@@ -9905,3 +9893,13 @@ test popup
     left: 4.3rem; }
 
 /*news and stock--------------------------------------------------------------*/
+.news-and-stock .filter {
+  display: inline-block !important;
+  width: auto; }
+
+.news-and-stock .filter select,
+.news-and-stock .SelectBox {
+  width: 23.6rem; }
+
+.news-and-stock .filter .l-button__center {
+  display: block; }

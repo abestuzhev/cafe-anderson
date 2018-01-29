@@ -4900,6 +4900,14 @@ test popup
         }
         
         &-address {
+    
+            &__list {
+                &.show-item-all {
+                    .order-delivery-address__item {
+                        display: block !important;
+                    }
+                }
+            }
             
             &__item {
                 margin-bottom: 1.6rem;
@@ -5226,23 +5234,23 @@ test popup
 }
 
 
-#order-pickup .order-delivery-address__item,
-#order-pickup-cake .order-delivery-address__item {
-    margin-bottom: 1rem;
-    display: none;
-}
+//#order-pickup .order-delivery-address__item,
+//#order-pickup-cake .order-delivery-address__item {
+//    margin-bottom: 1rem;
+//    display: none;
+//}
 
-#order-pickup .order-delivery-address__item,
-#order-pickup-cake .order-delivery-address__item {
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-        display: block;
-    }
-}
+//#order-pickup .order-delivery-address__item,
+//#order-pickup-cake .order-delivery-address__item {
+//    &:nth-child(1),
+//    &:nth-child(2),
+//    &:nth-child(3),
+//    &:nth-child(4),
+//    &:nth-child(5),
+//    &:nth-child(6) {
+//        display: block !important;
+//    }
+//}
 
 #order-pickup-cake .order-delivery-address__list .js-order-delivery-address__show {
     display: block !important;
@@ -6951,7 +6959,22 @@ test popup
 }
 
 /*news and stock--------------------------------------------------------------*/
-
+.news-and-stock {
+    
+    .filter {
+        display: inline-block !important;
+        width: auto;
+    }
+    
+    .filter select,
+    .SelectBox {
+        width: 23.6rem;
+    }
+    
+    .filter .l-button__center {
+        display: block;
+    }
+}
 
 
 

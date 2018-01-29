@@ -307,22 +307,32 @@ $(document).ready(function ($) {
     $(document).on('click', '.order-delivery-search__clear', function(e){
         e.preventDefault();
         $(this).parents('.order-delivery-search__item').siblings().find('input').val('');
-        $('.order-delivery-address__all').siblings('.order-delivery-address__list').find('.order-delivery-address__item').show();
+        $('.order-delivery-address__all').removeClass('show-item-all');
+        
+        $('.order-delivery-address__item').each(function(i, elem){
+            i < 6 ? $(elem).show() : $(elem).hide();
+        });
     });
 
     //показать все адреса кафе в заказе
+    $('.order-delivery-address__item').each(function(i, elem){
+            i < 6 ? $(elem).show() : $(elem).hide();
+    });
+
+
+
+
     $(document).on('click', '.order-delivery-address__all', function(e){
         var $this = $('.order-delivery-address__all');
         e.preventDefault();
-        // $(this).siblings('.order-delivery-address__list').find('.order-delivery-address__item').toggleClass('js-order-delivery-address__show');
 
         var textBtn = $this.html();
         if(textBtn == "показать все"){
             $this.html("скрыть");
-            $this.siblings('.order-delivery-address__list').find('.order-delivery-address__item').show();
+            $this.siblings('.order-delivery-address__list').addClass('show-item-all');
         }else{
             $this.html("показать все");
-            $this.siblings('.order-delivery-address__list').find('.order-delivery-address__item').hide();
+            $this.siblings('.order-delivery-address__list').removeClass('show-item-all');
         }
 
     });
