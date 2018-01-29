@@ -6974,7 +6974,360 @@ test popup
     .filter .l-button__center {
         display: block;
     }
+    
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-left: -.7rem;
+        margin-right: -.7rem;
+    }
+    
+    &__item {
+        width: 25%;
+        padding: .7rem;
+    }
 }
 
+
+
+/**
+*
+*
+*
+*
+*
+ */
+
+
+
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #d5d5d5;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline > li {
+    margin-bottom: 30px;
+    position: relative;
+    width: 50%;
+    float: left;
+    clear: left;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li > .timeline-panel {
+    width: 94%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    /*padding: 20px;*/
+    background: #fff;
+    position: relative;
+    -webkit-box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -13px;
+    display: inline-block;
+    border-top: 12px solid transparent;
+    border-left: 12px solid #ddd;
+    border-right: 0 solid #ddd;
+    border-bottom: 12px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -11px;
+    display: inline-block;
+    border-top: 11px solid transparent;
+    border-left: 11px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 11px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 19px;
+    right: -12px;
+    /*background-color: #999999;*/
+    z-index: 100;
+    /*
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    */
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 12px;
+    left: -13px;
+    right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 11px;
+    left: -11px;
+    right: auto;
+}
+
+.timeline-badge > a {
+    color: #b5b5b5 !important;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.timeline-badge a:hover {
+    color: #000 !important;
+}
+
+.timeline-badge > a > i {
+    background-color: #efefef;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-heading {
+    display: none;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+    margin-top: 5px;
+}
+
+.timeline-footer {
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+}
+
+.timeline-footer > a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.timeline-footer .icon {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 6px;
+}
+
+.timeline-footer .icon:last-child {
+    margin-right: 0;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 1020;
+    display: block;
+    visibility: visible;
+    padding: 5px;
+    font-size: 11px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.tooltip.in {
+    /*opacity:0;
+    filter:alpha(opacity=80);*/
+}
+
+.tooltip.top {
+    margin-top: -2px;
+}
+
+.tooltip.right {
+    margin-left: 2px;
+}
+
+.tooltip.bottom {
+    margin-top: 2px;
+}
+
+.tooltip.left {
+    margin-left: -2px;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    border-left: 0 solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0 solid #000;
+}
+
+.tooltip.left .tooltip-arrow {
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    border-left: 0 solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0 solid #000;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    border-left: 0 solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0 solid #000;
+}
+
+.tooltip.right .tooltip-arrow {
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    border-left: 0 solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0 solid #000;
+}
+
+.tooltip-inner {
+    width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #313131;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.timeline > li.timeline-inverted {
+    float: right;
+    clear: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline > li:nth-child(2) {
+    margin-top: 60px;
+}
+
+.timeline > li.timeline-inverted > .timeline-badge {
+    left: -12px;
+}
+
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 20px;
+    }
+    
+    ul.timeline > li {
+        margin-bottom: 25px;
+        position: relative;
+        width: 100%;
+        float: left;
+        clear: left;
+    }
+    
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 46px);
+        width: -moz-calc(100% - 46px);
+        width: -webkit-calc(100% - 46px);
+    }
+    
+    ul.timeline > li > .timeline-badge {
+        left: 8px;
+        margin-left: 0;
+        top: 18px;
+    }
+    
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+    
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 13px;
+        left: -13px;
+        right: auto;
+    }
+    
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 11px;
+        left: -11px;
+        right: auto;
+    }
+    
+    .timeline > li.timeline-inverted {
+        float: left;
+        clear: left;
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    
+    .timeline > li.timeline-inverted > .timeline-badge {
+        left: 8px;
+    }
+}
 
 
