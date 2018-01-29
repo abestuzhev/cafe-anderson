@@ -1656,6 +1656,7 @@ test popup
 
 .lock-html {
     overflow: hidden;
+    position: fixed;
     //overflow-y: scroll;
 }
 
@@ -1695,7 +1696,7 @@ test popup
     opacity: 0;
     visibility: hidden;
     //transform: scale(.9);
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
     //overflow-y: scroll;
 }
 

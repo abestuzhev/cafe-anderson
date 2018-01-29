@@ -5827,7 +5827,8 @@ test popup
   padding: 10px; }
 
 .lock-html {
-  overflow: hidden; }
+  overflow: hidden;
+  position: fixed; }
 
 .mfp-bg {
   top: 0;
@@ -5855,9 +5856,9 @@ test popup
   /*display: none;*/
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .5s ease-out;
-  -o-transition: all .5s ease-out;
-  transition: all .5s ease-out; }
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
 
 .popup {
   -webkit-transform: scale(0.9);
