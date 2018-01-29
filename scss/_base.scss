@@ -3168,3 +3168,36 @@ a.c-button {
     }
     
 }
+
+
+.c-simple-nav {
+    font-size: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    
+    &__item {
+        color: #9b9595;
+        font-size: 1.6rem;
+        margin-right: 2.4rem;
+        
+        &.active {
+            background-color: #7cbd41;
+            border-radius: .4rem;
+            padding: 1.1rem 1.4rem;
+            
+            span {
+    
+                color: #ffffff;
+            }
+            
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+        
+    }
+}

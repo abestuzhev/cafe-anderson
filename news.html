@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Семейные кафе АндерСон в Москве и других регионах</title>
+    <title>Новости</title>
     <link rel="shortcut icon" href="favicon.png">
     <!--[if lt IE 10]>
     <script src="js/IE9.js"></script><![endif]-->
@@ -28,7 +28,11 @@
 
     <!--owl carousel-->
     <link rel="stylesheet" href="./js/owlcarousel/owl.carousel.css">
-    <!--<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.green.css">-->
+    <link rel="stylesheet" href="./js/owlcarousel/owl.theme.default.css">
+
+    <!--datepicker-->
+    <link href="./js/datepicker/datepicker.css" rel="stylesheet">
+    <link href="./js/datepicker/datepicker-anderson.css" rel="stylesheet">
 
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all"/>
@@ -344,9 +348,24 @@
                         <div class="header-city">Вы в <a href="#">Александровск-Сахалинске</a></div>
                     </div>
                     <ul class="header-menu">
-                        <li class="header-menu__item active"><a href="#" class="header-menu__link">Наше меню</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">События</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">Наши акции</a></li>
+                        <li class="header-menu__item" ><a href="#" class="header-menu__link">о нас</a>
+                            <section class="header-subnavigation">
+                                <div class="c-layout">
+                                    <nav class="header-submenu">
+                                        <a href="#" class="header-submenu__item">Вакансии</a>
+                                        <a href="#" class="header-submenu__item">Отзывы</a>
+                                        <a href="#" class="header-submenu__item">Анастасия Татулова</a>
+                                        <a href="#" class="header-submenu__item">Звездные гости</a>
+                                        <a href="#" class="header-submenu__item">Фабрика счастья</a>
+                                        <a href="#" class="header-submenu__item">Наши партнеры</a>
+                                        <a href="#" class="header-submenu__item">Контакты</a>
+                                    </nav>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="header-menu__item active"><a href="#" class="header-menu__link">наше меню</a></li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link">события</a></li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link">наши акции</a></li>
                     </ul>
                 </div>
                 <div class="header-col__center">
@@ -550,7 +569,7 @@
                                 />
                             </g>
                         </svg>
-                        <span class="header-logo__beta"><i class="icon-beta"></i><span>-версия</span></span>
+
                     </a>
                 </div>
                 <div class="header-col__right">
@@ -587,27 +606,15 @@
                         <div class="header-time">поможем по телефону с 10:00 до 21:00</div>
                     </div>
                     <ul class="header-menu">
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">Наши новости</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">Бизнес с нами</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">О нас</a>
-                            <section class="header-subnavigation">
-                                <div class="c-layout">
-                                    <nav class="header-submenu">
-                                        <a href="#" class="header-submenu__item">Вакансии</a>
-                                        <a href="#" class="header-submenu__item">Отзывы</a>
-                                        <a href="#" class="header-submenu__item">Анастасия Татулова</a>
-                                        <a href="#" class="header-submenu__item">Звездные гости</a>
-                                        <a href="#" class="header-submenu__item">Фабрика счастья</a>
-                                        <a href="#" class="header-submenu__item">Наши партнеры</a>
-                                        <a href="#" class="header-submenu__item">Контакты</a>
-                                    </nav>
-                                </div>
-                            </section>
-                        </li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link  active">наши новости</a></li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link header-menu__openAnderson">свой Андерсон</a></li>
+
                     </ul>
                 </div>
 
             </div>
+
         </section>
         <div class="header-mobile__bottom">
             <section class="c-layout">
@@ -729,12 +736,29 @@
                     <div class="header-mobile__item-subtitle">Тортжество, зубелей и многое другое</div>
                 </a>
                 <ul class="header-mobile__list">
-                    <li class="header-mobile__item"><a class="header-mobile__link active">Наше меню</a></li>
-                    <li class="header-mobile__item"><a class="header-mobile__link">События</a></li>
-                    <li class="header-mobile__item"><a class="header-mobile__link">Наши акции</a></li>
-                    <li class="header-mobile__item"><a class="header-mobile__link">Наши новости</a></li>
-                    <li class="header-mobile__item"><a class="header-mobile__link">Бизнес с нами</a></li>
-                    <li class="header-mobile__item"><a class="header-mobile__link">Контакты</a></li>
+                    <li class="header-mobile__item"><a href="#" class="header-mobile__link">Наше меню</a></li>
+                    <li class="header-mobile__item"><a href="#" class="header-mobile__link">События</a></li>
+                    <li class="header-mobile__item"><a href="#" class="header-mobile__link">Наши акции</a></li>
+                    <li class="header-mobile__item"><a href="#" class="header-mobile__link">Наши новости</a></li>
+                    <li class="header-mobile__item"><a href="#" class="header-mobile__link">Бизнес с нами</a></li>
+                    <li class="header-mobile__item"><a href="#" class="header-mobile__link">Открой свой Андерсон</a></li>
+                    <li class="header-mobile__item">
+                        <i class="icon-dropdown">
+                            <svg class="icon-dropdown__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                                <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+                            </svg>
+                        </i>
+                        <a href="#" class="header-mobile__link">О нас</a>
+                        <ul class="header-mobile__sublist">
+                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="/about/jobs/">Вакансии</a></li>
+                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="/about/reviews/">Отзывы</a></li>
+                            <!--<li class="header-mobile__subitem"><a class="header-mobile__sublink" href="/about/tatulova/">Анастасия Татулова</a></li>-->
+                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="/about/star-guests/">Звездные гости</a></li>
+                            <!--<li class="header-mobile__subitem"><a class="header-mobile__sublink" href="/about/factory/">Фабрика счастья</a></li>-->
+                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="/about/partners/">Наши партнеры</a></li>
+                            <li class="header-mobile__subitem"><a class="header-mobile__sublink" href="/about/contacts/">Контакты</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
             </nav>
@@ -757,65 +781,8 @@
     <main>
         <section class="header-navigation">
             <div class="c-layout">
-
-                <!--START поисковая выдача-->
-                <div class="header-search-result">
-
-                    <div class="header-search-result__card">
-                        <div class="header-search-result__left">
-                            <div class="header-search-result__category">Наше меню</div>
-                        </div>
-                        <div class="header-search-result__right">
-                            <ul class="header-search-result__list header-search-result__list-menu">
-                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-                                <li class="header-search-result__item"><a href="#">Томленая утиная ножка с запеченным
-                                    картофелем и вешенками</a></li>
-                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="header-search-result__card">
-                        <div class="header-search-result__left">
-                            <div class="header-search-result__category">Тортики на заказ</div>
-                        </div>
-                        <div class="header-search-result__right">
-                            <ul class="header-search-result__list header-search-result__list-cake">
-                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-                                <li class="header-search-result__item"><a href="#">Томленая утиная ножка с запеченным
-                                    картофелем и вешенками</a></li>
-                                <li class="header-search-result__item"><a href="#">Омлет с вялеными томатами</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="header-search-result__card">
-                        <div class="header-search-result__left">
-                            <div class="header-search-result__category">Заказ праздника</div>
-                        </div>
-                        <div class="header-search-result__right">
-                            <ul class="header-search-result__list">
-                                <li class="header-search-result__item"><a href="#">Детский праздник «Посвящение в именинники»</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="header-search-result__card">
-                        <div class="header-search-result__left">
-                            <div class="header-search-result__category">Мастер-классы</div>
-                        </div>
-                        <div class="header-search-result__right">
-                            <ul class="header-search-result__list">
-                                <li class="header-search-result__item"><a href="#">Сила мысли: мозг и способности</a></li>
-                                <li class="header-search-result__item"><a href="#">Бизнес-завтрак для мам</a></li>
-                                <li class="header-search-result__item"><a href="#">Улетное мини-диско</a></li>
-                            </ul>
-                            <a href="#" class="header-search-result__all">Все результаты</a>
-                        </div>
-                    </div>
-                </div>
-                <!--END поисковая выдача-->
-
                 <nav class="header-navigation__list">
-                    <a href="#" class="header-navigation__item">
+                    <a href="#" class="header-navigation__item active">
                         <h2 class="header-navigation__title">Приходите в гости</h2>
                         <h3 class="header-navigation__subtitle">Ближайшие к вам кафе</h3>
                     </a>
@@ -834,641 +801,67 @@
         <div class="c-layout">
             <nav class="c-breadcrumb">
                 <a href="/" class="c-breadcrumb__item c-breadcrumb__home"></a>
-                <span class="c-breadcrumb__item">Поиск</span>
+                <span class="c-breadcrumb__item">Новости</span>
             </nav>
-            <div class="search">
-                <div class="c-search-page">
-                    <form action="#" class="c-search-page__form">
-                        <input type="text" id="search" name="search" class="c-search-page__input" placeholder="искать" autocomplete="off">
-                    <button>Поиск</button>
-                    </form>
+            <h1 class="c-title__h1">Новости</h1>
+            <div class="news-and-stock">
+                <nav class="c-simple-nav">
+                    <a href="#" class="c-simple-nav__item active"><span>Новости</span></a>
+                    <a href="#" class="c-simple-nav__item"><span>Акции</span></a>
+                </nav>
+
+                <div class="filter-layout">
+                    <div class="filter">
+                        <form action="" class="filter-form">
+                            <div class="filter-item" style="border: none;">
+                                <div class="filter-item__title"><i class="icon-place"></i>Город</div>
+                                <div class="filter-item__body" style="display: block;">
+                                    <div class="SumoSelect sumo_filter-city-select" tabindex="0"><select name="filter-city-select" class="c-select select-city SumoUnder" tabindex="-1">
+                                        <option value="Все">Все</option>
+                                        <option value="Москва">Москва</option>
+                                        <option value="Тюмень">Тюмень</option>
+                                        <option value="Красногорск">Красногорск</option>
+                                        <option value="Ярославль">Ярославль</option>
+                                        <option value="Зеленоград">Зеленоград</option>
+                                        <option value="Нижний Новгород">Нижний Новгород</option>
+                                        <option value="Королёв">Королёв</option>
+                                        <option value="Алматы">Алматы</option>
+                                        <option value="Ногинск">Ногинск</option>
+                                        <option value="Астана">Астана</option>
+                                    </select><p class="CaptionCont SelectBox" title=" Все"><span> Все</span><label><i></i></label></p><div class="optWrapper"><ul class="options"><li class="opt selected"><label>Все</label></li><li class="opt"><label>Москва</label></li><li class="opt"><label>Тюмень</label></li><li class="opt"><label>Красногорск</label></li><li class="opt"><label>Ярославль</label></li><li class="opt"><label>Зеленоград</label></li><li class="opt"><label>Нижний Новгород</label></li><li class="opt"><label>Королёв</label></li><li class="opt"><label>Алматы</label></li><li class="opt"><label>Ногинск</label></li><li class="opt"><label>Астана</label></li></ul></div></div>
+                                </div>
+                            </div>
+                            <div class="filter-item" style="border: none;">
+                                <div class="filter-item__title"><i class="icon-metro"></i>Метро</div>
+                                <div class="filter-item__body" style="display: block;">
+                                    <div class="SumoSelect sumo_filter-metro-select" tabindex="0"><select name="filter-metro-select" class="c-select select-metro SumoUnder" tabindex="-1">
+                                        <option value="Все">Все</option>
+                                        <option value="Бульвар Рокоссовского">Бульвар Рокоссовского</option>
+                                        <option value="Черкизовская">Черкизовская</option>
+                                        <option value="Преображенская площадь">Преображенская площадь</option>
+                                        <option value="Сокольники">Сокольники</option>
+                                        <option value="Красносельская">Красносельская</option>
+                                        <option value="Комсомольская">Комсомольская</option>
+                                        <option value="Красные Ворота">Красные Ворота</option>
+                                    </select><p class="CaptionCont SelectBox" title=" Все"><span> Все</span><label><i></i></label></p><div class="optWrapper"><ul class="options"><li class="opt selected"><label>Все</label></li><li class="opt"><label>Бульвар Рокоссовского</label></li><li class="opt"><label>Черкизовская</label></li><li class="opt"><label>Преображенская площадь</label></li><li class="opt"><label>Сокольники</label></li><li class="opt"><label>Красносельская</label></li><li class="opt"><label>Комсомольская</label></li><li class="opt"><label>Красные Ворота</label></li></ul></div></div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <div class="l-button__center">
+                                    <button class="c-button c-button__small filter-btn__reset">
+                                        <i class="icon-reset">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.2 151.71">
+                                                <path d="M145.44,120a65.54,65.54,0,0,1-6.46-3.84c-.26-.18-1.63-1.19-2-1.47-1.06-.86-2.09-1.75-3.12-2.64a197.63,197.63,0,0,1-14.1-14c-8.72-9.32-17.28-18.6-26.94-27a249.8,249.8,0,0,1,18.52-21c2.34-2.32,4.79-4.53,7.31-6.65l.88-.71.61-.45c1.23-.9,2.51-1.73,3.8-2.54s2.54-1.49,3.84-2.16c.36-.18.73-.35,1.1-.53a35.3,35.3,0,0,1,3.86-1.14l.48-.12c.06,0,2.42-1.29,2.5-1.29,8.59-.61,13.51-7.45,13.51-16.52,0-8.15-4.84-20.81-21.8-15.8C102.7,12.42,84.72,30.59,68.08,51.67l-2-1.51c1.15.87-2.46-1.94-2.88-2.26C51.53,41.25,41.77,25.2,37.34,21c-2-1.86-3.83-3.83-5.61-5.86-.16-.18-.43-.52-.69-.85q-.84-1.21-1.6-2.47A16,16,0,0,0,7.81,6.15C.46,10.45-2.31,20.39,2.14,27.76,8.34,38,29.54,61.08,38.76,68.55c3.33,2.69,6.71,5.32,10.11,7.93C46.15,80.2,43.49,84,41,87.9c-4.19,6.47-15.32,18-19.84,24.2-.36.5-.74,1-1.11,1.49l-.73.91c-1.15,1.43-2.37,2.81-3.6,4.18-.5.56-1,1.1-1.55,1.64a15.15,15.15,0,0,0-7.62,7.21c-9.17,12.87,5.95,31.73,20.78,22.83,1.71-1,6.06-4.64,1.65-1.26a70.69,70.69,0,0,0,6.28-5.17,88.05,88.05,0,0,0,7.27-8.18c5.36-6.66,17.18-18.69,21.83-25.86,3-4.64,6-9.31,9.08-13.89C92,113,106.87,135.6,129.5,147.29c7.65,4,17.1,2,21.62-5.67C155.29,134.48,153.09,123.95,145.44,120Z" transform="translate(0 -0.96)"></path>
+                                            </svg>
+                                        </i>
+                                        Сбросить
+                                    </button>
+                                    <input class="filter-btn__sort c-button c-button__small" type="button" value="подобрать">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="search__result">Найдено 5015 запросов в 5 категориях</div>
-                <section class="search-tab">
-                    <div class="cafe-list__tabs">
-                        <ul class="tabs-menu" id="tabs-cafe-list">
-                            <li class="tabs-menu__item current"><a href="#search-result-menu">Наше меню</a><span>342</span></li>
-                            <li class="tabs-menu__item"><a href="#search-result-cafe">Ближайнее к вам кафе</a><span>29</span></li>
-                            <li class="tabs-menu__item"><a href="#search-result-events">События</a><span>666</span></li>
-                            <li class="tabs-menu__item"><a href="#search-result-sale">Наши акции</a><span>7</span></li>
-                            <li class="tabs-menu__item"><a href="#search-result-other">Прочее</a><span>17</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="tab">
-                        <div id="search-result-menu" class="tab-content">
-                            <div class="cafe-list">
-                                <div class="cafe-list__city">
-                                    <h2 class="c-city-list__title">Москва</h2>
-                                    <div class="c-grid c-grid-between">
-                                        <div class="c-col c-col-6">
-                                            <div class="cafe-list__box">
-                                                <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
-                                                <div class="c-card-cafe">
-                                                    <div class="c-card-cafe__img">
-
-                                                        <a class="c-pic_link" href="#"><img src="img/cafe-foto-2.jpg" alt=""></a>
-
-                                                        <a href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                                                    </div>
-                                                    <div class="c-card-cafe__body">
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Адрес: Московский, ул. Хабарова, дом 2, ТРЦ
-                                                                Новомосковский, вход со стороны пруда</b></div>
-                                                        <div class="c-card-cafe__item c-card-cafe__subway">
-                                                            <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Время работы: </b> пн-вс с 09:00 до 23:00
-                                                        </div>
-                                                        <div class="c-card-cafe__item c-card-cafe__entertainment">
-                                                            <b>С нами рядом: </b>Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка
-                                                        </div>
-                                                        <ul class="c-card-cafe-advantages">
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span id="tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <span>В кафе варят вкусное кофе</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
-                                                                <i class="advantages-guests"></i>150
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_guests">
-                                                                <i class="icon-chair"></i>
-                                                                <span>Можем накормить 150 человек за раз</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <span>В кафе есть игровая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <span>В кафе есть малышковая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <span>В кафе есть праздничное пространство</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <span>В кафе есть уютная веранда</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <span>В кафе есть алкогольные напитки</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="c-col c-col-6">
-                                            <div class="cafe-list__box">
-                                                <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
-                                                <div class="c-card-cafe">
-                                                    <div class="c-card-cafe__img">
-                                                        <a class="c-pic_link" href="#"><img src="img/cafe-foto-3.jpg" alt=""></a>
-                                                        <a href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                                                    </div>
-                                                    <div class="c-card-cafe__body">
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Адрес: Московский, ул. Хабарова, дом 2, ТРЦ</b></div>
-                                                        <div class="c-card-cafe__item c-card-cafe__subway">
-                                                            <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-                                                        </div>
-                                                        <!--<div class="c-card-cafe__item">-->
-                                                        <!--<b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07-->
-                                                        <!--</div>-->
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Время работы: </b> пн-вс с 09:00 до 23:00
-                                                        </div>
-                                                        <!--<div class="c-card-cafe__item c-card-cafe__entertainment">-->
-                                                        <!--<b>С нами рядом: </b>Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка-->
-                                                        <!--</div>-->
-                                                        <ul class="c-card-cafe-advantages">
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span id="tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <span>В кафе варят вкусное кофе</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
-                                                                <i class="advantages-guests"></i>150
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_guests">
-                                                                <i class="icon-chair"></i>
-                                                                <span>Можем накормить 150 человек за раз</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <span>В кафе есть игровая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <!--<li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">-->
-                                                            <!--<i class="advantages-nipple"></i>-->
-                                                            <!--<div class="tooltip_templates">-->
-                                                            <!--<span class="tooltip_nipple">-->
-                                                            <!--<i class="advantages-nipple"></i>-->
-                                                            <!--<span>В кафе есть малышковая</span>-->
-                                                            <!--</span>-->
-                                                            <!--</div>-->
-                                                            <!--</li>-->
-                                                            <!--<li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">-->
-                                                            <!--<i class="advantages-balloon"></i>-->
-                                                            <!--<div class="tooltip_templates">-->
-                                                            <!--<span class="tooltip_balloon">-->
-                                                            <!--<i class="advantages-balloon"></i>-->
-                                                            <!--<span>В кафе есть праздничное пространство</span>-->
-                                                            <!--</span>-->
-                                                            <!--</div>-->
-                                                            <!--</li>-->
-                                                            <!--<li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">-->
-                                                            <!--<i class="advantages-umbrella"></i>-->
-                                                            <!--<div class="tooltip_templates">-->
-                                                            <!--<span class="tooltip_veranda">-->
-                                                            <!--<i class="advantages-umbrella"></i>-->
-                                                            <!--<span>В кафе есть уютная веранда</span>-->
-                                                            <!--</span>-->
-                                                            <!--</div>-->
-                                                            <!--</li>-->
-                                                            <!--<li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">-->
-                                                            <!--<i class="advantages-bottle"></i>-->
-                                                            <!--<div class="tooltip_templates">-->
-                                                            <!--<span class="tooltip_bottle">-->
-                                                            <!--<i class="advantages-bottle"></i>-->
-                                                            <!--<span>В кафе есть алкогольные напитки</span>-->
-                                                            <!--</span>-->
-                                                            <!--</div>-->
-                                                            <!--</li>-->
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cafe-list__city">
-                                    <h2 class="c-city-list__title">Красногорск</h2>
-                                    <div class="c-grid c-grid-between">
-                                        <div class="c-col c-col-6">
-                                            <div class="cafe-list__box">
-                                                <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
-                                                <div class="c-card-cafe">
-                                                    <div class="c-card-cafe__img">
-
-                                                        <a class="c-pic_link" href="#"><img src="img/cafe-foto.jpg" alt=""></a>
-
-                                                        <a href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                                                    </div>
-                                                    <div class="c-card-cafe__body">
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Адрес: Московский, ул. Хабарова, дом 2, ТРЦ
-                                                                Новомосковский, вход со стороны пруда</b></div>
-                                                        <div class="c-card-cafe__item c-card-cafe__subway">
-                                                            <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Время работы: </b> пн-вс с 09:00 до 23:00
-                                                        </div>
-                                                        <div class="c-card-cafe__item c-card-cafe__entertainment">
-                                                            <b>С нами рядом: </b>Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка
-                                                        </div>
-                                                        <ul class="c-card-cafe-advantages">
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span id="tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <span>В кафе варят вкусное кофе</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
-                                                                <i class="advantages-guests"></i>150
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_guests">
-                                                                <i class="icon-chair"></i>
-                                                                <span>Можем накормить 150 человек за раз</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <span>В кафе есть игровая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <span>В кафе есть малышковая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <span>В кафе есть праздничное пространство</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <span>В кафе есть уютная веранда</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <span>В кафе есть алкогольные напитки</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cafe-list__city">
-                                    <h2 class="c-city-list__title">Зеленоград</h2>
-                                    <div class="c-grid c-grid-between">
-                                        <div class="c-col c-col-6">
-                                            <div class="cafe-list__box">
-                                                <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
-                                                <div class="c-card-cafe">
-                                                    <div class="c-card-cafe__img">
-
-                                                        <a class="c-pic_link" href="#"><img src="img/cafe-foto.jpg" alt=""></a>
-
-                                                        <a href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                                                    </div>
-                                                    <div class="c-card-cafe__body">
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Адрес: Московский, ул. Хабарова, дом 2, ТРЦ
-                                                                Новомосковский, вход со стороны пруда</b></div>
-                                                        <div class="c-card-cafe__item c-card-cafe__subway">
-                                                            <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Время работы: </b> пн-вс с 09:00 до 23:00
-                                                        </div>
-                                                        <div class="c-card-cafe__item c-card-cafe__entertainment">
-                                                            <b>С нами рядом: </b>Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка
-                                                        </div>
-                                                        <ul class="c-card-cafe-advantages">
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span id="tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <span>В кафе варят вкусное кофе</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
-                                                                <i class="advantages-guests"></i>150
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_guests">
-                                                                <i class="icon-chair"></i>
-                                                                <span>Можем накормить 150 человек за раз</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <span>В кафе есть игровая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <span>В кафе есть малышковая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <span>В кафе есть праздничное пространство</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <span>В кафе есть уютная веранда</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <span>В кафе есть алкогольные напитки</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="search-result-cafe" class="tab-content">
-                            <div class="cafe-list">
-                                <div class="cafe-list__city">
-                                    <h2 class="c-city-list__title">Красногорск</h2>
-                                    <div class="c-grid c-grid-between">
-                                        <div class="c-col c-col-6">
-                                            <div class="cafe-list__box">
-                                                <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
-                                                <div class="c-card-cafe">
-                                                    <div class="c-card-cafe__img">
-
-                                                        <a class="c-pic_link" href="#"><img src="img/cafe-foto.jpg" alt=""></a>
-
-                                                        <a href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                                                    </div>
-                                                    <div class="c-card-cafe__body">
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Адрес: Московский, ул. Хабарова, дом 2, ТРЦ
-                                                                Новомосковский, вход со стороны пруда</b></div>
-                                                        <div class="c-card-cafe__item c-card-cafe__subway">
-                                                            <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Время работы: </b> пн-вс с 09:00 до 23:00
-                                                        </div>
-                                                        <div class="c-card-cafe__item c-card-cafe__entertainment">
-                                                            <b>С нами рядом: </b>Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка
-                                                        </div>
-                                                        <ul class="c-card-cafe-advantages">
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span id="tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <span>В кафе варят вкусное кофе</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
-                                                                <i class="advantages-guests"></i>150
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_guests">
-                                                                <i class="icon-chair"></i>
-                                                                <span>Можем накормить 150 человек за раз</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <span>В кафе есть игровая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <span>В кафе есть малышковая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <span>В кафе есть праздничное пространство</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <span>В кафе есть уютная веранда</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <span>В кафе есть алкогольные напитки</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cafe-list__city">
-                                    <h2 class="c-city-list__title">Зеленоград</h2>
-                                    <div class="c-grid c-grid-between">
-                                        <div class="c-col c-col-6">
-                                            <div class="cafe-list__box">
-                                                <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
-                                                <div class="c-card-cafe">
-                                                    <div class="c-card-cafe__img">
-
-                                                        <a class="c-pic_link" href="#"><img src="img/cafe-foto.jpg" alt=""></a>
-
-                                                        <a href="#" class="c-card-cafe__menu"><i class="icon-food-menu"></i>меню</a>
-                                                    </div>
-                                                    <div class="c-card-cafe__body">
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Адрес: Московский, ул. Хабарова, дом 2, ТРЦ
-                                                                Новомосковский, вход со стороны пруда</b></div>
-                                                        <div class="c-card-cafe__item c-card-cafe__subway">
-                                                            <img src="img/icons/icon-metro-1.png" alt="">Молодежная
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Телефон: </b>+7 (495) 125-49-07, +7 (495) 125-49-07
-                                                        </div>
-                                                        <div class="c-card-cafe__item">
-                                                            <b>Время работы: </b> пн-вс с 09:00 до 23:00
-                                                        </div>
-                                                        <div class="c-card-cafe__item c-card-cafe__entertainment">
-                                                            <b>С нами рядом: </b>Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка
-                                                        </div>
-                                                        <ul class="c-card-cafe-advantages">
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span id="tooltip_content">
-                                                                <i class="advantages-coffe"></i>
-                                                                <span>В кафе варят вкусное кофе</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
-                                                                <i class="advantages-guests"></i>150
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_guests">
-                                                                <i class="icon-chair"></i>
-                                                                <span>Можем накормить 150 человек за раз</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_teddy">
-                                                                <i class="advantages-teddy"></i>
-                                                                <span>В кафе есть игровая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_nipple">
-                                                                <i class="advantages-nipple"></i>
-                                                                <span>В кафе есть малышковая</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_balloon">
-                                                                <i class="advantages-balloon"></i>
-                                                                <span>В кафе есть праздничное пространство</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_veranda">
-                                                                <i class="advantages-umbrella"></i>
-                                                                <span>В кафе есть уютная веранда</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                            <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <div class="tooltip_templates">
-                                                            <span class="tooltip_bottle">
-                                                                <i class="advantages-bottle"></i>
-                                                                <span>В кафе есть алкогольные напитки</span>
-                                                            </span>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="search-result-events" class="tab-content">
-
-                        </div>
-                        <div id="search-result-sale" class="tab-content">
-
-                        </div>
-                        <div id="search-result-other" class="tab-content">
-
-                        </div>
-                    </div>
-                </section>
-
             </div>
         </div>
     </main>
@@ -1532,7 +925,7 @@
                     <div class="footer-reviews">
                         <a href="" class="footer-reviews__text">книга отзывов</a>
                         <div class="footer-reviews__icons">
-                            <div class="footer-reviews__icon">
+                            <div class="footer-reviews__icon js-positive">
                                 <svg class="c-icon icon-positive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.37 20.44">
                                     <path d="M12.94,7.47a4.35,4.35,0,0,0-2.11-.83c1-2.52,1.2-4.82.57-5.9A1.41,1.41,0,0,0,10.35,0a1.19,1.19,0,0,0-1,.32c-1.14,1-1.51,4.31-1.52,6l-.53,0c-.33,0-.78,0-1.28,0C5.9,3,5.47,1.3,4.64.64A1.44,1.44,0,0,0,3.44.36a1.52,1.52,0,0,0-1.11,1,7.64,7.64,0,0,0,.39,5.35,3.85,3.85,0,0,0-1.57.76c-.72.66-.83,4.68-.85,5.48,0,1.46,0,5,.78,6.26.65,1,3,1.25,5,1.25h.15c1.89,0,6.2-.34,6.76-1.26s1.19-10.37,0-11.71M9.92.92A.39.39,0,0,1,10.25.8a.62.62,0,0,1,.47.34c.51.88.22,3.07-.68,5.37-.44-.07-.9-.12-1.37-.16,0-1.83.45-4.71,1.25-5.42M3,1.66c.21-.46.45-.51.53-.52a.65.65,0,0,1,.57.12c.61.48,1,2.14,1.13,5A15.2,15.2,0,0,0,3.5,6.5,7,7,0,0,1,3,1.66m9.27,17.09c-.43.45-4.85,1.14-8.12.81-1.89-.19-2.35-.62-2.46-.8C.68,17.08,1,8.81,1.69,8s2.9-1,5.63-1,4.67.55,5,1c.92,1,.4,10,0,10.74"/>
                                     <path d="M11.67,13.3a.4.4,0,0,0-.47.3c-.21.95-1.77,1.74-3.79,1.94-2.2.21-4-.34-4.48-1.34a.4.4,0,0,0-.73.32c.58,1.32,2.46,1.86,4.33,1.86.32,0,.64,0,.95,0,1.85-.18,4.13-1,4.49-2.55a.4.4,0,0,0-.3-.47"/>
@@ -1540,7 +933,7 @@
                                     <path d="M8.15,11.3a.39.39,0,0,0,.17,0,4.65,4.65,0,0,1,2.83-.1.4.4,0,0,0,.36-.7A5.34,5.34,0,0,0,8,10.54a.4.4,0,0,0,.17.76"/>
                                 </svg>
                             </div>
-                            <div class="footer-reviews__icon">
+                            <div class="footer-reviews__icon js-negative">
                                 <svg class="c-icon icon-negative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.37 20.44">
                                     <path d="M12.58,7.51a2.45,2.45,0,0,0-1.44-.87,7.58,7.58,0,0,0,.22-5.22A1.62,1.62,0,0,0,10.19.36,1.44,1.44,0,0,0,9,.64C8.16,1.3,7.73,3,7.56,6.26H7.44c-.45,0-1,0-1.68.07,0-1.64-.37-5-1.52-6a1.19,1.19,0,0,0-1-.33A1.41,1.41,0,0,0,2.22.74c-.63,1.09-.4,3.4.58,5.93a3.69,3.69,0,0,0-2.14.84C.1,8.44-.52,17.89.72,19.23c.68.74,3.3,1.14,5.6,1.2H7c1.65,0,4.37-.17,5.48-1.19.72-.67.83-4.68.85-5.48,0-1.46,0-5-.78-6.26M9.48,1.26A.65.65,0,0,1,10,1.14c.24,0,.44.25.6.6a6.73,6.73,0,0,1-.29,4.72,15.14,15.14,0,0,0-2-.19c.15-2.88.52-4.53,1.13-5M2.91,1.13A.62.62,0,0,1,3.38.8a.39.39,0,0,1,.33.13C4.51,1.65,5,4.56,5,6.39c-.45,0-.91.09-1.36.15C2.69,4.23,2.4,2,2.91,1.13M12,18.67c-1.69,1.55-9.74,1-10.67,0s-.4-10,0-10.74C1.69,7.57,4.7,7,7.58,7c.64,0,1.28,0,1.87.09,1.89.19,2.35.62,2.46.8,1.06,1.69.7,10,.06,10.74"/>
                                     <path d="M5.5,14.45c-.93.21-1.44.54-1.52,1a.4.4,0,0,0,.32.47h.07a.38.38,0,0,0,.38-.32,3.77,3.77,0,0,1,2.14-.54,3.06,3.06,0,0,1,2,.32.4.4,0,0,0,.65-.46c-.63-.89-3-.7-4-.48"/>
@@ -1584,6 +977,7 @@
 </footer>
 
 <!----------------------------------------------START popup-->
+
 <!--авторизация-->
 <div class="mfp-wrap popup-authorization" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
@@ -1863,91 +1257,93 @@
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
-                <h3 class="popup-title">Заказать звонок <span class="popup-close"></span></h3>
-                <div class="popup-body">
-                    <div class="mobile-request-call">
-                        <div class="mobile-request-call_sub-title">Ваш город</div>
-                        <div class="mobile-request-call_city">
-                            Алексанровск-Сахалинск
-                            <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
-                        </div>
-                        <div class="mobile-request-call__phone">
-                            <div class="mobile-request-call__phone-number">+7 (495) 125-49-07</div>
-                            <div class="mobile-request-call__phone-icon">
-                                <img src="./img/icons/icon-recuest__phone.png" alt="">
+                <div class="popup-box">
+                    <h3 class="popup-title">Заказать звонок <span class="popup-close"></span></h3>
+                    <div class="popup-body">
+                        <div class="mobile-request-call">
+                            <div class="mobile-request-call_sub-title">Ваш город</div>
+                            <div class="mobile-request-call_city">
+                                Алексанровск-Сахалинск
+                                <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
                             </div>
+                            <div class="mobile-request-call__phone">
+                                <div class="mobile-request-call__phone-number">+7 (495) 125 4907</div>
+                                <div class="mobile-request-call__phone-icon">
+                                    <img src="./img/icons/icon-recuest__phone.png" alt="">
+                                </div>
+                            </div>
+                            <a class="mobile-request-call_inquiry">
+                                Запросить обратный звонок
+                                <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
+                            </a>
                         </div>
-                        <a class="mobile-request-call_inquiry">
-                            Запросить обратный звонок
-                            <span class="mobile-request-call__icon"><img src="./img/icons/icon-dropdown__down.png" alt=""></span>
-                        </a>
-                    </div>
 
-                    <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
-                        <div class="popup-form__item">
-                            <label class="c-label" for="request-call__name">Ваше имя</label>
-                            <input class="c-input" type="text" placeholder="ваше имя" name="request-call__name" id="request-call__name" autofocus>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
-                            <input class="c-input" type="text" placeholder="укажите номер телефона" name="request-call__tel"
-                                   id="request-call__tel" required>
-                        </div>
-                        <div class="popup-form__item">
-                            <label class="c-label" for="request-call__comment">Комментарий<span class="c-obligatory-field">*</span></label>
-                            <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4"
-                                      placeholder="желательно заполнить" required></textarea>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
-                        </div>
-                        <div class="popup-form__item">
-                            <div class="c-personal-data">
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="request-call__regulations" id="request-call__regulations" checked>
-                                    <label class="c-checkbox" for="request-call__regulations">Я ознакомлен с
-                                        <a href="#">правилами
-                                            обработки</a> моих персональных данных.</label>
-                                </div>
-                                <div class="c-personal-data__item">
-                                    <input type="checkbox" name="request-call__dispatch" id="request-call__dispatch">
-                                    <label class="c-checkbox" for="request-call__dispatch">Я согласен получать рассылку с сайта на
-                                        электронную почту</label>
+                        <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
+                            <div class="popup-form__item">
+                                <label class="c-label" for="request-call__name">Ваше имя</label>
+                                <input class="c-input" type="text" placeholder="ваше имя" name="form_text_30" id="request-call__name" autofocus>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="request-call__tel">Номер телефона для связи<span class="c-obligatory-field">*</span></label>
+                                <input class="c-input" type="text" placeholder="укажите номер телефона" name="form_text_30"
+                                       id="request-call__tel" required>
+                            </div>
+                            <div class="popup-form__item">
+                                <label class="c-label" for="request-call__comment">Комментарий<span class="c-obligatory-field">*</span></label>
+                                <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4"
+                                          placeholder="желательно заполнить" required></textarea>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                            </div>
+                            <div class="popup-form__item">
+                                <div class="c-personal-data">
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="request-call__regulations" id="request-call__regulations" checked>
+                                        <label class="c-checkbox" for="request-call__regulations">Я ознакомлен с
+                                            <a href="#">правилами
+                                                обработки</a> моих персональных данных.</label>
+                                    </div>
+                                    <div class="c-personal-data__item">
+                                        <input type="checkbox" name="request-call__dispatch" id="request-call__dispatch">
+                                        <label class="c-checkbox" for="request-call__dispatch">Я согласен получать рассылку с сайта на
+                                            электронную почту</label>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="l-button l-button__left">
-                            <button class="c-button c-button__default">Заказать</button>
-                        </div>
-                    </form>
-                </div><!--popup-body-->
-                <svg class="icon-giraffe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.98 155.66">
-                    <title>icon-giraffe</title>
-                    <path d="M46.83,125.18a25.2,25.2,0,0,0,10-9.33l0-.06a135.7,135.7,0,0,0,34,29.34c32.59,19.78,56.2,15.09,74.32-14.76s11.38-53-21.21-72.74A135.7,135.7,0,0,0,102.21,41l0-.06a25.2,25.2,0,0,0,3.67-13.17,34.6,34.6,0,0,0-5.5-17.5c-3.62-5.69-8-8.93-11.93-8.91C79.65,1.47,74.33,16.95,74.4,28A33.11,33.11,0,0,0,76.21,38.8q-3.55.19-6.83.69L56.88,19.92a9,9,0,1,0-3.54,2.22L65,40.33C54.32,42.79,46.3,47.92,41.72,55.47S36.29,72.42,39,82.93L17.59,81a8.81,8.81,0,1,0-.34,4.17l23,2.06q1.08,3.21,2.59,6.52a33.14,33.14,0,0,0-10.4,3.36C22.59,102.18,11.33,114,15.35,121.9c1.81,3.52,6.69,5.89,13.41,6.47A34.57,34.57,0,0,0,46.83,125.18ZM46.47,11.36A4.69,4.69,0,1,1,48,17.8,4.69,4.69,0,0,1,46.47,11.36Zm-40,75a4.69,4.69,0,1,1,6.44-1.57A4.69,4.69,0,0,1,6.44,86.35ZM42.6,115.06a18.11,18.11,0,0,1-8.6,1.76c-3.08-.12-4.51-1-4.72-1.42s0-1.15.61-2.11a21.57,21.57,0,0,1,8.16-7.11,16,16,0,0,1,7.23-1.92c1.66,0,2.88.5,3.27,1.26C49.47,107.32,47.64,112.47,42.6,115.06ZM161.55,128.2c-16.41,27-36.9,31.6-66.15,14.73-7.91-6.36-4-28.52,8.75-49.56s30.75-34.83,40-30.6C172.56,80.92,177.94,101.19,161.55,128.2ZM86.65,36.11A16,16,0,0,1,85,28.81c0-6.44,2.74-12,4.13-12,.46,0,1.9.86,3.44,3.53A18.09,18.09,0,0,1,95,28.75c0,5.66-3.69,9.67-5.72,9.68C88.42,38.43,87.44,37.57,86.65,36.11ZM78.58,28c-.07-10.85,5-22.36,9.92-22.39,2.38,0,5.67,2.72,8.38,7a30.27,30.27,0,0,1,4.85,15.28,21,21,0,0,1-4,12.35c-.93-.16-1.86-.31-2.79-.45a13.82,13.82,0,0,0,1.88-2.44,16.41,16.41,0,0,0,2.33-8.59,22.14,22.14,0,0,0-3-10.49c-1.21-2.11-3.74-5.66-7.09-5.64-5.47,0-8.33,9.45-8.29,16.24A20,20,0,0,0,83,38.11c.12.22.25.41.37.61-.91,0-1.81-.05-2.7-.05A28.12,28.12,0,0,1,78.58,28ZM45.3,57.64c12.19-20.09,54.7-19.42,91.36.65-11.11,2.44-25.08,14.77-36.09,32.91S85.1,127.39,88.05,138.39C53.32,115.13,33.11,77.73,45.3,57.64ZM19.08,120c-2.23-4.35,5.62-14.19,15.28-19.14a28.19,28.19,0,0,1,10.43-3.09c.41.78.85,1.58,1.29,2.37-.24,0-.47,0-.71,0a20,20,0,0,0-9.22,2.37c-6,3.1-13.08,10-10.58,14.85,1.53,3,5.84,3.59,8.28,3.69a22.14,22.14,0,0,0,10.67-2.21,16.41,16.41,0,0,0,6.54-6A13.82,13.82,0,0,0,52.34,110c.55.76,1.11,1.52,1.68,2.27a21,21,0,0,1-9.11,9.24,30.24,30.24,0,0,1-15.79,2.75C24.11,123.77,20.16,122.11,19.08,120Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M130.89,113.24c-4.93-1.53-9.4-.23-10.42,3.06s1.94,6.89,6.86,8.42c4.4,1.37,8.44.47,10-2.07a4.48,4.48,0,0,0,.44-1c1-3.27-1.94-6.88-6.87-8.42Zm2.87,7.18c-.15.46-2.13,1.25-5.19.3s-4.25-2.73-4.11-3.18l0-.06c.27-.45,2.23-1.15,5.16-.24S133.9,120,133.76,120.42Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M132.69,96.77c-2.69,2.11-2.34,6.76.83,10.83s7.6,5.55,10.3,3.44a4.36,4.36,0,0,0,1-1.18,6.07,6.07,0,0,0,.66-4.09,13.21,13.21,0,0,0-7.31-9.37A5.41,5.41,0,0,0,132.69,96.77Zm7,6h0a8.26,8.26,0,0,1,1.7,3.61c.13.84,0,1.27-.15,1.35-.37.29-2.46-.2-4.43-2.72-1.83-2.35-1.92-4.39-1.62-4.88a.26.26,0,0,1,.07-.08c.1-.08.56-.14,1.34.19A8.24,8.24,0,0,1,139.69,102.78Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M78.32,107.79a2.09,2.09,0,0,0-.7-2.87A6.06,6.06,0,0,1,83.9,94.56,2.09,2.09,0,1,0,86.07,91a10.24,10.24,0,0,0-10.63,17.51A2.09,2.09,0,0,0,78.32,107.79Z"
-                          transform="translate(0 -1.42)"/>
-                    <path d="M96.57,77.73a2.09,2.09,0,0,0-.7-2.87,6.06,6.06,0,0,1,6.29-10.36,2.09,2.09,0,0,0,2.17-3.58A10.24,10.24,0,0,0,93.69,78.43,2.09,2.09,0,0,0,96.57,77.73Z"
-                          transform="translate(0 -1.42)"/>
-                </svg>
-                <svg class="icon-bird-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.4 73.91"><title>
-                    icon-bird-down</title>
-                    <path d="M1.44,9.87A54.13,54.13,0,0,0,11.5,12.42a77.94,77.94,0,0,0,10.4,1.74c7.43.49,14.9-.84,22.06-2.09,6.82-1.19,13.59-2.41,20.3-4a33.25,33.25,0,0,1,10.39-.73c5,.43,9.22,1.48,11.81,6.46,2.38,4.58,2.4,10.34,1,14.92-2.23,7.43-8.07,13.53-14.81,16.91-15.58,7.82-35.44-2-49.63-11.38A90.3,90.3,0,0,1,8.61,22.37C5.37,19.09,1.5,15.54.05,11.08A1,1,0,0,1,1.44,9.87ZM12.35,23A91.56,91.56,0,0,0,26.7,34c8.66,5.45,18.11,10.16,28,11.57S73.53,44.16,80,36.93a22.2,22.2,0,0,0,5.89-12.3c.47-4.72-1.1-10.86-6-13.44a15.65,15.65,0,0,0-8-1.47,47.72,47.72,0,0,0-10.58,1.65c-6.77,1.74-14,2.64-21,3.74-6.49,1-13.27,2-20,1.23C16.87,16,13.42,15.1,10,14.43a63.73,63.73,0,0,1-6.79-1.57C5.27,16.69,9.4,20.25,12.35,23Z"
-                          transform="translate(0 -0.85)"/>
-                    <path d="M56.88,21.63c-3,2-7.67,1.66-11.07,1.3a28.42,28.42,0,0,1-11.33-3.34A24.92,24.92,0,0,1,22.65,1.75C22.45.39,20.17.64,20.37,2A27,27,0,0,0,34.14,21.86,32.45,32.45,0,0,0,47,25.18c3.71.25,8.16.28,11.36-1.84C59.54,22.52,58,20.87,56.88,21.63Z"
-                          transform="translate(0 -0.85)"/>
-                    <path d="M73.33,24.45a1.86,1.86,0,1,0,0,3.72A1.86,1.86,0,1,0,73.33,24.45Z" transform="translate(0 -0.85)"/>
-                    <path d="M75.54,44.23c2.83,2.57,5.46,5.34,8.28,7.92.7.64,2.34.28,2-.9-1.23-4.18-2.5-8.38-4.83-12.11-.72-1.15-2.83-.29-2.06.94a35,35,0,0,1,3.4,7.61c-1.57-1.54-3.14-3.08-4.76-4.57l0-.08-.2-.26a1.21,1.21,0,0,0-1.82.09l0,.07A1,1,0,0,0,75.54,44.23Z"
-                          transform="translate(0 -0.85)"/>
-                    <path d="M56.23,73.61a82.62,82.62,0,0,1-9.68-29.18H44.2a85,85,0,0,0,10,30.28" transform="translate(0 -0.85)"/>
-                    <path d="M63.76,73.75A49.48,49.48,0,0,1,56.1,46.89H53.79a51.19,51.19,0,0,0,7.94,27.87"
-                          transform="translate(0 -0.85)"/>
-                </svg>
-                <img class="popup-bg__img" src="./img/popup-bg_request-call.png" alt="">
+                            <div class="l-button l-button__left">
+                                <button class="c-button c-button__default">Заказать</button>
+                            </div>
+                        </form>
+                    </div><!--popup-body-->
+                    <div class="icon-rabbit-earphone"></div>
+                    <svg class="icon-giraffe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.98 155.66">
+                        <title>icon-giraffe</title>
+                        <path d="M46.83,125.18a25.2,25.2,0,0,0,10-9.33l0-.06a135.7,135.7,0,0,0,34,29.34c32.59,19.78,56.2,15.09,74.32-14.76s11.38-53-21.21-72.74A135.7,135.7,0,0,0,102.21,41l0-.06a25.2,25.2,0,0,0,3.67-13.17,34.6,34.6,0,0,0-5.5-17.5c-3.62-5.69-8-8.93-11.93-8.91C79.65,1.47,74.33,16.95,74.4,28A33.11,33.11,0,0,0,76.21,38.8q-3.55.19-6.83.69L56.88,19.92a9,9,0,1,0-3.54,2.22L65,40.33C54.32,42.79,46.3,47.92,41.72,55.47S36.29,72.42,39,82.93L17.59,81a8.81,8.81,0,1,0-.34,4.17l23,2.06q1.08,3.21,2.59,6.52a33.14,33.14,0,0,0-10.4,3.36C22.59,102.18,11.33,114,15.35,121.9c1.81,3.52,6.69,5.89,13.41,6.47A34.57,34.57,0,0,0,46.83,125.18ZM46.47,11.36A4.69,4.69,0,1,1,48,17.8,4.69,4.69,0,0,1,46.47,11.36Zm-40,75a4.69,4.69,0,1,1,6.44-1.57A4.69,4.69,0,0,1,6.44,86.35ZM42.6,115.06a18.11,18.11,0,0,1-8.6,1.76c-3.08-.12-4.51-1-4.72-1.42s0-1.15.61-2.11a21.57,21.57,0,0,1,8.16-7.11,16,16,0,0,1,7.23-1.92c1.66,0,2.88.5,3.27,1.26C49.47,107.32,47.64,112.47,42.6,115.06ZM161.55,128.2c-16.41,27-36.9,31.6-66.15,14.73-7.91-6.36-4-28.52,8.75-49.56s30.75-34.83,40-30.6C172.56,80.92,177.94,101.19,161.55,128.2ZM86.65,36.11A16,16,0,0,1,85,28.81c0-6.44,2.74-12,4.13-12,.46,0,1.9.86,3.44,3.53A18.09,18.09,0,0,1,95,28.75c0,5.66-3.69,9.67-5.72,9.68C88.42,38.43,87.44,37.57,86.65,36.11ZM78.58,28c-.07-10.85,5-22.36,9.92-22.39,2.38,0,5.67,2.72,8.38,7a30.27,30.27,0,0,1,4.85,15.28,21,21,0,0,1-4,12.35c-.93-.16-1.86-.31-2.79-.45a13.82,13.82,0,0,0,1.88-2.44,16.41,16.41,0,0,0,2.33-8.59,22.14,22.14,0,0,0-3-10.49c-1.21-2.11-3.74-5.66-7.09-5.64-5.47,0-8.33,9.45-8.29,16.24A20,20,0,0,0,83,38.11c.12.22.25.41.37.61-.91,0-1.81-.05-2.7-.05A28.12,28.12,0,0,1,78.58,28ZM45.3,57.64c12.19-20.09,54.7-19.42,91.36.65-11.11,2.44-25.08,14.77-36.09,32.91S85.1,127.39,88.05,138.39C53.32,115.13,33.11,77.73,45.3,57.64ZM19.08,120c-2.23-4.35,5.62-14.19,15.28-19.14a28.19,28.19,0,0,1,10.43-3.09c.41.78.85,1.58,1.29,2.37-.24,0-.47,0-.71,0a20,20,0,0,0-9.22,2.37c-6,3.1-13.08,10-10.58,14.85,1.53,3,5.84,3.59,8.28,3.69a22.14,22.14,0,0,0,10.67-2.21,16.41,16.41,0,0,0,6.54-6A13.82,13.82,0,0,0,52.34,110c.55.76,1.11,1.52,1.68,2.27a21,21,0,0,1-9.11,9.24,30.24,30.24,0,0,1-15.79,2.75C24.11,123.77,20.16,122.11,19.08,120Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M130.89,113.24c-4.93-1.53-9.4-.23-10.42,3.06s1.94,6.89,6.86,8.42c4.4,1.37,8.44.47,10-2.07a4.48,4.48,0,0,0,.44-1c1-3.27-1.94-6.88-6.87-8.42Zm2.87,7.18c-.15.46-2.13,1.25-5.19.3s-4.25-2.73-4.11-3.18l0-.06c.27-.45,2.23-1.15,5.16-.24S133.9,120,133.76,120.42Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M132.69,96.77c-2.69,2.11-2.34,6.76.83,10.83s7.6,5.55,10.3,3.44a4.36,4.36,0,0,0,1-1.18,6.07,6.07,0,0,0,.66-4.09,13.21,13.21,0,0,0-7.31-9.37A5.41,5.41,0,0,0,132.69,96.77Zm7,6h0a8.26,8.26,0,0,1,1.7,3.61c.13.84,0,1.27-.15,1.35-.37.29-2.46-.2-4.43-2.72-1.83-2.35-1.92-4.39-1.62-4.88a.26.26,0,0,1,.07-.08c.1-.08.56-.14,1.34.19A8.24,8.24,0,0,1,139.69,102.78Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M78.32,107.79a2.09,2.09,0,0,0-.7-2.87A6.06,6.06,0,0,1,83.9,94.56,2.09,2.09,0,1,0,86.07,91a10.24,10.24,0,0,0-10.63,17.51A2.09,2.09,0,0,0,78.32,107.79Z"
+                              transform="translate(0 -1.42)"/>
+                        <path d="M96.57,77.73a2.09,2.09,0,0,0-.7-2.87,6.06,6.06,0,0,1,6.29-10.36,2.09,2.09,0,0,0,2.17-3.58A10.24,10.24,0,0,0,93.69,78.43,2.09,2.09,0,0,0,96.57,77.73Z"
+                              transform="translate(0 -1.42)"/>
+                    </svg>
+                    <svg class="icon-bird-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.4 73.91">
+                        <path d="M1.44,9.87A54.13,54.13,0,0,0,11.5,12.42a77.94,77.94,0,0,0,10.4,1.74c7.43.49,14.9-.84,22.06-2.09,6.82-1.19,13.59-2.41,20.3-4a33.25,33.25,0,0,1,10.39-.73c5,.43,9.22,1.48,11.81,6.46,2.38,4.58,2.4,10.34,1,14.92-2.23,7.43-8.07,13.53-14.81,16.91-15.58,7.82-35.44-2-49.63-11.38A90.3,90.3,0,0,1,8.61,22.37C5.37,19.09,1.5,15.54.05,11.08A1,1,0,0,1,1.44,9.87ZM12.35,23A91.56,91.56,0,0,0,26.7,34c8.66,5.45,18.11,10.16,28,11.57S73.53,44.16,80,36.93a22.2,22.2,0,0,0,5.89-12.3c.47-4.72-1.1-10.86-6-13.44a15.65,15.65,0,0,0-8-1.47,47.72,47.72,0,0,0-10.58,1.65c-6.77,1.74-14,2.64-21,3.74-6.49,1-13.27,2-20,1.23C16.87,16,13.42,15.1,10,14.43a63.73,63.73,0,0,1-6.79-1.57C5.27,16.69,9.4,20.25,12.35,23Z"
+                              transform="translate(0 -0.85)"/>
+                        <path d="M56.88,21.63c-3,2-7.67,1.66-11.07,1.3a28.42,28.42,0,0,1-11.33-3.34A24.92,24.92,0,0,1,22.65,1.75C22.45.39,20.17.64,20.37,2A27,27,0,0,0,34.14,21.86,32.45,32.45,0,0,0,47,25.18c3.71.25,8.16.28,11.36-1.84C59.54,22.52,58,20.87,56.88,21.63Z"
+                              transform="translate(0 -0.85)"/>
+                        <path d="M73.33,24.45a1.86,1.86,0,1,0,0,3.72A1.86,1.86,0,1,0,73.33,24.45Z" transform="translate(0 -0.85)"/>
+                        <path d="M75.54,44.23c2.83,2.57,5.46,5.34,8.28,7.92.7.64,2.34.28,2-.9-1.23-4.18-2.5-8.38-4.83-12.11-.72-1.15-2.83-.29-2.06.94a35,35,0,0,1,3.4,7.61c-1.57-1.54-3.14-3.08-4.76-4.57l0-.08-.2-.26a1.21,1.21,0,0,0-1.82.09l0,.07A1,1,0,0,0,75.54,44.23Z"
+                              transform="translate(0 -0.85)"/>
+                        <path d="M56.23,73.61a82.62,82.62,0,0,1-9.68-29.18H44.2a85,85,0,0,0,10,30.28" transform="translate(0 -0.85)"/>
+                        <path d="M63.76,73.75A49.48,49.48,0,0,1,56.1,46.89H53.79a51.19,51.19,0,0,0,7.94,27.87"
+                              transform="translate(0 -0.85)"/>
+                    </svg>
+                    <img class="popup-bg__img" src="./img/popup-bg_request-call.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -2218,7 +1614,7 @@
                                     <label class="c-label">Тип отзыва<span class="c-obligatory-field">*</span></label>
                                     <div class="reviews-form__type">
                                         <i class="reviews-form__type-icon icon-rabbit-positive"></i>
-                                        <select name="popup-reviews-type" id="form_dropdown_SIMPLE_QUESTION_868" class="c-select" required>
+                                        <select name="popup-reviews-type" id="form_dropdown_SIMPLE_QUESTION_257" class="c-select" required>
                                             <option value="47">Похвалить</option>
                                             <option value="48">Пожаловаться</option>
                                         </select>
@@ -2283,13 +1679,14 @@
 <!--END кнопка вверх-->
 
 
-
-
-
-
-
+<div class="c-reviews__item c-reviews-tree2018">
+    <a href="#" class="c-reviews__btn">
+        <i class="c-icon icon-tree2018"></i>
+        <div class="c-reviews__text">Ёлки 2018</div>
+    </a>
+</div>
 <!--боковые кнопки пожаловаться/похвалить-->
-<div class="c-reviews__item c-reviews-positive">
+<div class="c-reviews__item c-reviews-positive js-positive">
     <a href="#" class="c-reviews__btn">
         <svg class="c-icon icon-positive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.37 20.44">
             <path d="M12.94,7.47a4.35,4.35,0,0,0-2.11-.83c1-2.52,1.2-4.82.57-5.9A1.41,1.41,0,0,0,10.35,0a1.19,1.19,0,0,0-1,.32c-1.14,1-1.51,4.31-1.52,6l-.53,0c-.33,0-.78,0-1.28,0C5.9,3,5.47,1.3,4.64.64A1.44,1.44,0,0,0,3.44.36a1.52,1.52,0,0,0-1.11,1,7.64,7.64,0,0,0,.39,5.35,3.85,3.85,0,0,0-1.57.76c-.72.66-.83,4.68-.85,5.48,0,1.46,0,5,.78,6.26.65,1,3,1.25,5,1.25h.15c1.89,0,6.2-.34,6.76-1.26s1.19-10.37,0-11.71M9.92.92A.39.39,0,0,1,10.25.8a.62.62,0,0,1,.47.34c.51.88.22,3.07-.68,5.37-.44-.07-.9-.12-1.37-.16,0-1.83.45-4.71,1.25-5.42M3,1.66c.21-.46.45-.51.53-.52a.65.65,0,0,1,.57.12c.61.48,1,2.14,1.13,5A15.2,15.2,0,0,0,3.5,6.5,7,7,0,0,1,3,1.66m9.27,17.09c-.43.45-4.85,1.14-8.12.81-1.89-.19-2.35-.62-2.46-.8C.68,17.08,1,8.81,1.69,8s2.9-1,5.63-1,4.67.55,5,1c.92,1,.4,10,0,10.74"/>
@@ -2300,7 +1697,7 @@
         <div class="c-reviews__text">Похвалить</div>
     </a>
 </div>
-<div class="c-reviews__item c-reviews-negative">
+<div class="c-reviews__item c-reviews-negative js-negative">
     <a href="#" class="c-reviews__btn">
         <svg class="c-icon icon-negative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.37 20.44">
             <path d="M12.58,7.51a2.45,2.45,0,0,0-1.44-.87,7.58,7.58,0,0,0,.22-5.22A1.62,1.62,0,0,0,10.19.36,1.44,1.44,0,0,0,9,.64C8.16,1.3,7.73,3,7.56,6.26H7.44c-.45,0-1,0-1.68.07,0-1.64-.37-5-1.52-6a1.19,1.19,0,0,0-1-.33A1.41,1.41,0,0,0,2.22.74c-.63,1.09-.4,3.4.58,5.93a3.69,3.69,0,0,0-2.14.84C.1,8.44-.52,17.89.72,19.23c.68.74,3.3,1.14,5.6,1.2H7c1.65,0,4.37-.17,5.48-1.19.72-.67.83-4.68.85-5.48,0-1.46,0-5-.78-6.26M9.48,1.26A.65.65,0,0,1,10,1.14c.24,0,.44.25.6.6a6.73,6.73,0,0,1-.29,4.72,15.14,15.14,0,0,0-2-.19c.15-2.88.52-4.53,1.13-5M2.91,1.13A.62.62,0,0,1,3.38.8a.39.39,0,0,1,.33.13C4.51,1.65,5,4.56,5,6.39c-.45,0-.91.09-1.36.15C2.69,4.23,2.4,2,2.91,1.13M12,18.67c-1.69,1.55-9.74,1-10.67,0s-.4-10,0-10.74C1.69,7.57,4.7,7,7.58,7c.64,0,1.28,0,1.87.09,1.89.19,2.35.62,2.46.8,1.06,1.69.7,10,.06,10.74"/>
@@ -2313,6 +1710,7 @@
         <div class="c-reviews__text">Пожаловаться</div>
     </a>
 </div>
+
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>
 
@@ -2331,9 +1729,8 @@
 <!--<script src="./js/tooltip.js"></script>-->
 <!-- Подключаем API  карт 2.1  -->
 <!-- <script src="./js/ymaps-touch-scroll.bundle.js"></script> -->
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
 <!--<script src="./js/custom-map.js"></script>-->
-<!--<script src="./js/main.js"></script>-->
 <script async src="./js/scripts_all.js"></script>
 </body>
 </html>

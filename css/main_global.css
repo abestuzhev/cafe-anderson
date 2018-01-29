@@ -3480,6 +3480,36 @@ a.c-button:hover {
   .c-card-party .c-col-6 {
     padding: 0 1.4rem; }
 
+.c-simple-nav {
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem; }
+  .c-simple-nav__item {
+    color: #9b9595;
+    font-size: 1.6rem;
+    margin-right: 2.4rem; }
+    .c-simple-nav__item.active {
+      background-color: #7cbd41;
+      border-radius: .4rem;
+      padding: 1.1rem 1.4rem; }
+      .c-simple-nav__item.active span {
+        color: #ffffff; }
+      .c-simple-nav__item.active::after {
+        content: '';
+        border: none; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -8043,7 +8073,8 @@ test popup
       margin-right: 2rem;
       margin-bottom: 0; }
   .order-nav {
-    margin-bottom: 1.4rem; }
+    margin-bottom: 1.4rem;
+    overflow: hidden; }
     .order-nav__col {
       font-size: 0; }
     .order-nav__item {
@@ -9868,3 +9899,5 @@ test popup
     z-index: 4;
     top: -3.2rem;
     left: 4.3rem; }
+
+/*news and stock--------------------------------------------------------------*/

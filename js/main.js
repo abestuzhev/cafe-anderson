@@ -890,6 +890,7 @@ $(document).ready(function ($) {
                 // div.removeClass(instrumentHide); // скрываем его
                 // console.log('true');
                 div.parents('.mfp-wrap').removeClass('is-visible');
+                div.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div2.parents('html').removeClass('lock-html').css('margin-right','0');
