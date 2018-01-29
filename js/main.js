@@ -59,6 +59,11 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    //появление мобильного чека в корзине
+    $(document).on('click', '.basket__check-mobile', function(e){
+        e.preventDefault();
+        $('.basket__aside').toggleClass('active');
+    });
 
     //изменение в оформлении заказа на другого пользователя
     $(document).on('change', '#order-user_other', function(){

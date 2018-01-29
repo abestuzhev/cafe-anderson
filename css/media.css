@@ -161,8 +161,6 @@
 
     .cafe-list-layout .filter-item:nth-child(2) {width: 66%;}
 
-
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -281,7 +279,8 @@
         font-size: 0;
     }
     .basket-mix__item {
-         margin-right: 0;
+        margin-right: 0;
+        padding: .8rem .6rem .8rem 1rem;
     }
 }
 
@@ -336,6 +335,29 @@
 
     .graduation-party-banner__btn {
         font-size: 2rem;
+    }
+
+}
+
+@media (max-width:1090px) {
+    .basket__aside {
+        position: absolute;
+        top:0;
+        right: -99rem;
+    }
+
+    .basket {
+        flex-flow: column nowrap;
+        display: block;
+        /*overflow: hidden;*/
+    }
+
+    .basket__body {
+        padding-right: 0;
+    }
+
+    .basket__check-mobile {
+        display: block;
     }
 }
 
@@ -858,6 +880,22 @@
     .graduation-party-banner__btn {
         font-size: 1.6rem;
     }
+
+    .lk-profile-edit__line {
+        flex-flow: wrap;
+    }
+    .lk-profile-edit__address .c-form__item:nth-child(1),
+    .lk-profile-edit__address .c-form__item:nth-child(2) {
+        flex: 0 1 49%;
+    }
+
+    .lk-profile-edit__address .c-form__item:nth-child(6) {
+        flex: 0 1 62%;
+    }
+
+    .lk-profile-edit__address .c-form__item:last-child {
+        flex: 0 1 7%;
+    }
 }
 
 @media (max-width:980px) {
@@ -1015,6 +1053,25 @@
         background-position: 0 50%;
     }
 
+    .lk-history__grid {
+        display: block;
+    }
+
+    .lk-history__hold {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .lk-history__hold .tabs-menu__item {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+
+    .lk-history .tab {
+        width: 100%;
+    }
 }
 
 @media (max-width:940px) {
@@ -1111,6 +1168,7 @@
     .c-button__large {
         font-size: 1.6rem;
     }
+
 }
 
 @media (max-width:920px) {
@@ -1238,6 +1296,25 @@
         width: 33.333333%;
     }
 
+    .basket-mix__item span {
+        display: none;
+    }
+
+    .mixitup-control-active span {
+        display: inline-block;
+    }
+
+    .order-finish__grid {
+        flex-flow: column nowrap;
+        display: block;
+    }
+    .order-finish__col {
+        width: 100%;
+    }
+
+    .order-list {
+        padding: 0;
+    }
 }
 
 @media (max-width:800px) {
@@ -1270,6 +1347,37 @@
 
     #delivery_map {
         width: 100% !important;
+    }
+
+    .basket-item__footer {
+        position: static;
+    }
+    .basket-item {
+        display: block;
+        padding: 2rem 0 2.4rem;
+    }
+
+    .lk-profile-edit__address .c-form__item:nth-child(1),
+    .lk-profile-edit__address .c-form__item:nth-child(2) {
+        flex: 0 1 100%;
+    }
+
+    .lk-profile-edit__address .c-form__item:nth-child(3),
+    .lk-profile-edit__address .c-form__item:nth-child(4),
+    .lk-profile-edit__address .c-form__item:nth-child(5) {
+        flex: 0 1 32%;
+    }
+
+    .lk-profile-edit__address .c-form__item:nth-child(6) {
+        flex: 0 1 80%;
+    }
+
+    .lk-profile-edit__address .c-form__item:last-child {
+        flex: 0 1 18%;
+    }
+
+    .lk-profile-edit input.lk-profile-input--small {
+        width: 100%;
     }
 }
 
@@ -1601,6 +1709,78 @@
         font-size: 1.5rem;
     }
 
+
+    body {
+        background-image: none;
+    }
+    .page-container,
+    .page-wrapper {
+        padding: 2rem 1.5rem;
+        margin-right: -1.6rem;
+        margin-left: -1.6rem;
+        border: none;
+        border-radius: 0;
+        background-image: none;
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    .header {
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+        border: none;
+    }
+
+    .c-breadcrumb {
+        margin-bottom: 1.2rem;
+    }
+
+    .c-title__h1 {
+        margin-bottom: 1rem;
+    }
+
+    .order-finish-item {
+        padding: 1.4rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .order-finish__title {
+        font-size: 2.4rem;
+    }
+
+    .graduation-party-banner,
+    .graduation-party .c-card-party__header {
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+    }
+
+    .lk-profile {
+        margin-right: -2.2rem;
+        margin-left: -2.2rem;
+        border: none;
+        background-image: none;
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    .order-nav {
+        margin: 0;
+    }
+    .order-nav__item {
+        margin: 0;
+    }
+
+    .lk .order-nav {
+        margin-bottom: 1rem;
+    }
+
+    .lk-history__hold {
+        padding: 1rem;
+        background-image: none;
+    }
+
+    .tab {
+        background-image: none !important;
+    }
 }
 
 @media (max-width:780px) {
@@ -1633,6 +1813,19 @@
 
     .popup-party-order .party-order .datepicker--cell {
         height: 11vw;
+    }
+
+    .lk-profile-address .c-grid {
+       flex-flow: column wrap;
+    }
+    .lk-profile-address .c-col-6 {
+        width: 100%;
+        margin-bottom: 1rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .lk-profile-address .c-col-6:last-child {
+        margin-bottom: 0;
     }
 
 }
@@ -1682,6 +1875,14 @@
 
     .creators .popup {
         width: 500px !important;
+    }
+
+    .c-card-product-line {
+        display: block;
+    }
+    .c-card-product-line__right {
+        justify-content: flex-start;
+        padding: 0 1rem 2rem 11%;
     }
 }
 
@@ -1757,8 +1958,22 @@
         padding: .7rem 2.1rem 1rem;
     }
 
+
+
 }
 
+@media screen and (max-width:640px) {
+
+    .lk-history-item__footer {
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .lk-history-item__footer-col:nth-child(1) {
+        margin-bottom: 1.2rem;
+    }
+}
 @media screen and (max-height:600px) {
     .popup .popup-bg__img {
         right: -10rem;
@@ -1932,6 +2147,55 @@
     .contact__decor-line {
         background-position: 0 0;
     }
+
+    .order-delivery__grid {
+        flex-flow: column nowrap;
+    }
+    .order-delivery__grid > div:nth-child(1) {
+        /*margin-bottom: 2rem;*/
+        order: 2;
+    }
+    .order-delivery__grid > div:nth-child(2) {
+        margin-bottom: 1rem;
+        order: 1;
+    }
+
+    .order-delivery__col {
+        width: 100%;
+    }
+
+    .order-delivery__map {
+        height: 20rem;
+    }
+
+    .order-user {
+        display: block;
+    }
+    .order-user__col {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .order-user__col:last-child {
+        /*margin-bottom: 0;*/
+    }
+
+    #lk-profile-edit__child .c-form__item:nth-child(1) {
+        order: 2;
+    }
+    #lk-profile-edit__child .c-form__item:nth-child(3) {
+        order:3;
+    }
+    #lk-profile-edit__child .c-form__item:nth-child(4) {
+        order:4;
+    }
+    #lk-profile-edit__child .c-form__item:nth-child(2){
+        order: 1;
+        flex: 0 1 100%;
+        width: 100%;
+    }
+    #lk-profile-edit__child .c-form__item:nth-child(2) input {
+        width: 100%;
+    }
 }
 
 @media (max-width:650px) {
@@ -1953,6 +2217,34 @@
         width: auto;
         height: 100%;
     }
+    .order-nav {
+        position: relative;
+        padding-bottom: 4rem;
+    }
+
+    .order-nav__item {
+        position: static;
+        border-radius: .8rem .8rem 0 0;
+    }
+    .order-nav__item > span {
+        display: none;
+        position: absolute;
+        width: 93vw;
+        top: 100%;
+        left: 0;
+        background-color: #7cbd41;
+        white-space: nowrap;
+        padding: 10px 13px;
+        border-radius: 0 .8rem .8rem .8rem;
+    }
+    .order-nav__item.active > span {
+        display: block;
+    }
+
+    .lk-profile-child__item {
+        margin-right: 2.5rem;
+    }
+
 }
 
 
@@ -1997,16 +2289,60 @@
         font-size: 1.8rem;
     }
 
-    .page-container {
-        padding: 2rem 1.5rem;
-        margin-right: -1.6rem;
-        margin-left: -1.6rem;
+    .basket__list {
+        padding: 0 1.6rem 3.1rem 1.6rem;
     }
 
-    .graduation-party-banner,
-    .graduation-party .c-card-party__header {
-        margin-right: -1.5rem;
-        margin-left: -1.5rem;
+    .lk-profile__header,
+    .lk-profile__title {
+        display: block;
+    }
+    .lk-profile__title {
+        margin-bottom: .4rem;
+    }
+     .lk-profile__link-edit,
+     .lk-profile__password-edit {
+        display: inline-block;
+    }
+
+
+
+    .lk-profile__item:first-child .c-form__grid--left {
+        flex-flow: column wrap;
+    }
+    .lk-profile-edit .c-form__grid--left .c-form__item {
+        margin-right: 0;
+    }
+    .lk-profile__item:first-child .c-form__item {
+        width: 100%;
+    }
+    .lk-profile__item:first-child .c-form__item input {
+        width: 100%;
+    }
+
+
+    .lk-profile-edit__title {
+        margin-bottom: 1.3rem;
+        font-size: 1.8rem;
+    }
+
+    .lk-profile-edit__contact .c-label,
+    .lk-profile-edit__contact .c-form__item,
+    .lk-profile-edit__contact .c-form__item input,
+    .lk-profile-edit__email-list,
+    .lk-profile-edit__tel-list,
+    .lk-profile-edit__copy,
+    .lk-profile-edit__email-list .c-form__item,
+    .lk-profile-edit__tel-list .c-form__item,
+    .lk-profile-edit__email-list .c-form__item input,
+    .lk-profile-edit__tel-list .c-form__item input {
+        width: 100%;
+    }
+
+    .lk-profile-edit__contact .c-form__grid--left > .c-form__item:last-child {
+        align-self: auto;
+        bottom: -3.4rem;
+        width: 6%;
     }
 
 
@@ -2081,6 +2417,23 @@
     .graduation-party .c-caption-special__subtitle {
         font-size: 1.3rem;
         padding: 0 3rem;
+    }
+
+    .order-user__other-form {
+        flex-flow: column nowrap;
+        /*margin-left: 2.4rem;*/
+    }
+    .order-user__list {
+        margin: 1rem 0 0 0;
+        flex-flow: column wrap;
+    }
+    .order-user__list-text {
+        margin: 0 0 .6rem 0;
+    }
+
+    .order-user__other-form .c-form__item {
+        margin: 0 0 1rem 0;
+        width: 100%;
     }
 }
 
@@ -2278,8 +2631,34 @@
         top: 0rem;
         right: 1.5rem;
     }
+
+    .lk-profile-edit__line {
+        flex-flow: row wrap;
+    }
+
+    .lk-profile-subscription .lk-profile-edit .c-form__grid--left {
+        flex-flow: row wrap;
+    }
+    .lk-profile-subscription .lk-profile-edit .c-form__item {
+        margin-right: 1rem;
+    }
 }
 
+@media (max-width:520px) {
+    .basket-mix__item span {
+        display: none;
+    }
+    .basket-mix__number {
+        width: 1.8rem;
+        height: 1.8rem;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    .lk-history__hold .tabs-menu__item {
+        margin-right: 1rem;
+    }
+}
 
 @media (max-width:470px) {
     .mobile-cafe__title,
@@ -2368,6 +2747,19 @@
         width: 100%;
     }
 
+    .lk-profile-subscription .lk-profile-edit .c-form__item input {
+        width: 100%;
+    }
+
+    .lk-history__hold .tabs-menu__item {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .lk-history__hold .tabs-menu__item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width:440px) {
@@ -2542,6 +2934,55 @@
 
     .popup-product__btn-back, .popup-product__btn-close {
         padding: 1.8rem 4.8rem 1.2rem 1.8rem;
+    }
+
+    .c-card-product-line__right {
+        padding-left: 14%;
+    }
+
+    .c-card-product-line__right > div {
+        margin-right: .6rem;
+    }
+
+    .basket .c-button__medium {
+        font-size: 1.4rem;
+        padding: .9rem 1.2rem .9rem;
+    }
+    .basket-item__price {
+        margin-right: 1rem;
+    }
+
+    .order-nav__item > span {
+        width: 91vw;
+    }
+
+
+    #lk-profile-edit__child .c-form__item:nth-child(3) input {
+        width: 11rem;
+    }
+    #lk-profile-edit__child .c-form__item:nth-child(1),
+    #lk-profile-edit__child .c-form__item:nth-child(3) {
+        margin-right: 1rem;
+    }
+
+    .lk-profile-subscription .l-button__left {
+        text-align: center;
+    }
+    .lk-profile-subscription .l-button__left button,
+    .lk-profile-subscription .l-button__left .c-button {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .lk-history-item__price {
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+
+    .lk-history-item__footer .c-button {
+        padding: .9rem 1.2rem .9rem;
     }
 }
 

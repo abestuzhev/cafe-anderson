@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
 .c-icon:hover, a, a:hover, a:focus, .c-input, .c-input:focus, .c-form__add, .c-form__add:hover, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item.active, .c-card-publication, .c-card-publication:hover, .header-mobile__dropdown, .header-mobile__auth, .header-search__form, .header-navigation__item, .header-navigation__item:hover, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
-.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .popup-show, .dropdown-show .icon-dropdown, .is-show__smoothly, .body-popup, .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover {
+.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .popup-show, .dropdown-show .icon-dropdown, .is-show__smoothly, .body-popup, .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover, .basket__aside, .basket__aside.active {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -2781,7 +2781,7 @@ a.c-button:hover {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    min-width: 21.5rem;
+    min-width: 23.5rem;
     padding-right: 1rem; }
     .c-card-product-line__right > div {
       margin-right: 1.3rem; }
@@ -5539,16 +5539,24 @@ main {
 /*карточка товара*/
 .popup-product .popup {
   max-width: 88.4rem;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  overflow: visible; }
+  .popup-product .popup .popup-mini {
+    position: absolute;
+    top: 0;
+    left: 100%; }
 
 .popup-product .popup-title {
   padding: 2rem 6rem 1.6rem 2rem !important;
   font-size: 1.9rem;
-  text-align: left; }
+  text-align: left;
+  border-radius: .8rem .8rem 0 0; }
 
 .popup-product .popup-body {
   padding: 1.4rem 2rem;
-  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+  background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+  border-radius: 0 0 .8rem .8rem; }
 
 .popup-product__check-mobile {
   display: none;
@@ -5623,8 +5631,7 @@ main {
           align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  overflow: hidden; }
+          justify-content: flex-start; }
 
 .popup-mini {
   font-family: "PT Serif Caption";
@@ -7411,7 +7418,7 @@ test popup
     left: auto;
     right: -3%; }
   .carousel-slider.owl-carousel .owl-nav.disabled {
-    display: block; }
+    display: block !important; }
 
 .owl-carousel .owl-stage-outer {
   height: 100%; }
@@ -7798,10 +7805,32 @@ test popup
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  position: relative; }
+  .basket__check-mobile {
+    position: absolute;
+    z-index: 1060;
+    right: 0;
+    top: -6rem;
+    text-decoration: none;
+    padding: 1.4rem 1.7rem 1.4rem 1rem;
+    background-color: #7cbd41;
+    border-radius: .4rem 0 0 .4rem;
+    color: #ffffff;
+    font-family: "PT Serif Caption";
+    font-size: 1.4rem;
+    display: none; }
+    .basket__check-mobile:hover {
+      color: #ffffff;
+      text-decoration: underline; }
+    .basket__check-mobile::after {
+      content: '';
+      border: none; }
   .basket__body {
     width: 100%;
     padding-right: 1.6rem; }
+  .basket__aside.active {
+    right: 0; }
   .basket-mix {
     margin-bottom: 1.4rem; }
     .basket-mix__item {
@@ -8008,7 +8037,10 @@ test popup
       margin-bottom: 0; }
   .order-nav {
     margin-bottom: 1.4rem; }
+    .order-nav__col {
+      font-size: 0; }
     .order-nav__item {
+      font-size: 1.6rem;
       display: inline-block;
       padding: 1.1rem 1.4rem;
       margin-right: 1rem;
@@ -8748,6 +8780,8 @@ test popup
     margin-bottom: 1rem; }
     .lk-history-item__product:last-child {
       margin-bottom: 0; }
+    .lk-history-item__product .c-card-event__text {
+      white-space: normal; }
   .lk-history-item__price {
     font-family: "BebasNeue";
     font-size: 3.6rem;
@@ -8835,7 +8869,8 @@ test popup
   white-space: normal; }
 
 .lk-exit {
-  color: #9b9595; }
+  color: #9b9595;
+  font-size: 1.6rem; }
   .lk-exit i {
     margin-right: .6rem;
     vertical-align: text-top; }
@@ -8979,8 +9014,8 @@ test popup
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -8988,7 +9023,8 @@ test popup
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .lk-profile-child__item {
-    margin-right: 4.5rem; }
+    margin-right: 4.5rem;
+    margin-bottom: 1rem; }
     .lk-profile-child__item:last-child {
       margin-right: 0; }
   .lk-profile-child-card {

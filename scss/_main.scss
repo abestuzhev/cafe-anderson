@@ -1321,18 +1321,27 @@ main {
         //width: 88.4rem;
         max-width: 88.4rem;
         width: 100%;
-        //position: relative;
+        position: relative;
+        overflow: visible;
+
+        .popup-mini {
+            position: absolute;
+            top: 0;
+            left: 100%;
+        }
     }
     
     .popup-title {
         padding: 2rem 6rem 1.6rem 2rem !important;
         font-size: 1.9rem;
         text-align: left;
+        border-radius: .8rem .8rem 0 0;
     }
     
     .popup-body {
         padding: 1.4rem 2rem;
-        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+        border-radius: 0 0 .8rem .8rem;
     }
     
     &__check-mobile {
@@ -1415,7 +1424,7 @@ main {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: flex-start;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .popup-mini {
@@ -3785,7 +3794,7 @@ test popup
     }
     
     &.owl-carousel .owl-nav.disabled {
-        display: block;
+        display: block !important;
     }
 }
 
@@ -4322,14 +4331,44 @@ test popup
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+
+    &__check-mobile {
+        position: absolute;
+        z-index: 1060;
+        right: 0;
+        top: -6rem;
+        text-decoration: none;
+        padding: 1.4rem 1.7rem 1.4rem 1rem;
+        background-color: #7cbd41;
+        border-radius: .4rem 0 0 .4rem;
+        color: #ffffff;
+        font-family: $font_serif;
+        font-size: 1.4rem;
+        display: none;
+
+        &:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
     
     &__body {
         width: 100%;
         padding-right: 1.6rem;
     }
-    
+
     &__aside {
-    
+        @extend %transition_all;
+    }
+    &__aside.active {
+        right: 0;
+        @extend %transition_all;
     }
     
     &-mix {
@@ -4606,8 +4645,13 @@ test popup
     
     &-nav {
         margin-bottom: 1.4rem;
+
+        &__col {
+            font-size: 0;
+        }
         
         &__item {
+            font-size: 1.6rem;
             display: inline-block;
             padding: 1.1rem 1.4rem;
             margin-right: 1rem;
@@ -5552,6 +5596,10 @@ test popup
                 &:last-child {
                     margin-bottom: 0;
                 }
+
+                .c-card-event__text {
+                    white-space: normal;
+                }
             }
             
             &__price {
@@ -5633,6 +5681,7 @@ test popup
     
     &-exit {
         color: #9b9595;
+        font-size: 1.6rem;
         
         i {
             margin-right: .6rem;
@@ -5840,13 +5889,14 @@ test popup
         
         &__list {
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             align-items: flex-start;
             justify-content: flex-start;
         }
         
         &__item {
             margin-right: 4.5rem;
+            margin-bottom: 1rem;
             &:last-child {
                 margin-right: 0;
             }
