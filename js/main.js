@@ -877,22 +877,28 @@ $(document).ready(function ($) {
         // тут указываем ID элемента
         // var div2 = $('.popup-mini');
 
-        function hideOutZone(elem, elem2){
+        function hideOutZone(elem, elem2, elem3){
             var div = $(elem);
             var div2 = $(elem2);
+            var div3 = $(elem3);
             if (!div.is(e.target)
                 && div.has(e.target).length === 0
                 && !div2.is(e.target)
-                && div2.has(e.target).length === 0) {
+                && div2.has(e.target).length === 0
+                && !div3.is(e.target)
+                && div3.has(e.target).length === 0) {
                 // div.removeClass(instrumentHide); // скрываем его
-                // console.log('прошел');
+                // console.log('true');
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
-                div2.parents('html').removeClass('lock-html');
+                div2.parents('html').removeClass('lock-html').css('margin-right','0');
+                div3.parents('.mfp-wrap').removeClass('is-visible');
+                div3.parents('html').find('.mfp-bg ').removeClass('is-visible');
+                div3.parents('html').removeClass('lock-html').css('margin-right','0');
             }
         }
-        hideOutZone('.js-popup-mouseUp', '.popup-mini');
+        hideOutZone('.popup', '.popup-mini', '.datepicker');
 
     });
 

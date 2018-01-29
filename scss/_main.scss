@@ -467,7 +467,7 @@ main {
     box-shadow: 0 16px 57px 0 rgba(0, 0, 0, .47);
     transform: scale(1);
     //transition: transform .2s ease;
-    @extend %transition_all;
+    //@extend %transition_all;
     margin: 0 auto;
     
     &-box {
@@ -1415,6 +1415,10 @@ main {
         border-radius: 50px 50px 0 0;
         background-size: 10px 11px;
     }
+    
+    .popup-layout {
+        //margin-left: -26.4rem;
+    }
 }
 
 .popup-layout {
@@ -1672,7 +1676,7 @@ test popup
     /*display: none;*/
     opacity: 0;
     visibility: hidden;
-    transition: all .1s ease;
+    //transition: all .1s ease;
     //transform: scale(1);
     //@extend %transition_all;
     //overflow-y: hidden !important;
@@ -1690,9 +1694,13 @@ test popup
     /*display: none;*/
     opacity: 0;
     visibility: hidden;
-    transform: scale(.9);
-    transition: all .2s ease;
+    //transform: scale(.9);
+    transition: all .5s ease-out;
     //overflow-y: scroll;
+}
+
+.popup {
+    transform: scale(.9);
 }
 
 .mfp-container {
@@ -1765,8 +1773,14 @@ test popup
 .is-visible {
     opacity: 1 !important;
     visibility: visible !important;
+    transition: all .1s ease;
+}
+
+
+.is-visible .popup {
+    opacity: 1 !important;
+    visibility: visible !important;
     transform: scale(1);
-    //@extend %transition_all;
     transition: all .1s ease;
 }
 
@@ -5834,7 +5848,6 @@ test popup
         &__email {
             font-style: italic;
             margin-bottom: .6rem;
-            
             span {
                 color: #96928a;
             }

@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext");
 .c-icon:hover, a, a:hover, a:focus, .c-input, .c-input:focus, .c-form__add, .c-form__add:hover, .c-button, .c-button:hover, .c-reviews__item, .c-reviews__item.active, .c-card-publication, .c-card-publication:hover, .header-mobile__dropdown, .header-mobile__auth, .header-search__form, .header-navigation__item, .header-navigation__item:hover, .icon-menu__transform .icon-menu__line-2, .icon-menu__transform .icon-menu__line-1, .icon-menu__transform .icon-menu__line-3, .footer-search__btn:hover, .home-cafe:hover,
 .home-celebration:hover,
-.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .popup-show, .dropdown-show .icon-dropdown, .is-show__smoothly, .body-popup, .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover, .basket__aside, .basket__aside.active {
+.home-cake:hover, .home-cafe, .home-cafe:hover .home-cafe__map, .home-cafe__text, .home-cafe__arrow, .home-cafe__map, .home-celebration, .home-celebration:hover .home-celebration__paw-bear, .home-celebration__packege, .home-celebration__text, .home-cake, .home-cake:hover .home-cake__bear, .home-cake__pie-1, .home-cake__pie-2, .home-cake__brownie, .home-cake__bear, .home-cake__arrow, .popup__request-call .mobile-request-call__form, .popup__request-call .mobile-request-call_inquiry, .popup-show, .dropdown-show .icon-dropdown, .is-show__smoothly, .body-popup, .filter-mobile-btn .icon-dropdown, .filter-hold-mobile-btn .icon-dropdown, .creators .photo-point__icon, .creators .photo-point__icon::after, .creators .photo-point__icon:hover, .basket__aside, .basket__aside.active {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
@@ -5810,10 +5810,7 @@ test popup
   filter: alpha(opacity=80);
   /*display: none;*/
   opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all .1s ease;
-  -o-transition: all .1s ease;
-  transition: all .1s ease; }
+  visibility: hidden; }
 
 .mfp-wrap {
   top: 0;
@@ -5827,12 +5824,14 @@ test popup
   /*display: none;*/
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out; }
+
+.popup {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease; }
+          transform: scale(0.9); }
 
 .mfp-container {
   text-align: center;
@@ -5887,6 +5886,13 @@ test popup
           transform: rotate(180deg) translateY(50%) !important; }
 
 .is-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease; }
+
+.is-visible .popup {
   opacity: 1 !important;
   visibility: visible !important;
   -webkit-transform: scale(1);
