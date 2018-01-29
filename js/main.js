@@ -43,6 +43,7 @@ $(window).on('load', function(){
     var disabledPartyDays = [0, 5, 6];
     $('#party-datepicker').datepicker({
         minDate: new Date(),
+        inline: true,
         onRenderCell: function (date, cellType) {
             if (cellType == 'day') {
                 var day = date.getDay(),
@@ -58,6 +59,21 @@ $(window).on('load', function(){
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
+
+
+    function changePartyTitlePopup (){
+        $(document).on('click', '.js-party-order', function(){
+            var letter = $(this).data('name'),
+                title = $('.popup-party-order .popup-title').find('span');
+
+            title.text('');
+            title.append(letter);
+            $('#title-party-order').val(letter);
+        });
+    }
+    changePartyTitlePopup();
+
+
 
     //появление мобильного чека в корзине
     $(document).on('click', '.basket__check-mobile', function(e){
@@ -308,7 +324,7 @@ $(document).ready(function ($) {
         e.preventDefault();
         $(this).parents('.order-delivery-search__item').siblings().find('input').val('');
         $('.order-delivery-address__all').removeClass('show-item-all');
-        
+
         $('.order-delivery-address__item').each(function(i, elem){
             i < 6 ? $(elem).show() : $(elem).hide();
         });

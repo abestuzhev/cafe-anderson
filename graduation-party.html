@@ -997,7 +997,7 @@
                                     <span>6-7<br/>лет</span>
                                 </i>
                                 Монстро LAB на каникулах</div>
-                            <div class="c-card-party__application"><a href="#" class="c-button c-button__large js-party-order">Оставить заявку</a></div>
+                            <div class="c-card-party__application"><a href="#" class="c-button c-button__large js-party-order" data-name="Оставить заявку на выпускной (6-7 лет)">Оставить заявку</a></div>
                         </div>
                         <div class="c-card-party-info">
                             <ul class="c-card-party-info__list">
@@ -1080,7 +1080,7 @@
                                     <span>8-10<br/>лет</span>
                                 </i>
                                 ПАТИ-ХАЙП!</div>
-                            <div class="c-card-party__application"><a href="#" class="c-button c-button__large js-party-order">Оставить заявку</a></div>
+                            <div class="c-card-party__application"><a href="#" class="c-button c-button__large js-party-order" data-name="Оставить заявку на выпускной (8-10 лет)">Оставить заявку</a></div>
                         </div>
                         <div class="c-card-party-info">
                             <ul class="c-card-party-info__list">
@@ -1286,12 +1286,13 @@
         <div class="mfp-content">
             <div class="popup">
                 <div class="popup-box">
-                    <h3 class="popup-title">Оставить заявку на выпускной (6-7 лет)<span class="popup-close"></span></h3>
+                    <h3 class="popup-title"><span>Оставить заявку на выпускной (6-7 лет)</span><div class="popup-close"></div></h3>
                     <div class="popup-body party-order">
                         <form action="#" class="popup-form" id="party-form">
+                            <input type="hidden" id="title-party-order">
                             <div class="party-order__grid">
                                 <div class="party-order__left">
-                                    <div id="party-datepicker"></div>
+                                    <input type="hidden" id="party-datepicker">
                                     <div class="party-order__note">Предложение по выпускным доступно для заказа
                                         с понедельника по четверг!</div>
                                     <svg class="c-symbol symbol-fireworks"><use xlink:href="#symbol-fireworks" /></svg>
