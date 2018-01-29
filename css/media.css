@@ -1781,6 +1781,10 @@
     .tab {
         background-image: none !important;
     }
+
+    .popup-body {
+        background-image: none !important;
+    }
 }
 
 @media (max-width:780px) {

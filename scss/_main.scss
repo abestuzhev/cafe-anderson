@@ -1322,7 +1322,7 @@ main {
         max-width: 88.4rem;
         width: 100%;
         position: relative;
-        overflow: visible;
+        overflow: hidden;
 
         .popup-mini {
             position: absolute;
@@ -1428,7 +1428,7 @@ main {
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: flex-start;
-    //overflow: hidden;
+    overflow: hidden;
 }
 
 .popup-mini {
