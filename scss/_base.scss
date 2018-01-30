@@ -41,6 +41,7 @@
 html {
     height: 100%;
     font: 400 10px/1.33 $font_1;
+    overflow-y: scroll;
 }
 
 //.home-body {
@@ -3251,10 +3252,20 @@ a.c-button {
     box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
     border-radius: .4rem;
     overflow: hidden;
+    font-family: $font_serif;
+    
+    font-size: 1.3rem;
+    color: #9b9595;
     
     &::after {
         content: '';
         border: none;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     
     &__body {
@@ -3269,19 +3280,51 @@ a.c-button {
     &__title {
         font-size: 1.7rem;
         color: #9b806f;
-        border-bottom: 1px dotted #9b806f;
+        margin-bottom: 1rem;
+        line-height: 1.2;
         
-        &::after {
-            content: '';
-            border: none;
+        a {
+            border-bottom: 1px dotted #9b806f;
+            &::after {
+                content: '';
+                border: none;
+            }
+            &:hover {
+                border: none;
+            }
         }
     }
     
-    &__info {
+    &-info {
+        margin-bottom: 1rem;
+        font-family: $font_serif;
+        font-size: 1.3rem;
+        color: #9b9595;
+        
+        &__item {
+            display: inline-block;
+            margin-right: 1.2rem;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+        svg {
+            cursor: auto;
+        }
+        
+        .symbol-calendar-3 {
+            
+            font-size: 1.5rem;
+        }
+        
+        .symbol-mark {
+            font-size: 1rem;
+        }
     
     }
     
     &__text {
-    
     }
 }

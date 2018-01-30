@@ -40,7 +40,48 @@
     <link rel="stylesheet" href="./css/main_global.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
-<body>
+<body class="is-content-hidden">
+
+<!--icons SVG-->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="symbol-vk" viewBox="0 0 14.16 13.76">
+        <path d="M13.41,1C12-.3,3-.06,1.66,1c-2.17,1.73-1,10.2-.09,11.75.47.8,2.59,1.1,4.91,1.1,2.83,0,6-.44,6.87-1,.56-.32.93-1.29,1.11-3,.33-2.89,0-7.91-1-8.91m.26,8.82c-.17,1.54-.5,2.24-.72,2.37-1.58.91-10,1.26-10.7.14A16.84,16.84,0,0,1,1.24,7c-.15-2.75.19-4.73.91-5.31,1.19-.95,9.7-1,10.72,0,.64.6,1.16,5,.79,8.24"
+              transform="translate(-0.42 -0.12)"/>
+        <path d="M9.47,7.25a11.85,11.85,0,0,0,1.36-1.4.79.79,0,1,0-1.23-1A9.83,9.83,0,0,1,8.15,6.28C8.08,5.42,8,4.45,7.84,3.36a.79.79,0,0,0-1.57.2,36.34,36.34,0,0,1,.37,6.16A6.7,6.7,0,0,1,4.57,5.87.79.79,0,1,0,3,6c.22,2.43,2.47,5.53,4,5.53a1,1,0,0,0,.76-.35,4.72,4.72,0,0,0,.49-2.71,3.11,3.11,0,0,1,2.21,2.12.79.79,0,0,0,.75.55.77.77,0,0,0,.24,0,.79.79,0,0,0,.51-1,4.52,4.52,0,0,0-2.5-2.86"
+              transform="translate(-0.42 -0.12)"/>
+    </symbol>
+
+    <symbol id="symbol-fb" viewBox="0 0 13.25 14.34">
+        <path d="M12.84,1.32C10.61.09,3-.1,1.17,1.35-.13,2.36.41,11.64,1,13.06s4,1.61,6.15,1.61h.43c1.44,0,4.83-.25,5.38-1.62.61-1.53,1.07-11-.18-11.73m-.56,11.44c-.2.51-1.87,1.06-4.66,1.12-3.16.07-5.58-.53-5.85-1.14C1,11.09.94,2.64,1.66,2,3,.9,10.1.74,12.43,2c.62.81.51,9.09-.15,10.76"
+              transform="translate(-0.38 -0.33)"/>
+        <path d="M6.75,2.67A2.69,2.69,0,0,0,5.31,5.29c0,.41,0,.89.06,1.42h0A.79.79,0,0,0,5.41,8.3h.06c.13,1.82.28,3.57.29,3.69a.79.79,0,0,0,.79.72h.07a.79.79,0,0,0,.72-.86S7.18,10,7,8.13L8.36,8A.79.79,0,0,0,8.2,6.42l-1.25.13c0-.48,0-.92-.05-1.29a1.14,1.14,0,0,1,.55-1.17,1,1,0,0,1,.93,0,.79.79,0,0,0,1-1.23,2.53,2.53,0,0,0-2.63-.21"
+              transform="translate(-0.38 -0.33)"/>
+    </symbol>
+
+    <symbol id="symbol-calendar-3" viewBox="0 0 19 19">
+        <path d="M2.4,3V0.6C2.4,0.3,2.6,0,3,0c0.3,0,0.6,0.3,0.6,0.6V3c0,0.3-0.3,0.6-0.6,0.6C2.6,3.6,2.4,3.3,2.4,3z
+		 M12.5,3.6c0.3,0,0.6-0.3,0.6-0.6V0.6c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6V3C11.9,3.3,12.1,3.6,12.5,3.6z M19,14.2
+		c0,2.6-2.1,4.8-4.8,4.8c-2.6,0-4.7-2.1-4.7-4.8c0-2.6,2.1-4.7,4.7-4.7C16.9,9.5,19,11.6,19,14.2z M17.8,14.2c0-2-1.6-3.6-3.6-3.6
+		c-2,0-3.6,1.6-3.6,3.6c0,2,1.6,3.6,3.6,3.6C16.2,17.8,17.8,16.2,17.8,14.2z M4.8,7.1H2.4v2.4h2.4V7.1z M2.4,13.1h2.4v-2.4H2.4V13.1
+		z M5.9,9.5h2.4V7.1H5.9V9.5z M5.9,13.1h2.4v-2.4H5.9V13.1z M1.2,14.1V5.9h13.1v2.4h1.2V3.7c0-0.7-0.6-1.3-1.3-1.3h-0.5V3
+		c0,0.7-0.5,1.2-1.2,1.2c-0.7,0-1.2-0.5-1.2-1.2V2.4H4.2V3c0,0.7-0.5,1.2-1.2,1.2C2.3,4.2,1.8,3.6,1.8,3V2.4H1.3C0.6,2.4,0,3,0,3.7
+		v10.5c0,0.7,0.6,1.3,1.3,1.3h7v-1.2h-7C1.2,14.2,1.2,14.2,1.2,14.1z M11.9,9.5V7.1H9.5v2.4H11.9z M16,14.2h-1.8v-1.8
+		c0-0.3-0.3-0.6-0.6-0.6c-0.3,0-0.6,0.3-0.6,0.6v2.4c0,0.3,0.3,0.6,0.6,0.6H16c0.3,0,0.6-0.3,0.6-0.6C16.6,14.5,16.4,14.2,16,14.2z"
+        />
+    </symbol>
+
+    <symbol id="symbol-mark" viewBox="0 0 14 21">
+        <path d="M12.3,11.9c1.5-2.6,2.4-5.8,0.9-8.6c-1.9-3.3-6.1-4.1-9.3-2.4c-4.1,2.1-4.5,6.5-3.3,10.4
+	c0.1,0.2,0.2,0.3,0.3,0.4c1.4,2.7,3.5,5,4.4,7.9c0,0.1,0.1,0.3,0.3,0.3c-0.4,0-0.8,0-1.2-0.2c-0.3-0.1-0.7,0-0.8,0.3
+	c-0.1,0.2,0,0.5,0.2,0.7c0.8,0.5,2,0.3,2.9,0.3c1.2,0,2.3-0.2,3.4-0.5c0.7-0.3,0.4-1.4-0.3-1.2C8.9,19.6,8,19.7,7,19.7l-0.7,0.1
+	c0,0,0,0,0,0C8.6,17.3,10.7,14.8,12.3,11.9 M1.7,10.4c0-0.1-0.1-0.1-0.1-0.2C1.1,8.8,1,7.2,1.3,5.7c0.5-2,2.1-3.5,4-4.2
+	c2.9-1.1,6.1,0.3,7.2,3.2c0.1,0.2,0.2,0.5,0.2,0.7c0.6,2.6-1.1,5.4-2.4,7.5c-1.2,1.9-2.6,3.6-4.2,5.3C5.1,15.4,3,13.1,1.7,10.4"/>
+        <path d="M8.7,8.7c1.2-1,1.1-2.9,0.3-4.1C7.8,2.9,5.8,3.3,4.4,4.4C4.2,4.5,4.1,4.8,4.2,5C3.7,5.7,3.5,6.6,3.8,7.4
+	C4.3,9.3,7.3,9.9,8.7,8.7 M7.9,5.2c0.5,0.6,0.7,1.8,0.2,2.4C7.4,8.5,5.5,8.1,5,7.2C4.2,6,6,4.8,7.1,4.8c0.1,0,0.2,0,0.3-0.1
+	C7.6,4.8,7.8,5,7.9,5.2"/>
+    </symbol>
+</svg>
+<!--END icons SVG-->
 
 <div id="page-preloader" class="preloader">
     <div class="loader">
@@ -875,9 +916,16 @@
                                 <div class="c-card-news-and-stock">
                                     <img src="./img/photo-news-1.jpg" alt="описание картинки">
                                     <div class="c-card-news-and-stock__body">
-                                        <a href="#" class="c-card-news-and-stock__title">Новогодняя ночь в АндерСоне – звезды в руках, астролог, глинтвейн и живые хаски!</a>
-                                        <div class="c-card-news-and-stock__info">
-
+                                        <h3 class="c-card-news-and-stock__title"><a href="#">Новогодняя ночь в АндерСоне – звезды в руках, астролог, глинтвейн и живые хаски!</a></h3>
+                                        <div class="c-card-news-and-stock-info">
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                08.12.17г.
+                                            </div>
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                Все кафе
+                                            </div>
                                         </div>
                                         <p class="c-card-news-and-stock__text">
                                             По традиции в АндерСоне на Гиляровского случится и уже седьмая новогодняя ночь. Было множество разных концепций, и в этом году гостей ждет звездопады, мистика, уют и веселье...
@@ -889,9 +937,16 @@
                                 <div class="c-card-news-and-stock">
                                     <img src="./img/photo-news-2.jpg" alt="описание картинки">
                                     <div class="c-card-news-and-stock__body">
-                                        <a href="#" class="c-card-news-and-stock__title">Где встретиться с дедушкой морозом почти 50 раз?</a>
-                                        <div class="c-card-news-and-stock__info">
-
+                                        <h3 class="c-card-news-and-stock__title"><a href="#">Где встретиться с дедушкой морозом почти 50 раз?</a></h3>
+                                        <div class="c-card-news-and-stock-info">
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                08.12.17г.
+                                            </div>
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                Все кафе
+                                            </div>
                                         </div>
                                         <p class="c-card-news-and-stock__text">
                                             По традиции в АндерСоне на Гиляровского случится и уже седьмая новогодняя ночь.
@@ -903,9 +958,16 @@
                                 <div class="c-card-news-and-stock">
                                     <img src="./img/photo-news-3.jpg" alt="описание картинки">
                                     <div class="c-card-news-and-stock__body">
-                                        <a href="#" class="c-card-news-and-stock__title">Где встретиться с дедушкой морозом почти 50 раз?</a>
-                                        <div class="c-card-news-and-stock__info">
-
+                                        <h3 class="c-card-news-and-stock__title"><a href="#">Где встретиться с дедушкой морозом почти 50 раз?</a></h3>
+                                        <div class="c-card-news-and-stock-info">
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                08.12.17г.
+                                            </div>
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                Все кафе
+                                            </div>
                                         </div>
                                         <p class="c-card-news-and-stock__text">
                                             По традиции в АндерСоне на Гиляровского случится и уже седьмая новогодняя ночь. Было множество разных концепций, и в этом году гостей ждет звездопады, мистика, уют и веселье...
@@ -915,11 +977,36 @@
                             </div>
                             <div class="news-and-stock__item">
                                 <div class="c-card-news-and-stock">
+                                    <img src="./img/no-news.jpg" alt="описание картинки">
+                                    <div class="c-card-news-and-stock__body">
+                                        <h3 class="c-card-news-and-stock__title"><a href="#">Где встретиться с дедушкой морозом почти 50 раз?</a></h3>
+                                        <div class="c-card-news-and-stock-info">
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                08.12.17г.
+                                            </div>
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                Все кафе
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-and-stock__item">
+                                <div class="c-card-news-and-stock">
                                     <img src="./img/photo-news-4.jpg" alt="описание картинки">
                                     <div class="c-card-news-and-stock__body">
-                                        <a href="#" class="c-card-news-and-stock__title">Где встретиться с дедушкой морозом почти 50 раз?</a>
-                                        <div class="c-card-news-and-stock__info">
-
+                                        <h3 class="c-card-news-and-stock__title"><a href="#">Где встретиться с дедушкой морозом почти 50 раз?</a></h3>
+                                        <div class="c-card-news-and-stock-info">
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                08.12.17г.
+                                            </div>
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                Все кафе
+                                            </div>
                                         </div>
                                         <p class="c-card-news-and-stock__text">
                                             По традиции в АндерСоне на Гиляровского случится и уже седьмая новогодняя ночь. Было множество разных концепций, и в этом году гостей ждет звездопады, мистика, уют и веселье...
@@ -931,9 +1018,16 @@
                                 <div class="c-card-news-and-stock">
                                     <img src="./img/photo-news-5.jpg" alt="описание картинки">
                                     <div class="c-card-news-and-stock__body">
-                                        <a href="#" class="c-card-news-and-stock__title">Где встретиться с дедушкой морозом почти 50 раз?</a>
-                                        <div class="c-card-news-and-stock__info">
-
+                                        <h3 class="c-card-news-and-stock__title"><a href="#">Где встретиться с дедушкой морозом почти 50 раз?</a></h3>
+                                        <div class="c-card-news-and-stock-info">
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                08.12.17г.
+                                            </div>
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                Все кафе
+                                            </div>
                                         </div>
                                         <p class="c-card-news-and-stock__text">
                                             По традиции в АндерСоне на Гиляровского случится и уже седьмая новогодняя ночь. Было множество разных концепций, и в этом году гостей ждет звездопады, мистика, уют и веселье...
@@ -945,9 +1039,16 @@
                                 <div class="c-card-news-and-stock">
                                     <img src="./img/photo-news-6.jpg" alt="описание картинки">
                                     <div class="c-card-news-and-stock__body">
-                                        <a href="#" class="c-card-news-and-stock__title">Где встретиться с дедушкой морозом почти 50 раз?</a>
-                                        <div class="c-card-news-and-stock__info">
-
+                                        <h3 class="c-card-news-and-stock__title"><a href="#">Где встретиться с дедушкой морозом почти 50 раз?</a></h3>
+                                        <div class="c-card-news-and-stock-info">
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                08.12.17г.
+                                            </div>
+                                            <div class="c-card-news-and-stock-info__item">
+                                                <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                Все кафе
+                                            </div>
                                         </div>
                                         <p class="c-card-news-and-stock__text">
                                             По традиции в АндерСоне на Гиляровского случится и уже седьмая новогодняя ночь. Было множество разных концепций, и в этом году гостей ждет звездопады, мистика, уют и веселье...
@@ -961,143 +1062,112 @@
 
 
                         <!------------------------------------------------------------->
-                        <div class="container">
-                            <div class="page-header text-center">
-                                <h1 id="timeline">Timeline 2.1</h1>
-                            </div>
+
+
                             <ul class="timeline">
+                                <li class="timeline-month"><span>2018г. январь</span></li>
                                 <li>
-                                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                                    <div class="timeline-badge"></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-
+                                            <a href="#"><img class="img-responsive" src="./img/photo-news-4.jpg" /></a>
                                         </div>
                                         <div class="timeline-body">
+                                            <h4 class="timeline-title"><a>Новогодняя ночь в АндерСоне – звезды в руках,  астролог, глинтвейн и живые хаски!</a></h4>
+                                            <div class="c-card-news-and-stock-info">
+                                                <div class="c-card-news-and-stock-info__item">
+                                                    <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                                    08.12.17г.
+                                                </div>
+                                                <div class="c-card-news-and-stock-info__item">
+                                                    <svg class="c-symbol symbol-mark"><use xlink:href="#symbol-mark" /></svg>
+                                                    Все кафе
+                                                </div>
+                                            </div>
                                             <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
-                                        </div>
-
-                                        <div class="timeline-footer">
-                                            <a class="icon"><span class="ion-android-open"></span></a>
-                                            <a class="icon" rel="modalShare"><span class="ion-android-share-alt"></span></a>
-                                            <a class="pull-right">Continuar Lendo</a>
                                         </div>
                                     </div>
                                 </li>
 
                                 <li  class="timeline-inverted">
-                                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                                    <div class="timeline-badge"></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-
+                                            <a href="#"><img class="img-responsive" src="./img/photo-news-1.jpg" /></a>
                                         </div>
                                         <div class="timeline-body">
+                                            <h4 class="timeline-title"><a>Новогодняя ночь в АндерСоне – звезды в руках,  астролог, глинтвейн и живые хаски!</a></h4>
                                             <p>1Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num sва ываы ваыв аы ваыв аыв аыва ыва ыва ыва ыва ыва ыва ыва ыва ыва ыва ignыв аыв аыв аыва ыва ыв аываываываы ваывавыа ываifica nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                                         </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge"></div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <a href="#"><img class="img-responsive" src="./img/photo-news-2.jpg" /></a>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <h4 class="timeline-title"><a>Новогодняя ночь в АндерСоне – звезды в руках,  астролог, глинтвейн и живые хаски!</a></h4>
+                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
-                                        <div class="timeline-footer">
-                                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                                            <a><i class="glyphicon glyphicon-share"></i></a>
-                                            <a class="pull-right">Continuar Lendo</a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li  class="timeline-no-img timeline-inverted">
+                                    <div class="timeline-badge"></div>
+                                    <div class="timeline-panel">
+
+                                        <div class="timeline-body">
+                                            <h4 class="timeline-title"><a>Новогодняя ночь в АндерСоне – звезды в руках,  астролог, глинтвейн и живые хаски!</a></h4>
+                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                                    <div class="timeline-badge"></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-
+                                            <a href="#"><img class="img-responsive" src="./img/photo-news-3.jpg" /></a>
                                         </div>
                                         <div class="timeline-body">
+                                            <h4 class="timeline-title"><a>Заголовок новости</a></h4>
                                             <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
-                                        </div>
-
-                                        <div class="timeline-footer">
-                                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                                            <a><i class="glyphicon glyphicon-share"></i></a>
-                                            <a class="pull-right">Continuar Lendo</a>
                                         </div>
                                     </div>
                                 </li>
 
                                 <li  class="timeline-inverted">
-                                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-
-                                        </div>
-
-                                        <div class="timeline-footer">
-                                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                                            <a><i class="glyphicon glyphicon-share"></i></a>
-                                            <a class="pull-right">Continuar Lendo</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                                    <div class="timeline-badge"></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
-                                            <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-
+                                            <a href="#"><img class="img-responsive" src="./img/photo-news-5.jpg" /></a>
                                         </div>
                                         <div class="timeline-body">
+                                            <h4 class="timeline-title"><a>Заголовок новости</a></h4>
                                             <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                                         </div>
-
-                                        <div class="timeline-footer">
-                                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                                            <a><i class="glyphicon glyphicon-share"></i></a>
-                                            <a class="pull-right">Continuar Lendo</a>
-                                        </div>
                                     </div>
                                 </li>
-
-                                <li  class="timeline-inverted">
-                                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <img class="img-responsive" src="http://lorempixel.com/1600/500/sports/2" />
-
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-
-                                        </div>
-
-                                        <div class="timeline-footer primary">
-                                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                                            <a><i class="glyphicon glyphicon-share"></i></a>
-                                            <a class="pull-right">Continuar Lendo</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge primary"><a><i class="glyphicon glyphicon-record invert" rel="tooltip" title="11 hours ago via Twitter" id=""></i></a></div>
+                                <li class="timeline-no-img">
+                                    <div class="timeline-badge"></div>
                                     <div class="timeline-panel">
                                         <div class="timeline-body">
-                                            <p><b>All the credits go to <a href="https://bootsnipp.com/rafamaciel">Rafamaciel</a></b></p>
+                                            <h4 class="timeline-title"><a>Заголовок новости</a></h4>
                                             <p>I only make it responsive and remove the empty spaces to be more like Facebook timeline!</p>
-                                        </div>
-
-                                        <div class="timeline-footer primary">
-                                            <a><i class="glyphicon glyphicon-thumbs-up"></i></a>
-                                            <a><i class="glyphicon glyphicon-share"></i></a>
-                                            <a class="pull-right">Continuar Lendo</a>
                                         </div>
                                     </div>
                                 </li>
 
                                 <li class="clearfix" style="float: none;"></li>
                             </ul>
-                        </div>
+
 
                         <!------------------------------------------------------------->
 
