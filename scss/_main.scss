@@ -6988,6 +6988,43 @@ test popup
         width: 25%;
         padding: .7rem;
     }
+    
+    .post {
+        
+        &::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        
+        &__header {
+            margin-bottom: 2rem;
+        }
+        
+        &__title {
+            font-size: 2.6rem;
+            color: #9b806f;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        &__body {
+            font-size: 1.4rem;
+            color: $black;
+            
+            img {
+                float: left;
+                margin-right: 3rem;
+                margin-bottom: 2rem;
+            }
+            
+            p {
+                line-height: 1.2;
+                margin-bottom: 2rem;
+            }
+        }
+    
+    }
 }
 
 
@@ -7004,7 +7041,7 @@ test popup
 
 .timeline {
     list-style: none;
-    padding: 20px 0 20px;
+    padding: 6rem 0 2rem;
     position: relative;
     font-family: $font_serif;
 }
@@ -7014,7 +7051,7 @@ test popup
     bottom: 0;
     position: absolute;
     content: " ";
-    width: 3px;
+    width: .3rem;
     background-color: #7cbd42;
     left: 50%;
     //margin-left: -1.5px;
@@ -7437,6 +7474,15 @@ test popup
         display: block;
     }
     
+    .timeline-heading {
+        width: 6rem;
+        height: 8rem;
+        float: left;
+        margin: 2rem 1rem 1rem 0;
+    }
     
+    .timeline-body {
+        width: 100%;
+    }
 }
 

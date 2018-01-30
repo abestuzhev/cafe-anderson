@@ -326,6 +326,12 @@
     .star-guests .ins-photo {
         width: 25%;
     }
+
+    .news-and-stock .post__body img {
+        margin-right: 1.8rem;
+        width: 50%;
+        display: inline-block;
+    }
 }
 
 @media (max-width:1130px) {
@@ -359,6 +365,8 @@
     .basket__check-mobile {
         display: block;
     }
+
+
 }
 
 @media (max-width:1060px) {
@@ -455,6 +463,7 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
 }
 
 @media (min-width:1020px) {
@@ -1074,6 +1083,14 @@
 
     .lk-history .tab {
         width: 100%;
+    }
+
+    .news-and-stock .post__body img {
+        margin-bottom: 1rem;
+    }
+
+    .news-and-stock .post__title {
+        font-size: 2.2rem;
     }
 }
 
@@ -2364,6 +2381,20 @@
     }
     .news-and-stock__item {
         width: 100%;
+    }
+
+    .c-card-news-and-stock__body {
+        bottom: 0;
+    }
+
+    .news-and-stock .post__body img {
+        margin-right: 0;
+        width: 100%;
+        float: none;
+    }
+
+    .news-and-stock .post__title {
+        font-size: 1.8rem;
     }
 }
 

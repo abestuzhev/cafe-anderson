@@ -325,18 +325,16 @@ $(document).ready(function ($) {
         $(this).parents('.order-delivery-search__item').siblings().find('input').val('');
         $('.order-delivery-address__all').removeClass('show-item-all');
 
-        hideDeliveryAdressCake('.order-delivery-address__item');
+        showDeliveryAddressCake('.order-delivery-address__item');
     });
 
     //показать все адреса кафе в заказе
-
-
-    function hideDeliveryAdressCake (elem){
+    function showDeliveryAddressCake (elem){
         $(elem).each(function(i, elem){
             i < 6 ? $(elem).show() : $(elem).hide();
         });
     }
-    hideDeliveryAdressCake('.order-delivery-address__item');
+    showDeliveryAddressCake('.order-delivery-address__item');
 
 
 

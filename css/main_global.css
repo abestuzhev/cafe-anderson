@@ -10043,6 +10043,31 @@ test popup
   width: 25%;
   padding: .7rem; }
 
+.news-and-stock .post::after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.news-and-stock .post__header {
+  margin-bottom: 2rem; }
+
+.news-and-stock .post__title {
+  font-size: 2.6rem;
+  color: #9b806f;
+  line-height: 1.2;
+  margin-bottom: 1rem; }
+
+.news-and-stock .post__body {
+  font-size: 1.4rem;
+  color: #555451; }
+  .news-and-stock .post__body img {
+    float: left;
+    margin-right: 3rem;
+    margin-bottom: 2rem; }
+  .news-and-stock .post__body p {
+    line-height: 1.2;
+    margin-bottom: 2rem; }
+
 /**
 *
 *
@@ -10052,7 +10077,7 @@ test popup
  */
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 6rem 0 2rem;
   position: relative;
   font-family: "PT Serif Caption"; }
 
@@ -10061,7 +10086,7 @@ test popup
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 3px;
+  width: .3rem;
   background-color: #7cbd42;
   left: 50%; }
 
@@ -10409,4 +10434,11 @@ test popup
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    display: block; } }
+    display: block; }
+  .timeline-heading {
+    width: 6rem;
+    height: 8rem;
+    float: left;
+    margin: 2rem 1rem 1rem 0; }
+  .timeline-body {
+    width: 100%; } }
