@@ -3597,7 +3597,8 @@ a.c-button:hover {
     background-color: #fff;
     position: absolute;
     bottom: 1.8rem;
-    left: 0; }
+    left: 0;
+    width: 100%; }
   .c-card-news-and-stock__title {
     font-size: 1.7rem;
     color: #9b806f;
@@ -10011,7 +10012,7 @@ test popup
 
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock .filter {
-  display: inline-block !important;
+  display: inline-block;
   width: auto; }
 
 .news-and-stock .filter select,
@@ -10395,7 +10396,9 @@ test popup
   .timeline > .timeline-month {
     text-align: left; }
     .timeline > .timeline-month span {
-      max-width: none; } }
+      max-width: none; }
+  .timeline > li:nth-child(2) {
+    margin-top: 30px; } }
 
 @media screen and (max-width: 580px) {
   .timeline > li > .timeline-panel {

@@ -500,6 +500,9 @@
         z-index: 1071;
     }
 
+    .news-and-stock__item {
+        width: 33.3333%;
+    }
 }
 
 
@@ -1315,6 +1318,10 @@
     .order-list {
         padding: 0;
     }
+
+    .news-and-stock__item {
+        width: 50%;
+    }
 }
 
 @media (max-width:800px) {
@@ -1383,7 +1390,7 @@
 
 @media (min-width:730px) {
     .filter{
-        display: block !important;
+        display: block;
     }
 
     .events .filter{
@@ -1459,8 +1466,6 @@
         background-size: 10px 11px;
         cursor: pointer;
     }
-
-
 
     .filter-form {
         flex-direction: column;
@@ -1784,6 +1789,11 @@
 
     .popup-body {
         background-image: none !important;
+    }
+
+    .news-and-stock .filter {
+        width: 100%;
+        display: none;
     }
 }
 
@@ -2349,7 +2359,12 @@
         width: 6%;
     }
 
-
+    .news-and-stock__list {
+        flex-flow: column wrap;
+    }
+    .news-and-stock__item {
+        width: 100%;
+    }
 }
 
 

@@ -6962,7 +6962,7 @@ test popup
 .news-and-stock {
     
     .filter {
-        display: inline-block !important;
+        display: inline-block;
         width: auto;
     }
     
@@ -7422,6 +7422,10 @@ test popup
         span {
             max-width: none;
         }
+    }
+    
+    .timeline > li:nth-child(2) {
+        margin-top: 30px;
     }
 }
 
