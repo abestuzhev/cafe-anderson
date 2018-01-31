@@ -4338,6 +4338,7 @@ test popup
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: stretch;
+        margin-bottom: 2.5rem;
 
         &__img {
             width: 26%;
@@ -4349,6 +4350,88 @@ test popup
             color: #9b9595;
             p {
                 margin-bottom: 1.2rem;
+            }
+
+            &-layout {
+                min-height: 27rem;
+            }
+        }
+    }
+
+    &-place {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        .popup-form__item {
+            margin-right: 1.4rem;
+        }
+
+        select,
+        .SumoSelect > .CaptionCont {
+            padding: 1rem 2.8rem 1rem 1.6rem;
+        }
+
+        .datepicker-here {
+            padding: .9rem 2.8rem .8rem 1.6rem;
+        }
+    }
+
+    &-buy {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__btn {
+        padding: 1.5rem 1.7rem;
+        border-radius: .8rem;
+        background-color: #7cbd41;
+        color: #ffffff;
+        font-size: 1.6rem;
+        margin: 0 1rem;
+
+        &:hover {
+            color: #ffffff;
+            opacity: .9;
+        }
+
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
+    &-partner {
+        &__title {
+            color: #553023;
+            font-size: 1.4rem;
+            font-style: italic;
+            padding-bottom: .6rem;
+            border-bottom: 1px solid #f3efe4;
+        }
+
+        &-card {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 1.1rem 0;
+
+            &__img {
+                margin-right: 1.7rem;
+                width: 12%;
+
+                .c-card-partner {
+                    min-height: 7.4rem;
+                }
+            }
+
+            &__text {
+                color: #9b9595;
+                font-size: 1.3rem;
             }
         }
     }

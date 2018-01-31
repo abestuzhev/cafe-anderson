@@ -1456,43 +1456,75 @@
                         <div class="popup-event-content">
                             <div class="popup-event-content__img"><img src="./img/img-event-1.jpg" alt=""></div>
                             <div class="popup-event-content__description">
-                                <p>Как совершить побег с фантастического дирижабля? Где спрятано загадочное сокровище воздушных пиратов? Кто такой Сахарная Голова?!!</p>
+                                <div class="popup-event-content__description-layout">
+                                    <p>Как совершить побег с фантастического дирижабля? Где спрятано загадочное сокровище воздушных пиратов? Кто такой Сахарная Голова?!!</p>
     
                                     <p>Чтобы найти ответ на все эти вопросы, вам нужно пройти уникальный квест, объединяющий детей и даже родителей в одну супер-команду, способную одержать победу в борьбе со злом!</p>
     
-                                <p>Участники приключения окажутся на воздушном корабле, будут готовить моторную жидкость, подбирать ключи и принимать очень важные решения на месте! Поиграть будет интересно всем детям от 6 до 106 лет! В каждой игре могут находится от 4 до 12 человек. Так что можно собраться большой компанией и отлично провести время!</p>
+                                    <p>Участники приключения окажутся на воздушном корабле, будут готовить моторную жидкость, подбирать ключи и принимать очень важные решения на месте! Поиграть будет интересно всем детям от 6 до 106 лет! В каждой игре могут находится от 4 до 12 человек. Так что можно собраться большой компанией и отлично провести время!</p>
     
-                                <p>Цена с понедельника по пятницу: 4000 рублей - до 4-х человек, далее 1000 рублей за каждого последующего участника. Стоимость приключения в выходные (суббота и воскресенье) – 10 000 рублей, вне зависимости от количества участников.</p>
+                                    <p>Цена с понедельника по пятницу: 4000 рублей - до 4-х человек, далее 1000 рублей за каждого последующего участника. Стоимость приключения в выходные (суббота и воскресенье) – 10 000 рублей, вне зависимости от количества участников.</p>
     
-                                <p>Дизельпанк Дирижабль ждет вас ежедневно с 11.00 до 21.00. Возраст участников: от 6 лет.</p>
+                                    <p>Дизельпанк Дирижабль ждет вас ежедневно с 11.00 до 21.00. Возраст участников: от 6 лет.</p>
     
-                                <p> Место встречи - кафе-кондитерская АндерСон на Красносельской и да прибудет с вами СИЛА! </p>
-                                <form action="#" class="popup-form mobile-request-call__form" id="popup__request-call">
-                                    <div class="popup-form__item">
-                                        <select name="order-deliver-cake-time" class="c-select select-delivery">
-                                            <option value="9.00-12.00">с 9.00 до 12.00</option>
-                                            <option value="12.00-15.00">с 12.00 до 15.00</option>
-                                            <option value="15.00-18.00">с 15.00 до 18.00</option>
-                                        </select>
-                                    </div>
-                                    <div class="popup-form__item">
-                                        <select name="order-deliver-cake-time" class="c-select select-delivery">
-                                            <option value="20">Размер M — Диаметр 20 см</option>
-                                            <option value="30">Размер M — Диаметр 30 см</option>
-                                            <option value="40">Размер M — Диаметр 40 см</option>
-                                        </select>
-                                    </div>
-                                    <div class="popup-form__item">
-                                        <div class="datepicker-layout">
-                                            <input type='text' class=" c-input datepicker-here form-control" id="eventOrderDatepicker" placeholder="Дата мероприятия"/>
+                                    <p> Место встречи - кафе-кондитерская АндерСон на Красносельской и да прибудет с вами СИЛА! </p>
+                                </div>
+                                <form action="#" class="popup-form popup-event-form">
+                                    <div class="popup-event-place">
+                                        <div class="popup-form__item">
+                                            <div class="datepicker-layout">
+                                                <input type='text' class=" c-input datepicker-here form-control" id="eventOrderDatepicker" placeholder="Дата мероприятия"/>
+                                            </div>
+                                        </div>
+                                        <div class="popup-form__item">
+                                            <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                                <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                                <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                                <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                            </select>
+                                        </div>
+                                        <div class="popup-form__item">
+                                            <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                                <option value="">АндерСон на Митинской</option>
+                                                <option value="">АндерСон на Митинской</option>
+                                                <option value="">АндерСон на Митинской</option>
+                                            </select>
                                         </div>
                                     </div>
+                                    <div class="popup-event-buy">
+                                        <div class="c-card-product__price">11 350.-</div>
+                                        <div class="c-card-product__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="popup-event__btn">Добавить в корзину</a>
+                                        <span>или</span>
+                                        <a href="#" class="popup-event__btn">Оформить в 1 клик</a>
+                                    </div>
+                                    
+                                    
                                 </form>
                             </div>
                         </div>
                         
                         
                     </div><!--popup-body-->
+                    <div class="popup-footer">
+                        <div class="popup-event-partner">
+                            <div class="popup-event-partner__title">Наши партнеры</div>
+                            <div class="popup-event-partner-card">
+                                <div class="popup-event-partner-card__img">
+                                    <div class="c-card-partner"><img src="./img/partner-1.jpg" alt=""></div>
+                                </div>
+                                <div class="popup-event-partner-card__text">
+                                    Немного слов о партнере, слова благодарности, ссылки  и тд.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

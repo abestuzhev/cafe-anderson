@@ -2238,6 +2238,10 @@ a.c-button {
             text-align: center;
             line-height: 2.4rem;
             color: #fff;
+            
+            &:hover {
+                background-color: #6faa3a;
+            }
         }
 
         .c-counter__field {

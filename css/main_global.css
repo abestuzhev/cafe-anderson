@@ -796,6 +796,12 @@ i.icon-chair {
   width: 1em;
   height: 1em; }
 
+.symbol-metro {
+  fill: #ccc;
+  font-size: 1.8rem;
+  width: 1em;
+  height: 1em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -2725,6 +2731,8 @@ a.c-button:hover {
     text-align: center;
     line-height: 2.4rem;
     color: #fff; }
+    .c-card-product__count .c-counter__btn:hover {
+      background-color: #6faa3a; }
   .c-card-product__count .c-counter__field {
     width: 3.4rem !important;
     font-size: 2.6rem;
@@ -8023,7 +8031,8 @@ test popup
           justify-content: space-between;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
-          align-items: stretch; }
+          align-items: stretch;
+  margin-bottom: 2.5rem; }
   .popup-event-content__img {
     width: 26%; }
   .popup-event-content__description {
@@ -8032,6 +8041,90 @@ test popup
     color: #9b9595; }
     .popup-event-content__description p {
       margin-bottom: 1.2rem; }
+    .popup-event-content__description-layout {
+      min-height: 27rem; }
+
+.popup-event-place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .popup-event-place .popup-form__item {
+    margin-right: 1.4rem; }
+  .popup-event-place select,
+  .popup-event-place .SumoSelect > .CaptionCont {
+    padding: 1rem 2.8rem 1rem 1.6rem; }
+  .popup-event-place .datepicker-here {
+    padding: .9rem 2.8rem .8rem 1.6rem; }
+
+.popup-event-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.popup-event__btn {
+  padding: 1.5rem 1.7rem;
+  border-radius: .8rem;
+  background-color: #7cbd41;
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin: 0 1rem; }
+  .popup-event__btn:hover {
+    color: #ffffff;
+    opacity: .9; }
+  .popup-event__btn::after {
+    content: '';
+    border: none; }
+
+.popup-event-partner__title {
+  color: #553023;
+  font-size: 1.4rem;
+  font-style: italic;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #f3efe4; }
+
+.popup-event-partner-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.1rem 0; }
+  .popup-event-partner-card__img {
+    margin-right: 1.7rem;
+    width: 12%; }
+    .popup-event-partner-card__img .c-card-partner {
+      min-height: 7.4rem; }
+  .popup-event-partner-card__text {
+    color: #9b9595;
+    font-size: 1.3rem; }
 
 .events__item {
   margin-bottom: 2.4rem; }
