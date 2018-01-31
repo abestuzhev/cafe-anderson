@@ -61,3 +61,15 @@
 .datepicker--nav-action:hover path {
     stroke: #9acc4e;
 }
+
+.dp-note {
+    position: absolute;
+    background: #9acc4e;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    right: 1.1rem;
+    top: 1.1rem;
+    /*-webkit-transform: translateX(-50%);*/
+    /*transform: translateX(-50%);*/
+}

@@ -4303,6 +4303,57 @@ test popup
 }
 
 /*Мероприятия (events)------------------------------------------------*/
+.popup-event {
+    .popup {
+        max-width: 126rem;
+        width: 126rem;
+        &-box {
+            padding: 2rem 2rem 2rem 9rem;
+        }
+    }
+
+    .popup-close {
+        bottom: auto;
+        top:0;
+        background-color: #f3efe4;
+        border-radius: 0 0 5rem 5rem;
+    }
+
+    .popup-body {
+        padding: 0;
+    }
+
+    &__header {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: #231300;
+        margin-bottom: 1rem;
+    }
+
+    &-content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+        &__img {
+            width: 26%;
+        }
+
+        &__description {
+            padding-left: 1.6rem;
+            font-size: 1.3rem;
+            color: #9b9595;
+            p {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+
 .events {
     
     &__list {
@@ -4341,9 +4392,21 @@ test popup
         margin-right: 1.4rem;
     }
 
+    #event-calendar {
+        .events__item:nth-child(1),
+        .events__item:nth-child(2) {
+            padding-left: 44rem;
+        }
+    }
+
     #event-datepicker {
         margin-bottom: 1.6rem;
         box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+    }
+
+    .datepicker-inline {
+        float: left;
+        max-width: 42rem;
     }
 
     .datepicker {
@@ -7322,92 +7385,6 @@ test popup
 
 .timeline-footer .icon:last-child {
     margin-right: 0;
-}
-
-.tooltip {
-    position: absolute;
-    z-index: 1020;
-    display: block;
-    visibility: visible;
-    padding: 5px;
-    font-size: 11px;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-
-.tooltip.in {
-    /*opacity:0;
-    filter:alpha(opacity=80);*/
-}
-
-.tooltip.top {
-    margin-top: -2px;
-}
-
-.tooltip.right {
-    margin-left: 2px;
-}
-
-.tooltip.bottom {
-    margin-top: 2px;
-}
-
-.tooltip.left {
-    margin-left: -2px;
-}
-
-.tooltip.top .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip.left .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip.bottom .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip.right .tooltip-arrow {
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    border-left: 0 solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 0 solid #000;
-}
-
-.tooltip-inner {
-    width: 200px;
-    padding: 3px 8px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    background-color: #313131;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
-
-.tooltip-arrow {
-    position: absolute;
-    width: 0;
-    height: 0;
 }
 
 .timeline > li.timeline-inverted {

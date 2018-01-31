@@ -57,8 +57,24 @@ $(window).on('load', function(){
     });
 
     //календарь в мероприятиях
+    //date.getDate(); убрать
+    var eventDates = [1, 10, 12, 22];
     $('#event-datepicker').datepicker({
-        inline: true
+        inline: true,
+        onRenderCell: function (date, cellType) {
+            var currentDate = date.getDate();
+            // console.log('currentDate: ' + currentDate);
+
+            // Добавляем вспомогательный элемент, если число содержится в `eventDates`
+            if (cellType == 'day' && eventDates.indexOf(currentDate) != -1) {
+                return {
+                    html: currentDate + '<span class="dp-note"></span>'
+                }
+            }
+        }
+    });
+    $('#eventOrderDatepicker').datepicker({
+        minDate: new Date(),
     });
 });
 
@@ -793,6 +809,9 @@ $(document).ready(function ($) {
     showPopup(".cake-card__hover", '.popup-cake-order');
     showPopup("#lk-profile-subscription-del__ok", '.popup-subscription-del');
     showPopup(".js-party-order", '.popup-party-order');
+    showPopup(".c-card-event__link--more", '.popup-event');
+    showPopup(".c-card-event__link--basket", '.popup-event-basket');
+    showPopup(".c-card-event__link--one-click", '.popup-event-one-click');
 
 
 
