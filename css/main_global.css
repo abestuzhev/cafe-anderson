@@ -2000,6 +2000,7 @@ a.c-button:hover {
 
 /*card-event------------------------------------------------------------*/
 .c-card-event {
+  font-family: "PT Serif Caption";
   position: relative;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
@@ -2046,7 +2047,35 @@ a.c-button:hover {
   .c-card-event__info {
     margin-bottom: 1.3rem;
     border-bottom: 1px solid #cec9c0;
-    padding: 1.3rem 0; }
+    padding: 0 0 1.3rem 0; }
+  .c-card-event-timelist {
+    font-family: "PT Serif Caption"; }
+    .c-card-event-timelist__item {
+      color: #9b9595;
+      font-size: 1.3rem;
+      margin-bottom: .4rem;
+      display: none; }
+      .c-card-event-timelist__item span {
+        border-bottom: 1px dotted #9b9595;
+        margin-right: .8rem; }
+        .c-card-event-timelist__item span::after {
+          content: '';
+          border: none; }
+    .c-card-event-timelist__item:nth-child(1), .c-card-event-timelist__item:nth-child(2), .c-card-event-timelist__item:nth-child(3) {
+      display: block; }
+    .c-card-event-timelist__date {
+      color: #553023;
+      margin-right: 1rem;
+      border-bottom: none !important; }
+    .c-card-event-timelist__more {
+      color: #9b9595;
+      font-style: italic;
+      font-size: 1.2rem; }
+      .c-card-event-timelist__more::after {
+        content: '';
+        border: none; }
+    .c-card-event-timelist.show-item-all .c-card-event-timelist__item {
+      display: block; }
   .c-card-event__label {
     position: absolute;
     top: 0;
@@ -2092,6 +2121,14 @@ a.c-button:hover {
         margin: 0; }
     .c-card-event__footer .c-button {
       padding: .9rem 1rem; }
+  .c-card-event__no-ticket {
+    color: #bfbfbf;
+    font-family: "BebasNeue";
+    font-size: 2.4rem;
+    text-transform: uppercase; }
+  .c-card-event .l-button {
+    vertical-align: baseline;
+    text-align: left; }
 
 /*card-vacancy------------------------------------------------------------*/
 .c-card-vacancy {
@@ -5967,11 +6004,7 @@ test popup
   padding: 10px; }
 
 .lock-html {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; }
+  overflow: hidden; }
 
 .mfp-bg {
   top: 0;

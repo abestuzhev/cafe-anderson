@@ -60,6 +60,21 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    //показать все мероприятия по дням на странице Мероприятия
+    $(document).on('click', '.c-card-event-timelist__more', function(e){
+        e.preventDefault();
+        var $this = $(this);
+
+        var textBtn = $this.html();
+        if(textBtn == "показать все"){
+            $this.html("скрыть");
+            $this.siblings('.c-card-event-timelist').addClass('show-item-all');
+        }else{
+            $this.html("показать все");
+            $this.siblings('.c-card-event-timelist').removeClass('show-item-all');
+        }
+    });
+
 
     function changePartyTitlePopup (){
         $(document).on('click', '.js-party-order', function(){
