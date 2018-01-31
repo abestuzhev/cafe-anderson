@@ -512,6 +512,23 @@
     .news-and-stock__item {
         width: 33.3333%;
     }
+
+    .order-auth__grid {
+        flex-flow: column wrap;
+    }
+    .order-auth__col:nth-child(1),
+    .order-auth__col:nth-child(2) {
+        width: 100%;
+    }
+
+    .order-auth__col:nth-child(2) .order-auth__body::after {
+        background: none;
+    }
+
+    .order-auth__header,
+    .order-auth__body {
+        padding: 2rem 3rem;
+    }
 }
 
 
@@ -1785,7 +1802,7 @@
     }
 
     .order-nav {
-        margin: 0;
+        /*margin: 0;*/
     }
     .order-nav__item {
         margin: 0;
@@ -1811,6 +1828,22 @@
     .news-and-stock .filter {
         width: 100%;
         display: none;
+    }
+
+    .order {
+        margin-left: -2.2rem;
+        margin-right: -2.2rem;
+    }
+
+    .order-auth {
+        background: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .order-auth__header,
+    .order-auth__body {
+        padding: 2rem;
     }
 }
 

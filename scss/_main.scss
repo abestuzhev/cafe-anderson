@@ -6964,6 +6964,7 @@ test popup
 
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock {
+    margin-bottom: 5rem;
     
     .filter {
         display: inline-block;
@@ -6986,6 +6987,7 @@ test popup
         justify-content: flex-start;
         margin-left: -.7rem;
         margin-right: -.7rem;
+        margin-bottom: 2rem;
     }
     
     &__item {
