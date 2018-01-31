@@ -2127,8 +2127,14 @@ a.c-button:hover {
     font-size: 2.4rem;
     text-transform: uppercase; }
   .c-card-event .l-button {
-    vertical-align: baseline;
-    text-align: left; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .c-card-event .l-button a {
+      margin-right: .8rem; }
 
 /*card-vacancy------------------------------------------------------------*/
 .c-card-vacancy {
@@ -8004,6 +8010,27 @@ test popup
 .events .filter-item {
   margin-right: 1.4rem; }
 
+.events #event-datepicker {
+  margin-bottom: 1.6rem;
+  -webkit-box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1); }
+
+.events .datepicker {
+  width: 100%; }
+
+.events .datepicker--cell {
+  height: 5.1rem; }
+
+.events .datepicker--cell-day {
+  width: 13.28571%;
+  margin: .8% .4%; }
+
+.events .datepicker--nav {
+  padding: 1.4rem .4rem; }
+
+.events .datepicker--content {
+  padding: 7px 11px 18px; }
+
 /*Корзина (basket)------------------------------------------------*/
 .basket {
   font-family: "PT Serif Caption";
@@ -9937,7 +9964,8 @@ test popup
           box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1); }
 
 .popup-party-order .party-order .datepicker {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2rem; }
 
 .popup-party-order .party-order .datepicker--cell {
   height: 5.1rem; }
@@ -9955,7 +9983,10 @@ test popup
 .popup-party-order .party-order .symbol-fireworks {
   position: absolute;
   right: 1.2rem;
-  bottom: -4.7rem; }
+  bottom: -4.7rem;
+  font-size: 8.5rem;
+  width: 1em;
+  height: 1em; }
 
 .popup-party-order .popup-bg__img {
   position: absolute;

@@ -55,10 +55,17 @@ $(window).on('load', function(){
             }
         }
     });
+
+    //календарь в мероприятиях
+    $('#event-datepicker').datepicker({
+        inline: true
+    });
 });
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
+
+
 
     //показать все мероприятия по дням на странице Мероприятия
     $(document).on('click', '.c-card-event-timelist__more', function(e){

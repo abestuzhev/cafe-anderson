@@ -4340,6 +4340,32 @@ test popup
     .filter-item {
         margin-right: 1.4rem;
     }
+
+    #event-datepicker {
+        margin-bottom: 1.6rem;
+        box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+    }
+
+    .datepicker {
+        width: 100%;
+    }
+
+    .datepicker--cell {
+        height: 5.1rem;
+    }
+
+    .datepicker--cell-day {
+        width: 13.28571%;
+        margin: .8% .4%;
+    }
+
+    .datepicker--nav {
+        padding: 1.4rem .4rem;
+    }
+
+    .datepicker--content {
+        padding: 7px 11px 18px;
+    }
 }
 
 /*Корзина (basket)------------------------------------------------*/
@@ -6796,6 +6822,7 @@ test popup
     
         .datepicker {
             width: 100%;
+            margin-bottom: 2rem;
         }
     
         .datepicker--cell {
@@ -6819,6 +6846,9 @@ test popup
             position: absolute;
             right: 1.2rem;
             bottom: -4.7rem;
+            font-size: 8.5rem;
+            width: 1em;
+            height: 1em;
         }
     }
     
