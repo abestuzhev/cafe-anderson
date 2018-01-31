@@ -861,6 +861,7 @@ a.c-button {
     }
 
     &__width {
+        width: 100%;
         display: block;
         padding: 1.4rem 5.4rem;
         background-color: $color_btn;
@@ -2605,6 +2606,10 @@ a.c-button {
 .c-grid-start {
     justify-content: flex-start;
     align-items: stretch;
+}
+.c-grid-end {
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .c-col {

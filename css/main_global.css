@@ -797,10 +797,34 @@ i.icon-chair {
   height: 1em; }
 
 .symbol-metro {
-  fill: #ccc;
+  fill: #7f7d7c;
   font-size: 1.8rem;
   width: 1em;
   height: 1em; }
+
+.symbol-baby {
+  fill: #7f7d7c;
+  font-size: 1.7rem;
+  width: 1em;
+  height: .9em; }
+
+.symbol-clock-2 {
+  fill: #7f7d7c;
+  font-size: 1.7rem;
+  width: 1em;
+  height: 1em; }
+
+.symbol-table {
+  fill: #7f7d7c;
+  font-size: 2.1rem;
+  width: 1em;
+  height: .7em; }
+
+.symbol-credit-card {
+  fill: #7f7d7c;
+  font-size: 2.2rem;
+  width: 1em;
+  height: .8em; }
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -1649,6 +1673,7 @@ a.c-button:hover {
     .c-button__big:hover {
       color: #fff; }
   .c-button__width {
+    width: 100%;
     display: block;
     padding: 1.4rem 5.4rem;
     background-color: #7cbd41;
@@ -3047,6 +3072,14 @@ a.c-button:hover {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch; }
+
+.c-grid-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .c-col {
   -ms-flex-preferred-size: 0;
@@ -8082,12 +8115,16 @@ test popup
           justify-content: flex-start; }
 
 .popup-event__btn {
+  display: block;
   padding: 1.5rem 1.7rem;
   border-radius: .8rem;
   background-color: #7cbd41;
   color: #ffffff;
   font-size: 1.6rem;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "PT Serif Caption"; }
   .popup-event__btn:hover {
     color: #ffffff;
     opacity: .9; }
@@ -8125,6 +8162,73 @@ test popup
   .popup-event-partner-card__text {
     color: #9b9595;
     font-size: 1.3rem; }
+
+.popup-event .datepicker-layout::after {
+  content: '';
+  position: absolute;
+  right: 1.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
+
+/*basket*/
+.popup-event-basket .popup,
+.popup-event-one-click .popup {
+  max-width: 42rem;
+  width: 42rem; }
+
+.popup-event-basket .popup-body,
+.popup-event-one-click .popup-body {
+  padding: 1.6rem 2.4rem 2.6rem; }
+
+.popup-event-basket select,
+.popup-event-basket .SumoSelect > .CaptionCont,
+.popup-event-one-click select,
+.popup-event-one-click .SumoSelect > .CaptionCont {
+  padding: 1rem 2.8rem 1rem 1.6rem; }
+
+.popup-event-basket select,
+.popup-event-basket .SumoSelect,
+.popup-event-one-click select,
+.popup-event-one-click .SumoSelect {
+  width: 100%; }
+
+.popup-event-basket .datepicker-here,
+.popup-event-one-click .datepicker-here {
+  padding: .9rem 2.8rem .8rem 1.6rem; }
+
+.popup-event-basket .popup-event__btn,
+.popup-event-one-click .popup-event__btn {
+  margin: 1rem 0 0; }
+
+.popup-event-basket__buy,
+.popup-event-one-click__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 1rem; }
+
+.popup-event-basket .datepicker-layout::after,
+.popup-event-one-click .datepicker-layout::after {
+  content: '';
+  position: absolute;
+  right: 1.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
+
+.popup-event-one-click .popup-event__btn {
+  width: 100%; }
 
 .events__item {
   margin-bottom: 2.4rem; }

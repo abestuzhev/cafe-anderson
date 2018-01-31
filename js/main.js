@@ -73,8 +73,8 @@ $(window).on('load', function(){
             }
         }
     });
-    $('#eventOrderDatepicker').datepicker({
-        minDate: new Date(),
+    $('.js-event-order-datepicker').datepicker({
+        minDate: new Date()
     });
 });
 
