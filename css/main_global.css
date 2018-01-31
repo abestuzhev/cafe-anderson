@@ -826,6 +826,18 @@ i.icon-chair {
   width: 1em;
   height: .8em; }
 
+.symbol-click {
+  fill: #7f7d7c;
+  font-size: 1.7rem;
+  width: 1em;
+  height: 1.2em; }
+
+.symbol-ticket {
+  fill: #7f7d7c;
+  font-size: 2rem;
+  width: 1em;
+  height: .8em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -8131,6 +8143,8 @@ test popup
   .popup-event__btn::after {
     content: '';
     border: none; }
+  .popup-event__btn svg {
+    fill: #fff; }
 
 .popup-event-partner__title {
   color: #553023;

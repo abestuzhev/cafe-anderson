@@ -4406,6 +4406,14 @@ test popup
             content: '';
             border: none;
         }
+
+        svg {
+            fill:#fff;
+        }
+        .symbol-click {
+
+        }
+
     }
 
     &-partner {
