@@ -784,6 +784,18 @@ i.icon-chair {
   width: 1em;
   height: 1.5em; }
 
+.symbol-stock {
+  fill: #7f7d7c;
+  font-size: 1.4rem;
+  width: 1em;
+  height: 1em; }
+
+.symbol-stock-bg {
+  fill: #7f7d7c;
+  font-size: 1.4rem;
+  width: 1em;
+  height: 1em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -3587,6 +3599,16 @@ a.c-button:hover {
   .c-card-news-and-stock::after {
     content: '';
     border: none; }
+  .c-card-news-and-stock-label {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.6rem; }
+    .c-card-news-and-stock-label__current .symbol-stock-bg {
+      fill: #7cbd41;
+      font-size: 3.5rem; }
+    .c-card-news-and-stock-label__archive .symbol-stock-bg {
+      fill: #d6d6d6;
+      font-size: 3.5rem; }
   .c-card-news-and-stock img {
     width: 100%;
     height: 100%;
