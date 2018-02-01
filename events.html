@@ -1578,12 +1578,18 @@
                         <form action="#" class="popup-form">
                             <div class="c-grid c-grid-between">
                                 <div class="c-col c-col-6">
-                                    <div class="datepicker-layout">
-                                        <input type='text' class=" c-input datepicker-here form-control js-event-order-datepicker" placeholder="Дата"/>
-                                    </div>
+                                    <!--<div class="datepicker-layout">-->
+                                        <!--<input type='text' class=" c-input datepicker-here form-control js-event-order-datepicker" placeholder="Дата"/>-->
+                                    <!--</div>-->
+                                    <select name="order-event-date" class="c-select select-delivery">
+                                        <option value="01.02.2018">01.02.2018</option>
+                                        <option value="02.02.2018">02.02.2018</option>
+                                        <option value="07.02.2018">07.02.2018</option>
+                                        <option value="17.02.2018">17.02.2018</option>
+                                    </select>
                                 </div>
                                 <div class="c-col c-col-6">
-                                    <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                    <select name="order-event-time" class="c-select select-delivery">
                                         <option value="9.00-12.00">с 9.00 до 12.00</option>
                                         <option value="12.00-15.00">с 12.00 до 15.00</option>
                                         <option value="15.00-18.00">с 15.00 до 18.00</option>
@@ -1639,9 +1645,15 @@
                         <form action="#" class="popup-form">
                             <div class="c-grid c-grid-between">
                                 <div class="c-col c-col-6">
-                                    <div class="datepicker-layout">
-                                        <input type='text' class=" c-input datepicker-here form-control js-event-order-datepicker" placeholder="Дата"/>
-                                    </div>
+                                    <!--<div class="datepicker-layout">-->
+                                        <!--<input type='text' class=" c-input datepicker-here form-control js-event-order-datepicker" placeholder="Дата"/>-->
+                                    <!--</div>-->
+                                    <select name="order-event-date" class="c-select select-delivery">
+                                        <option value="01.02.2018">01.02.2018</option>
+                                        <option value="02.02.2018">02.02.2018</option>
+                                        <option value="07.02.2018">07.02.2018</option>
+                                        <option value="17.02.2018">17.02.2018</option>
+                                    </select>
                                 </div>
                                 <div class="c-col c-col-6">
                                     <select name="order-event-time" class="c-select select-delivery">
@@ -1745,7 +1757,9 @@
                             </div>
                         </div>
                         <div class="popup-event-content">
-                            <div class="popup-event-content__img"><div><img src="./img/img-event-1.jpg" alt=""></div></div>
+                            <div class="popup-event-content__img"><div>
+                                <img src="./img/bd06e200c1681734aa8f36d506aa3f47.jpg" alt=""></div>
+                            </div>
                             <div class="popup-event-content__description">
                                 <div class="popup-event-content__description-layout">
                                     <p>Как совершить побег с фантастического дирижабля? Где спрятано загадочное сокровище воздушных пиратов? Кто такой Сахарная Голова?!!</p>
@@ -1796,12 +1810,12 @@
                                                 <button type="button" class="but c-counter__btn inc">+</button>
                                             </div>
                                         </div>
-                                        <a href="#" class="popup-event__btn">
+                                        <a href="#" class="popup-event__btn c-card-event__btn--basket">
                                             <svg class="c-symbol symbol-ticket"><use xlink:href="#symbol-ticket" /></svg>
                                             Добавить в корзину
                                         </a>
                                         <span>или</span>
-                                        <a href="#" class="popup-event__btn">
+                                        <a href="#" class="popup-event__btn c-card-event__btn--click">
                                             <svg class="c-symbol symbol-click"><use xlink:href="#symbol-click" /></svg>
                                             Оформить в 1 клик</a>
                                     </div>

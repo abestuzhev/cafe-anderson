@@ -821,6 +821,18 @@ $(document).ready(function ($) {
     //     $('.popup-cake-order-congratulation').addClass('is-visible');
     // });
 
+    $(document).on('click', '.c-card-event__btn--click', function (e) {
+        e.preventDefault();
+        $(this).parents('.popup-event').removeClass('is-visible');
+        $('.popup-event-one-click').addClass('is-visible');
+    });
+
+    $(document).on('click', '.c-card-event__btn--basket', function (e) {
+        e.preventDefault();
+        $(this).parents('.popup-event').removeClass('is-visible');
+        $('.popup-event-basket').addClass('is-visible');
+    });
+
     $(document).on('click', '.popup-forgot-password', function (e) {
         e.preventDefault();
         $(this).parents('.popup-authorization').removeClass('is-visible');
