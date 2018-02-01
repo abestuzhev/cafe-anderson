@@ -4342,6 +4342,14 @@ test popup
 
         &__img {
             width: 26%;
+
+            div {
+                width: 100%;
+                height: 100%;
+                display: block;
+                overflow: hidden;
+            }
+
         }
 
         &__description {

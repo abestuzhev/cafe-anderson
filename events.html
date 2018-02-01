@@ -1745,7 +1745,7 @@
                             </div>
                         </div>
                         <div class="popup-event-content">
-                            <div class="popup-event-content__img"><img src="./img/img-event-1.jpg" alt=""></div>
+                            <div class="popup-event-content__img"><div><img src="./img/img-event-1.jpg" alt=""></div></div>
                             <div class="popup-event-content__description">
                                 <div class="popup-event-content__description-layout">
                                     <p>Как совершить побег с фантастического дирижабля? Где спрятано загадочное сокровище воздушных пиратов? Кто такой Сахарная Голова?!!</p>
@@ -1763,9 +1763,14 @@
                                 <form action="#" class="popup-form popup-event-form">
                                     <div class="popup-event-place">
                                         <div class="popup-form__item">
-                                            <div class="datepicker-layout">
-                                                <input type='text' class=" c-input datepicker-here form-control js-event-order-datepicker"  placeholder="Дата мероприятия"/>
-                                            </div>
+                                            <!--<div class="datepicker-layout">-->
+                                                <!--<input type='text' class=" c-input datepicker-here form-control js-event-order-datepicker"  placeholder="Дата мероприятия"/>-->
+                                            <!--</div>-->
+                                            <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                                <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                                <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                                <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                            </select>
                                         </div>
                                         <div class="popup-form__item">
                                             <select name="order-deliver-cake-time" class="c-select select-delivery">
