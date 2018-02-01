@@ -42,7 +42,7 @@ ymaps.ready(function () {
         '<div class="popup-event-map">' +
             '<div class="popup-event-map__header"></div>' +
             '<div class="popup-event-map__body" data-simplebar>' +
-            '<div class="popup-event-map__item" style="margin-bottom: 400px;">' +
+            '<div class="popup-event-map__item">' +
             '<div class="c-card-event">' +
             '<div class="c-card-event__label">' +
             '<div class="c-card-event__age"><i class="icon-uneven-circle">4+</i></div>' +
