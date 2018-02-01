@@ -480,7 +480,7 @@ main {
         position: absolute;
         right: 1.5rem;
         bottom: 0;
-        padding: 1.4rem 1.6rem 3rem;
+        padding: 1.4rem 1.6rem 2rem;
         border-radius: 50px 50px 0 0;
         background: $white url(../img/icons/icon-close.svg) no-repeat 50% 46%;
         -webkit-background-size: 10px 11px;
@@ -2285,7 +2285,7 @@ test popup
     //border-radius: .4rem;
     background-color: #eee;
     box-shadow: 0 10px 20px 8px rgba(0, 0, 0, .1);
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 /*-------------------*/
@@ -4376,6 +4376,13 @@ test popup
         .datepicker-here {
             padding: .9rem 2.8rem .8rem 1.6rem;
         }
+
+        .sumo_order-event-time {
+            width: 14rem;
+        }
+        .sumo_order-event-place {
+            width: 20rem;
+        }
     }
 
     &-buy {
@@ -4457,6 +4464,11 @@ test popup
         height: 2.2rem;
         background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat;
     }
+
+    .SumoSelect.open > .optWrapper {
+        top: 3.6rem;
+        display: block;
+    }
 }
 
 
@@ -4507,12 +4519,19 @@ test popup
         height: 2.2rem;
         background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat;
     }
-}
 
-.popup-event-one-click {
+    .SumoSelect.open > .optWrapper {
+        top: 3.6rem;
+        display: block;
+    }
+
     .popup-event__btn {
         width: 100%;
     }
+}
+
+.popup-event-one-click {
+
 }
 
 .events {
@@ -4589,6 +4608,58 @@ test popup
 
     .datepicker--content {
         padding: 7px 11px 18px;
+    }
+
+    &-map {
+        font-family: $font_serif;
+        &__title {
+            display: inline-block;
+            font-size: 1.4rem;
+            color: #ffffff;
+            padding: 1rem 1.4rem;
+            border-radius: .6rem;
+            background-color: $color_btn;
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.popup-event-map {
+    width: 61rem;
+    height: 55rem;
+    border-radius: .8rem;
+    background-color: #fff;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    border: solid 2px rgba(0, 0, 0, 0.15);
+    position: relative;
+    font-family: $font_serif;
+
+    &__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #f3efe4;
+        padding: 1rem 1.2rem;
+        border-radius: .6rem .6rem 0 0;
+        width: 100%;
+    }
+
+    .c-card-event {
+        border: none;
+        box-shadow: none;
+    }
+
+    &__item {
+        position: relative;
+        border-bottom: 4px solid #f3efe4;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__body {
+        height: 50.5rem;
     }
 }
 
@@ -7036,6 +7107,7 @@ test popup
         &__note {
             font-size: 1.2rem;
             color: $black;
+            padding-right: 8rem;
         }
         
         #party-datepicker {

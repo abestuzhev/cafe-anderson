@@ -1062,7 +1062,10 @@
                                 </div>
                             </div>
                             <div class="filter-item">
-                                <div class="filter-item__title"><i class="icon-baby"></i>Возраст</div>
+                                <div class="filter-item__title">
+                                    <svg class="c-symbol symbol-baby"><use xlink:href="#symbol-baby" /></svg>
+                                    Возраст
+                                </div>
                                 <div class="filter-item__body">
                                     <select name="filter-age-select" class="c-select select-age">
                                         <option value="0+">0+</option>
@@ -1078,7 +1081,9 @@
                                 </div>
                             </div>
                             <div class="filter-item">
-                                <div class="filter-item__title"><i class="icon-calendar-3"></i>Дата</div>
+                                <div class="filter-item__title">
+                                    <svg class="c-symbol symbol-calendar-3"><use xlink:href="#symbol-calendar-3" /></svg>
+                                    Дата</div>
                                 <div class="filter-item__body">
                                 <div class="datepicker-layout">
                                     <input type='text' class="c-input datepicker-here form-control" placeholder="Введите дату"/>
@@ -1337,7 +1342,9 @@
                         </div>
                     </div>
                     <div id="event-map" class="tab-content">
-                        <div id="map" class="cafe-map"></div>
+                        <div id="mapEvents" class="cafe-map"></div>
+                        
+                        <div class="events-map__title">АндерСон для Пап</div>
                         <div class="events__list">
                             <div class="events__item">
                                 <div class="c-card-event">
@@ -1346,22 +1353,23 @@
                                     </div>
                                     <div class="c-card-event__price">Бесплатно</div>
                                     <div class="c-card-event__header">
-                                        <div class="c-card-event__date">19 октября, четверг, 15:00</div>
                                         <div class="c-card-event__title"><a href="#">Мастер-класс "Bunchems"</a></div>
                                     </div>
                                     <div class="c-card-event__body">
                                         <div class="c-card-event__info">
-                                            <div class="c-card-event__item"><i class="icon-mark"></i>
-                                                <a href="#">АндерСон на Туполева</a>,
-                                                <a href="#">АндерСон на Красносельской</a>,
-                                                <a href="#">АндерСон на Митинской</a>,
-                                                <a href="#">АндерСон на Большой Красной</a>
-                                            </div>
+                                            <ul class="c-card-event-timelist">
+                                                <li class="c-card-event-timelist__item">
+                                                    <span class="c-card-event-timelist__date">Ср.11.12.17г.</span>
+                                                    <span>11:10 Туполева, </span>
+                                                    <span>12:15 на Красносельской, </span>
+                                                    <span>13:40 на Митинской, </span>
+                                                </li>
+                                            </ul>
                                         </div>
                                         <div class="c-card-event__text">Учимся создавать осенние цветы и жучков из коструктора-липучек. Чудесные подарки от компании Gulliver каждому участнику.</div>
                                         <div class="l-button">
-                                            <a class="c-button c-button__small" href="#">Подробнее</a>
-                                            <a class="c-button c-button__small c-button--dark" href="#">Записаться</a>
+                                            <a class="c-button c-button__small c-card-event__link--more" href="#">Подробнее</a>
+                                            <span class="c-card-event__no-ticket">Нет билетов</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1373,22 +1381,23 @@
                                     </div>
                                     <div class="c-card-event__price">Бесплатно</div>
                                     <div class="c-card-event__header">
-                                        <div class="c-card-event__date">19 октября, четверг, 15:00</div>
                                         <div class="c-card-event__title"><a href="#">Мастер-класс "Bunchems"</a></div>
                                     </div>
                                     <div class="c-card-event__body">
                                         <div class="c-card-event__info">
-                                            <div class="c-card-event__item"><i class="icon-mark"></i>
-                                                <a href="#">АндерСон на Туполева</a>,
-                                                <a href="#">АндерСон на Красносельской</a>,
-                                                <a href="#">АндерСон на Митинской</a>,
-                                                <a href="#">АндерСон на Большой Красной</a>
-                                            </div>
+                                            <ul class="c-card-event-timelist">
+                                                <li class="c-card-event-timelist__item">
+                                                    <span class="c-card-event-timelist__date">Ср.11.12.17г.</span>
+                                                    <span>11:10 Туполева, </span>
+                                                    <span>12:15 на Красносельской, </span>
+                                                    <span>13:40 на Митинской, </span>
+                                                </li>
+                                            </ul>
                                         </div>
                                         <div class="c-card-event__text">Учимся создавать осенние цветы и жучков из коструктора-липучек. Чудесные подарки от компании Gulliver каждому участнику.</div>
                                         <div class="l-button">
-                                            <a class="c-button c-button__small" href="#">Подробнее</a>
-                                            <a class="c-button c-button__small c-button--dark" href="#">Записаться</a>
+                                            <a class="c-button c-button__small c-card-event__link--more" href="#">Подробнее</a>
+                                            <span class="c-card-event__no-ticket">Нет билетов</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1521,6 +1530,43 @@
 </footer>
 
 <!----------------------------------------------START popup-->
+
+<!--модальное окно мероприятий в карте-->
+<div class="mfp-wrap popup__menu" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <h3 class="popup-title">Меню <span class="popup-close"></span></h3>
+                <div class="popup-body">
+                    <div class="popup-menu__list" data-simplebar>
+                        <div class="popup-menu__item" style="margin-bottom: 40rem;">
+                            <div class="menu-card">
+                                <h2 class="menu-card__title">Зарядим радостью день!</h2>
+                                <div class="menu-card__body">
+                                    <h3 class="menu-card__name">КОМПЛЕКСНЫЙ ЗАВТРАК</h3>
+                                    <ul class="menu-card__list">
+                                        <li class="menu-card__product">
+                                            <div class="menu-card__product-item">
+                                                <ul class="menu-card__list-vert">
+                                                    <li class="menu-card__list-vert-item">Апельсиновый свежевыжатый сок 0,2 л</li>
+                                                    <li class="menu-card__list-vert-item">Чай черный, зеленый или американо (на выбор)</li>
+                                                    <li class="menu-card__list-vert-item">Омлет классический, сырники, каша с вареньем и ягодами (на выбор)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-card__price">420.-</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
 <!-- заказать мероприятие в 1 клик-->
 <div class="mfp-wrap popup-event-one-click" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
@@ -1555,10 +1601,10 @@
                                 <input class="c-input" type="text" placeholder="Представтесь:" name="popup-event-one-click__name">
                             </div>
                             <div class="popup-form__item">
-                                <input class="c-input" type="text" placeholder="Телефон:" name="popup-event-one-click__phone">
+                                <input class="c-input js-input--tel" type="text" placeholder="Телефон:" name="popup-event-one-click__phone">
                             </div>
                             <div class="popup-form__item">
-                                <input class="c-input js-input--tel" type="text" placeholder="Email:" name="popup-event-one-click__email">
+                                <input class="c-input" type="text" placeholder="Email:" name="popup-event-one-click__email">
                             </div>
                             <div class="popup-event-basket__buy">
                                 <div class="c-card-product__price">11 350.-</div>
@@ -1570,7 +1616,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="popup-event__btn">Оформить и оплатить</button>
+                            <button class="popup-event__btn">
+                                <svg class="c-symbol symbol-click"><use xlink:href="#symbol-click" /></svg>
+                                Оформить и оплатить
+                            </button>
                         </form>
                     </div><!--popup-body-->
                 </div>
@@ -1595,7 +1644,7 @@
                                     </div>
                                 </div>
                                 <div class="c-col c-col-6">
-                                    <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                    <select name="order-event-time" class="c-select select-delivery">
                                         <option value="9.00-12.00">с 9.00 до 12.00</option>
                                         <option value="12.00-15.00">с 12.00 до 15.00</option>
                                         <option value="15.00-18.00">с 15.00 до 18.00</option>
@@ -1603,7 +1652,7 @@
                                 </div>
                             </div>
                             <div class="popup-form__item">
-                                <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                <select name="order-event-place" class="c-select select-delivery">
                                     <option value="">АндерСон на Митинской</option>
                                     <option value="">АндерСон на Митинской</option>
                                     <option value="">АндерСон на Митинской</option>
@@ -1620,7 +1669,10 @@
                                 </div>
                             </div>
                             
-                            <a href="#" class="popup-event__btn">Добавить в корзину</a>
+                            <button class="popup-event__btn">
+                                <svg class="c-symbol symbol-ticket"><use xlink:href="#symbol-ticket" /></svg>
+                                Добавить в корзину
+                            </button>
                         </form>
                     </div><!--popup-body-->
                 </div>
@@ -2765,23 +2817,11 @@
 <!-- Подключаем API  карт 2.1  -->
 <!-- <script src="./js/ymaps-touch-scroll.bundle.js"></script> -->
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script src="./js/custom-map.js"></script>
+<!--<script src="./js/custom-map.js"></script>-->
+<script src="./js/eventMap.js"></script>
 <!--<script src="./js/main.js"></script>-->
 <script async src="./js/scripts_all.js"></script>
 <script src="./js/datepicker/datepicker.min.js"></script>
 
-<script>
-    $(function(){
-        var $datepicker = $('.datepicker-here');
-        console.log();
-        $datepicker.datepicker({
-            minDate: new Date()
-
-        });
-        $datepicker.on('focus', function(){
-            $(this).parents('.datepicker-layout').addClass('active-datepicker');
-        });
-    });
-</script>
 </body>
 </html>

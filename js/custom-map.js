@@ -1,3 +1,4 @@
+
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.751574, 37.573856],
@@ -68,17 +69,17 @@ ymaps.ready(function () {
             '</div>'+
             '</div>', {
 
-            build: function () {                
-              this.constructor.superclass.build.call(this);                
+            build: function () {
+              this.constructor.superclass.build.call(this);
               $('.popup-close').bind('click', $.proxy(this.onCloseClick, this));
-            },            
+            },
             clear: function () {
-              $('.popup-close').unbind('click', $.proxy(this.onCloseClick, this));                
-              this.constructor.superclass.build.call(this);            
-            },            
+              $('.popup-close').unbind('click', $.proxy(this.onCloseClick, this));
+              this.constructor.superclass.build.call(this);
+            },
             onCloseClick: function () {
-              this.getData().geoObject.balloon.close();            
-            }   
+              this.getData().geoObject.balloon.close();
+            }
         }),
 
          getPointOptions = function () {
@@ -94,57 +95,57 @@ ymaps.ready(function () {
              };
          },
 
-        placemarks = [
-           new ymaps.Placemark([55.74352990795752,37.56841313754272], {
-               name: 'АндерСон для Пап',
-               address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               pic: '',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, getPointOptions()),
+         placemarks = [
+            new ymaps.Placemark([55.74352990795752,37.56841313754272], {
+                name: 'АндерСон для Пап',
+                address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
+                phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+                timeWork: 'пн-вс с 09:00 до 23:00',
+                entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+                pic: '',
+                subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+            }, getPointOptions()),
 
-           new ymaps.Placemark([55.8,37.9], {
-               name: 'АндерСон для Пап',
-               address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               pic: '',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, getPointOptions()),
+            new ymaps.Placemark([55.8,37.9], {
+                name: 'АндерСон для Пап',
+                address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
+                phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+                timeWork: 'пн-вс с 09:00 до 23:00',
+                entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+                pic: '',
+                subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+            }, getPointOptions()),
 
-           new ymaps.Placemark([59,31], {
-               name: 'АндерСон для Пап2',
-               address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               pic: '',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, getPointOptions()),
+            new ymaps.Placemark([59,31], {
+                name: 'АндерСон для Пап2',
+                address: 'Московский, ул. Хабарова, дом 2, ТРЦ Новомосковский, вход со стороны пруда',
+                phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+                timeWork: 'пн-вс с 09:00 до 23:00',
+                entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+                pic: '',
+                subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+            }, getPointOptions()),
 
-           new ymaps.Placemark([57,34], {
-               name: 'на Класносельской',
-               address: 'Московский, ул. Хабарова, дом 2',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               pic: '',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, getPointOptions()),
-           
-           new ymaps.Placemark([60,40], {
-               name: 'Тестовое кафе ',
-               address: 'Московский, ул. Хабарова, дом 2б Московский, ул. Хабарова, дом 2',
-               phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
-               timeWork: 'пн-вс с 09:00 до 23:00',
-               entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
-               pic: '',
-               subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
-           }, getPointOptions())
-       ];
+            new ymaps.Placemark([57,34], {
+                name: 'на Класносельской',
+                address: 'Московский, ул. Хабарова, дом 2',
+                phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+                timeWork: 'пн-вс с 09:00 до 23:00',
+                entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+                pic: '',
+                subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+            }, getPointOptions()),
+
+            new ymaps.Placemark([60,40], {
+                name: 'Тестовое кафе ',
+                address: 'Московский, ул. Хабарова, дом 2б Московский, ул. Хабарова, дом 2',
+                phoneNumber: '+7 (495) 125-49-07, +7 (495) 125-49-07',
+                timeWork: 'пн-вс с 09:00 до 23:00',
+                entertainment: 'Зоопарк, Ледовая Арена, Цирк, Театр кукол, Гулливер, Игровая площадка',
+                pic: '',
+                subway: '<img src="img/icons/icon-metro-1.png" alt="">Молодежная'
+            }, getPointOptions())
+        ];
 
        myMap.geoObjects.events.add([
             'balloonopen'
@@ -267,5 +268,3 @@ function init() {
     mapPickupCake.geoObjects.add(pickupCakeCollection);
     cakePageOrder.geoObjects.add(cakePageOrderCollection);
 }
-
-

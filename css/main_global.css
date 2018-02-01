@@ -774,7 +774,7 @@ i.icon-chair {
 
 .symbol-calendar-3 {
   fill: #7f7d7c;
-  font-size: 2.2rem;
+  font-size: 2rem;
   width: 1em;
   height: 1em; }
 
@@ -5213,7 +5213,7 @@ main {
     position: absolute;
     right: 1.5rem;
     bottom: 0;
-    padding: 1.4rem 1.6rem 3rem;
+    padding: 1.4rem 1.6rem 2rem;
     border-radius: 50px 50px 0 0;
     background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
     background-size: 10px 11px;
@@ -6527,7 +6527,7 @@ test popup
   background-color: #eee;
   -webkit-box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 7rem; }
+  margin-bottom: 5rem; }
 
 /*-------------------*/
 .filter-radio {
@@ -8110,6 +8110,10 @@ test popup
     padding: 1rem 2.8rem 1rem 1.6rem; }
   .popup-event-place .datepicker-here {
     padding: .9rem 2.8rem .8rem 1.6rem; }
+  .popup-event-place .sumo_order-event-time {
+    width: 14rem; }
+  .popup-event-place .sumo_order-event-place {
+    width: 20rem; }
 
 .popup-event-buy {
   display: -webkit-box;
@@ -8185,6 +8189,10 @@ test popup
   height: 2.2rem;
   background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
 
+.popup-event .SumoSelect.open > .optWrapper {
+  top: 3.6rem;
+  display: block; }
+
 /*basket*/
 .popup-event-basket .popup,
 .popup-event-one-click .popup {
@@ -8241,6 +8249,12 @@ test popup
   height: 2.2rem;
   background: url(../img/icons/icon-calendar-3.svg) 0 0 no-repeat; }
 
+.popup-event-basket .SumoSelect.open > .optWrapper,
+.popup-event-one-click .SumoSelect.open > .optWrapper {
+  top: 3.6rem;
+  display: block; }
+
+.popup-event-basket .popup-event__btn,
 .popup-event-one-click .popup-event__btn {
   width: 100%; }
 
@@ -8295,6 +8309,47 @@ test popup
 
 .events .datepicker--content {
   padding: 7px 11px 18px; }
+
+.events-map {
+  font-family: "PT Serif Caption"; }
+  .events-map__title {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #ffffff;
+    padding: 1rem 1.4rem;
+    border-radius: .6rem;
+    background-color: #7cbd41;
+    margin-bottom: 5rem; }
+
+.popup-event-map {
+  width: 61rem;
+  height: 55rem;
+  border-radius: .8rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+  border: solid 2px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-family: "PT Serif Caption"; }
+  .popup-event-map__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f3efe4;
+    padding: 1rem 1.2rem;
+    border-radius: .6rem .6rem 0 0;
+    width: 100%; }
+  .popup-event-map .c-card-event {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .popup-event-map__item {
+    position: relative;
+    border-bottom: 4px solid #f3efe4; }
+    .popup-event-map__item:last-child {
+      border: none; }
+  .popup-event-map__body {
+    height: 50.5rem; }
 
 /*Корзина (basket)------------------------------------------------*/
 .basket {
@@ -10221,7 +10276,8 @@ test popup
 
 .popup-party-order .party-order__note {
   font-size: 1.2rem;
-  color: #555451; }
+  color: #555451;
+  padding-right: 8rem; }
 
 .popup-party-order .party-order #party-datepicker {
   margin-bottom: 1.6rem;
