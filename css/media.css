@@ -1845,6 +1845,17 @@
     .order-auth__body {
         padding: 2rem;
     }
+
+    .events .filter-item {
+        margin-right: 0;
+    }
+
+    .events .select-city + .SelectBox,
+    .events .select-cafe + .SelectBox,
+    .events .select-theme + .SelectBox,
+    .events .select-age + .SelectBox {
+        width: 100%;
+    }
 }
 
 @media (max-width:780px) {

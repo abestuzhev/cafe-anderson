@@ -8346,6 +8346,9 @@ test popup
 .events .c-card-event__title {
   padding-right: 13rem; }
 
+.events .c-card-event__price {
+  top: 1rem; }
+
 .popup-event-map {
   width: 61rem;
   height: 55rem;
