@@ -2184,7 +2184,8 @@ a.c-button:hover {
       margin-right: .8rem; }
 
 .c-card-event__btn--basket.disabled,
-.c-card-event__btn--click.disabled {
+.c-card-event__btn--click.disabled,
+.popup-event__btn.disabled {
   background-color: #ccc; }
 
 /*card-vacancy------------------------------------------------------------*/
