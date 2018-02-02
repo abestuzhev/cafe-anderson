@@ -370,6 +370,11 @@
         max-width: 32rem;
     }
 
+    .events #event-calendar .events__item:nth-child(1),
+    .events #event-calendar .events__item:nth-child(2) {
+        padding-left: 34rem;
+    }
+
 }
 
 @media (max-width:1060px) {
@@ -1111,6 +1116,18 @@
 
     .news-and-stock .post__title {
         font-size: 2.2rem;
+    }
+
+
+    .events .datepicker-inline {
+        float: none;
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .events #event-calendar .events__item:nth-child(1),
+    .events #event-calendar .events__item:nth-child(2) {
+        padding-left: 0;
     }
 }
 
@@ -1863,6 +1880,10 @@
     .events .c-card-event__title {
         padding-right: 0;
     }
+
+    .filter .c-input {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width:780px) {
@@ -2455,6 +2476,10 @@
     .news-and-stock .post__title {
         font-size: 1.8rem;
     }
+
+    .events .datepicker--cell {
+        height:4rem;
+    }
 }
 
 @media (max-width:570px) {
@@ -2554,6 +2579,31 @@
     .order-user__other-form .c-form__item {
         margin: 0 0 1rem 0;
         width: 100%;
+    }
+
+
+    .popup-event-basket .c-col.popup-form__item,
+    .popup-event-one-click .c-col.popup-form__item {
+        padding: 0;
+    }
+
+    .popup-event-basket .c-grid,
+    .popup-event-one-click .c-grid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .popup-event-one-click .c-col.popup-form__item {
+        margin-bottom: 1.6rem;
+    }
+
+    .popup-event__grid {
+        flex-flow: column wrap;
+        margin:0;
+    }
+    .popup-event__col {
+        width: 100%;
+        padding: 0;
     }
 }
 
@@ -3103,6 +3153,15 @@
 
     .lk-history-item__footer .c-button {
         padding: .9rem 1.2rem .9rem;
+    }
+
+    .events .datepicker--cell {
+        height: 3.5rem;
+    }
+
+    .dp-note {
+        top: .5rem;
+        right: .5rem;
     }
 }
 

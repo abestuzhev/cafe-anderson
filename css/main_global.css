@@ -8219,6 +8219,24 @@ test popup
   top: 3.6rem;
   display: block; }
 
+.popup-event__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -.81rem;
+  margin-left: -.81rem; }
+
+.popup-event__col {
+  width: 50%;
+  padding: .8rem .8rem 0 .8rem; }
+
 /*basket*/
 .popup-event-basket .popup,
 .popup-event-one-click .popup {
@@ -8284,11 +8302,13 @@ test popup
 .popup-event-one-click .popup-event__btn {
   width: 100%; }
 
-.popup-event-one-click .popup-form__item:last-child {
+.popup-event-one-click .popup-form__item:last-child,
+.popup-event-basket .popup-form__item:last-child {
   margin-bottom: 1.6rem; }
 
-.popup-event-one-click .c-col.popup-form__item {
-  margin-bottom: 0; }
+.popup-event-one-click .c-col.popup-form__item,
+.popup-event-basket .c-col.popup-form__item {
+  padding-bottom: 0; }
 
 .events__item {
   margin-bottom: 2.4rem; }

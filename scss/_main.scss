@@ -4492,6 +4492,19 @@ test popup
         display: block;
     }
 
+    &__grid {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-right: -.81rem;
+        margin-left: -.81rem;
+    }
+
+    &__col {
+        width: 50%;
+        padding: .8rem .8rem 0 .8rem;
+    }
+
 }
 
 
@@ -4553,13 +4566,14 @@ test popup
     }
 }
 
-.popup-event-one-click {
+.popup-event-one-click,
+.popup-event-basket {
     .popup-form__item:last-child {
         margin-bottom: 1.6rem;
     }
 
     .c-col.popup-form__item {
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
 
