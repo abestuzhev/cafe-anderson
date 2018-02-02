@@ -8343,6 +8343,9 @@ test popup
     background-color: #7cbd41;
     margin-bottom: 5rem; }
 
+.events .c-card-event__title {
+  padding-right: 13rem; }
+
 .popup-event-map {
   width: 61rem;
   height: 55rem;
