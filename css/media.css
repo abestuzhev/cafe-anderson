@@ -166,6 +166,10 @@
 @media screen and (max-width: 1100px) {
     .cafe-list-layout .filter-item:nth-child(2) {width: 62%;}
 
+    .popup-event-map {
+        margin-left: -20.5rem;
+    }
+
 }
 
 @media screen and (max-width: 985px) {
