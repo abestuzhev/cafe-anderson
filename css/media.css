@@ -366,6 +366,9 @@
         display: block;
     }
 
+    .events .datepicker-inline {
+        max-width: 32rem;
+    }
 
 }
 

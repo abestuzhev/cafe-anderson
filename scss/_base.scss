@@ -1525,7 +1525,8 @@ a.c-button {
 }
 
 .c-card-event__btn--basket.disabled,
-.c-card-event__btn--click.disabled {
+.c-card-event__btn--click.disabled,
+.popup-event__btn.disabled{
     background-color: #ccc;
 }
 
