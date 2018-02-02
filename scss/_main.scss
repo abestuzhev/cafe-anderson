@@ -4321,6 +4321,7 @@ test popup
 
     .popup-body {
         padding: 0;
+        overflow: visible;
     }
 
     &__header {
@@ -4490,6 +4491,7 @@ test popup
         top: 3.6rem;
         display: block;
     }
+
 }
 
 
@@ -4656,6 +4658,11 @@ test popup
 
     .c-card-event__price {
         top: 1rem;
+    }
+
+    .l-button a,
+    .l-button span {
+        margin-bottom: .8rem;
     }
 }
 

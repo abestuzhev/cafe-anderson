@@ -1856,6 +1856,10 @@
     .events .select-age + .SelectBox {
         width: 100%;
     }
+
+    .events .c-card-event__title {
+        padding-right: 0;
+    }
 }
 
 @media (max-width:780px) {
@@ -2450,6 +2454,17 @@
     }
 }
 
+@media (max-width:570px) {
+
+    .events .l-button {
+        flex-flow: column wrap;
+    }
+    .events .l-button a,
+    .events .l-button span {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media (max-width:540px) {
     .home-cafe {

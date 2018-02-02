@@ -780,7 +780,7 @@ a.c-button {
     }
 
     &__small {
-        padding: .6rem 1.4rem;
+        padding: .8rem 1.4rem;
         background-color: $color_btn;
         font-family: $font_serif;
         font-size: 1.4rem;
@@ -1516,6 +1516,7 @@ a.c-button {
     .l-button {
         display: flex;
         align-items: center;
+        flex-flow: row wrap;
 
         a {
             margin-right: .8rem;

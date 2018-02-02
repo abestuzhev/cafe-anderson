@@ -1626,7 +1626,7 @@ a.c-button:hover {
     text-transform: uppercase;
     display: inline-block; }
   .c-button__small {
-    padding: .6rem 1.4rem;
+    padding: .8rem 1.4rem;
     background-color: #7cbd41;
     font-family: "PT Serif Caption";
     font-size: 1.4rem;
@@ -2175,7 +2175,11 @@ a.c-button:hover {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
     .c-card-event .l-button a {
       margin-right: .8rem; }
 
@@ -8053,7 +8057,8 @@ test popup
   border-radius: 0 0 5rem 5rem; }
 
 .popup-event .popup-body {
-  padding: 0; }
+  padding: 0;
+  overflow: visible; }
 
 .popup-event__header {
   position: relative; }
@@ -8348,6 +8353,10 @@ test popup
 
 .events .c-card-event__price {
   top: 1rem; }
+
+.events .l-button a,
+.events .l-button span {
+  margin-bottom: .8rem; }
 
 .popup-event-map {
   width: 61rem;

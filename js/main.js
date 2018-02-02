@@ -1067,7 +1067,8 @@ $(document).ready(function ($) {
         var $filterBody =  $('.filter-item__body');
         $filterBody.has('select').css('display', 'block');
         $filterBody.has('input[type="text"]').css('display', 'block');
-        $filterBody.has('select').parents('.filter-item').css('border','none')
+        $filterBody.has('select').parents('.filter-item').css('border','none');
+        $filterBody.has('input[type="text"]').parents('.filter-item').css('border','none');
     });
 
     /*появление фильтра в мобильной версии*/
