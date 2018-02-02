@@ -8274,6 +8274,12 @@ test popup
 .popup-event-one-click .popup-event__btn {
   width: 100%; }
 
+.popup-event-one-click .popup-form__item:last-child {
+  margin-bottom: 1.6rem; }
+
+.popup-event-one-click .c-col.popup-form__item {
+  margin-bottom: 0; }
+
 .events__item {
   margin-bottom: 2.4rem; }
 
