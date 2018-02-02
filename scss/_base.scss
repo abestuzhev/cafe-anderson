@@ -1524,6 +1524,10 @@ a.c-button {
     }
 }
 
+.c-card-event__btn--basket.disabled,
+.c-card-event__btn--click.disabled {
+    background-color: #ccc;
+}
 
 /*card-vacancy------------------------------------------------------------*/
 .c-card-vacancy {
