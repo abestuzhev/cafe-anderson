@@ -89,6 +89,14 @@ gulp.task('css', function(){
         .pipe(browserSync.stream())
 });
 
+gulp.task('head', function(){
+    return gulp.src(['./demo-head/**/*.scss'])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(prefix('last 3 version'))
+        .pipe(gulp.dest('demo-head/'))
+        .pipe(browserSync.stream())
+});
+
 // gulp.task('css', function(){
 //     return gulp.src('css/**/*.css')
 //         .pipe(concatCss('main_global_all.min.css'))
@@ -116,10 +124,11 @@ gulp.task('connect', function() {
 
 gulp.task('watch', function(){
     gulp.watch('scss/**/*.scss', ['sass']);
+    gulp.watch('demo-head/**/*.scss', ['head']);
     gulp.watch('js/**/*.js', ['js']);
     gulp.watch('**/*.html', ['html']);
     gulp.watch('home.html', ['critical']);
     gulp.watch('css/**/*.css', ['css']);
 });
 
-gulp.task('default', ['html', 'critical', 'css', 'sass', 'js', 'browser-sync', 'watch']);
+gulp.task('default', ['html', 'critical', 'css', 'sass', 'js', 'head', 'browser-sync', 'watch']);
