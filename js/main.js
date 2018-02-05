@@ -173,7 +173,7 @@ $(document).ready(function ($) {
     //плавный якорь
     function scrollToAnchor (elem) {
         $(document).on("click", elem, function (event) {
-            event.preventDefault();
+            // event.preventDefault();
             var id  = $(this).attr('href'),
                 menuHeight = 200,
                 top = $(id).offset().top,
