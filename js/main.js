@@ -40,7 +40,7 @@ $(window).on('load', function(){
         });
 
 
-    var disabledPartyDays = [0, 5, 6];
+    var disabledPartyDays = [0, 6];
     $('#party-datepicker').datepicker({
         minDate: new Date(),
         inline: true,
@@ -175,7 +175,7 @@ $(document).ready(function ($) {
         $(document).on("click", elem, function (event) {
             // event.preventDefault();
             var id  = $(this).attr('href'),
-                menuHeight = 200,
+                menuHeight = 0,
                 top = $(id).offset().top,
                 topIndent = top - menuHeight;
             console.log('top: ' + top);
