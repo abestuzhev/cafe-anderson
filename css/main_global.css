@@ -10865,3 +10865,6 @@ test popup
     margin: 2rem 1rem 1rem 0; }
   .timeline-body {
     width: 100%; } }
+
+.header {
+  opacity: .5; }
