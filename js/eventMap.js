@@ -42,32 +42,60 @@ ymaps.ready(function () {
         '<div class="popup-event-map">' +
             '<div class="popup-event-map__header"></div>' +
             '<div class="popup-event-map__body" data-simplebar>' +
-            '<div class="popup-event-map__item">' +
-            '<div class="c-card-event">' +
-            '<div class="c-card-event__label">' +
-            '<div class="c-card-event__age"><i class="icon-uneven-circle">4+</i></div>' +
-            '</div>' +
-            '<div class="c-card-event__price">Бесплатно</div>' +
-            '<div class="c-card-event__header">' +
-            '<div class="c-card-event__date">19 октября, четверг, 15:00</div>' +
-            '<div class="c-card-event__title"><a href="#">Мастер-класс "Bunchems"</a></div>' +
-            '</div>' +
-            '<div class="c-card-event__body">' +
-            '<div class="c-card-event__info">' +
-            '<div class="c-card-event__item"><i class="icon-mark"></i>ул. Верхняя Красносельская, д. 7/2</div>' +
-            '<div class="c-card-event__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>' +
-            '<div class="c-card-event__item"><i class="icon-phoneNumber"></i>+7 (495) 125-49-07</div>' +
-            '<div class="c-card-event__item"><i class="advantages-guests"></i>Доступное количество мест: 30</div>' +
-            '</div>' +
-            '<div class="c-card-event__text">Учимся создавать осенние цветы и жучков из коструктора-липучек. Чудесные подарки от компании Gulliver каждому участнику.</div>' +
-            '<div class="l-button">' +
-            '<a class="c-button c-button__small c-card-event__link--more" href="#">Подробнее</a>' +
-            '<a class="c-button c-button__small c-button--dark c-card-event__link--basket" href="#">добавить в корзину</a>' +
-            '<a class="c-button c-button__small c-button--dark c-card-event__link--one-click" href="#">оформить в 1 клик</a>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
+                '<div class="popup-event-map__item">' +
+                    '<div class="c-card-event">' +
+                        '<div class="c-card-event__label">' +
+                            '<div class="c-card-event__age"><i class="icon-uneven-circle">4+</i></div>' +
+                        '</div>' +
+                        '<div class="c-card-event__price">Бесплатно</div>' +
+                        '<div class="c-card-event__header">' +
+                            '<div class="c-card-event__date">19 октября, четверг, 15:00</div>' +
+                            '<div class="c-card-event__title"><a href="#">Мастер-класс "Bunchems"</a></div>' +
+                        '</div>' +
+                        '<div class="c-card-event__body">' +
+                            '<div class="c-card-event__info">' +
+                                '<div class="c-card-event__item"><i class="icon-mark"></i>ул. Верхняя Красносельская, д. 7/2</div>' +
+                                '<div class="c-card-event__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>' +
+                                '<div class="c-card-event__item"><i class="icon-phoneNumber"></i>+7 (495) 125-49-07</div>' +
+                                '<div class="c-card-event__item"><i class="advantages-guests"></i>Доступное количество мест: 30</div>' +
+                            '</div>' +
+                            '<div class="c-card-event__text">Учимся создавать осенние цветы и жучков из коструктора-липучек. Чудесные подарки от компании Gulliver каждому участнику.</div>' +
+                            '<div class="l-button">' +
+                                '<a class="c-button c-button__small c-card-event__link--more" href="#">Подробнее</a>' +
+                                '<a class="c-button c-button__small c-button--dark c-card-event__link--basket" href="#">добавить в корзину</a>' +
+                                '<a class="c-button c-button__small c-button--dark c-card-event__link--one-click" href="#">оформить в 1 клик</a>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                '</div>' +
+                //удалить второй блок
+                '<div class="popup-event-map__item">' +
+                    '<div class="c-card-event">' +
+                    '<div class="c-card-event__label">' +
+                    '<div class="c-card-event__age"><i class="icon-uneven-circle">4+</i></div>' +
+                    '</div>' +
+                    '<div class="c-card-event__price">Бесплатно</div>' +
+                    '<div class="c-card-event__header">' +
+                    '<div class="c-card-event__date">19 октября, четверг, 15:00</div>' +
+                    '<div class="c-card-event__title"><a href="#">Мастер-класс "Bunchems"</a></div>' +
+                    '</div>' +
+                    '<div class="c-card-event__body">' +
+                    '<div class="c-card-event__info">' +
+                    '<div class="c-card-event__item"><i class="icon-mark"></i>ул. Верхняя Красносельская, д. 7/2</div>' +
+                    '<div class="c-card-event__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>' +
+                    '<div class="c-card-event__item"><i class="icon-phoneNumber"></i>+7 (495) 125-49-07</div>' +
+                    '<div class="c-card-event__item"><i class="advantages-guests"></i>Доступное количество мест: 30</div>' +
+                    '</div>' +
+                    '<div class="c-card-event__text">Учимся создавать осенние цветы и жучков из коструктора-липучек. Чудесные подарки от компании Gulliver каждому участнику.</div>' +
+                    '<div class="l-button">' +
+                    '<a class="c-button c-button__small c-card-event__link--more" href="#">Подробнее</a>' +
+                    '<a class="c-button c-button__small c-button--dark c-card-event__link--basket" href="#">добавить в корзину</a>' +
+                    '<a class="c-button c-button__small c-button--dark c-card-event__link--one-click" href="#">оформить в 1 клик</a>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                '</div>' +
+                //окончания второго блока
             '</div>' +
             '<div class="popup-event-map__title">' +
             '<a href="#">Андерсон для Пап</a>' +
