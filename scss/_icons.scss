@@ -3,7 +3,7 @@
     &.is-active {
         fill: $color_brand;
     }
-    
+
     &:hover {
         fill: #67af26;
         @extend %transition_all;
@@ -129,7 +129,7 @@
     fill: $color_text_bg;
     vertical-align: top;
     background: url(../img/icons/icon-fb.svg) 0 0 no-repeat;
-    
+
 }
 
 .icon-o-bg {
@@ -594,7 +594,7 @@ i.icon-chair {
     height: 1.6rem;
     background: url(../img/icons/icon-exit-with-hover.svg) 0 0 no-repeat scroll;
     background-size: 3.4rem 1.6rem;
-    
+
 }
 
 .icon-beta {
@@ -731,7 +731,7 @@ i.icon-chair {
     background: url(../img/icons/icon-baby.svg) 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    
+
 }
 .icon-baby-2 {
     display: inline-block;
@@ -742,7 +742,7 @@ i.icon-chair {
     background: url(../img/icons/icon-baby-2.svg) 0 0 no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-    
+
 }
 
 .icon-ghost {
@@ -898,4 +898,16 @@ i.icon-chair {
     font-size: 5.1rem;
     width:1em;
     height: 2.7em;
+}
+
+.icon-uneven-circle {
+  position: relative;
+}
+
+.icon-uneven-circle > .icon-rabbit-positive {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

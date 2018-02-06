@@ -751,6 +751,18 @@ i.icon-chair {
   width: 1em;
   height: 2.7em; }
 
+.icon-uneven-circle {
+  position: relative; }
+
+.icon-uneven-circle > .icon-rabbit-positive {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
 .c-symbol {
   display: inline-block;
   width: auto;
@@ -3767,6 +3779,30 @@ a.c-button:hover {
       font-size: 1.5rem; }
     .c-card-news-and-stock-info .symbol-mark {
       font-size: 1rem; }
+
+.c-card-statistics-decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .c-card-statistics-decor__num {
+    font-family: "BebasNeue";
+    font-size: 6rem;
+    margin-right: 1.2rem;
+    font-weight: bold; }
+  .c-card-statistics-decor__text {
+    font-family: "PT Serif Caption";
+    font-size: 1.6rem;
+    color: #8c8787; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -9932,7 +9968,7 @@ test popup
       background: -o-linear-gradient(top, white 0%, white 27%, rgba(255, 255, 255, 0.05) 100%);
       background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(27%, white), to(rgba(255, 255, 255, 0.05)));
       background: linear-gradient(to bottom, white 0%, white 27%, rgba(255, 255, 255, 0.05) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); }
     .cake-card-stuffing__title {
       font-size: 1.7rem;
       margin-bottom: .6rem; }
@@ -10950,6 +10986,44 @@ test popup
         font-size: 1.2rem;
         color: #9b9595;
         position: relative; }
+  .franchise-anderson {
+    margin-bottom: 7rem; }
+    .franchise-anderson__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-left: -3rem;
+      margin-right: -3rem; }
+    .franchise-anderson__item {
+      width: 33.3333%;
+      padding: 0 3rem; }
+    .franchise-anderson__num {
+      margin-bottom: 1.8rem;
+      color: #1e1e1e;
+      font-size: 1.2rem;
+      text-align: center; }
+    .franchise-anderson__text {
+      font-size: 1.6rem;
+      color: #8c8787;
+      line-height: 1.4;
+      text-align: center; }
+    .franchise-anderson__scene {
+      text-align: center;
+      margin-bottom: 2rem; }
+      .franchise-anderson__scene img {
+        width: 100%;
+        height: auto;
+        max-width: 91rem; }
   .franchise-composition {
     margin-bottom: 7rem; }
     .franchise-composition__list {
@@ -11012,3 +11086,32 @@ test popup
       line-height: 1.4;
       margin-left: 2.2rem;
       margin-bottom: 1.4rem; }
+  .franchise-about {
+    margin-bottom: 7rem; }
+    .franchise-about__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-bottom: 1.4rem; }
+      .franchise-about__item .icon-uneven-circle {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 8%;
+                flex: 0 1 8%;
+        margin-right: 1rem; }
+    .franchise-about__name {
+      font-size: 1.4rem; }
+      .franchise-about__name .franchise-press__link {
+        font-size: 1.4rem; }
+    .franchise-about__text {
+      font-style: italic;
+      color: #272727; }
