@@ -7800,6 +7800,16 @@ test popup
         font-size: 3.6rem;
         color: #7cbd41;
         margin-bottom: 2rem;
+        font-weight: 700;
+        text-align: center;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+        padding: 2.5rem 16% 0;
+        
+        span {
+            display: inline-block;
+            padding: .6rem 1.9rem;
+            background-color: #fff;
+        }
     }
 
     &-text {
@@ -7832,4 +7842,127 @@ test popup
     .cafe-slider {
         margin-bottom: 2rem;
     }
+    
+    &-press {
+        &__link {
+            font-size: 1.2rem;
+            color: #9b9595;
+            position: relative;
+            margin-left: 2.1rem;
+    
+            &::before {
+                content:'';
+                position: absolute;
+                left: -2rem;
+                top: 0;
+                width: 1.8rem;
+                height: 1.5rem;
+                background: url(../img/icons/icon-link.svg) 0 0 no-repeat;
+            }
+    
+            &::after {
+                border-color: #9b9595;
+            }
+        }
+        &-list {
+            font-size: 1.3rem;
+            margin-bottom: 7rem;
+    
+            &__item {
+                margin-bottom: .8rem;
+                &::before {
+                }
+                
+                a {
+                    font-size: 1.2rem;
+                    color: #9b9595;
+                    position: relative;
+                }
+            }
+        }
+    }
+    
+    &-composition {
+        margin-bottom: 7rem;
+        
+        &__list {
+            counter-reset:li; /* Инициализируем счетчик */
+            padding:0; /* Удаляем  установленное по умолчанию левое поле*/
+            list-style:none; /* Отменяем нумерацию установленную по умолчанию */
+            margin-bottom: 2.4rem;
+        }
+        
+        &__item {
+            font-size: 2.4rem;
+            font-family: $font_sans-serif;
+            //list-style:decimal ;
+            position:relative;
+            margin-left: 3.2rem;
+            padding: 1.1rem 0;
+            border-bottom: 1px dashed $black;
+            
+            
+            &:before {
+                content: counter(li);
+                counter-increment:li;
+                position:absolute;
+                top:1.5rem;
+                left:-3.8rem;
+                font-weight:bold;
+                text-align:center;
+                font-size: 1.8rem;
+                min-width: 2rem;
+                font-family: $font_sans-serif;
+            }
+            
+            &::after {
+                content: '';
+                position: absolute;
+                top: 1rem;
+                left: -44px;
+                width: 3.2rem;
+                height: 3.2rem;
+                border-radius:4rem;
+                border:.3rem solid #fbb951;
+            }
+        }
+        
+        &__sublist {
+            margin-right: 1rem;
+            margin-top: .8rem;
+        }
+        
+        &__subitem {
+            font-family: $font_serif;
+            font-size: 1.5rem;
+            color: #8c8787;
+            margin-bottom: .8rem;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    &-reasons {
+        margin-bottom: 7rem;
+        width: 70%;
+        
+        &__title {
+            font-size: 3.6rem;
+            color: #7cbd41;
+            margin-bottom: 1rem;
+            font-family: $font_sans-serif;
+            font-weight: 700;
+            line-height: 1;
+        }
+        
+        &__text {
+            font-size: 1.6rem;
+            line-height: 1.4;
+            margin-left: 2.2rem;
+            margin-bottom: 1.4rem;
+        }
+    }
+    
 }

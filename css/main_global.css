@@ -838,6 +838,18 @@ i.icon-chair {
   width: 1em;
   height: .8em; }
 
+.symbol-positive {
+  fill: #7f7d7c;
+  font-size: 1.7rem;
+  width: 1em;
+  height: 1.6em; }
+
+.symbol-negative {
+  fill: #7f7d7c;
+  font-size: 1.7rem;
+  width: 1em;
+  height: 1.6em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -10878,7 +10890,15 @@ test popup
     font-family: "BebasNeue";
     font-size: 3.6rem;
     color: #7cbd41;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    padding: 2.5rem 16% 0; }
+    .franchise__title span {
+      display: inline-block;
+      padding: .6rem 1.9rem;
+      background-color: #fff; }
   .franchise-text {
     padding-bottom: 2rem;
     margin-bottom: 1rem;
@@ -10904,3 +10924,89 @@ test popup
               align-items: center; }
   .franchise .cafe-slider {
     margin-bottom: 2rem; }
+  .franchise-press__link {
+    font-size: 1.2rem;
+    color: #9b9595;
+    position: relative;
+    margin-left: 2.1rem; }
+    .franchise-press__link::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 0;
+      width: 1.8rem;
+      height: 1.5rem;
+      background: url(../img/icons/icon-link.svg) 0 0 no-repeat; }
+    .franchise-press__link::after {
+      border-color: #9b9595; }
+  .franchise-press-list {
+    font-size: 1.3rem;
+    margin-bottom: 7rem; }
+    .franchise-press-list__item {
+      margin-bottom: .8rem; }
+      .franchise-press-list__item a {
+        font-size: 1.2rem;
+        color: #9b9595;
+        position: relative; }
+  .franchise-composition {
+    margin-bottom: 7rem; }
+    .franchise-composition__list {
+      counter-reset: li;
+      /* Инициализируем счетчик */
+      padding: 0;
+      /* Удаляем  установленное по умолчанию левое поле*/
+      list-style: none;
+      /* Отменяем нумерацию установленную по умолчанию */
+      margin-bottom: 2.4rem; }
+    .franchise-composition__item {
+      font-size: 2.4rem;
+      font-family: "BebasNeue";
+      position: relative;
+      margin-left: 3.2rem;
+      padding: 1.1rem 0;
+      border-bottom: 1px dashed #555451; }
+      .franchise-composition__item:before {
+        content: counter(li);
+        counter-increment: li;
+        position: absolute;
+        top: 1.5rem;
+        left: -3.8rem;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.8rem;
+        min-width: 2rem;
+        font-family: "BebasNeue"; }
+      .franchise-composition__item::after {
+        content: '';
+        position: absolute;
+        top: 1rem;
+        left: -44px;
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 4rem;
+        border: .3rem solid #fbb951; }
+    .franchise-composition__sublist {
+      margin-right: 1rem;
+      margin-top: .8rem; }
+    .franchise-composition__subitem {
+      font-family: "PT Serif Caption";
+      font-size: 1.5rem;
+      color: #8c8787;
+      margin-bottom: .8rem; }
+      .franchise-composition__subitem:last-child {
+        margin-bottom: 0; }
+  .franchise-reasons {
+    margin-bottom: 7rem;
+    width: 70%; }
+    .franchise-reasons__title {
+      font-size: 3.6rem;
+      color: #7cbd41;
+      margin-bottom: 1rem;
+      font-family: "BebasNeue";
+      font-weight: 700;
+      line-height: 1; }
+    .franchise-reasons__text {
+      font-size: 1.6rem;
+      line-height: 1.4;
+      margin-left: 2.2rem;
+      margin-bottom: 1.4rem; }
