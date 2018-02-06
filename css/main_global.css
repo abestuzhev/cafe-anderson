@@ -3798,11 +3798,31 @@ a.c-button:hover {
     font-family: "BebasNeue";
     font-size: 6rem;
     margin-right: 1.2rem;
-    font-weight: bold; }
+    font-weight: bold;
+    white-space: nowrap; }
+    .c-card-statistics-decor__num sup {
+      font-size: 2.8rem; }
+    .c-card-statistics-decor__num span {
+      font-size: 4.8rem; }
   .c-card-statistics-decor__text {
     font-family: "PT Serif Caption";
     font-size: 1.6rem;
     color: #8c8787; }
+
+.c-color-yellow {
+  color: #fbb951; }
+
+.c-color-green {
+  color: #7CBD41; }
+
+.c-color-red {
+  color: #D3534F; }
+
+.c-color-purple {
+  color: #9A7ABA; }
+
+.c-color-blue {
+  color: #61BCD4; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -11024,6 +11044,65 @@ test popup
         width: 100%;
         height: auto;
         max-width: 91rem; }
+  .franchise-statistics {
+    margin-bottom: 7rem; }
+    .franchise-statistics__item {
+      position: relative; }
+    .franchise-statistics__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative; }
+      .franchise-statistics__grid::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        height: 100%;
+        width: .1rem;
+        background-color: #7CBD41; }
+    .franchise-statistics__left {
+      width: 50%;
+      padding-right: 1rem; }
+    .franchise-statistics__right {
+      padding-left: 1rem;
+      width: 50%; }
+    .franchise-statistics__left .franchise-statistics__item {
+      padding-right: 5.6rem;
+      margin: 3rem 0; }
+    .franchise-statistics__right .franchise-statistics__item {
+      padding-left: 5.6rem;
+      margin: 3rem 0; }
+    .franchise-statistics__left .franchise-statistics__item::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      border: .8rem solid transparent;
+      border-right: .8rem solid #7CBD41; }
+    .franchise-statistics__right .franchise-statistics__item::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      border: .8rem solid transparent;
+      border-left: .8rem solid #7CBD41; }
   .franchise-composition {
     margin-bottom: 7rem; }
     .franchise-composition__list {
@@ -11105,8 +11184,8 @@ test popup
       margin-bottom: 1.4rem; }
       .franchise-about__item .icon-uneven-circle {
         -webkit-box-flex: 0;
-            -ms-flex: 0 1 8%;
-                flex: 0 1 8%;
+            -ms-flex: 0 1 7rem;
+                flex: 0 1 7rem;
         margin-right: 1rem; }
     .franchise-about__name {
       font-size: 1.4rem; }
