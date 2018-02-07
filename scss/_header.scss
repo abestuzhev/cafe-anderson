@@ -1,15 +1,32 @@
 //------------------------------------------------------------header
-// .sticky {
-//     position: fixed !important;
-//     width: 100%;
-//      top: 0;
-//     right: 0;
-//     @include z-index (header);
-//     transition: all .5s ease-out;
-// }
+
 //
-// .sticky + main {
-// }
+//.header.sticky {
+//    position: fixed;
+//    width: 100%;
+//    top: 0;
+//    left: 0;
+//    animation: slide-down .5s ease-out;
+//}
+//
+//.header.sticky .header-city,
+//.header.sticky .header-time{
+//    opacity: 0;
+//    transition: all .2s ease;
+//}
+//.header.sticky .header-top{
+//    height:23px;
+//    transition: all .4s ease-out;
+//}
+//.header .header-top{
+//    transition: all .4s ease-out;
+//}
+//
+//.header-city,
+//.header-time {
+//    transition: all .9s ease-out;
+//}
+//
 //
 // .header-navigation {
 //     transition: all .3s ease-out;
@@ -18,7 +35,7 @@
 //
 // .sticky + .header-navigation {
 //     transition: all .1s ease-out;
-//     transform: translateY(-200px);
+//     transform: translateY(-100px);
 // }
 //
 //
@@ -33,10 +50,26 @@
 //
 // .header {
 //     padding: 0 !important;
-// }
-
-
-
+//
+//}
+//
+//.header {
+//    border: none !important;
+//    transition: all .2s ease-out;
+//}
+//
+//@keyframes slide-down {
+//    0% {
+//        transform: translate3d(0, -100%, 0);
+//    }
+//    70%, 100% {
+//        transform: translate3d(0, 0, 0);
+//    }
+//
+//    0% {
+//        transform: translate3d(0, -100%, 0);
+//    }
+//}
 
 //------------------------------------------------------------
 .header.sticky {
@@ -182,7 +215,7 @@
     transform: translateY(0) !important;
 }
 
-
+//-----------------------------------
 .header {
     position: relative;
     z-index: 12;

@@ -1235,9 +1235,11 @@ $(document).ready(function ($) {
         if ( bo > 0 ) {
             $header.addClass('header-top__hide');
             $header.addClass('sticky');
+            // $header.addClass('fixed-header');
         } else {
             $header.removeClass('header-top__hide');
             $header.removeClass('sticky');
+            // $header.removeClass('fixed-header');
         }
     });
 
