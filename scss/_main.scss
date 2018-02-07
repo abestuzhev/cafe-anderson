@@ -1821,14 +1821,12 @@ test popup
 .filter {
     display: block;
     padding: 1.1rem 1.1rem .1rem;
-    //padding: 1.1rem;
     background-color: $white;
     border: 1px solid #e3e3e3;
     border-radius: .6rem;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
     margin-bottom: 6rem;
     font-family: $font_serif;
-    //font-size: 0;
     position: relative;
     z-index: 10;
 
@@ -1839,6 +1837,10 @@ test popup
         min-height: 14px;
         background-color: #fff;
         border-radius: 2px;
+    }
+
+    .filter-item--city {
+        display: block;
     }
 
     &-mobile-btn,
@@ -1974,6 +1976,10 @@ test popup
                 width: 1.3em;
                 height: 1.4em;
             }
+        }
+
+        &--city {
+            display: none;
         }
     }
 
@@ -4262,8 +4268,8 @@ test popup
 
     .popup {
         position: absolute;
-        bottom: 3.3rem;
-        left: -9.8rem;
+        bottom: 2rem;
+        left: -11rem;
         //transform: translate(-50%,-50%);
         visibility: hidden;
         opacity: 0;
@@ -4322,7 +4328,7 @@ test popup
     }
 
     .popup-body {
-        padding: 0;
+        padding: 0 !important;
         overflow: visible;
     }
 
@@ -4346,6 +4352,7 @@ test popup
         &__img {
             width: 70%;
             position: relative;
+            margin-bottom: 1.4rem;
 
             div {
                 width: 100%;
@@ -4414,6 +4421,13 @@ test popup
         flex-flow: row wrap;
         align-items: center;
         justify-content: flex-start;
+
+        &--layout {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
     }
 
     &__btn {
@@ -4676,6 +4690,10 @@ test popup
     .l-button a,
     .l-button span {
         margin-bottom: .8rem;
+    }
+
+    .tab-content {
+        margin-bottom: 5rem;
     }
 }
 

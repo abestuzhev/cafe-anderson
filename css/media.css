@@ -148,10 +148,56 @@
     .header-col__right .header-top {
         margin-bottom: 0;
     }
-
-
-
 }
+
+
+@media screen and (max-width: 1300px) {
+    .popup-event .popup {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100% !important;
+       max-width: 100% !important;
+       height: 100vh;
+       margin: 0;
+       overflow-y: scroll;
+       border-radius: 0;
+    }
+
+    .popup-event .c-card-event__label {
+      background: none;
+      position: static;
+      display: inline-block;
+      width: auto;
+      height: auto;
+    }
+
+    .popup-event .popup-box {
+        padding: 2rem;
+    }
+
+    .popup-event-buy--layout > span {
+      display: none;
+    }
+
+    .popup-event__btn {
+      margin: 0 .3rem;
+      margin-left: 0;
+    }
+
+    .c-card-product__price {
+        width: 11.5rem;
+    }
+
+    .popup-event .c-card-event__label {
+      vertical-align: top;
+    }
+
+    .popup-event__header {
+      display: inline-block;
+    }
+}
+
 
 @media screen and (max-width: 1280px) {
     .select-city + .SelectBox,
@@ -1380,6 +1426,44 @@
     .news-and-stock__item {
         width: 50%;
     }
+
+    .popup-event-content {
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .popup-event-buy {
+      justify-content: flex-end;
+    }
+
+    .popup-event-content__img,
+    .popup-event-content__img div {
+      width: 100%;
+    }
+
+    .popup-event-content__description {
+      padding-left: 0;
+    }
+
+    .popup-event-place .popup-form__item {
+      width: 33.333%;
+      padding-right: 1rem;
+      margin-right: 0;
+    }
+
+    .popup-event-place .popup-form__item:last-child {
+      padding-right: 0;
+    }
+
+    .popup-event-place .popup-form__item .SumoSelect {
+      width: 100%;
+    }
+
+    .popup-event-content__img div {
+      height: 34rem;
+    }
+
 }
 
 @media (max-width:800px) {
@@ -1444,6 +1528,16 @@
     .lk-profile-edit input.lk-profile-input--small {
         width: 100%;
     }
+
+    .popup-event-partner-card__img {
+      width: 30%;
+      margin-right: 0;
+      padding-right: 2rem;
+    }
+
+    .popup-event-partner-card__text {
+      width: 70%;
+    }
 }
 
 @media (min-width:730px) {
@@ -1490,6 +1584,10 @@
         display: none;
         padding-bottom: 1.4rem;
         margin-bottom: 2rem;
+    }
+
+    .filter {
+      padding: 1.4rem;
     }
 
     .filter-mobile-btn,
@@ -1551,7 +1649,12 @@
     }
 
     .filter .SumoSelect > .CaptionCont {
-        /*padding: 1.4rem 1.6rem;*/
+        padding: 1.2rem 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    .filter .datepicker-here {
+        padding: 1.2rem 1.6rem;
         font-size: 1.4rem;
     }
 
@@ -1581,6 +1684,21 @@
 
     .filter-mobile-sort {
         display: block;
+    }
+
+    .filter-item--city,
+    .SumoSelect {
+        display: block;
+        width: 100%;
+    }
+
+    .filter-item--city .SumoSelect > .CaptionCont {
+        padding: 1.2rem 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    .filter .filter-item--city {
+        display: none;
     }
 
     .c-card-event {
@@ -1887,6 +2005,18 @@
     .filter .c-input {
         font-size: 1.4rem;
     }
+
+    .popup-event-place {
+      flex-flow: column wrap;
+      justify-content: center;
+    }
+
+    .popup-event-place .popup-form__item {
+      padding-right: 0;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
 }
 
 @media (max-width:780px) {
@@ -1997,6 +2127,10 @@
         top: 0;
         left: 0;
         right: 0;
+    }
+
+    .popup-event .c-card-event__item {
+      margin-bottom: .6rem;
     }
 }
 
@@ -2228,7 +2362,7 @@
     .contact-cafe__list {
         flex-flow: column nowrap;
     }
-    
+
     .contact-office {
         overflow: hidden;
     }
@@ -2309,6 +2443,28 @@
     }
     #lk-profile-edit__child .c-form__item:nth-child(2) input {
         width: 100%;
+    }
+
+    .popup-event-map {
+        width: 38rem;
+        margin-left: -9.5rem;
+    }
+
+    .popup-event-map .c-card-event .l-button {
+      flex-flow: column wrap;
+    }
+
+    .popup-event-map .c-card-event .l-button a {
+      width: 100%;
+      text-align: center;
+    }
+
+    .popup-event-map .c-card-event__date {
+      width: 100%;
+    }
+
+    .simplebar-content {
+        padding-right: 0rem !important;
     }
 }
 
@@ -2494,6 +2650,29 @@
     .events .l-button span {
         width: 100%;
         text-align: center;
+    }
+
+    .popup-event-buy--layout:nth-child(2) {
+      flex-flow: column nowrap;
+      justify-content: center;
+      width: 100%;
+
+    }
+
+    .popup-event-buy--layout:nth-child(2) > a {
+      width: 100%;
+    }
+    .popup-event-buy--layout:nth-child(2) .c-card-event__btn--basket {
+      margin-bottom: 1.1rem;
+    }
+
+    .popup-event-partner-card__img,
+    .popup-event-partner-card__text {
+      width: 50%;
+    }
+
+    .popup-event-buy--layout:nth-child(1) {
+      margin-bottom: 1rem;
     }
 }
 
@@ -2831,6 +3010,15 @@
     .lk-history__hold .tabs-menu__item {
         margin-right: 1rem;
     }
+
+    .popup-event-map {
+        width: 32rem;
+        margin-left: -5.5rem;
+    }
+
+    .popup-event-map__body {
+        height: 46.5rem;
+    }
 }
 
 @media (max-width:470px) {
@@ -3166,6 +3354,12 @@
         top: .5rem;
         right: .5rem;
     }
+
+
+    .popup-event-buy--layout:nth-child(1) {
+      width: 100%;
+      justify-content: space-between;
+    }
 }
 
 @media (max-height:680px) {
@@ -3327,5 +3521,3 @@
         /*margin: 0 auto !important;*/
     /*}*/
 /*}*/
-
-
