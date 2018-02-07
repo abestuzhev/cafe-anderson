@@ -7157,8 +7157,6 @@ test popup
   .cafe-fotorama {
     width: 100%;
     padding: .9rem 19.4rem; }
-    .cafe-fotorama .fotorama__stage.fotorama__pointer {
-      height: 60rem !important; }
 
 /*partners----------------------------------------------------*/
 .partners {
@@ -8113,6 +8111,13 @@ test popup
     padding: 1.4rem 1.6rem 2rem; }
 
 /*Фабрика счаситя (factory-happiness)------------------------------------------------*/
+.popup-gallery .popup {
+  width: 95rem;
+  max-width: 95rem; }
+
+.popup-gallery .cafe-fotorama {
+  padding: 1rem; }
+
 .factory {
   position: relative; }
   .factory-map {

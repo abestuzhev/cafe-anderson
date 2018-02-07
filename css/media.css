@@ -90,6 +90,10 @@
     .catalog-list .catalog-list__item {
         width: 25%;
     }
+
+    .fotorama__stage.fotorama__pointer {
+        height: 60rem !important;
+    }
 }
 
 
@@ -601,6 +605,22 @@
     .order-auth__header,
     .order-auth__body {
         padding: 2rem 3rem;
+    }
+
+    .popup-gallery .popup-body {
+      padding: 3rem 3rem 4.5rem;
+    }
+
+    .popup-gallery .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100vh;
+      margin: 0;
+      overflow-y: scroll;
+      border-radius: 0;
     }
 }
 
@@ -3054,6 +3074,10 @@
 
     .popup-event-map__body {
         height: 46.5rem;
+    }
+
+    .popup-gallery .popup-body {
+      padding: 0 !important;
     }
 }
 

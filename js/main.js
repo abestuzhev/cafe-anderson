@@ -83,6 +83,7 @@ $(document).ready(function ($) {
 
 
 
+
     //показать все мероприятия по дням на странице Мероприятия
     $(document).on('click', '.c-card-event-timelist__more', function(e){
         e.preventDefault();
@@ -839,6 +840,27 @@ $(document).ready(function ($) {
         $('.popup-event-one-click').addClass('is-visible');
     });
 
+	$(document).on('click', '.factory-point .c-button', function (e) {
+        e.preventDefault();
+        $(this).parents('.factory-point .popup').removeClass('is-visible');
+        $('.popup-gallery').addClass('is-visible');
+        $('.mfp-bg').addClass('is-visible');
+        $('html').css({
+            'margin-right':'0'
+        }).addClass('lock-html');
+
+        if(windowWidth > documentWidth){
+            $('html').css({
+                'margin-right':'17px'
+            });
+            $('.mfp-wrap').css({
+                'overflow-y':'scroll'
+            });
+            // console.log('Есть полоса прокрутки');
+        }
+
+    });
+
     $(document).on('click', '.c-card-event__btn--basket', function (e) {
         e.preventDefault();
         $(this).parents('.popup-event').removeClass('is-visible');
@@ -1519,6 +1541,3 @@ function pageWidget(pages) {
         input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
     });
 }( document, window, 0 ));
-
-
-

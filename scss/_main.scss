@@ -2975,10 +2975,6 @@ test popup
 
         width: 100%;
         padding: .9rem 19.4rem;
-
-        .fotorama__stage.fotorama__pointer {
-            height: 60rem !important;
-        }
     }
 }
 
@@ -4240,6 +4236,17 @@ test popup
 }
 
 /*Фабрика счаситя (factory-happiness)------------------------------------------------*/
+
+.popup-gallery {
+    .popup {
+        width: 95rem;
+        max-width: 95rem;
+    }
+
+    .cafe-fotorama {
+        padding: 1rem;
+    }
+}
 
 .factory {
 
