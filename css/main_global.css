@@ -3901,7 +3901,6 @@ a.c-button:hover {
 .sticky .header-menu__item {
   padding: .8rem; }
 
-/*равномерное заполнение пунктов меню*/
 .sticky .header-col__left,
 .sticky .header-col__right {
   width: 46%; }
