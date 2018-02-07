@@ -5,7 +5,7 @@
     //-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity="0");
     //-webkit-transition: .5s opacity ease-in-out;
     //transition: .5s opacity ease-in-out;
-    
+
     .header,
     main,
     .footer {
@@ -13,7 +13,7 @@
         zoom: 1;
         transition: .5s opacity ease-in-out;
     }
-    
+
 }
 
 .is-content-hidden.visible {
@@ -21,17 +21,17 @@
     //zoom: 1;
     //-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity="100");
     //margin-top: 0;
-    
+
     .header {
         opacity: 1;
         transition: .5s opacity ease-in-out;
     }
-    
+
     main {
         opacity: 1;
         transition: .5s opacity ease-in-out .3s;
     }
-    
+
     .footer {
         opacity: 1;
         transition: .5s opacity ease-in-out .5s;
@@ -375,7 +375,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         box-shadow: 0 0 10px 0 $color_brand;
         @extend %transition_all
     }
-    
+
     &::after {
         content: '!!!!';
     }
@@ -530,12 +530,16 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         margin-left: -1.1rem;
         margin-right: -1.1rem;
     }
-    
+
     &__grid--left{
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: flex-start;
+
+        .c-form__item {
+            margin-right: 1.2rem;
+        }
     }
 
     &__col {
@@ -549,7 +553,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         text-align: left;
         color: #9b9696;
     }
-    
+
     &__add {
         display: inline-block;
         width: 2.9rem;
@@ -559,7 +563,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         text-align: center;
         @extend %transition_all;
         cursor: pointer;
-        
+
         &::before {
             content: '+';
             font-size: 2.7rem;
@@ -567,38 +571,38 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             line-height: 2.9rem;
             color: #ffffff;
         }
-        
+
         &::after {
             content: '';
             border: none;
         }
-        
+
         &:hover {
             @extend %transition_all;
             background-color: #c1c1c1;
         }
     }
-    
+
     &__del {
         display: inline-block;
         font-size: 1.2rem;
         font-style: italic;
         line-height: 1;
         color: #96928a;
-        
+
         &::after {
             content: '';
             border: none;
         }
     }
-    
+
     &__attention {
         display: block;
         font-size: 1.4rem;
         font-style: italic;
         line-height: 1.1;
         color: #96928a;
-        
+
         span {
             color: #7cbd41;
         }
@@ -618,13 +622,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     color: #ec3e3e;
     background: url(../img/icons/icon-warning.png) 98% 50% no-repeat;
     padding-right: 4rem;
-    
+
     &:focus {
         box-shadow:
             0 0 0 2px #ec3e3e,
             0 0 10px 0 #ec3e3e;
     }
-    
+
     //&::after {
     //    content: '!';
     //    position: absolute;
@@ -638,7 +642,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     //    background-color: #ec3e3e;
     //    border-radius: 5rem;
     //}
-    
+
     input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         color: #ec3e3e;
     }
@@ -672,7 +676,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     background-color: #fce5e5;
     margin-top: 1.6rem;
     border-radius: .4rem;
-    
+
     &__title {
         font-size: 1.5rem;
         color: #464543;
@@ -680,7 +684,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         padding-left: 2.4rem;
         position: relative;
         font-weight: 700;
-        
+
         &::before {
             content: '';
             position: absolute;
@@ -755,12 +759,12 @@ a.c-button {
         content: '';
         border: none;
     }
-    
+
     &.disabled {
         background-color: #929490;
         opacity: .5;
         cursor: auto;
-        
+
         &:hover {
             background-color: #929490;
             opacity: .5;
@@ -808,7 +812,7 @@ a.c-button {
             color: $white;
         }
     }
-    
+
     &__large {
         padding: 1.4rem 3.2rem;
         background-color: $color_btn;
@@ -899,11 +903,11 @@ a.c-button {
     &-negative {
         margin-top: 30px;
     }
-    
+
     &-tree2018 {
         margin-top: -120px;
     }
-    
+
     &-graduation {
         margin-top: -120px;
     }
@@ -923,14 +927,14 @@ a.c-button {
         @extend %transition_all;
         overflow: hidden;
 
-        
+
         &.active {
             //&:hover {
                 transform: translateX(0);
                 @extend %transition_all;
             //}
         }
-        
+
     }
 
     &__btn {
@@ -942,7 +946,7 @@ a.c-button {
         -webkit-box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
         -moz-box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
         box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.15);
-        
+
         &:active {
             color: #fff;
         }
@@ -987,7 +991,7 @@ a.c-button {
             background-color: #92c647;
             background-color: rgba(129, 199, 29, 0.87);
         }
-        
+
         .icon-positive {
             position: absolute;
             left: 1.2rem;
@@ -996,7 +1000,7 @@ a.c-button {
             height: 3.4rem;
         }
     }
-    
+
 
     &-negative {
         .c-reviews__btn {
@@ -1010,25 +1014,25 @@ a.c-button {
             width: 2.1rem;
             height: 3.4rem;
         }
-        
+
     }
-    
+
     &-tree2018 .c-reviews__btn {
         background-color: #3fa254;
         background-color: rgba(27, 150, 60, 0.8);
         padding: 1.2rem 1.7rem 1.4rem 1.2rem;
     }
-    
+
     &-tree2018 .icon-tree2018 {
         margin-right: 5px;
     }
-    
+
     &-tree2018 .c-reviews__text {
         margin-bottom: 4px;
     }
-    
+
     &-graduation {
-    
+
         .icon-graduation {
             position: absolute;
             left: 1rem;
@@ -1036,12 +1040,12 @@ a.c-button {
             width: 3.1rem;
             height: 3.4rem;
         }
-        
+
         .c-reviews__btn {
             background-color: #CE3102;
             background-color: rgba(206, 49, 2, 0.8);
         }
-    
+
     }
 }
 
@@ -1058,7 +1062,7 @@ a.c-button {
         background: url(../img/icons/icon-house.svg) 0 0 no-repeat;
         //padding-right: 1.4rem;
         vertical-align: middle;
-        
+
         &::after {
             content: '';
             border: none;
@@ -1086,7 +1090,7 @@ a.c-button {
             border: none;
             background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
         }
-        
+
         &::after {
             content: '';
             right: 20px;
@@ -1142,25 +1146,25 @@ a.c-button {
         background-position: 50% 50%;
         -webkit-background-size: cover;
         background-size: cover;
-        
-       
+
+
 
         img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            
-            
+
+
         }
     }
-    
+
     .c-pic_link {
         display: block;
         position: relative;
         overflow: hidden;
         height: 100%;
-        
+
         &::after {
             content: '';
             border: none;
@@ -1739,7 +1743,7 @@ a.c-button {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    
+
     img {
         max-width: 100%;
         height: auto;
@@ -2077,7 +2081,7 @@ a.c-button {
         box-shadow: 0 0 0 2px #9ac359;
         @extend %transition_all;
     }
-    
+
     &__img {
         width: 10.1rem;
         height: 10.1rem;
@@ -2180,13 +2184,13 @@ a.c-button {
                 letter-spacing: normal;
                 text-align: left;
                 color: #ffffff;
-    
+
                 span::after {
                     content: '';
                     border: none;
                 }
             }
-            
+
             span {
                 position: relative;
                 cursor: pointer;
@@ -2198,7 +2202,7 @@ a.c-button {
                     width: 100%;
                     border-bottom: 1px dotted #9b806f;
                 }
-                
+
                 &:hover::after {
                     content: '';
                     border: none;
@@ -2245,7 +2249,7 @@ a.c-button {
             text-align: center;
             line-height: 2.4rem;
             color: #fff;
-            
+
             &:hover {
                 background-color: #6faa3a;
             }
@@ -2458,7 +2462,7 @@ a.c-button {
         line-height: 1;
         color: #553023;
     }
-    
+
     &__quantity {
         font-family: $font_serif;
         color: #231300;
@@ -2505,7 +2509,7 @@ a.c-button {
             line-height: 1.3rem;
             color: #515151;
             background-color: #e8e8e8;
-            
+
             &:hover {
                 background-color: #7cbd41;
                 color: #ffffff;
@@ -2515,7 +2519,7 @@ a.c-button {
         .c-counter__box {
             display: inline-block;
             margin: 0 .5rem;
-            
+
             &::after {
             content: 'г';
                 //display: inline-block;
@@ -2525,9 +2529,9 @@ a.c-button {
             color: #515151;
             font-style: italic;
         }
-            
+
         }
-    
+
         .piece::after {
             content: 'шт';
             font-size: 1.4rem;
@@ -2916,7 +2920,7 @@ a.c-button {
         border: solid 1px #e3e3e3;
         margin-bottom: 4rem;
         position: relative;
-        
+
         button {
             position: absolute;
             top: 50%;
@@ -2929,7 +2933,7 @@ a.c-button {
             text-indent: -99999rem;
         }
     }
-    
+
     &__input {
         border: none;
         border-bottom: 1px solid #d2cdc4;
@@ -3031,7 +3035,7 @@ a.c-button {
     background-color: #91c346;
     position: relative;
     overflow: hidden;
-    
+
     &__title {
         font-family: $font_serif;
         text-align: center;
@@ -3041,7 +3045,7 @@ a.c-button {
         position: relative;
         z-index: 3;
     }
-    
+
     &__subtitle {
         text-align: center;
         font-size: 2.6rem;
@@ -3050,7 +3054,7 @@ a.c-button {
         position: relative;
         z-index: 3;
     }
-    
+
     &__mark-1 {
         width: 15.3rem;
         position: absolute;
@@ -3058,7 +3062,7 @@ a.c-button {
         left: 1.3rem;
         z-index: 2;
     }
-    
+
     &__mark-2 {
         width: 13.8rem;
         position: absolute;
@@ -3080,7 +3084,7 @@ a.c-button {
         align-items: center;
         justify-content: space-between;
         background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
-        
+
         &::after,
         &::before {
             content: '';
@@ -3098,9 +3102,9 @@ a.c-button {
             content: '';
             bottom: 0;
         }
-    
+
     }
-    
+
     &__title {
         font-size: 3.5rem;
         color: #614f43;
@@ -3109,7 +3113,7 @@ a.c-button {
         align-items: center;
         justify-content: flex-start;
         line-height: .9;
-        
+
         .icon-uneven-circle {
             width: 5.9rem;
             height: 5.9rem;
@@ -3119,7 +3123,7 @@ a.c-button {
             font-style: normal;
             position: relative;
             margin-right: 1.7rem;
-            
+
             span {
                 white-space: nowrap;
                 font-size: 1.6rem;
@@ -3129,20 +3133,20 @@ a.c-button {
                 transform: translate(-50%, -50%);
             }
         }
-        
+
     }
-    
+
     &__application {
-    
+
     }
-    
+
     &-info {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 1.8rem;
-        
+
         &__list {
             width: 100%;
             display: flex;
@@ -3150,23 +3154,23 @@ a.c-button {
             align-items: center;
             justify-content: flex-start;
         }
-        
+
         &__item {
             margin-right: 1.8rem;
             i {
                 margin-right: .4rem;
             }
-            
+
             &:last-child {
                 margin-right: 0;
             }
         }
     }
-    
+
     &__body {
-    
+
     }
-    
+
     &-description {
         margin-bottom: 2.8rem;
         p {
@@ -3174,22 +3178,22 @@ a.c-button {
             margin-bottom: .8rem;
         }
     }
-    
+
     &__list {
-    
+
     }
-    
+
     &__item {
         font-size: 1.3rem;
         margin-bottom: .5rem;
-        
+
         span {
             font-size: 1.6rem;
             color: #7cbd41;
             text-transform: uppercase;
         }
     }
-    
+
     &-photos {
         margin-bottom: 2rem;
         display: flex;
@@ -3199,7 +3203,7 @@ a.c-button {
         margin-left: -.2rem;
         margin-right: -.2rem;
     }
-    
+
     &-photo {
         overflow: hidden;
         width: 50%;
@@ -3209,7 +3213,7 @@ a.c-button {
             height: auto;
         }
     }
-    
+
     &-schedule {
         border-radius: .8rem;
         border: .1rem solid #d2d2d2;
@@ -3217,7 +3221,7 @@ a.c-button {
         padding: 2.7rem 2.7rem 2.7rem 10rem;
         overflow: hidden;
         position: relative;
-    
+
         &::before {
             content: '';
             position: absolute;
@@ -3229,26 +3233,26 @@ a.c-button {
             background: url(../img/icons/icon-birthday-label.svg) 0 0 no-repeat;
             border-radius: 20rem;
         }
-        
+
         &__body {
-        
-        
+
+
         }
-        
+
         &__title {
             font-size: 1.8rem;
             color: $black;
             margin-bottom: 1.5rem;
-            
+
             i {
                 margin-right: .6rem;
             }
         }
     }
-    
+
     &-box {
         margin-bottom: 2rem;
-        
+
         &__title {
             font-size: 1.8rem;
             color: #7e5847;
@@ -3257,8 +3261,8 @@ a.c-button {
             text-align: center;
             overflow: hidden;
             margin-bottom: 1.6rem;
-           
-            
+
+
             &::after {
                 content: '';
                 width: 100%;
@@ -3270,7 +3274,7 @@ a.c-button {
                 transform: translateY(-50%);
                 border: 1px dotted #555451;
             }
-            
+
             span {
                 display: inline-block;
                 position: relative;
@@ -3279,16 +3283,16 @@ a.c-button {
                 padding: 0 2rem;
             }
         }
-        
+
         &:last-child {
             margin-bottom: 0;
         }
     }
-    
+
     .c-col-6 {
         padding: 0 1.4rem;
     }
-    
+
 }
 
 
@@ -3299,28 +3303,28 @@ a.c-button {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 1.5rem;
-    
+
     &__item {
         color: #9b9595;
         font-size: 1.6rem;
         margin-right: 2.4rem;
-        
+
         &.active {
             background-color: #7cbd41;
             border-radius: .4rem;
             padding: 1.1rem 1.4rem;
-            
+
             span {
-    
+
                 color: #ffffff;
             }
-            
+
             &::after {
                 content: '';
                 border: none;
             }
         }
-        
+
     }
 }
 
@@ -3337,7 +3341,7 @@ a.c-button {
     font-family: $font_serif;
     font-size: 1.3rem;
     color: #9b9595;
-    
+
     &::after {
         content: '';
         border: none;
@@ -3365,13 +3369,13 @@ a.c-button {
 
     }
 
-    
+
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    
+
     &__body {
         padding: 1.5rem;
         background-color: #fff;
@@ -3380,13 +3384,13 @@ a.c-button {
         left: 0;
         width: 100%;
     }
-    
+
     &__title {
         font-size: 1.7rem;
         color: #9b806f;
         margin-bottom: 1rem;
         line-height: 1.2;
-        
+
         a {
             border-bottom: 1px dotted #9b806f;
             &::after {
@@ -3398,37 +3402,37 @@ a.c-button {
             }
         }
     }
-    
+
     &-info {
         margin-bottom: 1rem;
         font-family: $font_serif;
         font-size: 1.3rem;
         color: #9b9595;
-        
+
         &__item {
             display: inline-block;
             margin-right: 1.2rem;
-            
+
             &:last-child {
                 margin-right: 0;
             }
         }
-        
+
         svg {
             cursor: auto;
         }
-        
+
         .symbol-calendar-3 {
-            
+
             font-size: 1.5rem;
         }
-        
+
         .symbol-mark {
             font-size: 1rem;
         }
-    
+
     }
-    
+
     &__text {
     }
 }
@@ -3439,7 +3443,7 @@ a.c-button {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
-    
+
     &__num {
         font-family: $font_sans-serif;
         font-size: 6rem;
@@ -3455,7 +3459,7 @@ a.c-button {
             font-size: 4.8rem;
         }
     }
-    
+
     &__text {
         font-family: $font_serif;
         font-size: 1.6rem;

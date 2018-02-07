@@ -1481,6 +1481,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
+  .c-form__grid--left .c-form__item {
+    margin-right: 1.2rem; }
 
 .c-form__col {
   width: 50%;
@@ -10952,7 +10954,9 @@ test popup
     font-weight: 700;
     text-align: center;
     background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
-    padding: 2.5rem 16% 0; }
+    padding: 2.5rem 16% 0;
+    z-index: 2;
+    position: relative; }
     .franchise__title span {
       display: inline-block;
       padding: .6rem 1.9rem;
@@ -11194,3 +11198,15 @@ test popup
     .franchise-about__text {
       font-style: italic;
       color: #272727; }
+  .franchise-contact {
+    position: relative; }
+    .franchise-contact__form {
+      width: 80%;
+      z-index: 2; }
+    .franchise-contact .c-input--small {
+      width: 22rem; }
+    .franchise-contact__bg {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
