@@ -8155,6 +8155,8 @@ test popup
       left: 9rem;
       border: 3rem solid transparent;
       border-top: 2.3rem solid #7cbd41; }
+  .factory .simplebar-track {
+    display: none; }
 
 /*Мероприятия (events)------------------------------------------------*/
 .popup-event .popup {
@@ -9313,6 +9315,14 @@ test popup
   font-style: italic;
   line-height: 1;
   color: #231300; }
+
+.order-finish-message {
+  text-align: center;
+  color: #9b806f;
+  font-size: 1.6rem;
+  font-family: "PT Serif Caption"; }
+  .order-finish-message p {
+    margin-bottom: 2.2rem; }
 
 /*Оформление заказа. Форма входа (ordering-auth)----------------------------------------------------*/
 .order-auth {

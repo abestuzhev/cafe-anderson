@@ -148,6 +148,21 @@
     .header-col__right .header-top {
         margin-bottom: 0;
     }
+
+    .factory .popup {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      width: 80% !important;
+      height: auto !important;
+      transform: translate(-50%, -50%);
+      bottom: auto;
+    }
+
+    .factory .popup::after {
+      content: '';
+      display: none;
+    }
 }
 
 
@@ -1464,6 +1479,23 @@
       height: 34rem;
     }
 
+    .factory {
+      width: 82rem;
+    }
+
+    .factory-layout {
+      width: 100%;
+      /* overflow-x: scroll; */
+    }
+
+    .factory .simplebar-track {
+          display: block;
+      }
+
+    .factory-layout .simplebar-scrollbar {
+          opacity: .5 !important;
+      }
+
 }
 
 @media (max-width:800px) {
@@ -2673,6 +2705,10 @@
 
     .popup-event-buy--layout:nth-child(1) {
       margin-bottom: 1rem;
+    }
+
+    .factory .popup-title {
+      font-size: 1.7rem;
     }
 }
 

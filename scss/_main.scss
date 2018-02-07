@@ -4308,6 +4308,10 @@ test popup
             //border-top: 2.3rem solid #ffffff;
         }
     }
+
+    .simplebar-track {
+        display: none;
+    }
 }
 
 /*Мероприятия (events)------------------------------------------------*/
@@ -5742,6 +5746,17 @@ test popup
             font-style: italic;
             line-height: 1;
             color: #231300;
+        }
+    }
+
+    &-message {
+        text-align: center;
+        color: #9b806f;
+        font-size: 1.6rem;
+        font-family: $font_serif;
+
+        p {
+            margin-bottom: 2.2rem;
         }
     }
 }
