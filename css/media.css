@@ -91,7 +91,7 @@
         width: 25%;
     }
 
-    .fotorama__stage.fotorama__pointer {
+    .cafe .fotorama__stage.fotorama__pointer {
         height: 60rem !important;
     }
 }
