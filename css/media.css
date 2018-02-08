@@ -29,8 +29,33 @@
     .catalog-body.show-category .catalog-list__item {
         padding: 0 .5rem;
     }
+
+    /*.factory-layout .simplebar-content {*/
+        /*padding-right: 0 !important;*/
+    /*}*/
 }
 
+@media (min-width:1340px) {
+    .factory-layout[data-simplebar] {
+        overflow: visible !important;
+    }
+
+    .factory-layout .simplebar-track {
+        display: none;
+    }
+
+    .factory-layout .simplebar-scroll-content {
+        overflow: visible !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .factory-layout .simplebar-content {
+        overflow: visible !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
 @media (max-width:1820px) {
     .home-cafe {
         width: 28%;

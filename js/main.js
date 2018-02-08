@@ -79,10 +79,25 @@ $(window).on('load', function(){
 });
 
 $(document).ready(function ($) {
+
+
+
     //------------------------------------------------------------custom
+    // new SimpleBar($('.factory-layout')[0]);
+    function getScrollElem (elem){
+        if($(window).width() <= 800) {
+            new SimpleBar($(elem)[0]);
+        }else {
+            // SimpleBar.unMount();
+        }
+    }
 
 
+    getScrollElem('.factory-layout');
 
+    $(window).on('resize', function () {
+        getScrollElem('.factory-layout');
+    });
 
     //показать все мероприятия по дням на странице Мероприятия
     $(document).on('click', '.c-card-event-timelist__more', function(e){
