@@ -6,7 +6,7 @@
     //-webkit-transition: .5s opacity ease-in-out;
     //transition: .5s opacity ease-in-out;
 
-    .header,
+    .header-wrap,
     main,
     .footer {
         opacity: 0;
@@ -22,7 +22,7 @@
     //-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity="100");
     //margin-top: 0;
 
-    .header {
+    .header-wrap {
         opacity: 1;
         transition: .5s opacity ease-in-out;
     }

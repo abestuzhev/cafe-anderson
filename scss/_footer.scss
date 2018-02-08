@@ -154,6 +154,13 @@
             display: inline-block;
             //margin-right: .8rem;
             vertical-align: bottom;
+    
+            svg:hover {
+                fill: $color_active;
+            }
+            svg {
+                fill: #9b9696;
+            }
         }
 
         &__icon {

@@ -1092,7 +1092,7 @@ table {
   font-weight: 100;
   font-style: normal; }
 
-.is-content-hidden .header,
+.is-content-hidden .header-wrap,
 .is-content-hidden main,
 .is-content-hidden .footer {
   opacity: 0;
@@ -1101,7 +1101,7 @@ table {
   -o-transition: .5s opacity ease-in-out;
   transition: .5s opacity ease-in-out; }
 
-.is-content-hidden.visible .header {
+.is-content-hidden.visible .header-wrap {
   opacity: 1;
   -webkit-transition: .5s opacity ease-in-out;
   -o-transition: .5s opacity ease-in-out;
@@ -4930,6 +4930,10 @@ a.c-button:hover {
     .footer-reviews__icons {
       display: inline-block;
       vertical-align: bottom; }
+      .footer-reviews__icons svg:hover {
+        fill: #67af26; }
+      .footer-reviews__icons svg {
+        fill: #9b9696; }
     .footer-reviews__icon {
       display: inline-block;
       margin-right: .8rem;
