@@ -57,6 +57,15 @@
     &-social {
         margin-right: 2.4rem;
         //float: left;
+        
+        svg:hover {
+            fill: $color_active;
+        }
+        svg {
+            fill: #9b9696;
+        }
+        
+        
 
         &__title {
             font-size: 1.3rem;

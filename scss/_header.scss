@@ -1,75 +1,5 @@
 //------------------------------------------------------------header
 
-//
-//.header.sticky {
-//    position: fixed;
-//    width: 100%;
-//    top: 0;
-//    left: 0;
-//    animation: slide-down .5s ease-out;
-//}
-//
-//.header.sticky .header-city,
-//.header.sticky .header-time{
-//    opacity: 0;
-//    transition: all .2s ease;
-//}
-//.header.sticky .header-top{
-//    height:23px;
-//    transition: all .4s ease-out;
-//}
-//.header .header-top{
-//    transition: all .4s ease-out;
-//}
-//
-//.header-city,
-//.header-time {
-//    transition: all .9s ease-out;
-//}
-//
-//
-// .header-navigation {
-//     transition: all .3s ease-out;
-//     transform: translateY(0);
-// }
-//
-// .sticky + .header-navigation {
-//     transition: all .1s ease-out;
-//     transform: translateY(-100px);
-// }
-//
-//
-// .header.sticky .top-message {
-//     top: 0 !important;
-// }
-//
-// .header .top-message {
-//     margin-top: 0 !important;
-//     margin-bottom: 1.5rem !important;
-// }
-//
-// .header {
-//     padding: 0 !important;
-//
-//}
-//
-//.header {
-//    border: none !important;
-//    transition: all .2s ease-out;
-//}
-//
-//@keyframes slide-down {
-//    0% {
-//        transform: translate3d(0, -100%, 0);
-//    }
-//    70%, 100% {
-//        transform: translate3d(0, 0, 0);
-//    }
-//
-//    0% {
-//        transform: translate3d(0, -100%, 0);
-//    }
-//}
 
 //------------------------------------------------------------
 .header.sticky {
@@ -351,10 +281,11 @@
                     padding-right: 4rem;
                 }
 
-                .icon-search {
+                .icon-search,
+                .symbol-search {
                     position: absolute;
                     right: 2.3rem;
-                    top: .5rem;
+                    top: 2rem;
                 }
 
             }
@@ -566,6 +497,14 @@
 
     &-top {
         margin-bottom: .4rem;
+    
+        svg {
+            fill:#9b9696;
+        }
+        
+        svg:hover {
+            fill:#7cbd41;
+        }
     }
 
     &-logo { /*логотип*/
@@ -697,6 +636,10 @@
             color: $color_active;
 
         }
+        &:hover svg {
+            fill: $color_active;
+
+        }
         &:hover i {
             background-position: -17px 0;
 
@@ -759,6 +702,11 @@
         font-size: 0;
         text-align: right;
         margin-bottom: .2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        
     }
 
     &-search {

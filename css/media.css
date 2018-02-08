@@ -174,9 +174,9 @@
         width: 46%;
     }
 
-    .header-col__right .header-top {
-        margin-bottom: 0;
-    }
+    /*.header-col__right .header-top {*/
+        /*margin-bottom: 0;*/
+    /*}*/
 
     .factory .popup {
       position: fixed;
