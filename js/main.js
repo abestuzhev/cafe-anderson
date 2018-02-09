@@ -1101,7 +1101,7 @@ $(document).ready(function ($) {
     $('.icon-basket, .header .symbol-basket, .header-basket__count').on('click', function () {
         $('.popup-basket').addClass('popup-slide__show');
         $('.header').addClass('header-top__no-hide');
-        $('html').addClass('lock-html');
+        // $('html').addClass('lock-html');
     });
 
     $('.popup-basket__close').on('click', function () {
