@@ -1301,6 +1301,20 @@ body.done .footer {
   -o-transition: all .3s ease-out 1s;
   transition: all .3s ease-out 1s; }
 
+h1 {
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400; }
+
 h3 {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -1309,12 +1323,25 @@ h3 {
   font-weight: 400; }
 
 h4 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
   font-weight: 400; }
 
 h5 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
   font-weight: 400; }
 
 h6 {
+  font-family: "PT Serif Caption";
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
   font-weight: 400; }
 
 p {
@@ -3592,6 +3619,15 @@ a.c-button:hover {
 
 .styles .order-tabs {
   margin-left: 0; }
+
+.styles .filter-check__item {
+  display: block;
+  margin-bottom: 1rem; }
+
+.styles .filter-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .a-text {
   font-size: 1.3rem;
@@ -6614,12 +6650,30 @@ test popup
     .filter-check__item {
       margin-right: .6rem;
       display: inline-block; }
+  .filter-check--green .filter-label {
+    color: #9b9595; }
   .filter-check--green .filter-label::before {
     content: '';
-    border: 1px solid #5c3321; }
+    border: 1px solid #dedcd6;
+    width: 1.7rem;
+    height: 1.7rem; }
+  .filter-check--green .filter-label::after {
+    content: '';
+    background-color: #dedcd6;
+    border: 1px solid #dedcd6;
+    width: .9rem;
+    height: .9rem;
+    top: .6rem;
+    left: .4rem; }
+  .filter-check--green .filter-radio:checked + .filter-label {
+    color: #555451; }
   .filter-check--green .filter-radio:checked + .filter-label::after {
     content: '';
-    background-color: #5c3321; }
+    background-color: #7cbd41;
+    border: 1px solid #7cbd41; }
+  .filter-check--green .filter-radio:checked + .filter-label::before {
+    content: '';
+    border: 1px solid #7cbd41; }
   .filter .l-button__center {
     display: none;
     margin-top: 1.8rem; }

@@ -2003,14 +2003,40 @@ test popup
     }
     
     &-check--green {
+        .filter-label {
+            color: #9b9595;
+        }
+        
         .filter-label::before {
             content: '';
-            border: 1px solid #5c3321;
+            border: 1px solid #dedcd6;
+    
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+        .filter-label::after {
+            content: '';
+            background-color: #dedcd6;
+            border: 1px solid #dedcd6;
+            width: .9rem;
+            height: .9rem;
+            top: .6rem;
+            left: .4rem;
         }
     
+        .filter-radio:checked+.filter-label {
+            color: #555451;
+        }
+        
         .filter-radio:checked+.filter-label::after {
             content: '';
-            background-color: #5c3321;
+            background-color: #7cbd41;
+            border: 1px solid #7cbd41;
+        }
+        
+        .filter-radio:checked+.filter-label::before {
+            content: '';
+            border: 1px solid #7cbd41;
         }
     }
 

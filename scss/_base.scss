@@ -244,10 +244,23 @@ body.done .footer {
 
 //------------------------------------------------------------base styles###
 
+h1 {
+    font-size: 2.6rem;
+    line-height: 1;
+    color: #9b806f;
+    margin: 0;
+    font-weight: 400;
+}
 
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #9b806f;
+    margin: 0;
+    font-weight: 400;
+}
 
 h3 {
-    //font-family: $font_serif;
     font-size: 1.8rem;
     line-height: 1.2;
     color: #9b806f;
@@ -256,28 +269,26 @@ h3 {
 }
 
 h4 {
-    //font-family: $font_serif;
-    //font-size: 1.7rem;
-    //line-height: 1.2;
-    //color: #9b806f;
-    //margin: 0;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    color: #9b806f;
+    margin: 0;
     font-weight: 400;
 }
 h5 {
-    //font-family: $font_serif;
-    //font-size: 1.3rem;
-    //line-height: 1.2;
-    //color: #9b806f;
-    //margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #9b806f;
+    margin: 0;
     font-weight: 400;
 }
 
 h6 {
-    //font-family: $font_serif;
-    //font-size: 1.2rem;
-    //line-height: 1.2;
-    //color: #9b806f;
-    //margin: 0;
+    font-family: $font_serif;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #9b806f;
+    margin: 0;
     font-weight: 400;
 }
 
@@ -3150,7 +3161,18 @@ a.c-button {
     .order-tabs {
         margin-left: 0;
     }
+    
+    .filter-check__item {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    
+    .filter-left {
+        justify-content: flex-start;
+    }
 }
+
+
 .a-text {
     font-size: 1.3rem;
     color: $black;
