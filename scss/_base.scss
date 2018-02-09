@@ -64,20 +64,39 @@ body {
 
 .c-ul-list {
     font-family: $font_serif;
-    padding-left: 14px;
+    padding-left: 1.4rem;
 }
 
-.c-ul-list li {
-    list-style: circle outside;
-    margin-bottom: .2rem;
+.c-ul-list {
+    
+    li {
+        list-style: disc outside;
+        margin-bottom: .2rem;
+        font-size: 1.3rem;
+        ul {
+            padding-left: 4.6rem;
+            li {
+                list-style: circle outside;
+            }
+        }
+    }
 }
 
 .c-ol-list {
     font-family: $font_serif;
-    margin-left: 2rem;
+    padding-left: 1.4rem;
     li {
         list-style-type: decimal;
         margin-bottom: .2rem;
+        font-size: 1.3rem;
+    
+    
+        ul {
+            padding-left: 4.6rem;
+            li {
+                list-style: lower-latin outside;
+            }
+        }
     }
 }
 
@@ -225,19 +244,40 @@ body.done .footer {
 
 //------------------------------------------------------------base styles###
 
-h1 {
-font-weight: 400;
-}
 
-h2 {
-    font-weight: 400;
-}
 
 h3 {
+    //font-family: $font_serif;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #9b806f;
+    margin: 0;
     font-weight: 400;
 }
 
 h4 {
+    //font-family: $font_serif;
+    //font-size: 1.7rem;
+    //line-height: 1.2;
+    //color: #9b806f;
+    //margin: 0;
+    font-weight: 400;
+}
+h5 {
+    //font-family: $font_serif;
+    //font-size: 1.3rem;
+    //line-height: 1.2;
+    //color: #9b806f;
+    //margin: 0;
+    font-weight: 400;
+}
+
+h6 {
+    //font-family: $font_serif;
+    //font-size: 1.2rem;
+    //line-height: 1.2;
+    //color: #9b806f;
+    //margin: 0;
     font-weight: 400;
 }
 
@@ -246,7 +286,7 @@ p {
 }
 
 /*title*/
-h1,
+
 .c-title__h1 {
     font-family: $font_serif;
     font-size: 2.6rem;
@@ -254,10 +294,10 @@ h1,
     color: #9b806f;
     margin: 0;
     font-weight: 400;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-h2,
+
 .c-title__h2 {
     font-family: $font_serif;
     font-size: 2rem;
@@ -265,10 +305,9 @@ h2,
     color: #9b806f;
     margin: 0;
     font-weight: 400;
-    margin-bottom: 2.3rem;
+    margin-bottom: 1.8rem;
 }
 
-h3,
 .c-title__h3 {
     font-family: $font_serif;
     font-size: 1.8rem;
@@ -276,10 +315,9 @@ h3,
     color: #9b806f;
     margin: 0;
     font-weight: 400;
-    margin-bottom: 2.3rem;
+    margin-bottom: 1.6rem;
 }
 
-h4,
 .c-title__h4 {
     font-family: $font_serif;
     font-size: 1.7rem;
@@ -287,10 +325,15 @@ h4,
     color: #9b806f;
     margin: 0;
     font-weight: 400;
-    margin-bottom: 2.3rem;
+    margin-bottom: 1.4rem;
+    
+    .c-icon {
+        font-size: 1rem;
+        margin-right: .6rem;
+        vertical-align: baseline;
+    }
 }
 
-h5,
 .c-title__h5 {
     font-family: $font_serif;
     font-size: 1.3rem;
@@ -298,10 +341,9 @@ h5,
     color: #9b806f;
     margin: 0;
     font-weight: 400;
-    margin-bottom: 2.3rem;
+    margin-bottom: 1.2rem;
 }
 
-h6,
 .c-title__h6 {
     font-family: $font_serif;
     font-size: 1.2rem;
@@ -309,7 +351,7 @@ h6,
     color: #9b806f;
     margin: 0;
     font-weight: 400;
-    margin-bottom: 2.3rem;
+    margin-bottom: 1rem;
 }
 
 //------------------------------------------------------------form
@@ -399,6 +441,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     height: .8rem;
     background: url(../img/icons/icon-chek.svg) no-repeat 50% 50%;
 }
+
 
 .c-input {
     display: block;
@@ -3073,6 +3116,49 @@ a.c-button {
 /*Стили--------------------------------------------------*/
 .styles {
     //padding: 5rem 0;
+    
+    &-item {
+        margin-bottom: 4.5rem;
+    }
+    
+    &-box {
+        margin-bottom: 4.5rem;
+    }
+    
+    &-head {
+        
+        &__list {
+            h1, h2, h3, h4, h5, h6 {
+                margin-bottom: 0;
+            }
+        }
+        
+        &__item {
+            padding: 1.2rem 0;
+            border-bottom: 1px dotted #553023;
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+    .creators-history__box {
+        margin-bottom: 2.6rem;
+    }
+    
+    .order-tabs {
+        margin-left: 0;
+    }
+}
+.a-text {
+    font-size: 1.3rem;
+    color: $black;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+.a-indent {
+    text-indent: 3.4rem;
 }
 
 /*c-title-special--------------------------------------------------*/

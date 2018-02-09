@@ -1997,6 +1997,18 @@ test popup
             display: inline-block;
         }
     }
+    
+    &-check--green {
+        .filter-label::before {
+            content: '';
+            border: 1px solid #5c3321;
+        }
+    
+        .filter-radio:checked+.filter-label::after {
+            content: '';
+            background-color: #5c3321;
+        }
+    }
 
     .l-button__center {
         display: none;
@@ -4039,6 +4051,13 @@ test popup
             color: #9b806f;
             margin-bottom: 1.8rem;
             text-transform: uppercase;
+            
+            .c-icon {
+                position: relative;
+                top: .4rem;
+                margin-right: .8rem;
+                font-size: 1rem;
+            }
         }
 
         p {
@@ -5457,6 +5476,11 @@ test popup
     &-tabs {
         margin-bottom: 4.8rem;
         margin-left: -1.7rem;
+        
+        &__nav {
+            margin-bottom: 1.4rem;
+            border-bottom: .5rem solid #7cbd41;
+        }
 
         &__item {
             display: inline-block;
@@ -5500,8 +5524,6 @@ test popup
     }
 
     .tab {
-        padding-top: 1.4rem;
-        border-top: .5rem solid #7cbd41;
 
     }
 
