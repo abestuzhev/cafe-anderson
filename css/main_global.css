@@ -1307,6 +1307,7 @@ p {
   font-family: "PT Serif Caption"; }
 
 /*title*/
+h1,
 .c-title__h1 {
   font-family: "PT Serif Caption";
   font-size: 2.6rem;
@@ -1316,9 +1317,50 @@ p {
   font-weight: 400;
   margin-bottom: 3rem; }
 
+h2,
 .c-title__h2 {
   font-family: "PT Serif Caption";
   font-size: 2rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 2.3rem; }
+
+h3,
+.c-title__h3 {
+  font-family: "PT Serif Caption";
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 2.3rem; }
+
+h4,
+.c-title__h4 {
+  font-family: "PT Serif Caption";
+  font-size: 1.7rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 2.3rem; }
+
+h5,
+.c-title__h5 {
+  font-family: "PT Serif Caption";
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 2.3rem; }
+
+h6,
+.c-title__h6 {
+  font-family: "PT Serif Caption";
+  font-size: 1.2rem;
   line-height: 1.2;
   color: #9b806f;
   margin: 0;
@@ -3518,9 +3560,6 @@ a.c-button:hover {
     font-style: normal; }
 
 /*Стили--------------------------------------------------*/
-.styles {
-  padding: 5rem 0; }
-
 /*c-title-special--------------------------------------------------*/
 .c-caption-special {
   padding: 2.1rem;
@@ -4532,6 +4571,7 @@ a.c-button:hover {
         content: '';
         display: none; }
     .header-navigation__title {
+      font-family: "BebasNeue";
       text-transform: uppercase;
       font-size: 2.7rem;
       line-height: 1;
@@ -4539,11 +4579,15 @@ a.c-button:hover {
       letter-spacing: .1rem;
       margin-bottom: .3rem;
       display: inline-block;
-      position: relative; }
+      position: relative;
+      color: #ffffff; }
     .header-navigation__subtitle {
+      font-family: "BebasNeue";
       text-transform: uppercase;
       font-size: 1.4rem;
-      letter-spacing: .1rem; }
+      letter-spacing: .1rem;
+      margin-bottom: 0;
+      color: #ffffff; }
   .header-subnavigation {
     background-color: #7e5847;
     position: absolute;
@@ -10232,7 +10276,8 @@ test popup
   margin-bottom: 2.8rem; }
 
 .cake-item {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 2.5rem;
+  width: 100%; }
 
 .cake-block__text {
   padding: 2rem 1.8rem;

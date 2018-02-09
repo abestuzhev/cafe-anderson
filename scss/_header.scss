@@ -842,6 +842,7 @@
         }
 
         &__title {
+            font-family: $font_sans-serif;
             text-transform: uppercase;
             font-size: 2.7rem;
             line-height: 1;
@@ -850,13 +851,17 @@
             margin-bottom: .3rem;
             display: inline-block;
             position: relative;
+            color: #ffffff;
         }
 
         &__subtitle {
+            font-family: $font_sans-serif;
             text-transform: uppercase;
             font-size: 1.4rem;
             //font-weight: 700;
             letter-spacing: .1rem;
+            margin-bottom: 0;
+            color: #ffffff;
         }
     }
 
