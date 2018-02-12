@@ -2642,8 +2642,8 @@ a.c-button:hover {
     .c-card-contact-cafe__item--metro {
       padding-left: 0; }
       .c-card-contact-cafe__item--metro span {
-        margin-left: 0;
-        margin-right: .8rem; }
+        margin-left: 0 !important;
+        margin-right: .8rem !important; }
   .c-card-contact-cafe__service {
     margin-left: -2.8rem; }
 
