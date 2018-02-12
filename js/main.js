@@ -30,6 +30,18 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 // console.log('Ширина wrapper: ' + documentWidth);
 
 $(window).on('load', function(){
+
+    function getScrollElem (elem){
+        if($(window).width() <= 800) {
+            new SimpleBar($(elem)[0]);
+        }
+    }
+
+    getScrollElem('.factory-layout');
+    $(window).on('resize', function () {
+        getScrollElem('.factory-layout');
+    });
+
         var $datepicker = $('.datepicker-here');
         $datepicker.datepicker({
             minDate: new Date(),
@@ -77,16 +89,7 @@ $(window).on('load', function(){
         minDate: new Date()
     });
 
-    function getScrollElem (elem){
-        if($(window).width() <= 800) {
-            new SimpleBar($(elem)[0]);
-        }
-    }
 
-    getScrollElem('.factory-layout');
-    $(window).on('resize', function () {
-        getScrollElem('.factory-layout');
-    });
 
 });
 
