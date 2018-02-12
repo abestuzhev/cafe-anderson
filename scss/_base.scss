@@ -1999,6 +1999,15 @@ a.c-button {
         i.icon-mark {
 
         }
+        
+        &--metro {
+            padding-left: 0;
+            
+            span {
+                margin-left: 0;
+                margin-right: .8rem;
+            }
+        }
     }
 
     &__service {
