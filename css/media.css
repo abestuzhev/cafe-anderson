@@ -2706,6 +2706,7 @@
     .news-and-stock .post__body img {
         margin-right: 0;
         width: 100%;
+        max-width: 100%;
         float: none;
     }
 
