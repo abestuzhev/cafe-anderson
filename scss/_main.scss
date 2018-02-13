@@ -7592,7 +7592,7 @@ test popup
     width: 100%;
     text-align: center;
     float: none;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 
     span {
         display: inline-block;
@@ -7820,7 +7820,6 @@ test popup
 
     .timeline > .timeline-month {
         text-align: left;
-        margin-bottom: 2rem;
         span {
             max-width: none;
         }
