@@ -1358,7 +1358,11 @@ h6 {
   font-weight: 400; }
 
 p {
-  font-family: "PT Serif Caption"; }
+  font-family: "PT Serif Caption";
+  font-size: 1.4rem;
+  color: #555451;
+  line-height: 1.4;
+  margin-bottom: 1rem; }
 
 .a-text {
   font-size: 1.4rem;
@@ -2286,6 +2290,9 @@ a.c-button:hover {
       line-height: 0.75;
       text-align: left;
       color: #231300; }
+      .c-card-event__title a::after {
+        content: '';
+        border: none; }
   .c-card-event__info {
     margin-bottom: 1.3rem;
     border-bottom: 1px solid #cec9c0;
@@ -7362,7 +7369,8 @@ test popup
       text-align: left;
       color: #ffffff; }
       .cafe-description__text p {
-        margin-bottom: 2.3rem; }
+        margin-bottom: 2.3rem;
+        color: #ffffff; }
         .cafe-description__text p:last-child {
           margin-bottom: 0; }
   .cafe-reviews {

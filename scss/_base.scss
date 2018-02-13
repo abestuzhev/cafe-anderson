@@ -321,10 +321,10 @@ h6 {
 
 p {
     font-family: $font_serif;
-    //font-size: 1.4rem;
-    //color: $black;
-    //line-height: 1.4;
-    //margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: $black;
+    line-height: 1.4;
+    margin-bottom: 1rem;
 }
 
 .a-text {
@@ -1542,6 +1542,11 @@ a.c-button {
             line-height: 0.75;
             text-align: left;
             color: #231300;
+            
+            &::after {
+                content: '';
+                border: none;
+            }
         }
     }
 
