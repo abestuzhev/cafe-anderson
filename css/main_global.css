@@ -1170,8 +1170,7 @@ body {
       .c-ol-list li ul li {
         list-style: lower-latin outside; }
         .c-ol-list li ul li:before {
-          content: '';
-          counter-increment: item; }
+          content: ''; }
 
 .wrapper {
   position: relative;
@@ -11042,7 +11041,7 @@ test popup
   width: 100%;
   text-align: center;
   float: none;
-  margin-bottom: 0; }
+  margin-bottom: 2rem; }
   .timeline > .timeline-month span {
     display: inline-block;
     text-align: center;
@@ -11213,8 +11212,7 @@ test popup
   .timeline > li.timeline-inverted > .timeline-badge {
     left: 10px; }
   .timeline > .timeline-month {
-    text-align: left;
-    margin-bottom: 2rem; }
+    text-align: left; }
     .timeline > .timeline-month span {
       max-width: none; }
   .timeline > li:nth-child(2) {
