@@ -1146,27 +1146,33 @@ body {
   font-family: "PT Serif Caption";
   padding-left: 1.4rem; }
 
-.c-ul-list li {
-  list-style: disc outside;
-  margin-bottom: .2rem;
-  font-size: 1.3rem; }
-  .c-ul-list li ul {
-    padding-left: 4.6rem; }
-    .c-ul-list li ul li {
-      list-style: circle outside; }
+.c-ul-list {
+  margin-left: 3.5rem;
+  font-family: "PT Serif Caption"; }
+  .c-ul-list li {
+    list-style: disc outside;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+    padding-left: .3rem; }
+    .c-ul-list li ul {
+      padding-left: 6.4rem; }
+      .c-ul-list li ul li {
+        list-style: circle outside; }
 
 .c-ol-list {
   font-family: "PT Serif Caption";
   list-style-type: none;
-  counter-reset: item; }
+  counter-reset: item;
+  margin-left: 3.5rem; }
   .c-ol-list li {
     margin-bottom: .2rem;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    padding-left: .3rem; }
     .c-ol-list li:before {
       content: counter(item) ") ";
       counter-increment: item; }
     .c-ol-list li ul {
-      padding-left: 4.6rem; }
+      padding-left: 6.4rem; }
       .c-ol-list li ul li {
         list-style: lower-latin outside; }
         .c-ol-list li ul li:before {
