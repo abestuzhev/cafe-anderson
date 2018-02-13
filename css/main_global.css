@@ -1360,6 +1360,15 @@ h6 {
 p {
   font-family: "PT Serif Caption"; }
 
+.a-text {
+  font-size: 1.4rem;
+  color: #555451;
+  line-height: 1.4;
+  margin-bottom: 1rem; }
+
+.a-indent {
+  text-indent: 3.4rem; }
+
 /*title*/
 .c-title__h1 {
   font-family: "PT Serif Caption";
@@ -3646,15 +3655,6 @@ a.c-button:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
-
-.a-text {
-  font-size: 1.3rem;
-  color: #555451;
-  line-height: 1.4;
-  margin-bottom: 1rem; }
-
-.a-indent {
-  text-indent: 3.4rem; }
 
 /*c-title-special--------------------------------------------------*/
 .c-caption-special {

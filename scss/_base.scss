@@ -321,6 +321,21 @@ h6 {
 
 p {
     font-family: $font_serif;
+    //font-size: 1.4rem;
+    //color: $black;
+    //line-height: 1.4;
+    //margin-bottom: 1rem;
+}
+
+.a-text {
+    font-size: 1.4rem;
+    color: $black;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.a-indent {
+    text-indent: 3.4rem;
 }
 
 /*title*/
@@ -3208,16 +3223,6 @@ a.c-button {
     }
 }
 
-
-.a-text {
-    font-size: 1.3rem;
-    color: $black;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-}
-.a-indent {
-    text-indent: 3.4rem;
-}
 
 /*c-title-special--------------------------------------------------*/
 .c-caption-special {
