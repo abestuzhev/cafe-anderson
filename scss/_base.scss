@@ -84,17 +84,37 @@ body {
 
 .c-ol-list {
     font-family: $font_serif;
-    padding-left: 1.4rem;
+    //padding-left: 1.4rem;
+    list-style-type: none;
+    counter-reset: item;
+    
     li {
-        list-style-type: decimal;
+        //list-style-type: decimal;
         margin-bottom: .2rem;
         font-size: 1.3rem;
+        //padding-left: 1.7rem;
+        //list-style-type: none;
+        //counter-reset: item;
+        //
+        //&:before {
+        //    content: counter(item) ') ';
+        //    counter-increment: item;
+        //}
+    
+        &:before {
+            content: counter(item) ') ';
+            counter-increment: item;
+        }
+        
     
     
         ul {
             padding-left: 4.6rem;
             li {
                 list-style: lower-latin outside;
+                &:before {
+                    content: '';
+                }
             }
         }
     }

@@ -7750,7 +7750,7 @@ test popup
 }
 
 .timeline > li:nth-child(2) {
-    margin-top: 60px;
+    //margin-top: 60px;
 }
 
 .timeline > li.timeline-inverted > .timeline-badge {
@@ -7820,6 +7820,7 @@ test popup
 
     .timeline > .timeline-month {
         text-align: left;
+        margin-bottom: 2rem;
         span {
             max-width: none;
         }

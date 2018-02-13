@@ -1157,15 +1157,21 @@ body {
 
 .c-ol-list {
   font-family: "PT Serif Caption";
-  padding-left: 1.4rem; }
+  list-style-type: none;
+  counter-reset: item; }
   .c-ol-list li {
-    list-style-type: decimal;
     margin-bottom: .2rem;
     font-size: 1.3rem; }
+    .c-ol-list li:before {
+      content: counter(item) ") ";
+      counter-increment: item; }
     .c-ol-list li ul {
       padding-left: 4.6rem; }
       .c-ol-list li ul li {
         list-style: lower-latin outside; }
+        .c-ol-list li ul li:before {
+          content: '';
+          counter-increment: item; }
 
 .wrapper {
   position: relative;
@@ -11160,9 +11166,6 @@ test popup
   margin-top: 30px;
   margin-bottom: 30px; }
 
-.timeline > li:nth-child(2) {
-  margin-top: 60px; }
-
 .timeline > li.timeline-inverted > .timeline-badge {
   left: -9px; }
 
@@ -11210,7 +11213,8 @@ test popup
   .timeline > li.timeline-inverted > .timeline-badge {
     left: 10px; }
   .timeline > .timeline-month {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 2rem; }
     .timeline > .timeline-month span {
       max-width: none; }
   .timeline > li:nth-child(2) {
