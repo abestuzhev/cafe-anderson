@@ -2511,6 +2511,7 @@ test popup
 
 .tab-content {
     display: none;
+    font-size: 1.3rem;
 }
 
 .tab-content:first-child {
@@ -6860,6 +6861,10 @@ test popup
 
             &__text {
 
+            }
+            
+            ol, ul {
+                margin-left: 0;
             }
         }
     }

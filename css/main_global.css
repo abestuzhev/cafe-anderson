@@ -1148,7 +1148,8 @@ body {
 
 .c-ul-list {
   margin-left: 3.5rem;
-  font-family: "PT Serif Caption"; }
+  font-family: "PT Serif Caption";
+  margin-bottom: 1rem; }
   .c-ul-list li {
     list-style: disc outside;
     margin-bottom: .3rem;
@@ -1163,7 +1164,8 @@ body {
   font-family: "PT Serif Caption";
   list-style-type: none;
   counter-reset: item;
-  margin-left: 3.5rem; }
+  margin-left: 3.5rem;
+  margin-bottom: 1rem; }
   .c-ol-list li {
     margin-bottom: .2rem;
     font-size: 1.3rem;
@@ -7039,7 +7041,8 @@ test popup
       border: none; }
 
 .tab-content {
-  display: none; }
+  display: none;
+  font-size: 1.3rem; }
 
 .tab-content:first-child {
   display: block; }
@@ -10427,6 +10430,8 @@ test popup
     bottom: 10%;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.8); }
+    .cake-sale-description ol, .cake-sale-description ul {
+      margin-left: 0; }
 
 .cake-order__list {
   display: -webkit-box;
