@@ -480,12 +480,12 @@ $(document).ready(function ($) {
     });
 
     /*показываем маленький блок с выбранными товарами в карточке товара (мобильная версия)*/
-    $('.popup-product__check-mobile').on('click', function(e){
+    $(document).on('click', '.popup-product__check-mobile', function(e){
         e.preventDefault();
         $('.popup-product .popup-mini').addClass('active');
     });
     /*закрываем маленький попап с товарами*/
-    $('.popup-product__check-close').on('click', function(e){
+    $(document).on('click', '.popup-product__check-close', function(e){
         e.preventDefault();
         $('.popup-product .popup-mini').removeClass('active');
     });

@@ -1446,6 +1446,7 @@ main {
 .popup-mini {
     font-family: $font_serif;
     width: 26.4rem;
+    min-width: 26.4rem;
     overflow: hidden;
     border-radius: 1rem;
     margin-left: 1.2rem;
