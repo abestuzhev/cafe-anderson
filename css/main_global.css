@@ -6001,8 +6001,7 @@ main {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      width: 40%; }
+              align-items: center; }
       .popup-basket-card__img-layout {
         width: 8.6rem;
         height: 7.3rem;
@@ -6021,8 +6020,7 @@ main {
         width: auto;
         height: auto; }
     .popup-basket-card__body {
-      overflow: hidden;
-      width: 60%; }
+      overflow: hidden; }
     .popup-basket-card__title {
       font-size: 1.2rem;
       color: #555451;
@@ -6034,7 +6032,7 @@ main {
       color: #555451;
       margin-bottom: 1rem; }
     .popup-basket-card__grid {
-      width: 100%; }
+      width: 200px; }
     .popup-basket-card__item::before {
       content: '✓';
       margin-right: .4rem; }

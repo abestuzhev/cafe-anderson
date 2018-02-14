@@ -1081,7 +1081,7 @@ main {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            width: 40%;
+            // width: 40%;
 
             &-layout {
                 width: 8.6rem;
@@ -1107,7 +1107,8 @@ main {
 
         &__body {
             overflow: hidden;
-            width: 60%;
+            // width: 60%;
+            // width: 100px;
         }
 
         &__title {
@@ -1125,7 +1126,7 @@ main {
         }
 
         &__grid {
-            width: 100%;
+            width: 200px;
         }
 
         &__item {
