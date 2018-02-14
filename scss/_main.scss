@@ -1081,6 +1081,7 @@ main {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
+            width: 40%;
 
             &-layout {
                 width: 8.6rem;
@@ -1106,6 +1107,7 @@ main {
 
         &__body {
             overflow: hidden;
+            width: 60%;
         }
 
         &__title {
@@ -1113,12 +1115,17 @@ main {
             color: $black;
             padding-right: 2rem;
             margin-bottom: .4rem;
+            overflow-wrap: break-word;
         }
 
         &__list {
             font-size: 1.2rem;
             color: $black;
             margin-bottom: 1rem;
+        }
+
+        &__grid {
+            width: 100%;
         }
 
         &__item {
