@@ -69,7 +69,6 @@ $(window).on('load', function(){
     });
 
     //календарь в мероприятиях
-    //date.getDate(); убрать
     var eventDates = [1, 10, 12, 22];
     $('#event-datepicker').datepicker({
         inline: true,
