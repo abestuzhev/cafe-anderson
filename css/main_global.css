@@ -3516,6 +3516,19 @@ a.c-button:hover {
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
   border-top-color: #a8a4a2; }
 
+.bg-blur {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: scale(1.2) translate(-50%, -50%);
+      -ms-transform: scale(1.2) translate(-50%, -50%);
+          transform: scale(1.2) translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  opacity: 1; }
+
 /*кнопка вверх*/
 .cd-top {
   display: inline-block;
@@ -7204,6 +7217,7 @@ test popup
     .cafe-slider__body {
       position: relative;
       width: 100%;
+      overflow: hidden;
       background-image: url(../img/cafe-slider-1-blur.jpg);
       background-position: 50% 50%;
       background-repeat: no-repeat;
