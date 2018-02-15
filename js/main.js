@@ -42,49 +42,49 @@ $(window).on('load', function(){
         getScrollElem('.factory-layout');
     });
 
-        // var $datepicker = $('.datepicker-here');
-        // $datepicker.datepicker({
-        //     minDate: new Date(),
-        //     autoClose: true
-        // });
-        // $datepicker.on('focus', function () {
-        //     $(this).parents('.datepicker-layout').addClass('active-datepicker');
-        // });
+        var $datepicker = $('.datepicker-here');
+        $datepicker.datepicker({
+            minDate: new Date(),
+            autoClose: true
+        });
+        $datepicker.on('focus', function () {
+            $(this).parents('.datepicker-layout').addClass('active-datepicker');
+        });
 
 
-    // var disabledPartyDays = [0, 6];
-    // $('#party-datepicker').datepicker({
-    //     minDate: new Date(),
-    //     inline: true,
-    //     onRenderCell: function (date, cellType) {
-    //         if (cellType == 'day') {
-    //             var day = date.getDay(),
-    //                 isDisabled = disabledPartyDays.indexOf(day) != -1;
-    //
-    //             return {
-    //                 disabled: isDisabled
-    //             }
-    //         }
-    //     }
-    // });
+    var disabledPartyDays = [0, 6];
+    $('#party-datepicker').datepicker({
+        minDate: new Date(),
+        inline: true,
+        onRenderCell: function (date, cellType) {
+            if (cellType == 'day') {
+                var day = date.getDay(),
+                    isDisabled = disabledPartyDays.indexOf(day) != -1;
+
+                return {
+                    disabled: isDisabled
+                }
+            }
+        }
+    });
 
     //календарь в мероприятиях
     //date.getDate(); убрать
-    // var eventDates = [1, 10, 12, 22];
-    // $('#event-datepicker').datepicker({
-    //     inline: true,
-    //     onRenderCell: function (date, cellType) {
-    //         var currentDate = date.getDate();
-    //         if (cellType == 'day' && eventDates.indexOf(currentDate) != -1) {
-    //             return {
-    //                 html: currentDate + '<span class="dp-note"></span>'
-    //             }
-    //         }
-    //     }
-    // });
-    // $('.js-event-order-datepicker').datepicker({
-    //     minDate: new Date()
-    // });
+    var eventDates = [1, 10, 12, 22];
+    $('#event-datepicker').datepicker({
+        inline: true,
+        onRenderCell: function (date, cellType) {
+            var currentDate = date.getDate();
+            if (cellType == 'day' && eventDates.indexOf(currentDate) != -1) {
+                return {
+                    html: currentDate + '<span class="dp-note"></span>'
+                }
+            }
+        }
+    });
+    $('.js-event-order-datepicker').datepicker({
+        minDate: new Date()
+    });
 
 
 
