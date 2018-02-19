@@ -90,10 +90,25 @@ $(window).on('load', function(){
 });
 
 $(document).ready(function ($) {
-
-
-
     //------------------------------------------------------------custom
+
+    /*картинки одной ширины*/
+
+    $('.c-card-catalog__img').each(function(index, elem){
+        var img = $(elem).children('img'),
+            imgWidth = img.width(),
+            $this = $(elem);
+
+        console.log('element ' + index + ': ' + 'width: ' + imgWidth);
+        if(imgWidth < 390 ) {
+            $this.addClass('big-product-img');
+            console.log('есть картинка меньше 390');
+        }else {
+            $this.removeClass('big-product-img');
+            console.log('работает но картинки нет');
+        }
+    });
+
 
     //показать все мероприятия по дням на странице Мероприятия
     $(document).on('click', '.c-card-event-timelist__more', function(e){
