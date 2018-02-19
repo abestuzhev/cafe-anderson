@@ -932,6 +932,12 @@ i.icon-chair {
   width: 1em;
   height: 1.26em; }
 
+.symbol-salad {
+  fill: #7f7d7c;
+  font-size: 2rem;
+  width: 1em;
+  height: .9em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -5976,8 +5982,7 @@ main {
     color: #9b9696;
     margin: 1rem 0; }
   .popup-basket__scroll {
-    position: relative;
-    height: calc(100vh - 190px); }
+    position: relative; }
   .popup-basket__all-sum {
     font-size: 1.4rem;
     color: #555451;
@@ -11591,3 +11596,6 @@ test popup
       right: 0;
       bottom: 0;
       z-index: 1; }
+
+.fixed-height-basket {
+  height: calc(100vh - 190px); }

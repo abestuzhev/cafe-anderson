@@ -28,6 +28,9 @@ var windowWidth = (window.innerWidth ); // вся ширина окна
 var documentWidth = (document.documentElement.clientWidth ); // ширина минус прокрутка
 // console.log('Ширина window: ' + windowWidth);
 // console.log('Ширина wrapper: ' + documentWidth);
+var documentHeight = (document.documentElement.clientHeight );
+console.log('высота ' + documentHeight);
+
 
 $(window).on('load', function(){
 
@@ -91,7 +94,25 @@ $(window).on('load', function(){
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
+    // documentHeight
 
+    function changeHeightBasketPopup (){
+        var basketScroll= $('.popup-basket__scroll'),
+            heightBasket = basketScroll.height();
+
+        if (heightBasket >= documentHeight){
+            basketScroll.addClass('fixed-height-basket');
+            // console.log('if ' + heightBasket);
+        }else {
+            basketScroll.removeClass('fixed-height-basket');
+            // console.log('else ' + heightBasket);
+        }
+    }
+
+
+    $(window).resize(function(){
+        changeHeightBasketPopup();
+    });
     /*картинки одной ширины*/
 
     $('.c-card-catalog__img').each(function(index, elem){

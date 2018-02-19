@@ -995,7 +995,7 @@ main {
     &__scroll {
         position: relative;
         //height: 748px;
-        height: calc(100vh - 190px);
+        //height: calc(100vh - 190px);
         //margin-right: -6px;
         //
         //&::after {
@@ -8254,4 +8254,9 @@ test popup
         }
     }
 
+}
+
+
+.fixed-height-basket {
+    height: calc(100vh - 190px);
 }
