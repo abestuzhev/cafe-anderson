@@ -2217,17 +2217,43 @@ test popup
 
         &__subitem {
             margin-bottom: .6rem;
+            line-height: 1;
+            padding-left: .9rem;
+            position: relative;
+            
+            &:before {
+                content: '-';
+                margin-right: .4rem;
+                position: absolute;
+                top: -.1rem;
+                left: 0;
+            }
+    
+            
             a {
                 font-size: 1.4rem;
                 text-transform: lowercase;
+                border-bottom: 1px dotted #9b806f;
+    
+                &:after {
+                    content: '';
+                    border: none;
+                }
             }
 
             &:hover {
                 color: #7cbd41;
+                
+            }
+            
+            &:hover  a:after {
+                content: '';
+                border: none;
             }
 
             &.active {
                 color: #7cbd41;
+                
                 a {
                     color: #7cbd41;
 

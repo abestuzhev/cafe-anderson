@@ -6873,12 +6873,28 @@ test popup
       list-style: square;
       margin: .2rem 0 .6rem 2.3rem; }
     .filter-hold__subitem {
-      margin-bottom: .6rem; }
+      margin-bottom: .6rem;
+      line-height: 1;
+      padding-left: .9rem;
+      position: relative; }
+      .filter-hold__subitem:before {
+        content: '-';
+        margin-right: .4rem;
+        position: absolute;
+        top: -.1rem;
+        left: 0; }
       .filter-hold__subitem a {
         font-size: 1.4rem;
-        text-transform: lowercase; }
+        text-transform: lowercase;
+        border-bottom: 1px dotted #9b806f; }
+        .filter-hold__subitem a:after {
+          content: '';
+          border: none; }
       .filter-hold__subitem:hover {
         color: #7cbd41; }
+      .filter-hold__subitem:hover a:after {
+        content: '';
+        border: none; }
       .filter-hold__subitem.active {
         color: #7cbd41; }
         .filter-hold__subitem.active a {
