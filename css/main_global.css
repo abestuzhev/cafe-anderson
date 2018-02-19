@@ -2818,7 +2818,13 @@ a.c-button:hover {
       top: -.3rem;
       left: 0;
       height: 9rem;
-      width: 100%; }
+      width: 100%;
+      background: white;
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+      background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
   .c-card-catalog--mini {
     display: block;
     width: auto;
