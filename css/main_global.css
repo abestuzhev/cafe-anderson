@@ -6878,7 +6878,6 @@ test popup
       padding-left: .9rem;
       position: relative; }
       .filter-hold__subitem:before {
-        content: '-';
         margin-right: .4rem;
         position: absolute;
         top: -.1rem;
