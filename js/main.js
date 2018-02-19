@@ -29,7 +29,7 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 // console.log('Ширина window: ' + windowWidth);
 // console.log('Ширина wrapper: ' + documentWidth);
 var documentHeight = (document.documentElement.clientHeight );
-console.log('высота ' + documentHeight);
+// console.log('высота ' + documentHeight);
 
 
 $(window).on('load', function(){
@@ -123,10 +123,10 @@ $(document).ready(function ($) {
         console.log('element ' + index + ': ' + 'width: ' + imgWidth);
         if(imgWidth < 390 ) {
             $this.addClass('big-product-img');
-            console.log('есть картинка меньше 390');
+            // console.log('есть картинка меньше 390');
         }else {
             $this.removeClass('big-product-img');
-            console.log('работает но картинки нет');
+            // console.log('работает но картинки нет');
         }
     });
 
