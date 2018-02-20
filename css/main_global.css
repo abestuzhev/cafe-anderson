@@ -6669,6 +6669,8 @@ test popup
         background-size: cover; }
     .filter-hold__item.active .filter-hold__submenu {
       display: block; }
+    .filter-hold__item ul {
+      display: none; }
     .filter-hold__link {
       color: #555451;
       display: block;
@@ -11397,8 +11399,7 @@ test popup
       z-index: 1; }
 
 .big-product-img {
-  width: 100%;
-  top: 0 !important; }
+  width: 100%; }
   .big-product-img img {
     width: 100%; }
 

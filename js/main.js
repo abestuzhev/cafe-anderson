@@ -94,8 +94,17 @@ $(window).on('load', function(){
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
-    // documentHeight
 
+    $(document).on('click', '.filter-hold__item', function(e){
+        e.preventDefault();
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $(this).children('.filter-hold__submenu').slideDown(300);
+    });
+
+
+
+    // documentHeight
     function changeHeightBasketPopup (){
         var basketScroll= $('.popup-basket__scroll'),
             heightBasket = basketScroll.height();
@@ -531,10 +540,15 @@ $(document).ready(function ($) {
     $('.filter-bage').on('click', function(e){
         e.preventDefault();
         $('.catalog-body').toggleClass('show-category');
+        $(this).toggleClass('js-hide-word');
+        $(this).find('.filter-bage__title span').html('Показать');
+        $('.js-hide-word').find('.filter-bage__title span').html('Скрыть');
     });
+
     $('.filter-hold__close').on('click', function(e){
         e.preventDefault();
         $('.catalog-body').removeClass('show-category');
+        $('.filter-bage__title span').html('Показать');
     });
 
 

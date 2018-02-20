@@ -2140,6 +2140,10 @@ test popup
             &.active .filter-hold__submenu {
                 display: block;
             }
+
+            ul {
+                display: none;
+            }
         }
 
         &__link {
@@ -8187,7 +8191,7 @@ test popup
 
 .big-product-img {
     width: 100%;
-    top: 0 !important;
+    //top: 0 !important;
     img {
         width: 100%;
 
