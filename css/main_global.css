@@ -5911,7 +5911,9 @@ main {
       font-size: 1.2rem;
       color: #555451;
       padding-right: 2rem;
-      margin-bottom: .4rem; }
+      margin-bottom: .4rem;
+      word-wrap: break-word;
+      width: 121px; }
     .popup-basket-card__list {
       font-size: 1.2rem;
       color: #555451;

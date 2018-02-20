@@ -1113,6 +1113,8 @@ main {
             color: $black;
             padding-right: 2rem;
             margin-bottom: .4rem;
+            word-wrap: break-word;
+            width: 121px;
         }
 
         &__list {
