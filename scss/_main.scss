@@ -2652,6 +2652,8 @@ test popup
     &-slider {
         margin-bottom: 4.8rem;
 
+
+
         &__tour {
             position: absolute;
             top: 1.5rem;
@@ -2695,6 +2697,13 @@ test popup
             background-repeat: no-repeat;
             -webkit-background-size: cover;
             background-size: cover;
+            overflow: hidden;
+
+            .bg-blur {
+                position: absolute;
+                width: 100%;
+                filter: blur(5px);
+            }
         }
 
         &__footer {

@@ -7078,7 +7078,13 @@ test popup
       background-image: url(../img/cafe-slider-1-blur.jpg);
       background-position: 50% 50%;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      overflow: hidden; }
+      .cafe-slider__body .bg-blur {
+        position: absolute;
+        width: 100%;
+        -webkit-filter: blur(5px);
+                filter: blur(5px); }
     .cafe-slider__footer {
       width: 100%;
       height: 2.9rem;
