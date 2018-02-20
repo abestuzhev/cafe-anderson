@@ -5287,14 +5287,12 @@ main {
     font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
-    text-transform: uppercase;
-    color: #201600; }
+    text-transform: uppercase; }
   .home-cafe__sub-title {
     font-size: 1.6vw;
     font-weight: 700;
     line-height: 1;
-    text-transform: uppercase;
-    color: #201600; }
+    text-transform: uppercase; }
   .home-cafe__line {
     position: absolute;
     top: 56%;
@@ -5502,14 +5500,12 @@ main {
     font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
-    text-transform: uppercase;
-    color: #201600; }
+    text-transform: uppercase; }
   .home-celebration__sub-title {
     font-size: 1.6vw;
     font-weight: 700;
     line-height: 1;
-    text-transform: uppercase;
-    color: #201600; }
+    text-transform: uppercase; }
 
 @-webkit-keyframes bearMoon {
   0%, 100% {
@@ -5982,7 +5978,8 @@ main {
     color: #9b9696;
     margin: 1rem 0; }
   .popup-basket__scroll {
-    position: relative; }
+    position: relative;
+    height: calc(100vh - 190px); }
   .popup-basket__all-sum {
     font-size: 1.4rem;
     color: #555451;
@@ -6074,14 +6071,11 @@ main {
       font-size: 1.2rem;
       color: #555451;
       padding-right: 2rem;
-      margin-bottom: .4rem;
-      overflow-wrap: break-word; }
+      margin-bottom: .4rem; }
     .popup-basket-card__list {
       font-size: 1.2rem;
       color: #555451;
       margin-bottom: 1rem; }
-    .popup-basket-card__grid {
-      width: 200px; }
     .popup-basket-card__item::before {
       content: '✓';
       margin-right: .4rem; }
@@ -6314,7 +6308,6 @@ main {
 .popup-mini {
   font-family: "PT Serif Caption";
   width: 26.4rem;
-  min-width: 26.4rem;
   overflow: hidden;
   border-radius: 1rem;
   margin-left: 1.2rem; }
@@ -6728,30 +6721,6 @@ test popup
     .filter-check__item {
       margin-right: .6rem;
       display: inline-block; }
-  .filter-check--green .filter-label {
-    color: #9b9595; }
-  .filter-check--green .filter-label::before {
-    content: '';
-    border: 1px solid #dedcd6;
-    width: 1.7rem;
-    height: 1.7rem; }
-  .filter-check--green .filter-label::after {
-    content: '';
-    background-color: #dedcd6;
-    border: 1px solid #dedcd6;
-    width: .9rem;
-    height: .9rem;
-    top: .6rem;
-    left: .4rem; }
-  .filter-check--green .filter-radio:checked + .filter-label {
-    color: #555451; }
-  .filter-check--green .filter-radio:checked + .filter-label::after {
-    content: '';
-    background-color: #7cbd41;
-    border: 1px solid #7cbd41; }
-  .filter-check--green .filter-radio:checked + .filter-label::before {
-    content: '';
-    border: 1px solid #7cbd41; }
   .filter .l-button__center {
     display: none;
     margin-top: 1.8rem; }
@@ -6878,27 +6847,12 @@ test popup
       list-style: square;
       margin: .2rem 0 .6rem 2.3rem; }
     .filter-hold__subitem {
-      margin-bottom: .6rem;
-      line-height: 1;
-      padding-left: .9rem;
-      position: relative; }
-      .filter-hold__subitem:before {
-        margin-right: .4rem;
-        position: absolute;
-        top: -.1rem;
-        left: 0; }
+      margin-bottom: .6rem; }
       .filter-hold__subitem a {
         font-size: 1.4rem;
-        text-transform: lowercase;
-        border-bottom: 1px dotted #9b806f; }
-        .filter-hold__subitem a:after {
-          content: '';
-          border: none; }
+        text-transform: lowercase; }
       .filter-hold__subitem:hover {
         color: #7cbd41; }
-      .filter-hold__subitem:hover a:after {
-        content: '';
-        border: none; }
       .filter-hold__subitem.active {
         color: #7cbd41; }
         .filter-hold__subitem.active a {
@@ -7116,8 +7070,7 @@ test popup
       border: none; }
 
 .tab-content {
-  display: none;
-  font-size: 1.3rem; }
+  display: none; }
 
 .tab-content:first-child {
   display: block; }
@@ -7268,7 +7221,6 @@ test popup
     .cafe-slider__body {
       position: relative;
       width: 100%;
-      overflow: hidden;
       background-image: url(../img/cafe-slider-1-blur.jpg);
       background-position: 50% 50%;
       background-repeat: no-repeat;
@@ -7438,8 +7390,7 @@ test popup
       text-align: left;
       color: #ffffff; }
       .cafe-description__text p {
-        margin-bottom: 2.3rem;
-        color: #ffffff; }
+        margin-bottom: 2.3rem; }
         .cafe-description__text p:last-child {
           margin-bottom: 0; }
   .cafe-reviews {
@@ -8298,11 +8249,6 @@ test popup
       color: #9b806f;
       margin-bottom: 1.8rem;
       text-transform: uppercase; }
-      .creators-history__title .c-icon {
-        position: relative;
-        top: .4rem;
-        margin-right: .8rem;
-        font-size: 1rem; }
     .creators-history p {
       font-size: 1.3rem;
       line-height: 1.4;
@@ -9198,7 +9144,7 @@ test popup
     -webkit-box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
     border-radius: .8rem;
-    padding: 1.3rem 1.7rem;
+    padding: 1.7rem 1.7rem;
     margin-bottom: 3rem;
     overflow: hidden; }
     .order-item__header {
@@ -9215,7 +9161,7 @@ test popup
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      margin-bottom: 1.2rem; }
+      margin-bottom: 1rem; }
       .order-item__header i {
         width: 1.6rem;
         height: 1.6rem;
@@ -9233,15 +9179,15 @@ test popup
   .order-product {
     margin-bottom: 1rem; }
     .order-product__title {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-style: italic;
       line-height: 1;
       text-align: left;
       color: #231300; }
     .order-product__item {
       display: inline-block;
-      margin-right: 1.7rem;
-      font-size: 1.2rem;
+      margin-right: 1rem;
+      font-size: 1.4rem;
       font-style: italic;
       text-align: left;
       color: #9b9595; }
@@ -9364,6 +9310,8 @@ test popup
       width: 100%; }
       .order-delivery-custom__item:last-child {
         margin-right: 0; }
+      .order-delivery-custom__item textarea {
+        height: 4.7rem; }
     .order-delivery-search {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -9440,9 +9388,6 @@ test popup
   .order-tabs {
     margin-bottom: 4.8rem;
     margin-left: -1.7rem; }
-    .order-tabs__nav {
-      margin-bottom: 1.4rem;
-      border-bottom: .5rem solid #7cbd41; }
     .order-tabs__item {
       display: inline-block;
       padding: 1.4rem 1.6rem .8rem 3.3rem;
@@ -9464,6 +9409,9 @@ test popup
       .order-tabs__item a::after {
         content: '';
         border: none; }
+  .order .tab {
+    padding-top: 1.4rem;
+    border-top: .5rem solid #7cbd41; }
   .order input[type="radio"] {
     display: none; }
     .order input[type="radio"]:checked + .order-radio {
@@ -10483,8 +10431,7 @@ test popup
   margin-bottom: 2.8rem; }
 
 .cake-item {
-  margin-bottom: 2.5rem;
-  width: 100%; }
+  margin-bottom: 2.5rem; }
 
 .cake-block__text {
   padding: 2rem 1.8rem;
@@ -10507,8 +10454,6 @@ test popup
     bottom: 10%;
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.8); }
-    .cake-sale-description ol, .cake-sale-description ul {
-      margin-left: 0; }
 
 .cake-order__list {
   display: -webkit-box;
@@ -11019,8 +10964,7 @@ test popup
     .news-and-stock .post__body img {
       float: left;
       margin-right: 3rem;
-      margin-bottom: 2rem;
-      max-width: 50%; }
+      margin-bottom: 2rem; }
     .news-and-stock .post__body p {
       line-height: 1.2;
       margin-bottom: 2rem; }
@@ -11034,7 +10978,7 @@ test popup
  */
 .timeline {
   list-style: none;
-  padding: 0 0 2rem;
+  padding: 6rem 0 2rem;
   position: relative;
   font-family: "PT Serif Caption"; }
 
@@ -11130,7 +11074,7 @@ test popup
   width: 100%;
   text-align: center;
   float: none;
-  margin-bottom: 2rem; }
+  margin-bottom: 0; }
   .timeline > .timeline-month span {
     display: inline-block;
     text-align: center;
@@ -11253,6 +11197,9 @@ test popup
   clear: right;
   margin-top: 30px;
   margin-bottom: 30px; }
+
+.timeline > li:nth-child(2) {
+  margin-top: 60px; }
 
 .timeline > li.timeline-inverted > .timeline-badge {
   left: -9px; }
@@ -11596,9 +11543,3 @@ test popup
       right: 0;
       bottom: 0;
       z-index: 1; }
-
-.fixed-height-basket {
-  height: calc(100vh - 190px); }
-
-.no-product img {
-  width: 100%; }

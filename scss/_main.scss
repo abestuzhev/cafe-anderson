@@ -105,7 +105,6 @@ main {
         line-height: .9;
         margin-bottom: .1em;
         text-transform: uppercase;
-        color: #201600
     }
 
     &__sub-title {
@@ -114,7 +113,6 @@ main {
         font-weight: 700;
         line-height: 1;
         text-transform: uppercase;
-        color: #201600
     }
 
     &__line {
@@ -328,7 +326,6 @@ main {
         line-height: .9;
         margin-bottom: .1em;
         text-transform: uppercase;
-        color: #201600
     }
 
     &__sub-title {
@@ -337,7 +334,6 @@ main {
         font-weight: 700;
         line-height: 1;
         text-transform: uppercase;
-        color: #201600
     }
 
 }
@@ -995,7 +991,7 @@ main {
     &__scroll {
         position: relative;
         //height: 748px;
-        //height: calc(100vh - 190px);
+        height: calc(100vh - 190px);
         //margin-right: -6px;
         //
         //&::after {
@@ -1081,7 +1077,6 @@ main {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
-            // width: 40%;
 
             &-layout {
                 width: 8.6rem;
@@ -1107,8 +1102,6 @@ main {
 
         &__body {
             overflow: hidden;
-            // width: 60%;
-            // width: 100px;
         }
 
         &__title {
@@ -1116,17 +1109,12 @@ main {
             color: $black;
             padding-right: 2rem;
             margin-bottom: .4rem;
-            overflow-wrap: break-word;
         }
 
         &__list {
             font-size: 1.2rem;
             color: $black;
             margin-bottom: 1rem;
-        }
-
-        &__grid {
-            width: 200px;
         }
 
         &__item {
@@ -1446,7 +1434,6 @@ main {
 .popup-mini {
     font-family: $font_serif;
     width: 26.4rem;
-    min-width: 26.4rem;
     overflow: hidden;
     border-radius: 1rem;
     margin-left: 1.2rem;
@@ -2010,44 +1997,6 @@ test popup
             display: inline-block;
         }
     }
-    
-    &-check--green {
-        .filter-label {
-            color: #9b9595;
-        }
-        
-        .filter-label::before {
-            content: '';
-            border: 1px solid #dedcd6;
-    
-            width: 1.7rem;
-            height: 1.7rem;
-        }
-        .filter-label::after {
-            content: '';
-            background-color: #dedcd6;
-            border: 1px solid #dedcd6;
-            width: .9rem;
-            height: .9rem;
-            top: .6rem;
-            left: .4rem;
-        }
-    
-        .filter-radio:checked+.filter-label {
-            color: #555451;
-        }
-        
-        .filter-radio:checked+.filter-label::after {
-            content: '';
-            background-color: #7cbd41;
-            border: 1px solid #7cbd41;
-        }
-        
-        .filter-radio:checked+.filter-label::before {
-            content: '';
-            border: 1px solid #7cbd41;
-        }
-    }
 
     .l-button__center {
         display: none;
@@ -2217,43 +2166,17 @@ test popup
 
         &__subitem {
             margin-bottom: .6rem;
-            line-height: 1;
-            padding-left: .9rem;
-            position: relative;
-            
-            &:before {
-                //content: '-';
-                margin-right: .4rem;
-                position: absolute;
-                top: -.1rem;
-                left: 0;
-            }
-    
-            
             a {
                 font-size: 1.4rem;
                 text-transform: lowercase;
-                border-bottom: 1px dotted #9b806f;
-    
-                &:after {
-                    content: '';
-                    border: none;
-                }
             }
 
             &:hover {
                 color: #7cbd41;
-                
-            }
-            
-            &:hover  a:after {
-                content: '';
-                border: none;
             }
 
             &.active {
                 color: #7cbd41;
-                
                 a {
                     color: #7cbd41;
 
@@ -2546,7 +2469,6 @@ test popup
 
 .tab-content {
     display: none;
-    font-size: 1.3rem;
 }
 
 .tab-content:first-child {
@@ -2741,7 +2663,7 @@ test popup
         &__body {
             position: relative;
             width: 100%;
-             overflow: hidden;
+            // overflow: hidden;
             // height: 59.5rem;
             background-image: url(../img/cafe-slider-1-blur.jpg);
             background-position: 50% 50%;
@@ -2966,7 +2888,6 @@ test popup
 
             p {
                 margin-bottom: 2.3rem;
-                color: #ffffff;
 
                 &:last-child {
                     margin-bottom: 0;
@@ -4118,13 +4039,6 @@ test popup
             color: #9b806f;
             margin-bottom: 1.8rem;
             text-transform: uppercase;
-            
-            .c-icon {
-                position: relative;
-                top: .4rem;
-                margin-right: .8rem;
-                font-size: 1rem;
-            }
         }
 
         p {
@@ -4405,7 +4319,6 @@ test popup
     .simplebar-track {
         display: none;
     }
-    
 }
 
 /*Мероприятия (events)------------------------------------------------*/
@@ -5240,7 +5153,7 @@ test popup
         background-color: #ffffff;
         box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
         border-radius: .8rem;
-        padding: 1.3rem 1.7rem;
+        padding: 1.7rem 1.7rem;
         margin-bottom: 3rem;
         overflow: hidden;
 
@@ -5249,7 +5162,7 @@ test popup
             flex-flow: row nowrap;
             align-items: center;
             justify-content: flex-start;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
 
             i {
                 width: 1.6rem;
@@ -5280,7 +5193,7 @@ test popup
         }
 
         &__title {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-style: italic;
             line-height: 1;
             text-align: left;
@@ -5293,8 +5206,8 @@ test popup
 
         &__item {
             display: inline-block;
-            margin-right: 1.7rem;
-            font-size: 1.2rem;
+            margin-right: 1rem;
+            font-size: 1.4rem;
             font-style: italic;
             text-align: left;
             color: #9b9595;
@@ -5456,6 +5369,10 @@ test popup
                 &:last-child {
                     margin-right: 0;
                 }
+
+                textarea {
+                    height:4.7rem;
+                }
             }
         }
 
@@ -5543,11 +5460,6 @@ test popup
     &-tabs {
         margin-bottom: 4.8rem;
         margin-left: -1.7rem;
-        
-        &__nav {
-            margin-bottom: 1.4rem;
-            border-bottom: .5rem solid #7cbd41;
-        }
 
         &__item {
             display: inline-block;
@@ -5591,6 +5503,8 @@ test popup
     }
 
     .tab {
+        padding-top: 1.4rem;
+        border-top: .5rem solid #7cbd41;
 
     }
 
@@ -6866,7 +6780,6 @@ test popup
 
     &-item {
         margin-bottom: 2.5rem;
-        width: 100%;
     }
 
     &-block__text {
@@ -6897,10 +6810,6 @@ test popup
 
             &__text {
 
-            }
-            
-            ol, ul {
-                margin-left: 0;
             }
         }
     }
@@ -7513,7 +7422,6 @@ test popup
                 float: left;
                 margin-right: 3rem;
                 margin-bottom: 2rem;
-                max-width: 50%;
             }
 
             p {
@@ -7535,7 +7443,7 @@ test popup
 
 .timeline {
     list-style: none;
-    padding: 0 0 2rem;
+    padding: 6rem 0 2rem;
     position: relative;
     font-family: $font_serif;
 }
@@ -7634,7 +7542,7 @@ test popup
     width: 100%;
     text-align: center;
     float: none;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 
     span {
         display: inline-block;
@@ -7792,7 +7700,7 @@ test popup
 }
 
 .timeline > li:nth-child(2) {
-    //margin-top: 60px;
+    margin-top: 60px;
 }
 
 .timeline > li.timeline-inverted > .timeline-badge {
@@ -8254,13 +8162,4 @@ test popup
         }
     }
 
-}
-
-
-.fixed-height-basket {
-    height: calc(100vh - 190px);
-}
-
-.no-product img {
-    width: 100%;
 }
