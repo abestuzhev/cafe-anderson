@@ -995,7 +995,7 @@ main {
     &__scroll {
         position: relative;
         //height: 748px;
-        height: calc(100vh - 190px);
+        //height: calc(100vh - 190px);
         //margin-right: -6px;
         //
         //&::after {
@@ -8177,4 +8177,21 @@ test popup
         }
     }
 
+}
+
+.big-product-img {
+    width: 100%;
+    top: 0 !important;
+    img {
+        width: 100%;
+
+    }
+}
+
+.fixed-height-basket {
+    height: calc(100vh - 190px);
+}
+
+.no-product img {
+    width: 100%;
 }

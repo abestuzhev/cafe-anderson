@@ -2584,7 +2584,15 @@ a.c-button:hover {
     border: none; }
   .c-card-catalog__header {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    padding: 2.7rem;
+    margin: -2.7rem -2.8rem 0;
+    background: white;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(42%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(top, white 0%, white 42%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(42%, white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to bottom, white 0%, white 42%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
   .c-card-catalog__title {
     font-size: 1.7rem;
     line-height: 1.2;
@@ -2687,6 +2695,19 @@ a.c-button:hover {
     left: 0;
     height: auto;
     cursor: pointer; }
+    .c-card-catalog__img::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 0;
+      height: 50px;
+      width: 100%;
+      background: white;
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(100%, rgba(255, 255, 255, 0)));
+      background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+      background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
   .c-card-catalog--mini {
     display: block;
     width: auto;
@@ -5798,8 +5819,7 @@ main {
     color: #9b9696;
     margin: 1rem 0; }
   .popup-basket__scroll {
-    position: relative;
-    height: calc(100vh - 190px); }
+    position: relative; }
   .popup-basket__all-sum {
     font-size: 1.4rem;
     color: #555451;
@@ -11371,3 +11391,15 @@ test popup
       right: 0;
       bottom: 0;
       z-index: 1; }
+
+.big-product-img {
+  width: 100%;
+  top: 0 !important; }
+  .big-product-img img {
+    width: 100%; }
+
+.fixed-height-basket {
+  height: calc(100vh - 190px); }
+
+.no-product img {
+  width: 100%; }
