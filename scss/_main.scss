@@ -2166,6 +2166,8 @@ test popup
 
         &__subitem {
             margin-bottom: .6rem;
+            padding-left: 1rem;
+            position: relative;
             a {
                 font-size: 1.4rem;
                 text-transform: lowercase;
@@ -2173,6 +2175,13 @@ test popup
 
             &:hover {
                 color: #7cbd41;
+            }
+
+            &::before {
+                position: absolute;
+                top: 1px;
+                left: 0;
+                content: '-';
             }
 
             &.active {

@@ -6847,12 +6847,19 @@ test popup
       list-style: square;
       margin: .2rem 0 .6rem 2.3rem; }
     .filter-hold__subitem {
-      margin-bottom: .6rem; }
+      margin-bottom: .6rem;
+      padding-left: 1rem;
+      position: relative; }
       .filter-hold__subitem a {
         font-size: 1.4rem;
         text-transform: lowercase; }
       .filter-hold__subitem:hover {
         color: #7cbd41; }
+      .filter-hold__subitem::before {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        content: '-'; }
       .filter-hold__subitem.active {
         color: #7cbd41; }
         .filter-hold__subitem.active a {
