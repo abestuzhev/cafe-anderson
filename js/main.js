@@ -95,12 +95,12 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-    // $(document).on('click', '.filter-hold__item', function(e){
-    //     e.preventDefault();
-    //     $(this).siblings().removeClass('active');
-    //     $(this).addClass('active');
-    //     $(this).children('.filter-hold__submenu').slideDown(300);
-    // });
+    $(document).on('click', '.filter-hold__dropdown', function(e){
+        e.preventDefault();
+        $(this).parents('.filter-hold__item').siblings().removeClass('active');
+        $(this).parents('.filter-hold__item').addClass('active');
+        $(this).siblings('.filter-hold__submenu').slideDown(500);
+    });
 
 
 
@@ -548,6 +548,7 @@ $(document).ready(function ($) {
     $('.filter-hold__close').on('click', function(e){
         e.preventDefault();
         $('.catalog-body').removeClass('show-category');
+        $('.filter-bage').toggleClass('js-hide-word');
         $('.filter-bage__title span').html('Показать');
     });
 
