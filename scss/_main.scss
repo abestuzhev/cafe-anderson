@@ -2136,6 +2136,10 @@ test popup
                     background-size: cover;
                 }
             }
+
+            &.active .filter-hold__submenu {
+                display: block;
+            }
         }
 
         &__link {
@@ -8195,5 +8199,5 @@ test popup
 }
 
 .no-product img {
-    width: 100%;
+    width: 100% !important;
 }

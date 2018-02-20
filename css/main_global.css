@@ -6667,6 +6667,8 @@ test popup
         height: 1.6rem;
         background: url(../img/icons/icon-check-2.svg) no-repeat 50% 50%;
         background-size: cover; }
+    .filter-hold__item.active .filter-hold__submenu {
+      display: block; }
     .filter-hold__link {
       color: #555451;
       display: block;
@@ -11404,4 +11406,4 @@ test popup
   height: calc(100vh - 190px); }
 
 .no-product img {
-  width: 100%; }
+  width: 100% !important; }
