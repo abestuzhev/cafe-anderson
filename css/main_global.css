@@ -5103,12 +5103,14 @@ main {
     font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #201600; }
   .home-cafe__sub-title {
     font-size: 1.6vw;
     font-weight: 700;
     line-height: 1;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #201600; }
   .home-cafe__line {
     position: absolute;
     top: 56%;
@@ -5316,12 +5318,14 @@ main {
     font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #201600; }
   .home-celebration__sub-title {
     font-size: 1.6vw;
     font-weight: 700;
     line-height: 1;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #201600; }
 
 @-webkit-keyframes bearMoon {
   0%, 100% {
