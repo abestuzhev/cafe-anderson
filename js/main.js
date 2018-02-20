@@ -95,12 +95,12 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-    $(document).on('click', '.filter-hold__item', function(e){
-        e.preventDefault();
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        $(this).children('.filter-hold__submenu').slideDown(300);
-    });
+    // $(document).on('click', '.filter-hold__item', function(e){
+    //     e.preventDefault();
+    //     $(this).siblings().removeClass('active');
+    //     $(this).addClass('active');
+    //     $(this).children('.filter-hold__submenu').slideDown(300);
+    // });
 
 
 
