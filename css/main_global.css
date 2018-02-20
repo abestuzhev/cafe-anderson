@@ -10824,7 +10824,8 @@ test popup
     .news-and-stock .post__body img {
       float: left;
       margin-right: 3rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      max-width: 46%; }
     .news-and-stock .post__body p {
       line-height: 1.2;
       margin-bottom: 2rem; }
