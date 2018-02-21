@@ -1962,7 +1962,31 @@ a.c-button {
         line-height: 1.3;
 
         a.selected {
-            color: #7cbd41;
+            padding: .2em 1.4rem .3rem;
+            border-radius: 12px;
+            background-color: #7cbd41;
+            color: #ffffff;
+
+            &:after {
+                content: '';
+                border: none;
+            }
+        }
+
+        a {
+            margin-right: .3rem;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -.1rem;
+                left: 0;
+                width: 100%;
+                border-bottom: 1px dotted #9b806f
+            }
+
+            &:hover::after {
+                border-color: #7cbd41;
+            }
         }
     }
 
