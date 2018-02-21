@@ -962,6 +962,12 @@ i.icon-chair {
   width: 1em;
   height: 1em; }
 
+.symbol-roll-cake {
+  fill: #7f7d7c;
+  font-size: 1.6rem;
+  width: 1em;
+  height: .6em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -6814,7 +6820,19 @@ test popup
             justify-content: flex-start;
     font-family: "PT Serif Caption"; }
     .filter-mix__item {
-      display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       padding: 1rem 1.5rem;
       background-color: #fff;
       border-radius: .4rem;
@@ -6823,7 +6841,16 @@ test popup
       text-align: left;
       color: #9b9595;
       cursor: pointer;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      background-color: #7cbd41; }
+      .filter-mix__item .c-symbol {
+        font-size: 2.4rem; }
+      .filter-mix__item .symbol-roll-cake {
+        font-size: 3.6rem; }
+      .filter-mix__item svg {
+        fill: #fff; }
+      .filter-mix__item > span {
+        color: #ffffff; }
       .filter-mix__item:last-child {
         margin-right: 0; }
       .filter-mix__item::after {
@@ -8054,7 +8081,8 @@ test popup
   margin: 0 auto; }
   .carousel-slider .owl-nav .owl-prev {
     right: auto;
-    left: -3%; }
+    left: -3%;
+    display: block; }
   .carousel-slider .owl-nav .owl-next {
     left: auto;
     right: -3%; }

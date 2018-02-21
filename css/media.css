@@ -292,6 +292,11 @@
     .graduation-party .c-caption-special__subtitle {
         font-size: 2rem;
     }
+
+
+    .filter-mix__item span {
+        display: none;
+    }
 }
 @media screen and (max-width: 1270px) {
     .header-search__form {
@@ -592,9 +597,6 @@
 
     .filter-mix__item svg {
         margin: 0;
-    }
-    .filter-mix__item span {
-        display: none;
     }
 
     .header-top__hide .header-layout {
@@ -1952,8 +1954,8 @@
 
     .filter-mix__item {
         border-radius: .4rem .4rem 0 0;
-        background-color: transparent;
-        margin: 0;
+        /*background-color: transparent;*/
+        margin-right: .5rem;
     }
 
     .filter-mix {
@@ -3325,6 +3327,9 @@
         width: 100%;
     }
 
+    .filter-mix__item {
+        padding: .5rem .8rem;
+    }
 }
 
 
@@ -3464,6 +3469,10 @@
     .popup-event-buy--layout:nth-child(1) {
       width: 100%;
       justify-content: space-between;
+    }
+
+    .filter-mix__item {
+        padding: .5rem .6rem;
     }
 }
 

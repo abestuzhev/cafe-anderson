@@ -2327,7 +2327,10 @@ test popup
         font-family: $font_serif;
 
         &__item {
-            display: block;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: flex-start;
             padding: 1rem 1.5rem;
             background-color: #fff;
             border-radius: .4rem;
@@ -2337,6 +2340,30 @@ test popup
             color: #9b9595;
             cursor: pointer;
             margin-right: 2rem;
+            background-color: #7cbd41;
+
+            .c-symbol {
+                font-size: 2.4rem;
+            }
+            //
+            //.symbol-shopping-bag {
+            //    font-size: 2.2rem;
+            //}
+            //.symbol-hot-tea {
+            //    font-size: 2rem;
+            //}
+
+            .symbol-roll-cake {
+                font-size: 3.6rem;
+            }
+
+            svg {
+                fill: #fff;
+            }
+
+            & > span {
+                color: #ffffff;
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -3954,6 +3981,7 @@ test popup
     .owl-nav .owl-prev {
         right: auto;
         left: -3%;
+        display: block;
     }
     .owl-nav .owl-next {
         left: auto;
