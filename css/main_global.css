@@ -9091,6 +9091,13 @@ test popup
   .basket .icon-dropdown__down {
     fill: #9b9595; }
 
+.error-basket {
+  position: relative; }
+  .error-basket__bg {
+    position: absolute;
+    right: .2rem;
+    bottom: .2rem; }
+
 /*Оформление заказа (ordering)----------------------------------------------------*/
 .order {
   font-family: "PT Serif Caption"; }
@@ -9591,6 +9598,11 @@ test popup
   .order-finish__subtitle span {
     color: #7cbd41;
     font-size: 1.8rem; }
+  .order-finish__subtitle a {
+    color: #7cbd41; }
+    .order-finish__subtitle a:after {
+      content: '';
+      border-color: #7cbd41; }
 
 .order-finish-item {
   background-color: #ffffff;

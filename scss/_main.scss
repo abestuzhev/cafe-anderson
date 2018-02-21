@@ -5216,7 +5216,15 @@ test popup
     .icon-dropdown__down {
         fill: #9b9595;
     }
+}
 
+.error-basket {
+    position: relative;
+    &__bg {
+        position: absolute;
+        right: .2rem;
+        bottom: .2rem;
+    }
 }
 
 /*Оформление заказа (ordering)----------------------------------------------------*/
@@ -5878,6 +5886,14 @@ test popup
         span {
             color: #7cbd41;
             font-size: 1.8rem;
+        }
+
+        a {
+            color: #7cbd41;
+            &:after {
+                content: '';
+                border-color: #7cbd41;
+            }
         }
     }
 

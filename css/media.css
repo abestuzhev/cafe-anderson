@@ -1245,6 +1245,10 @@
     .events #event-calendar .events__item:nth-child(2) {
         padding-left: 0;
     }
+
+    .error-basket__bg {
+        display: none;
+    }
 }
 
 @media (max-width:940px) {
