@@ -1106,6 +1106,9 @@ table {
           box-sizing: border-box;
   word-wrap: break-word; }
 
+div {
+  display: block; }
+
 @font-face {
   font-family: "BebasNeue";
   src: url("../fonts/BebasNeue-Bold.eot");
@@ -10464,7 +10467,8 @@ test popup
   width: 20%;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  margin-bottom: 2.8rem; }
+  margin-bottom: 2.8rem;
+  display: block !important; }
 
 .cake-item {
   margin-bottom: 2.5rem; }
