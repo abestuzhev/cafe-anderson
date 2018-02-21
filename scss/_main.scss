@@ -6971,6 +6971,12 @@ test popup
         padding-right: 1.4rem;
         margin-bottom: 2.8rem;
         display: block !important;
+        -webkit-box-flex: 1 0 20%;
+        -webkit-flex: 1 0 20%;
+        -ms-flex: 1 0 20%;
+        flex: 1 0 20%;
+        max-width: 20%;
+        min-width: 20%;
     }
 
     &-item {
