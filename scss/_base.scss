@@ -2050,6 +2050,11 @@ a.c-button {
         height: auto;
         cursor: pointer;
 
+
+        img {
+
+        }
+
         &::before {
             content: '';
             position: absolute;

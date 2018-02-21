@@ -944,6 +944,24 @@ i.icon-chair {
   width: 1em;
   height: .6em; }
 
+.symbol-ice-cream {
+  fill: #7f7d7c;
+  font-size: 1.6rem;
+  width: 1em;
+  height: 1.3em; }
+
+.symbol-hot-tea {
+  fill: #7f7d7c;
+  font-size: 1.7rem;
+  width: 1em;
+  height: 1em; }
+
+.symbol-shopping-bag {
+  fill: #7f7d7c;
+  font-size: 1.6rem;
+  width: 1em;
+  height: 1em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -6622,7 +6640,7 @@ test popup
         -ms-flex-align: center;
             align-items: center; }
   .filter-bage {
-    padding: 1rem 1.7rem;
+    padding: 1.3rem 1.7rem;
     font-family: "PT Serif Caption";
     border-radius: .4rem;
     background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
@@ -6631,10 +6649,11 @@ test popup
     border: solid 1px rgba(115, 115, 115, 0.15);
     cursor: pointer;
     position: relative;
-    margin-right: 2rem; }
+    margin: 0 1.7rem 2.1rem 0;
+    width: 23rem; }
     .filter-bage .icon-menu {
       position: absolute;
-      top: 1.9rem;
+      top: 1.6rem;
       left: 1.7rem; }
     .filter-bage__title {
       font-size: 1.6rem;
@@ -6656,7 +6675,7 @@ test popup
     left: -3000px;
     display: block;
     width: 25rem;
-    padding: 4rem 2.7rem;
+    padding: 1.5rem 1.2rem;
     background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
     -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
@@ -6666,7 +6685,7 @@ test popup
       cursor: pointer;
       width: 20px;
       height: 20px;
-      right: -1rem;
+      right: 0;
       top: .8rem;
       border-radius: 40px;
       border: 1px solid #ccc; }
@@ -6674,24 +6693,35 @@ test popup
         position: absolute;
         top: 56%;
         left: 50%;
+        font-size: 1rem !important;
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
     .filter-hold__item {
-      position: relative; }
+      position: relative;
+      font-family: "PT Serif Caption";
+      -webkit-transition: color .2s ease-in-out;
+      -o-transition: color .2s ease-in-out;
+      transition: color .2s ease-in-out; }
+      .filter-hold__item .c-symbol {
+        margin-right: .3rem;
+        font-size: 1.7rem;
+        fill: #553023; }
+      .filter-hold__item:hover .c-symbol {
+        fill: #75ae1f;
+        -webkit-transition: color .2s ease-in-out;
+        -o-transition: color .2s ease-in-out;
+        transition: color .2s ease-in-out; }
+      .filter-hold__item:hover > a {
+        color: #75ae1f;
+        -webkit-transition: color .2s ease-in-out;
+        -o-transition: color .2s ease-in-out;
+        transition: color .2s ease-in-out; }
       .filter-hold__item.active > a {
         color: #75ae1f;
-        position: relative;
-        padding-left: 2rem; }
-        .filter-hold__item.active > a::before {
-          content: '';
-          position: absolute;
-          top: 1rem;
-          left: 0;
-          width: 1.8rem;
-          height: 1.6rem;
-          background: url(../img/icons/icon-check-2.svg) no-repeat 50% 50%;
-          background-size: cover; }
+        position: relative; }
+      .filter-hold__item.active .c-symbol {
+        fill: #75ae1f !important; }
       .filter-hold__item.active .filter-hold__submenu {
         display: block; }
       .filter-hold__item.active .filter-hold__dropdown {
@@ -6701,41 +6731,48 @@ test popup
       .filter-hold__item ul {
         display: none; }
     .filter-hold__link {
-      color: #555451;
+      color: #553023;
       display: inline-block;
-      font-size: 1.6rem;
-      padding: .8rem 0;
-      text-transform: lowercase; }
+      font-size: 1.5rem;
+      padding: .8rem 0; }
       .filter-hold__link::after {
         content: '';
         border: none; }
     .filter-hold__close {
-      position: absolute;
-      right: 2rem;
-      top: 1.5rem;
-      border: 10px solid transparent;
-      border-right-color: #817878;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 1.6rem;
+      color: #555451;
+      padding-left: 2.5rem;
+      position: relative;
+      font-family: "PT Serif Caption"; }
+      .filter-hold__close::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 4px;
+        width: 1rem;
+        height: 1rem;
+        background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+        background-size: 10px 11px;
+        cursor: pointer; }
       .filter-hold__close:hover {
         border-right-color: #7cbd41; }
     .filter-hold__submenu {
       list-style: square;
-      margin: .2rem 0 .6rem 2.3rem; }
+      margin: .2rem 0 .6rem 2.5rem; }
     .filter-hold__subitem {
-      margin-bottom: .6rem;
-      padding-left: 1rem;
+      margin-bottom: 1.1rem;
       position: relative;
       line-height: 1; }
       .filter-hold__subitem a {
         font-size: 1.4rem;
-        text-transform: lowercase; }
-      .filter-hold__subitem:hover {
+        text-transform: lowercase;
+        color: #555451; }
+        .filter-hold__subitem a::after {
+          content: '';
+          border: none; }
+      .filter-hold__subitem:hover > a {
         color: #7cbd41; }
-      .filter-hold__subitem::before {
-        position: absolute;
-        top: 1px;
-        left: 0;
-        content: '-'; }
       .filter-hold__subitem.active {
         color: #7cbd41; }
         .filter-hold__subitem.active a {
@@ -6743,6 +6780,24 @@ test popup
           .filter-hold__subitem.active a::after {
             content: '';
             border: none; }
+    .filter-hold__sub-submenu {
+      display: block !important;
+      margin: 1rem 0 0 2.7rem; }
+    .filter-hold__sub-subitem {
+      list-style: circle;
+      list-style-position: outside;
+      margin-bottom: 1rem; }
+      .filter-hold__sub-subitem:hover {
+        color: #7cbd41; }
+      .filter-hold__sub-subitem.active {
+        color: #7cbd41; }
+        .filter-hold__sub-subitem.active a {
+          color: #7cbd41;
+          text-decoration: underline; }
+      .filter-hold__sub-subitem a {
+        margin-left: -.5rem; }
+        .filter-hold__sub-subitem a:hover {
+          color: #7cbd41; }
   .filter-mix {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7936,6 +7991,18 @@ test popup
   -o-transition: margin-left .2s ease-out;
   transition: margin-left .2s ease-out; }
 
+.catalog-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .catalog-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7958,7 +8025,10 @@ test popup
     width: 33.333333%; }
 
 .catalog .filter {
-  margin-bottom: 2.1rem; }
+  margin-bottom: 2.1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
   .catalog .filter-form {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;

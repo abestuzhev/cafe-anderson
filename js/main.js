@@ -537,8 +537,11 @@ $(document).ready(function ($) {
     });
 
     /*показываем категории меню в каталоге*/
-    $('.filter-bage').on('click', function(e){
+    var filterBage = $('.filter-bage');
+
+    filterBage.on('click', function(e){
         e.preventDefault();
+        $(this).hide();
         $('.catalog-body').toggleClass('show-category');
         $(this).toggleClass('js-hide-word');
         $(this).find('.filter-bage__title span').html('Показать');
@@ -547,8 +550,9 @@ $(document).ready(function ($) {
 
     $('.filter-hold__close').on('click', function(e){
         e.preventDefault();
+        filterBage.show();
         $('.catalog-body').removeClass('show-category');
-        $('.filter-bage').toggleClass('js-hide-word');
+        filterBage.toggleClass('js-hide-word');
         $('.filter-bage__title span').html('Показать');
     });
 
@@ -559,7 +563,7 @@ $(document).ready(function ($) {
     	if(windowWidth <= 730){
     	    $('.filter-hold__close').on('click', function(e){
                 e.preventDefault();
-    	        $(this).parents('.filter-hold').slideUp(300);
+    	        $(this).parents('.filter-hold').slideUp(600);
             });
         }
     });
@@ -567,7 +571,7 @@ $(document).ready(function ($) {
     if(windowWidth <= 730){
         $('.filter-hold__close').on('click', function(e){
             e.preventDefault();
-            $(this).parents('.filter-hold').slideUp(300);
+            $(this).parents('.filter-hold').slideUp(600);
         });
     }
 

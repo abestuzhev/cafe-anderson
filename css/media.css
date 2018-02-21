@@ -1184,6 +1184,10 @@
     .catalog-body .filter-hold {
         z-index: 11;
     }
+
+    .catalog-body .filter-bage {
+        display: block !important;
+    }
     .catalog-body.show-category .catalog-product {
         margin-left: 0;
     }
@@ -1672,20 +1676,28 @@
         display: block;
     }
 
-    .filter-bage {
+    .catalog-filter {
+        display: block;
+    }
+    .catalog-body .filter-hold__dropdown {
+        right: 1rem;
+    }
+
+    .catalog-body .filter-bage {
         /*скрываем кнопку поакзать категории*/
-        display: none;
+        display: none !important;
     }
 
     .filter-hold {
         position: relative;
         left: auto;
         width: 100%;
-        padding: 1.1rem 1.1rem 1.4rem;
+        padding: 1.1rem 1.1rem 3.4rem;
         margin-bottom: 2.6rem;
     }
 
     .filter-hold__close {
+        position: absolute;
         z-index: 12;
         width: 3.3rem;
         height: 4rem;
@@ -1697,7 +1709,14 @@
         background: #d6d6d6 url(../img/icons/icon-close.svg) no-repeat 50% 46%;
         background-size: 10px 11px;
         cursor: pointer;
+        text-indent: -99999px;
+
     }
+    .filter-hold__close:before {
+        content: '';
+        display: none;
+    }
+
 
     .filter-form {
         flex-direction: column;
