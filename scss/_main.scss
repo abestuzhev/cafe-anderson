@@ -2662,7 +2662,7 @@ test popup
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: stretch;
-        color: #9b9595;
+        color: $black;
 
         p {
             font-size: 1.3rem;
@@ -2671,10 +2671,10 @@ test popup
 
         &__item {
             position: relative;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             line-height: 1.15;
             text-align: left;
-            color: #9b9595;
+            color: $black;
             margin-bottom: 1.8rem;
             vertical-align: middle;
             padding-left: 2.4rem;

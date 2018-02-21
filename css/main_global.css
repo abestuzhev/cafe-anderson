@@ -7108,16 +7108,16 @@ test popup
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    color: #9b9595; }
+    color: #555451; }
     .cafe-info p {
       font-size: 1.3rem;
       margin-bottom: 1.3rem; }
     .cafe-info__item {
       position: relative;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       line-height: 1.15;
       text-align: left;
-      color: #9b9595;
+      color: #555451;
       margin-bottom: 1.8rem;
       vertical-align: middle;
       padding-left: 2.4rem; }
