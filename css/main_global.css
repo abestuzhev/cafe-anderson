@@ -1399,6 +1399,22 @@ input:-moz-placeholder:first-letter {
   /* Firefox 18- */
   color: #9b9696; }
 
+textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #9b9696; }
+
+textarea::-moz-placeholder:first-letter {
+  /* Firefox 19+ */
+  color: #9b9696; }
+
+textarea:-ms-input-placeholder:first-letter {
+  /* IE 10+ */
+  color: #9b9696; }
+
+textarea:-moz-placeholder:first-letter {
+  /* Firefox 18- */
+  color: #9b9696; }
+
 .wrapper input[type="checkbox"],
 .popup input[type="checkbox"] {
   display: none; }
@@ -9222,7 +9238,7 @@ test popup
       max-height: 100%;
       -webkit-box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
               box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
-      height: 28rem; }
+      height: 30rem; }
     .order-delivery__layout {
       margin: 0 0 1.2rem 1.7rem; }
     .order-delivery__time-list {
@@ -9315,7 +9331,7 @@ test popup
       .order-delivery-custom__item:last-child {
         margin-right: 0; }
       .order-delivery-custom__item textarea {
-        height: 4.7rem; }
+        height: 6.7rem; }
     .order-delivery-search {
       display: -webkit-box;
       display: -ms-flexbox;

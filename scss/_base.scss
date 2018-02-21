@@ -308,6 +308,23 @@ input:-moz-placeholder:first-letter { /* Firefox 18- */
     color: #9b9696;
 }
 
+textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    //text-transform: capitalize;
+    color: #9b9696;
+}
+textarea::-moz-placeholder:first-letter { /* Firefox 19+ */
+    //text-transform: capitalize;
+    color: #9b9696;
+}
+textarea:-ms-input-placeholder:first-letter { /* IE 10+ */
+    //text-transform: capitalize;
+    color: #9b9696;
+}
+textarea:-moz-placeholder:first-letter { /* Firefox 18- */
+    //text-transform: capitalize;
+    color: #9b9696;
+}
+
 
 .wrapper input[type="checkbox"],
 .popup input[type="checkbox"] {
