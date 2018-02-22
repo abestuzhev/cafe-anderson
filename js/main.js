@@ -224,7 +224,7 @@ $(document).ready(function ($) {
             $('.order-user__other-form').css('display','flex');
         }
     });
-    $(document).on('change', '#order-user_auth', function(){
+    $(document).on('change', '#order-user_auth, #order-user_auth-1', function(){
         if($(this).prop( "checked" )){
             $('.order-user__list').css('display','flex');
             $('.order-user__other-form').css('display','none');
