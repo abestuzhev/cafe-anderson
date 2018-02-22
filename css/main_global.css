@@ -2769,6 +2769,16 @@ a.c-button:hover {
     left: 0;
     height: auto;
     cursor: pointer; }
+    .c-card-catalog__img.no-product {
+      width: 100%; }
+      .c-card-catalog__img.no-product img {
+        width: auto !important;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+                transform: translate(-50%, 0); }
     .c-card-catalog__img::before {
       content: '';
       position: absolute;
@@ -11719,6 +11729,3 @@ test popup
 
 .fixed-height-basket {
   height: calc(100vh - 190px); }
-
-.no-product img {
-  width: 100% !important; }
