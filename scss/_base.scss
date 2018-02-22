@@ -2146,6 +2146,17 @@ a.c-button {
             left: 6rem;
         }
 
+        &.no-product {
+            .c-card-catalog__header {
+                padding-bottom: 0;
+            }
+            img {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+
         .c-card-catalog__title {
             font-size: 1.4rem;
         }

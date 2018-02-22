@@ -2803,6 +2803,12 @@ a.c-button:hover {
     .c-card-catalog--mini .c-card-catalog__img {
       bottom: -5rem;
       left: 6rem; }
+    .c-card-catalog--mini.no-product .c-card-catalog__header {
+      padding-bottom: 0; }
+    .c-card-catalog--mini.no-product img {
+      bottom: 0;
+      left: 0;
+      width: 100%; }
     .c-card-catalog--mini .c-card-catalog__title {
       font-size: 1.4rem; }
     .c-card-catalog--mini .c-card-catalog__footer {
