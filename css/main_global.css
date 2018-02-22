@@ -2853,6 +2853,9 @@ a.c-button:hover {
 .c-card-product__img {
   margin-right: 1.7rem;
   max-width: 26rem; }
+  .c-card-product__img img {
+    width: 100%;
+    height: auto; }
 
 .c-card-product__weight {
   color: #553023;
