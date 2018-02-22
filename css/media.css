@@ -2323,6 +2323,16 @@
     .lk-history-item__footer-col:nth-child(1) {
         margin-bottom: 1.2rem;
     }
+
+    .order-pay__list {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .order-pay__item {
+        margin-bottom: 1rem;
+    }
 }
 @media screen and (max-height:600px) {
     .popup .popup-bg__img {

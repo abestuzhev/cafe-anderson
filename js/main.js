@@ -34,6 +34,34 @@ var documentHeight = (document.documentElement.clientHeight );
 
 $(window).on('load', function(){
 
+    /*скролл при выборе доставки*/
+    var orderDeliveryMap = $('.order-delivery__map').height(),
+        orderDeliveryAddressList = $('.order-delivery-address__list'),
+        orderDeliveryAddressListHeight = orderDeliveryAddressList.height();
+    console.log('orderDeliveryMap: ' + orderDeliveryMap);
+    console.log('orderDeliveryAddressList: ' + orderDeliveryAddressListHeight);
+
+
+    function changeHeightAddressList (){
+        orderDeliveryAddressList.each(function(index, elem){
+            var elemHeight =  $(elem).height();
+            console.log('elemHeight: ' + elemHeight);
+            if(elemHeight > 320){
+                // new SimpleBar(orderDeliveryAddressList[0]);
+                // new SimpleBar(orderDeliveryAddressList[1]);
+                // new SimpleBar(orderDeliveryAddressList[2]);
+                // new SimpleBar(orderDeliveryAddressList[3]);
+                $(elem).addClass('scroll-wrap');
+            }
+        });
+    }
+    changeHeightAddressList();
+
+
+    $(document).on('click', '.order-tabs__item', function(){
+        changeHeightAddressList();
+    });
+
     function getScrollElem (elem){
         if($(window).width() <= 800) {
             new SimpleBar($(elem)[0]);
@@ -95,6 +123,19 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+
+    /*изменение оплаты*/
+    $('.order-pay__item').on('click', function(){
+        var payRadio = $(this).children('input');
+        if(payRadio.prop("checked")){
+            $(this).siblings('.order-pay__item').find('label').removeClass('active');
+            $(this).children('label').addClass('active');
+        }
+    });
+
+
+
     $(document).on('click', '.filter-hold__dropdown', function(e){
         e.preventDefault();
         $(this).parents('.filter-hold__item').siblings().removeClass('active');
@@ -129,7 +170,7 @@ $(document).ready(function ($) {
             imgWidth = img.width(),
             $this = $(elem);
 
-        console.log('element ' + index + ': ' + 'width: ' + imgWidth);
+        // console.log('element ' + index + ': ' + 'width: ' + imgWidth);
         if(imgWidth < 390 ) {
             $this.addClass('big-product-img');
             // console.log('есть картинка меньше 390');
@@ -432,7 +473,7 @@ $(document).ready(function ($) {
         $(this).parents('.order-delivery-search__item').siblings().find('input').val('');
         $('.order-delivery-address__all').removeClass('show-item-all');
 
-        showDeliveryAddressCake('.order-delivery-address__item');
+        // showDeliveryAddressCake('.order-delivery-address__item');
     });
 
     //показать все адреса кафе в заказе
@@ -441,7 +482,7 @@ $(document).ready(function ($) {
             i < 6 ? $(elem).show() : $(elem).hide();
         });
     }
-    showDeliveryAddressCake('.order-delivery-address__item');
+    // showDeliveryAddressCake('.order-delivery-address__item');
 
 
 

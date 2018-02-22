@@ -2192,6 +2192,10 @@ test popup
             ul {
                 display: none;
             }
+
+            &.show-category .filter-hold__submenu {
+                display: block;
+            }
         }
 
         &__link {
@@ -2261,7 +2265,7 @@ test popup
                 }
             }
 
-            &:hover > a {
+            a:hover {
                 color: #7cbd41;
             }
 
@@ -5228,6 +5232,58 @@ test popup
 }
 
 /*Оформление заказа (ordering)----------------------------------------------------*/
+.pay-cash-courier,
+.pay-online,
+.pay-in-cafe {
+    display: block;
+    background: url(../img/pay-sprite.png) 0 0 no-repeat;
+}
+
+.pay-cash-courier {
+    width: 5.7rem;
+    height: 3.1rem;
+
+    &:hover {
+        background-position: -6rem 0;
+    }
+}
+
+.pay-online {
+    width: 5.6rem;
+    height: 2.6rem;
+    background-position: 0 -3.4rem;
+
+    &:hover {
+        background-position: -6.1rem -3.4rem;
+    }
+}
+
+.pay-in-cafe {
+    width: 9.6rem;
+    height: 3.1rem;
+    background-position: 0 -6.7rem;
+
+    &:hover {
+        background-position: -10.9rem -6.6rem;
+    }
+}
+
+.order-pay__item-layout {
+    &:hover {
+        .pay-cash-courier {
+            background-position: -6rem 0;
+        }
+
+        .pay-online {
+            background-position: -6.1rem -3.4rem;
+        }
+
+        .pay-in-cafe {
+            background-position: -10.9rem -6.6rem;
+        }
+    }
+}
+
 .order {
     font-family: $font_serif;
 
@@ -5493,6 +5549,11 @@ test popup
         &-address {
 
             &__list {
+
+                .simplebar-track.vertical {
+                    //visibility: visible !important;
+                }
+
                 &.show-item-all {
                     .order-delivery-address__item {
                         display: block !important;
@@ -5528,6 +5589,7 @@ test popup
                 color: #9b9595;
                 font-style: italic;
                 margin-left: 2.7rem;
+                display: none;
             }
         }
 
@@ -5640,6 +5702,25 @@ test popup
 
         &__item {
             margin-right: 4rem;
+
+            label.active {
+                .pay-cash-courier {
+                    background-position: -6rem 0;
+                }
+
+                .pay-online {
+                    background-position: -6.1rem -3.4rem;
+                }
+
+                .pay-in-cafe {
+                    background-position: -10.9rem -6.6rem;
+                }
+            }
+        }
+
+        &__text {
+            font-size: 1.3rem;
+            color: $black;
         }
     }
 
@@ -5826,6 +5907,36 @@ test popup
         }
     }
 
+}
+
+#order-delivery-cake .order-delivery-address__list.scroll-wrap,
+#order-delivery .order-delivery-address__list.scroll-wrap{
+    height: 30rem;
+    //border-bottom: 2px solid #e8e8e8;
+    //box-shadow: 0 3px 0 0 rgba(0,0,0,.1);
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background: rgba(255,255,255,0);
+        background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.73) 38%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(38%, rgba(255,255,255,0.73)), color-stop(64%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.73) 38%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+        background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.73) 38%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.73) 38%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.73) 38%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+    }
+}
+
+#order-pickup-cake .order-delivery-address__list.scroll-wrap,
+#order-pickup .order-delivery-address__list.scroll-wrap{
+    height: 26rem;
 }
 
 //#order-pickup .order-delivery-address__item,

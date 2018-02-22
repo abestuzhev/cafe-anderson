@@ -936,7 +936,7 @@
                                                             <div class="order-delivery__map" id="order-delivery__map"></div>
                                                         </div>
                                                         <div class="order-delivery__col">
-                                                            <ul class="order-delivery-address__list">
+                                                            <ul class="order-delivery-address__list" data-simplebar>
                                                                 <li class="order-delivery-address__item">
                                                                     <span class="order-delivery-address__point">-АндерСоны рядом</span>
                                                                 </li>
@@ -1007,7 +1007,7 @@
                                                                     <a href="#" class="order-delivery-search__clear">сбросить поиск <i class=""></i></a>
                                                                 </div>
                                                             </div>
-                                                            <ul class="order-delivery-address__list">
+                                                            <ul class="order-delivery-address__list" data-simplebar>
                                                                 <li class="order-delivery-address__item">
                                                                     <input type="radio" name="order-delivery__address-pickup" id="order-delivery__address-1" checked>
                                                                     <label class="order-radio" for="order-delivery__address-1">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
@@ -1040,8 +1040,21 @@
                                                                     <input type="radio" name="order-delivery__address-pickup" id="order-delivery__address-8">
                                                                     <label class="order-radio" for="order-delivery__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
                                                                 </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-delivery__address-pickup" id="order-delivery__address-8">
+                                                                    <label class="order-radio" for="order-delivery__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                                </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-delivery__address-pickup" id="order-delivery__address-8">
+                                                                    <label class="order-radio" for="order-delivery__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                                </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-delivery__address-pickup" id="order-delivery__address-8">
+                                                                    <label class="order-radio" for="order-delivery__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                                </li>
+                                                                
                                                             </ul>
-                                                            <a href="#" class="order-delivery-address__all">показать все</a>
+                                                            <!--<a href="#" class="order-delivery-address__all">показать все</a>-->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1054,17 +1067,32 @@
                                         <ul class="order-pay__list">
                                             <li class="order-pay__item">
                                                 <input type="radio" name="order-pay" id="order-pay-visa" value="order-pay-visa" checked>
-                                                <label class="order-radio" for="order-pay-visa"> <i class="logo-visa"></i></label>
+                                                <label class="order-radio active" for="order-pay-visa">
+                                                    <span class="order-pay__item-layout">
+                                                        <i class="pay-cash-courier"></i>
+                                                        <span class="order-pay__text">оплата курьеру</span>
+                                                    </span>
+                                                </label>
                                             </li>
                                             <li class="order-pay__item">
 
                                                 <input type="radio" name="order-pay" id="order-pay-mir" value="order-pay-mir">
-                                                <label class="order-radio" for="order-pay-mir"><i class="logo-mir"></i></label>
+                                                <label class="order-radio" for="order-pay-mir">
+                                                    <span class="order-pay__item-layout">
+                                                        <i class="pay-online"></i>
+                                                        <span class="order-pay__text">картой онлайн</span>
+                                                    </span>
+                                                </label>
 
                                             </li>
                                             <li class="order-pay__item">
                                                 <input type="radio" name="order-pay" id="order-pay-uniteller" value="order-pay-uniteller">
-                                                <label class="order-radio" for="order-pay-uniteller"><i class="logo-uniteller"></i></label>
+                                                <label class="order-radio" for="order-pay-uniteller">
+                                                    <span class="order-pay__item-layout">
+                                                        <i class="pay-in-cafe"></i>
+                                                        <span class="order-pay__text">наличными/картой в кафе</span>
+                                                    </span>
+                                                </label>
                                             </li>
                                         </ul>
                                         <textarea class="c-input" name="order-pay-comment" id="order-pay-comment" rows="2" placeholder="Комментарий к заказу:"></textarea>
@@ -1162,7 +1190,7 @@
                                                             <div class="order-delivery__map" id="order-cake-delivery__map"></div>
                                                         </div>
                                                         <div class="order-delivery__col">
-                                                            <ul class="order-delivery-address__list">
+                                                            <ul class="order-delivery-address__list" data-simplebar>
                                                                 <li class="order-delivery-address__item">
                                                                     <span class="order-delivery-address__point">-АндерСоны рядом</span>
                                                                 </li>
@@ -1230,7 +1258,7 @@
                                                                     <a href="#" class="order-delivery-search__clear">сбросить поиск <i class=""></i></a>
                                                                 </div>
                                                             </div>
-                                                            <ul class="order-delivery-address__list">
+                                                            <ul class="order-delivery-address__list" data-simplebar>
                                                                 <li class="order-delivery-address__item">
                                                                     <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-1" checked>
                                                                     <label class="order-radio" for="order-delivery-cake__address-1">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
@@ -1263,6 +1291,18 @@
                                                                     <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
                                                                     <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
                                                                 </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                                    <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                                </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                                    <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                                </li>
+                                                                <li class="order-delivery-address__item">
+                                                                    <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                                    <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                                </li>
                                                             </ul>
                                                             <a href="#" class="order-delivery-address__all">показать все</a>
                                                         </div>
@@ -1276,18 +1316,36 @@
                                         <h4 class="order-box__title"><i class="icon-credit-card"></i>Оплата:</h4>
                                         <ul class="order-pay__list">
                                             <li class="order-pay__item">
-                                                <input type="radio" name="order-cake-pay" id="order-cake-pay-visa" value="order-pay-visa" checked>
-                                                <label class="order-radio" for="order-cake-pay-visa"> <i class="logo-visa"></i></label>
+                                                <input type="radio" name="order-cake-pay" id="order-cake-cash-courier" value="order-pay-cash-courier" checked>
+                                                <label class="order-radio active" for="order-cake-cash-courier">
+                                                    <!--<i class="logo-visa"></i>-->
+                                                    <span class="order-pay__item-layout">
+                                                        <i class="pay-cash-courier"></i>
+                                                        <span class="order-pay__text">оплата курьеру</span>
+                                                    </span>
+                                                </label>
                                             </li>
                                             <li class="order-pay__item">
 
-                                                <input type="radio" name="order-cake-pay" id="order-cake-pay-mir" value="order-pay-mir">
-                                                <label class="order-radio" for="order-cake-pay-mir"><i class="logo-mir"></i></label>
+                                                <input type="radio" name="order-cake-pay" id="order-cake-online" value="order-online">
+                                                <label class="order-radio" for="order-cake-online">
+                                                    <!--<i class="logo-mir"></i>-->
+                                                    <span class="order-pay__item-layout">
+                                                        <i class="pay-online"></i>
+                                                        <span class="order-pay__text">картой онлайн</span>
+                                                    </span>
+                                                </label>
 
                                             </li>
                                             <li class="order-pay__item">
-                                                <input type="radio" name="order-cake-pay" id="order-cake-pay-uniteller" value="order-pay-uniteller">
-                                                <label class="order-radio" for="order-cake-pay-uniteller"><i class="logo-uniteller"></i></label>
+                                                <input type="radio" name="order-cake-pay" id="order-cake-pay-in-cafe" value="order-pay-in-cafe">
+                                                <label class="order-radio" for="order-cake-pay-in-cafe">
+                                                    <!--<i class="logo-uniteller"></i>-->
+                                                    <span class="order-pay__item-layout">
+                                                        <i class="pay-in-cafe"></i>
+                                                        <span class="order-pay__text">наличными/картой в кафе</span>
+                                                    </span>
+                                                </label>
                                             </li>
                                         </ul>
                                         <textarea class="c-input" name="order-cake-pay-comment" id="order-cake-pay-comment" rows="2" placeholder="Комментарий к заказу:"></textarea>
