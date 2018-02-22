@@ -3974,18 +3974,34 @@ test popup
 
 }
 
+.c-card-catalog__count .c-counter {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
 .c-card-catalog__count .c-counter__btn {
     font-size: 0;
     position: relative;
+    vertical-align: top;
+    &:after {
+        content: '';
+        font-size: 2.8rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     &.inc {
         display: inline-block;
         &:after {
             content: '+';
-            font-size: 2.8rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        }
+    }
+    &.dec {
+        display: inline-block;
+        &:after {
+            content: '-';
         }
     }
 }

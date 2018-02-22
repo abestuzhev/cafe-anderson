@@ -8126,20 +8126,39 @@ test popup
     color: #9b806f;
     margin-bottom: 1.8rem; }
 
+.c-card-catalog__count .c-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .c-card-catalog__count .c-counter__btn {
   font-size: 0;
-  position: relative; }
+  position: relative;
+  vertical-align: top; }
+  .c-card-catalog__count .c-counter__btn:after {
+    content: '';
+    font-size: 2.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .c-card-catalog__count .c-counter__btn.inc {
     display: inline-block; }
     .c-card-catalog__count .c-counter__btn.inc:after {
-      content: '+';
-      font-size: 2.8rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+      content: '+'; }
+  .c-card-catalog__count .c-counter__btn.dec {
+    display: inline-block; }
+    .c-card-catalog__count .c-counter__btn.dec:after {
+      content: '-'; }
 
 .c-card-product__slider .c-counter__btn:after {
   font-size: 1.9rem; }
