@@ -9392,7 +9392,8 @@ test popup
     .order-delivery-address__point {
       display: block;
       padding-left: 2.1rem;
-      position: relative; }
+      position: relative;
+      margin: 2rem 0 0 2rem; }
       .order-delivery-address__point::before {
         content: '';
         position: absolute;
