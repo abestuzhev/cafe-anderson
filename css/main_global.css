@@ -2742,9 +2742,6 @@ a.c-button:hover {
       background-color: #6faa3a; }
     .c-card-catalog__count .c-counter__field {
       width: 3.4rem !important;
-      -webkit-box-flex: 1;
-          -ms-flex: 1 0 3.4rem;
-              flex: 1 0 3.4rem;
       font-size: 2.6rem;
       line-height: 1;
       color: #fff;
@@ -8147,21 +8144,25 @@ test popup
     margin-bottom: 1.8rem; }
 
 .c-card-catalog__count .c-counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  text-align: center;
+  height: 100%; }
+
+.c-card-catalog__count .c-counter:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; }
+
+.c-card-catalog__count .c-counter__field {
+  vertical-align: middle;
+  display: inline-block; }
 
 .c-card-catalog__count .c-counter__btn {
   font-size: 0;
   position: relative;
-  vertical-align: top; }
+  vertical-align: middle;
+  display: inline-block; }
   .c-card-catalog__count .c-counter__btn:after {
     content: '';
     font-size: 2.8rem;
