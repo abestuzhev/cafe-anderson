@@ -2355,7 +2355,9 @@ a.c-button {
 
         .c-counter__field {
             width: 3.4rem !important;
-            font-size: 2.6rem;
+            max-width: 3.4rem;
+            min-width: 3.4rem;
+            font-size: 2.5rem;
             line-height: 1;
             color: #fff;
             background-color: transparent;
