@@ -5638,14 +5638,22 @@ test popup
 
             &__grid {
                 display: flex;
-                flex-flow: column nowrap;
+                flex-flow: row nowrap;
                 align-items: stretch;
                 justify-content: space-between;
-
-                .order-delivery-custom__item:first-child {
-                    flex: 0 0 75%;
-                    margin-right: 3%;
+                //
+                //.order-delivery-custom__item:first-child {
+                //    flex: 0 0 75%;
+                //    margin-right: 3%;
+                //}
+                .order-delivery-custom__item {
+                    flex: 0 0 32%;
+                    margin-right: 1%;
                 }
+                .order-delivery-custom__item:last-child {
+                    margin-right: 0;
+                }
+
             }
 
             &__item {
@@ -5657,7 +5665,7 @@ test popup
                 }
 
                 textarea {
-                    height:6.7rem;
+                    height:4.6rem;
                 }
             }
         }
