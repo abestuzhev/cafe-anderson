@@ -1992,7 +1992,8 @@ a.c-button {
 
         a {
             white-space: nowrap;
-            margin-right: .3rem;
+            margin-bottom: 3px;
+            display: inline-block;
             &::after {
                 content: '';
                 position: absolute;

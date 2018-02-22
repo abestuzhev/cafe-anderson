@@ -218,7 +218,7 @@ $(document).ready(function ($) {
     });
 
     //изменение в оформлении заказа на другого пользователя
-    $(document).on('change', '#order-user_other', function(){
+    $(document).on('change', '#order-user_other, .order-user_other',  function(){
         if($(this).prop( "checked" )){
             $('.order-user__list').css('display','none');
             $('.order-user__other-form').css('display','flex');

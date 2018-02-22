@@ -2672,7 +2672,8 @@ a.c-button:hover {
         border: none; }
     .c-card-catalog__ingredients a {
       white-space: nowrap;
-      margin-right: .3rem; }
+      margin-bottom: 3px;
+      display: inline-block; }
       .c-card-catalog__ingredients a::after {
         content: '';
         position: absolute;
@@ -8124,6 +8125,24 @@ test popup
     text-align: left;
     color: #9b806f;
     margin-bottom: 1.8rem; }
+
+.c-card-catalog__count .c-counter__btn {
+  font-size: 0;
+  position: relative; }
+  .c-card-catalog__count .c-counter__btn.inc {
+    display: inline-block; }
+    .c-card-catalog__count .c-counter__btn.inc:after {
+      content: '+';
+      font-size: 2.8rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+
+.c-card-product__slider .c-counter__btn:after {
+  font-size: 1.9rem; }
 
 .carousel-slider {
   height: 14rem;
