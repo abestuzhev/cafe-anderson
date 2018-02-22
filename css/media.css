@@ -2578,6 +2578,10 @@
     .simplebar-content {
         padding-right: 0rem !important;
     }
+
+    .order-delivery-address__list {
+        height: auto !important;
+    }
 }
 
 @media (max-width:650px) {
