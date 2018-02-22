@@ -6859,9 +6859,15 @@ test popup
             }
 
             .c-form__del {
-                position: absolute;
-                top: .5rem;
-                right: 0;
+                //position: absolute;
+                //top: .5rem;
+                //right: 0;
+            }
+
+            &-list {
+                .lk-profile-edit__copy {
+                    display: flex;
+                }
             }
         }
 

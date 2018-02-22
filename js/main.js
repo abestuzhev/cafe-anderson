@@ -381,6 +381,19 @@ $(document).ready(function ($) {
         $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     });
 
+    /*добавление полей в контактах ЛК*/
+    $(document).on('click', '#js-lk-profile__add-info-all', function(e) {
+        e.preventDefault();
+        console.log('correct');
+        $(this)
+            .parents('.lk-profile-edit__line')
+            .siblings('.lk-profile-edit__copy')
+            .clone().appendTo(".lk-profile-edit__contact-list");
+        // $('.js-input--date').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+
+        // initProfilePlugin();
+    });
+
     /*добавление ребенка в профиле пользователя*/
     $(document).on('click', '#js-lk-profile__add-child', function(e) {
         e.preventDefault();

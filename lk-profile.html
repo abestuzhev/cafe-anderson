@@ -908,7 +908,50 @@
                             </div>
                             <div class="lk-profile-edit lk-profile-edit__contact">
                                 <h4 class="lk-profile-edit__title">Введите контактные данные для связи с вами</h4>
-                                <div class="c-form__grid--left">
+                                
+                                <!--new block-->
+                                <div class="lk-profile-edit__line c-form__grid--left">
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__user-name">ФИО</label>
+                                        <input class="c-input" type="text" placeholder="Представтесь пожалуйста" name="lk-profile__user-name" id="lk-profile__user-name" required>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__user-phone">Телефон</label>
+                                        <input class="c-input js-input--date" type="text" placeholder="Ваш телефон" name="lk-profile__user-phone" id="lk-profile__user-phone" required>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <label class="c-label" for="lk-profile__user-email">Email</label>
+                                        <input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__user-email" id="lk-profile__user-email">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <a href="#" class="c-form__add" id="js-lk-profile__add-info-all"></a>
+                                    </div>
+                                </div>
+    
+                                <div class="lk-profile-edit__line lk-profile-edit__copy c-form__grid--left">
+                                    <div class="c-form__item">
+                                        <input class="c-input" type="text" placeholder="Представтесь пожалуйста" name="lk-profile__user-name" required>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <input class="c-input" type="text" placeholder="Ваш телефон" name="lk-profile__user-phone" required>
+                                    </div>
+                                    <div class="c-form__item">
+                                        <input class="c-input" type="text" placeholder="Ваш email" name="lk-profile__user-email">
+                                    </div>
+                                    <div class="c-form__item">
+                                        <a href="#" class="c-form__del">Удалить [х]</a>
+                                    </div>
+                                </div>
+    
+                                <div class="lk-profile-edit__contact-list"></div>
+                                <!--END new block-->
+                                
+                                
+                                
+                                
+                                
+                                <!--
+                                <div class="lk-profile-edit__line c-form__grid--left">
                                     <div class="lk-profile-edit__email-list" id="lk-profile-edit__contact-email">
                                         <div class="c-form__item">
                                             <label class="c-label" for="lk-profile__email">Email</label>
@@ -926,6 +969,7 @@
                                         <a href="#" class="c-form__add" id="js-lk-profile__add-email"></a>
                                     </div>
                                 </div>
+                                
                                 <div class="c-form__grid--left">
                                     <div class="lk-profile-edit__tel-list" id="lk-profile-edit__contact-tel">
                                         <div class="c-form__item">
@@ -948,6 +992,7 @@
                                     <label class="c-label" for="lk-profile__loyalty">Карта лояльности</label>
                                     <input class="c-input js-input--loyalty" type="text" placeholder="Введите номер карты" name="lk-profile__loyalty" id="lk-profile__loyalty">
                                 </div>
+                                -->
                                 <button class="c-button c-button__medium">Сохранить</button>
                             </div>
 

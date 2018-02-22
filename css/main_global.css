@@ -10353,10 +10353,10 @@ test popup
           align-self: center;
       position: relative;
       bottom: -8px; }
-    .lk-profile-edit__contact .c-form__del {
-      position: absolute;
-      top: .5rem;
-      right: 0; }
+    .lk-profile-edit__contact-list .lk-profile-edit__copy {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .lk-profile-edit__email-list, .lk-profile-edit__tel-list {
     display: -webkit-box;
     display: -ms-flexbox;
