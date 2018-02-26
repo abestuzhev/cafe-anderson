@@ -2932,6 +2932,17 @@
     .cafe-reviews-slider {
         height: auto;
     }
+
+    .c-card-catalog__count .c-counter__btn {
+        width: 2.4rem;
+        height: 2.4rem;
+        line-height: 2.3rem;
+    }
+
+    .c-card-catalog__count .c-counter__btn:after {
+        content: '';
+        font-size: 2.3rem;
+    }
 }
 
 @media (max-width:540px) {
@@ -3412,10 +3423,6 @@
         width: 2.6rem;
     }
 
-    .c-card-catalog__count .c-counter__btn {
-        width: 2.4rem;
-        height: 2.4rem;
-    }
 
     .c-card-catalog__count .c-counter__field {
         /*width: 2.4rem !important;*/

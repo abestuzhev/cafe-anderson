@@ -2857,14 +2857,14 @@ a.c-button:hover {
       height: 3.4rem;
       border-radius: 3.4rem;
       font-size: 2.8rem;
+      line-height: 2.8rem;
       text-align: center;
-      line-height: 2.4rem;
       color: #fff; }
     .c-card-catalog__count .c-counter__btn:hover {
       background-color: #6faa3a; }
     .c-card-catalog__count .c-counter__field {
-      width: 3.4rem !important;
-      font-size: 2.6rem;
+      width: 4.6rem !important;
+      font-size: 2.5rem;
       line-height: 1;
       color: #fff;
       background-color: transparent; }
@@ -4350,7 +4350,8 @@ a.c-button:hover {
       .header-mobile__cabinet .icon-cabinet {
         width: 21px; }
     .header-mobile__city {
-      float: left; }
+      float: left;
+      padding-right: 1.5rem; }
     .header-mobile__tel {
       float: right;
       color: #9acc4e;
