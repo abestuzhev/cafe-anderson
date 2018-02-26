@@ -961,7 +961,7 @@ $(document).ready(function ($) {
     // showPopup(".c-reviews-positive", '.popup__review');
     // showPopup(".c-reviews-negative", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
-    showPopup(".popup-forgot-password", '.popup__recovery-password');
+    // showPopup(".popup-forgot-password", '.popup__recovery-password');
     showPopup(".c-card-catalog__img", '.popup-product');
     showPopup(".c-card-catalog__title", '.popup-product');
     showPopup("#loadCake", '.popup-cake-order');
