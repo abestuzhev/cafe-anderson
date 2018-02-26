@@ -1189,18 +1189,49 @@ body {
 
 .c-ul-list {
   font-family: "PT Serif Caption";
-  padding-left: 14px; }
+  padding-left: 1.4rem; }
+
+.c-ul-list {
+  margin-left: 3.5rem;
+  font-family: "PT Serif Caption";
+  margin-bottom: 1rem; }
 
 .c-ul-list li {
-  list-style: circle outside;
-  margin-bottom: .2rem; }
+  list-style: disc outside;
+  margin-bottom: .3rem;
+  font-size: 1.3rem;
+  padding-left: .3rem; }
+
+.c-ul-list li ul {
+  padding-left: 6.4rem; }
+
+.c-ul-list li ul li {
+  list-style: circle outside; }
 
 .c-ol-list {
   font-family: "PT Serif Caption";
-  margin-left: 2rem; }
-  .c-ol-list li {
-    list-style-type: decimal;
-    margin-bottom: .2rem; }
+  list-style-type: none;
+  counter-reset: item;
+  margin-left: 3.5rem;
+  margin-bottom: 1rem; }
+
+.c-ol-list li {
+  margin-bottom: .2rem;
+  font-size: 1.3rem;
+  padding-left: .3rem; }
+
+.c-ol-list li:before {
+  content: counter(item) ") ";
+  counter-increment: item; }
+
+.c-ol-list li ul {
+  padding-left: 6.4rem; }
+
+.c-ol-list li ul li {
+  list-style: lower-latin outside; }
+
+.c-ol-list li ul li:before {
+  content: ''; }
 
 .wrapper {
   position: relative;
@@ -1337,19 +1368,63 @@ body.done .footer {
   transition: all .3s ease-out 1s; }
 
 h1 {
+  font-size: 2.6rem;
+  line-height: 1;
+  color: #9b806f;
+  margin: 0;
   font-weight: 400; }
 
 h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
   font-weight: 400; }
 
 h3 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
   font-weight: 400; }
 
 h4 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400; }
+
+h6 {
+  font-family: "PT Serif Caption";
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
   font-weight: 400; }
 
 p {
-  font-family: "PT Serif Caption"; }
+  font-family: "PT Serif Caption";
+  font-size: 1.4rem;
+  color: #555451;
+  line-height: 1.4;
+  margin-bottom: 1rem; }
+
+.a-text {
+  font-size: 1.4rem;
+  color: #555451;
+  line-height: 1.4;
+  margin-bottom: 1rem; }
+
+.a-indent {
+  text-indent: 3.4rem; }
 
 /*title*/
 .c-title__h1 {
@@ -1359,7 +1434,7 @@ p {
   color: #9b806f;
   margin: 0;
   font-weight: 400;
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .c-title__h2 {
   font-family: "PT Serif Caption";
@@ -1368,7 +1443,48 @@ p {
   color: #9b806f;
   margin: 0;
   font-weight: 400;
-  margin-bottom: 2.3rem; }
+  margin-bottom: 1.8rem; }
+
+.c-title__h3 {
+  font-family: "PT Serif Caption";
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 1.6rem; }
+
+.c-title__h4 {
+  font-family: "PT Serif Caption";
+  font-size: 1.7rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 1.4rem; }
+
+.c-title__h4 .c-icon {
+  font-size: 1rem;
+  margin-right: .6rem;
+  vertical-align: baseline; }
+
+.c-title__h5 {
+  font-family: "PT Serif Caption";
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 1.2rem; }
+
+.c-title__h6 {
+  font-family: "PT Serif Caption";
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #9b806f;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 1rem; }
 
 .wrapper select,
 .popup select {
@@ -3651,8 +3767,40 @@ a.c-button:hover {
     font-style: normal; }
 
 /*Стили--------------------------------------------------*/
-.styles {
-  padding: 5rem 0; }
+.styles-item {
+  margin-bottom: 4.5rem; }
+
+.styles-box {
+  margin-bottom: 4.5rem; }
+
+.styles-head__list h1, .styles-head__list h2, .styles-head__list h3, .styles-head__list h4, .styles-head__list h5, .styles-head__list h6 {
+  margin-bottom: 0; }
+
+.styles-head__item {
+  padding: 1.2rem 0;
+  border-bottom: 1px dotted #553023; }
+
+.styles-head__item:last-child {
+  margin-bottom: 0; }
+
+.styles .creators-history__box {
+  margin-bottom: 2.6rem; }
+
+.styles .order-tabs {
+  margin-left: 0; }
+
+.styles .filter-check__item {
+  display: block;
+  margin-bottom: 1rem; }
+
+.styles .filter-left {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.styles .tab {
+  padding-top: 1.4rem;
+  border-top: .5rem solid #7cbd41; }
 
 /*c-title-special--------------------------------------------------*/
 .c-caption-special {
@@ -6668,6 +6816,30 @@ test popup
     .filter-check__item {
       margin-right: .6rem;
       display: inline-block; }
+    .filter-check--green .filter-label {
+      color: #9b9595; }
+    .filter-check--green .filter-label::before {
+      content: '';
+      border: 1px solid #dedcd6;
+      width: 1.7rem;
+      height: 1.7rem; }
+    .filter-check--green .filter-label::after {
+      content: '';
+      background-color: #dedcd6;
+      border: 1px solid #dedcd6;
+      width: .9rem;
+      height: .9rem;
+      top: .6rem;
+      left: .4rem; }
+    .filter-check--green .filter-radio:checked + .filter-label {
+      color: #555451; }
+    .filter-check--green .filter-radio:checked + .filter-label::after {
+      content: '';
+      background-color: #7cbd41;
+      border: 1px solid #7cbd41; }
+    .filter-check--green .filter-radio:checked + .filter-label::before {
+      content: '';
+      border: 1px solid #7cbd41; }
   .filter .l-button__center {
     display: none;
     margin-top: 1.8rem; }
@@ -9713,7 +9885,7 @@ test popup
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.73) 38%, white 64%, white 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(38%, rgba(255, 255, 255, 0.73)), color-stop(64%, white), to(white));
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.73) 38%, white 64%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); }
 
 #order-pickup-cake .order-delivery-address__list.scroll-wrap,
 #order-pickup .order-delivery-address__list.scroll-wrap {
@@ -10480,6 +10652,9 @@ test popup
 
 .popup-cake-order .c-input.error {
   padding-right: 2rem; }
+
+.popup-cake-order .order-delivery-custom__grid {
+  display: block; }
 
 .cake-card {
   position: relative;
