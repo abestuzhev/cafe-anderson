@@ -1013,11 +1013,11 @@ $(document).ready(function ($) {
         $('.popup-event-basket').addClass('is-visible');
     });
 
-    $(document).on('click', '.popup-forgot-password', function (e) {
-        e.preventDefault();
-        $(this).parents('.popup-authorization').removeClass('is-visible');
-        $('.popup__recovery-password').addClass('is-visible');
-    });
+    // $(document).on('click', '.popup-forgot-password', function (e) {
+    //     e.preventDefault();
+    //     $(this).parents('.popup-authorization').removeClass('is-visible');
+    //     $('.popup__recovery-password').addClass('is-visible');
+    // });
 
 
     $('.popup-authorization .popup-authorization__reg').on('click', function (e) {
