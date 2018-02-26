@@ -4345,8 +4345,7 @@ a.c-button:hover {
         display: table; }
     .header-mobile__cabinet {
       float: left;
-      margin-right: 1.1rem;
-      display: none; }
+      margin-right: 1.1rem; }
       .header-mobile__cabinet .icon-cabinet {
         width: 21px; }
     .header-mobile__city {
@@ -4649,11 +4648,12 @@ a.c-button:hover {
       color: #9b9696;
       margin-right: .3rem;
       white-space: nowrap;
-      display: inline-block; }
+      display: inline-block;
+      cursor: pointer; }
       .header-cabinet__text::after {
         content: '';
         border-bottom: 1px dotted #9b806f !important; }
-    .header-cabinet:hover a {
+    .header-cabinet:hover .header-cabinet__text {
       color: #67af26; }
     .header-cabinet:hover svg {
       fill: #67af26; }

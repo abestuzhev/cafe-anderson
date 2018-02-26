@@ -183,7 +183,7 @@
         &__cabinet {
             float: left;
             margin-right: 1.1rem;
-            display: none;
+            // display: none;
 
             .icon-cabinet {
                 width: 21px;
@@ -626,6 +626,7 @@
             margin-right: .3rem;
             white-space: nowrap;
             display: inline-block;
+            cursor: pointer;
 
             &::after {
                 content: '';
@@ -633,7 +634,7 @@
             }
         }
 
-        &:hover a {
+        &:hover .header-cabinet__text {
             color: $color_active;
 
         }
