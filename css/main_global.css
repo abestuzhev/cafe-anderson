@@ -2710,7 +2710,13 @@ a.c-button:hover {
     text-align: left;
     color: #553023;
     background-color: #fff;
-    border-radius: .4rem; }
+    border-radius: .4rem;
+    vertical-align: middle; }
+    .c-card-catalog__price::before {
+      content: '';
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle; }
   .c-card-catalog__count {
     border-radius: .8rem;
     background-color: #7cbd41;

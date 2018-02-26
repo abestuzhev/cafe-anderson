@@ -2031,6 +2031,14 @@ a.c-button {
         color: #553023;
         background-color: $white;
         border-radius: .4rem;
+        vertical-align: middle;
+
+        &::before {
+            content: '';
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
 
     }
 
