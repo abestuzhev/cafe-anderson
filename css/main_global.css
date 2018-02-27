@@ -4390,7 +4390,7 @@ a.c-button:hover {
       .header-mobile__menu:hover .icon-menu {
         fill: #67af26; }
       .header-mobile__menu .icon-menu {
-        height: auto; }
+        height: 3px; }
     .header-mobile__search {
       float: right; }
       .header-mobile__search-box {
