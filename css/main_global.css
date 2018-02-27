@@ -8334,8 +8334,7 @@ test popup
 
 .c-card-catalog__count .c-counter > button {
   line-height: 0;
-  vertical-align: middle;
-  margin-top: 2px; }
+  vertical-align: middle; }
 
 .c-card-catalog__price {
   line-height: 4rem; }
@@ -8343,7 +8342,8 @@ test popup
 .c-card-catalog__count .c-counter__field {
   vertical-align: middle;
   display: inline-block;
-  line-height: 0; }
+  line-height: 2.8rem;
+  height: 2.8rem; }
 
 .c-card-catalog__count .c-counter__btn {
   font-size: 0;
