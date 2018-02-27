@@ -4351,6 +4351,10 @@ a.c-button:hover {
     .header-mobile__city {
       float: left;
       padding-right: 1.5rem; }
+      .header-mobile__city .popup-bubble {
+        z-index: 22;
+        left: 2.3%;
+        top: 3.4rem; }
     .header-mobile__tel {
       float: right;
       color: #9acc4e;

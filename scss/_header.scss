@@ -193,6 +193,12 @@
         &__city {
             float: left;
             padding-right: 1.5rem;
+            
+            .popup-bubble {
+                z-index:22;
+                left: 2.3%;
+                top: 3.4rem;
+            }
         }
 
         &__tel {
