@@ -1325,7 +1325,7 @@ main {
     
     .popup {
         width: 88.4rem;
-        max-width: 88.4rem;
+        min-width: 88.4rem;
         width: 100%;
         position: relative;
         overflow: hidden;
@@ -4641,7 +4641,7 @@ test popup
         margin-bottom: 2.5rem;
         
         &__img {
-            width: 70%;
+            width: 28rem;
             position: relative;
             margin-bottom: 1.4rem;
             
@@ -4670,6 +4670,7 @@ test popup
             padding-left: 1.6rem;
             font-size: 1.3rem;
             color: #9b9595;
+            flex: 1;
             p {
                 margin-bottom: 1.2rem;
             }
