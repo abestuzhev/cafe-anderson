@@ -8330,18 +8330,17 @@ test popup
 
 .c-card-catalog__count .c-counter {
   text-align: center;
-  height: 100%; }
+  font-size: 0; }
 
-.c-card-catalog__count .c-counter:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
+.c-card-catalog__count .c-counter > button {
+  line-height: 0;
   vertical-align: middle;
-  margin-right: -0.25em; }
+  margin-top: 2px; }
 
 .c-card-catalog__count .c-counter__field {
   vertical-align: middle;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 0; }
 
 .c-card-catalog__count .c-counter__btn {
   font-size: 0;

@@ -4011,21 +4011,27 @@ test popup
     //flex-flow: row wrap;
     //align-items: center;
     text-align: center;
-    height: 100%;
-    
+    //height: 100%;
+    font-size: 0;
+}
+.c-card-catalog__count .c-counter > button {
+    line-height: 0;
+    vertical-align: middle;
+    margin-top: 2px;
 }
 
 .c-card-catalog__count .c-counter:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em;
+    //content: '';
+    //display: inline-block;
+    //height: 100%;
+    //vertical-align: middle;
+    //margin-right: -0.25em;
 }
 
 .c-card-catalog__count .c-counter__field {
     vertical-align: middle;
     display: inline-block;
+    line-height: 0;
 }
 
 .c-card-catalog__count .c-counter__btn {
