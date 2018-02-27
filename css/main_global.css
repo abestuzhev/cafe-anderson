@@ -6039,13 +6039,13 @@ main {
 .popup-basket {
   opacity: 0;
   visibility: hidden;
-  width: 25.5rem;
+  width: 25.8rem;
   position: absolute;
   z-index: 99999;
   top: -9px;
   left: -154px;
   background-color: #fff;
-  padding: 1.4rem 1.5rem;
+  padding: 1.4rem 1.2rem 1.4rem 1.5rem;
   font-family: "PT Serif Caption";
   border-radius: 0 0 1rem 1rem;
   -webkit-box-shadow: 0 5px 29px 0 rgba(0, 0, 0, 0.25);
