@@ -1285,6 +1285,7 @@
         left: 0;
         width: 100% !important;
         max-width: 100% !important;
+        min-width: auto;
         height: 100vh;
         margin: 0;
         overflow-y: scroll;
