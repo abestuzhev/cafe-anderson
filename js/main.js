@@ -59,15 +59,15 @@ $(window).on('load', function(){
 
     //хак для быстрого обрезания всего списка в модальном окне заказа торта
 
-    function changeHeightCakesAddressList(){
-
-    }
-    changeHeightCakesAddressList();
-
-    $(document).on('click', '.cake-card__hover', function(){
+    function addClassCakesAddressList(){
         $('.popup-cake-order .order-delivery-address__list').addClass('scroll-wrap');
-        console.log('scroll-wrap add');
-    });
+    }
+    addClassCakesAddressList();
+
+    // $(document).on('click', '.cake-card__hover', function(){
+    //     $('.popup-cake-order .order-delivery-address__list').addClass('scroll-wrap');
+    //     console.log('scroll-wrap add');
+    // });
 
 
 

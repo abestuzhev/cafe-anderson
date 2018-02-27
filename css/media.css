@@ -2943,6 +2943,19 @@
         content: '';
         font-size: 2.3rem;
     }
+
+    .c-card-catalog__footer {
+        align-items: flex-end;
+    }
+
+    .c-card-catalog__price {
+        padding: 0.1rem 1.4rem 0.2rem 3rem;
+        box-shadow: 0 1px 14px 0 rgba(0,0,0,.1);
+    }
+
+    .c-card-catalog__basket {
+        padding: .9rem 1.3rem;
+    }
 }
 
 @media (max-width:540px) {
