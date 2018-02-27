@@ -7607,10 +7607,10 @@ test popup
     .cafe-description__text {
       font-size: 1.5rem;
       line-height: 1.33;
-      text-align: left;
-      color: #ffffff; }
+      text-align: left; }
       .cafe-description__text p {
-        margin-bottom: 2.3rem; }
+        margin-bottom: 2.3rem;
+        color: #ffffff; }
         .cafe-description__text p:last-child {
           margin-bottom: 0; }
   .cafe-reviews {
