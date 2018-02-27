@@ -3226,6 +3226,12 @@
         margin-left: -15px;
         width: 109%;
     }
+
+
+    .popup-product .cafe-map {
+        width: 100%;
+    }
+
     .reviews-form > .c-form__item:first-child {
         width: 70%;
     }

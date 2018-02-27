@@ -8328,29 +8328,35 @@ test popup
     color: #9b806f;
     margin-bottom: 1.8rem; }
 
-.c-card-catalog__count .c-counter {
+.c-card-catalog__count .c-counter,
+.c-card-product__count .c-counter {
   text-align: center;
   font-size: 0; }
 
-.c-card-catalog__count .c-counter > button {
+.c-card-catalog__count .c-counter > button,
+.c-card-product__count .c-counter > button {
   line-height: 0;
   vertical-align: middle; }
 
-.c-card-catalog__price {
+.c-card-catalog__price,
+.c-card-product__price {
   line-height: 4rem; }
 
-.c-card-catalog__count .c-counter__field {
+.c-card-catalog__count .c-counter__field,
+.c-card-product__count .c-counter__field {
   vertical-align: middle;
   display: inline-block;
   line-height: 2.8rem;
   height: 2.8rem; }
 
-.c-card-catalog__count .c-counter__btn {
+.c-card-catalog__count .c-counter__btn,
+.c-card-product__count .c-counter__btn {
   font-size: 0;
   position: relative;
   vertical-align: middle;
   display: inline-block; }
-  .c-card-catalog__count .c-counter__btn:after {
+  .c-card-catalog__count .c-counter__btn:after,
+  .c-card-product__count .c-counter__btn:after {
     content: '';
     font-size: 2.8rem;
     position: absolute;
@@ -8359,13 +8365,17 @@ test popup
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
-  .c-card-catalog__count .c-counter__btn.inc {
+  .c-card-catalog__count .c-counter__btn.inc,
+  .c-card-product__count .c-counter__btn.inc {
     display: inline-block; }
-    .c-card-catalog__count .c-counter__btn.inc:after {
+    .c-card-catalog__count .c-counter__btn.inc:after,
+    .c-card-product__count .c-counter__btn.inc:after {
       content: '+'; }
-  .c-card-catalog__count .c-counter__btn.dec {
+  .c-card-catalog__count .c-counter__btn.dec,
+  .c-card-product__count .c-counter__btn.dec {
     display: inline-block; }
-    .c-card-catalog__count .c-counter__btn.dec:after {
+    .c-card-catalog__count .c-counter__btn.dec:after,
+    .c-card-product__count .c-counter__btn.dec:after {
       content: '-'; }
 
 .c-card-product__slider .c-counter__btn:after {
