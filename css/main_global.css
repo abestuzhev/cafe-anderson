@@ -8337,6 +8337,9 @@ test popup
   vertical-align: middle;
   margin-top: 2px; }
 
+.c-card-catalog__price {
+  line-height: 4rem; }
+
 .c-card-catalog__count .c-counter__field {
   vertical-align: middle;
   display: inline-block;

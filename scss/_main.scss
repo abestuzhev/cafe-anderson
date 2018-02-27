@@ -4014,10 +4014,15 @@ test popup
     //height: 100%;
     font-size: 0;
 }
+
 .c-card-catalog__count .c-counter > button {
     line-height: 0;
     vertical-align: middle;
     margin-top: 2px;
+}
+
+.c-card-catalog__price {
+    line-height: 4rem;
 }
 
 .c-card-catalog__count .c-counter:before {
