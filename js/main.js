@@ -147,18 +147,19 @@ $(document).ready(function ($) {
 
     // documentHeight
     function changeHeightBasketPopup (){
-        var basketScroll= $('.popup-basket__scroll'),
+        var basketScroll = $('.popup-basket__scroll'),
             heightBasket = basketScroll.height();
 
-        if (heightBasket >= documentHeight){
+        if (heightBasket >= documentHeight - 100){
             basketScroll.addClass('fixed-height-basket');
-            // console.log('if ' + heightBasket);
+            console.log('if ' + heightBasket);
         }else {
             basketScroll.removeClass('fixed-height-basket');
-            // console.log('else ' + heightBasket);
+            console.log('else ' + heightBasket);
         }
     }
 
+    changeHeightBasketPopup();
 
     $(window).resize(function(){
         changeHeightBasketPopup();
