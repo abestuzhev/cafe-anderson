@@ -59,6 +59,7 @@ $(window).on('load', function(){
 
     //хак для быстрого обрезания всего списка в модальном окне заказа торта
     $('.popup-cake-order .order-delivery-address__list').addClass('scroll-wrap');
+    console.log('scroll-wrap add');
 
 
     $(document).on('click', '.order-tabs__item', function(){
