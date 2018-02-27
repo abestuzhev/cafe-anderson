@@ -92,6 +92,10 @@
     transform: translateX(-50%);
 }
 
+.sticky .header-mobile__city .popup-bubble {
+    display: none;
+}
+
 .header-top__hide {
     transform: translateY(-43px);
     @extend %transition_all;
@@ -196,7 +200,7 @@
             
             .popup-bubble {
                 z-index:22;
-                left: 2.3%;
+                left: 1.2rem;
                 top: 3.4rem;
             }
         }

@@ -4267,6 +4267,9 @@ a.c-button:hover {
       -ms-transform: translateX(-50%);
           transform: translateX(-50%); }
 
+.sticky .header-mobile__city .popup-bubble {
+  display: none; }
+
 .header-top__hide {
   -webkit-transform: translateY(-43px);
       -ms-transform: translateY(-43px);
@@ -4353,7 +4356,7 @@ a.c-button:hover {
       padding-right: 1.5rem; }
       .header-mobile__city .popup-bubble {
         z-index: 22;
-        left: 2.3%;
+        left: 1.2rem;
         top: 3.4rem; }
     .header-mobile__tel {
       float: right;
