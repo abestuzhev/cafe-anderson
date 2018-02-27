@@ -38,14 +38,14 @@ $(window).on('load', function(){
     var orderDeliveryMap = $('.order-delivery__map').height(),
         orderDeliveryAddressList = $('.order-delivery-address__list'),
         orderDeliveryAddressListHeight = orderDeliveryAddressList.height();
-    console.log('orderDeliveryMap: ' + orderDeliveryMap);
-    console.log('orderDeliveryAddressList: ' + orderDeliveryAddressListHeight);
+    // console.log('orderDeliveryMap: ' + orderDeliveryMap);
+    // console.log('orderDeliveryAddressList: ' + orderDeliveryAddressListHeight);
 
 
     function changeHeightAddressList (){
         orderDeliveryAddressList.each(function(index, elem){
             var elemHeight =  $(elem).height();
-            console.log('elemHeight: ' + elemHeight);
+            // console.log('elemHeight: ' + elemHeight);
             if(elemHeight > 320){
                 // new SimpleBar(orderDeliveryAddressList[0]);
                 // new SimpleBar(orderDeliveryAddressList[1]);
@@ -58,8 +58,19 @@ $(window).on('load', function(){
     changeHeightAddressList();
 
     //хак для быстрого обрезания всего списка в модальном окне заказа торта
-    $('.popup-cake-order .order-delivery-address__list').addClass('scroll-wrap');
-    console.log('scroll-wrap add');
+
+    function changeHeightCakesAddressList(){
+
+    }
+    changeHeightCakesAddressList();
+
+    $(document).on('click', '.cake-card__hover', function(){
+        $('.popup-cake-order .order-delivery-address__list').addClass('scroll-wrap');
+        console.log('scroll-wrap add');
+    });
+
+
+
 
 
     $(document).on('click', '.order-tabs__item', function(){
@@ -156,10 +167,10 @@ $(document).ready(function ($) {
 
         if (heightBasket >= documentHeight - 100){
             basketScroll.addClass('fixed-height-basket');
-            console.log('if ' + heightBasket);
+            // console.log('if ' + heightBasket);
         }else {
             basketScroll.removeClass('fixed-height-basket');
-            console.log('else ' + heightBasket);
+            // console.log('else ' + heightBasket);
         }
     }
 
