@@ -57,6 +57,9 @@ $(window).on('load', function(){
     }
     changeHeightAddressList();
 
+    //хак для быстрого обрезания всего списка в модальном окне заказа торта
+    $('.popup-cake-order .order-delivery-address__list').addClass('scroll-wrap');
+
 
     $(document).on('click', '.order-tabs__item', function(){
         changeHeightAddressList();
