@@ -8806,6 +8806,7 @@ test popup
     -webkit-box-flex: 1;
         -ms-flex: 1 1 60%;
             flex: 1 1 60%;
+    width: 60%;
     word-wrap: break-word; }
     .popup-event-content__description p {
       margin-bottom: 1.2rem; }
