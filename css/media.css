@@ -1514,6 +1514,8 @@
 
     .popup-event-content__description {
       padding-left: 0;
+        flex: 1 0 auto;
+        width: 100%;
     }
 
     .popup-event-place .popup-form__item {
