@@ -4889,6 +4889,19 @@ test popup
     
     &__item {
         margin-bottom: 2.4rem;
+        
+        //&:nth-child(2):after {
+        //    content: '';
+        //    clear: both;
+        //    display: block;
+        //}
+    
+        &:nth-child(3):before {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        
     }
     
     .filter-form {
@@ -4934,6 +4947,13 @@ test popup
     .datepicker-inline {
         float: left;
         max-width: 42rem;
+        height: 46rem;
+        margin-bottom: 2rem;
+        
+        &::after {
+            content: '';
+            clear: both;
+        }
     }
     
     .datepicker {

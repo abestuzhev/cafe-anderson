@@ -9019,6 +9019,10 @@ test popup
 
 .events__item {
   margin-bottom: 2.4rem; }
+  .events__item:nth-child(3):before {
+    content: '';
+    clear: both;
+    display: block; }
 
 .events .filter-form {
   -webkit-box-pack: start;
@@ -9051,7 +9055,12 @@ test popup
 
 .events .datepicker-inline {
   float: left;
-  max-width: 42rem; }
+  max-width: 42rem;
+  height: 46rem;
+  margin-bottom: 2rem; }
+  .events .datepicker-inline::after {
+    content: '';
+    clear: both; }
 
 .events .datepicker {
   width: 100%; }
