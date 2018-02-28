@@ -4024,6 +4024,13 @@ test popup
     vertical-align: middle;
 }
 
+.c-card-catalog__price {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
 .c-card-catalog__price,
 .c-card-product__price {
     //line-height: 4rem;

@@ -8342,6 +8342,14 @@ test popup
   line-height: 0;
   vertical-align: middle; }
 
+.c-card-catalog__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .c-card-catalog__count .c-counter__field,
 .c-card-product__count .c-counter__field {
   vertical-align: middle;
