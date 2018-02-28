@@ -4026,15 +4026,17 @@ test popup
 
 .c-card-catalog__price,
 .c-card-product__price {
-    line-height: 4rem;
+    //line-height: 4rem;
+    //padding-top: .6rem;
 }
 
 .c-card-catalog__count .c-counter__field,
 .c-card-product__count .c-counter__field {
     vertical-align: middle;
     display: inline-block;
-    line-height: 2.8rem;
-    height: 2.8rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0 1rem;
 }
 
 .c-card-catalog__count .c-counter__btn,
