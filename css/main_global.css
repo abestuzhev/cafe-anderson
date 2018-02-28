@@ -974,6 +974,18 @@ i.icon-chair {
   width: 1em;
   height: .5em; }
 
+.symbol-lean {
+  fill: #7f7d7c;
+  font-size: 3.6rem;
+  width: 1em;
+  height: .5em; }
+
+.symbol-lean-porridge {
+  fill: #7f7d7c;
+  font-size: 3.6rem;
+  width: 1em;
+  height: .5em; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -7104,7 +7116,9 @@ test popup
       background-color: #7cbd41; }
       .filter-mix__item .c-symbol {
         font-size: 2.4rem; }
-      .filter-mix__item .symbol-roll-cake {
+      .filter-mix__item .symbol-roll-cake,
+      .filter-mix__item .symbol-lean,
+      .filter-mix__item .symbol-lean-porridge {
         font-size: 3.6rem; }
       .filter-mix__item svg {
         fill: #fff; }
