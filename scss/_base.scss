@@ -2176,12 +2176,13 @@ a.c-button {
         }
 
         .c-counter__field {
-            width: 4.6rem !important;
+            width: 4.9rem !important;
             //flex: 1 0 3.4rem;
             font-size: 2.5rem;
             line-height: 1;
             color: $white;
             background-color: transparent;
+            letter-spacing: -.2rem;
         }
     }
 
@@ -2479,9 +2480,9 @@ a.c-button {
 
         .c-counter__field {
             display: inline-block;
-            width: 3.4rem !important;
-            flex: 1 0 3.4rem;
-            font-size: 2.5rem;
+            width: 4.9rem !important;
+            flex: 1 0 4.9rem;
+            font-size: 2.4rem;
             line-height: 1;
             color: #fff;
             background-color: transparent;

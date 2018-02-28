@@ -2860,11 +2860,12 @@ a.c-button:hover {
     .c-card-catalog__count .c-counter__btn:hover {
       background-color: #6faa3a; }
     .c-card-catalog__count .c-counter__field {
-      width: 4.6rem !important;
+      width: 4.9rem !important;
       font-size: 2.5rem;
       line-height: 1;
       color: #fff;
-      background-color: transparent; }
+      background-color: transparent;
+      letter-spacing: -.2rem; }
   .c-card-catalog__basket {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3119,11 +3120,11 @@ a.c-button:hover {
       background-color: #6faa3a; }
   .c-card-product__count .c-counter__field {
     display: inline-block;
-    width: 3.4rem !important;
+    width: 4.9rem !important;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 3.4rem;
-            flex: 1 0 3.4rem;
-    font-size: 2.5rem;
+        -ms-flex: 1 0 4.9rem;
+            flex: 1 0 4.9rem;
+    font-size: 2.4rem;
     line-height: 1;
     color: #fff;
     background-color: transparent; }

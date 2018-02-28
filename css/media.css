@@ -592,7 +592,7 @@
 
     .filter-mix__item::before {
         content: '';
-        display: none;
+        /*display: none;*/
     }
 
     .filter-mix__item svg {
