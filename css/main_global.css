@@ -10713,6 +10713,10 @@ test popup
 .popup-cake-order .order-delivery-custom__grid {
   display: block; }
 
+.popup-cake-order .c-card-product__count {
+  width: auto !important;
+  display: inline-block; }
+
 .cake-card {
   position: relative;
   height: 25rem;
@@ -11129,7 +11133,6 @@ test popup
   .cake-order-final__right {
     margin-bottom: 1rem; }
   .cake-order-final__total {
-    text-align: center;
     margin-bottom: 1rem; }
   .cake-order-result {
     display: block;

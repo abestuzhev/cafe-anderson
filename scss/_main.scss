@@ -7103,6 +7103,11 @@ test popup
         display: block;
     }
     
+    .c-card-product__count {
+        width: auto !important;
+        display: inline-block;
+    }
+    
 }
 
 .cake {
@@ -7564,7 +7569,7 @@ test popup
         margin-bottom: 1rem;
     }
     .cake-order-final__total {
-        text-align: center;
+        //text-align: center;
         margin-bottom: 1rem;
     }
     .cake-order-result {
