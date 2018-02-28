@@ -11237,6 +11237,8 @@ test popup
   margin-bottom: 2.4rem; }
   .graduation-party-banner__slider {
     max-height: 42rem; }
+    .graduation-party-banner__slider .owl-nav {
+      display: none; }
   .graduation-party-banner__slide {
     max-height: 42rem;
     background-color: #8a5744;

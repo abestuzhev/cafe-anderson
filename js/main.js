@@ -280,7 +280,8 @@ $(document).ready(function ($) {
     $('.graduation-party-banner__slider').owlCarousel({
         loop:true,
         items: 1,
-        autoheight: true
+        autoheight: true,
+        nav: false
     });
 
 

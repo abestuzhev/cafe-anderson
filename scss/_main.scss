@@ -7717,6 +7717,10 @@ test popup
         
         &__slider {
             max-height: 42rem;
+            
+            .owl-nav {
+                display: none;
+            }
         }
         &__slide {
             //width: 100%;
