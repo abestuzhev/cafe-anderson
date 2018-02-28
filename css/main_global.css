@@ -6311,6 +6311,7 @@ main {
 .popup-product .popup {
   width: 88.4rem;
   min-width: 88.4rem;
+  max-width: 88.4rem;
   width: 100%;
   position: relative;
   overflow: hidden; }
@@ -6406,13 +6407,17 @@ main {
           justify-content: flex-start;
   overflow: hidden; }
 
+.popup-layout .popup {
+  float: left; }
+
 .popup-mini {
   font-family: "PT Serif Caption";
   width: 26.4rem;
   min-width: 26.4rem;
   overflow: hidden;
   border-radius: 1rem;
-  margin-left: 1.2rem; }
+  margin-left: 1.2rem;
+  float: right; }
   .popup-mini-product {
     margin-bottom: .8rem; }
     .popup-mini-product__name {

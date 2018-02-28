@@ -1326,6 +1326,7 @@ main {
     .popup {
         width: 88.4rem;
         min-width: 88.4rem;
+        max-width: 88.4rem;
         width: 100%;
         position: relative;
         overflow: hidden;
@@ -1437,6 +1438,10 @@ main {
     overflow: hidden;
 }
 
+.popup-layout .popup {
+    float: left;
+}
+
 .popup-mini {
     font-family: $font_serif;
     width: 26.4rem;
@@ -1444,6 +1449,7 @@ main {
     overflow: hidden;
     border-radius: 1rem;
     margin-left: 1.2rem;
+    float:right;
     
     &__list {
     }
