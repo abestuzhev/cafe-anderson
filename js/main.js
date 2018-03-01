@@ -822,6 +822,9 @@ $(document).ready(function ($) {
         animation: 'grow',
         delay: 100,
         trigger : 'custom' ,
+        maxWidth: 500,
+        contentAsHTML: true,
+        interactive: true,
         triggerOpen : {
             mouseenter : true ,
             touchstart : true
