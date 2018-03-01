@@ -145,20 +145,7 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
-    // setTimeout(function(){
-    //     $(".popup-graduation").addClass('is-visible');
-    //     $('.mfp-bg').addClass('is-visible');
-    //     $('html').addClass('lock-html');
-    //
-    //     if(windowWidth > documentWidth){
-    //         $('html').css({
-    //             'margin-right':'17px'
-    //         });
-    //         $('.mfp-wrap').css({
-    //             'overflow-y':'scroll'
-    //         });
-    //     }
-    // }, 3000);
+
 
 
     /*изменение оплаты*/
