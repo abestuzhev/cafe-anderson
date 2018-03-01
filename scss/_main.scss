@@ -7729,6 +7729,55 @@ test popup
     
 }
 
+.popup-graduation {
+    .popup {
+        width: 37rem;
+        min-width: 37rem;
+    }
+    
+    .popup-body {
+        padding: 0;
+    }
+    
+    &__title {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-bottom: 1.4rem;
+        background-color: #CE3102;
+        padding: 1.4rem 2rem;
+        
+        span {
+            font-family: $font_serif;
+            text-align: left;
+            //text-transform: uppercase;
+            font-size: 2.3rem;
+            color: #ffffff;
+            margin-left: 1.2rem;
+        }
+        
+        
+        &::after {
+            content: '';
+            position: absolute;
+        }
+    }
+    
+    &__text {
+        margin-bottom: 1.6rem;
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+    
+    .l-button__center {
+        padding-bottom: 2rem;
+    }
+    
+    &__close {
+        background-color: #ccc;
+    }
+}
+
 .graduation-party {
     
     &-banner {

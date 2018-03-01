@@ -11225,6 +11225,48 @@ test popup
       -ms-transform: rotate(-166deg);
           transform: rotate(-166deg); }
 
+.popup-graduation .popup {
+  width: 37rem;
+  min-width: 37rem; }
+
+.popup-graduation .popup-body {
+  padding: 0; }
+
+.popup-graduation__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.4rem;
+  background-color: #CE3102;
+  padding: 1.4rem 2rem; }
+  .popup-graduation__title span {
+    font-family: "PT Serif Caption";
+    text-align: left;
+    font-size: 2.3rem;
+    color: #ffffff;
+    margin-left: 1.2rem; }
+  .popup-graduation__title::after {
+    content: '';
+    position: absolute; }
+
+.popup-graduation__text {
+  margin-bottom: 1.6rem;
+  padding: 0 1.4rem;
+  text-align: center; }
+
+.popup-graduation .l-button__center {
+  padding-bottom: 2rem; }
+
+.popup-graduation__close {
+  background-color: #ccc; }
+
 .graduation-party-banner {
   margin-bottom: 2.4rem; }
   .graduation-party-banner__slider {

@@ -34,6 +34,8 @@ var documentHeight = (document.documentElement.clientHeight );
 
 $(window).on('load', function(){
 
+
+
     /*скролл при выборе доставки*/
     var orderDeliveryMap = $('.order-delivery__map').height(),
         orderDeliveryAddressList = $('.order-delivery-address__list'),
@@ -133,11 +135,30 @@ $(window).on('load', function(){
 
 
 
+
+
+
+
 });
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    setTimeout(function(){
+        $(".popup-graduation").addClass('is-visible');
+        $('.mfp-bg').addClass('is-visible');
+        $('html').addClass('lock-html');
+
+        if(windowWidth > documentWidth){
+            $('html').css({
+                'margin-right':'17px'
+            });
+            $('.mfp-wrap').css({
+                'overflow-y':'scroll'
+            });
+        }
+    }, 3000);
 
 
     /*изменение оплаты*/
@@ -991,6 +1012,7 @@ $(document).ready(function ($) {
 
 
 
+
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();
     //     $(this).parents('.popup-cake-order').removeClass('is-visible');
@@ -1065,6 +1087,9 @@ $(document).ready(function ($) {
         $('.mfp-bg').addClass('is-visible');
         $(this).parents('.header-mobile__auth').removeClass('.popup-slide__show');
     });
+
+
+
 
     /*поиск в шапке*/
     $(".header-search .icon-search, .header-search .symbol-search").click(function (e) {
