@@ -837,6 +837,35 @@ $(document).ready(function ($) {
         }
     });
 
+
+    //подключение тултипа
+    $( '.tooltip-catalog' ).tooltipster({
+        animation: 'grow',
+        delay: 100,
+        trigger : 'click' ,
+        maxWidth: 500,
+        functionBefore: function(instance, helper){
+            if (helper.event.type == 'click') {
+                instance.content('You opened me with a regular mouse <a href="https://www.google.ru/?hl=ru">click :)</a>.');
+            }
+            else {
+                instance.content('You opened me by a tap on the screen :)');
+            }
+        },
+        contentAsHTML: true,
+        interactive: true,
+        triggerOpen : {
+            mouseenter : true ,
+            touchstart : true
+        },
+        triggerClose : {
+            mouseleave : true,
+            click : true ,
+            scroll : true ,
+            tap : true
+        }
+    });
+
     /*кастомный скролл*/
     $('.popup-basket__scroll').jScrollPane();
 
