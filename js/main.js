@@ -724,7 +724,7 @@ $(document).ready(function ($) {
         stagePadding: 10,
         responsiveClass: true,
         responsive:{
-            380:{
+            0:{
                 items:1
             },
             480:{
