@@ -1165,6 +1165,9 @@ div {
   -o-transition: .5s opacity ease-in-out;
   transition: .5s opacity ease-in-out; }
 
+.is-content-hidden .mfp-wrap {
+  display: none; }
+
 .is-content-hidden.visible .header {
   opacity: 1;
   -webkit-transition: .2s opacity ease-in-out;
@@ -1188,6 +1191,9 @@ div {
   -webkit-transition: .5s opacity ease-in-out .5s;
   -o-transition: .5s opacity ease-in-out .5s;
   transition: .5s opacity ease-in-out .5s; }
+
+.is-content-hidden.visible .mfp-wrap {
+  display: block; }
 
 html {
   height: 100%;
