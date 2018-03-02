@@ -13,7 +13,12 @@ document.body.onload = function(){
     if(document.body.classList.contains('is-content-hidden')){
         document.body.classList.add('visible');
     }
+
+    document.body.classList.add('onloadContent');
+
 };
+
+
 
 // функция подключения всех скриптов
 // function dynamicallyLoadScript() {

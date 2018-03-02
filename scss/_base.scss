@@ -15,10 +15,7 @@
         transition: .5s opacity ease-in-out;
     }
     
-    .mfp-wrap {
-        display: none;
-    }
-
+    
 }
 
 .is-content-hidden.visible {
@@ -46,6 +43,14 @@
         opacity: 1;
         transition: .5s opacity ease-in-out .5s;
     }
+    
+}
+
+.mfp-wrap {
+    display: none;
+}
+
+.onloadContent {
     
     .mfp-wrap {
         display: block;
