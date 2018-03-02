@@ -8,6 +8,7 @@
 
     .header,
     main,
+    .header-navigation,
     .footer {
         opacity: 0;
         zoom: 1;
@@ -24,12 +25,17 @@
 
     .header {
         opacity: 1;
-        transition: .5s opacity ease-in-out;
+        transition: .2s opacity ease-in-out;
+    }
+    
+    .header-navigation {
+        opacity: 1;
+        transition: .3s opacity ease-in-out;
     }
 
     main {
         opacity: 1;
-        transition: .5s opacity ease-in-out .3s;
+        transition: .4s opacity ease-in-out .3s;
     }
 
     .footer {
