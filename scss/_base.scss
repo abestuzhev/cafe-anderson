@@ -94,7 +94,7 @@ body {
   .c-ul-list li {
     list-style: disc outside;
     margin-bottom: .3rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-left: .3rem; }
 
     .c-ul-list li ul {
@@ -112,7 +112,7 @@ body {
 
   .c-ol-list li {
     margin-bottom: .2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-left: .3rem; }
 
     .c-ol-list li:before {
@@ -317,19 +317,20 @@ h6 {
 
 p {
   font-family: "PT Serif Caption";
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #555451;
   line-height: 1.4;
   margin-bottom: 1rem; }
 
 .a-text {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #555451;
   line-height: 1.4;
   margin-bottom: 1rem; }
 
 .a-indent {
-  text-indent: 3.4rem; }
+  text-indent: 3.4rem;
+}
 
 /*title*/
 .c-title__h1 {
