@@ -11286,6 +11286,9 @@ test popup
   .popup-graduation__title span {
     color: #fa36a8; }
 
+.popup-graduation .l-button__center {
+  text-align: center !important; }
+
 .popup-graduation__close {
   right: .6rem;
   top: .6rem;
