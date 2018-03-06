@@ -2184,6 +2184,11 @@
         border-radius: 0;
     }
 
+    .fixed-input {
+        position: fixed;
+        width: 100%;
+    }
+
     .popup-graduation .popup {
         top: 24%;
         min-width: auto;
