@@ -966,7 +966,7 @@ $(document).ready(function ($) {
 
 
             $html.addClass('lock-html');
-            $('.wrapper').addClass('fixed-input');
+            $('body').addClass('fixed-input');
             if(windowWidth > documentWidth){
                 $html.css({
                     'margin-right':'17px'
@@ -989,7 +989,7 @@ $(document).ready(function ($) {
         $html.css({
             'margin-right':'0'
         }).removeClass('lock-html');
-        $('.wrapper').removeClass('fixed-input');
+        $('body').removeClass('fixed-input');
         $('.header.sticky').css({
             // 'right':'0'
         });
@@ -1099,6 +1099,8 @@ $(document).ready(function ($) {
         $('.popup').removeClass('is-visible');
         $('.popup-reg').addClass('is-visible');
         $('.mfp-bg').addClass('is-visible');
+        $('body').addClass('fixed-input');
+        $('html').addClass('lock-html');
         $(this).parents('.header-mobile__auth').removeClass('.popup-slide__show');
     });
 
@@ -1107,6 +1109,8 @@ $(document).ready(function ($) {
         $('.popup').removeClass('is-visible');
         $('.popup-authorization').addClass('is-visible');
         $('.mfp-bg').addClass('is-visible');
+        $('body').addClass('fixed-input');
+        $('html').addClass('lock-html');
         $(this).parents('.header-mobile__auth').removeClass('.popup-slide__show');
     });
 
