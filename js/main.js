@@ -1449,16 +1449,25 @@ $(document).ready(function ($) {
         var bo = $(window).scrollTop();
         var $header = $(".header");
         var $logo = $("#symbol-logo");
-        if ( bo > 0 ) {
+        var $hederHeight = $header.height();
+        console.log(bo);
+        if ( bo >= 106 ) {
             $header.addClass('header-top__hide');
             $header.addClass('sticky');
             $logo.addClass('fixed-logo');
+
+            $('main').css({
+                'padding-top': $hederHeight
+            });
             // $header.addClass('fixed-header');
         } else {
             $header.removeClass('header-top__hide');
             $header.removeClass('sticky');
             $logo.removeClass('fixed-logo');
             // $header.removeClass('fixed-header');
+            $('main').css({
+                'padding-top': '0'
+            });
         }
     });
 
