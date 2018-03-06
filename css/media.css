@@ -2351,9 +2351,16 @@
     .popup .popup-bg__img {
         right: -10rem;
     }
+}
+
+@media screen and (max-height:813px) {
 
     .c-reviews__item {
-        transform: translate(15.6rem, 40px);
+        transform: translate(15.6rem, 70px);
+    }
+
+    .cd-top {
+        bottom: 13rem;
     }
 }
 
