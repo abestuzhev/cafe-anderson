@@ -1450,7 +1450,6 @@ $(document).ready(function ($) {
         var $header = $(".header");
         var $logo = $("#symbol-logo");
         var $hederHeight = $header.height();
-        console.log(bo);
         if ( bo >= 106 ) {
             $header.addClass('header-top__hide');
             $header.addClass('sticky');
