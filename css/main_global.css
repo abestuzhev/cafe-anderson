@@ -1179,9 +1179,9 @@ div {
 
 .is-content-hidden.visible .header-navigation {
   opacity: 1;
-  -webkit-transition: .3s opacity ease-in-out;
-  -o-transition: .3s opacity ease-in-out;
-  transition: .3s opacity ease-in-out; }
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
 
 .is-content-hidden.visible main {
   opacity: 1;
