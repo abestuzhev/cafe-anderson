@@ -9220,7 +9220,8 @@ test popup
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: relative; }
+  position: relative;
+  margin-bottom: 4rem; }
   .basket__check-mobile {
     position: absolute;
     z-index: 1060;

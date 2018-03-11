@@ -625,6 +625,14 @@
         width: 100%;
     }
 
+    .order-auth__col:nth-child(2) .order-auth__body {
+        width: 100%;
+    }
+
+    .order-auth {
+        margin-bottom: 4rem;
+    }
+
     .order-auth__col:nth-child(2) .order-auth__body::after {
         background: none;
     }
@@ -1239,6 +1247,7 @@
         float: none;
         max-width: 100%;
         margin-bottom: 3rem;
+        height: auto;
     }
 
     .events #event-calendar .events__item:nth-child(1),
@@ -2010,6 +2019,10 @@
         box-shadow: none;
     }
 
+    .page-wrapper {
+        padding: 2rem 0;
+    }
+
     .header {
         box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
         border: none;
@@ -2076,9 +2089,13 @@
         display: none;
     }
 
+    .news-and-stock .page-container {
+        padding: 2rem 0;
+    }
+
     .order {
-        margin-left: -1.6rem;
-        margin-right: -1.6rem;
+        /*margin-left: -1.6rem;*/
+        /*margin-right: -1.6rem;*/
     }
 
     .order-auth {
@@ -2120,6 +2137,11 @@
       padding-right: 0;
       width: 100%;
       margin-bottom: 1rem;
+    }
+
+    .graduation-party {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
     }
 
 }
@@ -2345,6 +2367,10 @@
 
     .order-pay__item {
         margin-bottom: 1rem;
+    }
+
+    .order-auth .icon-bird-up {
+        right: 2.4rem;
     }
 }
 @media screen and (max-height:600px) {
