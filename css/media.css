@@ -2001,8 +2001,8 @@
     .page-container,
     .page-wrapper {
         padding: 2rem 1.5rem;
-        margin-right: -1.6rem;
-        margin-left: -1.6rem;
+        /*margin-right: -1.6rem;*/
+        /*margin-left: -1.6rem;*/
         border: none;
         border-radius: 0;
         background-image: none;
@@ -2077,8 +2077,8 @@
     }
 
     .order {
-        margin-left: -2.2rem;
-        margin-right: -2.2rem;
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
     }
 
     .order-auth {

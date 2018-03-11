@@ -1161,6 +1161,13 @@ div {
   font-weight: 100;
   font-style: normal; }
 
+@font-face {
+  font-family: "SummerFont";
+  src: url("../fonts/SummerFont-Light.eot");
+  src: url("../fonts/SummerFont-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SummerFont-Light.woff") format("woff"), url("../fonts/SummerFont-Light.ttf") format("truetype"), url("../fonts/SummerFont-Light.svg#SummerFont") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
 .is-content-hidden .header,
 .is-content-hidden main,
 .is-content-hidden .header-navigation,
@@ -12043,3 +12050,168 @@ test popup
 
 .fixed-height-basket {
   height: calc(100vh - 190px); }
+
+/*Экскурсии (excursion)------------------------------------------------*/
+.excursion {
+  font-family: "PT Serif Caption"; }
+  .excursion__title {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "PT Serif Caption";
+    color: #2b2b2b;
+    margin-bottom: 3rem; }
+  .excursion__subtitle {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "PT Serif Caption";
+    color: #2b2b2b; }
+  .excursion-banner {
+    width: 100%;
+    min-height: 71.2rem;
+    background: #fff url(../img/bg-banner-excursion.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 4rem 0 6rem;
+    color: #ffffff; }
+    .excursion-banner__date {
+      font-size: 6rem;
+      color: #7cbd41;
+      line-height: 1;
+      margin-bottom: 3rem; }
+      .excursion-banner__date span {
+        font-size: 11rem; }
+    .excursion-banner__place {
+      font-size: 3.6rem;
+      color: #ffffff; }
+    .excursion-banner__title {
+      font-size: 6rem;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 1rem;
+      width: 40%; }
+    .excursion-banner__subtitle {
+      font-size: 3rem;
+      line-height: 1;
+      width: 30%;
+      margin-bottom: 3.4rem; }
+    .excursion-banner-speaker {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .excursion-banner-speaker__avatar {
+        width: 18.5rem;
+        height: 18.5rem;
+        border-radius: 20rem;
+        background-color: #fff;
+        margin-right: 3rem;
+        overflow: hidden;
+        position: relative;
+        z-index: 2; }
+        .excursion-banner-speaker__avatar img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          z-index: 1; }
+      .excursion-banner-speaker__name {
+        font-size: 4rem;
+        width: 80%;
+        line-height: 1;
+        margin-bottom: 1rem; }
+      .excursion-banner-speaker__hash {
+        color: #7cbd41;
+        font-size: 3rem;
+        line-height: 1; }
+  .excursion-section {
+    margin-bottom: 6rem; }
+  .excursion-people__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    margin-bottom: 3rem; }
+  .excursion-people__col {
+    padding: 0 .5rem; }
+    .excursion-people__col:nth-child(1) {
+      width: 70%; }
+    .excursion-people__col:nth-child(2) {
+      width: 30%; }
+  .excursion-people__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: -1rem;
+    margin-left: -1rem; }
+    .excursion-people__line:nth-child(1) {
+      margin-bottom: 2rem; }
+  .excursion-people__item {
+    padding: 0 1rem; }
+  .excursion-people__businessman {
+    width: 68%; }
+  .excursion-people__hr {
+    width: 32%; }
+  .excursion-people__superman {
+    width: 32%; }
+  .excursion-people__top-manager {
+    width: 68%; }
+  .excursion-people__girl {
+    height: 100%; }
+  .excursion-people-card {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: .6rem;
+    padding: 2rem;
+    background: url(../img/bg-header.png) repeat #fdf7e8;
+    -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    min-height: 100%; }
+  .excursion-people__title {
+    margin-top: 4rem;
+    font-size: 6.8rem;
+    font-family: "SummerFont";
+    line-height: 1;
+    margin-bottom: 1.4rem; }
+  .excursion-people__text {
+    font-family: "PT Serif Caption";
+    font-style: italic; }

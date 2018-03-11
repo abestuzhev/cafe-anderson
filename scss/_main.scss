@@ -8745,3 +8745,221 @@ test popup
 .fixed-height-basket {
     height: calc(100vh - 190px);
 }
+
+
+/*Экскурсии (excursion)------------------------------------------------*/
+.excursion {
+    font-family: $font_serif;
+
+    &__title {
+        font-size: 4rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font_serif;
+        color: #2b2b2b;
+        margin-bottom: 3rem;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font_serif;
+        color: #2b2b2b;
+    }
+
+    &-banner {
+        width: 100%;
+        min-height: 71.2rem;
+        background: #fff url(../img/bg-banner-excursion.jpg) 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 4rem 0 6rem;
+        color: #ffffff;
+
+        &__description {
+            //width: 40%;
+        }
+
+        &__date {
+            font-size: 6rem;
+            color: #7cbd41;
+            line-height: 1;
+            margin-bottom: 3rem;
+
+            span {
+                font-size: 11rem;
+            }
+        }
+
+        &__place {
+            font-size: 3.6rem;
+            color: #ffffff;
+        }
+
+        &__title {
+            font-size: 6rem;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 1rem;
+            width: 40%;
+        }
+
+        &__subtitle {
+            font-size: 3rem;
+            line-height: 1;
+            width: 30%;
+            margin-bottom: 3.4rem;
+        }
+
+        &-speaker {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            &__avatar {
+                width: 18.5rem;
+                height: 18.5rem;
+                border-radius: 20rem;
+                background-color: #fff;
+                margin-right: 3rem;
+                overflow: hidden;
+                position: relative;
+                z-index: 2;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 1;
+                }
+            }
+
+            &__name {
+                font-size: 4rem;
+                width: 80%;
+                line-height: 1;
+                margin-bottom: 1rem;
+            }
+
+            &__hash {
+                color: #7cbd41;
+                font-size: 3rem;
+                line-height: 1;
+            }
+        }
+    }
+
+    &-section {
+        margin-bottom: 6rem;
+    }
+
+    &-people {
+
+        &__list {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+            margin-left: -.5rem;
+            margin-right: -.5rem;
+            margin-bottom: 3rem;
+
+        }
+
+        &__col {
+            padding: 0 .5rem;
+
+            &:nth-child(1) {
+                width:70%;
+            }
+            &:nth-child(2) {
+                width:30%;
+            }
+        }
+
+        &__line {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+            justify-content: space-between;
+            margin-right: -1rem;
+            margin-left: -1rem;
+
+            &:nth-child(1) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__item {
+            padding: 0 1rem;
+            //margin-bottom: 2rem;
+
+        }
+
+        &__businessman {
+            width: 68%;
+        }
+
+        &__hr {
+            width: 32%;
+        }
+
+        &__superman {
+            width: 32%;
+        }
+
+        &__top-manager {
+            width: 68%;
+        }
+
+        &__girl {
+            height: 100%;
+        }
+
+        &-card {
+            width: 100%;
+            border: 2px solid #fff;
+            border-radius: .6rem;
+            padding: 2rem;
+            background: url(../img/bg-header.png) repeat rgb(253, 247, 232);
+            box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            justify-content: flex-end;
+            min-height: 100%;
+        }
+
+
+        &__title {
+            margin-top: 4rem;
+            font-size: 6.8rem;
+            font-family: $font_decor;
+            line-height: 1;
+            margin-bottom: 1.4rem;
+        }
+
+        &__text {
+            font-family: $font_serif;
+            font-style: italic;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
