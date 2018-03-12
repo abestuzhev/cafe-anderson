@@ -294,4 +294,10 @@ function init() {
     mapDeliveryCake.geoObjects.add(deliveryCakeCollection);
     mapPickupCake.geoObjects.add(pickupCakeCollection);
     cakePageOrder.geoObjects.add(cakePageOrderCollection);
+
+
 }
+
+
+
+
