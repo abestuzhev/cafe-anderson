@@ -1058,7 +1058,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-event__link--more", '.popup-event');
     showPopup(".c-card-event__link--basket", '.popup-event-basket');
     showPopup(".c-card-event__link--one-click", '.popup-event-one-click');
-    showPopup("#excursion-buy", '.popup-excursion-order');
+    showPopup(".excursion-btn", '.popup-excursion-order');
 
 
 
