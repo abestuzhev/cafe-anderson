@@ -12,7 +12,7 @@ ymaps.ready(function () {
             hintContent: 'Фабрика счастья'
         }, {
             iconLayout: 'default#image',
-            iconImageHref: '../img/icon-map-point.png',
+            iconImageHref: './img/icon-map-point.png',
             iconImageSize: [44, 53],
             iconImageOffset: [-5, -38]
         });
