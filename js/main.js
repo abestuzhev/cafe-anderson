@@ -144,8 +144,25 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    $('.excursion-pay__item label').on('click', function(){
+        $(this).parents('.excursion-pay__item').siblings().find('label').removeClass('active');
+        $(this).addClass('active');
+    });
 
 
+
+    //модальное окно в экскурсиях
+    $(document).on('change', '#excursion-pay-score', function(){
+        if($(this).prop( "checked" )){
+            $('.excursion-pay-score').slideDown(300);
+        }
+    });
+
+    $(document).on('change', '#excursion-pay-card', function(){
+        if($(this).prop( "checked" )){
+            $('.excursion-pay-score').slideUp(300);
+        }
+    });
 
 
     /*изменение оплаты*/
@@ -313,7 +330,17 @@ $(document).ready(function ($) {
         if(target.length){
 
             var heightHeader = $('.header').height();
-            console.log(heightHeader);
+            var scrollTo = target.offset().top - (+heightHeader + 100);
+            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+        }
+    });
+
+    $('#excursion-program-btn').click(function(e){
+        e.preventDefault();
+        var target = $($(this).attr('href'));
+        if(target.length){
+
+            var heightHeader = $('.header').height();
             var scrollTo = target.offset().top - (+heightHeader + 100);
             $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
         }
@@ -1031,6 +1058,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-event__link--more", '.popup-event');
     showPopup(".c-card-event__link--basket", '.popup-event-basket');
     showPopup(".c-card-event__link--one-click", '.popup-event-one-click');
+    showPopup("#excursion-buy", '.popup-excursion-order');
 
 
 
@@ -1276,6 +1304,7 @@ $(document).ready(function ($) {
     DisabledFormButton('#popup__vacancy','#vacancy__regulations','#popup__vacancy button');
     DisabledFormButton('#order-auth-new','#order-auth-new__regulations','#order-auth-new button');
     DisabledFormButton('#cake-order-form','#cake-order__regulations','#cake-order-form button');
+    DisabledFormButton('#excursion-form','#excursion__regulations','#excursion-form button');
 
 
 

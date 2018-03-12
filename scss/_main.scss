@@ -627,6 +627,10 @@ main {
         top: -.7rem;
         left: 2.2rem;
     }
+
+    .c-col {
+        padding: 1.4rem .8rem;
+    }
 }
 
 @keyframes scaleUp {
@@ -1523,6 +1527,21 @@ main {
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+}
+
+.popup-excursion-order {
+    .popup {
+        width: 75.4rem;
+        max-width: 75.4rem;
+    }
+
+    .c-personal-data {
+        width: 100%;
+    }
+
+    .reviews-form__rabbit {
+        z-index: -1;
     }
 }
 
@@ -8752,7 +8771,7 @@ test popup
 .excursion {
     font-family: $font_serif;
 
-    &__title {
+    &__title {/*excursion__title*/
         font-size: 4rem;
         text-align: center;
         text-transform: uppercase;
@@ -8761,15 +8780,188 @@ test popup
         margin-bottom: 3rem;
     }
 
-    &__subtitle {
+    &__subtitle { /*excursion__subtitle*/
         font-size: 2rem;
         text-align: center;
         text-transform: uppercase;
         font-family: $font_serif;
         color: #2b2b2b;
+        margin-top: 3rem;
+
+        span {
+            text-transform: none;
+            color: #c44890;
+        }
     }
 
-    &-banner {
+    &__buy {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    &__price {
+        font-family: $font_sans-serif;
+        font-size: 4.4rem;
+        color: #555451;
+        min-width: 12.5rem;
+    }
+
+    &-pay {
+        &__list {
+            .active .icon-excursion-card {
+                background: url(../img/excursion-pay-sprite.png) -2.5rem 0 no-repeat;
+            }
+            .active .icon-excursion-score {
+                background: url(../img/excursion-pay-sprite.png) -2.8rem -2.2rem no-repeat;
+            }
+        }
+
+        &__item {
+            display: inline-block;
+            margin-right: 1.5rem;
+
+            .icon-excursion-card {
+                display: inline-block;
+                vertical-align: middle;
+                width: 2.4rem;
+                height: 2rem;
+                background: url(../img/excursion-pay-sprite.png) 0 0 no-repeat;
+            }
+
+            .icon-excursion-score {
+                display: inline-block;
+                vertical-align: middle;
+                width: 2.7rem;
+                height: 1.9rem;
+                background: url(../img/excursion-pay-sprite.png) 0 -2.2rem no-repeat;
+            }
+
+            &:hover .icon-excursion-card {
+                background: url(../img/excursion-pay-sprite.png) -2.5rem 0 no-repeat;
+
+            }
+            &:hover .icon-excursion-score {
+                background: url(../img/excursion-pay-sprite.png) -2.8rem -2.2rem no-repeat;
+
+            }
+
+
+        }
+
+        &-score {
+            display: none;
+            background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+            border-top: 1px solid #dcd9d3;
+            border-bottom: 1px solid #dcd9d3;
+            margin-left: -6rem;
+            margin-right: -6rem;
+            margin-bottom: 1.4rem;
+            padding: 2rem 6rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -.8rem;
+                left: 23%;
+                width: 1.4rem;
+                height: 1.4rem;
+                transform: rotate(45deg);
+                border-left: 1px solid #dcd9d3;
+                border-top: 1px solid #dcd9d3;
+                background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+            }
+        }
+    }
+
+    &__count {
+        border-radius: 20rem;
+        padding: .8rem 1.2rem;
+        background-color: #7cbd41;
+        margin-right: 1.4rem;
+
+        .c-counter {
+            border: none;
+        }
+
+        .c-counter__field {
+            width: 4rem !important;
+            font-size: 2.6rem;
+            background-color: transparent;
+            vertical-align: middle;
+            color: #ffffff;
+        }
+
+
+        .c-counter__btn {
+            display: inline-block;
+            width: 3.4rem;
+            height: 3.4rem;
+            vertical-align: middle;
+            font-size: 0;
+            color: #ffffff;
+            border-radius: 3rem;
+            position: relative;
+
+
+            &::after {
+                content: '';
+                position: absolute;
+                font-size: 2.8rem;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+                background-color: #5f972c;
+            }
+        }
+
+        .dec,
+        .inc {
+            left: auto;
+            right: auto;
+        }
+
+        .dec::after {
+            content: '-';
+        }
+        .inc::after {
+            content: '+';
+        }
+    }
+
+    &-btn {/*excursion__btn*/
+        display: inline-block;
+        padding: .5rem 3rem;
+        border-radius: 20rem;
+        font-size: 3.7rem;
+        font-family: $font_decor;
+        color: #ffffff;
+        background-color: #7cbd41;
+        text-transform: uppercase;
+        line-height: 1.1;
+        transition: opacity .1s ease-out;
+
+        &__layout {
+            text-align: center;
+        }
+
+        &:hover {
+            color: #ffffff;
+            opacity: .9;
+            transition: opacity .1s ease-out;
+        }
+
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
+    &-banner {/*excursion-banner*/
         width: 100%;
         min-height: 71.2rem;
         background: #fff url(../img/bg-banner-excursion.jpg) 50% 50% no-repeat;
@@ -8852,11 +9044,15 @@ test popup
         }
     }
 
-    &-section {
+    &-section {/*excursion-section*/
         margin-bottom: 6rem;
+
+        &:last-child {
+            margin-bottom: 3.2rem;
+        }
     }
 
-    &-people {
+    &-people { /*excursion-people*/
 
         &__list {
             display: flex;
@@ -8864,18 +9060,16 @@ test popup
             align-items: stretch;
             margin-left: -.5rem;
             margin-right: -.5rem;
-            margin-bottom: 3rem;
-
         }
 
         &__col {
             padding: 0 .5rem;
 
             &:nth-child(1) {
-                width:70%;
+                width:75%;
             }
             &:nth-child(2) {
-                width:30%;
+                width:25%;
             }
         }
 
@@ -8895,27 +9089,13 @@ test popup
         &__item {
             padding: 0 1rem;
             //margin-bottom: 2rem;
+            position: relative;
 
-        }
+            img {
+                position: absolute;
+                opacity: .14;
+            }
 
-        &__businessman {
-            width: 68%;
-        }
-
-        &__hr {
-            width: 32%;
-        }
-
-        &__superman {
-            width: 32%;
-        }
-
-        &__top-manager {
-            width: 68%;
-        }
-
-        &__girl {
-            height: 100%;
         }
 
         &-card {
@@ -8930,6 +9110,43 @@ test popup
             align-items: flex-start;
             justify-content: flex-end;
             min-height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            &:hover .excursion-people-card-hover {
+                top: 0;
+                transition: top .2s ease-in-out;
+            }
+
+            &-hover {
+                background-color: #7cbd41;
+                position: absolute;
+                z-index: 10;
+                top: 45rem;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                color: #ffffff;
+                padding: 2rem;
+                border-radius: .6rem;
+                transition: top .1s ease-in-out;
+
+
+                .excursion-people__title {
+                    margin-top: 0rem;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: .6rem;
+                    left: .6rem;
+                    bottom: .6rem;
+                    right: .6rem;
+                    border: 1px dotted #fff;
+                    border-radius: .6rem;
+                }
+            }
         }
 
 
@@ -8944,6 +9161,417 @@ test popup
         &__text {
             font-family: $font_serif;
             font-style: italic;
+            position: relative;
+
+            img {
+                right: -1rem;
+                top: -10rem;
+            }
+        }
+
+        &__businessman {
+            width: 68%;
+            img {
+                opacity: .08;
+            }
+        }
+
+        &__hr {
+            width: 32%;
+
+            img {
+                right: -2rem;
+            }
+
+        }
+
+        &__superman {
+            width: 32%;
+
+            img {
+                right: 0rem;
+                top: -8rem;
+            }
+        }
+
+        &__top-manager {
+            width: 68%;
+
+            img {
+                right: 1rem;
+                top: -12rem;
+            }
+
+        }
+
+
+        &__girl {
+            height: 100%;
+            img {
+                right: 1rem;
+            }
+
+            .excursion-people-card-hover {
+                top: 0;
+                left:-40rem;
+                transition: left .1s ease-in-out;
+            }
+
+            .excursion-people-card:hover .excursion-people-card-hover{
+                left: 0;
+                transition: left .2s ease-in-out;
+            }
+        }
+    }
+
+    &-about {/*excursion-about*/
+        .c-col-6 {
+            padding: 0 1.6rem;
+        }
+
+        &-time {
+            color: #7cbd41;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-end;
+            margin-bottom: 2rem;
+
+            &__date {
+                font-size: 6.5rem;
+                line-height: .8;
+                margin-right: 1.3rem;
+
+                span {
+                    font-size: 11rem;
+                }
+            }
+
+            &__hours {
+                display: inline-block;
+                font-size: 2.8rem;
+                border-top: 1px solid #7cbd41;
+                border-bottom: 1px solid #7cbd41;
+                font-style: italic;
+            }
+        }
+
+        &__text {
+            font-style: italic;
+            margin-bottom: 2rem;
+
+            p {
+                font-size: 1.9rem;
+            }
+        }
+    }
+
+    &-advantages {/*excursion-advantages*/
+
+        &__list {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+
+        &__item {
+            padding: 0 1rem;
+
+            &:nth-child(2) {
+                flex: 1 0 27%;
+            }
+        }
+
+        &-card {
+            &__img {
+                width: 100%;
+                text-align: center;
+                height: 12rem;
+            }
+
+            &__text {
+                text-align: center;
+                font-size: 2rem;
+                line-height: 1.1;
+            }
+        }
+    }
+
+    &-why {/*excursion-why*/
+        &__list {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &__item {
+            //margin: 0 2rem 2.4rem 0;
+            margin-bottom: 2rem;
+
+            &:nth-child(1) {
+                flex: 1 0 60%;
+                padding-right: 2rem;
+            }
+
+            &:nth-child(2) {
+                flex: 1 0 20%;
+            }
+            &:nth-child(3) {
+                flex: 1 0 26%;
+            }
+            &:nth-child(4) {
+                flex: 1 0 44%;
+            }
+            &:nth-child(5) {
+                flex: 1 0 30%;
+            }
+        }
+
+        &-card {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: flex-start;
+
+            &__point {
+                width: 11.6rem;
+                height: 11.6rem;
+                background-color: #7cbd41;
+                border-radius: 11.6rem;
+                overflow: hidden;
+                flex: 0 1 11.6rem;
+                margin-right: 2rem;
+                box-shadow: 2.194px 2.046px 13.8px 1.2px rgba(161, 237, 92, 0.79);
+                position: relative;
+
+                span {
+                    font-family: arial, sans-serif;
+                    font-weight: 700;
+                    font-size: 16.6rem;
+                    position: absolute;
+                    color: #ffffff;
+                    top: 3%;
+                    left: 63%;
+                    transform: translateX(-50%);
+                    line-height: .7;
+                }
+            }
+
+            &__text {
+                font-size: 2rem;
+                line-height: 1.2;
+                flex: 1;
+
+                span {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    &-program {/*excursion-program*/
+        background-color: #7cbd41;
+        margin-bottom: 0;
+        position: relative;
+
+        .c-layout {
+            position: relative;
+            z-index: 1;
+        }
+
+        &-pie {
+            position: absolute;
+            z-index: -1;
+            bottom: 17%;
+            left: -12%;
+        }
+
+        &-star-1 {
+            position: absolute;
+            z-index: -1;
+            bottom: 53%;
+            left: -10%;
+        }
+        &-star-2 {
+            position: absolute;
+            z-index: -1;
+            bottom: 65%;
+            right: -6%;
+        }
+        &-star-3 {
+            position: absolute;
+            z-index: -1;
+            bottom: 48%;
+            right: -5%;
+        }
+
+        &-brownie {
+            position: absolute;
+            z-index: -1;
+            bottom: 17%;
+            right: -6%;
+        }
+        
+        &-briefing {
+            background-color: #c44890;
+            box-shadow: 0px 3px 92px 8px rgba(0, 0, 0, 0.28);
+
+
+            &__title {
+                color: #ffffff;
+                font-size: 3.5rem;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 5rem 0 3rem;
+            }
+
+        }
+
+        &-table {
+            padding: 0 5rem 0 8rem;
+            display: table;
+            font-size: 1.9rem;
+            color: #ffffff;
+            font-family: $font_serif;
+            font-style: italic;
+            
+            &__head {
+                display: table;
+                background-color: #ff8fd0;
+                width: 100%;
+                color: #932364;
+
+                .excursion-program-table__col {
+                    display: table-cell;
+                    text-transform: uppercase;
+                    padding: 1.4rem 0;
+
+                    &:nth-child(1) {
+                        width: 60%;
+                        padding: 1.4rem 5.5rem 1.4rem 8rem;
+                    }
+                    &:nth-child(2) {
+                        width: 40%;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            &__row {
+                display: table-row;
+
+                &:last-child .excursion-program-table__col {
+                    border-bottom: none;
+                }
+            }
+
+            &__col {
+                display: table-cell;
+                padding: 2rem 0;
+                border-bottom: 1px solid #ff8fd0;
+                position: relative;
+
+                &:nth-child(1) {
+                    width: 60%;
+                    padding-right: 5.5rem;
+                }
+                &:nth-child(2) {
+                    width: 40%;
+                    vertical-align: middle;
+                }
+
+                span {
+                    display: inline-block;
+                    position: absolute;
+                    left: -4rem;
+                    top: 30%;
+                    width: 2.6rem;
+                    height: 2.6rem;
+                    border-radius: 2.6rem;
+                    text-align: center;
+                    line-height: 2.6rem;
+                    color: #ffffff;
+                    font-size: 1.6rem;
+                    background-color: #e16db0;
+                }
+            }
+        }
+
+        .excursion-btn__layout {
+            padding-bottom: 5rem;
+        }
+        
+        .excursion-btn {
+            box-shadow: 0px 5px 27.6px 2.4px rgba(0, 0, 0, 0.19);
+            background-color: #ff6dc2;
+
+        }
+    }
+
+    &-contact {/*excursion-contact*/
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .symbol-metro {
+            font-size: 1.3rem;
+            fill: #fff;
+        }
+
+        &__col {
+
+            &:nth-child(1) {
+                width: 60%;
+                margin-right: 2rem;
+            }
+
+            &:nth-child(2) {
+                width: 40%;
+            }
+
+        }
+
+        &__map {
+            width: 100%;
+            height: 36rem;
+            background-color: #eee;
+        }
+
+        &-info {
+           &__title {
+               font-size: 2.6rem;
+               color: #c44890;
+               margin-bottom: 1.2rem;
+
+               a {
+                   color: #c44890;
+                   font-size: 1.2rem;
+                   font-style: italic;
+
+                   &::after {
+                       content: '';
+                       border-color: #c44890;
+                   }
+               }
+           }
+
+            &__body {
+                border-left: 1px solid #cec9c0;
+                padding-left: 1.7rem;
+            }
+
+            &__item {
+                margin-bottom: 1rem;
+                font-size: 2rem;
+
+                span {
+                    display: block;
+                    font-size: 1.4rem;
+                    font-style: italic;
+                }
+            }
         }
     }
 

@@ -481,6 +481,13 @@ i.icon-chair {
   margin-right: 5px;
   position: relative;
   background-color: #1504ca; }
+  .icon-label-metro .symbol-metro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .icon-metro-2 {
   position: absolute;
@@ -4213,6 +4220,11 @@ a.c-button:hover {
 .c-color-blue {
   color: #61BCD4; }
 
+.c-social {
+  display: inline-block; }
+  .c-social__item {
+    display: inline-block; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -5846,6 +5858,8 @@ main {
             transform: rotate(-45deg);
     top: -.7rem;
     left: 2.2rem; }
+  .popup .c-col {
+    padding: 1.4rem .8rem; }
 
 @-webkit-keyframes scaleUp {
   0% {
@@ -6505,6 +6519,16 @@ main {
   position: absolute;
   bottom: 0;
   right: 0; }
+
+.popup-excursion-order .popup {
+  width: 75.4rem;
+  max-width: 75.4rem; }
+
+.popup-excursion-order .c-personal-data {
+  width: 100%; }
+
+.popup-excursion-order .reviews-form__rabbit {
+  z-index: -1; }
 
 /*----------------------------------------------*/
 #tooltip {
@@ -12056,6 +12080,7 @@ test popup
 .excursion {
   font-family: "PT Serif Caption"; }
   .excursion__title {
+    /*excursion__title*/
     font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
@@ -12063,12 +12088,146 @@ test popup
     color: #2b2b2b;
     margin-bottom: 3rem; }
   .excursion__subtitle {
+    /*excursion__subtitle*/
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     font-family: "PT Serif Caption";
-    color: #2b2b2b; }
+    color: #2b2b2b;
+    margin-top: 3rem; }
+    .excursion__subtitle span {
+      text-transform: none;
+      color: #c44890; }
+  .excursion__buy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .excursion__price {
+    font-family: "BebasNeue";
+    font-size: 4.4rem;
+    color: #555451;
+    min-width: 12.5rem; }
+  .excursion-pay__list .active .icon-excursion-card {
+    background: url(../img/excursion-pay-sprite.png) -2.5rem 0 no-repeat; }
+  .excursion-pay__list .active .icon-excursion-score {
+    background: url(../img/excursion-pay-sprite.png) -2.8rem -2.2rem no-repeat; }
+  .excursion-pay__item {
+    display: inline-block;
+    margin-right: 1.5rem; }
+    .excursion-pay__item .icon-excursion-card {
+      display: inline-block;
+      vertical-align: middle;
+      width: 2.4rem;
+      height: 2rem;
+      background: url(../img/excursion-pay-sprite.png) 0 0 no-repeat; }
+    .excursion-pay__item .icon-excursion-score {
+      display: inline-block;
+      vertical-align: middle;
+      width: 2.7rem;
+      height: 1.9rem;
+      background: url(../img/excursion-pay-sprite.png) 0 -2.2rem no-repeat; }
+    .excursion-pay__item:hover .icon-excursion-card {
+      background: url(../img/excursion-pay-sprite.png) -2.5rem 0 no-repeat; }
+    .excursion-pay__item:hover .icon-excursion-score {
+      background: url(../img/excursion-pay-sprite.png) -2.8rem -2.2rem no-repeat; }
+  .excursion-pay-score {
+    display: none;
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    border-top: 1px solid #dcd9d3;
+    border-bottom: 1px solid #dcd9d3;
+    margin-left: -6rem;
+    margin-right: -6rem;
+    margin-bottom: 1.4rem;
+    padding: 2rem 6rem;
+    position: relative; }
+    .excursion-pay-score::before {
+      content: '';
+      position: absolute;
+      top: -.8rem;
+      left: 23%;
+      width: 1.4rem;
+      height: 1.4rem;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      border-left: 1px solid #dcd9d3;
+      border-top: 1px solid #dcd9d3;
+      background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+  .excursion__count {
+    border-radius: 20rem;
+    padding: .8rem 1.2rem;
+    background-color: #7cbd41;
+    margin-right: 1.4rem; }
+    .excursion__count .c-counter {
+      border: none; }
+    .excursion__count .c-counter__field {
+      width: 4rem !important;
+      font-size: 2.6rem;
+      background-color: transparent;
+      vertical-align: middle;
+      color: #ffffff; }
+    .excursion__count .c-counter__btn {
+      display: inline-block;
+      width: 3.4rem;
+      height: 3.4rem;
+      vertical-align: middle;
+      font-size: 0;
+      color: #ffffff;
+      border-radius: 3rem;
+      position: relative; }
+      .excursion__count .c-counter__btn::after {
+        content: '';
+        position: absolute;
+        font-size: 2.8rem;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+      .excursion__count .c-counter__btn:hover {
+        background-color: #5f972c; }
+    .excursion__count .dec,
+    .excursion__count .inc {
+      left: auto;
+      right: auto; }
+    .excursion__count .dec::after {
+      content: '-'; }
+    .excursion__count .inc::after {
+      content: '+'; }
+  .excursion-btn {
+    /*excursion__btn*/
+    display: inline-block;
+    padding: .5rem 3rem;
+    border-radius: 20rem;
+    font-size: 3.7rem;
+    font-family: "SummerFont";
+    color: #ffffff;
+    background-color: #7cbd41;
+    text-transform: uppercase;
+    line-height: 1.1;
+    -webkit-transition: opacity .1s ease-out;
+    -o-transition: opacity .1s ease-out;
+    transition: opacity .1s ease-out; }
+    .excursion-btn__layout {
+      text-align: center; }
+    .excursion-btn:hover {
+      color: #ffffff;
+      opacity: .9;
+      -webkit-transition: opacity .1s ease-out;
+      -o-transition: opacity .1s ease-out;
+      transition: opacity .1s ease-out; }
+    .excursion-btn::after {
+      content: '';
+      border: none; }
   .excursion-banner {
+    /*excursion-banner*/
     width: 100%;
     min-height: 71.2rem;
     background: #fff url(../img/bg-banner-excursion.jpg) 50% 50% no-repeat;
@@ -12134,85 +12293,445 @@ test popup
         font-size: 3rem;
         line-height: 1; }
   .excursion-section {
+    /*excursion-section*/
     margin-bottom: 6rem; }
-  .excursion-people__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    margin-left: -.5rem;
-    margin-right: -.5rem;
-    margin-bottom: 3rem; }
-  .excursion-people__col {
-    padding: 0 .5rem; }
-    .excursion-people__col:nth-child(1) {
-      width: 70%; }
-    .excursion-people__col:nth-child(2) {
-      width: 30%; }
-  .excursion-people__line {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-right: -1rem;
-    margin-left: -1rem; }
-    .excursion-people__line:nth-child(1) {
+    .excursion-section:last-child {
+      margin-bottom: 3.2rem; }
+  .excursion-people {
+    /*excursion-people*/ }
+    .excursion-people__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      margin-left: -.5rem;
+      margin-right: -.5rem; }
+    .excursion-people__col {
+      padding: 0 .5rem; }
+      .excursion-people__col:nth-child(1) {
+        width: 75%; }
+      .excursion-people__col:nth-child(2) {
+        width: 25%; }
+    .excursion-people__line {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-right: -1rem;
+      margin-left: -1rem; }
+      .excursion-people__line:nth-child(1) {
+        margin-bottom: 2rem; }
+    .excursion-people__item {
+      padding: 0 1rem;
+      position: relative; }
+      .excursion-people__item img {
+        position: absolute;
+        opacity: .14; }
+    .excursion-people-card {
+      width: 100%;
+      border: 2px solid #fff;
+      border-radius: .6rem;
+      padding: 2rem;
+      background: url(../img/bg-header.png) repeat #fdf7e8;
+      -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      min-height: 100%;
+      overflow: hidden;
+      position: relative; }
+      .excursion-people-card:hover .excursion-people-card-hover {
+        top: 0;
+        -webkit-transition: top .2s ease-in-out;
+        -o-transition: top .2s ease-in-out;
+        transition: top .2s ease-in-out; }
+      .excursion-people-card-hover {
+        background-color: #7cbd41;
+        position: absolute;
+        z-index: 10;
+        top: 45rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #ffffff;
+        padding: 2rem;
+        border-radius: .6rem;
+        -webkit-transition: top .1s ease-in-out;
+        -o-transition: top .1s ease-in-out;
+        transition: top .1s ease-in-out; }
+        .excursion-people-card-hover .excursion-people__title {
+          margin-top: 0rem; }
+        .excursion-people-card-hover::before {
+          content: '';
+          position: absolute;
+          top: .6rem;
+          left: .6rem;
+          bottom: .6rem;
+          right: .6rem;
+          border: 1px dotted #fff;
+          border-radius: .6rem; }
+    .excursion-people__title {
+      margin-top: 4rem;
+      font-size: 6.8rem;
+      font-family: "SummerFont";
+      line-height: 1;
+      margin-bottom: 1.4rem; }
+    .excursion-people__text {
+      font-family: "PT Serif Caption";
+      font-style: italic;
+      position: relative; }
+      .excursion-people__text img {
+        right: -1rem;
+        top: -10rem; }
+    .excursion-people__businessman {
+      width: 68%; }
+      .excursion-people__businessman img {
+        opacity: .08; }
+    .excursion-people__hr {
+      width: 32%; }
+      .excursion-people__hr img {
+        right: -2rem; }
+    .excursion-people__superman {
+      width: 32%; }
+      .excursion-people__superman img {
+        right: 0rem;
+        top: -8rem; }
+    .excursion-people__top-manager {
+      width: 68%; }
+      .excursion-people__top-manager img {
+        right: 1rem;
+        top: -12rem; }
+    .excursion-people__girl {
+      height: 100%; }
+      .excursion-people__girl img {
+        right: 1rem; }
+      .excursion-people__girl .excursion-people-card-hover {
+        top: 0;
+        left: -40rem;
+        -webkit-transition: left .1s ease-in-out;
+        -o-transition: left .1s ease-in-out;
+        transition: left .1s ease-in-out; }
+      .excursion-people__girl .excursion-people-card:hover .excursion-people-card-hover {
+        left: 0;
+        -webkit-transition: left .2s ease-in-out;
+        -o-transition: left .2s ease-in-out;
+        transition: left .2s ease-in-out; }
+  .excursion-about {
+    /*excursion-about*/ }
+    .excursion-about .c-col-6 {
+      padding: 0 1.6rem; }
+    .excursion-about-time {
+      color: #7cbd41;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
       margin-bottom: 2rem; }
-  .excursion-people__item {
-    padding: 0 1rem; }
-  .excursion-people__businessman {
-    width: 68%; }
-  .excursion-people__hr {
-    width: 32%; }
-  .excursion-people__superman {
-    width: 32%; }
-  .excursion-people__top-manager {
-    width: 68%; }
-  .excursion-people__girl {
-    height: 100%; }
-  .excursion-people-card {
-    width: 100%;
-    border: 2px solid #fff;
-    border-radius: .6rem;
-    padding: 2rem;
-    background: url(../img/bg-header.png) repeat #fdf7e8;
-    -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
-            box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+      .excursion-about-time__date {
+        font-size: 6.5rem;
+        line-height: .8;
+        margin-right: 1.3rem; }
+        .excursion-about-time__date span {
+          font-size: 11rem; }
+      .excursion-about-time__hours {
+        display: inline-block;
+        font-size: 2.8rem;
+        border-top: 1px solid #7cbd41;
+        border-bottom: 1px solid #7cbd41;
+        font-style: italic; }
+    .excursion-about__text {
+      font-style: italic;
+      margin-bottom: 2rem; }
+      .excursion-about__text p {
+        font-size: 1.9rem; }
+  .excursion-advantages {
+    /*excursion-advantages*/ }
+    .excursion-advantages__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      margin-left: -1rem;
+      margin-right: -1rem; }
+    .excursion-advantages__item {
+      padding: 0 1rem; }
+      .excursion-advantages__item:nth-child(2) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 27%;
+                flex: 1 0 27%; }
+    .excursion-advantages-card__img {
+      width: 100%;
+      text-align: center;
+      height: 12rem; }
+    .excursion-advantages-card__text {
+      text-align: center;
+      font-size: 2rem;
+      line-height: 1.1; }
+  .excursion-why {
+    /*excursion-why*/ }
+    .excursion-why__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .excursion-why__item {
+      margin-bottom: 2rem; }
+      .excursion-why__item:nth-child(1) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 60%;
+                flex: 1 0 60%;
+        padding-right: 2rem; }
+      .excursion-why__item:nth-child(2) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 20%;
+                flex: 1 0 20%; }
+      .excursion-why__item:nth-child(3) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 26%;
+                flex: 1 0 26%; }
+      .excursion-why__item:nth-child(4) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 44%;
+                flex: 1 0 44%; }
+      .excursion-why__item:nth-child(5) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 30%;
+                flex: 1 0 30%; }
+    .excursion-why-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      .excursion-why-card__point {
+        width: 11.6rem;
+        height: 11.6rem;
+        background-color: #7cbd41;
+        border-radius: 11.6rem;
+        overflow: hidden;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 11.6rem;
+                flex: 0 1 11.6rem;
+        margin-right: 2rem;
+        -webkit-box-shadow: 2.194px 2.046px 13.8px 1.2px rgba(161, 237, 92, 0.79);
+                box-shadow: 2.194px 2.046px 13.8px 1.2px rgba(161, 237, 92, 0.79);
+        position: relative; }
+        .excursion-why-card__point span {
+          font-family: arial, sans-serif;
+          font-weight: 700;
+          font-size: 16.6rem;
+          position: absolute;
+          color: #ffffff;
+          top: 3%;
+          left: 63%;
+          -webkit-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+                  transform: translateX(-50%);
+          line-height: .7; }
+      .excursion-why-card__text {
+        font-size: 2rem;
+        line-height: 1.2;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+        .excursion-why-card__text span {
+          text-transform: uppercase; }
+  .excursion-program {
+    /*excursion-program*/
+    background-color: #7cbd41;
+    margin-bottom: 0;
+    position: relative; }
+    .excursion-program .c-layout {
+      position: relative;
+      z-index: 1; }
+    .excursion-program-pie {
+      position: absolute;
+      z-index: -1;
+      bottom: 17%;
+      left: -12%; }
+    .excursion-program-star-1 {
+      position: absolute;
+      z-index: -1;
+      bottom: 53%;
+      left: -10%; }
+    .excursion-program-star-2 {
+      position: absolute;
+      z-index: -1;
+      bottom: 65%;
+      right: -6%; }
+    .excursion-program-star-3 {
+      position: absolute;
+      z-index: -1;
+      bottom: 48%;
+      right: -5%; }
+    .excursion-program-brownie {
+      position: absolute;
+      z-index: -1;
+      bottom: 17%;
+      right: -6%; }
+    .excursion-program-briefing {
+      background-color: #c44890;
+      -webkit-box-shadow: 0px 3px 92px 8px rgba(0, 0, 0, 0.28);
+              box-shadow: 0px 3px 92px 8px rgba(0, 0, 0, 0.28); }
+      .excursion-program-briefing__title {
+        color: #ffffff;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5rem 0 3rem; }
+    .excursion-program-table {
+      padding: 0 5rem 0 8rem;
+      display: table;
+      font-size: 1.9rem;
+      color: #ffffff;
+      font-family: "PT Serif Caption";
+      font-style: italic; }
+      .excursion-program-table__head {
+        display: table;
+        background-color: #ff8fd0;
+        width: 100%;
+        color: #932364; }
+        .excursion-program-table__head .excursion-program-table__col {
+          display: table-cell;
+          text-transform: uppercase;
+          padding: 1.4rem 0; }
+          .excursion-program-table__head .excursion-program-table__col:nth-child(1) {
+            width: 60%;
+            padding: 1.4rem 5.5rem 1.4rem 8rem; }
+          .excursion-program-table__head .excursion-program-table__col:nth-child(2) {
+            width: 40%;
+            vertical-align: middle; }
+      .excursion-program-table__row {
+        display: table-row; }
+        .excursion-program-table__row:last-child .excursion-program-table__col {
+          border-bottom: none; }
+      .excursion-program-table__col {
+        display: table-cell;
+        padding: 2rem 0;
+        border-bottom: 1px solid #ff8fd0;
+        position: relative; }
+        .excursion-program-table__col:nth-child(1) {
+          width: 60%;
+          padding-right: 5.5rem; }
+        .excursion-program-table__col:nth-child(2) {
+          width: 40%;
+          vertical-align: middle; }
+        .excursion-program-table__col span {
+          display: inline-block;
+          position: absolute;
+          left: -4rem;
+          top: 30%;
+          width: 2.6rem;
+          height: 2.6rem;
+          border-radius: 2.6rem;
+          text-align: center;
+          line-height: 2.6rem;
+          color: #ffffff;
+          font-size: 1.6rem;
+          background-color: #e16db0; }
+    .excursion-program .excursion-btn__layout {
+      padding-bottom: 5rem; }
+    .excursion-program .excursion-btn {
+      -webkit-box-shadow: 0px 5px 27.6px 2.4px rgba(0, 0, 0, 0.19);
+              box-shadow: 0px 5px 27.6px 2.4px rgba(0, 0, 0, 0.19);
+      background-color: #ff6dc2; }
+  .excursion-contact {
+    /*excursion-contact*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    min-height: 100%; }
-  .excursion-people__title {
-    margin-top: 4rem;
-    font-size: 6.8rem;
-    font-family: "SummerFont";
-    line-height: 1;
-    margin-bottom: 1.4rem; }
-  .excursion-people__text {
-    font-family: "PT Serif Caption";
-    font-style: italic; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .excursion-contact .symbol-metro {
+      font-size: 1.3rem;
+      fill: #fff; }
+    .excursion-contact__col:nth-child(1) {
+      width: 60%;
+      margin-right: 2rem; }
+    .excursion-contact__col:nth-child(2) {
+      width: 40%; }
+    .excursion-contact__map {
+      width: 100%;
+      height: 36rem;
+      background-color: #eee; }
+    .excursion-contact-info__title {
+      font-size: 2.6rem;
+      color: #c44890;
+      margin-bottom: 1.2rem; }
+      .excursion-contact-info__title a {
+        color: #c44890;
+        font-size: 1.2rem;
+        font-style: italic; }
+        .excursion-contact-info__title a::after {
+          content: '';
+          border-color: #c44890; }
+    .excursion-contact-info__body {
+      border-left: 1px solid #cec9c0;
+      padding-left: 1.7rem; }
+    .excursion-contact-info__item {
+      margin-bottom: 1rem;
+      font-size: 2rem; }
+      .excursion-contact-info__item span {
+        display: block;
+        font-size: 1.4rem;
+        font-style: italic; }

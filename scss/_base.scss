@@ -3764,3 +3764,10 @@ a.c-button {
 .c-color-blue {
     color: #61BCD4;
 }
+
+.c-social {
+    display: inline-block;
+    &__item {
+        display: inline-block;
+    }
+}
