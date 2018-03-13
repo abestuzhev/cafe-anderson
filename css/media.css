@@ -1374,6 +1374,13 @@
         display: none;
     }
 
+    /*.excursion-banner::before,*/
+    /*.excursion-program::before,*/
+    /*.excursion-program::after {*/
+        /*content: '';*/
+        /*border: none;*/
+    /*}*/
+
 }
 
 @media (max-width:940px) {
@@ -1789,7 +1796,7 @@
         width: 100% !important;
     }
     .excursion-contact__map {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     .excursion-banner__title,
@@ -2846,13 +2853,10 @@
         padding: 1.5rem 1.5rem 2.5rem 6rem;
     }
 
-    .excursion-program-briefing__title {
-        padding: 2rem;
-    }
 
 
     .excursion-program .excursion-btn__layout {
-        padding-bottom: 2.5rem;
+        padding-bottom: 4rem;
     }
 
     .excursion__title {
