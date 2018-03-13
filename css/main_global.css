@@ -12702,8 +12702,7 @@ test popup
     /*excursion-program*/
     background-color: #7cbd41;
     margin-bottom: 0 !important;
-    position: relative;
-    border-top: 19px solid transparent; }
+    position: relative; }
     .excursion-program::before {
       content: '';
       position: absolute;
