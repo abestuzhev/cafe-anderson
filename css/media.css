@@ -3490,7 +3490,8 @@
     }
     .popup .c-col-4,
     .popup .c-col-5,
-    .popup .c-col-6 {
+    .popup .c-col-6,
+    .popup .c-col-8 {
         width: 100%;
         flex: 0 0 100%;
         max-width: 100%;
