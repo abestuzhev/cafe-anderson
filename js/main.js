@@ -335,16 +335,16 @@ $(document).ready(function ($) {
         }
     });
 
-    $('#excursion-program-btn').click(function(e){
-        e.preventDefault();
-        var target = $($(this).attr('href'));
-        if(target.length){
-
-            var heightHeader = $('.header').height();
-            var scrollTo = target.offset().top - (+heightHeader + 100);
-            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
-        }
-    });
+    // $('#excursion-program-btn').click(function(e){
+    //     e.preventDefault();
+    //     var target = $($(this).attr('href'));
+    //     if(target.length){
+    //
+    //         var heightHeader = $('.header').height();
+    //         var scrollTo = target.offset().top - (+heightHeader + 100);
+    //         $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+    //     }
+    // });
 
     // scrollToAnchor('.graduation-party-banner__btn');
 
