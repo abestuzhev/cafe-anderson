@@ -9508,6 +9508,19 @@ test popup
         background-color: #7cbd41;
         margin-bottom: 0 !important;
         position: relative;
+        border-top: 19px solid transparent;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 100%;
+            height: 19px;
+            border-bottom: 19px solid transparent;
+            border-image: url(../img/decor-line-waves-full.png) 100% 0 0 0;
+            z-index: 5;
+        }
 
         .c-layout {
             position: relative;

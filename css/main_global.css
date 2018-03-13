@@ -12702,7 +12702,19 @@ test popup
     /*excursion-program*/
     background-color: #7cbd41;
     margin-bottom: 0 !important;
-    position: relative; }
+    position: relative;
+    border-top: 19px solid transparent; }
+    .excursion-program::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 100%;
+      height: 19px;
+      border-bottom: 19px solid transparent;
+      -o-border-image: url(../img/decor-line-waves-full.png) 100% 0 0 0;
+         border-image: url(../img/decor-line-waves-full.png) 100% 0 0 0;
+      z-index: 5; }
     .excursion-program .c-layout {
       position: relative;
       z-index: 1; }

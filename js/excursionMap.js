@@ -3,7 +3,8 @@ ymaps.ready(function () {
     /**/
     var excursionMap = new ymaps.Map('excursion-contact__map', {
             center: [55.780026, 37.715920],
-            zoom: 15
+            zoom: 15,
+            behaviors: ["drag", "dblClickZoom", "rightMouseButtonMagnifier", "multiTouch"],
         }, {
             searchControlProvider: 'yandex#search'
         }),
@@ -17,31 +18,31 @@ ymaps.ready(function () {
             iconImageOffset: [-5, -38]
         });
 
-    var isMobile = {
-        Android: function () {
-            return navigator.userAgent.match(/Android/i);
-        },
-        BlackBerry: function () {
-            return navigator.userAgent.match(/BlackBerry/i);
-        },
-        iOS: function () {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-        },
-        Opera: function () {
-            return navigator.userAgent.match(/Opera Mini/i);
-        },
-        Windows: function () {
-            return navigator.userAgent.match(/IEMobile/i);
-        },
-        any: function () {
-            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-        }
-    };
+    // var isMobile = {
+    //     Android: function () {
+    //         return navigator.userAgent.match(/Android/i);
+    //     },
+    //     BlackBerry: function () {
+    //         return navigator.userAgent.match(/BlackBerry/i);
+    //     },
+    //     iOS: function () {
+    //         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    //     },
+    //     Opera: function () {
+    //         return navigator.userAgent.match(/Opera Mini/i);
+    //     },
+    //     Windows: function () {
+    //         return navigator.userAgent.match(/IEMobile/i);
+    //     },
+    //     any: function () {
+    //         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    //     }
+    // };
 
     // после вызова карты
-    if (isMobile.any()) {
-        excursionMap.behaviors.disable('drag');
-    }
+    // if (isMobile.any()) {
+    //     excursionMap.behaviors.disable('drag');
+    // }
 
     excursionMap.geoObjects
         .add(excursionPlacemark);
