@@ -9685,13 +9685,15 @@ test popup
             width: 100%;
             height: 36rem;
             background-color: #eee;
+            box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
         }
 
         &-info {
            &__title {
                font-size: 2.6rem;
                color: #c44890;
-               margin-bottom: 1.2rem;
+               margin-bottom: 2rem;
+               line-height: .6;
 
                a {
                    color: #c44890;

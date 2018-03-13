@@ -12833,11 +12833,14 @@ test popup
     .excursion-contact__map {
       width: 100%;
       height: 36rem;
-      background-color: #eee; }
+      background-color: #eee;
+      -webkit-box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1); }
     .excursion-contact-info__title {
       font-size: 2.6rem;
       color: #c44890;
-      margin-bottom: 1.2rem; }
+      margin-bottom: 2rem;
+      line-height: .6; }
       .excursion-contact-info__title a {
         color: #c44890;
         font-size: 1.2rem;
