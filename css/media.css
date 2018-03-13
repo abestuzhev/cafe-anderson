@@ -1615,10 +1615,17 @@
     }
 
     .excursion-program-table__head {
+        display: block;
+    }
+    .excursion-program-table__head .excursion-program-table__col:nth-child(1) {
+        display: block;
+        text-align: center;
+    }
+    .excursion-program-table__head .excursion-program-table__col:nth-child(2) {
         display: none;
     }
     .excursion-program-table__head-mobile {
-        display: block;
+        /*display: block;*/
     }
 
 
