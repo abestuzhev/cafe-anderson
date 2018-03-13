@@ -3531,10 +3531,10 @@ a.c-button:hover {
   max-width: 25%; }
 
 .c-col-4 {
-  -ms-flex: 0 0 33.333333%;
+  -ms-flex: 0 0 33%;
   -webkit-box-flex: 0;
-          flex: 0 0 33.333333%;
-  max-width: 33.333333%; }
+          flex: 0 0 33%;
+  max-width: 33%; }
 
 .c-col-5 {
   -ms-flex: 0 0 41.666667%;
@@ -3549,10 +3549,10 @@ a.c-button:hover {
   max-width: 50%; }
 
 .c-col-7 {
-  -ms-flex: 0 0 58.333333%;
+  -ms-flex: 0 0 58%;
   -webkit-box-flex: 0;
-          flex: 0 0 58.333333%;
-  max-width: 58.333333%; }
+          flex: 0 0 58%;
+  max-width: 58%; }
 
 .c-col-8 {
   -ms-flex: 0 0 66.666667%;
