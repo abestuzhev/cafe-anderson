@@ -99,6 +99,79 @@
     /*}*/
 
 
+    .excursion-banner__title {
+        width: 60%;
+        font-size: 5rem;
+    }
+
+    .excursion-banner {
+        min-height: auto;
+    }
+
+    .excursion-banner__subtitle {
+        font-size: 2.3rem;
+        line-height: 1;
+        width: 50%;
+    }
+
+    .excursion-banner-speaker__avatar {
+        width: 15rem;
+        height: 15rem;
+    }
+    .excursion-banner-speaker__avatar img {
+        width: 100%;
+    }
+
+    .excursion-banner-speaker__name {
+        font-size: 3.4rem;
+    }
+
+    .excursion-banner-speaker__hash {
+        font-size: 2.4rem;
+    }
+
+    .excursion-banner__place {
+        font-size: 3rem;
+    }
+
+    .excursion-banner__date,
+    .excursion-about-time__date {
+        font-size: 5rem;
+    }
+    .excursion-banner__date span,
+    .excursion-about-time__date span {
+        font-size: 9rem;
+    }
+
+    .excursion__title {
+        font-size: 3.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .excursion-program-briefing__title {
+        font-size: 3rem;
+        padding: 4rem 0 2rem;
+    }
+
+    .excursion-program-table,
+    .excursion-why-card__text,
+    .excursion__subtitle,
+    .excursion-advantages-card__text,
+    .excursion-about__text p,
+    .excursion-contact-info__item {
+        font-size: 1.8rem;
+    }
+
+    .excursion-section {
+        margin-bottom: 5rem;
+    }
+    .excursion-about {
+        margin-bottom: 2rem;
+    }
+
+    .excursion-people__title {
+        font-size: 6rem;
+    }
 }
 
 @media (min-width:1600px) {
@@ -192,6 +265,18 @@
       content: '';
       display: none;
     }
+
+    .excursion-banner .symbol-rabbit {
+        display: none;
+    }
+
+    .excursion-visitor__list {
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+    .excursion-visitor__item {
+        padding: 0 2rem;
+    }
 }
 
 
@@ -258,6 +343,31 @@
 
     .popup-event-map {
         margin-left: -20.5rem;
+    }
+
+
+    /*.excursion__buy {*/
+        /*width: 28rem;*/
+    /*}*/
+
+    .excursion-about__grid {
+        display: block;
+    }
+    .excursion-about__col {
+        width: 100% !important;
+    }
+
+    .excursion-about__col:nth-child(1) {
+        margin-bottom: 2.6rem;
+    }
+
+    .excursion-about-time {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .excursion-about-time__date {
+        margin-bottom: 0;
     }
 
 }
@@ -569,6 +679,11 @@
     .vacancies-list .c-col-6 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+
+    .excursion-person__col {
+        padding: 0 1rem;
     }
 
 }
@@ -1258,6 +1373,7 @@
     .error-basket__bg {
         display: none;
     }
+
 }
 
 @media (max-width:940px) {
@@ -1284,6 +1400,24 @@
 
     .graduation-party-banner__btn span {
         display: inline-block;
+    }
+
+    .excursion-advantages__list {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .excursion-advantages__item {
+        width: 33.33%;
+        margin-bottom: 2.4rem;
+    }
+    .excursion-advantages__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .excursion-advantages-card__img {
+        height: auto;
+        margin-bottom: .6rem;
     }
 }
 
@@ -1441,6 +1575,83 @@
     .c-caption-special__title {
         font-size: 3.5rem;
     }
+
+    .excursion-program-table {
+        padding-bottom: 2.5rem;
+    }
+    .excursion-program-table,
+    .excursion-program-table__row,
+    .excursion-program-table__col {
+        display: block;
+        font-size: 1.6rem;
+    }
+    .excursion-program-table__col {
+        width: 100% !important;
+        border: none;
+    }
+
+    .excursion-program-table__col:nth-child(1) {
+        padding: 0;
+
+    }
+    .excursion-program-table__col:nth-child(2) {
+        color: #f88fcc;
+        font-size: 1.6rem;
+        padding: 0;
+        margin-top: .8rem;
+    }
+
+    .excursion-program-table__row {
+        padding: 1.4rem 0;
+        border-bottom: 1px solid #ff8fd0;
+    }
+
+    /*.excursion-program-table__row:last-child {*/
+        /*border-bottom: none;*/
+    /*}*/
+
+    .excursion-program-table__col span {
+        top: 5%;
+    }
+
+    .excursion-program-table__head {
+        display: none;
+    }
+    .excursion-program-table__head-mobile {
+        display: block;
+    }
+
+
+    .excursion-person {
+        display: block;
+    }
+    .excursion-person__list {
+        justify-content: flex-start;
+    }
+
+    .excursion-person__col:nth-child(1) {
+        width: 60%;
+    }
+    .excursion-person__col:nth-child(2) {
+        width: 40%;
+    }
+    .excursion-person__col:nth-child(3) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .excursion-person__col:nth-child(3) .excursion-person__card:nth-child(1) {
+        width: 60%;
+    }
+    .excursion-person__col:nth-child(3) .excursion-person__card:nth-child(2) {
+        width: 40%;
+        padding: 0 1rem;
+    }
+
+    .excursion-why__item:nth-child(1) {
+        flex: 1 0 100%;
+    }
+
 }
 
 @media (max-width:840px) {
@@ -1563,6 +1774,21 @@
           opacity: .5 !important;
       }
 
+    .excursion-contact {
+        display: block;
+    }
+
+    .excursion-contact__col {
+        width: 100% !important;
+    }
+    .excursion-contact__map {
+        margin-bottom: 2rem;
+    }
+
+    .excursion-banner__title,
+    .excursion-banner__subtitle {
+        width: 100%;
+    }
 }
 
 @media (max-width:800px) {
@@ -1649,6 +1875,18 @@
     }
 }
 
+@media (max-width:770px) {
+    .excursion-person__list {
+        display: block;
+    }
+
+    .excursion-person__col,
+    .excursion-person__col .excursion-person__card {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
 @media (max-width:730px) {
     .home-cafe {
         right: -9%;
@@ -2144,6 +2382,73 @@
         margin-right: -1.6rem;
     }
 
+
+    .excursion .page-container {
+        padding: 0;
+    }
+
+    .excursion-advantages__item {
+        width: 50%;
+    }
+
+    .excursion-why-card__point {
+        width: 6.3rem;
+        height: 6.3rem;
+        flex: 0 1 6.3rem;
+    }
+    .excursion-why-card__point span {
+        font-size: 8.7rem;
+    }
+
+    .excursion-program-table,
+    .excursion-why-card__text,
+    .excursion__subtitle,
+    .excursion-advantages-card__text,
+    .excursion-about__text p,
+    .excursion-contact-info__item {
+        font-size: 1.6rem;
+    }
+
+    .excursion-banner__title {
+        font-size: 2.8rem;
+    }
+
+    .excursion-banner__subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .excursion-banner-speaker__name {
+        font-size: 2.1rem;
+    }
+
+    .excursion-banner-speaker__hash {
+        font-size: 1.6rem;
+    }
+
+    .excursion-banner-speaker__avatar {
+        width: 9.8rem;
+       height: 9.8rem;
+        margin-right: 1.1rem;
+    }
+    .excursion-banner {
+        padding: 3rem 0;
+        margin-bottom: 3rem;
+    }
+
+    .excursion-banner__date {
+        font-size: 3.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .excursion-banner__date span {
+        font-size: 5.7rem;
+    }
+
+    .excursion-banner__place {
+        font-size: 1.9rem;
+    }
+
 }
 
 @media (max-width:780px) {
@@ -2372,6 +2677,14 @@
     .order-auth .icon-bird-up {
         right: 2.4rem;
     }
+
+    .excursion-why__item:nth-child(2),
+    .excursion-why__item:nth-child(3),
+    .excursion-why__item:nth-child(4),
+    .excursion-why__item:nth-child(5) {
+        flex: 1 0 100%;
+    }
+    
 }
 @media screen and (max-height:600px) {
     .popup .popup-bg__img {
@@ -2510,7 +2823,30 @@
         margin-bottom: .4rem;
     }
 
+    .excursion-program-table {
+        padding: 1.5rem 1.5rem 2.5rem 6rem;
+    }
 
+    .excursion-program-briefing__title {
+        padding: 2rem;
+    }
+
+
+    .excursion-program .excursion-btn__layout {
+        padding-bottom: 2.5rem;
+    }
+
+    .excursion__title {
+        font-size: 2.6rem;
+    }
+
+    .excursion-section {
+        margin-bottom: 3rem;
+    }
+
+    .excursion-advantages {
+        margin-bottom: 5rem;
+    }
 }
 
 
@@ -3330,6 +3666,19 @@
     .lk-history__hold .tabs-menu__item:last-child {
         margin-bottom: 0;
     }
+
+    .excursion-program .c-layout {
+        padding: 0;
+    }
+
+    .excursion-advantages__item {
+        width: 100%;
+    }
+
+    .excursion-person__card {
+        font-size: 4rem;
+    }
+
 }
 
 @media (max-width:440px) {
