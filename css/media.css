@@ -1863,6 +1863,18 @@
     .popup-event-partner-card__text {
       width: 70%;
     }
+
+    .popup-excursion-order .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100vh;
+        margin: 0;
+        overflow-y: scroll;
+        border-radius: 0;
+    }
 }
 
 @media (min-width:730px) {
@@ -2684,7 +2696,7 @@
     .excursion-why__item:nth-child(5) {
         flex: 1 0 100%;
     }
-    
+
 }
 @media screen and (max-height:600px) {
     .popup .popup-bg__img {
@@ -3181,6 +3193,20 @@
     .factory .popup-title {
       font-size: 1.7rem;
     }
+
+    .excursion-about-time {
+        display: block;
+    }
+
+    .excursion-about-time__date {
+        margin-bottom: 1.6rem;
+        text-align: center;
+    }
+
+    .excursion-about-time__hours {
+        display: block;
+        text-align: center;
+    }
 }
 
 @media (max-width:540px) {
@@ -3462,6 +3488,8 @@
     .popup .c-grid {
         flex-flow: column nowrap;
     }
+    .popup .c-col-4,
+    .popup .c-col-5,
     .popup .c-col-6 {
         width: 100%;
         flex: 0 0 100%;
@@ -3557,6 +3585,20 @@
 
     .popup-gallery .popup-body {
       padding: 0 !important;
+    }
+
+    .excursion__buy {
+        justify-content: center;
+    }
+
+    .excursion__buy .excursion__count {
+        margin: 0;
+    }
+
+    .excursion__buy .excursion-btn {
+        margin-top: 1rem;
+        flex: 1 0 100%;
+        text-align: center;
     }
 }
 

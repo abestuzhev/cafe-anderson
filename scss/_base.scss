@@ -3767,6 +3767,16 @@ a.c-button {
 
 .c-social {
     display: inline-block;
+    &::after {
+        content: '';
+        border: none;
+    }
+
+    a::after {
+        content: '';
+        border: none;
+    }
+
     &__item {
         display: inline-block;
     }
