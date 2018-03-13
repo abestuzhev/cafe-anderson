@@ -1155,6 +1155,13 @@ div {
 
 @font-face {
   font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.eot");
+  src: url("../fonts/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-Regular.woff") format("woff"), url("../fonts/BebasNeue-Regular.ttf") format("truetype"), url("../fonts/BebasNeue-Regular.svg#BebasNeue") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BebasNeue";
   src: url("../fonts/BebasNeue-Book.eot");
   src: url("../fonts/BebasNeue-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-Book.woff") format("woff"), url("../fonts/BebasNeue-Book.ttf") format("truetype"), url("../fonts/BebasNeue-Book.svg#BebasNeue") format("svg");
   font-weight: 400;
@@ -6542,6 +6549,10 @@ main {
 
 .popup-excursion-order .reviews-form__rabbit {
   z-index: -1; }
+
+.popup-excursion-order .excursion__buy {
+  margin-left: -1rem;
+  margin-bottom: 2.4rem; }
 
 /*----------------------------------------------*/
 #tooltip {
@@ -12124,7 +12135,15 @@ test popup
     font-family: "BebasNeue";
     font-size: 4.4rem;
     color: #555451;
-    min-width: 12.5rem; }
+    min-width: 12.5rem;
+    font-weight: 500; }
+  .excursion__total {
+    font-family: "BebasNeue";
+    font-size: 3rem;
+    font-weight: 500; }
+    .excursion__total span {
+      font-size: 5rem;
+      color: #7cbd41; }
   .excursion-pay__list .active .icon-excursion-card {
     background: url(../img/excursion-pay-sprite.png) -2.5rem 0 no-repeat; }
   .excursion-pay__list .active .icon-excursion-score {

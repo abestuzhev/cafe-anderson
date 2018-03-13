@@ -1543,6 +1543,11 @@ main {
     .reviews-form__rabbit {
         z-index: -1;
     }
+
+    .excursion__buy {
+        margin-left: -1rem;
+        margin-bottom: 2.4rem;
+    }
 }
 
 /*----------------------------------------------*/
@@ -8805,6 +8810,17 @@ test popup
         font-size: 4.4rem;
         color: #555451;
         min-width: 12.5rem;
+        font-weight: 500;
+    }
+
+    &__total {
+        font-family: $font_sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        span {
+            font-size: 5rem;
+            color: #7cbd41;
+        }
     }
 
     &-pay {
