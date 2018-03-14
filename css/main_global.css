@@ -5800,9 +5800,7 @@ main {
           transform: scale(1);
   margin: 0 auto; }
   .popup-box {
-    position: relative;
-    min-height: 100%;
-    overflow: hidden; }
+    position: relative; }
   .popup-close {
     position: absolute;
     right: 1.5rem;

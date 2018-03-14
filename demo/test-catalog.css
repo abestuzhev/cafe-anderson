@@ -69,6 +69,7 @@
     vertical-align: middle;
     background: #8da9e6;
     line-height: .8;
+    margin-top: .2rem;
 }
 
 @media (max-width: 540px) {
