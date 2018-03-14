@@ -43,12 +43,6 @@
     display: inline-block;
 }
 
-.c-counter__field {
-    width: 3.2rem !important;
-    padding: 0;
-    margin-right: 5px;
-}
-
 .test-counter-1 .dec {
     left: 0;
 }
@@ -74,5 +68,16 @@
     display: inline-block;
     vertical-align: middle;
     background: #8da9e6;
+    line-height: .8;
+}
+
+@media (max-width: 540px) {
+
+    .test-counter-1 .c-counter__field {
+        width: 3.2rem !important;
+        padding: 0;
+        margin-right: 5px;
+    }
+
 }
 /*END test*/
