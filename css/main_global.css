@@ -2878,7 +2878,7 @@ a.c-button:hover {
             justify-content: flex-start; }
   .c-card-catalog__price {
     font-family: "BebasNeue";
-    padding: .3rem 1.4rem 0.3rem 3rem;
+    padding: .3rem 1rem 0.3rem 3rem;
     font-size: 4rem;
     line-height: 1;
     text-align: left;
@@ -8469,7 +8469,9 @@ test popup
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+            transform: translate(-50%, -50%);
+    line-height: .5;
+    font-family: arial, sans-serif; }
   .c-card-catalog__count .c-counter__btn.inc,
   .c-card-product__count .c-counter__btn.inc {
     display: inline-block; }
@@ -8486,6 +8488,32 @@ test popup
 .c-card-product__slider .c-counter__btn:after {
   font-size: 1.9rem; }
 
+/*test*/
+.test-counter .c-counter {
+  background-color: #F44336;
+  padding: .4rem .8rem; }
+  .test-counter .c-counter::after {
+    content: '';
+    clear: both;
+    display: block; }
+
+.test-counter .c-counter__btn,
+.test-counter .c-counter__field {
+  float: left;
+  display: block !important; }
+
+.test-counter .c-counter__field {
+  width: 3.2rem !important;
+  padding: 0;
+  margin-right: 5px; }
+
+.test-counter .dec {
+  left: 0; }
+
+.test-counter .inc {
+  right: 0; }
+
+/*END test*/
 .carousel-slider {
   height: 14rem;
   width: 94%;
