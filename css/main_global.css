@@ -8498,6 +8498,8 @@ test popup
       content: '';
       clear: both;
       display: block; }
+  .test-counter .c-counter__btn {
+    margin-top: 2px; }
   .test-counter .c-counter__btn,
   .test-counter .c-counter__field {
     float: left;
@@ -9970,6 +9972,12 @@ test popup
     background-color: #7cbd41;
     margin-top: -3.2rem;
     border-radius: 0 0 .8rem .8rem; }
+    .order__btn.disabled {
+      background-color: #cbe5b3;
+      cursor: auto; }
+    .order__btn:disabled {
+      background-color: #cbe5b3;
+      cursor: auto; }
     .order__btn::after {
       content: '';
       border: none; }

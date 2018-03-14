@@ -4132,6 +4132,10 @@ test popup
         }
     }
 
+    .c-counter__btn {
+        margin-top: 2px;
+    }
+
     .c-counter__btn,
     .c-counter__field {
         float: left;
@@ -6062,6 +6066,16 @@ test popup
         background-color: #7cbd41;
         margin-top: -3.2rem;
         border-radius: 0 0 .8rem .8rem;
+
+        &.disabled {
+            background-color: #cbe5b3;
+            cursor: auto;
+        }
+
+        &:disabled {
+            background-color: #cbe5b3;
+            cursor: auto;
+        }
 
         &::after {
             content: '';
