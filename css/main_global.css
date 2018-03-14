@@ -9961,6 +9961,7 @@ test popup
           -ms-transform: none;
               transform: none; }
   .order__btn {
+    font-family: "PT Serif Caption";
     display: block;
     width: 100%;
     font-size: 1.6rem;
