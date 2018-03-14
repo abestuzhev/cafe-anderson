@@ -1056,7 +1056,7 @@ a.c-button {
 
     &__item {
         position: fixed;
-        z-index: 99;
+        z-index: 999;
         right: 0;
         top: 50%;
         font-family: $font_serif;
@@ -2149,6 +2149,7 @@ a.c-button {
 
     &__price {
         font-family: $font_sans-serif;
+        font-weight: 500;
         padding: .3rem 1rem 0.3rem 3rem;
         font-size: 4rem;
         line-height: 1;
@@ -3790,4 +3791,9 @@ a.c-button {
 }
 .c-currency-rouble-serif {
     font-family: $font_RoubleSerif;
+}
+.c-currency-arial {
+    //margin-left: 5px;
+    font-family: arial, sans-serif;
+    font-weight: 100;
 }

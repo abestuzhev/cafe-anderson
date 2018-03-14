@@ -502,6 +502,7 @@ $(document).ready(function ($) {
         $reviews_btn.on("click", function(){
             clickCount = $(this).attr("data-count");
             clickCount ++;
+            $(this).parent('.c-reviews__item').siblings().removeClass('active');
             if (clickCount == 1) {
                 $(this).attr("data-count", clickCount);
                 $(this).parent('.c-reviews__item').addClass('active');
@@ -521,6 +522,7 @@ $(document).ready(function ($) {
         $reviews_btn.hover(function(){
             clickCount = $(this).attr("data-count");
             clickCount ++;
+            $(this).parent('.c-reviews__item').siblings().removeClass('active');
             if (clickCount == 1) {
                 $(this).attr("data-count", clickCount);
                 $(this).parent('.c-reviews__item').addClass('active');

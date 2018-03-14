@@ -2055,7 +2055,7 @@ a.c-button:hover {
 
 .c-reviews__item {
   position: fixed;
-  z-index: 99;
+  z-index: 999;
   right: 0;
   top: 50%;
   font-family: "PT Serif Caption";
@@ -2885,6 +2885,7 @@ a.c-button:hover {
             justify-content: flex-start; }
   .c-card-catalog__price {
     font-family: "BebasNeue";
+    font-weight: 500;
     padding: .3rem 1rem 0.3rem 3rem;
     font-size: 4rem;
     line-height: 1;
@@ -4258,6 +4259,10 @@ a.c-button:hover {
 
 .c-currency-rouble-serif {
   font-family: "RoubleSerif"; }
+
+.c-currency-arial {
+  font-family: arial, sans-serif;
+  font-weight: 100; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }

@@ -2721,7 +2721,7 @@
 @media screen and (max-height:813px) {
 
     .c-reviews__item {
-        transform: translate(15.6rem, 70px);
+        top: 64%;
     }
 
     .cd-top {
