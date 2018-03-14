@@ -57,16 +57,22 @@
 }
 
 
+
 .c-card-catalog__price {
-    display: inline-block;
-    vertical-align: middle;
-    background: #8da9e6;
+    display: flex;
+    align-items: center;
+    background: #e62baa;
 }
-.c-card-catalog__price::after {
+.c-card-catalog__price-layout::after {
     display: inline-block;
     content: '';
     height: 100%;
     vertical-align: middle;
 }
 
+.c-card-catalog__price-layout {
+    display: inline-block;
+    vertical-align: middle;
+    background: #8da9e6;
+}
 /*END test*/
