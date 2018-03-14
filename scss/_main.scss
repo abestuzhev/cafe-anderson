@@ -4119,46 +4119,6 @@ test popup
     font-size: 1.9rem;
 }
 
-/*test*/
-.test-counter {
-    background-color: #F44336;
-    .c-counter {
-        background-color: #F44336;
-        padding: .4rem .8rem;
-
-        &::after {
-            content: '';
-            clear: both;
-            display: block;
-        }
-    }
-
-    .c-counter__btn {
-        margin-top: 2px;
-    }
-
-    .c-counter__btn,
-    .c-counter__field {
-        float: left;
-        display: block !important;
-    }
-
-    .c-counter__field {
-        width: 3.2rem !important;
-        padding: 0;
-        margin-right: 5px;
-    }
-
-    .dec {
-        left: 0;
-    }
-    .inc {
-        right: 0;
-    }
-}
-
-/*END test*/
-
 .carousel-slider {
     height: 14rem;
     width: 94%;

@@ -1,0 +1,71 @@
+.c-currency-w {
+    margin-left: 5px;
+}
+
+.c-counter__field {
+    background-color: #ccc !important;
+}
+
+.c-counter__btn {
+    background-color: #6faa3a;
+}
+
+/*test*/
+.test-counter-1 {
+    background-color: #f4eb26;
+
+}
+.test-counter-1 .c-counter {
+    background-color: #F44336;
+    padding: .4rem .8rem;
+}
+.test-counter-1 .c-counter::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.test-counter-1 .c-counter::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.test-counter-1 .c-counter__btn {
+    /*margin-top: 2px;*/
+}
+
+.c-counter__btn,
+.c-counter__field {
+    /*float: left;*/
+    /*display: block !important;*/
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.c-counter__field {
+    width: 3.2rem !important;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.test-counter-1 .dec {
+    left: 0;
+}
+.test-counter-1 .inc {
+    right: 0;
+}
+
+
+.c-card-catalog__price {
+    display: inline-block;
+    vertical-align: middle;
+}
+.c-card-catalog__price::after {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+}
+
+/*END test*/

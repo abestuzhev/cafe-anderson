@@ -3453,7 +3453,7 @@ a.c-button:hover {
     font-style: italic;
     line-height: 1.29;
     color: #515151;
-    width: 3.7rem; }
+    width: 4.3rem; }
   .c-card-supplements__btn {
     padding: .6rem 1.1rem;
     font-size: 1.4rem;
@@ -8515,32 +8515,6 @@ test popup
 .c-card-product__slider .c-counter__btn:after {
   font-size: 1.9rem; }
 
-/*test*/
-.test-counter {
-  background-color: #F44336; }
-  .test-counter .c-counter {
-    background-color: #F44336;
-    padding: .4rem .8rem; }
-    .test-counter .c-counter::after {
-      content: '';
-      clear: both;
-      display: block; }
-  .test-counter .c-counter__btn {
-    margin-top: 2px; }
-  .test-counter .c-counter__btn,
-  .test-counter .c-counter__field {
-    float: left;
-    display: block !important; }
-  .test-counter .c-counter__field {
-    width: 3.2rem !important;
-    padding: 0;
-    margin-right: 5px; }
-  .test-counter .dec {
-    left: 0; }
-  .test-counter .inc {
-    right: 0; }
-
-/*END test*/
 .carousel-slider {
   height: 14rem;
   width: 94%;
