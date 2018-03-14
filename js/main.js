@@ -144,7 +144,7 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-    &('document').on('click', '.order__btn.disabled', function(e){
+    $('document').on('click', '.order__btn.disabled', function(e){
         e.preventDefault();
     });
 
