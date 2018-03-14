@@ -144,6 +144,10 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    &('document').on('click', '.order__btn.disabled', function(e){
+        e.preventDefault();
+    });
+
     $('.excursion-pay__item label').on('click', function(){
         $(this).parents('.excursion-pay__item').siblings().find('label').removeClass('active');
         $(this).addClass('active');
