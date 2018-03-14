@@ -60,6 +60,7 @@
 .c-card-catalog__price {
     display: inline-block;
     vertical-align: middle;
+    background: #8da9e6;
 }
 .c-card-catalog__price::after {
     display: inline-block;
