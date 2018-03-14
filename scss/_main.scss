@@ -4061,8 +4061,9 @@ test popup
 
 .c-card-catalog__price {
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
-
+    justify-content: flex-start;
 
 }
 

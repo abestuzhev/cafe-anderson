@@ -5,6 +5,7 @@
 @include font_face(BebasNeue-Book, BebasNeue,'../fonts/', 400);
 @include font_face(BebasNeue-Light, BebasNeue,'../fonts/',300);
 @include font_face(BebasNeue-Thin, BebasNeue,'../fonts/',100);
+@include font_face(PTRoubleSerif, RoubleSerif,'../fonts/',400);
 
 @include font_face(SummerFont-Light, SummerFont,'../fonts/',100);
 
@@ -12,6 +13,7 @@
 $font_sans-serif: 'BebasNeue';
 $font_serif: 'PT Serif Caption';
 $font_decor: 'SummerFont';
+$font_RoubleSerif: 'RoubleSerif';
 
 $font_bold: 700;
 $font_light: 300;

@@ -1182,6 +1182,13 @@ div {
   font-style: normal; }
 
 @font-face {
+  font-family: "RoubleSerif";
+  src: url("../fonts/PTRoubleSerif.eot");
+  src: url("../fonts/PTRoubleSerif.eot?#iefix") format("embedded-opentype"), url("../fonts/PTRoubleSerif.woff") format("woff"), url("../fonts/PTRoubleSerif.ttf") format("truetype"), url("../fonts/PTRoubleSerif.svg#RoubleSerif") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
   font-family: "SummerFont";
   src: url("../fonts/SummerFont-Light.eot");
   src: url("../fonts/SummerFont-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SummerFont-Light.woff") format("woff"), url("../fonts/SummerFont-Light.ttf") format("truetype"), url("../fonts/SummerFont-Light.svg#SummerFont") format("svg");
@@ -4243,6 +4250,14 @@ a.c-button:hover {
     border: none; }
   .c-social__item {
     display: inline-block; }
+
+/*валюта*/
+.c-currency {
+  font-size: 54%;
+  margin-left: 5px; }
+
+.c-currency-rouble-serif {
+  font-family: "RoubleSerif"; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -8442,9 +8457,16 @@ test popup
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .c-card-catalog__count .c-counter__field,
 .c-card-product__count .c-counter__field {

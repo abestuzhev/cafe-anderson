@@ -3781,3 +3781,13 @@ a.c-button {
         display: inline-block;
     }
 }
+
+
+/*валюта*/
+.c-currency {
+    font-size: 54%;
+    margin-left: 5px;
+}
+.c-currency-rouble-serif {
+    font-family: $font_RoubleSerif;
+}
