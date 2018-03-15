@@ -1153,6 +1153,7 @@ main {
 
         &__price {
             display: inline-block;
+            vertical-align: middle;
             color: $black;
             font-size: 1.3rem;
             font-weight: 700;

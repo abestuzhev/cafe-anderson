@@ -6312,6 +6312,7 @@ main {
         width: 100%; }
     .popup-basket-card__price {
       display: inline-block;
+      vertical-align: middle;
       color: #555451;
       font-size: 1.3rem;
       font-weight: 700; }
