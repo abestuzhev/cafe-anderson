@@ -1576,7 +1576,10 @@ p {
 .popup input[type="search"],
 .popup textarea {
   width: 100%;
-  font-family: "PT Serif Caption"; }
+  font-family: "PT Serif Caption";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */

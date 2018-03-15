@@ -423,6 +423,9 @@ p {
 .popup textarea {
     width: 100%;
     font-family: $font_serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
