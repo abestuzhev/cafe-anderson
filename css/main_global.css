@@ -4864,7 +4864,10 @@ a.c-button:hover {
         outline: none;
         background-color: #fdf9ec;
         border: none;
-        border-bottom: 1px solid #9b9696; }
+        border-bottom: 1px solid #9b9696;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
   .header-email {
     display: inline-block;
     margin-right: 1rem;

@@ -742,6 +742,9 @@
                 background-color: #fdf9ec;
                 border: none;
                 border-bottom: 1px solid $color_text_bg;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
             }
         }
     }
