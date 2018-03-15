@@ -6177,7 +6177,7 @@ main {
   width: 25.8rem;
   position: absolute;
   z-index: 99999;
-  top: -9px;
+  top: -10px;
   left: -156px;
   background-color: #fff;
   padding: 1.4rem 1.2rem 1.4rem 1.5rem;
@@ -6188,7 +6188,7 @@ main {
   /*карточка в попаке корзины*/ }
   .popup-basket .header-basket {
     position: absolute;
-    top: 1%;
+    top: 12px;
     right: 31%; }
   .popup-basket__title {
     color: #231300;
