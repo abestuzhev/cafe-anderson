@@ -7480,6 +7480,10 @@ test popup
         &-final {
             padding: 1rem 4rem 2rem;
 
+            &__left {
+                width: 100%;
+            }
+
             &__list {
                 display: flex;
                 flex-flow: row nowrap;
@@ -7490,12 +7494,14 @@ test popup
             &__total {
                 vertical-align: middle;
                 font-size: 1.8rem;
+                text-align: center;
 
                 span {
                     vertical-align: middle;
                     font-family: $font_sans-serif;
                     font-size: 3.5rem;
                     color: #7cbd41;
+                    font-weight: 500;
                 }
 
             }

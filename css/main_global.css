@@ -4267,8 +4267,13 @@ a.c-button:hover {
   font-size: 1rem;
   margin: 0; }
 
+.popup-basket-card__price .c-currency {
+  font-size: 1rem;
+  margin-right: .4rem; }
+
 .c-card-supplements__price .c-currency-symbol,
-.c-card-product-line__text .c-currency-symbol {
+.c-card-product-line__text .c-currency-symbol,
+.popup-basket-card__price .c-currency-symbol {
   font-family: "PT Serif Caption"; }
 
 .header.sticky {
@@ -11103,6 +11108,8 @@ test popup
     margin-bottom: 1rem; }
   .cake-order-final {
     padding: 1rem 4rem 2rem; }
+    .cake-order-final__left {
+      width: 100%; }
     .cake-order-final__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -11119,12 +11126,14 @@ test popup
               justify-content: space-between; }
     .cake-order-final__total {
       vertical-align: middle;
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      text-align: center; }
       .cake-order-final__total span {
         vertical-align: middle;
         font-family: "BebasNeue";
         font-size: 3.5rem;
-        color: #7cbd41; }
+        color: #7cbd41;
+        font-weight: 500; }
     .cake-order-final .popup-form__item,
     .cake-order-final .c-personal-data {
       width: 100%;
