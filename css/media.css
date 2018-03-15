@@ -415,7 +415,7 @@
 @media screen and (max-width: 1270px) {
     .header-search__form {
         width: 28rem;
-        background-color: rgba(245, 241, 227, 0.92);
+        background-color: #fdf9ec;
         padding: 5px;
         right: auto;
         left: 2.4rem;
