@@ -1391,10 +1391,15 @@ a {
     left: 0;
     width: 100%;
     border-bottom: 1px dotted #9b806f; }
-  a:hover, a:focus {
+  a:hover {
     color: #67af26;
     border: none; }
-    a:hover::after, a:focus::after {
+    a:hover::after {
+      content: '';
+      border: none; }
+  a:focus {
+    border: none; }
+    a:focus::after {
       content: '';
       border: none; }
 
@@ -1679,12 +1684,18 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   font-family: "PT Serif Caption";
   position: relative;
   font-size: 0; }
+  .c-counter::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
   .c-counter__field {
     border: none;
     background-color: #fff;
     outline: none;
     text-align: center;
     display: inline-block;
+    vertical-align: middle;
     width: 50% !important; }
   .c-counter__btn {
     font-size: 1.2rem;
@@ -8493,7 +8504,7 @@ test popup
   display: inline-block;
   line-height: 1;
   margin: 0;
-  padding: 0 1rem; }
+  width: 3.6rem !important; }
 
 .c-card-catalog__count .c-counter__btn,
 .c-card-product__count .c-counter__btn {
@@ -8515,12 +8526,14 @@ test popup
     font-family: arial, sans-serif; }
   .c-card-catalog__count .c-counter__btn.inc,
   .c-card-product__count .c-counter__btn.inc {
-    display: inline-block; }
+    display: inline-block;
+    right: 0; }
     .c-card-catalog__count .c-counter__btn.inc:after,
     .c-card-product__count .c-counter__btn.inc:after {
       content: '+'; }
   .c-card-catalog__count .c-counter__btn.dec,
   .c-card-product__count .c-counter__btn.dec {
+    left: 0;
     display: inline-block; }
     .c-card-catalog__count .c-counter__btn.dec:after,
     .c-card-product__count .c-counter__btn.dec:after {

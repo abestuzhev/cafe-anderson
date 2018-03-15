@@ -403,6 +403,14 @@
     .filter-mix__item span {
         display: none;
     }
+
+    .c-card-catalog__price {
+        padding: .3rem .6rem 0.3rem 2rem;
+        font-size: 3.8rem;
+    }
+    .c-card-catalog__header {
+        padding: 2.7rem 2rem 5rem;
+    }
 }
 @media screen and (max-width: 1270px) {
     .header-search__form {
