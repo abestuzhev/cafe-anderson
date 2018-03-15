@@ -3150,7 +3150,9 @@ a.c-button:hover {
   font-family: "BebasNeue";
   font-size: 4.4rem;
   color: #553023;
-  margin-right: 1.1rem; }
+  margin-right: 1.1rem;
+  font-weight: 500;
+  width: 11.5rem; }
 
 .c-card-product__count {
   border-radius: .8rem;
@@ -3170,7 +3172,7 @@ a.c-button:hover {
           align-items: center;
   margin: 0 .4rem; }
   .c-card-product__count .c-counter {
-    padding: .7rem 1.2rem;
+    padding: .7rem .7rem;
     border-radius: .8rem;
     background-color: #7cbd41;
     border: none; }
@@ -3372,6 +3374,7 @@ a.c-button:hover {
     min-width: 6.6rem;
     text-align: center;
     font-family: "BebasNeue";
+    font-weight: 500;
     font-size: 2.6rem;
     line-height: 1;
     color: #553023; }
@@ -3453,7 +3456,7 @@ a.c-button:hover {
     font-style: italic;
     line-height: 1.29;
     color: #515151;
-    width: 4.3rem; }
+    width: 5rem; }
   .c-card-supplements__btn {
     padding: .6rem 1.1rem;
     font-size: 1.4rem;
@@ -4254,15 +4257,19 @@ a.c-button:hover {
 
 /*валюта*/
 .c-currency {
-  font-size: 54%;
-  margin-left: 5px; }
+  margin-left: 2px; }
 
-.c-currency-rouble-serif {
-  font-family: "RoubleSerif"; }
+[class*=price] .c-currency-symbol,
+[class*=total] .c-currency-symbol {
+  font-family: sans-serif; }
 
-.c-currency-arial {
-  font-family: arial, sans-serif;
-  font-weight: 100; }
+.c-card-product-line__text .c-currency {
+  font-size: 1rem;
+  margin: 0; }
+
+.c-card-supplements__price .c-currency-symbol,
+.c-card-product-line__text .c-currency-symbol {
+  font-family: "PT Serif Caption"; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -8379,6 +8386,8 @@ test popup
     transition: margin-left .2s ease-out; }
   .catalog-body.show-category .catalog-list {
     min-height: 66rem; }
+  .catalog-body.show-category .c-card-catalog__price {
+    font-size: 3rem; }
 
 .catalog .cafe-menu_list {
   margin-right: 0 !important;
@@ -9011,6 +9020,9 @@ test popup
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
+  .popup-event-buy .c-card-product__price {
+    width: 13.5rem;
+    margin-bottom: .6rem; }
 
 .popup-event__btn {
   display: block;
@@ -9019,7 +9031,7 @@ test popup
   background-color: #7cbd41;
   color: #ffffff;
   font-size: 1.6rem;
-  margin: 0 1rem;
+  margin: 0 .6rem;
   text-align: center;
   text-transform: uppercase;
   font-family: "PT Serif Caption"; }
@@ -9439,7 +9451,8 @@ test popup
       font-size: 3.6rem;
       line-height: 1;
       color: #553023;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      font-weight: 500; }
     .basket-item__footer {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -10368,7 +10381,8 @@ test popup
     font-size: 3.6rem;
     line-height: 1;
     color: #553023;
-    margin-right: 2rem; }
+    margin-right: 2rem;
+    font-weight: 500; }
   .lk-history-item__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12171,7 +12185,8 @@ test popup
     font-family: "BebasNeue";
     font-size: 4.4rem;
     color: #555451;
-    min-width: 12.5rem;
+    min-width: 14rem;
+    margin-right: .4rem;
     font-weight: 500; }
   .excursion__total {
     font-family: "BebasNeue";
@@ -12228,7 +12243,7 @@ test popup
       background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
   .excursion__count {
     border-radius: 20rem;
-    padding: .8rem 1.2rem;
+    padding: .6rem .8rem;
     background-color: #7cbd41;
     margin-right: 1.4rem; }
     .excursion__count .c-counter {

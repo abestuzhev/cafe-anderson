@@ -3962,6 +3962,10 @@ test popup
                 min-height: 66rem;
             }
 
+            .c-card-catalog__price {
+                font-size: 3rem;
+            }
+
             //.catalog-list {
             //    margin-left: -.5rem;
             //    margin-right: -.5rem;
@@ -4771,6 +4775,11 @@ test popup
             align-items: center;
             justify-content: flex-start;
         }
+
+        .c-card-product__price {
+            width: 13.5rem;
+            margin-bottom: .6rem;
+        }
     }
 
     &__btn {
@@ -4780,7 +4789,7 @@ test popup
         background-color: #7cbd41;
         color: #ffffff;
         font-size: 1.6rem;
-        margin: 0 1rem;
+        margin: 0 .6rem;
         text-align: center;
         text-transform: uppercase;
         font-family: $font_serif;
@@ -5293,6 +5302,7 @@ test popup
             line-height: 1;
             color: #553023;
             margin-right: 2rem;
+            font-weight: 500;
         }
 
         &__footer {
@@ -6550,6 +6560,7 @@ test popup
                 line-height: 1;
                 color: #553023;
                 margin-right: 2rem;
+                font-weight: 500;
             }
 
             &__footer {
@@ -8823,7 +8834,8 @@ test popup
         font-family: $font_sans-serif;
         font-size: 4.4rem;
         color: #555451;
-        min-width: 12.5rem;
+        min-width: 14rem;
+        margin-right: .4rem;
         font-weight: 500;
     }
 
@@ -8907,7 +8919,7 @@ test popup
 
     &__count {
         border-radius: 20rem;
-        padding: .8rem 1.2rem;
+        padding: .6rem .8rem;
         background-color: #7cbd41;
         margin-right: 1.4rem;
 

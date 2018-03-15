@@ -2468,6 +2468,8 @@ a.c-button {
         font-size: 4.4rem;
         color: #553023;
         margin-right: 1.1rem;
+        font-weight: 500;
+        width: 11.5rem;
     }
 
     &__count {
@@ -2480,7 +2482,7 @@ a.c-button {
         margin: 0 .4rem;
 
         .c-counter {
-            padding: .7rem 1.2rem;
+            padding: .7rem .7rem;
             border-radius: .8rem;
             background-color: #7cbd41;
             border: none;
@@ -2705,6 +2707,7 @@ a.c-button {
         min-width: 6.6rem;
         text-align: center;
         font-family: $font_sans-serif;
+        font-weight: 500;
         font-size: 2.6rem;
         line-height: 1;
         color: #553023;
@@ -2813,7 +2816,7 @@ a.c-button {
         font-style: italic;
         line-height: 1.29;
         color: #515151;
-        width: 4.3rem;
+        width: 5rem;
     }
 
     &__btn {
@@ -3785,15 +3788,39 @@ a.c-button {
 
 
 /*валюта*/
+//<span class="c-currency">руб.</span>
+//<span class="c-currency">AZN</span>
+//<span class="c-currency-symbol">&#8381;</span>
+//<span class="c-currency-symbol">&#8380;</span>
 .c-currency {
-    font-size: 54%;
-    margin-left: 5px;
+    margin-left: 2px;
 }
-.c-currency-rouble-serif {
-    font-family: $font_RoubleSerif;
+
+.c-card-catalog__price {
+    .c-currency {
+
+    }
+
+    //.c-currency-symbol {
+    //    font-family: arial, sans-serif;
+    //}
 }
-.c-currency-arial {
-    //margin-left: 5px;
-    font-family: arial, sans-serif;
-    font-weight: 100;
+[class*=price],
+[class*=total] {
+    .c-currency-symbol {
+        font-family: sans-serif;
+    }
+}
+
+.c-card-product-line__text {
+    .c-currency {
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+.c-card-supplements__price,
+.c-card-product-line__text {
+    .c-currency-symbol {
+        font-family: $font_serif;
+    }
 }
