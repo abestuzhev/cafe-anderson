@@ -4292,7 +4292,8 @@ a.c-button:hover {
 .c-card-supplements__price .c-currency-symbol,
 .c-card-product-line__text .c-currency-symbol,
 .popup-basket-card__price .c-currency-symbol,
-.popup-mini-product__price .c-currency-symbol {
+.popup-mini-product__price .c-currency-symbol,
+.menu-card__price .c-currency-symbol {
   font-family: "PT Serif Caption"; }
 
 .header.sticky {
