@@ -1701,6 +1701,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     font-size: 1.2rem;
     color: #555451;
     display: inline-block;
+    vertical-align: middle;
     padding: .4rem 0;
     text-align: center;
     width: 25%;
@@ -1711,12 +1712,17 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     right: .6rem; }
 
 .c-counter-big {
-  padding: .4rem 1.2rem;
+  padding: .4rem .6rem;
   border-radius: .8rem;
   background-color: #7cbd41;
   border: none;
   position: relative;
   font-size: 0; }
+  .c-counter-big::after {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle; }
   .c-counter-big__btn {
     display: inline-block;
     padding: .4rem 0;
@@ -1727,13 +1733,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     text-align: center;
     line-height: 1.6rem;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    vertical-align: middle; }
     .c-counter-big__btn:hover {
       background-color: #6faa3a; }
-  .c-counter-big .dec {
-    left: .6rem; }
-  .c-counter-big .inc {
-    right: .6rem; }
   .c-counter-big__field {
     width: 2.3rem !important;
     font-size: 1.8rem;
@@ -1743,7 +1746,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     border: none;
     outline: none;
     text-align: center;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
 
 .c-inputfile__input {
   width: 0.1px;
