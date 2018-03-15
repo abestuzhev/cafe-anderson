@@ -1346,6 +1346,15 @@ $(document).ready(function ($) {
         $('.header').removeClass('header-top__no-hide');
     });
 
+    $('.popup-basket__scroll').on( 'mousewheel DOMMouseScroll', function (e) {
+
+        var e0 = e.originalEvent;
+        var delta = e0.wheelDelta || -e0.detail;
+
+        this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+        e.preventDefault();
+    });
+
 
     /*проверяет в фильтре наличие селекта и еслит есть делает родитель блочным для отображения в мобильной версии*/
     $('.filter').each(function(){

@@ -79,6 +79,15 @@
         padding: 0;
         margin-right: 5px;
     }
+}
+
+@media (max-width: 730px) {
+
+    .popup-body {
+        padding-bottom: 0;
+        margin-bottom: 70px;
+    }
 
 }
+
 /*END test*/
