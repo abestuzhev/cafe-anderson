@@ -1860,7 +1860,7 @@ a.c-button {
         margin-bottom: .6rem;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-end;
 
         &-item {
@@ -1881,12 +1881,13 @@ a.c-button {
     }
 
     &__price {
-        width: 7%;
+        //width: 7%;
         text-align: right;
         font-size: 1.6rem;
         color: #553023;
         font-weight: 700;
         white-space: nowrap;
+        margin-left: .4em;
 
     }
 }

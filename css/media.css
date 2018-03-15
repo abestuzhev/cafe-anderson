@@ -1819,9 +1819,9 @@
         right: 20%;
     }
 
-    .menu-card__price {
-        width: 9%;
-    }
+    /*.menu-card__price {*/
+        /*width: 9%;*/
+    /*}*/
 
     .c-card-product-supplements {
         flex-flow: column nowrap;

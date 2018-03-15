@@ -2662,9 +2662,9 @@ a.c-button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end; }
@@ -2680,12 +2680,12 @@ a.c-button:hover {
         border-bottom: 1px dashed #76665c;
         margin-left: .5rem; }
   .menu-card__price {
-    width: 7%;
     text-align: right;
     font-size: 1.6rem;
     color: #553023;
     font-weight: 700;
-    white-space: nowrap; }
+    white-space: nowrap;
+    margin-left: .4em; }
 
 /*c-card-partner------------------------------------------------------------*/
 .c-card-partner {
