@@ -557,6 +557,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     font-family: $font_serif;
     position: relative;
     font-size: 0;
+    white-space: nowrap;
 
     &::after {
         content: '';
@@ -603,6 +604,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     border: none;
     position: relative;
     font-size: 0;
+    white-space: nowrap;
 
     &::after {
         display: inline-block;
@@ -2489,6 +2491,7 @@ a.c-button {
         margin-right: 1.1rem;
         font-weight: 500;
         width: 11.5rem;
+        line-height: 4.4rem;
     }
 
     &__count {
@@ -2723,7 +2726,7 @@ a.c-button {
     }
 
     &__price {
-        min-width: 6.6rem;
+        min-width: 7.6rem;
         text-align: center;
         font-family: $font_sans-serif;
         font-weight: 500;
@@ -2773,9 +2776,9 @@ a.c-button {
             width: 2.3rem;
             height: 2.3rem;
             border-radius: 3.4rem;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             text-align: center;
-            line-height: 1.3rem;
+            line-height: 1.5rem;
             color: #515151;
             background-color: #e8e8e8;
 

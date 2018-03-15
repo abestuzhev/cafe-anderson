@@ -1904,6 +1904,10 @@
     .events .filter{
         display: inline-block !important;
     }
+
+    .filter-hold {
+        display: block !important;
+    }
 }
 
 @media (max-width:770px) {
@@ -3361,12 +3365,14 @@
         height: auto;
     }
 
+    .c-card-product__count .c-counter__btn,
     .c-card-catalog__count .c-counter__btn {
         width: 2.4rem;
         height: 2.4rem;
         line-height: 2.3rem;
     }
 
+    .c-card-product__count .c-counter__btn::after,
     .c-card-catalog__count .c-counter__btn:after {
         content: '';
         font-size: 2.2rem;

@@ -1683,7 +1683,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   border: 1px solid #9b9696;
   font-family: "PT Serif Caption";
   position: relative;
-  font-size: 0; }
+  font-size: 0;
+  white-space: nowrap; }
   .c-counter::after {
     content: '';
     display: inline-block;
@@ -1717,7 +1718,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   background-color: #7cbd41;
   border: none;
   position: relative;
-  font-size: 0; }
+  font-size: 0;
+  white-space: nowrap; }
   .c-counter-big::after {
     display: inline-block;
     content: '';
@@ -3167,7 +3169,8 @@ a.c-button:hover {
   color: #553023;
   margin-right: 1.1rem;
   font-weight: 500;
-  width: 11.5rem; }
+  width: 11.5rem;
+  line-height: 4.4rem; }
 
 .c-card-product__count {
   border-radius: .8rem;
@@ -3386,7 +3389,7 @@ a.c-button:hover {
     .c-card-product-line__right .c-button {
       padding: .9rem 1rem; }
   .c-card-product-line__price {
-    min-width: 6.6rem;
+    min-width: 7.6rem;
     text-align: center;
     font-family: "BebasNeue";
     font-weight: 500;
@@ -3429,9 +3432,9 @@ a.c-button:hover {
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 3.4rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     color: #515151;
     background-color: #e8e8e8; }
     .c-card-supplements__count .c-counter__btn:hover {
@@ -8408,8 +8411,6 @@ test popup
     transition: margin-left .2s ease-out; }
   .catalog-body.show-category .catalog-list {
     min-height: 66rem; }
-  .catalog-body.show-category .c-card-catalog__price {
-    font-size: 3rem; }
 
 .catalog .cafe-menu_list {
   margin-right: 0 !important;
@@ -12295,7 +12296,7 @@ test popup
       .excursion__count .c-counter__btn::after {
         content: '';
         position: absolute;
-        font-size: 2.8rem;
+        font-size: 2.7rem;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
