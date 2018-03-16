@@ -143,6 +143,7 @@
         margin-left: 10px;
         margin-right: 10px;
         box-sizing: border-box;
+        margin-bottom: 30px;
     }
 
     .item span {
@@ -172,6 +173,13 @@
         /*transform: translate(-50%, -50%);*/
         margin-top: 20px;
     }
+    
+    .col {
+        display: inline-block;
+    }
+    .col > section {
+        display: block;
+    }
 
     @media screen and (max-width: 700px) {
         section {
@@ -184,6 +192,10 @@
 
         .item {
             padding: 0;
+        }
+        
+        .col {
+            width: 100%;
         }
 
         body {
@@ -204,50 +216,57 @@
       <a href="home.html" class="logo" target="_blank">
           <img src="img/logonew.png" alt="">
       </a>
+      <div class="col">
+          <section>
+              <h3>1 этап</h3>
+              <ol>
+                  <li class="item"><a target="_blank" href="home.html">Главная</a></li>
+                  <li class="item"><a target="_blank" href="cafe-list.html">Список кафе</a></li>
+                  <li class="item"><a target="_blank" href="cafe-card.html">Карточка кафе</a></li>
+                  <li class="item"><a target="_blank" href="vacancies.html">Вакансии</a></li>
+                  <li class="item"><a target="_blank" href="partners.html">Наши партнеры</a></li>
+                  <li class="item"><a target="_blank" href="404.html">Ошибка 404</a></li>
+                  <li class="item"><a target="_blank" href="reviews.html">Отзывы</a></li>
+                  <li class="item"><a target="_blank" href="star-guests.html">Звездные гости</a></li>
+                  <li class="item"><a target="_blank" href="contact.html">Контакты</a></li>
+                  <li class="item"><a target="_blank" href="search.html">Поисковая выдача</a></li>
+                  <li class="item"><a target="_blank" href="creators.html">Создатели Андерсон</a></li>
+                  <li class="item"><a target="_blank" href="factory-happiness.html">Фабрика счастья</a></li>
+              </ol>
+          </section>
+          
+          <section>
+              <h3>Служебные</h3>
+              <ol>
+                  <li class="item"><a target="_blank" href="icon.html">Иконки</a></li>
+                  <li class="item"><a target="_blank" href="catalog-test.html">Тестовый каталог</a></li>
+              </ol>
+          </section>
+      </div>
       <section>
-
-          <h3>1 этап</h3>
-
-
+          <h3>2 этап</h3>
           <ol>
-              <li class="item"><a target="_blank" href="home.html">Главная</a></li>
-              <li class="item"><a target="_blank" href="cafe-list.html">Список кафе</a></li>
-              <li class="item"><a target="_blank" href="cafe-card.html">Карточка кафе</a></li>
-              <li class="item"><a target="_blank" href="vacancies.html">Вакансии</a></li>
-              <li class="item"><a target="_blank" href="partners.html">Наши партнеры</a></li>
-              <li class="item"><a target="_blank" href="404.html">Ошибка 404</a></li>
-              <li class="item"><a target="_blank" href="reviews.html">Отзывы</a></li>
-              <li class="item"><a target="_blank" href="star-guests.html">Звездные гости</a></li>
-              <li class="item"><a target="_blank" href="contact.html">Контакты</a></li>
-              <li class="item"><a target="_blank" href="search.html">Поисковая выдача</a></li>
-              <li class="item"><a target="_blank" href="creators.html">Создатели Андерсон</a></li>
-              <li class="item"><a target="_blank" href="factory-happiness.html">Фабрика счастья</a></li>
-              <!--<hr>-->
-              <!--<li class="item"><a target="_blank" href="catalog.html">Каталог</a></li>-->
-              <!--<li class="item"><a target="_blank" href="basket.html">Корзина</a></li>-->
-              <!--<li class="item"><a target="_blank" href="ordering.html">Оформление заказа</a></li>-->
-              <!--<li class="item"><a target="_blank" href="ordering-auth.html">Оформление заказа. Форма входа</a></li>-->
-              <!--<li class="item"><a target="_blank" href="ordering-finish.html">Оформление заказа. Результирующая страница</a></li>-->
-              <!--<li class="item"><a target="_blank" href="events.html">Мероприятия</a></li>-->
+              <li class="item"><a target="_blank" href="bonus-program.html">Бонусная программа</a></li>
           </ol>
-
+    
       </section>
+      
 
       <section>
           <h3>4 этап</h3>
           <ol>
-              <li class="item corrected"><a target="_blank" href="catalog.html">Каталог</a></li>
-              <li class="item corrected"><a target="_blank" href="basket.html">Корзина</a></li>
+              <li class="item"><a target="_blank" href="catalog.html">Каталог</a></li>
+              <li class="item"><a target="_blank" href="basket.html">Корзина</a></li>
               <li class="item"><a target="_blank" href="error-basket.html">Корзина<span>Ошибка</span></a></li>
               <li class="item"><a target="_blank" href="ordering.html">Оформление заказа</a></li>
               <li class="item"><a target="_blank" href="ordering-auth.html">Оформление заказа <span>Форма входа</span></a></li>
               <li class="item"><a target="_blank" href="ordering-finish.html">Оформление заказа <span>Результирующая страница</span></a></li>
               <li class="item"><a target="_blank" href="ordering-finish-paid.html">Оформление заказа <span>Всё оплачено</span></a></li>
               <li class="item"><a target="_blank" href="ordering-finish-error.html">Оформление заказа <span>Ошибка</span></a></li>
-              <li class="item corrected"><a target="_blank" href="lk-history.html">Личный кабинет <span>История заказов</span></a></li>
+              <li class="item"><a target="_blank" href="lk-history.html">Личный кабинет <span>История заказов</span></a></li>
               <li class="item"><a target="_blank" href="lk-profile-edit.html">Личный кабинет <span>Редактировать профиль</span></a></li>
               <li class="item"><a target="_blank" href="lk-profile.html">Личный кабинет <span>Профиль пользователя</span></a></li>
-              <li class="item corrected"><a target="_blank" href="events.html">Мероприятия</a></li>
+              <li class="item"><a target="_blank" href="events.html">Мероприятия</a></li>
               <li class="item"><a target="_blank" href="news.html">Новости</a></li>
               <li class="item"><a target="_blank" href="news-post.html">Подробная новость</a></li>
               <li class="item"><a target="_blank" href="stock.html">Акции</a></li>
@@ -257,14 +276,11 @@
       <section>
           <h3>Временные страницы</h3>
           <ol>
-              <li class="item corrected"><a target="_blank" href="cake.html">Торты</a></li>
+              <li class="item"><a target="_blank" href="cake.html">Торты</a></li>
               <li class="item"><a target="_blank" href="graduation-party.html">Выпускные</a></li>
               <li class="item"><a target="_blank" href="styles.html">Стили оформления</a></li>
-              <li class="item corrected"><a target="_blank" href="excursion.html">Экскурсии</a></li>
-              <li class="item"><a target="_blank" href="icon.html">Иконки</a></li>
-              <li class="item"><a target="_blank" href="catalog-test.html">каталог тест</a></li>
+              <li class="item"><a target="_blank" href="excursion.html">Экскурсии</a></li>
           </ol>
-
       </section>
   </div>
 

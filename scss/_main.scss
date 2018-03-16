@@ -9823,6 +9823,439 @@ test popup
 }
 
 
+/*Бонусная программа (bonus-program)------------------------------------------------*/
+.bonus {
+    background-color: #fff;
+    font-family: $font_serif;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+
+    &-section {
+        padding: 0 2.7rem;
+        margin-bottom: 6.8rem;
+
+    }
+
+    &-banner {/*bonus-banner*/
+        width: 100%;
+        //height: 38rem;
+        background: url(../img/bonus/bonus-banner.png) 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 8rem 5rem 18rem;
+
+        &__title {
+            width: 36%;
+            font-size: 5rem;
+            color: #ffffff;
+            line-height: 1.2;
+            text-shadow: 0px 5px 51px rgba(0, 0, 0, 0.86);
+        }
+    }
+
+    &-actions {/*bonus-actions*/
+        margin-top: -5rem;
+
+        &__list {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 4.8rem;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 .7rem;
+            position: relative;
+
+            &:last-child .bonus-actions__arrow {
+                display: none;
+            }
+        }
+
+        &-card {
+            position: relative;
+            width: 15.7rem;
+            height: 15.7rem;
+            border-radius: 16rem;
+            box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            padding: 2rem 1.6rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &__number {
+                position: absolute;
+                bottom: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 10rem;
+                line-height: 1;
+                color: #ffffff;
+                text-shadow: 0px 5px 38px rgba(0, 0, 0, 0.71);
+            }
+
+            &__text {
+                text-align: center;
+                color: #675245;
+                line-height: 1;
+                font-size: 1.8rem;
+                font-family: $font_sans-serif;
+                letter-spacing: 0.4px;
+
+                span {
+                    color: #bb2b7f;
+                }
+            }
+        }
+
+        &__arrow {
+            margin-left: 1.5rem;
+        }
+
+        .symbol-arr-right {
+            font-size: 1.7rem;
+            fill: #675245;
+        }
+    }
+
+    &-description {/*bonus-description*/
+        padding: 2.1rem 2.6rem;
+        margin-bottom: 13rem;
+        background-color: #eef1f3;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        //
+        //&__layout {
+        //    padding: 0 2.6rem;
+        //}
+
+        &__text {
+            max-width: 87rem;
+            margin: 0 auto;
+            color: #545454;
+            text-transform: uppercase;
+            line-height: 1.32;
+            font-size: 1.9rem;
+
+            span {
+                text-transform: none;
+                display: block;
+                font-size: 3rem;
+            }
+        }
+
+        &-phone {
+            position: absolute;
+            z-index: 1;
+            top: -1rem;
+            right: 2.6rem;
+
+            [class*=bonus-description-phone__text] {
+                background-color: #7cbd41;
+                border-radius: .4rem;
+                padding: .7rem 1.3rem;
+                color: #ffffff;
+                font-size: 1.3rem;
+                position: absolute;
+            }
+
+            &__text-1 {
+                max-width: 22.2rem;
+                left: -65%;
+                bottom: 33%;
+
+            }
+
+            &__text-2 {
+                max-width: 17.2rem;
+                text-transform: uppercase;
+                text-align: right;
+                right: .6%;
+                bottom: 15%;
+            }
+        }
+
+    }
+
+    &-ranks {/*bonus-ranks*/
+
+        &__title {
+            text-transform: uppercase;
+            margin-bottom: 2.9rem;
+            font-family: $font_sans-serif;
+            color: #bb2b7f;
+            font-size: 5rem;
+            text-align: center;
+            font-weight:700;
+        }
+        
+        &__list {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+            justify-content: space-between;
+            margin-left: -.9rem;
+            margin-right: -.9rem;
+        }
+        
+        &__item {
+            width: 14.2%;
+            padding: 0 .9rem;
+            
+        }
+        
+        &-card {
+            border: solid 1px #e4e4e4;
+            background-color: #fff;
+
+            &__title {
+                font-size: 1.6rem;
+                line-height: 1;
+                text-align: center;
+                padding: 1.4rem .6rem;
+                min-height: 6rem;
+                background-color: #7cbd41;
+                color: #ffffff;
+                text-transform: uppercase;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            &__body {
+                padding: 3rem .6rem 2.8rem;
+                color: #675245;
+                font-size: 6rem;
+                line-height: 1;
+                text-align: center;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: .4rem;
+                    background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+                }
+            }
+            
+            &__percent {
+                
+            }
+            
+            &__footer {
+                font-style: italic;
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 1.2rem .4rem;
+            }
+            
+            &__text {
+                color: #96928a;
+            }
+            
+            &__price {
+                color: $black;
+                font-size: 1.4rem;
+            }
+
+            .c-currency-symbol {
+                font-family: serif;
+            }
+
+            &--super {
+                box-shadow:inset 0px 0px 0px .5rem #bb2b7f;
+                //outline:5px solid #bb2b7f;
+                //outline-offset:-4px;
+                .bonus-ranks-card__title {
+                    background-color: #bb2b7f;
+                }
+
+                .bonus-ranks-card__body {
+                    margin: 0 .5rem;
+                    color: #bb2b7f;
+                }
+            }
+        }
+    }
+
+    &-advantages {/*bonus-advantages*/
+
+        &__title {
+            text-align: center;
+            color: #675245;
+            font-size: 1.9rem;
+            line-height: 1;
+            margin-bottom: 3.4rem;
+            text-transform: uppercase;
+        }
+
+        &__list {
+
+        }
+
+        &__item {
+            color: $black;
+            font-size: 1.7rem;
+            margin-bottom: 2.8rem;
+            padding-left: 5.5rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4.1rem;
+                height: 4.1rem;
+                border-radius: 5rem;
+                border: 1px dotted #7cbd41;
+            }
+        }
+    }
+
+    &-install {/*bonus-install*/
+        &__grid {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        &__img {
+            //width: 50%;
+            padding-right: .5rem;
+        }
+        &__body {
+            padding: 7.5rem 8rem 6.3rem;
+            max-width: 41%;
+            background: url(../img/bonus/bonus-install-bg.svg) 0 0 no-repeat;
+        }
+
+        &__title {
+            text-align: center;
+            color: #bb2b7f;
+            line-height: 1;
+            font-size: 5rem;
+            font-family: $font_sans-serif;
+            font-weight: 700;
+            margin-bottom: 2.8rem;
+        }
+
+        &__text {
+            margin-bottom: 2.5rem;
+        }
+
+        &-box {
+            &__grid {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: stretch;
+                justify-content: space-between;
+            }
+
+            &__col:nth-child(1) {
+                flex:1 0 33%;
+            }
+            &__col:nth-child(2) {
+                flex:1 0 67%;
+                padding-left: 3.6rem;
+            }
+        }
+
+        &-btn {
+            padding: .4rem 2.4rem .8rem;
+            display: block;
+            border-radius: .5rem;
+            background-color: #bb2b7f;
+            margin-bottom: 2.2rem;
+            color: #ffffff;
+            white-space: nowrap;
+            font-size: 0;
+
+            &:after {
+                content: '';
+                border: none;
+            }
+            &:hover {
+                color: #ffffff;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &__img {
+                display: inline-block;
+            }
+
+            &__body {
+                display: inline-block;
+                font-size: 1.1rem;
+            }
+
+            &__name {
+                display: block;
+                line-height: 1;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    &-not-apply {/*bonus-not-apply*/
+
+    }
+
+    &-info {/*bonus-info*/
+        padding: 2.8rem;
+        background: #fdf7e8 url(../img/bg-header.png) repeat;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: .4rem;
+            background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            color: $black;
+            font-style: italic;
+
+            //&:last-child {
+            //    margin-bottom: 0;
+            //}
+        }
+
+        a {
+            color: #7cbd41;
+
+            &:after {
+                content: '';
+                border: none;
+            }
+
+            &:hover:after {
+                content: '';
+                border-bottom: 1px dotted #7cbd41;
+            }
+        }
+    }
+}
+
 
 
 
