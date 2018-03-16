@@ -3348,7 +3348,10 @@ a.c-button:hover {
     min-height: 5.6rem;
     position: relative;
     font-size: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 6.3rem;
+            flex: 1 0 6.3rem; }
     .c-card-product-line__img img {
       position: absolute;
       top: 50%;
@@ -3384,16 +3387,16 @@ a.c-button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     min-width: 23.5rem;
     padding-right: 1rem; }
     .c-card-product-line__right > div {
-      margin-right: 1.3rem; }
+      margin-right: .6rem; }
       .c-card-product-line__right > div:last-child {
         margin: 0; }
     .c-card-product-line__right .c-button {
@@ -3404,6 +3407,7 @@ a.c-button:hover {
     font-family: "BebasNeue";
     font-weight: 500;
     font-size: 2.6rem;
+    padding: .4rem 0 .2rem;
     line-height: 1;
     color: #553023; }
   .c-card-product-line__quantity {

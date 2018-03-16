@@ -2716,6 +2716,7 @@ a.c-button {
         position: relative;
         font-size: 0;
         overflow: hidden;
+        flex: 1 0 6.3rem;
 
         img {
             position: absolute;
@@ -2756,13 +2757,13 @@ a.c-button {
     &__right {
         display: flex;
         flex-flow: row nowrap;
-        align-items: center;
+        align-items: stretch;
         justify-content: flex-end;
         min-width: 23.5rem;
         padding-right: 1rem;
 
         & > div {
-            margin-right: 1.3rem;
+            margin-right: .6rem;
 
             &:last-child {
                 margin: 0;
@@ -2780,6 +2781,7 @@ a.c-button {
         font-family: $font_sans-serif;
         font-weight: 500;
         font-size: 2.6rem;
+        padding: .4rem 0 .2rem;
         line-height: 1;
         color: #553023;
     }

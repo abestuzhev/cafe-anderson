@@ -2595,7 +2595,7 @@
     }
     .c-card-product-line__right {
         justify-content: flex-start;
-        padding: 0 1rem 2rem 11%;
+        padding: 0 1rem 2rem 7.3rem;
     }
 
 
@@ -3749,6 +3749,10 @@
         font-size: 4rem;
     }
 
+    .c-card-product-line__right {
+        padding: 0 1rem 2rem;
+    }
+
 }
 
 @media (max-width:440px) {
@@ -3993,6 +3997,9 @@
         padding: 0 .4rem;
     }
 
+    .c-card-product-line__right {
+        /*justify-content: space-between;*/
+    }
 }
 
 @media (max-height:680px) {
