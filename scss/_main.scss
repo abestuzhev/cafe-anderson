@@ -9925,16 +9925,33 @@ test popup
     }
 
     &-description {/*bonus-description*/
-        padding: 2.1rem 2.6rem;
-        margin-bottom: 13rem;
+        padding: 2.1rem 2.6rem 1.6rem;
+        margin-bottom: 12rem;
         background-color: #eef1f3;
         width: 100%;
         text-align: center;
         position: relative;
-        //
-        //&__layout {
-        //    padding: 0 2.6rem;
-        //}
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 1.9rem;
+            background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 1.9rem;
+            background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+        }
 
         &__text {
             max-width: 87rem;
@@ -9956,6 +9973,12 @@ test popup
             z-index: 1;
             top: -1rem;
             right: 2.6rem;
+
+            &__bird {
+                position: absolute;
+                top: -6%;
+                right: 4%;
+            }
 
             [class*=bonus-description-phone__text] {
                 background-color: #7cbd41;
@@ -9980,6 +10003,14 @@ test popup
                 right: .6%;
                 bottom: 15%;
             }
+
+            &__arr {
+                position: absolute;
+                bottom: 10%;
+                left: -14%;
+                width: 7.8rem;
+                height: 6rem;
+            }
         }
 
     }
@@ -9988,7 +10019,7 @@ test popup
 
         &__title {
             text-transform: uppercase;
-            margin-bottom: 2.9rem;
+            margin-bottom: 1.4rem;
             font-family: $font_sans-serif;
             color: #bb2b7f;
             font-size: 5rem;
@@ -10028,10 +10059,22 @@ test popup
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: relative;
+
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -.8rem;
+                    left: 0;
+                    width: 100%;
+                    height: 1.2rem;
+                    background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+                }
             }
             
             &__body {
-                padding: 3rem .6rem 2.8rem;
+                padding: 2.3rem .6rem;
                 color: #675245;
                 font-size: 6rem;
                 line-height: 1;
@@ -10057,7 +10100,7 @@ test popup
                 font-style: italic;
                 font-size: 1.5rem;
                 text-align: center;
-                padding: 1.2rem .4rem;
+                padding: .9rem .4rem;
             }
             
             &__text {
@@ -10081,6 +10124,9 @@ test popup
                     background-color: #bb2b7f;
                 }
 
+                .bonus-ranks-card__title {
+                    margin: 0 .5rem;
+                }
                 .bonus-ranks-card__body {
                     margin: 0 .5rem;
                     color: #bb2b7f;
@@ -10122,10 +10168,36 @@ test popup
                 border-radius: 5rem;
                 border: 1px dotted #7cbd41;
             }
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 2;
+                left: 1.4rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1.6rem;
+                height: 1.6rem;
+                background: url(../img/icons/icon-bonus-sprite.svg) 0 0 no-repeat;
+                background-size: 3.5rem 1.7rem;
+            }
         }
     }
 
     &-install {/*bonus-install*/
+
+        &__giraffe {
+            position: absolute;
+            top: 15%;
+            right: -5%;
+
+            img {
+                display: block;
+                width: 10.2rem;
+                height: 9rem;
+            }
+        }
+
         &__grid {
             display: flex;
             flex-flow: row nowrap;
@@ -10137,6 +10209,7 @@ test popup
             padding-right: .5rem;
         }
         &__body {
+            position: relative;
             padding: 7.5rem 8rem 6.3rem;
             max-width: 49.4rem;
             background: url(../img/bonus/bonus-install-bg.svg) 0 0 no-repeat;
@@ -10149,7 +10222,7 @@ test popup
             font-size: 5rem;
             font-family: $font_sans-serif;
             font-weight: 700;
-            margin-bottom: 2.8rem;
+            margin-bottom: 1.4rem;
         }
 
         &__text {
@@ -10189,6 +10262,7 @@ test popup
             }
             &:hover {
                 color: #ffffff;
+                opacity: .9;
             }
 
             &:last-child {
@@ -10197,6 +10271,7 @@ test popup
 
             &__img {
                 display: inline-block;
+                margin-right: 1.1rem;
             }
 
             &__body {
@@ -10214,6 +10289,66 @@ test popup
 
     &-not-apply {/*bonus-not-apply*/
 
+        &__title {
+            text-align: center;
+            color: #675245;
+            font-size: 1.9rem;
+            line-height: 1;
+            margin-bottom: 3.4rem;
+            text-transform: uppercase;
+
+            span {
+                text-transform: uppercase;
+                font-size: 2.8rem;
+                color: #bb2b7f;
+            }
+        }
+
+        &__list {
+            text-align: center;
+            font-size: 0;
+        }
+
+        &__item {
+            color: $black;
+            position: relative;
+            display: inline-block;
+            padding-left: 5.5rem;
+            margin-right: 3rem;
+            font-size: 1.7rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                width: 4.1rem;
+                height: 4.1rem;
+                border-radius: 5rem;
+                border: 1px dotted #bb2b7f;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                z-index: 2;
+                left: 1.4rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1.6rem;
+                height: 1.6rem;
+                background: url(../img/icons/icon-bonus-sprite.svg) -1.9rem 0 no-repeat;
+                background-size: 3.5rem 1.7rem;
+            }
+        }
     }
 
     &-info {/*bonus-info*/
@@ -10231,7 +10366,7 @@ test popup
             background: url(../img/pattern-round.jpg) 0 0 repeat-x;
         }
         p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             color: $black;
             font-style: italic;
 
@@ -10252,6 +10387,17 @@ test popup
                 content: '';
                 border-bottom: 1px dotted #7cbd41;
             }
+        }
+
+        &__bird {
+            position: absolute;
+            bottom: -.1rem;
+            right: 3%;
+        }
+
+        .symbol-bird-left {
+            font-size: 4.7rem;
+            fill: #000;
         }
     }
 }
