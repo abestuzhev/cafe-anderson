@@ -13335,11 +13335,13 @@ test popup
           -ms-flex-pack: center;
               justify-content: center; }
     .bonus-install__img {
-      padding-right: .5rem; }
+      padding-right: .5rem;
+      text-align: center; }
     .bonus-install__body {
       position: relative;
       padding: 7.5rem 8rem 6.3rem;
       max-width: 49.4rem;
+      min-height: 44rem;
       background: url(../img/bonus/bonus-install-bg.svg) 0 0 no-repeat; }
     .bonus-install__title {
       text-align: center;

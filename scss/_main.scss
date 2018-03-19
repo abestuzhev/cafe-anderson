@@ -10207,11 +10207,13 @@ test popup
         &__img {
             //width: 50%;
             padding-right: .5rem;
+            text-align: center;
         }
         &__body {
             position: relative;
             padding: 7.5rem 8rem 6.3rem;
             max-width: 49.4rem;
+            min-height: 44rem;
             background: url(../img/bonus/bonus-install-bg.svg) 0 0 no-repeat;
         }
 

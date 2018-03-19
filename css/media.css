@@ -321,6 +321,12 @@
     .popup-event__header {
       display: inline-block;
     }
+
+    .bonus-ranks__item {
+        margin-bottom: 2rem;
+        width: 25%;
+        min-width: 17rem;
+    }
 }
 
 
@@ -411,7 +417,16 @@
     .c-card-catalog__header {
         padding: 2.7rem 2rem 5rem;
     }
+
+    .bonus-install__grid {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .bonus-install__body {
+        margin: 0 auto;
+    }
 }
+
 @media screen and (max-width: 1270px) {
     .header-search__form {
         width: 28rem;
@@ -1894,6 +1909,10 @@
         overflow-y: scroll;
         border-radius: 0;
     }
+
+    .bonus-ranks__item {
+        width: 33%;
+    }
 }
 
 @media (min-width:730px) {
@@ -2879,6 +2898,11 @@
     .excursion-advantages {
         margin-bottom: 5rem;
     }
+
+
+    .bonus-ranks__item {
+        width: 50%;
+    }
 }
 
 
@@ -3855,6 +3879,10 @@
     .filter-mix__item {
         padding: .5rem .8rem;
     }
+
+    .bonus-ranks__item {
+        width: 100%;
+    }
 }
 
 
@@ -4146,6 +4174,12 @@
         min-width: 1200px;
         box-sizing: border-box;
     }
+
+    .bonus-ranks__list {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
 }
 
 
