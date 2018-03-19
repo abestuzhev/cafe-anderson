@@ -3,7 +3,7 @@
 }
 
 .c-counter__field {
-    background-color: #ccc !important;
+    /*background-color: #ccc !important;*/
 }
 
 .c-counter__btn {
@@ -16,7 +16,7 @@
 
 }
 .test-counter-1 .c-counter {
-    background-color: #F44336;
+    /*background-color: #F44336;*/
     padding: .4rem .8rem;
 }
 .test-counter-1 .c-counter::after {
@@ -55,7 +55,7 @@
 .c-card-catalog__price {
     display: flex;
     align-items: center;
-    background: #e62baa;
+    /*background: #e62baa;*/
 }
 .c-card-catalog__price-layout::after {
     display: inline-block;
@@ -67,7 +67,7 @@
 .c-card-catalog__price-layout {
     display: inline-block;
     vertical-align: middle;
-    background: #8da9e6;
+    /*background: #8da9e6;*/
     line-height: .8;
     margin-top: .2rem;
 }
