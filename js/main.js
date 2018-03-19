@@ -1235,10 +1235,11 @@ $(document).ready(function ($) {
     // });
 
     /*скрываем попапы вне зоны элемента для карточки товара*/
-    $(document).mouseup(function (e) { // событие клика по веб-документу
+    $(document).mousedown(function (e) { // событие клика по веб-документу
         // var div = $('.popup');
         // тут указываем ID элемента
         // var div2 = $('.popup-mini');
+
 
         function hideOutZone(elem, elem2, elem3){
             var div = $(elem);
@@ -1263,7 +1264,10 @@ $(document).ready(function ($) {
                 div3.parents('html').removeClass('lock-html').css('margin-right','0');
             }
         }
-        hideOutZone('.popup', '.popup-mini', '.datepicker');
+        if (e.which === 1) {
+            hideOutZone('.popup', '.popup-mini', '.datepicker');
+        }
+
 
     });
 
