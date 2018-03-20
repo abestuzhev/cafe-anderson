@@ -322,10 +322,20 @@
       display: inline-block;
     }
 
+
+    .bonus-ranks__list {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
     .bonus-ranks__item {
         margin-bottom: 2rem;
         width: 25%;
         min-width: 17rem;
+    }
+
+    .bonus-description__text {
+        max-width: 70%;
     }
 }
 
@@ -338,6 +348,11 @@
 
     .cafe-list-layout .filter-item:nth-child(2) {width: 66%;}
 
+
+    .bonus-banner__title {
+        width: 59%;
+        font-size: 4.5rem;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -372,6 +387,49 @@
         margin-bottom: 0;
     }
 
+    .bonus-description__text {
+        max-width: 65%;
+    }
+
+    .bonus-install__grid {
+        align-items: center;
+    }
+
+    .bonus-install__body {
+        margin: 0 auto;
+    }
+
+    .bonus-install__img {
+        width: 40%;
+    }
+    .bonus-install__img img {
+        width: 100%;
+        height: auto;
+    }
+    .bonus-install__body {
+        width: 50%;
+        max-width: none;
+        min-height: 0;
+        padding: 3rem;
+        background: none;
+        margin: 0;
+    }
+
+    .bonus-install-box__grid {
+        justify-content: flex-start;
+    }
+    .bonus-install-box__col:nth-child(1),
+    .bonus-install-box__col:nth-child(2) {
+        flex: 0 1 auto;
+    }
+
+    .bonus-install__title {
+        text-align: left;
+    }
+
+    .bonus-install__giraffe {
+        top: 8%;
+    }
 }
 
 @media screen and (max-width: 985px) {
@@ -418,13 +476,6 @@
         padding: 2.7rem 2rem 5rem;
     }
 
-    .bonus-install__grid {
-        flex-flow: column wrap;
-        justify-content: center;
-    }
-    .bonus-install__body {
-        margin: 0 auto;
-    }
 }
 
 @media screen and (max-width: 1270px) {
@@ -662,6 +713,54 @@
 
     .filter-bage {
         margin-right: 1.4rem;
+    }
+
+    .bonus-banner {
+        padding: 7rem 5rem 10rem;
+    }
+
+    .bonus-banner::after {
+        content: '';
+        position: absolute;
+        bottom: -.8rem;
+        left: 0;
+        width: 100%;
+        height: 1.9rem;
+        background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+    }
+
+    .bonus-actions {
+        margin: 0;
+        padding: 2rem 1.7rem 0;
+    }
+
+    .bonus-actions__list {
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+
+    .bonus-actions__item {
+        width: 33%;
+        margin-bottom: 2rem;
+    }
+
+    .bonus-actions-card__number {
+        position: static;
+        text-shadow: none;
+        color: #675245;
+        transform: none;
+        margin-right: .5rem;
+    }
+
+
+    .bonus-actions-card__text {
+        text-align: left;
+    }
+
+    .bonus-actions-card {
+        border-radius: 0;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -1400,6 +1499,41 @@
         /*border: none;*/
     /*}*/
 
+    .bonus-description {
+        margin-bottom: 20rem;
+    }
+    .bonus-description__text {
+        max-width: 100%;
+    }
+
+    .bonus-description-phone {
+        top: 66%;
+    }
+
+    .bonus-description-phone__bird {
+        display: none;
+    }
+
+    .bonus-description-phone__text-1 {
+        left: -79%;
+        bottom: 58%;
+    }
+
+    .bonus-description-phone__text-2 {
+        width: 17.2rem;
+        right: 57%;
+        bottom: 40%;
+    }
+
+    .bonus-description-phone__arr {
+        bottom: 32%;
+        left: -60%;
+    }
+
+    .bonus-banner__title {
+        width: 90%;
+    }
+
 }
 
 @media (max-width:940px) {
@@ -1823,6 +1957,46 @@
     .excursion-banner__subtitle {
         width: 100%;
     }
+
+    .bonus-install__grid {
+        flex-flow: column nowrap;
+    }
+
+    .bonus-install__img {
+        width: 80%;
+    }
+
+    .bonus-install__body {
+        width: 90%;
+    }
+
+    .bonus-install-box__grid {
+        justify-content: center;
+    }
+    .bonus-install__title {
+        margin-bottom: 0;
+    }
+
+    .bonus-install__text {
+        margin-bottom: 1.5rem;
+    }
+    .bonus-install__title,
+    .bonus-install__text {
+        text-align: center;
+    }
+
+    .bonus-install-box__col:nth-child(2) {
+        padding-left: 1.6rem;
+    }
+
+    .bonus-install__giraffe {
+        top: 45%;
+    }
+
+    .bonus-actions__item {
+        width: 50%;
+    }
+
 }
 
 @media (max-width:800px) {
@@ -2503,6 +2677,32 @@
         font-size: 1.9rem;
     }
 
+    .bonus {
+        margin-left: -2.2rem;
+        margin-right: -2.2rem;
+    }
+
+    .bonus-section {
+        margin-bottom: 2rem;
+        padding: 0 1.7rem;
+    }
+
+    .bonus-not-apply__list {
+        text-align: left;
+    }
+
+    .bonus-not-apply__item {
+        margin-bottom: 2.7rem;
+    }
+
+    .bonus-not-apply__title span {
+        font-size: 1.9rem;
+    }
+
+    .bonus-banner__title {
+        font-size: 4rem;
+    }
+
 }
 
 @media (max-width:780px) {
@@ -2702,7 +2902,18 @@
         padding: .7rem 2.1rem 1rem;
     }
 
+    .bonus-description__text {
+        font-size: 1.7rem;
+    }
 
+    .bonus-description {
+        margin-bottom: 22rem;
+    }
+
+    .bonus-description-phone {
+        top: 77%;
+        right: -10%;
+    }
 
 }
 
@@ -2739,7 +2950,12 @@
         flex: 1 0 100%;
     }
 
+    .bonus-ranks__title,
+    .bonus-install__title {
+        font-size: 4rem;
+    }
 }
+
 @media screen and (max-height:600px) {
     .popup .popup-bg__img {
         right: -10rem;
@@ -2902,6 +3118,10 @@
 
     .bonus-ranks__item {
         width: 50%;
+    }
+
+    .bonus-install__body {
+        width: 100%;
     }
 }
 
@@ -3198,6 +3418,46 @@
     .events .datepicker--cell {
         height:4rem;
     }
+
+    .bonus-actions {
+        padding: 0;
+    }
+    .bonus-actions__item {
+        padding: 0;
+        width: 100%;
+        display: block;
+        box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 1.2rem;
+    }
+
+    .bonus-actions-card {
+        display: block;
+        box-shadow: none;
+        padding: 1.1rem 1rem;
+    }
+
+    .bonus-actions-card__number,
+    .bonus-actions-card__text {
+        display: block;
+        text-align: center;
+    }
+
+    .bonus-actions__arrow {
+        text-align: center;
+        margin: 0;
+        padding: 0 0 1.7rem;
+    }
+    .bonus-actions__arrow .c-symbol {
+        transform: rotate(90deg);
+    }
+
+    .bonus-actions-card__number {
+        font-size: 6.5rem;
+    }
+
+    .bonus-banner {
+        padding: 4rem 1.7rem 8.4rem;
+    }
 }
 
 @media (max-width:570px) {
@@ -3250,6 +3510,12 @@
     .excursion-about-time__hours {
         display: block;
         text-align: center;
+    }
+
+
+    .bonus-banner__title {
+        font-size: 3.5rem;
+        width: 100%;
     }
 }
 
@@ -3654,6 +3920,42 @@
     }
 }
 
+@media (max-width:500px) {
+    .bonus-install__giraffe {
+        top: 5%;
+        right: -9%;
+    }
+
+    .bonus-install__giraffe img {
+        width: 8.2rem;
+    }
+
+    .bonus-install__title {
+        font-size: 3.5rem;
+    }
+
+    .bonus-install-box__col:nth-child(1) img {
+        width: 7.1rem;
+    }
+
+    .bonus-install-btn {
+        padding: .2rem 1.4rem .4rem;
+        margin-bottom: .4rem;
+    }
+
+    .bonus-install-btn__name {
+        font-size: 1.4rem;
+    }
+
+    .bonus-install-box__col:nth-child(2) {
+        padding-left: .6rem;
+    }
+
+    .bonus-install__body {
+        padding: 3rem 0rem;
+    }
+}
+
 @media (max-width:470px) {
     .mobile-cafe__title,
     .mobile-celebration__title,
@@ -3804,6 +4106,10 @@
     .partners__item {
         width: 100%;
     }
+
+    .bonus-description-phone {
+        right: -19%;
+    }
 }
 
 
@@ -3883,8 +4189,35 @@
     .bonus-ranks__item {
         width: 100%;
     }
+
+
+    .bonus-ranks-card__body {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1.6rem .6rem;
+    }
+
+    .bonus-ranks-card__percent {
+        padding:0;
+        margin-right: 1.4rem;
+    }
+
+    .bonus-ranks-card__footer {
+        padding: 0;
+    }
+    .bonus-ranks-card__footer::after {
+        content: '';
+        display: none;
+    }
 }
 
+@media (max-width:380px) {
+    .bonus-description-phone {
+        right: -30%;
+    }
+}
 
 @media (max-width:370px) {
     .home-cafe {
@@ -4027,6 +4360,11 @@
 
     .c-card-product-line__right {
         /*justify-content: space-between;*/
+    }
+
+
+    .bonus-not-apply__item {
+        margin-bottom: 2rem;
     }
 }
 
@@ -4174,12 +4512,6 @@
         min-width: 1200px;
         box-sizing: border-box;
     }
-
-    .bonus-ranks__list {
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-
 }
 
 
