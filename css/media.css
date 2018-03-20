@@ -2953,6 +2953,7 @@
     .bonus-ranks__title,
     .bonus-install__title {
         font-size: 4rem;
+        padding: 0 3rem;
     }
 }
 
