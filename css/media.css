@@ -619,6 +619,13 @@
         width: 50%;
         display: inline-block;
     }
+
+    .easter-banner {
+        padding: 7.5rem 5rem 26rem;
+    }
+    .easter-banner__title {
+        width: 90%;
+    }
 }
 
 @media (max-width:1130px) {
@@ -841,6 +848,10 @@
 
     .bonus-banner__rabbit {
         bottom: -10%;
+    }
+
+    .easter {
+        margin-bottom: 6rem;
     }
 }
 
@@ -1688,6 +1699,14 @@
         font-size: 1.6rem;
     }
 
+    .easter-banner__title {
+        font-size: 2.6rem;
+        width: 100%;
+    }
+
+    .easter-banner {
+        padding: 5.5rem 3rem 14rem;
+    }
 }
 
 @media (max-width:920px) {
@@ -2888,6 +2907,11 @@
 
 @media screen and (max-width:720px) {
     .catalog-list__item {
+        width: 100%;
+    }
+
+    .easter-product .c-card-catalog__img,
+    .easter-product .c-card-catalog__img img {
         width: 100%;
     }
 
@@ -4137,6 +4161,15 @@
         padding: 0 1rem 2rem;
     }
 
+    .easter-banner__title {
+        font-size: 2rem;
+        line-height: 1.2;
+        border-radius: 0;
+    }
+
+    .easter-banner {
+        padding: 5.5rem 0rem 9rem;
+    }
 }
 
 @media (max-width:440px) {
@@ -4427,6 +4460,14 @@
 
     .bonus-not-apply__item {
         margin-bottom: 2rem;
+    }
+
+    .easter-product .c-card-catalog__price {
+        padding: 0 2rem;
+    }
+
+    .easter-product .c-button__default {
+        padding: 1.1rem 1.8rem;
     }
 }
 

@@ -487,57 +487,6 @@ $(document).ready(function ($) {
         $(this).siblings('.lk-history-item__body').slideToggle(300);
     });
 
-    /*юоковые кнопки отзыва*/
-    var $reviews_btn = $(".c-reviews__btn"),
-        clickCount;
-    $reviews_btn.attr("data-count", "0");
-    var isMobile = {
-        Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
-        BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
-        iOS:            function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false; },
-        Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
-        any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
-    };
-    if ( isMobile.any() ) {
-        $reviews_btn.on("click", function(){
-            clickCount = $(this).attr("data-count");
-            clickCount ++;
-            $(this).parent('.c-reviews__item').siblings().removeClass('active');
-            if (clickCount == 1) {
-                $(this).attr("data-count", clickCount);
-                $(this).parent('.c-reviews__item').addClass('active');
-                return false;
-            } else if (clickCount == 2){
-                $(this).parent('.c-reviews__item').removeClass('active');
-                $(this).attr("data-count", "0");
-                showPopup(".c-reviews-positive", '.popup__review');
-                showPopup(".c-reviews-negative", '.popup__review');
-            }else {
-                return true;
-            }
-        });
-    }
-
-    if ( !isMobile.any() ) {
-        $reviews_btn.hover(function(){
-            clickCount = $(this).attr("data-count");
-            clickCount ++;
-            $(this).parent('.c-reviews__item').siblings().removeClass('active');
-            if (clickCount == 1) {
-                $(this).attr("data-count", clickCount);
-                $(this).parent('.c-reviews__item').addClass('active');
-                console.log('click');
-                return false;
-            } else if (clickCount == 2){
-                showPopup(".c-reviews-positive", '.popup__review');
-                showPopup(".c-reviews-negative", '.popup__review');
-                $(this).parent('.c-reviews__item').removeClass('active');
-                $(this).attr("data-count", "0");
-            }else {
-                return true;
-            }
-        });
-    }
 
     //очистить форму поиска
     $(document).on('click', '.order-delivery-search__clear', function(e){
@@ -1015,7 +964,7 @@ $(document).ready(function ($) {
         });
     }
 
-    $(document).on('click', '.popup-close', function (e) {
+    $('.popup-close, .js-popup-close').on('click', function (e) {
         e.preventDefault();
         var $html = $('html');
         $(this).parents('.mfp-wrap').removeClass('is-visible');
@@ -1029,19 +978,19 @@ $(document).ready(function ($) {
         });
     });
 
-    $(document).on('click', '.js-popup-close', function (e) {
-        e.preventDefault();
-        var $html = $('html');
-        $(this).parents('.mfp-wrap').removeClass('is-visible');
-        $('.mfp-bg').removeClass('is-visible');
-        $html.css({
-            'margin-right':'0'
-        }).removeClass('lock-html');
-        $('.wrapper').removeClass('fixed-input');
-        $('.header.sticky').css({
-            // 'right':'0'
-        });
-    });
+    // $(document).on('click', '.js-popup-close', function (e) {
+    //     e.preventDefault();
+    //     var $html = $('html');
+    //     $(this).parents('.mfp-wrap').removeClass('is-visible');
+    //     $('.mfp-bg').removeClass('is-visible');
+    //     $html.css({
+    //         'margin-right':'0'
+    //     }).removeClass('lock-html');
+    //     $('.wrapper').removeClass('fixed-input');
+    //     $('.header.sticky').css({
+    //         // 'right':'0'
+    //     });
+    // });
 
 
     showPopup(".header-phone", '.popup__request-call');
@@ -1056,8 +1005,8 @@ $(document).ready(function ($) {
     // showPopup(".c-reviews-negative", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
     // showPopup(".popup-forgot-password", '.popup__recovery-password');
-    showPopup(".c-card-catalog__img", '.popup-product');
-    showPopup(".c-card-catalog__title", '.popup-product');
+    showPopup(".catalog-product .c-card-catalog__img", '.popup-product');
+    showPopup(".catalog-product .c-card-catalog__title", '.popup-product');
     showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
     showPopup("#lk-profile-subscription-del__ok", '.popup-subscription-del');
@@ -1257,16 +1206,19 @@ $(document).ready(function ($) {
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div.parents('html').removeClass('lock-html').css('margin-right','0');
+
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div2.parents('html').removeClass('lock-html').css('margin-right','0');
+
                 div3.parents('.mfp-wrap').removeClass('is-visible');
                 div3.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div3.parents('html').removeClass('lock-html').css('margin-right','0');
             }
         }
+        console.log('mouseup');
         if (e.which === 1) {
-            hideOutZone('.popup', '.popup-mini', '.datepicker');
+            // hideOutZone('.popup', '.popup-mini', '.datepicker');
         }
 
 
@@ -1279,6 +1231,57 @@ $(document).ready(function ($) {
     hidePopup('.header-search-result', 'is-visible');
 
 
+    /*юоковые кнопки отзыва*/
+    var $reviews_btn = $(".c-reviews__btn"),
+        clickCount;
+    $reviews_btn.attr("data-count", "0");
+    var isMobile = {
+        Android:        function() { return navigator.userAgent.match(/Android/i) ? true : false; },
+        BlackBerry:     function() { return navigator.userAgent.match(/BlackBerry/i) ? true : false; },
+        iOS:            function() { return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false; },
+        Windows:        function() { return navigator.userAgent.match(/IEMobile/i) ? true : false; },
+        any:            function() { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  }
+    };
+    if ( isMobile.any() ) {
+        $reviews_btn.on("click", function(){
+            clickCount = $(this).attr("data-count");
+            clickCount ++;
+            $(this).parent('.c-reviews__item').siblings().removeClass('active');
+            if (clickCount == 1) {
+                $(this).attr("data-count", clickCount);
+                $(this).parent('.c-reviews__item').addClass('active');
+                return false;
+            } else if (clickCount == 2){
+                $(this).parent('.c-reviews__item').removeClass('active');
+                $(this).attr("data-count", "0");
+                showPopup(".c-reviews-positive", '.popup__review');
+                showPopup(".c-reviews-negative", '.popup__review');
+            }else {
+                return true;
+            }
+        });
+    }
+
+    if ( !isMobile.any() ) {
+        $reviews_btn.hover(function(){
+            clickCount = $(this).attr("data-count");
+            clickCount ++;
+            $(this).parent('.c-reviews__item').siblings().removeClass('active');
+            if (clickCount == 1) {
+                $(this).attr("data-count", clickCount);
+                $(this).parent('.c-reviews__item').addClass('active');
+                console.log('click');
+                return false;
+            } else if (clickCount == 2){
+                showPopup(".c-reviews-positive", '.popup__review');
+                showPopup(".c-reviews-negative", '.popup__review');
+                $(this).parent('.c-reviews__item').removeClass('active');
+                $(this).attr("data-count", "0");
+            }else {
+                return true;
+            }
+        });
+    }
 
 
     // мобильный заказать звонок, показываем форму и удаляем надпись
