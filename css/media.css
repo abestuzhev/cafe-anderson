@@ -353,6 +353,14 @@
         width: 57%;
         font-size: 4.5rem;
     }
+
+    .bonus-banner__airplane {
+        right: 1%;
+    }
+
+    .bonus-banner__rabbit {
+        left: 1%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -762,6 +770,29 @@
         width: 100%;
         height: auto;
     }
+
+    .bonus-banner__cherry {
+        top: -14%;
+    }
+
+    .bonus-banner__airplane {
+        right: 9%;
+        bottom: 5%;
+    }
+
+    .bonus-banner {
+        background-position: 50% 30%;
+    }
+
+    .bonus-banner__tea,
+    .bonus-banner__airplane {
+        display: none;
+    }
+
+    .bonus-banner__cup {
+        bottom: 8%;
+        right: 8%;
+    }
 }
 
 @media (max-width:1040px) {
@@ -804,6 +835,13 @@
         padding: 0 1rem;
     }
 
+    .bonus-banner__cherry {
+        top: -15%;
+    }
+
+    .bonus-banner__rabbit {
+        bottom: -10%;
+    }
 }
 
 @media (min-width:1020px) {
@@ -2703,6 +2741,18 @@
         font-size: 4rem;
     }
 
+    .bonus-banner {
+        padding: 2.7rem 5rem 13.8rem;
+    }
+
+    .bonus-banner__cherry {
+        display: none;
+    }
+
+    .bonus-banner__rabbit {
+        left: 3%;
+    }
+
 }
 
 @media (max-width:780px) {
@@ -3457,7 +3507,11 @@
     }
 
     .bonus-banner {
-        padding: 4rem 1.7rem 8.4rem;
+        padding: 2.7rem 1.7rem 13.8rem;
+    }
+
+    .bonus-banner__cup {
+        width: 10.7rem;
     }
 }
 
@@ -4220,6 +4274,10 @@
 @media (max-width:380px) {
     .bonus-description-phone {
         right: -30%;
+    }
+
+    .bonus-banner__cup {
+        right: -7%;
     }
 }
 

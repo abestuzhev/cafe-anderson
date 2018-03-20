@@ -13037,34 +13037,34 @@ test popup
       text-shadow: 0px 5px 51px rgba(0, 0, 0, 0.86); }
     .bonus-banner__tea {
       position: absolute;
-      right: 0%;
-      top: 0%;
+      right: -3%;
+      top: 5%;
       width: 17.4rem;
       height: 14.3rem; }
     .bonus-banner__cup {
       width: 12.7rem;
       height: 10.8rem;
       position: absolute;
-      bottom: 0%;
-      right: 0%; }
+      bottom: 29%;
+      right: 35%; }
     .bonus-banner__rabbit {
       width: 7.3rem;
       height: 11rem;
       position: absolute;
-      left: 0%;
-      bottom: 0%; }
+      left: 9%;
+      bottom: -2%; }
     .bonus-banner__cherry {
       width: 9.3rem;
       height: 10.7rem;
       position: absolute;
-      top: 0%;
-      left: 0%; }
+      top: -5%;
+      left: 26%; }
     .bonus-banner__airplane {
       width: 12.8rem;
       height: 9.9rem;
       position: absolute;
-      right: 0%;
-      bottom: 0%; }
+      right: 4%;
+      bottom: 16%; }
   .bonus-actions {
     /*bonus-actions*/
     margin-top: -5rem; }
