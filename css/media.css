@@ -350,7 +350,7 @@
 
 
     .bonus-banner__title {
-        width: 59%;
+        width: 57%;
         font-size: 4.5rem;
     }
 }
@@ -1531,7 +1531,7 @@
     }
 
     .bonus-banner__title {
-        width: 90%;
+        width: 78%;
     }
 
 }
@@ -3516,7 +3516,6 @@
 
     .bonus-banner__title {
         font-size: 3.5rem;
-        width: 100%;
     }
 }
 
@@ -3918,6 +3917,10 @@
         margin-top: 1rem;
         flex: 1 0 100%;
         text-align: center;
+    }
+
+    .bonus-banner__title {
+        width: 100%;
     }
 }
 

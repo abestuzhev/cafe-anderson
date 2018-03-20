@@ -11177,7 +11177,7 @@ test popup
     .cake-order-final__total {
       vertical-align: middle;
       font-size: 1.8rem;
-      text-align: center; }
+      text-align: left; }
       .cake-order-final__total span {
         vertical-align: middle;
         font-family: "BebasNeue";
@@ -13024,16 +13024,47 @@ test popup
   .bonus-banner {
     /*bonus-banner*/
     width: 100%;
-    background: url(../img/bonus/bonus-banner.png) 50% 50% no-repeat;
+    background: url(../img/bonus/bonus-banner.png) 50% 100% no-repeat;
     background-size: cover;
     padding: 8rem 5rem 18rem;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .bonus-banner__title {
       width: 36%;
       font-size: 5rem;
       color: #ffffff;
       line-height: 1.2;
       text-shadow: 0px 5px 51px rgba(0, 0, 0, 0.86); }
+    .bonus-banner__tea {
+      position: absolute;
+      right: 0%;
+      top: 0%;
+      width: 17.4rem;
+      height: 14.3rem; }
+    .bonus-banner__cup {
+      width: 12.7rem;
+      height: 10.8rem;
+      position: absolute;
+      bottom: 0%;
+      right: 0%; }
+    .bonus-banner__rabbit {
+      width: 7.3rem;
+      height: 11rem;
+      position: absolute;
+      left: 0%;
+      bottom: 0%; }
+    .bonus-banner__cherry {
+      width: 9.3rem;
+      height: 10.7rem;
+      position: absolute;
+      top: 0%;
+      left: 0%; }
+    .bonus-banner__airplane {
+      width: 12.8rem;
+      height: 9.9rem;
+      position: absolute;
+      right: 0%;
+      bottom: 0%; }
   .bonus-actions {
     /*bonus-actions*/
     margin-top: -5rem; }
