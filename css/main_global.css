@@ -13554,7 +13554,16 @@ test popup
     margin-right: 1.4rem; }
   .easter-product .c-button__default {
     text-transform: lowercase;
-    font-size: 2rem; }
+    font-size: 2rem;
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease; }
+    .easter-product .c-button__default:hover {
+      background-color: #6aa43a;
+      opacity: 1;
+      -webkit-transition: all .1s ease;
+      -o-transition: all .1s ease;
+      transition: all .1s ease; }
   .easter-product .c-card-catalog {
     border-radius: .6rem; }
   .easter-delivery {

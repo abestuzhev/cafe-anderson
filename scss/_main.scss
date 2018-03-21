@@ -10507,6 +10507,13 @@ test popup
         .c-button__default {
             text-transform: lowercase;
             font-size: 2rem;
+            transition: all .1s ease;
+            
+            &:hover {
+                background-color: #6aa43a;
+                opacity: 1;
+                transition: all .1s ease;
+            }
         }
 
         .c-card-catalog {
