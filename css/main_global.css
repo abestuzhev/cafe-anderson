@@ -4984,9 +4984,9 @@ a.c-button:hover {
         display: none; }
     .header-navigation-highlight .header-navigation__title,
     .header-navigation-highlight .header-navigation__subtitle {
-      color: #7cbd41; }
+      color: #a2ff00; }
     .header-navigation-highlight:hover .header-navigation__title::after {
-      border-color: #7cbd41; }
+      border-color: #a2ff00; }
     .header-navigation__title {
       font-family: "BebasNeue";
       text-transform: uppercase;
