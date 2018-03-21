@@ -1218,7 +1218,7 @@ $(document).ready(function ($) {
         }
         console.log('mouseup');
         if (e.which === 1) {
-            // hideOutZone('.popup', '.popup-mini', '.datepicker');
+            hideOutZone('.popup', '.popup-mini', '.datepicker');
         }
 
 
