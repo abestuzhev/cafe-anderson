@@ -4982,6 +4982,11 @@ a.c-button:hover {
       .header-navigation__item:last-child::after {
         content: '';
         display: none; }
+    .header-navigation-highlight .header-navigation__title,
+    .header-navigation-highlight .header-navigation__subtitle {
+      color: #7cbd41; }
+    .header-navigation-highlight:hover .header-navigation__title::after {
+      border-color: #7cbd41; }
     .header-navigation__title {
       font-family: "BebasNeue";
       text-transform: uppercase;
@@ -13530,9 +13535,18 @@ test popup
   margin-bottom: 4rem; }
   .easter-banner {
     padding: 7.5rem 8rem 17rem;
-    background: url(../img/easter/easter-banner.png) 50% 100% no-repeat;
+    background: url(../img/easter/easter-banner.jpg) 50% 100% no-repeat;
     background-size: cover;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    position: relative; }
+    .easter-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.6rem;
+      background: url(../img/decor-line-waves-dark.png) 0 0 repeat-x; }
     .easter-banner__title {
       width: 57%;
       font-family: "PT Serif Caption";
