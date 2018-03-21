@@ -1009,6 +1009,7 @@ $(document).ready(function ($) {
     showPopup(".catalog-product .c-card-catalog__title", '.popup-product');
     showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
+    showPopup(".js-easter-btn", '.popup-cake-order');
     showPopup("#lk-profile-subscription-del__ok", '.popup-subscription-del');
     showPopup(".js-party-order", '.popup-party-order');
     showPopup(".c-card-event__link--more", '.popup-event');
