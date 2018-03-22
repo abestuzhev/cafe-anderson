@@ -858,13 +858,7 @@
     
     
         &-highlight {
-            .header-navigation__title,
-            .header-navigation__subtitle {
-                color: #a2ff00;
-            }
-            &:hover .header-navigation__title::after {
-                border-color: #a2ff00;
-            }
+            background-color: #7cbd41;
         
         
         }
