@@ -5048,7 +5048,8 @@ a.c-button:hover {
               align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      line-height: 1; }
       .header-submenu__item::after {
         content: '';
         position: absolute;
