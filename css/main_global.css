@@ -13559,6 +13559,12 @@ test popup
       .easter-banner__title span {
         display: inline;
         padding: 0; }
+        .easter-banner__title span::-moz-selection {
+          background-color: #fff8d3;
+          color: #553023; }
+        .easter-banner__title span::selection {
+          background-color: #fff8d3;
+          color: #553023; }
   .easter-product .c-card-catalog__price {
     font-size: 3.6rem;
     padding: 0 2.8rem 0 2.8rem;

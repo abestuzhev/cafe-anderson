@@ -10499,9 +10499,20 @@ test popup
             padding: 2.8rem;
             border-radius: .8rem;
 
+
             span {
                 display: inline;
                 padding: 0 ;
+
+                &::-moz-selection{
+                    background-color: #fff8d3;
+                    color:#553023;
+                }
+
+                &::selection{
+                    background-color: #fff8d3;
+                    color:#553023;
+                }
 
             }
          }
