@@ -9640,7 +9640,7 @@ test popup
             bottom: 17%;
             right: -6%;
         }
-        
+
         &-briefing {
             background-color: #c44890;
             box-shadow: 0px 3px 92px 8px rgba(0, 0, 0, 0.28);
@@ -9663,7 +9663,7 @@ test popup
             color: #ffffff;
             font-family: $font_serif;
             font-style: italic;
-            
+
             &__head {
                 display: table;
                 background-color: #ff8fd0;
@@ -9743,7 +9743,7 @@ test popup
         .excursion-btn__layout {
             padding-bottom: 5rem;
         }
-        
+
         .excursion-btn {
             box-shadow: 0px 5px 27.6px 2.4px rgba(0, 0, 0, 0.19);
             background-color: #ff6dc2;
@@ -10068,7 +10068,7 @@ test popup
             text-align: center;
             font-weight:700;
         }
-        
+
         &__list {
             display: flex;
             flex-flow: row nowrap;
@@ -10077,13 +10077,13 @@ test popup
             margin-left: -.9rem;
             margin-right: -.9rem;
         }
-        
+
         &__item {
             width: 14.2%;
             padding: 0 .9rem;
-            
+
         }
-        
+
         &-card {
             border: solid 1px #e4e4e4;
             background-color: #fff;
@@ -10114,7 +10114,7 @@ test popup
                     background: url(../img/decor-line-waves.png) 0 0 repeat-x;
                 }
             }
-            
+
             &__body {
                 padding: 2.3rem 0 .9rem;
                 color: #675245;
@@ -10123,12 +10123,12 @@ test popup
                 text-align: center;
                 position: relative;
             }
-            
+
             &__percent {
                 font-size: 5.8rem;
                 padding-bottom: 2.3rem;
             }
-            
+
             &__footer {
                 font-style: italic;
                 font-size: 1.5rem;
@@ -10146,12 +10146,12 @@ test popup
                     background: url(../img/pattern-round.jpg) 0 0 repeat-x;
                 }
             }
-            
+
             &__text {
                 color: #96928a;
                 margin-bottom: .4rem;
             }
-            
+
             &__price {
                 color: $black;
                 font-size: 1.4rem;
@@ -10465,7 +10465,7 @@ test popup
         background-size: cover;
         margin-bottom: 3rem;
         position: relative;
-    
+
         &::after {
             content: '';
             position: absolute;
@@ -10498,7 +10498,7 @@ test popup
             //background-color: rgba(255,255,255, .87);
             padding: 2.8rem;
             border-radius: .8rem;
-            
+
             span {
                 display: inline;
                 padding: 0 ;
@@ -10519,7 +10519,7 @@ test popup
             text-transform: lowercase;
             font-size: 2rem;
             transition: all .1s ease;
-            
+
             &:hover {
                 background-color: #6aa43a;
                 opacity: 1;
@@ -10609,13 +10609,6 @@ test popup
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+.js-easter-btn {
+    cursor: pointer;
+}

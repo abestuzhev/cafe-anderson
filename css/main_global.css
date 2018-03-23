@@ -13633,3 +13633,6 @@ test popup
         height: 1.6rem;
         background: url(../img/icons/icon-bonus-sprite.svg) 0 0 no-repeat;
         background-size: 3.5rem 1.7rem; }
+
+.js-easter-btn {
+  cursor: pointer; }
