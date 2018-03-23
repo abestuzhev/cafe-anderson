@@ -10481,7 +10481,7 @@ test popup
             font-family: $font_serif;
             font-style: italic;
             font-weight: 700;
-            font-size: 3.2rem;
+            font-size: 2.7rem;
             line-height: 1.2;
             color: #553023;
             text-shadow:
@@ -10540,6 +10540,15 @@ test popup
 
         .c-card-catalog {
             border-radius: .6rem;
+        }
+        .c-card-catalog__img {
+            width: 100%;
+        }
+        
+        .c-card-catalog__img img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
         }
     }
 

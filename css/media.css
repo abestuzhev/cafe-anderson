@@ -186,9 +186,9 @@
     /*width: 100%;*/
     /*height: auto;*/
     /*}*/
-    .catalog-list .catalog-list__item {
-        width: 25%;
-    }
+    /*.catalog-list .catalog-list__item {*/
+        /*width: 25%;*/
+    /*}*/
 
     .cafe .fotorama__stage.fotorama__pointer {
         height: 60rem !important;
@@ -1710,7 +1710,7 @@
     }
 
     .easter-banner__title {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
         width: 100%;
     }
 
@@ -4208,7 +4208,7 @@
     }
 
     .easter-banner__title {
-        font-size: 2rem;
+        font-size: 1.9rem;
         line-height: 1.2;
         border-radius: 0;
     }
