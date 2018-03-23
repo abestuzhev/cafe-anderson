@@ -79,16 +79,25 @@ $(window).on('load', function(){
         changeHeightAddressList();
     });
 
-    function getScrollElem (elem){
-        if($(window).width() <= 800) {
-            new SimpleBar($(elem)[0]);
-        }
-    }
 
-    getScrollElem('.factory-layout');
-    $(window).on('resize', function () {
+
+    var permitPath = [
+    '/factory-happiness.html'
+    ];
+
+    if(permitPath.indexOf(location.pathname) > -1){
+        function getScrollElem (elem){
+            if($(window).width() <= 800) {
+                new SimpleBar($(elem)[0]);
+            }
+        }
         getScrollElem('.factory-layout');
-    });
+        $(window).on('resize', function () {
+            getScrollElem('.factory-layout');
+        });
+    } else {
+        return false;
+    }
 
         var $datepicker = $('.datepicker-here');
         $datepicker.datepicker({
