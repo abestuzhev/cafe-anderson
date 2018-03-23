@@ -1995,7 +1995,8 @@ a.c-button:hover {
   border-radius: .6rem;
   border: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  white-space: nowrap; }
   .c-button::after {
     content: '';
     border: none; }

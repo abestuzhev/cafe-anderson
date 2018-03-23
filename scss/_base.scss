@@ -14,8 +14,8 @@
         zoom: 1;
         transition: .5s opacity ease-in-out;
     }
-    
-    
+
+
 }
 
 .is-content-hidden.visible {
@@ -28,7 +28,7 @@
         opacity: 1;
         transition: .2s opacity ease-in-out;
     }
-    
+
     .header-navigation {
         opacity: 1;
         transition: all .3s ease-in-out;
@@ -43,7 +43,7 @@
         opacity: 1;
         transition: .5s opacity ease-in-out .5s;
     }
-    
+
 }
 
 .mfp-wrap {
@@ -51,7 +51,7 @@
 }
 
 .onloadContent {
-    
+
     .mfp-wrap {
         display: block;
     }
@@ -99,7 +99,7 @@ body {
 
     .c-ul-list li ul {
       padding-left: 6.4rem; }
-      
+
       .c-ul-list li ul li {
         list-style: circle outside; }
 
@@ -973,6 +973,7 @@ a.c-button {
     outline: none;
     cursor: pointer;
     @extend %transition_all;
+    white-space: nowrap;
 
     &::after {
         content: '';
