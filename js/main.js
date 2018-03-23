@@ -82,7 +82,8 @@ $(window).on('load', function(){
 
 
     var permitPath = [
-    '/factory-happiness.html'
+    '/factory-happiness.html',
+    '/cafe-anderson/factory-happiness.html'
     ];
 
     if(permitPath.indexOf(location.pathname) > -1){
