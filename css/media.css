@@ -195,7 +195,11 @@
     }
 
     .easter-banner {
-        padding: 7.5rem 8rem 34rem;
+        padding: 7.5rem 8rem 18rem;
+    }
+
+    .easter-banner__title {
+        width: 60%;
     }
 }
 
@@ -634,7 +638,7 @@
     }
 
     .easter-banner {
-        padding: 7.5rem 5rem 26rem;
+        padding: 7.5rem 5rem 16rem;
     }
 
     .easter-banner__title {
@@ -1711,7 +1715,7 @@
     }
 
     .easter-banner {
-        padding: 5.5rem 3rem 14rem;
+        padding: 5.5rem 1rem 7rem;
     }
 }
 
