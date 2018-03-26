@@ -11480,6 +11480,75 @@ test popup
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
 
+.popup-offer .popup {
+  width: 63.5rem;
+  min-width: 63.5rem;
+  height: 38rem;
+  background-size: cover !important;
+  overflow: hidden !important; }
+
+.popup-offer__logo {
+  width: 17.6rem;
+  height: 2.8rem; }
+
+.popup-offer .popup-body {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 1.6rem;
+  padding: 1.5rem;
+  max-width: 22rem;
+  border: 1px dashed #fff;
+  border-radius: 1rem;
+  text-align: center;
+  -webkit-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  background-color: rgba(255, 255, 255, 0.8); }
+  .popup-offer .popup-body:hover {
+    border-color: #9acc4f;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+
+.popup-offer__title {
+  font-family: "PT Serif Caption";
+  font-size: 2.7rem;
+  color: #553023;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-align: center; }
+  .popup-offer__title span {
+    color: #fa36a8; }
+
+.popup-offer .l-button__center {
+  text-align: center !important; }
+
+.popup-offer__close {
+  right: .6rem;
+  top: .6rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 5rem;
+  border: 1px solid #a2d744;
+  position: absolute; }
+  .popup-offer__close:hover {
+    border: 1px solid #a2d744; }
+  .popup-offer__close::after {
+    content: '';
+    border: none; }
+  .popup-offer__close svg {
+    font-size: 1rem;
+    fill: #a2d744;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
 .graduation-party-banner {
   margin-bottom: 2.4rem; }
   .graduation-party-banner__slider {

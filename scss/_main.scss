@@ -7859,6 +7859,87 @@ test popup
     }
 }
 
+.popup-offer {
+    .popup {
+        width: 63.5rem;
+        min-width: 63.5rem;
+        height: 38rem;
+        //background: url('../img/bg-graduation-popup.jpg') 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover !important;
+        overflow: hidden !important;
+    }
+    
+    &__logo {
+        width: 17.6rem;
+        height: 2.8rem
+    }
+    
+    .popup-body {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 1.6rem;
+        padding: 1.5rem;
+        max-width: 22rem;
+        border: 1px dashed #fff;
+        border-radius: 1rem;
+        text-align: center;
+        transition: all .2s ease-out;
+        background-color: rgba(255,255,255,.8);
+        
+        &:hover {
+            border-color: #9acc4f;
+            transition: all .2s ease-out;
+        }
+    }
+    
+    &__title {
+        font-family: $font_serif;
+        font-size: 2.7rem;
+        color: #553023;
+        line-height: 1;
+        margin-bottom: 1rem;
+        text-align: center;
+        
+        span {
+            color: #fa36a8;
+        }
+    }
+    
+    .l-button__center {
+        text-align: center !important;
+    }
+    
+    &__close {
+        right: .6rem;
+        top: .6rem;
+        width: 3.3rem;
+        height: 3.3rem;
+        border-radius: 5rem;
+        border: 1px solid #a2d744;
+        position: absolute;
+        
+        &:hover {
+            border: 1px solid #a2d744;
+        }
+        
+        &::after {
+            content: '';
+            border: none;
+        }
+        
+        svg {
+            font-size: 1rem;
+            fill: #a2d744;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
 .graduation-party {
 
     &-banner {

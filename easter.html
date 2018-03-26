@@ -1825,7 +1825,23 @@
 </footer>
 
 <!----------------------------------------------START popup-->
-
+<!--модальное окно выпоускные-->
+<div class="mfp-wrap popup-offer" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup" style="background: url(./img/easter/easter-banner.jpg) 50% 50% no-repeat;">
+                <a href="#" class="popup-offer__close js-popup-close"> <svg class="c-symbol symbol-close"><use xlink:href="#symbol-close" /></svg></a>
+                <div class="popup-body">
+                    <img class="popup-offer__logo" src="./img/logo-anderson-small.svg" alt="">
+                    <div class="popup-offer__title"><span>Куличи есть!</span> Есть куличи!</div>
+                    <div class="l-button l-button__center">
+                        <a href="#" class="c-button c-button__default">Жми!</a>
+                    </div>
+                </div><!--popup-body-->
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--карточка торта-->
 <div class="mfp-wrap popup-cake-order" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
@@ -1875,7 +1891,7 @@
                             </div>
                         </div>
 
-                        <div class="c-grid c-grid-between">
+                        <div class="c-grid c-grid-between ">
                             <div class="popup-form__item">
                                 <label class="c-label" for="cake-order__name">Представтесь пожалуйста<span class="c-obligatory-field">*</span></label>
                                 <input class="c-input" type="text" placeholder="Ваше имя" name="cake-order__name" id="cake-order__name" required>
@@ -2955,6 +2971,26 @@
 </div>
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>
+
+<script>
+    $(function(){
+        setTimeout(function(){
+            $(".popup-offer").addClass('is-visible');
+            $('.mfp-bg').addClass('is-visible');
+            $('html').addClass('lock-html');
+
+            if(windowWidth > documentWidth){
+                $('html').css({
+                    'margin-right':'17px'
+                });
+                $('.mfp-wrap').css({
+                    'overflow-y':'scroll'
+                });
+            }
+        }, 3000);
+    })
+
+</script>
 
 <!--<script src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
