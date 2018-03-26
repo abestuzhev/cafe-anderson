@@ -7886,7 +7886,7 @@ test popup
         border-radius: 1rem;
         text-align: center;
         transition: all .2s ease-out;
-        background-color: rgba(255,255,255,.8);
+        //background-color: rgba(255,255,255,.8);
         
         &:hover {
             border-color: #9acc4f;
@@ -7897,10 +7897,11 @@ test popup
     &__title {
         font-family: $font_serif;
         font-size: 2.7rem;
-        color: #553023;
+        color: #fff;
         line-height: 1;
         margin-bottom: 1rem;
         text-align: center;
+        text-shadow: 1px 1px 21px rgba(0, 0, 0, 1);
         
         span {
             color: #fa36a8;
@@ -7936,6 +7937,17 @@ test popup
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+    }
+    
+    &--easter {
+        .popup-body {
+            max-width: 32rem;
+        }
+        
+        .popup-offer__logo {
+            width: auto;
+            height: auto;
         }
     }
 }

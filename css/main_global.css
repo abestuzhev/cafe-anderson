@@ -11505,8 +11505,7 @@ test popup
   text-align: center;
   -webkit-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-  background-color: rgba(255, 255, 255, 0.8); }
+  transition: all .2s ease-out; }
   .popup-offer .popup-body:hover {
     border-color: #9acc4f;
     -webkit-transition: all .2s ease-out;
@@ -11516,10 +11515,11 @@ test popup
 .popup-offer__title {
   font-family: "PT Serif Caption";
   font-size: 2.7rem;
-  color: #553023;
+  color: #fff;
   line-height: 1;
   margin-bottom: 1rem;
-  text-align: center; }
+  text-align: center;
+  text-shadow: 1px 1px 21px black; }
   .popup-offer__title span {
     color: #fa36a8; }
 
@@ -11548,6 +11548,13 @@ test popup
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
+
+.popup-offer--easter .popup-body {
+  max-width: 32rem; }
+
+.popup-offer--easter .popup-offer__logo {
+  width: auto;
+  height: auto; }
 
 .graduation-party-banner {
   margin-bottom: 2.4rem; }
