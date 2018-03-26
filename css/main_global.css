@@ -11554,7 +11554,8 @@ test popup
 
 .popup-offer--easter .popup-offer__logo {
   width: auto;
-  height: auto; }
+  height: auto;
+  margin: -10px 0; }
 
 .graduation-party-banner {
   margin-bottom: 2.4rem; }
