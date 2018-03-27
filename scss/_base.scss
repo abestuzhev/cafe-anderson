@@ -2294,9 +2294,14 @@ a.c-button {
         border-radius: .4rem;
         background-color: #7cbd41;
         padding: .6rem 1.3rem;
+        color: #ffffff;
 
         &:hover {
             background-color: #6faa3a;
+        }
+        &:after {
+            content: '';
+            border: none;
         }
     }
 

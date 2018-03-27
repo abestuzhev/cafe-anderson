@@ -2998,9 +2998,13 @@ a.c-button:hover {
             align-items: center;
     border-radius: .4rem;
     background-color: #7cbd41;
-    padding: .6rem 1.3rem; }
+    padding: .6rem 1.3rem;
+    color: #ffffff; }
     .c-card-catalog__basket:hover {
       background-color: #6faa3a; }
+    .c-card-catalog__basket:after {
+      content: '';
+      border: none; }
   .c-card-catalog__img {
     position: absolute;
     z-index: 1;
@@ -6329,7 +6333,8 @@ main {
         width: auto;
         height: auto; }
     .popup-basket-card__body {
-      overflow: hidden; }
+      overflow: hidden;
+      width: 100%; }
     .popup-basket-card__title {
       font-size: 1.2rem;
       color: #555451;
@@ -10896,6 +10901,39 @@ test popup
   width: auto !important;
   display: inline-block; }
 
+.popup-cake-order .c-card-catalog__basket {
+  margin-left: .4rem; }
+
+.popup-cake-order .c-card-catalog__basket {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase; }
+  .popup-cake-order .c-card-catalog__basket .icon-shopping-cart {
+    margin-left: .4rem; }
+  .popup-cake-order .c-card-catalog__basket:hover {
+    color: #ffffff; }
+
+.popup-cake-order .cake-order-final__total .c-button__default {
+  padding: 1.2rem 1.8rem; }
+
+.popup-cake-order .l-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .cake {
   /*изменения для сафари*/ }
   .cake-card {
@@ -13639,9 +13677,8 @@ test popup
           color: #553023; }
   .easter-product .c-card-catalog__price {
     font-size: 3.6rem;
-    padding: 0 2.8rem 0 2.8rem;
-    border-radius: 0 .8rem .8rem 0;
-    margin-right: 1.4rem; }
+    padding: 0 1.8rem 0 2.8rem;
+    border-radius: 0 .8rem .8rem 0; }
   .easter-product .c-button__default {
     text-transform: lowercase;
     font-size: 2rem;
@@ -13663,6 +13700,9 @@ test popup
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%; }
+  .easter-product .c-card-catalog__footer .c-button {
+    margin: 0 .4rem;
+    padding: 1.1rem 1.4rem; }
   .easter-delivery {
     padding: 2.8rem;
     background: #fdf7e8 url(../img/bg-header.png) repeat;
