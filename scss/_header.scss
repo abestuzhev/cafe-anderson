@@ -828,14 +828,14 @@
                 @extend %transition_all;
             }
 
-            &:hover .header-navigation__title::after {
-                content: '';
-                position: absolute;
-                bottom: -.2rem;
-                left: 0;
-                width: 100%;
-                height: .1rem;
-                border:.1rem dotted #fff;
+            &:hover .header-navigation__title {
+                //content: '';
+                //position: absolute;
+                //bottom: -.2rem;
+                //left: 0;
+                //width: 100%;
+                //height: .1rem;
+                border-bottom:.1rem dotted #fff;
             }
 
             &::after {
@@ -874,6 +874,7 @@
             display: inline-block;
             position: relative;
             color: #ffffff;
+            border-bottom: 1px dotted transparent;
         }
 
         &__subtitle {

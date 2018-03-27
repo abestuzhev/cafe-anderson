@@ -7883,7 +7883,7 @@ test popup
         padding: 1.5rem;
         max-width: 22rem;
         border: 1px dashed #fff;
-        border-radius: 1rem;
+        //border-radius: 1rem;
         text-align: center;
         transition: all .2s ease-out;
         //background-color: rgba(255,255,255,.8);
@@ -7942,7 +7942,7 @@ test popup
     
     &--easter {
         .popup-body {
-            max-width: 32rem;
+            max-width: 32.3rem;
         }
         
         .popup-offer__logo {

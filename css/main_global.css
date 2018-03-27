@@ -4962,14 +4962,8 @@ a.c-button:hover {
       color: #ffffff; }
       .header-navigation__item:hover {
         color: #ffffff; }
-      .header-navigation__item:hover .header-navigation__title::after {
-        content: '';
-        position: absolute;
-        bottom: -.2rem;
-        left: 0;
-        width: 100%;
-        height: .1rem;
-        border: .1rem dotted #fff; }
+      .header-navigation__item:hover .header-navigation__title {
+        border-bottom: .1rem dotted #fff; }
       .header-navigation__item::after {
         content: '';
         position: absolute;
@@ -4995,7 +4989,8 @@ a.c-button:hover {
       margin-bottom: .3rem;
       display: inline-block;
       position: relative;
-      color: #ffffff; }
+      color: #ffffff;
+      border-bottom: 1px dotted transparent; }
     .header-navigation__subtitle {
       font-family: "BebasNeue";
       text-transform: uppercase;
@@ -11501,7 +11496,6 @@ test popup
   padding: 1.5rem;
   max-width: 22rem;
   border: 1px dashed #fff;
-  border-radius: 1rem;
   text-align: center;
   -webkit-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
@@ -11550,7 +11544,7 @@ test popup
             transform: translate(-50%, -50%); }
 
 .popup-offer--easter .popup-body {
-  max-width: 32rem; }
+  max-width: 32.3rem; }
 
 .popup-offer--easter .popup-offer__logo {
   width: auto;
