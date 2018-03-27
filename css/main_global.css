@@ -6297,7 +6297,8 @@ main {
           justify-content: space-around;
       -webkit-box-align: start;
           -ms-flex-align: start;
-              align-items: flex-start; }
+              align-items: flex-start;
+      width: 100%; }
     .popup-basket-card__img {
       margin-right: 1rem;
       border: 1px solid #9b9696;
