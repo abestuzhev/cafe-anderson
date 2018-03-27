@@ -10808,3 +10808,19 @@ test popup
 .js-easter-btn {
     cursor: pointer;
 }
+
+.delivery_price_visual {
+    vertical-align: middle;
+    font-size: 1.8rem;
+    text-align: left;
+    display: inline-block !important;
+    margin: 3rem 0 0 2rem;
+    
+    span {
+        vertical-align: middle;
+        font-family: $font_sans-serif;
+        font-size: 3.5rem;
+        color: #7cbd41;
+        font-weight: 500;
+    }
+}
