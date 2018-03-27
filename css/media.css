@@ -2864,7 +2864,7 @@
         position: fixed;
         width: 100%;
     }
-
+    .popup-offer .popup,
     .popup-graduation .popup {
         top: 24%;
         min-width: auto;
