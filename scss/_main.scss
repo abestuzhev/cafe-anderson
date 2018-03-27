@@ -7548,6 +7548,21 @@ test popup
         &-result {
             display: inline-block;
         }
+        
+        &-operations {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+            justify-content: space-between;
+            
+            .c-card-catalog__count {
+                margin: 0;
+            }
+            
+            .c-card-catalog__basket {
+                width: 100%;
+            }
+        }
     }
 
 }
@@ -7604,6 +7619,30 @@ test popup
             margin: 0;
             overflow-y: scroll;
             border-radius: 0;
+        }
+        
+        .cake-order-operations {
+            justify-content: flex-start;
+        }
+    }
+
+}
+
+@media screen and (max-width: 835px) and (min-width:700px) {
+    .popup-cake-order {
+        
+        .cake-order-operations .c-card-catalog__basket i {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    .popup-cake-order {
+        
+        .cake-order-operations .c-card-catalog__basket i {
+            display: none;
         }
     }
 

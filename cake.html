@@ -1220,7 +1220,7 @@
 </div>
 
 <!--карточка торта-->
-<div class="mfp-wrap popup-cake-order" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+<div class="mfp-wrap popup-cake-order is-visible" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup">
@@ -1252,6 +1252,15 @@
                                 <div class="popup-form__item">
                                     <div class="cake-order-final__total">
                                         Стоимость торта: <span>2500 <span class="c-currency-symbol">&#8381;</span></span>
+                                    </div>
+                                    <div class="cake-order-operations">
+                                        <div class="c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
                                         <a href="#" class="c-card-catalog__basket">Добавить в корзину <i class="icon-shopping-cart"></i></a>
                                     </div>
                                 </div>

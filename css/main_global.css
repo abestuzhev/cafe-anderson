@@ -11228,6 +11228,24 @@ test popup
       margin-bottom: .2rem; }
   .cake-order-result {
     display: inline-block; }
+  .cake-order-operations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .cake-order-operations .c-card-catalog__count {
+      margin: 0; }
+    .cake-order-operations .c-card-catalog__basket {
+      width: 100%; }
 
 @media screen and (max-width: 1210px) {
   .cake-stuffing__item {
@@ -11264,7 +11282,19 @@ test popup
       height: 100vh;
       margin: 0;
       overflow-y: scroll;
-      border-radius: 0; } }
+      border-radius: 0; }
+    .popup-cake-order .cake-order-operations {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+@media screen and (max-width: 835px) and (min-width: 700px) {
+  .popup-cake-order .cake-order-operations .c-card-catalog__basket i {
+    display: none; } }
+
+@media screen and (max-width: 390px) {
+  .popup-cake-order .cake-order-operations .c-card-catalog__basket i {
+    display: none; } }
 
 @media screen and (max-width: 700px) {
   .cake__list {
