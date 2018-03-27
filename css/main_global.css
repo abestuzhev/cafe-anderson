@@ -13793,15 +13793,17 @@ test popup
 .js-easter-btn {
   cursor: pointer; }
 
-.delivery_price_visual {
+#delivery_price_visual {
   vertical-align: middle;
   font-size: 1.8rem;
   text-align: left;
   display: inline-block !important;
-  margin: 3rem 0 0 2rem; }
-  .delivery_price_visual span {
+  margin: 2rem 0 0 2rem; }
+  #delivery_price_visual span {
     vertical-align: middle;
     font-family: "BebasNeue";
     font-size: 3.5rem;
     color: #7cbd41;
     font-weight: 500; }
+  #delivery_price_visual .c-currency-symbol {
+    font-family: sans-serif; }
