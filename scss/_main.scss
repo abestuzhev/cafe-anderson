@@ -7153,22 +7153,22 @@ test popup
         width: auto !important;
         display: inline-block;
     }
-    
+
     .c-card-catalog__basket {
         //display: inline-block;
         margin-left: .4rem;
     }
-    
+
     .c-card-catalog__basket {
         text-align: center;
         justify-content: center;
         font-size: 1.4rem;
         text-transform: uppercase;
-        
+
         .icon-shopping-cart {
             margin-left: .4rem;
         }
-        
+
         &:hover {
             color: #ffffff;
         }
@@ -7176,12 +7176,12 @@ test popup
     //.cake-order-final__total .c-card-catalog__basket {
     //    display: inline-block;
     //}
-    
+
     .cake-order-final__total .c-button__default {
         padding: 1.2rem 1.8rem;
         //display: inline-block;
     }
-    
+
      .l-button {
         //vertical-align: top;
         //white-space: nowrap
@@ -7548,19 +7548,42 @@ test popup
         &-result {
             display: inline-block;
         }
-        
+
+        &-price {
+            &__title {
+                margin-bottom: 1rem;
+            }
+
+
+            &__text {
+                font-style:italic;
+                font-size: 13px;
+            }
+        }
+
         &-operations {
             display: flex;
             flex-flow: row nowrap;
             align-items: stretch;
-            justify-content: space-between;
-            
+            justify-content: flex-start;
+            margin-bottom: .6rem;
+
             .c-card-catalog__count {
                 margin: 0;
             }
-            
+
             .c-card-catalog__basket {
                 width: 100%;
+                padding: .6rem 2.3rem;
+            }
+
+            .cake-order-final__total {
+
+                margin: 0 1.4rem 0 0;
+
+                span {
+                    color: #553023;
+                }
             }
         }
     }
@@ -7620,7 +7643,7 @@ test popup
             overflow-y: scroll;
             border-radius: 0;
         }
-        
+
         .cake-order-operations {
             justify-content: flex-start;
         }
@@ -7630,7 +7653,7 @@ test popup
 
 @media screen and (max-width: 835px) and (min-width:700px) {
     .popup-cake-order {
-        
+
         .cake-order-operations .c-card-catalog__basket i {
             display: none;
         }
@@ -7640,7 +7663,7 @@ test popup
 
 @media screen and (max-width: 390px) {
     .popup-cake-order {
-        
+
         .cake-order-operations .c-card-catalog__basket i {
             display: none;
         }
@@ -7946,12 +7969,12 @@ test popup
         background-size: cover !important;
         overflow: hidden !important;
     }
-    
+
     &__logo {
         width: 17.6rem;
         height: 2.8rem
     }
-    
+
     .popup-body {
         position: absolute;
         left: 50%;
@@ -7964,13 +7987,13 @@ test popup
         text-align: center;
         transition: all .2s ease-out;
         //background-color: rgba(255,255,255,.8);
-        
+
         &:hover {
             border-color: #9acc4f;
             transition: all .2s ease-out;
         }
     }
-    
+
     &__title {
         font-family: $font_serif;
         font-size: 2.7rem;
@@ -7979,16 +8002,16 @@ test popup
         margin-bottom: 1rem;
         text-align: center;
         text-shadow: 1px 1px 21px rgba(0, 0, 0, 1);
-        
+
         span {
             color: #fa36a8;
         }
     }
-    
+
     .l-button__center {
         text-align: center !important;
     }
-    
+
     &__close {
         right: .6rem;
         top: .6rem;
@@ -7997,16 +8020,16 @@ test popup
         border-radius: 5rem;
         border: 1px solid #a2d744;
         position: absolute;
-        
+
         &:hover {
             border: 1px solid #a2d744;
         }
-        
+
         &::after {
             content: '';
             border: none;
         }
-        
+
         svg {
             font-size: 1rem;
             fill: #a2d744;
@@ -8016,12 +8039,12 @@ test popup
             transform: translate(-50%, -50%);
         }
     }
-    
+
     &--easter {
         .popup-body {
             max-width: 32.3rem;
         }
-        
+
         .popup-offer__logo {
             width: auto;
             height: auto;
@@ -10715,13 +10738,13 @@ test popup
         .c-card-catalog__img {
             width: 100%;
         }
-        
+
         .c-card-catalog__img img {
             width: 100%;
             object-fit: cover;
             height: 100%;
         }
-        
+
         .c-card-catalog__footer .c-button {
             margin: 0 .4rem;
             padding: 1.1rem 1.4rem;
@@ -10815,7 +10838,7 @@ test popup
     text-align: left;
     display: inline-block !important;
     margin: 2rem 0 0 2rem;
-    
+
     span {
         vertical-align: middle;
         font-family: $font_sans-serif;
@@ -10823,7 +10846,7 @@ test popup
         color: #7cbd41;
         font-weight: 500;
     }
-    
+
     .c-currency-symbol {
         font-family: sans-serif;
     }

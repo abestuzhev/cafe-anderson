@@ -1620,7 +1620,7 @@
                                 </div>
                                 <div class="c-card-catalog__footer">
                                     <div class="c-card-catalog__price">1 250 <span class="c-currency-symbol">₽</span></div>
-                                    <a href="#" class="c-button c-button__default js-easter-btn">заказать</a>
+                                    <a href="#" class="c-button c-button__default js-easter-btn">Купить в 1 клик</a>
                                     <a href="#" class="c-card-catalog__basket"><i class="icon-shopping-cart"></i></a>
                                 </div>
                                 <!--<img class="c-card-catalog__img" src="./img/catalog-img-1.jpg" alt="">-->
@@ -1832,7 +1832,7 @@
 
 <!----------------------------------------------START popup-->
 <!--модальное окно выпоускные-->
-<div class="mfp-wrap popup-offer popup-offer--easter is-visible" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+<div class="mfp-wrap popup-offer popup-offer--easter" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="popup" style="background: url(./img/easter/popup-easter-offer.jpg) 50% 50% no-repeat;">
@@ -1880,11 +1880,27 @@
                                     </select>
                                 </div>
                                 <div class="popup-form__item">
-                                    <div class="cake-order-final__total">
-                                        Стоимость торта: <span>2500 <span class="c-currency-symbol">&#8381;</span></span>
-                                        <a href="#" class="c-card-catalog__basket">Добавить в корзину <i class="icon-shopping-cart"></i></a>
 
+                                    <div class="cake-order-price">
+                                        <div class="cake-order-price__title">Стоимость торта:</div>
+                                        <div class="cake-order-operations">
+                                            <div class="cake-order-final__total">
+                                                <span>2500 <span class="c-currency-symbol">&#8381;</span></span>
+                                            </div>
+                                            <div class="c-card-catalog__count">
+                                                <div class="c-counter">
+                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="c-card-catalog__basket">Вы можете положить данный товар в корзину </a>
+                                        <div class="cake-order-price__text">или продолжить оформление заказа</div>
+                                        <!--<a href="#" class="c-card-catalog__basket">Вы можете положить данный товар в корзину <i class="icon-shopping-cart"></i></a>-->
+                                        
                                     </div>
+
                                 </div>
                                 <div class="popup-form__item">
                                     <label class="c-label">Когда вам нужен торт?<span class="c-obligatory-field">*</span></label>
@@ -1899,7 +1915,7 @@
                             </div>
                         </div>
 
-                        <div class="c-grid c-grid-between ">
+                        <div class="c-grid c-grid-between">
                             <div class="popup-form__item">
                                 <label class="c-label" for="cake-order__name">Представтесь пожалуйста<span class="c-obligatory-field">*</span></label>
                                 <input class="c-input" type="text" placeholder="Ваше имя" name="cake-order__name" id="cake-order__name" required>
@@ -2048,6 +2064,7 @@
                                 <div class="cake-order-final__right">
                                     <div class="l-button l-button__left">
                                         <button class="c-button c-button__default" id="cake-order-issue">Оформить и оплатить</button>
+                                        <!--<a href="#" class="c-card-catalog__basket"><i class="icon-shopping-cart"></i></a>-->
                                     </div>
                                 </div>
                             </div>
@@ -2974,9 +2991,13 @@
     </a>
 </div>
 
+<input type="hidden" class="datepicker-custom">
+
 <script src="./bower_components/jquery/dist/jquery.js"></script>
 
-<script>
+    <script src="./js/datepicker/datepicker.min.js"></script>
+
+<!-- <script>
     $(function(){
         setTimeout(function(){
             $(".popup-offer").addClass('is-visible');
@@ -2994,7 +3015,7 @@
         }, 3000);
     })
 
-</script>
+</script> -->
 
 <!--<script src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
