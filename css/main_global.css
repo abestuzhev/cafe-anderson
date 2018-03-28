@@ -13720,7 +13720,7 @@ test popup
     border-radius: 0 .8rem .8rem 0; }
   .easter-product .c-button__default {
     text-transform: lowercase;
-    font-size: 2rem;
+    font-size: 1.8rem;
     -webkit-transition: all .1s ease;
     -o-transition: all .1s ease;
     transition: all .1s ease; }

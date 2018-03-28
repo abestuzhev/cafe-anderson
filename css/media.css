@@ -655,6 +655,10 @@
         font-size: 2rem;
     }
 
+    .easter-product .catalog-list__item {
+        width: 50%;
+    }
+
 }
 
 @media (max-width: 1090px) {
@@ -2163,6 +2167,11 @@
 
     .bonus-ranks__item {
         width: 33%;
+    }
+
+
+    .easter-product .catalog-list__item {
+        width: 100%;
     }
 }
 
