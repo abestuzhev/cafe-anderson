@@ -100,14 +100,23 @@ $(window).on('load', function(){
         return false;
     }
 
-        var $datepicker = $('.datepicker-here');
-        $datepicker.datepicker({
-            minDate: new Date(),
-            autoClose: true
-        });
-        $datepicker.on('focus', function () {
-            $(this).parents('.datepicker-layout').addClass('active-datepicker');
-        });
+    var $datepicker = $('.datepicker-here');
+    $datepicker.datepicker({
+        minDate: new Date(),
+        autoClose: true
+    });
+    $datepicker.on('focus', function () {
+        $(this).parents('.datepicker-layout').addClass('active-datepicker');
+    });
+
+
+    $('#datepickerCustom').datepicker({
+        minDate: new Date(),
+        autoClose: true
+    });
+    $('#datepickerCustom').on('focus', function () {
+        $(this).parents('.datepicker-layout').addClass('active-datepicker');
+    });
 
 
     var disabledPartyDays = [0, 6];
@@ -153,6 +162,13 @@ $(window).on('load', function(){
 
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
+
+     $('.datepicker-custom').datepicker({
+        minDate: new Date(),
+        autoClose: true
+    });
+
+    
 
     $('document').on('click', '.order__btn.disabled', function(e){
         e.preventDefault();
