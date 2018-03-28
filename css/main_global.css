@@ -10903,7 +10903,7 @@ test popup
   display: inline-block; }
 
 .popup-cake-order .c-card-catalog__basket {
-  margin-left: .4rem; }
+  padding: .6rem 2.3rem; }
 
 .popup-cake-order .c-card-catalog__basket {
   text-align: center;
@@ -11233,6 +11233,10 @@ test popup
   .cake-order-price__text {
     font-style: italic;
     font-size: 13px; }
+  .cake-order-price .cake-order-final__total {
+    margin: 0 1.4rem 0 0; }
+    .cake-order-price .cake-order-final__total span {
+      color: #553023; }
   .cake-order-operations {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11250,13 +11254,6 @@ test popup
     margin-bottom: .6rem; }
     .cake-order-operations .c-card-catalog__count {
       margin: 0; }
-    .cake-order-operations .c-card-catalog__basket {
-      width: 100%;
-      padding: .6rem 2.3rem; }
-    .cake-order-operations .cake-order-final__total {
-      margin: 0 1.4rem 0 0; }
-      .cake-order-operations .cake-order-final__total span {
-        color: #553023; }
 
 @media screen and (max-width: 1210px) {
   .cake-stuffing__item {

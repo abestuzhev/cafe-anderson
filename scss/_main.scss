@@ -7156,7 +7156,7 @@ test popup
 
     .c-card-catalog__basket {
         //display: inline-block;
-        margin-left: .4rem;
+        padding: .6rem 2.3rem;
     }
 
     .c-card-catalog__basket {
@@ -7559,6 +7559,16 @@ test popup
                 font-style:italic;
                 font-size: 13px;
             }
+
+
+            .cake-order-final__total {
+
+                margin: 0 1.4rem 0 0;
+
+                span {
+                    color: #553023;
+                }
+            }
         }
 
         &-operations {
@@ -7572,19 +7582,6 @@ test popup
                 margin: 0;
             }
 
-            .c-card-catalog__basket {
-                width: 100%;
-                padding: .6rem 2.3rem;
-            }
-
-            .cake-order-final__total {
-
-                margin: 0 1.4rem 0 0;
-
-                span {
-                    color: #553023;
-                }
-            }
         }
     }
 
