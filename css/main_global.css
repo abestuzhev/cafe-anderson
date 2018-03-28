@@ -6317,7 +6317,7 @@ main {
           -ms-flex-align: center;
               align-items: center; }
       .popup-basket-card__img-layout {
-        width: 8.6rem;
+        width: 7.6rem;
         height: 7.3rem;
         overflow: hidden;
         position: relative; }
@@ -6354,7 +6354,7 @@ main {
       width: 5.2rem;
       display: inline-block; }
     .popup-basket-card__footer {
-      width: 11.3rem;
+      width: 13.1rem;
       text-align: justify;
       font-size: 0; }
       .popup-basket-card__footer::after {
