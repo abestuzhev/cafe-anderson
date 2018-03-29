@@ -8239,6 +8239,11 @@ test popup
                 line-height: 1.2;
                 margin-bottom: 2rem;
             }
+
+            ul li, ol li {
+                list-style-position: inside;
+                overflow: hidden;
+            }
         }
 
     }

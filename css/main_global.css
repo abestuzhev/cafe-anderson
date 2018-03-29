@@ -1274,36 +1274,31 @@ body {
 
 .c-ul-list {
   font-family: "PT Serif Caption";
-  padding-left: 1.4rem; }
-
-.c-ul-list {
-  margin-left: 3.5rem;
-  font-family: "PT Serif Caption";
   margin-bottom: 1rem; }
 
 .c-ul-list li {
-  list-style: disc outside;
+  list-style: disc inside;
   margin-bottom: .3rem;
   font-size: 1.5rem;
-  padding-left: .3rem; }
+  padding-left: 3.5rem; }
 
 .c-ul-list li ul {
   padding-left: 6.4rem; }
 
 .c-ul-list li ul li {
-  list-style: circle outside; }
+  list-style: circle outside;
+  padding-left: .3rem; }
 
 .c-ol-list {
   font-family: "PT Serif Caption";
   list-style-type: none;
   counter-reset: item;
-  margin-left: 3.5rem;
   margin-bottom: 1rem; }
 
 .c-ol-list li {
   margin-bottom: .2rem;
   font-size: 1.5rem;
-  padding-left: .3rem; }
+  padding-left: 3.5rem; }
 
 .c-ol-list li:before {
   content: counter(item) ") ";
@@ -1313,7 +1308,8 @@ body {
   padding-left: 6.4rem; }
 
 .c-ol-list li ul li {
-  list-style: lower-latin outside; }
+  list-style: lower-latin outside;
+  padding-left: .3rem; }
 
 .c-ol-list li ul li:before {
   content: ''; }
@@ -2826,7 +2822,7 @@ a.c-button:hover {
     color: #604e42;
     margin-bottom: 1.7rem; }
   .c-card-contact-office__body {
-    border-left: 1px solid  #cec9c0;
+    border-left: 1px solid #cec9c0;
     padding-left: 1.7rem; }
   .c-card-contact-office__item {
     margin-bottom: 1rem;
@@ -2881,7 +2877,7 @@ a.c-button:hover {
     background: -o-linear-gradient(top, white 0%, white 62%, rgba(255, 255, 255, 0) 100%);
     background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(62%, white), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(to bottom, white 0%, white 62%, rgba(255, 255, 255, 0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); }
   .c-card-catalog__title {
     font-size: 1.7rem;
     line-height: 1.2;
@@ -3034,7 +3030,7 @@ a.c-button:hover {
       background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
       background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
       background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); }
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); }
   .c-card-catalog--mini {
     display: block;
     width: auto;
@@ -11775,6 +11771,9 @@ test popup
     .news-and-stock .post__body p {
       line-height: 1.2;
       margin-bottom: 2rem; }
+    .news-and-stock .post__body ul li, .news-and-stock .post__body ol li {
+      list-style-position: inside;
+      overflow: hidden; }
 
 /**
 *
