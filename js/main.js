@@ -81,24 +81,24 @@ $(window).on('load', function(){
 
 
 
-    // var permitPath = [
-    // '/factory-happiness.html',
-    // '/cafe-anderson/factory-happiness.html'
-    // ];
-    //
-    // if(permitPath.indexOf(location.pathname) > -1){
-    //     function getScrollElem (elem){
-    //         if($(window).width() <= 800) {
-    //             new SimpleBar($(elem)[0]);
-    //         }
-    //     }
-    //     getScrollElem('.factory-layout');
-    //     $(window).on('resize', function () {
-    //         getScrollElem('.factory-layout');
-    //     });
-    // } else {
-    //     return false;
-    // }
+    var permitPath = [
+    '/factory-happiness.html',
+    '/cafe-anderson/factory-happiness.html'
+    ];
+
+    if(permitPath.indexOf(location.pathname) > -1){
+        function getScrollElem (elem){
+            if($(window).width() <= 800) {
+                new SimpleBar($(elem)[0]);
+            }
+        }
+        getScrollElem('.factory-layout');
+        $(window).on('resize', function () {
+            getScrollElem('.factory-layout');
+        });
+    } else {
+        return false;
+    }
 
     var $datepicker = $('.datepicker-here');
     $datepicker.datepicker({
@@ -1219,7 +1219,7 @@ $(document).ready(function ($) {
         // var div2 = $('.popup-mini');
 
 
-        function hideOutZone(elem, elem2, elem3){
+        function hideOutZone(elem, elem2, elem3, elem4){
             var div = $(elem);
             var div2 = $(elem2);
             var div3 = $(elem3);
@@ -1245,13 +1245,28 @@ $(document).ready(function ($) {
                 div3.parents('html').removeClass('lock-html').css('margin-right','0');
             }
 
-            // $('.popup-cake-order .popup-close').trigger('click');
         }
 
+        var url = localStorage.getItem('backUrl');
+        console.log(url);
 
-        // if (typeof oncloseevent !== 'undefined'){
-        //     document.dispatchEvent(oncloseevent);
+        if (url.length > 0){
+            window.history.pushState(null, null, url);
+            localStorage.removeItem("backUrl");
+        }
+
+        // if (localStorage.getItem('backUrl') !== null) {
+        //     var serialObj = JSON.stringify(backUrl);
+        //     window.history.pushState(null, null, '/easter/');
+        //     localStorage.setItem('backUrl', serialObj);
+        //
+        //     localStorage.removeItem("backUrl");
+        // } else {
+        //     return false;
         // }
+
+
+
 
         if (e.which === 1) {
             hideOutZone('.popup', '.popup-mini', '.datepicker');
