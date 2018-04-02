@@ -1244,8 +1244,8 @@ $(document).ready(function ($) {
             }
         }
 
-        if (typeof events !== 'undefined'){
-            document.dispatchEvent(event);
+        if (typeof e !== 'undefined'){
+            document.dispatchEvent(e);
         }
 
         if (e.which === 1) {
