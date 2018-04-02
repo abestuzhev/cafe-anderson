@@ -81,24 +81,24 @@ $(window).on('load', function(){
 
 
 
-    var permitPath = [
-    '/factory-happiness.html',
-    '/cafe-anderson/factory-happiness.html'
-    ];
-
-    if(permitPath.indexOf(location.pathname) > -1){
-        function getScrollElem (elem){
-            if($(window).width() <= 800) {
-                new SimpleBar($(elem)[0]);
-            }
-        }
-        getScrollElem('.factory-layout');
-        $(window).on('resize', function () {
-            getScrollElem('.factory-layout');
-        });
-    } else {
-        return false;
-    }
+    // var permitPath = [
+    // '/factory-happiness.html',
+    // '/cafe-anderson/factory-happiness.html'
+    // ];
+    //
+    // if(permitPath.indexOf(location.pathname) > -1){
+    //     function getScrollElem (elem){
+    //         if($(window).width() <= 800) {
+    //             new SimpleBar($(elem)[0]);
+    //         }
+    //     }
+    //     getScrollElem('.factory-layout');
+    //     $(window).on('resize', function () {
+    //         getScrollElem('.factory-layout');
+    //     });
+    // } else {
+    //     return false;
+    // }
 
     var $datepicker = $('.datepicker-here');
     $datepicker.datepicker({
@@ -1234,7 +1234,7 @@ $(document).ready(function ($) {
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div.parents('html').removeClass('lock-html').css('margin-right','0');
-                div.find('.popup-close').trigger('click');
+                // div.find('.popup-close').trigger('click');
 
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
@@ -1247,6 +1247,7 @@ $(document).ready(function ($) {
 
             // $('.popup-cake-order .popup-close').trigger('click');
         }
+
 
         // if (typeof oncloseevent !== 'undefined'){
         //     document.dispatchEvent(oncloseevent);
