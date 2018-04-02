@@ -1244,9 +1244,9 @@ $(document).ready(function ($) {
             }
         }
 
-        if (typeof oncloseevent !== 'undefined'){
-            document.dispatchEvent(oncloseevent);
-        }
+        // if (typeof oncloseevent !== 'undefined'){
+        //     document.dispatchEvent(oncloseevent);
+        // }
 
         if (e.which === 1) {
             hideOutZone('.popup', '.popup-mini', '.datepicker');
