@@ -57,7 +57,7 @@ ymaps.ready(function () {
                                 '<div class="c-card-event__item"><i class="icon-mark"></i>ул. Верхняя Красносельская, д. 7/2</div>' +
                                 '<div class="c-card-event__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>' +
                                 '<div class="c-card-event__item"><i class="icon-phoneNumber"></i>+7 (495) 125-49-07</div>' +
-                                '<div class="c-card-event__item"><i class="advantages-guests"></i>Доступное количество мест: 30</div>' +
+                                '<div class="c-card-event__item"><svg class="c-symbol symbol-ticket"><use xlink:href="#symbol-ticket" /></svg> Доступное количество мест: 30</div>' +
                             '</div>' +
                             '<div class="c-card-event__text">Учимся создавать осенние цветы и жучков из коструктора-липучек. Чудесные подарки от компании Gulliver каждому участнику.</div>' +
                             '<div class="l-button">' +
@@ -84,7 +84,7 @@ ymaps.ready(function () {
                     '<div class="c-card-event__item"><i class="icon-mark"></i>ул. Верхняя Красносельская, д. 7/2</div>' +
                     '<div class="c-card-event__item"><img src="img/icons/icon-metro-1.png" alt="">Молодежная</div>' +
                     '<div class="c-card-event__item"><i class="icon-phoneNumber"></i>+7 (495) 125-49-07</div>' +
-                    '<div class="c-card-event__item"><i class="advantages-guests"></i>Доступное количество мест: 30</div>' +
+                    '<div class="c-card-event__item"><svg class="c-symbol symbol-ticket"><use xlink:href="#symbol-ticket" /></svg> Доступное количество мест: 30</div>' +
                     '</div>' +
                     '<div class="c-card-event__text">Учимся создавать осенние цветы и жучков из коструктора-липучек. Чудесные подарки от компании Gulliver каждому участнику.</div>' +
                     '<div class="l-button">' +
