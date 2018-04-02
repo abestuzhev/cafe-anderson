@@ -1243,7 +1243,11 @@ $(document).ready(function ($) {
                 div3.parents('html').removeClass('lock-html').css('margin-right','0');
             }
         }
-        console.log('mouseup');
+
+        if(e == undefined){
+            document.dispatchEvent(e);
+        }
+
         if (e.which === 1) {
             hideOutZone('.popup', '.popup-mini', '.datepicker');
         }
