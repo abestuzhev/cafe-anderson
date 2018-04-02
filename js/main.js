@@ -1236,6 +1236,15 @@ $(document).ready(function ($) {
                 div.parents('html').removeClass('lock-html').css('margin-right','0');
                 // div.find('.popup-close').trigger('click');
 
+                var url = localStorage.getItem('backUrl');
+                console.log(url);
+
+                // if (url.length > 0){
+                    if (url !== null) {
+                    window.history.pushState(null, null, url);
+                    localStorage.removeItem("backUrl");
+                }
+
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div2.parents('html').removeClass('lock-html').css('margin-right','0');
@@ -1247,13 +1256,7 @@ $(document).ready(function ($) {
 
         }
 
-        var url = localStorage.getItem('backUrl');
-        console.log(url);
 
-        if (url.length > 0){
-            window.history.pushState(null, null, url);
-            localStorage.removeItem("backUrl");
-        }
 
         // if (localStorage.getItem('backUrl') !== null) {
         //     var serialObj = JSON.stringify(backUrl);
