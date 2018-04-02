@@ -1244,14 +1244,13 @@ $(document).ready(function ($) {
             }
         }
 
-        // if (typeof event !== 'undefined'){
-        //     document.dispatchEvent(event);
-        // }
+        if (typeof oncloseevent !== 'undefined'){
+            document.dispatchEvent(oncloseevent);
+        }
 
         if (e.which === 1) {
             hideOutZone('.popup', '.popup-mini', '.datepicker');
         }
-
 
     });
 
