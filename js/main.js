@@ -1234,7 +1234,7 @@ $(document).ready(function ($) {
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div.parents('html').removeClass('lock-html').css('margin-right','0');
-                div.find('.popup-close').trigger('click');
+                // div.find('.popup-close').trigger('click');
 
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
