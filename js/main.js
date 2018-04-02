@@ -1237,10 +1237,9 @@ $(document).ready(function ($) {
                 // div.find('.popup-close').trigger('click');
 
                 var url = localStorage.getItem('backUrl');
-                console.log(url);
 
-                // if (url.length > 0){
-                    if (url !== null) {
+
+                if (url !== null) {
                     window.history.pushState(null, null, url);
                     localStorage.removeItem("backUrl");
                 }
