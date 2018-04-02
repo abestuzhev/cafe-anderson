@@ -1237,8 +1237,6 @@ $(document).ready(function ($) {
                 // div.find('.popup-close').trigger('click');
 
                 var url = localStorage.getItem('backUrl');
-
-
                 if (url !== null) {
                     window.history.pushState(null, null, url);
                     localStorage.removeItem("backUrl");
