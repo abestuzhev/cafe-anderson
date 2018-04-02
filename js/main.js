@@ -1229,8 +1229,8 @@ $(document).ready(function ($) {
                 && div2.has(e.target).length === 0
                 && !div3.is(e.target)
                 && div3.has(e.target).length === 0) {
-                div.removeClass(instrumentHide); // скрываем его
-                console.log('true');
+                // div.removeClass(instrumentHide); // скрываем его
+                // console.log('true');
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div.parents('html').removeClass('lock-html').css('margin-right','0');
