@@ -1244,7 +1244,7 @@ $(document).ready(function ($) {
                 div3.parents('html').removeClass('lock-html').css('margin-right','0');
             }
 
-            $('.popup-cake-order .popup-close').trigger('click');
+            // $('.popup-cake-order .popup-close').trigger('click');
         }
 
         // if (typeof oncloseevent !== 'undefined'){
