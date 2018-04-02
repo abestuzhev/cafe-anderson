@@ -4769,11 +4769,11 @@ test popup
             flex-flow: row wrap;
             align-items: center;
             justify-content: flex-start;
+            margin-bottom: .6rem;
         }
 
         .c-card-product__price {
-            width: 13.5rem;
-            margin-bottom: .6rem;
+            width: 16rem;
         }
     }
 
@@ -4788,6 +4788,12 @@ test popup
         text-align: center;
         text-transform: uppercase;
         font-family: $font_serif;
+
+        .symbol-ticket,
+        .symbol-click {
+            position: relative;
+            top: -.3rem;
+        }
 
         &:hover {
             color: #ffffff;

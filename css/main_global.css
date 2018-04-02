@@ -9074,10 +9074,10 @@ test popup
             align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
-  .popup-event-buy .c-card-product__price {
-    width: 13.5rem;
+            justify-content: flex-start;
     margin-bottom: .6rem; }
+  .popup-event-buy .c-card-product__price {
+    width: 16rem; }
 
 .popup-event__btn {
   display: block;
@@ -9090,6 +9090,10 @@ test popup
   text-align: center;
   text-transform: uppercase;
   font-family: "PT Serif Caption"; }
+  .popup-event__btn .symbol-ticket,
+  .popup-event__btn .symbol-click {
+    position: relative;
+    top: -.3rem; }
   .popup-event__btn:hover {
     color: #ffffff;
     opacity: .9; }
