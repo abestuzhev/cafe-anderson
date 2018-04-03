@@ -86,12 +86,12 @@ $(window).on('load', function(){
     '/cafe-anderson/factory-happiness.html'
     ];
 
-    if(permitPath.indexOf(location.pathname) > -1){
-        function getScrollElem (elem){
-            if($(window).width() <= 800) {
-                new SimpleBar($(elem)[0]);
-            }
+    function getScrollElem (elem){
+        if($(window).width() <= 800) {
+            new SimpleBar($(elem)[0]);
         }
+    }
+    if(permitPath.indexOf(location.pathname) > -1){
         getScrollElem('.factory-layout');
         $(window).on('resize', function () {
             getScrollElem('.factory-layout');
@@ -163,10 +163,15 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-     $('.datepicker-custom').datepicker({
-        minDate: new Date(),
-        autoClose: true
-    });
+
+
+    if($('input').hasClass('datepicker-custom') || $('div').hasClass('datepicker-custom')){
+        $('.datepicker-custom').datepicker({
+            minDate: new Date(),
+            autoClose: true
+        });
+    }
+
 
     
 
