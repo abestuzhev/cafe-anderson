@@ -223,6 +223,8 @@ $(document).ready(function ($) {
         if (heightBasket >= documentHeight - 100){
             basketScroll.addClass('fixed-height-basket');
             // console.log('if ' + heightBasket);
+            /*кастомный скролл*/
+            basketScroll.jScrollPane();
         }else {
             basketScroll.removeClass('fixed-height-basket');
             // console.log('else ' + heightBasket);
@@ -875,8 +877,7 @@ $(document).ready(function ($) {
         }
     });
 
-    /*кастомный скролл*/
-    $('.popup-basket__scroll').jScrollPane();
+
 
     $(".owl-carousel").owlCarousel({
         items: 1,
