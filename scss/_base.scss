@@ -2144,10 +2144,12 @@ a.c-button {
             padding-left: 0;
 
             span {
-                margin:0 2rem 0 0 !important;
+                margin:0 1.6rem .5rem 0 !important;
+                white-space: nowrap;
+                display: inline-block;
 
                 &:last-child {
-                    margin: 0 !important;
+                    margin-right: 0 !important;
                 }
             }
         }
