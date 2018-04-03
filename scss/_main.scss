@@ -4727,7 +4727,13 @@ test popup
 
             &-layout {
                 min-height: 27rem;
+
+                &.no-text {
+                    min-height: 0;
+                }
             }
+
+
         }
     }
 

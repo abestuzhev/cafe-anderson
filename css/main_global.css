@@ -9028,6 +9028,8 @@ test popup
       margin-bottom: 1.2rem; }
     .popup-event-content__description-layout {
       min-height: 27rem; }
+      .popup-event-content__description-layout.no-text {
+        min-height: 0; }
 
 .popup-event-place {
   display: -webkit-box;
