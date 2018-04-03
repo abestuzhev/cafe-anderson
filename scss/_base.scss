@@ -2139,6 +2139,18 @@ a.c-button {
         i.icon-mark {
         
         }
+
+        &--metro {
+            padding-left: 0;
+
+            span {
+                margin:0 2rem 0 0 !important;
+
+                &:last-child {
+                    margin: 0 !important;
+                }
+            }
+        }
     }
     
     &__service {

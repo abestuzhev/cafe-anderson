@@ -2849,6 +2849,12 @@ a.c-button:hover {
       top: 0;
       left: 0;
       margin-right: .9rem; }
+    .c-card-contact-cafe__item--metro {
+      padding-left: 0; }
+      .c-card-contact-cafe__item--metro span {
+        margin: 0 2rem 0 0 !important; }
+        .c-card-contact-cafe__item--metro span:last-child {
+          margin: 0 !important; }
   .c-card-contact-cafe__service {
     margin-left: -2.8rem; }
 
