@@ -1,6 +1,6 @@
 function flyToElement(flyer, flyingTo) {
     var $func = $(this),
-        divider = 3,
+        divider = 9,
         flyerClone = $(flyer).clone();
 
     // console.log($func);
