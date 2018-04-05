@@ -6,6 +6,7 @@ function flyToElement(flyer, flyingTo) {
     // console.log($func);
     $(flyerClone).css({
         position:'absolute',
+        'max-width': '500px',
         top: $(flyer).offset().top + 'px',
         left: $(flyer).offset().left + 'px',
         opacity: 1,
