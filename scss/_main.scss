@@ -2773,7 +2773,7 @@ test popup
                 }
             }
 
-            i:not(.icon-label-metro, .icon-metro-2),
+            i[class*="icon"]:not(.icon-label-metro, .icon-metro-2),
             img {
                 position: absolute;
                 top: 0;
