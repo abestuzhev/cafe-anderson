@@ -875,6 +875,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             padding: 1.4rem 1rem !important;
             color: #c44890;
             min-width: 17.3rem;
+            width: auto !important;
         }
 
         .SumoSelect.open > .optWrapper {

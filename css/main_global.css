@@ -1903,7 +1903,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   font-size: 1.5rem;
   padding: 1.4rem 1rem !important;
   color: #c44890;
-  min-width: 17.3rem; }
+  min-width: 17.3rem;
+  width: auto !important; }
 
 .c-select-layout-v2 .SumoSelect.open > .optWrapper {
   top: 4.8rem; }
