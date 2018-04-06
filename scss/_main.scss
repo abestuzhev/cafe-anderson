@@ -5676,6 +5676,7 @@ test popup
             max-height: 100%;
             box-shadow: 0 10px 20px 8px rgba(0, 0, 0, .1);
             height: 30rem;
+            margin-bottom: 1rem;
         }
 
         &__layout {
@@ -5878,7 +5879,7 @@ test popup
         }
 
         &-date {/*order-delivery-date*/
-            margin-bottom: 3rem;
+            margin: 2rem 0 3rem 2rem;
 
             &__list {
                 display: flex;
@@ -10876,7 +10877,7 @@ test popup
     font-size: 1.8rem;
     text-align: left;
     display: inline-block !important;
-    margin: 2rem 0 0 2rem;
+    margin: 1rem 0 0 2rem;
 
     span {
         vertical-align: middle;

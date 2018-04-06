@@ -1901,7 +1901,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 .c-select-layout-v2 .SelectBox {
   font-size: 1.5rem;
-  padding: 1.4rem 1rem;
+  padding: 1.4rem 1rem !important;
   color: #c44890;
   min-width: 17.3rem; }
 
@@ -9808,7 +9808,8 @@ test popup
       max-height: 100%;
       -webkit-box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
               box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
-      height: 30rem; }
+      height: 30rem;
+      margin-bottom: 1rem; }
     .order-delivery__layout {
       margin: 0 0 1.2rem 1.7rem; }
     .order-delivery__time-list {
@@ -9956,7 +9957,7 @@ test popup
           border: none; }
     .order-delivery-date {
       /*order-delivery-date*/
-      margin-bottom: 3rem; }
+      margin: 2rem 0 3rem 2rem; }
       .order-delivery-date__list {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -13864,7 +13865,7 @@ test popup
   font-size: 1.8rem;
   text-align: left;
   display: inline-block !important;
-  margin: 2rem 0 0 2rem; }
+  margin: 1rem 0 0 2rem; }
   #delivery_price_visual span {
     vertical-align: middle;
     font-family: "BebasNeue";
