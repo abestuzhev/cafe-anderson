@@ -1259,12 +1259,15 @@ $(document).ready(function ($) {
             var div = $(elem);
             var div2 = $(elem2);
             var div3 = $(elem3);
+            var div4 = $(elem4);
             if (!div.is(e.target)
                 && div.has(e.target).length === 0
                 && !div2.is(e.target)
                 && div2.has(e.target).length === 0
                 && !div3.is(e.target)
-                && div3.has(e.target).length === 0) {
+                && div3.has(e.target).length === 0
+                && !div4.is(e.target)
+                && div4.has(e.target).length === 0) {
                 // div.removeClass(instrumentHide); // скрываем его
                 // console.log('true');
                 div.parents('.mfp-wrap').removeClass('is-visible');
@@ -1285,6 +1288,10 @@ $(document).ready(function ($) {
                 div3.parents('.mfp-wrap').removeClass('is-visible');
                 div3.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div3.parents('html').removeClass('lock-html').css('margin-right','0');
+
+                div4.parents('.mfp-wrap').removeClass('is-visible');
+                div4.parents('html').find('.mfp-bg ').removeClass('is-visible');
+                div4.parents('html').removeClass('lock-html').css('margin-right','0');
             }
 
         }
@@ -1305,7 +1312,7 @@ $(document).ready(function ($) {
 
 
         if (e.which === 1) {
-            hideOutZone('.popup', '.popup-mini', '.datepicker');
+            hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup-cont');
         }
 
     });
