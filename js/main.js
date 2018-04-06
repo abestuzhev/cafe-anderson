@@ -1429,7 +1429,7 @@ $(document).ready(function ($) {
     });
 
     /*попап корзины*/
-    $('.icon-basket, .header .symbol-basket, .header-basket__count').on('click', function () {
+    $('.icon-basket, .header .symbol-basket, .header .symbol-basket-2, .header-basket__count').on('click', function () {
         $('.popup-basket').addClass('popup-slide__show');
         $('.header').addClass('header-top__no-hide');
         // $('html').addClass('lock-html');

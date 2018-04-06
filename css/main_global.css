@@ -1025,6 +1025,18 @@ i.icon-chair {
   width: 1em;
   height: 1.1em; }
 
+.symbol-basket-2 {
+  font-size: 2.4rem;
+  width: 1em;
+  height: 1em; }
+
+.symbol-basket-bubble {
+  font-size: 2.9rem;
+  width: 1em;
+  height: 1.1em;
+  fill: #FBF6E7;
+  stroke: #4B4B4B; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -4759,6 +4771,12 @@ a.c-button:hover {
       fill: #9b9696; }
     .header-top svg:hover {
       fill: #7cbd41; }
+    .header-top .symbol-basket-2,
+    .header-top .symbol-basket-2:hover {
+      fill: #231300; }
+    .header-top .symbol-basket-bubble,
+    .header-top .symbol-basket-bubble:hover {
+      fill: #FBF6E7; }
   .header-logo {
     /*логотип*/
     display: block;
@@ -4875,9 +4893,15 @@ a.c-button:hover {
       -webkit-transition: all .1s ease-out;
       -o-transition: all .1s ease-out;
       transition: all .1s ease-out; }
+    .header-basket-v2 .header-basket__count span {
+      color: #252525;
+      font-size: 1.3rem;
+      top: 47%;
+      left: 56%;
+      text-align: center; }
     .header-basket__count {
       position: absolute;
-      top: -3px;
+      top: -8px;
       left: 85%;
       width: 33px;
       text-align: center;
@@ -6257,6 +6281,10 @@ main {
     position: absolute;
     top: 12px;
     right: 31%; }
+  .popup-basket .header-basket-v2 {
+    position: absolute;
+    top: 12px;
+    right: 78px; }
   .popup-basket__title {
     color: #231300;
     font-size: 1.5rem;

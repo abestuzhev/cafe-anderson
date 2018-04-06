@@ -516,6 +516,16 @@
         svg:hover {
             fill:#7cbd41;
         }
+
+        .symbol-basket-2,
+        .symbol-basket-2:hover {
+            fill: #231300;
+        }
+
+        .symbol-basket-bubble,
+        .symbol-basket-bubble:hover {
+            fill: #FBF6E7;
+        }
     }
 
     &-logo { /*логотип*/
@@ -679,9 +689,19 @@
 
         }
 
+        &-v2 {
+            .header-basket__count span {
+                color: #252525;
+                font-size: 1.3rem;
+                top: 47%;
+                left: 56%;
+                text-align: center;
+            }
+        }
+
         &__count {
             position: absolute;
-            top: -3px;
+            top: -8px;
             left: 85%;
             width: 33px;
             text-align: center;
