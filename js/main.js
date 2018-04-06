@@ -1312,7 +1312,7 @@ $(document).ready(function ($) {
 
 
         if (e.which === 1) {
-            hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup-cont');
+            hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup');
         }
 
     });
