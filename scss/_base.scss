@@ -879,7 +879,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         }
 
         .SumoSelect.open > .optWrapper {
-            top: 4.8rem;
+            top: 4.8rem !important;
         }
 
         .SumoSelect > .CaptionCont > label {
