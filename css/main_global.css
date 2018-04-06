@@ -1906,6 +1906,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   min-width: 17.3rem;
   width: auto !important; }
 
+.c-select-layout-v2 .SumoSelect > .CaptionCont > span {
+  color: #c44890 !important; }
+
 .c-select-layout-v2 .SumoSelect.open > .optWrapper {
   top: 4.8rem !important; }
 

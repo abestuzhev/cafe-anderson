@@ -878,6 +878,10 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             width: auto !important;
         }
 
+        .SumoSelect > .CaptionCont > span {
+            color: #c44890 !important;
+        }
+
         .SumoSelect.open > .optWrapper {
             top: 4.8rem !important;
         }

@@ -191,7 +191,7 @@ $(document).ready(function ($) {
 
         var datepickerDelivery = new Date(),
             datepickerDeliveryV2= $('.datepicker-delivery-v2');
-        datepickerDeliveryV2.val(formatDate(datepickerDelivery));
+        // datepickerDeliveryV2.val(formatDate(datepickerDelivery));
         datepickerDeliveryV2.datepicker({
             minDate: new Date(),
             autoClose: true
