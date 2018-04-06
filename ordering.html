@@ -917,22 +917,22 @@
                                             </div>
                                             <div class="tab">
                                                 <div id="order-delivery" class="tab-content">
-                                                    <div class="order-delivery__layout">
-                                                        <ul class="order-delivery__time-list">
-                                                            <li class="order-delivery__time-item">
-                                                                <div class="datepicker-layout">
-                                                                    <input type='text' class="c-input form-control datepicker-custom" placeholder="Дата доставки"/>
-                                                                </div>
-                                                            </li>
-                                                            <li class="order-delivery__time-item">
-                                                                <select name="order-deliver-time" class="c-select select-delivery">
-                                                                    <option value="9.00-12.00">с 9.00 до 12.00</option>
-                                                                    <option value="12.00-15.00">с 12.00 до 15.00</option>
-                                                                    <option value="15.00-18.00">с 15.00 до 18.00</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <!--<div class="order-delivery__layout">-->
+                                                    <!--<ul class="order-delivery__time-list">-->
+                                                    <!--<li class="order-delivery__time-item">-->
+                                                    <!--<div class="datepicker-layout">-->
+                                                    <!--<input type='text' class="c-input form-control datepicker-custom" placeholder="Дата доставки"/>-->
+                                                    <!--</div>-->
+                                                    <!--</li>-->
+                                                    <!--<li class="order-delivery__time-item">-->
+                                                    <!--<select name="order-deliver-time" class="c-select select-delivery">-->
+                                                    <!--<option value="9.00-12.00">с 9.00 до 12.00</option>-->
+                                                    <!--<option value="12.00-15.00">с 12.00 до 15.00</option>-->
+                                                    <!--<option value="15.00-18.00">с 15.00 до 18.00</option>-->
+                                                    <!--</select>-->
+                                                    <!--</li>-->
+                                                    <!--</ul>-->
+                                                    <!--</div>-->
                                                     <div class="order-delivery__grid">
                                                         <div class="order-delivery__col">
                                                             <div class="order-delivery__map" id="order-delivery__map"></div>
@@ -996,11 +996,14 @@
                                                                 </div>
                                                             </li>
                                                             <li class="order-delivery__time-item">
-                                                                <select name="order-pickup-time" class="c-select select-delivery">
-                                                                    <option value="9.00-12.00">с 9.00 до 12.00</option>
-                                                                    <option value="12.00-15.00">с 12.00 до 15.00</option>
-                                                                    <option value="15.00-18.00">с 15.00 до 18.00</option>
-                                                                </select>
+                                                                <div class="c-select-layout-v2">
+                                                                    <select name="order-pickup-time" class="c-select">
+                                                                        <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                                                        <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                                                        <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                                                    </select>
+                                                                </div>
+                                                                
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -1073,6 +1076,30 @@
                                         </div>
 
                                     </div>
+                                    <!--НОВЫЙ БЛОК С ВЫБОРОМ ДАТЫ ДОСТАВКИ-->
+                                    <div class="order-delivery-date">
+                                        <ul class="order-delivery-date__list">
+                                            <li class="order-delivery-date__item">
+                                                <div class="datepicker-layout-v2">
+                                                    <label class="datepicker-text">Когда вам будет удобно забрать заказ? <input type='text' data="datepicker" class="datepicker-delivery-v2" placeholder=""/>
+                                                    </label>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li class="order-delivery-date__item">
+                                                <div class="c-select-layout-v2">
+                                                    <select name="order-deliver-date-hour" class="c-select">
+                                                        <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                                        <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                                        <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--END НОВЫЙ БЛОК С ВЫБОРОМ ДАТЫ ДОСТАВКИ-->
+                                    
                                     <div class="order-pay">
                                         <h4 class="order-box__title"><i class="icon-credit-card"></i>Оплата:</h4>
                                         <ul class="order-pay__list">
@@ -1180,22 +1207,22 @@
                                             </div>
                                             <div class="tab">
                                                 <div id="order-delivery-cake" class="tab-content">
-                                                    <div class="order-delivery__layout">
-                                                        <ul class="order-delivery__time-list">
-                                                            <li class="order-delivery__time-item">
-                                                                <div class="datepicker-layout">
-                                                                    <input type='text' class="c-input datepicker-custom form-control" placeholder="Дата доставки"/>
-                                                                </div>
-                                                            </li>
-                                                            <li class="order-delivery__time-item">
-                                                                <select name="order-deliver-cake-time" class="c-select select-delivery">
-                                                                    <option value="9.00-12.00">с 9.00 до 12.00</option>
-                                                                    <option value="12.00-15.00">с 12.00 до 15.00</option>
-                                                                    <option value="15.00-18.00">с 15.00 до 18.00</option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <!--<div class="order-delivery__layout">-->
+                                                        <!--<ul class="order-delivery__time-list">-->
+                                                            <!--<li class="order-delivery__time-item">-->
+                                                                <!--<div class="datepicker-layout">-->
+                                                                    <!--<input type='text' class="c-input datepicker-custom form-control" placeholder="Дата доставки"/>-->
+                                                                <!--</div>-->
+                                                            <!--</li>-->
+                                                            <!--<li class="order-delivery__time-item">-->
+                                                                <!--<select name="order-deliver-cake-time" class="c-select select-delivery">-->
+                                                                    <!--<option value="9.00-12.00">с 9.00 до 12.00</option>-->
+                                                                    <!--<option value="12.00-15.00">с 12.00 до 15.00</option>-->
+                                                                    <!--<option value="15.00-18.00">с 15.00 до 18.00</option>-->
+                                                                <!--</select>-->
+                                                            <!--</li>-->
+                                                        <!--</ul>-->
+                                                    <!--</div>-->
                                                     <div class="order-delivery__grid">
                                                         <div class="order-delivery__col">
                                                             <div class="order-delivery__map" id="order-cake-delivery__map"></div>
@@ -1324,6 +1351,31 @@
                                         </div>
 
                                     </div>
+                                    
+                                    <!--НОВЫЙ БЛОК С ВЫБОРОМ ДАТЫ ДОСТАВКИ-->
+                                    <div class="order-delivery-date">
+                                        <ul class="order-delivery-date__list">
+                                            <li class="order-delivery-date__item">
+                                                <div class="datepicker-layout-v2">
+                                                    <label class="datepicker-text">Когда вам будет удобно забрать заказ? <input type='text' data="datepicker" class="datepicker-delivery-v2" placeholder=""/>
+                                                    </label>
+                
+                                                </div>
+                                            </li>
+                                            <li class="order-delivery-date__item">
+                                                <div class="c-select-layout-v2">
+                                                    <select name="order-deliver-date-hour" class="c-select">
+                                                        <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                                        <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                                        <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                                    </select>
+                                                </div>
+            
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--END НОВЫЙ БЛОК С ВЫБОРОМ ДАТЫ ДОСТАВКИ-->
+                                    
                                     <div class="order-pay">
                                         <h4 class="order-box__title"><i class="icon-credit-card"></i>Оплата:</h4>
                                         <ul class="order-pay__list">

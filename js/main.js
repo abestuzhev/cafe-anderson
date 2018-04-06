@@ -172,6 +172,36 @@ $(document).ready(function ($) {
         });
     }
 
+    /*функция форматирования даты*/
+    function formatDate(date) {
+        var dd = date.getDate();
+        if (dd < 10) dd = '0' + dd;
+
+        var mm = date.getMonth() + 1;
+        if (mm < 10) mm = '0' + mm;
+
+        var yy = date.getFullYear();
+        if (yy < 10) yy = '0' + yy;
+
+        return dd + '.' + mm + '.' + yy;
+    }
+
+    if($('input').hasClass('datepicker-delivery-v2') || $('div').hasClass('datepicker-delivery-v2')){
+
+
+        var datepickerDelivery = new Date(),
+            datepickerDeliveryV2= $('.datepicker-delivery-v2');
+        datepickerDeliveryV2.val(formatDate(datepickerDelivery));
+        datepickerDeliveryV2.datepicker({
+            minDate: new Date(),
+            autoClose: true
+        });
+
+
+
+
+    }
+
 
     
 

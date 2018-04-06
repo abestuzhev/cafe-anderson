@@ -1896,6 +1896,26 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-select-layout {
   position: relative; }
 
+.c-select-layout-v2 select {
+  height: 5.1rem; }
+
+.c-select-layout-v2 .SelectBox {
+  font-size: 1.5rem;
+  padding: 1.4rem 1rem;
+  color: #c44890;
+  min-width: 17.3rem; }
+
+.c-select-layout-v2 .SumoSelect.open > .optWrapper {
+  top: 4.8rem; }
+
+.c-select-layout-v2 .SumoSelect > .CaptionCont > label {
+  width: 40px; }
+
+.c-select-layout-v2 .SumoSelect > .CaptionCont > label > i {
+  width: 1.7rem;
+  height: 1.7rem;
+  background: url(../img/icons/icon-clock-2-purple.svg) 0 0 no-repeat; }
+
 .c-input.error {
   position: relative;
   -webkit-box-shadow: 0 0 0 1px #ec3e3e;
@@ -9934,6 +9954,27 @@ test popup
         .order-delivery-search__clear::after {
           content: '';
           border: none; }
+    .order-delivery-date {
+      /*order-delivery-date*/
+      margin-bottom: 3rem; }
+      .order-delivery-date__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch; }
+      .order-delivery-date__item {
+        margin-right: 1rem; }
+        .order-delivery-date__item:last-child {
+          margin-right: 0; }
   .order-box__title {
     font-size: 1.6rem;
     line-height: 1;
@@ -9969,7 +10010,7 @@ test popup
     font-size: 1.3rem;
     color: #555451; }
   .order-tabs {
-    margin-bottom: 4.8rem;
+    margin-bottom: 2rem;
     margin-left: -1.7rem; }
     .order-tabs__item {
       display: inline-block;
@@ -9993,7 +10034,7 @@ test popup
         content: '';
         border: none; }
   .order .tab {
-    padding-top: 1.4rem;
+    padding-top: 2.4rem;
     border-top: .5rem solid #7cbd41; }
   .order input[type="radio"] {
     display: none; }

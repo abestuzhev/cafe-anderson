@@ -1933,6 +1933,24 @@
         height: 34rem;
     }
 
+    .order-delivery-date__list {
+        flex-flow: column wrap;
+    }
+    .order-delivery-date__item {
+        margin: 0 0 1rem;
+    }
+
+    .order-delivery-date select {
+        width: 100%;
+    }
+    .order-delivery-date .datepicker-layout-v2 {
+        display: block;
+    }
+
+    .order-delivery-date .c-select-layout-v2 .SumoSelect {
+        display: block;
+    }
+
 }
 
 @media (max-width: 840px) {

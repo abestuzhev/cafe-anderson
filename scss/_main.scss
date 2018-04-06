@@ -5876,6 +5876,27 @@ test popup
                 }
             }
         }
+
+        &-date {/*order-delivery-date*/
+            margin-bottom: 3rem;
+
+            &__list {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: stretch;
+            }
+
+            &__item {
+                margin-right: 1rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+
+        }
     }
 
     &-box {
@@ -5926,7 +5947,7 @@ test popup
     }
 
     &-tabs {
-        margin-bottom: 4.8rem;
+        margin-bottom: 2rem;
         margin-left: -1.7rem;
 
         &__item {
@@ -5971,7 +5992,7 @@ test popup
     }
 
     .tab {
-        padding-top: 1.4rem;
+        padding-top: 2.4rem;
         border-top: .5rem solid #7cbd41;
 
     }

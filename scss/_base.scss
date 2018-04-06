@@ -863,6 +863,38 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     &-layout {
         position: relative;
     }
+
+    &-layout-v2 {
+
+        select {
+            height: 5.1rem;
+        }
+
+        .SelectBox {
+            font-size: 1.5rem;
+            padding: 1.4rem 1rem;
+            color: #c44890;
+            min-width: 17.3rem;
+        }
+
+        .SumoSelect.open > .optWrapper {
+            top: 4.8rem;
+        }
+
+        .SumoSelect > .CaptionCont > label {
+            width: 40px;
+        }
+
+        .SumoSelect > .CaptionCont > label > i {
+            width: 1.7rem;
+            height: 1.7rem;
+            background: url(../img/icons/icon-clock-2-purple.svg) 0 0 no-repeat;
+        }
+        //
+        //.SumoSelect > .optWrapper > .options li.opt:hover {
+        //    background-color: #c44890;
+        //}
+    }
 }
 
 .c-input.error {
