@@ -1126,6 +1126,10 @@
         height: 2.5rem;
     }
 
+    .header-basket-v2 {
+        top: 0;
+    }
+
     .icon-logo,
     .sticky .icon-logo {
         width: 19rem;

@@ -4893,12 +4893,14 @@ a.c-button:hover {
       -webkit-transition: all .1s ease-out;
       -o-transition: all .1s ease-out;
       transition: all .1s ease-out; }
-    .header-basket-v2 .header-basket__count span {
-      color: #252525;
-      font-size: 1.3rem;
-      top: 47%;
-      left: 56%;
-      text-align: center; }
+    .header-basket-v2 {
+      top: .4rem; }
+      .header-basket-v2 .header-basket__count span {
+        color: #252525;
+        font-size: 1.3rem;
+        top: 47%;
+        left: 56%;
+        text-align: center; }
     .header-basket__count {
       position: absolute;
       top: -8px;
