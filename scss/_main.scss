@@ -5996,6 +5996,10 @@ test popup
                 border: none;
             }
         }
+
+        #order-pickup .datepicker-layout-v2 input[type="text"] {
+            width: 15rem !important;
+        }
     }
 
     .tab {
