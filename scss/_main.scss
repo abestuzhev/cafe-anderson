@@ -10534,6 +10534,10 @@ test popup
                 img {
                     margin-top: 1rem;
                 }
+
+                &:last-child .bonus-install-btn {
+                    padding-bottom: 1.2rem;
+                }
             }
 
             &__col:nth-child(1) {
@@ -10550,7 +10554,6 @@ test popup
             display: block;
             border-radius: .5rem;
             background-color: #bb2b7f;
-            margin-bottom: 2.2rem;
             color: #ffffff;
             white-space: nowrap;
             font-size: 0;

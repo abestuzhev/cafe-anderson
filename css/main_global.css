@@ -13655,6 +13655,8 @@ test popup
       text-align: center; }
       .bonus-install-box__col img {
         margin-top: 1rem; }
+      .bonus-install-box__col:last-child .bonus-install-btn {
+        padding-bottom: 1.2rem; }
     .bonus-install-box__col:nth-child(1) {
       -webkit-box-flex: 1;
           -ms-flex: 1 0 33%;
@@ -13669,7 +13671,6 @@ test popup
       display: block;
       border-radius: .5rem;
       background-color: #bb2b7f;
-      margin-bottom: 2.2rem;
       color: #ffffff;
       white-space: nowrap;
       font-size: 0; }
