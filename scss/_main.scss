@@ -10528,6 +10528,14 @@ test popup
                 justify-content: space-between;
             }
 
+            &__col {
+                text-align: center;
+
+                img {
+                    margin-top: 1rem;
+                }
+            }
+
             &__col:nth-child(1) {
                 flex:1 0 33%;
             }

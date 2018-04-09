@@ -10068,6 +10068,8 @@ test popup
       .order-tabs__item a::after {
         content: '';
         border: none; }
+    .order-tabs #order-pickup .datepicker-layout-v2 input[type="text"] {
+      width: 15rem !important; }
   .order .tab {
     padding-top: 2.4rem;
     border-top: .5rem solid #7cbd41; }
@@ -13649,6 +13651,10 @@ test popup
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+    .bonus-install-box__col {
+      text-align: center; }
+      .bonus-install-box__col img {
+        margin-top: 1rem; }
     .bonus-install-box__col:nth-child(1) {
       -webkit-box-flex: 1;
           -ms-flex: 1 0 33%;
