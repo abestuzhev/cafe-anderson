@@ -108,10 +108,11 @@ body {
 }
 
 .c-ol-list {
-    font-family: "PT Serif Caption";
+    font-family: $font_serif;
     list-style-type: none;
     counter-reset: item;
     margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .c-ol-list li {

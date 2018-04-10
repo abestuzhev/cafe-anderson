@@ -1305,7 +1305,8 @@ body {
   font-family: "PT Serif Caption";
   list-style-type: none;
   counter-reset: item;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  line-height: 1.6; }
 
 .c-ol-list li {
   margin-bottom: .2rem;
