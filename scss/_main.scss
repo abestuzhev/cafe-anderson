@@ -4660,6 +4660,7 @@ test popup
     .popup {
         max-width: 126rem;
         width: 126rem;
+        overflow: visible;
         &-box {
             padding: 2rem 2rem 2rem 9rem;
         }
@@ -4883,6 +4884,10 @@ test popup
     &__col {
         width: 50%;
         padding: .8rem .8rem 0 .8rem;
+    }
+
+    .c-card-event__label {
+        border-radius: 1rem 0 0 0;
     }
 
 }
@@ -10910,5 +10915,23 @@ test popup
 
     .c-currency-symbol {
         font-family: sans-serif;
+    }
+}
+
+
+/*holiday****************************************/
+.holiday {
+    &-description {
+
+    }
+
+    .c-card-cafe__title span {
+        display: inline;
+        border-bottom: 1px dotted #9b806f;
+
+        &::after {
+            content: '';
+            border: none;
+        }
     }
 }
