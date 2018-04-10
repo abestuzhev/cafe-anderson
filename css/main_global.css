@@ -13979,9 +13979,22 @@ test popup
     font-family: sans-serif; }
 
 /*holiday****************************************/
+.holiday .filter {
+  margin-bottom: 2rem; }
+  .holiday .filter .l-button__center {
+    display: block; }
+  .holiday .filter .filter-item:nth-child(1), .holiday .filter .filter-item:nth-child(2) {
+    width: 31%; }
+  .holiday .filter .filter-item:nth-child(3) {
+    width: 18%; }
+
 .holiday .c-card-cafe__title span {
   display: inline;
   border-bottom: 1px dotted #9b806f; }
   .holiday .c-card-cafe__title span::after {
     content: '';
     border: none; }
+
+.holiday .SumoSelect,
+.holiday .SumoSelect > .CaptionCont {
+  width: 100%; }

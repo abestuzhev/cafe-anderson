@@ -10925,6 +10925,26 @@ test popup
 
     }
 
+    .filter {
+        margin-bottom: 2rem;
+        .l-button__center {
+            display: block;
+        }
+
+        .filter-item {
+            &:nth-child(1),
+            &:nth-child(2) {
+                width: 31%;
+            }
+            &:nth-child(3) {
+                width: 18%;
+            }
+            &:nth-child(4) {
+
+            }
+        }
+    }
+
     .c-card-cafe__title span {
         display: inline;
         border-bottom: 1px dotted #9b806f;
@@ -10933,5 +10953,10 @@ test popup
             content: '';
             border: none;
         }
+    }
+
+    .SumoSelect,
+    .SumoSelect > .CaptionCont {
+        width: 100%;
     }
 }

@@ -1886,10 +1886,10 @@
                     <div class="filter-layout">
                         <div class="filter">
                             <form action="" class="filter-form">
-                                <div class="filter-item" style="border: none;">
+                                <div class="filter-item">
                                     <div class="filter-item__title"><i class="icon-place"></i>Город</div>
-                                    <div class="filter-item__body" style="display: block;">
-                                        <div class="SumoSelect sumo_filter-city-select" tabindex="0"><select name="filter-city-select" class="c-select select-city SumoUnder" tabindex="-1">
+                                    <div class="filter-item__body">
+                                        <select name="filter-city-select" class="c-select select-city">
                                             <option value="Все">Все</option>
                                             <option value="Москва">Москва</option>
                                             <option value="Тюмень">Тюмень</option>
@@ -1901,22 +1901,36 @@
                                             <option value="Алматы">Алматы</option>
                                             <option value="Ногинск">Ногинск</option>
                                             <option value="Астана">Астана</option>
-                                        </select><p class="CaptionCont SelectBox" title=" Все"><span> Все</span><label><i></i></label></p><div class="optWrapper"><ul class="options"><li class="opt selected"><label>Все</label></li><li class="opt"><label>Москва</label></li><li class="opt"><label>Тюмень</label></li><li class="opt"><label>Красногорск</label></li><li class="opt"><label>Ярославль</label></li><li class="opt"><label>Зеленоград</label></li><li class="opt"><label>Нижний Новгород</label></li><li class="opt"><label>Королёв</label></li><li class="opt"><label>Алматы</label></li><li class="opt"><label>Ногинск</label></li><li class="opt"><label>Астана</label></li></ul></div></div>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="filter-item" style="border: none;">
-                                    <div class="filter-item__title"><i class="icon-metro"></i>Метро</div>
-                                    <div class="filter-item__body" style="display: block;">
-                                        <div class="SumoSelect sumo_filter-metro-select" tabindex="0"><select name="filter-metro-select" class="c-select select-metro SumoUnder" tabindex="-1">
+                                <div class="filter-item">
+                                    <div class="filter-item__title"><i class="icon-a"></i>Кафе</div>
+                                    <div class="filter-item__body">
+                                        <select name="filter-cafe-select" class="c-select select-cafe">
                                             <option value="Все">Все</option>
-                                            <option value="Бульвар Рокоссовского">Бульвар Рокоссовского</option>
-                                            <option value="Черкизовская">Черкизовская</option>
-                                            <option value="Преображенская площадь">Преображенская площадь</option>
-                                            <option value="Сокольники">Сокольники</option>
-                                            <option value="Красносельская">Красносельская</option>
-                                            <option value="Комсомольская">Комсомольская</option>
-                                            <option value="Красные Ворота">Красные Ворота</option>
-                                        </select><p class="CaptionCont SelectBox" title=" Все"><span> Все</span><label><i></i></label></p><div class="optWrapper"><ul class="options"><li class="opt selected"><label>Все</label></li><li class="opt"><label>Бульвар Рокоссовского</label></li><li class="opt"><label>Черкизовская</label></li><li class="opt"><label>Преображенская площадь</label></li><li class="opt"><label>Сокольники</label></li><li class="opt"><label>Красносельская</label></li><li class="opt"><label>Комсомольская</label></li><li class="opt"><label>Красные Ворота</label></li></ul></div></div>
+                                            <option value="Москва">Москва</option>
+                                            <option value="Тюмень">Тюмень</option>
+                                            <option value="Красногорск">Красногорск</option>
+                                            <option value="Ярославль">Ярославль</option>
+                                            <option value="Зеленоград">Зеленоград</option>
+                                            <option value="Нижний Новгород">Нижний Новгород</option>
+                                            <option value="Королёв">Королёв</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter-item">
+                                    <div class="filter-item__title"><i class="advantages-guests"></i>Количество гостей</div>
+                                    <div class="filter-item__body">
+                                        <select name="filter-cafe-select" class="c-select select-guest">
+                                            <option value="50">50</option>
+                                            <option value="60">60</option>
+                                            <option value="70">70</option>
+                                            <option value="80">80</option>
+                                            <option value="90">90</option>
+                                            <option value="100">100</option>
+                                            <option value="120">120</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="filter-item">
@@ -1924,7 +1938,7 @@
                                         <button class="c-button c-button__small filter-btn__reset">
                                             <i class="icon-reset">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.2 151.71">
-                                                    <path d="M145.44,120a65.54,65.54,0,0,1-6.46-3.84c-.26-.18-1.63-1.19-2-1.47-1.06-.86-2.09-1.75-3.12-2.64a197.63,197.63,0,0,1-14.1-14c-8.72-9.32-17.28-18.6-26.94-27a249.8,249.8,0,0,1,18.52-21c2.34-2.32,4.79-4.53,7.31-6.65l.88-.71.61-.45c1.23-.9,2.51-1.73,3.8-2.54s2.54-1.49,3.84-2.16c.36-.18.73-.35,1.1-.53a35.3,35.3,0,0,1,3.86-1.14l.48-.12c.06,0,2.42-1.29,2.5-1.29,8.59-.61,13.51-7.45,13.51-16.52,0-8.15-4.84-20.81-21.8-15.8C102.7,12.42,84.72,30.59,68.08,51.67l-2-1.51c1.15.87-2.46-1.94-2.88-2.26C51.53,41.25,41.77,25.2,37.34,21c-2-1.86-3.83-3.83-5.61-5.86-.16-.18-.43-.52-.69-.85q-.84-1.21-1.6-2.47A16,16,0,0,0,7.81,6.15C.46,10.45-2.31,20.39,2.14,27.76,8.34,38,29.54,61.08,38.76,68.55c3.33,2.69,6.71,5.32,10.11,7.93C46.15,80.2,43.49,84,41,87.9c-4.19,6.47-15.32,18-19.84,24.2-.36.5-.74,1-1.11,1.49l-.73.91c-1.15,1.43-2.37,2.81-3.6,4.18-.5.56-1,1.1-1.55,1.64a15.15,15.15,0,0,0-7.62,7.21c-9.17,12.87,5.95,31.73,20.78,22.83,1.71-1,6.06-4.64,1.65-1.26a70.69,70.69,0,0,0,6.28-5.17,88.05,88.05,0,0,0,7.27-8.18c5.36-6.66,17.18-18.69,21.83-25.86,3-4.64,6-9.31,9.08-13.89C92,113,106.87,135.6,129.5,147.29c7.65,4,17.1,2,21.62-5.67C155.29,134.48,153.09,123.95,145.44,120Z" transform="translate(0 -0.96)"></path>
+                                                    <path d="M145.44,120a65.54,65.54,0,0,1-6.46-3.84c-.26-.18-1.63-1.19-2-1.47-1.06-.86-2.09-1.75-3.12-2.64a197.63,197.63,0,0,1-14.1-14c-8.72-9.32-17.28-18.6-26.94-27a249.8,249.8,0,0,1,18.52-21c2.34-2.32,4.79-4.53,7.31-6.65l.88-.71.61-.45c1.23-.9,2.51-1.73,3.8-2.54s2.54-1.49,3.84-2.16c.36-.18.73-.35,1.1-.53a35.3,35.3,0,0,1,3.86-1.14l.48-.12c.06,0,2.42-1.29,2.5-1.29,8.59-.61,13.51-7.45,13.51-16.52,0-8.15-4.84-20.81-21.8-15.8C102.7,12.42,84.72,30.59,68.08,51.67l-2-1.51c1.15.87-2.46-1.94-2.88-2.26C51.53,41.25,41.77,25.2,37.34,21c-2-1.86-3.83-3.83-5.61-5.86-.16-.18-.43-.52-.69-.85q-.84-1.21-1.6-2.47A16,16,0,0,0,7.81,6.15C.46,10.45-2.31,20.39,2.14,27.76,8.34,38,29.54,61.08,38.76,68.55c3.33,2.69,6.71,5.32,10.11,7.93C46.15,80.2,43.49,84,41,87.9c-4.19,6.47-15.32,18-19.84,24.2-.36.5-.74,1-1.11,1.49l-.73.91c-1.15,1.43-2.37,2.81-3.6,4.18-.5.56-1,1.1-1.55,1.64a15.15,15.15,0,0,0-7.62,7.21c-9.17,12.87,5.95,31.73,20.78,22.83,1.71-1,6.06-4.64,1.65-1.26a70.69,70.69,0,0,0,6.28-5.17,88.05,88.05,0,0,0,7.27-8.18c5.36-6.66,17.18-18.69,21.83-25.86,3-4.64,6-9.31,9.08-13.89C92,113,106.87,135.6,129.5,147.29c7.65,4,17.1,2,21.62-5.67C155.29,134.48,153.09,123.95,145.44,120Z" transform="translate(0 -0.96)"/>
                                                 </svg>
                                             </i>
                                             Сбросить
@@ -1985,17 +1999,25 @@
                 <div class="footer-col__left-item">
                     <div class="footer-social">
                         <a class="footer-social__item" href="https://vk.com/cafeanderson">
-                            <svg class="c-symbol symbol-vk"><use xlink:href="#symbol-vk" /></svg>
+                            <svg class="c-symbol symbol-vk">
+                                <use xlink:href="#symbol-vk"/>
+                            </svg>
                         </a>
                         <a class="footer-social__item" href="https://www.facebook.com/anderson.moscow/">
-                            <svg class="c-symbol symbol-fb"><use xlink:href="#symbol-fb" /></svg>
+                            <svg class="c-symbol symbol-fb">
+                                <use xlink:href="#symbol-fb"/>
+                            </svg>
                         </a>
                         <a class="footer-social__item" href="">
-                            <svg class="c-symbol symbol-o"><use xlink:href="#symbol-o" /></svg>
+                            <svg class="c-symbol symbol-o">
+                                <use xlink:href="#symbol-o"/>
+                            </svg>
                         </a>
                     </div>
                     <a href="#" class="footer-site-map">
-                        <svg class="c-symbol symbol-site-map"><use xlink:href="#symbol-site-map" /></svg>
+                        <svg class="c-symbol symbol-site-map">
+                            <use xlink:href="#symbol-site-map"/>
+                        </svg>
                     </a>
                 </div>
                 <div class="footer-col__left-item">
@@ -2005,7 +2027,9 @@
                     </div>
                     
                     <div class="footer-info tooltip" data-tooltip-content=".tooltip_info">
-                        <svg class="c-symbol symbol-info"><use xlink:href="#symbol-info" /></svg>
+                        <svg class="c-symbol symbol-info">
+                            <use xlink:href="#symbol-info"/>
+                        </svg>
                         <div class="tooltip_templates">
                             <span class="tooltip_info">
                                 <span>Подписка на новости кафе</span>
@@ -2021,10 +2045,14 @@
                         <a href="" class="footer-reviews__text">книга отзывов</a>
                         <div class="footer-reviews__icons">
                             <div class="footer-reviews__icon js-positive">
-                                <svg class="c-symbol symbol-positive"><use xlink:href="#symbol-positive" /></svg>
+                                <svg class="c-symbol symbol-positive">
+                                    <use xlink:href="#symbol-positive"/>
+                                </svg>
                             </div>
                             <div class="footer-reviews__icon js-negative">
-                                <svg class="c-symbol symbol-negative"><use xlink:href="#symbol-negative" /></svg>
+                                <svg class="c-symbol symbol-negative">
+                                    <use xlink:href="#symbol-negative"/>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -2038,10 +2066,14 @@
                     </div>
                     <div class="footer-lang">
                         <a class="footer-lang__item is-active" href="#">
-                            <svg class="c-symbol symbol-ru"><use xlink:href="#symbol-ru" /></svg>
+                            <svg class="c-symbol symbol-ru">
+                                <use xlink:href="#symbol-ru"/>
+                            </svg>
                         </a>
                         <a class="footer-lang__item" href="#">
-                            <svg class="c-symbol symbol-en"><use xlink:href="#symbol-en" /></svg>
+                            <svg class="c-symbol symbol-en">
+                                <use xlink:href="#symbol-en"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
