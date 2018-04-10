@@ -456,6 +456,17 @@ p {
     appearance: none;
 }
 
+.wrapper input[type="button"],
+.wrapper input[type="submit"],
+.wrapper input[type="reset"],
+.popup input[type="button"],
+.popup input[type="reset"],
+.popup input[type="submit"] {
+    webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     //text-transform: capitalize;
     color: #9b9696;
