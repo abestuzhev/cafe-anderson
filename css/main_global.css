@@ -1286,7 +1286,8 @@ body {
 
 .c-ul-list {
   font-family: "PT Serif Caption";
-  margin-bottom: 1rem; }
+  margin-bottom: 2rem;
+  line-height: 1.6; }
 
 .c-ul-list li {
   list-style: disc inside;
@@ -1305,7 +1306,7 @@ body {
   font-family: "PT Serif Caption";
   list-style-type: none;
   counter-reset: item;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   line-height: 1.6; }
 
 .c-ol-list li {
