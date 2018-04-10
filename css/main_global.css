@@ -9074,6 +9074,7 @@ test popup
   width: 126rem;
   overflow: visible; }
   .popup-event .popup-box {
+    overflow: visible;
     padding: 2rem 2rem 2rem 9rem; }
 
 .popup-event .popup-close {
