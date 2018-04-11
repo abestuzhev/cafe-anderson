@@ -871,6 +871,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             color: #7cbd41;
         }
     }
+
+    .SelectBox{
+        padding: 1.4rem 1.6rem;
+        border-radius: .4rem;
+    }
+
+    .SumoSelect.open > .optWrapper {
+        top: 4.3rem;
+    }
 }
 
 .c-select {
