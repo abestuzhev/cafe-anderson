@@ -10930,6 +10930,8 @@ test popup
         background-color: #e4e6eb;
         box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
         margin-bottom: 5rem;
+        position: relative;
+        overflow: hidden;
     }
 
     &-description {
@@ -10977,15 +10979,15 @@ test popup
 
         &-fake {
             position: relative;
-            width: 37%;
+            width: 44%;
             height: 600px;
             z-index: 2;
             float: right;
             opacity: .5;
             //float: right;
-            border: 1px solid #baa511;
-            background-color: #fff067;
-            shape-outside: polygon(0 0, 0 200px, 200px 300px);
+            //border: 1px solid #baa511;
+            //background-color: #fff067;
+            shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
 
             div:nth-child(1) {
                 width: 450px;
@@ -11010,6 +11012,21 @@ test popup
             z-index: 1;
         }
 
+
+
+    }
+
+    .l-button {
+        position: relative;
+        z-index: 2;
+
+        .c-button {
+            margin-right: 3rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 
     &-order {
@@ -11041,6 +11058,14 @@ test popup
             padding: 1.2rem 2.2rem;
         }
     }
+
+    .symbol-rabbit-2 {
+        fill: #000;
+        position: absolute;
+        right: 3rem;
+        bottom: -2.5rem;
+    }
+
 
     .filter {
         margin-bottom: 2rem;

@@ -1037,6 +1037,24 @@ i.icon-chair {
   fill: #FBF6E7;
   stroke: #4B4B4B; }
 
+.symbol-holiday-decor-1 {
+  font-size: 2.3rem;
+  width: 1em;
+  height: 1em;
+  fill: #7f7d7c; }
+
+.symbol-holiday-decor-2 {
+  font-size: 2.3rem;
+  width: 1em;
+  height: 1.4em;
+  fill: #7f7d7c; }
+
+.symbol-rabbit-2 {
+  font-size: 8.1rem;
+  width: 1em;
+  height: 1.8em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -2141,6 +2159,67 @@ a.c-button:hover {
     opacity: .9; }
   .c-button--dark {
     background-color: #7e5847; }
+  .c-button__decor-1 {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "BebasNeue";
+    font-size: 2.5rem;
+    color: #231300;
+    padding: 12px 40px 12px 50px;
+    border-radius: .6rem;
+    background-color: #9acc4f;
+    border: 3px solid #98a967;
+    border-top: 3px solid #e4f2d1;
+    position: relative;
+    -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3); }
+    .c-button__decor-1:hover {
+      border: 3px solid #98a967;
+      border-top: 3px solid #e4f2d1;
+      color: #231300 !important;
+      background-color: #91c34f; }
+    .c-button__decor-1 .c-symbol {
+      position: absolute;
+      z-index: 3;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .c-button__decor-1 .symbol-holiday-decor-1 {
+      left: 1.3rem;
+      fill: #000;
+      font-size: 2.6rem; }
+    .c-button__decor-1 .symbol-holiday-decor-2 {
+      right: 1.3rem;
+      fill: #000; }
+  .c-button__decor-2 {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 25rem;
+    font-family: "BebasNeue";
+    font-size: 2.3rem;
+    color: #231300;
+    padding: 8px 16px;
+    border-radius: .6rem;
+    white-space: normal;
+    background-color: #fff;
+    text-align: center;
+    line-height: 1;
+    overflow: hidden;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1); }
+    .c-button__decor-2 span {
+      position: relative;
+      z-index: 2; }
+    .c-button__decor-2::after {
+      content: '';
+      background: #fdf7e8 url(../img/bg-header.png) repeat;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      opacity: .3; }
+    .c-button__decor-2:hover {
+      color: #231300 !important; }
 
 .c-obligatory-field {
   color: #b62922;
@@ -14006,7 +14085,9 @@ test popup
     background-color: #e4e6eb;
     -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    position: relative;
+    overflow: hidden; }
   .holiday-description {
     position: relative;
     overflow: hidden;
@@ -14036,15 +14117,13 @@ test popup
         line-height: 1.6; }
     .holiday-description-fake {
       position: relative;
-      width: 37%;
+      width: 44%;
       height: 600px;
       z-index: 2;
       float: right;
       opacity: .5;
-      border: 1px solid #baa511;
-      background-color: #fff067;
-      -webkit-shape-outside: polygon(0 0, 0 200px, 200px 300px);
-              shape-outside: polygon(0 0, 0 200px, 200px 300px); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
       .holiday-description-fake div:nth-child(1) {
         width: 450px;
         height: 200px; }
@@ -14056,6 +14135,13 @@ test popup
       right: 0;
       top: 0;
       z-index: 1; }
+  .holiday .l-button {
+    position: relative;
+    z-index: 2; }
+    .holiday .l-button .c-button {
+      margin-right: 3rem; }
+      .holiday .l-button .c-button:last-child {
+        margin-right: 0; }
   .holiday-order {
     padding: 2.5rem 14rem;
     position: relative;
@@ -14077,6 +14163,11 @@ test popup
       margin-bottom: 0; }
     .holiday-order .c-button {
       padding: 1.2rem 2.2rem; }
+  .holiday .symbol-rabbit-2 {
+    fill: #000;
+    position: absolute;
+    right: 3rem;
+    bottom: -2.5rem; }
   .holiday .filter {
     margin-bottom: 2rem; }
     .holiday .filter .l-button__center {
