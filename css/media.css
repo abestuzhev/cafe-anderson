@@ -1176,10 +1176,10 @@
     }
 
     .home-page {
-        padding-top: 19rem;
+        padding-top: 11rem !important;
         display: flex;
         flex-flow: column nowrap;
-
+        width: 100%;
     }
 
     .home-cafe {
