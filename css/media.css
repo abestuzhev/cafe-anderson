@@ -175,8 +175,11 @@
         font-size: 6rem;
     }
 
-    .holiday-description-fake {
+    .holiday-box--wedding .holiday-description-fake {
         width: 55%;
+    }
+    .holiday-box--tortzhestvo .holiday-description-fake {
+        width: 53%;
     }
 }
 

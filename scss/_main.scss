@@ -2822,6 +2822,12 @@ test popup
                 .cafe-info__phone-number {
                     display: none;
                 }
+
+                &:first-child {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
             }
 
             i[class*="icon"]:not(.icon-label-metro, .icon-metro-2),
@@ -2837,6 +2843,7 @@ test popup
 
                 .cafe-info__item-col {
                     margin-right: 1.6rem;
+                    position: static;
                 }
             }
 
@@ -10989,12 +10996,19 @@ test popup
     }
 
     &-assemble {
+        display: block;
         width: 10.9rem;
         height: 10.9rem;
         border-radius: 10.9rem;
         background-color: #bb2b7f;
+        text-align: center;
+        position: relative;
+        box-shadow:
+                inset 0px 8px 2px -5px rgba(255, 255, 255, 0.59),
+                inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2),
+                0px 2px 20px 0 rgba(0,0,0,0.36);
 
-        &:hover {
+    &:hover {
             color: #ffffff;
         }
 
@@ -11009,6 +11023,43 @@ test popup
             font-style: italic;
             text-align: center;
             color: #ffffff;
+            padding-top: 56%;
+            display: inline-block;
+            line-height: 1.2;
+        }
+
+        .symbol-holiday-decor-1 {
+            position: absolute;
+            left: 6px;
+            top: 33px;
+            fill: #f5b7db;
+        }
+        .symbol-holiday-decor-2 {
+            position: absolute;
+            right: 3px;
+            top: 30px;
+            fill: #f5b7db;
+        }
+
+        .symbol-holiday-cap,
+        .symbol-holiday-cake,
+        .symbol-holiday-saw {
+            fill: #fff;
+            position: absolute;
+        }
+        .symbol-holiday-cap {
+            top: 24px;
+            left: 27px;
+        }
+
+        .symbol-holiday-cake {
+            top: 20px;
+            right: 26px;
+        }
+
+        .symbol-holiday-saw {
+            top: 13px;
+            left: 36px;
         }
     }
 
@@ -11020,6 +11071,53 @@ test popup
         margin-bottom: 5rem;
         position: relative;
         overflow: hidden;
+    }
+
+    &-box--wedding {/*holiday-box--wedding*/
+        .holiday-description-fake {
+            position: relative;
+            width: 44%;
+            height: 600px;
+            z-index: 2;
+            float: right;
+            opacity: .5;
+            //float: right;
+            //border: 1px solid #baa511;
+            //background-color: #fff067;
+            shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
+        }
+    }
+
+    &-box--tortzhestvo {/*holiday-box--tortzhestvo*/
+        .holiday-description-fake{
+            height: 584px;
+        }
+
+        .holiday-description__bg {
+            bottom: 0;
+            right: 0;
+            top: auto;
+        }
+
+        .symbol-unicorn {
+            position: absolute;
+            bottom: -1.4rem;
+            right: -12rem;
+            fill: #000;
+        }
+    }
+
+    &-box--karapuznik {/*holiday-box--karapuznik*/
+        .holiday-description-fake {
+
+        }
+    }
+
+    .symbol-airplane {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        fill: #000;
     }
 
     &-description {
@@ -11071,26 +11169,6 @@ test popup
             height: 600px;
             z-index: 2;
             float: right;
-            opacity: .5;
-            //float: right;
-            //border: 1px solid #baa511;
-            //background-color: #fff067;
-            shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
-
-            div:nth-child(1) {
-                width: 450px;
-                height: 200px;
-            }
-            div:nth-child(2) {
-                width: 40%;
-                height: 150px;
-            }
-            div:nth-child(3) {
-            }
-            div:nth-child(4) {
-            }
-            div:nth-child(5) {
-            }
         }
 
         &__bg {
@@ -11142,9 +11220,20 @@ test popup
             margin-bottom: 0;
         }
 
+        .c-form__col--inline {
+            .c-form__item {
+                margin: 0 2rem 0 0;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
         .c-button {
             padding: 1.2rem 2.2rem;
         }
+
     }
 
     .symbol-rabbit-2 {
@@ -11173,6 +11262,10 @@ test popup
 
             }
         }
+    }
+
+    .filter-mix {
+        flex: 1;
     }
 
     .c-card-cafe__title span {

@@ -1055,6 +1055,54 @@ i.icon-chair {
   height: 1.8em;
   fill: #7f7d7c; }
 
+.symbol-holiday-cap {
+  font-size: 2.4rem;
+  width: 1em;
+  height: 1.4em;
+  fill: #7f7d7c; }
+
+.symbol-holiday-cake {
+  font-size: 2.9rem;
+  width: 1em;
+  height: 1.4em;
+  fill: #7f7d7c; }
+
+.symbol-holiday-saw {
+  font-size: 3.5rem;
+  width: 1em;
+  height: .5em;
+  fill: #7f7d7c; }
+
+.symbol-label-metro {
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  margin-right: 5px;
+  position: relative; }
+  .symbol-label-metro .symbol-metro {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    fill: #fff;
+    font-size: 1.2rem; }
+
+.symbol-unicorn {
+  font-size: 22.1rem;
+  width: 1em;
+  height: 1.2em;
+  fill: #7f7d7c; }
+
+.symbol-airplane {
+  font-size: 12.8rem;
+  width: 1em;
+  height: .8em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1891,6 +1939,20 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   width: 50%;
   padding: 0 1.1rem;
   margin-bottom: 1.5rem; }
+  .c-form__col--inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .c-form__info {
   font-size: 1.2rem;
@@ -2547,7 +2609,15 @@ a.c-button:hover {
   .c-card-cafe-vertical__body {
     padding: 1rem 1.5rem; }
   .c-card-cafe-vertical__item {
-    margin-bottom: .8rem; }
+    margin-bottom: .8rem;
+    padding-left: 3rem;
+    position: relative; }
+    .c-card-cafe-vertical__item span {
+      display: block; }
+    .c-card-cafe-vertical__item .c-symbol {
+      position: absolute;
+      top: 0;
+      left: 0; }
   .c-card-cafe-vertical__footer {
     padding: 1.2rem 1.5rem;
     position: relative; }
@@ -7777,6 +7847,10 @@ test popup
         display: inline-block; }
         .cafe-info__item-col .cafe-info__phone-number {
           display: none; }
+        .cafe-info__item-col:first-child {
+          position: absolute;
+          top: 0;
+          left: 0; }
       .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
       .cafe-info__item img {
         position: absolute;
@@ -7784,7 +7858,8 @@ test popup
         left: 0;
         margin-right: .9rem; }
       .cafe-info__item-tel .cafe-info__item-col {
-        margin-right: 1.6rem; }
+        margin-right: 1.6rem;
+        position: static; }
       .cafe-info__item .c-button {
         margin-top: .9rem; }
     .cafe-info-card {
@@ -14123,10 +14198,15 @@ test popup
         -ms-flex-align: start;
             align-items: flex-start; }
   .holiday-assemble {
+    display: block;
     width: 10.9rem;
     height: 10.9rem;
     border-radius: 10.9rem;
-    background-color: #bb2b7f; }
+    background-color: #bb2b7f;
+    text-align: center;
+    position: relative;
+    -webkit-box-shadow: inset 0px 8px 2px -5px rgba(255, 255, 255, 0.59), inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2), 0px 2px 20px 0 rgba(0, 0, 0, 0.36);
+            box-shadow: inset 0px 8px 2px -5px rgba(255, 255, 255, 0.59), inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2), 0px 2px 20px 0 rgba(0, 0, 0, 0.36); }
     .holiday-assemble:hover {
       color: #ffffff; }
     .holiday-assemble::after {
@@ -14137,7 +14217,34 @@ test popup
       font-family: "PT Serif Caption";
       font-style: italic;
       text-align: center;
-      color: #ffffff; }
+      color: #ffffff;
+      padding-top: 56%;
+      display: inline-block;
+      line-height: 1.2; }
+    .holiday-assemble .symbol-holiday-decor-1 {
+      position: absolute;
+      left: 6px;
+      top: 33px;
+      fill: #f5b7db; }
+    .holiday-assemble .symbol-holiday-decor-2 {
+      position: absolute;
+      right: 3px;
+      top: 30px;
+      fill: #f5b7db; }
+    .holiday-assemble .symbol-holiday-cap,
+    .holiday-assemble .symbol-holiday-cake,
+    .holiday-assemble .symbol-holiday-saw {
+      fill: #fff;
+      position: absolute; }
+    .holiday-assemble .symbol-holiday-cap {
+      top: 24px;
+      left: 27px; }
+    .holiday-assemble .symbol-holiday-cake {
+      top: 20px;
+      right: 26px; }
+    .holiday-assemble .symbol-holiday-saw {
+      top: 13px;
+      left: 36px; }
   .holiday-box {
     border: .2rem solid #cacaca;
     border-radius: 4px;
@@ -14147,6 +14254,37 @@ test popup
     margin-bottom: 5rem;
     position: relative;
     overflow: hidden; }
+  .holiday-box--wedding {
+    /*holiday-box--wedding*/ }
+    .holiday-box--wedding .holiday-description-fake {
+      position: relative;
+      width: 44%;
+      height: 600px;
+      z-index: 2;
+      float: right;
+      opacity: .5;
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+  .holiday-box--tortzhestvo {
+    /*holiday-box--tortzhestvo*/ }
+    .holiday-box--tortzhestvo .holiday-description-fake {
+      height: 584px; }
+    .holiday-box--tortzhestvo .holiday-description__bg {
+      bottom: 0;
+      right: 0;
+      top: auto; }
+    .holiday-box--tortzhestvo .symbol-unicorn {
+      position: absolute;
+      bottom: -1.4rem;
+      right: -12rem;
+      fill: #000; }
+  .holiday-box--karapuznik {
+    /*holiday-box--karapuznik*/ }
+  .holiday .symbol-airplane {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    fill: #000; }
   .holiday-description {
     position: relative;
     overflow: hidden;
@@ -14179,16 +14317,7 @@ test popup
       width: 44%;
       height: 600px;
       z-index: 2;
-      float: right;
-      opacity: .5;
-      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
-              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
-      .holiday-description-fake div:nth-child(1) {
-        width: 450px;
-        height: 200px; }
-      .holiday-description-fake div:nth-child(2) {
-        width: 40%;
-        height: 150px; }
+      float: right; }
     .holiday-description__bg {
       position: absolute;
       right: 0;
@@ -14220,6 +14349,10 @@ test popup
       margin-bottom: 2rem; }
     .holiday-order .c-form__col {
       margin-bottom: 0; }
+    .holiday-order .c-form__col--inline .c-form__item {
+      margin: 0 2rem 0 0; }
+      .holiday-order .c-form__col--inline .c-form__item:last-child {
+        margin-right: 0; }
     .holiday-order .c-button {
       padding: 1.2rem 2.2rem; }
   .holiday .symbol-rabbit-2 {
@@ -14235,6 +14368,10 @@ test popup
       width: 31%; }
     .holiday .filter .filter-item:nth-child(3) {
       width: 18%; }
+  .holiday .filter-mix {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
   .holiday .c-card-cafe__title span {
     display: inline;
     border-bottom: 1px dotted #9b806f; }

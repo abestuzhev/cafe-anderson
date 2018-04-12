@@ -810,6 +810,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         width: 50%;
         padding: 0 1.1rem;
         margin-bottom: 1.5rem;
+
+        &--inline {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
     
     &__info {
@@ -1706,7 +1713,17 @@ a.c-button {
 
     &__item {
         margin-bottom: .8rem;
+        padding-left: 3rem;
+        position: relative;
 
+        span {
+            display: block;
+        }
+        .c-symbol {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 
     &__footer {
