@@ -2501,6 +2501,9 @@ test popup
         &--child {
             background-color: #6eac45;
 
+            &:hover::before {
+                border-color:  #6eac45;
+            }
             &:hover {
                 background-color: #6eac45;
             }
@@ -2509,11 +2512,19 @@ test popup
             &.active::before {
                 border-color: #6eac45;
             }
+
+
+            &.active {
+                background-color: #6eac45;
+            }
         }
 
         &--family {
             background-color: #9acc4f;
 
+            &:hover::before {
+                border-color:  #9acc4f;
+            }
             &:hover {
                 background-color: #9acc4f;
             }
@@ -2522,11 +2533,18 @@ test popup
             &.active::before {
                 border-color:  #9acc4f;
             }
+
+            &.active {
+                background-color: #9acc4f;
+            }
         }
         
         &--adult {
             background-color: #c2dd99;
 
+            &:hover::before {
+                border-color:  #c2dd99;
+            }
             &:hover {
                 background-color: #c2dd99;
             }
@@ -2538,6 +2556,10 @@ test popup
             &::before,
             &.active::before {
                 border-color: #c2dd99;
+            }
+
+            &.active {
+                background-color: #c2dd99;
             }
 
         }
@@ -10995,6 +11017,10 @@ test popup
         align-items: flex-start;
     }
 
+    .c-symbol {
+        z-index: 2;
+    }
+
     &-assemble {
         display: block;
         width: 10.9rem;
@@ -11109,7 +11135,28 @@ test popup
 
     &-box--karapuznik {/*holiday-box--karapuznik*/
         .holiday-description-fake {
+            width: 38%;
+            height: 57rem;
+            shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
+        }
+    }
+    &-box--mameninyi {/*holiday-box--mameninyi*/
+        .holiday-description__text {
+            margin-bottom: 0;
+            min-height: 57rem;
+        }
 
+        .holiday-description-fake {
+            display: none;
+        }
+
+        .holiday-description {
+            padding-left: 53rem;
+        }
+
+        .holiday-description__bg {
+            right: auto;
+            left: 0;
         }
     }
 
@@ -11117,6 +11164,19 @@ test popup
         position: absolute;
         bottom: 1rem;
         right: 1rem;
+        fill: #000;
+    }
+    .symbol-rabbit-3 {
+        position: absolute;
+        bottom: -.5rem;
+        right: 3rem;
+        fill: #000;
+    }
+
+    .symbol-cat {
+        position: absolute;
+        bottom: 0;
+        left: 3.4rem;
         fill: #000;
     }
 

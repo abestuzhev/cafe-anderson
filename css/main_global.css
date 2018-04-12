@@ -1103,6 +1103,18 @@ i.icon-chair {
   height: .8em;
   fill: #7f7d7c; }
 
+.symbol-rabbit-3 {
+  font-size: 6.5rem;
+  width: 1em;
+  height: 2.1em;
+  fill: #7f7d7c; }
+
+.symbol-cat {
+  font-size: 7.1rem;
+  width: 1em;
+  height: 1.8em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -7615,24 +7627,36 @@ test popup
             border: none; }
     .filter-mix--child {
       background-color: #6eac45; }
+      .filter-mix--child:hover::before {
+        border-color: #6eac45; }
       .filter-mix--child:hover {
         background-color: #6eac45; }
       .filter-mix--child::before, .filter-mix--child.active::before {
         border-color: #6eac45; }
+      .filter-mix--child.active {
+        background-color: #6eac45; }
     .filter-mix--family {
       background-color: #9acc4f; }
+      .filter-mix--family:hover::before {
+        border-color: #9acc4f; }
       .filter-mix--family:hover {
         background-color: #9acc4f; }
       .filter-mix--family::before, .filter-mix--family.active::before {
         border-color: #9acc4f; }
+      .filter-mix--family.active {
+        background-color: #9acc4f; }
     .filter-mix--adult {
       background-color: #c2dd99; }
+      .filter-mix--adult:hover::before {
+        border-color: #c2dd99; }
       .filter-mix--adult:hover {
         background-color: #c2dd99; }
       .filter-mix--adult span {
         color: #739f31; }
       .filter-mix--adult::before, .filter-mix--adult.active::before {
         border-color: #c2dd99; }
+      .filter-mix--adult.active {
+        background-color: #c2dd99; }
 
 .cafe-list {
   font-family: "PT Serif Caption";
@@ -14197,6 +14221,8 @@ test popup
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
+  .holiday .c-symbol {
+    z-index: 2; }
   .holiday-assemble {
     display: block;
     width: 10.9rem;
@@ -14280,10 +14306,37 @@ test popup
       fill: #000; }
   .holiday-box--karapuznik {
     /*holiday-box--karapuznik*/ }
+    .holiday-box--karapuznik .holiday-description-fake {
+      width: 38%;
+      height: 57rem;
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+  .holiday-box--mameninyi {
+    /*holiday-box--mameninyi*/ }
+    .holiday-box--mameninyi .holiday-description__text {
+      margin-bottom: 0;
+      min-height: 57rem; }
+    .holiday-box--mameninyi .holiday-description-fake {
+      display: none; }
+    .holiday-box--mameninyi .holiday-description {
+      padding-left: 53rem; }
+    .holiday-box--mameninyi .holiday-description__bg {
+      right: auto;
+      left: 0; }
   .holiday .symbol-airplane {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    fill: #000; }
+  .holiday .symbol-rabbit-3 {
+    position: absolute;
+    bottom: -.5rem;
+    right: 3rem;
+    fill: #000; }
+  .holiday .symbol-cat {
+    position: absolute;
+    bottom: 0;
+    left: 3.4rem;
     fill: #000; }
   .holiday-description {
     position: relative;
