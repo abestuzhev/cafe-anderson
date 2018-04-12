@@ -7476,7 +7476,8 @@ test popup
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    font-family: "PT Serif Caption"; }
+    font-family: "PT Serif Caption";
+    margin-bottom: 2.3rem; }
     .filter-mix__item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -7494,12 +7495,12 @@ test popup
       padding: 1rem 1.5rem;
       background-color: #fff;
       border-radius: .4rem;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       line-height: 1;
       text-align: left;
       color: #9b9595;
       cursor: pointer;
-      margin-right: 2rem;
+      margin: 0 .9rem 1.4rem 0;
       background-color: #7cbd41; }
       .filter-mix__item .c-symbol {
         font-size: 2.4rem; }
@@ -7542,6 +7543,26 @@ test popup
           .filter-mix__item.active a::after, .filter-mix__item:hover a::after {
             content: '';
             border: none; }
+    .filter-mix--child {
+      background-color: #6eac45; }
+      .filter-mix--child:hover {
+        background-color: #6eac45; }
+      .filter-mix--child::before, .filter-mix--child.active::before {
+        border-color: #6eac45; }
+    .filter-mix--family {
+      background-color: #9acc4f; }
+      .filter-mix--family:hover {
+        background-color: #9acc4f; }
+      .filter-mix--family::before, .filter-mix--family.active::before {
+        border-color: #9acc4f; }
+    .filter-mix--adult {
+      background-color: #c2dd99; }
+      .filter-mix--adult:hover {
+        background-color: #c2dd99; }
+      .filter-mix--adult span {
+        color: #739f31; }
+      .filter-mix--adult::before, .filter-mix--adult.active::before {
+        border-color: #c2dd99; }
 
 .cafe-list {
   font-family: "PT Serif Caption";
@@ -8642,8 +8663,7 @@ test popup
           align-items: stretch;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-bottom: 4.1rem; }
+          justify-content: flex-start; }
 
 .catalog-body {
   display: -webkit-box;
@@ -9549,6 +9569,15 @@ test popup
 
 .events .tab-content {
   margin-bottom: 5rem; }
+
+.events .datepicker-layout {
+  width: 10.4rem; }
+
+.events .datepicker-layout.active-datepicker::after {
+  background-position: 0 0; }
+
+.events .filter .symbol-calendar-3 {
+  font-size: 1.3rem; }
 
 .popup-event-map {
   width: 61rem;
@@ -14079,6 +14108,36 @@ test popup
 /*holiday****************************************/
 .holiday {
   font-family: "PT Serif Caption"; }
+  .holiday-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .holiday-assemble {
+    width: 10.9rem;
+    height: 10.9rem;
+    border-radius: 10.9rem;
+    background-color: #bb2b7f; }
+    .holiday-assemble:hover {
+      color: #ffffff; }
+    .holiday-assemble::after {
+      content: '';
+      border: none; }
+    .holiday-assemble span {
+      font-size: 1.3rem;
+      font-family: "PT Serif Caption";
+      font-style: italic;
+      text-align: center;
+      color: #ffffff; }
   .holiday-box {
     border: .2rem solid #cacaca;
     border-radius: 4px;

@@ -2403,6 +2403,7 @@ test popup
         justify-content: flex-start;
         //margin-bottom: 4.1rem;
         font-family: $font_serif;
+        margin-bottom: 2.3rem;
 
         &__item {
             display: flex;
@@ -2412,12 +2413,12 @@ test popup
             padding: 1rem 1.5rem;
             background-color: #fff;
             border-radius: .4rem;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             line-height: 1;
             text-align: left;
             color: #9b9595;
             cursor: pointer;
-            margin-right: 2rem;
+            margin: 0 .9rem 1.4rem 0;
             background-color: #7cbd41;
 
             .c-symbol {
@@ -2495,6 +2496,50 @@ test popup
                     }
                 }
             }
+        }
+
+        &--child {
+            background-color: #6eac45;
+
+            &:hover {
+                background-color: #6eac45;
+            }
+
+            &::before,
+            &.active::before {
+                border-color: #6eac45;
+            }
+        }
+
+        &--family {
+            background-color: #9acc4f;
+
+            &:hover {
+                background-color: #9acc4f;
+            }
+
+            &::before,
+            &.active::before {
+                border-color:  #9acc4f;
+            }
+        }
+        
+        &--adult {
+            background-color: #c2dd99;
+
+            &:hover {
+                background-color: #c2dd99;
+            }
+
+            span {
+                color: #739f31;
+            }
+
+            &::before,
+            &.active::before {
+                border-color: #c2dd99;
+            }
+
         }
     }
 }
@@ -3946,7 +3991,7 @@ test popup
         flex-flow: row wrap;
         align-items: stretch;
         justify-content: flex-start;
-        margin-bottom: 4.1rem;
+        //margin-bottom: 2.7rem;
     }
 
     &-body {
@@ -5089,6 +5134,18 @@ test popup
 
     .tab-content {
         margin-bottom: 5rem;
+    }
+
+    .datepicker-layout {
+        width: 10.4rem;
+    }
+
+    .datepicker-layout.active-datepicker::after {
+        background-position: 0 0;
+    }
+
+    .filter .symbol-calendar-3 {
+        font-size: 1.3rem;
     }
 }
 
@@ -10923,6 +10980,37 @@ test popup
 /*holiday****************************************/
 .holiday {
     font-family: $font_serif;
+
+    &-nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &-assemble {
+        width: 10.9rem;
+        height: 10.9rem;
+        border-radius: 10.9rem;
+        background-color: #bb2b7f;
+
+        &:hover {
+            color: #ffffff;
+        }
+
+        &::after {
+            content: '';
+            border: none;
+        }
+
+        span {
+            font-size: 1.3rem;
+            font-family:$font_serif;
+            font-style: italic;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
 
     &-box {
         border: .2rem solid #cacaca;
