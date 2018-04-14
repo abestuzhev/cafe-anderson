@@ -1365,7 +1365,8 @@ body {
 .c-ul-list {
   font-family: "PT Serif Caption";
   margin-bottom: 2rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #555451; }
 
 .c-ul-list li {
   list-style: disc inside;
@@ -12463,263 +12464,188 @@ test popup
 
 .franchise {
   font-size: 1.5rem;
-  color: #94938f; }
-  .franchise p {
-    font-size: 1.5rem;
-    line-height: 1.3;
-    margin-bottom: 1.5rem; }
-  .franchise__title {
-    font-family: "BebasNeue";
-    font-size: 3.6rem;
-    color: #7cbd41;
-    margin-bottom: 2rem;
-    font-weight: 700;
+  color: #94938f;
+  font-family: "PT Serif Caption"; }
+  .franchise-title {
     text-align: center;
-    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
-    padding: 2.5rem 16% 0;
-    z-index: 2;
-    position: relative; }
-    .franchise__title span {
-      display: inline-block;
-      padding: .6rem 1.9rem;
-      background-color: #fff; }
-  .franchise-text {
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #a39d9d; }
-    .franchise-text__title {
-      font-size: 2.4rem;
-      margin-bottom: 1rem; }
-    .franchise-text img {
-      float: left;
-      margin-right: 2.3rem; }
-  .franchise-features {
+    background-color: #fff;
+    color: #b81f79;
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem; }
+  .franchise-box {
+    margin-bottom: 6rem; }
+  .franchise-banner {
+    padding: 6rem 0;
+    background: url(../img/franchise/franchise-banner.jpg) 0 0 no-repeat;
+    background-size: cover;
+    min-height: 37rem;
     margin-bottom: 1rem; }
-    .franchise-features__img {
-      height: 11rem;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-  .franchise .cafe-slider {
-    margin-bottom: 2rem; }
-  .franchise-press__link {
-    font-size: 1.2rem;
-    color: #9b9595;
-    position: relative;
-    margin-left: 2.1rem; }
-    .franchise-press__link::before {
-      content: '';
-      position: absolute;
-      left: -2rem;
-      top: 0;
-      width: 1.8rem;
-      height: 1.5rem;
-      background: url(../img/icons/icon-link.svg) 0 0 no-repeat; }
-    .franchise-press__link::after {
-      border-color: #9b9595; }
-  .franchise-press-list {
-    font-size: 1.3rem;
-    margin-bottom: 7rem; }
-    .franchise-press-list__item {
-      margin-bottom: .8rem; }
-      .franchise-press-list__item a {
-        font-size: 1.2rem;
-        color: #9b9595;
-        position: relative; }
-  .franchise-anderson {
-    margin-bottom: 7rem; }
-    .franchise-anderson__list {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      margin-left: -3rem;
-      margin-right: -3rem; }
-    .franchise-anderson__item {
-      width: 33.3333%;
-      padding: 0 3rem; }
-    .franchise-anderson__num {
-      margin-bottom: 1.8rem;
-      color: #1e1e1e;
-      font-size: 1.2rem;
-      text-align: center; }
-    .franchise-anderson__text {
-      font-size: 1.6rem;
-      color: #8c8787;
-      line-height: 1.4;
-      text-align: center; }
-    .franchise-anderson__scene {
+    .franchise-banner__item {
+      color: #1d1d1d;
+      font-size: 1.8rem;
+      line-height: 1;
       text-align: center;
-      margin-bottom: 2rem; }
-      .franchise-anderson__scene img {
-        width: 100%;
-        height: auto;
-        max-width: 91rem; }
-  .franchise-statistics {
-    margin-bottom: 7rem; }
-    .franchise-statistics__item {
-      position: relative; }
-    .franchise-statistics__grid {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      position: relative; }
-      .franchise-statistics__grid::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        height: 100%;
-        width: .1rem;
-        background-color: #7CBD41; }
-    .franchise-statistics__left {
-      width: 50%;
-      padding-right: 1rem; }
-    .franchise-statistics__right {
-      padding-left: 1rem;
-      width: 50%; }
-    .franchise-statistics__left .franchise-statistics__item {
-      padding-right: 5.6rem;
-      margin: 3rem 0; }
-    .franchise-statistics__right .franchise-statistics__item {
-      padding-left: 5.6rem;
-      margin: 3rem 0; }
-    .franchise-statistics__left .franchise-statistics__item::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: 0;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      border: .8rem solid transparent;
-      border-right: .8rem solid #7CBD41; }
-    .franchise-statistics__right .franchise-statistics__item::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      border: .8rem solid transparent;
-      border-left: .8rem solid #7CBD41; }
-  .franchise-composition {
-    margin-bottom: 7rem; }
-    .franchise-composition__list {
-      counter-reset: li;
-      /* Инициализируем счетчик */
-      padding: 0;
-      /* Удаляем  установленное по умолчанию левое поле*/
-      list-style: none;
-      /* Отменяем нумерацию установленную по умолчанию */
-      margin-bottom: 2.4rem; }
-    .franchise-composition__item {
-      font-size: 2.4rem;
-      font-family: "BebasNeue";
-      position: relative;
-      margin-left: 3.2rem;
-      padding: 1.1rem 0;
-      border-bottom: 1px dashed #555451; }
-      .franchise-composition__item:before {
-        content: counter(li);
-        counter-increment: li;
-        position: absolute;
-        top: 1.5rem;
-        left: -3.8rem;
+      text-transform: uppercase;
+      padding: 1.6rem 0; }
+      .franchise-banner__item span {
         font-weight: bold;
-        text-align: center;
-        font-size: 1.8rem;
-        min-width: 2rem;
-        font-family: "BebasNeue"; }
-      .franchise-composition__item::after {
-        content: '';
-        position: absolute;
-        top: 1rem;
-        left: -44px;
-        width: 3.2rem;
-        height: 3.2rem;
-        border-radius: 4rem;
-        border: .3rem solid #fbb951; }
-    .franchise-composition__sublist {
-      margin-right: 1rem;
-      margin-top: .8rem; }
-    .franchise-composition__subitem {
-      font-family: "PT Serif Caption";
+        font-size: 30px; }
+  .franchise-direction-card__img {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    margin-bottom: 1.2rem; }
+    .franchise-direction-card__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .franchise-direction-card__title {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #553023; }
+  .franchise-about-card__img {
+    width: 100%;
+    height: 26rem;
+    overflow: hidden; }
+    .franchise-about-card__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .franchise-about-card__body {
+    padding: 1.7rem 0; }
+    .franchise-about-card__body p {
       font-size: 1.5rem;
-      color: #8c8787;
+      line-height: 1.5; }
+      .franchise-about-card__body p span {
+        color: #b81f79;
+        text-transform: uppercase; }
+    .franchise-about-card__body a {
+      color: #96928a;
+      font-size: 1.2rem;
+      text-decoration: underline; }
+      .franchise-about-card__body a::after {
+        content: '';
+        border: none; }
+  .franchise-advantages .franchise-content {
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat; }
+  .franchise-advantages-list__item {
+    margin-bottom: .5rem; }
+    .franchise-advantages-list__item:last-child {
+      margin-bottom: 0; }
+  .franchise-advantages-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .franchise-advantages-card__img {
+      width: 32rem;
+      height: 22.5rem;
+      overflow: hidden; }
+      .franchise-advantages-card__img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .franchise-advantages-card__body {
+      padding: 0 18rem 0 2.1rem;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      .franchise-advantages-card__body p {
+        font-size: 1.5rem;
+        line-height: 1.2; }
+    .franchise-advantages-card__title {
+      font-size: 1.7rem;
+      line-height: 1.2;
+      color: #553023;
       margin-bottom: .8rem; }
-      .franchise-composition__subitem:last-child {
-        margin-bottom: 0; }
-  .franchise-reasons {
-    margin-bottom: 7rem;
-    width: 70%; }
-    .franchise-reasons__title {
-      font-size: 3.6rem;
-      color: #7cbd41;
-      margin-bottom: 1rem;
-      font-family: "BebasNeue";
-      font-weight: 700;
-      line-height: 1; }
-    .franchise-reasons__text {
-      font-size: 1.6rem;
-      line-height: 1.4;
-      margin-left: 2.2rem;
-      margin-bottom: 1.4rem; }
-  .franchise-about {
-    margin-bottom: 7rem; }
-    .franchise-about__item {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      margin-bottom: 1.4rem; }
-      .franchise-about__item .icon-uneven-circle {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 7rem;
-                flex: 0 1 7rem;
-        margin-right: 1rem; }
-    .franchise-about__name {
-      font-size: 1.4rem; }
-      .franchise-about__name .franchise-press__link {
-        font-size: 1.4rem; }
-    .franchise-about__text {
-      font-style: italic;
-      color: #272727; }
+  .franchise-conditions-list {
+    font-size: 0; }
+    .franchise-conditions-list__item {
+      width: 300px;
+      display: inline-block;
+      margin: 4rem 0 4rem; }
+  .franchise-conditions-card {
+    position: relative;
+    border-radius: 30rem;
+    border: 5px solid #91c346;
+    width: 18rem;
+    height: 18rem; }
+    .franchise-conditions-card__icon {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 66px;
+      border-radius: 70px;
+      height: 66px;
+      background-color: #ccc; }
+    .franchise-conditions-card__body {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      padding: 2.2rem;
+      width: 200px;
+      color: #555451;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      background-color: #fff; }
+  .franchise-package__title {
+    font-size: 1.7rem;
+    color: #553023;
+    line-height: 1.2;
+    margin-bottom: 1.4rem; }
+  .franchise-package .c-ul-list {
+    margin-left: 5rem; }
+  .franchise-package .c-ul-list li {
+    list-style: disc;
+    line-height: 1.3;
+    margin-bottom: .8rem;
+    padding-left: 0; }
+  .franchise-review-card {
+    padding: 20px 50px 20px 30px;
+    border-radius: .4rem;
+    background-color: #91c346;
+    color: #252525;
+    font-family: "PT Serif Caption"; }
+    .franchise-review-card__header {
+      padding-left: 2.4rem;
+      margin-bottom: 2.4rem; }
+    .franchise-review-card__who, .franchise-review-card__link {
+      font-size: 1.2rem;
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis; }
+    .franchise-review-card__link {
+      color: #252525;
+      text-decoration: underline; }
+      .franchise-review-card__link:hover {
+        color: #252525;
+        text-decoration: none; }
+      .franchise-review-card__link::after {
+        content: '';
+        border: none; }
+    .franchise-review-card__body {
+      color: #252525;
+      font-size: 1.5rem;
+      line-height: 1.5; }
+      .franchise-review-card__body p {
+        color: #252525; }
   .franchise-contact {
     position: relative; }
     .franchise-contact__form {
@@ -14433,3 +14359,45 @@ test popup
   .holiday .SumoSelect,
   .holiday .SumoSelect > .CaptionCont {
     width: 100%; }
+
+/*dispatch**************************************/
+.dispatch__item {
+  padding: 30px 0 15px;
+  position: relative; }
+  .dispatch__item input[type="text"] {
+    width: 34rem; }
+  .dispatch__item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .4rem;
+    background: url(../img/pattern-round.png) 0 0 repeat-x; }
+  .dispatch__item:first-child::after, .dispatch__item:last-child::after {
+    content: '';
+    display: none; }
+  .dispatch__item .c-button {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-transform: none; }
+
+.dispatch-list {
+  margin-left: 2.3rem; }
+  .dispatch-list__title {
+    font-size: 1.4rem;
+    color: #555451;
+    margin-bottom: 1.4rem; }
+  .dispatch-list__item {
+    margin-bottom: 1.6rem; }
+    .dispatch-list__item .c-checkbox {
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #96928a;
+      padding-left: 3.2rem; }
+    .dispatch-list__item .c-checkbox::before {
+      width: 2.3rem;
+      height: 2.3rem; }
+    .dispatch-list__item input[type="checkbox"]:checked + .c-checkbox::after {
+      top: .5rem;
+      left: .8rem; }
