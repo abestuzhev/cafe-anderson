@@ -8916,8 +8916,96 @@ test popup
 
     &-conditions {
 
+        &-calc {
+            padding: 3rem 2rem;
+            color: #2e2e2e;
+            background-color: #91c346;
+            border-radius: .4rem;
+            margin-bottom: 4rem;
+            overflow: hidden;
+            position: relative;
+
+            &__note {
+                display: block;
+                border-top: 1px solid #000;
+                padding-top: 4px;
+                font-size: 1.2rem;
+                margin-top: 1.4rem;
+            }
+
+            &__item {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 3.4rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(2) {
+                    .franchise-conditions-calc__desc span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            &__title {
+                margin-right: 1.8rem;
+                width: 50%;
+                text-align: right;
+            }
+
+            &__desc {
+                width: 50%;
+                padding-left: 2.4rem;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    font-size: 4rem;
+                    position: absolute;
+                    width: .8rem;
+                    height: 4.3rem;
+                    background: url(../img/icons/icon-bracket.png) 0 0 no-repeat;
+                    top: 0;
+                    left: 0;
+                }
+                span {
+                    font-size: 1.5rem;
+                    display: block;
+                }
+
+                b {
+
+                }
+            }
+
+            &__bg {
+                position: absolute;
+                bottom: -30px;
+                left: 67px;
+            }
+
+            &__elem-1 {
+                position: absolute;
+                top: 24px;
+                right: 19px;
+            }
+
+            .symbol-holiday-decor-2 {
+                fill: #000;
+                font-size: 4rem;
+                position: absolute;
+                top: 10px;
+                left: 30px;
+            }
+        }
+
         &-list {
             font-size: 0;
+            margin-bottom: 4rem;
 
             &__item {
                 width: 300px;
@@ -8957,6 +9045,32 @@ test popup
                 background-color: #fff;
             }
         }
+
+        &-table {
+            background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+            margin-bottom: 4rem;
+
+            &__line {
+                border-bottom: 1px dotted #9b9595;
+                padding: 1.5rem 2rem;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__col {
+                &:nth-child(1) {
+                    flex: 1 0 50%;
+                }
+                &:nth-child(2) {
+                    flex: 1 0 35%;
+                }
+                &:nth-child(3) {
+                    flex: 1 0 15%;
+                }
+            }
+        }
     }
 
     &-conditions-region {
@@ -8970,17 +9084,6 @@ test popup
             color: #553023;
             line-height: 1.2;
             margin-bottom: 1.4rem;
-        }
-
-        .c-ul-list {
-            margin-left: 5rem;
-
-        }
-        .c-ul-list li {
-            list-style: disc;
-            line-height: 1.3;
-            margin-bottom: .8rem;
-            padding-left: 0;
         }
     }
 
@@ -9038,7 +9141,7 @@ test popup
         position: relative;
 
         &__form {
-            width: 80%;
+            width: 57%;
             z-index: 2
         }
 
@@ -9056,9 +9159,34 @@ test popup
             bottom: 0;
             z-index: 1;
         }
+
+        .c-form__grid--left {
+            .c-form__item {
+                &:first-child {
+                    width: 37%;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
     }
 
+
+    .c-ul-list {
+        margin-left: 5rem;
+
+    }
+    .c-ul-list li {
+        list-style: disc;
+        line-height: 1.3;
+        margin-bottom: .8rem;
+        padding-left: 0;
+    }
 }
+
 
 .big-product-img {
     width: 100%;

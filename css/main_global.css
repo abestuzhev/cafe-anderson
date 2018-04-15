@@ -12571,8 +12571,76 @@ test popup
       line-height: 1.2;
       color: #553023;
       margin-bottom: .8rem; }
+  .franchise-conditions-calc {
+    padding: 3rem 2rem;
+    color: #2e2e2e;
+    background-color: #91c346;
+    border-radius: .4rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    position: relative; }
+    .franchise-conditions-calc__note {
+      display: block;
+      border-top: 1px solid #000;
+      padding-top: 4px;
+      font-size: 1.2rem;
+      margin-top: 1.4rem; }
+    .franchise-conditions-calc__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 3.4rem; }
+      .franchise-conditions-calc__item:last-child {
+        margin-bottom: 0; }
+      .franchise-conditions-calc__item:nth-child(2) .franchise-conditions-calc__desc span {
+        font-size: 1.2rem; }
+    .franchise-conditions-calc__title {
+      margin-right: 1.8rem;
+      width: 50%;
+      text-align: right; }
+    .franchise-conditions-calc__desc {
+      width: 50%;
+      padding-left: 2.4rem;
+      position: relative; }
+      .franchise-conditions-calc__desc::after {
+        content: '';
+        font-size: 4rem;
+        position: absolute;
+        width: .8rem;
+        height: 4.3rem;
+        background: url(../img/icons/icon-bracket.png) 0 0 no-repeat;
+        top: 0;
+        left: 0; }
+      .franchise-conditions-calc__desc span {
+        font-size: 1.5rem;
+        display: block; }
+    .franchise-conditions-calc__bg {
+      position: absolute;
+      bottom: -30px;
+      left: 67px; }
+    .franchise-conditions-calc__elem-1 {
+      position: absolute;
+      top: 24px;
+      right: 19px; }
+    .franchise-conditions-calc .symbol-holiday-decor-2 {
+      fill: #000;
+      font-size: 4rem;
+      position: absolute;
+      top: 10px;
+      left: 30px; }
   .franchise-conditions-list {
-    font-size: 0; }
+    font-size: 0;
+    margin-bottom: 4rem; }
     .franchise-conditions-list__item {
       width: 300px;
       display: inline-block;
@@ -12605,18 +12673,42 @@ test popup
       font-size: 1.5rem;
       line-height: 1.2;
       background-color: #fff; }
+  .franchise-conditions-table {
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    margin-bottom: 4rem; }
+    .franchise-conditions-table__line {
+      border-bottom: 1px dotted #9b9595;
+      padding: 1.5rem 2rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .franchise-conditions-table__col:nth-child(1) {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 50%;
+              flex: 1 0 50%; }
+    .franchise-conditions-table__col:nth-child(2) {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 35%;
+              flex: 1 0 35%; }
+    .franchise-conditions-table__col:nth-child(3) {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 15%;
+              flex: 1 0 15%; }
   .franchise-package__title {
     font-size: 1.7rem;
     color: #553023;
     line-height: 1.2;
     margin-bottom: 1.4rem; }
-  .franchise-package .c-ul-list {
-    margin-left: 5rem; }
-  .franchise-package .c-ul-list li {
-    list-style: disc;
-    line-height: 1.3;
-    margin-bottom: .8rem;
-    padding-left: 0; }
   .franchise-review-card {
     padding: 20px 50px 20px 30px;
     border-radius: .4rem;
@@ -12649,7 +12741,7 @@ test popup
   .franchise-contact {
     position: relative; }
     .franchise-contact__form {
-      width: 80%;
+      width: 57%;
       z-index: 2; }
     .franchise-contact .c-input--small {
       width: 22rem; }
@@ -12658,6 +12750,17 @@ test popup
       right: 0;
       bottom: 0;
       z-index: 1; }
+    .franchise-contact .c-form__grid--left .c-form__item:first-child {
+      width: 37%; }
+    .franchise-contact .c-form__grid--left .c-form__item:last-child {
+      margin-right: 0; }
+  .franchise .c-ul-list {
+    margin-left: 5rem; }
+  .franchise .c-ul-list li {
+    list-style: disc;
+    line-height: 1.3;
+    margin-bottom: .8rem;
+    padding-left: 0; }
 
 .big-product-img {
   width: 100%; }
