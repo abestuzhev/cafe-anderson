@@ -1916,6 +1916,9 @@ a.c-button {
             color: #553023;
             margin-right: 1rem;
             border-bottom: none !important;
+            display: inline-block;
+            min-width: 9.2rem;
+            //margin-right: 0 !important;
         }
         
         &__more {

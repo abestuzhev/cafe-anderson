@@ -2788,7 +2788,9 @@ a.c-button:hover {
     .c-card-event-timelist__date {
       color: #553023;
       margin-right: 1rem;
-      border-bottom: none !important; }
+      border-bottom: none !important;
+      display: inline-block;
+      min-width: 9.2rem; }
     .c-card-event-timelist__more {
       color: #9b9595;
       font-style: italic;
