@@ -4705,3 +4705,18 @@
 /*margin: 0 auto !important;*/
 /*}*/
 /*}*/
+
+@media print {
+    .franchise-conditions-table {
+        display: table;
+    }
+
+    .franchise-conditions-table__line {
+        display: table-row;
+    }
+
+    .franchise-conditions-table__col {
+        display: table-cell;
+        border: 1px solid #ccc;
+    }
+}
