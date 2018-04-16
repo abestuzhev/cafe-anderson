@@ -174,8 +174,8 @@ $(document).ready(function ($) {
 
     function printData()
     {
-        var divToPrint=document.getElementById("printTable");
-        newWin= window.open("");
+        var divToPrint = document.getElementById("franchisePrint");
+        var newWin= window.open("");
         newWin.document.write(divToPrint.outerHTML);
         newWin.print();
         newWin.close();
@@ -183,7 +183,7 @@ $(document).ready(function ($) {
 
     $('.franchise-print').on('click',function(){
         printData();
-    })
+    });
 
     if($('input').hasClass('datepicker-custom') || $('div').hasClass('datepicker-custom')){
         $('.datepicker-custom').datepicker({
