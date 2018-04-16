@@ -164,6 +164,26 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    //франшиза
+    $('.franchise-title-layout').on('click', function(){
+        var self = $(this);
+        self.siblings('.franchise-content').slideToggle(100);
+        self.find('.franchise-print').toggle();
+    });
+
+
+    function printData()
+    {
+        var divToPrint=document.getElementById("printTable");
+        newWin= window.open("");
+        newWin.document.write(divToPrint.outerHTML);
+        newWin.print();
+        newWin.close();
+    }
+
+    $('.franchise-print').on('click',function(){
+        printData();
+    })
 
     if($('input').hasClass('datepicker-custom') || $('div').hasClass('datepicker-custom')){
         $('.datepicker-custom').datepicker({
