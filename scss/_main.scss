@@ -11748,13 +11748,14 @@ test popup
             font-size: 1.4rem;
             color: $black;
             margin-bottom: 1.4rem;
+
+
         }
 
+        &__title,
         &__item {
-            margin-bottom: 1.6rem;
             .c-checkbox {
-                font-size: 1.4rem;
-                font-style: italic;
+                font-size: 1.6rem;
                 color: #96928a;
                 padding-left: 3.2rem;
             }
@@ -11768,6 +11769,10 @@ test popup
                 top: .5rem;
                 left: .8rem;
             }
+        }
+
+        &__item {
+            margin-bottom: 1.6rem;
         }
     }
 }

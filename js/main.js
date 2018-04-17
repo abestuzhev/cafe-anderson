@@ -164,6 +164,59 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    //управление рассылкой
+    $('.dispatch-list__title input').on('change', function(){
+        var self = $(this);
+        if(self.is( ":checked" )){
+            self.parents('.dispatch-list__title')
+                .siblings('.dispatch-list')
+                .find('input[type="checkbox"]')
+                .prop( "checked", true );
+        }else {
+            self.parents('.dispatch-list__title')
+                .siblings('.dispatch-list')
+                .find('input[type="checkbox"]')
+                .prop( "checked", false );
+        }
+    });
+
+    var lenEvent = $('.dispatch-list__item input[name*="dispatch-event"]').length;
+    console.log('колдичество ' + lenEvent);
+
+
+
+    function changeDispatchCheckbox(elem){
+        var count;
+
+        $('' + elem + ' input').each(function(index){
+            count = index+1;
+        });
+        console.log('количество each ' + elem + ': ' + count);
+
+        $('' + elem + ' input').on('change', function(){
+            var self = $(this);
+            if(!self.is( ":checked" )){
+                self.parents('.dispatch-list')
+                    .siblings('.dispatch-list__title')
+                    .find('input[type="checkbox"]')
+                    .prop( "checked", false );
+            }
+
+            if($('' + elem + ' input[type=checkbox]:checked').length == count){
+                self.parents('.dispatch-list')
+                    .siblings('.dispatch-list__title')
+                    .find('input[type="checkbox"]')
+                    .prop( "checked", true );
+            }
+        });
+    }
+
+    changeDispatchCheckbox('.js-dispatch-news');
+    changeDispatchCheckbox('.js-dispatch-event');
+
+
+
+
     //франшиза
     $('.franchise-title-layout').on('click', function(){
         var self = $(this);

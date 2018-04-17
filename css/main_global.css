@@ -14727,16 +14727,15 @@ test popup
     font-size: 1.4rem;
     color: #555451;
     margin-bottom: 1.4rem; }
+  .dispatch-list__title .c-checkbox, .dispatch-list__item .c-checkbox {
+    font-size: 1.6rem;
+    color: #96928a;
+    padding-left: 3.2rem; }
+  .dispatch-list__title .c-checkbox::before, .dispatch-list__item .c-checkbox::before {
+    width: 2.3rem;
+    height: 2.3rem; }
+  .dispatch-list__title input[type="checkbox"]:checked + .c-checkbox::after, .dispatch-list__item input[type="checkbox"]:checked + .c-checkbox::after {
+    top: .5rem;
+    left: .8rem; }
   .dispatch-list__item {
     margin-bottom: 1.6rem; }
-    .dispatch-list__item .c-checkbox {
-      font-size: 1.4rem;
-      font-style: italic;
-      color: #96928a;
-      padding-left: 3.2rem; }
-    .dispatch-list__item .c-checkbox::before {
-      width: 2.3rem;
-      height: 2.3rem; }
-    .dispatch-list__item input[type="checkbox"]:checked + .c-checkbox::after {
-      top: .5rem;
-      left: .8rem; }

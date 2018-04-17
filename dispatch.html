@@ -2152,8 +2152,11 @@
                     </div>
                    <div class="dispatch__item">
     
-                       <h3 class="dispatch-list__title">Новости</h3>
-                       <ul class="dispatch-list">
+                       <div class="dispatch-list__title">
+                           <input type="checkbox" name="dispatch-news" id="dispatch-news">
+                           <label class="c-checkbox" for="dispatch-news">Новости</label>
+                       </div>
+                       <ul class="dispatch-list js-dispatch-news">
                            <li class="dispatch-list__item">
                                <input type="checkbox" name="dispatch-news-all" id="dispatch-news-all">
                                <label class="c-checkbox" for="dispatch-news-all">Общие новости</label>
@@ -2166,8 +2169,11 @@
                    </div>
                     <div class="dispatch__item">
         
-                        <h3 class="dispatch-list__title">События</h3>
-                        <ul class="dispatch-list">
+                        <div class="dispatch-list__title">
+                            <input type="checkbox" name="dispatch-event" id="dispatch-event">
+                            <label class="c-checkbox" for="dispatch-event">События</label>
+                        </div>
+                        <ul class="dispatch-list js-dispatch-event" >
                             <li class="dispatch-list__item">
                                 <input type="checkbox" name="dispatch-event-sale" id="dispatch-event-sale">
                                 <label class="c-checkbox" for="dispatch-event-sale">Акции</label>
@@ -2177,8 +2183,8 @@
                                 <label class="c-checkbox" for="dispatch-event-measure">Мероприятия</label>
                             </li>
                             <li class="dispatch-list__item">
-                                <input type="checkbox" name="dispatch-event-previw" id="dispatch-event-previw">
-                                <label class="c-checkbox" for="dispatch-event-previw">Анонсы событий</label>
+                                <input type="checkbox" name="dispatch-event-preview" id="dispatch-event-preview">
+                                <label class="c-checkbox" for="dispatch-event-preview">Анонсы событий</label>
                             </li>
                         </ul>
                     </div>
