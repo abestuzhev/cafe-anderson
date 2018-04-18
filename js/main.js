@@ -1549,6 +1549,7 @@ $(document).ready(function ($) {
         });
     }
     ShowMobileBtnFilter('.filter-mobile-btn', '.filter');
+    ShowMobileBtnFilter('.filter-mobile-btn', '.reviews-form');
     ShowMobileBtnFilter('.filter-hold-mobile-btn', '.filter-hold');
 
 
