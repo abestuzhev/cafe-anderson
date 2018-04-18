@@ -1629,6 +1629,7 @@ $(document).ready(function ($) {
         $('.header-mobile__menu').toggleClass('icon-menu__transform');
         $('.header-mobile__dropdown').toggleClass('popup-show');
         $('html').removeClass('overflow');
+        $('.c-reviews__item').removeClass('is-hide');
 	});
 
 
