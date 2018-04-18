@@ -1557,7 +1557,7 @@ $(document).ready(function ($) {
     $('.header-mobile__list .icon-dropdown').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('dropdown-show');
-        $('.header-mobile__sublist').slideToggle(200);
+        $(this).siblings('.header-mobile__sublist').slideToggle(200);
         $(this).parents('.header-mobile__item').toggleClass('active');
     });
 
