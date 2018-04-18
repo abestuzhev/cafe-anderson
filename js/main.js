@@ -1614,6 +1614,8 @@ $(document).ready(function ($) {
 		$('.header-mobile__dropdown').toggleClass('popup-show');
 		// $('.header').toggleClass('header-top__hide');
         $('html').toggleClass('overflow');
+        $('.c-reviews__item').toggleClass('is-hide');
+
 
         if($('.header').hasClass('sticky')){
             $('.header-mobile__dropdown').addClass('menu-sticky');
