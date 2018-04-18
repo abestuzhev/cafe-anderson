@@ -1692,7 +1692,9 @@ $(document).ready(function ($) {
     });
 
     /*кастомный селект*/
-    $('.c-select').SumoSelect();
+    $('.c-select').SumoSelect( {
+        forceCustomRendering: false
+    });
 
     function showNegative(clickElem){
         $(clickElem).on('click', function(){
