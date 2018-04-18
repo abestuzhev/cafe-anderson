@@ -8526,6 +8526,14 @@ test popup
 /*Отзывы (reviews)----------------------------------------------------*/
 .reviews {
   font-family: "PT Serif Caption"; }
+  .reviews select {
+    width: 100%;
+    padding: 1.4rem 1.6rem;
+    color: #555451;
+    font-family: "PT Serif Caption";
+    background-color: #fff; }
+  .reviews .reviews-form__type select {
+    padding: 1.4rem 1.6rem 1.4rem 5rem; }
   .reviews .filter-mobile-btn i {
     margin-right: 1rem; }
   .reviews__item {
