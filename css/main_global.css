@@ -14762,10 +14762,10 @@ test popup
     position: relative;
     top: -6px; }
   .panel .c-grid {
-    margin-left: -.5rem;
-    margin-right: -.5rem; }
+    margin-left: -.7rem;
+    margin-right: -.7rem; }
   .panel .c-col {
-    padding: .5rem; }
+    padding: .7rem; }
   .panel .c-grid-start {
     margin-left: -1.4rem;
     margin-right: -1.4rem; }
@@ -14796,3 +14796,20 @@ test popup
   .panel-map-route {
     height: 22rem;
     background-color: #eee; }
+  .panel-mode__item {
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .panel-mode__item .c-label {
+      padding: 0 1rem 0 2rem; }

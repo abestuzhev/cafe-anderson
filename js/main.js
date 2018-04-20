@@ -181,7 +181,7 @@ $(document).ready(function ($) {
     });
 
     var lenEvent = $('.dispatch-list__item input[name*="dispatch-event"]').length;
-    console.log('колдичество ' + lenEvent);
+    // console.log('колдичество ' + lenEvent);
 
 
 
@@ -191,7 +191,7 @@ $(document).ready(function ($) {
         $('' + elem + ' input').each(function(index){
             count = index+1;
         });
-        console.log('количество each ' + elem + ': ' + count);
+        // console.log('количество each ' + elem + ': ' + count);
 
         $('' + elem + ' input').on('change', function(){
             var self = $(this);
@@ -430,6 +430,10 @@ $(document).ready(function ($) {
         //маска
         $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
         $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
+        $('.js-input--mode').mask('с 00:00 до 00:00', {
+            clearIfNotMatch: true,
+            placeholder: "с __:__ до __:__"
+        });
 
         /*селект*/
         $('.lk-profile-edit__child-list .js-select--child').SumoSelect();

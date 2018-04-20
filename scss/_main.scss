@@ -11817,12 +11817,12 @@ test popup
 
 
     .c-grid {
-        margin-left: -.5rem;
-        margin-right: -.5rem;
+        margin-left: -.7rem;
+        margin-right: -.7rem;
     }
 
     .c-col {
-        padding: .5rem;
+        padding: .7rem;
     }
 
 
@@ -11871,6 +11871,24 @@ test popup
         &-route {
             height: 22rem;
             background-color: #eee;
+        }
+    }
+
+    &-mode {
+        &__list {
+
+        }
+
+        &__item {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            .c-label {
+                padding: 0 1rem 0 2rem;
+            }
         }
     }
 }
