@@ -2092,340 +2092,366 @@
         <div class="c-layout">
             <section class="panel page-container">
                 <div class="panel-cafe">
-                    <div class="panel-cafe__title">Андерсон в Крылатском</div>
+                    <h2 class="panel-cafe__title">
+                        <span>Андерсон в Крылатском</span>
+                        <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
+                    </h2>
                     <div class="panel-cafe__body">
                         <form action="#" method="POST" class="panel-form">
-                            <div class="panel-box c-grid c-grid-start">
-                                <div class="c-col c-col-6">
-                                    <div class="c-form__item">
-                                        <label class="c-label" for="panel-company-name">Полное наименование юр. лица<span class="c-obligatory-field">*</span></label>
-                                        <input class="c-input" type="text" placeholder="Полное наименование юр. лица" name="panel-company-name" id="panel-company-name" required="">
+                            <div class="panel-box__list">
+                                <div class="panel-box c-grid c-grid-start">
+                                    <div class="c-col c-col-6">
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="panel-company-name">Полное наименование юр. лица<span class="c-obligatory-field">*</span></label>
+                                            <input class="c-input" type="text" placeholder="Полное наименование юр. лица" name="panel-company-name" id="panel-company-name" required="">
+                                        </div>
+                                        <div class="c-grid c-grid-between">
+                                            <div class="c-col c-col-4">
+                                                <label class="c-label" for="panel-company-inn">ИНН<span class="c-obligatory-field">*</span></label>
+                                                <input class="c-input" type="text" placeholder="ИНН" name="panel-company-inn" id="panel-company-inn" required="">
+                                            </div>
+                                            <div class="c-col c-col-4">
+                                                <label class="c-label" for="panel-company-kpp">КПП<span class="c-obligatory-field">*</span></label>
+                                                <input class="c-input" type="text" placeholder="КПП" name="panel-company-kpp" id="panel-company-kpp" required="">
+                                            </div>
+                                            <div class="c-col c-col-4">
+                                                <label class="c-label" for="panel-company-ogrn">ОГРН<span class="c-obligatory-field">*</span></label>
+                                                <input class="c-input" type="text" placeholder="ОГРН" name="panel-company-ogrn" id="panel-company-ogrn" required="">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="c-grid c-grid-between">
-                                        <div class="c-col c-col-4">
-                                            <label class="c-label" for="panel-company-inn">ИНН<span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" placeholder="ИНН" name="panel-company-inn" id="panel-company-inn" required="">
-                                        </div>
-                                        <div class="c-col c-col-4">
-                                            <label class="c-label" for="panel-company-kpp">КПП<span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" placeholder="КПП" name="panel-company-kpp" id="panel-company-kpp" required="">
-                                        </div>
-                                        <div class="c-col c-col-4">
-                                            <label class="c-label" for="panel-company-ogrn">ОГРН<span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" placeholder="ОГРН" name="panel-company-ogrn" id="panel-company-ogrn" required="">
+                                    <div class="c-col c-col-6">
+                                        <div class="c-form-item">
+                                            <label class="c-label">Юридический адрес</label>
+                                            <textarea class="c-input" name="panel-company-address" id="order-pay-comment" rows="6" placeholder="Юридический адрес"></textarea>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="c-col c-col-6">
-                                    <div class="c-form-item">
-                                        <label class="c-label">Юридический адрес</label>
-                                        <textarea class="c-input" name="panel-company-address" id="order-pay-comment" rows="6" placeholder="Юридический адрес"></textarea>
+                                <div class="panel-box c-grid c-grid-start">
+                                    <div class="c-col c-col-6">
+                                        <div class="c-form__item">
+                                            <label class="c-label">Город</label>
+                                            <select name="panel-company-city" class="c-select" required>
+                                                <option value="Москва">Москва</option>
+                                                <option value="Тюмень">Тюмень</option>
+                                                <option value="Красногорск">Красногорск</option>
+                                                <option value="Ярославль">Ярославль</option>
+                                                <option value="Зеленоград">Зеленоград</option>
+                                                <option value="Нижний Новгород">Нижний Новгород</option>
+                                                <option value="Королёв">Королёв</option>
+                                            </select>
+                                        </div>
+            
+                                        <div class="c-form__item">
+                                            <label class="c-label">Адрес кафе</label>
+                                            <textarea class="c-input" name="panel-cafe-address" id="panel-cafe-address" rows="4" placeholder="Адрес кафе"></textarea>
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label">Точка на карте</label>
+                                            <div class="panel-map-address"></div>
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="panel-company-search">Поиск по карте</label>
+                                            <input class="c-input" type="text" placeholder="Поиск по карте" name="panel-company-search" id="panel-company-search" required="">
+                                        </div>
+        
+                                    </div>
+                                    <div class="c-col c-col-6">
+            
+                                        <div class="c-form__item">
+                                            <label class="c-label">С нами рядом</label>
+                                            <textarea class="c-input" name="panel-cafe-beside" id="panel-cafe-beside" rows="4" placeholder="С нами рядом"></textarea>
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label">Как добраться</label>
+                                            <div class="panel-map-route"></div>
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="panel-company-search-get">Поиск по карте</label>
+                                            <input class="c-input" type="text" placeholder="Поиск по карте" name="panel-company-search-get" id="panel-company-search-get" required="">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label">Описание как проехать</label>
+                                            <textarea class="c-input" name="panel-cafe-description-beside" id="panel-cafe-description-beside" rows="4" placeholder="Описание как проехать"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel-box c-grid c-grid-start">
-                                <div class="c-col c-col-6">
-                                    <div class="c-form__item">
-                                        <label class="c-label">Город</label>
-                                        <select name="panel-company-city" class="c-select" required>
-                                            <option value="Москва">Москва</option>
-                                            <option value="Тюмень">Тюмень</option>
-                                            <option value="Красногорск">Красногорск</option>
-                                            <option value="Ярославль">Ярославль</option>
-                                            <option value="Зеленоград">Зеленоград</option>
-                                            <option value="Нижний Новгород">Нижний Новгород</option>
-                                            <option value="Королёв">Королёв</option>
-                                        </select>
-                                    </div>
     
-                                    <div class="c-form__item">
-                                        <label class="c-label">Адрес кафе</label>
-                                        <textarea class="c-input" name="panel-cafe-address" id="panel-cafe-address" rows="4" placeholder="Адрес кафе"></textarea>
+                                <div class="panel-box c-grid c-grid-start">
+                                    <div class="c-col c-col-6">
+                                        <div class="c-grid c-grid-between">
+                                            <div class="c-col c-col-6">
+                                                <div class="c-form__item">
+                                                    <label class="c-label" for="panel-cafe-phone">Телефон кафе<span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input js-input--tel" type="text" placeholder="Телефон кафе" name="panel-cafe-phone" id="panel-cafe-phone" required="">
+                                                </div>
+                                            </div>
+                                            <div class="c-col c-col-6">
+                                                <div class="c-form__item">
+                                                    <label class="c-label" for="panel-cafe-phone-2">Дополнительный телефон</label>
+                                                    <input class="c-input js-input--tel" type="text" placeholder="+7(***)***-**-**" name="panel-cafe-phone-2" id="panel-cafe-phone-2" required="">
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="panel-cafe-email">Email кафе<span class="c-obligatory-field">*</span></label>
+                                            <input class="c-input" type="text" placeholder="Email кафе" name="panel-cafe-email" id="panel-cafe-email" required="">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <div class="c-grid c-grid-between">
+                                                <div class="c-col c-col-6">
+                                                    <div class="c-form__item">
+                                                        <label class="c-label" for="panel-cafe-phone-2">Время работы кафе</label>
+                                                        <ul class="panel-mode__list">
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">пн</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-monday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">вт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-tuesday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">ср</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-wednesday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">чт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-thursday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">пт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-friday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">сб</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-saturday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">вс</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-sunday">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="c-col c-col-6">
+                                                    <div class="c-form__item">
+                                                        <label class="c-label" for="panel-cafe-phone-2">Время работы кофейни</label>
+                                                        <ul class="panel-mode__list">
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">пн</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-monday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">вт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-tuesday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">ср</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-wednesday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">чт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-thursday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">пт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-friday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">сб</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-saturday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">вс</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-sunday">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
                                     </div>
-                                    <div class="c-form__item">
-                                        <label class="c-label">Точка на карте</label>
-                                        <div class="panel-map-address"></div>
+        
+                                    <div class="c-col c-col-6">
+                                        <div class="c-form__item">
+                                            <div class="c-grid c-grid-between">
+                                                <div class="c-col c-col-6">
+                                                    <div class="c-form__item">
+                                                        <label class="c-label" for="panel-mp-phone">Телефон МП<span class="c-obligatory-field">*</span></label>
+                                                        <input class="c-input js-input--tel" type="text" placeholder="Телефон МП" name="panel-mp-phone" id="panel-mp-phone" required="">
+                                                    </div>
+                                                    <div class="c-form__item">
+                                                        <label class="c-label" for="panel-mp-email">Email МП<span class="c-obligatory-field">*</span></label>
+                                                        <input class="c-input" type="text" placeholder="Email МП" name="panel-mp-email" id="panel-mp-email" required="">
+                                                    </div>
+                                                    <div class="c-form__item">
+                                                        <label class="c-label" for="panel-director-email">Email директора</label>
+                                                        <input class="c-input" type="text" placeholder="Email директора" name="panel-director-email" id="panel-director-email">
+                                                    </div>
+                                                </div>
+                                                <div class="c-col c-col-6">
+                                                    <div class="c-form__item">
+                                                        <label class="c-label" for="panel-cafe-phone-2">Время работы МП</label>
+                                                        <ul class="panel-mode__list">
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">пн</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-monday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">вт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-tuesday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">ср</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-wednesday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">чт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-thursday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">пт</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-friday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">сб</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-saturday">
+                                                            </li>
+                                                            <li class="panel-mode__item">
+                                                                <label class="c-label">вс</label>
+                                                                <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-sunday">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label">Опции кафе</label>
+                                            <div class="filter-form">
+                                                <div class="filter-item">
+                                                    <div class="filter-item__title"><i class="advantages-coffe"></i>Кофейня</div>
+                                                    <div class="filter-item__body">
+                                                        <div class="filter-check">
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-coffee__yes" name="filter-coffee" checked>
+                                                                <label class="filter-label" for="filter-coffee__yes">Есть</label>
+                                                            </div>
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-coffee__no" name="filter-coffee">
+                                                                <label class="filter-label" for="filter-coffee__no">Нет</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="filter-item__title"><i class="advantages-teddy"></i>Игровая</div>
+                                                    <div class="filter-item__body">
+                                                        <div class="filter-check">
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-teddy__yes" name="filter-teddy" checked>
+                                                                <label class="filter-label" for="filter-teddy__yes">Есть</label>
+                                                            </div>
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-teddy__no" name="filter-teddy">
+                                                                <label class="filter-label" for="filter-teddy__no">Нет</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="filter-item__title"><i class="advantages-nipple"></i>Малышковая</div>
+                                                    <div class="filter-item__body">
+                                                        <div class="filter-check">
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-nipple__yes" name="filter-nipple" checked>
+                                                                <label class="filter-label" for="filter-nipple__yes">Есть</label>
+                                                            </div>
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-nipple__no" name="filter-nipple">
+                                                                <label class="filter-label" for="filter-nipple__no">Нет</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="filter-item__title">
+                                                        <i class="advantages-balloon"></i>Праздничные пространства
+                                                    </div>
+                                                    <div class="filter-item__body">
+                                                        <div class="filter-check">
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-balloon__yes" name="filter-balloon" checked>
+                                                                <label class="filter-label" for="filter-balloon__yes">Есть</label>
+                                                            </div>
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-balloon__no" name="filter-balloon">
+                                                                <label class="filter-label" for="filter-balloon__no">Нет</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="filter-item__title"><i class="advantages-umbrella"></i>Веранда</div>
+                                                    <div class="filter-item__body">
+                                                        <div class="filter-check">
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-veranda__yes" name="filter-veranda" checked>
+                                                                <label class="filter-label" for="filter-veranda__yes">Есть</label>
+                                                            </div>
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-veranda__no" name="filter-veranda">
+                                                                <label class="filter-label" for="filter-veranda__no">Нет</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <div class="filter-item__title"><i class="advantages-bottle"></i>Алкоголь</div>
+                                                    <div class="filter-item__body">
+                                                        <div class="filter-check">
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-alcohol__yes" name="filter-alcohol" checked>
+                                                                <label class="filter-label" for="filter-alcohol__yes">Есть</label>
+                                                            </div>
+                                                            <div class="filter-check__item">
+                                                                <input class="filter-radio" type="radio" id="filter-alcohol__no" name="filter-alcohol">
+                                                                <label class="filter-label" for="filter-alcohol__no">Нет</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
                                     </div>
-                                    <div class="c-form__item">
-                                        <label class="c-label" for="panel-company-search">Поиск по карте</label>
-                                        <input class="c-input" type="text" placeholder="Поиск по карте" name="panel-company-search" id="panel-company-search" required="">
-                                    </div>
-                                    
                                 </div>
-                                <div class="c-col c-col-6">
     
-                                    <div class="c-form__item">
-                                        <label class="c-label">С нами рядом</label>
-                                        <textarea class="c-input" name="panel-cafe-beside" id="panel-cafe-beside" rows="4" placeholder="С нами рядом"></textarea>
+                                <div class="panel-box c-grid c-grid-start">
+                                    <div class="c-col c-col-6">
+        
                                     </div>
-                                    <div class="c-form__item">
-                                        <label class="c-label">Как добраться</label>
-                                        <div class="panel-map-route"></div>
+                                    <div class="c-col c-col-6">
+        
                                     </div>
+                                </div>
+                                <div class="panel-box">
                                     <div class="c-form__item">
-                                        <label class="c-label" for="panel-company-search-get">Поиск по карте</label>
-                                        <input class="c-input" type="text" placeholder="Поиск по карте" name="panel-company-search-get" id="panel-company-search-get" required="">
-                                    </div>
-                                    <div class="c-form__item">
-                                        <label class="c-label">Описание как проехать</label>
-                                        <textarea class="c-input" name="panel-cafe-description-beside" id="panel-cafe-description-beside" rows="4" placeholder="Описание как проехать"></textarea>
+                                        <label class="c-label">Описание кафе</label>
+                                        <textarea class="c-input" name="panel-cafe-description" rows="6" placeholder="Описание кафе"></textarea>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="panel-box c-grid c-grid-start">
-                                <div class="c-col c-col-6">
-                                    <div class="c-grid c-grid-between">
-                                        <div class="c-col c-col-6">
-                                            <div class="c-form__item">
-                                                <label class="c-label" for="panel-cafe-phone">Телефон кафе<span class="c-obligatory-field">*</span></label>
-                                                <input class="c-input js-input--tel" type="text" placeholder="Телефон кафе" name="panel-cafe-phone" id="panel-cafe-phone" required="">
-                                            </div>
-                                        </div>
-                                        <div class="c-col c-col-6">
-                                            <div class="c-form__item">
-                                                <label class="c-label" for="panel-cafe-phone-2">Дополнительный телефон</label>
-                                                <input class="c-input js-input--tel" type="text" placeholder="+7(***)***-**-**" name="panel-cafe-phone-2" id="panel-cafe-phone-2" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="c-form__item">
-                                        <label class="c-label" for="panel-cafe-email">Email кафе<span class="c-obligatory-field">*</span></label>
-                                        <input class="c-input" type="text" placeholder="Email кафе" name="panel-cafe-email" id="panel-cafe-email" required="">
-                                    </div>
-                                    <div class="c-form__item">
-                                        <div class="c-grid c-grid-between">
-                                            <div class="c-col c-col-6">
-                                                <div class="c-form__item">
-                                                    <label class="c-label" for="panel-cafe-phone-2">Время работы кафе</label>
-                                                    <ul class="panel-mode__list">
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">пн</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-monday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">вт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-tuesday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">ср</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-wednesday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">чт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-thursday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">пт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-friday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">сб</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-saturday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">вс</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode-sunday">
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="c-col c-col-6">
-                                                <div class="c-form__item">
-                                                    <label class="c-label" for="panel-cafe-phone-2">Время работы кофейни</label>
-                                                    <ul class="panel-mode__list">
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">пн</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-monday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">вт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-tuesday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">ср</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-wednesday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">чт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-thursday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">пт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-friday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">сб</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-saturday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">вс</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-sunday">
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                                
-                                <div class="c-col c-col-6">
-                                    <div class="c-form__item">
-                                        <div class="c-grid c-grid-between">
-                                            <div class="c-col c-col-6">
-                                                <div class="c-form__item">
-                                                    <label class="c-label" for="panel-mp-phone">Телефон МП<span class="c-obligatory-field">*</span></label>
-                                                    <input class="c-input js-input--tel" type="text" placeholder="Телефон МП" name="panel-mp-phone" id="panel-mp-phone" required="">
-                                                </div>
-                                                <div class="c-form__item">
-                                                    <label class="c-label" for="panel-mp-email">Email МП<span class="c-obligatory-field">*</span></label>
-                                                    <input class="c-input" type="text" placeholder="Email МП" name="panel-mp-email" id="panel-mp-email" required="">
-                                                </div>
-                                                <div class="c-form__item">
-                                                    <label class="c-label" for="panel-director-email">Email директора</label>
-                                                    <input class="c-input" type="text" placeholder="Email директора" name="panel-director-email" id="panel-director-email">
-                                                </div>
-                                            </div>
-                                            <div class="c-col c-col-6">
-                                                <div class="c-form__item">
-                                                    <label class="c-label" for="panel-cafe-phone-2">Время работы МП</label>
-                                                    <ul class="panel-mode__list">
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">пн</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-monday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">вт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-tuesday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">ср</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-wednesday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">чт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-thursday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">пт</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-friday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">сб</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-saturday">
-                                                        </li>
-                                                        <li class="panel-mode__item">
-                                                            <label class="c-label">вс</label>
-                                                            <input class="c-input js-input--mode" type="text" name="panel-coffee-mode-sunday">
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="c-form__item">
-                                        <label class="c-label">Опции кафе</label>
-                                        <div class="filter-form">
-                                            <div class="filter-item">
-                                                <div class="filter-item__title"><i class="advantages-coffe"></i>Кофейня</div>
-                                                <div class="filter-item__body">
-                                                    <div class="filter-check">
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-coffee__yes" name="filter-coffee" checked>
-                                                            <label class="filter-label" for="filter-coffee__yes">Есть</label>
-                                                        </div>
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-coffee__no" name="filter-coffee">
-                                                            <label class="filter-label" for="filter-coffee__no">Нет</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="filter-item">
-                                                <div class="filter-item__title"><i class="advantages-teddy"></i>Игровая</div>
-                                                <div class="filter-item__body">
-                                                    <div class="filter-check">
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-teddy__yes" name="filter-teddy" checked>
-                                                            <label class="filter-label" for="filter-teddy__yes">Есть</label>
-                                                        </div>
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-teddy__no" name="filter-teddy">
-                                                            <label class="filter-label" for="filter-teddy__no">Нет</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="filter-item">
-                                                <div class="filter-item__title"><i class="advantages-nipple"></i>Малышковая</div>
-                                                <div class="filter-item__body">
-                                                    <div class="filter-check">
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-nipple__yes" name="filter-nipple" checked>
-                                                            <label class="filter-label" for="filter-nipple__yes">Есть</label>
-                                                        </div>
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-nipple__no" name="filter-nipple">
-                                                            <label class="filter-label" for="filter-nipple__no">Нет</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="filter-item">
-                                                <div class="filter-item__title">
-                                                    <i class="advantages-balloon"></i>Праздничные пространства
-                                                </div>
-                                                <div class="filter-item__body">
-                                                    <div class="filter-check">
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-balloon__yes" name="filter-balloon" checked>
-                                                            <label class="filter-label" for="filter-balloon__yes">Есть</label>
-                                                        </div>
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-balloon__no" name="filter-balloon">
-                                                            <label class="filter-label" for="filter-balloon__no">Нет</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="filter-item">
-                                                <div class="filter-item__title"><i class="advantages-umbrella"></i>Веранда</div>
-                                                <div class="filter-item__body">
-                                                    <div class="filter-check">
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-veranda__yes" name="filter-veranda" checked>
-                                                            <label class="filter-label" for="filter-veranda__yes">Есть</label>
-                                                        </div>
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-veranda__no" name="filter-veranda">
-                                                            <label class="filter-label" for="filter-veranda__no">Нет</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="filter-item">
-                                                <div class="filter-item__title"><i class="advantages-bottle"></i>Алкоголь</div>
-                                                <div class="filter-item__body">
-                                                    <div class="filter-check">
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-alcohol__yes" name="filter-alcohol" checked>
-                                                            <label class="filter-label" for="filter-alcohol__yes">Есть</label>
-                                                        </div>
-                                                        <div class="filter-check__item">
-                                                            <input class="filter-radio" type="radio" id="filter-alcohol__no" name="filter-alcohol">
-                                                            <label class="filter-label" for="filter-alcohol__no">Нет</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        
-                                    </div>
-                                </div>
+                            <div class="l-button l-button__right">
+                                <button class="c-button c-button__default cancel">Отменить</button>
+                                <button class="c-button c-button__default">Сохранить</button>
                             </div>
+                            
     
                         </form>
                     </div>
@@ -3440,6 +3466,13 @@
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <!--<script src="./js/custom-map.js"></script>-->
 <!--<script src="./js/main.js"></script>-->
+<script async src="./js/dropzone.js"></script>
 <script async src="./js/scripts_all.js"></script>
+
+<script>
+    $(function(){
+    
+    })
+</script>
 </body>
 </html>

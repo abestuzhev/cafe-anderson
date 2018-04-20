@@ -11806,6 +11806,57 @@ test popup
 .panel {
     margin: 7rem 0;
 
+    &-cafe {
+        margin-bottom: 2rem;
+
+        &-show {
+            .symbol-dropdown {
+                transform: rotate(180deg);
+                transition: all .1s ease-out;
+            }
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            color: #9b9595;
+            cursor: pointer;
+
+            .symbol-dropdown {
+                fill: #9b9595;
+            }
+
+            a {
+                &::after {
+                    content: '';
+                    display: none;
+                }
+            }
+            &:hover {
+                color: #67af26;
+            }
+
+            &:hover .symbol-dropdown {
+                fill: #67af26;
+            }
+            &:hover span {
+                border-color: transparent;
+            }
+
+            span {
+                border-bottom: 1px dotted #9b806f;
+            }
+
+            .symbol-dropdown {
+                //transform: rotate(180deg);
+                transition: all .1s ease-out;
+            }
+        }
+
+        &__body {
+            //display: none;
+        }
+    }
+
     &-logo {
         font-size: 6rem;
         text-transform: lowercase;
@@ -11853,12 +11904,22 @@ test popup
         justify-content: flex-start;
     }
     .filter-item {
-        margin: 1.6rem 1.6rem 0 0;
+        margin: 0 1.6rem 1.6rem 0 ;
     }
 
     &-box {
         position: relative;
         margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+
+            &::after {
+                content: '';
+                display: none;
+            }
+        }
+
         &::after {
             content: '';
             position: absolute;

@@ -163,6 +163,13 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    //административная панель
+    $(document).on('click', '.panel-cafe__title', function(e){
+        e.preventDefault();
+        $(this).toggleClass('panel-cafe-show');
+        $(this).siblings('.panel-cafe__body').slideToggle(100);
+    });
+
 
     //управление рассылкой
     $('.dispatch-list__title input').on('change', function(){

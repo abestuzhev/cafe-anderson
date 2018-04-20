@@ -2170,6 +2170,12 @@ a.c-button:hover {
     .c-button.disabled:hover {
       background-color: #929490;
       opacity: .5; }
+  .c-button.cancel {
+    background-color: #aaa9a7;
+    cursor: pointer;
+    color: #ffffff; }
+    .c-button.cancel:hover {
+      opacity: .8; }
   .c-button__default {
     padding: 1.1rem 3.4rem;
     background-color: #7cbd41;
@@ -14754,6 +14760,36 @@ test popup
 
 .panel {
   margin: 7rem 0; }
+  .panel-cafe {
+    margin-bottom: 2rem; }
+    .panel-cafe-show .symbol-dropdown {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      -webkit-transition: all .1s ease-out;
+      -o-transition: all .1s ease-out;
+      transition: all .1s ease-out; }
+    .panel-cafe__title {
+      font-size: 2.4rem;
+      color: #9b9595;
+      cursor: pointer; }
+      .panel-cafe__title .symbol-dropdown {
+        fill: #9b9595; }
+      .panel-cafe__title a::after {
+        content: '';
+        display: none; }
+      .panel-cafe__title:hover {
+        color: #67af26; }
+      .panel-cafe__title:hover .symbol-dropdown {
+        fill: #67af26; }
+      .panel-cafe__title:hover span {
+        border-color: transparent; }
+      .panel-cafe__title span {
+        border-bottom: 1px dotted #9b806f; }
+      .panel-cafe__title .symbol-dropdown {
+        -webkit-transition: all .1s ease-out;
+        -o-transition: all .1s ease-out;
+        transition: all .1s ease-out; }
   .panel-logo {
     font-size: 6rem;
     text-transform: lowercase;
@@ -14784,10 +14820,15 @@ test popup
         -ms-flex-pack: start;
             justify-content: flex-start; }
   .panel .filter-item {
-    margin: 1.6rem 1.6rem 0 0; }
+    margin: 0 1.6rem 1.6rem 0; }
   .panel-box {
     position: relative;
     margin-bottom: 1rem; }
+    .panel-box:last-child {
+      margin-bottom: 0; }
+      .panel-box:last-child::after {
+        content: '';
+        display: none; }
     .panel-box::after {
       content: '';
       position: absolute;

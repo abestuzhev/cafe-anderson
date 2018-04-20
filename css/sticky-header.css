@@ -100,6 +100,14 @@
     width: 46%;
 }
 
+.partner-panel .sticky .panel-logo {
+    font-size: 32px;
+}
+
+.partner-panel .sticky .header-menu {
+   justify-content: space-around;
+}
+
 .header-top__hide .header-personal,
 .header-top__hide .header-contact {
     margin: 0 !important;
