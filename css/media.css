@@ -267,6 +267,10 @@
     .panel-logo {
         font-size: 3.5rem;
     }
+    img.panel-logo {
+        width: 70%;
+    }
+
 
     /*.header-col__right .header-top {*/
     /*margin-bottom: 0;*/
