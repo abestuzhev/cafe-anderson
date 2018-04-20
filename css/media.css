@@ -264,6 +264,10 @@
         width: 46%;
     }
 
+    .panel-logo {
+        font-size: 3.5rem;
+    }
+
     /*.header-col__right .header-top {*/
     /*margin-bottom: 0;*/
     /*}*/

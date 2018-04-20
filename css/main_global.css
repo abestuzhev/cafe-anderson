@@ -14790,6 +14790,8 @@ test popup
         -webkit-transition: all .1s ease-out;
         -o-transition: all .1s ease-out;
         transition: all .1s ease-out; }
+    .panel-cafe__body {
+      display: none; }
   .panel-logo {
     font-size: 6rem;
     text-transform: lowercase;
