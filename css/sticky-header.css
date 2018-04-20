@@ -103,6 +103,9 @@
 .partner-panel .sticky .panel-logo {
     font-size: 32px;
 }
+.partner-panel .sticky img.panel-logo {
+    width: 76%;
+}
 
 .partner-panel .sticky .header-menu {
    justify-content: space-around;
