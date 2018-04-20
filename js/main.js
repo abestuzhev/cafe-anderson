@@ -430,10 +430,6 @@ $(document).ready(function ($) {
         //маска
         $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
         $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
-        $('.js-input--mode').mask('с 00:00 до 00:00', {
-            clearIfNotMatch: true,
-            placeholder: "с __:__ до __:__"
-        });
 
         /*селект*/
         $('.lk-profile-edit__child-list .js-select--child').SumoSelect();
@@ -1067,7 +1063,12 @@ $(document).ready(function ($) {
     $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
-    $('.js-input--loyalty').mask('000-000', {clearIfNotMatch: true});
+    $('.js-input--loyalty').mask('000-000', {clearIfNotMatch: true });
+
+    $('.js-input--mode').mask('с 00:00 до 00:00', {
+        clearIfNotMatch: true,
+        placeholder: "с __:__ до __:__"
+    });
     $('input[name="form_text_30"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('input[name="form_text_52"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
 
