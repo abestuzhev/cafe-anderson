@@ -11849,6 +11849,13 @@ test popup
         padding: 1.4rem 1.6rem;
     }
 
+    .filter-form {
+        justify-content: flex-start;
+    }
+    .filter-item {
+        margin: 1.6rem 1.6rem 0 0;
+    }
+
     &-box {
         position: relative;
         margin-bottom: 1rem;

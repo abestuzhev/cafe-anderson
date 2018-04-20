@@ -5179,7 +5179,7 @@ a.c-button:hover {
                 transform: translate(-50%, -50%); }
   .header-city {
     /*выбор города*/
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     min-height: 1.5rem;
     position: relative; }
     .header-city .popup-bubble {
@@ -14779,6 +14779,12 @@ test popup
   .panel select {
     width: 100%;
     padding: 1.4rem 1.6rem; }
+  .panel .filter-form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .panel .filter-item {
+    margin: 1.6rem 1.6rem 0 0; }
   .panel-box {
     position: relative;
     margin-bottom: 1rem; }
