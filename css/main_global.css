@@ -5179,7 +5179,7 @@ a.c-button:hover {
                 transform: translate(-50%, -50%); }
   .header-city {
     /*выбор города*/
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     min-height: 1.5rem;
     position: relative; }
     .header-city .popup-bubble {
