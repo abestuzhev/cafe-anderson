@@ -14747,3 +14747,52 @@ test popup
     left: .8rem; }
   .dispatch-list__item {
     margin-bottom: 1.6rem; }
+
+/*Партнерская панель**********************************/
+.partner-panel .header-top {
+  min-height: 2.4rem; }
+
+.panel {
+  margin: 7rem 0; }
+  .panel-logo {
+    font-size: 6rem;
+    text-transform: lowercase;
+    color: #000000;
+    line-height: 1;
+    position: relative;
+    top: -6px; }
+  .panel .c-grid {
+    margin-left: -.5rem;
+    margin-right: -.5rem; }
+  .panel .c-col {
+    padding: .5rem; }
+  .panel .c-grid-start {
+    margin-left: -1.4rem;
+    margin-right: -1.4rem; }
+    .panel .c-grid-start > .c-col {
+      padding: 1.4rem; }
+  .panel .SumoSelect {
+    width: 100%; }
+  .panel .SumoSelect.open > .optWrapper {
+    top: 4.5rem; }
+  .panel .SumoSelect > .CaptionCont,
+  .panel select {
+    width: 100%;
+    padding: 1.4rem 1.6rem; }
+  .panel-box {
+    position: relative;
+    margin-bottom: 1rem; }
+    .panel-box::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.png) 0 0 repeat-x; }
+  .panel-map-address {
+    height: 27.2rem;
+    background-color: #eee; }
+  .panel-map-route {
+    height: 22rem;
+    background-color: #eee; }

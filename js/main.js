@@ -1670,11 +1670,13 @@ $(document).ready(function ($) {
     $(window).scroll(function(){
         var bo = $(window).scrollTop();
         var $header = $(".header");
+        var $headerWrap = $(".header-wrap");
         var $logo = $("#symbol-logo");
-        var $hederHeight = $header.height();
+        var $hederHeight = $headerWrap.height();
         if ( bo >= 106 ) {
             $header.addClass('header-top__hide');
-            $header.addClass('sticky');
+            // $header.addClass('sticky');
+            $headerWrap.addClass('sticky');
             $logo.addClass('fixed-logo');
 
             $('main').css({
@@ -1683,7 +1685,8 @@ $(document).ready(function ($) {
             // $header.addClass('fixed-header');
         } else {
             $header.removeClass('header-top__hide');
-            $header.removeClass('sticky');
+            // $header.removeClass('sticky');
+            $headerWrap.removeClass('sticky');
             $logo.removeClass('fixed-logo');
             // $header.removeClass('fixed-header');
             $('main').css({

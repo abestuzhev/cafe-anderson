@@ -1,9 +1,9 @@
 
-.header .header-layout {
+.header-wrap .header-layout {
     padding-top: 1rem !important;
 }
 
-.header.sticky {
+.header-wrap.sticky {
     position: fixed;
     width: 100%;
     top: 0;
@@ -12,33 +12,33 @@
     animation: slide-down .3s ease-out;
 }
 
-.header.sticky .header-city,
-.header.sticky .header-time {
+.header-wrap.sticky .header-city,
+.header-wrap.sticky .header-time {
     opacity: 0;
     transition: all .2s ease;
 }
 
-.header.sticky .header-top {
+.header-wrap.sticky .header-top {
     height:23px;
     transition: all .4s ease-out;
 }
 
-.header.sticky .header-mobile__top {
+.header-wrap.sticky .header-mobile__top {
     opacity: 0;
     transition: all .3s ease-out;
 }
 
-.header .header-mobile__top  {
+.header-wrap .header-mobile__top  {
     transition: all .3s ease-out;
     opacity: 1;
 }
 
-.header.sticky .symbol-logo{
+.header-wrap.sticky .symbol-logo{
     font-size: 26rem;
     transition: all .3s ease-out;
 }
 
-.header.sticky .header-menu__link {
+.header-wrap.sticky .header-menu__link {
     transition: all .3s ease-out;
 }
 
@@ -63,11 +63,12 @@
 }
 
 
-.header.sticky .top-message {
+.header-wrap.sticky .top-message {
     top: 0 !important;
 }
 
-.header .top-message {
+.header-wrap .top-message {
+    position: relative;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
@@ -76,6 +77,7 @@
     padding: 0 !important;
 }
 
+.header-wrap,
 .header {
     border: none !important;
     transition: all .2s ease-out;
@@ -115,24 +117,24 @@
 
 @media (max-width: 1026px) {
     .symbol-logo,
-    .header.sticky .symbol-logo {
+    .header-wrap.sticky .symbol-logo {
         font-size: 21rem;
     }
 
-    .header.sticky .header-top {
+    .header-wrap.sticky .header-top {
         height: auto;
     }
 
-    .header {
+    .header-wrap {
         top: 0;
         transition: all .3s ease-out !important;
     }
-    .header.sticky {
+    .header-wrap.sticky {
         top: -3rem;
         transition: all .1s ease-out !important;
     }
 
-    .header.sticky .top-message {
+    .header-wrap.sticky .top-message {
         top: 2.9rem !important;
     }
 }
@@ -144,7 +146,7 @@
 }
 
 
-.header .header-mobile__top {
+.header-wrap .header-mobile__top {
     padding: .4rem 0;
 }
 
@@ -189,5 +191,27 @@
     .sticky .symbol-logo-wrap .header-logo__beta {
         display: block !important;
         left: 92% !important;
+    }
+}
+
+/*новое липкое меню*/
+.header-wrap.header-wrap-v2.sticky {
+    /*top: 0;*/
+    transition: all .2s ease-out;
+}
+
+.header-wrap.header-wrap-v2.sticky .header-navigation__title {
+    opacity: 0;
+}
+
+.header-wrap.header-wrap-v2.sticky .header-navigation {
+    opacity: 1;
+    transform: translateY(-33px);
+    transition: transform .2s ease-out;
+}
+
+@media screen and (max-width: 1030px){
+    .header-wrap.header-wrap-v2.sticky .header-wrap.sticky {
+        top: -3.8rem;
     }
 }

@@ -11790,3 +11790,87 @@ test popup
         }
     }
 }
+
+
+/*Партнерская панель**********************************/
+.partner-panel {
+    .header-layout {
+        //padding: .8rem 0;
+    }
+
+    .header-top {
+        min-height: 2.4rem;
+    }
+}
+
+.panel {
+    margin: 7rem 0;
+
+    &-logo {
+        font-size: 6rem;
+        text-transform: lowercase;
+        color: #000000;
+        line-height: 1;
+        position: relative;
+        top: -6px;
+    }
+
+
+    .c-grid {
+        margin-left: -.5rem;
+        margin-right: -.5rem;
+    }
+
+    .c-col {
+        padding: .5rem;
+    }
+
+
+    .c-grid-start {
+        margin-left: -1.4rem;
+        margin-right: -1.4rem;
+        //border-bottom: 1px solid #ccc;
+        & > .c-col {
+            padding: 1.4rem;
+        }
+    }
+
+    .SumoSelect {
+        width: 100%;
+    }
+
+    .SumoSelect.open > .optWrapper {
+        top: 4.5rem;
+    }
+
+    .SumoSelect > .CaptionCont,
+    select {
+        width: 100%;
+        padding: 1.4rem 1.6rem;
+    }
+
+    &-box {
+        position: relative;
+        margin-bottom: 1rem;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: .4rem;
+            background: url(../img/pattern-round.png) 0 0 repeat-x;
+        }
+    }
+    
+    &-map {
+        &-address {
+            height: 27.2rem;
+            background-color: #eee;
+        }
+        &-route {
+            height: 22rem;
+            background-color: #eee;
+        }
+    }
+}
