@@ -11806,6 +11806,50 @@ test popup
 .panel {
     margin: 7rem 0;
 
+
+
+    &-work {
+        &-list {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            &__item {
+               &:nth-child(1) {
+                   width: 45%;
+               }
+               &:nth-child(2) {
+                   width: 10%;
+                   text-align: center;
+               }
+               &:nth-child(3) {
+                   width: 45%;
+               }
+            }
+        }
+
+        &-time {
+
+            .c-form__item:nth-child(1) {
+                width: 17rem;
+            }
+
+            &__copy {
+                display: none;
+
+                .c-form__item:nth-child(1) {
+                    width: 17rem;
+                }
+            }
+
+            &__list {
+                .panel-work-time__copy {
+                    display: block;
+                }
+            }
+        }
+    }
+
     &-cafe {
         margin-bottom: 2rem;
 

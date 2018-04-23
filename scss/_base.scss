@@ -806,6 +806,12 @@ input[type="checkbox"]:checked + .c-checkbox::after {
             margin-right: 1.2rem;
         }
     }
+    &__grid--middle {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
     
     &__col {
         width: 50%;

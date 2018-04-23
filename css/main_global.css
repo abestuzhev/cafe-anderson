@@ -1966,6 +1966,21 @@ input[type="checkbox"]:checked + .c-checkbox::after {
   .c-form__grid--left .c-form__item {
     margin-right: 1.2rem; }
 
+.c-form__grid--middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .c-form__col {
   width: 50%;
   padding: 0 1.1rem;
@@ -14762,6 +14777,35 @@ test popup
 
 .panel {
   margin: 7rem 0; }
+  .panel-work-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .panel-work-list__item:nth-child(1) {
+      width: 45%; }
+    .panel-work-list__item:nth-child(2) {
+      width: 10%;
+      text-align: center; }
+    .panel-work-list__item:nth-child(3) {
+      width: 45%; }
+  .panel-work-time .c-form__item:nth-child(1) {
+    width: 17rem; }
+  .panel-work-time__copy {
+    display: none; }
+    .panel-work-time__copy .c-form__item:nth-child(1) {
+      width: 17rem; }
+  .panel-work-time__list .panel-work-time__copy {
+    display: block; }
   .panel-cafe {
     margin-bottom: 2rem; }
     .panel-cafe-show .symbol-dropdown {

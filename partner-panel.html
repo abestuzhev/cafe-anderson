@@ -2209,42 +2209,118 @@
                                         </div>
                                         <div class="c-grid c-grid-between">
                                             <div class="c-col c-col-6">
+                                                
                                                 <div class="c-form__item">
                                                     <label class="c-label" for="panel-mp-phone">Время работы кафе</label>
-                                                    <select name="reviews-cafe" class="c-select" required>
-                                                        <option value="Все">Понедельник</option>
-                                                        <option value="Москва">Вторник</option>
-                                                        <option value="Тюмень">Среда</option>
-                                                        <option value="Красногорск">Четверг</option>
-                                                        <option value="Ярославль">Пятница</option>
-                                                        <option value="Зеленоград">Суббота</option>
-                                                        <option value="Нижний Новгород">Воскресенье</option>
-                                                    </select>
+                                                    <div class="panel-work-list">
+                                                        <div class="panel-work-list__item">
+                                                            <select name="panel-mode-start" class="c-select">
+                                                                <option value="Пн">Пн</option>
+                                                                <option value="Вт">Вт</option>
+                                                                <option value="Ср">Ср</option>
+                                                                <option value="Чт">Чт</option>
+                                                                <option value="Пт">Пт</option>
+                                                                <option value="Сб">Сб</option>
+                                                                <option value="Вс">Вс</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="panel-work-list__item">
+                                                            <span>—</span>
+                                                        </div>
+                                                        <div class="panel-work-list__item">
+                                                            <select name="panel-mode-end" class="c-select">
+                                                                <option value="Пн">Пн</option>
+                                                                <option value="Вт">Вт</option>
+                                                                <option value="Ср">Ср</option>
+                                                                <option value="Чт">Чт</option>
+                                                                <option value="Пт">Пт</option>
+                                                                <option value="Сб">Сб</option>
+                                                                <option value="Вс">Вс</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    
                                                 </div>
-                                                <div class="c-form__item">
-                                                    <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
-        
+                                                <div class="c-form__grid--left c-form__grid--middle panel-work-time">
+                                                    <div class="c-form__item ">
+                                                        <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
+                                                    </div>
+                                                    <div class="c-form__item">
+                                                        <a href="#" class="c-form__add" id="js-work-time-cafe__add"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-work-time__copy">
+                                                    <div class="c-form__grid--left c-form__grid--middle">
+                                                        <div class="c-form__item ">
+                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
+                                                        </div>
+                                                        <div class="c-form__item">
+                                                            <a href="#" class="c-form__del">Удалить [х]</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="panel-work-time__list" id="js-panel-work-time__cafe">
+                                                
                                                 </div>
                                                 <div class="l-button l-button__left">
                                                     <button class="c-button c-button__default">Сохранить</button>
                                                 </div>
                                             </div>
                                             <div class="c-col c-col-6">
+        
                                                 <div class="c-form__item">
                                                     <label class="c-label" for="panel-mp-phone">Время работы кофейни</label>
-                                                    <select name="reviews-cafe" class="c-select" required>
-                                                        <option value="Все">Понедельник</option>
-                                                        <option value="Москва">Вторник</option>
-                                                        <option value="Тюмень">Среда</option>
-                                                        <option value="Красногорск">Четверг</option>
-                                                        <option value="Ярославль">Пятница</option>
-                                                        <option value="Зеленоград">Суббота</option>
-                                                        <option value="Нижний Новгород">Воскресенье</option>
-                                                    </select>
+                                                    <div class="panel-work-list">
+                                                        <div class="panel-work-list__item">
+                                                            <select name="panel-mode-start" class="c-select">
+                                                                <option value="Пн">Пн</option>
+                                                                <option value="Вт">Вт</option>
+                                                                <option value="Ср">Ср</option>
+                                                                <option value="Чт">Чт</option>
+                                                                <option value="Пт">Пт</option>
+                                                                <option value="Сб">Сб</option>
+                                                                <option value="Вс">Вс</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="panel-work-list__item">
+                                                            <span>—</span>
+                                                        </div>
+                                                        <div class="panel-work-list__item">
+                                                            <select name="panel-mode-end" class="c-select">
+                                                                <option value="Пн">Пн</option>
+                                                                <option value="Вт">Вт</option>
+                                                                <option value="Ср">Ср</option>
+                                                                <option value="Чт">Чт</option>
+                                                                <option value="Пт">Пт</option>
+                                                                <option value="Сб">Сб</option>
+                                                                <option value="Вс">Вс</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+        
                                                 </div>
-                                                <div class="c-form__item">
-                                                    <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
-                                                    
+                                                <div class="c-form__grid--left c-form__grid--middle panel-work-time">
+                                                    <div class="c-form__item ">
+                                                        <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
+                                                    </div>
+                                                    <div class="c-form__item">
+                                                        <a href="#" class="c-form__add" id="js-work-time-coffee__add"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="panel-work-time__copy">
+                                                    <div class="c-form__grid--left c-form__grid--middle">
+                                                        <div class="c-form__item ">
+                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
+                                                        </div>
+                                                        <div class="c-form__item">
+                                                            <a href="#" class="c-form__del">Удалить [х]</a>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                                <div class="panel-work-time__list" id="js-panel-work-time__coffee">
+        
                                                 </div>
                                                 <div class="l-button l-button__left">
                                                     <button class="c-button c-button__default">Сохранить</button>
@@ -2272,21 +2348,59 @@
                                                     </div>
                                                 </div>
                                                 <div class="c-col c-col-6">
+        
                                                     <div class="c-form__item">
-                                                        <label class="c-label" for="panel-mp-phone">Время работы МП</label>
-                                                        <select name="reviews-cafe" class="c-select" required>
-                                                            <option value="Все">Понедельник</option>
-                                                            <option value="Москва">Вторник</option>
-                                                            <option value="Тюмень">Среда</option>
-                                                            <option value="Красногорск">Четверг</option>
-                                                            <option value="Ярославль">Пятница</option>
-                                                            <option value="Зеленоград">Суббота</option>
-                                                            <option value="Нижний Новгород">Воскресенье</option>
-                                                        </select>
+                                                        <label class="c-label" for="panel-mp-phone">Время работы кофейни</label>
+                                                        <div class="panel-work-list">
+                                                            <div class="panel-work-list__item">
+                                                                <select name="panel-mode-start" class="c-select">
+                                                                    <option value="Пн">Пн</option>
+                                                                    <option value="Вт">Вт</option>
+                                                                    <option value="Ср">Ср</option>
+                                                                    <option value="Чт">Чт</option>
+                                                                    <option value="Пт">Пт</option>
+                                                                    <option value="Сб">Сб</option>
+                                                                    <option value="Вс">Вс</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="panel-work-list__item">
+                                                                <span>—</span>
+                                                            </div>
+                                                            <div class="panel-work-list__item">
+                                                                <select name="panel-mode-end" class="c-select">
+                                                                    <option value="Пн">Пн</option>
+                                                                    <option value="Вт">Вт</option>
+                                                                    <option value="Ср">Ср</option>
+                                                                    <option value="Чт">Чт</option>
+                                                                    <option value="Пт">Пт</option>
+                                                                    <option value="Сб">Сб</option>
+                                                                    <option value="Вс">Вс</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+        
                                                     </div>
-                                                    <div class="c-form__item">
-                                                        <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
-    
+                                                    <div class="c-form__grid--left c-form__grid--middle panel-work-time">
+                                                        <div class="c-form__item ">
+                                                            <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
+                                                        </div>
+                                                        <div class="c-form__item">
+                                                            <a href="#" class="c-form__add" id="js-work-time-mp__add"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-work-time__copy">
+                                                        <div class="c-form__grid--left c-form__grid--middle">
+                                                            <div class="c-form__item ">
+                                                                <input class="c-input js-input--mode" type="text" name="panel-cafe-mode">
+                                                            </div>
+                                                            <div class="c-form__item">
+                                                                <a href="#" class="c-form__del">Удалить [х]</a>
+                                                            </div>
+                                                        </div>
+        
+                                                    </div>
+                                                    <div class="panel-work-time__list" id="js-panel-work-time__mp">
+        
                                                     </div>
                                                     <div class="l-button l-button__left">
                                                         <button class="c-button c-button__default">Сохранить</button>

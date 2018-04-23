@@ -163,6 +163,29 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+
+
+    function addClonePanel(btn, list){
+        $(document).on('click', btn , function(e) {
+            e.preventDefault();
+            $(this)
+                .parents('.panel-work-time')
+                .siblings('.panel-work-time__copy')
+                .clone().appendTo(list);
+        });
+    }
+    addClonePanel('#js-work-time-coffee__add', '#js-panel-work-time__coffee');
+    addClonePanel('#js-work-time-cafe__add', '#js-panel-work-time__cafe');
+    addClonePanel('#js-work-time-mp__add', '#js-panel-work-time__mp');
+
+    $(document).on('click', '.c-form__del', function(e) {
+        e.preventDefault();
+        var $elem_item = $(this).parents('.panel-work-time__copy');
+        $elem_item.remove();
+    });
+
+
     //административная панель
     $(document).on('click', '.panel-cafe__title', function(e){
         e.preventDefault();
