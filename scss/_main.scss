@@ -11812,34 +11812,40 @@ test popup
         &-list {
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
             &__item {
+                padding-right: 1rem;
+
+                &:last-child {
+                    padding-right: 0;
+                }
                &:nth-child(1) {
-                   width: 45%;
+                   width: 23%;
                }
                &:nth-child(2) {
-                   width: 10%;
+                   width: 5%;
                    text-align: center;
                }
                &:nth-child(3) {
-                   width: 45%;
+                   width: 23%;
+               }
+               &:nth-child(4) {
+                   width: 35%;
+               }
+               &:nth-child(5) {
+                   width: 15%;
                }
             }
         }
 
         &-time {
+            margin-bottom: 1.4rem;
 
-            .c-form__item:nth-child(1) {
-                width: 17rem;
-            }
 
             &__copy {
                 display: none;
 
-                .c-form__item:nth-child(1) {
-                    width: 17rem;
-                }
             }
 
             &__list {

@@ -164,17 +164,28 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    function initCustomSelect(elem){
+        $(elem).SumoSelect();
+
+    }
 
 
     function addClonePanel(btn, list){
         $(document).on('click', btn , function(e) {
             e.preventDefault();
             $(this)
-                .parents('.panel-work-time')
+                .parents('.c-form__item')
                 .siblings('.panel-work-time__copy')
                 .clone().appendTo(list);
+
+            // var select = $(this)
+
+            initCustomSelect('.panel-work-time__list select');
         });
     }
+
+
+
     addClonePanel('#js-work-time-coffee__add', '#js-panel-work-time__coffee');
     addClonePanel('#js-work-time-cafe__add', '#js-panel-work-time__cafe');
     addClonePanel('#js-work-time-mp__add', '#js-panel-work-time__mp');
