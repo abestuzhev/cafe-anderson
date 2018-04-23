@@ -3794,6 +3794,8 @@ a.c-button:hover {
     .c-card-supplements__count .c-counter__box::after {
       content: 'г';
       font-size: 1.4rem;
+      position: relative;
+      top: .5rem;
       line-height: 1;
       color: #515151;
       font-style: italic; }
