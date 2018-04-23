@@ -3028,6 +3028,12 @@ a.c-button {
         text-align: left;
         color: #231300;
     }
+
+    &__desc {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
     
     &__text {
         display: inline-block;

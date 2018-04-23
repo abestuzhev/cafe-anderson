@@ -12013,4 +12013,37 @@ test popup
     &-upload {
 
     }
+
+
+    &-dish {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        &__body {
+            flex: 1;
+        }
+
+        &-list {
+            margin-bottom: 2rem;
+
+
+            &__item {
+                margin-bottom: 1.4rem;
+            }
+        }
+
+        .filter-hold {
+            position: static;
+            margin-right: 2rem;
+        }
+
+        .c-card-product-line .c-button {
+            margin-right: 1.4rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }

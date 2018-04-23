@@ -3719,6 +3719,17 @@ a.c-button:hover {
     line-height: 1.3;
     text-align: left;
     color: #231300; }
+  .c-card-product-line__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .c-card-product-line__text {
     display: inline-block;
     margin-right: 1.8rem;
@@ -14914,3 +14925,29 @@ test popup
             align-items: center; }
     .panel-mode__item .c-label {
       padding: 0 1rem 0 2rem; }
+  .panel-dish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .panel-dish__body {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .panel-dish-list {
+      margin-bottom: 2rem; }
+      .panel-dish-list__item {
+        margin-bottom: 1.4rem; }
+    .panel-dish .filter-hold {
+      position: static;
+      margin-right: 2rem; }
+    .panel-dish .c-card-product-line .c-button {
+      margin-right: 1.4rem; }
+      .panel-dish .c-card-product-line .c-button:last-child {
+        margin-right: 0; }
