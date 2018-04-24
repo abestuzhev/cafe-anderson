@@ -12019,6 +12019,7 @@ test popup
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
+        align-items: flex-start;
 
         &__body {
             flex: 1;
