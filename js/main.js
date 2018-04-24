@@ -170,6 +170,7 @@ $(document).ready(function ($) {
     }
 
 
+
     function addClonePanel(btn, list){
         $(document).on('click', btn , function(e) {
             e.preventDefault();
@@ -181,6 +182,12 @@ $(document).ready(function ($) {
             // var select = $(this)
 
             initCustomSelect('.panel-work-time__list select');
+            $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+            $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
+            $('.js-input--mode').mask('с 00:00 до 00:00', {
+                clearIfNotMatch: true,
+                placeholder: "с __:__ до __:__"
+            });
         });
     }
 
