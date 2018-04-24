@@ -14951,3 +14951,70 @@ test popup
       margin-right: 1.4rem; }
       .panel-dish .c-card-product-line .c-button:last-child {
         margin-right: 0; }
+    .panel-dish-product__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .panel-dish-product__item {
+      padding-right: 1rem; }
+      .panel-dish-product__item:last-child {
+        padding-right: 0; }
+      .panel-dish-product__item:nth-child(1) {
+        width: 20%; }
+      .panel-dish-product__item:nth-child(2) {
+        width: 20%; }
+      .panel-dish-product__item:nth-child(3) {
+        width: 15%; }
+    .panel-dish-variation__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .panel-dish-variation__item {
+      padding-right: 1rem; }
+      .panel-dish-variation__item:last-child {
+        padding-right: 0; }
+      .panel-dish-variation__item:nth-child(1) {
+        width: 32%; }
+      .panel-dish-variation__item:nth-child(2) {
+        width: 30%; }
+      .panel-dish-variation__item:nth-child(3) {
+        width: 15%; }
+      .panel-dish-variation__item:nth-child(4) {
+        width: 15%; }
+      .panel-dish-variation__item:nth-child(5) {
+        width: 15%; }
+      .panel-dish-variation__item:nth-child(6) {
+        width: 15%; }
+      .panel-dish-variation__item .c-form__add {
+        margin-top: 2.5rem; }
+    .panel-dish .order-delivery {
+      margin-top: 0; }
+    .panel-dish .order-tabs {
+      margin-left: 0; }
+    .panel-dish .tabs-menu {
+      border-bottom: 5px solid #7cbd41;
+      margin-bottom: 1.4rem; }
+    .panel-dish .order-tabs__item.current,
+    .panel-dish .order-tabs__item {
+      padding: 1.4rem 1.6rem .8rem;
+      border-radius: 1.7rem 1.7rem 0 0; }

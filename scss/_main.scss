@@ -12045,5 +12045,91 @@ test popup
                 margin-right: 0;
             }
         }
+
+        &-product {
+            &__list {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            &__item {
+                padding-right: 1rem;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &:nth-child(1){
+                    width: 20%;
+                }
+                &:nth-child(2){
+                    width: 20%;
+                }
+                &:nth-child(3){
+                    width: 15%;
+                }
+            }
+        }
+
+        &-variation {
+            &__list {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            &__item {
+                padding-right: 1rem;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &:nth-child(1){
+                    width: 32%;
+                }
+                &:nth-child(2){
+                    width: 30%;
+                }
+                &:nth-child(3){
+                    width: 15%;
+                }
+                &:nth-child(4){
+                    width: 15%;
+                }
+                &:nth-child(5){
+                    width: 15%;
+                }
+                &:nth-child(6){
+                    width: 15%;
+                }
+
+                .c-form__add {
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+
+        .order-delivery {
+            margin-top: 0;
+        }
+
+        .order-tabs {
+            margin-left: 0;
+        }
+
+        .tabs-menu {
+            border-bottom: 5px solid #7cbd41;
+            margin-bottom: 1.4rem;
+        }
+        .order-tabs__item.current,
+        .order-tabs__item {
+            padding: 1.4rem 1.6rem .8rem;
+            border-radius: 1.7rem 1.7rem 0 0;
+        }
+
+
     }
 }

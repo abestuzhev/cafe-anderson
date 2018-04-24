@@ -2115,6 +2115,116 @@
                                         </div>
                                     </div>
                                 </div>
+    
+                                <div class="order-delivery">
+                                    <div class="order-tabs">
+                                        <div class="order-tabs__nav">
+                                            <ul class="tabs-menu" >
+                                                <li class="order-tabs__item current"><a href="#panel-dish-product">Самостоятельное блюдо</a></li>
+                                                <li class="order-tabs__item"><a href="#panel-dish-variation">Блюдо с ваирациями</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab">
+                                            <div id="panel-dish-product" class="tab-content">
+                                                <div class="panel-dish-product">
+                                                    <div class="panel-dish-product__list">
+                                                        <div class="panel-dish-product__item">
+                                                            <label class="c-label" for="panel-product-price">Цена блюда</label>
+                                                            <input class="c-input" type="text" placeholder="Цена блюда" name="panel-product-price" id="panel-product-price">
+                                                        </div>
+                                                        <div class="panel-dish-product__item">
+                                                            <label class="c-label" >Валюта</label>
+                                                            <select name="panel-mode-start" class="c-select">
+                                                                <option value="Рубль">Рубль</option>
+                                                                <option value="Манат">Манат</option>
+                                                            </select>
+            
+                                                        </div>
+                                                        <div class="panel-dish-product__item">
+                                                            <label class="c-label" for="panel-product-weight">Масса (гр.)</label>
+                                                            <input class="c-input" type="text" placeholder="Масса" name="panel-product-weight" id="panel-product-weight">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="panel-dish-variation" class="tab-content">
+                                                <!--START panel-dish-variation-->
+                                                <div class="panel-dish-variation">
+                                                    <div class="c-form__item">
+                                                        <!--<label class="c-label">Блюдо с вариациями</label>-->
+                                                        <div class="panel-dish-variation__list">
+                                                            <div class="panel-dish-variation__item">
+                                                                <label class="c-label" for="panel-variation-sentence">Название предложения</label>
+                                                                <input class="c-input" type="text" placeholder="Название предложения" name="panel-variation-sentence" id="panel-variation-sentence">
+                                                            </div>
+                                                            <div class="panel-dish-variation__item">
+                                                                <label class="c-label" for="panel-variation-ingredient">Ингридиент (опция)</label>
+                                                                <input class="c-input" type="text" placeholder="Ингридиент" name="panel-variation-ingredient" id="panel-variation-ingredient">
+                                                            </div>
+                                                            <div class="panel-dish-variation__item">
+                                                                <label class="c-label" for="panel-variation-weight">Масса (гр.)</label>
+                                                                <input class="c-input" type="text" placeholder="Масса" name="panel-variation-weight" id="panel-variation-weight">
+                                                            </div>
+                                                            <div class="panel-dish-variation__item">
+                                                                <label class="c-label" for="panel-variation-price">Цена</label>
+                                                                <input class="c-input" type="text" placeholder="Цена" name="panel-variation-price" id="panel-variation-price">
+                                                            </div>
+                                                            <div class="panel-dish-variation__item">
+                                                                <label class="c-label">Валюта</label>
+                                                                <select name="panel-mode-start" class="c-select">
+                                                                    <option value="Рубль">Рубль</option>
+                                                                    <option value="Манат">Манат</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="panel-dish-variation__item">
+                                                                <a href="#" class="c-form__add" id="js-dish-variation__add"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-work-time__copy">
+                                                        <div class="c-form__item">
+                                                            <div class="panel-dish-variation__list">
+                                                                <div class="panel-dish-variation__item">
+                                                                    <input class="c-input" type="text" placeholder="Название предложения" name="panel-variation-sentence" >
+                                                                </div>
+                                                                <div class="panel-dish-variation__item">
+                                                                    <input class="c-input" type="text" placeholder="Ингридиент" name="panel-variation-ingredient" >
+                                                                </div>
+                                                                <div class="panel-dish-variation__item">
+                                                                    <input class="c-input" type="text" placeholder="Масса" name="panel-variation-weight" >
+                                                                </div>
+                                                                <div class="panel-dish-variation__item">
+                                                                    <input class="c-input" type="text" placeholder="Цена" name="panel-variation-price">
+                                                                </div>
+                                                                <div class="panel-dish-variation__item">
+                                                                    <select name="panel-mode-start" class="">
+                                                                        <option value="Рубль">Рубль</option>
+                                                                        <option value="Манат">Манат</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="panel-dish-variation__item">
+                                                                    <a href="#" class="c-form__del">Удалить [х]</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+        
+                                                    </div>
+                                                    <div class="panel-work-time__list" id="js-dish-variation__list">
+        
+                                                    </div>
+                                                </div>
+                                                <!--END panel-dish-variation-->
+                                            </div>
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+                               
+                                <div class="c-form__item">
+                                    <label class="c-label" for="panel-dish-additive">Добавки к блюду</label>
+                                    <input class="c-input" type="text" placeholder="Добавки к блюду" name="panel-dish-additive" id="panel-dish-additive">
+                                </div>
                             </form>
                         </div>
                         <div class="l-button l-button__right">

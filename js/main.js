@@ -196,6 +196,7 @@ $(document).ready(function ($) {
     addClonePanel('#js-work-time-coffee__add', '#js-panel-work-time__coffee');
     addClonePanel('#js-work-time-cafe__add', '#js-panel-work-time__cafe');
     addClonePanel('#js-work-time-mp__add', '#js-panel-work-time__mp');
+    addClonePanel('#js-dish-variation__add', '#js-dish-variation__list');
 
     $(document).on('click', '.c-form__del', function(e) {
         e.preventDefault();
