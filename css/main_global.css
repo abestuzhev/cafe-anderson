@@ -4672,6 +4672,58 @@ a.c-button:hover {
 .menu-card__price .c-currency-symbol {
   font-family: "PT Serif Caption"; }
 
+.c-box-search-head {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .c-box-search-head__item:nth-child(1) {
+    position: relative;
+    width: 100%;
+    margin-right: 3rem; }
+
+.c-box-search button {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2rem;
+  height: 1.9rem;
+  background: url(../img/icons/icon-search.svg) 0 0 no-repeat;
+  cursor: pointer;
+  text-indent: -99999rem; }
+
+.c-box-search__list {
+  height: 20rem;
+  padding-top: 1rem; }
+
+.c-box-search__item {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  color: #231300; }
+
+.c-box-search__clear {
+  display: block;
+  max-width: 5.9rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #9b9696; }
+  .c-box-search__clear::after {
+    content: '';
+    display: none; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 

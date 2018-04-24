@@ -4204,3 +4204,57 @@ a.c-button {
         font-family: $font_serif;
     }
 }
+
+.c-box-search {
+    &-head {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item {
+            &:nth-child(1) {
+                position: relative;
+                width: 100%;
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 1.9rem;
+        background: url(../img/icons/icon-search.svg) 0 0 no-repeat;
+        cursor: pointer;
+        text-indent: -99999rem;
+    }
+
+    &__list {
+        height: 20rem;
+        padding-top: 1rem;
+    }
+
+    &__item {
+        margin-bottom: 1.2rem;
+        font-size: 1.4rem;
+        color: #231300;
+    }
+
+    &__clear {
+        display: block;
+        max-width: 5.9rem;
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #9b9696;
+
+        &::after {
+            content: '';
+            display: none;
+        }
+    }
+}

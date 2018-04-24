@@ -540,12 +540,14 @@ $(document).ready(function ($) {
 
     //поиск по кафе на странице с тортами и в оформлении заказа
     $(document).on('keyup change', '.c-search-page__input', function(){
-        checkAll();
+        checkAll('.order-delivery-address__list li', '.order-radio', '.c-search-page__input');
+        checkAll('#js-box-search-additive .c-box-search__item', '.c-checkbox', '#js-box-search-additive .c-search-page__input');
+        checkAll('#js-box-search-ingredient .c-box-search__item', '.c-checkbox', '#js-box-search-ingredient .c-search-page__input');
     });
 
-    function checkAll() {
-        $('.order-delivery-address__list li').each(function(i, item) {
-            var value = $(this).find('.order-radio').text().toLowerCase().indexOf($('.c-search-page__input').val().toLowerCase());
+    function checkAll(elem, whereSearch, input) {
+        $(elem).each(function(i, item) {
+            var value = $(this).find(whereSearch).text().toLowerCase().indexOf($(input).val().toLowerCase());
             if ( value >= 0 ) {
                 $(this).show();
                 // $(this).addClass('js-order-delivery-address__show');
@@ -556,9 +558,16 @@ $(document).ready(function ($) {
         });
     }
 
-    checkAll();
+    checkAll('.order-delivery-address__list li', '.order-radio', '.c-search-page__input');
+    checkAll('#js-box-search-additive .c-box-search__item', '.c-checkbox', '#js-box-search-additive .c-search-page__input');
+    checkAll('#js-box-search-ingredient .c-box-search__item', ' .c-checkbox', '#js-box-search-ingredient .c-search-page__input');
 
+    $(document).on('click', '.c-box-search__clear', function(e){
+        e.preventDefault();
+        $('.c-search-page__input').val('');
+        $('.c-box-search__item').show();
 
+    });
 
     //отписаться от подписки в личном кабинете
     $(document).on('click', '#lk-profile-subscription_unsubscribe', function(e){

@@ -2112,19 +2112,137 @@
                                             <label class="c-label" for="panel-dish-code">Внешний код</label>
                                             <input class="c-input" type="text" placeholder="" name="panel-dish-code" id="panel-dish-code" disabled>
                                         </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label"> Кафе в котором есть это блюдо</label>
+                                            <select name="panel-dish-cafe" class="c-select">
+                                                <option value="АндерСон в ЖК Шуваловский">АндерСон в ЖК Шуваловский</option>
+                                                <option value="АндерСон в Крылатском">АндерСон в Крылатском</option>
+                                                <option value="АндерСон в Одинцово">АндерСон в Одинцово</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="c-grid c-grid-between">
+                                    
                                     <div class="c-col c-col-6">
                                         <div class="c-form__item">
-                                            <label class="c-label"> Кафе в котором есть это блюдо</label>
-                                            <textarea class="c-input" name="panel-dish-cafe" rows="4" placeholder="Кафе"></textarea>
+                                            <label class="c-label">Ингридиенты</label>
+                                            <div class="c-box-search" id="js-box-search-ingredient">
+                                                <div class="c-box-search-head">
+                                                    <div class="c-box-search-head__item">
+                                                        <input type="text" name="panel-search-ingredients" class="c-search-page__input" placeholder="искать" autocomplete="off">
+                                                        <button>Поиск</button>
+        
+                                                    </div>
+                                                    <div class="c-box-search-head__item">
+                                                        <a href="#" class="c-box-search__clear">сбросить поиск <i class=""></i></a>
+                                                    </div>
+                                                </div>
+                                                <ul class="c-box-search__list" data-simplebar>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-1" id="panel-dish-ingredient-1">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-1">Индейка</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-2" id="panel-dish-ingredient-2">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-2">Лосось</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-3" id="panel-dish-ingredient-3">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-3">Курица</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-4" id="panel-dish-ingredient-4">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-4">Помидоры</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-5" id="panel-dish-ingredient-5">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-5">Огурец</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-6" id="panel-dish-ingredient-6">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-6">Индейка</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-7" id="panel-dish-ingredient-7">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-7">Лосось</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-8" id="panel-dish-ingredient-8">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-8">Курица</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-9" id="panel-dish-ingredient-9">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-9">Помидоры</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-ingredient-10" id="panel-dish-ingredient-10">
+                                                        <label class="c-checkbox" for="panel-dish-ingredient-10">Огурец</label>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="c-col c-col-6">
                                         <div class="c-form__item">
-                                            <label class="c-label">Ингридиенты (текст)</label>
-                                            <textarea class="c-input" name="panel-dish-ingredients" rows="4" placeholder="Ингридиенты"></textarea>
+                                            <label class="c-label">Добавки к блюду</label>
+                                            <div class="c-box-search" id="js-box-search-additive">
+                                                <div class="c-box-search-head">
+                                                    <div class="c-box-search-head__item">
+                                                        <input type="text" name="panel-search-ingredients" class="c-search-page__input" placeholder="искать" autocomplete="off">
+                                                        <button>Поиск</button>
+                
+                                                    </div>
+                                                    <div class="c-box-search-head__item">
+                                                        <a href="#" class="c-box-search__clear">сбросить поиск <i class=""></i></a>
+                                                    </div>
+                                                </div>
+                                                <ul class="c-box-search__list"  data-simplebar>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-1" id="panel-dish-additive-1">
+                                                        <label class="c-checkbox" for="panel-dish-additive-1">Индейка</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-2" id="panel-dish-additive-2">
+                                                        <label class="c-checkbox" for="panel-dish-additive-2">Лосось</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-3" id="panel-dish-additive-3">
+                                                        <label class="c-checkbox" for="panel-dish-additive-3">Курица</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-4" id="panel-dish-additive-4">
+                                                        <label class="c-checkbox" for="panel-dish-additive-4">Помидоры</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-5" id="panel-dish-additive-5">
+                                                        <label class="c-checkbox" for="panel-dish-additive-5">Огурец</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-6" id="panel-dish-additive-6">
+                                                        <label class="c-checkbox" for="panel-dish-additive-6">Индейка</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-7" id="panel-dish-additive-7">
+                                                        <label class="c-checkbox" for="panel-dish-additive-7">Лосось</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-8" id="panel-dish-additive-8">
+                                                        <label class="c-checkbox" for="panel-dish-additive-8">Курица</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-9" id="panel-dish-additive-9">
+                                                        <label class="c-checkbox" for="panel-dish-additive-9">Помидоры</label>
+                                                    </li>
+                                                    <li class="c-box-search__item">
+                                                        <input type="checkbox" name="panel-dish-additive-10" id="panel-dish-additive-10">
+                                                        <label class="c-checkbox" for="panel-dish-additive-10">Огурец</label>
+                                                    </li>
+            
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2234,10 +2352,7 @@
     
                                 </div>
                                
-                                <div class="c-form__item">
-                                    <label class="c-label" for="panel-dish-additive">Добавки к блюду</label>
-                                    <input class="c-input" type="text" placeholder="Добавки к блюду" name="panel-dish-additive" id="panel-dish-additive">
-                                </div>
+                                
                             </form>
                         </div>
                         <div class="l-button l-button__right">
