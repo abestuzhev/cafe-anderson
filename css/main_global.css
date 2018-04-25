@@ -1683,6 +1683,40 @@ p {
   font-weight: 400;
   margin-bottom: 1rem; }
 
+.c-title-decor-layout {
+  text-align: center; }
+
+.c-title-decor-1 {
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: "BebasNeue";
+  padding: .8rem 2rem;
+  background-color: #f2f2f1;
+  color: #231300;
+  display: inline-block;
+  margin-bottom: 2.4rem;
+  -webkit-box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  position: relative; }
+  .c-title-decor-1::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: url(../img/holiday/decor-plate-left.png) 0 0 no-repeat;
+    background-size: cover; }
+  .c-title-decor-1::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: url(../img/holiday/decor-plate-right.png) 0 0 no-repeat;
+    background-size: cover; }
+
 .wrapper select,
 .popup select {
   padding: .6rem 1.4rem .7rem;
@@ -4723,6 +4757,31 @@ a.c-button:hover {
   .c-box-search__clear::after {
     content: '';
     display: none; }
+
+/*c-holiday-count-1********************/
+.c-holiday-count-1 {
+  background: url(../img/icons/icon-holiday-count-bubble.svg) 0 0 no-repeat;
+  width: 22rem;
+  padding: 1.2rem 2rem 1.2rem 4rem;
+  position: relative; }
+  .c-holiday-count-1::after {
+    content: '';
+    position: absolute;
+    right: 5rem;
+    bottom: 100%;
+    width: 4.3rem;
+    height: 6.3rem;
+    background: url(../img/icons/icon-rabbit-half.svg) 0 0 no-repeat; }
+
+.c-holiday-count__text {
+  font-family: "SummerFont";
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  line-height: .9;
+  font-weight: 600;
+  color: #0f0f0f; }
+  .c-holiday-count__text span {
+    font-size: 3.7rem; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -15078,7 +15137,7 @@ test popup
 
 /*holiday-reason**************************/
 .holiday-reason {
-  margin-bottom: 7rem;
+  margin-bottom: 9rem;
   /*шапка страницы*/ }
   .holiday-reason__grid {
     display: -webkit-box;
@@ -15091,36 +15150,110 @@ test popup
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-right: -2.2rem;
     margin-left: -2.2rem; }
   .holiday-reason__col {
-    width: 33%;
-    padding: 0 2.2rem; }
+    width: 30%;
+    padding: 0 1rem;
+    text-align: center;
+    position: relative; }
+    .holiday-reason__col::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: 100%; }
+    .holiday-reason__col:nth-child(1) {
+      margin-top: -5.5rem;
+      background: url(../img/holiday/rope-1.png) 50% 0 repeat-y; }
+      .holiday-reason__col:nth-child(1)::after {
+        content: '';
+        width: 14px;
+        height: 77px;
+        background: url(../img/holiday/rope-1-end.png) 0 0 no-repeat; }
     .holiday-reason__col:nth-child(2) {
-      width: 44%; }
+      width: 44%;
+      background: url(../img/holiday/rope-2.png) 50% 0 repeat-y; }
+      .holiday-reason__col:nth-child(2)::after {
+        content: '';
+        width: 21px;
+        height: 80px;
+        background: url(../img/holiday/rope-2-end.png) 0 0 no-repeat; }
+    .holiday-reason__col:nth-child(3) {
+      margin-top: -3rem;
+      background: url(../img/holiday/chain-1.png) 50% 0 repeat-y; }
+      .holiday-reason__col:nth-child(3)::after {
+        content: '';
+        width: 15px;
+        height: 73px;
+        background: url(../img/holiday/chain-1-end.png) 0 0 no-repeat; }
+      .holiday-reason__col:nth-child(3) .c-title-decor-1 {
+        padding-top: 3px;
+        padding-bottom: 5px; }
+        .holiday-reason__col:nth-child(3) .c-title-decor-1 span {
+          display: block;
+          font-size: 1.3rem;
+          margin-top: -6px;
+          font-family: "PT Serif Caption"; }
   .holiday-reason__header {
     text-align: center; }
   .holiday-reason__head {
-    display: block;
+    display: inline-block;
     vertical-align: top;
     font-family: "BebasNeue";
     font-size: 2.5rem;
     color: #231300;
-    padding: 12px 40px 12px 50px;
+    padding: 12px 40px;
     border-radius: .6rem;
     background-color: #9acc4f;
     border: 3px solid #98a967;
     border-top: 3px solid #e4f2d1;
     position: relative;
     -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
-            box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3); }
+            box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
+    width: 50rem;
+    margin-bottom: 4rem; }
+    .holiday-reason__head-layout {
+      display: inline-block;
+      position: relative; }
+      .holiday-reason__head-layout .c-holiday-count-1 {
+        position: absolute;
+        left: 105%;
+        top: 0; }
+    .holiday-reason__head svg {
+      position: absolute;
+      fill: #000; }
+    .holiday-reason__head .symbol-holiday-decor-1 {
+      top: 54%;
+      left: 2%;
+      font-size: 3rem; }
+    .holiday-reason__head .symbol-holiday-decor-2 {
+      top: 43%;
+      right: 2%; }
+    .holiday-reason__head .symbol-holiday-cap {
+      top: 23%;
+      left: 11%;
+      -webkit-transform: rotate(80deg);
+          -ms-transform: rotate(80deg);
+              transform: rotate(80deg); }
+    .holiday-reason__head .symbol-holiday-cake {
+      top: 10%;
+      right: 9%;
+      font-size: 3.4rem; }
+    .holiday-reason__head .symbol-holiday-saw {
+      top: 15%;
+      left: 5%; }
   .holiday-reason__title {
-    font-size: 3.2rem; }
+    font-size: 4rem;
+    color: #231300; }
   .holiday-reason__subtitle {
-    font-size: 1.6rem; }
+    font-size: 1.8rem;
+    color: #ffffff; }
   .holiday-reason-card {
     /*holiday-reason-card*/
     position: relative;
@@ -15133,7 +15266,8 @@ test popup
     background-size: cover;
     -webkit-box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
             box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
-    margin: 0 auto 7rem; }
+    margin-bottom: 5.5rem;
+    display: inline-block; }
     .holiday-reason-card::after {
       content: '';
       position: absolute;
@@ -15194,7 +15328,8 @@ test popup
       width: 40rem;
       height: 40rem;
       border-radius: 40rem;
-      border-width: 3rem; }
+      border-width: 3rem;
+      margin-left: -1rem; }
       .holiday-reason-card--vypusknik::after {
         content: '';
         border-radius: 40rem; }
@@ -15206,19 +15341,22 @@ test popup
       width: 30.5rem;
       height: 27rem;
       border-width: 1.5rem; }
-    .holiday-reason-card:last-child .holiday-reason-card__body {
-      background: #9acc4f url(../img/pattern-round-2.png) 0 0 repeat; }
+    .holiday-reason-card:last-child {
+      margin-bottom: 0; }
+      .holiday-reason-card:last-child .holiday-reason-card__body {
+        background: #9acc4f url(../img/pattern-round-2.png) 0 0 repeat; }
     .holiday-reason-card--child-departure {
       /*holiday-reason-card--child-departure*/
       width: 40rem;
       height: 40rem;
-      border-radius: 40rem; }
+      border-radius: 40rem;
+      margin-left: -1rem; }
       .holiday-reason-card--child-departure::after {
         content: '';
         border-radius: 40rem; }
     .holiday-reason-card--feast {
       /*holiday-reason-card--feast*/
-      width: 50rem;
+      width: 48rem;
       height: 39rem;
       border-width: 4rem; }
       .holiday-reason-card--feast .holiday-reason-card__body {
@@ -15253,7 +15391,8 @@ test popup
       width: 44rem;
       height: 44rem;
       border-width: 1.5rem;
-      border-radius: 44rem; }
+      border-radius: 44rem;
+      margin-left: -3rem; }
       .holiday-reason-card--papeniny::after {
         content: '';
         border-radius: 44rem; }

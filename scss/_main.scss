@@ -12142,22 +12142,75 @@ test popup
 /*holiday-reason**************************/
 
 .holiday-reason {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     &__grid {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        align-items: stretch;
+        align-items: flex-start;
         margin-right: -2.2rem;
         margin-left: -2.2rem;
     }
 
     &__col {
-        width: 33%;
-        padding: 0 2.2rem;
+        width: 30%;
+        padding: 0 1rem;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100%;
+        }
+
+        &:nth-child(1) {
+            margin-top: -5.5rem;
+            background: url(../img/holiday/rope-1.png) 50% 0 repeat-y;
+            &::after {
+                content:'';
+                width: 14px;
+                height: 77px;
+                background:  url(../img/holiday/rope-1-end.png) 0 0 no-repeat;
+            }
+        }
 
         &:nth-child(2) {
             width: 44%;
+            background: url(../img/holiday/rope-2.png) 50% 0 repeat-y;
+
+            &::after {
+                content:'';
+                width: 21px;
+                height: 80px;
+                background:  url(../img/holiday/rope-2-end.png) 0 0 no-repeat;
+            }
+
+        }
+
+        &:nth-child(3) {
+            margin-top: -3rem;
+            background: url(../img/holiday/chain-1.png) 50% 0 repeat-y;
+            &::after {
+                content:'';
+                width: 15px;
+                height: 73px;
+                background:  url(../img/holiday/chain-1-end.png) 0 0 no-repeat;
+            }
+
+            .c-title-decor-1 {
+                padding-top: 3px;
+                padding-bottom: 5px;
+                span {
+                    display: block;
+                    font-size: 1.3rem;
+                    margin-top: -6px;
+                    font-family: $font_serif;
+                }
+            }
+
         }
     }
 
@@ -12167,25 +12220,72 @@ test popup
     }
 
     &__head {
-        display: block;
+        display: inline-block;
         vertical-align: top;
         font-family: $font_sans-serif;
         font-size: 2.5rem;
         color: #231300;
-        padding: 12px 40px 12px 50px;
+        padding: 12px 40px;
         border-radius: .6rem;
         background-color: #9acc4f;
         border: 3px solid #98a967;
         border-top: 3px solid #e4f2d1;
         position: relative;
         box-shadow: 0 2px 30px 0 rgba(0,0,0,.3);
+        width: 50rem;
+        margin-bottom: 4rem;
+
+        &-layout {
+            display: inline-block;
+            position: relative;
+
+            .c-holiday-count-1 {
+                position: absolute;
+                left: 105%;
+                top: 0;
+            }
+        }
+
+        svg {
+            position: absolute;
+            fill: #000;
+        }
+        .symbol-holiday-decor-1 {
+            top: 54%;
+            left: 2%;
+            font-size: 3rem;
+        }
+
+        .symbol-holiday-decor-2 {
+            top: 43%;
+            right: 2%;
+        }
+
+        .symbol-holiday-cap {
+            top: 23%;
+            left: 11%;
+            transform: rotate(80deg);
+        }
+
+        .symbol-holiday-cake {
+            top: 10%;
+            right: 9%;
+            font-size: 3.4rem;
+        }
+
+        .symbol-holiday-saw {
+            top: 15%;
+            left: 5%;
+        }
     }
 
     &__title {
-        font-size: 3.2rem;
+        font-size: 4rem;
+        color: #231300;
     }
     &__subtitle {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
+        color: #ffffff;
     }
 
     &-card {/*holiday-reason-card*/
@@ -12204,7 +12304,9 @@ test popup
                 0 -3px 0 0 #fcfaf5,
                 0 0 0 3px #bcb69f,
                 0 0 30px 0 rgba(0,0,0,.4),;
-        margin: 0 auto 7rem;
+        margin-bottom: 5.5rem;
+        display: inline-block;
+        //opacity: .5;
 
         &::after {
             content: '';
@@ -12282,7 +12384,7 @@ test popup
             height: 40rem;
             border-radius: 40rem;
             border-width: 3rem;
-
+            margin-left: -1rem;
             &::after {
                 content: '';
                 border-radius: 40rem;
@@ -12299,6 +12401,7 @@ test popup
         }
 
         &:last-child {
+            margin-bottom: 0;
 
             .holiday-reason-card__body {
                 background: #9acc4f url(../img/pattern-round-2.png) 0 0 repeat;
@@ -12309,6 +12412,7 @@ test popup
             width: 40rem;
             height: 40rem;
             border-radius: 40rem;
+            margin-left: -1rem;
             &::after {
                 content: '';
                 border-radius: 40rem;
@@ -12317,7 +12421,7 @@ test popup
         }
 
         &--feast {/*holiday-reason-card--feast*/
-            width: 50rem;
+            width: 48rem;
             height: 39rem;
             border-width: 4rem;
 
@@ -12356,6 +12460,7 @@ test popup
             height: 44rem;
             border-width: 1.5rem;
             border-radius: 44rem;
+            margin-left: -3rem;
             &::after {
                 content: '';
                 border-radius: 44rem;

@@ -428,6 +428,50 @@ p {
     margin-bottom: 1rem;
 }
 
+.c-title-decor-layout {
+    text-align: center;
+}
+
+.c-title-decor-1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-family: $font_sans-serif;
+    padding: .8rem 2rem;
+    background-color: #f2f2f1;
+    color: #231300;
+    display: inline-block;
+    margin-bottom: 2.4rem;
+    box-shadow:
+            inset 0 3px 0 0 #fff,
+            inset 0 -3px 0 0 #bbb8a8,
+            0 2px 5px 0 rgba(0,0,0,.1);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background: url(../img/holiday/decor-plate-left.png) 0 0 no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background: url(../img/holiday/decor-plate-right.png) 0 0 no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
 //------------------------------------------------------------form
 
 .wrapper select,
@@ -4259,4 +4303,42 @@ a.c-button {
             display: none;
         }
     }
+}
+
+
+/*c-holiday-count-1********************/
+
+.c-holiday-count {
+
+
+    &-1 {
+        background: url(../img/icons/icon-holiday-count-bubble.svg) 0 0 no-repeat;
+        width: 22rem;
+        padding: 1.2rem 2rem 1.2rem 4rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 5rem;
+            bottom: 100%;
+            width: 4.3rem;
+            height: 6.3rem;
+            background: url(../img/icons/icon-rabbit-half.svg) 0 0 no-repeat;
+        }
+    }
+
+    &__text {
+        font-family: $font_decor;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        line-height:.9;
+        font-weight: 600;
+        color: #0f0f0f;
+
+        span {
+            font-size: 3.7rem;
+        }
+    }
+
 }
