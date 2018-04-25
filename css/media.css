@@ -215,6 +215,10 @@
     .holiday-reason__grid {
         padding: 0 8rem;
     }
+
+    .holiday-reason__col {
+        width: 33%;
+    }
 }
 
 @media (max-width: 1380px) {
