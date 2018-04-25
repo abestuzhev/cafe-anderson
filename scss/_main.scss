@@ -12023,6 +12023,10 @@ test popup
 
         &__body {
             flex: 1;
+
+            .SumoSelect > .CaptionCont > span.placeholder {
+                height: 16px;
+            }
         }
 
         &-list {
@@ -12138,6 +12142,7 @@ test popup
 /*holiday-reason**************************/
 
 .holiday-reason {
+    margin-bottom: 7rem;
     &__grid {
         display: flex;
         flex-flow: row nowrap;
@@ -12150,6 +12155,37 @@ test popup
     &__col {
         width: 33%;
         padding: 0 2.2rem;
+
+        &:nth-child(2) {
+            width: 44%;
+        }
+    }
+
+    /*шапка страницы*/
+    &__header {
+        text-align: center;
+    }
+
+    &__head {
+        display: block;
+        vertical-align: top;
+        font-family: $font_sans-serif;
+        font-size: 2.5rem;
+        color: #231300;
+        padding: 12px 40px 12px 50px;
+        border-radius: .6rem;
+        background-color: #9acc4f;
+        border: 3px solid #98a967;
+        border-top: 3px solid #e4f2d1;
+        position: relative;
+        box-shadow: 0 2px 30px 0 rgba(0,0,0,.3);
+    }
+
+    &__title {
+        font-size: 3.2rem;
+    }
+    &__subtitle {
+        font-size: 1.6rem;
     }
 
     &-card {/*holiday-reason-card*/
@@ -12159,11 +12195,16 @@ test popup
         border: 2rem solid #f2edd9;
         border-radius: .2rem;
         background-color: #e9ecf2;
+        background-position: 50% 50%;
+        -webkit-background-size:cover;
+        background-size:cover;
         box-shadow:
                 inset 0 0 0 3px #bcb69f,
                 inset 0 0 30px 0 rgba(0,0,0,.3),
                 0 -3px 0 0 #fcfaf5,
-                0 0 0 3px #bcb69f;
+                0 0 0 3px #bcb69f,
+                0 0 30px 0 rgba(0,0,0,.4),;
+        margin: 0 auto 7rem;
 
         &::after {
             content: '';
@@ -12175,12 +12216,30 @@ test popup
             box-shadow: inset 0 -3px 0 0 #fcfaf5;
         }
 
+        & > a {
+            cursor:pointer;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            &:hover {
+                color: #1d1d1b;
+            }
+
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+
         &__body {
             position: absolute;
             z-index: 20;
             left: 50%;
             transform: translateX(-50%);
-            bottom: -16px;
+            bottom: -45px;
             background-color: #f1f1f1;
             border-radius: 1rem;
             border:1px solid #c2c2c2;
@@ -12192,15 +12251,139 @@ test popup
         &__title {
             font-size: 2rem;
             color: #1d1d1b;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 3px;
         }
 
         &__text {
             font-size: 1.3rem;
             font-style: italic;
+            color: #1d1d1b;
+        }
+        
+        &__bg {
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            background-position: 50% 50%;
+            -webkit-background-size:cover;
+            background-size:cover;
         }
 
         &--karapuznik {/*holiday-reason-card--karapuznik*/
             height: 60.3rem;
+        }
+
+
+        &--vypusknik {/*holiday-reason-card--vypusknik*/
+            width: 40rem;
+            height: 40rem;
+            border-radius: 40rem;
+            border-width: 3rem;
+
+            &::after {
+                content: '';
+                border-radius: 40rem;
+            }
+        }
+
+        &--krestiny {/*holiday-reason-card--krestiny*/
+            height: 35rem;
+        }
+        &--zubelej {/*holiday-reason-card--zubelej*/
+            width: 30.5rem;
+            height: 27rem;
+            border-width: 1.5rem;
+        }
+
+        &:last-child {
+
+            .holiday-reason-card__body {
+                background: #9acc4f url(../img/pattern-round-2.png) 0 0 repeat;
+            }
+        }
+
+        &--child-departure {/*holiday-reason-card--child-departure*/
+            width: 40rem;
+            height: 40rem;
+            border-radius: 40rem;
+            &::after {
+                content: '';
+                border-radius: 40rem;
+            }
+
+        }
+
+        &--feast {/*holiday-reason-card--feast*/
+            width: 50rem;
+            height: 39rem;
+            border-width: 4rem;
+
+            .holiday-reason-card__body {
+                width: 30.5rem;
+                bottom: -7rem;
+            }
+        }
+        &--year {/*holiday-reason-card--year*/
+            width: 44rem;
+            height: 68rem;
+            border-width: 1.5rem;
+        }
+
+        &--decree {/*holiday-reason-card--decree*/
+            width: 49rem;
+            height: 49rem;
+            border-width: 1.5rem;
+        }
+        &--tortzhestvo {/*holiday-reason-card--tortzhestvo*/
+            width: 40rem;
+            height: 33rem;
+            border-width: 1.5rem;
+        }
+        &--family-departure {/*holiday-reason-card--family-departure*/
+            width: 36rem;
+            height: 21rem;
+            border-width: 1rem;
+        }
+        &--mameniny {/*holiday-reason-card--mameniny*/
+            width: 33rem;
+            height: 40rem;
+        }
+        &--papeniny {/*holiday-reason-card--papeniny*/
+            width: 44rem;
+            height: 44rem;
+            border-width: 1.5rem;
+            border-radius: 44rem;
+            &::after {
+                content: '';
+                border-radius: 44rem;
+            }
+        }
+        &--babulechnik {/*holiday-reason-card--babulechnik*/
+            width: 36rem;
+            height: 21rem;
+            border-width: 1rem;
+        }
+        &--meeting {/*holiday-reason-card--meeting*/
+            width: 36rem;
+            height: 36rem;
+            border-width: 1.5rem;
+        }
+        &--dedulechnik {/*holiday-reason-card--dedulechnik*/
+            width: 32rem;
+            height: 32rem;
+            border-radius: 32rem;
+            &::after {
+                content: '';
+                border-radius: 32rem;
+            }
+        }
+        &--corporate-departure {/*holiday-reason-card--corporate-departure*/
+            width: 30.5rem;
+            height: 27rem;
+            border-width: 1.5rem;
         }
     }
 }

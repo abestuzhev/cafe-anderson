@@ -14995,6 +14995,8 @@ test popup
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1; }
+      .panel-dish__body .SumoSelect > .CaptionCont > span.placeholder {
+        height: 16px; }
     .panel-dish-list {
       margin-bottom: 2rem; }
       .panel-dish-list__item {
@@ -15075,66 +15077,206 @@ test popup
       border-radius: 1.7rem 1.7rem 0 0; }
 
 /*holiday-reason**************************/
-.holiday-reason__grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  margin-right: -2.2rem;
-  margin-left: -2.2rem; }
-
-.holiday-reason__col {
-  width: 33%;
-  padding: 0 2.2rem; }
-
-.holiday-reason-card {
-  /*holiday-reason-card*/
-  position: relative;
-  width: 100%;
-  height: 40rem;
-  border: 2rem solid #f2edd9;
-  border-radius: .2rem;
-  background-color: #e9ecf2;
-  -webkit-box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f;
-          box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f; }
-  .holiday-reason-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    -webkit-box-shadow: inset 0 -3px 0 0 #fcfaf5;
-            box-shadow: inset 0 -3px 0 0 #fcfaf5; }
-  .holiday-reason-card__body {
-    position: absolute;
-    z-index: 20;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: -16px;
-    background-color: #f1f1f1;
-    border-radius: 1rem;
-    border: 1px solid #c2c2c2;
-    width: 26rem;
-    padding: 1.5rem;
+.holiday-reason {
+  margin-bottom: 7rem;
+  /*шапка страницы*/ }
+  .holiday-reason__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-right: -2.2rem;
+    margin-left: -2.2rem; }
+  .holiday-reason__col {
+    width: 33%;
+    padding: 0 2.2rem; }
+    .holiday-reason__col:nth-child(2) {
+      width: 44%; }
+  .holiday-reason__header {
     text-align: center; }
-  .holiday-reason-card__title {
-    font-size: 2rem;
-    color: #1d1d1b; }
-  .holiday-reason-card__text {
-    font-size: 1.3rem;
-    font-style: italic; }
-  .holiday-reason-card--karapuznik {
-    /*holiday-reason-card--karapuznik*/
-    height: 60.3rem; }
+  .holiday-reason__head {
+    display: block;
+    vertical-align: top;
+    font-family: "BebasNeue";
+    font-size: 2.5rem;
+    color: #231300;
+    padding: 12px 40px 12px 50px;
+    border-radius: .6rem;
+    background-color: #9acc4f;
+    border: 3px solid #98a967;
+    border-top: 3px solid #e4f2d1;
+    position: relative;
+    -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3); }
+  .holiday-reason__title {
+    font-size: 3.2rem; }
+  .holiday-reason__subtitle {
+    font-size: 1.6rem; }
+  .holiday-reason-card {
+    /*holiday-reason-card*/
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    border: 2rem solid #f2edd9;
+    border-radius: .2rem;
+    background-color: #e9ecf2;
+    background-position: 50% 50%;
+    background-size: cover;
+    -webkit-box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
+    margin: 0 auto 7rem; }
+    .holiday-reason-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      -webkit-box-shadow: inset 0 -3px 0 0 #fcfaf5;
+              box-shadow: inset 0 -3px 0 0 #fcfaf5; }
+    .holiday-reason-card > a {
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      display: block; }
+      .holiday-reason-card > a:hover {
+        color: #1d1d1b; }
+      .holiday-reason-card > a::after {
+        content: '';
+        border: none; }
+    .holiday-reason-card__body {
+      position: absolute;
+      z-index: 20;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: -45px;
+      background-color: #f1f1f1;
+      border-radius: 1rem;
+      border: 1px solid #c2c2c2;
+      width: 26rem;
+      padding: 1.5rem;
+      text-align: center; }
+    .holiday-reason-card__title {
+      font-size: 2rem;
+      color: #1d1d1b;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 3px; }
+    .holiday-reason-card__text {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #1d1d1b; }
+    .holiday-reason-card__bg {
+      overflow: hidden;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      background-position: 50% 50%;
+      background-size: cover; }
+    .holiday-reason-card--karapuznik {
+      /*holiday-reason-card--karapuznik*/
+      height: 60.3rem; }
+    .holiday-reason-card--vypusknik {
+      /*holiday-reason-card--vypusknik*/
+      width: 40rem;
+      height: 40rem;
+      border-radius: 40rem;
+      border-width: 3rem; }
+      .holiday-reason-card--vypusknik::after {
+        content: '';
+        border-radius: 40rem; }
+    .holiday-reason-card--krestiny {
+      /*holiday-reason-card--krestiny*/
+      height: 35rem; }
+    .holiday-reason-card--zubelej {
+      /*holiday-reason-card--zubelej*/
+      width: 30.5rem;
+      height: 27rem;
+      border-width: 1.5rem; }
+    .holiday-reason-card:last-child .holiday-reason-card__body {
+      background: #9acc4f url(../img/pattern-round-2.png) 0 0 repeat; }
+    .holiday-reason-card--child-departure {
+      /*holiday-reason-card--child-departure*/
+      width: 40rem;
+      height: 40rem;
+      border-radius: 40rem; }
+      .holiday-reason-card--child-departure::after {
+        content: '';
+        border-radius: 40rem; }
+    .holiday-reason-card--feast {
+      /*holiday-reason-card--feast*/
+      width: 50rem;
+      height: 39rem;
+      border-width: 4rem; }
+      .holiday-reason-card--feast .holiday-reason-card__body {
+        width: 30.5rem;
+        bottom: -7rem; }
+    .holiday-reason-card--year {
+      /*holiday-reason-card--year*/
+      width: 44rem;
+      height: 68rem;
+      border-width: 1.5rem; }
+    .holiday-reason-card--decree {
+      /*holiday-reason-card--decree*/
+      width: 49rem;
+      height: 49rem;
+      border-width: 1.5rem; }
+    .holiday-reason-card--tortzhestvo {
+      /*holiday-reason-card--tortzhestvo*/
+      width: 40rem;
+      height: 33rem;
+      border-width: 1.5rem; }
+    .holiday-reason-card--family-departure {
+      /*holiday-reason-card--family-departure*/
+      width: 36rem;
+      height: 21rem;
+      border-width: 1rem; }
+    .holiday-reason-card--mameniny {
+      /*holiday-reason-card--mameniny*/
+      width: 33rem;
+      height: 40rem; }
+    .holiday-reason-card--papeniny {
+      /*holiday-reason-card--papeniny*/
+      width: 44rem;
+      height: 44rem;
+      border-width: 1.5rem;
+      border-radius: 44rem; }
+      .holiday-reason-card--papeniny::after {
+        content: '';
+        border-radius: 44rem; }
+    .holiday-reason-card--babulechnik {
+      /*holiday-reason-card--babulechnik*/
+      width: 36rem;
+      height: 21rem;
+      border-width: 1rem; }
+    .holiday-reason-card--meeting {
+      /*holiday-reason-card--meeting*/
+      width: 36rem;
+      height: 36rem;
+      border-width: 1.5rem; }
+    .holiday-reason-card--dedulechnik {
+      /*holiday-reason-card--dedulechnik*/
+      width: 32rem;
+      height: 32rem;
+      border-radius: 32rem; }
+      .holiday-reason-card--dedulechnik::after {
+        content: '';
+        border-radius: 32rem; }
+    .holiday-reason-card--corporate-departure {
+      /*holiday-reason-card--corporate-departure*/
+      width: 30.5rem;
+      height: 27rem;
+      border-width: 1.5rem; }
