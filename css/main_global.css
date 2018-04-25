@@ -4762,7 +4762,7 @@ a.c-button:hover {
 .c-holiday-count-1 {
   background: url(../img/icons/icon-holiday-count-bubble.svg) 0 0 no-repeat;
   width: 22rem;
-  padding: 1.2rem 2rem 1.2rem 4rem;
+  padding: 1rem 2rem 1.2rem 4rem;
   position: relative; }
   .c-holiday-count-1::after {
     content: '';
@@ -4775,13 +4775,12 @@ a.c-button:hover {
 
 .c-holiday-count__text {
   font-family: "SummerFont";
-  font-size: 3.2rem;
+  font-size: 3.3rem;
   text-transform: uppercase;
   line-height: .9;
-  font-weight: 600;
   color: #0f0f0f; }
   .c-holiday-count__text span {
-    font-size: 3.7rem; }
+    font-size: 3.8rem; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
