@@ -211,6 +211,10 @@
     .easter-banner__title {
         width: 60%;
     }
+
+    .holiday-reason__grid {
+        padding: 0 8rem;
+    }
 }
 
 @media (max-width: 1380px) {
