@@ -65,6 +65,7 @@
 
 .header-wrap.sticky .top-message {
     top: 0 !important;
+    display: none;
 }
 
 .header-wrap .top-message {
