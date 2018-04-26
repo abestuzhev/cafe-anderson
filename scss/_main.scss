@@ -12093,19 +12093,23 @@ test popup
                 }
 
                 &:nth-child(1){
-                    width: 32%;
+                    width: 25%;
                 }
                 &:nth-child(2){
-                    width: 30%;
+                    width: 70%;
                 }
                 &:nth-child(3){
                     width: 15%;
                 }
                 &:nth-child(4){
-                    width: 15%;
+                    width: 11%;
                 }
                 &:nth-child(5){
                     width: 15%;
+                    .SumoSelect > .CaptionCont {
+                        width:10rem;
+                    }
+
                 }
                 &:nth-child(6){
                     width: 15%;
@@ -12493,9 +12497,34 @@ test popup
     }
 }
 
+/*panel-events****************************/
+
+.panel-events {
+
+    &-search {
+
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        .c-card-event {
+            &__label {
+                right:0;
+                left: auto;
+                background: none;
+            }
+
+            .icon-delete-basket {
+                height: 1.4rem;
+            }
+        }
+    }
 
 
-
+}
 
 
 

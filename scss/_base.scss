@@ -943,7 +943,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 
 .c-select,
-.c-select--search {
+.c-select--search,
+.js-select-search-copy {
     &-layout {
         position: relative;
     }
@@ -987,6 +988,7 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 }
 
+.js-select-search-copy + .SelectBox .search-txt,
 .c-select--search + .SelectBox .search-txt {
     padding: 1.4rem 1.6rem;
 }
@@ -1880,6 +1882,8 @@ a.c-button {
 
 /*card-event------------------------------------------------------------*/
 
+
+
 .c-card-event {
     font-family: $font_serif;
     position: relative;
@@ -1902,7 +1906,29 @@ a.c-button {
     &__header {
     
     }
-    
+
+    &__img {
+        width: 15rem;
+        margin-right: 1.4rem;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: auto;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+
+    &__desc {
+        flex: 1;
+    }
+
     &__body {
     
     }
@@ -1980,6 +2006,13 @@ a.c-button {
         }
         
         &__date {
+            color: #553023;
+            border-bottom: none !important;
+            display: inline-block;
+            min-width: 6.5rem;
+            margin-right: .4rem !important;
+        }
+        &__code {
             color: #553023;
             border-bottom: none !important;
             display: inline-block;
@@ -2072,6 +2105,13 @@ a.c-button {
             margin-right: .8rem;
         }
     }
+}
+
+.c-card-event--img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding: 1.3rem 2.5rem 2.7rem;
 }
 
 .c-card-event__btn--basket.disabled,

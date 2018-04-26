@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Панель партнера</title>
+    <title>Панель список мероприятий</title>
     <link rel="shortcut icon" href="favicon.png">
     <!--[if lt IE 10]>
     <script src="js/IE9.js"></script>
@@ -2026,358 +2026,71 @@
         
         <div class="c-layout">
             <section class="panel page-container">
-                <div class="panel-dish">
-                    <ul class="filter-hold">
-                        <li class="filter-hold__item active">
-                            <svg class="c-symbol symbol-salad"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-salad"></use></svg>
-                            <a href="#" class="filter-hold__link">Основное меню</a>
-                            <i class="filter-hold__dropdown">
-                                <svg class="c-symbol symbol-dropdown"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-dropdown"></use></svg>
-                            </i>
-                            <ul class="filter-hold__submenu">
-                                <li class="filter-hold__subitem"><a href="#">завтраки</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">горячее</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">овощи</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">паста</a></li>
-                                <li class="filter-hold__subitem">
-                                    <a href="#" class="">фирменные салаты</a>
-                                    <ul class="filter-hold__sub-submenu">
-                                        <li class="filter-hold__sub-subitem active"><a href="#">пункт 1</a></li>
-                                        <li class="filter-hold__sub-subitem"> <a href="#">Сладости на день святого валентина</a></li>
-                                        <li class="filter-hold__sub-subitem"> <a href="#">Пункт 3</a></li>
-                                        <li class="filter-hold__sub-subitem"> <a href="#">Пункт 4</a></li>
-                                    </ul>
-                                </li>
-                                <li class="filter-hold__subitem"> <a href="#">паста</a></li>
-                            </ul>
-                        </li>
-                        <li class="filter-hold__item">
-                            <svg class="c-symbol symbol-baby"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-baby"></use></svg>
-                            <a href="#" class="filter-hold__link">Детское меню</a>
-                            <i class="filter-hold__dropdown">
-                                <svg class="c-symbol symbol-dropdown"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-dropdown"></use></svg>
-                            </i>
-                            <ul class="filter-hold__submenu">
-                                <li class="filter-hold__subitem"><a href="#">завтраки</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">горячее</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">овощи</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">паста</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">паста</a></li>
-                            </ul>
-                        </li>
-                        <li class="filter-hold__item">
-                            <svg class="c-symbol symbol-ice-cream"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-ice-cream"></use></svg>
-                            <a href="#" class="filter-hold__link">Десерты</a>
-                            <i class="filter-hold__dropdown">
-                                <svg class="c-symbol symbol-dropdown"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-dropdown"></use></svg>
-                            </i>
-                            <ul class="filter-hold__submenu">
-                                <li class="filter-hold__subitem"><a href="#">завтраки</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">горячее</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">овощи</a></li>
-                            </ul>
-                        </li>
-                        <li class="filter-hold__item">
-                            <svg class="c-symbol symbol-hot-tea"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-hot-tea"></use></svg>
-                            <a href="#" class="filter-hold__link">Бар</a>
-                            <i class="filter-hold__dropdown">
-                                <svg class="c-symbol symbol-dropdown"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-dropdown"></use></svg>
-                            </i>
-                            <ul class="filter-hold__submenu">
-                                <li class="filter-hold__subitem"><a href="#">завтраки</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">горячее</a></li>
-                                <li class="filter-hold__subitem"> <a href="#">овощи</a></li>
-                            </ul>
-                        </li>
-                        <li class="filter-hold__item">
-                            <svg class="c-symbol symbol-shopping-bag"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#symbol-shopping-bag"></use></svg>
-                            <a href="#" class="filter-hold__link">Купить в Андерсоне</a>
-                        </li>
-                    </ul>
-                    <div class="panel-dish__body">
-                        <div class="panel-dish-card">
-                            <form action="#" method="POST" >
-                                <div class="c-form__item">
-                                    <label class="c-label" for="panel-dish-name">Название блюда<span class="c-obligatory-field">*</span></label>
-                                    <input class="c-input" type="text" placeholder="Название блюда" name="panel-dish-name" id="panel-dish-name" required="">
+                <div class="panel-events">
+                    <div class="panel-events-search"></div>
+                    <div class="panel-events__list">
+                        <div class="panel-events__item">
+                            <div class="c-card-event c-card-event--img">
+                                <div class="c-card-event__img">
+                                    <img src="./img/bd06e200c1681734aa8f36d506aa3f47.jpg" alt="">
                                 </div>
-                                <div class="c-grid c-grid-between">
-                                    <div class="c-col c-col-6">
-                                        <div class="c-form__item">
-                                            <input type="file" name="panel-photo-cover" class="panel-upload" accept=".png, .jpg, .gif,.pdf" multiple>
-                                        </div>
+                                <div class="c-card-event__desc">
+                                    <div class="c-card-event__label">
+                                        <div class="c-card-event__age"><i class="icon-uneven-circle">4+</i></div>
                                     </div>
-                                    <div class="c-col c-col-6">
-                                        <div class="c-form__item">
-                                            <label class="c-label" for="panel-dish-code">Внешний код</label>
-                                            <input class="c-input" type="text" placeholder="" name="panel-dish-code" id="panel-dish-code" disabled>
-                                        </div>
-                                        <div class="c-form__item">
-                                            <label class="c-label"> Кафе в котором есть это блюдо</label>
-                                            <select name="panel-dish-cafe" multiple="multiple" class="c-select--search">
-                                                <option value="АндерСон в ЖК Шуваловский">АндерСон в ЖК Шуваловский</option>
-                                                <option value="АндерСон в Крылатском">АндерСон в Крылатском</option>
-                                                <option value="АндерСон в Одинцово">АндерСон в Одинцово</option>
-                                                <option value="АндерСон в Одинцово">АндерСон в Одинцово</option>
-                                                <option value="АндерСон в Одинцово">АндерСон в Одинцово</option>
-                                            </select>
-                                        </div>
+                                    <div class="c-card-event__header">
+                                        <div class="c-card-event__title"><a href="#">Мастер класс "Цветочное чаепитие"</a></div>
                                     </div>
-                                </div>
-                                <div class="c-grid c-grid-between">
-                                    
-                                    <div class="c-col c-col-6">
-                                        <div class="c-form__item">
-                                            <label class="c-label">Ингридиенты</label>
-                                            <div class="c-box-search" id="js-box-search-ingredient">
-                                                <div class="c-box-search-head">
-                                                    <div class="c-box-search-head__item">
-                                                        <input type="text" name="panel-search-ingredients" class="c-search-page__input" placeholder="искать" autocomplete="off">
-                                                        <button>Поиск</button>
-        
-                                                    </div>
-                                                    <div class="c-box-search-head__item">
-                                                        <a href="#" class="c-box-search__clear">сбросить поиск <i class=""></i></a>
-                                                    </div>
-                                                </div>
-                                                <ul class="c-box-search__list" data-simplebar>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-1" id="panel-dish-ingredient-1">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-1">Индейка</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-2" id="panel-dish-ingredient-2">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-2">Лосось</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-3" id="panel-dish-ingredient-3">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-3">Курица</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-4" id="panel-dish-ingredient-4">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-4">Помидоры</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-5" id="panel-dish-ingredient-5">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-5">Огурец</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-6" id="panel-dish-ingredient-6">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-6">Индейка</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-7" id="panel-dish-ingredient-7">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-7">Лосось</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-8" id="panel-dish-ingredient-8">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-8">Курица</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-9" id="panel-dish-ingredient-9">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-9">Помидоры</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-ingredient-10" id="panel-dish-ingredient-10">
-                                                        <label class="c-checkbox" for="panel-dish-ingredient-10">Огурец</label>
-                                                    </li>
-                                                    
-                                                </ul>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="c-col c-col-6">
-                                        <div class="c-form__item">
-                                            <label class="c-label">Добавки к блюду</label>
-                                            <div class="c-box-search" id="js-box-search-additive">
-                                                <div class="c-box-search-head">
-                                                    <div class="c-box-search-head__item">
-                                                        <input type="text" name="panel-search-ingredients" class="c-search-page__input" placeholder="искать" autocomplete="off">
-                                                        <button>Поиск</button>
+                                    <div class="c-card-event__body">
+                                        <div class="c-card-event__info">
+                                            <ul class="c-card-event-timelist">
+                                                <li class="c-card-event-timelist__item">
+                                                    <span class="c-card-event-timelist__date">Ср.11.12.17г.</span>
+                                                    <span>11:10 Туполева, </span>
+                                                    <span>12:15 на Красносельской, </span>
+                                                    <span>13:40 на Митинской, </span>
+                                                    <span class="c-card-event-timelist__code">вн. код: 65465464</span>
+                                                </li>
+                                                <li class="c-card-event-timelist__item">
+                                                    <span class="c-card-event-timelist__date">Чт.12.12.17г.</span>
+                                                    <span>13:40 на Митинской, </span>
+                                                    <span class="c-card-event-timelist__code">вн. код: 65465464</span>
                 
-                                                    </div>
-                                                    <div class="c-box-search-head__item">
-                                                        <a href="#" class="c-box-search__clear">сбросить поиск <i class=""></i></a>
-                                                    </div>
-                                                </div>
-                                                <ul class="c-box-search__list"  data-simplebar>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-1" id="panel-dish-additive-1">
-                                                        <label class="c-checkbox" for="panel-dish-additive-1">Индейка</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-2" id="panel-dish-additive-2">
-                                                        <label class="c-checkbox" for="panel-dish-additive-2">Лосось</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-3" id="panel-dish-additive-3">
-                                                        <label class="c-checkbox" for="panel-dish-additive-3">Курица</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-4" id="panel-dish-additive-4">
-                                                        <label class="c-checkbox" for="panel-dish-additive-4">Помидоры</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-5" id="panel-dish-additive-5">
-                                                        <label class="c-checkbox" for="panel-dish-additive-5">Огурец</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-6" id="panel-dish-additive-6">
-                                                        <label class="c-checkbox" for="panel-dish-additive-6">Индейка</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-7" id="panel-dish-additive-7">
-                                                        <label class="c-checkbox" for="panel-dish-additive-7">Лосось</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-8" id="panel-dish-additive-8">
-                                                        <label class="c-checkbox" for="panel-dish-additive-8">Курица</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-9" id="panel-dish-additive-9">
-                                                        <label class="c-checkbox" for="panel-dish-additive-9">Помидоры</label>
-                                                    </li>
-                                                    <li class="c-box-search__item">
-                                                        <input type="checkbox" name="panel-dish-additive-10" id="panel-dish-additive-10">
-                                                        <label class="c-checkbox" for="panel-dish-additive-10">Огурец</label>
-                                                    </li>
-            
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="order-delivery">
-                                    <div class="order-tabs">
-                                        <div class="order-tabs__nav">
-                                            <ul class="tabs-menu" >
-                                                <li class="order-tabs__item current"><a href="#panel-dish-product">Самостоятельное блюдо</a></li>
-                                                <li class="order-tabs__item"><a href="#panel-dish-variation">Блюдо с вариациями</a></li>
+                                                </li>
+                                                <li class="c-card-event-timelist__item">
+                                                    <span class="c-card-event-timelist__date">Сб.14.12.17г.</span>
+                                                    <span>12:15 на Красносельской, </span>
+                                                    <span>13:40 на Митинской, </span>
+                                                    <span class="c-card-event-timelist__code">вн. код: 65465464</span>
+                
+                                                </li>
+                                                <li class="c-card-event-timelist__item">
+                                                    <span class="c-card-event-timelist__date">Вс.15.12.17г.</span>
+                                                    <span>13:40 на Митинской, </span>
+                                                    <span class="c-card-event-timelist__code">вн. код: 65465464</span>
+                
+                                                </li>
+                                                <li class="c-card-event-timelist__item">
+                                                    <span class="c-card-event-timelist__date">Пн.16.12.17г.</span>
+                                                    <span>12:15 на Красносельской, </span>
+                                                    <span>13:40 на Митинской, </span>
+                                                    <span>13:40 на Митинской, </span>
+                                                    <span class="c-card-event-timelist__code">вн. код: 65465464</span>
+                
+                                                </li>
                                             </ul>
+                                            <a href="#" class="c-card-event-timelist__more">показать все</a>
                                         </div>
-                                        <div class="tab">
-                                            <div id="panel-dish-product" class="tab-content">
-                                                <div class="panel-dish-product">
-                                                    <div class="panel-dish-product__list">
-                                                        <div class="panel-dish-product__item">
-                                                            <label class="c-label" for="panel-product-price">Цена блюда</label>
-                                                            <input class="c-input" type="text" placeholder="Цена блюда" name="panel-product-price" id="panel-product-price">
-                                                        </div>
-                                                        <div class="panel-dish-product__item">
-                                                            <label class="c-label" >Валюта</label>
-                                                            <select name="panel-mode-start" class="c-select">
-                                                                <option value="Рубль">Рубль</option>
-                                                                <option value="Манат">Азербанжанский Манат</option>
-                                                            </select>
-            
-                                                        </div>
-                                                        <div class="panel-dish-product__item">
-                                                            <label class="c-label" for="panel-product-weight">Масса (гр.)</label>
-                                                            <input class="c-input" type="text" placeholder="Масса" name="panel-product-weight" id="panel-product-weight">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="panel-dish-variation" class="tab-content">
-                                                <!--START panel-dish-variation-->
-                                                <div class="panel-dish-variation">
-                                                    <div class="c-form__item">
-                                                        <!--<label class="c-label">Блюдо с вариациями</label>-->
-                                                        <div class="panel-dish-variation__list">
-                                                            <div class="panel-dish-variation__item">
-                                                                <label class="c-label" for="panel-variation-sentence">Название</label>
-                                                                <input class="c-input" type="text" placeholder="Название" name="panel-variation-sentence" id="panel-variation-sentence">
-                                                            </div>
-                                                            <div class="panel-dish-variation__item">
-                                                                <label class="c-label">Ингридиент (опция)</label>
-                                                                <select name="panel-variation-ingredient" class="c-select--search">
-                                                                    <option value="">ингридиент</option>
-                                                                    <option value="">Очень длинный ингридиент ингридиент</option>
-                                                                    <option value="">ингридиент</option>
-                                                                    <option value="">ингридиент</option>
-                                                                    <option value="">ингридиент</option>
-                                                                </select>
-                                                                
-                                                            </div>
-                                                            <div class="panel-dish-variation__item">
-                                                                <label class="c-label" for="panel-variation-weight">Масса (гр.)</label>
-                                                                <input class="c-input" type="text" placeholder="Масса" name="panel-variation-weight" id="panel-variation-weight">
-                                                            </div>
-                                                            <div class="panel-dish-variation__item">
-                                                                <label class="c-label" for="panel-variation-price">Цена</label>
-                                                                <input class="c-input" type="text" placeholder="Цена" name="panel-variation-price" id="panel-variation-price">
-                                                            </div>
-                                                            <div class="panel-dish-variation__item">
-                                                                <label class="c-label">Валюта</label>
-                                                                <select name="panel-mode-start" class="c-select">
-                                                                    <option value="Рубль">Рубль</option>
-                                                                    <option value="Манат">Азербанжанский Манат</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="panel-dish-variation__item">
-                                                                <a href="#" class="c-form__add" id="js-dish-variation__add"></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="panel-work-time__copy">
-                                                        <div class="c-form__item">
-                                                            <div class="panel-dish-variation__list">
-                                                                <div class="panel-dish-variation__item">
-                                                                    <input class="c-input" type="text" placeholder="Название предложения" name="panel-variation-sentence" >
-                                                                </div>
-                                                                <div class="panel-dish-variation__item">
-                                                                    <select name="panel-variation-ingredient" class="js-select-search-copy">
-                                                                        <option value="">ингридиент</option>
-                                                                        <option value="">Очень длинный ингридиент ингридиент</option>
-                                                                        <option value="">ингридиент</option>
-                                                                        <option value="">ингридиент</option>
-                                                                        <option value="">ингридиент</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="panel-dish-variation__item">
-                                                                    <input class="c-input" type="text" placeholder="Масса" name="panel-variation-weight" >
-                                                                </div>
-                                                                <div class="panel-dish-variation__item">
-                                                                    <input class="c-input" type="text" placeholder="Цена" name="panel-variation-price">
-                                                                </div>
-                                                                <div class="panel-dish-variation__item">
-                                                                    <select name="panel-mode-start" class="">
-                                                                        <option value="Рубль">Рубль</option>
-                                                                        <option value="Манат">Манат</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="panel-dish-variation__item">
-                                                                    <a href="#" class="c-form__del">Удалить [х]</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-        
-                                                    </div>
-                                                    <div class="panel-work-time__list" id="js-dish-variation__list">
-        
-                                                    </div>
-                                                </div>
-                                                <!--END panel-dish-variation-->
-                                            </div>
-            
+                                        <div class="l-button">
+                                            <a href="#" class="c-button c-button__medium">Редактировать</a>
+                                            <a href="#" class="c-button c-button__medium"><i class="icon-delete-basket"></i> Удалить</a>
                                         </div>
                                     </div>
-    
                                 </div>
-                               
                                 
-                            </form>
-                        </div>
-                        <div class="l-button l-button__right">
-                            <button class="c-button c-button__default cancel">Отменить</button>
-                            <button class="c-button c-button__default">Сохранить</button>
+                            </div>
                         </div>
                     </div>
-                
-                
-                
                 </div>
             
             </section>
@@ -3386,16 +3099,9 @@
 <!--<script src="./js/tooltip.js"></script>-->
 <!-- Подключаем API  карт 2.1  -->
 <!-- <script src="./js/ymaps-touch-scroll.bundle.js"></script> -->
-<!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
-<!--<script src="./js/panelMap.js"></script>-->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="./js/panelMap.js"></script>
 <!--<script src="./js/main.js"></script>-->
-<script async src="./js/file-uploader/imageuploadify.min.js"></script>
 <script async src="./js/scripts_all.js"></script>
-
-<script>
-    $(function(){
-        $('.panel-upload').imageuploadify();
-    })
-</script>
 </body>
 </html>

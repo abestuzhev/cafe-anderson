@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext');
+//@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext');
 
 @include font_face(BebasNeue-Bold, BebasNeue,'../fonts/', 700);
+@include font_face(PTSerifCaption, PT Serif Caption,'../fonts/', 700);
 @include font_face(BebasNeue-Regular, BebasNeue,'../fonts/', 500);
 @include font_face(BebasNeue-Book, BebasNeue,'../fonts/', 400);
 @include font_face(BebasNeue-Light, BebasNeue,'../fonts/',300);

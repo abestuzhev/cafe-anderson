@@ -168,6 +168,18 @@ $(document).ready(function ($) {
         $(elem).SumoSelect();
 
     }
+    function initCustomSelectSearch(elem){
+
+
+        // $(elem).addClass('c-select--search');
+
+        $(elem).SumoSelect({
+            search: true,
+            searchText: 'Искать...'
+        });
+
+        console.log(elem);
+    }
 
 
 
@@ -181,7 +193,10 @@ $(document).ready(function ($) {
 
             // var select = $(this)
 
-            initCustomSelect('.panel-work-time__list select');
+            initCustomSelectSearch('#js-dish-variation__list .js-select-search-copy');
+            initCustomSelect('' + list + ' select');
+            initCustomSelect('#js-dish-variation__list .panel-dish-variation__item:last-child select');
+            console.log('initCustomSelectSearch');
             $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
             $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
             $('.js-input--mode').mask('с 00:00 до 00:00', {
@@ -1765,7 +1780,7 @@ $(document).ready(function ($) {
     $('.c-select--search').SumoSelect( {
         forceCustomRendering: false,
         search: true,
-        searchText: 'Поиск кафе'
+        searchText: 'Искать...'
     });
 
     function showNegative(clickElem){
