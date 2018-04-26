@@ -942,7 +942,8 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 
 
 
-.c-select {
+.c-select,
+.c-select--search {
     &-layout {
         position: relative;
     }
@@ -983,6 +984,11 @@ input[type="checkbox"]:checked + .c-checkbox::after {
         //    background-color: #c44890;
         //}
     }
+
+}
+
+.c-select--search + .SelectBox .search-txt {
+    padding: 1.4rem 1.6rem;
 }
 
 .c-input.error {
