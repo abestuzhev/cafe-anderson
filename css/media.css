@@ -104,7 +104,7 @@
     }
 
     .excursion-banner {
-        min-height: auto;
+        min-height: 0;
     }
 
     .excursion-banner__subtitle {
@@ -185,8 +185,9 @@
         width: 44%;
     }
 
+    
     .panel-dish-variation__item:nth-child(2) .SumoSelect {
-        width: 40rem;
+        width: 30rem;
     }
 }
 
@@ -225,7 +226,7 @@
     }
 
     .panel-dish-variation__item:nth-child(2) .SumoSelect {
-        width: 55.7rem;
+        width: 42rem;
     }
 
 
@@ -1687,7 +1688,7 @@
         left: 0;
         width: 100% !important;
         max-width: 100% !important;
-        min-width: auto;
+        min-width: 0;
         height: 100vh;
         margin: 0;
         overflow-y: scroll;
@@ -2929,7 +2930,7 @@
     .popup-offer .popup,
     .popup-graduation .popup {
         top: 24%;
-        min-width: auto;
+        min-width: 0;
     }
 
     .popup-city .popup {

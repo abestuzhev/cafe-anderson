@@ -15170,13 +15170,13 @@ test popup
       .panel-dish-variation__item:last-child {
         padding-right: 0; }
       .panel-dish-variation__item:nth-child(1) {
-        width: 25%; }
+        width: 36%; }
       .panel-dish-variation__item:nth-child(2) {
-        width: 70%; }
+        width: 50%; }
       .panel-dish-variation__item:nth-child(3) {
         width: 15%; }
       .panel-dish-variation__item:nth-child(4) {
-        width: 11%; }
+        width: 15%; }
       .panel-dish-variation__item:nth-child(5) {
         width: 15%; }
         .panel-dish-variation__item:nth-child(5) .SumoSelect > .CaptionCont {
