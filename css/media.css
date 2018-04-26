@@ -184,6 +184,10 @@
     .holiday-box--karapuznik .holiday-description-fake {
         width: 44%;
     }
+
+    .panel-dish-variation__item:nth-child(2) .SumoSelect {
+        width: 40rem;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -218,6 +222,10 @@
 
     .holiday-reason__col {
         width: 33%;
+    }
+
+    .panel-dish-variation__item:nth-child(2) .SumoSelect {
+        width: 55.7rem;
     }
 
 
