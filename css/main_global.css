@@ -2978,7 +2978,7 @@ a.c-button:hover {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 1.3rem 2.5rem 2.7rem; }
+  padding: 1.3rem 2rem 2.7rem; }
 
 .c-card-event__btn--basket.disabled,
 .c-card-event__btn--click.disabled,
@@ -15483,10 +15483,13 @@ test popup
       border-width: 1.5rem; }
 
 /*panel-events****************************/
-.panel-events__item .c-card-event__label {
-  right: 0;
-  left: auto;
-  background: none; }
-
-.panel-events__item .c-card-event .icon-delete-basket {
-  height: 1.4rem; }
+.panel-events__item {
+  margin-bottom: 2.4rem; }
+  .panel-events__item .c-card-event__label {
+    right: 0;
+    left: auto;
+    background: none; }
+  .panel-events__item .c-card-event .icon-delete-basket {
+    height: 1.4rem; }
+  .panel-events__item .c-card-event__img {
+    height: 18rem; }

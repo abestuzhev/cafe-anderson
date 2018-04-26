@@ -12510,6 +12510,7 @@ test popup
     }
 
     &__item {
+        margin-bottom: 2.4rem;
         .c-card-event {
             &__label {
                 right:0;
@@ -12520,6 +12521,10 @@ test popup
             .icon-delete-basket {
                 height: 1.4rem;
             }
+        }
+
+        .c-card-event__img {
+            height: 18rem;
         }
     }
 
