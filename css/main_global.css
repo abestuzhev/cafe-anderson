@@ -12011,11 +12011,15 @@ test popup
   .order-delivery-custom__grid .order-delivery-custom__item:first-child {
     margin-right: 0; } }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 325px) {
   .cake__col {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem; } }
+
+@media screen and (min-width: 325px) and (max-width: 500px) {
+  .cake-card {
+    height: 18rem; } }
 
 /*Выпускные----------------------------------------------------------------*/
 .popup-party-order .popup {

@@ -7941,11 +7941,16 @@ test popup
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 325px) {
     .cake__col {
         width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+}
+@media screen and (min-width:325px) and (max-width:500px) {
+    .cake-card {
+        height: 18rem;
     }
 }
 
