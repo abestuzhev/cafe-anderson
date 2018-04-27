@@ -4671,6 +4671,9 @@
         padding: 2.7rem 2rem 12rem;
         background: linear-gradient(to bottom, #fff 0%, white 39%, rgba(255, 255, 255, 0) 100%);
     }
+    .catalog-list .no-product img {
+        display: none;
+    }
 }
 
 @media (max-width: 320px) {
