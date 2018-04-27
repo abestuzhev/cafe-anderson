@@ -4625,13 +4625,14 @@
 
     .catalog-list .c-card-catalog {
         height: 100%;
+        min-height: 30rem;
     }
 
     .c-card-catalog__ingredients a {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
+        /*white-space: nowrap;*/
+        /*text-overflow: ellipsis;*/
+        /*overflow: hidden;*/
+        /*display: block;*/
     }
 
     .c-card-catalog__basket {
