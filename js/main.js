@@ -522,8 +522,8 @@ $(document).ready(function ($) {
                 menuHeight = 0,
                 top = $(id).offset().top,
                 topIndent = top - menuHeight;
-            console.log('top: ' + top);
-            console.log('topIndent: ' + topIndent);
+            // console.log('top: ' + top);
+            // console.log('topIndent: ' + topIndent);
             $('html').animate({scrollTop: topIndent}, 1000);
         });
     };
@@ -1743,22 +1743,22 @@ $(document).ready(function ($) {
     backToTop('.popup-product__btn-back', '.popup');
 
 
-
+    var wrapperHeight = parseInt($('.wrapper').height());
     /*липкая шапка*/
     $(window).scroll(function(){
         var bo = $(window).scrollTop();
         var $header = $(".header");
         var $headerWrap = $(".header-wrap");
         var $logo = $("#symbol-logo");
-        var $hederHeight = $headerWrap.height();
-        if ( bo >= 106 ) {
+        var $headerHeight = $headerWrap.height();
+        if ( bo >= 1 ) {/*значение при котором не дергается ничего 106*/
             $header.addClass('header-top__hide');
             // $header.addClass('sticky');
             $headerWrap.addClass('sticky');
             $logo.addClass('fixed-logo');
 
             $('main').css({
-                'padding-top': $hederHeight
+                'padding-top': $headerHeight
             });
             // $header.addClass('fixed-header');
         } else {
@@ -1770,6 +1770,13 @@ $(document).ready(function ($) {
             $('main').css({
                 'padding-top': '0'
             });
+        }
+
+        console.log('высота wrapperHeight: ' + wrapperHeight)
+        if( wrapperHeight + 10 > documentHeight){
+            $('.wrapper').css({
+                'padding-bottom': '7rem'
+            })
         }
     });
 
