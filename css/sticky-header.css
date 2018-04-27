@@ -121,6 +121,7 @@
     margin-bottom: .4rem !important;
 }
 
+
 @media (max-width: 1380px) {
     .logo-text {
         display: none;
@@ -155,6 +156,10 @@
     .header-mobile__dropdown.menu-sticky {
         top: 3rem !important;
     }
+    .sticky .header-mobile__dropdown {
+        top: 3rem;
+    }
+
 }
 
 
