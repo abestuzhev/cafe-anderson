@@ -4620,7 +4620,7 @@
     }
 
     .c-card-catalog__header {
-        padding: 2.7rem 2rem 11rem;
+        padding: 2.7rem 2rem 10rem;
     }
 
     .catalog-list .c-card-catalog {
@@ -4633,6 +4633,16 @@
         /*text-overflow: ellipsis;*/
         /*overflow: hidden;*/
         /*display: block;*/
+    }
+
+    .catalog-list .no-product img {
+        display: none;
+    }
+
+    .c-card-catalog__img.no-product img {
+        width: 20rem !important;
+        bottom: 25%;
+        /*transform: translate()*/
     }
 
     .c-card-catalog__basket {
