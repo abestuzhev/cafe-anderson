@@ -178,12 +178,27 @@ $(document).ready(function ($) {
 
     function initCustomDatepicker(elem){
        $(elem).datepicker({
-            minDate: new Date(),
-            autoClose: true
+            minDate: new Date()
+            // autoClose: true
+        });
+
+       // var value = $(elem).val();
+       // $(elem).val(value);
+       // console.log(value);
+       // elem.val(value);
+    }
+
+    function reloadValueDatepicker (elem){
+        $(elem).each(function(){
+            var value = $(this).val();
+            $(this).val(value);
+            console.log(value)
         });
     }
 
 
+
+    var countCheckbox = 0;
 
     function addClonePanel(btn, list){
         $(document).on('click', btn , function(e) {
@@ -198,7 +213,9 @@ $(document).ready(function ($) {
             initCustomSelectSearch('#js-event-data__list .js-select-search-copy');
             initCustomSelectSearch('#js-dish-variation__list .js-select-search-copy');
 
-            initCustomDatepicker('#js-event-data__list .datepicker-custom');
+            initCustomDatepicker('#js-event-data__list .datepicker-custom-clock');
+
+            reloadValueDatepicker('#js-event-data__list .datepicker-custom-clock');
 
             initCustomSelect('' + list + ' select');
             initCustomSelect('#js-dish-variation__list .panel-dish-variation__item:last-child select');
@@ -210,6 +227,28 @@ $(document).ready(function ($) {
                 clearIfNotMatch: true,
                 placeholder: "с __:__ до __:__"
             });
+
+
+            countCheckbox +=1;
+            // console.log(count);
+
+
+
+            var checkbox = $(this)
+                .parents('.c-form__item')
+                .siblings('.panel-work-time__copy').find('input[type="checkbox"]');
+            var checkLabel = $(this)
+                .parents('.c-form__item')
+                .siblings('.panel-work-time__copy').find('input[type="checkbox"]').siblings('label');
+
+            // checkbox.attr('name', );
+
+            // checkbox.attr('name', 'panel-event-free-' + countCheckbox);
+            // checkbox.attr('id', 'panel-event-free-' + countCheckbox);
+            // checkLabel.attr('for', 'panel-event-free-' + countCheckbox);
+            // console.log(checkLabel);
+
+
         });
     }
 
@@ -316,6 +355,13 @@ $(document).ready(function ($) {
             autoClose: true
         });
     }
+
+    if($('input').hasClass('datepicker-custom-clock') || $('div').hasClass('datepicker-custom-clock')){
+        $('.datepicker-custom-clock').datepicker({
+            minDate: new Date()
+        });
+    }
+
 
     /*функция форматирования даты*/
     function formatDate(date) {
