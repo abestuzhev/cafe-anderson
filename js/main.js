@@ -168,17 +168,19 @@ $(document).ready(function ($) {
         $(elem).SumoSelect();
 
     }
+
     function initCustomSelectSearch(elem){
-
-
-        // $(elem).addClass('c-select--search');
-
         $(elem).SumoSelect({
             search: true,
             searchText: 'Искать...'
         });
+    }
 
-        console.log(elem);
+    function initCustomDatepicker(elem){
+       $(elem).datepicker({
+            minDate: new Date(),
+            autoClose: true
+        });
     }
 
 
@@ -193,9 +195,14 @@ $(document).ready(function ($) {
 
             // var select = $(this)
 
+            initCustomSelectSearch('#js-event-data__list .js-select-search-copy');
             initCustomSelectSearch('#js-dish-variation__list .js-select-search-copy');
+
+            initCustomDatepicker('#js-event-data__list .datepicker-custom');
+
             initCustomSelect('' + list + ' select');
             initCustomSelect('#js-dish-variation__list .panel-dish-variation__item:last-child select');
+            initCustomSelect('#js-event-data__list .panel-event-date__item:last-child select');
             console.log('initCustomSelectSearch');
             $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
             $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
@@ -212,6 +219,7 @@ $(document).ready(function ($) {
     addClonePanel('#js-work-time-cafe__add', '#js-panel-work-time__cafe');
     addClonePanel('#js-work-time-mp__add', '#js-panel-work-time__mp');
     addClonePanel('#js-dish-variation__add', '#js-dish-variation__list');
+    addClonePanel('#js-event-data__add', '#js-event-data__list');
 
     $(document).on('click', '.c-form__del', function(e) {
         e.preventDefault();
@@ -1772,7 +1780,7 @@ $(document).ready(function ($) {
             });
         }
 
-        console.log('высота wrapperHeight: ' + wrapperHeight)
+        // console.log('высота wrapperHeight: ' + wrapperHeight)
         if( wrapperHeight + 10 > documentHeight){
             $('.wrapper').css({
                 'padding-bottom': '7rem'

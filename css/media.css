@@ -189,6 +189,10 @@
     .panel-dish-variation__item:nth-child(2) .SumoSelect {
         width: 30rem;
     }
+
+    .panel-event-date__item:nth-child(2) .SumoSelect > .CaptionCont {
+        width:35rem;
+    }
 }
 
 @media (min-width: 1600px) {

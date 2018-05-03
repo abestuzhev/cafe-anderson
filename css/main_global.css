@@ -15200,6 +15200,42 @@ test popup
     .panel-dish .order-tabs__item {
       padding: 1.4rem 1.6rem .8rem;
       border-radius: 1.7rem 1.7rem 0 0; }
+  .panel-event__header {
+    margin-bottom: 3rem; }
+  .panel-event__body .SumoSelect > .CaptionCont > span.placeholder {
+    height: 16px; }
+  .panel-event-date__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .panel-event-date__item {
+    padding-right: 1rem; }
+    .panel-event-date__item:last-child {
+      padding-right: 0; }
+    .panel-event-date__item:nth-child(1) {
+      width: 17%; }
+    .panel-event-date__item:nth-child(2) {
+      width: 35%; }
+    .panel-event-date__item:nth-child(3) {
+      width: 15%; }
+    .panel-event-date__item:nth-child(4) .SumoSelect > .CaptionCont {
+      width: 15rem; }
+    .panel-event-date__item:nth-child(5) {
+      margin-right: 2.4rem; }
+    .panel-event-date__item:nth-child(6) {
+      width: 15%; }
+    .panel-event-date__item .c-form__add {
+      margin-top: 2.5rem; }
 
 /*holiday-reason**************************/
 .holiday-reason {
