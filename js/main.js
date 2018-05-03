@@ -201,6 +201,16 @@ $(document).ready(function ($) {
     var countCheckbox = 0;
 
     function addClonePanel(btn, list){
+        var rand;
+        function randomInteger(min, max) {
+            rand = min - 0.5 + Math.random() * (max - min + 1)
+            rand = Math.round(rand);
+            return rand;
+        }
+
+
+
+
         $(document).on('click', btn , function(e) {
             e.preventDefault();
             $(this)
@@ -228,6 +238,8 @@ $(document).ready(function ($) {
                 placeholder: "с __:__ до __:__"
             });
 
+            randomInteger(1, 99999);
+
 
             countCheckbox +=1;
             // console.log(count);
@@ -243,9 +255,9 @@ $(document).ready(function ($) {
 
             // checkbox.attr('name', );
 
-            checkbox.attr('name', 'panel-event-free-' + countCheckbox);
-            checkbox.attr('id', 'panel-event-free-' + countCheckbox);
-            checkLabel.attr('for', 'panel-event-free-' + countCheckbox);
+            checkbox.attr('name', 'panel-event-free-' + rand);
+            checkbox.attr('id', 'panel-event-free-' + rand);
+            checkLabel.attr('for', 'panel-event-free-' + rand);
             console.log(checkLabel);
 
 
