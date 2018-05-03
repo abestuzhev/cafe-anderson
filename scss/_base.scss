@@ -1034,10 +1034,16 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
+.order-input:checked + .order-radio {
+    color: #555451;
+}
+
 .order-input:checked + .order-radio::after {
     content: '';
     border-color: #7cbd41;
 }
+
+
 
 .order-input:checked + .order-radio::before {
     content: '';

@@ -566,6 +566,7 @@ $(document).ready(function ($) {
         checkAll('.order-delivery-address__list li', '.order-radio', '.c-search-page__input');
         checkAll('#js-box-search-additive .c-box-search__item', '.c-checkbox', '#js-box-search-additive .c-search-page__input');
         checkAll('#js-box-search-ingredient .c-box-search__item', '.c-checkbox', '#js-box-search-ingredient .c-search-page__input');
+        checkAll('#js-box-search-event .c-box-search__item', ' .order-radio', '#js-box-search-event .c-search-page__input');
     });
 
     function checkAll(elem, whereSearch, input) {
@@ -584,6 +585,7 @@ $(document).ready(function ($) {
     checkAll('.order-delivery-address__list li', '.order-radio', '.c-search-page__input');
     checkAll('#js-box-search-additive .c-box-search__item', '.c-checkbox', '#js-box-search-additive .c-search-page__input');
     checkAll('#js-box-search-ingredient .c-box-search__item', ' .c-checkbox', '#js-box-search-ingredient .c-search-page__input');
+    checkAll('#js-box-search-event .c-box-search__item', ' .order-radio', '#js-box-search-event .c-search-page__input');
 
     $(document).on('click', '.c-box-search__clear', function(e){
         e.preventDefault();

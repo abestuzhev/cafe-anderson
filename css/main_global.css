@@ -2160,6 +2160,9 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     /* Firefox 18- */
     color: #ec3e3e; }
 
+.order-input:checked + .order-radio {
+  color: #555451; }
+
 .order-input:checked + .order-radio::after {
   content: '';
   border-color: #7cbd41; }
@@ -15208,6 +15211,8 @@ test popup
     border-radius: 1.7rem 1.7rem 0 0; }
   .panel-event .c-box-search__list {
     height: 22.2rem; }
+  .panel-event .order-input {
+    display: none; }
   .panel-event__header {
     margin-bottom: 3rem; }
   .panel-event .CaptionCont > span.placeholder {
