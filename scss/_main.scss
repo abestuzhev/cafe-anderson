@@ -2752,6 +2752,7 @@ test popup
 .tabs-menu {
     font-family: $font_serif;
 
+
     &__list {
         text-align: right;
         margin-bottom: 1.7rem;
@@ -12148,7 +12149,22 @@ test popup
     }
     
     &-event {
+
+        .tabs-menu {
+            border-bottom: 5px solid #7cbd41;
+            margin-bottom: 1.4rem;
+        }
         
+        .order-tabs__item.current, .order-tabs__item {
+            padding: 1.4rem 1.6rem .8rem;
+            border-radius: 1.7rem 1.7rem 0 0;
+        }
+
+        .c-box-search__list {
+            height: 35.4rem;
+        }
+
+
         &__header {
             margin-bottom: 3rem;
         }
