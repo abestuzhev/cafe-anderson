@@ -243,10 +243,10 @@ $(document).ready(function ($) {
 
             // checkbox.attr('name', );
 
-            // checkbox.attr('name', 'panel-event-free-' + countCheckbox);
-            // checkbox.attr('id', 'panel-event-free-' + countCheckbox);
-            // checkLabel.attr('for', 'panel-event-free-' + countCheckbox);
-            // console.log(checkLabel);
+            checkbox.attr('name', 'panel-event-free-' + countCheckbox);
+            checkbox.attr('id', 'panel-event-free-' + countCheckbox);
+            checkLabel.attr('for', 'panel-event-free-' + countCheckbox);
+            console.log(checkLabel);
 
 
         });
