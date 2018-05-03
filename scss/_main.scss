@@ -12161,18 +12161,15 @@ test popup
         }
 
         .c-box-search__list {
-            height: 35.4rem;
+            height: 22.5rem;
         }
 
 
         &__header {
             margin-bottom: 3rem;
         }
-        &__body {
-        
-            .SumoSelect > .CaptionCont > span.placeholder {
-                height: 16px;
-            }
+        .CaptionCont > span.placeholder {
+            height: 16px;
         }
     
         &-date {

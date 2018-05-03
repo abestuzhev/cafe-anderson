@@ -15207,10 +15207,10 @@ test popup
     padding: 1.4rem 1.6rem .8rem;
     border-radius: 1.7rem 1.7rem 0 0; }
   .panel-event .c-box-search__list {
-    height: 35.4rem; }
+    height: 22.5rem; }
   .panel-event__header {
     margin-bottom: 3rem; }
-  .panel-event__body .SumoSelect > .CaptionCont > span.placeholder {
+  .panel-event .CaptionCont > span.placeholder {
     height: 16px; }
   .panel-event-date__list {
     display: -webkit-box;
