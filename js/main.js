@@ -180,6 +180,7 @@ $(document).ready(function ($) {
        $(elem).datepicker({
             minDate: new Date()
             // autoClose: true
+
         });
 
        // var value = $(elem).val();
@@ -188,13 +189,21 @@ $(document).ready(function ($) {
        // elem.val(value);
     }
 
+
     function reloadValueDatepicker (elem){
-        $(elem).each(function(){
-            var value = $(this).val();
-            $(this).val(value);
-            console.log(value)
+        $.each($(elem), function(){
+            // var value = $(this).val();
+            // $(this).data('value', value);
+            var dataValue = $(this).data('value');
+            $(this).val(dataValue);
+            // console.log(value);
+            console.log($(this).val());
         });
     }
+
+
+
+    // reloadValueDatepicker('#js-event-data__list .datepicker-custom-clock');
 
 
 
@@ -203,11 +212,13 @@ $(document).ready(function ($) {
     function addClonePanel(btn, list){
         var rand;
         function randomInteger(min, max) {
-            rand = min - 0.5 + Math.random() * (max - min + 1)
+            rand = min - 0.5 + Math.random() * (max - min + 1);
             rand = Math.round(rand);
             return rand;
         }
 
+        initCustomSelectSearch('#js-event-data__list .js-select-search-copy');
+        initCustomSelect('#js-event-data__list .panel-event-date__item:last-child select');
 
 
 
@@ -225,7 +236,7 @@ $(document).ready(function ($) {
 
             initCustomDatepicker('#js-event-data__list .datepicker-custom-clock');
 
-            reloadValueDatepicker('#js-event-data__list .datepicker-custom-clock');
+            // reloadValueDatepicker('#js-event-data__list .datepicker-custom-clock');
 
             initCustomSelect('' + list + ' select');
             initCustomSelect('#js-dish-variation__list .panel-dish-variation__item:last-child select');
@@ -258,7 +269,7 @@ $(document).ready(function ($) {
             checkbox.attr('name', 'panel-event-free-' + rand);
             checkbox.attr('id', 'panel-event-free-' + rand);
             checkLabel.attr('for', 'panel-event-free-' + rand);
-            console.log(checkLabel);
+            // console.log(checkLabel);
 
 
         });
@@ -370,7 +381,13 @@ $(document).ready(function ($) {
 
     if($('input').hasClass('datepicker-custom-clock') || $('div').hasClass('datepicker-custom-clock')){
         $('.datepicker-custom-clock').datepicker({
-            minDate: new Date()
+            minDate: new Date(),
+            // onSelect: function(formattedDate){
+            //     $(this).val(formattedDate);
+            //     var datePick = formattedDate;
+            //     $(this).data('value', datePick);
+            //     console.log('Выводит data-value: ' + $(this).data('value'));
+            // }
         });
     }
 
