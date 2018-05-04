@@ -190,6 +190,15 @@
         width: 30rem;
     }
 
+    /*.panel-event-date__item:nth-child(3) input,*/
+    /*.panel-event-date__item:nth-child(4) input {*/
+        /*width:11rem;*/
+    /*}*/
+
+    .panel-event-date__item:nth-child(1) input {
+        width:19rem;
+    }
+
     .panel-event-date__item:nth-child(2) .SumoSelect > .CaptionCont {
         width:35rem;
     }

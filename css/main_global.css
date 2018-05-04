@@ -15233,6 +15233,8 @@ test popup
             align-items: center; }
   .panel-event-date__item {
     padding-right: 1rem; }
+    .panel-event-date__item input {
+      margin: 0; }
     .panel-event-date__item:last-child {
       padding-right: 0; }
     .panel-event-date__item:nth-child(1) {
@@ -15241,11 +15243,13 @@ test popup
       width: 35%; }
     .panel-event-date__item:nth-child(3) {
       width: 15%; }
-    .panel-event-date__item:nth-child(4) .SumoSelect > .CaptionCont {
+    .panel-event-date__item:nth-child(4) {
+      width: 15%; }
+    .panel-event-date__item:nth-child(5) .SumoSelect > .CaptionCont {
       width: 15rem; }
-    .panel-event-date__item:nth-child(5) {
-      margin-right: 2.4rem; }
     .panel-event-date__item:nth-child(6) {
+      margin-right: 2.4rem; }
+    .panel-event-date__item:nth-child(7) {
       width: 15%; }
     .panel-event-date__item .c-form__add {
       margin-top: 2.5rem; }

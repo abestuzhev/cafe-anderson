@@ -12187,6 +12187,10 @@ test popup
             &__item {
                 padding-right: 1rem;
                 
+                input {
+                    margin: 0;
+                }
+                
                 &:last-child {
                     padding-right: 0;
                 }
@@ -12202,18 +12206,21 @@ test popup
                     width: 15%;
                 }
                 &:nth-child(4){
+                    width: 15%;
+                }
+                &:nth-child(5){
                     //width: 15%;
                     .SumoSelect > .CaptionCont {
                         width:15rem;
                     }
                 }
-                &:nth-child(5){
+                &:nth-child(6){
                     //width: 15%;
                     margin-right: 2.4rem;
                     
                 
                 }
-                &:nth-child(6){
+                &:nth-child(7){
                     width: 15%;
                 }
             

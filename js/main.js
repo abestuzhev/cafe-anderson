@@ -218,7 +218,7 @@ $(document).ready(function ($) {
         }
 
         initCustomSelectSearch('#js-event-data__list .js-select-search-copy');
-        initCustomSelect('#js-event-data__list .panel-event-date__item:last-child select');
+        initCustomSelect('#js-event-data__list .panel-event-date__item select');
 
 
 
@@ -234,7 +234,7 @@ $(document).ready(function ($) {
             initCustomSelectSearch('#js-event-data__list .js-select-search-copy');
             initCustomSelectSearch('#js-dish-variation__list .js-select-search-copy');
 
-            initCustomDatepicker('#js-event-data__list .datepicker-custom-clock');
+            initCustomDatepicker('#js-event-data__list .panel-work-time__copy:last-child .datepicker-custom-clock');
 
             // reloadValueDatepicker('#js-event-data__list .datepicker-custom-clock');
 
