@@ -12621,7 +12621,242 @@ test popup
 }
 
 
+/*panel-events****************************/
+.about {
+    &-banner {
+        width: 100%;
+        height: 27rem;
+        background: url(../img/bg-banner-excursion.jpg) 50% 0 no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 5.3rem;
+    
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 1.9rem;
+            background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+        }
+    }
 
+    &-text {        
+
+        &::after {
+            content:'';
+            clear: both;
+            display: block;
+        }
+
+        &-layout {
+
+            &::after {
+                content:'';
+                clear: both;
+                display: block;
+            }
+        }
+
+        &__title {
+            font-size: 3rem;
+            color: #9acc4f;
+            font-family: $font_sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    &-img {
+        &-left {
+            float: left;
+            margin: 0 3.2rem 1rem 0;
+        }
+
+        &-right {
+            float: right;
+            margin: 0 0 1rem 2rem;
+        }
+        
+        &-box {
+            position: relative;
+            z-index: 2;
+            border-radius: 50rem;
+            width: 22.3rem;
+            height: 22.3rem;
+            
+            img {
+                position: relative;
+                z-index: 2;
+            }
+            
+            .symbol-decor-hat {
+                position: absolute;
+                top: -30px;
+                left: 40px;
+                fill: #000;
+                z-index: 3;
+            }
+    
+            .symbol-magic-hat {
+                position: absolute;
+                top: 48px;
+                right: -22px;
+                fill: #000;
+                z-index: 3;
+            }
+            
+            .symbol-rabbit {
+                position: absolute;
+                z-index: 1;
+                top: -40px;
+                right: 32px;
+                font-size: 47px;
+                transform: rotate(19deg);
+                fill: #000;
+            }
+            
+        }
+
+
+    }
+
+    &-box {
+        position: relative;
+        padding: 1.8rem 0 1rem;
+        margin-bottom: 3rem;
+        
+        &__title {
+            text-align: center;
+            font-size: 5rem;
+            color: #c44890;
+            font-family: $font_sans-serif;
+            margin-bottom: 1.2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+        
+        &__body {
+        
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.8rem;
+            left: 0;
+            width: 100%;
+            height: .6rem;
+            background: url(../img/decor-line-waves-grey.png) 0 0 repeat-x;
+        }
+    }
+    
+    &-company {
+        
+        &-text {
+            text-align: center;
+            margin-bottom: 1.6rem;
+            
+            .c-text-decor-green {
+                font-size: 2rem;
+            }
+            
+            &__decor {
+                font-size: 3rem;
+                color: #9acc4f;
+                font-family: $font_sans-serif;
+                font-weight: 700;
+            }
+        }
+        
+        &__list {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: stretch;
+            margin-bottom: 2rem;
+        }
+        
+        &__item {
+            padding: 0 .9rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        &-card {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: .6rem;
+            background-color: #fff;
+            padding: 1.5rem 1.2rem;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,.1)
+        }
+    }
+    
+    
+    &-advantages {
+        margin-top: 2rem;
+        position: relative;
+        
+        &__center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+        &__grid {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        
+        &__left {
+            width: 50%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            
+            .about-advantages__item {
+                text-align: right;
+    
+                &:nth-child(1){
+                    padding-right: 12rem;
+                }
+                &:nth-child(2){
+                    padding-right: 14rem;
+                }
+            }
+        }
+        
+        &__right {
+            width: 50%;
+            .about-advantages__item {
+                text-align: left;
+                
+                &:nth-child(1){
+                    padding-left: 10rem;
+                }
+                &:nth-child(2){
+                    padding-left: 15rem;
+                }
+                &:nth-child(3){
+                    padding-right: 16rem;
+                }
+            }
+        }
+        
+        &__item {
+            margin-bottom: 1.2rem;
+            padding: 2rem 0;
+        }
+    }
+}
 
 
 
