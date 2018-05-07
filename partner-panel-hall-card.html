@@ -2029,27 +2029,35 @@
                 <div class="panel-hall-card">
                     
                     <div class="panel-hall-card__body">
-                        <div class="panel-hall-content">
-                            <form action="#" method="POST" >
-                                <div class="c-form__item">
-                                    <label class="c-label" for="panel-hall-name">Название зала<span class="c-obligatory-field">*</span></label>
-                                    <input class="c-input" type="text" placeholder="Название зала" name="panel-hall-name" id="panel-hall-name" required="">
+                        <div class="c-grid c-grid-between">
+                            <div class="c-col c-col-3">
+                                <input type="file" name="panel-photo-cover" class="panel-upload" accept=".png, .jpg, .gif,.pdf" multiple="" style="display: none;">
+                            </div>
+                            <div class="c-col c-col-9">
+                                <div class="panel-hall-content">
+                                    <form action="#" method="POST" >
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="panel-hall-name">Название зала<span class="c-obligatory-field">*</span></label>
+                                            <input class="c-input" type="text" placeholder="Название зала" name="panel-hall-name" id="panel-hall-name" required="">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="panel-hall-place">Количество мест<span class="c-obligatory-field">*</span></label>
+                                            <input class="c-input" type="text" placeholder="Количество мест" name="panel-hall-place" id="panel-hall-place" required="">
+                                        </div>
+                                        <div class="c-form__item">
+                                            <label class="c-label" for="panel-hall-mode">Промежуток времени<span class="c-obligatory-field">*</span></label>
+                                            <input class="c-input js-input--mode" type="text" placeholder="с __:__ до __:__" name="panel-hall-mode" id="panel-hall-mode" required="">
+                                        </div>
+                                        
+                                    </form>
                                 </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="panel-hall-place">Количество мест<span class="c-obligatory-field">*</span></label>
-                                    <input class="c-input" type="text" placeholder="Количество мест" name="panel-hall-place" id="panel-hall-place" required="">
+                                <div class="l-button l-button__right">
+                                    <button class="c-button c-button__default cancel">Отменить</button>
+                                    <button class="c-button c-button__default">Сохранить</button>
                                 </div>
-                                <div class="c-form__item">
-                                    <label class="c-label" for="panel-hall-mode">Промежуток времени<span class="c-obligatory-field">*</span></label>
-                                    <input class="c-input js-input--mode" type="text" placeholder="с __:__ до __:__" name="panel-hall-mode" id="panel-hall-mode" required="">
-                                </div>
-                                
-                            </form>
+                            </div>
                         </div>
-                        <div class="l-button l-button__right">
-                            <button class="c-button c-button__default cancel">Отменить</button>
-                            <button class="c-button c-button__default">Сохранить</button>
-                        </div>
+                        
                     </div>
                 
                 
@@ -3065,8 +3073,12 @@
 <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
 <!--<script src="./js/panelMap.js"></script>-->
 <!--<script src="./js/main.js"></script>-->
-<!-- <script async src="./js/file-uploader/imageuploadify.min.js"></script> -->
+<script async src="./js/file-uploader/imageuploadify.min.js"></script>
 <script async src="./js/scripts_all.js"></script>
-
+<script>
+        $(function(){
+            $('.panel-upload').imageuploadify();
+        })
+    </script>
 </body>
 </html>
