@@ -12238,9 +12238,27 @@ test popup
             display: none;
             padding-top: 2rem;
         }
+
+        
+
+        .c-card-cafe__title  {
+            min-height: 42px;
+            vertical-align: middle;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
         .c-card-cafe__title span  {
             display: inline;
-            border-bottom: 1px dotted #9b806f;
+            // border-bottom: 1px dotted #9b806f;
+            text-decoration: underline;
+
+            &::after {
+                content: '';
+                display: none;
+            }
         }
 
         .c-card-cafe-vertical__footer .c-button {

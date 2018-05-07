@@ -15279,9 +15279,26 @@ test popup
     .panel-hall__body {
       display: none;
       padding-top: 2rem; }
+    .panel-hall .c-card-cafe__title {
+      min-height: 42px;
+      vertical-align: middle;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 1rem; }
     .panel-hall .c-card-cafe__title span {
       display: inline;
-      border-bottom: 1px dotted #9b806f; }
+      text-decoration: underline; }
+      .panel-hall .c-card-cafe__title span::after {
+        content: '';
+        display: none; }
     .panel-hall .c-card-cafe-vertical__footer .c-button {
       margin-bottom: 0.6rem; }
 
