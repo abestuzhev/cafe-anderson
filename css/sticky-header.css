@@ -261,6 +261,8 @@
         top: auto;
         transition: all .2s ease-out !important;
         transform: translateY(0);
+        position: relative;
+        z-index: 22;
     }
     .header-wrap.sticky {
         top: auto;
