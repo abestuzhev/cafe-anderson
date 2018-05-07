@@ -2562,9 +2562,9 @@
     /*.reviews-form__type-icon {*/
     /*display: none;*/
     /*}*/
-    .reviews .c-pagination {
+    /* .reviews .c-pagination {
         display: none;
-    }
+    } */
 
     .filter-left, .filter-right {
         flex-flow: column nowrap;
