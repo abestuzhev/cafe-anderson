@@ -12230,6 +12230,22 @@ test popup
             }
         }
     }
+
+    &-hall {
+
+        &__body {
+            display: none;
+            padding-top: 2rem;
+        }
+        .c-card-cafe__title span  {
+            display: inline;
+            border-bottom: 1px dotted #9b806f;
+        }
+
+        .c-card-cafe-vertical__footer .c-button {
+            margin-bottom: 0.6rem;
+        }
+    }
 }
 
 /*holiday-reason**************************/

@@ -297,6 +297,13 @@ $(document).ready(function ($) {
         $(this).siblings('.panel-cafe__body').slideToggle(100);
     });
 
+    $(document).on('click', '.panel-cafe__title', function(e){
+        e.preventDefault();
+        $(this).toggleClass('panel-cafe-show');
+        $(this).siblings('.panel-hall__body').slideToggle(100);
+    });
+
+
 
     //управление рассылкой
     $('.dispatch-list__title input').on('change', function(){
