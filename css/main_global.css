@@ -15274,14 +15274,16 @@ test popup
       width: 15%; }
     .panel-event-date__item .c-form__add {
       margin-top: 2.5rem; }
-  .panel-hall__body {
-    display: none;
-    padding-top: 2rem; }
-  .panel-hall .c-card-cafe__title span {
-    display: inline;
-    border-bottom: 1px dotted #9b806f; }
-  .panel-hall .c-card-cafe-vertical__footer .c-button {
-    margin-bottom: 0.6rem; }
+  .panel-hall {
+    margin-bottom: 2rem; }
+    .panel-hall__body {
+      display: none;
+      padding-top: 2rem; }
+    .panel-hall .c-card-cafe__title span {
+      display: inline;
+      border-bottom: 1px dotted #9b806f; }
+    .panel-hall .c-card-cafe-vertical__footer .c-button {
+      margin-bottom: 0.6rem; }
 
 /*holiday-reason**************************/
 .holiday-reason {

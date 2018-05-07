@@ -244,9 +244,9 @@ $(document).ready(function ($) {
             // console.log('initCustomSelectSearch');
             $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
             $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
-            $('.js-input--mode').mask('с 00:00 до 00:00', {
+            $('.js-input--mode').mask('00:00 — 00:00', {
                 clearIfNotMatch: true,
-                placeholder: "с __:__ до __:__"
+                placeholder: "__:__ — __:__"
             });
 
             randomInteger(1, 99999);
@@ -1230,9 +1230,9 @@ $(document).ready(function ($) {
     $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
     $('.js-input--loyalty').mask('000-000', {clearIfNotMatch: true });
 
-    $('.js-input--mode').mask('с 00:00 до 00:00', {
+    $('.js-input--mode').mask('00:00 — 00:00', {
         clearIfNotMatch: true,
-        placeholder: "с __:__ до __:__"
+        placeholder: "__:__ — __:__"
     });
     $('input[name="form_text_30"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
     $('input[name="form_text_52"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
