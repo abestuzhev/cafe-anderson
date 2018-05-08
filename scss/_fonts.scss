@@ -1,14 +1,15 @@
 //@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext');
 
 @include font_face(BebasNeue-Bold, BebasNeue,'../fonts/', 700);
-@include font_face(PTSerifCaption, PT Serif Caption,'../fonts/', 700);
+@include font_face(PTSerifCaption, 'PT Serif Caption','../fonts/', 400);
+@include font_face(PTSerifCaptionItalic, 'PT Serif Caption', '../fonts/', 400, italic);
 @include font_face(BebasNeue-Regular, BebasNeue,'../fonts/', 500);
 @include font_face(BebasNeue-Book, BebasNeue,'../fonts/', 400);
-@include font_face(BebasNeue-Light, BebasNeue,'../fonts/',300);
-@include font_face(BebasNeue-Thin, BebasNeue,'../fonts/',100);
-@include font_face(PTRoubleSerif, RoubleSerif,'../fonts/',400);
+@include font_face(BebasNeue-Light, BebasNeue,'../fonts/', 300);
+@include font_face(BebasNeue-Thin, BebasNeue,'../fonts/', 100);
+@include font_face(PTRoubleSerif, RoubleSerif,'../fonts/', 400);
 
-@include font_face(SummerFont-Light, SummerFont,'../fonts/',100);
+@include font_face(SummerFont-Light, SummerFont,'../fonts/', 100);
 
 
 $font_sans-serif: 'BebasNeue';

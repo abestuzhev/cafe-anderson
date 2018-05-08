@@ -34,6 +34,7 @@
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />
     <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all" />
     <link rel="stylesheet" href="./css/main_global.css">
+    <link rel="stylesheet" href="./js/datepicker/datepicker-anderson.css">
     <link rel="stylesheet" href="./css/sticky-header.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -2496,7 +2497,7 @@
                         </a>
                         <ul class="filter-hold">
                             <div class="filter-hold__close">Скрыть категории</div>
-                            <li class="filter-hold__item active">
+                            <li class="filter-hold__item">
                                 <svg class="c-symbol symbol-salad">
                                     <use xlink:href="#symbol-salad" />
                                 </svg>
@@ -2569,7 +2570,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="filter-hold__item">
+                            <li class="filter-hold__item active">
                                 <svg class="c-symbol symbol-ice-cream">
                                     <use xlink:href="#symbol-ice-cream" />
                                 </svg>
@@ -2604,11 +2605,11 @@
                                 <a href="#" class="filter-hold__link">Купить в Андерсоне</a>
                             </li>
                         </ul>
-                        <div class="catalog-product">
+                        <div class="catalog-product--cake">
                             <div class="filter-layout">
                                 <!--catalog-filter-->
                                 <div class="catalog-filter">
-                                    <div class="filter-bage">
+                                    <div class="filter-bage" style="display: none;">
                                         <i class="icon-menu">
                                             <span></span>
                                         </i>
@@ -2663,9 +2664,15 @@
                                 </div>
                                 <!--END catalog-filter-->
                             </div>
+                            <div class="catalog-banner catalog-banner--dessert">
+                                <p>Хотите побаловать себя дома изысканным десертом?</p>
+                                <h2 class="catalog-banner__title">Пирожные, десерты, рулеты и многое другое..</h2>
+                                <p>Скажем "стоп" однотипным десертам!</p>
+                                <p> Наши десерты никого не оставят равнодушным!</p>
+                            </div>
                             <ul class="catalog-list">
-                                <li class="catalog-list__item">
-                                    <div class="c-card-catalog">
+                                <li class="catalog-list__item js-show-cake-order">
+                                    <div class="c-card-catalog ">
                                         <div class="c-card-catalog__header">
                                             <div class="c-card-catalog__title click">Фирменный салат «Цезарь» с листьями салата романо и домашней заправкой</div>
                                             <!--<div class="c-card-catalog__weight">Вес: 250 г.</div>-->
@@ -2684,8 +2691,8 @@
                                             <div class="c-card-catalog__price">
                                                 <div>
                                                     <div class="c-card-catalog__price-layout">
-                                                        50
-                                                        <span class="c-currency-symbol">&#8380;</span>
+                                                         540
+                                                        <span class="c-currency-symbol">&#8381</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2722,8 +2729,8 @@
                                         <div class="c-card-catalog__footer">
                                             <div class="c-card-catalog__price">
                                                 <div class="c-card-catalog__price-layout">
-                                                    10
-                                                    <span class="c-currency">AZN</span>
+                                                     540
+                                                    <span class="c-currency-symbol">&#8381</span>
                                                 </div>
                                             </div>
                                             <div class="c-card-catalog__count">
@@ -2790,8 +2797,11 @@
                                             <div class="c-card-catalog__ingredients"></div>
                                         </div>
                                         <div class="c-card-catalog__footer">
-                                            <div class="c-card-catalog__price">450
-                                                <span class="c-currency">РУБ.</span>
+                                            <div class="c-card-catalog__price">
+                                                <div class="c-card-catalog__price-layout">
+                                                    540
+                                                    <span class="c-currency-symbol">&#8381</span>
+                                                </div>
                                             </div>
                                             <div class="c-card-catalog__count">
                                                 <div class="c-counter">
@@ -2818,9 +2828,11 @@
                                                 (140руб.)</div>
                                         </div>
                                         <div class="c-card-catalog__footer">
-                                            <div class="c-card-catalog__price">290
-                                                <span class="c-currency">AZN</span>
-                                                <span class="c-currency-rouble-serif"></span>
+                                            <div class="c-card-catalog__price">
+                                                <div class="c-card-catalog__price-layout">
+                                                    540
+                                                    <span class="c-currency-symbol">&#8381</span>
+                                                </div>
                                             </div>
                                             <div class="c-card-catalog__count">
                                                 <div class="c-counter">
@@ -4186,6 +4198,347 @@
                         <img class="popup-bg__img" src="./img/popup-bg_vacancy.jpg" alt="">
                     </div>
                     <!--popup-body-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Всплывающее окно "Подтверждение заказа торта"-->
+    <div class="mfp-wrap popup-cake-order-congratulation" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <div class="popup">
+                    <h3 class="popup-title">Заказ оформлен
+                        <span class="popup-close"></span>
+                    </h3>
+                    <div class="popup-body">
+                        <p>
+                            Ваш заказ сформирован под номером №___, остался последний шаг и кондитеры начнут работу
+                        </p>
+                        <div class="l-button__center">
+                            <a href="#" class="c-button c-button__medium">Перейти к оплате</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--карточка торта-->
+    <div class="mfp-wrap popup-cake-order v2" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <div class="popup">
+                    <h3 class="popup-title">Черничный торт с шоколадным бисквитом 1/4 торта
+                        <span class="popup-close"></span>
+                    </h3>
+                    <form action="#" class="popup-form cake-order" id="cake-order-form">
+                        <div class="popup-body">
+    
+                            <div class="cake-order__grid c-grid c-grid-between">
+                                <div class="c-col-5">
+                                    <div class="cake-order__img">
+                                        <img src="./img/cake-order-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="c-col-7">
+                                    <div class="cake-order__item popup-form__item">
+                                        <label class="c-label">
+                                            <span class="c-label-decor">
+                                                Выберем начинку:
+                                                <span class="c-obligatory-field">*</span>
+                                            </span>
+                                            
+                                        </label>
+                                        <!-- <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                            <option value="9.00-12.00">с 9.00 до 12.00</option>
+                                            <option value="12.00-15.00">с 12.00 до 15.00</option>
+                                            <option value="15.00-18.00">с 15.00 до 18.00</option>
+                                        </select> -->
+                                        <div class="cake-order-change">
+                                            <a href="#" class="selected">Пломбир</a>
+                                            <a href="#">Чернично-шоколадная</a>
+                                            <a href="#">Бисквитно ягодная</a>
+                                            <a href="#">Шоколадная</a>
+                                            <a href="#">Медовик</a>
+                                        </div>
+                                    </div>
+                                    <div class="cake-order__item popup-form__item">
+                                        <label class="c-label">
+                                            <span class="c-label-decor">
+                                                А какого размера?
+                                                <span class="c-obligatory-field">*</span>
+                                            </span>
+                                           
+                                        </label>
+                                        <!-- <select name="order-deliver-cake-time" class="c-select select-delivery">
+                                            <option value="20">Размер M — Диаметр 20 см</option>
+                                            <option value="30">Размер M — Диаметр 30 см</option>
+                                            <option value="40">Размер M — Диаметр 40 см</option>
+                                        </select> -->
+                                        <div class="cake-order-change">
+                                            <a href="#" class="selected">&#248; 16 см (6 порций)</a>
+                                            <a href="#">&#248; 22 см (8 порций)</a>
+                                            <a href="#">&#248; 28 см (10 порций)</a>
+                                            <a href="#">&#248; 30 см (16 порций)</a>
+                                        </div>
+                                    </div>
+                                    <div class="popup-form__item">
+
+                                        
+                                        <div class="cake-order-operations">
+                                            <div class="cake-order-final__total">
+                                                
+                                                <span>2500
+                                                    <span class="c-currency-symbol">&#8381;</span>
+                                                </span>
+                                            </div>
+                                            <div class="c-card-catalog__count">
+                                                <div class="c-counter">
+                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="c-card-catalog__basket">
+                                                <i class="icon-shopping-cart"></i>
+                                                 <span>Вы можете положить данный товар в корзину</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="c-form__grid">
+                                        <div class="c-form__col">
+                                            <div class="popup-form__item">
+                                                <label class="c-label">Когда вам нужен торт?
+                                                    <span class="c-obligatory-field">*</span>
+                                                </label>
+                                                <div class="datepicker-layout">
+                                                    <input type='text' id="minMaxExample" class=" c-input datepicker-here form-control" id="cake-order-date" placeholder="Дата доставки"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-form__col">
+                                            <div class="popup-form__item">
+                                                <label class="c-label">Во сколько позвонить?</label>
+                                                <input type="text" class="c-input form-control" placeholder="Во сколько позвонить?" name="cake-order__call_time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                    <div class="popup-form__item">
+                                        <div class="c-form__attention">Обращаем ваше внимание, что доставка торта возможна не раньше чем, за полных три дня.
+                                            Торты одного дня возможно доставить через полный рабочий день.</div>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+                            <div class="cake-order-contact c-grid c-grid-between">
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="cake-order__name">Представтесь пожалуйста
+                                        <span class="c-obligatory-field">*</span>
+                                    </label>
+                                    <input class="c-input" type="text" placeholder="Ваше имя" name="cake-order__name" id="cake-order__name" required>
+                                </div>
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="cake-order__phone">Как вам позвонить?
+                                        <span class="c-obligatory-field">*</span>
+                                    </label>
+                                    <input class="c-input js-input--tel" type="text" placeholder="+7(___)___-__-__" name="cake-order__phone" id="cake-order__phone"
+                                        required>
+                                </div>
+                                <div class="popup-form__item">
+                                    <label class="c-label" for="cake-order__email">Куда Вам написать?
+                                        <span class="c-obligatory-field">*</span>
+                                    </label>
+                                    <input class="c-input" type="text" placeholder="Укажите email" name="cake-order__email" id="cake-order__email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!--popup-body-->
+                        <div class="popup-footer">
+                            <div class="order-delivery">
+                                <div class="order-tabs">
+                                    <div class="order-tabs__nav">
+                                        <ul class="tabs-menu" id="">
+                                            <li class="order-tabs__item current">
+                                                <a href="#order-pickup-cake">Самовывоз</a>
+                                            </li>
+                                            <li class="order-tabs__item">
+                                                <a href="#order-delivery-cake">Доставка</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab">
+                                        <div id="order-pickup-cake" class="tab-content">
+                                            <div class="order-delivery__grid">
+                                                <div class="order-delivery__col">
+                                                    <div class="order-delivery__map" id="cake-order__map"></div>
+                                                </div>
+                                                <div class="order-delivery__col">
+                                                    <div class="order-delivery-search">
+                                                        <div class="order-delivery-search__item">
+                                                            <input type="text" id="search_cafe_in_order-cake" name="search_cafe_in_order" class="c-search-page__input" placeholder="искать"
+                                                                autocomplete="off">
+                                                            <!--<button>Поиск</button>-->
+    
+                                                        </div>
+                                                        <div class="order-delivery-search__item">
+                                                            <a href="#" class="order-delivery-search__clear">сбросить поиск
+                                                                <i class=""></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <!--<input class="form-control" type="text" placeholder="Search for people here...(age/name etc, IE 23 or Jim)" id="searchin"/>-->
+                                                    
+                                                    <ul class="order-delivery-address__list" data-simplebar>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-1" checked>
+                                                            <label class="order-radio" for="order-delivery-cake__address-1">Андерсон для Пап, ул.Большая Дмитровская, д.58</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-2">
+                                                            <label class="order-radio" for="order-delivery-cake__address-2">Андерсон для Мам 2</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-3">
+                                                            <label class="order-radio" for="order-delivery-cake__address-3">Андерсон для Мам 3</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-4">
+                                                            <label class="order-radio" for="order-delivery-cake__address-4">Андерсон для Мам 4</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-5">
+                                                            <label class="order-radio" for="order-delivery-cake__address-5">Андерсон для Мам 5</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-6">
+                                                            <label class="order-radio" for="order-delivery-cake__address-6">Андерсон для Пап 6</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" class="order-input" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-7">
+                                                            <label class="order-radio" for="order-delivery-cake__address-7">Андерсон для Пап7</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                            <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап 8</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                            <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап 8</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                            <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап 8</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                            <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап 8</label>
+                                                        </li>
+                                                        <li class="order-delivery-address__item">
+                                                            <input type="radio" name="order-cake-delivery__address-pickup" id="order-delivery-cake__address-8">
+                                                            <label class="order-radio" for="order-delivery-cake__address-8">Андерсон для Пап 8</label>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="order-delivery-address__all">показать все</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="order-delivery-cake" class="tab-content">
+                                            <ul class="order-delivery-custom__list">
+    
+                                                <ul class="order-delivery-custom__grid">
+                                                    <li class="order-delivery-custom__item">
+                                                        <div class="c-form__attention">Стоимость доставки в пределах МКАД 2000 рублей, доставка за пределы МКАД
+                                                            (не более 20 км) — 5000 рублей</div>
+                                                    </li>
+                                                    <li class="order-delivery-custom__item">
+                                                        <input type="text" name="order-cake-delivery-custom__city" class="c-input" placeholder="Город:">
+                                                    </li>
+                                                </ul>
+                                                <ul class="order-delivery-custom__grid">
+                                                    <li class="order-delivery-custom__item">
+                                                        <input type="text" name="order-cake-delivery-custom__street" class="c-input" placeholder="Улица:">
+                                                    </li>
+                                                    <li class="order-delivery-custom__item">
+                                                        <input type="text" name="order-cake-delivery-custom__house" class="c-input" placeholder="Дом:">
+                                                    </li>
+                                                </ul>
+    
+                                                <li class="order-delivery-custom__item">
+                                                    <textarea class="c-input" name="order-cake-delivery-custom__note" id="order-delivery-cake-custom__note" rows="3"></textarea>
+                                                </li>
+                                            </ul>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+    
+                            <div class="cake-order-final">
+    
+                                <div class="popup-form__item">
+                                    <div class="c-personal-data">
+                                        <div class="c-personal-data__item">
+                                            <input type="checkbox" name="cake-order__regulations" id="cake-order__regulations" checked>
+                                            <label class="c-checkbox" for="cake-order__regulations">Я ознакомлен с
+                                                <a href="#">правилами обработки
+                                                </a> моих персональных данных.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- START Купон -->
+                                <div class="cake-order-final-coupon">
+                                    <div class="cake-order-final-coupon__left">
+                                        <input type="text" name="coupon" class="c-input" placeholder="введите купон">
+                                    </div>
+                                    <div class="cake-order-final-coupon__right">
+                                        <button class="c-button c-button__default" id="recalc_order" type="button">Применить купон</button>
+                                    </div>
+                                </div>
+                                <!-- END Купон -->
+                                <div class="cake-order-final__list">
+                                    <div class="cake-order-final__left">
+                                        <div class="cake-order-final__total">
+                                            Итого:
+                                            <div class="cake-order-result">торт
+                                                <span>2500
+                                                    <span class="c-currency-symbol">&#8381;</span>
+                                                </span> + доставка
+                                                <span>2000
+                                                    <span class="c-currency-symbol">&#8381;</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cake-order-final__right">
+                                        <div class="l-button l-button__left">
+                                            <button class="c-button c-button__default" id="cake-order-issue">Оформить и оплатить</button>
+                                            <!--<a href="#" class="c-card-catalog__basket"><i class="icon-shopping-cart"></i></a>-->
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="c-form__attention">Самовывоз из кафе Москвы и МО бесплатный. Доставка до двери является платной и осуществляется
+                                    на расстояние не дальше 20 км от МКАД.</div>
+                            </div>
+    
+                            <div class="l-button__center">
+                                <a href="#" class="c-button c-button__default popup-product__btn-back">Наверх
+                                    <i></i>
+                                </a>
+                                <a href="#" class="c-button c-button__default popup-product__btn-close js-popup-close">Закрыть
+                                    <i></i>
+                                </a>
+                            </div>
+    
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

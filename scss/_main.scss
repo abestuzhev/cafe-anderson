@@ -4044,6 +4044,89 @@ test popup
         //margin-bottom: 2.7rem;
     }
 
+    &-banner {
+        min-height: 34rem;
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: .4rem;
+        border:2px solid #e5e5e5;
+        position: relative;
+        background-color: #fff;
+        margin-bottom: 1.5rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 19px;
+            background: url('../img/decor-line-waves.png') 0 0 repeat-x;
+            z-index: 5;
+        }
+
+        &--dessert {
+            background: url(../img/catalog-banner-dessert.jpg) 50% 50% no-repeat;
+            background-size: cover;
+            padding: 4.3rem 39rem 4.3rem 4.3rem;
+        }
+
+        &__title {
+            font-family: $font_serif;
+            font-size: 4.5rem;
+            color: #c03485;
+            font-style: italic;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+            text-shadow: 0px 1px 5px white,
+                        0px 2px 10px white,
+                        0px 3px 15px white,
+                        0px 4px 20px white,
+                        0px 5px 30px white,
+                        0px 6px 40px white,
+                        0px 7px 45px white,
+                        0px 8px 40px white,
+                        0px 9px 40px white,
+                        0px 10px 40px white;
+
+            &::-moz-selection {
+                background-color: #fff8d3;
+                color: #c03485;
+            }
+
+            &::selection {
+                background-color: #fff8d3;
+                color: #c03485;
+            }
+        }
+
+        p {
+            font-family: $font_serif;
+            font-size: 3rem;
+            color: #553023;
+            font-style: italic;
+            line-height: 1.1;
+            text-shadow: 0px 1px 5px white,
+                        0px 2px 10px white,
+                        0px 3px 15px white,
+                        0px 4px 20px white,
+                        0px 5px 30px white,
+                        0px 6px 40px white,
+                        0px 7px 45px white,
+                        0px 8px 40px white,
+                        0px 9px 40px white,
+                        0px 10px 40px white;
+            &::-moz-selection {
+                background-color: #fff8d3;
+                color: #553023;
+            }
+
+            &::selection {
+                background-color: #fff8d3;
+                color: #553023;
+            }
+        }
+    }
+
     &-body {
         display: flex;
         flex-flow: row nowrap;
@@ -4057,7 +4140,8 @@ test popup
                 transition: left .2s ease-out;
             }
 
-            .catalog-product {
+            .catalog-product,
+            .catalog-product--cake {
                 margin-left: 27rem;
                 transition: margin-left .2s ease-out;
             }
@@ -4085,6 +4169,7 @@ test popup
         margin-left: 0 !important;
     }
 
+    &-product--cake,
     &-product {
         width: 100%;
         margin-left: 0;
@@ -7280,6 +7365,78 @@ test popup
         width: 78rem;
     }
 
+    &.v2 {
+        .popup {
+            max-width: 100rem;
+            width: 100rem;
+        }
+
+        .popup-title {
+            font-size:1.9rem;
+            color: #2e1a13;
+        }
+
+        .c-label {
+            color: #553023;
+            font-style: italic;
+        }
+
+        .cake-order-final__list {
+            padding-top: 3rem;
+            .c-button {
+                background-color: #c44890;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0.9rem;
+                border-top: 1px dotted rgb(134, 134, 134);
+                border-bottom: 1px dotted rgb(134, 134, 134);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 100%;
+                height: 0.9rem;
+                border-top: 1px dotted rgb(134, 134, 134);
+            }
+        }
+
+        .cake-order-operations {
+            justify-content: space-between;
+            margin-bottom: .6rem;
+
+            .c-card-catalog__count {
+                margin-right: 1rem;
+            }
+        }
+
+        .c-card-catalog__basket {
+            text-align: left;
+            justify-content: center;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            background-color: #c44890;
+            .icon-shopping-cart {
+                margin-right: 1.3rem; // width: 3rem;
+                // height: 3rem;
+            }
+            span {
+                flex: 1;
+            }
+            &:hover {
+                color: #ffffff;
+            }
+        }
+    }
+
     .popup-body {
         padding: 3rem 4rem 0;
     }
@@ -7317,23 +7474,9 @@ test popup
 
     .c-card-catalog__basket {
         //display: inline-block;
-        padding: .6rem 2.3rem;
+        padding: .6rem 1.6rem;
     }
 
-    .c-card-catalog__basket {
-        text-align: center;
-        justify-content: center;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-
-        .icon-shopping-cart {
-            margin-left: .4rem;
-        }
-
-        &:hover {
-            color: #ffffff;
-        }
-    }
     //.cake-order-final__total .c-card-catalog__basket {
     //    display: inline-block;
     //}
@@ -7351,6 +7494,8 @@ test popup
         align-items: stretch;
         justify-content: flex-end;
     }
+
+
 }
 
 .cake {
@@ -7651,7 +7796,8 @@ test popup
             }
         }
 
-        .c-col-6:nth-child(1) {
+        .cake-order__grid > .c-col-6:nth-child(1),
+        .cake-order__grid > .c-col-5:nth-child(1) {
             padding-right: 2.4rem;
         }
 
@@ -7667,27 +7813,68 @@ test popup
         }
 
         &__grid {
-            margin-bottom: 1rem;
+            padding-bottom: 2rem;
+            margin-bottom: 1.4rem;
+        }
+
+        &__item {
+            .c-label {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    // transform: translateY(-50%);
+                    left: 0;
+                    width: 100%;
+                    height: 0.9rem;
+                    border-top: 1px dotted rgb(134, 134, 134);
+                    border-bottom: 1px dotted rgb(134, 134, 134);
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    // transform: translateY(-50%);
+                    width: 100%;
+                    height: 0.1rem;
+                    border-top: 1px dotted rgb(134, 134, 134);
+                }
+            }
+
+            .c-label-decor {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                z-index: 2;
+                padding-right: 1rem;
+            }
         }
 
         &-final {
             padding: 1rem 4rem 2rem;
 
             &__left {
-                width: 100%;
+                // width: 100%;
             }
 
             &__list {
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
+                position: relative;
+                
             }
 
             &__total {
                 vertical-align: middle;
                 font-size: 1.8rem;
                 text-align: left;
+                margin-right: 1rem;
+                min-width: 8rem;
 
                 span {
                     vertical-align: middle;
@@ -7726,6 +7913,11 @@ test popup
                     }
 
                 }
+            }
+
+            .c-form__attention {
+                text-align: center;
+                padding: 0 5rem;
             }
         }
 
@@ -7766,6 +7958,82 @@ test popup
                 margin: 0;
             }
 
+        }
+
+        &-time {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch;
+            justify-content: space-between;
+            &__col {
+                width: 50%;
+                margin-right: 1rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-contact {
+            margin-right: -0.8rem;
+            margin-left: -0.8rem;
+            position: relative;
+            padding-top: 3rem;
+            
+            .popup-form__item {
+                padding: 0 .8rem;
+                width: 33.3%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0.9rem;
+                border-top: 1px dotted rgb(134, 134, 134);
+                border-bottom: 1px dotted rgb(134, 134, 134);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 100%;
+                height: 0.9rem;
+                border-top: 1px dotted rgb(134, 134, 134);
+            }
+        }
+
+        &-change {
+            display: inline-block;
+
+            a {
+                white-space: nowrap;
+                margin-bottom: .6rem;
+                display: inline-block;
+                padding: 0.5rem 1.3rem;
+                font-size: 1.4rem;
+                color: #646464;
+                font-family: $font_serif;
+                font-style: italic;
+                border: 1px solid #f3efe4;
+                border-radius:5rem;
+
+                &::after {
+                    content:'';
+                    border:none;
+                }
+
+                &.selected {
+                    background-color: #c44890;
+                    color: #ffffff;
+                    border-color: #c44890;
+                }
+            }
         }
     }
 

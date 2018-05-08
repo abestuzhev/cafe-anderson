@@ -202,6 +202,19 @@
     .panel-event-date__item:nth-child(2) .SumoSelect > .CaptionCont {
         width:35rem;
     }
+
+    .catalog-banner--dessert {
+        padding: 4.3rem 18rem 4.3rem 4.3rem;
+    }
+    .catalog-banner__title {
+        font-size: 4rem;
+    }
+    .catalog-banner p {
+        font-size: 2.5rem;
+    }
+    .catalog-banner {
+        min-height: 0;
+    }
 }
 
 @media (min-width: 1600px) {

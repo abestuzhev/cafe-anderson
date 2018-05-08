@@ -1323,6 +1323,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-event__link--one-click", '.popup-event-one-click');
     showPopup(".excursion-btn", '.popup-excursion-order');
 
+    showPopup(".catalog-product--cake .js-show-cake-order", '.popup-cake-order');
 
 
 

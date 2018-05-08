@@ -1308,8 +1308,15 @@ div {
   font-family: "PT Serif Caption";
   src: url("../fonts/PTSerifCaption.eot");
   src: url("../fonts/PTSerifCaption.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSerifCaption.woff") format("woff"), url("../fonts/PTSerifCaption.ttf") format("truetype"), url("../fonts/PTSerifCaption.svg#PT Serif Caption") format("svg");
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal; }
+
+@font-face {
+  font-family: "PT Serif Caption";
+  src: url("../fonts/PTSerifCaptionItalic.eot");
+  src: url("../fonts/PTSerifCaptionItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSerifCaptionItalic.woff") format("woff"), url("../fonts/PTSerifCaptionItalic.ttf") format("truetype"), url("../fonts/PTSerifCaptionItalic.svg#PT Serif Caption") format("svg");
+  font-weight: 400;
+  font-style: italic; }
 
 @font-face {
   font-family: "BebasNeue";
@@ -9035,6 +9042,56 @@ test popup
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
+.catalog-banner {
+  min-height: 34rem;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: .4rem;
+  border: 2px solid #e5e5e5;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 1.5rem; }
+  .catalog-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 19px;
+    background: url("../img/decor-line-waves.png") 0 0 repeat-x;
+    z-index: 5; }
+  .catalog-banner--dessert {
+    background: url(../img/catalog-banner-dessert.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 4.3rem 39rem 4.3rem 4.3rem; }
+  .catalog-banner__title {
+    font-family: "PT Serif Caption";
+    font-size: 4.5rem;
+    color: #c03485;
+    font-style: italic;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-shadow: 0px 1px 5px white, 0px 2px 10px white, 0px 3px 15px white, 0px 4px 20px white, 0px 5px 30px white, 0px 6px 40px white, 0px 7px 45px white, 0px 8px 40px white, 0px 9px 40px white, 0px 10px 40px white; }
+    .catalog-banner__title::-moz-selection {
+      background-color: #fff8d3;
+      color: #c03485; }
+    .catalog-banner__title::selection {
+      background-color: #fff8d3;
+      color: #c03485; }
+  .catalog-banner p {
+    font-family: "PT Serif Caption";
+    font-size: 3rem;
+    color: #553023;
+    font-style: italic;
+    line-height: 1.1;
+    text-shadow: 0px 1px 5px white, 0px 2px 10px white, 0px 3px 15px white, 0px 4px 20px white, 0px 5px 30px white, 0px 6px 40px white, 0px 7px 45px white, 0px 8px 40px white, 0px 9px 40px white, 0px 10px 40px white; }
+    .catalog-banner p::-moz-selection {
+      background-color: #fff8d3;
+      color: #553023; }
+    .catalog-banner p::selection {
+      background-color: #fff8d3;
+      color: #553023; }
+
 .catalog-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9055,7 +9112,8 @@ test popup
     -webkit-transition: left .2s ease-out;
     -o-transition: left .2s ease-out;
     transition: left .2s ease-out; }
-  .catalog-body.show-category .catalog-product {
+  .catalog-body.show-category .catalog-product,
+  .catalog-body.show-category .catalog-product--cake {
     margin-left: 27rem;
     -webkit-transition: margin-left .2s ease-out;
     -o-transition: margin-left .2s ease-out;
@@ -9067,7 +9125,7 @@ test popup
   margin-right: 0 !important;
   margin-left: 0 !important; }
 
-.catalog-product {
+.catalog-product--cake, .catalog-product {
   width: 100%;
   margin-left: 0;
   -webkit-transition: margin-left .2s ease-out;
@@ -11525,6 +11583,65 @@ test popup
   max-width: 78rem;
   width: 78rem; }
 
+.popup-cake-order.v2 .popup {
+  max-width: 100rem;
+  width: 100rem; }
+
+.popup-cake-order.v2 .popup-title {
+  font-size: 1.9rem;
+  color: #2e1a13; }
+
+.popup-cake-order.v2 .c-label {
+  color: #553023;
+  font-style: italic; }
+
+.popup-cake-order.v2 .cake-order-final__list {
+  padding-top: 3rem; }
+  .popup-cake-order.v2 .cake-order-final__list .c-button {
+    background-color: #c44890; }
+  .popup-cake-order.v2 .cake-order-final__list::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.9rem;
+    border-top: 1px dotted #868686;
+    border-bottom: 1px dotted #868686; }
+  .popup-cake-order.v2 .cake-order-final__list::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    height: 0.9rem;
+    border-top: 1px dotted #868686; }
+
+.popup-cake-order.v2 .cake-order-operations {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: .6rem; }
+  .popup-cake-order.v2 .cake-order-operations .c-card-catalog__count {
+    margin-right: 1rem; }
+
+.popup-cake-order.v2 .c-card-catalog__basket {
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: #c44890; }
+  .popup-cake-order.v2 .c-card-catalog__basket .icon-shopping-cart {
+    margin-right: 1.3rem; }
+  .popup-cake-order.v2 .c-card-catalog__basket span {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .popup-cake-order.v2 .c-card-catalog__basket:hover {
+    color: #ffffff; }
+
 .popup-cake-order .popup-body {
   padding: 3rem 4rem 0; }
 
@@ -11554,19 +11671,7 @@ test popup
   display: inline-block; }
 
 .popup-cake-order .c-card-catalog__basket {
-  padding: .6rem 2.3rem; }
-
-.popup-cake-order .c-card-catalog__basket {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.4rem;
-  text-transform: uppercase; }
-  .popup-cake-order .c-card-catalog__basket .icon-shopping-cart {
-    margin-left: .4rem; }
-  .popup-cake-order .c-card-catalog__basket:hover {
-    color: #ffffff; }
+  padding: .6rem 1.6rem; }
 
 .popup-cake-order .cake-order-final__total .c-button__default {
   padding: 1.2rem 1.8rem; }
@@ -11836,7 +11941,8 @@ test popup
             flex-flow: row nowrap;
     margin-right: 0;
     margin-left: 0; }
-  .cake-order .c-col-6:nth-child(1) {
+  .cake-order .cake-order__grid > .c-col-6:nth-child(1),
+  .cake-order .cake-order__grid > .c-col-5:nth-child(1) {
     padding-right: 2.4rem; }
   .cake-order .order-delivery {
     margin: 0; }
@@ -11844,11 +11950,35 @@ test popup
     width: 100%;
     height: auto; }
   .cake-order__grid {
-    margin-bottom: 1rem; }
+    padding-bottom: 2rem;
+    margin-bottom: 1.4rem; }
+  .cake-order__item .c-label {
+    position: relative; }
+    .cake-order__item .c-label::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 100%;
+      height: 0.9rem;
+      border-top: 1px dotted #868686;
+      border-bottom: 1px dotted #868686; }
+    .cake-order__item .c-label::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      height: 0.1rem;
+      border-top: 1px dotted #868686; }
+  .cake-order__item .c-label-decor {
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    padding-right: 1rem; }
   .cake-order-final {
     padding: 1rem 4rem 2rem; }
-    .cake-order-final__left {
-      width: 100%; }
     .cake-order-final__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -11860,13 +11990,16 @@ test popup
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative; }
     .cake-order-final__total {
       vertical-align: middle;
       font-size: 1.8rem;
-      text-align: left; }
+      text-align: left;
+      margin-right: 1rem;
+      min-width: 8rem; }
       .cake-order-final__total span {
         vertical-align: middle;
         font-family: "BebasNeue";
@@ -11901,6 +12034,9 @@ test popup
           padding: 1rem 1.6rem; }
       .cake-order-final-coupon__right .c-button {
         height: 100%; }
+    .cake-order-final .c-form__attention {
+      text-align: center;
+      padding: 0 5rem; }
   .cake-order-result {
     display: inline-block; }
   .cake-order-price__title {
@@ -11929,6 +12065,70 @@ test popup
     margin-bottom: .6rem; }
     .cake-order-operations .c-card-catalog__count {
       margin: 0; }
+  .cake-order-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .cake-order-time__col {
+      width: 50%;
+      margin-right: 1rem; }
+      .cake-order-time__col:last-child {
+        margin-right: 0; }
+  .cake-order-contact {
+    margin-right: -0.8rem;
+    margin-left: -0.8rem;
+    position: relative;
+    padding-top: 3rem; }
+    .cake-order-contact .popup-form__item {
+      padding: 0 .8rem;
+      width: 33.3%; }
+    .cake-order-contact::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0.9rem;
+      border-top: 1px dotted #868686;
+      border-bottom: 1px dotted #868686; }
+    .cake-order-contact::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 100%;
+      height: 0.9rem;
+      border-top: 1px dotted #868686; }
+  .cake-order-change {
+    display: inline-block; }
+    .cake-order-change a {
+      white-space: nowrap;
+      margin-bottom: .6rem;
+      display: inline-block;
+      padding: 0.5rem 1.3rem;
+      font-size: 1.4rem;
+      color: #646464;
+      font-family: "PT Serif Caption";
+      font-style: italic;
+      border: 1px solid #f3efe4;
+      border-radius: 5rem; }
+      .cake-order-change a::after {
+        content: '';
+        border: none; }
+      .cake-order-change a.selected {
+        background-color: #c44890;
+        color: #ffffff;
+        border-color: #c44890; }
 
 @media screen and (max-width: 1210px) {
   .cake-stuffing__item {
