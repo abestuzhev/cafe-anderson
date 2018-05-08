@@ -7477,6 +7477,10 @@ test popup
         padding: .6rem 1.6rem;
         text-transform: uppercase;
         text-align:center;
+
+        &:hover {
+            color: #ffffff;
+        }
     }
 
     //.cake-order-final__total .c-card-catalog__basket {
