@@ -11674,6 +11674,8 @@ test popup
   padding: .6rem 1.6rem;
   text-transform: uppercase;
   text-align: center; }
+  .popup-cake-order .c-card-catalog__basket:hover {
+    color: #ffffff !important; }
 
 .popup-cake-order .cake-order-final__total .c-button__default {
   padding: 1.2rem 1.8rem; }
