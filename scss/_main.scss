@@ -7435,6 +7435,33 @@ test popup
                 color: #ffffff;
             }
         }
+
+        .popup-title {
+            padding-left: 8.8rem;
+        }
+
+        .icon-round-cake {
+            position: absolute;
+            left: 4.2rem;
+            top: 8px;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 5rem;
+            background-color: #cabbaa;
+            display: inline-block;
+            overflow: hidden;
+            .symbol-cake-2 {
+                position: absolute;
+                left: 35%;
+                top: 3px;
+                fill: #fff;
+                transform: rotate(15deg);            }
+        }
+
+        .symbol-corn,
+        .symbol-berries {
+            fill: #c44890;
+        }
     }
 
     .popup-body {
