@@ -242,7 +242,9 @@
         width: 42rem;
     }
 
-
+    .about-banner {
+        background-size: 133%;
+    }
 }
 
 @media (max-width: 1380px) {

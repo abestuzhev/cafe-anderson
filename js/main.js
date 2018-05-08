@@ -1606,7 +1606,6 @@ $(document).ready(function ($) {
             if (clickCount == 1) {
                 $(this).attr("data-count", clickCount);
                 $(this).parent('.c-reviews__item').addClass('active');
-                console.log('click');
                 return false;
             } else if (clickCount == 2){
                 showPopup(".c-reviews-positive", '.popup__review');
