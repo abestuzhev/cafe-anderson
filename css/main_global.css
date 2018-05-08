@@ -11671,7 +11671,9 @@ test popup
   display: inline-block; }
 
 .popup-cake-order .c-card-catalog__basket {
-  padding: .6rem 1.6rem; }
+  padding: .6rem 1.6rem;
+  text-transform: uppercase;
+  text-align: center; }
 
 .popup-cake-order .cake-order-final__total .c-button__default {
   padding: 1.2rem 1.8rem; }
