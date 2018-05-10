@@ -204,13 +204,13 @@
     }
 
     .catalog-banner--dessert {
-        padding: 4.3rem 18rem 4.3rem 4.3rem;
+        padding: 3.6rem 18rem 3.6rem 3.6rem;
     }
     .catalog-banner__title {
-        font-size: 4rem;
+        font-size: 3.7rem;
     }
     .catalog-banner p {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .catalog-banner {
         min-height: 0;
@@ -433,6 +433,20 @@
     }
 }
 
+@media screen and (max-width: 1170px) {
+    .catalog-banner__title {
+        font-size: 3rem;
+    }
+
+    .catalog-banner p {
+        font-size:2rem;
+    }
+
+    .catalog-banner--dessert {
+        padding: 3rem 18rem 3rem 3rem;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .cafe-list-layout .filter-item:nth-child(2) {
         width: 62%;
@@ -512,6 +526,7 @@
     .bonus-install__giraffe {
         top: 8%;
     }
+
 }
 
 @media screen and (max-width: 985px) {
@@ -932,6 +947,18 @@
 
     .easter {
         margin-bottom: 6rem;
+    }
+
+    .popup-cake-order.v2 .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100vh;
+        margin: 0;
+        overflow-y: scroll;
+        border-radius: 0;
     }
 }
 
@@ -1559,9 +1586,12 @@
         display: block !important;
     }
 
-    .catalog-body.show-category .catalog-product {
+    .catalog-body.show-category .catalog-product,
+    .catalog-body.show-category .catalog-product--cake {
         margin-left: 0;
     }
+
+
 
     .creators-slogan__title {
         font-size: 4.1rem;
@@ -1659,6 +1689,17 @@
 
     .bonus-banner__title {
         width: 78%;
+    }
+
+    .popup-cake-order.v2 .cake-order-operations {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .popup-cake-order.v2 .c-card-catalog__basket {
+        flex: 1 0 100%;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 1.2rem 1.6rem;
     }
 
 }
@@ -2250,6 +2291,18 @@
 
     .bonus-ranks__item {
         width: 33%;
+    }
+
+    .popup-cake-order.v2 .cake-order-contact,
+    .popup-cake-order.v2 .cake-order-time {
+        flex-flow: column nowrap;
+    }
+    .popup-cake-order.v2 .popup-form__item {
+        width: 100%;
+    }
+
+    .popup-cake-order.v2 .cake-order-time .popup-form__item {
+        width: 100%;
     }
 }
 
@@ -2886,6 +2939,10 @@
 
     .dispatch__item input[type="text"] {
         width: 100%;
+    }
+
+    .catalog-banner--dessert {
+        padding: 2rem 10rem 2rem 2rem;
     }
 
 }
@@ -3671,6 +3728,16 @@
     .bonus-banner__cup {
         width: 10.7rem;
     }
+
+    .catalog-banner--dessert {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    .catalog-banner p {
+        font-size: 1.8rem;
+    }
+    .catalog-banner__title {
+        font-size: 2.7rem;
+    }
 }
 
 @media (max-width: 570px) {
@@ -3730,6 +3797,17 @@
     .bonus-banner__title {
         font-size: 3.5rem;
     }
+
+    .cake-order-final-coupon {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .cake-order-final-coupon__left {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -4344,6 +4422,18 @@
     .bonus-description-phone {
         right: -19%;
     }
+
+    .catalog-banner__title {
+        font-size: 2.4rem;
+    }
+
+    .catalog-banner--dessert {
+        padding: 1.4rem 1.6rem;
+    }
+
+    .catalog-banner p {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 430px) {
@@ -4638,6 +4728,10 @@
         border-radius: .6rem;
         text-align: center;
         flex: 0 1 61%;
+    }
+
+    .popup-cake-order.v2 .c-card-catalog__count {
+        flex: 0 1 auto;
     }
 
     .catalog-list__item:nth-child(1n) {

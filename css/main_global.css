@@ -11649,6 +11649,7 @@ test popup
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.4rem;
+  border-radius: .6rem;
   text-transform: uppercase;
   background-color: #c44890; }
   .popup-cake-order.v2 .c-card-catalog__basket .icon-shopping-cart {
@@ -11660,13 +11661,14 @@ test popup
   .popup-cake-order.v2 .c-card-catalog__basket:hover {
     color: #ffffff; }
 
-.popup-cake-order.v2 .popup-title {
-  padding-left: 8.8rem; }
+.popup-cake-order.v2 .popup-title__text {
+  padding-left: 4rem;
+  position: relative; }
 
 .popup-cake-order.v2 .icon-round-cake {
   position: absolute;
-  left: 4.2rem;
-  top: 8px;
+  left: 0;
+  top: -8px;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 5rem;
@@ -12127,10 +12129,10 @@ test popup
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .cake-order-time__col {
+    .cake-order-time .popup-form__item {
       width: 50%;
       margin-right: 1rem; }
-      .cake-order-time__col:last-child {
+      .cake-order-time .popup-form__item:last-child {
         margin-right: 0; }
   .cake-order-contact {
     margin-right: -0.8rem;
@@ -12225,7 +12227,9 @@ test popup
 
 @media screen and (max-width: 390px) {
   .popup-cake-order .cake-order-operations .c-card-catalog__basket i {
-    display: none; } }
+    display: none; }
+  .popup-cake-order.v2 .cake-order-operations .c-card-catalog__basket i {
+    display: block; } }
 
 @media screen and (max-width: 700px) {
   .cake__list {
@@ -12288,7 +12292,15 @@ test popup
   .cake-order-final {
     padding: 2rem; }
   .cake-order .c-col-6:nth-child(1) {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .popup-cake-order.v2 .cake-order__grid .c-col-5,
+  .popup-cake-order.v2 .cake-order__grid .c-col-7 {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .popup-cake-order.v2 .cake-order-final__total {
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 600px) {
   .cake {

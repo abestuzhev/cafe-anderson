@@ -7422,6 +7422,7 @@ test popup
             text-align: left;
             justify-content: center;
             font-size: 1.4rem;
+            border-radius: .6rem;
             text-transform: uppercase;
             background-color: #c44890;
             .icon-shopping-cart {
@@ -7437,13 +7438,17 @@ test popup
         }
 
         .popup-title {
-            padding-left: 8.8rem;
+            //padding-left: 8.8rem;
+        }
+        .popup-title__text {
+            padding-left: 4rem;
+            position: relative;
         }
 
         .icon-round-cake {
             position: absolute;
-            left: 4.2rem;
-            top: 8px;
+            left: 0;
+            top: -8px;
             width: 3.5rem;
             height: 3.5rem;
             border-radius: 5rem;
@@ -7998,7 +8003,8 @@ test popup
             flex-flow: row nowrap;
             align-items: stretch;
             justify-content: space-between;
-            &__col {
+
+            .popup-form__item {
                 width: 50%;
                 margin-right: 1rem;
 
@@ -8149,6 +8155,13 @@ test popup
         .cake-order-operations .c-card-catalog__basket i {
             display: none;
         }
+
+        &.v2 {
+            .cake-order-operations .c-card-catalog__basket i {
+                display: block;
+            }
+        }
+
     }
 
 }
@@ -8218,6 +8231,16 @@ test popup
 
     .cake-order .c-col-6:nth-child(1) {
         padding-right: 0;
+    }
+
+    .popup-cake-order.v2 .cake-order__grid .c-col-5,
+    .popup-cake-order.v2 .cake-order__grid .c-col-7 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .popup-cake-order.v2 .cake-order-final__total {
+        margin-bottom: 0;
     }
 }
 
