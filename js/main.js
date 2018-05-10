@@ -1311,8 +1311,9 @@ $(document).ready(function ($) {
     // showPopup(".c-reviews-negative", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
     // showPopup(".popup-forgot-password", '.popup__recovery-password');
+    showPopup(".c-card-catalog .c-card-catalog__img", '.popup-product');
+    showPopup(".c-card-catalog .c-card-catalog__title", '.popup-product');
     showPopup(".js-show-product-order", '.popup-product');
-    // showPopup(".c-card-catalog .c-card-catalog__title", '.popup-product');
     showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
     showPopup(".js-easter-btn", '.popup-cake-order');
@@ -1323,7 +1324,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-event__link--one-click", '.popup-event-one-click');
     showPopup(".excursion-btn", '.popup-excursion-order');
 
-    showPopup(".js-show-cake-order", '.popup-cake-order.v2');
+    showPopup(".js-show-cake-order", '.popup-cake-order');
 
 
 
