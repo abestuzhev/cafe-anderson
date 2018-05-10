@@ -1,10 +1,5 @@
 $(document).ready(function () {
 
-
-
-
-
-
     var $todayNow = new Date();
     var $today = new Date();
     var $dayPeriod = +($today.getDate() + 4);
