@@ -15896,13 +15896,17 @@ test popup
     height: 18rem; }
 
 /*panel-events****************************/
+.about p {
+  margin-bottom: 2.2rem; }
+
 .about-banner {
-  width: 100%;
-  height: 27rem;
-  background: url(../img/about/about-banner-full.jpg) 50% 10% no-repeat;
+  height: 28.5rem;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
   background-size: 160%;
   position: relative;
-  margin-bottom: 5.3rem; }
+  margin: -3.1rem -2.8rem 5.3rem;
+  position: relative; }
   .about-banner::after {
     content: '';
     position: absolute;
@@ -15911,6 +15915,33 @@ test popup
     width: 100%;
     height: 1.9rem;
     background: url(../img/decor-line-waves.png) 0 0 repeat-x; }
+  .about-banner-slogan {
+    position: absolute;
+    left: 49%;
+    bottom: 30px;
+    max-width: 47rem;
+    padding: .9rem 3rem;
+    color: #c44890;
+    font-family: "SummerFont";
+    font-size: 3.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    background: url(../img/bg-bouble.png) 0 0 no-repeat; }
+    .about-banner-slogan__text {
+      position: relative;
+      z-index: 2; }
+    .about-banner-slogan__icon {
+      position: absolute;
+      overflow: hidden;
+      width: 5.6rem;
+      height: 8.5rem;
+      z-index: 1;
+      right: 37px;
+      top: -85px; }
+      .about-banner-slogan__icon .symbol-rabbit {
+        font-size: 5.6rem;
+        fill: #fff; }
 
 .about-text::after {
   content: '';
@@ -15977,7 +16008,7 @@ test popup
     font-size: 5rem;
     color: #c44890;
     font-family: "BebasNeue";
-    margin-bottom: 1.2rem;
+    margin-bottom: .7rem;
     font-weight: 700;
     line-height: 1; }
   .about-box::after {
@@ -16179,10 +16210,10 @@ test popup
           content: '';
           left: 0px;
           top: 121%;
-          width: 6.3rem;
-          -webkit-transform: rotate(124deg);
-              -ms-transform: rotate(124deg);
-                  transform: rotate(124deg); }
+          width: 5.8rem;
+          -webkit-transform: rotate(132deg);
+              -ms-transform: rotate(132deg);
+                  transform: rotate(132deg); }
         .about-advantages__right .about-advantages__item:nth-child(1)::after {
           content: '';
           width: auto;
@@ -16220,7 +16251,7 @@ test popup
   .about-advantages__item {
     margin-bottom: 1.2rem;
     padding: 2rem 0;
-    line-height: 1.4; }
+    line-height: 1.3; }
   .about-advantages__point {
     width: 2.3rem;
     height: 2.3rem;
@@ -16228,3 +16259,7 @@ test popup
     background-color: #ccc;
     position: absolute;
     z-index: 20; }
+
+.about-child-menu .about-box__title span {
+  position: relative;
+  left: 7%; }
