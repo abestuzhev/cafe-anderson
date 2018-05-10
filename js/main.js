@@ -1311,8 +1311,8 @@ $(document).ready(function ($) {
     // showPopup(".c-reviews-negative", '.popup__review');
     showPopup(".footer-reviews__icon", '.popup__review');
     // showPopup(".popup-forgot-password", '.popup__recovery-password');
-    showPopup(".c-card-catalog .c-card-catalog__img", '.popup-product');
-    showPopup(".c-card-catalog .c-card-catalog__title", '.popup-product');
+    showPopup(".catalog-product .c-card-catalog__img", '.popup-product');
+    showPopup(".catalog-product .c-card-catalog__title", '.popup-product');
     showPopup(".js-show-product-order", '.popup-product');
     showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
