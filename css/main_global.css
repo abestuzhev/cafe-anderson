@@ -1808,6 +1808,10 @@ p {
   -webkit-appearance: none;
           appearance: none; }
 
+.wrapper input[type="text"]:disabled,
+.popup input[type="text"]:disabled {
+  background-color: #efefef; }
+
 input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #9b9696; }
