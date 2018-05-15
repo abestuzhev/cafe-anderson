@@ -15601,6 +15601,30 @@ test popup
         display: none; }
     .panel-hall .c-card-cafe-vertical__footer .c-button {
       margin-bottom: 0.6rem; }
+  .panel-add-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin: .5rem 0 2rem; }
+    .panel-add-data__item:nth-child(1) {
+      padding-right: 1rem;
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+    .panel-add-data__item .c-input {
+      padding: 1rem 1.6rem; }
+    .panel-add-data__item .c-button {
+      height: 100%; }
 
 /*holiday-reason**************************/
 .holiday-reason {

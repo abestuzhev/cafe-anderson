@@ -12612,6 +12612,31 @@ test popup
             margin-bottom: 0.6rem;
         }
     }
+
+    &-add {
+        &-data {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin: .5rem 0 2rem;
+
+            &__item {
+                &:nth-child(1) {
+                    padding-right: 1rem;
+                    flex: 1;
+                }
+
+                .c-input {
+                    padding: 1rem 1.6rem;
+                }
+
+                .c-button {
+                    height: 100%;
+                }
+            }
+        }
+    }
 }
 
 /*holiday-reason**************************/
