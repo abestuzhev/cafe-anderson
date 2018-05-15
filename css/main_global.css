@@ -16267,3 +16267,9 @@ test popup
 .about-child-menu .about-box__title span {
   position: relative;
   left: 7%; }
+
+/*page-phone-order------------------------*/
+.page-phone-order {
+  max-width: 45rem;
+  margin: 0 auto;
+  text-align: center; }

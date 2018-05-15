@@ -258,6 +258,10 @@
     .about-banner {
         background-size: 133%;
     }
+
+    .page-phone-order {
+        max-width: 70rem;
+    }
 }
 
 @media (max-width: 1380px) {
