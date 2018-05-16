@@ -32,6 +32,7 @@ var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
 
+
 $(window).on('load', function(){
 
 
@@ -74,6 +75,10 @@ $(window).on('load', function(){
 
 
 
+    if($('div').hasClass('js-mixed-list')){
+        var containerEl = document.querySelector('.js-mixed-list');
+        var mixer = mixitup(containerEl);
+    }
 
     $(document).on('click', '.order-tabs__item', function(){
         changeHeightAddressList();
