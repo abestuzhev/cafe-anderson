@@ -3734,13 +3734,14 @@ a.c-button {
         span {
             color: #553023;
         }
+
         .c-button {
-            padding-right: 4.6rem;
+
+
+
+
         }
-        .c-icon {
-            top: 5px;
-            position: absolute;
-        }
+
     }
     
     &__footer {
@@ -3748,6 +3749,12 @@ a.c-button {
     }
     .c-button {
         font-style: normal;
+        padding-right: 4.6rem !important;
+
+        .c-icon {
+            top: 5px;
+            position: absolute;
+        }
     }
 }
 

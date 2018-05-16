@@ -4376,13 +4376,12 @@ a.c-button:hover {
     position: relative; }
     .c-all-price__total span {
       color: #553023; }
-    .c-all-price__total .c-button {
-      padding-right: 4.6rem; }
-    .c-all-price__total .c-icon {
+  .c-all-price .c-button {
+    font-style: normal;
+    padding-right: 4.6rem !important; }
+    .c-all-price .c-button .c-icon {
       top: 5px;
       position: absolute; }
-  .c-all-price .c-button {
-    font-style: normal; }
 
 /*Стили--------------------------------------------------*/
 .styles-item {
