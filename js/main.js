@@ -290,6 +290,19 @@ $(document).ready(function ($) {
         $elem_item.remove();
     });
 
+    $(document).on('click', '.testReload', function(e) {
+        e.preventDefault();
+    //    panel-dish-variation__list
+    //     $('.panel-dish-variation__list select').each(function(index){
+    //         $(this)[index].sumo.reload();
+    //         console.log(index);
+    //     });
+        $('.panel-dish-variation__list select')[1].sumo.reload();
+        console.log('OK!!!');
+
+
+    });
+
 
     //административная панель
     $(document).on('click', '.panel-cafe__title', function(e){
