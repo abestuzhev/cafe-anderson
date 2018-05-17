@@ -11950,10 +11950,12 @@ test popup
             margin-bottom: 7rem;
             //float: left;
             //width: 50%;
+            font-size: 1.7rem;
+            line-height: 1.6;
 
             p {
-                font-size: 1.7rem;
-                line-height: 1.6;
+                font-size: inherit;
+                line-height: inherit;
             }
         }
 

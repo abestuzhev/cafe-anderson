@@ -15169,10 +15169,12 @@ test popup
       position: relative;
       z-index: 2;
       min-height: 51rem;
-      margin-bottom: 7rem; }
+      margin-bottom: 7rem;
+      font-size: 1.7rem;
+      line-height: 1.6; }
       .holiday-description__text p {
-        font-size: 1.7rem;
-        line-height: 1.6; }
+        font-size: inherit;
+        line-height: inherit; }
     .holiday-description-fake {
       position: relative;
       width: 44%;
