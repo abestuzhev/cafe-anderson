@@ -27,6 +27,10 @@
     <!--simplebar-->
     <link rel="stylesheet" href="./css/simplebar.css">
     
+    <!--datepicker-->
+    <link href="./js/datepicker/datepicker.css" rel="stylesheet">
+    <link href="./js/datepicker/datepicker-anderson.css" rel="stylesheet">
+    
     <!--tooltipster-->
     <link rel="stylesheet" href="bower_components/tooltipster/dist/css/tooltipster.bundle.css">
     
@@ -2267,16 +2271,9 @@
                                 </div>
                                 <div class="c-form__col">
                                     <label class="c-label">Дата проведения<span class="c-obligatory-field">*</span></label>
-                                    <select name="reviews-cafe" id="reviews-cafe" class="c-select" required>
-                                        <option value="Все">Все</option>
-                                        <option value="Москва">Москва</option>
-                                        <option value="Тюмень">Тюмень</option>
-                                        <option value="Красногорск">Красногорск</option>
-                                        <option value="Ярославль">Ярославль</option>
-                                        <option value="Зеленоград">Зеленоград</option>
-                                        <option value="Нижний Новгород">Нижний Новгород</option>
-                                        <option value="Королёв">Королёв</option>
-                                    </select>
+                                    <div class="datepicker-layout">
+                                        <input type="text" class="c-input datepicker-custom">
+                                    </div>
                                 </div>
                             </div>
     
@@ -3621,7 +3618,7 @@
 </div>
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>
-
+<script src="./js/datepicker/datepicker.min.js"></script>
 <!--<script src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 <!--<div id="listScripts"></div>-->
