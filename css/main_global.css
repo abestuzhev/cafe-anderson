@@ -8172,7 +8172,7 @@ test popup
           position: absolute;
           top: 0;
           left: 0; }
-      .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
+      .cafe-info__item i[class*="icon"] ,
       .cafe-info__item img {
         position: absolute;
         top: 0;
@@ -8437,12 +8437,15 @@ test popup
     .cafe-description__text {
       font-size: 1.5rem;
       line-height: 1.33;
-      text-align: left; }
+      text-align: left;
+      color: #ffffff; }
       .cafe-description__text p {
         margin-bottom: 2.3rem;
         color: #ffffff; }
         .cafe-description__text p:last-child {
           margin-bottom: 0; }
+      .cafe-description__text ul, .cafe-description__text ol, .cafe-description__text span, .cafe-description__text i {
+        color: #ffffff; }
   .cafe-reviews {
     overflow: hidden;
     position: relative;
@@ -15097,8 +15100,7 @@ test popup
       z-index: 2;
       float: right;
       opacity: .5;
-      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
-              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
   .holiday-box--tortzhestvo {
     /*holiday-box--tortzhestvo*/ }
     .holiday-box--tortzhestvo .holiday-description-fake {
@@ -15117,8 +15119,7 @@ test popup
     .holiday-box--karapuznik .holiday-description-fake {
       width: 38%;
       height: 57rem;
-      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
-              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
   .holiday-box--mameninyi {
     /*holiday-box--mameninyi*/ }
     .holiday-box--mameninyi .holiday-description__text {
@@ -15244,6 +15245,49 @@ test popup
   .holiday .SumoSelect,
   .holiday .SumoSelect > .CaptionCont {
     width: 100%; }
+  .holiday-space__list {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .holiday-space__list .cafe-list__box {
+      height: 100%; }
+    .holiday-space__list .c-card-cafe__title {
+      min-height: 45px;
+      margin-bottom: .6rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .holiday-space__list .c-card-cafe__title::after {
+        content: '';
+        border: none;
+        display: none; }
+      .holiday-space__list .c-card-cafe__title span {
+        text-decoration: underline;
+        border: none; }
+        .holiday-space__list .c-card-cafe__title span::after {
+          content: '';
+          border: none;
+          display: none; }
+    .holiday-space__list .c-card-cafe-vertical {
+      height: 100%;
+      position: relative; }
+    .holiday-space__list .c-card-cafe-vertical__body {
+      padding-bottom: 65px; }
+    .holiday-space__list .c-card-cafe-vertical__footer {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0; }
+    .holiday-space__list .c-card-cafe__subway {
+      padding: 0; }
+      .holiday-space__list .c-card-cafe__subway > span {
+        display: inline-block;
+        position: relative;
+        padding-left: 23px;
+        margin-bottom: 8px; }
 
 /*dispatch**************************************/
 .dispatch__item {

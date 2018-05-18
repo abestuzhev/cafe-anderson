@@ -12083,6 +12083,68 @@ test popup
     .SumoSelect > .CaptionCont {
         width: 100%;
     }
+
+    &-space {
+        &__list {
+            align-items: stretch;
+
+            .cafe-list__box {
+                height: 100%;
+            }
+
+            .c-card-cafe__title {
+                min-height: 45px;
+                margin-bottom: .6rem;
+                display: flex;
+                align-items: center;
+
+                &::after {
+                    content: '';
+                    border: none;
+                    display: none;
+
+                }
+
+                span {
+                    text-decoration: underline;
+                    border: none;
+                    &::after {
+                        content: '';
+                        border: none;
+                        display: none;
+
+                    }
+                }
+            }
+
+            .c-card-cafe-vertical {
+                height: 100%;
+                position: relative;
+            }
+
+            .c-card-cafe-vertical__body {
+                padding-bottom: 65px;
+            }
+
+            .c-card-cafe-vertical__footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+
+            .c-card-cafe__subway {
+                padding: 0;
+                & > span {
+                    display: inline-block;
+                    position: relative;
+                    padding-left: 23px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+
+    }
 }
 
 
