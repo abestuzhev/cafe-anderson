@@ -12331,9 +12331,7 @@ test popup
   .cake {
     padding: 2.2rem 1.4rem; }
   .cake-sale img {
-    display: block;
-    margin-left: -2.2rem;
-    margin-right: -2.2rem; }
+    display: block; }
   .cake-sale-description {
     background: transparent;
     padding: 1rem 0 1rem; }
