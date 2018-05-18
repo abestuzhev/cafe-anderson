@@ -9219,6 +9219,10 @@ test popup
     color: #9b806f;
     margin-bottom: 1.8rem; }
 
+.catalog-product .cafe-list__city .c-grid {
+  margin-left: -.5rem;
+  margin-right: -.5rem; }
+
 .c-card-catalog__count .c-counter,
 .c-card-product__count .c-counter {
   text-align: center;
