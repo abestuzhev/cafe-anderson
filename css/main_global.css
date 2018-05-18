@@ -1473,11 +1473,16 @@ body {
 .c-ol-list li ul {
   padding-left: 6.4rem; }
 
+.c-ol-list > ul li {
+  list-style: lower-latin outside;
+  padding-left: 6.4rem; }
+
 .c-ol-list li ul li {
   list-style: lower-latin outside;
   padding-left: .3rem; }
 
-.c-ol-list li ul li:before {
+.c-ol-list li ul li:before,
+.c-ol-list > ul li:before {
   content: ''; }
 
 .wrapper {

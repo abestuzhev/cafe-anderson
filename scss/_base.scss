@@ -129,7 +129,18 @@ body {
     counter-increment: item;
 }
 
-.c-ol-list li ul {
+.c-ol-list li ul{
+    padding-left: 6.4rem;
+}
+
+.c-ol-list > ul {
+
+}
+
+
+.c-ol-list > ul li {
+    list-style: lower-latin outside;
+    //padding-left: .3rem;
     padding-left: 6.4rem;
 }
 
@@ -138,7 +149,8 @@ body {
     padding-left: .3rem;
 }
 
-.c-ol-list li ul li:before {
+.c-ol-list li ul li:before,
+.c-ol-list > ul li:before {
     content: '';
 }
 
