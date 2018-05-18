@@ -3208,6 +3208,7 @@ test popup
             font-size: 1.5rem;
             line-height: 1.33;
             text-align: left;
+            color: #ffffff;
 
             //overflow-x: auto;
             //overflow-y: scroll;
@@ -3220,6 +3221,10 @@ test popup
                 &:last-child {
                     margin-bottom: 0;
                 }
+            }
+
+            ul, ol, span, i {
+                color: #ffffff;
             }
         }
     }
