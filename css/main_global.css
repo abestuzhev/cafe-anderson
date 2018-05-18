@@ -1454,6 +1454,10 @@ body {
   list-style: circle outside;
   padding-left: .3rem; }
 
+.c-ul-list > ul li {
+  list-style: circle outside;
+  padding-left: 8.4rem; }
+
 .c-ol-list {
   font-family: "PT Serif Caption";
   list-style-type: none;
@@ -1475,7 +1479,7 @@ body {
 
 .c-ol-list > ul li {
   list-style: lower-latin outside;
-  padding-left: 6.4rem; }
+  padding-left: 8.4rem; }
 
 .c-ol-list li ul li {
   list-style: lower-latin outside;
