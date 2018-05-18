@@ -4966,3 +4966,13 @@
         border: 1px solid #ccc;
     }
 }
+
+.cafe-description__text {
+    color: #ffffff;
+}
+.cafe-description__text ol,
+.cafe-description__text span,
+.cafe-description__text i,
+.cafe-description__text ul{
+    color: #ffffff;
+}
