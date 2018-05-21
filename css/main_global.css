@@ -16231,12 +16231,12 @@ test popup
   .about-banner-slogan {
     position: absolute;
     left: 49%;
-    bottom: 30px;
+    bottom: 3rem;
     max-width: 47rem;
     padding: .9rem 3rem;
     color: #c44890;
     font-family: "SummerFont";
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     line-height: 1;
     text-transform: uppercase;
     text-align: center;
@@ -16350,8 +16350,8 @@ test popup
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -16374,7 +16374,8 @@ test popup
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: .9rem; }
 
 .about-company-card {
   display: -webkit-box;

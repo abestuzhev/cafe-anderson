@@ -13287,12 +13287,12 @@ test popup
         &-slogan {
             position: absolute;
             left: 49%;
-            bottom: 30px;
+            bottom: 3rem;
             max-width: 47rem;
             padding: .9rem 3rem;
             color: #c44890;
             font-family: $font_decor;
-            font-size: 3.5rem;
+            font-size: 3.3rem;
             line-height: 1;
             text-transform: uppercase;
             text-align: center;
@@ -13453,7 +13453,7 @@ test popup
         
         &__list {
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
             justify-content: center;
             align-items: stretch;
             margin-bottom: 2rem;
@@ -13465,6 +13465,7 @@ test popup
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
+            margin-bottom: .9rem;
         }
         
         &-card {
