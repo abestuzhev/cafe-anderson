@@ -2000,10 +2000,15 @@ test popup
 
         &__title {
             vertical-align: top;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             line-height: 1.3;
             white-space: nowrap;
             margin-bottom: .6rem;
+            color: #a1246d;
+
+            svg {
+                fill: #a1246d;
+            }
 
             i {
                 width: 1.7rem;
@@ -2836,12 +2841,29 @@ test popup
             vertical-align: middle;
             padding-left: 2.4rem;
 
+            a {
+                color: #2a2a2a;
+
+                &::after {
+                    content: '';
+                    border-color:#c44890;
+                }
+            }
+
             &-station {
                 margin-left: -2.4rem;
 
                 span {
                     margin-right: .5rem;
                 }
+            }
+
+            &-address {
+                font-size: 2rem;
+                color: #c44890;
+            }
+            &-phone {
+                font-style: italic;
             }
 
             &-col {
@@ -2895,8 +2917,9 @@ test popup
             }
 
             &__right {
-                width: 22%;
+                width: 25%;
                 text-align: right;
+                padding-right: 1rem;
 
                 .c-button__big {
                     border-radius: .6rem 0 0 .6rem;
@@ -2908,7 +2931,7 @@ test popup
                     justify-content: flex-end;
                     border: none;
                     width: 100%;
-                    padding-right: 1rem;
+                    //padding-right: 1rem;
                     max-height: 32rem;
 
                     &__item {
@@ -2916,6 +2939,61 @@ test popup
                         text-align: center;
                         margin-right: 0;
                     }
+                }
+            }
+
+            &__btn {
+                display: block;
+                padding: 1.5rem 2rem;
+                border-radius: .6rem;
+                background-color: #c44890;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                white-space: nowrap;
+                text-align: center;
+
+                &::after {
+                    content: '';
+                    border: none;
+                }
+
+                .c-symbol {
+                    position: relative;
+                    top: -.3rem;
+                    fill:#fff;
+                    margin-right: .8rem;
+                }
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+
+            &.v2 {
+                .cafe-info__item-tel .cafe-info__item-col:first-child {
+                    position: absolute;
+                    margin: 0;
+                }
+
+                .cafe-info__item:not(.cafe-info__item-station){
+
+
+                    .c-symbol {
+                        fill: #c44890;
+                    }
+
+
+                    .cafe-info__item-col {
+
+                        span {
+                            color: #c44890;
+                        }
+                    }
+                }
+
+                .cafe-info__item {
+                    padding-left: 3.2rem;
                 }
             }
         }
@@ -3128,19 +3206,19 @@ test popup
         }
 
         &__text {
-            font-size: 1.3rem;
-            line-height: 1.15;
+            font-size: 1.5rem;
+            line-height: 1.4;
             text-align: left;
-            color: #9b9595;
+            color: #555451;
             margin-bottom: 1.3rem;
         }
 
         &__tel {
             vertical-align: middle;
             font-size: 1.3rem;
-            line-height: 1.15;
+            line-height: 1.4;
             text-align: left;
-            color: #9b9595;
+            color: #555451;
             margin-bottom: 1.5rem;
 
             i {
@@ -3154,23 +3232,23 @@ test popup
                 font-size: 1.7rem;
                 line-height: 1;
                 text-align: left;
-                color: #9b806f;
+                color: #555451;
                 margin-bottom: 1.5rem;
             }
 
             &__text {
-                font-size: 1.3rem;
-                line-height: 1.54;
+                font-size: 1.5rem;
+                line-height: 1.4;
                 text-align: left;
-                color: #9b9595;
+                color: #555451;
 
             }
 
             &__item {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 line-height: 0.75;
                 text-align: left;
-                color: #9b9595;
+                color: #555451;
                 vertical-align: middle;
                 margin-bottom: 2rem;
 
@@ -3226,6 +3304,63 @@ test popup
             ul, ol, span, i {
                 color: #ffffff;
             }
+        }
+    }
+
+    &-write-up {
+        padding: 6rem 0;
+        position: relative;
+
+        &__body {
+            padding: 3rem 19rem 7rem;
+        }
+
+        &__title {
+            text-align: center;
+            color: #c7368a;
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-family: $font_sans-serif;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            line-height: 1.4;
+
+            p {
+                font-size: 1.5rem;
+                line-height: 1.4;
+            }
+
+        }
+
+        &__elem-1 {
+            position: absolute;
+            top: 4%;
+            left: 3%;
+
+            svg {
+                fill:#242021;
+            }
+        }
+
+        &__elem-2 {
+
+            position: absolute;
+            right: 2%;
+            bottom: 7%;
+
+            svg {
+                fill:#242021;
+            }
+        }
+
+        .c-dot-decor {
+            margin-left: -3rem;
+            margin-right: -3rem;
         }
     }
 

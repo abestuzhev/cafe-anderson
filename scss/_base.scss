@@ -1545,6 +1545,7 @@ a.c-button {
     margin-bottom: 2.6rem;
     margin-top: 40px;
     font-size: 0;
+    font-family: $font_serif;
     
     &__home {
         width: 2.3rem;
@@ -1593,7 +1594,91 @@ a.c-button {
         }
         
     }
-    
+
+
+    &.v2 {
+        .c-breadcrumb-dropdown__layout {
+
+            display: none;
+            position: absolute;
+            z-index: 1012;
+            left: 0;
+            top: 10px;
+            padding-top: 1rem;
+        }
+        .c-breadcrumb-dropdown {
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+            border: 1px solid #d1d1d1;
+            border-radius: .8rem;
+
+            background-color: #fff;
+        }
+
+        .c-breadcrumb-dropdown__item {
+            border-bottom: 1px dotted #d1d1d1;
+
+
+            &:last-child {
+                border:none;
+            }
+        }
+        .c-breadcrumb-dropdown__link {
+            display: block;
+            padding: 1rem;
+
+            &::after {
+                content: '';
+                border:none;
+            }
+
+        }
+
+        .c-breadcrumb__list {
+
+        }
+
+        .c-breadcrumb__item {
+            display: inline-block;
+        }
+
+        .c-breadcrumb-word {
+
+            &__active {
+                color: #a1246d;
+                display: inline-block;
+                position: relative;
+
+
+                &::after {
+                    content: '';
+                    border-color: #a1246d;
+                }
+
+                &.dropdown {
+                    position: relative;
+                    padding-right: 13px;
+                    display: inline-block;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: .7rem;
+                        width: .6rem;
+                        height: .3rem;
+                        border: 4px solid transparent;
+                        border-top: 4px solid #242021;
+                    }
+
+                }
+
+                &:hover .c-breadcrumb-dropdown__layout {
+
+                    display: block;
+
+                }
+            }
+        }
+    }
 }
 
 /*card------------------------------------------------------------*/
@@ -1702,9 +1787,27 @@ a.c-button {
     
     &__item {
         margin-bottom: .8rem;
+        font-size: 1.4rem;
+        color: #2a2a2a;
+
+        b {
+            color: #c44890;
+        }
         
     }
     
+    &__address {
+        font-size: 1.8rem;
+
+        b {
+            color: #555451;
+        }
+    }
+    &__phone {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
     &__subway {
         vertical-align: middle;
         img {
@@ -1754,6 +1857,20 @@ a.c-button {
             
             .advantages-guests {
                 margin-right: .5rem;
+            }
+        }
+    }
+
+    &.v2 {
+        .c-card-cafe__item:not(.c-card-cafe__subway) {
+            position: relative;
+            padding-left: 2.2rem;
+
+            .c-symbol {
+                position: absolute;
+                left: 0;
+                top: 0;
+                fill: #c44890;
             }
         }
     }
@@ -2091,8 +2208,8 @@ a.c-button {
     
     &__text {
         margin-bottom: 1.3rem;
-        font-size: 1.3rem;
-        line-height: 1.23;
+        font-size: 1.5rem;
+        line-height: 1.4;
         text-align: left;
         color: #9b9595;
         white-space: nowrap;
@@ -4441,4 +4558,12 @@ a.c-button {
     color: #c44890;
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+.c-dot-decor {
+    &__line {
+        width: 100%;
+        height: .4rem;
+        background: url(../img/bg-dot-big.png) 0 0 repeat-x;
+    }
 }
