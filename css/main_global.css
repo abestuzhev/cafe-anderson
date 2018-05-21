@@ -2821,8 +2821,6 @@ a.c-button:hover {
     margin-bottom: .8rem;
     font-size: 1.4rem;
     color: #2a2a2a; }
-    .c-card-cafe__item b {
-      color: #c44890; }
   .c-card-cafe__address {
     font-size: 1.8rem; }
     .c-card-cafe__address b {
@@ -2882,6 +2880,8 @@ a.c-button:hover {
       left: 0;
       top: 0;
       fill: #c44890; }
+  .c-card-cafe.v2 b {
+    color: #c44890; }
 
 .c-card-cafe-vertical {
   border: 2px solid #d1d1d1;

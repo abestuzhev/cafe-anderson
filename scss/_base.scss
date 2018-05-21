@@ -1789,10 +1789,6 @@ a.c-button {
         margin-bottom: .8rem;
         font-size: 1.4rem;
         color: #2a2a2a;
-
-        b {
-            color: #c44890;
-        }
         
     }
     
@@ -1872,6 +1868,11 @@ a.c-button {
                 top: 0;
                 fill: #c44890;
             }
+        }
+
+
+        b {
+            color: #c44890;
         }
     }
 }
