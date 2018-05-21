@@ -8320,10 +8320,11 @@ test popup
         .cafe-info__item a::after {
           content: '';
           border-color: #c44890; }
-      .cafe-info__item-station {
-        margin-left: -2.4rem; }
-        .cafe-info__item-station span {
-          margin-right: .5rem; }
+      .cafe-info__item-station span {
+        margin-right: .5rem; }
+      .cafe-info__item-station .icon-metro-2 {
+        top: 3px;
+        left: 3px; }
       .cafe-info__item-address {
         font-size: 2rem;
         color: #c44890; }
@@ -8421,6 +8422,8 @@ test popup
         color: #c44890; }
       .cafe-info-card.v2 .cafe-info__item {
         padding-left: 3.2rem; }
+      .cafe-info-card.v2 .cafe-info__item-station {
+        margin-left: -3.2rem; }
     .cafe-info-map {
       width: 31%;
       padding: 1.1rem;

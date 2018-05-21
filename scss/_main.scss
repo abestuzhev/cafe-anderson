@@ -2851,10 +2851,15 @@ test popup
             }
 
             &-station {
-                margin-left: -2.4rem;
+                //margin-left: -2.4rem;
 
                 span {
                     margin-right: .5rem;
+                }
+
+                .icon-metro-2 {
+                    top: 3px;
+                    left: 3px;
                 }
             }
 
@@ -2994,6 +2999,10 @@ test popup
 
                 .cafe-info__item {
                     padding-left: 3.2rem;
+                }
+
+                .cafe-info__item-station {
+                    margin-left: -3.2rem;
                 }
             }
         }
