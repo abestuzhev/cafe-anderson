@@ -1599,12 +1599,14 @@ a.c-button {
     &.v2 {
         .c-breadcrumb-dropdown__layout {
 
-            display: none;
+            //display: none;
             position: absolute;
             z-index: 1012;
             left: 0;
             top: 10px;
             padding-top: 1rem;
+            opacity: 0;
+            visibility: hidden;
         }
         .c-breadcrumb-dropdown {
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
@@ -1647,6 +1649,7 @@ a.c-button {
                 color: #a1246d;
                 display: inline-block;
                 position: relative;
+                cursor: pointer;
 
 
                 &::after {
@@ -1671,11 +1674,11 @@ a.c-button {
 
                 }
 
-                &:hover .c-breadcrumb-dropdown__layout {
-
-                    display: block;
-
-                }
+                //&:hover .c-breadcrumb-dropdown__layout {
+                //
+                //    display: block;
+                //
+                //}
             }
         }
     }

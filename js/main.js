@@ -169,6 +169,13 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    /*хлебные крошки - выпадающий список*/
+    $(document).on('click', '.c-breadcrumb-word__active span', function(e){
+        e.preventDefault();
+        $(this).siblings('.c-breadcrumb-dropdown__layout').toggleClass('is-visible');
+    })
+
+
     function initCustomSelect(elem){
         $(elem).SumoSelect();
 
@@ -1586,6 +1593,7 @@ $(document).ready(function ($) {
     hidePopup('.header-mobile__auth', 'popup-slide__show');
     hidePopup('.header-search__form', 'is-visible');
     hidePopup('.header-search-result', 'is-visible');
+    hidePopup('.c-breadcrumb-dropdown__layout', 'is-visible');
 
 
     /*юоковые кнопки отзыва*/
