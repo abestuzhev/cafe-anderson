@@ -1651,6 +1651,25 @@ a.c-button {
                 position: relative;
                 cursor: pointer;
 
+                span {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -.1rem;
+                        left: 0;
+                        width: 100%;
+                        border-bottom: 1px dotted #a1246d;
+                    }
+
+                    &:hover {
+                        &::after {
+                            content: '';
+                            border: none;
+                        }
+                    }
+                }
+
 
                 &::after {
                     content: '';

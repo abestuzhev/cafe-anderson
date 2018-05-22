@@ -2713,6 +2713,18 @@ a.c-button:hover {
     display: inline-block;
     position: relative;
     cursor: pointer; }
+    .c-breadcrumb.v2 .c-breadcrumb-word__active span {
+      position: relative; }
+      .c-breadcrumb.v2 .c-breadcrumb-word__active span::after {
+        content: '';
+        position: absolute;
+        bottom: -.1rem;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px dotted #a1246d; }
+      .c-breadcrumb.v2 .c-breadcrumb-word__active span:hover::after {
+        content: '';
+        border: none; }
     .c-breadcrumb.v2 .c-breadcrumb-word__active::after {
       content: '';
       border-color: #a1246d; }
