@@ -13708,9 +13708,11 @@ test popup
 
     &-child-menu {
         .about-box__title {
+            min-height: 5rem;
             span {
-                position: relative;
-                left: 8%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
             }
 
         }

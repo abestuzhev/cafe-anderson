@@ -3095,6 +3095,10 @@
         bottom: -7%;
     }
 
+    .about-child-menu .about-box__title {
+        min-height: 4rem;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -3956,6 +3960,20 @@
     .cake-order-final-coupon__left {
         margin-bottom: 1rem;
         width: 100%;
+    }
+
+    .about-child-menu .about-img-right {
+        float: none;
+        text-align: center;
+    }
+
+    .about-child-menu .about-box__title {
+       min-height: 0;
+    }
+
+    .about-child-menu .about-box__title span {
+        position: static;
+        transform: none;
     }
 
 }

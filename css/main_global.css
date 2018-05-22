@@ -16578,9 +16578,14 @@ test popup
     position: absolute;
     z-index: 20; }
 
-.about-child-menu .about-box__title span {
-  position: relative;
-  left: 7%; }
+.about-child-menu .about-box__title {
+  min-height: 5rem; }
+  .about-child-menu .about-box__title span {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
 /*page-phone-order------------------------*/
 .page-phone-order {
