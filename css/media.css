@@ -597,7 +597,7 @@
 
     .about-advantages__center-layout {
         position: relative;
-        z-index: 100;
+        z-index: 1;
         width: 10.4rem;
         margin: 0 auto;
     }
@@ -651,6 +651,9 @@
         bottom: auto;
     }
 
+    .about-advantages__item.no-point .about-advantages__point {
+        display: block;
+    }
 
 
 }
