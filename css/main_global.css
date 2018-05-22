@@ -15912,6 +15912,27 @@ test popup
       height: 100%; }
 
 /*holiday-reason**************************/
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
 .holiday-reason {
   margin-bottom: 9rem;
   /*шапка страницы*/ }
@@ -15984,7 +16005,6 @@ test popup
     font-family: "BebasNeue";
     font-size: 2.5rem;
     color: #231300;
-    padding: 12px 40px;
     border-radius: .6rem;
     background-color: #9acc4f;
     border: 3px solid #98a967;
@@ -15994,6 +16014,13 @@ test popup
             box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
     width: 50rem;
     margin-bottom: 4rem; }
+    .holiday-reason__head a {
+      padding: 12px 40px;
+      display: block;
+      position: relative; }
+      .holiday-reason__head a::after {
+        content: '';
+        border: none; }
     .holiday-reason__head-layout {
       display: inline-block;
       position: relative; }
@@ -16028,8 +16055,10 @@ test popup
     font-size: 4rem;
     color: #231300; }
   .holiday-reason__subtitle {
-    font-size: 1.8rem;
-    color: #ffffff; }
+    font-size: 1.4rem;
+    color: #231300;
+    text-transform: none;
+    font-family: "PT Serif Caption"; }
   .holiday-reason-card {
     /*holiday-reason-card*/
     position: relative;
@@ -16044,6 +16073,12 @@ test popup
             box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 5.5rem;
     display: inline-block; }
+    .holiday-reason-card:hover {
+      -webkit-animation: swing 3s infinite ease-in-out;
+              animation: swing 3s infinite ease-in-out;
+      -webkit-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+              transform-origin: 50% 0; }
     .holiday-reason-card::after {
       content: '';
       position: absolute;

@@ -12868,6 +12868,13 @@ test popup
 
 /*holiday-reason**************************/
 
+@keyframes swing {
+    0% { transform: rotate(0); }
+    50% { transform: rotate(1deg); }
+    //70% { transform: rotate(-1deg); }
+    100% { transform: rotate(0); }
+}
+
 .holiday-reason {
     margin-bottom: 9rem;
     &__grid {
@@ -12952,7 +12959,6 @@ test popup
         font-family: $font_sans-serif;
         font-size: 2.5rem;
         color: #231300;
-        padding: 12px 40px;
         border-radius: .6rem;
         background-color: #9acc4f;
         border: 3px solid #98a967;
@@ -12961,6 +12967,17 @@ test popup
         box-shadow: 0 2px 30px 0 rgba(0,0,0,.3);
         width: 50rem;
         margin-bottom: 4rem;
+
+        a {
+            padding: 12px 40px;
+            display: block;
+            position: relative;
+
+            &::after {
+                content:'';
+                border:none;
+            }
+        }
 
         &-layout {
             display: inline-block;
@@ -13011,8 +13028,10 @@ test popup
         color: #231300;
     }
     &__subtitle {
-        font-size: 1.8rem;
-        color: #ffffff;
+        font-size: 1.4rem;
+        color: #231300;
+        text-transform: none;
+        font-family: $font_serif;
     }
 
     &-card {/*holiday-reason-card*/
@@ -13034,6 +13053,11 @@ test popup
         margin-bottom: 5.5rem;
         display: inline-block;
         //opacity: .5;
+
+        &:hover {
+            animation: swing 3s infinite ease-in-out;
+            transform-origin: 50% 0;
+        }
 
         &::after {
             content: '';
