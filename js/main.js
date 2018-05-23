@@ -1900,6 +1900,12 @@ $(document).ready(function ($) {
                 'padding-bottom': '7rem'
             })
         }
+
+        if( wrapperHeight + 300 > documentHeight){
+            $('.wrapper').css({
+                'padding-bottom': '0'
+            })
+        }
     });
 
     /*кастомный селект*/
