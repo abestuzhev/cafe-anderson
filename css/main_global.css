@@ -2750,6 +2750,11 @@ a.c-button:hover {
         height: .3rem;
         border: 4px solid transparent;
         border-top: 4px solid #242021; }
+      .c-breadcrumb.v2 .c-breadcrumb-word__active.dropdown.open::before {
+        content: '';
+        top: 4px;
+        border-top-color: transparent;
+        border-bottom: 4px solid #242021; }
 
 /*card------------------------------------------------------------*/
 .c-card-cafe {
