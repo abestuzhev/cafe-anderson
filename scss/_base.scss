@@ -1643,7 +1643,17 @@ a.c-button {
             display: inline-block;
         }
 
+
         .c-breadcrumb-word {
+
+            a{
+                color: #a1246d;
+
+                &::after {
+                    content: '';
+                    border-color: #a1246d;
+                }
+            }
 
             &__active {
                 color: #a1246d;

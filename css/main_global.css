@@ -2708,6 +2708,11 @@ a.c-button:hover {
       border: none; }
   .c-breadcrumb.v2 .c-breadcrumb__item {
     display: inline-block; }
+  .c-breadcrumb.v2 .c-breadcrumb-word a {
+    color: #a1246d; }
+    .c-breadcrumb.v2 .c-breadcrumb-word a::after {
+      content: '';
+      border-color: #a1246d; }
   .c-breadcrumb.v2 .c-breadcrumb-word__active {
     color: #a1246d;
     display: inline-block;
