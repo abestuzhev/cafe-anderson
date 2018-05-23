@@ -2684,7 +2684,7 @@ a.c-button:hover {
       display: none; }
   .c-breadcrumb.v2 .c-breadcrumb-dropdown__layout {
     position: absolute;
-    z-index: 1012;
+    z-index: 16;
     left: 0;
     top: 10px;
     padding-top: 1rem;
