@@ -3892,6 +3892,13 @@
     .catalog-banner__title {
         font-size: 2.7rem;
     }
+
+    .c-card-event .l-button .c-button {
+        margin-bottom: .5rem;
+    }
+    .c-card-event .l-button .c-button:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 570px) {
