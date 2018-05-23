@@ -2713,15 +2713,17 @@ a.c-button:hover {
   .c-breadcrumb.v2 .c-breadcrumb__item {
     display: inline-block; }
   .c-breadcrumb.v2 .c-breadcrumb-word > a {
-    color: #a1246d; }
+    color: #878584; }
     .c-breadcrumb.v2 .c-breadcrumb-word > a::after {
       content: '';
-      border-color: #a1246d; }
+      border-color: #878584; }
   .c-breadcrumb.v2 .c-breadcrumb-word__active {
     color: #a1246d;
     display: inline-block;
     position: relative;
     cursor: pointer; }
+    .c-breadcrumb.v2 .c-breadcrumb-word__active a {
+      color: #a1246d; }
     .c-breadcrumb.v2 .c-breadcrumb-word__active span {
       position: relative; }
       .c-breadcrumb.v2 .c-breadcrumb-word__active span::after {
@@ -8153,7 +8155,7 @@ test popup
   .cafe-list__city {
     margin-bottom: 2rem; }
   .cafe-list-layout #cafe-list {
-    margin-top: -4.2rem; }
+    margin-top: -4.6rem; }
     .cafe-list-layout #cafe-list .c-city-list__title {
       margin-bottom: 0; }
 

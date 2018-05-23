@@ -1652,11 +1652,11 @@ a.c-button {
         .c-breadcrumb-word {
 
             & > a{
-                color: #a1246d;
+                color: #878584;
 
                 &::after {
                     content: '';
-                    border-color: #a1246d;
+                    border-color: #878584;
                 }
             }
 
@@ -1666,6 +1666,9 @@ a.c-button {
                 position: relative;
                 cursor: pointer;
 
+                a {
+                    color: #a1246d;
+                }
 
 
                 span {
