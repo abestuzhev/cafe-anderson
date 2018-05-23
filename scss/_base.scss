@@ -1612,8 +1612,8 @@ a.c-button {
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
             border: 1px solid #d1d1d1;
             border-radius: .8rem;
-
             background-color: #fff;
+            min-width:17rem;
         }
 
         .c-breadcrumb-dropdown__item {
@@ -1627,10 +1627,15 @@ a.c-button {
         .c-breadcrumb-dropdown__link {
             display: block;
             padding: 1rem;
+            color: #2a2a2a;
 
             &::after {
                 content: '';
                 border:none;
+            }
+
+            &:hover {
+                color: #a1246d;
             }
 
         }
@@ -1646,7 +1651,7 @@ a.c-button {
 
         .c-breadcrumb-word {
 
-            a{
+            & > a{
                 color: #a1246d;
 
                 &::after {

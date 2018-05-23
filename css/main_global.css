@@ -2695,22 +2695,26 @@ a.c-button:hover {
             box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
     border: 1px solid #d1d1d1;
     border-radius: .8rem;
-    background-color: #fff; }
+    background-color: #fff;
+    min-width: 17rem; }
   .c-breadcrumb.v2 .c-breadcrumb-dropdown__item {
     border-bottom: 1px dotted #d1d1d1; }
     .c-breadcrumb.v2 .c-breadcrumb-dropdown__item:last-child {
       border: none; }
   .c-breadcrumb.v2 .c-breadcrumb-dropdown__link {
     display: block;
-    padding: 1rem; }
+    padding: 1rem;
+    color: #2a2a2a; }
     .c-breadcrumb.v2 .c-breadcrumb-dropdown__link::after {
       content: '';
       border: none; }
+    .c-breadcrumb.v2 .c-breadcrumb-dropdown__link:hover {
+      color: #a1246d; }
   .c-breadcrumb.v2 .c-breadcrumb__item {
     display: inline-block; }
-  .c-breadcrumb.v2 .c-breadcrumb-word a {
+  .c-breadcrumb.v2 .c-breadcrumb-word > a {
     color: #a1246d; }
-    .c-breadcrumb.v2 .c-breadcrumb-word a::after {
+    .c-breadcrumb.v2 .c-breadcrumb-word > a::after {
       content: '';
       border-color: #a1246d; }
   .c-breadcrumb.v2 .c-breadcrumb-word__active {
