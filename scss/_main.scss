@@ -2595,6 +2595,16 @@ test popup
     &__city {
         margin-bottom: 2rem;
     }
+
+    &-layout {
+        #cafe-list {
+            margin-top: -4.2rem;
+
+            .c-city-list__title {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .cafe-map {

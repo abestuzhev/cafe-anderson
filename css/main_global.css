@@ -2646,8 +2646,8 @@ a.c-button:hover {
 
 /*хлебные крошки*/
 .c-breadcrumb {
-  margin-bottom: 2.6rem;
-  margin-top: 40px;
+  margin-bottom: 2rem;
+  margin-top: 2.4rem;
   font-size: 0;
   font-family: "PT Serif Caption"; }
   .c-breadcrumb__home {
@@ -8145,6 +8145,10 @@ test popup
     margin-bottom: .6rem; }
   .cafe-list__city {
     margin-bottom: 2rem; }
+  .cafe-list-layout #cafe-list {
+    margin-top: -4.2rem; }
+    .cafe-list-layout #cafe-list .c-city-list__title {
+      margin-bottom: 0; }
 
 .cafe-map {
   width: 100%;
