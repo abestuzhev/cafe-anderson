@@ -1246,6 +1246,12 @@ i.icon-chair {
   height: .8em;
   fill: #7f7d7c; }
 
+.symbol-celebration-smile {
+  font-size: 2rem;
+  width: 1em;
+  height: 1.1em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -8349,14 +8355,14 @@ test popup
     .cafe-info__item {
       position: relative;
       font-size: 1.5rem;
-      line-height: 1.15;
+      line-height: 1.2;
       text-align: left;
       color: #555451;
-      margin-bottom: 1.8rem;
+      margin-bottom: 1.5rem;
       vertical-align: middle;
       padding-left: 2.4rem; }
       .cafe-info__item a {
-        color: #2a2a2a; }
+        color: #555451; }
         .cafe-info__item a::after {
           content: '';
           border-color: #c44890; }
@@ -8392,8 +8398,7 @@ test popup
         margin-top: .9rem; }
     .cafe-info-card {
       width: 69%;
-      padding: 2.5rem 0 1.4rem 2.2rem;
-      background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+      margin-bottom: 2rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
