@@ -8216,6 +8216,11 @@ test popup
   height: .8rem;
   background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat; }
 
+.SumoSelect.open > .CaptionCont > label > i {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg); }
+
 .optWrapper {
   font-size: 1.2rem; }
 
