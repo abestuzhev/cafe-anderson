@@ -8367,7 +8367,10 @@ test popup
           content: '';
           border-color: #c44890; }
       .cafe-info__item-station span {
-        margin-right: .5rem; }
+        margin-right: .9rem; }
+      .cafe-info__item-station > span {
+        margin-right: 1.2rem;
+        white-space: nowrap; }
       .cafe-info__item-station .icon-metro-2 {
         top: 3px !important;
         left: 3px !important; }
@@ -8396,6 +8399,8 @@ test popup
         position: static; }
       .cafe-info__item .c-button {
         margin-top: .9rem; }
+      .cafe-info__item .symbol-clock-2 {
+        font-size: 2rem; }
     .cafe-info-card {
       width: 69%;
       margin-bottom: 2rem;
@@ -8439,8 +8444,8 @@ test popup
             text-align: center;
             margin-right: 0; }
       .cafe-info-card__btn {
-        display: block;
-        padding: 1.5rem 2rem;
+        display: inline-block;
+        padding: 1.5rem 2.4rem;
         border-radius: .6rem;
         background-color: #c44890;
         color: #ffffff;
@@ -8693,7 +8698,7 @@ test popup
     padding: 6rem 0;
     position: relative; }
     .cafe-write-up__body {
-      padding: 3rem 19rem 7rem; }
+      padding: 3rem 19rem 4rem; }
     .cafe-write-up__title {
       text-align: center;
       color: #c7368a;
@@ -8711,7 +8716,7 @@ test popup
         line-height: 1.4; }
     .cafe-write-up__elem-1 {
       position: absolute;
-      top: 4%;
+      top: 7%;
       left: 3%; }
       .cafe-write-up__elem-1 svg {
         fill: #242021; }

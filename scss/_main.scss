@@ -2872,7 +2872,12 @@ test popup
                 //margin-left: -2.4rem;
 
                 span {
-                    margin-right: .5rem;
+                    margin-right: .9rem;
+                }
+
+                & > span {
+                    margin-right: 1.2rem;
+                    white-space: nowrap;
                 }
 
                 .icon-metro-2 {
@@ -2924,6 +2929,10 @@ test popup
             .c-button {
                 margin-top: .9rem;
             }
+
+            .symbol-clock-2 {
+                font-size: 2rem;
+            }
         }
 
         &-card {
@@ -2967,8 +2976,8 @@ test popup
             }
 
             &__btn {
-                display: block;
-                padding: 1.5rem 2rem;
+                display: inline-block;
+                padding: 1.5rem 2.4rem;
                 border-radius: .6rem;
                 background-color: #c44890;
                 color: #ffffff;
@@ -3340,7 +3349,7 @@ test popup
         position: relative;
 
         &__body {
-            padding: 3rem 19rem 7rem;
+            padding: 3rem 19rem 4rem;
         }
 
         &__title {
@@ -3367,7 +3376,7 @@ test popup
 
         &__elem-1 {
             position: absolute;
-            top: 4%;
+            top: 7%;
             left: 3%;
 
             svg {
