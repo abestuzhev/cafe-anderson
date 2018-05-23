@@ -2901,6 +2901,8 @@ a.c-button:hover {
       left: 0;
       top: 0;
       fill: #c44890; }
+  .c-card-cafe.v2 .c-card-cafe__address b {
+    color: #555451; }
   .c-card-cafe.v2 b {
     color: #c44890; }
 
