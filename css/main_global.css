@@ -9591,10 +9591,7 @@ test popup
   font-family: "PT Serif Caption";
   background-color: #fff; }
   .creators-photo {
-    position: relative;
-    margin-left: -2.8rem;
-    margin-right: -2.8rem;
-    margin-top: -3.1rem; }
+    position: relative; }
     .creators-photo img {
       width: 100%;
       height: auto;
@@ -9687,9 +9684,7 @@ test popup
     padding: 2rem 4rem;
     background-color: #91c346;
     position: relative;
-    overflow: hidden;
-    margin-left: -2.8rem;
-    margin-right: -2.8rem; }
+    overflow: hidden; }
     .creators-slogan__mark-1 {
       width: 15.3rem;
       position: absolute;
