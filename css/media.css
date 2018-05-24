@@ -3107,6 +3107,10 @@
         display: block;
     }
 
+    .c-card-event__title {
+        padding-right: 0;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -3905,9 +3909,6 @@
     .c-card-event .l-button .c-button {
         margin-bottom: .5rem;
     }
-    .c-card-event .l-button .c-button:last-child {
-        margin-bottom: 0;
-    }
 }
 
 @media (max-width: 570px) {
@@ -4691,6 +4692,14 @@
 
     .about-child-menu .about-box__title span {
         left: auto;
+    }
+
+    .c-card-event .c-button {
+        padding: .8rem .6rem;
+    }
+
+    .c-card-event .l-button a {
+        margin-right: .4rem;
     }
 }
 
