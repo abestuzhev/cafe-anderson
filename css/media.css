@@ -3909,6 +3909,10 @@
     .c-card-event .l-button .c-button {
         margin-bottom: .5rem;
     }
+
+    .c-card-event .l-button .c-button span {
+        display: none;
+    }
 }
 
 @media (max-width: 570px) {
