@@ -215,6 +215,21 @@
     .catalog-banner {
         min-height: 0;
     }
+
+
+    .header-dropdown__layout {
+        width: 100%;
+        max-width: 1325px;
+        margin: 0 auto;
+        padding: 0 2.2rem;
+    }
+
+    .header-dropdown__layout::after {
+        content: '';
+        clear: both;
+        display: table;
+     }
+
 }
 
 @media (min-width: 1600px) {
@@ -265,6 +280,32 @@
 
     .cafe-info-card__right {
         width: 20%;
+    }
+
+
+    .header-dropdown__layout {
+        width: 100%;
+        max-width: 1585px;
+        margin: 0 auto;
+    }
+
+    .header-dropdown__layout::after {
+         content: '';
+         clear: both;
+         display: table;
+     }
+
+    .header-categories {
+        justify-content: flex-start;
+    }
+
+    .header-categories-col {
+        width: auto !important;
+        padding-right: 4rem;
+    }
+
+    .header-categories-banner {
+        height: 18rem;
     }
 }
 
@@ -453,6 +494,16 @@
     .catalog-banner--dessert {
         padding: 3rem 18rem 3rem 3rem;
     }
+}
+
+@media screen and (max-width: 1150px) {
+    .header-categories-banner {
+        width: auto;
+        flex: 1 0 auto;
+    }
+    .header-categories-banner__body {
+       display: none;
+   }
 }
 
 @media screen and (max-width: 1100px) {
@@ -4240,7 +4291,8 @@
         width: 100%;
     }
 
-    .c-layout {
+    .c-layout,
+    .header-dropdown__layout {
         padding: 0 1.6rem;
     }
 

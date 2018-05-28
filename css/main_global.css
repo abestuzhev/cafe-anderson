@@ -1415,6 +1415,20 @@ div {
   font-style: italic; }
 
 @font-face {
+  font-family: "PT Serif Caption";
+  src: url("../fonts/PTSerifBold.eot");
+  src: url("../fonts/PTSerifBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSerifBold.woff") format("woff"), url("../fonts/PTSerifBold.ttf") format("truetype"), url("../fonts/PTSerifBold.svg#PT Serif Caption") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT Serif Caption";
+  src: url("../fonts/PTSerifBoldItalic.eot");
+  src: url("../fonts/PTSerifBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSerifBoldItalic.woff") format("woff"), url("../fonts/PTSerifBoldItalic.ttf") format("truetype"), url("../fonts/PTSerifBoldItalic.svg#PT Serif Caption") format("svg");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
   font-family: "BebasNeue";
   src: url("../fonts/BebasNeue-Regular.eot");
   src: url("../fonts/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-Regular.woff") format("woff"), url("../fonts/BebasNeue-Regular.ttf") format("truetype"), url("../fonts/BebasNeue-Regular.svg#BebasNeue") format("svg");
@@ -5799,6 +5813,116 @@ a.c-button:hover {
     visibility: hidden;
     -webkit-box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2);
             box-shadow: inset 0px 6px 10px 2px rgba(0, 0, 0, 0.2); }
+  .header-dropdown {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden; }
+  .header-categories {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    padding: 2rem 1.4rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    font-family: "PT Serif Caption";
+    text-align: left;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 4px 9px 3px rgba(0, 0, 0, 0.14), inset 0px 4px 9px -1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 9px 3px rgba(0, 0, 0, 0.14), inset 0px 4px 9px -1px rgba(0, 0, 0, 0.2); }
+    .header-categories-col {
+      padding-right: 2rem; }
+      .header-categories-col:nth-child(1) {
+        width: 16.5%; }
+      .header-categories-col:nth-child(2) {
+        width: 29.5%; }
+    .header-categories__title {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+      color: #886854;
+      font-weight: 700; }
+    .header-categories__item {
+      margin-bottom: .6rem;
+      line-height: 1; }
+      .header-categories__item.active a {
+        font-weight: 700;
+        border: none;
+        color: #c44890; }
+    .header-categories__link {
+      color: #525252;
+      font-size: 1.6rem;
+      border-bottom: 1px dotted #525252;
+      letter-spacing: -1px; }
+      .header-categories__link:hover {
+        color: #c44890;
+        border-bottom: 1px dotted #c44890; }
+      .header-categories__link:after {
+        content: '';
+        border: none; }
+    .header-categories-banner {
+      background-color: #fbfaf7;
+      padding: 1.3rem 1.6rem;
+      width: 48rem;
+      height: 22rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      color: #464646;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 48rem;
+              flex: 1 0 48rem; }
+      .header-categories-banner__img {
+        overflow: hidden;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 16.6rem;
+                flex: 1 0 16.6rem; }
+      .header-categories-banner__body {
+        padding: .7rem 1.6rem; }
+      .header-categories-banner__title {
+        color: #363636;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1.4rem; }
+      .header-categories-banner__text {
+        font-size: 1.5rem;
+        line-height: 1;
+        margin-bottom: 1rem; }
+      .header-categories-banner__btn {
+        display: inline-block;
+        font-size: 1.3rem;
+        padding: .9rem 1.1rem;
+        border: 1px solid #363636;
+        color: #363636;
+        border-radius: .6rem; }
+        .header-categories-banner__btn:hover {
+          color: #c44890;
+          border: 1px solid #c44890; }
+        .header-categories-banner__btn::after {
+          content: '';
+          border: none; }
   .header-submenu {
     font-family: "BebasNeue";
     display: -webkit-box;
@@ -5981,7 +6105,8 @@ a.c-button:hover {
        -o-transition-delay: 0.1s;
           transition-delay: 0.1s; }
 
-.header-menu__item:hover .header-subnavigation {
+.header-menu__item:hover .header-subnavigation,
+.header-menu__item:hover .header-dropdown {
   opacity: 1 !important;
   visibility: visible;
   -webkit-transition: .1s ease-out;

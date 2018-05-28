@@ -3,6 +3,8 @@
 @include font_face(BebasNeue-Bold, BebasNeue,'../fonts/', 700);
 @include font_face(PTSerifCaption, 'PT Serif Caption','../fonts/', 400);
 @include font_face(PTSerifCaptionItalic, 'PT Serif Caption', '../fonts/', 400, italic);
+@include font_face(PTSerifBold, 'PT Serif Caption', '../fonts/', 700);
+@include font_face(PTSerifBoldItalic, 'PT Serif Caption', '../fonts/', 700, italic);
 @include font_face(BebasNeue-Regular, BebasNeue,'../fonts/', 500);
 @include font_face(BebasNeue-Book, BebasNeue,'../fonts/', 400);
 @include font_face(BebasNeue-Light, BebasNeue,'../fonts/', 300);
