@@ -2575,6 +2575,10 @@ test popup
             padding: .4rem 0 .5rem .8rem;
         }
     }
+
+    .c-select--search + .SelectBox .search-txt {
+        padding: .3rem .6rem;
+    }
 }
 
 .cafe-list {

@@ -8157,6 +8157,8 @@ test popup
         background-color: #c2dd99; }
   .filter .datepicker-layout input {
     padding: .4rem 0 .5rem .8rem; }
+  .filter .c-select--search + .SelectBox .search-txt {
+    padding: .3rem .6rem; }
 
 .cafe-list {
   font-family: "PT Serif Caption";
