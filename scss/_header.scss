@@ -171,6 +171,12 @@
 
     &-mobile {
 
+        &-scroll {
+            width: 100%;
+            overflow-y: scroll;
+            height: 100%;
+        }
+
         &__top {
             display: none;
             padding: 0 0 .4rem;

@@ -5287,6 +5287,10 @@ a.c-button:hover {
     position: static !important; }
   .header-mobile {
     /*мобильная аунтификация*/ }
+    .header-mobile-scroll {
+      width: 100%;
+      overflow-y: scroll;
+      height: 100%; }
     .header-mobile__top {
       display: none;
       padding: 0 0 .4rem;
