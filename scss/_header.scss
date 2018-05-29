@@ -1002,6 +1002,13 @@
             margin-bottom: 1.2rem;
             color: #886854;
             font-weight: 700;
+
+            a {
+                &:hover {
+                    color: #c44890;
+                    border-bottom: 1px dotted #c44890;
+                }
+            }
         }
 
         &__list {
