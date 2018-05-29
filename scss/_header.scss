@@ -952,7 +952,6 @@
     &-categories {
         background-color: #fff;
         border: 1px solid #e2e2e2;
-        padding: 2rem 1.4rem 1rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -982,7 +981,9 @@
         }
 
         &-col {
-            padding-right: 2rem;
+            //padding-right: 2rem;
+
+            padding: 2rem 2rem 1rem;
             &:nth-child(1) {
                 width: 16.5%;
 
@@ -1049,6 +1050,7 @@
             align-items: stretch;
             color: #464646;
             flex: 1 0 48rem;
+            padding: 2rem 1.4rem 2rem;
 
             &__img {
                 overflow: hidden;
@@ -1056,7 +1058,7 @@
             }
 
             &__body {
-                padding: .7rem 1.6rem;
+                padding: 0rem 1.6rem;
             }
 
             &__title {
