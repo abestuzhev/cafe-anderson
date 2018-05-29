@@ -286,6 +286,7 @@
         width: 100%;
         max-width: 1585px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .header-dropdown__layout::after {
