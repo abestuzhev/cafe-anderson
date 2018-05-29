@@ -5130,6 +5130,7 @@ a.c-button:hover {
 .c-clearfix::after {
   content: '';
   display: table;
+  display: table;
   clear: both; }
 
 .header.sticky {
