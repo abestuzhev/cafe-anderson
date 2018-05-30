@@ -5870,7 +5870,7 @@ a.c-button:hover {
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
     .header-categories-col {
-      padding: 2rem 2rem 1rem; }
+      padding: 2rem; }
       .header-categories-col:nth-child(1) {
         width: 16.5%; }
       .header-categories-col:nth-child(2) {
