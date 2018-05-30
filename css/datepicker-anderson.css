@@ -10,7 +10,7 @@
     right: 10px;
     width: .8rem;
     height: .8rem;
-    background: url(../../img/icons/icon-arr-down.svg) 0 0 no-repeat;
+    background: url(../img/icons/icon-arr-down.svg) 0 0 no-repeat;
 }
 .datepicker-layout.active-datepicker::after {
     content: '';
@@ -90,7 +90,7 @@
     left: -5.5rem;
     width: 4.5rem;
     height: 4.9rem;
-    background: url(../../img/icons/icon-calendar-decor.png) 0 0 no-repeat;
+    background: url(../img/icons/icon-calendar-decor.png) 0 0 no-repeat;
 }
 
 .datepicker-layout-v2 .datepicker-text {
