@@ -16,14 +16,14 @@ $(document).ready(function(){
 	// Calling the Plugin
 	$('.demo').instagramBrowser({
 		mode: 'user',
-		accessToken : '421631593.e029fea.0ab43b7d616641c9929ee8ec2112d8ed',
 		// accessToken : '421631593.e029fea.0ab43b7d616641c9929ee8ec2112d8ed',
-		userID: '309982629'
+		// accessToken : '421631593.e029fea.0ab43b7d616641c9929ee8ec2112d8ed',
+		// userID: '309982629'
 		// userID: '2255098913'
 
 		// FALLBACK
-		// userID: '2255098913',
-		// accessToken : '2255098913.1677ed0.67fe3a5539e94e58ba7cbe864d233d97',
+		userID: '2255098913',
+		accessToken : '2255098913.1677ed0.67fe3a5539e94e58ba7cbe864d233d97',
 	});
 
 	// Demo Starter
