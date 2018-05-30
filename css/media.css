@@ -5070,8 +5070,8 @@
     }
 
     .catalog-list .c-card-catalog {
-        height: 100%;
-        min-height: 30rem;
+        /*height: 100%;*/
+        /*min-height: 30rem;*/
     }
 
     .c-card-catalog__ingredients a {
@@ -5299,38 +5299,40 @@
 
 
 /*NEW catalog 4 colums*/
+@media (min-width: 980px) {
+    .show-category .catalog-col-4 .c-card-catalog__footer {
 
-.show-category .catalog-col-4 .c-card-catalog__footer {
+        flex-flow: row wrap;
+        padding: 0 1.4rem;
+    }
 
-    flex-flow: row wrap;
-    padding: 0 1.4rem;
+    .show-category .catalog-col-4 .c-card-catalog__price {
+        flex: 0 1 100%;
+        margin-bottom: 8px;
+        padding: .3rem 1rem 0.3rem 1rem;
+    }
+
+    .show-category .catalog-col-4 .c-card-catalog__count {
+        margin: 0 2% 0 0;
+        border-radius: .6rem;
+        text-align: center;
+        flex: 0 1 61%;
+        justify-content: center
+    }
+
+    .show-category .catalog-col-4 .c-card-catalog__basket {
+        flex: 0 1 37%;
+        text-align: center;
+        border-radius: .6rem;
+    }
+
+    .show-category .catalog-col-4 .c-card-catalog__basket i {
+        margin: 0 auto;
+    }
 }
 
-.show-category .catalog-col-4 .c-card-catalog__price {
-    flex: 0 1 100%;
-    margin-bottom: 8px;
-    padding: .3rem 1rem 0.3rem 1rem;
-}
 
-.show-category .catalog-col-4 .c-card-catalog__count {
-    margin: 0 2% 0 0;
-    border-radius: .6rem;
-    text-align: center;
-    flex: 0 1 61%;
-    justify-content: center
-}
-
-.show-category .catalog-col-4 .c-card-catalog__basket {
-    flex: 0 1 37%;
-    text-align: center;
-    border-radius: .6rem;
-}
-
-.show-category .catalog-col-4 .c-card-catalog__basket i {
-    margin: 0 auto;
-}
-
-@media (max-width: 1600px) {
+@media (max-width: 1600px) and (min-width: 980px) {
     .catalog-list.catalog-col-4 .c-card-catalog__footer {
 
         flex-flow: row wrap;
@@ -5370,9 +5372,14 @@
     }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 980px) {
     .catalog-list.catalog-col-4 .catalog-list__item {
 
         width: 50%;
+    }
+}
+@media (max-width: 415px) {
+    .catalog-list.catalog-col-4 .catalog-list__item {
+        width: 100%;
     }
 }
