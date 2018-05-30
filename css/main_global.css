@@ -9645,6 +9645,8 @@ test popup
     padding: 0 1.5rem;
     margin-bottom: 3.4rem;
     width: 33.333333%; }
+  .catalog-list.catalog-col-4 .catalog-list__item {
+    width: 25%; }
 
 .catalog .filter {
   margin-bottom: 2.1rem;

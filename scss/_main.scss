@@ -4377,6 +4377,13 @@ test popup
             margin-bottom: 3.4rem;
             width: 33.333333%;
         }
+
+        &.catalog-col-4 {
+            .catalog-list__item {
+                width: 25%;
+            }
+
+        }
     }
 
     .filter {
