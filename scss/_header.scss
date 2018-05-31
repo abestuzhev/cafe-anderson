@@ -933,7 +933,7 @@
         width: 100%;
         top: 100%;
         left: 0;
-        display: none;
+        //display: none;
         //opacity: 0;
         //visibility: hidden;
 
@@ -986,18 +986,19 @@
             flex-flow: row nowrap;
             justify-content: flex-start;
             align-items: stretch;
+            width: 100%;
         }
 
         &-col {
             //padding-right: 2rem;
             padding: 2rem 1.3rem;
             &:nth-child(1) {
-                min-width: 21%;
+                min-width: 17rem;
                 padding-left: 2rem;
 
             }
             &:nth-child(2) {
-                min-width: 30%;
+                //min-width: 30%;
 
             }
             &:nth-child(3) {
@@ -1060,7 +1061,7 @@
         &-banner {
             background-color: #fbfaf7;
             width: 48rem;
-            height: 22rem;
+            //height: 22rem;
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-start;

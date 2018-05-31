@@ -229,6 +229,10 @@
         display: table;
      }
 
+    /*.header-categories-col:nth-child(1) {*/
+        /*min-width: 23%;*/
+    /*}*/
+
 }
 
 @media (min-width: 1600px) {

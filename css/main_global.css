@@ -5828,8 +5828,7 @@ a.c-button:hover {
     z-index: 999999;
     width: 100%;
     top: 100%;
-    left: 0;
-    display: none; }
+    left: 0; }
     .header-dropdown__layout {
       padding: 0 2.2rem;
       overflow: hidden;
@@ -5882,14 +5881,13 @@ a.c-button:hover {
               justify-content: flex-start;
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
-              align-items: stretch; }
+              align-items: stretch;
+      width: 100%; }
     .header-categories-col {
       padding: 2rem 1.3rem; }
       .header-categories-col:nth-child(1) {
-        min-width: 21%;
+        min-width: 17rem;
         padding-left: 2rem; }
-      .header-categories-col:nth-child(2) {
-        min-width: 30%; }
     .header-categories__title {
       font-size: 1.9rem;
       margin-bottom: 1.2rem;
@@ -5924,7 +5922,6 @@ a.c-button:hover {
     .header-categories-banner {
       background-color: #fbfaf7;
       width: 48rem;
-      height: 22rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
