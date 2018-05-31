@@ -495,7 +495,7 @@
 @media screen and (max-width: 1150px) {
     .header-categories-banner {
         width: auto;
-        flex: 1 0 auto;
+        flex: 1 0 20rem;
     }
     .header-categories-banner__body {
        display: none;
