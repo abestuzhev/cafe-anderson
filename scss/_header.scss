@@ -1070,6 +1070,8 @@
             &__img {
                 overflow: hidden;
                 flex: 1 0 16.6rem;
+                -webkit-background-size: cover;
+                background-size: cover;
             }
 
             &__body {
