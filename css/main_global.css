@@ -5896,9 +5896,13 @@ a.c-button:hover {
       line-height: 1.2;
       color: #886854;
       font-weight: 700; }
-      .header-categories__title a:hover {
-        color: #c44890;
-        border-bottom: 1px dotted #c44890; }
+      .header-categories__title a {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        color: #886854; }
+        .header-categories__title a:hover {
+          color: #c44890;
+          border-bottom: 1px dotted #c44890; }
     .header-categories__item {
       margin-bottom: .8rem;
       line-height: .95; }
