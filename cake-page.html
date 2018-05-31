@@ -3276,38 +3276,40 @@
                                 <section class="header-dropdown">
                                     <div class="header-dropdown__layout">
                                         <div class="header-categories">
-                                            <div class="header-categories-col">
-                                                <div class="header-categories__title"><a href="#">Компания</a></div>
-                                                <ul class="header-categories__list">
-                                                    <li class="header-categories__item active"><a href="#" class="header-categories__link">Контакты</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Вакансии</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Звездные гости</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Основатели</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Наши партнеры</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="header-categories-col">
-                                                <div class="header-categories__title">Правила доставки и оплаты</div>
-                                                <ul class="header-categories__list">
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Правила доставки</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Правила оплаты</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Правила возврата</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Правила работы с программой лояльности</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="header-categories-col">
-                                                <div class="header-categories__title">Юридическая информация</div>
-                                                <ul class="header-categories__list">
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Правила доставки</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Положение по обработке персональных данных</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Правила поведения в Кафе "Андерсон"</a></li>
-                                                    <li class="header-categories__item"><a href="#" class="header-categories__link">Условия проведения маркетинговой
-                                                        акции с Visa</a></li>
-                                                </ul>
+                                            <div class="header-categories-grid">
+                                                <div class="header-categories-col">
+                                                    <div class="header-categories__title"><a class="header-categories__link" href="#">Про АндерСон</a></div>
+                                                    <ul class="header-categories__list">
+                                                        <li class="header-categories__item active"><a href="#" class="header-categories__link">Контакты</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Вакансии</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Звездные гости</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Основатели</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Наши партнеры</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="header-categories-col">
+                                                    <div class="header-categories__title">Условия</div>
+                                                    <ul class="header-categories__list">
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Условия проведения маркетинговой акции с Visa</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Правила работы с программой лояльности</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Правила возврата</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Правила работы с программой лояльности</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="header-categories-col">
+                                                    <div class="header-categories__title">Нормы и правила</div>
+                                                    <ul class="header-categories__list">
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Правила доставки</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Положение по обработке персональных данных</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Правила поведения в Кафе "Андерсон"</a></li>
+                                                        <li class="header-categories__item"><a href="#" class="header-categories__link">Условия проведения маркетинговой
+                                                            акции с Visa</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="header-categories-banner">
-                                                <div class="header-categories-banner__img">
-                                                    <img src="./img/header-categories-banner.png" alt="">
+                                                <div class="header-categories-banner__img" style="background-image:url(./img/2017_11_10-Anderson_014.jpg);">
+                                                    <!--<img src="./img/header-categories-banner.png" alt="">-->
                                                 </div>
                                                 <div class="header-categories-banner__body">
                                                     <div class="header-categories-banner__title">Новый вкусный рулет</div>
@@ -3593,9 +3595,19 @@
             
             
             </nav>
-            <div class="cake-page">
+            <section class="pie">
+                <nav class="pie-mix">
+                    <a href="#" class="pie-mix__item" data-filter="all"><span>Все торты</span> </a>
+                    <a href="#" class="pie-mix__item" data-filter="pie-product"><span>Торты</span></a>
+                    <a href="#" class="pie-mix__item" data-filter="pie-toy"><span>Марципановые игрушки</span></a>
+                    <a href="#" class="pie-mix__item" data-filter="pie-effect"><span>Вау эффект</span></a>
+                </nav>
+                <div class="pie-order"></div>
+                <div class="pie-filling"></div>
+                <div class="pie-description"></div>
+                <div class="pie-conditions"></div>
             
-            </div>
+            </section>
         </div>
     </main>
 </div>
