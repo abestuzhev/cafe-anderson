@@ -5828,7 +5828,8 @@ a.c-button:hover {
     z-index: 999999;
     width: 100%;
     top: 100%;
-    left: 0; }
+    left: 0;
+    display: none; }
     .header-dropdown__layout {
       padding: 0 2.2rem;
       overflow: hidden;
