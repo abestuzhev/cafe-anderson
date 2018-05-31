@@ -933,6 +933,7 @@
         width: 100%;
         top: 100%;
         left: 0;
+        display: none;
         //opacity: 0;
         //visibility: hidden;
 
@@ -1308,12 +1309,16 @@
     transition: .1s ease-out;
     transition-delay: 0.1s;
 }
-.header-menu__item:hover .header-subnavigation,
-.header-menu__item:hover .header-dropdown {
+.header-menu__item:hover .header-subnavigation
+ {
     opacity: 1 !important;
     visibility: visible;
     transition: .1s ease-out;
     transition-delay: 0.1s;
+}
+
+.header-menu__item:hover .header-dropdown {
+    display: block;
 }
 
 .top-message {

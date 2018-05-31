@@ -5828,7 +5828,8 @@ a.c-button:hover {
     z-index: 999999;
     width: 100%;
     top: 100%;
-    left: 0; }
+    left: 0;
+    display: none; }
     .header-dropdown__layout {
       padding: 0 2.2rem;
       overflow: hidden;
@@ -6151,8 +6152,7 @@ a.c-button:hover {
        -o-transition-delay: 0.1s;
           transition-delay: 0.1s; }
 
-.header-menu__item:hover .header-subnavigation,
-.header-menu__item:hover .header-dropdown {
+.header-menu__item:hover .header-subnavigation {
   opacity: 1 !important;
   visibility: visible;
   -webkit-transition: .1s ease-out;
@@ -6161,6 +6161,9 @@ a.c-button:hover {
   -webkit-transition-delay: 0.1s;
        -o-transition-delay: 0.1s;
           transition-delay: 0.1s; }
+
+.header-menu__item:hover .header-dropdown {
+  display: block; }
 
 .top-message {
   background-color: #fffdf7;
