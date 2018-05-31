@@ -284,20 +284,16 @@
 
     .header-dropdown__layout {
         width: 100%;
-        max-width: 1585px;
+        max-width: 1600px;
         margin: 0 auto;
-        padding: 0;
     }
 
     .header-dropdown__layout::after {
-         content: '';
-         clear: both;
-         display: table;
-     }
-
-    .header-categories {
-        justify-content: flex-start;
+        content: '';
+        clear: both;
+        display: table;
     }
+
 
     .header-categories-col {
         width: auto !important;
@@ -305,7 +301,7 @@
     }
 
     .header-categories-banner {
-        height: 18rem;
+        height: 20rem;
     }
 }
 
@@ -5307,7 +5303,7 @@
     }
 
     .show-category .catalog-col-4 .c-card-catalog__price {
-        flex: 0 1 100%;
+        /*flex: 0 1 100%;*/
         margin-bottom: 8px;
         padding: .3rem 1rem 0.3rem 1rem;
     }
@@ -5340,7 +5336,7 @@
     }
 
     .catalog-list.catalog-col-4 .c-card-catalog__price {
-        flex: 0 1 100%;
+        /*flex: 0 1 100%;*/
         margin-bottom: 8px;
         padding: .3rem 1rem 0.3rem 1rem;
     }

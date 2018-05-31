@@ -954,7 +954,7 @@
         border: 1px solid #e2e2e2;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: stretch;
         font-family: $font_serif;
         text-align: left;
@@ -962,6 +962,7 @@
         position: relative;
         box-shadow: 0px 3px 9px 3px rgba(0,0,0,0.15)/*,
         inset 0px 4px 9px -4px rgba(0, 0, 0, 0.3)*/;
+        border-radius: 0 0 .4rem .4rem;
 
         &::before {
             content: '';
@@ -1015,8 +1016,8 @@
         }
 
         &__item {
-            margin-bottom: .6rem;
-            line-height: 1;
+            margin-bottom: .7rem;
+            line-height: .95;
 
             &.active a {
                 font-weight: 700;

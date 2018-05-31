@@ -5845,9 +5845,9 @@ a.c-button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -5856,7 +5856,8 @@ a.c-button:hover {
     overflow: hidden;
     position: relative;
     -webkit-box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.15); }
+            box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 .4rem .4rem; }
     .header-categories::before {
       content: '';
       position: absolute;
@@ -5884,8 +5885,8 @@ a.c-button:hover {
         color: #c44890;
         border-bottom: 1px dotted #c44890; }
     .header-categories__item {
-      margin-bottom: .6rem;
-      line-height: 1; }
+      margin-bottom: .7rem;
+      line-height: .95; }
       .header-categories__item.active a {
         font-weight: 700;
         border: none;
