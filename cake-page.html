@@ -35,6 +35,10 @@
     <link rel="stylesheet" href="./js/owlcarousel/owl.carousel.css">
     <!--<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.green.css">-->
     
+    <!--datepicker-->
+    <link href="./js/datepicker/datepicker.css" rel="stylesheet">
+    <link href="css/datepicker-anderson.css" rel="stylesheet">
+    
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all"/>
     <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all"/>
@@ -42,6 +46,7 @@
     <link rel="stylesheet" href="./css/sticky-header.css">
     <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/media.css">
+    
     <link rel="stylesheet" href="./css/sticky-animation.css">
     
     
@@ -3645,11 +3650,58 @@
                     </li>
                 </ul>
                 
-                <!--START pie-order-->
-                <div class="pie-order">
+                <!--START pie-form-->
+                <div class="pie-form">
+                    <div class="pie-form__body">
+                        <h3 class="pie-form__title">С помощью формы Вы можете сделать предварительный заказ торта Вашей мечты:</h3>
+                        <form action="">
+                            <div class="pie-form__list">
+                                <div class="pie-form__item">
+                                    <label class="c-label" for="pie-form-name">Ваше имя</label>
+                                    <input class="c-input" type="text" placeholder="Ваше имя" name="pie-form-name" id="pie-form-name">
+                                </div>
+                                <div class="pie-form__item">
+                                    <label class="c-label" for="pie-form-phone">Номер телефона<span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" placeholder="Номер телефона" name="pie-form-phone" id="pie-form-phone" required="">
+                                </div>
+                                <div class="pie-form__item">
+                                    <label class="c-label" for="pie-form-email">Ваш email</label>
+                                    <input class="c-input" type="text" placeholder="Ваш email" name="pie-form-email" id="pie-form-email" required="">
+                                </div>
+                                <div class="pie-form__item">
+                                    <label class="c-label">Кол-во гостей</label>
+                                    <select name="pie-form-guests" class="c-select" required="">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                        <option value="60">60</option>
+                                        <option value="70">70</option>
+                                    </select>
+                                
+                                </div>
+                                <div class="pie-form__item">
+                                    <label class="c-label">Когда нужен торт</label>
+                                    <div class="datepicker-layout">
+                                        <input type="text" class="c-input datepicker-custom" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    
+                    </div>
+                    <div class="pie-form__footer">
+                        <p>Вы можете выразить все ваш
+                            и фантазии, идеи и мечты. И, будьте уверены – торт вашей мечты порадует вас и ваших близких.</p>
+                        <div class="pie-form__footer-icon">
+                            <svg class="c-symbol symbol-bird-left"><use xlink:href="#symbol-bird-left" /></svg>
+                        </div>
+                        
+                    </div>
                 
                 </div>
-                <!--END pie-order-->
+                <!--END pie-form-->
                 
                 <!--START pie-filling-->
                 <div class="pie-filling"></div>
@@ -4567,7 +4619,7 @@
 
 <!--<script async src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-<div id="listScripts"></div>
+
 <!--<script async src="bower_components/tooltipster/dist/js/tooltipster.bundle.js"></script>-->
 <!--<script async type="text/javascript" src="bower_components/jquery-mask-plugin/dist/jquery.mask.js"></script>-->
 <!--<script async type="text/javascript" src="./js/jscrollpane/jquery.mousewheel.js"></script>-->
@@ -4580,9 +4632,12 @@
 <!--<script async src="./js/tooltip.js"></script>-->
 <!-- Подключаем API  карт 2.1  -->
 <!-- <script src="./js/ymaps-touch-scroll.bundle.js"></script> -->
-<script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script async src="./js/custom-map.js"></script>
+<!--<script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
+<!--<script async src="./js/custom-map.js"></script>-->
 <!--<script async src="./js/main.js"></script>-->
+<script src="./js/datepicker/datepicker.min.js"></script>
+<script async src="./js/datepicker-anderson.js"></script>
+<script src="./js/mixitup.min.js"></script>
 <script async src="./js/scripts_all.js"></script>
 
 </body>

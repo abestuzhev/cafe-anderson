@@ -417,6 +417,14 @@
     .header-wrap.sticky .symbol-logo-wrap {
         top: 22px;
     }
+
+    .partner-panel .symbol-logo-wrap {
+        top: 0;
+    }
+    .partner-panel .header-col__center {
+        overflow: visible;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1300px) {
