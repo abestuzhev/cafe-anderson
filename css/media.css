@@ -400,6 +400,17 @@
     }
 }
 
+@media screen and (max-width: 1380px) and (min-width: 1020px) {
+    .header-col__center {
+        overflow: hidden;
+        height: 6.2rem;
+    }
+
+    .symbol-logo-wrap {
+        top: 25px;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .popup-event .popup {
         position: fixed;
@@ -457,6 +468,9 @@
         max-width: 70%;
     }
 }
+
+
+
 
 @media screen and (max-width: 1280px) {
     .select-city + .SelectBox,
