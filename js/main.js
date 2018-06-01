@@ -178,6 +178,11 @@ $(document).ready(function ($) {
     addReadonlyInput('.datepicker-custom');
     addReadonlyInput('#minMaxExample');
     addReadonlyInput('.datepicker-delivery-v2');
+    addReadonlyInput('#event-datepicker');
+    addReadonlyInput('.js-event-order-datepicker');
+    addReadonlyInput('#party-datepicker');
+    addReadonlyInput('.datepicker-layout input');
+    addReadonlyInput('.datepicker-layout-v2 input');
 
     /*хлебные крошки - выпадающий список*/
     $(document).on('click', '.c-breadcrumb-word__active span', function(e){
