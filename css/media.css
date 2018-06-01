@@ -4820,6 +4820,13 @@
         width: 100%;
     }
 
+    .header-mobile__dropdown {
+        padding: 0;
+    }
+    .header-mobile-scroll {
+        height: 100%;
+    }
+
     .header-mobile__dropdown.menu-sticky {
         top: 3.8rem !important;
     }

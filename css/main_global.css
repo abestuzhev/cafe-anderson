@@ -5393,7 +5393,7 @@ div.c-card-catalog-2 {
     .header-mobile-scroll {
       width: 100%;
       overflow-y: scroll;
-      height: 100%; }
+      height: 91%; }
     .header-mobile__top {
       display: none;
       padding: 0 0 .4rem;
@@ -5537,7 +5537,7 @@ div.c-card-catalog-2 {
     .header-mobile__list {
       padding-top: 1em; }
       .header-mobile__list a {
-        border-bottom: 1px dotted #9b806f; }
+        border-bottom: 1px dotted #555451; }
         .header-mobile__list a::after {
           content: '';
           border: none; }
@@ -5577,9 +5577,18 @@ div.c-card-catalog-2 {
       margin-top: 1rem;
       background-color: #f3efe4;
       display: none;
-      padding-bottom: 1rem; }
+      padding: 0 1rem 1rem; }
+      .header-mobile__sublist-title {
+        text-align: center;
+        color: #7d5846;
+        padding: 1.5rem 1rem .5rem;
+        font-weight: 700;
+        font-size: 1.8rem;
+        text-transform: uppercase; }
     .header-mobile__subitem {
       padding: .5em 0; }
+    .header-mobile__sublink {
+      color: #555451; }
     .header-mobile__auth {
       opacity: 0;
       visibility: hidden;
