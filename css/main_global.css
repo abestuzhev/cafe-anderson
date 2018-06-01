@@ -3732,6 +3732,48 @@ a.c-button:hover {
       background: none;
       padding-left: 1.7rem; }
 
+div.c-card-catalog-2 {
+  font-family: "PT Serif Caption";
+  -webkit-box-shadow: 0px 3px 13.8px 1.2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 13.8px 1.2px rgba(0, 0, 0, 0.2);
+  border-radius: .4rem;
+  background-color: #fff;
+  overflow: hidden; }
+  div.c-card-catalog-2__img {
+    overflow: hidden;
+    height: 32rem;
+    width: 100%;
+    position: relative; }
+  div.c-card-catalog-2__title {
+    font-size: 1.7rem;
+    line-height: 1;
+    color: #2e1a13;
+    margin-bottom: .6rem; }
+  div.c-card-catalog-2__weight {
+    font-size: 1.4rem;
+    color: #515151;
+    font-style: italic;
+    margin-bottom: .6rem; }
+  div.c-card-catalog-2__body {
+    background-color: #fff;
+    padding: 2rem 1.7rem; }
+  div.c-card-catalog-2__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    div.c-card-catalog-2__footer .c-card-catalog__price {
+      padding: 0 1.3rem 0 0; }
+
 .c-card-publication {
   width: 100%;
   height: 100%;
@@ -5439,6 +5481,11 @@ a.c-button:hover {
         top: -1px; }
     .header-mobile__list {
       padding-top: 1em; }
+      .header-mobile__list a {
+        border-bottom: 1px dotted #9b806f; }
+        .header-mobile__list a::after {
+          content: '';
+          border: none; }
     .header-mobile__item {
       text-align: center;
       padding: .5em 0;
@@ -5469,7 +5516,8 @@ a.c-button:hover {
         transform: rotate(180deg) translateY(50%) !important;
         top: 1.8rem; }
       .header-mobile__item.active .header-mobile__link {
-        color: #ffffff; }
+        color: #ffffff;
+        border-color: #fff; }
     .header-mobile__sublist {
       margin-top: 1rem;
       background-color: #f3efe4;

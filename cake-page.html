@@ -3596,16 +3596,72 @@
             
             </nav>
             <section class="pie">
+                
                 <nav class="pie-mix">
                     <a href="#" class="pie-mix__item" data-filter="all"><span>Все торты</span> </a>
                     <a href="#" class="pie-mix__item" data-filter="pie-product"><span>Торты</span></a>
                     <a href="#" class="pie-mix__item" data-filter="pie-toy"><span>Марципановые игрушки</span></a>
                     <a href="#" class="pie-mix__item" data-filter="pie-effect"><span>Вау эффект</span></a>
                 </nav>
-                <div class="pie-order"></div>
+                
+                <div class="pie-mix__list js-mixed-list">
+                    <div class="mix pie-product"></div>
+                    <div class="mix pie-toy"></div>
+                    <div class="mix pie-effect"></div>
+                </div>
+    
+                <ul class="catalog-list catalog-col-4">
+                    <li class="catalog-list__item">
+                        <!--START c-card-catalog-2-->
+                        <div class="c-card-catalog-2">
+                            <div class="c-card-catalog-2__img js-show-product-order">
+                                <!--<img class="" src="./img/catalog-img-3.jpg" alt="">-->
+                                <img class="" src="./img/pie-product-2.jpg" alt="">
+                            </div>
+                            <div class="c-card-catalog-2__body">
+                                <div class="c-card-catalog-2__title js-show-product-order">Торт № 45 (одного дня)</div>
+                                <div class="c-card-catalog-2__weight">Вес: 250 г.</div>
+                                
+                                <div class="c-card-catalog-2__footer">
+                                    <div class="c-card-catalog__price">
+                                        <div>
+                                            <div class="c-card-catalog__price-layout">1590 KZT</div>
+                                        </div>
+                                    </div>
+                                    <div class="c-card-catalog__count">
+                                        <div class="c-counter">
+                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="c-card-catalog__basket tooltip-catalog tooltipstered" data-tooltip-content=".tooltip_catalog">
+                                        <i class="icon-shopping-cart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END c-card-catalog-2-->
+                    </li>
+                </ul>
+                
+                <!--START pie-order-->
+                <div class="pie-order">
+                
+                </div>
+                <!--END pie-order-->
+                
+                <!--START pie-filling-->
                 <div class="pie-filling"></div>
+                <!--END pie-filling-->
+                
+                <!--START pie-description-->
                 <div class="pie-description"></div>
+                <!--END pie-description-->
+                
+                <!--START pie-conditions-->
                 <div class="pie-conditions"></div>
+                <!--END pie-conditions-->
             
             </section>
         </div>

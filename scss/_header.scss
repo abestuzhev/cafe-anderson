@@ -390,6 +390,15 @@
 
         &__list {
             padding-top: 1em;
+
+            a {
+                border-bottom: 1px dotted #9b806f;
+
+                &::after {
+                    content: '';
+                    border: none;
+                }
+            }
         }
 
         &__item {
@@ -440,6 +449,7 @@
 
             .header-mobile__link {
                 color: #ffffff;
+                border-color: #fff;
             }
         }
 
