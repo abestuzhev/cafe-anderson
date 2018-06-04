@@ -5368,6 +5368,10 @@ test popup
 
     .filter-form {
         justify-content: flex-start;
+
+        .icon-calendar-3 {
+            height: 17px;
+        }
     }
 
     .filter .l-button__center {
@@ -13932,6 +13936,7 @@ test popup
     }
 
     &-filling {
+        margin-bottom: 1rem;
 
         &__title {
             color: #9b806f;
@@ -13941,11 +13946,105 @@ test popup
     }
 
     &-description {
+        padding: 4.6rem 0 3.4rem;
+        font-family: $font_serif;
+        border: 2px solid #d0d0d0;
+        background: #fff url('../img/bg-party.jpg') 100% 50% no-repeat;
+        -webkit-background-size: 377px;
+        background-size: 377px;
+        border-radius: .6rem;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 3rem;
 
+        &__body {
+            padding: 2.4rem 4rem;
+        }
+
+        &__header {
+            margin-bottom: 4rem;
+            padding: 0 18rem;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 3rem;
+            line-height: 1.2rem;
+            color: #c7368a;
+            margin-bottom: 1.5rem;
+        }
+
+        &__subtitle {
+            text-align: center;
+            font-size: 2.1rem;
+            line-height: 1.1;
+            color: #c7368a;
+            font-style: italic;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            line-height: 1.1;
+            color: $black;
+            padding-right: 30rem;
+        }
     }
 
     &-conditions {
+        padding: 2.6rem 2.6rem;
+        font-family: $font_serif;
+        background: #fdf7e8 url(../img/bg-header.png) repeat;
+        border: 2px solid #d0d0d0;
+        border-radius: .6rem;
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 3rem;
+        
+        &__body {
+            flex-flow: column nowrap;
+            overflow: hidden;
+            height: 25rem;
+        }
 
+        &__header {
+        }
+
+        &__title {
+            text-align: left;
+            font-size: 3rem;
+            line-height: 1.2rem;
+            color: #c7368a;
+            margin-bottom: 1.5rem;
+        }
+
+        &__subtitle {
+            text-align: left;
+            font-size: 2.1rem;
+            line-height: 1.1;
+            color: #c7368a;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #5c9a23;
+
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+
+        ol {
+            margin-bottom: 2rem;
+            list-style:decimal inside;
+            li {
+                list-style:decimal inside;
+                font-size: 1.6rem;
+                line-height: 1.2;
+                color: $black;
+                font-style: italic;
+                margin-bottom: 1rem;
+            }
+        }
     }
 }
 

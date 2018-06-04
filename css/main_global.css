@@ -10544,6 +10544,8 @@ test popup
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+  .events .filter-form .icon-calendar-3 {
+    height: 17px; }
 
 .events .filter .l-button__center {
   display: block; }
@@ -17100,6 +17102,84 @@ test popup
         font-size: 1.6rem;
         color: #555451;
         margin: 0; }
-  .pie-filling__title {
-    color: #9b806f;
-    margin-bottom: 1.8rem; }
+  .pie-filling {
+    margin-bottom: 1rem; }
+    .pie-filling__title {
+      color: #9b806f;
+      margin-bottom: 1.8rem; }
+  .pie-description {
+    padding: 4.6rem 0 3.4rem;
+    font-family: "PT Serif Caption";
+    border: 2px solid #d0d0d0;
+    background: #fff url("../img/bg-party.jpg") 100% 50% no-repeat;
+    background-size: 377px;
+    border-radius: .6rem;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem; }
+    .pie-description__body {
+      padding: 2.4rem 4rem; }
+    .pie-description__header {
+      margin-bottom: 4rem;
+      padding: 0 18rem; }
+    .pie-description__title {
+      text-align: center;
+      font-size: 3rem;
+      line-height: 1.2rem;
+      color: #c7368a;
+      margin-bottom: 1.5rem; }
+    .pie-description__subtitle {
+      text-align: center;
+      font-size: 2.1rem;
+      line-height: 1.1;
+      color: #c7368a;
+      font-style: italic; }
+    .pie-description__text {
+      font-size: 1.5rem;
+      line-height: 1.1;
+      color: #555451;
+      padding-right: 30rem; }
+  .pie-conditions {
+    padding: 2.6rem 2.6rem;
+    font-family: "PT Serif Caption";
+    background: #fdf7e8 url(../img/bg-header.png) repeat;
+    border: 2px solid #d0d0d0;
+    border-radius: .6rem;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem; }
+    .pie-conditions__body {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      overflow: hidden;
+      height: 25rem; }
+    .pie-conditions__title {
+      text-align: left;
+      font-size: 3rem;
+      line-height: 1.2rem;
+      color: #c7368a;
+      margin-bottom: 1.5rem; }
+    .pie-conditions__subtitle {
+      text-align: left;
+      font-size: 2.1rem;
+      line-height: 1.1;
+      color: #c7368a;
+      font-style: italic;
+      margin-bottom: 1.5rem; }
+    .pie-conditions a {
+      color: #5c9a23; }
+      .pie-conditions a::after {
+        content: '';
+        border: none; }
+    .pie-conditions ol {
+      margin-bottom: 2rem;
+      list-style: decimal inside; }
+      .pie-conditions ol li {
+        list-style: decimal inside;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        color: #555451;
+        font-style: italic;
+        margin-bottom: 1rem; }
