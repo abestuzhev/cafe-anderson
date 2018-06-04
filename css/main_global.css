@@ -3739,6 +3739,13 @@ a.c-button:hover {
     .c-card-catalog--mini .c-card-catalog__price {
       background: none;
       padding-left: 1.7rem; }
+  .c-card-catalog.v2 .c-card-catalog__price {
+    padding: 0;
+    background-color: transparent; }
+    .c-card-catalog.v2 .c-card-catalog__price > div {
+      padding: .3rem 1rem 0.3rem 3rem;
+      background-color: #fff;
+      border-radius: .4rem; }
 
 div.c-card-catalog-2 {
   font-family: "PT Serif Caption";
@@ -9778,8 +9785,6 @@ test popup
     padding: 0 1.5rem;
     margin-bottom: 3.4rem;
     width: 33.333333%; }
-  .catalog-list.catalog-col-4 .catalog-list__item {
-    width: 25%; }
 
 .catalog .filter {
   margin-bottom: 2.1rem;
@@ -9808,6 +9813,9 @@ test popup
 .catalog-product .cafe-list__city .c-grid {
   margin-left: -.5rem;
   margin-right: -.5rem; }
+
+.catalog-col-4 .catalog-list__item {
+  width: 25%; }
 
 .c-card-catalog__count .c-counter,
 .c-card-product__count .c-counter {

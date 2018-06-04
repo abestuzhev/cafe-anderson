@@ -5381,6 +5381,9 @@
         margin-bottom: 8px;
         padding: .3rem 1rem 0.3rem 1rem;
     }
+    .c-card-catalog.v2 .c-card-catalog__price > div {
+        padding: .3rem 1rem 0.3rem 1rem;
+    }
 
     .catalog-col-4 .c-card-catalog__count {
         margin: 0 2% 0 0;
@@ -5421,6 +5424,11 @@
     .catalog-col-4 .catalog-list__item {
 
         width: 50%;
+    }
+
+
+    .c-card-catalog.v2 .c-card-catalog__price > div {
+        padding: .3rem 1rem;
     }
 }
 @media (max-width: 415px) {
