@@ -1401,6 +1401,7 @@ $(document).ready(function ($) {
     // showPopup(".catalog-product .c-card-catalog__img", '.popup-product');
     // showPopup(".catalog-product .c-card-catalog__title", '.popup-product');
     showPopup(".js-show-product-order", '.popup-product');
+    showPopup(".js-show-pie-order", '.popup-pie');
     showPopup("#loadCake", '.popup-cake-order');
     showPopup(".cake-card__hover", '.popup-cake-order');
     showPopup(".js-easter-btn", '.popup-cake-order');

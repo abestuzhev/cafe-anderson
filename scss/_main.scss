@@ -1559,6 +1559,76 @@ main {
     }
 }
 
+/*popup-pie---------------------------*/
+.popup-pie {
+    .popup {
+        max-width: 100rem;
+        width: 100rem;
+
+        &-layout {
+            overflow: visible;
+        }
+
+        &-title {
+            text-align: left;
+            padding: 1.8rem 4rem 1.4rem;
+            font-size: 1.9rem;
+            color: #2e1a13;
+
+            &__text {
+                padding-left: 4rem;
+                position: relative;
+            }
+        }
+
+        &-body {
+            padding: 3rem 4rem 4.5rem;
+            background-color: #fff;
+        }
+
+        &-mini {
+            .popup-title {
+                color: #553023;
+                font-size: 1.7rem;
+                padding: 1.8rem 2rem 1.4rem;
+            }
+
+            .popup-body {
+                padding: 1.7rem;
+            }
+        }
+    }
+
+
+
+
+
+
+    .icon-round-cake {
+        position: absolute;
+        left: 0;
+        top: -8px;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 5rem;
+        background-color: #cabbaa;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .symbol-cake-2 {
+        position: absolute;
+        left: 35%;
+        top: 3px;
+        fill: #fff;
+        transform: rotate(15deg);
+    }
+
+    .popup-mini {
+
+    }
+}
+
 /*----------------------------------------------*/
 #tooltip {
     text-align: center;
@@ -14305,6 +14375,27 @@ test popup
                 color: $black;
                 font-style: italic;
                 margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &-order {
+        &__grid {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        &__col {
+            &:nth-child(1) {
+                flex: 0 0 41.666667%;
+                max-width: 41.666667%;
+                padding-right: 3rem;
+            }
+            &:nth-child(2) {
+                flex: 0 0 58%;
+                max-width: 58%;
             }
         }
     }

@@ -7860,6 +7860,50 @@ main {
   margin-left: -1rem;
   margin-bottom: 2.4rem; }
 
+/*popup-pie---------------------------*/
+.popup-pie .popup {
+  max-width: 100rem;
+  width: 100rem; }
+  .popup-pie .popup-layout {
+    overflow: visible; }
+  .popup-pie .popup-title {
+    text-align: left;
+    padding: 1.8rem 4rem 1.4rem;
+    font-size: 1.9rem;
+    color: #2e1a13; }
+    .popup-pie .popup-title__text {
+      padding-left: 4rem;
+      position: relative; }
+  .popup-pie .popup-body {
+    padding: 3rem 4rem 4.5rem;
+    background-color: #fff; }
+  .popup-pie .popup-mini .popup-title {
+    color: #553023;
+    font-size: 1.7rem;
+    padding: 1.8rem 2rem 1.4rem; }
+  .popup-pie .popup-mini .popup-body {
+    padding: 1.7rem; }
+
+.popup-pie .icon-round-cake {
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 5rem;
+  background-color: #cabbaa;
+  display: inline-block;
+  overflow: hidden; }
+
+.popup-pie .symbol-cake-2 {
+  position: absolute;
+  left: 35%;
+  top: 3px;
+  fill: #fff;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg); }
+
 /*----------------------------------------------*/
 #tooltip {
   text-align: center;
@@ -17537,3 +17581,28 @@ test popup
         color: #555451;
         font-style: italic;
         margin-bottom: 1rem; }
+  .pie-order__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  .pie-order__col:nth-child(1) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    padding-right: 3rem; }
+  .pie-order__col:nth-child(2) {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58%;
+            flex: 0 0 58%;
+    max-width: 58%; }
