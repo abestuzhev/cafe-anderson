@@ -170,6 +170,51 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    /*загрузка файлов на странице с кондитерскими изделиями*/
+    $("#pie-form-download__file").on('change', function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded;
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+    function imageIsLoaded(e) {
+        $('#pie-form-download__img').attr('src', e.target.result).show();
+    };
+
+
+
+
+
+    /*resize img c-card-catalog-2__img*/
+    $('.c-card-catalog-2__img').each(function(i, val){
+
+        var pieImgContainerWidth = $(val).width();
+        var pieImgWidth = $(val).children('img').width();
+        console.log('ширина контейнера ' + i + ': ' + pieImgContainerWidth);
+        console.log('ширина картинки ' + i + ': ' + pieImgWidth);
+
+        if(pieImgWidth < pieImgContainerWidth){
+            $(val).children('img').css({
+                'width': '100%',
+                'height': 'auto'
+
+            });
+        }
+    });
+
+
+
+
+    /*кнопка раскрытия информации в карточке c-card-slide*/
+    $(document).on('click', '.c-card-slide__dropdown', function(e){
+        e.preventDefault();
+        var self = $(this);
+        self.toggleClass('active');
+        self.parents('.c-card-slide__info').toggleClass('show');
+    })
+
+
     function addReadonlyInput(elem){
         $(elem).attr('readonly', 'readonly');
     }

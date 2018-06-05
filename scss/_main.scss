@@ -11963,15 +11963,18 @@ test popup
         height: 10.9rem;
         border-radius: 10.9rem;
         background-color: #bb2b7f;
+        border-top: 1px solid rgba(255, 255, 255, 0.81);
         text-align: center;
         position: relative;
         box-shadow:
-                inset 0px 8px 2px -5px rgba(255, 255, 255, 0.59),
+                inset 0px 6px 2px -5px rgba(255, 255, 255, 0.59),
                 inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2),
                 0px 2px 20px 0 rgba(0,0,0,0.36);
 
-    &:hover {
+        &:hover {
             color: #ffffff;
+            border-top: 1px solid rgba(255, 255, 255, 0.81);
+
         }
 
         &::after {
@@ -12022,6 +12025,14 @@ test popup
         .symbol-holiday-saw {
             top: 13px;
             left: 36px;
+        }
+
+        .symbol-cake-5 {
+            position: absolute;
+            top: 10px;
+            left: 31px;
+            font-size: 4.5rem;
+            fill: #fff;
         }
     }
 
@@ -13800,6 +13811,142 @@ test popup
 .pie {
     font-family: $font_serif;
 
+    &-nav {
+        position: relative;
+        padding-right: 13rem;
+
+        .holiday-assemble {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &-mix {
+        font-size: 0;
+        margin-bottom: 1.6rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        &__list {
+            min-height: 4.8rem;
+        }
+
+        &__item {
+            padding: .8rem 1.8rem;
+            margin-right: 2rem;
+            font-size: 1.6rem;
+            border-radius: .4rem;
+            background-color: #7cbd41;
+            color: #ffffff;
+            margin-bottom: 1.4rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            svg {
+                fill: #fff;
+                margin-right: 1rem;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &::after {
+                content: '';
+                border: none;
+            }
+
+            &.mixitup-control-active {
+                background-color: #c44890;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    border: 2px dashed #c44890;
+                    top: -4px;
+                    left: -4px;
+                    right: -4px;
+                    bottom: -4px;
+                }
+            }
+            &:hover {
+                background-color: #c44890;
+                color: #fff;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    border: 2px dashed #c44890;
+                    top: -4px;
+                    left: -4px;
+                    right: -4px;
+                    bottom: -4px;
+                }
+            }
+
+
+        }
+    }
+
+    &-filter {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 4.5rem;
+
+        &__col {
+            margin-right: 1.2rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:nth-child(1) {
+                .SumoSelect {
+                    width: 29rem;
+                }
+            }
+            &:nth-child(2) {
+                .SumoSelect {
+                    width: 16rem;
+                }
+            }
+            &:nth-child(3) {
+                .SumoSelect {
+                    width: 10.6rem;
+                }
+            }
+        }
+
+        &__name {
+            font-size: 2rem;
+            font-weight: 500;
+            font-family: $font_sans-serif;
+            color: #bb2b7f;
+            vertical-align: middle;
+            margin-right: 1rem;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+
+            svg {
+                fill: #bb2b7f;
+                margin-right: .8rem;
+            }
+
+        }
+    }
+
     .SumoSelect {
         width: 100%;
     }
@@ -13883,7 +14030,81 @@ test popup
         }
 
         &-download {
-            padding: 0 .7rem;
+            padding: 2.7rem .7rem 0;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            //width: 32.2%;
+
+            &__img {
+                width: 7rem;
+                border:1px solid #dcd9d3;
+                border-radius: .4rem;
+                position: relative;
+                background-color: #fff;
+                box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.1);
+                margin-right: 1.6rem;
+                overflow: hidden;
+
+                svg {
+                    fill: #dcd9d3;
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                
+                img  {
+                    display: none;
+                    position: absolute;
+                    z-index: 20;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 100%;
+                }
+            }
+
+            &__file {
+                line-height: 1;
+                position: relative;
+                input {
+                    display: none;
+                }
+
+                label {
+                    margin-top: .8rem;
+                    display: block;
+                    position: relative;
+                    font-size: 1.4rem;
+                    font-style: italic;
+                    color: $black;
+                    line-height: 1;
+                    max-width: 24rem;
+
+                    padding-left: 2.4rem;
+
+                    span {
+
+                    }
+
+                    svg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+
+                .c-form__info {
+                    position: absolute;
+                    bottom: 9px;
+                    left: 0;
+                }
+            }
+
+
         }
 
         &-btn {
@@ -13933,6 +14154,11 @@ test popup
             }
         }
 
+        .c-form__info {
+            font-size: 1.3rem;
+            color: $black;
+        }
+
     }
 
     &-filling {
@@ -13957,18 +14183,19 @@ test popup
         margin-bottom: 3rem;
 
         &__body {
-            padding: 2.4rem 4rem;
+            padding: 1.7rem 4rem;
+            position: relative;
         }
 
         &__header {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
             padding: 0 18rem;
         }
 
         &__title {
             text-align: center;
             font-size: 3rem;
-            line-height: 1.2rem;
+            line-height: 1.2;
             color: #c7368a;
             margin-bottom: 1.5rem;
         }
@@ -13986,6 +14213,41 @@ test popup
             line-height: 1.1;
             color: $black;
             padding-right: 30rem;
+        }
+
+        &__decor-1,
+        &__decor-2,
+        &__decor-3 {
+            position: absolute;
+
+            svg {
+                fill: #2e1a13;
+            }
+        }
+
+        &__decor-1 {
+            top: -12%;
+            left: 6%
+        }
+
+        &__decor-2 {
+            top: -5%;
+            right: 1%;
+
+            .symbol-celebration-kettle-left {
+                transform: rotate(-46deg);
+                font-size: 19rem;
+            }
+        }
+
+        &__decor-3 {
+            bottom: 2%;
+            right: 15%;
+
+            .symbol-cup {
+                transform: rotate(10deg);
+                font-size: 14rem;
+            }
         }
     }
 

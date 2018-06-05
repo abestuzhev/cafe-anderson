@@ -307,6 +307,10 @@
     .header-categories-banner {
         /*height: 20rem;*/
     }
+
+    .pie-form__line {
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 1380px) {

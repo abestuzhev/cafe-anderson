@@ -1252,6 +1252,66 @@ i.icon-chair {
   height: 1.1em;
   fill: #7f7d7c; }
 
+.symbol-cake-bird {
+  font-size: 13rem;
+  width: 1em;
+  height: 1.2em;
+  fill: #7f7d7c; }
+
+.symbol-celebration-kettle-left {
+  font-size: 15.7rem;
+  width: 1em;
+  height: .7em;
+  fill: #7f7d7c; }
+
+.symbol-cake-3 {
+  font-size: 2.6rem;
+  width: 1em;
+  height: 1.1em;
+  fill: #7f7d7c; }
+
+.symbol-cake-4 {
+  font-size: 2.7rem;
+  width: 1em;
+  height: .9em;
+  fill: #7f7d7c; }
+
+.symbol-rabbit-4 {
+  font-size: 2.4rem;
+  width: 1em;
+  height: .9em;
+  fill: #7f7d7c; }
+
+.symbol-magic-wand {
+  font-size: 2.2rem;
+  width: 1em;
+  height: .9em;
+  fill: #7f7d7c; }
+
+.symbol-clock-3 {
+  font-size: 2.3rem;
+  width: 1em;
+  height: 1.1em;
+  fill: #7f7d7c; }
+
+.symbol-cake-5 {
+  font-size: 5rem;
+  width: 1em;
+  height: 1em;
+  fill: #7f7d7c; }
+
+.symbol-cake-6 {
+  font-size: 4rem;
+  width: 1em;
+  height: 1.14em;
+  fill: #7f7d7c; }
+
+.symbol-clip-2 {
+  font-size: 1.7rem;
+  width: 1em;
+  height: 1em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -3753,17 +3813,34 @@ div.c-card-catalog-2 {
           box-shadow: 0px 3px 13.8px 1.2px rgba(0, 0, 0, 0.2);
   border-radius: .4rem;
   background-color: #fff;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%; }
   div.c-card-catalog-2__img {
     overflow: hidden;
     height: 32rem;
     width: 100%;
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: cover;
+    background-position: 50% 50%; }
   div.c-card-catalog-2__title {
     font-size: 1.7rem;
     line-height: 1;
     color: #2e1a13;
-    margin-bottom: .6rem; }
+    margin-bottom: .6rem;
+    cursor: pointer; }
   div.c-card-catalog-2__weight {
     font-size: 1.4rem;
     color: #515151;
@@ -3771,7 +3848,23 @@ div.c-card-catalog-2 {
     margin-bottom: .6rem; }
   div.c-card-catalog-2__body {
     background-color: #fff;
-    padding: 2rem 1.7rem; }
+    padding: 2rem 1.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
   div.c-card-catalog-2__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3785,7 +3878,9 @@ div.c-card-catalog-2 {
             justify-content: flex-start;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch; }
+            align-items: stretch;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
     div.c-card-catalog-2__footer .c-card-catalog__price {
       padding: 0 1.3rem 0 0; }
 
@@ -5217,7 +5312,16 @@ div.c-card-catalog-2 {
     position: absolute;
     top: 78%;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    -webkit-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out; }
+    .c-card-slide__info.show {
+      top: auto;
+      bottom: 0;
+      -webkit-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
     .c-card-slide__info::after {
       content: '';
       position: absolute;
@@ -5226,11 +5330,27 @@ div.c-card-catalog-2 {
       width: 100%;
       height: 1.2rem;
       background: url(../img/decor-line-waves.png) 0 0 repeat-x; }
+  .c-card-slide__dropdown {
+    position: absolute;
+    right: .8rem;
+    top: .8rem; }
+    .c-card-slide__dropdown.active {
+      -webkit-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+    .c-card-slide__dropdown::after {
+      content: '';
+      border: none; }
+    .c-card-slide__dropdown .icon-dropdown {
+      border-color: #2e1a13; }
+      .c-card-slide__dropdown .icon-dropdown svg {
+        fill: #2e1a13; }
   .c-card-slide__title {
     font-size: 1.7rem;
     color: #2e1a13;
-    margin-bottom: .3rem;
-    padding-right: 2rem; }
+    line-height: 1.2;
+    padding-right: 2rem;
+    margin-bottom: .5rem; }
   .c-card-slide__text {
     color: #555451;
     font-size: 1.4rem;
@@ -15638,12 +15758,14 @@ test popup
     height: 10.9rem;
     border-radius: 10.9rem;
     background-color: #bb2b7f;
+    border-top: 1px solid rgba(255, 255, 255, 0.81);
     text-align: center;
     position: relative;
-    -webkit-box-shadow: inset 0px 8px 2px -5px rgba(255, 255, 255, 0.59), inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2), 0px 2px 20px 0 rgba(0, 0, 0, 0.36);
-            box-shadow: inset 0px 8px 2px -5px rgba(255, 255, 255, 0.59), inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2), 0px 2px 20px 0 rgba(0, 0, 0, 0.36); }
+    -webkit-box-shadow: inset 0px 6px 2px -5px rgba(255, 255, 255, 0.59), inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2), 0px 2px 20px 0 rgba(0, 0, 0, 0.36);
+            box-shadow: inset 0px 6px 2px -5px rgba(255, 255, 255, 0.59), inset 0px -5px 5px -2px rgba(0, 0, 0, 0.2), 0px 2px 20px 0 rgba(0, 0, 0, 0.36); }
     .holiday-assemble:hover {
-      color: #ffffff; }
+      color: #ffffff;
+      border-top: 1px solid rgba(255, 255, 255, 0.81); }
     .holiday-assemble::after {
       content: '';
       border: none; }
@@ -15680,6 +15802,12 @@ test popup
     .holiday-assemble .symbol-holiday-saw {
       top: 13px;
       left: 36px; }
+    .holiday-assemble .symbol-cake-5 {
+      position: absolute;
+      top: 10px;
+      left: 31px;
+      font-size: 4.5rem;
+      fill: #fff; }
   .holiday-box {
     border: .2rem solid #cacaca;
     border-radius: 4px;
@@ -16994,6 +17122,132 @@ test popup
 /*pie------------------------*/
 .pie {
   font-family: "PT Serif Caption"; }
+  .pie-nav {
+    position: relative;
+    padding-right: 13rem; }
+    .pie-nav .holiday-assemble {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0; }
+  .pie-mix {
+    font-size: 0;
+    margin-bottom: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .pie-mix__list {
+      min-height: 4.8rem; }
+    .pie-mix__item {
+      padding: .8rem 1.8rem;
+      margin-right: 2rem;
+      font-size: 1.6rem;
+      border-radius: .4rem;
+      background-color: #7cbd41;
+      color: #ffffff;
+      margin-bottom: 1.4rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pie-mix__item svg {
+        fill: #fff;
+        margin-right: 1rem; }
+      .pie-mix__item:last-child {
+        margin-right: 0; }
+      .pie-mix__item::after {
+        content: '';
+        border: none; }
+      .pie-mix__item.mixitup-control-active {
+        background-color: #c44890; }
+        .pie-mix__item.mixitup-control-active::before {
+          content: '';
+          position: absolute;
+          border: 2px dashed #c44890;
+          top: -4px;
+          left: -4px;
+          right: -4px;
+          bottom: -4px; }
+      .pie-mix__item:hover {
+        background-color: #c44890;
+        color: #fff;
+        position: relative; }
+        .pie-mix__item:hover::before {
+          content: '';
+          position: absolute;
+          border: 2px dashed #c44890;
+          top: -4px;
+          left: -4px;
+          right: -4px;
+          bottom: -4px; }
+  .pie-filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4.5rem; }
+    .pie-filter__col {
+      margin-right: 1.2rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .pie-filter__col:last-child {
+        margin-right: 0; }
+      .pie-filter__col:nth-child(1) .SumoSelect {
+        width: 29rem; }
+      .pie-filter__col:nth-child(2) .SumoSelect {
+        width: 16rem; }
+      .pie-filter__col:nth-child(3) .SumoSelect {
+        width: 10.6rem; }
+    .pie-filter__name {
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: "BebasNeue";
+      color: #bb2b7f;
+      vertical-align: middle;
+      margin-right: 1rem;
+      text-shadow: 1px 1px 2px white; }
+      .pie-filter__name svg {
+        fill: #bb2b7f;
+        margin-right: .8rem; }
   .pie .SumoSelect {
     width: 100%; }
   .pie .SumoSelect > .CaptionCont {
@@ -17068,7 +17322,72 @@ test popup
       width: 45.5%;
       padding: 0 .7rem; }
     .pie-form-download {
-      padding: 0 .7rem; }
+      padding: 2.7rem .7rem 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+      .pie-form-download__img {
+        width: 7rem;
+        border: 1px solid #dcd9d3;
+        border-radius: .4rem;
+        position: relative;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 1px 6px 0 rgba(0, 0, 0, 0.1);
+        margin-right: 1.6rem;
+        overflow: hidden; }
+        .pie-form-download__img svg {
+          fill: #dcd9d3;
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+        .pie-form-download__img img {
+          display: none;
+          position: absolute;
+          z-index: 20;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          height: 100%; }
+      .pie-form-download__file {
+        line-height: 1;
+        position: relative; }
+        .pie-form-download__file input {
+          display: none; }
+        .pie-form-download__file label {
+          margin-top: .8rem;
+          display: block;
+          position: relative;
+          font-size: 1.4rem;
+          font-style: italic;
+          color: #555451;
+          line-height: 1;
+          max-width: 24rem;
+          padding-left: 2.4rem; }
+          .pie-form-download__file label svg {
+            position: absolute;
+            top: 0;
+            left: 0; }
+        .pie-form-download__file .c-form__info {
+          position: absolute;
+          bottom: 9px;
+          left: 0; }
     .pie-form-btn {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -17110,6 +17429,9 @@ test popup
         font-size: 1.6rem;
         color: #555451;
         margin: 0; }
+    .pie-form .c-form__info {
+      font-size: 1.3rem;
+      color: #555451; }
   .pie-filling {
     margin-bottom: 1rem; }
     .pie-filling__title {
@@ -17126,14 +17448,15 @@ test popup
             box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
     margin-bottom: 3rem; }
     .pie-description__body {
-      padding: 2.4rem 4rem; }
+      padding: 1.7rem 4rem;
+      position: relative; }
     .pie-description__header {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       padding: 0 18rem; }
     .pie-description__title {
       text-align: center;
       font-size: 3rem;
-      line-height: 1.2rem;
+      line-height: 1.2;
       color: #c7368a;
       margin-bottom: 1.5rem; }
     .pie-description__subtitle {
@@ -17147,6 +17470,29 @@ test popup
       line-height: 1.1;
       color: #555451;
       padding-right: 30rem; }
+    .pie-description__decor-1, .pie-description__decor-2, .pie-description__decor-3 {
+      position: absolute; }
+      .pie-description__decor-1 svg, .pie-description__decor-2 svg, .pie-description__decor-3 svg {
+        fill: #2e1a13; }
+    .pie-description__decor-1 {
+      top: -12%;
+      left: 6%; }
+    .pie-description__decor-2 {
+      top: -5%;
+      right: 1%; }
+      .pie-description__decor-2 .symbol-celebration-kettle-left {
+        -webkit-transform: rotate(-46deg);
+            -ms-transform: rotate(-46deg);
+                transform: rotate(-46deg);
+        font-size: 19rem; }
+    .pie-description__decor-3 {
+      bottom: 2%;
+      right: 15%; }
+      .pie-description__decor-3 .symbol-cup {
+        -webkit-transform: rotate(10deg);
+            -ms-transform: rotate(10deg);
+                transform: rotate(10deg);
+        font-size: 14rem; }
   .pie-conditions {
     padding: 2.6rem 2.6rem;
     font-family: "PT Serif Caption";
