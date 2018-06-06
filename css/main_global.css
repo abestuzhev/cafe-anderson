@@ -3910,7 +3910,7 @@ div.c-card-catalog-2 {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
   .c-card-publication__text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.15;
     text-align: center;
     color: #555451; }
@@ -10189,7 +10189,8 @@ test popup
       position: relative;
       z-index: 3; }
   .creators-history {
-    font-family: "PT Serif Caption"; }
+    font-family: "PT Serif Caption";
+    font-size: 1.5rem; }
     .creators-history__box {
       margin-bottom: 1.6rem; }
     .creators-history__title {
@@ -10198,7 +10199,7 @@ test popup
       margin-bottom: 1.8rem;
       text-transform: uppercase; }
     .creators-history p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       line-height: 1.4;
       color: #555451;
       margin-bottom: 1.5rem; }
@@ -10274,7 +10275,7 @@ test popup
       color: #9b806f;
       margin-bottom: .5rem; }
     .creators-contact__text {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       line-height: 1.15;
       color: #555451;
       margin-bottom: 1rem; }
