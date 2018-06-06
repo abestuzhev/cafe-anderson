@@ -14386,6 +14386,7 @@ test popup
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: stretch;
+            margin-bottom: 2.4rem;
         }
 
         &__col {
@@ -14398,6 +14399,48 @@ test popup
                 flex: 0 0 58%;
                 max-width: 58%;
             }
+        }
+
+        &-content {
+            &__grid {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                margin-bottom: 2.4rem;
+            }
+
+            &__col {
+                &:nth-child(1) {
+                    width: 62%;
+                }
+                &:nth-child(2) {
+                    width: 38%;
+                    padding-left: 1.3rem;
+                    line-height: .9;
+                }
+            }
+        }
+
+        &__note {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #8b8b8b;
+        }
+
+        .SumoSelect {
+            width: 100%;
+            max-width: 33rem;
+        }
+
+        .SumoSelect > .CaptionCont {
+            padding: 1.3rem 1.6rem;
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+
+        .SumoSelect.open > .optWrapper {
+            top: 4.1rem;
         }
     }
 }

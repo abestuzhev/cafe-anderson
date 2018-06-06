@@ -4837,3 +4837,15 @@ div.c-card-catalog-2 {
         line-height: 1.2;
     }
 }
+
+.c-label-decor {
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    padding-right: 1rem;
+
+    svg {
+        fill: #c44890;
+    }
+}

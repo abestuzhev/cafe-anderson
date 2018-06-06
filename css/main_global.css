@@ -1312,6 +1312,12 @@ i.icon-chair {
   height: 1em;
   fill: #7f7d7c; }
 
+.symbol-book {
+  font-size: 2.2rem;
+  width: 1em;
+  height: 1em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -5356,6 +5362,15 @@ div.c-card-catalog-2 {
     font-size: 1.4rem;
     font-style: italic;
     line-height: 1.2; }
+
+.c-label-decor {
+  display: inline-block;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  padding-right: 1rem; }
+  .c-label-decor svg {
+    fill: #c44890; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -17595,7 +17610,8 @@ test popup
             justify-content: space-between;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch; }
+            align-items: stretch;
+    margin-bottom: 2.4rem; }
   .pie-order__col:nth-child(1) {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 41.666667%;
@@ -17607,3 +17623,37 @@ test popup
         -ms-flex: 0 0 58%;
             flex: 0 0 58%;
     max-width: 58%; }
+  .pie-order-content__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-bottom: 2.4rem; }
+  .pie-order-content__col:nth-child(1) {
+    width: 62%; }
+  .pie-order-content__col:nth-child(2) {
+    width: 38%;
+    padding-left: 1.3rem;
+    line-height: .9; }
+  .pie-order__note {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #8b8b8b; }
+  .pie-order .SumoSelect {
+    width: 100%;
+    max-width: 33rem; }
+  .pie-order .SumoSelect > .CaptionCont {
+    padding: 1.3rem 1.6rem;
+    font-size: 1.4rem;
+    font-style: italic; }
+  .pie-order .SumoSelect.open > .optWrapper {
+    top: 4.1rem; }
