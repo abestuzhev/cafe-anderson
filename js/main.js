@@ -182,7 +182,7 @@ $(document).ready(function ($) {
 
 
 
-    // if($('div').hasClass('pie-slider-for') && $('div').hasClass('pie-slider-nav')){
+    if($('div').hasClass('js-slick')){
         $('.pie-slider-for').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -201,7 +201,7 @@ $(document).ready(function ($) {
             focusOnSelect: true,
             slide: 'div'
         });
-    // }
+    }
 
 
     /*загрузка файлов на странице с кондитерскими изделиями*/
