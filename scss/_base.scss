@@ -3021,6 +3021,7 @@ div.c-card-catalog-2 {
         -webkit-background-size: cover;
         background-size: cover;
         background-position: 50% 50%;
+        cursor: pointer;
 
         img {
             //width: 100%;
@@ -3034,6 +3035,7 @@ div.c-card-catalog-2 {
         color: #2e1a13;
         margin-bottom: .6rem;
         cursor: pointer;
+        min-height: 3.5rem;
     }
 
     &__weight {
@@ -3058,7 +3060,7 @@ div.c-card-catalog-2 {
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: stretch;
-        align-self:flex-end;
+        align-self:stretch;
 
         .c-card-catalog__price {
             padding: 0 1.3rem 0 0;
@@ -3309,8 +3311,8 @@ div.c-card-catalog-2 {
     }
     
     &__slider {
-        width: 92%;
-        margin: 0 4%;
+        width: 95%;
+        margin: 0 3%;
         
         .c-card-catalog {
             background-color: #fff;
@@ -3500,11 +3502,39 @@ div.c-card-catalog-2 {
     & > div {
         margin-right: 1.8rem;
     }
+
+    &__img {
+        display: block;
+        width: 3.2rem;
+        height: 2.6rem;
+        margin-right: .7rem;
+        border: 2px solid #ececec;
+        border-radius: .4rem;
+        background-color: #fff;
+        position: relative;
+
+        &::after {
+            content: '';
+            border: none;
+        }
+
+        &:hover {
+            border: 2px solid #ececec;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            fill: #c2c2c2;
+        }
+    }
     
     &__name {
         font-size: 1.4rem;
         font-style: italic;
-        line-height: 1.29;
+        line-height: 1.1;
         color: #515151;
         width: 7rem;
     }
@@ -4803,9 +4833,10 @@ div.c-card-catalog-2 {
         position: absolute;
         right: .8rem;
         top: .8rem;
+        transform: rotate(-180deg);
 
         &.active {
-            transform: rotate(-180deg);
+            transform: rotate(0);
         }
 
         &::after {
@@ -4844,8 +4875,26 @@ div.c-card-catalog-2 {
     position: relative;
     z-index: 2;
     padding-right: 1rem;
+    color: #553023;
+    font-style: italic;
+    font-size: 1.6rem;
 
     svg {
         fill: #c44890;
     }
 }
+
+.fancybox-container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.fancybox-toolbar {
+    display: none;
+}
+
+.compensate-for-scrollbar {
+    margin: 0 !important;
+}
+
+

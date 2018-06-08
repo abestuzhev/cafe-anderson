@@ -170,6 +170,29 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    if(true){
+        $('.pie-slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.pie-slider-nav'
+        });
+
+        $('.pie-slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 500,
+            asNavFor: '.pie-slider-for',
+            // dots: true,
+            // centerMode: true,
+            focusOnSelect: true,
+            slide: 'div'
+        });
+    }
+
+
     /*загрузка файлов на странице с кондитерскими изделиями*/
     $("#pie-form-download__file").on('change', function () {
         if (this.files && this.files[0]) {
@@ -181,9 +204,6 @@ $(document).ready(function ($) {
     function imageIsLoaded(e) {
         $('#pie-form-download__img').attr('src', e.target.result).show();
     };
-
-
-
 
 
     /*resize img c-card-catalog-2__img*/
@@ -1063,7 +1083,7 @@ $(document).ready(function ($) {
     $('.c-card-product__slider').owlCarousel({
         loop:true,
         // nav:true,
-        margin:20,
+        // margin:20,
         // items: 4,
         // center: true,
         responsive:{
@@ -1413,6 +1433,7 @@ $(document).ready(function ($) {
     showPopup(".excursion-btn", '.popup-excursion-order');
 
     showPopup(".js-show-cake-order", '.popup-cake-order');
+    showPopup(".js-show-pie-order", '.popup-pie');
 
 
 
@@ -1426,6 +1447,12 @@ $(document).ready(function ($) {
         e.preventDefault();
         $(this).parents('.popup-event').removeClass('is-visible');
         $('.popup-event-one-click').addClass('is-visible');
+    });
+
+    $(document).on('click', '#pie-order__one-click', function (e) {
+        e.preventDefault();
+        $(this).parents('.popup-pie').removeClass('is-visible');
+        $('.popup-pie-one-click').addClass('is-visible');
     });
 
 	$(document).on('click', '.factory-point .c-button', function (e) {
@@ -1588,11 +1615,12 @@ $(document).ready(function ($) {
         // var div2 = $('.popup-mini');
 
 
-        function hideOutZone(elem, elem2, elem3, elem4){
+        function hideOutZone(elem, elem2, elem3, elem4, elem5){
             var div = $(elem);
             var div2 = $(elem2);
             var div3 = $(elem3);
             var div4 = $(elem4);
+            var div5 = $(elem5);
             if (!div.is(e.target)
                 && div.has(e.target).length === 0
                 && !div2.is(e.target)
@@ -1600,7 +1628,9 @@ $(document).ready(function ($) {
                 && !div3.is(e.target)
                 && div3.has(e.target).length === 0
                 && !div4.is(e.target)
-                && div4.has(e.target).length === 0) {
+                && div4.has(e.target).length === 0
+                && !div5.is(e.target)
+                && div5.has(e.target).length === 0){
                 // div.removeClass(instrumentHide); // скрываем его
                 // console.log('true');
                 div.parents('.mfp-wrap').removeClass('is-visible');
@@ -1625,6 +1655,10 @@ $(document).ready(function ($) {
                 div4.parents('.mfp-wrap').removeClass('is-visible');
                 div4.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div4.parents('html').removeClass('lock-html').css('margin-right','0');
+
+                div5.parents('.mfp-wrap').removeClass('is-visible');
+                div5.parents('html').find('.mfp-bg ').removeClass('is-visible');
+                div5.parents('html').removeClass('lock-html').css('margin-right','0');
             }
 
         }
@@ -1645,7 +1679,7 @@ $(document).ready(function ($) {
 
 
         if (e.which === 1) {
-            hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup');
+            hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup', '.fancybox-container');
         }
 
     });

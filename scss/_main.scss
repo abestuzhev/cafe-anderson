@@ -1472,7 +1472,7 @@ main {
         &__name {
             font-style: italic;
             font-size: 1.6rem;
-            line-height: 1;
+            line-height: 1.3;
             color: #553023;
 
             span {
@@ -1483,10 +1483,14 @@ main {
             }
         }
 
+       span.popup-mini-product__cake {
+            color: #c44890;
+        }
+
         &__price {
             font-size: 1.6rem;
             font-style: italic;
-            line-height: 1.5;
+            line-height: 1.3;
             color: #553023;
         }
     }
@@ -1508,6 +1512,33 @@ main {
         &::after {
             content: '';
             border: none;
+        }
+    }
+
+    &__note {
+        text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: $black;
+        font-style: italic;
+        padding: 0 1.4rem;
+    }
+
+    &__total {
+        color: #553023;
+        font-style: italic;
+        font-size: 1.6rem;
+        vertical-align: bottom;
+        line-height: 1;
+        padding: 1.2rem 0;
+
+        &-number {
+            font-family: $font_sans-serif;
+            font-size: 4.4rem;
+            vertical-align: bottom;
+            margin-left: 1rem;
+            font-style: normal;
+            font-weight: 500;
         }
     }
 
@@ -1599,10 +1630,11 @@ main {
         }
     }
 
-
-
-
-
+    .cake-order-final__total span {
+        color: #553023;
+        font-size: 4.4rem;
+        line-height: 1;
+    }
 
     .icon-round-cake {
         position: absolute;
@@ -1624,10 +1656,171 @@ main {
         transform: rotate(15deg);
     }
 
-    .popup-mini {
+    .popup-mini-product {
+        margin-bottom: 2rem;
+    }
 
+    .popup-mini__btn {
+        text-transform: uppercase;
+        background-color: #c44890;
+        margin-bottom: 1.2rem;
+    }
+
+    .c-card-supplements {
+        align-items: flex-start;
+    }
+
+    .c-card-supplements__name {
+        width: 14.6rem;
+    }
+
+    .c-card-product-supplements {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
+    .c-card-product-supplements__item {
+        padding: 0 1.5rem;
+    }
+
+    .c-card-supplements__price {
+        margin-top: .5rem;
+    }
+
+    .c-card-supplements > div {
+        margin-right: .8rem;
+    }
+
+    .catalog-recommend {
+        margin-bottom: 0;
+    }
+
+    .c-card-catalog--mini {
+        height: 15.6rem;
+    }
+
+    .catalog-recommend .c-card-catalog__price {
+        font-size: 2.5rem;
+    }
+
+    .icon-shopping-cart {
+        width: 1.6rem;
+        height: 1.7rem;
+    }
+
+    .c-card-product__slider .c-card-catalog__footer {
+        align-items: stretch;
+    }
+
+    .c-card-catalog--mini .c-card-catalog__img {
+        bottom: auto;
+        left: 50%;
+        right: auto;
+        top: 50%;
+        transform:translate(-50%, -50%);
+    }
+
+    .owl-carousel .owl-stage-outer {
+        //padding: 0 10px;
     }
 }
+/*popup-pie-one-click----------------------------*/
+.popup-pie-one-click {
+    .popup {
+        max-width: 100rem;
+        width: 100rem;
+
+        &-layout {
+            overflow: visible;
+        }
+
+        &-title {
+            text-align: left;
+            padding: 1.8rem 4rem 1.4rem;
+            font-size: 1.9rem;
+            color: #2e1a13;
+
+            &__text {
+                padding-left: 4rem;
+                position: relative;
+            }
+        }
+
+        &-body {
+            padding: 3rem 4rem 0;
+            background-color: #fff;
+        }
+
+        &-mini {
+            .popup-title {
+                color: #553023;
+                font-size: 1.7rem;
+                padding: 1.8rem 2rem 1.4rem;
+            }
+
+            .popup-body {
+                padding: 1.7rem;
+            }
+        }
+    }
+
+    .cake-order-final__list .c-button {
+        background-color: #c44890;
+    }
+
+    .order-delivery-custom__grid {
+        display: block;
+    }
+
+    .popup-body .cake-order-contact {
+        margin-left: -.8rem;
+        margin-right: -.8rem;
+    }
+
+    .cake-order-time {
+        margin-right: -.8rem;
+        margin-left: -.8rem;
+
+        .popup-form__item {
+            margin-right: 0;
+            padding: 0 .7rem;
+            margin-left: .1rem;
+            margin-right: .1rem;
+
+            &:nth-child(1) {
+                width: 29%;
+            }
+            &:nth-child(2) {
+                width: 29%;
+            }
+            &:nth-child(3) {
+                width: 42%;
+            }
+        }
+
+        .c-form__attention {
+            padding-top: 3rem;
+            color: $black;
+        }
+    }
+
+    .c-label {
+        display: inline-block;
+        background-color: #fff;
+        position: relative;
+        z-index: 2;
+        padding-right: 1rem;
+        color: #553023;
+        font-style: italic;
+        font-size: 1.6rem;
+        margin-bottom: .4rem;
+
+        svg {
+            fill: #c44890;
+        }
+    }
+}
+
 
 /*----------------------------------------------*/
 #tooltip {
@@ -4577,10 +4770,28 @@ test popup
     width: 94%;
     margin: 0 auto;
 
+    &__title {
+        font-size: 1.5rem;
+        line-height: 1;
+        color: #2e1a13;
+        margin-bottom: .7rem;
+        min-height: 3.3rem;
+
+        a {
+            color: #2e1a13;
+
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+    }
+
     &__item {
         //width: 300px;
         //height: 120px;
         //background-color: #eee;
+        padding: 0 1rem;
     }
 
     //.owl-stage-outer {
@@ -8295,7 +8506,7 @@ test popup
             
             .popup-form__item {
                 padding: 0 .8rem;
-                width: 33.3%;
+                width: 33.3333333%;
             }
 
             &::after {
@@ -13984,19 +14195,26 @@ test popup
                 margin-right: 0;
             }
 
+            select {
+                height: 4.7rem;
+            }
+
             &:nth-child(1) {
+                select,
                 .SumoSelect {
                     width: 29rem;
                 }
             }
             &:nth-child(2) {
+                select,
                 .SumoSelect {
                     width: 16rem;
                 }
             }
             &:nth-child(3) {
+                select,
                 .SumoSelect {
-                    width: 10.6rem;
+                    width: 11.5rem;
                 }
             }
         }
@@ -14018,12 +14236,16 @@ test popup
         }
     }
 
+    .SelectBox {
+        font-size: 1.4rem;
+    }
     .SumoSelect {
         width: 100%;
     }
 
     .SumoSelect > .CaptionCont {
-        padding: 1.3rem 1.6rem;
+        padding: 1.2rem 1.6rem;
+        border-radius: .4rem;
     }
     .SumoSelect.open > .optWrapper {
         top: 4.1rem;
@@ -14154,6 +14376,7 @@ test popup
                     color: $black;
                     line-height: 1;
                     max-width: 24rem;
+                    cursor:pointer;
 
                     padding-left: 2.4rem;
 
@@ -14239,6 +14462,9 @@ test popup
             color: #9b806f;
             margin-bottom: 1.8rem;
 
+        }
+
+        .c-card-slide__dropdown {
         }
     }
 
@@ -14391,13 +14617,13 @@ test popup
 
         &__col {
             &:nth-child(1) {
-                flex: 0 0 41.666667%;
-                max-width: 41.666667%;
+                flex: 0 0 45%;
+                max-width: 45%;
                 padding-right: 3rem;
             }
             &:nth-child(2) {
-                flex: 0 0 58%;
-                max-width: 58%;
+                flex: 0 0 55%;
+                max-width: 55%;
             }
         }
 
@@ -14441,6 +14667,47 @@ test popup
 
         .SumoSelect.open > .optWrapper {
             top: 4.1rem;
+        }
+    }
+
+    &-slider {
+        &-for {
+            width: 100%;
+            border:1px solid #bbbcbe;
+            cursor:pointer;
+            font-size: 0;
+
+            &__item {
+                width: 100%;
+                height: 270px;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &-nav {
+            margin-left: -1rem;
+            margin-right: -1rem;
+            margin-bottom: .8rem;
+            &__item {
+                width: 12.3rem;
+                height: 11rem;
+                cursor: pointer;
+                padding: 0 1rem;
+
+                span {
+                    height: 100%;
+                    display: block;
+                    border:1px solid #bbbcbe;
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                }
+            }
+
         }
     }
 }
