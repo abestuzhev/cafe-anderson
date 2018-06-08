@@ -8055,6 +8055,16 @@ main {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+.popup-pie .c-form__attention {
+  color: #555451; }
+
+.popup-pie .cake-order-composition {
+  max-height: 3.1rem;
+  overflow: hidden; }
+  .popup-pie .cake-order-composition + a {
+    font-size: 1.4rem;
+    font-style: italic; }
+
 /*popup-pie-one-click----------------------------*/
 .popup-pie-one-click .popup {
   max-width: 100rem;
@@ -17862,9 +17872,9 @@ test popup
             align-items: stretch;
     margin-bottom: 2.4rem; }
   .pie-order-content__col:nth-child(1) {
-    width: 62%; }
+    width: 59%; }
   .pie-order-content__col:nth-child(2) {
-    width: 38%;
+    width: 41%;
     padding-left: 1.3rem;
     line-height: .9; }
   .pie-order__note {
@@ -17873,7 +17883,7 @@ test popup
     color: #8b8b8b; }
   .pie-order .SumoSelect {
     width: 100%;
-    max-width: 33rem; }
+    max-width: 29rem; }
   .pie-order .SumoSelect > .CaptionCont {
     padding: 1.3rem 1.6rem;
     font-size: 1.4rem;

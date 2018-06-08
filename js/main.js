@@ -171,7 +171,18 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
-    if(true){
+    if($('div').hasClass('js-readmore')){
+        $('.cake-order-composition').readmore({
+            speed: 75,
+            moreLink: '<a href="#">Подробный состав</a>',
+            lessLink: '<a href="#">Свернуть состав</a>'
+        });
+    }
+
+
+
+
+    // if($('div').hasClass('pie-slider-for') && $('div').hasClass('pie-slider-nav')){
         $('.pie-slider-for').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -190,7 +201,7 @@ $(document).ready(function ($) {
             focusOnSelect: true,
             slide: 'div'
         });
-    }
+    // }
 
 
     /*загрузка файлов на странице с кондитерскими изделиями*/

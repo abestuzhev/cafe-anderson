@@ -1720,10 +1720,23 @@ main {
         transform:translate(-50%, -50%);
     }
 
-    .owl-carousel .owl-stage-outer {
-        //padding: 0 10px;
+    .c-form__attention {
+        color: $black;
+    }
+
+    .cake-order-composition {
+        max-height: 3.1rem;
+        overflow: hidden;
+
+        & + a {
+            font-size: 1.4rem;
+            font-style: italic;
+        }
     }
 }
+
+
+
 /*popup-pie-one-click----------------------------*/
 .popup-pie-one-click {
     .popup {
@@ -14638,10 +14651,10 @@ test popup
 
             &__col {
                 &:nth-child(1) {
-                    width: 62%;
+                    width: 59%;
                 }
                 &:nth-child(2) {
-                    width: 38%;
+                    width: 41%;
                     padding-left: 1.3rem;
                     line-height: .9;
                 }
@@ -14656,7 +14669,7 @@ test popup
 
         .SumoSelect {
             width: 100%;
-            max-width: 33rem;
+            max-width: 29rem;
         }
 
         .SumoSelect > .CaptionCont {
