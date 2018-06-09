@@ -9479,18 +9479,19 @@ test popup
         .cafe-info-card__btn-icon {
           display: inline-block;
           width: 2.3rem;
-          height: 2.3rem;
+          height: 2rem;
           vertical-align: top;
           overflow: hidden;
           -webkit-transform: rotate(-19deg);
               -ms-transform: rotate(-19deg);
-                  transform: rotate(-19deg); }
+                  transform: rotate(-19deg);
+          margin-right: .3rem; }
           .cafe-info-card__btn-icon svg.c-symbol {
             top: 1px;
             left: 2px;
             stroke: #fff;
             fill: transparent;
-            margin-right: .4rem; }
+            font-size: 2.1rem; }
       .cafe-info-card.v2 .cafe-info__item-tel .cafe-info__item-col:first-child {
         position: absolute;
         margin: 0; }

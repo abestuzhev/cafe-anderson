@@ -3622,17 +3622,18 @@ test popup
                 &-icon {
                     display: inline-block;
                     width: 2.3rem;
-                    height: 2.3rem;
+                    height: 2rem;
                     vertical-align: top;
                     overflow: hidden;
                     transform: rotate(-19deg);
+                    margin-right: .3rem;
 
                     svg.c-symbol {
                         top: 1px;
                         left: 2px;
                         stroke: #fff;
                         fill: transparent;
-                        margin-right: .4rem;
+                        font-size: 2.1rem;
                     }
                 }
             }
