@@ -36,6 +36,27 @@
     /*}*/
 }
 
+
+@media (max-width: 1350px) {
+    .cafe-info-card__left {
+        width: 68%;
+    }
+
+    .cafe-info-card__right {
+        width: 32%;
+    }
+}
+
+@media (max-width: 1190px) {
+    .cafe-info-card__left {
+        width: 62%;
+    }
+
+    .cafe-info-card__right {
+        width: 38%;
+    }
+}
+
 @media (min-width: 1340px) {
     .factory-layout[data-simplebar] {
         overflow: visible !important;
@@ -282,7 +303,7 @@
     }
 
     .cafe-info-card__right {
-        width: 20%;
+        width: 23%;
     }
 
 
@@ -312,6 +333,7 @@
         justify-content: flex-start;
     }
 }
+
 
 @media (max-width: 1380px) {
     .home-cafe {
@@ -5438,5 +5460,271 @@
 @media (max-width: 415px) {
     .catalog-col-4 .catalog-list__item {
         width: 100%;
+    }
+}
+
+
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+
+
+@media (max-width: 1390px) {
+    .popup-poster .popup {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        background: #fff;
+        padding: 0 20px 20px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .popup-poster .popup-box {
+        overflow: hidden;
+    }
+
+    .popup-poster__title {
+        top: 0;
+    }
+    .popup-poster__title span {
+        font-size: 8rem;
+    }
+
+    .popup-poster__body {
+        padding: 0;
+    }
+
+    .popup-poster__hash {
+        line-height: .8;
+        top: 15px;
+    }
+
+    .popup-poster__hash span  {
+        padding: .1em .6em;
+    }
+
+    .popup-poster__grid {
+        margin-left: -18px;
+        margin-right: -18px;
+    }
+
+    .popup-poster__col {
+        padding: 0 18px;
+    }
+
+    .popup-poster__col:nth-child(1) {
+        width: 43%;
+    }
+
+    .popup-poster__col:nth-child(2) {
+        width: 57%;
+    }
+
+    .popup-poster .poster-card--2 .poster-card__body .c-symbol {
+        top: -9%;
+        left: 70%;
+    }
+    .popup-poster .popup-close {
+        background-color: #fdf7e8;
+    }
+
+    .popup-poster__header {
+        margin-top: 2rem;
+        top: 0;
+    }
+    .popup-poster .popup-close {
+        right: 0rem;
+        top: -20px;
+    }
+
+}
+
+
+@media (max-width: 1130px) {
+    .popup-poster__header {
+        height: auto;
+        text-align: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .popup-poster__hash {
+        position: static;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .popup-poster__title {
+        position: static;
+    }
+
+    .popup-poster__title span {
+        padding: .03em 1.2em;
+    }
+
+    .popup-poster .poster-card--1 .poster-card__header .c-symbol {
+        top: 8%;
+        left: 34%;
+    }
+
+    .popup-poster .poster-card--2 .poster-card__header .c-symbol {
+        top: 5%;
+        left: 40%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .popup-poster__grid {
+        display: block;
+    }
+    .popup-poster__col {
+        width: 100% !important;
+    }
+
+    .popup-poster .poster-banner {
+        margin: 0 auto;
+    }
+
+    .popup-poster .poster-card__day {
+    }
+
+    .popup-poster .poster-card--1 .poster-card__header .c-symbol {
+        left: 16rem;
+    }
+    .popup-poster .poster-card--2 .poster-card__header .c-symbol,
+    .popup-poster .poster-card--3 .poster-card__header .c-symbol {
+        left: 20rem;
+    }
+}
+
+@media (max-width: 980px) {
+    .popup-poster__title span {
+        font-size: 6rem;
+        padding: .16em .2em;
+        background-position: 50% 50%;
+    }
+
+    .popup-poster__hash span {
+        font-size: 5rem;
+    }
+
+    .popup-poster .poster-card__text {
+        font-size: 1.6rem;
+    }
+
+
+}
+@media (max-width: 650px) {
+    .popup-poster .poster-banner {
+        width: 30rem;
+        height: 15rem;
+        padding-top: 1rem;
+    }
+
+    .symbol-line-decor {
+        display: none;
+    }
+
+    .popup-poster .poster-banner__left .poster-banner__week {
+        font-size: 3.5rem;
+    }
+
+    .popup-poster .poster-banner__left .poster-banner__text {
+        font-size: 3.3rem;
+    }
+    .popup-poster .poster-banner__left .poster-banner__text span {
+        font-size: 4.7rem;
+    }
+
+    .popup-poster .poster-banner__left {
+        padding: 0 1rem 0 3rem;
+    }
+
+    .popup-poster .poster-banner__right {
+        padding: 0;
+    }
+
+    .popup-poster .poster-banner__right .poster-banner__text {
+        font-size: 6.3rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .popup-poster__title span {
+        font-size: 4.5rem;
+    }
+
+    .popup-poster__hash span {
+        font-size: 4rem;
+    }
+
+    .popup-poster__header {
+        margin-top: 1rem;
+    }
+
+    .popup-poster .popup-close {
+        top: -1rem;
+    }
+
+    .popup-poster .poster-card__day {
+        font-size: 4rem;
+    }
+
+    .popup-poster .poster-card__decor-1 {
+        width: 10rem;
+        height: 5.3rem;
+    }
+
+    .popup-poster .poster-card__decor-2 {
+        width: 12rem;
+        height: 5.3rem;
+    }
+
+    .popup-poster .poster-card__decor-3 {
+        width: 13.6rem;
+        height: 5.3rem;
+    }
+
+    .symbol-combo-1 {
+        font-size: 12.7rem;
+    }
+
+    .symbol-combo-2 {
+        font-size: 17.2rem;
+    }
+
+    .symbol-combo-3 {
+        font-size: 8.4rem;
+    }
+
+    .symbol-combo-4 {
+        font-size: 14.7rem;
+    }
+
+    .symbol-combo-5 {
+        font-size: 4.1rem;
+    }
+
+    .popup-poster .poster-card__title {
+        font-size: 4.6rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .poster-card__text {
+        display: none;
+    }
+
+    .poster-card__body .c-symbol,
+    .poster-card__header .c-symbol {
+        display: none;
+    }
+
+    .poster-card .c-decor-line-heart svg {
+        display: block;
     }
 }

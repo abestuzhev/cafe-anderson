@@ -1888,7 +1888,7 @@ a.c-button {
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: stretch;
-        padding-top: 1.6rem;
+        //padding-top: 1.6rem;
         border-top: 1px solid #cec9c0;
         
         &__item {
@@ -4000,6 +4000,36 @@ div.c-card-catalog-2 {
     background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+.c-decor-line-heart {
+    position: relative;
+    width: auto;
+    height: .2rem;
+    border-bottom: 2px dotted #c44890;
+    margin: 0 20px;
+
+    &__left,
+    &__right {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        svg {
+            fill: #c44890;
+        }
+    }
+    &__left {
+        top: -10px;
+        left: -12px;
+    }
+
+    &__right {
+        top: 11px;
+        right: -12px;
+        transform: translateY(-50%) rotate(-180deg);
+
+    }
+
 }
 
 /*c-all-price----------------------------------------*/

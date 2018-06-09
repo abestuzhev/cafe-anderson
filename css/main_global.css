@@ -1330,6 +1330,60 @@ i.icon-chair {
   height: 1em;
   fill: #7f7d7c; }
 
+.symbol-line-decor {
+  font-size: 20.8rem;
+  width: 1em;
+  height: .09em;
+  fill: #7f7d7c; }
+
+.symbol-combo-1 {
+  font-size: 17.7rem;
+  width: 1em;
+  height: .3em;
+  fill: #7f7d7c; }
+
+.symbol-combo-2 {
+  font-size: 25.2rem;
+  width: 1em;
+  height: .24em;
+  fill: #7f7d7c; }
+
+.symbol-combo-3 {
+  font-size: 11.4rem;
+  width: 1em;
+  height: .5em;
+  fill: #7f7d7c; }
+
+.symbol-combo-4 {
+  font-size: 23.7rem;
+  width: 1em;
+  height: .24em;
+  fill: #7f7d7c; }
+
+.symbol-combo-5 {
+  font-size: 8.1rem;
+  width: 1em;
+  height: 1.3em;
+  fill: #7f7d7c; }
+
+.symbol-heart-horizont {
+  font-size: 2.3rem;
+  width: 1em;
+  height: .8em;
+  fill: #7f7d7c; }
+
+.symbol-teddy-bear {
+  font-size: 2.3rem;
+  width: 1em;
+  height: 1.4em;
+  fill: #7f7d7c; }
+
+.symbol-teddy-bear-2 {
+  font-size: 2.3rem;
+  width: 1em;
+  height: 1.4em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -2981,7 +3035,6 @@ a.c-button:hover {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    padding-top: 1.6rem;
     border-top: 1px solid #cec9c0; }
     .c-card-cafe-advantages__item {
       background-color: #f3efe4;
@@ -4735,6 +4788,28 @@ div.c-card-catalog-2 {
   height: 2.9rem;
   background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
   background-size: cover; }
+
+.c-decor-line-heart {
+  position: relative;
+  width: auto;
+  height: .2rem;
+  border-bottom: 2px dotted #c44890;
+  margin: 0 20px; }
+  .c-decor-line-heart__left, .c-decor-line-heart__right {
+    position: absolute;
+    left: 0;
+    z-index: 2; }
+    .c-decor-line-heart__left svg, .c-decor-line-heart__right svg {
+      fill: #c44890; }
+  .c-decor-line-heart__left {
+    top: -10px;
+    left: -12px; }
+  .c-decor-line-heart__right {
+    top: 11px;
+    right: -12px;
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+        -ms-transform: translateY(-50%) rotate(-180deg);
+            transform: translateY(-50%) rotate(-180deg); }
 
 /*c-all-price----------------------------------------*/
 .c-all-price {
@@ -8130,6 +8205,245 @@ main {
   .popup-pie-one-click .c-label svg {
     fill: #c44890; }
 
+/*popup-poster----------------------------------*/
+.popup-poster .popup {
+  max-width: 133rem;
+  width: 133rem;
+  height: 90rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+  background: url(../img/poster/bg.png) 0 0 no-repeat; }
+
+.popup-poster .popup-box {
+  overflow: visible; }
+
+.popup-poster .popup-close {
+  right: 10rem;
+  top: -4px;
+  bottom: auto;
+  border-radius: 0 0 50px 50px; }
+
+.popup-poster__header {
+  font-family: "SummerFont";
+  height: 10.7rem;
+  position: relative; }
+  .popup-poster__header::after {
+    content: '';
+    clear: both;
+    display: table; }
+
+.popup-poster__hash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-size: 6rem;
+  color: #bb2b7f;
+  font-weight: 700; }
+  .popup-poster__hash span {
+    background: url(../img/poster/bg-yellow.svg) 0 0 no-repeat;
+    background-size: cover;
+    font-size: 6rem;
+    color: #bb2b7f;
+    padding: .3em 1.25em; }
+
+.popup-poster__title {
+  position: absolute;
+  top: -11px;
+  right: 19px;
+  font-size: 9rem;
+  color: #ffffff;
+  font-weight: 700; }
+  .popup-poster__title span {
+    display: block;
+    font-size: 9rem;
+    line-height: 1;
+    color: #ffffff;
+    background: url(../img/poster/bg-green.svg) 0 0 no-repeat;
+    background-size: cover;
+    padding: .03em 2.2em; }
+
+.popup-poster__body {
+  padding: 0 74px; }
+
+.popup-poster__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-right: -28px;
+  margin-left: -28px; }
+
+.popup-poster__col {
+  width: 50%;
+  padding: 0 28px; }
+
+.popup-poster .poster-card {
+  position: relative;
+  margin-bottom: 2.2rem; }
+  .popup-poster .poster-card .c-decor-line-heart {
+    width: 81%; }
+  .popup-poster .poster-card--1 .poster-card__header .c-symbol {
+    top: 23%;
+    left: 28%; }
+  .popup-poster .poster-card--2 .poster-card__header .c-symbol {
+    top: 9%;
+    left: 34%; }
+  .popup-poster .poster-card--2 .poster-card__body .c-symbol {
+    top: -9%;
+    right: 20%; }
+  .popup-poster .poster-card--3 .poster-card__header .c-symbol {
+    top: 9%;
+    left: 38%; }
+  .popup-poster .poster-card--3 .poster-card__body {
+    padding-right: 4rem; }
+    .popup-poster .poster-card--3 .poster-card__body .c-symbol {
+      top: 0%;
+      right: 0%; }
+  .popup-poster .poster-card__header {
+    position: relative;
+    margin-bottom: .6rem; }
+    .popup-poster .poster-card__header svg {
+      fill: #b41f7f; }
+    .popup-poster .poster-card__header .c-symbol {
+      position: absolute; }
+  .popup-poster .poster-card__body {
+    position: relative;
+    margin-bottom: 1.8rem; }
+    .popup-poster .poster-card__body svg {
+      fill: #b41f7f; }
+    .popup-poster .poster-card__body .c-symbol {
+      position: absolute; }
+  .popup-poster .poster-card__day {
+    font-family: "SummerFont";
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: .8;
+    background-size: cover;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 7.3rem; }
+    .popup-poster .poster-card__day span {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .popup-poster .poster-card__decor-1 {
+    width: 14rem;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../img/icons/icon-tag-1.svg); }
+  .popup-poster .poster-card__decor-2 {
+    width: 17.3rem;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../img/icons/icon-tag-2.svg); }
+  .popup-poster .poster-card__decor-3 {
+    width: 19rem;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../img/icons/icon-tag-3.svg); }
+  .popup-poster .poster-card__title {
+    font-size: 5.6rem;
+    color: #c44890;
+    margin-bottom: 1rem;
+    line-height: .9;
+    font-family: "SummerFont";
+    font-weight: 700; }
+    .popup-poster .poster-card__title span {
+      color: #8fc748; }
+  .popup-poster .poster-card__text {
+    font-size: 1.8rem;
+    color: #555451;
+    line-height: 1.3;
+    max-width: 90%;
+    margin-bottom: 1.2rem; }
+
+.popup-poster .poster-banner {
+  width: 61.4rem;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background: url(../img/poster/poster-banner-bg.svg) 0 0 no-repeat;
+  background-size: cover;
+  font-family: "SummerFont";
+  padding: 2rem 0 0 0;
+  text-align: center; }
+  .popup-poster .poster-banner .symbol-line-decor {
+    fill: #fff; }
+  .popup-poster .poster-banner__left {
+    width: 50%;
+    padding: 0 1.8rem;
+    color: #ffffff;
+    position: relative; }
+    .popup-poster .poster-banner__left .poster-banner__week {
+      font-size: 5.5rem;
+      color: #ffffff;
+      line-height: .7;
+      text-align: center; }
+      .popup-poster .poster-banner__left .poster-banner__week span {
+        line-height: .7; }
+        .popup-poster .poster-banner__left .poster-banner__week span:nth-child(2) {
+          display: block;
+          position: relative;
+          top: -7px;
+          letter-spacing: 1px; }
+    .popup-poster .poster-banner__left .poster-banner__text {
+      text-align: center;
+      font-size: 6.3rem;
+      text-transform: uppercase;
+      line-height: .9;
+      font-weight: 700; }
+      .popup-poster .poster-banner__left .poster-banner__text span {
+        font-size: 8.7rem;
+        font-weight: 700; }
+  .popup-poster .poster-banner__right {
+    width: 50%;
+    padding: 0 1.8rem;
+    color: #ffd92e;
+    text-align: left; }
+    .popup-poster .poster-banner__right .poster-banner__text {
+      font-size: 12rem;
+      line-height: 1;
+      font-weight: 700; }
+  .popup-poster .poster-banner__line {
+    position: absolute;
+    right: -29%;
+    top: 42%;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+    .popup-poster .poster-banner__line svg {
+      fill: #ffd92e; }
+
 /*----------------------------------------------*/
 #tooltip {
   text-align: center;
@@ -9116,9 +9430,9 @@ test popup
           -ms-flex-align: stretch;
               align-items: stretch; }
       .cafe-info-card__left {
-        width: 78%; }
+        width: 72%; }
       .cafe-info-card__right {
-        width: 25%;
+        width: 28%;
         text-align: right;
         padding-right: 1rem; }
         .cafe-info-card__right .c-button__big {
@@ -9150,7 +9464,8 @@ test popup
         text-transform: uppercase;
         font-size: 1.5rem;
         white-space: nowrap;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 1.2rem; }
         .cafe-info-card__btn::after {
           content: '';
           border: none; }
@@ -9161,6 +9476,21 @@ test popup
           margin-right: .8rem; }
         .cafe-info-card__btn:hover {
           color: #ffffff; }
+        .cafe-info-card__btn-icon {
+          display: inline-block;
+          width: 2.3rem;
+          height: 2.3rem;
+          vertical-align: top;
+          overflow: hidden;
+          -webkit-transform: rotate(-19deg);
+              -ms-transform: rotate(-19deg);
+                  transform: rotate(-19deg); }
+          .cafe-info-card__btn-icon svg.c-symbol {
+            top: 1px;
+            left: 2px;
+            stroke: #fff;
+            fill: transparent;
+            margin-right: .4rem; }
       .cafe-info-card.v2 .cafe-info__item-tel .cafe-info__item-col:first-child {
         position: absolute;
         margin: 0; }

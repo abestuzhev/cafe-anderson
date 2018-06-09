@@ -1445,6 +1445,7 @@ $(document).ready(function ($) {
 
     showPopup(".js-show-cake-order", '.popup-cake-order');
     showPopup(".js-show-pie-order", '.popup-pie');
+    showPopup(".js-show-poster", '.popup-poster');
 
 
 
