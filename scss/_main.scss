@@ -3562,11 +3562,11 @@ test popup
             align-items: stretch;
 
             &__left {
-                width: 72%;
+                width: 76%;
             }
 
             &__right {
-                width: 28%;
+                width: 24%;
                 text-align: right;
                 padding-right: 1rem;
 
@@ -3593,12 +3593,12 @@ test popup
 
             &__btn {
                 display: inline-block;
-                padding: 1.2rem;
+                padding: 1rem 1.9rem;
                 border-radius: .6rem;
                 background-color: #c44890;
                 color: #ffffff;
                 text-transform: uppercase;
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 white-space: nowrap;
                 text-align: center;
                 margin-bottom: 1.2rem;
@@ -3635,6 +3635,11 @@ test popup
                         fill: transparent;
                         font-size: 2.1rem;
                     }
+                }
+
+                &--poster {
+                    padding: 1.4rem .9rem 1rem;
+                    font-size: 1.2rem;
                 }
             }
 

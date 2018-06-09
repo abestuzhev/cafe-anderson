@@ -37,25 +37,25 @@
 }
 
 
-@media (max-width: 1350px) {
-    .cafe-info-card__left {
-        width: 68%;
-    }
+/*@media (max-width: 1350px) {*/
+    /*.cafe-info-card__left {*/
+        /*width: 68%;*/
+    /*}*/
 
-    .cafe-info-card__right {
-        width: 32%;
-    }
-}
+    /*.cafe-info-card__right {*/
+        /*width: 32%;*/
+    /*}*/
+/*}*/
 
-@media (max-width: 1190px) {
-    .cafe-info-card__left {
-        width: 62%;
-    }
+/*@media (max-width: 1190px) {*/
+    /*.cafe-info-card__left {*/
+        /*width: 62%;*/
+    /*}*/
 
-    .cafe-info-card__right {
-        width: 38%;
-    }
-}
+    /*.cafe-info-card__right {*/
+        /*width: 38%;*/
+    /*}*/
+/*}*/
 
 @media (min-width: 1340px) {
     .factory-layout[data-simplebar] {
