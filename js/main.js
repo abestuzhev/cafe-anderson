@@ -171,6 +171,13 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    $(document).on('click', '.c-card-catalog__footer.v2 .c-card-catalog__basket', function(){
+        $(this).hide();
+        $(this).siblings('.c-card-catalog__count').show();
+    });
+
+
+
     if($('div').hasClass('js-readmore')){
         $('.cake-order-composition').readmore({
             speed: 75,

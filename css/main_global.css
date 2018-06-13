@@ -3757,6 +3757,8 @@ a.c-button:hover {
         font-size: 1.8rem; }
         .c-card-catalog__footer.v2 .c-card-catalog__basket:hover {
           background-color: #b14481; }
+      .c-card-catalog__footer.v2 .c-card-catalog__count {
+        display: none; }
   .c-card-catalog__price {
     font-family: "BebasNeue";
     font-weight: 500;
