@@ -5540,9 +5540,25 @@
 /*----------------------------------------*/
 /*----------------------------------------*/
 /*----------------------------------------*/
-
-
 @media (max-width: 1390px) {
+    .popup-poster .popup {
+        width: 129rem;
+        -webkit-background-size: cover;
+        background-size: 100%;
+        background-position: 50% 50%;
+    }
+}
+
+@media (max-width: 1330px) {
+    .popup-poster .popup {
+        width: 125rem;
+        -webkit-background-size: cover;
+        background-size: 98%;
+        background-position: 50% 50%;
+    }
+}
+
+@media (max-width: 1300px) {
     .popup-poster .popup {
         height: 100vh;
         position: fixed;
