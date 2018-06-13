@@ -5816,4 +5816,13 @@
     .poster-card .c-decor-line-heart svg {
         display: block;
     }
+
+    .popup-poster .poster-banner {
+        width: 29rem;
+        background-size: 98%;
+    }
+
+    .popup-poster .poster-banner__right .poster-banner__text {
+        font-size: 6rem;
+    }
 }
