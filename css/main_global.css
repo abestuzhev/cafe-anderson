@@ -3753,7 +3753,8 @@ a.c-button:hover {
           -ms-flex-pack: justify;
               justify-content: space-between; }
       .c-card-catalog__footer.v2 .c-card-catalog__basket {
-        background-color: #c44890; }
+        background-color: #c44890;
+        font-size: 1.8rem; }
         .c-card-catalog__footer.v2 .c-card-catalog__basket:hover {
           background-color: #b14481; }
   .c-card-catalog__price {

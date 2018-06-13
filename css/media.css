@@ -5520,6 +5520,10 @@
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__basket span {
         display: none;
     }
+
+    .c-card-catalog__footer.v2 .c-card-catalog__basket {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 415px) {
