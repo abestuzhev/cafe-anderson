@@ -2826,6 +2826,19 @@ a.c-button {
         align-items: stretch;
         justify-content: flex-start;
         //padding-right: 3rem;
+
+        &.v2 {
+            padding-right: 1.4rem;
+            justify-content: space-between;
+
+            .c-card-catalog__basket {
+                background-color: #c44890;
+
+                &:hover {
+                    background-color: #b14481;
+                }
+            }
+        }
     }
     
     &__price {
@@ -2897,9 +2910,20 @@ a.c-button {
         background-color: #7cbd41;
         padding: .6rem 1.3rem;
         color: #ffffff;
+
+        span {
+            display: inline-block;
+            margin-right: .9rem;
+            color: #ffffff;
+        }
         
         &:hover {
             background-color: #6faa3a;
+            color: #ffffff;
+
+            span {
+                color: #ffffff;
+            }
         }
         &:after {
             content: '';
