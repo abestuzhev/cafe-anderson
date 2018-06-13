@@ -1692,11 +1692,14 @@ body {
 .c-ol-list li {
   margin-bottom: .2rem;
   font-size: 1.5rem;
-  padding-left: 3.5rem; }
+  padding-left: 3.5rem;
+  position: relative; }
 
 .c-ol-list li:before {
   content: counter(item) ") ";
-  counter-increment: item; }
+  counter-increment: item;
+  position: absolute;
+  left: 18px; }
 
 .c-ol-list li ul {
   padding-left: 6.4rem; }

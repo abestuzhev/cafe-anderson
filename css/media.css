@@ -5826,3 +5826,20 @@
         font-size: 6rem;
     }
 }
+
+/*print----------------*/
+@media print {
+    .header,
+    .footer,
+    .header-navigation{
+        display: none;
+    }
+
+    .cafe__body,
+    .page-container,
+    .page-wrapper {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
