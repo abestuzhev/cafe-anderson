@@ -2396,8 +2396,8 @@ a.c-button {
         display: inline-block;
         vertical-align: middle;
         margin-right: 1.4rem;
-        font-size: 1.3rem;
-        color: #9b9595;
+        font-size: 1.4rem;
+        color: #2a2a2a;
         
         &:last-child {
             margin-right: 0;
@@ -2411,10 +2411,10 @@ a.c-button {
     }
     
     &__title {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 0.75;
         text-align: left;
-        color: #231300;
+        color: #9b806f;
     }
     
     &__info {
@@ -2433,10 +2433,10 @@ a.c-button {
     }
     
     &__description {
-        font-size: 1.3rem;
-        line-height: 1.23;
+        font-size: 1.5rem;
+        line-height: 1.2;
         text-align: left;
-        color: #9b9595;
+        color: $black;
         padding-bottom: 31px;
     }
     
@@ -2658,7 +2658,7 @@ a.c-button {
 
 /*c-card-contact-office------------------------------------------------------------*/
 .c-card-contact-office {
-    color: #9b9595;
+    color: $black;
     position: relative;
     z-index: 2;
     
@@ -2687,7 +2687,7 @@ a.c-button {
 /*c-card-contact-cafe------------------------------------------------------------*/
 .c-card-contact-cafe {
     font-size: 1.3rem;
-    color: #9b9595;
+    color: $black;
     
     &__title {
         display: inline-block;

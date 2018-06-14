@@ -3425,8 +3425,8 @@ a.c-button:hover {
     display: inline-block;
     vertical-align: middle;
     margin-right: 1.4rem;
-    font-size: 1.3rem;
-    color: #9b9595; }
+    font-size: 1.4rem;
+    color: #2a2a2a; }
     .c-card-vacancy__item:last-child {
       margin-right: 0; }
     .c-card-vacancy__item i, .c-card-vacancy__item img {
@@ -3434,10 +3434,10 @@ a.c-button:hover {
       vertical-align: middle;
       margin-right: .9rem; }
   .c-card-vacancy__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 0.75;
     text-align: left;
-    color: #231300; }
+    color: #9b806f; }
   .c-card-vacancy__info {
     margin-bottom: 1rem;
     border-bottom: 1px solid #cec9c0;
@@ -3450,10 +3450,10 @@ a.c-button:hover {
     height: 100%;
     background: url(../img/bg-label-vacancy.png) 0 0 no-repeat; }
   .c-card-vacancy__description {
-    font-size: 1.3rem;
-    line-height: 1.23;
+    font-size: 1.5rem;
+    line-height: 1.2;
     text-align: left;
-    color: #9b9595;
+    color: #555451;
     padding-bottom: 31px; }
   .c-card-vacancy__caption {
     margin-bottom: .4rem;
@@ -3626,7 +3626,7 @@ a.c-button:hover {
 
 /*c-card-contact-office------------------------------------------------------------*/
 .c-card-contact-office {
-  color: #9b9595;
+  color: #555451;
   position: relative;
   z-index: 2; }
   .c-card-contact-office__title {
@@ -3646,7 +3646,7 @@ a.c-button:hover {
 /*c-card-contact-cafe------------------------------------------------------------*/
 .c-card-contact-cafe {
   font-size: 1.3rem;
-  color: #9b9595; }
+  color: #555451; }
   .c-card-contact-cafe__title {
     display: inline-block;
     margin-bottom: 2.4rem;
