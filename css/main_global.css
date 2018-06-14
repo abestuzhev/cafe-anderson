@@ -1817,11 +1817,9 @@ a {
     a:hover::after {
       content: '';
       border: none; }
-  a:focus {
+  a:focus::after {
+    content: '';
     border: none; }
-    a:focus::after {
-      content: '';
-      border: none; }
 
 .elements_list {
   padding: 3rem; }
@@ -16667,6 +16665,186 @@ test popup
         position: relative;
         padding-left: 23px;
         margin-bottom: 8px; }
+
+/*holidays общая страница со всеми праздниками---*/
+.holidays-slider {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border-radius: .6rem;
+  overflow: hidden; }
+  .holidays-slider-nav {
+    background-color: #fdf7e8;
+    padding: 1.4rem 10rem 1rem;
+    text-align: center;
+    font-size: 0; }
+    .holidays-slider-nav__link {
+      font-family: "PT Serif Caption";
+      font-size: 1.5rem;
+      font-style: italic;
+      display: inline-block;
+      color: #080808;
+      border: 1px solid #080808;
+      border-radius: 50rem;
+      padding: .4rem 1.7rem;
+      margin: 0 .7rem 1rem; }
+      .holidays-slider-nav__link:hover {
+        background-color: #74bf44;
+        border: 1px solid #74bf44;
+        color: #ffffff; }
+      .holidays-slider-nav__link::after {
+        content: '';
+        border: none; }
+  .holidays-slider__footer {
+    position: relative; }
+    .holidays-slider__footer .c-symbol {
+      fill: #080808; }
+    .holidays-slider__footer .symbol-holiday-decor-1 {
+      font-size: 7rem; }
+    .holidays-slider__footer .symbol-holiday-decor-2 {
+      font-size: 5rem; }
+  .holidays-slider__decor-1 {
+    position: absolute;
+    left: 2.7rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(122deg);
+        -ms-transform: translateY(-50%) rotate(122deg);
+            transform: translateY(-50%) rotate(122deg); }
+  .holidays-slider__decor-2 {
+    position: absolute;
+    right: 2.7rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(122deg);
+        -ms-transform: translateY(-50%) rotate(122deg);
+            transform: translateY(-50%) rotate(122deg); }
+
+.holidays-slide {
+  background-color: #fff; }
+  .holidays-slide__item {
+    height: 42rem;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    cursor: pointer; }
+  .holidays-slide__description {
+    position: absolute;
+    right: 2.4rem;
+    bottom: 2.4rem;
+    padding: 1.9rem 1.4rem;
+    background-color: #fff;
+    font-family: "PT Serif Caption";
+    max-width: 33rem;
+    border-radius: .6rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+  .holidays-slide__title {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    color: #c7368a;
+    margin-bottom: 1rem; }
+  .holidays-slide__text {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #555451;
+    line-height: 1.2;
+    margin-bottom: 1.3rem; }
+  .holidays-slide .owl-nav {
+    display: none; }
+  .holidays-slide__decor {
+    position: absolute;
+    bottom: -4rem;
+    right: 3rem; }
+    .holidays-slide__decor .c-symbol {
+      fill: #555451; }
+    .holidays-slide__decor .symbol-rabbit {
+      font-size: 3.8rem; }
+
+.holidays-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.holidays-count {
+  font-family: "SummerFont";
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 2.4rem;
+  width: 30%; }
+  .holidays-count__number {
+    vertical-align: middle;
+    display: inline-block;
+    letter-spacing: 1.4rem;
+    padding-left: .4rem;
+    line-height: 4rem;
+    width: 8.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    background: url(../img/icons/icon-count-holidays.svg) 0 0 no-repeat; }
+  .holidays-count__text {
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+    vertical-align: middle; }
+
+.holidays-advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: -1.4rem;
+  margin-left: -1.4rem;
+  font-family: "PT Serif Caption"; }
+  .holidays-advantages__item {
+    width: 33.3333%;
+    padding: 1.4rem; }
+  .holidays-advantages-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .holidays-advantages-card__icon {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #000;
+      border-radius: 4px;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 60px;
+              flex: 1 0 60px;
+      margin-right: 1.2rem; }
+    .holidays-advantages-card__text {
+      font-style: italic; }
 
 /*dispatch**************************************/
 .dispatch__item {

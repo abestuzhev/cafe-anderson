@@ -274,7 +274,7 @@ a {
     }
     
     &:focus {
-        border: none;
+        //border: none;
         @extend %transition_all;
         
         &::after {

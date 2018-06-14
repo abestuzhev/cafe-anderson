@@ -171,6 +171,21 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    /*слайдер на странице общих пращдников*/
+    $('.holidays-slide').owlCarousel({
+        items:1,
+        loop:false,
+        center:true,
+        nav:false,
+        // margin:10,
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash'
+    });
+
+
+
+
     $(document).on('click', '.c-card-catalog__footer.v2 .c-card-catalog__basket', function(){
         $(this).hide();
         $(this).siblings('.c-card-catalog__count').show();

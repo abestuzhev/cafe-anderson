@@ -13016,6 +13016,220 @@ test popup
 }
 
 
+
+/*holidays общая страница со всеми праздниками---*/
+.holidays {
+
+    &-slider {
+        border: 2px solid rgba(0,0,0,.2);
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+        border-radius: .6rem;
+        overflow: hidden;
+        
+        &-nav {
+            background-color: #fdf7e8;
+            padding: 1.4rem 10rem 1rem;
+            text-align: center;
+            font-size: 0;
+
+            &__link {
+                font-family: $font_serif;
+                font-size: 1.5rem;
+                font-style: italic;
+                display: inline-block;
+                color: #080808;
+                border: 1px solid #080808;
+                border-radius: 50rem;
+                padding: .4rem 1.7rem;
+                margin: 0 .7rem 1rem;
+
+                &:focus {
+
+                }
+
+                &:hover {
+                    background-color: #74bf44;
+                    border:1px solid #74bf44;
+                    color: #ffffff;
+                }
+
+                &::after {
+                    content: '';
+                    border: none;
+                }
+            }
+        }
+
+        &__footer {
+            position: relative;
+
+            .c-symbol {
+                fill: #080808;
+            }
+
+            .symbol-holiday-decor-1 {
+                font-size: 7rem;
+            }
+            .symbol-holiday-decor-2 {
+                font-size: 5rem;
+            }
+        }
+
+        &__decor-1 {
+            position: absolute;
+            left: 2.7rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(122deg);
+        }
+
+        &__decor-2 {
+            position: absolute;
+            right: 2.7rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(122deg);
+        }
+
+    }
+
+    &-slide {
+        background-color: #fff;
+        &__item {
+            height: 42rem;
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+        }
+
+        &__description {
+            position: absolute;
+            right: 2.4rem;
+            bottom: 2.4rem;
+            padding: 1.9rem 1.4rem;
+            background-color: #fff;
+            font-family: $font_serif;
+            max-width: 33rem;
+            border-radius: .6rem;
+            border: 2px solid rgba(0,0,0,.2);
+            box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        &__title {
+            font-size: 2.3rem;
+            line-height: 1.2;
+            color: #c7368a;
+            margin-bottom: 1rem;
+        }
+
+        &__text {
+            font-style: italic;
+            font-size: 1.5rem;
+            color: $black;
+            line-height: 1.2;
+            margin-bottom: 1.3rem;
+        }
+
+        .owl-nav {
+            display: none;
+        }
+
+        &__decor {
+            position: absolute;
+            bottom: -4rem;
+            right: 3rem;
+
+            .c-symbol {
+                fill: $black;
+            }
+            .symbol-rabbit {
+                font-size: 3.8rem;
+            }
+        }
+    }
+
+    &-footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &-count {
+        font-family: $font_decor;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1;
+        margin-right: 2.4rem;
+        width: 30%;
+
+        &__line {
+
+        }
+
+        &__number {
+            vertical-align: middle;
+            display: inline-block;
+            letter-spacing: 1.4rem;
+            padding-left: .4rem;
+            line-height: 4rem;
+            width: 8.4rem;
+            overflow: hidden;
+            white-space: nowrap;
+            background: url(../img/icons/icon-count-holidays.svg) 0 0 no-repeat;
+        }
+
+        &__text {
+            font-size: 3.3rem;
+            letter-spacing: 2px;
+            vertical-align: middle;
+
+        }
+
+    }
+
+    &-advantages {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: -1.4rem;
+        margin-left: -1.4rem;
+        font-family: $font_serif;
+
+        &__item {
+            width: 33.3333%;
+            padding: 1.4rem;
+
+        }
+
+        &-card {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            &__icon {
+                width: 60px;
+                height: 60px;
+                border:2px solid #000;
+                border-radius: 4px;
+                flex: 1 0 60px;
+                margin-right: 1.2rem;
+            }
+
+            &__text {
+                font-style: italic;
+
+            }
+        }
+    }
+
+}
+
 /*dispatch**************************************/
 .dispatch {
     &__item {
