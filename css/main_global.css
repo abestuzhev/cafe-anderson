@@ -3427,6 +3427,13 @@ a.c-button:hover {
     margin-right: 1.4rem;
     font-size: 1.4rem;
     color: #2a2a2a; }
+    .c-card-vacancy__item a {
+      color: #2a2a2a; }
+      .c-card-vacancy__item a:hover {
+        color: #2a2a2a; }
+      .c-card-vacancy__item a::after {
+        content: '';
+        border-color: #2a2a2a; }
     .c-card-vacancy__item:last-child {
       margin-right: 0; }
     .c-card-vacancy__item i, .c-card-vacancy__item img {
@@ -3451,7 +3458,7 @@ a.c-button:hover {
     background: url(../img/bg-label-vacancy.png) 0 0 no-repeat; }
   .c-card-vacancy__description {
     font-size: 1.5rem;
-    line-height: 1.2;
+    line-height: 1.3;
     text-align: left;
     color: #555451;
     padding-bottom: 31px; }
@@ -3459,7 +3466,7 @@ a.c-button:hover {
     margin-bottom: .4rem;
     font-weight: 700;
     color: #555451;
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
   .c-card-vacancy__text {
     margin-bottom: 1.3rem; }
   .c-card-vacancy .l-button {

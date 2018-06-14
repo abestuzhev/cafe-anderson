@@ -2398,6 +2398,19 @@ a.c-button {
         margin-right: 1.4rem;
         font-size: 1.4rem;
         color: #2a2a2a;
+
+        a {
+            color: #2a2a2a;
+
+            &:hover {
+                color: #2a2a2a;
+            }
+
+            &::after {
+                content: '';
+                border-color: #2a2a2a;
+            }
+        }
         
         &:last-child {
             margin-right: 0;
@@ -2434,7 +2447,7 @@ a.c-button {
     
     &__description {
         font-size: 1.5rem;
-        line-height: 1.2;
+        line-height: 1.3;
         text-align: left;
         color: $black;
         padding-bottom: 31px;
@@ -2444,7 +2457,7 @@ a.c-button {
         margin-bottom: .4rem;
         font-weight: 700;
         color: $black;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     
     &__text {
