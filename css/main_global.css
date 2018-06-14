@@ -8231,14 +8231,15 @@ main {
 
 /*popup-poster----------------------------------*/
 .popup-poster .popup {
-  max-width: 133rem;
-  width: 133rem;
-  height: 86rem;
+  max-width: 129rem;
+  width: 129rem;
+  height: 82rem;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 0;
   overflow: visible;
-  background: url(../img/poster/bg.png) 0 0 no-repeat; }
+  background: url(../img/poster/bg.png) 0 0 no-repeat;
+  background-size: 99%; }
 
 .popup-poster .popup-box {
   overflow: visible; }

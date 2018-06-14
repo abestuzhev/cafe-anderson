@@ -1838,15 +1838,17 @@ main {
 /*popup-poster----------------------------------*/
 .popup-poster {
     .popup {
-        max-width: 133rem;
-        width: 133rem;
-        height: 86rem;
+        max-width: 129rem;
+        width: 129rem;
+        height: 82rem;
         box-shadow: none;
         //background-color: transparent;
         //background-color: #fff;
         border-radius: 0;
         overflow: visible;
         background: url(../img/poster/bg.png) 0 0 no-repeat;
+        -webkit-background-size: 99%;
+        background-size: 99%;
 
     }
 
