@@ -8320,13 +8320,16 @@ main {
     width: 81%; }
   .popup-poster .poster-card--1 .poster-card__header .c-symbol {
     top: 23%;
-    left: 28%; }
+    left: 28%;
+    cursor: default; }
   .popup-poster .poster-card--2 .poster-card__header .c-symbol {
     top: 9%;
-    left: 34%; }
+    left: 34%;
+    cursor: default; }
   .popup-poster .poster-card--2 .poster-card__body .c-symbol {
     top: -9%;
-    right: 20%; }
+    right: 20%;
+    cursor: default; }
   .popup-poster .poster-card--3 .poster-card__header .c-symbol {
     top: 9%;
     left: 38%; }
