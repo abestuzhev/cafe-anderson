@@ -6036,6 +6036,15 @@ test popup
         .events-header__btn {
             padding: 2rem 0;
             cursor:pointer;
+    
+            .cafe-info-card__btn--poster {
+                padding: 1.4rem .9rem .7rem;
+                
+                .cafe-info-card__btn-icon {
+                    position: relative;
+                    top: -.4rem;
+                }
+            }
         }
     }
 

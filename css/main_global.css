@@ -11337,6 +11337,11 @@ test popup
   .events .filter-layout .events-header__btn {
     padding: 2rem 0;
     cursor: pointer; }
+    .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
+      padding: 1.4rem .9rem .7rem; }
+      .events .filter-layout .events-header__btn .cafe-info-card__btn--poster .cafe-info-card__btn-icon {
+        position: relative;
+        top: -.4rem; }
 
 .events .filter-form {
   -webkit-box-pack: start;
