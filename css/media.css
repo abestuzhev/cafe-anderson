@@ -2268,6 +2268,21 @@
         padding: 3rem 3rem 7rem;
     }
 
+    .events-header__btn {
+        position: absolute;
+        padding: 0 !important;
+        top: -54px;
+        right: 0;
+    }
+
+    .events-header__btn .cafe-info-card__btn--poster {
+        margin: 0;
+    }
+
+    .events .filter {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 840px) {
@@ -3216,6 +3231,10 @@
 
     .c-card-event__title {
         padding-right: 0;
+    }
+
+    .events-header__btn {
+        top: -34px;
     }
 
 }
@@ -4929,6 +4948,14 @@
 
     .bonus-banner__cup {
         right: -7%;
+    }
+
+    .events-header__btn .cafe-info-card__btn-icon {
+        display: none;
+    }
+
+    .events-header__btn .cafe-info-card__btn--poster {
+        padding: .8rem .4rem .8rem;
     }
 }
 

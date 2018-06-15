@@ -6025,6 +6025,19 @@ test popup
         }
 
     }
+    
+    .filter-layout {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        
+        .events-header__btn {
+            padding: 2rem 0;
+            cursor:pointer;
+        }
+    }
 
     .filter-form {
         justify-content: flex-start;
