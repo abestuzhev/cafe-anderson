@@ -499,25 +499,53 @@ $(document).ready(function ($) {
 
 
     //франшиза
-    $('.franchise-title-layout').on('click', function(){
+    $('.franchise-title').on('click', function(){
         var self = $(this);
-        self.siblings('.franchise-content').slideToggle(100);
-        self.find('.franchise-print').toggle();
+        self.parents('.franchise-title-layout').siblings('.franchise-content').slideToggle(100);
+        self.siblings('.franchise-print').toggle();
     });
 
 
-    function printData()
-    {
-        var divToPrint = document.getElementById("franchisePrint");
+    var divToPrint = document.getElementById("franchisePrint");
+    function printData(){
+        // var divToPrint = $(elem).parents('.franchise-content');
+
         var newWin= window.open("");
         newWin.document.write(divToPrint.outerHTML);
         newWin.print();
         newWin.close();
     }
 
+    function PrintElem(elem)
+    {
+        var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+
+        mywindow.document.write('<html><head><title>' + document.title  + '</title>');
+        mywindow.document.write('</head><body >');
+        mywindow.document.write('<h1>' + document.title  + '</h1>');
+        mywindow.document.write(document.getElementById(elem).innerHTML);
+        mywindow.document.write('</body></html>');
+
+        mywindow.document.close(); // necessary for IE >= 10
+        mywindow.focus(); // necessary for IE >= 10*/
+
+        mywindow.print();
+        mywindow.close();
+
+        return true;
+    }
+
     $('.franchise-print').on('click',function(){
-        printData();
+        // printData();
+        var self = $(this);
+        // $('*').hide();
+        $('.franchise-box').removeClass('print');
+        self.parents('.franchise-box').addClass('print');
+        window.print();
+        // PrintElem(divToPrint);
     });
+
+
 
     if($('input').hasClass('datepicker-custom') || $('div').hasClass('datepicker-custom')){
         $('.datepicker-custom').datepicker({

@@ -5382,18 +5382,18 @@
 /*}*/
 
 @media print {
-    .franchise-conditions-table {
-        display: table;
-    }
+    /*.franchise-conditions-table {*/
+        /*display: table;*/
+    /*}*/
 
-    .franchise-conditions-table__line {
-        display: table-row;
-    }
+    /*.franchise-conditions-table__line {*/
+        /*display: table-row;*/
+    /*}*/
 
-    .franchise-conditions-table__col {
-        display: table-cell;
-        border: 1px solid #ccc;
-    }
+    /*.franchise-conditions-table__col {*/
+        /*display: table-cell;*/
+        /*border: 1px solid #ccc;*/
+    /*}*/
 }
 
 /*.cafe-description__text {*/
@@ -5854,11 +5854,14 @@
     }
 }
 
+
+
 /*print----------------*/
 @media print {
     .header,
     .footer,
-    .header-navigation{
+    .header-navigation,
+    .c-breadcrumb {
         display: none;
     }
 
@@ -5868,5 +5871,47 @@
         border: none;
         box-shadow: none;
         border-radius: 0;
+    }
+
+
+    .franchise-banner,
+    .franchise-box,
+    .franchise-contact,
+    .franchise-print,
+    .franchise-conditions-calc__bg,
+    .franchise-conditions-calc__elem-1,
+    .franchise-conditions-calc svg {
+        display: none !important;
+    }
+    .franchise-box.print {
+        display: block !important;
+    }
+
+    .franchise-conditions-calc {
+        margin-bottom: 0;
+    }
+
+    .franchise-conditions-list {
+        margin-bottom: 5rem;
+        page-break-after: always;
+    }
+    .franchise-conditions-card {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .franchise-conditions-card__body {
+        width: 180px;
+        font-size: 1.4rem;
+    }
+
+    .franchise-conditions-table {
+        margin-bottom: 2rem;
+    }
+    .franchise-conditions-list__item {
+        width: 210px;
+    }
+    .franchise-conditions-card__icon img {
+        width: 90%;
     }
 }
