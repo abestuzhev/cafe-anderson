@@ -18478,11 +18478,16 @@ test popup
     margin-left: -.4rem;
     margin-right: -.4rem;
     margin-bottom: .8rem; }
+    .pie-slider-nav::after {
+      content: '';
+      clear: both;
+      display: table; }
     .pie-slider-nav__item {
       width: 32.3333%;
       height: 9rem;
       cursor: pointer;
-      padding: 0 .4rem; }
+      padding: 0 .4rem;
+      float: left; }
       .pie-slider-nav__item span {
         height: 100%;
         display: block;
