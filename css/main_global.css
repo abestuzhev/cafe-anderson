@@ -18475,14 +18475,14 @@ test popup
       background-position: 50% 50%;
       background-repeat: no-repeat; }
   .pie-slider-nav {
-    margin-left: -1rem;
-    margin-right: -1rem;
+    margin-left: -.4rem;
+    margin-right: -.4rem;
     margin-bottom: .8rem; }
     .pie-slider-nav__item {
-      width: 12.3rem;
-      height: 11rem;
+      width: 32.3333%;
+      height: 9rem;
       cursor: pointer;
-      padding: 0 1rem; }
+      padding: 0 .4rem; }
       .pie-slider-nav__item span {
         height: 100%;
         display: block;
