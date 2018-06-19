@@ -18478,8 +18478,11 @@ test popup
       cursor: pointer;
       text-decoration: none;
       background: rgba(0, 0, 0, 0.3); }
+      .pie-slider-left:hover, .pie-slider-right:hover {
+        background-color: #7cbd41; }
     .pie-slider-left {
-      left: 3px; }
+      left: 4px;
+      border-radius: 0px 4px 0; }
       .pie-slider-left:before {
         /* content: '←'; */
         content: '';
@@ -18493,7 +18496,8 @@ test popup
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
     .pie-slider-right {
-      right: 3px; }
+      right: 3px;
+      border-radius: 4px 0 0 4px; }
       .pie-slider-right:before {
         content: '';
         width: 6px;
@@ -18516,7 +18520,11 @@ test popup
       border: 1px solid #bbbcbe;
       cursor: pointer;
       font-size: 0;
-      height: 270px; }
+      height: 270px;
+      overflow: hidden; }
+      .pie-slider-for > div {
+        width: 100%;
+        height: 270px; }
       .pie-slider-for img {
         width: 100%;
         height: 100%;
