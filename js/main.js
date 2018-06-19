@@ -204,26 +204,107 @@ $(document).ready(function ($) {
 
 
 
-    if($('div').hasClass('js-slick')){
-        $('.pie-slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.pie-slider-nav'
-        });
+    // if($('div').hasClass('js-slick')){
+    //     $('.pie-slider-for').slick({
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         arrows: false,
+    //         fade: true,
+    //         asNavFor: '.pie-slider-nav'
+    //     });
+    //
+    //     $('.pie-slider-nav').slick({
+    //         slidesToShow: 3,
+    //         slidesToScroll: 1,
+    //         speed: 500,
+    //         asNavFor: '.pie-slider-for',
+    //         // dots: true,
+    //         // centerMode: true,
+    //         focusOnSelect: true,
+    //         slide: 'div'
+    //     });
+    // }
 
-        $('.pie-slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            speed: 500,
-            asNavFor: '.pie-slider-for',
-            // dots: true,
-            // centerMode: true,
-            focusOnSelect: true,
-            slide: 'div'
+    $('.pie-slider-nav__item').on('click', function(){
+        var self = $(this);
+        var path = self.children('img').attr('src');
+
+        $('.pie-slider-for').find('img').attr('src', path).animate({
+            opacity: '1'
+        },200);
+    });
+
+
+
+    /*START карусель*/
+    //Обработка клика на стрелку вправо
+    $(document).on('click', ".pie-slider-right",function(){
+        var carusel = $(this).parents('.pie-slider');
+        right_carusel(carusel);
+        var path = $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).children('img').attr('src');
+        console.log(path);
+        $('.pie-slider-for').find('img').animate({'opacity': 0}, 100);
+        setTimeout(function(){
+            $('.pie-slider-for').find('img').attr('src', path);
+            $('.pie-slider-for').find('img').animate({'opacity': 1}, 100);;
+        },100);
+
+        return false;
+    });
+
+    //Обработка клика на стрелку влево
+    $(document).on('click',".pie-slider-left",function(){
+        var carusel = $(this).parents('.pie-slider');
+        left_carusel(carusel);
+        var path = $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).children('img').attr('src');
+        $('.pie-slider-for').find('img').animate({'opacity': 0}, 100);
+        setTimeout(function(){
+            $('.pie-slider-for').find('img').attr('src', path);
+            $('.pie-slider-for').find('img').animate({'opacity': 1}, 100);;
+        },100);
+        return false;
+    });
+
+    function left_carusel(carusel){
+        var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
+        $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).clone().prependTo($(carusel).find(".pie-slider-items"));
+        $(carusel).find(".pie-slider-items").css({"left":"-"+block_width+"px"});
+        $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).remove();
+        $(carusel).find(".pie-slider-items").animate({left: "0px"}, 500);
+
+    }
+
+    function right_carusel(carusel){
+        var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
+        $(carusel).find(".pie-slider-items").animate({left: "-"+ block_width +"px"}, 500, function(){
+            $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).clone().appendTo($(carusel).find(".pie-slider-items"));
+            $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).remove();
+            $(carusel).find(".pie-slider-items").css({"left":"0px"});
         });
     }
+
+
+//     $(function() {
+// //Раскомментируйте строку ниже, чтобы включить автоматическую прокрутку карусели
+// //	auto_right('.carousel:first');
+//     })
+//
+// // Автоматическая прокрутка
+//     function auto_right(carusel){
+//         setInterval(function(){
+//             if (!$(carusel).is('.hover'))
+//                 right_carusel(carusel);
+//         }, 1000)
+//     }
+
+// Навели курсор на карусель
+//     $(document).on('mouseenter', '.pie-slider', function(){$(this).addClass('hover')})
+//Убрали курсор с карусели
+//     $(document).on('mouseleave', '.pie-slider', function(){$(this).removeClass('hover')})
+
+    /*END карусель*/
+
+
 
 
     /*загрузка файлов на странице с кондитерскими изделиями*/
@@ -1704,6 +1785,7 @@ $(document).ready(function ($) {
                 if (url !== null) {
                     window.history.pushState(null, null, url);
                     localStorage.removeItem("backUrl");
+                    window.cakeCartItem = {};
                 }
 
                 div2.parents('.mfp-wrap').removeClass('is-visible');

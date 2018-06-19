@@ -15285,19 +15285,96 @@ test popup
     }
 
     &-slider {
+
+        max-width: 392px;
+        width: 100%;
+        position: relative;
+        
+        &-left,
+        &-right {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            display: block;
+            width: 22px;
+            height: 33px;
+            transform: translate(0, -50%);
+            cursor: pointer;
+            text-decoration:none;
+            background: rgba(0,0,0,.3);
+
+            a {
+
+            }
+        }
+        
+        &-left {
+            left: 3px;
+            &:before {
+                /* content: '←'; */
+                content: '';
+                width: 6px;
+                height: 11px;
+                background: url(../img/arrow-slider-sprite.png) 0 0 no-repeat;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+        }
+
+        &-right {
+            right: 3px;
+            &:before {
+                content: '';
+                width: 6px;
+                height: 11px;
+                background: url(../img/arrow-slider-sprite.png) -6px 0 no-repeat;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        &-wrapper {
+            overflow: hidden;
+            position:relative;
+            //transition: all 1s ease-in-out;
+        }
+
+        &-items {
+            width: 10000px;
+            position: relative;
+            //transition: all 1s ease-in-out;
+        }
+        
         &-for {
             width: 100%;
             border:1px solid #bbbcbe;
             cursor:pointer;
             font-size: 0;
+            height: 270px;
+            //transition: all 1s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
 
             &__item {
+                overflow: hidden;
                 width: 100%;
                 height: 270px;
                 -webkit-background-size: cover;
                 background-size: cover;
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
+
+
             }
         }
 
@@ -15305,6 +15382,7 @@ test popup
             margin-left: -.4rem;
             margin-right: -.4rem;
             margin-bottom: .8rem;
+            //transition: all 1s ease-in-out;
             
             &::after {
                 content:'';
@@ -15312,11 +15390,15 @@ test popup
                 display: table;
             }
             &__item {
-                width: 32.3333%;
+                width: 123px;
                 height: 9rem;
                 cursor: pointer;
-                padding: 0 .4rem;
+                margin: 0 .4rem;
                 float: left;
+                overflow: hidden;
+                border: 1px solid #bbbcbe;
+                cursor: pointer;
+                //transition: all 1s ease-in-out;
 
                 span {
                     height: 100%;
@@ -15326,6 +15408,13 @@ test popup
                     background-size: cover;
                     background-position: 50% 50%;
                     background-repeat: no-repeat;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
                 }
             }
 
