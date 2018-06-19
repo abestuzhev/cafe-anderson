@@ -225,7 +225,7 @@ $(document).ready(function ($) {
     //     });
     // }
 
-    $('.pie-slider-nav__item').on('click', function(){
+    $(document).on('click', '.pie-slider-nav__item', function(){
         var self = $(this);
         var path = self.children('img').attr('src');
 
@@ -236,6 +236,7 @@ $(document).ready(function ($) {
 
 
 
+
     /*START карусель*/
     //Обработка клика на стрелку вправо
     $(document).on('click', ".pie-slider-right",function(){
@@ -243,6 +244,7 @@ $(document).ready(function ($) {
         right_carusel(carusel);
         var path = $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).children('img').attr('src');
         console.log(path);
+
         $('.pie-slider-for').find('img').animate({'opacity': 0}, 100);
         setTimeout(function(){
             $('.pie-slider-for').find('img').attr('src', path);
@@ -257,11 +259,13 @@ $(document).ready(function ($) {
         var carusel = $(this).parents('.pie-slider');
         left_carusel(carusel);
         var path = $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).children('img').attr('src');
+
         $('.pie-slider-for').find('img').animate({'opacity': 0}, 100);
         setTimeout(function(){
             $('.pie-slider-for').find('img').attr('src', path);
             $('.pie-slider-for').find('img').animate({'opacity': 1}, 100);;
         },100);
+
         return false;
     });
 
