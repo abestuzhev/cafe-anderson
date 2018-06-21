@@ -2032,6 +2032,22 @@
     }
 }
 
+@media (max-width: 940px) {
+    .events-header__btn {
+        position: absolute;
+        padding: 0 !important;
+        top: -54px;
+        right: 0;
+    }
+
+    .events-header__btn .cafe-info-card__btn--poster {
+        margin: 0;
+    }
+
+    .events .filter {
+        width: 100%;
+    }
+}
 @media (max-width: 920px) {
 
     .cafe-list .c-grid {
@@ -2268,20 +2284,6 @@
         padding: 3rem 3rem 7rem;
     }
 
-    .events-header__btn {
-        position: absolute;
-        padding: 0 !important;
-        top: -54px;
-        right: 0;
-    }
-
-    .events-header__btn .cafe-info-card__btn--poster {
-        margin: 0;
-    }
-
-    .events .filter {
-        width: 100%;
-    }
 
 }
 
@@ -3234,7 +3236,11 @@
     }
 
     .events-header__btn {
-        top: -34px;
+        top: -41px;
+    }
+
+    .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
+        box-shadow: none;
     }
 
 }
@@ -4956,6 +4962,8 @@
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
         padding: .8rem .6rem .8rem;
+        box-shadow: none;
+        font-size: 18px;
     }
 }
 

@@ -11335,13 +11335,32 @@ test popup
           align-items: flex-start;
   position: relative; }
   .events .filter-layout .events-header__btn {
-    padding: 2rem 0;
+    padding: 1.4rem 0;
     cursor: pointer; }
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
-      padding: 1.4rem .9rem .7rem; }
+      padding: 1.1rem 1.9rem .9rem;
+      background-color: #fff;
+      color: #c44890;
+      font-family: "BebasNeue";
+      font-size: 2rem;
+      font-weight: 700;
+      border-radius: 5rem;
+      -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+      border: 1px dotted #dadada; }
       .events .filter-layout .events-header__btn .cafe-info-card__btn--poster .cafe-info-card__btn-icon {
+        width: 22px;
+        height: 22px;
         position: relative;
-        top: -.4rem; }
+        top: -.4rem;
+        border-radius: 50rem;
+        background-color: #c44890;
+        top: 0; }
+        .events .filter-layout .events-header__btn .cafe-info-card__btn--poster .cafe-info-card__btn-icon svg.c-symbol {
+          stroke: transparent;
+          fill: #fff;
+          font-size: 1.8rem;
+          top: 4px; }
 
 .events .filter-form {
   -webkit-box-pack: start;
