@@ -1695,7 +1695,7 @@ body {
   padding-left: 3.5rem;
   position: relative; }
 
-.c-ol-list li:before {
+.c-ol-list > li:before {
   content: counter(item) ") ";
   counter-increment: item;
   position: absolute;

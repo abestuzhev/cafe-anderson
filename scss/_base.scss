@@ -132,7 +132,7 @@ body {
     position: relative;
 }
 
-.c-ol-list li:before {
+.c-ol-list > li:before {
     content: counter(item) ") ";
     counter-increment: item;
     position: absolute;
