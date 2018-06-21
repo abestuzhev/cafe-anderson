@@ -186,10 +186,10 @@ $(document).ready(function ($) {
 
 
 
-    $(document).on('click', '.c-card-catalog__footer.v2 .c-card-catalog__basket', function(){
-        $(this).hide();
-        $(this).siblings('.c-card-catalog__count').show();
-    });
+    // $(document).on('click', '.c-card-catalog__footer.v2 .c-card-catalog__basket', function(){
+    //     $(this).hide();
+    //     $(this).siblings('.c-card-catalog__count').show();
+    // });
 
 
 
