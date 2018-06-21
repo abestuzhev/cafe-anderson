@@ -3235,8 +3235,12 @@
         padding-right: 0;
     }
 
+    .events .filter-layout {
+        margin-top: 2rem;
+    }
+
     .events-header__btn {
-        top: -41px;
+        top: -57px;
     }
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
