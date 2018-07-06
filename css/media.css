@@ -5931,3 +5931,16 @@
         width: 90%;
     }
 }
+
+
+
+
+/* адавтивная версия модального окна "домашние пельмешки" */
+@media screen and (max-width: 476px) {
+    .popup-graduation .popup {
+        background-size: cover !important;
+        height: auto !important;
+        padding-top: 100%;
+        top: 23%;
+    }
+}
