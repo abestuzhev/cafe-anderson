@@ -5943,4 +5943,9 @@
         padding-top: 100%;
         top: 23%;
     }
+
+    .popup-graduation .popup-graduation__close {
+        right: 12%;
+        top: 1.9rem;
+    }
 }

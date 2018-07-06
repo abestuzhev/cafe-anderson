@@ -1783,7 +1783,7 @@ $(document).ready(function ($) {
                 if ($('.popup-graduation').hasClass('is-visible')) {
                     $.cookie("graduation", "1", {path: '/', expires: 3});
                 }
-                
+
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div.parents('html').removeClass('lock-html').css('margin-right','0');
