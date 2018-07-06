@@ -5944,6 +5944,9 @@
         top: 23%;
     }
 
+}
+
+@media screen and (max-width: 760px) {
     .popup-graduation .popup-graduation__close {
         right: 12%;
         top: 1.9rem;
