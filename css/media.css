@@ -5952,3 +5952,10 @@
         top: 1.9rem;
     }
 }
+
+@media screen and (max-width: 370px) {
+    .popup-graduation .popup-graduation__close {
+        
+        top: 0;
+    }
+}
