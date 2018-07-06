@@ -5953,9 +5953,9 @@
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 420px) {
     .popup-graduation .popup-graduation__close {
-        
+
         top: 0;
     }
 }
