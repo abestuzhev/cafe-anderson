@@ -1780,6 +1780,10 @@ $(document).ready(function ($) {
                 && div5.has(e.target).length === 0){
                 // div.removeClass(instrumentHide); // скрываем его
                 // console.log('true');
+                if ($('.popup-graduation').hasClass('is-visible')) {
+                    $.cookie("graduation", "1", {path: '/', expires: 3});
+                }
+                
                 div.parents('.mfp-wrap').removeClass('is-visible');
                 div.parents('html').find('.mfp-bg ').removeClass('is-visible');
                 div.parents('html').removeClass('lock-html').css('margin-right','0');
@@ -1791,6 +1795,8 @@ $(document).ready(function ($) {
                     localStorage.removeItem("backUrl");
                     window.cakeCartItem = {};
                 }
+
+
 
                 div2.parents('.mfp-wrap').removeClass('is-visible');
                 div2.parents('html').find('.mfp-bg ').removeClass('is-visible');
