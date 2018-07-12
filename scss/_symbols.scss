@@ -726,6 +726,26 @@
 }
 
 
+//иконка круга с тортом
+.icon-round-cake {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    background-color: #cabbaa;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon-round-cake .symbol-cake-2 {
+    position: absolute;
+    left: 35%;
+    top: 3px;
+    fill: #fff;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
 
 
 
