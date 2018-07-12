@@ -12052,7 +12052,7 @@ test popup
           content: '';
           border: none; }
     .order-delivery-date {
-      /*order-delivery-date*/
+      /*order-dholidayelivery-date*/
       margin: 2rem 0 3rem 2rem; }
       .order-delivery-date__list {
         display: -webkit-box;
@@ -17282,21 +17282,21 @@ test popup
     -webkit-transform: rotate(0);
             transform: rotate(0); }
   50% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg); }
+    -webkit-transform: translateX(-6px) rotate(1deg);
+            transform: translateX(-6px) rotate(1deg); }
   100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0); } }
 @keyframes swing {
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0); }
   50% {
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg); }
+    -webkit-transform: translateX(-6px) rotate(1deg);
+            transform: translateX(-6px) rotate(1deg); }
   100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0); } }
 
 .holiday-reason {
   margin-bottom: 9rem;
@@ -17441,10 +17441,7 @@ test popup
     display: inline-block; }
     .holiday-reason-card:hover {
       -webkit-animation: swing 3s infinite ease-in-out;
-              animation: swing 3s infinite ease-in-out;
-      -webkit-transform-origin: 50% 0;
-          -ms-transform-origin: 50% 0;
-              transform-origin: 50% 0; }
+              animation: swing 3s infinite ease-in-out; }
     .holiday-reason-card::after {
       content: '';
       position: absolute;

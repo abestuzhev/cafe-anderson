@@ -6987,7 +6987,7 @@ test popup
             }
         }
 
-        &-date {/*order-delivery-date*/
+        &-date {/*order-dholidayelivery-date*/
             margin: 2rem 0 3rem 2rem;
 
             &__list {
@@ -13841,9 +13841,9 @@ test popup
 
 @keyframes swing {
     0% { transform: rotate(0); }
-    50% { transform: rotate(1deg); }
+    50% { transform: translateX(-6px) rotate(1deg); }
     //70% { transform: rotate(-1deg); }
-    100% { transform: rotate(0); }
+    100% { transform: translateX(0) rotate(0); }
 }
 
 .holiday-reason {
@@ -14028,8 +14028,9 @@ test popup
 
         &:hover {
             animation: swing 3s infinite ease-in-out;
-            transform-origin: 50% 0;
+            //transform-origin: 50% 0;
         }
+
 
         &::after {
             content: '';
