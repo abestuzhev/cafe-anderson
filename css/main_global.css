@@ -17440,8 +17440,8 @@ test popup
     margin-bottom: 5.5rem;
     display: inline-block; }
     .holiday-reason-card:hover {
-      -webkit-animation: swing 3s infinite ease-in-out;
-              animation: swing 3s infinite ease-in-out; }
+      -webkit-animation: swing 2s infinite ease-in-out;
+              animation: swing 2s infinite ease-in-out; }
     .holiday-reason-card::after {
       content: '';
       position: absolute;
