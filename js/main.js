@@ -835,7 +835,7 @@ $(document).ready(function ($) {
 
     function initProfilePlugin(){
         //маска
-        $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+        $('.js-input--tel').mask('+', {clearIfNotMatch: true});
         $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
 
         /*селект*/
@@ -988,7 +988,7 @@ $(document).ready(function ($) {
             .parents('.c-form__item')
             .siblings('.lk-profile-edit__copy')
             .clone().appendTo(".lk-profile-edit__tel-list");
-        $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+        $('.js-input--tel').mask('+', {clearIfNotMatch: true});
     });
 
     /*добавление полей в контактах ЛК*/
@@ -1477,9 +1477,9 @@ $(document).ready(function ($) {
     // });
 
     /*маски для телефона*/
-    $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
-    $('#request-call__tel, #reg__phone').mask('+7(000)000-00-00', {clearIfNotMatch: true});
-    $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+    $('#request-call__tel, #reg__phone').mask('+', {clearIfNotMatch: true});
+    $('#request-call__tel, #reg__phone').mask('+', {clearIfNotMatch: true});
+    $('.js-input--tel').mask('+', {clearIfNotMatch: true});
     $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
     $('.js-input--loyalty').mask('000-000', {clearIfNotMatch: true });
 
@@ -1487,8 +1487,8 @@ $(document).ready(function ($) {
         clearIfNotMatch: true,
         placeholder: "__:__ — __:__"
     });
-    $('input[name="form_text_30"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
-    $('input[name="form_text_52"]').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+    $('input[name="form_text_30"]').mask('+', {clearIfNotMatch: true});
+    $('input[name="form_text_52"]').mask('+', {clearIfNotMatch: true});
 
     /*показ номера телефона в карточке кафе*/
     $('.cafe-info__item-col .c-button').on('click', function(e){
