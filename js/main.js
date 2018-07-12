@@ -453,7 +453,7 @@ $(document).ready(function ($) {
             initCustomSelect('#js-dish-variation__list .panel-dish-variation__item:last-child select');
             initCustomSelect('#js-event-data__list .panel-event-date__item:last-child select');
             // console.log('initCustomSelectSearch');
-            $('.js-input--tel').mask('+7(000)000-00-00', {clearIfNotMatch: true});
+            $('.js-input--tel').mask('+', {clearIfNotMatch: true});
             $('.js-input--date').mask('00.00.0000', {clearIfNotMatch: true});
             $('.js-input--mode').mask('00:00 — 00:00', {
                 clearIfNotMatch: true,
