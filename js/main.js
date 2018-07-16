@@ -239,7 +239,7 @@ $(document).ready(function ($) {
 
     /*START карусель*/
     //Обработка клика на стрелку вправо
-    $(document).on('click', ".pie-slider-right",function(){
+    $(document).on('click', ".popup-pie .pie-slider-right",function(){
         var carusel = $(this).parents('.pie-slider');
         right_carusel(carusel);
         var path = $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).children('img').attr('src');
@@ -255,7 +255,7 @@ $(document).ready(function ($) {
     });
 
     //Обработка клика на стрелку влево
-    $(document).on('click',".pie-slider-left",function(){
+    $(document).on('click',".popup-pie .pie-slider-left",function(){
         var carusel = $(this).parents('.pie-slider');
         left_carusel(carusel);
         var path = $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).children('img').attr('src');
@@ -286,6 +286,77 @@ $(document).ready(function ($) {
             $(carusel).find(".pie-slider-items").css({"left":"0px"});
         });
     }
+
+
+
+    /*START карусель*/
+    //Обработка клика на стрелку вправо
+    $(".pie-filling-right").on('click',function(e){
+        e.preventDefault();
+        var carusel = $(this).parents('.pie-filling');
+        filling_right_carusel(carusel);
+        console.log('право');
+
+        // console.log('filling_left_carusel : ' + filling_left_carusel(carusel));
+        // console.log('filling_right_carusel : ' + filling_right_carusel(carusel));
+
+    });
+
+    //Обработка клика на стрелку влево
+    $('.pie-filling-left').on('click', function(e){
+        e.preventDefault();
+        var carusel = $(this).parents('.pie-filling');
+        filling_left_carusel(carusel);
+        console.log('лево');
+
+    });
+    // var block_width = $('.pie-filling').find('.pie-filling__item').outerWidth();
+    var filling_block_width = $('.pie-filling-wrapper').width();
+    $('.pie-filling__item').css({
+        'width': filling_block_width - 9
+    });
+
+    $(window).resize(function(){
+        var filling_block_width = $('.pie-filling-wrapper').width();
+        var w = $(window).width();
+        if(w < 627){
+            $('.pie-filling__item').css({
+                'width': filling_block_width - 9
+            });
+        }else{
+
+        }
+
+    });
+
+
+
+    function filling_left_carusel(carusel){
+
+        $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).clone().prependTo($(carusel).find(".pie-filling__items"));
+        $(carusel).find(".pie-filling__items").css({"left":"-"+filling_block_width+"px"});
+        $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).remove();
+        $(carusel).find(".pie-filling__items").animate({left: "0px"}, 300);
+
+    }
+
+    function filling_right_carusel(carusel){
+        // var block_width = $(carusel).find('.pie-filling__item').outerWidth();
+        $(carusel).find(".pie-filling__items").animate({left: "-"+ filling_block_width +"px"}, 300, function(){
+        $(carusel).find(".pie-filling__items .pie-filling__item").eq(0).clone().appendTo($(carusel).find(".pie-filling__items"));
+        $(carusel).find(".pie-filling__items .pie-filling__item").eq(0).remove();
+        $(carusel).find(".pie-filling__items").css({"left":"0px"});
+
+        });
+    }
+
+
+
+
+
+
+//аналогичная карусель для начинок
+
 
 
 //     $(function() {
@@ -2464,3 +2535,127 @@ function pageWidget(pages) {
         input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
     });
 }( document, window, 0 ));
+
+
+$(function(){
+    // Custom readmore
+    var obj = $(".cake-order-composition");
+    var collapsed = true;
+    obj.attr('collapsed', collapsed);
+    var moreString = '<a href="#" class="mrm-more"></a>';
+    var lessString = '<a href="#" class="mrm-less"></a>';
+    obj.append(moreString);
+    obj.append(lessString);
+    obj.find('a.mrm-more').show();
+    obj.find('a.mrm-less').hide();
+
+    obj.find('a.mrm-more').on('click',function(event){
+        event.preventDefault();
+        var collapsed = false;
+        obj.find('a.mrm-less').show();
+        obj.find('a.mrm-more').hide();
+        obj.attr('collapsed', collapsed);
+
+    });
+    obj.find('a.mrm-less').on('click',function(event){
+        event.preventDefault();
+        var collapsed = true;
+        obj.find('a.mrm-more').show();
+        obj.find('a.mrm-less').hide();
+        obj.attr('collapsed', collapsed);
+
+    });
+
+
+
+    // Show Hint
+    $('#pie-order-form > div.popup-body > div.cake-order-time > div:nth-child(3)').append($('<div class="close"></div>'));
+
+    var hintPanel = $('#pie-order-form > div.popup-body > div.cake-order-time > div:nth-child(3)');
+
+    $('.delivery-date-hint').on('click',function() {
+
+        if(hintPanel.hasClass('show-hint')) {
+            hintPanel.removeClass("show-hint");
+        } else {
+            hintPanel.addClass("show-hint");
+        }
+    });
+
+    hintPanel.find('.close').on('click', function() {
+        hintPanel.removeClass("show-hint");
+    });
+
+
+    // #region disable dialogbox and hints
+
+    function hideHints() {
+        $('#pie-order-form > div.popup-body > div.cake-order-time > div:nth-child(3)').removeClass("show-hint");
+    }
+
+    function hideDatepicker() {
+        $('#cake-order-date').datepicker().data('datepicker').hide();
+    }
+    // #endregion disable dialogbox and hints
+
+    // Scroll form
+    $('.mfp-wrap.popup-pie-one-click').on('scroll', function(){
+        hideHints();
+        hideDatepicker();
+    });
+
+
+    // Click on form with except
+    $('.popup-pie-one-click .mfp-content').on('click', function(event) {
+        if($(event.target).hasClass('delivery-date-hint') ||
+            $(event.target).hasClass('c-form__attention')
+        ) {
+            //clicked on hint
+        } else {
+            hideHints();
+        }
+    });
+
+    // Collapse nav menu
+    //c-card-slide__dropdown
+    var carretHTML = `
+    <a href="#" class="nav-dropdown">
+        <i class="icon-dropdown">
+            <svg class="icon-dropdown__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.54 68.83">
+                <path d="M46.65,23.71c-2.19-2-4.42-3.89-6.71-5.76C31,10.61,18.61-.11,6.22,2.69c-4.43,1-7.1,6.07-6,10.37,3,11,13.81,17.08,22.07,24.06C33.06,46.17,42.88,56,52.87,65.85c3.61,3.54,10.81,4,14.8.86,7.56-6,20.49-14.33,27.53-21,15.48-12.05,29.38-26,29.33-35,.33-7-4.2-10.14-7.33-10.67-8.32-1.41-27,17.75-35.67,25.67C77.38,28.58,69.22,35.58,65,38.28"></path>
+            </svg>
+        </i>
+    </a>
+    `;
+
+    $('.pie-mix__item').append(carretHTML);
+
+    var pieNavCollapse = true;
+    $('.pie-mix a.nav-dropdown').on('click',function() {
+        pieNavCollapse = !pieNavCollapse;
+
+        if(pieNavCollapse) {
+            $(this).removeClass('active');
+            $('.pie-mix a.pie-mix__item').not('.mixitup-control-active').hide();
+        } else {
+            $(this).addClass('active');
+            $('.pie-mix a.pie-mix__item').not('.mixitup-control-active').show();
+        }
+
+
+
+        // $('.pie-mix a.pie-mix__item:not(.mixitup-control-active)').hide();
+
+        // if(pieNavCollapse) {
+        //     pieNavCollapse = false;
+        //     $('.pie-mix a.pie-mix__item').show();
+        // } else {
+        //     pieNavCollapse = true;
+        //     $('.pie-mix a.pie-mix__item:not(.mixitup-control-active)').hide();
+        // }
+
+    });
+
+
+
+});
