@@ -19228,6 +19228,8 @@ test popup
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column; }
+  .popup-pie .popup {
+    margin: 0 auto; }
   .popup-pie .popup-mini {
     margin: auto;
     margin-top: 10px;
