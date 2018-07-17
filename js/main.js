@@ -403,7 +403,7 @@ $(document).ready(function ($) {
 
         var pieImgContainerWidth = $(val).width();
         var pieImgWidth = $(val).children('img').width();
-        
+
 
         if(pieImgWidth < pieImgContainerWidth){
             $(val).children('img').css({
