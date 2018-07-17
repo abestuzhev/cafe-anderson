@@ -313,7 +313,7 @@ $(document).ready(function ($) {
     // var block_width = $('.pie-filling').find('.pie-filling__item').outerWidth();
     var filling_block_width = $('.pie-filling-wrapper').width();
     $('.pie-filling__item').css({
-        'width': filling_block_width - 219
+        'width': filling_block_width - 9
     });
 
     $(window).resize(function(){
@@ -321,7 +321,7 @@ $(document).ready(function ($) {
         var w = $(window).width();
         if(w < 627){
             $('.pie-filling__item').css({
-                'width': filling_block_width - 219
+                'width': filling_block_width - 9
             });
         }else{
 
@@ -331,24 +331,26 @@ $(document).ready(function ($) {
 
 
 
-    function filling_left_carusel(carusel){
-
-        $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).clone().prependTo($(carusel).find(".pie-filling__items"));
-        // $(carusel).find(".pie-filling__items").css({"left":"-"+filling_block_width+"px"});
-        $(carusel).find(".pie-filling__items").animate({"left":"-"+filling_block_width+"px"}, 1000);
-        $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).remove();
-        $(carusel).find(".pie-filling__items").animate({left: "0px"}, 300);
-
-    }
 
     function filling_right_carusel(carusel){
         // var block_width = $(carusel).find('.pie-filling__item').outerWidth();
-        $(carusel).find(".pie-filling__items").animate({left: "-"+ filling_block_width +"px"}, 300, function(){
-        $(carusel).find(".pie-filling__items .pie-filling__item").eq(0).clone().appendTo($(carusel).find(".pie-filling__items"));
-        $(carusel).find(".pie-filling__items .pie-filling__item").eq(0).remove();
-        $(carusel).find(".pie-filling__items").css({"left":"0px"});
+        $(carusel).find(".pie-filling__items").animate({left: "-"+ filling_block_width +"px"}, 200);
+        setTimeout(function () {
+            $(carusel).find(".pie-filling__items .pie-filling__item").eq(0).clone().appendTo($(carusel).find(".pie-filling__items"));
+            $(carusel).find(".pie-filling__items .pie-filling__item").eq(0).remove();
+            $(carusel).find(".pie-filling__items").css({"left":"0px"});
+        }, 300);
+    }
 
-        });
+
+    function filling_left_carusel(carusel){
+
+        $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).clone().prependTo($(carusel).find(".pie-filling__items"));
+        $(carusel).find(".pie-filling__items").css({"left":"-"+filling_block_width+"px"});
+        // $(carusel).find(".pie-filling__items").animate({"left":"-"+filling_block_width+"px"}, 1000);
+        $(carusel).find(".pie-filling__items").animate({left: "0px"}, 300);
+        $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).remove();
+
     }
 
 

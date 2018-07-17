@@ -18386,22 +18386,10 @@ test popup
     .pie-filling__title {
       color: #9b806f;
       margin-bottom: 1.8rem; }
-    .pie-filling__wrapper {
-      -webkit-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease; }
-    .pie-filling__items {
-      -webkit-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease; }
-      .pie-filling__items::after {
-        content: '';
-        clear: both;
-        display: table; }
-    .pie-filling__item {
-      -webkit-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease; }
+    .pie-filling__items::after {
+      content: '';
+      clear: both;
+      display: table; }
   .pie-description {
     padding: 4.6rem 0 3.4rem;
     font-family: "PT Serif Caption";
