@@ -15839,6 +15839,11 @@ test popup
         flex:0 1 14rem;
         &__row {
             min-height: 9.5rem;
+            text-align: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
         }
         
         &__icon {
@@ -15846,8 +15851,12 @@ test popup
             border-right: 1px solid rgba(0,0,0, .2);
         }
         
-        &__time {
-        
+        &-time {
+            text-align: center;
+            border: 1px solid #f4f4f4;
+            &__text {
+                font-size: 1.6rem;
+            }
         }
     }
     
@@ -15857,14 +15866,18 @@ test popup
     
     &-week {
         min-height: 9.5rem;
-        background-color: #c44890;
     }
     
     &-grid {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     &-col {
-    
+        width: 14.2%;
+        max-width: 15rem;
     }
     
     &-row {
@@ -15872,24 +15885,52 @@ test popup
     }
     
     &-day {
+        text-align: center;
+        min-height: 9.5rem;
+        background-color: #c44890;
+        color: #ffc7e8;
+        font-family: $font_serif;
+        padding: 1.8rem 0;
         &__number {
-        
+            font-family: $font_sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+            
+            span {
+                font-size: 1.4rem;
+            }
         }
         
         &__week {
-        
+            font-size: 1.4rem;
         }
         
     }
     
     &-box {
         min-height: 9.5rem;
+        border: 1px solid transparent;
+        font-size: 1.6rem;
+        font-style: italic;
+    
         &--free {
-        
+            border: 1px solid #b0e183;
+            background-color: #81c15f;
+            text-align: center;
+            position: relative;
+            
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
         
         &--reserve {
-        
+            border: 1px solid #d0d0d0;
+            background-color: #5f5256;
         }
         
         

@@ -18906,19 +18906,88 @@ test popup
         -ms-flex: 0 1 14rem;
             flex: 0 1 14rem; }
     .calendar-nav__row {
-      min-height: 9.5rem; }
+      min-height: 9.5rem;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .calendar-nav__icon {
       background-color: #c44890;
       border-right: 1px solid rgba(0, 0, 0, 0.2); }
+    .calendar-nav-time {
+      text-align: center;
+      border: 1px solid #f4f4f4; }
+      .calendar-nav-time__text {
+        font-size: 1.6rem; }
   .calendar-track {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1; }
   .calendar-week {
-    min-height: 9.5rem;
-    background-color: #c44890; }
-  .calendar-box {
     min-height: 9.5rem; }
+  .calendar-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .calendar-col {
+    width: 14.2%;
+    max-width: 15rem; }
+  .calendar-day {
+    text-align: center;
+    min-height: 9.5rem;
+    background-color: #c44890;
+    color: #ffc7e8;
+    font-family: "PT Serif Caption";
+    padding: 1.8rem 0; }
+    .calendar-day__number {
+      font-family: "BebasNeue";
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1; }
+      .calendar-day__number span {
+        font-size: 1.4rem; }
+    .calendar-day__week {
+      font-size: 1.4rem; }
+  .calendar-box {
+    min-height: 9.5rem;
+    border: 1px solid transparent;
+    font-size: 1.6rem;
+    font-style: italic; }
+    .calendar-box--free {
+      border: 1px solid #b0e183;
+      background-color: #81c15f;
+      text-align: center;
+      position: relative; }
+      .calendar-box--free span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+    .calendar-box--reserve {
+      border: 1px solid #d0d0d0;
+      background-color: #5f5256; }
 
 .popup-pie {
   /* Ручной readmore */
