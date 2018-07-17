@@ -14825,6 +14825,10 @@ test popup
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 3.5rem;
+        
+        form {
+            width: 100%;
+        }
 
         &__col {
             margin-right: 1.2rem;
@@ -14833,6 +14837,8 @@ test popup
             justify-content: flex-start;
             align-items: center;
             margin-bottom: 1rem;
+            padding: 0;
+            border: none;
 
             &:last-child {
                 margin-right: 0;

@@ -403,8 +403,7 @@ $(document).ready(function ($) {
 
         var pieImgContainerWidth = $(val).width();
         var pieImgWidth = $(val).children('img').width();
-        console.log('ширина контейнера ' + i + ': ' + pieImgContainerWidth);
-        console.log('ширина картинки ' + i + ': ' + pieImgWidth);
+        
 
         if(pieImgWidth < pieImgContainerWidth){
             $(val).children('img').css({

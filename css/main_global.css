@@ -18107,6 +18107,8 @@ test popup
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 3.5rem; }
+    .pie-filter form {
+      width: 100%; }
     .pie-filter__col {
       margin-right: 1.2rem;
       display: -webkit-box;
@@ -18122,7 +18124,9 @@ test popup
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      padding: 0;
+      border: none; }
       .pie-filter__col:last-child {
         margin-right: 0; }
       .pie-filter__col select {
