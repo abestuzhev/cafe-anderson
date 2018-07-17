@@ -5761,8 +5761,8 @@
     }
 
     .popup__booking .popup {
-        position: static;
-        height: auto;
+        position: static !important;
+        height: auto !important;
         overflow: visible;
         width: 100% !important;
     }
