@@ -332,6 +332,10 @@
     .pie-form__line {
         justify-content: flex-start;
     }
+
+    .pie-filling__item {
+        width: 25% !important;
+    }
 }
 
 
@@ -5569,11 +5573,6 @@
     }
 }
 
-@media (min-width: 627px) {
-    .pie-filling__item {
-        width: 25% !important;
-    }
-}
 
 @media (max-width: 710px) {
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__basket span {
@@ -5749,6 +5748,22 @@
     .popup-poster .poster-card--2 .poster-card__header .c-symbol,
     .popup-poster .poster-card--3 .poster-card__header .c-symbol {
         left: 20rem;
+    }
+
+    .popup__booking .popup {
+
+    }
+    .popup__booking .popup-body {
+        owerflow-x: scroll;
+    }
+    .popup__booking .popup-body frame {
+        width: 1000px;
+    }
+
+    .popup__booking .popup {
+        position: static;
+        height: auto;
+        overflow: visible;
     }
 }
 

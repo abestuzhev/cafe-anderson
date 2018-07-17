@@ -951,6 +951,10 @@
     .pie-filling .c-card-slide {
         box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.2);
     }
+    
+    .pie-filling__item:nth-child(1n) {
+        padding: 0 !important;
+    }
 
 }
 

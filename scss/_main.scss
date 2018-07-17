@@ -1447,12 +1447,13 @@ main {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: hidden;
 }
 
 .popup-layout .popup {
     float: left;
+    margin: 0;
 }
 
 .popup-mini {
@@ -2387,7 +2388,7 @@ test popup
 }
 
 .mfp-ajax-holder .mfp-content, .mfp-inline-holder .mfp-content {
-    //width: 100%;gu
+    //width: 100%;
     cursor: auto;
 }
 
@@ -2398,6 +2399,7 @@ test popup
     margin: 0 auto;
     text-align: left;
     z-index: 1045;
+    width: 98%;
 }
 
 .white-popup-block {
@@ -15167,8 +15169,13 @@ test popup
 
         .c-card-slide__dropdown {
         }
+        
+        &__wrapper {
+            transition: all .2s ease;
+        }
 
         &__items {
+            transition: all .2s ease;
             &::after {
                 content: '';
                 clear:both;
@@ -15176,14 +15183,8 @@ test popup
             }
         }
         &__item {
+            transition: all .2s ease;
             //width: 25% !important;
-
-
-
-
-            &:nth-child(1n) {
-                padding: 0 !important;
-            }
         }
     }
 

@@ -313,7 +313,7 @@ $(document).ready(function ($) {
     // var block_width = $('.pie-filling').find('.pie-filling__item').outerWidth();
     var filling_block_width = $('.pie-filling-wrapper').width();
     $('.pie-filling__item').css({
-        'width': filling_block_width - 9
+        'width': filling_block_width - 219
     });
 
     $(window).resize(function(){
@@ -321,7 +321,7 @@ $(document).ready(function ($) {
         var w = $(window).width();
         if(w < 627){
             $('.pie-filling__item').css({
-                'width': filling_block_width - 9
+                'width': filling_block_width - 219
             });
         }else{
 
@@ -334,7 +334,8 @@ $(document).ready(function ($) {
     function filling_left_carusel(carusel){
 
         $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).clone().prependTo($(carusel).find(".pie-filling__items"));
-        $(carusel).find(".pie-filling__items").css({"left":"-"+filling_block_width+"px"});
+        // $(carusel).find(".pie-filling__items").css({"left":"-"+filling_block_width+"px"});
+        $(carusel).find(".pie-filling__items").animate({"left":"-"+filling_block_width+"px"}, 1000);
         $(carusel).find(".pie-filling__items .pie-filling__item").eq(-1).remove();
         $(carusel).find(".pie-filling__items").animate({left: "0px"}, 300);
 
