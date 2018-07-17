@@ -391,6 +391,15 @@
     }
 }
 
+@media screen and (max-width: 970px) {
+    
+    .pie-filter__col:nth-child(1) {
+        width: auto;
+        margin-right: 1.2rem;
+    }
+    
+}
+
 @media screen and (max-width: 980px) {
 
     .pie-form__line {
@@ -417,7 +426,7 @@
     .pie-mix__list {
         min-height: 0;
     }
-
+    
 
 }
 
@@ -557,6 +566,100 @@
 
 
 
+@media screen and (max-width: 750px) {
+    .pie-filter {
+        flex-flow: column;
+        align-items: flex-start;
+        margin-bottom: 24px;
+        
+        // начинка
+        .pie-filter__col:nth-child(1) {
+            flex-flow: column;
+            align-items: flex-start;
+            margin: 0;
+            margin-bottom: 15px;
+            width: 100%;
+            
+            .pie-filter__choice {
+                width: 100%;
+            }
+            
+            .pie-filter__name {
+                margin-bottom: 12px;
+            }
+            
+            .SumoSelect {
+                width: 100%;
+            }
+        }
+        
+        // форма
+        .pie-filter__col:nth-child(2) {
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 0;
+            margin-bottom: 15px;
+            width: 100%;
+            
+            .pie-filter__choice {
+                width: 100%;
+            }
+            
+            .pie-filter__name {
+                white-space: nowrap;
+            }
+            
+            .SumoSelect {
+                margin: 0;
+                width: 100%;
+            }
+            
+            select {
+                width: 100%;
+            }
+            
+        }
+        
+        // срок
+        .pie-filter__col:nth-child(3) {
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            align-items: baseline;
+            
+            width: 100%;
+            
+            .pie-filter__choice {
+                width: 100%;
+            }
+            
+            .pie-filter__name {
+                white-space: nowrap;
+            }
+            
+            .SumoSelect {
+                margin: 0;
+                width: 100%;
+            }
+            
+            select {
+                width: 100%;
+            }
+            
+        }
+        
+        .pie-filter__col {
+            width: 100%;
+            
+            .pie-filter__choice {
+                width: 100%;
+                
+            }
+        }
+    }
+}
 @media screen and (max-width: 627px) {
     .popup-pie {
         .popup {
@@ -736,91 +839,6 @@
 
     .pie-form__body {
         background-position: 137% 100%;
-    }
-
-    .pie-filter {
-        flex-flow: column;
-        align-items: flex-start;
-        margin-bottom: 24px;
-
-        // начинка
-        .pie-filter__col:nth-child(1) {
-            flex-flow: column;
-            align-items: flex-start;
-            margin: 0;
-            margin-bottom: 15px;
-            width: 100%;
-
-            .pie-filter__choice {
-                width: 100%;
-            }
-
-            .pie-filter__name {
-                margin-bottom: 12px;
-            }
-
-            .SumoSelect {
-                width: 100%;
-            }
-        }
-
-        // форма
-        .pie-filter__col:nth-child(2) {
-            flex-flow: row nowrap;
-            align-items: flex-start;
-            justify-content: space-between;
-            align-items: baseline;
-            margin: 0;
-            margin-bottom: 15px;
-            width: 100%;
-
-            .pie-filter__choice {
-                width: 100%;
-            }
-
-            .pie-filter__name {
-                white-space: nowrap;
-            }
-
-            .SumoSelect {
-                margin: 0;
-                width: 100%;
-            }
-
-            select {
-                width: 100%;
-            }
-
-        }
-
-        // срок
-        .pie-filter__col:nth-child(3) {
-            flex-flow: row nowrap;
-            align-items: flex-start;
-            justify-content: space-between;
-            align-items: baseline;
-            margin: 0;
-
-            width: 100%;
-
-            .pie-filter__choice {
-                width: 100%;
-            }
-
-            .pie-filter__name {
-                white-space: nowrap;
-            }
-
-            .SumoSelect {
-                margin: 0;
-                width: 100%;
-            }
-
-            select {
-                width: 100%;
-            }
-
-        }
     }
 
     .pie-nav .holiday-assemble {
@@ -1059,6 +1077,16 @@
 
     .pie-form-download {
         padding: 1.7rem .7rem 0;
+    }
+    .pie-filter .pie-filter__col:nth-child(1) .pie-filter__name {
+        margin-bottom: .7rem;
+    }
+    
+    .pie-filter__col {
+        display: block;
+        .pie-filter__name {
+            margin-bottom: .7rem;
+        }
     }
 }
 

@@ -19204,6 +19204,11 @@ test popup
     width: 100%;
     margin-right: 0; } }
 
+@media screen and (max-width: 970px) {
+  .pie-filter__col:nth-child(1) {
+    width: auto;
+    margin-right: 1.2rem; } }
+
 @media screen and (max-width: 980px) {
   .pie-form__line {
     -webkit-box-orient: horizontal;
@@ -19305,6 +19310,88 @@ test popup
     padding: 1.4rem 3.4rem; }
   .pie-form__body {
     padding: 3rem 2.3rem 2.3rem; } }
+
+@media screen and (max-width: 750px) {
+  .pie-filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 24px; }
+    .pie-filter .pie-filter__col:nth-child(1) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin: 0;
+      margin-bottom: 15px;
+      width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(1) .pie-filter__choice {
+        width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(1) .pie-filter__name {
+        margin-bottom: 12px; }
+      .pie-filter .pie-filter__col:nth-child(1) .SumoSelect {
+        width: 100%; }
+    .pie-filter .pie-filter__col:nth-child(2) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      margin: 0;
+      margin-bottom: 15px;
+      width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(2) .pie-filter__choice {
+        width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(2) .pie-filter__name {
+        white-space: nowrap; }
+      .pie-filter .pie-filter__col:nth-child(2) .SumoSelect {
+        margin: 0;
+        width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(2) select {
+        width: 100%; }
+    .pie-filter .pie-filter__col:nth-child(3) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(3) .pie-filter__choice {
+        width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(3) .pie-filter__name {
+        white-space: nowrap; }
+      .pie-filter .pie-filter__col:nth-child(3) .SumoSelect {
+        margin: 0;
+        width: 100%; }
+      .pie-filter .pie-filter__col:nth-child(3) select {
+        width: 100%; }
+    .pie-filter .pie-filter__col {
+      width: 100%; }
+      .pie-filter .pie-filter__col .pie-filter__choice {
+        width: 100%; } }
 
 @media screen and (max-width: 627px) {
   .popup-pie .popup {
@@ -19436,83 +19523,6 @@ test popup
     height: 46rem; }
   .pie-form__body {
     background-position: 137% 100%; }
-  .pie-filter {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-bottom: 24px; }
-    .pie-filter .pie-filter__col:nth-child(1) {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: column;
-              flex-flow: column;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      margin: 0;
-      margin-bottom: 15px;
-      width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(1) .pie-filter__choice {
-        width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(1) .pie-filter__name {
-        margin-bottom: 12px; }
-      .pie-filter .pie-filter__col:nth-child(1) .SumoSelect {
-        width: 100%; }
-    .pie-filter .pie-filter__col:nth-child(2) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline;
-      margin: 0;
-      margin-bottom: 15px;
-      width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(2) .pie-filter__choice {
-        width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(2) .pie-filter__name {
-        white-space: nowrap; }
-      .pie-filter .pie-filter__col:nth-child(2) .SumoSelect {
-        margin: 0;
-        width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(2) select {
-        width: 100%; }
-    .pie-filter .pie-filter__col:nth-child(3) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: baseline;
-          -ms-flex-align: baseline;
-              align-items: baseline;
-      margin: 0;
-      width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(3) .pie-filter__choice {
-        width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(3) .pie-filter__name {
-        white-space: nowrap; }
-      .pie-filter .pie-filter__col:nth-child(3) .SumoSelect {
-        margin: 0;
-        width: 100%; }
-      .pie-filter .pie-filter__col:nth-child(3) select {
-        width: 100%; }
   .pie-nav .holiday-assemble {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -19679,7 +19689,13 @@ test popup
   .pie-form__item:nth-child(5) {
     width: 56%; }
   .pie-form-download {
-    padding: 1.7rem .7rem 0; } }
+    padding: 1.7rem .7rem 0; }
+  .pie-filter .pie-filter__col:nth-child(1) .pie-filter__name {
+    margin-bottom: .7rem; }
+  .pie-filter__col {
+    display: block; }
+    .pie-filter__col .pie-filter__name {
+      margin-bottom: .7rem; } }
 
 @media screen and (max-width: 370px) {
   .popup-pie .carousel-slider__item {
