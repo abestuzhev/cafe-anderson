@@ -1622,6 +1622,13 @@
 
 // #region Заказать торт
 
+@media screen and (max-width: 415px) {
+    
+    .pie .catalog-list .c-card-catalog__price {
+        flex: 0 1 100%;
+        margin-bottom: 8px;
+    }
+}
 @media screen and (max-width: 400px) {
     .header {
         animation: none;
@@ -1737,7 +1744,7 @@
             }
         }
     }
-
+    
 
 }
 

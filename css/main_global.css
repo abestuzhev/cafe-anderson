@@ -20074,6 +20074,13 @@ test popup
   .popup-pie-one-click .cake-order-final .c-form__attention {
     padding: 0; } }
 
+@media screen and (max-width: 415px) {
+  .pie .catalog-list .c-card-catalog__price {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 8px; } }
+
 @media screen and (max-width: 400px) {
   .header {
     -webkit-animation: none;
