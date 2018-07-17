@@ -5546,6 +5546,9 @@ div.c-card-catalog-2 {
 .compensate-for-scrollbar {
   margin: 0 !important; }
 
+.pie-slider .product-item-scu-item-color-container {
+  max-width: 100%; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
