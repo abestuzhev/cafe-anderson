@@ -769,6 +769,15 @@ i.icon-chair {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+.icon-download {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1.4rem;
+  width: 1em;
+  height: 1.4em;
+  background-size: cover;
+  background: url(../img/icons/icon-download.svg) 0 0 no-repeat; }
+
 .c-symbol {
   display: inline-block;
   width: auto;
@@ -18712,6 +18721,10 @@ test popup
       color: #ffffff;
       border-radius: 1rem;
       background-color: #c44890; }
+      .loft-banner__btn .icon-download {
+        position: relative;
+        top: -2px;
+        margin-right: .6rem; }
       .loft-banner__btn span {
         border-bottom: 1px dotted #fff; }
       .loft-banner__btn:hover {
@@ -18754,11 +18767,46 @@ test popup
     .loft-info__body {
       width: 46%; }
     .loft-info__map {
-      width: 54%; }
+      width: 54%;
+      position: relative;
+      z-index: 2; }
+      .loft-info__map .symbol-rabbit {
+        font-size: 4.7rem;
+        position: absolute;
+        z-index: -1;
+        top: 40%;
+        -webkit-transform: translateY(-50%) rotate(-34deg);
+            -ms-transform: translateY(-50%) rotate(-34deg);
+                transform: translateY(-50%) rotate(-34deg);
+        left: -41px;
+        fill: #555451 !important; }
   .loft-conditions {
     /*loft-conditions*/
     margin-bottom: 3rem;
-    padding: 0 5.5rem; }
+    padding: 4.8rem 5.5rem 0;
+    position: relative; }
+    .loft-conditions-check {
+      width: 35.4rem;
+      height: 11rem;
+      position: absolute;
+      top: .6rem;
+      right: 4rem;
+      display: inline-block;
+      background: url(../img/loft-conditions-check.png) 0 0 no-repeat;
+      background-size: cover; }
+      .loft-conditions-check__body {
+        position: absolute;
+        top: 2rem;
+        left: 11rem; }
+      .loft-conditions-check__title {
+        font-size: 2.3rem;
+        color: #6a6a6a;
+        font-family: "PT Serif Caption"; }
+      .loft-conditions-check__price {
+        font-size: 3rem;
+        color: #b81f79;
+        font-family: "BebasNeue";
+        font-weight: 700; }
     .loft-conditions__top {
       margin-bottom: 3rem; }
     .loft-conditions__list {
@@ -18850,10 +18898,61 @@ test popup
     border-radius: 0 0 8px 8px; }
   .loft .bonus-info p {
     text-align: center; }
+  .loft-message {
+    padding: 1.5rem 5.5rem; }
+    .loft-message__title {
+      font-family: "BebasNeue";
+      font-size: 3rem;
+      line-height: 1;
+      color: #8dc63f;
+      font-weight: 700;
+      margin-bottom: .2rem; }
+    .loft-message__text {
+      font-family: "PT Serif Caption";
+      font-size: 1.5rem;
+      margin-bottom: .7rem; }
+    .loft-message__ps {
+      font-style: italic;
+      color: #6b9936;
+      font-size: 1.5rem; }
+  .loft .cafe-slider__header {
+    background: url(../img/bg-slider-header-2.jpg) 50% 50% no-repeat;
+    background-size: cover; }
+  .loft .cafe-slider__footer {
+    background: url(../img/bg-slider-footer-2.jpg) 50% 50% no-repeat;
+    background-size: cover; }
+  .loft .cafe-slider {
+    margin-bottom: 0; }
 
 /*loft-booking-----------------------------*/
 .loft-booking {
   padding: 3.7rem 2.8rem; }
+  .loft-booking__header {
+    text-align: center;
+    margin-bottom: 1.8rem;
+    position: relative; }
+  .loft-booking__title {
+    font-family: "BebasNeue";
+    font-size: 4.4rem;
+    color: #c44890;
+    font-weight: 700;
+    line-height: .8; }
+    .loft-booking__title-wrap {
+      display: inline-block;
+      position: relative;
+      padding-left: 7.2rem; }
+      .loft-booking__title-wrap::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -.6rem;
+        width: 6.5rem;
+        height: 7rem;
+        background: url(../img/icons/icon-calendar-decor-2.png) 0 0 no-repeat; }
+  .loft-booking__subtitle {
+    font-family: "PT Serif Caption";
+    font-size: 2.1rem;
+    color: #555451; }
 
 /*calendar--------------------------------*/
 .calendar {
@@ -18862,8 +18961,7 @@ test popup
   border-radius: .8rem;
   -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
-  color: #555451;
-  overflow: hidden; }
+  color: #555451; }
   .calendar-header {
     /*calendar-header*/
     background-color: #fff;
@@ -18883,7 +18981,22 @@ test popup
     border-radius: 8px 8px 0 0; }
   .calendar-period {
     padding: 2rem 3rem;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    color: #555451; }
+    .calendar-period a {
+      color: #555451; }
+      .calendar-period a::after {
+        content: '';
+        border-color: #555451; }
+    .calendar-period-current {
+      color: #bb2b7f;
+      font-size: 2.5rem;
+      letter-spacing: -1px; }
+      .calendar-period-current a {
+        color: #bb2b7f; }
+        .calendar-period-current a::after {
+          content: '';
+          border: none; }
   .calendar-body {
     /*calendar-body*/
     display: -webkit-box;
@@ -18934,15 +19047,26 @@ test popup
         fill: #ffc7e8; }
     .calendar-nav-time {
       text-align: center;
-      border: 1px solid #f4f4f4; }
+      border: 1px solid #e4e4e4;
+      border-bottom: none;
+      min-height: 12rem;
+      background-color: #f4f4f4; }
       .calendar-nav-time__text {
         font-size: 1.6rem; }
   .calendar-track {
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1; }
+            flex: 1;
+    overflow: hidden;
+    padding-bottom: 17px; }
+    .calendar-track::after {
+      content: '';
+      clear: both;
+      display: table; }
   .calendar-week {
-    min-height: 9.5rem; }
+    min-height: 9.5rem;
+    float: left;
+    width: 100%; }
   .calendar-grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -18980,11 +19104,12 @@ test popup
     .calendar-day__week {
       font-size: 1.4rem; }
   .calendar-box {
-    min-height: 9.5rem;
+    min-height: 12rem;
     border: 1px solid transparent;
     font-size: 1.6rem;
     font-style: italic;
     position: relative;
+    z-index: 1;
     border-right: none !important;
     border-bottom: none !important; }
     .calendar-box span {
@@ -18997,13 +19122,69 @@ test popup
     .calendar-box--free {
       border: 1px solid #b0e183;
       background-color: #81c15f;
-      text-align: center; }
+      text-align: center;
+      -webkit-transition: -webkit-transform .15s ease-in-out;
+      transition: -webkit-transform .15s ease-in-out;
+      -o-transition: transform .15s ease-in-out;
+      transition: transform .15s ease-in-out;
+      transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden; }
+      .calendar-box--free .c-symbol {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        font-size: 4.6rem;
+        bottom: -2.4rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        fill: #555451; }
+      .calendar-box--free:hover {
+        -webkit-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+                transform: scale(1.15);
+        z-index: 10;
+        background-color: #fff;
+        border-radius: .8rem;
+        border-color: transparent;
+        -webkit-box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3);
+                box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3); }
+        .calendar-box--free:hover span {
+          display: none; }
+        .calendar-box--free:hover .calendar-box__link {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out; }
+        .calendar-box--free:hover .c-symbol {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out; }
     .calendar-box--reserve {
       border: 1px solid #d0d0d0;
       background-color: #5f5256;
       color: #8a8a8a; }
       .calendar-box--reserve span {
         text-decoration: line-through; }
+    .calendar-box__link {
+      display: inline-block;
+      opacity: 0;
+      visibility: hidden;
+      color: #81c15f;
+      font-family: "BebasNeue";
+      font-size: 2.3rem;
+      font-style: normal;
+      margin-top: 2rem; }
+      .calendar-box__link::after {
+        content: '';
+        bottom: .3rem;
+        border-color: #81c15f; }
 
 .popup-pie {
   /* Ручной readmore */

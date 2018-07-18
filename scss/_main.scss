@@ -15615,6 +15615,12 @@ test popup
             border-radius: 1rem;
             background-color: #c44890;
 
+            .icon-download {
+                position: relative;
+                top: -2px;
+                margin-right: .6rem;
+            }
+
             span {
                 border-bottom: 1px dotted #fff;
             }
@@ -15670,12 +15676,59 @@ test popup
 
         &__map {
             width: 54%;
+            position: relative;
+            z-index: 2;
+
+            .symbol-rabbit {
+                font-size: 4.7rem;
+                position: absolute;
+                z-index: -1;
+                top: 40%;
+                transform: translateY(-50%) rotate(-34deg);
+                left: -41px;
+                fill: $black !important;
+            }
         }
     }
 
     &-conditions {/*loft-conditions*/
         margin-bottom: 3rem;
-        padding: 0 5.5rem;
+        padding: 4.8rem 5.5rem 0;
+        position: relative;
+
+
+        &-check {
+            width: 35.4rem;
+            height: 11rem;
+            position: absolute;
+            top: .6rem;
+            right: 4rem;
+            display: inline-block;
+            //padding: 1.2rem 2.7rem 2rem 11rem;
+            background: url(../img/loft-conditions-check.png) 0 0 no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+
+            &__body {
+                position: absolute;
+                top: 2rem;
+                left: 11rem;
+            }
+
+
+            &__title {
+                font-size: 2.3rem;
+                color: #6a6a6a;
+                font-family: $font_serif;
+            }
+
+            &__price {
+                font-size: 3rem;
+                color: #b81f79;
+                font-family: $font_sans-serif;
+                font-weight: 700;
+            }
+        }
 
         &__top {
             margin-bottom: 3rem;
@@ -15791,18 +15844,94 @@ test popup
     .bonus-info p {
         text-align: center;
     }
+
+    &-message {
+        padding: 1.5rem 5.5rem;
+        &__title {
+            font-family: $font_sans-serif;
+            font-size: 3rem;
+            line-height: 1;
+            color: #8dc63f;
+            font-weight: 700;
+            margin-bottom: .2rem;
+        }
+
+        &__text {
+            font-family: $font_serif;
+            font-size: 1.5rem;
+            margin-bottom: .7rem;
+        }
+
+        &__ps {
+            font-style: italic;
+            color: #6b9936;
+            font-size: 1.5rem;
+        }
+    }
+
+    .cafe-slider__header {
+        background: url(../img/bg-slider-header-2.jpg) 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .cafe-slider__footer {
+        background: url(../img/bg-slider-footer-2.jpg) 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .cafe-slider {
+        margin-bottom: 0;
+    }
 }
 /*loft-booking-----------------------------*/
 .loft-booking {
     
     padding: 3.7rem 2.8rem;
     &__header {
-    
+        text-align: center;
+        margin-bottom: 1.8rem;
+        position: relative;
+
     }
-    
+
+    &__title {
+        font-family: $font_sans-serif;
+        font-size: 4.4rem;
+        color: #c44890;
+        font-weight: 700;
+        line-height: .8;
+
+        &-wrap {
+            display: inline-block;
+            position: relative;
+            padding-left: 7.2rem;
+
+
+            &::before {
+                content:'';
+                position: absolute;
+                left: 0;
+                top: -.6rem;
+                width: 6.5rem;
+                height: 7rem;
+                background: url(../img/icons/icon-calendar-decor-2.png) 0 0 no-repeat;
+
+            }
+        }
+    }
+
+    &__subtitle {
+        font-family: $font_serif;
+        font-size: 2.1rem;
+        color: $black;
+    }
+
     &__body {
     
     }
+
 }
 
 /*calendar--------------------------------*/
@@ -15813,7 +15942,6 @@ test popup
     border-radius: .8rem;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
     color: $black;
-    overflow: hidden;
     
     &-header {/*calendar-header*/
         background-color: #fff;
@@ -15827,6 +15955,29 @@ test popup
     &-period {
         padding: 2rem 3rem;
         font-size: 1.4rem;
+        color: $black;
+        a {
+            color: $black;
+            &::after {
+                content: '';
+                border-color: $black;
+            }
+        }
+
+
+        &-current {
+            color: #bb2b7f;
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+
+            a {
+                color: #bb2b7f;
+                &::after {
+                    content:'';
+                    border:none;
+                }
+            }
+        }
     }
     
     &-body {/*calendar-body*/
@@ -15863,7 +16014,10 @@ test popup
         
         &-time {
             text-align: center;
-            border: 1px solid #f4f4f4;
+            border: 1px solid #e4e4e4;
+            border-bottom: none;
+            min-height: 12rem;
+            background-color: #f4f4f4;
             &__text {
                 font-size: 1.6rem;
             }
@@ -15872,10 +16026,21 @@ test popup
     
     &-track {
         flex: 1;
+        overflow: hidden;
+
+        padding-bottom: 17px;
+
+        &::after {
+            content: '';
+            clear:both;
+            display: table;
+        }
     }
     
     &-week {
         min-height: 9.5rem;
+        float: left;
+        width: 100%;
     }
     
     &-grid {
@@ -15924,11 +16089,12 @@ test popup
     }
     
     &-box {
-        min-height: 9.5rem;
+        min-height: 12rem;
         border: 1px solid transparent;
         font-size: 1.6rem;
         font-style: italic;
         position: relative;
+        z-index: 1;
         border-right: none !important;
         border-bottom: none !important;
 
@@ -15937,12 +16103,55 @@ test popup
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
         }
     
         &--free {
             border: 1px solid #b0e183;
             background-color: #81c15f;
             text-align: center;
+            transition: transform .15s ease-in-out;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+
+
+            .c-symbol {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                font-size: 4.6rem;
+                bottom: -2.4rem;
+                left: 50%;
+                transform: translateX(-50%);
+                fill: $black;
+            }
+
+
+            &:hover {
+                transform: scale(1.15);
+                z-index: 10;
+                background-color: #fff;
+                border-radius: .8rem;
+                border-color: transparent;
+                box-shadow: 0 8px 33px 0 rgba(0,0,0,.3);
+
+                span {
+                    display: none;
+                }
+
+                .calendar-box__link {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all .3s ease-in-out;
+                }
+
+                .c-symbol {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all .3s ease-in-out;
+                }
+            }
             
 
         }
@@ -15956,6 +16165,25 @@ test popup
                 text-decoration: line-through;
             }
         }
+
+        &__link {
+            display: inline-block;
+            opacity: 0;
+            visibility: hidden;
+            color: #81c15f;
+            font-family: $font_sans-serif;
+            font-size: 2.3rem;
+            font-style: normal;
+            margin-top: 2rem;
+
+            &::after {
+                content:'';
+                bottom: .3rem;
+                border-color: #81c15f;
+            }
+
+        }
+
         
         
     }

@@ -918,3 +918,15 @@ i.icon-chair {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+.icon-download {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.4rem;
+    width: 1em;
+    height: 1.4em;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background: url(../img/icons/icon-download.svg) 0 0 no-repeat;
+}
