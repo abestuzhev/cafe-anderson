@@ -15813,6 +15813,7 @@ test popup
     border-radius: .8rem;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
     color: $black;
+    overflow: hidden;
     
     &-header {/*calendar-header*/
         background-color: #fff;
@@ -15849,6 +15850,15 @@ test popup
         &__icon {
             background-color: #c44890;
             border-right: 1px solid rgba(0,0,0, .2);
+            position: relative;
+
+            .c-symbol {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%,-50%);
+                fill: #ffc7e8;
+            }
         }
         
         &-time {
@@ -15876,8 +15886,12 @@ test popup
     }
     
     &-col {
-        width: 14.2%;
-        max-width: 15rem;
+        width: 14.3%;
+        min-width: 15rem;
+
+        &:last-child .calendar-day:nth-child(1) {
+            border-right: none;
+        }
     }
     
     &-row {
@@ -15891,6 +15905,7 @@ test popup
         color: #ffc7e8;
         font-family: $font_serif;
         padding: 1.8rem 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
         &__number {
             font-family: $font_sans-serif;
             font-size: 4rem;
@@ -15913,24 +15928,33 @@ test popup
         border: 1px solid transparent;
         font-size: 1.6rem;
         font-style: italic;
+        position: relative;
+        border-right: none !important;
+        border-bottom: none !important;
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     
         &--free {
             border: 1px solid #b0e183;
             background-color: #81c15f;
             text-align: center;
-            position: relative;
             
-            span {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
+
         }
         
         &--reserve {
             border: 1px solid #d0d0d0;
             background-color: #5f5256;
+            color: #8a8a8a;
+
+            span {
+                text-decoration: line-through;
+            }
         }
         
         

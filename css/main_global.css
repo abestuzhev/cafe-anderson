@@ -18862,7 +18862,8 @@ test popup
   border-radius: .8rem;
   -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
-  color: #555451; }
+  color: #555451;
+  overflow: hidden; }
   .calendar-header {
     /*calendar-header*/
     background-color: #fff;
@@ -18921,7 +18922,16 @@ test popup
               align-items: center; }
     .calendar-nav__icon {
       background-color: #c44890;
-      border-right: 1px solid rgba(0, 0, 0, 0.2); }
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      position: relative; }
+      .calendar-nav__icon .c-symbol {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        fill: #ffc7e8; }
     .calendar-nav-time {
       text-align: center;
       border: 1px solid #f4f4f4; }
@@ -18948,15 +18958,18 @@ test popup
         -ms-flex-align: center;
             align-items: center; }
   .calendar-col {
-    width: 14.2%;
-    max-width: 15rem; }
+    width: 14.3%;
+    min-width: 15rem; }
+    .calendar-col:last-child .calendar-day:nth-child(1) {
+      border-right: none; }
   .calendar-day {
     text-align: center;
     min-height: 9.5rem;
     background-color: #c44890;
     color: #ffc7e8;
     font-family: "PT Serif Caption";
-    padding: 1.8rem 0; }
+    padding: 1.8rem 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2); }
     .calendar-day__number {
       font-family: "BebasNeue";
       font-size: 4rem;
@@ -18970,22 +18983,27 @@ test popup
     min-height: 9.5rem;
     border: 1px solid transparent;
     font-size: 1.6rem;
-    font-style: italic; }
+    font-style: italic;
+    position: relative;
+    border-right: none !important;
+    border-bottom: none !important; }
+    .calendar-box span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
     .calendar-box--free {
       border: 1px solid #b0e183;
       background-color: #81c15f;
-      text-align: center;
-      position: relative; }
-      .calendar-box--free span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%); }
+      text-align: center; }
     .calendar-box--reserve {
       border: 1px solid #d0d0d0;
-      background-color: #5f5256; }
+      background-color: #5f5256;
+      color: #8a8a8a; }
+      .calendar-box--reserve span {
+        text-decoration: line-through; }
 
 .popup-pie {
   /* Ручной readmore */
