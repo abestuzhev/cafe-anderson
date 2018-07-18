@@ -1095,6 +1095,14 @@
         bottom: 8%;
         right: 8%;
     }
+
+    .loft-info__body {
+        padding-right: 3rem;
+    }
+
+    .loft-info__title {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -1909,6 +1917,43 @@
         padding: 1.2rem 1.6rem;
     }
 
+
+
+    .loft-banner__title {
+        font-size: 4rem;
+    }
+
+    .loft-banner__subtitle {
+        font-size: 2.2rem;
+    }
+
+    .loft-banner__header {
+        max-width: 60rem;
+    }
+
+    .loft-banner__box {
+        left: 2.8rem;
+    }
+    .loft-info {
+        padding-left: 2.8rem;
+    }
+
+    .loft-message {
+        padding: 1.5rem 2.8rem;
+    }
+
+    .loft-conditions {
+        padding: 4.8rem 2.8rem 0;
+    }
+
+    .loft-banner__title {
+        font-size: 4rem;
+    }
+
+    .loft-banner__subtitle {
+        font-size: 2.6rem;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -2288,7 +2333,30 @@
         padding: 3rem 3rem 7rem;
     }
 
+    .loft-info__map .c-symbol {
+        display: none;
+    }
 
+}
+
+@media (max-width: 860px) {
+    .loft-info {
+        display: block;
+        margin-bottom: 2.5rem;
+    }
+
+    .loft-info__body{
+        margin-bottom: 1.4rem;
+    }
+
+    .loft-info__map,
+    .loft-info__body {
+        width: 100%;
+    }
+
+    .loft-info .cafe-info__item-address {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 840px) {
@@ -2545,6 +2613,8 @@
     .cafe-write-up__title {
         font-size: 3.6rem;
     }
+
+
 }
 
 @media (min-width: 730px) {
@@ -3251,6 +3321,38 @@
         box-shadow: none;
     }
 
+    .loft {
+        box-shadow: none;
+    }
+
+    .loft-info {
+        padding-left: 0;
+    }
+
+
+    .loft .loft-banner {
+        padding: 2.2em 2.8rem 3.4rem;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .loft-banner__header {
+        margin-bottom: 2rem;
+    }
+
+    .loft-banner__box {
+        position: static;
+    }
+
+    .loft-message {
+        padding: 1.5rem 0;
+    }
+
+    .loft-booking {
+        padding: 2rem 0 0;
+        margin-bottom: 2.4rem;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -3470,6 +3572,17 @@
         right: -10%;
     }
 
+    .loft-banner__title {
+        font-size: 3.4rem;
+    }
+
+    .loft-banner__box {
+        right: 2.8rem;
+    }
+    .loft-banner__header {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -3509,6 +3622,19 @@
     .bonus-install__title {
         font-size: 4rem;
         padding: 0 3rem;
+    }
+
+
+    .loft .loft-banner__title {
+        font-size: 3rem;
+    }
+
+    .loft .loft-banner__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .loft-banner__box {
+        position: static;
     }
 }
 
@@ -4846,6 +4972,10 @@
     .c-card-event .l-button a {
         margin-right: .4rem;
     }
+
+    .pie-product .catalog-list__item {
+        padding: 0 .5rem !important;
+    }
 }
 
 @media (max-width: 430px) {
@@ -5782,7 +5912,6 @@
     .popup-poster .poster-card__text {
         font-size: 1.6rem;
     }
-
 
 }
 @media (max-width: 650px) {
