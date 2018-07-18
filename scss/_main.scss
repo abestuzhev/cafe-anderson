@@ -15559,6 +15559,7 @@ test popup
     -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
     border-radius: .8rem;
+    font-family: $font_serif;
 
     &-banner {
         height: 40rem;
@@ -15709,6 +15710,12 @@ test popup
             -webkit-background-size: cover;
             background-size: cover;
 
+            .icon-cat-with-note {
+                position: absolute;
+                left: 3.5rem;
+                top: 2.5rem;
+            }
+
             &__body {
                 position: absolute;
                 top: 2rem;
@@ -15720,6 +15727,25 @@ test popup
                 font-size: 2.3rem;
                 color: #6a6a6a;
                 font-family: $font_serif;
+                position: relative;
+                margin-bottom: 7px;
+
+                &::before {
+                    content:'';
+                    position: absolute;
+                    bottom: -4px;
+                    width: 100%;
+                    border-bottom: 1px dashed #d0d0d0;
+                    left: 0;
+                }
+                &::after {
+                    content:'';
+                    position: absolute;
+                    bottom: -2px;
+                    width: 100%;
+                    border-bottom: 1px dashed #d0d0d0;
+                    left: 0;
+                }
             }
 
             &__price {
@@ -16160,9 +16186,24 @@ test popup
             border: 1px solid #d0d0d0;
             background-color: #5f5256;
             color: #8a8a8a;
+            position: relative;
+            overflow: hidden;
 
             span {
                 text-decoration: line-through;
+            }
+
+            .c-symbol {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            .symbol-unicorn {
+                font-size: 10rem;
+                fill: #000;
+                bottom: -35px;
+                right: -60px;
             }
         }
 

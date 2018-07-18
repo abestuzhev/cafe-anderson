@@ -778,6 +778,15 @@ i.icon-chair {
   background-size: cover;
   background: url(../img/icons/icon-download.svg) 0 0 no-repeat; }
 
+.icon-cat-with-note {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 6.4rem;
+  width: 1em;
+  height: 1em;
+  background-size: cover;
+  background: url(../img/icons/icon-cat-with-note.png) 0 0 no-repeat; }
+
 .c-symbol {
   display: inline-block;
   width: auto;
@@ -18678,7 +18687,8 @@ test popup
   background: #fff url(../img/loft-bg.jpg) 0 96.5% no-repeat;
   -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
-  border-radius: .8rem; }
+  border-radius: .8rem;
+  font-family: "PT Serif Caption"; }
   .loft-banner {
     height: 40rem;
     background: url(../img/loft-banner.jpg) 50% 50% no-repeat;
@@ -18794,6 +18804,10 @@ test popup
       display: inline-block;
       background: url(../img/loft-conditions-check.png) 0 0 no-repeat;
       background-size: cover; }
+      .loft-conditions-check .icon-cat-with-note {
+        position: absolute;
+        left: 3.5rem;
+        top: 2.5rem; }
       .loft-conditions-check__body {
         position: absolute;
         top: 2rem;
@@ -18801,7 +18815,23 @@ test popup
       .loft-conditions-check__title {
         font-size: 2.3rem;
         color: #6a6a6a;
-        font-family: "PT Serif Caption"; }
+        font-family: "PT Serif Caption";
+        position: relative;
+        margin-bottom: 7px; }
+        .loft-conditions-check__title::before {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          width: 100%;
+          border-bottom: 1px dashed #d0d0d0;
+          left: 0; }
+        .loft-conditions-check__title::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          width: 100%;
+          border-bottom: 1px dashed #d0d0d0;
+          left: 0; }
       .loft-conditions-check__price {
         font-size: 3rem;
         color: #b81f79;
@@ -19169,9 +19199,20 @@ test popup
     .calendar-box--reserve {
       border: 1px solid #d0d0d0;
       background-color: #5f5256;
-      color: #8a8a8a; }
+      color: #8a8a8a;
+      position: relative;
+      overflow: hidden; }
       .calendar-box--reserve span {
         text-decoration: line-through; }
+      .calendar-box--reserve .c-symbol {
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+      .calendar-box--reserve .symbol-unicorn {
+        font-size: 10rem;
+        fill: #000;
+        bottom: -35px;
+        right: -60px; }
     .calendar-box__link {
       display: inline-block;
       opacity: 0;
