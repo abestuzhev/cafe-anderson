@@ -1734,6 +1734,16 @@ main {
             font-style: italic;
         }
     }
+
+    .popup-pie .pie-order .owl-carousel .owl-nav {
+        top: 50%;
+    }
+
+    .popup-pie .pie-order .owl-carousel .owl-nav .owl-prev {
+        width: 22px;
+        border-radius: 0px 4px 4px 0px;
+        left: -16px;
+    }
 }
 
 

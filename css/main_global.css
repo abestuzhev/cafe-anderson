@@ -8209,6 +8209,14 @@ main {
     font-size: 1.4rem;
     font-style: italic; }
 
+.popup-pie .popup-pie .pie-order .owl-carousel .owl-nav {
+  top: 50%; }
+
+.popup-pie .popup-pie .pie-order .owl-carousel .owl-nav .owl-prev {
+  width: 22px;
+  border-radius: 0px 4px 4px 0px;
+  left: -16px; }
+
 /*popup-pie-one-click----------------------------*/
 .popup-pie-one-click .popup {
   max-width: 100rem;
