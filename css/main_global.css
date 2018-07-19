@@ -19173,7 +19173,6 @@ test popup
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    overflow: hidden;
     padding-bottom: 17px; }
     .calendar-track::after {
       content: '';
