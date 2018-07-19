@@ -19037,6 +19037,13 @@ test popup
         -ms-flex-align: center;
             align-items: center;
     border-radius: 8px 8px 0 0; }
+    .calendar-header__month {
+      display: none;
+      text-align: center; }
+      .calendar-header__month a {
+        color: #9b806f;
+        font-size: 2.5rem;
+        font-family: "BebasNeue"; }
   .calendar-period {
     padding: 2rem 3rem;
     font-size: 1.4rem;

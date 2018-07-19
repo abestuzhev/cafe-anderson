@@ -16008,6 +16008,17 @@ test popup
         justify-content: space-between;
         align-items: center;
         border-radius: 8px 8px 0 0;
+
+        &__month {
+            display: none;
+            text-align: center;
+            a {
+                color: #9b806f;
+                font-size: 2.5rem;
+                font-family: $font_sans-serif;
+            }
+
+        }
     }
     
     &-period {
@@ -16085,7 +16096,6 @@ test popup
     &-track {
         flex: 1;
         overflow: hidden;
-
         padding-bottom: 17px;
 
         &::after {
