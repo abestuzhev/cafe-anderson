@@ -1990,6 +1990,10 @@
         font-size: 2.6rem;
     }
 
+    .bonus-info {
+        padding: 2rem 8rem;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -2738,7 +2742,7 @@
     }
 
     .calendar-body {
-        padding-bottom: 17px;
+        /*padding-bottom: 17px;*/
     }
 
     .calendar-track {
@@ -5337,6 +5341,18 @@
         box-shadow: none;
         font-size: 18px;
     }
+
+    .loft-banner__btn {
+        font-size: 2rem;
+    }
+
+    .loft-call {
+        padding-bottom: 5rem;
+    }
+
+    .loft .bonus-info {
+        padding: 2rem 6rem;
+    }
 }
 
 @media (max-width: 370px) {
@@ -5494,7 +5510,9 @@
         padding: 1.1rem 1.8rem;
     }
 
-    
+    .loft .bonus-info {
+        padding: 2rem 6rem 2rem 2rem;
+    }
 }
 
 @media (max-height: 680px) {
