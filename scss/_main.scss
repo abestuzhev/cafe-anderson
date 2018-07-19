@@ -16050,6 +16050,24 @@ test popup
                     border:none;
                 }
             }
+
+            svg {
+                font-size: 6px;
+                fill: #bb2b7f;
+            }
+        }
+
+        &__left {
+
+        }
+
+        &__right {
+
+        }
+
+        &__text {
+            display: inline-block;
+            padding: 0 .5rem;
         }
     }
     

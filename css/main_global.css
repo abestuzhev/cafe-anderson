@@ -19064,6 +19064,12 @@ test popup
         .calendar-period-current a::after {
           content: '';
           border: none; }
+      .calendar-period-current svg {
+        font-size: 6px;
+        fill: #bb2b7f; }
+    .calendar-period__text {
+      display: inline-block;
+      padding: 0 .5rem; }
   .calendar-body {
     /*calendar-body*/
     display: -webkit-box;
