@@ -171,6 +171,19 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    /*выбор месяцав календаре праздничных пространств*/
+    $(document).on('click', '.calendar-header__month a', function(e){
+        e.preventDefault();
+        $('.calendar-header-popup').addClass('is-visible');
+    });
+
+    $(document).on('click', '.calendar-month__item', function(e){
+        e.preventDefault();
+        $('.calendar-header-popup').removeClass('is-visible');
+    });
+
+
+
     /*слайдер на странице общих пращдников*/
     $('.holidays-slide').owlCarousel({
         items:1,

@@ -19038,7 +19038,8 @@ test popup
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-radius: 8px 8px 0 0; }
+    border-radius: 8px 8px 0 0;
+    position: relative; }
     .calendar-header__month {
       display: none;
       text-align: center; }
@@ -19046,6 +19047,48 @@ test popup
         color: #9b806f;
         font-size: 2.5rem;
         font-family: "BebasNeue"; }
+    .calendar-header-popup {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      z-index: 77;
+      background-color: #fff;
+      border-radius: .8rem;
+      border: 1px solid #c44890;
+      width: 18rem;
+      -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      overflow: hidden; }
+  .calendar-month__list::after {
+    content: '';
+    clear: both;
+    display: table; }
+  .calendar-month__item {
+    float: left;
+    width: 33.3333%;
+    padding: 1rem .8rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-align: center; }
+    .calendar-month__item:hover {
+      border-radius: .4rem;
+      background-color: #eee; }
+    .calendar-month__item.disabled {
+      cursor: auto;
+      color: #ccc; }
+      .calendar-month__item.disabled:hover {
+        border-radius: 0;
+        background-color: #fff; }
+    .calendar-month__item.active {
+      color: #c44890; }
   .calendar-period {
     padding: 2rem 3rem;
     font-size: 1.4rem;

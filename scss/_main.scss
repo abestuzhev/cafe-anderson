@@ -16012,6 +16012,7 @@ test popup
         justify-content: space-between;
         align-items: center;
         border-radius: 8px 8px 0 0;
+        position: relative;
 
         &__month {
             display: none;
@@ -16022,6 +16023,65 @@ test popup
                 font-family: $font_sans-serif;
             }
 
+        }
+
+        &-popup {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            z-index: 77;
+            background-color: #fff;
+            border-radius: .8rem;
+            border:1px solid #c44890;
+            width: 18rem;
+            box-shadow: 0 10px 30px 0 rgba(0,0,0,.2);
+            transition: all .2s ease-in-out;
+            overflow: hidden;
+
+            &.is-visible {
+
+            }
+        }
+    }
+
+    &-month {
+        &__list {
+            &::after {
+                content: '';
+                clear:both;
+                display: table;
+            }
+        }
+
+        &__item {
+            float: left;
+            width: 33.3333%;
+            padding: 1rem .8rem;
+            font-size: 1.4rem;
+            cursor: pointer;
+            text-align: center;
+            
+            &:hover {
+                border-radius: .4rem;
+                background-color: #eee;
+            }
+
+            &.disabled {
+                cursor: auto;
+                color: #ccc;
+
+                &:hover {
+                    border-radius: 0;
+                    background-color: #fff;
+                }
+            }
+
+            &.active {
+                color: #c44890;
+            }
         }
     }
     
