@@ -14898,6 +14898,10 @@ test popup
             }
 
         }
+
+        .filter-form {
+            justify-content: flex-start;
+        }
     }
 
     .SelectBox {
@@ -15570,6 +15574,7 @@ test popup
     box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
     border-radius: .8rem;
     font-family: $font_serif;
+    margin-bottom: 3rem;
 
     &-banner {
         height: 40rem;
@@ -15703,6 +15708,14 @@ test popup
         }
     }
 
+    &-map {
+        width: 100%;
+        height: 36rem;
+        background-color: #eee;
+        -webkit-box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 20px 8px rgba(0, 0, 0, 0.1);
+    }
+
     &-conditions {/*loft-conditions*/
         margin-bottom: 3rem;
         padding: 4.8rem 5.5rem 0;
@@ -15831,6 +15844,7 @@ test popup
 
         &__item {
             width: 33.333%;
+            padding: 0 1rem;
         }
 
         &__title {
@@ -15838,11 +15852,18 @@ test popup
             color: #c44890;
             font-family: $font_sans-serif;
             font-weight: 700;
+            position: relative;
+            padding-left: 4.3rem;
+            line-height: 1;
+            margin-bottom: 1rem;
 
             .icon-round-cake{
                 display: inline-block;
                 vertical-align: middle;
                 background-color: #c44890;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
 
             span {
@@ -16089,7 +16110,6 @@ test popup
     
     &-col {
         width: 14.3%;
-        min-width: 15rem;
 
         &:last-child .calendar-day:nth-child(1) {
             border-right: none;

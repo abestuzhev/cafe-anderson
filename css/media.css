@@ -564,6 +564,19 @@
     .header-categories-banner__body {
        display: none;
    }
+
+    .calendar-nav {
+        flex: 0 1 9rem;
+    }
+
+    .calendar-nav-time__text span {
+        display: none;
+    }
+
+    .calendar-period-current {
+        font-size: 1.6rem;
+        letter-spacing: 0;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1258,6 +1271,15 @@
         left: 30%;
     }
 
+    .calendar-period {
+        display: none;
+    }
+
+    .calendar-period.calendar-period-current {
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width: 1940px) and (min-height: 1200px) {
@@ -1679,6 +1701,10 @@
         background-position: 100% 0;
     }
 
+    .loft .cafe-slider__footer {
+        height: 2.9rem;
+    }
+
     .cafe-slider__tour {
         right: auto;
         top: auto;
@@ -2000,6 +2026,29 @@
         height: auto;
         margin-bottom: .6rem;
     }
+
+    .calendar-day__week {
+        display: none;
+    }
+
+    .calendar-nav__icon,
+    .calendar-day {
+        min-height: 7.6rem;
+    }
+
+    .calendar-nav-time__text:nth-child(1) {
+        display: none;
+    }
+
+    .calendar-nav-time,
+    .calendar-box {
+        min-height: 10rem;
+    }
+
+    .calendar-box__link {
+        font-size: 1.9rem;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 930px) {
@@ -2078,6 +2127,14 @@
 
     .easter-banner {
         padding: 5.5rem 1rem 7rem;
+    }
+
+    .loft-advantages__list {
+        flex-flow: row wrap;
+    }
+    .loft-advantages__item {
+        width: 50%;
+        padding: 0 .7rem;
     }
 }
 
@@ -2357,6 +2414,28 @@
     .loft-info .cafe-info__item-address {
         max-width: 100%;
     }
+
+    .loft-conditions .loft-conditions__top {
+        width: 100%;
+        max-width: 100%;
+    }
+    .loft-conditions .loft-conditions-check {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin: 0 auto 2rem;
+        display: block;
+    }
+    
+    .loft-conditions__list {
+        display: block;
+    }
+
+    .loft-conditions__item {
+        width: 100%;
+        margin-bottom: 2rem;
+        padding: 0 1.5rem;
+    }
 }
 
 @media (max-width: 840px) {
@@ -2613,6 +2692,7 @@
     .cafe-write-up__title {
         font-size: 3.6rem;
     }
+
 
 
 }
@@ -3351,6 +3431,40 @@
     .loft-booking {
         padding: 2rem 0 0;
         margin-bottom: 2.4rem;
+    }
+
+    .loft .loft-conditions {
+        padding: 2rem 0 0;
+    }
+
+    .loft-advantages {
+        padding: 0;
+    }
+
+    .loft {
+        margin-bottom: 3rem;
+    }
+
+
+    .loft-call__title {
+        font-size: 4rem;
+    }
+
+    .loft .bonus-info {
+        margin: 0 -1.6rem;
+    }
+
+    .loft {
+        background-position: 0 100%;
+    }
+
+    .pie-filter .filter-item {
+        border: none;
+        padding: 0;
+    }
+    .pie-filter .filter-item::after {
+        content: '';
+        display: none;
     }
 
 }
@@ -4178,6 +4292,15 @@
 
     .c-card-event .l-button .c-button span {
         display: none;
+    }
+
+    .loft-advantages__list {
+        display: block;
+    }
+
+    .loft-advantages__item {
+        width: 100%;
+        padding: 0;
     }
 }
 
@@ -5083,6 +5206,44 @@
         display: none;
     }
 
+
+
+}
+
+@media (max-width: 390px) {
+    .loft-conditions .loft-conditions-check {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .loft .loft-banner {
+        padding: 2rem 1.6rem;
+    }
+
+    .loft .loft-banner__title {
+        font-size: 2.4rem;
+    }
+
+    .loft-booking__title {
+        font-size: 3.5rem;
+    }
+
+    .loft-booking__subtitle {
+        font-size: 1.7rem;
+    }
+
+    .loft-booking__title-wrap::before {
+        content: '';
+        width: 5.6rem;
+        height: 6rem;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .loft-booking__title-wrap {
+        padding-left: 6.2rem;
+    }
+
 }
 
 @media (max-width: 380px) {
@@ -5824,7 +5985,34 @@
 
 }
 
+@media (max-width: 1180px) {
+    .loft-conditions-check {
+        /*position: relative;*/
+        /*right: auto;*/
+        /*top: auto;*/
+        /*margin: 0 auto 1rem;*/
+        top: 3.6rem
+    }
 
+    .loft-conditions {
+        margin-bottom: 3rem;
+        padding: 3rem 2.8rem 0;
+    }
+
+    .loft-conditions__top {
+        max-width: 65%;
+    }
+
+}
+
+@media (max-width: 1130px) {
+
+    .loft-conditions__top {
+        max-width: 60%;
+        padding-right: 2%;
+    }
+
+}
 @media (max-width: 1130px) {
     .popup-poster__header {
         height: auto;
@@ -5911,6 +6099,12 @@
 
     .popup-poster .poster-card__text {
         font-size: 1.6rem;
+    }
+
+
+    .loft-conditions__top {
+        max-width: 50%;
+        padding-right: 0;
     }
 
 }
@@ -6123,4 +6317,6 @@
 
         top: 0;
     }
+
+
 }
