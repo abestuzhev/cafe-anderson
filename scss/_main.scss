@@ -1749,6 +1749,10 @@ main {
     .c-card-supplements__count .piece::after {
         content: '';
     }
+
+    .popup-product__btn-back, .popup-product__btn-close {
+        display: none !important;
+    }
 }
 
 

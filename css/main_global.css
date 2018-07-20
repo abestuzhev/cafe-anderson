@@ -8220,6 +8220,9 @@ main {
 .popup-pie .c-card-supplements__count .piece::after {
   content: ''; }
 
+.popup-pie .popup-product__btn-back, .popup-pie .popup-product__btn-close {
+  display: none !important; }
+
 /*popup-pie-one-click----------------------------*/
 .popup-pie-one-click .popup {
   max-width: 100rem;
