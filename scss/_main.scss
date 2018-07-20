@@ -1744,6 +1744,11 @@ main {
         border-radius: 0px 4px 4px 0px;
         left: -16px;
     }
+
+
+    .c-card-supplements__count .piece::after {
+        content: '';
+    }
 }
 
 
