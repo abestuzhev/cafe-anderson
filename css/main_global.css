@@ -8063,13 +8063,13 @@ main {
     color: #553023;
     font-style: italic;
     font-size: 1.6rem;
-    vertical-align: bottom;
+    vertical-align: baseline;
     line-height: 1;
     padding: 1.2rem 0; }
     .popup-mini__total-number {
       font-family: "BebasNeue";
       font-size: 4.4rem;
-      vertical-align: bottom;
+      vertical-align: baseline;
       margin-left: 1rem;
       font-style: normal;
       font-weight: 500; }
@@ -13541,13 +13541,11 @@ test popup
               justify-content: center;
       position: relative; }
     .cake-order-final__total {
-      vertical-align: middle;
       font-size: 1.8rem;
       text-align: left;
       margin-right: 1rem;
       min-width: 9rem; }
       .cake-order-final__total span {
-        vertical-align: middle;
         font-family: "BebasNeue";
         font-size: 3.5rem;
         color: #7cbd41;

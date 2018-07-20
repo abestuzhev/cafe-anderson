@@ -1529,14 +1529,14 @@ main {
         color: #553023;
         font-style: italic;
         font-size: 1.6rem;
-        vertical-align: bottom;
+        vertical-align: baseline;
         line-height: 1;
         padding: 1.2rem 0;
 
         &-number {
             font-family: $font_sans-serif;
             font-size: 4.4rem;
-            vertical-align: bottom;
+            vertical-align: baseline;
             margin-left: 1rem;
             font-style: normal;
             font-weight: 500;
@@ -8692,7 +8692,6 @@ test popup
         .tab-content {
             padding: 2rem 4rem 0;
         }
-
     }
 
     &-stuffing {
@@ -8711,7 +8710,6 @@ test popup
             margin-bottom: 2.8rem;
             width: 25%;
         }
-
     }
 
     &-new-toy {
@@ -8838,14 +8836,14 @@ test popup
             }
 
             &__total {
-                vertical-align: middle;
+                //vertical-align: middle;
                 font-size: 1.8rem;
                 text-align: left;
                 margin-right: 1rem;
                 min-width: 9rem;
 
                 span {
-                    vertical-align: middle;
+                    //vertical-align: middle;
                     font-family: $font_sans-serif;
                     font-size: 3.5rem;
                     color: #7cbd41;
