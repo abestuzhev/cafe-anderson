@@ -5354,6 +5354,10 @@ div.c-card-catalog-2 {
   font-size: 1rem;
   margin: 0; }
 
+.c-currency-symbol.rub {
+  font-family: "BebasNeue";
+  font-family: pt_sans_rub; }
+
 .popup-basket-card__price .c-currency {
   font-size: 1rem;
   margin-right: .4rem; }
@@ -5364,6 +5368,14 @@ div.c-card-catalog-2 {
 .popup-mini-product__price .c-currency-symbol,
 .menu-card__price .c-currency-symbol {
   font-family: "PT Serif Caption"; }
+
+.c-card-supplements__price .c-currency-symbol.rub,
+.c-card-product-line__text .c-currency-symbol.rub,
+.popup-basket-card__price .c-currency-symbol.rub,
+.popup-mini-product__price .c-currency-symbol.rub,
+.menu-card__price .c-currency-symbol.rub {
+  font-family: "PT Serif Caption";
+  font-family: pt_sans_rub; }
 
 .c-box-search-head {
   position: relative;
@@ -8222,6 +8234,9 @@ main {
 
 .popup-pie .popup-product__btn-back, .popup-pie .popup-product__btn-close {
   display: none !important; }
+
+.popup-pie .c-card-catalog--mini .c-card-catalog__price {
+  background-color: #fff; }
 
 /*popup-pie-one-click----------------------------*/
 .popup-pie-one-click .popup {
@@ -19576,7 +19591,10 @@ test popup
   .popup-pie .l-button__center {
     display: none; }
   .popup-pie .icon-round-cake {
-    top: 6px; } }
+    top: 6px; }
+  .popup-pie .c-card-product__slider .c-counter__btn {
+    width: 1.6rem;
+    height: 1.6rem; } }
 
 @media screen and (max-width: 1130px) {
   .pie-form__list {

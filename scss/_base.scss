@@ -4711,6 +4711,11 @@ div.c-card-catalog-2 {
     }
 }
 
+.c-currency-symbol.rub {
+    font-family: $font_sans-serif;
+    font-family: pt_sans_rub;
+}
+
 .popup-basket-card__price {
     .c-currency {
         font-size: 1rem;
@@ -4725,6 +4730,11 @@ div.c-card-catalog-2 {
 .menu-card__price {
     .c-currency-symbol {
         font-family: $font_serif;
+    }
+
+    .c-currency-symbol.rub {
+        font-family: $font_serif;
+        font-family: pt_sans_rub;
     }
 }
 

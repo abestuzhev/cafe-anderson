@@ -1753,6 +1753,10 @@ main {
     .popup-product__btn-back, .popup-product__btn-close {
         display: none !important;
     }
+
+    .c-card-catalog--mini .c-card-catalog__price {
+        background-color: #fff;
+    }
 }
 
 
