@@ -6160,7 +6160,7 @@
 
     }
     .popup__booking .popup-body {
-        overflow-x: scroll;
+        /*overflow-x: scroll;*/
     }
     .popup__booking .popup-body iframe {
         width: 100%;
