@@ -133,6 +133,9 @@ $(function(){
         changeFilling: function(){
             var text = this.pathImg + 'filling-1-round-one.png';
             var filling = $('<img class="cake-filling" src="' + text + '" alt="">');
+            if($('img').hasClass('.cake-filling')){
+                $(this).remove();
+            }
 
             this.cake.append(filling);
         }
