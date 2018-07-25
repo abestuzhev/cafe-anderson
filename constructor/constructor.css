@@ -120,13 +120,13 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease;
 }
 
 .constructor-steps .constructor-step.active {
     opacity: 1;
     visibility: visible;
-    transition: all .7s ease-in-out;
+    transition: all .3s ease;
 }
 
 
@@ -406,4 +406,10 @@
 
 .constructor-product-cake img {
     width: 100%;
+}
+
+.cake-filling {
+    position: absolute;
+    top: 0;
+    z-index: 2;
 }

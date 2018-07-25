@@ -92,6 +92,10 @@ $(function(){
                 self.changeShape(typeShape);
             });
 
+            $('#filter_filling input[type="radio"]').on('change', function(){
+                self.changeFilling();
+            });
+
 
 
         },
@@ -101,7 +105,7 @@ $(function(){
             this.selectedShape = $(nextStep).parents('.constructor-product-shape__item').data('shape');
             this.selectedTier = $(nextStep).parents('.constructor-product-shape__item').data('tier');
             this.elementShape.removeClass('active');
-            this.cake.addClass('active').find('img').attr('src', this.pathImg + 'cake-' + this.selectedShape + '-' + this.selectedTier + '.png');
+            this.cake.addClass('active').find('.cake-basis').attr('src', this.pathImg + 'cake-' + this.selectedShape + '-' + this.selectedTier + '.png');
             this.filterFilling.siblings().removeClass('active');;
             this.filterFilling.addClass('active, visited');
         },
@@ -124,6 +128,13 @@ $(function(){
                 $(elem).find('img').attr('src', self.pathImg + 'cake-'+ typeShape + '-' + self.tier[i] + '.png');
                 // console.log('пусть картинки N' + i + ' ' + $(elem).find('img').attr('src'));
             });
+        },
+
+        changeFilling: function(){
+            var text = this.pathImg + 'filling-1-round-one.png';
+            var filling = $('<img class="cake-filling" src="' + text + '" alt="">');
+
+            this.cake.append(filling);
         }
 
     };

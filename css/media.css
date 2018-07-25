@@ -6163,7 +6163,7 @@
         overflow-x: scroll;
     }
     .popup__booking .popup-body iframe {
-        width: 1000px;
+        width: 100%;
     }
 
     .popup__booking .popup {
