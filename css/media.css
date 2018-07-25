@@ -6169,7 +6169,7 @@
     .popup__booking .popup {
         position: static !important;
         height: auto !important;
-        overflow: visible;
+        overflow: visible !important;
         width: 100% !important;
     }
 }
