@@ -2748,6 +2748,7 @@
     .calendar-track {
         position: relative;
         padding-bottom: 0;
+        overflow: hidden;
     }
     .calendar-track::after {
         content: '';
