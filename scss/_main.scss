@@ -13936,12 +13936,6 @@ test popup
 
 /*holiday-reason**************************/
 
-@keyframes swing {
-    0% { transform: rotate(0); }
-    50% { transform: translateX(-6px) rotate(1deg); }
-    //70% { transform: rotate(-1deg); }
-    100% { transform: translateX(0) rotate(0); }
-}
 
 .holiday-reason {
     margin-bottom: 9rem;
@@ -14122,10 +14116,25 @@ test popup
         margin-bottom: 5.5rem;
         display: inline-block;
         //opacity: .5;
+        transition: all .6s ease-in-out;
+
+
+        @keyframes swing {
+            0% { transform: rotate(0); }
+            50% { transform: translateX(-6px) rotate(1deg); }
+            //70% { transform: rotate(-1deg); }
+            100% { transform: translateX(0) rotate(0); }
+        }
+
+        .swing {
+            animation: swing 2s infinite ease-in-out;
+        }
 
         &:hover {
-            animation: swing 2s infinite ease-in-out;
+            transform: translateX(-6px) rotate(1deg);
+
             //transform-origin: 50% 0;
+            transition: all .6s ease-in-out;
         }
 
 

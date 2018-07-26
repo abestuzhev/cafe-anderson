@@ -32,6 +32,9 @@ var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
 
+/*анимация покачиания рамки в поводах для праздника holiday-reason-card*/
+
+
 
 $(window).on('load', function(){
 

@@ -17425,27 +17425,6 @@ test popup
       height: 100%; }
 
 /*holiday-reason**************************/
-@-webkit-keyframes swing {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  50% {
-    -webkit-transform: translateX(-6px) rotate(1deg);
-            transform: translateX(-6px) rotate(1deg); }
-  100% {
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0); } }
-@keyframes swing {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  50% {
-    -webkit-transform: translateX(-6px) rotate(1deg);
-            transform: translateX(-6px) rotate(1deg); }
-  100% {
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0); } }
-
 .holiday-reason {
   margin-bottom: 9rem;
   /*шапка страницы*/ }
@@ -17586,10 +17565,42 @@ test popup
     -webkit-box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
             box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 5.5rem;
-    display: inline-block; }
-    .holiday-reason-card:hover {
+    display: inline-block;
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out; }
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: translateX(-6px) rotate(1deg);
+            transform: translateX(-6px) rotate(1deg); }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0); } }
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: translateX(-6px) rotate(1deg);
+            transform: translateX(-6px) rotate(1deg); }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0); } }
+    .holiday-reason-card .swing {
       -webkit-animation: swing 2s infinite ease-in-out;
               animation: swing 2s infinite ease-in-out; }
+    .holiday-reason-card:hover {
+      -webkit-transform: translateX(-6px) rotate(1deg);
+          -ms-transform: translateX(-6px) rotate(1deg);
+              transform: translateX(-6px) rotate(1deg);
+      -webkit-transition: all .6s ease-in-out;
+      -o-transition: all .6s ease-in-out;
+      transition: all .6s ease-in-out; }
     .holiday-reason-card::after {
       content: '';
       position: absolute;
