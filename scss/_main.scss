@@ -16438,15 +16438,26 @@ test popup
 
             padding: 2.1rem 2.1rem 1.7rem 7.8rem;
             
-            
-            &:after{
-                border: none;
-            }
-
             &:hover {
                 color: #bb2b7f;
                 border: none;
             }
+
+            &:after {
+                content: '';
+                border: none;
+            }
+
+            &:hover:after {
+                content: '';
+                border-bottom: 2px dashed #bb2b7f;
+                position: absolute;
+                bottom: 2rem;
+                left:7.8rem;
+                width: 14.5rem;
+
+            }
+
 
         }
     }
@@ -16725,6 +16736,7 @@ a.show-more__button:hover {
         border-bottom: none;
         min-height: 12rem;
         background-color: #f4f4f4;
+        cursor: pointer;
     
         &-span3 {
             min-height: 36rem;
@@ -16788,6 +16800,18 @@ a.show-more__button:hover {
         font-family: $font_serif;
         font-size: 1.5rem;
         font-style: italic;
+    }
+}
+
+
+.popup__gallery {
+    .popup {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .cafe-slider {
+        margin-bottom: 0;
     }
 }
 

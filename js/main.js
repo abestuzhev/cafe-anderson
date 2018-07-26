@@ -1669,6 +1669,8 @@ $(document).ready(function ($) {
     showPopup(".js-show-poster", '.popup-poster');
 
 
+    showPopup(".calendar-nav-hall__decor-blue", '.popup__gallery_hall_blue');
+    showPopup(".calendar-nav-hall__decor-red", '.popup__gallery_hall_red');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();

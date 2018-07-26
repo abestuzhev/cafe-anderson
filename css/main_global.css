@@ -19407,11 +19407,19 @@ test popup
     font-weight: 700;
     color: #bb2b7f;
     padding: 2.1rem 2.1rem 1.7rem 7.8rem; }
-    .holiday-space-list-menu__title:after {
-      border: none; }
     .holiday-space-list-menu__title:hover {
       color: #bb2b7f;
       border: none; }
+    .holiday-space-list-menu__title:after {
+      content: '';
+      border: none; }
+    .holiday-space-list-menu__title:hover:after {
+      content: '';
+      border-bottom: 2px dashed #bb2b7f;
+      position: absolute;
+      bottom: 2rem;
+      left: 7.8rem;
+      width: 14.5rem; }
 
 .holiday-space-list .filter-layout_holiday-space-list-menu {
   margin-left: 100px; }
@@ -19614,7 +19622,8 @@ a.show-more__button:hover {
   border: 1px solid #e4e4e4;
   border-bottom: none;
   min-height: 12rem;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  cursor: pointer; }
   .calendar-nav-hall-span3 {
     min-height: 36rem; }
   .calendar-nav-hall__decor-blue {
@@ -19648,6 +19657,13 @@ a.show-more__button:hover {
   font-family: "PT Serif Caption";
   font-size: 1.5rem;
   font-style: italic; }
+
+.popup__gallery .popup {
+  width: 80%;
+  max-width: 80%; }
+
+.popup__gallery .cafe-slider {
+  margin-bottom: 0; }
 
 .popup-pie {
   /* Ручной readmore */
