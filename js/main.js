@@ -2723,5 +2723,17 @@ $(function() {
     }
     /* end show more */
 
+
+
+    $('.popup-fotorama').fotorama({
+        width: '100%',
+        ratio: 16/9,
+        loop: true,
+        thumbwidth: 88,
+        allowfullscreen: true,
+        nav: 'false',
+        fit:'cover'
+    });
+
 });
 
