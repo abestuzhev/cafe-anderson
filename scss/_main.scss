@@ -16808,10 +16808,19 @@ a.show-more__button:hover {
     .popup {
         width: 80%;
         max-width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
     }
 
-    .cafe-slider {
-        margin-bottom: 0;
+    .cafe-fotorama {
+        padding: 0;
+    }
+
+    .fotorama__nav--thumbs {
+        display: none;
     }
 }
 

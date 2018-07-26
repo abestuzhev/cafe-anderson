@@ -19660,10 +19660,19 @@ a.show-more__button:hover {
 
 .popup__gallery .popup {
   width: 80%;
-  max-width: 80%; }
+  max-width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0; }
 
-.popup__gallery .cafe-slider {
-  margin-bottom: 0; }
+.popup__gallery .cafe-fotorama {
+  padding: 0; }
+
+.popup__gallery .fotorama__nav--thumbs {
+  display: none; }
 
 .popup-pie {
   /* Ручной readmore */
