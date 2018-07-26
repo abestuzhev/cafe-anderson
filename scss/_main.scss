@@ -2741,6 +2741,16 @@ test popup
             &:hover {
                 color: #929292;
             }
+
+            &_clear {
+                background-color: transparent;
+                color: #555451;
+
+                &:hover {
+                    color: #555451;
+                }
+            }
+
         }
 
         &__up {
@@ -16363,6 +16373,422 @@ test popup
         
     }
     
+}
+
+
+/* Holiday Space List   */
+.holiday-space-list {
+
+    .filter-layout {
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
+
+    .filter {
+        width: 100%;
+        display: block;
+     
+        .l-button__center {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .filter-item:nth-child(1) {
+            width: 100%;
+        }
+        .filter-item:nth-child(2) {
+            width: 100%;
+        }
+
+        .filter-item:nth-child(3) {
+            width: 8rem;
+        }
+
+    }
+
+    .filter-form {
+        flex-flow: row nowrap;
+    }
+
+    &-menu {
+        width: 24.8rem;
+        height: 7.6rem;
+        display: block;
+        background: url(../img/holiday-space-list-menu.png) 0 0 no-repeat;
+        background-size: cover;
+        min-width: 24.8rem;
+        position: relative;
+
+        .icon-round-cake {
+            position: absolute;
+            left: 2.5rem;
+            top: 2rem;
+            background-color: #c44890;
+        }
+
+        &__title {
+            position: absolute;
+            left: 0rem;
+            top: 0rem;
+            font-family: $font_sans-serif;
+            font-size: 3rem;
+            font-weight: $font_bold;
+            color: #bb2b7f;
+
+            padding: 2.1rem 2.1rem 1.7rem 7.8rem;
+            
+            
+            &:after{
+                border: none;
+            }
+
+            &:hover {
+                color: #bb2b7f;
+                border: none;
+            }
+
+        }
+    }
+
+    .filter-layout_holiday-space-list-menu {
+        margin-left: 100px;
+    }
+
+    .c-card-cafe {
+        &__title {
+            min-height: 4.5rem;
+            max-height: 4.5rem;
+            overflow: hidden;
+        }
+
+        &-vertical__item {
+        
+            color: #2a2a2a;
+            font-size: 1.5rem;
+
+            .symbol-city {
+                top: 3px;
+            }
+        }
+
+        &__subway {
+            .symbol-label-metro {
+                background-color: #7e382c;
+            }
+        }
+
+        &__address {
+            color: #333333;
+            font-size: 1.8rem;
+            font-weight: $font_bold;
+            font-family: $font_serif;
+        }
+
+        &__phone { 
+            span {
+                padding-bottom: 3px;
+            }
+
+            a {
+                border-bottom: 1px dotted #c44890;
+            }
+            
+            a:hover {
+                border-bottom: none;
+            }
+        }
+
+
+
+        &-vertical__caption {
+            display: inline;
+            color: #c44890;
+        }
+    }
+
+}
+
+.c-button__medium--widepad {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    font-size: 1.5rem;
+
+}
+
+.show-more {
+    display: block;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.show-more__button {
+    background-color: rgba(214, 214, 214, 0.4);
+    color: #555451;
+    padding: 1.5rem 12.5rem;
+
+}
+
+/* override */
+a.show-more__button:hover {
+    color: #555451;
+}
+
+
+
+
+/* Calendar - from loft */
+.loft-booking__nopad {
+    padding: 0px;
+}
+
+.calendar-title {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    &__caption {
+        font-family: $font_sans-serif;
+        font-size: 3rem;
+        font-weight: $font_bold;
+        color: #555451;
+    }
+
+    &__control {
+        line-height: 3rem;
+        padding: 0 1rem;
+
+        svg{
+            font-size: 1rem;
+            fill: #907b6c;
+        }
+    }
+}
+
+.calendar-navigator {
+    background: url('../img/calendar-navigator-bg.png') repeat-x;
+    height: 5.2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    position: relative;
+
+    &:before {
+        content: '';
+        background: url('../img/calendar-navigator-topdecor.png') repeat-x;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+    }
+
+    &:after {
+        content: '';
+        background: url('../img/calendar-navigator-bottomdecor.png') repeat-x;
+        position: absolute;
+        bottom: -0.6rem;
+        left: 0;
+        width: 100%;
+        height: 10px;
+    }
+
+    &__layout-month {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__month {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        svg {
+            fill: #907b6c;
+            font-size: 0.6rem;
+        }
+
+        &-arrow {
+            padding-top: 1.5rem;
+
+            a:after {
+                border: none;
+            }
+        }
+
+    }
+
+    &__month-active {
+        background-color: #c44890;
+
+        .calendar-navigator__link {
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+
+            &:after {
+                border-bottom: 1px dashed #fff;   
+            }
+        }
+
+    }
+
+    &__month-past {
+        .calendar-navigator__link {
+            color: #cdbbaf;
+
+            &:hover {
+                color: #cdbbaf;
+            }
+
+            &:after {
+                border-bottom: 1px dashed #cdbbaf;   
+            }
+            
+        }
+    }
+
+    &__link {
+        font-family: $font_sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: #9b806f;
+    }
+
+    &__link:hover {
+        color: #9b806f;
+    }
+
+
+    &__link:after {
+        content: '';
+        color: #cdbbaf;
+        border-bottom: 1px dashed #9b806f;
+    }
+
+    &__link:hover:after {
+        content: '';
+        position: absolute;
+        bottom: 0.3rem;
+        left: 0;
+        width: 100%;        
+        border-bottom: none;        
+    }
+
+    &__year {
+        padding: 1rem 1rem 0rem 1rem;
+        font-family: $font_serif;
+        color: #9b806f;
+        font-size: 1.7rem;
+    }
+
+}
+
+
+
+.calendar-nav{
+
+    &__text {
+        color: #ffc7e8;
+        font-family: $font_serif;
+        font-size: 1.4rem;
+    }
+
+    &__icon-gradient {
+        background: linear-gradient(33.7deg, rgba(208,86,157,1) 0%,rgba(208,86,157,1) 50%,rgba(196,72,144,1) 51%,rgba(196,72,144,1) 100%);    
+    }
+
+    &-wide {
+        flex: 0 1 22rem;
+    }
+
+    &-time__text-lead {
+        font-family: $font_serif;
+        font-size: 1.7rem;
+    }
+
+    &-time__text-sub {
+        font-family: $font_serif;
+        font-size: 1.5rem;
+    }
+
+    &-hall {
+        text-align: center;
+        border: 1px solid #e4e4e4;
+        border-bottom: none;
+        min-height: 12rem;
+        background-color: #f4f4f4;
+    
+        &-span3 {
+            min-height: 36rem;
+        }
+    
+        &__decor-blue {
+            background: url('../img/calendar-hall-blue.png') no-repeat;
+        }
+    
+        &__decor-red {
+            background: url('../img/calendar-hall-red.png') no-repeat;
+        }
+
+        &__wrap {
+            padding: 1rem 2rem;
+            background: #ffffff;
+            width: 90%;
+        }
+
+        &__text {
+            color: #604e42;
+            font-family: $font_serif;
+            font-size: 1.3rem;
+
+            &-head {
+                font-family: $font_sans-serif;
+                font-size: 3rem;
+                line-height: 2.3rem;
+            }
+        }
+
+        
+    
+    }
+    
+}
+
+
+.calendar-header_theme_hsl {
+    .calendar-period {
+        padding: 1rem 2.5rem;
+        
+        a {
+            font-family: $font_serif;
+        }
+        
+        &__text {
+            font-family: $font_serif;
+            font-size: 2rem;
+        }
+
+        &-current svg{
+            fill: #907b6c;
+        }
+
+    }
+}
+
+.calendar-track_theme_hsl {
+    .calendar-box span {
+        font-family: $font_serif;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
 }
 
 
