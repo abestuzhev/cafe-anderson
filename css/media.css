@@ -3825,17 +3825,17 @@
         position: static;
     }
 
-    .popup-footer {
+    .popup-calendar-booking  .popup-footer {
         display: block;
     }
 
-    .popup-footer__item {
+    .popup-calendar-booking  .popup-footer__item {
         margin-bottom: 1rem;
         width: 100%;
         flex: 0 1 100%;
     }
 
-    .popup-footer .l-button {
+    .popup-calendar-booking  .popup-footer .l-button {
         text-align: center;
     }
 

@@ -504,13 +504,6 @@ main {
         overflow: hidden;
     }
 
-    //&-footer {
-    //
-    //    display: flex;
-    //    flex-flow: row nowrap;
-    //    justify-content: space-between;
-    //    align-items: flex-end;
-    //}
 
     &__desc {
         margin-bottom: 2rem;
@@ -2221,6 +2214,10 @@ main {
         &-footer {
             margin-left: -1.2rem;
             margin-right: -1.2rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
 
             &__item {
                 //width: 50%;
