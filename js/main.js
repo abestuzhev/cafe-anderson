@@ -2730,7 +2730,7 @@ $(function() {
         ratio: 16/9,
         loop: true,
         thumbwidth: 88,
-        allowfullscreen: true,
+        allowfullscreen: false,
         nav: 'false',
         fit:'cover'
     });
