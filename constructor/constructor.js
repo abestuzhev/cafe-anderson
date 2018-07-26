@@ -111,6 +111,8 @@ $(function(){
         showCake: function(nextStep){
             $(nextStep).parents('.constructor-product-shape').addClass('visited');
             this.selectedShape = $(nextStep).parents('.constructor-product-shape__item').data('shape');
+            this.selectedTier = $(nextStep).parents('.constructor-product-shape__item').data('tier');
+
             this.elementShape.removeClass('active');
             this.cake.addClass('active').find('.cake-basis').attr('src', this.pathImg + 'cake-' + this.selectedShape + '-' + this.selectedTier + '.png');
             this.filterFilling.siblings().removeClass('active');;
@@ -127,10 +129,9 @@ $(function(){
             $(elemActive).addClass(nameClass);
         },
 
-        changeTier: function(nextStep){
-            this.selectedTier = $(nextStep).parents('.constructor-product-shape__item').data('tier');
-
-        },
+        // changeTier: function(nextStep){
+        //
+        //         },
 
         changeShape: function(typeShape){
 
