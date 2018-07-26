@@ -4989,3 +4989,15 @@ div.c-card-catalog-2 {
     max-width: 100%;
 }
 
+
+/*обертка для иконок в инпутах*/
+.c-layout-icon {
+    position: relative;
+}
+
+.c-layout-icon svg {
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
