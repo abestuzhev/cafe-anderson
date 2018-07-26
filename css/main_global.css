@@ -305,6 +305,13 @@
   background: url(../img/icons/icon-table.svg) 50% 50% no-repeat;
   vertical-align: top; }
 
+.advantages-guests-purple {
+  display: inline-block;
+  width: 2.1rem;
+  height: 1.6rem;
+  background: url(../img/icons/icon-table-purple.svg) 50% 50% no-repeat;
+  vertical-align: top; }
+
 .advantages-teddy {
   display: inline-block;
   width: 1.3rem;
@@ -441,6 +448,13 @@ i.icon-chair {
   width: 1.1rem;
   height: .9rem;
   background: url(../img/icons/icon-metro.svg) 50% 50% no-repeat;
+  vertical-align: middle; }
+
+.icon-metro-3 {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.2rem;
+  background: url(../img/icons/icon-metro-3.svg) 50% 50% no-repeat;
   vertical-align: middle; }
 
 .icon-in-office {
@@ -6325,10 +6339,10 @@ div.c-card-catalog-2 {
       left: -1px;
       right: -1px;
       height: 6px;
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, rgba(0, 0, 0, 0)));
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(rgba(0, 0, 0, 0)));
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, transparent));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(transparent));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
     .header-categories-grid {
       display: -webkit-box;
@@ -8942,6 +8956,11 @@ test popup
     color: #929292; }
     .filter-btn__reset:hover {
       color: #929292; }
+    .filter-btn__reset_clear {
+      background-color: transparent;
+      color: #555451; }
+      .filter-btn__reset_clear:hover {
+        color: #555451; }
   .filter-btn__up {
     margin: 0 .3rem; }
   .filter-btn__up, .filter-btn__down {
@@ -9503,7 +9522,7 @@ test popup
           position: absolute;
           top: 0;
           left: 0; }
-      .cafe-info__item i[class*="icon"] ,
+      .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
       .cafe-info__item img {
         position: absolute;
         top: 0;
@@ -16588,7 +16607,8 @@ test popup
       z-index: 2;
       float: right;
       opacity: .5;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
   .holiday-box--tortzhestvo {
     /*holiday-box--tortzhestvo*/ }
     .holiday-box--tortzhestvo .holiday-description-fake {
@@ -16607,7 +16627,8 @@ test popup
     .holiday-box--karapuznik .holiday-description-fake {
       width: 38%;
       height: 57rem;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
   .holiday-box--mameninyi {
     /*holiday-box--mameninyi*/ }
     .holiday-box--mameninyi .holiday-description__text {
@@ -19330,6 +19351,304 @@ test popup
         bottom: .3rem;
         border-color: #81c15f; }
 
+/* Holiday Space List   */
+.holiday-space-list .filter-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+
+.holiday-space-list .filter {
+  width: 100%;
+  display: block; }
+  .holiday-space-list .filter .l-button__center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+  .holiday-space-list .filter .filter-item:nth-child(1) {
+    width: 100%; }
+  .holiday-space-list .filter .filter-item:nth-child(2) {
+    width: 100%; }
+  .holiday-space-list .filter .filter-item:nth-child(3) {
+    width: 8rem; }
+
+.holiday-space-list .filter-form {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+
+.holiday-space-list-menu {
+  width: 24.8rem;
+  height: 7.6rem;
+  display: block;
+  background: url(../img/holiday-space-list-menu.png) 0 0 no-repeat;
+  background-size: cover;
+  min-width: 24.8rem;
+  position: relative; }
+  .holiday-space-list-menu .icon-round-cake {
+    position: absolute;
+    left: 2.5rem;
+    top: 2rem;
+    background-color: #c44890; }
+  .holiday-space-list-menu__title {
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    font-family: "BebasNeue";
+    font-size: 3rem;
+    font-weight: 700;
+    color: #bb2b7f;
+    padding: 2.1rem 2.1rem 1.7rem 7.8rem; }
+    .holiday-space-list-menu__title:after {
+      border: none; }
+    .holiday-space-list-menu__title:hover {
+      color: #bb2b7f;
+      border: none; }
+
+.holiday-space-list .filter-layout_holiday-space-list-menu {
+  margin-left: 100px; }
+
+.holiday-space-list .c-card-cafe__title {
+  min-height: 4.5rem;
+  max-height: 4.5rem;
+  overflow: hidden; }
+
+.holiday-space-list .c-card-cafe-vertical__item {
+  color: #2a2a2a;
+  font-size: 1.5rem; }
+  .holiday-space-list .c-card-cafe-vertical__item .symbol-city {
+    top: 3px; }
+
+.holiday-space-list .c-card-cafe__subway .symbol-label-metro {
+  background-color: #7e382c; }
+
+.holiday-space-list .c-card-cafe__address {
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "PT Serif Caption"; }
+
+.holiday-space-list .c-card-cafe__phone span {
+  padding-bottom: 3px; }
+
+.holiday-space-list .c-card-cafe__phone a {
+  border-bottom: 1px dotted #c44890; }
+
+.holiday-space-list .c-card-cafe__phone a:hover {
+  border-bottom: none; }
+
+.holiday-space-list .c-card-cafe-vertical__caption {
+  display: inline;
+  color: #c44890; }
+
+.c-button__medium--widepad {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  font-size: 1.5rem; }
+
+.show-more {
+  display: block;
+  text-align: center;
+  padding: 2.5rem 0; }
+
+.show-more__button {
+  background-color: rgba(214, 214, 214, 0.4);
+  color: #555451;
+  padding: 1.5rem 12.5rem; }
+
+/* override */
+a.show-more__button:hover {
+  color: #555451; }
+
+/* Calendar - from loft */
+.loft-booking__nopad {
+  padding: 0px; }
+
+.calendar-title {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .calendar-title__caption {
+    font-family: "BebasNeue";
+    font-size: 3rem;
+    font-weight: 700;
+    color: #555451; }
+  .calendar-title__control {
+    line-height: 3rem;
+    padding: 0 1rem; }
+    .calendar-title__control svg {
+      font-size: 1rem;
+      fill: #907b6c; }
+
+.calendar-navigator {
+  background: url("../img/calendar-navigator-bg.png") repeat-x;
+  height: 5.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  position: relative; }
+  .calendar-navigator:before {
+    content: '';
+    background: url("../img/calendar-navigator-topdecor.png") repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; }
+  .calendar-navigator:after {
+    content: '';
+    background: url("../img/calendar-navigator-bottomdecor.png") repeat-x;
+    position: absolute;
+    bottom: -0.6rem;
+    left: 0;
+    width: 100%;
+    height: 10px; }
+  .calendar-navigator__layout-month {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+  .calendar-navigator__month {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .calendar-navigator__month svg {
+      fill: #907b6c;
+      font-size: 0.6rem; }
+    .calendar-navigator__month-arrow {
+      padding-top: 1.5rem; }
+      .calendar-navigator__month-arrow a:after {
+        border: none; }
+  .calendar-navigator__month-active {
+    background-color: #c44890; }
+    .calendar-navigator__month-active .calendar-navigator__link {
+      color: #fff; }
+      .calendar-navigator__month-active .calendar-navigator__link:hover {
+        color: #fff; }
+      .calendar-navigator__month-active .calendar-navigator__link:after {
+        border-bottom: 1px dashed #fff; }
+  .calendar-navigator__month-past .calendar-navigator__link {
+    color: #cdbbaf; }
+    .calendar-navigator__month-past .calendar-navigator__link:hover {
+      color: #cdbbaf; }
+    .calendar-navigator__month-past .calendar-navigator__link:after {
+      border-bottom: 1px dashed #cdbbaf; }
+  .calendar-navigator__link {
+    font-family: "BebasNeue";
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #9b806f; }
+  .calendar-navigator__link:hover {
+    color: #9b806f; }
+  .calendar-navigator__link:after {
+    content: '';
+    color: #cdbbaf;
+    border-bottom: 1px dashed #9b806f; }
+  .calendar-navigator__link:hover:after {
+    content: '';
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0;
+    width: 100%;
+    border-bottom: none; }
+  .calendar-navigator__year {
+    padding: 1rem 1rem 0rem 1rem;
+    font-family: "PT Serif Caption";
+    color: #9b806f;
+    font-size: 1.7rem; }
+
+.calendar-nav__text {
+  color: #ffc7e8;
+  font-family: "PT Serif Caption";
+  font-size: 1.4rem; }
+
+.calendar-nav__icon-gradient {
+  background: -o-linear-gradient(56.3deg, #d0569d 0%, #d0569d 50%, #c44890 51%, #c44890 100%);
+  background: linear-gradient(33.7deg, #d0569d 0%, #d0569d 50%, #c44890 51%, #c44890 100%); }
+
+.calendar-nav-wide {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22rem;
+          flex: 0 1 22rem; }
+
+.calendar-nav-time__text-lead {
+  font-family: "PT Serif Caption";
+  font-size: 1.7rem; }
+
+.calendar-nav-time__text-sub {
+  font-family: "PT Serif Caption";
+  font-size: 1.5rem; }
+
+.calendar-nav-hall {
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  border-bottom: none;
+  min-height: 12rem;
+  background-color: #f4f4f4; }
+  .calendar-nav-hall-span3 {
+    min-height: 36rem; }
+  .calendar-nav-hall__decor-blue {
+    background: url("../img/calendar-hall-blue.png") no-repeat; }
+  .calendar-nav-hall__decor-red {
+    background: url("../img/calendar-hall-red.png") no-repeat; }
+  .calendar-nav-hall__wrap {
+    padding: 1rem 2rem;
+    background: #ffffff;
+    width: 90%; }
+  .calendar-nav-hall__text {
+    color: #604e42;
+    font-family: "PT Serif Caption";
+    font-size: 1.3rem; }
+    .calendar-nav-hall__text-head {
+      font-family: "BebasNeue";
+      font-size: 3rem;
+      line-height: 2.3rem; }
+
+.calendar-header_theme_hsl .calendar-period {
+  padding: 1rem 2.5rem; }
+  .calendar-header_theme_hsl .calendar-period a {
+    font-family: "PT Serif Caption"; }
+  .calendar-header_theme_hsl .calendar-period__text {
+    font-family: "PT Serif Caption";
+    font-size: 2rem; }
+  .calendar-header_theme_hsl .calendar-period-current svg {
+    fill: #907b6c; }
+
+.calendar-track_theme_hsl .calendar-box span {
+  font-family: "PT Serif Caption";
+  font-size: 1.5rem;
+  font-style: italic; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
@@ -19712,8 +20031,7 @@ test popup
 @media screen and (max-width: 680px) {
   .pie-form__item:nth-child(1), .pie-form__item:nth-child(2), .pie-form__item:nth-child(3) {
     width: 100%; }
-  .pie-form__item:nth-child(4),
-  .pie-form__item:nth-child(5) {
+  .pie-form__item:nth-child(4), .pie-form__item:nth-child(5) {
     width: 50%; }
   .pie-form__title {
     font-size: 2rem; }

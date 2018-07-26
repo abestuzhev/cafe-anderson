@@ -2674,3 +2674,52 @@ $(function(){
 
 
 });
+
+
+/* holiday space list */
+$(function() {
+    /* show more */
+    
+    /* settings*/
+    var $target = $('.show-more-target');
+    var $control = $('.show-more');
+    var target_item_selector = 'div.c-col';
+    var start_count = 8;
+    /* end settings */
+
+    var show_more_state_collapsed = true; 
+    var target_count = $target.find(target_item_selector).length;
+
+
+    $control.find('a').on('click', function(event) {
+        event.preventDefault();
+        show_more_state_collapsed = !show_more_state_collapsed;
+        console.log(show_more_state_collapsed);
+
+        $target.find(target_item_selector).each(function(index, elem) {
+            if(show_more_state_collapsed) {
+                index >= start_count ? $(elem).hide(): $(elem).show();
+            } else {
+                $(elem).show();
+            }
+        });
+
+        if (show_more_state_collapsed) {
+            $control.find('a').html('показать ещё');
+        } else {
+            $control.find('a').html('скрыть');
+        }
+
+
+    //        if(current > target_count) $control.hide();
+    });
+
+    if(start_count < target_count) {
+        $target.find(target_item_selector).each(function(index, elem) {
+            index >= start_count ? $(elem).hide(): $(elem).show();
+        });
+    }
+    /* end show more */
+
+});
+
