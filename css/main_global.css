@@ -19623,7 +19623,8 @@ a.show-more__button:hover {
   border-bottom: none;
   min-height: 12rem;
   background-color: #f4f4f4;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative; }
   .calendar-nav-hall-span3 {
     min-height: 36rem; }
   .calendar-nav-hall__decor-blue {
@@ -19633,7 +19634,9 @@ a.show-more__button:hover {
   .calendar-nav-hall__wrap {
     padding: 1rem 2rem;
     background: #ffffff;
-    width: 90%; }
+    width: 90%;
+    z-index: 10;
+    border-radius: .4rem; }
   .calendar-nav-hall__text {
     color: #604e42;
     font-family: "PT Serif Caption";
@@ -19642,6 +19645,24 @@ a.show-more__button:hover {
       font-family: "BebasNeue";
       font-size: 3rem;
       line-height: 2.3rem; }
+  .calendar-nav-hall:hover:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+  .calendar-nav-hall:hover .calendar-nav-hall__wrap {
+    padding: 1.3rem 2.3rem;
+    width: 93%;
+    -webkit-box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3); }
+  .calendar-nav-hall:hover .calendar-nav-hall__text {
+    color: #81c15f;
+    font-size: 1.6rem; }
+  .calendar-nav-hall:hover .calendar-nav-hall__text-head {
+    font-size: 3.3rem; }
 
 .calendar-header_theme_hsl .calendar-period {
   padding: 1rem 2.5rem; }
