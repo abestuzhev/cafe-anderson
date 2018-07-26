@@ -16757,6 +16757,7 @@ a.show-more__button:hover {
             width: 90%;
             z-index: 10;
             border-radius: .4rem;
+            transition: transform .15s ease-in-out;
         }
 
         &__text {
@@ -16782,18 +16783,12 @@ a.show-more__button:hover {
         }
 
         &:hover &__wrap {
-            padding: 1.3rem 2.3rem;
-            width:93%;
+            transform: scale(1.03);
             box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3);
         }
 
         &:hover &__text {
             color: #81c15f;
-            font-size: 1.6rem;
-        }
-
-        &:hover &__text-head {
-            font-size: 3.3rem;
         }
 
     }
