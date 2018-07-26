@@ -22,6 +22,10 @@ $(function(){
 
         this.tier = ['one', 'two'];
 
+        /*параметры*/
+        this.typeFilling = '1'; //начинка торта
+        this.typeShape = 'round'; //форма торта
+
         // if (this.itemsShape.length !== 2) {
         //     alert('В списке больше 2-х ярусов!');
         //     return false;
@@ -87,23 +91,26 @@ $(function(){
                 self.elementShape.addClass('active');
             });
 
-            $('#filter_shape input[type="radio"]').on('change', function(){
-                var typeShape = $(this).data('filterShape');
-                self.changeShape(typeShape);
-            });
-
             $('#filter_filling input[type="radio"]').on('change', function(){
-                self.changeFilling();
+                self.typeFilling = $(this).data('filling');
+                self.changeFilling(self.typeFilling, self.typeShape);
             });
 
 
+            $('#filter_shape input[type="radio"]').on('change', function(){
+                self.typeShape = $(this).data('filterShape');
+                self.changeShape(self.typeShape);
+                self.changeFilling(self.typeFilling, self.typeShape );
 
+            });
         },
+
+
+
 
         showCake: function(nextStep){
             $(nextStep).parents('.constructor-product-shape').addClass('visited');
             this.selectedShape = $(nextStep).parents('.constructor-product-shape__item').data('shape');
-            this.selectedTier = $(nextStep).parents('.constructor-product-shape__item').data('tier');
             this.elementShape.removeClass('active');
             this.cake.addClass('active').find('.cake-basis').attr('src', this.pathImg + 'cake-' + this.selectedShape + '-' + this.selectedTier + '.png');
             this.filterFilling.siblings().removeClass('active');;
@@ -120,24 +127,34 @@ $(function(){
             $(elemActive).addClass(nameClass);
         },
 
+        changeTier: function(nextStep){
+            this.selectedTier = $(nextStep).parents('.constructor-product-shape__item').data('tier');
+
+        },
+
         changeShape: function(typeShape){
 
             var self = this;
             this.elementShape.find('.constructor-product-shape__item').each(function(i, elem){
                $(elem).data('shape', typeShape).attr('data-shape', typeShape);
-                $(elem).find('img').attr('src', self.pathImg + 'cake-'+ typeShape + '-' + self.tier[i] + '.png');
+                $(elem).find('img').attr('src', self.pathImg + 'cake-'+ self.typeShape + '-' + self.tier[i] + '.png');
                 // console.log('пусть картинки N' + i + ' ' + $(elem).find('img').attr('src'));
             });
         },
 
-        changeFilling: function(){
-            var text = this.pathImg + 'filling-1-round-one.png';
-            var filling = $('<img class="cake-filling" src="' + text + '" alt="">');
-            if($('img').hasClass('.cake-filling')){
-                $(this).remove();
+        changeFilling: function(filling, shape){
+            // var text = this.pathImg + 'filling-1-round-one.png';
+            var filling = $('<img class="cake-filling" src="' + this.pathImg + 'filling-' + filling + '-'+ shape + '-' + this.selectedTier + '.png' + '" alt="">');
+            if($(this.cake.find('img')).hasClass('.cake-filling')){
+
+            }else{
+
             }
 
+            $(this.cake.find('.cake-filling')).remove();
             this.cake.append(filling);
+
+
         }
 
     };

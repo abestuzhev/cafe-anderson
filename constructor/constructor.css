@@ -410,6 +410,6 @@
 
 .cake-filling {
     position: absolute;
-    top: 0;
+    top: 3px;
     z-index: 2;
 }
