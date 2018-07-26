@@ -19668,6 +19668,12 @@ a.show-more__button:hover {
           box-shadow: none;
   border-radius: 0; }
 
+.popup__gallery .fotorama__arr--prev {
+  left: 1.2rem; }
+
+.popup__gallery .fotorama__arr--next {
+  right: 1.2rem; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

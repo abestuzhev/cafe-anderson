@@ -2731,7 +2731,7 @@ $(function() {
         loop: true,
         thumbwidth: 88,
         allowfullscreen: false,
-        nav: 'false',
+        nav: 'thumbs',
         fit:'cover'
     });
 
