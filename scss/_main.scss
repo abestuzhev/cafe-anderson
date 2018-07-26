@@ -16562,20 +16562,33 @@ a.show-more__button:hover {
     justify-content: center;
 
     &__caption {
+        z-index: 20;
         font-family: $font_sans-serif;
         font-size: 3rem;
         font-weight: $font_bold;
         color: #555451;
+        display: inline-block;
     }
 
     &__control {
+        z-index: 20;
         line-height: 3rem;
         padding: 0 1rem;
+        display: inline-block;
 
         svg{
             font-size: 1rem;
             fill: #907b6c;
         }
+    }
+
+    &__wrapper {
+        z-index: 12;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -16845,6 +16858,97 @@ a.show-more__button:hover {
     }
 
 
+}
+
+/* Calendar Selector */
+.calendar-selector {
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    top: -2.2rem;
+    left: 0;
+    background-color: #fff;
+    border-radius: .8rem;
+    box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33);
+
+    &_hidden {
+        display: none;
+    }
+
+    &__head {
+        height: 6rem;
+        z-index: 11;
+    }
+
+    &__footer {
+        height: 3rem;
+        z-index: 11;
+    }
+
+    &__body {
+        max-height: 25rem;
+        width: 100%;
+    }
+
+    &__control {
+        padding: 1rem 2.5rem;
+    }
+
+    &__input {
+        outline: none;
+        border: 1px solid #d6d6d6;
+        border-radius: .6rem;
+        padding: 1rem 1.5rem;
+        font-family: $font_serif;
+        font-size: 1.8rem;
+        color: #555451;
+    }
+
+    &__item {
+        padding: .7rem 3rem;
+        position: relative;
+        text-align: left;
+
+        a {
+            color: #555451;
+            font-family: $font_serif;
+            font-size: 1.8rem;
+
+            &:after {
+                border: none;
+            }
+        }
+
+        &:hover {
+            background-color: #67af26;
+            a {
+                color: #ffffff;
+            }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid #f5f5f5;
+            left: 3rem;
+            bottom: 0;
+            width: 90%;
+            overflow: hidden;
+        }
+
+        &:hover:after {
+          border: none;
+        }
+
+    }
+
+
+}
+
+
+
+.calendar-selector_wrapper {
+    position: relative;
 }
 
 
