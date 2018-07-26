@@ -94,6 +94,7 @@ $(function(){
             $('#filter_filling input[type="radio"]').on('change', function(){
                 self.typeFilling = $(this).data('filling');
                 self.changeFilling(self.typeFilling, self.typeShape);
+                self.getTier();
             });
 
 
@@ -112,7 +113,6 @@ $(function(){
             $(nextStep).parents('.constructor-product-shape').addClass('visited');
             this.selectedShape = $(nextStep).parents('.constructor-product-shape__item').data('shape');
             this.selectedTier = $(nextStep).parents('.constructor-product-shape__item').data('tier');
-
             this.elementShape.removeClass('active');
             this.cake.addClass('active').find('.cake-basis').attr('src', this.pathImg + 'cake-' + this.selectedShape + '-' + this.selectedTier + '.png');
             this.filterFilling.siblings().removeClass('active');;
@@ -129,9 +129,12 @@ $(function(){
             $(elemActive).addClass(nameClass);
         },
 
-        // changeTier: function(nextStep){
-        //
-        //         },
+        getTier: function(){
+            $.each(function(){
+                this.selectedTier = this.elementShape.find('.selected').data('tier');
+            });
+            console.log(this.selectedTier);
+        },
 
         changeShape: function(typeShape){
 
