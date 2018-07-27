@@ -399,8 +399,8 @@
     top: 3px;
     left: 0;
     z-index: 2;
-    opacity: 0;
-    visibility: hidden; 
+    opacity: 1;
+    /*visibility: hidden; */
 }
 
 .cake-filling.active {

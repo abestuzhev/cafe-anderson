@@ -28,8 +28,9 @@ $(function(){
 
         this.selectedShape = this.elementShape.find('.selected').data('shape');
         this.selectedTier = this.elementShape.find('.selected').data('tier');
-        this.selectedFilling = this.filterFilling.find('input[type="radio"]:selected').data('filling');
+        this.selectedFilling = this.filterFilling.find('input[type="radio"]:checked').data('filling');
 
+        console.log(this.selectedFilling);
         // if (this.itemsShape.length !== 2) {
         //     alert('В списке больше 2-х ярусов!');
         //     return false;
@@ -114,7 +115,7 @@ $(function(){
 
             $('#filter_filling input[type="radio"]').on('change', function(){
                 self.typeFilling = $(this).data('filling');
-                self.changeFilling(self.typeFilling, self.typeShape);
+                self.changeFilling(self.selectedFilling, self.typeShape);
                 self.getTier();
                 self.getShape();
             });
@@ -181,21 +182,22 @@ $(function(){
 
         changeFilling: function(filling, shape){
             this.getFilling();
-            var filling = $('<img class="cake-filling" src="' + this.pathImg + 'filling-' + filling + '-' + shape + '-' + this.selectedTier + '.png' + '" alt="">');
+            var fillingIMG = $('<img class="cake-filling" src="' + this.pathImg + 'filling-' + filling + '-' + shape + '-' + this.selectedTier + '.png' + '" alt="">');
 
             $(this.cake.find('.cake-filling')).remove();
-            this.cake.append(filling);
+            this.cake.append(fillingIMG);
             
         },
         
         showPiece: function(){
-            var piece; 
-            if (this.selectedLining !== undefined){
-                piece = $('<img class="cake-piece" src="' + this.pathImg + 'piece-' + this.selectedLining + '-' + this.selectedShape + '-' + this.selectedTier + '.png' + '" alt="">');
+            var piece;
+            piece = $('<img class="cake-piece" src="' + this.pathImg + 'piece-default' + '-' + this.selectedShape + '-' + this.selectedTier + '.png' + '" alt="">');
 
-            }else {
-                piece = $('<img class="cake-piece" src="' + this.pathImg + 'piece-default' + '-' + this.selectedShape + '-' + this.selectedTier + '.png' + '" alt="">');
-            }
+            // if (this.selectedLining !== undefined){
+            //     piece = $('<img class="cake-piece" src="' + this.pathImg + 'piece-' + this.selectedLining + '-' + this.selectedShape + '-' + this.selectedTier + '.png' + '" alt="">');
+            //
+            // }else {
+            // }
             piece.addClass('active visited');
             $(this.cake.find('.cake-piece')).remove();
             this.cake.append(piece);
