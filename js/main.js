@@ -2743,8 +2743,65 @@ $(function() {
 
     $('.calendar-title__wrapper').on('click', function (event) {
         event.preventDefault();
-        console.log('tick');
-        $('.calendar-selector').toggleClass('calendar-selector_hidden');
+        $('#hsl-addr-selector').toggleClass('calendar-selector_hidden');
+        $('.calendar-title__wrapper .calendar-title__control svg').toggleClass('calendar-title__control_flip');
     });
+
+    $('#hsl-year-selector-init').on('click', function (event) {
+        event.preventDefault();
+        $('#hsl-year-selector').toggleClass('calendar-selector_hidden');
+    });
+
+
+
+    // hide on click other element
+    function hideSelector(target_selector, event) {
+        let elemclass = $(event.target).attr('class');
+        let elemid = $(event.target).attr('id');
+        if(!elemid) elemid = '';
+        if(!elemclass) elemclass = '';
+
+        if(!$(target_selector).hasClass('calendar-selector_hidden'))
+            if ((elemclass.indexOf('calendar-selector') === -1) &&
+                (elemclass.indexOf('simplebar') === -1) &&
+                (elemclass.indexOf('calendar-navigator__year') === -1) &&
+                (elemid.indexOf('hsl-year-selector-init') === -1) &&
+                (elemclass.indexOf('calendar-title__caption') === -1) &&
+                (elemclass.indexOf('calendar-title__wrapper') === -1) &&
+                (elemclass.indexOf('calendar-title__caption') === -1) &&
+                (elemclass.indexOf('calendar-title__control') === -1)
+            ) {
+                $('.calendar-selector').addClass('calendar-selector_hidden');
+            }
+    }
+
+    $(document).on('click', function(event) {
+        hideSelector('#hsl-addr-selector', event);
+        hideSelector('#hsl-year-selector', event);
+    });
+
+    // filter on input
+    $('.calendar-selector__input').on('change paste keyup', function(event) {
+
+        var filter_value =  $('.calendar-selector__input').val();
+        var $elem_target = $(this).closest('.calendar-selector').find('.calendar-selector__list');
+
+        if(filter_value) {
+            $elem_target.find('li').each(function (index, element) {
+                if ($(element).find('a').html().toLowerCase().indexOf(filter_value.toLowerCase()) !== -1) {
+                    $(element).show();
+                } else {
+                    $(element).hide();
+                }
+            });
+        } else {
+            $elem_target.find('li').each(function (index, element) {
+                $(element).show();
+            });
+        }
+    });
+
+
+
 });
 

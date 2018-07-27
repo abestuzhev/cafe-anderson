@@ -19509,6 +19509,10 @@ a.show-more__button:hover {
     .calendar-title__control svg {
       font-size: 1rem;
       fill: #907b6c; }
+    .calendar-title__control_flip {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
   .calendar-title__wrapper {
     z-index: 12;
     display: -webkit-box;
@@ -19612,7 +19616,9 @@ a.show-more__button:hover {
     padding: 1rem 1rem 0rem 1rem;
     font-family: "PT Serif Caption";
     color: #9b806f;
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    z-index: 12;
+    position: relative; }
 
 .calendar-nav__text {
   color: #ffc7e8;
@@ -19784,6 +19790,39 @@ a.show-more__button:hover {
       overflow: hidden; }
     .calendar-selector__item:hover:after {
       border: none; }
+
+.calendar-selector_theme_year {
+  top: 0; }
+  .calendar-selector_theme_year .calendar-selector__footer {
+    height: .8rem; }
+  .calendar-selector_theme_year .calendar-selector__item {
+    padding: .3rem .8rem;
+    font-family: "PT Serif Caption";
+    font-size: 1.7rem;
+    white-space: nowrap; }
+    .calendar-selector_theme_year .calendar-selector__item:after {
+      border: none; }
+    .calendar-selector_theme_year .calendar-selector__item:hover {
+      color: #ffffff; }
+      .calendar-selector_theme_year .calendar-selector__item:hover a:after {
+        border: none; }
+    .calendar-selector_theme_year .calendar-selector__item a {
+      font-family: "BebasNeue";
+      font-size: 2.5rem;
+      font-weight: 500; }
+    .calendar-selector_theme_year .calendar-selector__item a:hover {
+      color: #fff; }
+    .calendar-selector_theme_year .calendar-selector__item a:after {
+      content: '';
+      color: #cdbbaf;
+      border-bottom: 1px dashed #555451; }
+    .calendar-selector_theme_year .calendar-selector__item a:hover:after {
+      content: '';
+      position: absolute;
+      bottom: 0.3rem;
+      left: 0;
+      width: 100%;
+      border-bottom: none; }
 
 .calendar-selector_wrapper {
   position: relative; }

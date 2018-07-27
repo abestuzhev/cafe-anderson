@@ -6147,7 +6147,7 @@
                                             <svg class="c-symbol symbol-narrow-down"><use xlink:href="#symbol-narrow-down" /></svg>
                                         </div>
                                     </div>
-                                    <div class="calendar-selector calendar-selector_hidden">
+                                    <div id="hsl-addr-selector" class="calendar-selector calendar-selector_hidden">
                                         <div class="calendar-selector__head"></div>
                                         <div class="calendar-selector__body">
                                             <div class="calendar-selector__control">
@@ -6193,7 +6193,20 @@
     
                                 </div>
                                 <div class="calendar-navigator__layout-year">
-                                        <div class="calendar-navigator__year"><a href="#" class="calendar-navigator__link">2018</a> год</div>
+                                    <div class="calendar-selector_wrapper">
+                                        <div class="calendar-navigator__year"><a href="#" id="hsl-year-selector-init" class="calendar-navigator__link">2018</a> год</div>
+
+                                        <div id="hsl-year-selector" class="calendar-selector calendar-selector_theme_year calendar-selector_hidden">
+                                            <div class="calendar-selector__head"></div>
+                                            <div class="calendar-selector__body">
+                                                <ul class="calendar-selector__list">
+                                                    <li class="calendar-selector__item"><a href="#">2019</a></li>
+                                                    <li class="calendar-selector__item"><a href="#">2020</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="calendar-selector__footer"></div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                         

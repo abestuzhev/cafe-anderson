@@ -16580,7 +16580,14 @@ a.show-more__button:hover {
             font-size: 1rem;
             fill: #907b6c;
         }
+
+        &_flip {
+            transform: rotate(180deg);
+        }
+
     }
+
+
 
     &__wrapper {
         z-index: 12;
@@ -16712,6 +16719,8 @@ a.show-more__button:hover {
         font-family: $font_serif;
         color: #9b806f;
         font-size: 1.7rem;
+        z-index: 12;
+        position: relative;
     }
 
 }
@@ -16961,6 +16970,63 @@ a.show-more__button:hover {
 
     }
 
+
+}
+
+.calendar-selector_theme_year {
+    top: 0;
+
+    .calendar-selector {
+
+        &__footer {
+            height: .8rem;
+        }
+
+        &__item {
+            padding: .3rem .8rem;
+            font-family: $font_serif;
+            font-size: 1.7rem;
+            white-space: nowrap;
+
+            &:after {
+                border: none;
+            }
+
+            &:hover {
+                color: #ffffff;
+                a:after {
+                    border: none;
+                }
+            }
+
+            a {
+                font-family: $font_sans-serif;
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+
+
+            a:after {
+                content: '';
+                color: #cdbbaf;
+                border-bottom: 1px dashed #555451;
+            }
+
+            a:hover:after {
+                content: '';
+                position: absolute;
+                bottom: 0.3rem;
+                left: 0;
+                width: 100%;
+                border-bottom: none;
+            }
+        }
+
+    }
 }
 
 
