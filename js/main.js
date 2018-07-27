@@ -2772,6 +2772,9 @@ $(function() {
                 (elemclass.indexOf('calendar-title__control') === -1)
             ) {
                 $('.calendar-selector').addClass('calendar-selector_hidden');
+                // arrow transform
+                $('.calendar-title__wrapper .calendar-title__control svg').removeClass('calendar-title__control_flip');
+
             }
     }
 
