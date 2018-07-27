@@ -19739,7 +19739,8 @@ a.show-more__button:hover {
     max-height: 25rem;
     width: 100%; }
   .calendar-selector__control {
-    padding: 1rem 2.5rem; }
+    padding: 1rem 2.5rem;
+    padding-right: 0; }
   .calendar-selector__input {
     outline: none;
     border: 1px solid #d6d6d6;
@@ -19748,6 +19749,8 @@ a.show-more__button:hover {
     font-family: "PT Serif Caption";
     font-size: 1.8rem;
     color: #555451; }
+  .calendar-selector__list {
+    overflow: hidden; }
   .calendar-selector__item {
     padding: .7rem 3rem;
     position: relative;
@@ -19768,7 +19771,7 @@ a.show-more__button:hover {
       border-bottom: 1px solid #f5f5f5;
       left: 3rem;
       bottom: 0;
-      width: 90%;
+      width: 100%;
       overflow: hidden; }
     .calendar-selector__item:hover:after {
       border: none; }

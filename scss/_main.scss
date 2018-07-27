@@ -16892,6 +16892,7 @@ a.show-more__button:hover {
 
     &__control {
         padding: 1rem 2.5rem;
+        padding-right: 0;
     }
 
     &__input {
@@ -16902,6 +16903,10 @@ a.show-more__button:hover {
         font-family: $font_serif;
         font-size: 1.8rem;
         color: #555451;
+    }
+
+    &__list {
+        overflow: hidden;
     }
 
     &__item {
@@ -16932,7 +16937,7 @@ a.show-more__button:hover {
             border-bottom: 1px solid #f5f5f5;
             left: 3rem;
             bottom: 0;
-            width: 90%;
+            width: 100%;
             overflow: hidden;
         }
 
@@ -16941,7 +16946,6 @@ a.show-more__button:hover {
         }
 
     }
-
 
 }
 
