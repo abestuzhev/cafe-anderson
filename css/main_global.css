@@ -19522,7 +19522,8 @@ a.show-more__button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     padding-left: 3rem;
-    padding-right: 3rem; }
+    padding-right: 3rem;
+    cursor: pointer; }
 
 .calendar-navigator {
   background: url("../img/calendar-navigator-bg.png") repeat-x;

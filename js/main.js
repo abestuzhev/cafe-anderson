@@ -2741,5 +2741,10 @@ $(function() {
         scrollbarMinSize: 35,
     });
 
+    $('.calendar-title__wrapper').on('click', function (event) {
+        event.preventDefault();
+        console.log('tick');
+        $('.calendar-selector').toggleClass('calendar-selector_hidden');
+    });
 });
 
