@@ -2735,5 +2735,11 @@ $(function() {
         fit:'cover'
     });
 
+    /* Calendar Selector */
+    new SimpleBar($('.calendar-selector__list')[0], {
+        autoHide: false,
+        scrollbarMinSize: 35,
+    });
+
 });
 

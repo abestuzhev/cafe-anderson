@@ -19740,7 +19740,7 @@ a.show-more__button:hover {
     width: 100%; }
   .calendar-selector__control {
     padding: 1rem 2.5rem;
-    padding-right: 0; }
+    padding-right: 3rem; }
   .calendar-selector__input {
     outline: none;
     border: 1px solid #d6d6d6;
@@ -19750,7 +19750,15 @@ a.show-more__button:hover {
     font-size: 1.8rem;
     color: #555451; }
   .calendar-selector__list {
-    overflow: hidden; }
+    max-height: 18.5rem; }
+    .calendar-selector__list .simplebar-track {
+      width: 3rem; }
+    .calendar-selector__list .simplebar-track.vertical {
+      background-color: #ffffff; }
+    .calendar-selector__list .simplebar-track.horizontal {
+      display: none !important; }
+    .calendar-selector__list .simplebar-scrollbar {
+      right: 1rem; }
   .calendar-selector__item {
     padding: .7rem 3rem;
     position: relative;

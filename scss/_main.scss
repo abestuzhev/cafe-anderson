@@ -16892,7 +16892,7 @@ a.show-more__button:hover {
 
     &__control {
         padding: 1rem 2.5rem;
-        padding-right: 0;
+        padding-right: 3rem;
     }
 
     &__input {
@@ -16906,7 +16906,20 @@ a.show-more__button:hover {
     }
 
     &__list {
-        overflow: hidden;
+
+        max-height: 18.5rem;
+        .simplebar-track {
+            width: 3rem;
+        }
+        .simplebar-track.vertical {
+            background-color: #ffffff;
+        }
+        .simplebar-track.horizontal {
+            display: none !important;
+        }
+        .simplebar-scrollbar {
+            right: 1rem;
+        }
     }
 
     &__item {
