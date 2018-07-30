@@ -11964,7 +11964,7 @@ $(function() {
         fit:'cover'
     });
 
-    if($('div').hasClass('calendar-selector__list')){
+    if($('ul').hasClass('calendar-selector__list')){
         /* Calendar Selector */
         new SimpleBar($('.calendar-selector__list')[0], {
             autoHide: false,
