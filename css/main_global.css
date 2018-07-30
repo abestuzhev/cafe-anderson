@@ -19801,7 +19801,6 @@ a.show-more__button:hover {
   position: absolute;
   z-index: 11;
   width: 100%;
-  min-width: 55rem;
   top: -2.2rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -19867,6 +19866,9 @@ a.show-more__button:hover {
       overflow: hidden; }
     .calendar-selector__item:hover:after {
       border: none; }
+
+#hsl-addr-selector {
+  min-width: 55rem; }
 
 .calendar-selector_theme_year {
   top: 0; }

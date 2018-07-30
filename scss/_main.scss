@@ -16791,6 +16791,8 @@ a.show-more__button:hover {
         font-size: 1.7rem;
         z-index: 12;
         position: relative;
+
+
     }
 
 }
@@ -16945,7 +16947,6 @@ a.show-more__button:hover {
     position: absolute;
     z-index: 11;
     width: 100%;
-    min-width: 55rem;
     top: -2.2rem;
     left: 50%;
     transform: translateX(-50%);
@@ -17041,8 +17042,10 @@ a.show-more__button:hover {
         }
 
     }
+}
 
-
+#hsl-addr-selector {
+    min-width: 55rem;
 }
 
 .calendar-selector_theme_year {
