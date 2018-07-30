@@ -504,6 +504,7 @@ main {
         overflow: hidden;
     }
 
+
     &__desc {
         margin-bottom: 2rem;
         border-bottom: 6px solid #7e5847;
@@ -517,9 +518,9 @@ main {
     &-title {
         position: relative;
         text-align: center;
-        color: $color_text_base;
+        color: #553023;
         background-color: $custom_bg;
-        font-size: 2.3rem;
+        font-size: 1.9rem;
         padding: 1.8rem 2rem 1.4rem;
 
         &__layout {
@@ -2196,6 +2197,66 @@ main {
 
         }
     }
+
+
+}
+
+/*popup-calendar-booking----------------------------------*/
+.popup-calendar-booking {
+    .popup {
+        max-width: 73.4rem;
+        width: 73.4rem;
+
+        &-body {
+            padding: 1.2rem 2.9rem 3.5rem;
+        }
+
+        &-footer {
+            margin-left: -1.2rem;
+            margin-right: -1.2rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &__item {
+                //width: 50%;
+                padding: 0 1.2rem;
+                &:nth-child(1) {
+                    flex: 1;
+                }
+
+                &:nth-child(2) {
+                    //width: auto;
+                }
+
+            }
+        }
+    }
+
+    .c-label {
+        font-style: italic;
+        color: #553023;
+    }
+
+    .c-col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .c-layout-icon svg {
+        fill:#9b9595;
+    }
+
+    .c-personal-data {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .c-button__default {
+        padding: 1.3rem 2.3rem;
+    }
+
 
 
 }
@@ -13872,12 +13933,6 @@ test popup
 
 /*holiday-reason**************************/
 
-@keyframes swing {
-    0% { transform: rotate(0); }
-    50% { transform: translateX(-6px) rotate(1deg); }
-    //70% { transform: rotate(-1deg); }
-    100% { transform: translateX(0) rotate(0); }
-}
 
 .holiday-reason {
     margin-bottom: 9rem;
@@ -14058,10 +14113,25 @@ test popup
         margin-bottom: 5.5rem;
         display: inline-block;
         //opacity: .5;
+        transition: all .6s ease-in-out;
+
+
+        @keyframes swing {
+            0% { transform: rotate(0); }
+            50% { transform: translateX(-6px) rotate(1deg); }
+            //70% { transform: rotate(-1deg); }
+            100% { transform: translateX(0) rotate(0); }
+        }
+
+        .swing {
+            animation: swing 2s infinite ease-in-out;
+        }
 
         &:hover {
-            animation: swing 2s infinite ease-in-out;
+            transform: translateX(-6px) rotate(1deg);
+
             //transform-origin: 50% 0;
+            transition: all .6s ease-in-out;
         }
 
 

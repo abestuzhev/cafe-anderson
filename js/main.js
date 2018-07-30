@@ -32,6 +32,9 @@ var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
 
+/*анимация покачиания рамки в поводах для праздника holiday-reason-card*/
+
+
 
 $(window).on('load', function(){
 
@@ -1667,6 +1670,7 @@ $(document).ready(function ($) {
     showPopup(".js-show-cake-order", '.popup-cake-order');
     showPopup(".js-show-pie-order", '.popup-pie');
     showPopup(".js-show-poster", '.popup-poster');
+    showPopup(".calendar-box__link", '.popup-calendar-booking');
 
 
     showPopup(".calendar-nav-hall__decor-blue", '.popup__gallery_hall_blue');

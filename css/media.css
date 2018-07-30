@@ -3824,6 +3824,24 @@
     .loft-banner__box {
         position: static;
     }
+
+    .popup-calendar-booking  .popup-footer {
+        display: block;
+    }
+
+    .popup-calendar-booking  .popup-footer__item {
+        margin-bottom: 1rem;
+        width: 100%;
+        flex: 0 1 100%;
+    }
+
+    .popup-calendar-booking  .popup-footer .l-button {
+        text-align: center;
+    }
+
+    .popup-calendar-booking .popup .c-col {
+        padding: .8rem;
+    }
 }
 
 @media screen and (max-height: 600px) {
@@ -4575,6 +4593,10 @@
     .popup-event__col {
         width: 100%;
         padding: 0;
+    }
+
+    .popup-calendar-booking .popup-footer .c-button {
+        width: 100%;
     }
 }
 

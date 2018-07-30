@@ -16,18 +16,18 @@ var gulp = require('gulp'),
     critical = require('critical'),
     browserSync = require('browser-sync').create();
 
-
-gulp.task('critical', function () {
-    critical.generate({
-        inline: true,
-        // base: './',
-        src: 'home.html',
-        dest: 'home-critical.html',
-        minify: true,
-        width: 1300,
-        height: 760
-    });
-});
+//
+// gulp.task('critical', function () {
+//     critical.generate({
+//         inline: true,
+//         // base: './',
+//         src: 'home.html',
+//         dest: 'home-critical.html',
+//         minify: true,
+//         width: 1300,
+//         height: 760
+//     });
+// });
 
 // var srcDir = 'src/';
 
@@ -64,7 +64,7 @@ gulp.task('js', function(){
     ])
         .pipe(sourcemaps.init())
         .pipe(concat('scripts_all.js'))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest('js/'))
         .pipe(browserSync.stream())
 });
@@ -132,8 +132,8 @@ gulp.task('watch', function(){
     gulp.watch('demo-head/**/*.scss', ['head']);
     gulp.watch('js/**/*.js', ['js']);
     gulp.watch('**/*.html', ['html']);
-    gulp.watch('home.html', ['critical']);
+    // gulp.watch('home.html', ['critical']);
     gulp.watch('**/*.css', ['css']);
 });
 
-gulp.task('default', ['html', 'critical', 'css', 'sass', 'js', 'head', 'browser-sync', 'watch']);
+gulp.task('default', ['html', 'css', 'sass', 'js', 'head', 'browser-sync', 'watch']);

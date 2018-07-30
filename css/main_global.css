@@ -1206,6 +1206,9 @@ i.icon-chair {
   height: 1em;
   fill: #7f7d7c; }
 
+.icon-round-cake {
+  position: relative; }
+
 .symbol-smile-ears {
   font-size: 2.2rem;
   width: 1em;
@@ -5593,6 +5596,18 @@ div.c-card-catalog-2 {
 .pie-slider .product-item-scu-item-color-container {
   max-width: 100%; }
 
+/*обертка для иконок в инпутах*/
+.c-layout-icon {
+  position: relative; }
+
+.c-layout-icon svg {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -6339,10 +6354,10 @@ div.c-card-catalog-2 {
       left: -1px;
       right: -1px;
       height: 6px;
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, transparent));
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(transparent));
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, rgba(0, 0, 0, 0)));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
     .header-categories-grid {
       display: -webkit-box;
@@ -7344,9 +7359,9 @@ main {
   .popup-title {
     position: relative;
     text-align: center;
-    color: #555451;
+    color: #553023;
     background-color: #fdf7e8;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     padding: 1.8rem 2rem 1.4rem; }
     .popup-title__layout {
       font-size: 0; }
@@ -8560,6 +8575,55 @@ main {
     .popup-poster .poster-banner__line svg {
       fill: #ffd92e; }
 
+/*popup-calendar-booking----------------------------------*/
+.popup-calendar-booking .popup {
+  max-width: 73.4rem;
+  width: 73.4rem; }
+  .popup-calendar-booking .popup-body {
+    padding: 1.2rem 2.9rem 3.5rem; }
+  .popup-calendar-booking .popup-footer {
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .popup-calendar-booking .popup-footer__item {
+      padding: 0 1.2rem; }
+      .popup-calendar-booking .popup-footer__item:nth-child(1) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+
+.popup-calendar-booking .c-label {
+  font-style: italic;
+  color: #553023; }
+
+.popup-calendar-booking .c-col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%; }
+
+.popup-calendar-booking .c-layout-icon svg {
+  fill: #9b9595; }
+
+.popup-calendar-booking .c-personal-data {
+  width: 100%;
+  margin-bottom: 0; }
+
+.popup-calendar-booking .c-button__default {
+  padding: 1.3rem 2.3rem; }
+
 /*----------------------------------------------*/
 #tooltip {
   text-align: center;
@@ -9522,7 +9586,7 @@ test popup
           position: absolute;
           top: 0;
           left: 0; }
-      .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
+      .cafe-info__item i[class*="icon"] ,
       .cafe-info__item img {
         position: absolute;
         top: 0;
@@ -16607,8 +16671,7 @@ test popup
       z-index: 2;
       float: right;
       opacity: .5;
-      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
-              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
   .holiday-box--tortzhestvo {
     /*holiday-box--tortzhestvo*/ }
     .holiday-box--tortzhestvo .holiday-description-fake {
@@ -16627,8 +16690,7 @@ test popup
     .holiday-box--karapuznik .holiday-description-fake {
       width: 38%;
       height: 57rem;
-      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
-              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
   .holiday-box--mameninyi {
     /*holiday-box--mameninyi*/ }
     .holiday-box--mameninyi .holiday-description__text {
@@ -17365,27 +17427,6 @@ test popup
       height: 100%; }
 
 /*holiday-reason**************************/
-@-webkit-keyframes swing {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  50% {
-    -webkit-transform: translateX(-6px) rotate(1deg);
-            transform: translateX(-6px) rotate(1deg); }
-  100% {
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0); } }
-@keyframes swing {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  50% {
-    -webkit-transform: translateX(-6px) rotate(1deg);
-            transform: translateX(-6px) rotate(1deg); }
-  100% {
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0); } }
-
 .holiday-reason {
   margin-bottom: 9rem;
   /*шапка страницы*/ }
@@ -17526,10 +17567,42 @@ test popup
     -webkit-box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
             box-shadow: inset 0 0 0 3px #bcb69f, inset 0 0 30px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 0 #fcfaf5, 0 0 0 3px #bcb69f, 0 0 30px 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 5.5rem;
-    display: inline-block; }
-    .holiday-reason-card:hover {
+    display: inline-block;
+    -webkit-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out; }
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: translateX(-6px) rotate(1deg);
+            transform: translateX(-6px) rotate(1deg); }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0); } }
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  50% {
+    -webkit-transform: translateX(-6px) rotate(1deg);
+            transform: translateX(-6px) rotate(1deg); }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0); } }
+    .holiday-reason-card .swing {
       -webkit-animation: swing 2s infinite ease-in-out;
               animation: swing 2s infinite ease-in-out; }
+    .holiday-reason-card:hover {
+      -webkit-transform: translateX(-6px) rotate(1deg);
+          -ms-transform: translateX(-6px) rotate(1deg);
+              transform: translateX(-6px) rotate(1deg);
+      -webkit-transition: all .6s ease-in-out;
+      -o-transition: all .6s ease-in-out;
+      transition: all .6s ease-in-out; }
     .holiday-reason-card::after {
       content: '';
       position: absolute;
@@ -20209,7 +20282,8 @@ a.show-more__button:hover {
 @media screen and (max-width: 680px) {
   .pie-form__item:nth-child(1), .pie-form__item:nth-child(2), .pie-form__item:nth-child(3) {
     width: 100%; }
-  .pie-form__item:nth-child(4), .pie-form__item:nth-child(5) {
+  .pie-form__item:nth-child(4),
+  .pie-form__item:nth-child(5) {
     width: 50%; }
   .pie-form__title {
     font-size: 2rem; }
