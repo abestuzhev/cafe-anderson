@@ -408,6 +408,13 @@
     visibility: visible; 
 }
 
+.cake-lining {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    z-index: 2;
+}
+
 .cake-piece {
     position: absolute;
     top: 3px;
@@ -415,6 +422,7 @@
     z-index: 3;
     opacity: 0;
 }
+
 
 @keyframes downpiece {
     0% {
