@@ -9432,6 +9432,11 @@ $(document).ready(function ($) {
         $(this).siblings('.c-card-catalog__count').show();
     });
 
+    $(document).on('click', '.c-card-catalog-2 .c-card-catalog__basket', function(){
+        $(this).hide();
+        $(this).siblings('.c-card-catalog__count').show();
+    });
+
 
 
     if($('div').hasClass('js-readmore')){
