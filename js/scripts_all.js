@@ -11920,7 +11920,7 @@ $(function() {
     var $target = $('.show-more-target');
     var $control = $('.show-more');
     var target_item_selector = 'div.c-col';
-    var hsl_start_count = 8;
+    var hsl_start_count = 0;
 
     var hsl_sizer = {
         0: {
@@ -11943,6 +11943,12 @@ $(function() {
 
     var show_more_state_collapsed = true;
     var target_count = $target.find(target_item_selector).length;
+
+    for (var propName in hsl_sizer) {
+        if($(window).width() > propName) {
+            hsl_start_count = hsl_sizer[propName].start_count;
+        }
+    }
 
     $(window).on('resize', function() {
         for (var propName in hsl_sizer) {
@@ -12019,6 +12025,11 @@ $(function() {
         event.preventDefault();
         $('#hsl-year-selector').toggleClass('calendar-selector_hidden');
     });
+
+    // resize top modal (1 or 2 line text etc)
+
+
+
 
 
 
