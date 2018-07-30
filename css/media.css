@@ -6455,6 +6455,10 @@
     max-width: 90.5rem;
 }
 
+.holiday-space-list .calendar-nav__icon-gradient svg {
+    display: none;
+}
+
 
 @media screen and (max-width: 1225px) {
     .holiday-space-list .c-col-3 {
@@ -6488,6 +6492,41 @@
 
 }
 
+@media screen and (max-width: 1150px) {
+    .holiday-space-list .calendar-nav__icon-gradient {
+        background: #c44890;
+    }
+
+    .holiday-space-list .calendar-nav__icon-gradient svg {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+    .holiday-space-list .calendar-navigator__month {
+        padding-left: .7rem;
+        padding-right: .7rem;
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+    .holiday-space-list .calendar-navigator {
+        display: none;
+    }
+
+    .holiday-space-list .calendar-title {
+        padding: 0;
+        padding-top: 1.6rem;
+    }
+
+    .holiday-space-list .calendar-nav-hall__column {
+        display: none;
+    }
+
+}
+
 @media screen and (max-width: 940px) {
     .holiday-space-list .c-col-3 {
         max-width: 50%;
@@ -6516,6 +6555,7 @@
     }
 
 }
+
 @media screen and (max-width: 730px) {
     .holiday-space-list .filter-layout {
         flex-flow: column;
@@ -6629,6 +6669,9 @@
     .holiday-space-list .show-more__button {
         padding: 1.5rem 2rem;
         width: 100%;
+    }
+    .calendar-header_theme_hsl .calendar-period__text {
+        font-size: 1.6rem;
     }
 }
 

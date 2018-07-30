@@ -16791,6 +16791,7 @@ a.show-more__button:hover {
         font-size: 1.7rem;
         z-index: 12;
         position: relative;
+        white-space: nowrap;
     }
 
 }
@@ -16798,7 +16799,6 @@ a.show-more__button:hover {
 
 
 .calendar-nav{
-
     &__text {
         color: #ffc7e8;
         font-family: $font_serif;
@@ -16821,6 +16821,7 @@ a.show-more__button:hover {
     &-time__text-sub {
         font-family: $font_serif;
         font-size: 1.5rem;
+        padding: 0 .5rem;
     }
 
     &-hall {

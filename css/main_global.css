@@ -19693,7 +19693,8 @@ a.show-more__button:hover {
     color: #9b806f;
     font-size: 1.7rem;
     z-index: 12;
-    position: relative; }
+    position: relative;
+    white-space: nowrap; }
 
 .calendar-nav__text {
   color: #ffc7e8;
@@ -19715,7 +19716,8 @@ a.show-more__button:hover {
 
 .calendar-nav-time__text-sub {
   font-family: "PT Serif Caption";
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 0 .5rem; }
 
 .calendar-nav-hall {
   text-align: center;

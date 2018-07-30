@@ -175,14 +175,25 @@ $(document).ready(function ($) {
 
 
     /*выбор месяцав календаре праздничных пространств*/
-    $(document).on('click', '.calendar-header__month a', function(e){
+    $(document).on('click', '.calendar-header__month a:nth-child(1)', function(e){
         e.preventDefault();
-        $('.calendar-header-popup').addClass('is-visible');
+        $('.calendar-header-popup:not(.calendar-header-popup_year)').addClass('is-visible');
     });
 
     $(document).on('click', '.calendar-month__item', function(e){
         e.preventDefault();
-        $('.calendar-header-popup').removeClass('is-visible');
+        $('.calendar-header-popup:not(.calendar-header-popup_year)').removeClass('is-visible');
+    });
+
+    /*выбор года в календаре праздничных пространств*/
+    $(document).on('click', '.calendar-header__month a:nth-child(2)', function(e){
+        e.preventDefault();
+        $('.calendar-header-popup.calendar-header-popup_year').addClass('is-visible');
+    });
+
+    $(document).on('click', '.calendar-month__item', function(e){
+        e.preventDefault();
+        $('.calendar-header-popup.calendar-header-popup_year').removeClass('is-visible');
     });
 
 
@@ -2797,8 +2808,19 @@ $(function() {
     });
 
     // resize top modal (1 or 2 line text etc)
+    function resizeSelectorHead(target, delta = 21) {
+        let $_wrapper = $(target).closest('.calendar-selector_wrapper');
+        let $_elem = $(target).find('.calendar-selector__head');
+        if($_elem.height() !== ($_wrapper.height() + delta)) {
+            $_elem.css('height', ($_wrapper.height() + delta) / 10 + "rem")
+        }
+    }
 
+    resizeSelectorHead('#hsl-addr-selector');
 
+    $(window).on('resize', function() {
+        resizeSelectorHead('#hsl-addr-selector');
+    });
 
 
 
@@ -2831,6 +2853,7 @@ $(function() {
         hideSelector('#hsl-addr-selector', event);
         hideSelector('#hsl-year-selector', event);
     });
+
 
     // filter on input
     $('.calendar-selector__input').on('change paste keyup', function(event) {
