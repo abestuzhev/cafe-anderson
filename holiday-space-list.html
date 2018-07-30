@@ -5499,7 +5499,7 @@
                                             <div class="filter-item__title">
                                                 <i class="icon-a"></i>Кафе</div>
                                             <div class="filter-item__body">
-                                                <select name="filter-cafe-select" class="c-select select-cafe">
+                                                <select name="filter-cafe-select" class="c-select--search select-cafe">
                                                     <option value="Все">Все</option>
                                                     <option value="АндерСон в ЖК Шуваловский">АндерСон в ЖК Шуваловский</option>
                                                     <option value="АндерСон в Крылатском">АндерСон в Крылатском</option>
@@ -5519,7 +5519,7 @@
                                             <div class="filter-item__title">
                                                 <i class="icon-metro-3"></i>Метро</div>
                                             <div class="filter-item__body">
-                                                <select name="filter-city-select" class="c-select select-city">
+                                                <select name="filter-city-select" class="c-select--search select-metro">
                                                     <option value="Все">Все</option>
 
                                                     <option value="Авиамоторная">Авиамоторная</option>
@@ -6142,19 +6142,45 @@
                 <div class="loft-booking loft-booking__nopad">
                     <div class="loft-booking__body">
                         <div class="calendar">
+
                             <div class="calendar-title">
-                                <div class="calendar-title__caption">АндерСон в Формуле Кино (ТРЦ "Фестиваль")</div>
-                                <div class="calendar-title__control">
-                                    <svg class="c-symbol symbol-narrow-down"><use xlink:href="#symbol-narrow-down" /></svg>                                    
+                                <div class="calendar-selector_wrapper">
+                                    <div class="calendar-title__wrapper">
+                                        <div class="calendar-title__caption">АндерСон в Формуле Кино (ТРЦ "Фестиваль")</div>
+                                        <div class="calendar-title__control">
+                                            <svg class="c-symbol symbol-narrow-down"><use xlink:href="#symbol-narrow-down" /></svg>
+                                        </div>
+                                    </div>
+                                    <div id="hsl-addr-selector" class="calendar-selector calendar-selector_hidden">
+                                        <div class="calendar-selector__head"></div>
+                                        <div class="calendar-selector__body">
+                                            <div class="calendar-selector__control">
+                                                <input type="text" name="calendar-selector__address" class="calendar-selector__input" autocomplete="off" placeholder="Все">
+                                            </div>
+                                            <ul class="calendar-selector__list">
+                                                <li class="calendar-selector__item"><a href="#">АндерСон в ЖК Шуваловский</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон в Крылатском</a></li>
+                                                <li class="calendar-selector__item"><a href="#">Андерсон в Медведково</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон в Океании</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон в Таганском парке</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон в Формуле Кино (ТРЦ "Фестиваль")</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон Жулебино</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон на Ак. Туполева ЖК Каскад</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон на Гагаринском</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон на даче (ВДНХ)</a></li>
+                                                <li class="calendar-selector__item"><a href="#">АндерСон на Кусковской</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="calendar-selector__footer"></div>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="calendar-navigator">
                                 
                                 <div class="calendar-navigator__layout-month">
 
-                                    <div class="calendar-navigator__month calendar-navigator__month-arrow">
-                                            <a href="#"><svg class="c-symbol symbol-arr-left"><use xlink:href="#symbol-arr-left" /></svg></a>
-                                    </div>
 
                                     <div class="calendar-navigator__month calendar-navigator__month-past"><a href="#" class="calendar-navigator__link">Январь</a></div>
                                     <div class="calendar-navigator__month calendar-navigator__month-past"><a href="#" class="calendar-navigator__link">Февраль</a></div>
@@ -6169,12 +6195,22 @@
                                     <div class="calendar-navigator__month"><a href="#" class="calendar-navigator__link">Ноябрь</a></div>
                                     <div class="calendar-navigator__month"><a href="#" class="calendar-navigator__link">Декабрь</a></div>
     
-                                    <div class="calendar-navigator__month calendar-navigator__month-arrow">
-                                            <a href="#"><svg class="c-symbol symbol-arr-right"><use xlink:href="#symbol-arr-right" /></svg></a>
-                                    </div>
                                 </div>
                                 <div class="calendar-navigator__layout-year">
-                                        <div class="calendar-navigator__year"><a href="#" class="calendar-navigator__link">2018</a> год</div>
+                                    <div class="calendar-selector_wrapper">
+                                        <div class="calendar-navigator__year"><a href="#" id="hsl-year-selector-init" class="calendar-navigator__link">2018</a> год</div>
+
+                                        <div id="hsl-year-selector" class="calendar-selector calendar-selector_theme_year calendar-selector_hidden">
+                                            <div class="calendar-selector__head"></div>
+                                            <div class="calendar-selector__body">
+                                                <ul class="calendar-selector__list">
+                                                    <li class="calendar-selector__item"><a href="#">2019</a></li>
+                                                    <li class="calendar-selector__item"><a href="#">2020</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="calendar-selector__footer"></div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                         
@@ -7809,6 +7845,54 @@
             </div>
         </div>
     </div>
+
+    <!--галерея фото синий зал-->
+    <div class="mfp-wrap popup__gallery popup__gallery_hall_blue" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <div class="popup">
+                    <div class="popup-fotorama">
+                        <img src="img/cafe-slider-3.jpg" alt="">
+                        <img src="img/cafe-slider-1.jpg" alt="">
+                        <img src="img/cafe-slider-3.jpg" alt="">
+                        <img src="img/cafe-slider-4.jpg" alt="">
+                        <img src="img/cafe-slider-5.jpg" alt="">
+                        <img src="img/cafe-slider-6.jpg" alt="">
+                        <img src="img/cafe-slider-7.jpg" alt="">
+                        <img src="img/cafe-slider-8.jpg" alt="">
+                        <img src="img/cafe-slider-9.jpg" alt="">
+                        <img src="img/cafe-slider-10.jpg" alt="">
+                        <img src="img/cafe-slider-11.jpg" alt="">
+                        <img src="img/cafe-slider-12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--галерея фото красный зал-->
+    <div class="mfp-wrap popup__gallery popup__gallery_hall_red" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+        <div class="mfp-container mfp-inline-holder">
+            <div class="mfp-content">
+                <div class="popup">
+                    <div class="popup-fotorama">
+                        <img src="img/cafe-slider-1.jpg" alt="">
+                        <img src="img/cafe-slider-3.jpg" alt="">
+                        <img src="img/cafe-slider-4.jpg" alt="">
+                        <img src="img/cafe-slider-5.jpg" alt="">
+                        <img src="img/cafe-slider-6.jpg" alt="">
+                        <img src="img/cafe-slider-7.jpg" alt="">
+                        <img src="img/cafe-slider-8.jpg" alt="">
+                        <img src="img/cafe-slider-9.jpg" alt="">
+                        <img src="img/cafe-slider-10.jpg" alt="">
+                        <img src="img/cafe-slider-11.jpg" alt="">
+                        <img src="img/cafe-slider-12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="mfp-bg mfp-ready"></div>
     <!--задний фон модального окна-->
