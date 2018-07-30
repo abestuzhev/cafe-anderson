@@ -19801,8 +19801,12 @@ a.show-more__button:hover {
   position: absolute;
   z-index: 11;
   width: 100%;
+  min-width: 55rem;
   top: -2.2rem;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-color: #fff;
   border-radius: .8rem;
   -webkit-box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33);
