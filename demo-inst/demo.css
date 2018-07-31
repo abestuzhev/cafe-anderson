@@ -1,0 +1,275 @@
+/*-----------------------------------------------------------------------
+ * Version - 1.0.0
+ * File    - demo.css
+ * Author  -  Chris Rivers
+ * Usage -
+ * Description -
+ *     DEMO
+ *-----------------------------------------------------------------------*/
+
+body {
+	background: url("images/texture.jpg");
+	margin-bottom:50px;
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+.clear {
+	clear:both;
+}
+
+/* pretty-code.css */
+.com { color: #93a1a1; }
+.lit { color: #195f91; }
+.pun, .opn, .clo { color: #93a1a1; }
+.fun { color: #dc322f; }
+.str, .atv { color: #D14; }
+.kwd, .linenums .tag { color: #1e347b; }
+.typ, .atn, .dec, .var { color: teal; }
+.pln { color: #48484c; }
+
+pre.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+.prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+	line-height: 0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 18px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.hero-unit {
+	background:none;
+	margin-bottom: 0;
+	padding: 23px 40px 23px 0;
+}
+
+.hero-unit h1{
+	color:#2f6f8f;
+}
+
+.page-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar-inner {
+	background:url("images/texture2.jpg");
+}
+
+.btn-success { background:#3A87AD; }
+.btn-success:hover { background:#3A87AD; }
+
+.master.container {
+	width: 950px;
+}
+
+.demo {
+	font-size: 0;
+}
+
+/* Plugin CSS */
+.instagram-photo {
+	display: inline-block;
+	/* height: 450px; */
+	margin-bottom: 35px;
+	overflow:hidden;
+  position: relative;
+  width: 20%;
+
+}
+
+.instagram-photo .instagram-hover-cover {
+	/* background: url("images/bg-details.png") repeat -9px 0 transparent; */
+	background:#1C1414;
+	position:absolute;
+	bottom:0;
+}
+
+.instagram-photo .instagram-hover-cover h3 { color:#fff; line-height: 20px; margin:15px 17px 0 17px; }
+.instagram-photo .instagram-hover-cover em { display:inline-block; font-size:11px; font-style:normal; height: 14px; margin: 0 17px 0 17px; text-transform:uppercase; }
+.instagram-photo .instagram-hover-cover p { color:#D7D7D7; line-height:17px; margin: -1px 17px 0 17px; }
+
+.searchBox {
+	color: #999999;
+	float: left;
+	font-size: 26px;
+	height: 45px;
+	margin-bottom: 16px;
+	padding: 5px 10px;
+	width: 690px;
+}
+.searchBox:focus { color:#555; }
+
+.searchInstagram {
+	cursor: pointer;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 6px;
+    padding: 18px 34px;
+}
+
+.searchInstagram:hover {
+	text-decoration:none;
+}
+
+.seachInstagramLoadMore {
+	display: block;
+	margin: 20px auto 0;
+	width: 155px;
+}
+
+ul.ibSearchType {
+	border:solid #828282 1px;
+	display:inline-block;
+	height:26px;
+	list-style:none;
+	margin: 0 0 15px;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+			border-radius: 5px;
+}
+
+ul.ibSearchType li {
+	background:url("images/selection-bg.png") repeat-x;
+	float:left;
+	cursor:pointer;
+	height:26px;
+	text-align:center;
+	width:152px;
+}
+
+ul.ibSearchType li.active { background:url("images/selection-bg-active.png") repeat-x; }
+ul.ibSearchType li.active a { color:#ffffff; }
+ul.ibSearchType li.user { border-right: 1px solid #5E5E5E; }
+
+ul.ibSearchType li a {
+	color:#555555;
+	display:inline-block;
+	font-weight:bold;
+	margin-top: 3px;
+	text-decoration:none;
+}
+
+/* User Search
+---------------------------*/
+.instagram-user {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: solid 1px #CCCCCC;
+	border-bottom:none;
+    clear: both;
+    height: 150px;
+    padding: 19px 17px;
+    width: 767px;
+}
+
+.instagram-user img {
+	float:left;
+	margin-right:15px;
+}
+
+.instagram-user .instagram-username {
+	color: #2E333E;
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 52px;
+    text-transform: uppercase;
+}
+.instagram-user .instagram-username:hover { color:#2E6F8F; cursor:pointer; }
+
+.instagram-user .instagram-fullname {
+	color:#666;
+}
+
+/* -----------------------------------
+		Demo Only Styles
+-----------------------------------*/
+div#quicknav {
+    background: url("http://dev.chrisriversdesign.com/jquery-instagram-browser/demo/css/images/bg-help.png") repeat-y scroll 0 0 transparent;
+    height: 100%;
+    padding: 24px;
+    position: fixed;
+    right: -343px;
+	/* right:0; */
+    top: 0;
+    width: 288px;
+    z-index: 65000;
+}
+
+div#quicknav h1 {
+    color: #FFFFFF;
+	font-family: Verdana,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+	margin-bottom: 20px;
+}
+
+div#quicknav ul.support-options {
+	list-style-type: none;
+    margin-bottom: 15px;
+	margin-left: 0;
+}
+
+div#quicknav ul.support-options li {
+	border-bottom: 1px solid #333333;
+	cursor:pointer;
+	margin-bottom:10px;
+}
+
+div#quicknav ul.support-options li a {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 0 0 0;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000000;
+}
+
+div#quicknav ul.support-options li a span {
+    color: #666666;
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+div#quicknav .close, div#quicknav .open {
+    cursor: pointer;
+	color: #ccc;
+	font-family: Arial,sans-serif;
+	font-size:13px;
+	text-shadow: none;
+}
+
+div#quicknav .open { display:none; }
+
+div#quicknav .modeDemoSelect {
+	margin-bottom:10px;
+	width:197px;
+}
+
+div#quicknav .colorDemoSelect {
+	margin-bottom:10px;
+	width:197px;
+}
+
+div#quicknav .also a span {
+	line-height:18px;
+	padding-bottom:10px;
+}

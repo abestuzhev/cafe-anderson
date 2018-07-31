@@ -1,0 +1,121 @@
+.c-currency-w {
+    margin-left: 5px;
+}
+
+.c-counter__field {
+    /*background-color: #ccc !important;*/
+}
+
+.c-counter__btn {
+    background-color: #6faa3a;
+}
+
+/*test*/
+.test-counter-1 {
+    background-color: #f4eb26;
+
+}
+.test-counter-1 .c-counter {
+    /*background-color: #F44336;*/
+    padding: .4rem .8rem;
+}
+.test-counter-1 .c-counter::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.test-counter-1 .c-counter::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.test-counter-1 .c-counter__btn {
+    /*margin-top: 2px;*/
+}
+
+.c-counter__btn,
+.c-counter__field {
+    /*float: left;*/
+    /*display: block !important;*/
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.test-counter-1 .dec {
+    left: 0;
+}
+.test-counter-1 .inc {
+    right: 0;
+}
+
+
+
+.c-card-catalog__price {
+    display: flex;
+    align-items: center;
+    /*background: #e62baa;*/
+}
+.c-card-catalog__price-layout::after {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+}
+
+.c-card-catalog__price-layout {
+    display: inline-block;
+    vertical-align: middle;
+    /*background: #8da9e6;*/
+    line-height: .8;
+    margin-top: .2rem;
+}
+
+@media (max-width: 540px) {
+
+    .test-counter-1 .c-counter__field {
+        width: 3.2rem !important;
+        padding: 0;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    /*.popup-body {*/
+        /*padding-bottom: 0;*/
+        /*margin-bottom: 70px;*/
+    /*}*/
+    .popup-body + svg,
+    .popup-body + [class*=icon] {
+        display: none;
+    }
+}
+
+
+.popup {
+    height: 100%;
+}
+
+
+.popup__write-to-us .popup-bg__img,
+.popup__request-call .popup-bg__img,
+.popup-reg .popup-bg__img {
+    display: none;
+}
+
+.popup__write-to-us .popup {
+background: #fff url(../img/popup-bg_write-to-us.jpg) 100% 100% no-repeat;
+}
+
+.popup-reg .popup {
+background: #fff url(../img/popup-bg_authorization.jpg) 100% 100% no-repeat;
+}
+
+.popup__request-call .popup {
+background: #fff url(../img/popup-bg_request-call.png) 100% 100% no-repeat;
+}
+
+
+/*END test*/

@@ -1,0 +1,133 @@
+.imageuploadify {
+    border: 2px dashed #d2d2d2;
+    position: relative;
+    min-height: 100px;
+    min-width: 250px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    padding: 0;
+    border-radius: 8px;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    color: #3AA0FF;
+    margin-bottom: 18px;
+}
+
+.imageuploadify .imageuploadify-overlay {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    display: none;
+    font-size: 7em;
+    background-color: rgba(242, 242, 242, .7);
+    text-align: center;
+    pointer-events: none
+}
+
+.imageuploadify .imageuploadify-overlay i {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none
+}
+
+.imageuploadify .imageuploadify-images-list {
+    display: inline-block;
+    padding: 16px;
+}
+
+.imageuploadify .imageuploadify-images-list i {
+    display: block;
+    font-size: 7em;
+    text-align: center;
+    margin-top: .5em;
+    padding-bottom: 12px;
+    display: none;
+}
+
+.imageuploadify .imageuploadify-images-list span.imageuploadify-message {
+    font-size: 15px;
+    padding: 10px;
+    display: inline-block;
+    color: #555451;
+}
+
+.imageuploadify .imageuploadify-images-list button.btn-default {
+    display: inline-block;
+    color: #7cbd41 !important;
+    border: 1px solid #7cbd41;
+    border-radius: 6px;
+    padding: 1.1rem 3.4rem;
+    margin: 0 auto 10px;
+    font-size: 15px;
+    font-family: "PT Serif Caption", serif;
+}
+.imageuploadify .imageuploadify-images-list button.btn-default:hover {
+    background-color: #7cbd41 !important;
+    color: #fff !important;
+}
+
+.imageuploadify .imageuploadify-images-list .imageuploadify-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px !important;
+    float: left;
+    border-radius: 6px;
+    box-shadow: 0 0 4px 0 #888
+}
+
+.imageuploadify .imageuploadify-images-list .imageuploadify-container button.btn-danger {
+    position: absolute;
+    top: 0px;
+    right: 9px;
+    width: 20px;
+    height: 20px;
+    border-radius: 0 0 10px 10px;
+    font-size: 10px;
+    line-height: 1.42;
+    padding: 2px 0;
+    text-align: center;
+    z-index: 3;
+    background: #fdf7e8 url(../../img/icons/icon-close.svg) no-repeat 50% 46%;
+    background-size: 10px 11px;
+    cursor: pointer;
+}
+
+.imageuploadify .imageuploadify-images-list .imageuploadify-container img {
+    height: 100px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto
+}
+
+.imageuploadify .imageuploadify-images-list .imageuploadify-container .imageuploadify-details {
+    position: absolute;
+    top: 0;
+    padding: 24px 10px 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fdf7e8;
+    z-index: 2;
+    opacity: 0;
+    font-size: 12px;
+    color: #9b806f;
+}
+
+.imageuploadify .imageuploadify-images-list .imageuploadify-container .imageuploadify-details span {
+    display: block
+}

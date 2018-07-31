@@ -1,0 +1,6 @@
+.new-test-block {
+    border: 1px solid #000;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+}

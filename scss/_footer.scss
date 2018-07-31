@@ -1,0 +1,208 @@
+
+
+.footer {
+    margin-top: -7.6rem;
+    position: relative;
+	//height: $height_footer;
+	//position: absolute;
+    z-index: 11;
+	bottom: 1.6rem;
+	//left: 0;
+	//right: 0;
+	will-change: transform;
+    background: $custom_bg url($img_path + 'bg-header.png') repeat;
+    font-family: $font_serif;
+    padding: 2.3rem 0;
+    -webkit-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.20);
+    box-shadow: 0px 3px 18px 8px rgba(0,0,0,0.20);
+    color: $color_text_bg;
+
+    &-layout {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &-col__left {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &-col__right {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        &-item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+
+    &-social {
+        margin-right: 2.4rem;
+        //float: left;
+        
+        svg:hover {
+            fill: $color_active;
+        }
+        svg {
+            fill: #9b9696;
+        }
+        
+        
+
+        &__title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        &__item {
+            border: none;
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+
+    }
+
+    &-site-map {
+        //float: left;
+        margin-right: 2.4rem;
+        border: none;
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
+    &-search {
+        //float: left;
+        font-size: 0;
+        margin-right: .8rem;
+        
+        &__input {
+            display: inline-block;
+            border: 2px solid $color_text_bg;
+            outline: none;
+            background-color: transparent;
+            font-size: 1.2rem;
+            color: $color_text_bg;
+            padding: .4rem .8rem;
+            border-radius: .4rem;
+            width: 190px !important;
+        }
+
+        &__btn {
+            display: inline-block;
+            margin-left: .5rem;
+            background-color: $color_btn;
+            font-size: 1.1rem;
+            color: $white;
+            padding: .6rem 1.5rem;
+            border-radius: .4rem;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .9;
+                @extend %transition_all;
+            }
+        }
+    }
+
+    &-info {
+        //float: left;
+        border: none;
+        width: 1.9rem;
+        height: 1.9rem;
+        display: block;
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
+
+    &-reviews {
+        //float: right;
+        font-size: 0;
+        margin-right: 4rem;
+
+        &__text {
+            font-size: 1.4rem;
+            margin-right: 1.1rem;
+        }
+
+        &__icons {
+            display: inline-block;
+            //margin-right: .8rem;
+            vertical-align: bottom;
+    
+            svg:hover {
+                fill: $color_active;
+            }
+            svg {
+                fill: #9b9696;
+            }
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-right: .8rem;
+            border: none;
+            vertical-align: bottom;
+            &::after {
+                content: '';
+                border: none;
+            }
+
+        }
+    }
+
+    &-partners {/*блок платежных партнеров*/
+        //float: right;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 2rem;
+        &__item {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &-lang {
+        //float: right;
+        //display: inline-block;
+        &__item {
+            border: none;
+            &::after {
+                content: '';
+                border: none;
+            }
+
+        }
+        .is-active  svg {
+            fill: #67af26;
+        }
+    }
+}
+
+
