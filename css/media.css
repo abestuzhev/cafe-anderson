@@ -4478,6 +4478,10 @@
         transform: none;
     }
 
+    #hsl-addr-selector {
+        min-width: 0;
+    }
+
 }
 
 @media (max-width: 540px) {
