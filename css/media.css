@@ -6454,3 +6454,284 @@
 
 
 }
+
+/*region Holiday Space List*/
+.holiday-space-list .filter .filter-item:nth-child(1) {
+    max-width: 100%;
+}
+.holiday-space-list .filter .filter-item:nth-child(2) {
+    max-width: 100%;
+}
+.holiday-space-list .filter .filter-item:nth-child(3) {
+    max-width: 8rem;
+}
+.holiday-space-list .filter .filter-item:last-child {
+    max-width: 28rem;
+}
+.holiday-space-list .filter-layout_holiday-space-list-menu {
+    margin-left: 1rem;
+}
+.holiday-space-list .filter-layout {
+    justify-content: space-between;
+}
+
+.holiday-space-list .filter {
+    max-width: 90.5rem;
+}
+
+.holiday-space-list .calendar-nav__icon-gradient svg {
+    display: none;
+}
+
+.holiday-space-list .calendar-day__number_upper {
+    display: none;
+}
+
+.holiday-space-list .calendar-nav-hall__row {
+    display: none;
+}
+
+.holiday-space-list .calendar-adapt_hidden {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 1225px) {
+    .holiday-space-list .c-col-3 {
+        max-width: 33%;
+        flex: 0 0 33%;
+    }
+
+    .holiday-space-list .filter-form {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        max-width: 56.6rem;
+    }
+    .holiday-space-list .filter {
+        max-width: 57rem;
+    }
+
+    .holiday-space-list .filter .filter-item:nth-child(1) {
+        max-width: 23.2rem;
+    }
+    .holiday-space-list .filter .filter-item:nth-child(2) {
+        max-width: 29.2rem;
+    }
+    .holiday-space-list .filter .filter-item:nth-child(3) {
+        width: 23.2rem;
+        max-width: 23.2rem;
+    }
+    .holiday-space-list .filter .filter-item:last-child {
+        max-width: 28rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1150px) {
+    .holiday-space-list .calendar-nav__icon-gradient {
+        background: #c44890;
+    }
+
+    .holiday-space-list .calendar-nav__icon-gradient svg {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+    .holiday-space-list .calendar-navigator__month {
+        padding-left: .7rem;
+        padding-right: .7rem;
+    }
+
+}
+
+@media screen and (max-width: 1020px) {
+    .holiday-space-list .calendar-navigator {
+        display: none;
+    }
+
+    .holiday-space-list .calendar-day__number_upper {
+        display: inline-block;
+    }
+
+    .holiday-space-list .calendar-title {
+        padding: 0;
+        padding-top: 1.6rem;
+    }
+
+    .holiday-space-list .calendar-nav-hall__column {
+        display: none;
+    }
+
+    .holiday-space-list .calendar-nav-hall__row {
+        display: block;
+    }
+
+    .holiday-space-list .calendar-adapt_hidden {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    .holiday-space-list .c-col-3 {
+        max-width: 50%;
+        flex: 0 0 50%;
+
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .holiday-space-list .filter-form {
+        flex-flow: column;
+    }
+    .holiday-space-list .filter .filter-item:nth-child(1) {
+        max-width: 100%;
+    }
+    .holiday-space-list .filter .filter-item:nth-child(2) {
+        max-width: 100%;
+    }
+    .holiday-space-list .filter .filter-item:nth-child(3) {
+        max-width: 100%;
+        width: 100%;
+    }
+    .holiday-space-list .filter .filter-item:last-child {
+
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .holiday-space-list .filter-layout {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .holiday-space-list .filter-item {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .calendar-nav-hall__row .owl-nav .owl-prev {
+        left: .6rem;
+    }
+    .calendar-nav-hall__row .owl-nav .owl-next {
+        right: .6rem;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    .holiday-space-list .c-col-3 {
+        max-width: 100%;
+        flex: 0 0 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .holiday-space-list .filter .filter-item:last-child {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .holiday-space-list .filter-form {
+        flex-flow: column;
+    }
+
+    .holiday-space-list .filter {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+
+    .holiday-space-list .filter .filter-item:nth-child(1) {
+        max-width: 100%;
+    }
+    .holiday-space-list .filter .filter-item:nth-child(2) {
+        max-width: 100%;
+    }
+    .holiday-space-list .filter .filter-item:nth-child(3) {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .holiday-space-list .filter-layout {
+        flex-flow: column;
+    }
+
+    .holiday-space-list .filter-layout_holiday-space-list-menu {
+        margin: auto;
+    }
+
+    .holiday-space-list .c-grid {
+        flex-flow: column;
+
+    }
+
+    .holiday-space-list .c-col-3 {
+        max-width: 100%;
+        padding-left: .8rem;
+        padding-right: .8rem;
+    }
+
+    .holiday-space-list .c-card-cafe-vertical__img {
+        float: left;
+        width: 10rem;
+        height: 7.5rem;
+        margin-right: 3.5rem;
+    }
+
+    .holiday-space-list .c-card-cafe-vertical__item .symbol-city {
+        top: .3rem;
+        left: 9.5rem;
+    }
+
+    .holiday-space-list .c-card-cafe__address {
+        min-height: 7.5rem;
+    }
+
+
+    .holiday-space-list .c-card-cafe-vertical__item:nth-child(4) {
+        font-size: 1.4rem;
+    }
+
+    .holiday-space-list .c-card-cafe-vertical__item {
+        padding-left: 2.8rem;
+    }
+
+    .holiday-space-list .c-card-cafe-vertical__body {
+        padding-bottom: 0;
+    }
+
+    .holiday-space-list .c-card-cafe-vertical__footer {
+        padding-top: 0;
+    }
+
+    .holiday-space-list .c-card-cafe-vertical__footer::after {
+        content: none;
+    }
+
+    .holiday-space-list .show-more {
+        padding: 1.2rem 0;
+    }
+
+    .holiday-space-list .show-more__button {
+        padding: 1.5rem 2rem;
+        width: 100%;
+    }
+    .calendar-header_theme_hsl .calendar-period__text {
+        font-size: 1.6rem;
+    }
+}
+
+/*endregion*/

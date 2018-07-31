@@ -6354,10 +6354,10 @@ div.c-card-catalog-2 {
       left: -1px;
       right: -1px;
       height: 6px;
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, rgba(0, 0, 0, 0)));
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(rgba(0, 0, 0, 0)));
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, transparent));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(transparent));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
     .header-categories-grid {
       display: -webkit-box;
@@ -9586,7 +9586,7 @@ test popup
           position: absolute;
           top: 0;
           left: 0; }
-      .cafe-info__item i[class*="icon"] ,
+      .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
       .cafe-info__item img {
         position: absolute;
         top: 0;
@@ -16671,7 +16671,8 @@ test popup
       z-index: 2;
       float: right;
       opacity: .5;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
   .holiday-box--tortzhestvo {
     /*holiday-box--tortzhestvo*/ }
     .holiday-box--tortzhestvo .holiday-description-fake {
@@ -16690,7 +16691,8 @@ test popup
     .holiday-box--karapuznik .holiday-description-fake {
       width: 38%;
       height: 57rem;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
   .holiday-box--mameninyi {
     /*holiday-box--mameninyi*/ }
     .holiday-box--mameninyi .holiday-description__text {
@@ -19325,9 +19327,13 @@ test popup
       font-family: "BebasNeue";
       font-size: 4rem;
       font-weight: 700;
-      line-height: 1; }
+      line-height: 1;
+      position: relative; }
       .calendar-day__number span {
         font-size: 1.4rem; }
+      .calendar-day__number_upper {
+        position: absolute;
+        top: .4rem; }
     .calendar-day__week {
       font-size: 1.4rem; }
   .calendar-box {
@@ -19691,7 +19697,8 @@ a.show-more__button:hover {
     color: #9b806f;
     font-size: 1.7rem;
     z-index: 12;
-    position: relative; }
+    position: relative;
+    white-space: nowrap; }
 
 .calendar-nav__text {
   color: #ffc7e8;
@@ -19713,7 +19720,8 @@ a.show-more__button:hover {
 
 .calendar-nav-time__text-sub {
   font-family: "PT Serif Caption";
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 0 .5rem; }
 
 .calendar-nav-hall {
   text-align: center;
@@ -19722,7 +19730,8 @@ a.show-more__button:hover {
   min-height: 12rem;
   background-color: #f4f4f4;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  /* Row hall styles */ }
   .calendar-nav-hall-span3 {
     min-height: 36rem; }
   .calendar-nav-hall__decor-blue {
@@ -19764,6 +19773,54 @@ a.show-more__button:hover {
             box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3); }
   .calendar-nav-hall:hover .calendar-nav-hall__text {
     color: #81c15f; }
+  .calendar-nav-hall__row .calendar-nav-hall-span3 {
+    min-height: 9rem; }
+  .calendar-nav-hall__row .calendar-nav-hall__wrap {
+    width: auto; }
+  .calendar-nav-hall__row .calendar-nav-hall__decor-blue {
+    background: url("../img/calendar-hall-blue_row.png") no-repeat; }
+  .calendar-nav-hall__row .calendar-nav-hall__decor-red {
+    background: url("../img/calendar-hall-red_row.png") no-repeat; }
+  .calendar-nav-hall__row .owl-nav .owl-prev {
+    left: 0;
+    right: auto;
+    top: -1rem;
+    background: #ffffff;
+    position: absolute;
+    width: 2.8rem;
+    height: 5.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem; }
+    .calendar-nav-hall__row .owl-nav .owl-prev:before {
+      content: '';
+      background: #ffffff;
+      position: absolute;
+      width: 2.8rem;
+      height: 5.5rem;
+      top: 0;
+      left: -.5rem;
+      background: url(../img/icons/icon-arr-left-2.svg) 50% 50% no-repeat;
+      background-size: .7rem .8rem; }
+  .calendar-nav-hall__row .owl-nav .owl-next {
+    right: 0;
+    left: auto;
+    top: -1rem;
+    background: #ffffff;
+    position: absolute;
+    width: 2.8rem;
+    height: 5.5rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem; }
+    .calendar-nav-hall__row .owl-nav .owl-next:before {
+      content: '';
+      background: #ffffff;
+      position: absolute;
+      width: 2.8rem;
+      height: 5.5rem;
+      top: 0;
+      right: -.5rem;
+      background: url(../img/icons/icon-arr-right-2.svg) 50% 50% no-repeat;
+      background-size: .7rem .8rem; }
 
 .calendar-header_theme_hsl .calendar-period {
   padding: 1rem 2.5rem; }
@@ -20288,8 +20345,7 @@ a.show-more__button:hover {
 @media screen and (max-width: 680px) {
   .pie-form__item:nth-child(1), .pie-form__item:nth-child(2), .pie-form__item:nth-child(3) {
     width: 100%; }
-  .pie-form__item:nth-child(4),
-  .pie-form__item:nth-child(5) {
+  .pie-form__item:nth-child(4), .pie-form__item:nth-child(5) {
     width: 50%; }
   .pie-form__title {
     font-size: 2rem; }
