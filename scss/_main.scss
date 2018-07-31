@@ -16316,9 +16316,15 @@ test popup
             font-size: 4rem;
             font-weight: 700;
             line-height: 1;
-            
+            position: relative;
+
             span {
                 font-size: 1.4rem;
+            }
+
+            &_upper {
+                position: absolute;
+                top: .4rem;
             }
         }
         
@@ -16885,6 +16891,83 @@ a.show-more__button:hover {
             color: #81c15f;
         }
 
+        /* Row hall styles */
+        &__row {
+            .calendar-nav-hall {
+                &-span3 {
+                    min-height: 9rem;
+                }
+
+                &__wrap {
+                    width: auto;
+                }
+
+                &__decor {
+                    &-blue {
+                        background: url("../img/calendar-hall-blue_row.png") no-repeat;
+                    }
+
+                    &-red {
+                        background: url("../img/calendar-hall-red_row.png") no-repeat;
+                    }
+
+                }
+
+            }
+
+            .owl-nav {
+                .owl-prev {
+                    left: 0;
+                    right: auto;
+                    top: -1rem;
+                    background: #ffffff;
+                    position: absolute;
+                    width: 2.8rem;
+                    height: 5.5rem;
+                    border-top-right-radius: 2.5rem;
+                    border-bottom-right-radius: 2.5rem;
+
+                    &:before {
+                        content: '';
+                        background: #ffffff;
+                        position: absolute;
+                        width: 2.8rem;
+                        height: 5.5rem;
+                        top: 0;
+                        left: -.5rem;
+
+                        background: url(../img/icons/icon-arr-left-2.svg) 50% 50% no-repeat;
+                        background-size: .7rem .8rem;
+                    }
+                }
+
+                .owl-next {
+                    right: 0;
+                    left: auto;
+                    top: -1rem;
+                    background: #ffffff;
+                    position: absolute;
+                    width: 2.8rem;
+                    height: 5.5rem;
+                    border-top-left-radius: 2.5rem;
+                    border-bottom-left-radius: 2.5rem;
+
+                    &:before {
+                        content: '';
+                        background: #ffffff;
+                        position: absolute;
+                        width: 2.8rem;
+                        height: 5.5rem;
+                        top: 0;
+                        right: -.5rem;
+
+                        background: url(../img/icons/icon-arr-right-2.svg) 50% 50% no-repeat;
+                        background-size: .7rem .8rem;
+                    }
+                }
+            }
+
+        }
     }
     
 }

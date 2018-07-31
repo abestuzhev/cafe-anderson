@@ -19327,9 +19327,13 @@ test popup
       font-family: "BebasNeue";
       font-size: 4rem;
       font-weight: 700;
-      line-height: 1; }
+      line-height: 1;
+      position: relative; }
       .calendar-day__number span {
         font-size: 1.4rem; }
+      .calendar-day__number_upper {
+        position: absolute;
+        top: .4rem; }
     .calendar-day__week {
       font-size: 1.4rem; }
   .calendar-box {
@@ -19726,7 +19730,8 @@ a.show-more__button:hover {
   min-height: 12rem;
   background-color: #f4f4f4;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  /* Row hall styles */ }
   .calendar-nav-hall-span3 {
     min-height: 36rem; }
   .calendar-nav-hall__decor-blue {
@@ -19768,6 +19773,54 @@ a.show-more__button:hover {
             box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3); }
   .calendar-nav-hall:hover .calendar-nav-hall__text {
     color: #81c15f; }
+  .calendar-nav-hall__row .calendar-nav-hall-span3 {
+    min-height: 9rem; }
+  .calendar-nav-hall__row .calendar-nav-hall__wrap {
+    width: auto; }
+  .calendar-nav-hall__row .calendar-nav-hall__decor-blue {
+    background: url("../img/calendar-hall-blue_row.png") no-repeat; }
+  .calendar-nav-hall__row .calendar-nav-hall__decor-red {
+    background: url("../img/calendar-hall-red_row.png") no-repeat; }
+  .calendar-nav-hall__row .owl-nav .owl-prev {
+    left: 0;
+    right: auto;
+    top: -1rem;
+    background: #ffffff;
+    position: absolute;
+    width: 2.8rem;
+    height: 5.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem; }
+    .calendar-nav-hall__row .owl-nav .owl-prev:before {
+      content: '';
+      background: #ffffff;
+      position: absolute;
+      width: 2.8rem;
+      height: 5.5rem;
+      top: 0;
+      left: -.5rem;
+      background: url(../img/icons/icon-arr-left-2.svg) 50% 50% no-repeat;
+      background-size: .7rem .8rem; }
+  .calendar-nav-hall__row .owl-nav .owl-next {
+    right: 0;
+    left: auto;
+    top: -1rem;
+    background: #ffffff;
+    position: absolute;
+    width: 2.8rem;
+    height: 5.5rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem; }
+    .calendar-nav-hall__row .owl-nav .owl-next:before {
+      content: '';
+      background: #ffffff;
+      position: absolute;
+      width: 2.8rem;
+      height: 5.5rem;
+      top: 0;
+      right: -.5rem;
+      background: url(../img/icons/icon-arr-right-2.svg) 50% 50% no-repeat;
+      background-size: .7rem .8rem; }
 
 .calendar-header_theme_hsl .calendar-period {
   padding: 1rem 2.5rem; }

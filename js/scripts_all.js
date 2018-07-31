@@ -10914,8 +10914,8 @@ $(document).ready(function ($) {
     showPopup(".calendar-box__link", '.popup-calendar-booking');
 
 
-    showPopup(".calendar-nav-hall__decor-blue", '.popup__gallery_hall_blue');
-    showPopup(".calendar-nav-hall__decor-red", '.popup__gallery_hall_red');
+    showPopup(".calendar-nav-hall__decor-blue:not(.no-popup)", '.popup__gallery_hall_blue');
+    showPopup(".calendar-nav-hall__decor-red:not(.no-popup)", '.popup__gallery_hall_red');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();
@@ -12106,7 +12106,72 @@ $(function() {
         }
     });
 
+    // Calendar Hall Row Events
+    //      hide&show
+    function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index, class_hidden) {
+        $(sel_column).each(function(index, element) {
+            $(element).find(sel_box).each(function(j, box) {
+                if((j >= time_slot_count * page_index) &&
+                    (j < (time_slot_count * page_index + time_slot_count))) {
+                    $(box).removeClass(class_hidden);
+                } else {
+                    $(box).addClass(class_hidden);
+                }
+            });
+        });
+    }
 
+    //    bind event
+    function calendarHallUpdateBind(options) {
+        let owl = $(options.selector_owlCarousel);
+        owl.owlCarousel();
+        owl.on('changed.owl.carousel', function(event) {
+            calendarHallUpdateGrid(
+                options.selector_column,
+                options.selector_box,
+                options.time_slot_count,
+                event.page.index,
+                options.class_hidden
+            );
+
+            calendarHallUpdateGrid(
+                options.selector_nav_column,
+                options.selector_nav_box,
+                options.time_slot_count,
+                event.page.index,
+                options.class_hidden
+            );
+        })
+    }
+    //      options
+    let hsl_calendar_options = {
+        selector_owlCarousel: '.calendar-nav-hall__row',
+        selector_column: '.calendar-col',
+        selector_box: '.calendar-box',
+        selector_nav_column: '.calendar-nav',
+        selector_nav_box: '.calendar-nav-time',
+        class_hidden: 'calendar-adapt_hidden',
+        time_slot_count: 3,
+    };
+
+    //      init
+    calendarHallUpdateGrid(
+        hsl_calendar_options.selector_column,
+        hsl_calendar_options.selector_box,
+        hsl_calendar_options.time_slot_count,
+        0,
+        hsl_calendar_options.class_hidden
+    );
+
+    calendarHallUpdateGrid(
+        hsl_calendar_options.selector_nav_column,
+        hsl_calendar_options.selector_nav_box,
+        hsl_calendar_options.time_slot_count,
+        0,
+        hsl_calendar_options.class_hidden
+    );
+
+    calendarHallUpdateBind(hsl_calendar_options);
 
 });
 

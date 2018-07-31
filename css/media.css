@@ -6459,6 +6459,19 @@
     display: none;
 }
 
+.holiday-space-list .calendar-day__number_upper {
+    display: none;
+}
+
+.holiday-space-list .calendar-nav-hall__row {
+    display: none;
+}
+
+.holiday-space-list .calendar-adapt_hidden {
+    display: block;
+}
+
+
 
 @media screen and (max-width: 1225px) {
     .holiday-space-list .c-col-3 {
@@ -6516,12 +6529,24 @@
         display: none;
     }
 
+    .holiday-space-list .calendar-day__number_upper {
+        display: inline-block;
+    }
+
     .holiday-space-list .calendar-title {
         padding: 0;
         padding-top: 1.6rem;
     }
 
     .holiday-space-list .calendar-nav-hall__column {
+        display: none;
+    }
+
+    .holiday-space-list .calendar-nav-hall__row {
+        display: block;
+    }
+
+    .holiday-space-list .calendar-adapt_hidden {
         display: none;
     }
 
@@ -6565,6 +6590,16 @@
     .holiday-space-list .filter-item {
         margin-right: auto;
     }
+}
+
+@media screen and (max-width: 540px) {
+    .calendar-nav-hall__row .owl-nav .owl-prev {
+        left: .6rem;
+    }
+    .calendar-nav-hall__row .owl-nav .owl-next {
+        right: .6rem;
+    }
+
 }
 
 @media screen and (max-width: 620px) {
