@@ -2929,8 +2929,15 @@ function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index
 //    bind event
 function calendarHallUpdateBind(options) {
     let owl = $(options.selector_owlCarousel);
-    let handler = owl.owlCarousel();
-    handler.trigger('refresh.owl.carousel');
+    owl.trigger('destroy.owl.carousel');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        autoHeight: true,
+        nav: true
+    });
+
 
     owl.on('changed.owl.carousel', function(event) {
         calendarHallUpdateGrid(
