@@ -19963,6 +19963,10 @@ a.show-more__button:hover {
 .calendar-selector_wrapper {
   position: relative; }
 
+.calendar .owl-carousel {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
