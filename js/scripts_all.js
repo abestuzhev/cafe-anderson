@@ -12159,7 +12159,9 @@ function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index
 //    bind event
 function calendarHallUpdateBind(options) {
     let owl = $(options.selector_owlCarousel);
-    owl.owlCarousel();
+    let handler = owl.owlCarousel();
+    handler.trigger('refresh.owl.carousel');
+
     owl.on('changed.owl.carousel', function(event) {
         calendarHallUpdateGrid(
             options.selector_column,
