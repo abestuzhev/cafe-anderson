@@ -16915,6 +16915,7 @@ a.show-more__button:hover {
 
             }
 
+
             .owl-nav {
                 .owl-prev {
                     left: 0;
@@ -17192,6 +17193,9 @@ a.show-more__button:hover {
     position: relative;
 }
 
+.calendar .owl-carousel {
+    touch-action: manipulation;
+}
 
 
 
