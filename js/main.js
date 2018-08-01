@@ -2878,44 +2878,7 @@ $(function() {
             });
         }
     });
-
     // Calendar Hall Row Events
-    //      hide&show
-    function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index, class_hidden) {
-        $(sel_column).each(function(index, element) {
-            $(element).find(sel_box).each(function(j, box) {
-                if((j >= time_slot_count * page_index) &&
-                    (j < (time_slot_count * page_index + time_slot_count))) {
-                    $(box).removeClass(class_hidden);
-                } else {
-                    $(box).addClass(class_hidden);
-                }
-            });
-        });
-    }
-
-    //    bind event
-    function calendarHallUpdateBind(options) {
-        let owl = $(options.selector_owlCarousel);
-        owl.owlCarousel();
-        owl.on('changed.owl.carousel', function(event) {
-            calendarHallUpdateGrid(
-                options.selector_column,
-                options.selector_box,
-                options.time_slot_count,
-                event.page.index,
-                options.class_hidden
-            );
-
-            calendarHallUpdateGrid(
-                options.selector_nav_column,
-                options.selector_nav_box,
-                options.time_slot_count,
-                event.page.index,
-                options.class_hidden
-            );
-        })
-    }
     //      options
     let hsl_calendar_options = {
         selector_owlCarousel: '.calendar-nav-hall__row',
@@ -2948,3 +2911,49 @@ $(function() {
 
 });
 
+// Calendar Hall Row Events
+//      hide&show
+function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index, class_hidden) {
+    $(sel_column).each(function(index, element) {
+        $(element).find(sel_box).each(function(j, box) {
+            if((j >= time_slot_count * page_index) &&
+                (j < (time_slot_count * page_index + time_slot_count))) {
+                $(box).removeClass(class_hidden);
+            } else {
+                $(box).addClass(class_hidden);
+            }
+        });
+    });
+}
+
+//    bind event
+function calendarHallUpdateBind(options) {
+    let owl = $(options.selector_owlCarousel);
+    owl.trigger('destroy.owl.carousel');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        autoHeight: true,
+        nav: true
+    });
+
+
+    owl.on('changed.owl.carousel', function(event) {
+        calendarHallUpdateGrid(
+            options.selector_column,
+            options.selector_box,
+            options.time_slot_count,
+            event.page.index,
+            options.class_hidden
+        );
+
+        calendarHallUpdateGrid(
+            options.selector_nav_column,
+            options.selector_nav_box,
+            options.time_slot_count,
+            event.page.index,
+            options.class_hidden
+        );
+    })
+}
