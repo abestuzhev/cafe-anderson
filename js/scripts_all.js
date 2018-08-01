@@ -9261,11 +9261,6 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
-
-/*анимация покачиания рамки в поводах для праздника holiday-reason-card*/
-
-
-
 $(window).on('load', function(){
 
 
@@ -9444,6 +9439,11 @@ $(document).ready(function ($) {
 
 
     $(document).on('click', '.c-card-catalog__footer.v2 .c-card-catalog__basket', function(){
+        $(this).hide();
+        $(this).siblings('.c-card-catalog__count').show();
+    });
+
+    $(document).on('click', '.c-card-catalog-2 .c-card-catalog__basket', function(){
         $(this).hide();
         $(this).siblings('.c-card-catalog__count').show();
     });
@@ -12020,11 +12020,14 @@ $(function() {
         fit:'cover'
     });
 
-    /* Calendar Selector */
-    new SimpleBar($('.calendar-selector__list')[0], {
-        autoHide: false,
-        scrollbarMinSize: 35,
-    });
+    if($('ul').hasClass('calendar-selector__list')){
+        /* Calendar Selector */
+        new SimpleBar($('.calendar-selector__list')[0], {
+            autoHide: false,
+            scrollbarMinSize: 35,
+        });
+    };
+
 
     $('.calendar-title__wrapper').on('click', function (event) {
         event.preventDefault();

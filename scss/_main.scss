@@ -17030,7 +17030,8 @@ a.show-more__button:hover {
     z-index: 11;
     width: 100%;
     top: -2.2rem;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #fff;
     border-radius: .8rem;
     box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33);
@@ -17123,8 +17124,10 @@ a.show-more__button:hover {
         }
 
     }
+}
 
-
+#hsl-addr-selector {
+    min-width: 55rem;
 }
 
 .calendar-selector_theme_year {

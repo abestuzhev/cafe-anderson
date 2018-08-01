@@ -4478,6 +4478,10 @@
         transform: none;
     }
 
+    #hsl-addr-selector {
+        min-width: 0;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -5566,12 +5570,15 @@
     }
 
 
+    .c-card-catalog-2__footer .c-card-catalog__basket,
+    .c-card-catalog-2__footer .c-card-catalog__count,
     .c-card-catalog__footer.v2 .c-card-catalog__basket,
     .c-card-catalog__footer.v2 .c-card-catalog__count {
         text-align: center;
         flex: 0 1 100%;
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__basket {
         justify-content: center;
     }
@@ -5629,6 +5636,9 @@
 
     .c-card-catalog__count .c-counter {
         margin: 0 auto;
+    }
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket .icon-shopping-cart {
+        margin: 0;
     }
     .c-card-catalog__basket .icon-shopping-cart {
         margin: 0 auto;
@@ -5893,6 +5903,7 @@
         padding: .3rem 1rem 0.3rem 1rem;
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__price,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__price {
         flex: 0 1 auto;
         margin: 0;
@@ -5910,6 +5921,7 @@
         justify-content: center
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__count {
         margin: 0;
         flex: 0 1 auto;
@@ -5921,6 +5933,7 @@
         border-radius: .6rem;
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__basket {
         flex: 0 1 auto;
     }
@@ -5988,6 +6001,21 @@
 @media (max-width: 415px) {
     .catalog-col-4 .catalog-list__item {
         width: 100%;
+    }
+
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count {
+        width: 100%;
+    }
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count .c-counter {
+        margin: 0 auto;
+    }
+
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket {
+        width: 100%;
+        justify-content: center;
+    }
+    .pie .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket span  {
+        display: none;
     }
 
     .pie .catalog-col-4 .catalog-list__item {
