@@ -1,4 +1,6 @@
-.constructor {}
+.constructor {
+    margin-bottom: 3rem;
+}
 
 .constructor, .constructor form {
     display: flex;
