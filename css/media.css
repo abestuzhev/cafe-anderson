@@ -554,6 +554,11 @@
     .catalog-banner--dessert {
         padding: 3rem 18rem 3rem 3rem;
     }
+
+    .loft .calendar-navigator__month {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -6553,6 +6558,10 @@
 }
 
 @media screen and (max-width: 1020px) {
+    .loft .calendar {
+        padding-top: 0;
+    }
+    .loft .calendar-navigator,
     .holiday-space-list .calendar-navigator {
         display: none;
     }
