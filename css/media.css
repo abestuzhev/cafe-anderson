@@ -359,6 +359,10 @@
         top: 5%;
     }
 
+    main {
+        padding-bottom: 8rem;
+    }
+
     .footer {
         bottom: 0;
     }
