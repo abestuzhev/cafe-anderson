@@ -2957,3 +2957,12 @@ function calendarHallUpdateBind(options) {
         );
     })
 }
+
+
+// Holidays All
+//  functions
+
+//  events listener
+$(function() {
+
+});
