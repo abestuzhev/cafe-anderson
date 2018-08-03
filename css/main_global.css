@@ -20069,6 +20069,37 @@ a.show-more__button:hover {
   .holidays-grid_col-span_2 {
     width: 62.4rem; }
 
+.holidays-list {
+  position: relative;
+  margin-right: -2.2rem;
+  margin-left: -2.2rem; }
+  .holidays-list-item {
+    font-family: "PT Serif Caption";
+    font-size: 1.5rem;
+    color: #080808;
+    font-style: italic; }
+    .holidays-list-item__caption {
+      display: block;
+      position: relative;
+      padding: 1rem 1.7rem;
+      text-align: left; }
+      .holidays-list-item__caption svg {
+        margin-left: 1rem; }
+      .holidays-list-item__caption:after {
+        content: '';
+        border-bottom: 1px dashed #828282;
+        position: absolute;
+        bottom: 0;
+        left: 2%;
+        width: 96%; }
+      .holidays-list-item__caption:hover {
+        color: #ffffff;
+        background: #74bf44; }
+      .holidays-list-item__caption:hover svg {
+        fill: #ffffff; }
+    .holidays-list-item__body {
+      display: none; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
