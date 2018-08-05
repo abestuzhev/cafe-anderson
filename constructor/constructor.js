@@ -214,6 +214,7 @@ $(function(){
             this.getLining();
             var liningIMG = $('<img class="cake-lining" src="' + this.pathImg + 'lining-' + lining + '-' + shape + '-' + this.selectedTier + '.png' + '" alt="">');
 
+            $(this.cake.find('.cake-filling')).remove();
             $(this.cake.find('.cake-lining')).remove();
             this.cake.append(liningIMG);
 
