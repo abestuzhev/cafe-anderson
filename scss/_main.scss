@@ -17279,7 +17279,19 @@ a.show-more__button:hover {
         }
 
         &:hover {
-            color: #ffffff;
+            color: rgba(255,255,255,1);
+        }
+
+        &:hover:after {
+            content: '';
+            background-color: rgba(0,0,0,0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
         }
     }
 
