@@ -17369,6 +17369,43 @@ a.show-more__button:hover {
     margin-right: -2.2rem;
     margin-left: -2.2rem;
 
+    &__header {
+        background: url('../img/holidays/list-header.jpg') 50% 70% no-repeat;
+        background-size: cover;
+        height: 23.5rem;
+        position: relative;
+    }
+
+    &__header-cloud {
+        background: url('../img/holidays/list-header-cloud.png') 0 0 no-repeat;
+        background-size: cover;
+        width: 26.3rem;
+        height: 7rem;
+        position: absolute;
+        bottom: .6rem;
+        right: .6rem;
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    &__header-text {
+        font-family: $font_serif;
+        font-size: 1.8rem;
+        font-style: italic;
+        color: #74bf44;
+        text-align: right;
+    }
+
+    &__header-lead-text {
+        font-family: $font_serif;
+        font-size: 2.9rem;
+        font-style: italic;
+        color: #74bf44;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
 
     &-item {
         font-family: $font_serif;
@@ -17381,6 +17418,7 @@ a.show-more__button:hover {
             position: relative;
             padding: 1rem 1.7rem;
             text-align: left;
+            cursor: pointer;
 
             svg {
                 margin-left: 1rem;
@@ -17415,10 +17453,13 @@ a.show-more__button:hover {
 
         &__body {
             text-align: left;
-            transition: height linear .3s;
+            transition: height 5s linear;
+            background: url('../img/icons/icon-rabbit-half.svg') 85% 105% no-repeat;
+            background-size: 5rem;
 
             &_hidden {
                 height: 0rem;
+                overflow: hidden;
             }
         }
 
@@ -17431,6 +17472,10 @@ a.show-more__button:hover {
             padding: 1.4rem 1.7rem;
             border-bottom: 1px solid #d9d9d9;
             box-shadow: 0 9px 9px 0 rgba(0,0,0,0.15);
+            position: relative;
+
+
+
 
         }
 

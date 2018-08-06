@@ -12191,8 +12191,17 @@ function calendarHallUpdateBind(options) {
 
 // Holidays All
 //  functions
+function holidaysInit(selector) {
+    $(selector).each(function(index, elem){
+        $(elem).find('.holidays-list-item__caption').on('click', function(){
+            $(this).toggleClass('holidays-list-item__caption_selected');
+            $(elem).find('.holidays-list-item__body').toggleClass('holidays-list-item__body_hidden');
+        });
+    });
+}
+
 
 //  events listener
 $(function() {
-
+    holidaysInit('.holidays-list-item');
 });
