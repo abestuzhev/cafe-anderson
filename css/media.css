@@ -6754,6 +6754,10 @@
 /*endregion*/
 
 /* Holidays All */
+.holidays .holidays-list {
+    display: none;
+}
+
 @media screen and (max-width: 1300px) {
     .holidays .holidays-grid {
         width: 64.8rem;
@@ -6764,6 +6768,7 @@
     .holidays .holidays-grid {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 540px) {
