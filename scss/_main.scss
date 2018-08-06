@@ -17211,9 +17211,7 @@ a.show-more__button:hover {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    margin-left:-1.4rem;
-    margin-right: -1.4rem;
-
+    margin-left: -1.4rem;
 
 
     &__block-wrapper {
@@ -17223,7 +17221,7 @@ a.show-more__button:hover {
         height: 100%;
         text-align: center;
         border-radius: 1rem;
-        transition: opacity .5s linear;
+        transition: opacity .1s linear;
         box-shadow: 3px 4px 37.561024px 0.438976px rgba(0, 0, 0, 0.15);
     }
 
@@ -17266,6 +17264,7 @@ a.show-more__button:hover {
         position: relative;
         z-index: 5;
         padding: 1.8rem 2rem;
+        padding-bottom: 1.5rem;
         border-radius: 10px;
         border: 0;
         box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33),
@@ -17314,7 +17313,7 @@ a.show-more__button:hover {
         left: 0;
         overflow: hidden;
         text-align: center;
-        height: 7.3rem; /* hover bug fix */
+        height: 7rem; /* hover bug fix */
     }
 
     &__body {
@@ -17352,6 +17351,17 @@ a.show-more__button:hover {
     }
 
 }
+
+.holidays-footer {
+    padding-left: 0rem;
+    padding-right: 1.4rem;
+
+    .holidays-count {
+        white-space: nowrap;
+        width: auto;
+    }
+}
+
 
 .holidays-list {
 
@@ -17405,10 +17415,23 @@ a.show-more__button:hover {
 
         &__body {
             text-align: left;
+            transition: height linear .3s;
+
+            &_hidden {
+                height: 0rem;
+            }
         }
 
         &__text {
             padding: 1.4rem 1.7rem;
+            overflow: hidden;
+        }
+
+        &__footer {
+            padding: 1.4rem 1.7rem;
+            border-bottom: 1px solid #d9d9d9;
+            box-shadow: 0 9px 9px 0 rgba(0,0,0,0.15);
+
         }
 
         &__decor {
