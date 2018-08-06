@@ -6764,6 +6764,9 @@
     .holidays .holidays-grid {
         display: none;
     }
+    .holidays .holidays-list {
+        display: block;
+    }
 
 }
 

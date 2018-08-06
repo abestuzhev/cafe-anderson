@@ -17218,12 +17218,13 @@ a.show-more__button:hover {
 
     &__block-wrapper {
         opacity: 0;
-        background: rgba(255,255,255, 0.8);
+        background: rgba(255,255,255, 0.9);
         width: 100%;
         height: 100%;
         text-align: center;
         border-radius: 1rem;
         transition: opacity .5s linear;
+        box-shadow: 3px 4px 34.96px 3.04px rgba(0, 0, 0, 0.33);
     }
 
     &__block {
@@ -17370,10 +17371,31 @@ a.show-more__button:hover {
             &:hover svg{
                 fill: #ffffff;
             }
+
+            &_selected {
+                color: #ffffff;
+                background: #74bf44;
+                svg {
+                    fill: #ffffff;
+                }
+            }
         }
 
         &__body {
-            display: none;
+            text-align: left;
+        }
+
+        &__text {
+            padding: 1.4rem 1.7rem;
+        }
+
+        &__decor {
+            height: 17rem;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: -2.2rem;
+            margin-left: -2.2rem;
         }
     }
 }
