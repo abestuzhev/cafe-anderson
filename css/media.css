@@ -6650,6 +6650,19 @@
 
     }
 
+    .holiday-space__list .c-card-cafe__title {
+        min-height: 0;
+        margin-bottom: 1rem;
+    }
+
+    .holiday-space__list .c-card-cafe-vertical__body {
+        padding-bottom: 0;
+    }
+
+    .holiday-space__list .c-card-cafe-vertical__footer {
+        position: relative;
+    }
+
 }
 
 @media screen and (max-width: 470px) {
@@ -6732,6 +6745,7 @@
 
     .holiday-space-list .c-card-cafe-vertical__footer {
         padding-top: 0;
+        /*position: static;*/
     }
 
     .holiday-space-list .c-card-cafe-vertical__footer::after {
