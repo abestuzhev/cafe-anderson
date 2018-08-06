@@ -17508,7 +17508,11 @@ a.show-more__button:hover {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        font-weight: 700;
+
+        .holidays-count__number {
+            font-weight: normal;
+
+        }
     }
 }
 

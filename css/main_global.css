@@ -20224,8 +20224,9 @@ a.show-more__button:hover {
           flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-weight: 700; }
+          justify-content: space-between; }
+  .holidays .holidays-count__line .holidays-count__number {
+    font-weight: normal; }
 
 .popup-pie {
   /* Ручной readmore */
