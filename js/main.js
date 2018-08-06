@@ -2962,16 +2962,30 @@ function calendarHallUpdateBind(options) {
 // Holidays All
 //  functions
 function holidaysInit(selector) {
-    $(selector).each(function(index, elem){
+    $(selector).find('li').each(function(index, elem){
         $(elem).find('.holidays-list-item__caption').on('click', function(){
-            $(this).toggleClass('holidays-list-item__caption_selected');
-            $(elem).find('.holidays-list-item__body').toggleClass('holidays-list-item__body_hidden');
+            if(!$(this).hasClass('holidays-list-item__caption_selected')) {
+                $(selector).attr('current', index);
+            } else {
+                $(selector).attr('current', -1);
+            }
+            $(this).addClass('holidays-list-item__caption_selected');
+            $(elem).find('.holidays-list-item__body').removeClass('holidays-list-item__body_hidden');
+            holidaysListCollapse(selector, $(selector).attr('current'));
         });
     });
 }
 
+function holidaysListCollapse(selector, index) {
+    $(selector).find('li').each(function(_index, elem) {
+        if (_index != index) {
+            $(elem).find('.holidays-list-item__caption').removeClass('holidays-list-item__caption_selected');
+            $(elem).find('.holidays-list-item__body').addClass('holidays-list-item__body_hidden');
+        }
+    });
+}
 
 //  events listener
 $(function() {
-    holidaysInit('.holidays-list-item');
+    holidaysInit('.holidays-list__body');
 });

@@ -20108,7 +20108,20 @@ a.show-more__button:hover {
 .holidays-list {
   position: relative;
   margin-right: -2.2rem;
-  margin-left: -2.2rem; }
+  margin-left: -2.2rem;
+  background-color: #ffffff;
+  padding-bottom: .8rem; }
+  .holidays-list:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    width: 100%;
+    height: .4rem;
+    background: url(../img/pattern-round.png) 0 0 repeat-x;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .holidays-list__header {
     background: url("../img/holidays/list-header.jpg") 50% 70% no-repeat;
     background-size: cover;
