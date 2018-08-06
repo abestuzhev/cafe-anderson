@@ -20224,7 +20224,8 @@ a.show-more__button:hover {
           flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  font-weight: 700; }
 
 .popup-pie {
   /* Ручной readmore */
