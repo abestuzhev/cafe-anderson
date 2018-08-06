@@ -6752,3 +6752,23 @@
 }
 
 /*endregion*/
+
+/* Holidays All */
+@media screen and (max-width: 1300px) {
+    .holidays .holidays-grid {
+        width: 64.8rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .holidays .holidays-grid {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .holidays-list {
+        margin-right: -1.6rem;
+        margin-left: -1.6rem;
+    }
+}

@@ -17115,6 +17115,171 @@ a.show-more__button:hover {
 }
 
 
+/* Holidays-all page */
+.holidays {
+    text-align: center;
+}
+
+.holidays-grid {
+    display: flex;
+    flex-flow: row wrap;
+    width: 130rem;
+    margin-left:auto;
+    margin-right: auto;
+
+
+
+    &__block-wrapper {
+        display: none;
+        background: rgba(255,255,255, 0.8);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    &__block {
+        width: 30rem;
+        height: 23rem;
+        border-radius: 1rem;
+        border: none;
+        position: relative;
+        background: url('../img/holidays/holidays-block-1.jpg') 50% 50% no-repeat;
+        background-size: cover;
+        margin: 1.5rem 1.2rem;
+
+        &:hover &-wrapper{
+            display: block;
+        }
+
+        &:hover &-decor {
+            display: none;
+        }
+
+    }
+
+
+    &__button {
+        color: #ffffff;
+        display: inline-block;
+        position: relative;
+        z-index: 5;
+        padding: 1.8rem 2rem;
+        border-radius: 10px;
+        border: 0;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33),
+        inset 0 1px 0 0 rgba(249,183,221,1),
+        inset 0 2px 0 0 rgba(240,165,209,1);
+        background: url('../img/holidays-button-bg.png');
+        font-family: $font_sans-serif;
+        font-size: 3.7rem;
+        line-height: 3.7rem;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+        white-space: nowrap;
+
+        &:after {
+            border: none;
+            width: auto;
+        }
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    &__block-footer {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 1rem;
+        left: 0;
+        overflow: hidden;
+        text-align: center;
+        height: 7.3rem; /* hover bug fix */
+    }
+
+    &__body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__caption {
+        font-family: $font_serif;
+        font-size: 2.4rem;
+        color: #c7368a;
+        padding-bottom: .5rem;
+    }
+    &__text {
+        font-family: $font_serif;
+        font-style: italic;
+        font-size: 1.6rem;
+        padding-bottom: 3rem;
+    }
+
+    /* sizes */
+    &_row-span_2 {
+        height: 49rem;
+    }
+
+    &_col-span_2 {
+        width: 62.4rem;
+    }
+
+}
+
+.holidays-list {
+
+    position: relative;
+    margin-right: -2.2rem;
+    margin-left: -2.2rem;
+
+
+    &-item {
+        font-family: $font_serif;
+        font-size: 1.5rem;
+        color: #080808;
+        font-style: italic;
+
+        &__caption {
+            display: block;
+            position: relative;
+            padding: 1rem 1.7rem;
+            text-align: left;
+
+            svg {
+                margin-left: 1rem;
+            }
+
+            &:after {
+                content: '';
+                border-bottom: 1px dashed #828282;
+                position: absolute;
+                bottom: 0;
+                left: 2%;
+                width: 96%;
+            }
+
+            &:hover {
+                color: #ffffff;
+                background: #74bf44;
+            }
+
+            &:hover svg{
+                fill: #ffffff;
+            }
+        }
+
+        &__body {
+            display: none;
+        }
+    }
+}
 
 
 
