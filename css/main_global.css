@@ -19981,9 +19981,9 @@ a.show-more__button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 130rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin-left: -1.4rem;
+  margin-right: -1.4rem;
   /* sizes */ }
   .holidays-grid__block-wrapper {
     opacity: 0;
@@ -19997,15 +19997,19 @@ a.show-more__button:hover {
     transition: opacity .5s linear;
     -webkit-box-shadow: 3px 4px 37.56102px 0.43898px rgba(0, 0, 0, 0.15);
             box-shadow: 3px 4px 37.56102px 0.43898px rgba(0, 0, 0, 0.15); }
-  .holidays-grid__block {
-    width: 30rem;
+  .holidays-grid__container {
+    width: 25%;
+    min-width: 27.3rem;
     height: 23rem;
+    padding: 1.2rem 1.4rem; }
+  .holidays-grid__block {
+    width: 100%;
+    height: 100%;
     border-radius: 1rem;
     border: none;
     position: relative;
     background: url("../img/holidays/holidays-block-1.jpg") 50% 50% no-repeat;
-    background-size: cover;
-    margin: 1.5rem 1.2rem; }
+    background-size: cover; }
     .holidays-grid__block-decor {
       opacity: 1;
       -webkit-transition: opacity .5s linear;
@@ -20089,7 +20093,8 @@ a.show-more__button:hover {
   .holidays-grid_row-span_2 {
     height: 49rem; }
   .holidays-grid_col-span_2 {
-    width: 62.4rem; }
+    width: 50%;
+    min-width: 55rem; }
 
 .holidays-list {
   position: relative;

@@ -6754,9 +6754,11 @@
     display: none;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
     .holidays .holidays-grid {
-        width: 64.8rem;
+        width: 57.8rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

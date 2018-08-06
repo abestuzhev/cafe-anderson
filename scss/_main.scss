@@ -17210,9 +17210,9 @@ a.show-more__button:hover {
 .holidays-grid {
     display: flex;
     flex-flow: row wrap;
-    width: 130rem;
-    margin-left:auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left:-1.4rem;
+    margin-right: -1.4rem;
 
 
 
@@ -17227,15 +17227,22 @@ a.show-more__button:hover {
         box-shadow: 3px 4px 37.561024px 0.438976px rgba(0, 0, 0, 0.15);
     }
 
-    &__block {
-        width: 30rem;
+    &__container {
+        width: 25%;
+        min-width: 27.3rem;
         height: 23rem;
+        padding: 1.2rem 1.4rem;
+    }
+
+    &__block {
+        width: 100%;
+        height: 100%;
         border-radius: 1rem;
         border: none;
         position: relative;
         background: url('../img/holidays/holidays-block-1.jpg') 50% 50% no-repeat;
         background-size: cover;
-        margin: 1.5rem 1.2rem;
+
 
         &-decor {
             opacity: 1;
@@ -17338,7 +17345,8 @@ a.show-more__button:hover {
     }
 
     &_col-span_2 {
-        width: 62.4rem;
+        width: 50%;
+        min-width: 55rem;
     }
 
 }
