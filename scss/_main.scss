@@ -17217,12 +17217,13 @@ a.show-more__button:hover {
 
 
     &__block-wrapper {
-        display: none;
+        opacity: 0;
         background: rgba(255,255,255, 0.8);
         width: 100%;
         height: 100%;
         text-align: center;
         border-radius: 1rem;
+        transition: opacity .5s linear;
     }
 
     &__block {
@@ -17235,12 +17236,17 @@ a.show-more__button:hover {
         background-size: cover;
         margin: 1.5rem 1.2rem;
 
+        &-decor {
+            opacity: 1;
+            transition: opacity .5s linear;
+        }
+
         &:hover &-wrapper{
-            display: block;
+            opacity: 1;
         }
 
         &:hover &-decor {
-            display: none;
+            opacity: 0;
         }
 
     }
@@ -17274,6 +17280,10 @@ a.show-more__button:hover {
         &:hover {
             color: #ffffff;
         }
+    }
+
+    a.holidays-grid__button {
+        z-index: 10;
     }
 
     &__block-footer {
