@@ -20214,6 +20214,18 @@ a.show-more__button:hover {
       margin-right: -2.2rem;
       margin-left: -2.2rem; }
 
+.holidays .holidays-count__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

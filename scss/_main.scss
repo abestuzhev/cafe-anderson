@@ -17503,7 +17503,13 @@ a.show-more__button:hover {
     }
 }
 
-
+.holidays {
+    .holidays-count__line {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
 
 
 
