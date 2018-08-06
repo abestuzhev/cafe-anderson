@@ -19972,7 +19972,6 @@ a.show-more__button:hover {
           flex-flow: row wrap;
   width: 100%;
   margin-left: -1.4rem;
-  margin-right: -1.4rem;
   /* sizes */ }
   .holidays-grid__block-wrapper {
     opacity: 0;
@@ -19981,9 +19980,9 @@ a.show-more__button:hover {
     height: 100%;
     text-align: center;
     border-radius: 1rem;
-    -webkit-transition: opacity .5s linear;
-    -o-transition: opacity .5s linear;
-    transition: opacity .5s linear;
+    -webkit-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    transition: opacity .1s linear;
     -webkit-box-shadow: 3px 4px 37.56102px 0.43898px rgba(0, 0, 0, 0.15);
             box-shadow: 3px 4px 37.56102px 0.43898px rgba(0, 0, 0, 0.15); }
   .holidays-grid__container {
@@ -20014,6 +20013,7 @@ a.show-more__button:hover {
     position: relative;
     z-index: 5;
     padding: 1.8rem 2rem;
+    padding-bottom: 1.5rem;
     border-radius: 10px;
     border: 0;
     -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
@@ -20051,7 +20051,7 @@ a.show-more__button:hover {
     left: 0;
     overflow: hidden;
     text-align: center;
-    height: 7.3rem;
+    height: 7rem;
     /* hover bug fix */ }
   .holidays-grid__body {
     width: 100%;
@@ -20087,6 +20087,13 @@ a.show-more__button:hover {
     width: 50%;
     min-width: 60rem; }
 
+.holidays-footer {
+  padding-left: 0rem;
+  padding-right: 1.4rem; }
+  .holidays-footer .holidays-count {
+    white-space: nowrap;
+    width: auto; }
+
 .holidays-list {
   position: relative;
   margin-right: -2.2rem;
@@ -20121,9 +20128,20 @@ a.show-more__button:hover {
         .holidays-list-item__caption_selected svg {
           fill: #ffffff; }
     .holidays-list-item__body {
-      text-align: left; }
+      text-align: left;
+      -webkit-transition: height linear .3s;
+      -o-transition: height linear .3s;
+      transition: height linear .3s; }
+      .holidays-list-item__body_hidden {
+        height: 0rem; }
     .holidays-list-item__text {
-      padding: 1.4rem 1.7rem; }
+      padding: 1.4rem 1.7rem;
+      overflow: hidden; }
+    .holidays-list-item__footer {
+      padding: 1.4rem 1.7rem;
+      border-bottom: 1px solid #d9d9d9;
+      -webkit-box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15);
+              box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15); }
     .holidays-list-item__decor {
       height: 17rem;
       background-position: 50% 50%;
