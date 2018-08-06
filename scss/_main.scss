@@ -17123,31 +17123,39 @@ a.show-more__button:hover {
 .holidays-grid {
     display: flex;
     flex-flow: row wrap;
-    width: 130rem;
-    margin-left:auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left:-1.4rem;
+    margin-right: -1.4rem;
 
 
 
     &__block-wrapper {
         opacity: 0;
-        background: rgba(255,255,255, 0.8);
+        background: rgba(255,255,255, 0.9);
         width: 100%;
         height: 100%;
         text-align: center;
         border-radius: 1rem;
         transition: opacity .5s linear;
+        box-shadow: 3px 4px 37.561024px 0.438976px rgba(0, 0, 0, 0.15);
+    }
+
+    &__container {
+        width: 25%;
+        min-width: 30rem;
+        height: 23rem;
+        padding: 1.2rem 1.4rem;
     }
 
     &__block {
-        width: 30rem;
-        height: 23rem;
+        width: 100%;
+        height: 100%;
         border-radius: 1rem;
         border: none;
         position: relative;
         background: url('../img/holidays/holidays-block-1.jpg') 50% 50% no-repeat;
         background-size: cover;
-        margin: 1.5rem 1.2rem;
+
 
         &-decor {
             opacity: 1;
@@ -17191,7 +17199,19 @@ a.show-more__button:hover {
         }
 
         &:hover {
-            color: #ffffff;
+            color: rgba(255,255,255,1);
+        }
+
+        &:hover:after {
+            content: '';
+            background-color: rgba(255,255,255,0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
         }
     }
 
@@ -17230,6 +17250,8 @@ a.show-more__button:hover {
         font-style: italic;
         font-size: 1.6rem;
         padding-bottom: 3rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
 
     /* sizes */
@@ -17238,7 +17260,8 @@ a.show-more__button:hover {
     }
 
     &_col-span_2 {
-        width: 62.4rem;
+        width: 50%;
+        min-width: 60rem;
     }
 
 }
@@ -17283,10 +17306,31 @@ a.show-more__button:hover {
             &:hover svg{
                 fill: #ffffff;
             }
+
+            &_selected {
+                color: #ffffff;
+                background: #74bf44;
+                svg {
+                    fill: #ffffff;
+                }
+            }
         }
 
         &__body {
-            display: none;
+            text-align: left;
+        }
+
+        &__text {
+            padding: 1.4rem 1.7rem;
+        }
+
+        &__decor {
+            height: 17rem;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: -2.2rem;
+            margin-left: -2.2rem;
         }
     }
 }
