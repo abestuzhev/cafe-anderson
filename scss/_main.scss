@@ -16276,6 +16276,7 @@ test popup
   }
 
   &-box {
+    display: block;
     min-height: 12rem;
     border: 1px solid transparent;
     font-size: 1.6rem;
@@ -16285,12 +16286,39 @@ test popup
     border-right: none !important;
     border-bottom: none !important;
 
+
     span {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
 
+    }
+
+    &--last {
+      background: linear-gradient(34.7deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%);
+    }
+    &--inreserve {
+      background-color: #867278;
+      color: #463f41;
+      position: relative;
+
+      .symbol-cake-ice {
+        position: absolute;
+        font-size: 4.2rem;
+        right: -1rem;
+        bottom: 3rem;
+        fill:#000;
+        transform: rotate(-39deg);
+      }
+
+      .symbol-lollipop {
+        position: absolute;
+        fill:#000;
+        bottom: -2px;
+        right: 10px;
+        transform: rotate(-28deg);
+      }
     }
 
     &--free {
@@ -16329,6 +16357,7 @@ test popup
           opacity: 1;
           visibility: visible;
           transition: all .3s ease-in-out;
+
         }
 
         .c-symbol {
@@ -16374,6 +16403,7 @@ test popup
       font-size: 2.3rem;
       font-style: normal;
       margin-top: 2rem;
+
 
       &::after {
         content: '';
