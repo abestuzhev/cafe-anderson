@@ -20225,7 +20225,7 @@ a.show-more__button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .holidays .holidays-count__line .holidays-count__number {
+  .holidays .holidays-count__line .holidays-apple-fix {
     font-weight: normal; }
 
 .popup-pie {

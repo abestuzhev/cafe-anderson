@@ -2985,7 +2985,20 @@ function holidaysListCollapse(selector, index) {
     });
 }
 
+function holidaysAppleFix() {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf('safari') != -1) {
+        if (ua.indexOf('chrome') > -1) {
+            // Chrome
+        } else {
+            // Safari
+            $('.holidays-count__number').addClass('.holidays-apple-fix');
+        }
+    }
+}
+
 //  events listener
 $(function() {
     holidaysInit('.holidays-list__body');
+    holidaysAppleFix();
 });
