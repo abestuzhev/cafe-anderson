@@ -3155,7 +3155,7 @@
         font-size: 1.5rem;
     }
 
-    body {
+    body:not(.always-bg) {
         background-image: none;
     }
 
@@ -6778,6 +6778,20 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .holidays .holidays-footer {
+        padding: 2rem 0;
+        flex-flow: column;
+    }
+
+    .holidays .holidays-advantages {
+        flex-flow: column;
+    }
+
+    .holidays .holidays-advantages__item {
+        min-width: 32rem;
+    }
+
 }
 
 @media screen and (max-width: 670px) {
