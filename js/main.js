@@ -2973,20 +2973,39 @@ $(function() {
 
 
 $('.holiday-reason__slick').slick({
+    slidesToShow: 3,
+    infinite: false,
+    speed: 300,
+    variableWidth: false
     responsive: [
-        {
-        breakpoint: 3000,
-        settings: "unslick"
-        },
-        {
-        breakpoint: 1024,
-        settings:{
-            arrows: true,
-            slidesToShow: 1,
-            slidesToScroll: 1
-            }
-        }
-    ]
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: true
+      }
+    }
+  ]
 });
 
 
