@@ -2992,7 +2992,7 @@ function holidaysAppleFix() {
             // Chrome
         } else {
             // Safari
-            $('.holidays-count__number').addClass('.holidays-apple-fix');
+            $('.holidays-count__number').addClass('holidays-apple-fix');
         }
     }
 }
