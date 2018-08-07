@@ -2966,3 +2966,27 @@ function calendarHallUpdateBind(options) {
 $(function() {
 
 });
+
+
+
+// Holidays-reason
+
+
+$('.holiday-reason__slick').slick({
+    responsive: [
+        {
+        breakpoint: 3000,
+        settings: "unslick"
+        },
+        {
+        breakpoint: 1024,
+        settings:{
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+
