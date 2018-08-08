@@ -2979,21 +2979,19 @@ $('.holiday-reason__slick').slick({
     variableWidth: false
     responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1300,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
-        infinite: true,
-        centerMode: true
+        infinite: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 740,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
-        centerMode: true
+        infinite: true
       }
     },
     {
@@ -3002,7 +3000,6 @@ $('.holiday-reason__slick').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        centerMode: true
       }
     }
   ]
