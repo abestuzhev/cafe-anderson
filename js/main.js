@@ -2974,9 +2974,8 @@ $(function() {
 
 $('.holiday-reason__slick').slick({
     slidesToShow: 3,
-    infinite: false,
-    speed: 300,
-    variableWidth: false
+    centerMode: false,
+    variableWidth: false,
     responsive: [
     {
       breakpoint: 1300,
