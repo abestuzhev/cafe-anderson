@@ -6783,21 +6783,14 @@
 /* Holiday-reason */
 
 @media screen and (max-width: 1300px) {
-    .holiday-reason__header .c-symbol {
-        display: none;
-    }
-    .c-title-decor-layout__mobile {
+    .c-title-decor-1 span {
         display: block;
-    }
-    .holiday-reason__header .holiday-reason__subtitle {
-        display: none;
+        font-size: 1.3rem;
+        margin-top: -6px;
+        font-family: "PT Serif Caption";
     }
     .c-holiday-count-1 {
         display: none;
-    }
-    .holiday-reason__head {
-        width: 100%;
-        margin-bottom: 2rem;
     }
     .holiday-reason__head-layout {
         display: block;
@@ -6807,6 +6800,10 @@
     }
     .holiday-reason__title {
         font-size: 3.2rem;
+    }
+    .holiday-reason__subtitle {
+        width: 80%;
+        margin: 0 auto;
     }
     .holiday-reason__col {
         width: 100%;
@@ -6864,36 +6861,16 @@
         font-size: 1.8rem;
     }
     .holiday-reason-card__text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .holiday-reason-card__body {
-        bottom: -60px !important;    
+        bottom: -50px !important;    
     }    
-    .c-title-decor-layout {
-        font-family: "BebasNeue";
-        padding: 1rem 3rem;
-        background-color: #f2f2f1;
-        color: #231300;
-        -webkit-box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-        box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-        margin-bottom: 2rem;
-    }
-    .c-title-decor-1 {
-        padding: 0rem;
-        display: block;
-        margin-bottom: 0rem;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        position: relative;
-        font-size: 3.2rem;
-        color: #231300;
-    }
-    .c-title-decor-1::before,
-    .c-title-decor-1::after {
-        display: none;
-    }
+    .holiday-reason-card--child-departure .holiday-reason-card__body {
+        bottom: -80px !important;
+    }  
     .slick-prev, .slick-next { 
-        top: 45px;
+        top: 32px;
         background: none;
     }    
     .slick-prev:before {
@@ -7024,6 +7001,13 @@
     }
     .c-title-decor-layout__mobile {
         display: block;
+        margin-bottom: 0px;
+    }
+    .c-title-decor-1 span {
+        display: block;
+        font-size: 1.3rem;
+        margin-top: -6px;
+        font-family: "PT Serif Caption";
     }
     .holiday-reason__header .holiday-reason__subtitle {
         display: none;
@@ -7088,8 +7072,11 @@
         border-radius: 40rem;
     }
     .holiday-reason-card__body {
-        width: 20.4rem;
-        bottom: -55px !important; 
+        width: 38rem;
+        bottom: -50px !important; 
+    }   
+    .holiday-reason-card--child-departure .holiday-reason-card__body {
+        bottom: -10px !important;
     }
     .holiday-reason-card--karapuznik {
         height: 40.2rem;
@@ -7101,7 +7088,7 @@
         font-size: 1.8rem;
     }
     .holiday-reason-card__text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }  
     .c-title-decor-layout {
         font-family: "BebasNeue";
@@ -7111,6 +7098,7 @@
         -webkit-box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
         box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
+        height: 90px;
     }
     .c-title-decor-1 {
         padding: 0rem;
@@ -7257,6 +7245,10 @@
     }
     .c-title-decor-layout__mobile {
         display: block;
+        margin-bottom: 0px;
+    }
+    .c-title-decor-1 span {
+        display: none;
     }
     .holiday-reason__header .holiday-reason__subtitle {
         display: none;
@@ -7267,6 +7259,9 @@
     .holiday-reason__head {
         width: 100%;
         margin-bottom: 2rem;
+    }
+    .c-title-decor-layout__mobile.m-5 {
+        margin: 5px;
     }
     .holiday-reason__head-layout {
         display: block;
@@ -7322,11 +7317,14 @@
         font-size: 1.8rem;
     }
     .holiday-reason-card__text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .holiday-reason-card__body {
-        bottom: -60px !important;    
+        bottom: -50px !important;    
     }    
+    .holiday-reason-card--child-departure .holiday-reason-card__body {
+        bottom: -70px !important;
+    }
     .holiday-reason-card--papeniny {
         width: 30rem !important;
         height: 30rem;
@@ -7340,12 +7338,13 @@
     }
     .c-title-decor-layout {
         font-family: "BebasNeue";
-        padding: 1rem 3rem;
+        padding: .5rem 3rem;
         background-color: #f2f2f1;
         color: #231300;
         -webkit-box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
         box-shadow: inset 0 3px 0 0 #fff, inset 0 -3px 0 0 #bbb8a8, 0 2px 5px 0 rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
+        height: 90px;
     }
     .c-title-decor-1 {
         padding: 0rem;
@@ -7356,6 +7355,7 @@
         position: relative;
         font-size: 3.3rem;
         color: #231300;
+        line-height: 2.8rem;
     }
     .c-title-decor-1::before,
     .c-title-decor-1::after {
