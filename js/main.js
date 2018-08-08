@@ -2967,8 +2967,6 @@ $(function() {
 
 });
 
-
-
 // Holidays-reason
 
 $(window).on('resize orientationchange', function() {
@@ -2978,7 +2976,6 @@ if(!mySlider.hasClass('slick-initialized')){
 mySlider.slick({
     slidesToShow: 3,
     centerMode: false,
-    variableWidth: false,
     responsive: [
     {
       breakpoint: 9999,
@@ -3005,10 +3002,12 @@ mySlider.slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true
+        infinite: true,
+        adaptiveHeight: true
       }
     }
   ]
 });
 }
 });
+

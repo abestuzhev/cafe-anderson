@@ -3157,7 +3157,7 @@
     }
 
     body {
-        background-image: none;
+
     }
 
     .page-container,
@@ -6841,7 +6841,34 @@
         width: 20.4rem;
     }
     .holiday-reason-card--karapuznik {
-        height: 40.2rem;
+        height: 41.2rem;
+    }
+    .holiday-reason-card--krestiny {
+        height: 40rem;
+    }
+    .holiday-reason-card--zubelej {
+        height: 30rem;
+    }
+    .holiday-reason-card--mameniny {
+        height: 30rem;
+    }
+    .holiday-reason-card--babulechnik {
+        height: 21rem;
+    }
+    .holiday-reason-card--meeting {
+        height: 28rem;
+    }
+    .holiday-reason-card--feast {
+        height: 30rem;
+    }
+    .holiday-reason-card--year {
+        height: 40rem;
+    }
+    .holiday-reason-card--tortzhestvo {
+        height: 31rem;
+    }
+    .holiday-reason {
+        margin-bottom: 2rem;
     }
     .holiday-reason-card,
     .holiday-reason-card--zubelej,
@@ -7079,10 +7106,37 @@
         bottom: -10px !important;
     }
     .holiday-reason-card--karapuznik {
-        height: 40.2rem;
+        height: 41.2rem;
     }
     .holiday-reason-card--krestiny {
+        height: 40rem;
+    }
+    .holiday-reason-card--zubelej {
         height: 30rem;
+    }
+    .holiday-reason-card--mameniny {
+        height: 30rem;
+    }
+    .holiday-reason-card--babulechnik {
+        height: 21rem;
+    }
+    .holiday-reason-card--meeting {
+        height: 28rem;
+    }
+    .holiday-reason-card--feast {
+        height: 35rem;
+    }
+    .holiday-reason-card--year {
+        height: 50rem;
+    }
+    .holiday-reason-card--family-departure {
+        height: 27rem;
+    }
+    .holiday-reason-card--tortzhestvo {
+        height: 31rem;
+    }
+    .holiday-reason {
+        margin-bottom: 2rem;
     }
     .holiday-reason-card__title {
         font-size: 1.8rem;
@@ -7308,10 +7362,37 @@
         width: 20.4rem;
     }
     .holiday-reason-card--karapuznik {
-        height: 40.2rem;
+        height: 41.2rem;
     }
     .holiday-reason-card--krestiny {
+        height: 40rem;
+    }
+    .holiday-reason-card--zubelej {
         height: 30rem;
+    }
+    .holiday-reason-card--mameniny {
+        height: 30rem;
+    }
+    .holiday-reason-card--babulechnik {
+        height: 21rem;
+    }
+    .holiday-reason-card--meeting {
+        height: 28rem;
+    }
+    .holiday-reason-card--feast {
+        height: 30rem;
+    }
+    .holiday-reason-card--year {
+        height: 40rem;
+    }
+    .holiday-reason-card--tortzhestvo {
+        height: 31rem;
+    }
+    .holiday-reason-card--decree {
+        height: 42rem;
+    }
+    .holiday-reason {
+        margin-bottom: 2rem;
     }
     .holiday-reason-card__title {
         font-size: 1.8rem;
