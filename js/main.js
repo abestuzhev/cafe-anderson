@@ -168,6 +168,8 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    svg4everybody({});
+
 
     /*выбор месяцав календаре праздничных пространств*/
     $(document).on('click', '.calendar-header__month a:nth-child(1)', function(e){
