@@ -7485,3 +7485,9 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 365px) and (max-width: 479px) {
+    .c-title-decor-layout__mobile.m-5m {
+        margin: 5px;
+    }
+}
