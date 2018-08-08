@@ -6819,26 +6819,26 @@
         margin-top: inherit;
     }
     .holiday-reason-card--vypusknik {
-        width: 40rem;
-        height: 40rem;
-        border-radius: 40rem;
-        border-width: 4rem;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 30rem;
+        border-width: 3rem;
     }
     .holiday-reason-card--child-departure {
-        width: 40rem;
-        height: 40rem;
-        border-radius: 40rem;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 30rem;
     }
     .holiday-reason-card--papeniny {
-        width: 40rem !important;
-        height: 40rem;
-        border-radius: 40rem;
+        width: 30rem !important;
+        height: 30rem;
+        border-radius: 30rem;
         margin-left: -1rem;
     }
     .holiday-reason-card--dedulechnik {
-        width: 40rem;
-        height: 40rem;
-        border-radius: 40rem;
+        width: 30rem;
+        height: 30rem;
+        border-radius: 30rem;
     }
     .holiday-reason-card__body {
         width: 20.4rem;
@@ -7005,7 +7005,7 @@
         display: none;
     }
 
-}
+}   
 
 @media screen and (max-width: 740px) {
     .holiday-reason__header .c-symbol {
