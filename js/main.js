@@ -3008,16 +3008,4 @@ $('.holiday-reason__slick').slick({
   ]
 });
 
-window.addEventListener("resize", function() {
-  if (window.innerWidth <= 1300) {
-    $('.holiday-reason__slick').slick('slick');
-    sliderIsLive = false;
-  }
-  else {
-    if (sliderIsLive) {
-      $('.holiday-reason__slick').slick();
-      sliderIsLive = true;
-    }
-  }
-});
 
