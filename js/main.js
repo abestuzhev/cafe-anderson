@@ -2978,6 +2978,10 @@ $('.holiday-reason__slick').slick({
     variableWidth: false,
     responsive: [
     {
+      breakpoint: 5000,
+      settings: "unslick"
+    },
+    {
       breakpoint: 1300,
       settings: {
         slidesToShow: 2,
@@ -3004,4 +3008,16 @@ $('.holiday-reason__slick').slick({
   ]
 });
 
+window.addEventListener("resize", function() {
+  if (window.innerWidth <= 1300) {
+    $('.holiday-reason__slick').slick('slick');
+    sliderIsLive = false;
+  }
+  else {
+    if (sliderIsLive) {
+      $('.holiday-reason__slick').slick();
+      sliderIsLive = true;
+    }
+  }
+});
 
