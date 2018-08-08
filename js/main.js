@@ -3007,5 +3007,3 @@ $('.holiday-reason__slick').slick({
     }
   ]
 });
-
-
