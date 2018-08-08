@@ -2971,14 +2971,17 @@ $(function() {
 
 // Holidays-reason
 
+$(window).on('resize orientationchange', function() {
+  var mySlider = $('.holiday-reason__slick');
 
-$('.holiday-reason__slick').slick({
+if(!mySlider.hasClass('slick-initialized')){
+mySlider.slick({
     slidesToShow: 3,
     centerMode: false,
     variableWidth: false,
     responsive: [
     {
-      breakpoint: 5000,
+      breakpoint: 9999,
       settings: "unslick"
     },
     {
@@ -3006,4 +3009,6 @@ $('.holiday-reason__slick').slick({
       }
     }
   ]
+});
+}
 });
