@@ -12230,34 +12230,55 @@ function holidaysAppleFix() {
 }
 
 //  events listener
-// $(function() {
+$(function() {
+    $(window).on('resize orientationchange', function() {
+        var mySlider = $('.holiday-reason__slick');
 
-// });
-
-
-
-// Holidays-reason
-
-
-$('.holiday-reason__slick').slick({
-    responsive: [
-        {
-        breakpoint: 3000,
-        settings: "unslick"
-        },
-        {
-        breakpoint: 1024,
-        settings:{
-            arrows: true,
-            slidesToShow: 1,
-            slidesToScroll: 1
-            }
+        if (!mySlider.hasClass('slick-initialized')) {
+            mySlider.slick({
+                slidesToShow: 3,
+                centerMode: false,
+                responsive: [
+                    {
+                        breakpoint: 9999,
+                        settings: "unslick"
+                    },
+                    {
+                        breakpoint: 1300,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 740,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            adaptiveHeight: true
+                        }
+                    }
+                ]
+            });
         }
-    ]
+
+        holidaysInit('.holidays-list__body');
+        holidaysAppleFix();
+
+    });
 });
 
 
 
-    holidaysInit('.holidays-list__body');
-    holidaysAppleFix();
-});
+
+
