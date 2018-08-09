@@ -9,11 +9,11 @@ var gulp = require('gulp'),
     // plumber = require('gulp-plumber'),
     livereload = require('gulp-livereload'),
     //minifyCSS = require('gulp-minify-css'),
-    sourcemaps = require('gulp-sourcemaps'),
+    // sourcemaps = require('gulp-sourcemaps'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
     concatCss = require('gulp-concat-css'),
-    critical = require('critical'),
+    // critical = require('critical'),
     browserSync = require('browser-sync').create();
 
 //
@@ -62,7 +62,7 @@ gulp.task('js', function(){
         // './js/custom-map.js',
         './js/main.js'
     ])
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(concat('scripts_all.js'))
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest('js/'))

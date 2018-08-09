@@ -1437,6 +1437,24 @@ i.icon-chair {
   -ms-transform: rotate(15deg);
   transform: rotate(15deg); }
 
+.symbol-cake-ice {
+  font-size: 3.2rem;
+  width: 1em;
+  height: 1.3em;
+  fill: #7f7d7c; }
+
+.symbol-lollipop {
+  font-size: 3.8rem;
+  width: 1em;
+  height: 1.3em;
+  fill: #7f7d7c; }
+
+.symbol-arr_round {
+  font-size: 3.8rem;
+  width: 1em;
+  height: 1em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -19331,6 +19349,7 @@ test popup
     .calendar-day__week {
       font-size: 1.4rem; }
   .calendar-box {
+    display: block;
     min-height: 12rem;
     border: 1px solid transparent;
     font-size: 1.6rem;
@@ -19346,6 +19365,30 @@ test popup
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+    .calendar-box--last {
+      background: -o-linear-gradient(55.3deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%);
+      background: linear-gradient(34.7deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%); }
+    .calendar-box--inreserve {
+      background-color: #867278;
+      color: #463f41;
+      position: relative; }
+      .calendar-box--inreserve .symbol-cake-ice {
+        position: absolute;
+        font-size: 4.2rem;
+        right: -1rem;
+        bottom: 3rem;
+        fill: #000;
+        -webkit-transform: rotate(-39deg);
+            -ms-transform: rotate(-39deg);
+                transform: rotate(-39deg); }
+      .calendar-box--inreserve .symbol-lollipop {
+        position: absolute;
+        fill: #000;
+        bottom: -2px;
+        right: 10px;
+        -webkit-transform: rotate(-28deg);
+            -ms-transform: rotate(-28deg);
+                transform: rotate(-28deg); }
     .calendar-box--free {
       border: 1px solid #b0e183;
       background-color: #81c15f;
@@ -19973,29 +20016,34 @@ a.show-more__button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: 130rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin-left: -1.4rem;
   /* sizes */ }
   .holidays-grid__block-wrapper {
     opacity: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 100%;
     text-align: center;
     border-radius: 1rem;
-    -webkit-transition: opacity .5s linear;
-    -o-transition: opacity .5s linear;
-    transition: opacity .5s linear; }
-  .holidays-grid__block {
-    width: 30rem;
+    -webkit-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    transition: opacity .1s linear;
+    -webkit-box-shadow: 3px 4px 37.56102px 0.43898px rgba(0, 0, 0, 0.15);
+            box-shadow: 3px 4px 37.56102px 0.43898px rgba(0, 0, 0, 0.15); }
+  .holidays-grid__container {
+    width: 25%;
+    min-width: 30rem;
     height: 23rem;
+    padding: 1.2rem 1.4rem; }
+  .holidays-grid__block {
+    width: 100%;
+    height: 100%;
     border-radius: 1rem;
     border: none;
     position: relative;
     background: url("../img/holidays/holidays-block-1.jpg") 50% 50% no-repeat;
-    background-size: cover;
-    margin: 1.5rem 1.2rem; }
+    background-size: cover; }
     .holidays-grid__block-decor {
       opacity: 1;
       -webkit-transition: opacity .5s linear;
@@ -20011,6 +20059,7 @@ a.show-more__button:hover {
     position: relative;
     z-index: 5;
     padding: 1.8rem 2rem;
+    padding-bottom: 1.5rem;
     border-radius: 10px;
     border: 0;
     -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
@@ -20027,7 +20076,17 @@ a.show-more__button:hover {
       border: none;
       width: auto; }
     .holidays-grid__button:hover {
-      color: #ffffff; }
+      color: white; }
+    .holidays-grid__button:hover:after {
+      content: '';
+      background-color: rgba(255, 255, 255, 0.1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem; }
   .holidays-grid a.holidays-grid__button {
     z-index: 10; }
   .holidays-grid__block-footer {
@@ -20038,7 +20097,7 @@ a.show-more__button:hover {
     left: 0;
     overflow: hidden;
     text-align: center;
-    height: 7.3rem;
+    height: 7rem;
     /* hover bug fix */ }
   .holidays-grid__body {
     width: 100%;
@@ -20065,16 +20124,74 @@ a.show-more__button:hover {
     font-family: "PT Serif Caption";
     font-style: italic;
     font-size: 1.6rem;
-    padding-bottom: 3rem; }
+    padding-bottom: 3rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem; }
   .holidays-grid_row-span_2 {
     height: 49rem; }
   .holidays-grid_col-span_2 {
-    width: 62.4rem; }
+    width: 50%;
+    min-width: 60rem; }
+
+.holidays-footer {
+  padding-left: 0rem;
+  padding-right: 1.4rem; }
+  .holidays-footer .holidays-count {
+    white-space: nowrap;
+    width: auto; }
 
 .holidays-list {
   position: relative;
   margin-right: -2.2rem;
-  margin-left: -2.2rem; }
+  margin-left: -2.2rem;
+  background-color: #ffffff;
+  padding-bottom: .8rem; }
+  .holidays-list:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.2rem;
+    width: 100%;
+    height: .4rem;
+    background: url(../img/pattern-round.png) 0 0 repeat-x;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .holidays-list__header {
+    background: url("../img/holidays/list-header.jpg") 50% 70% no-repeat;
+    background-size: cover;
+    height: 23.5rem;
+    position: relative; }
+  .holidays-list__header-cloud {
+    background: url("../img/holidays/list-header-cloud.png") 0 0 no-repeat;
+    background-size: cover;
+    width: 26.3rem;
+    height: 7rem;
+    position: absolute;
+    bottom: .6rem;
+    right: .6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding-top: 1.2rem;
+    padding-left: 1rem; }
+  .holidays-list__header-text {
+    font-family: "PT Serif Caption";
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #74bf44;
+    text-align: right; }
+  .holidays-list__header-lead-text {
+    font-family: "PT Serif Caption";
+    font-size: 2.9rem;
+    font-style: italic;
+    color: #74bf44;
+    padding-left: .5rem;
+    padding-right: .5rem; }
   .holidays-list-item {
     font-family: "PT Serif Caption";
     font-size: 1.5rem;
@@ -20084,7 +20201,8 @@ a.show-more__button:hover {
       display: block;
       position: relative;
       padding: 1rem 1.7rem;
-      text-align: left; }
+      text-align: left;
+      cursor: pointer; }
       .holidays-list-item__caption svg {
         margin-left: 1rem; }
       .holidays-list-item__caption:after {
@@ -20099,8 +20217,51 @@ a.show-more__button:hover {
         background: #74bf44; }
       .holidays-list-item__caption:hover svg {
         fill: #ffffff; }
+      .holidays-list-item__caption_selected {
+        color: #ffffff;
+        background: #74bf44; }
+        .holidays-list-item__caption_selected svg {
+          fill: #ffffff; }
     .holidays-list-item__body {
-      display: none; }
+      text-align: left;
+      -webkit-transition: height 5s linear;
+      -o-transition: height 5s linear;
+      transition: height 5s linear;
+      background: url("../img/icons/icon-rabbit-half.svg") 85% 105% no-repeat;
+      background-size: 5rem; }
+      .holidays-list-item__body_hidden {
+        height: 0rem;
+        overflow: hidden; }
+    .holidays-list-item__text {
+      padding: 1.4rem 1.7rem;
+      overflow: hidden; }
+    .holidays-list-item__footer {
+      padding: 1.4rem 1.7rem;
+      border-bottom: 1px solid #d9d9d9;
+      -webkit-box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15);
+              box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15);
+      position: relative; }
+    .holidays-list-item__decor {
+      height: 17rem;
+      background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-right: -2.2rem;
+      margin-left: -2.2rem; }
+
+.holidays .holidays-count__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .holidays .holidays-count__line .holidays-apple-fix {
+    font-weight: normal; }
 
 .popup-pie {
   /* Ручной readmore */

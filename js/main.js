@@ -168,6 +168,8 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    
+
 
     /*выбор месяцав календаре праздничных пространств*/
     $(document).on('click', '.calendar-header__month a:nth-child(1)', function(e){
@@ -2961,11 +2963,46 @@ function calendarHallUpdateBind(options) {
 
 // Holidays All
 //  functions
+function holidaysInit(selector) {
+    $(selector).find('li').each(function(index, elem){
+        $(elem).find('.holidays-list-item__caption').on('click', function(){
+            if(!$(this).hasClass('holidays-list-item__caption_selected')) {
+                $(selector).attr('current', index);
+            } else {
+                $(selector).attr('current', -1);
+            }
+            $(this).addClass('holidays-list-item__caption_selected');
+            $(elem).find('.holidays-list-item__body').removeClass('holidays-list-item__body_hidden');
+            holidaysListCollapse(selector, $(selector).attr('current'));
+        });
+    });
+}
+
+function holidaysListCollapse(selector, index) {
+    $(selector).find('li').each(function(_index, elem) {
+        if (_index != index) {
+            $(elem).find('.holidays-list-item__caption').removeClass('holidays-list-item__caption_selected');
+            $(elem).find('.holidays-list-item__body').addClass('holidays-list-item__body_hidden');
+        }
+    });
+}
+
+function holidaysAppleFix() {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf('safari') != -1) {
+        if (ua.indexOf('chrome') > -1) {
+            // Chrome
+        } else {
+            // Safari
+            $('.holidays-count__number').addClass('holidays-apple-fix');
+        }
+    }
+}
 
 //  events listener
-$(function() {
+// $(function() {
 
-});
+// });
 
 // Holidays-reason
 
@@ -3009,5 +3046,10 @@ mySlider.slick({
   ]
 });
 }
+});
+
+
+    holidaysInit('.holidays-list__body');
+    holidaysAppleFix();
 });
 

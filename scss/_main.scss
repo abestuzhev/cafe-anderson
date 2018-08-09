@@ -16276,6 +16276,7 @@ test popup
   }
 
   &-box {
+    display: block;
     min-height: 12rem;
     border: 1px solid transparent;
     font-size: 1.6rem;
@@ -16285,12 +16286,39 @@ test popup
     border-right: none !important;
     border-bottom: none !important;
 
+
     span {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
 
+    }
+
+    &--last {
+      background: linear-gradient(34.7deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%);
+    }
+    &--inreserve {
+      background-color: #867278;
+      color: #463f41;
+      position: relative;
+
+      .symbol-cake-ice {
+        position: absolute;
+        font-size: 4.2rem;
+        right: -1rem;
+        bottom: 3rem;
+        fill:#000;
+        transform: rotate(-39deg);
+      }
+
+      .symbol-lollipop {
+        position: absolute;
+        fill:#000;
+        bottom: -2px;
+        right: 10px;
+        transform: rotate(-28deg);
+      }
     }
 
     &--free {
@@ -16329,6 +16357,7 @@ test popup
           opacity: 1;
           visibility: visible;
           transition: all .3s ease-in-out;
+
         }
 
         .c-symbol {
@@ -16374,6 +16403,7 @@ test popup
       font-size: 2.3rem;
       font-style: normal;
       margin-top: 2rem;
+
 
       &::after {
         content: '';
@@ -17123,31 +17153,37 @@ a.show-more__button:hover {
 .holidays-grid {
     display: flex;
     flex-flow: row wrap;
-    width: 130rem;
-    margin-left:auto;
-    margin-right: auto;
-
+    width: 100%;
+    margin-left: -1.4rem;
 
 
     &__block-wrapper {
         opacity: 0;
-        background: rgba(255,255,255, 0.8);
+        background: rgba(255,255,255, 0.9);
         width: 100%;
         height: 100%;
         text-align: center;
         border-radius: 1rem;
-        transition: opacity .5s linear;
+        transition: opacity .1s linear;
+        box-shadow: 3px 4px 37.561024px 0.438976px rgba(0, 0, 0, 0.15);
+    }
+
+    &__container {
+        width: 25%;
+        min-width: 30rem;
+        height: 23rem;
+        padding: 1.2rem 1.4rem;
     }
 
     &__block {
-        width: 30rem;
-        height: 23rem;
+        width: 100%;
+        height: 100%;
         border-radius: 1rem;
         border: none;
         position: relative;
         background: url('../img/holidays/holidays-block-1.jpg') 50% 50% no-repeat;
         background-size: cover;
-        margin: 1.5rem 1.2rem;
+
 
         &-decor {
             opacity: 1;
@@ -17171,6 +17207,7 @@ a.show-more__button:hover {
         position: relative;
         z-index: 5;
         padding: 1.8rem 2rem;
+        padding-bottom: 1.5rem;
         border-radius: 10px;
         border: 0;
         box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33),
@@ -17191,7 +17228,19 @@ a.show-more__button:hover {
         }
 
         &:hover {
-            color: #ffffff;
+            color: rgba(255,255,255,1);
+        }
+
+        &:hover:after {
+            content: '';
+            background-color: rgba(255,255,255,0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
         }
     }
 
@@ -17207,7 +17256,7 @@ a.show-more__button:hover {
         left: 0;
         overflow: hidden;
         text-align: center;
-        height: 7.3rem; /* hover bug fix */
+        height: 7rem; /* hover bug fix */
     }
 
     &__body {
@@ -17230,6 +17279,8 @@ a.show-more__button:hover {
         font-style: italic;
         font-size: 1.6rem;
         padding-bottom: 3rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
     }
 
     /* sizes */
@@ -17238,17 +17289,79 @@ a.show-more__button:hover {
     }
 
     &_col-span_2 {
-        width: 62.4rem;
+        width: 50%;
+        min-width: 60rem;
     }
 
 }
+
+.holidays-footer {
+    padding-left: 0rem;
+    padding-right: 1.4rem;
+
+    .holidays-count {
+        white-space: nowrap;
+        width: auto;
+    }
+}
+
 
 .holidays-list {
 
     position: relative;
     margin-right: -2.2rem;
     margin-left: -2.2rem;
+    background-color: #ffffff;
+    padding-bottom: .8rem;
 
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -.2rem;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.png) 0 0 repeat-x;
+        transform: rotate(180deg);
+    }
+
+    &__header {
+        background: url('../img/holidays/list-header.jpg') 50% 70% no-repeat;
+        background-size: cover;
+        height: 23.5rem;
+        position: relative;
+    }
+
+    &__header-cloud {
+        background: url('../img/holidays/list-header-cloud.png') 0 0 no-repeat;
+        background-size: cover;
+        width: 26.3rem;
+        height: 7rem;
+        position: absolute;
+        bottom: .6rem;
+        right: .6rem;
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    &__header-text {
+        font-family: $font_serif;
+        font-size: 1.8rem;
+        font-style: italic;
+        color: #74bf44;
+        text-align: right;
+    }
+
+    &__header-lead-text {
+        font-family: $font_serif;
+        font-size: 2.9rem;
+        font-style: italic;
+        color: #74bf44;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
 
     &-item {
         font-family: $font_serif;
@@ -17261,6 +17374,7 @@ a.show-more__button:hover {
             position: relative;
             padding: 1rem 1.7rem;
             text-align: left;
+            cursor: pointer;
 
             svg {
                 margin-left: 1rem;
@@ -17283,15 +17397,66 @@ a.show-more__button:hover {
             &:hover svg{
                 fill: #ffffff;
             }
+
+            &_selected {
+                color: #ffffff;
+                background: #74bf44;
+                svg {
+                    fill: #ffffff;
+                }
+            }
         }
 
         &__body {
-            display: none;
+            text-align: left;
+            transition: height 5s linear;
+            background: url('../img/icons/icon-rabbit-half.svg') 85% 105% no-repeat;
+            background-size: 5rem;
+
+            &_hidden {
+                height: 0rem;
+                overflow: hidden;
+            }
+        }
+
+        &__text {
+            padding: 1.4rem 1.7rem;
+            overflow: hidden;
+        }
+
+        &__footer {
+            padding: 1.4rem 1.7rem;
+            border-bottom: 1px solid #d9d9d9;
+            box-shadow: 0 9px 9px 0 rgba(0,0,0,0.15);
+            position: relative;
+
+
+
+
+        }
+
+        &__decor {
+            height: 17rem;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: -2.2rem;
+            margin-left: -2.2rem;
         }
     }
 }
 
+.holidays {
+    .holidays-count__line {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
 
+        .holidays-apple-fix {
+            font-weight: normal;
+        }
+    }
+}
 
 
 
