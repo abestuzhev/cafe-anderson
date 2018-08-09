@@ -6933,6 +6933,9 @@
         top: 32px;
         background: none;
     }    
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        background: none;
+    }
     .slick-prev:before {
         content: '';
         width: 40px;
@@ -7205,6 +7208,9 @@
         top: 47px;
         background: none;
     }    
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        background: none;
+    }
     .slick-prev:before {
         content: '';
         width: 40px;
@@ -7479,6 +7485,9 @@
         top: 47px;
         background: none;
     }    
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        background: none;
+    }
     .slick-prev:before {
         content: '';
         width: 40px;
