@@ -359,6 +359,10 @@
         top: 5%;
     }
 
+    main {
+        padding-bottom: 8rem;
+    }
+
     .footer {
         bottom: 0;
     }
@@ -553,6 +557,11 @@
 
     .catalog-banner--dessert {
         padding: 3rem 18rem 3rem 3rem;
+    }
+
+    .loft .calendar-navigator__month {
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
 }
 
@@ -3146,7 +3155,7 @@
         font-size: 1.5rem;
     }
 
-    body {
+    body:not(.always-bg) {
         background-image: none;
     }
 
@@ -4478,6 +4487,10 @@
         transform: none;
     }
 
+    #hsl-addr-selector {
+        min-width: 0;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -5566,12 +5579,15 @@
     }
 
 
+    .c-card-catalog-2__footer .c-card-catalog__basket,
+    .c-card-catalog-2__footer .c-card-catalog__count,
     .c-card-catalog__footer.v2 .c-card-catalog__basket,
     .c-card-catalog__footer.v2 .c-card-catalog__count {
         text-align: center;
         flex: 0 1 100%;
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__basket {
         justify-content: center;
     }
@@ -5629,6 +5645,9 @@
 
     .c-card-catalog__count .c-counter {
         margin: 0 auto;
+    }
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket .icon-shopping-cart {
+        margin: 0;
     }
     .c-card-catalog__basket .icon-shopping-cart {
         margin: 0 auto;
@@ -5893,6 +5912,7 @@
         padding: .3rem 1rem 0.3rem 1rem;
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__price,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__price {
         flex: 0 1 auto;
         margin: 0;
@@ -5910,6 +5930,7 @@
         justify-content: center
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__count {
         margin: 0;
         flex: 0 1 auto;
@@ -5921,6 +5942,7 @@
         border-radius: .6rem;
     }
 
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket,
     .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__basket {
         flex: 0 1 auto;
     }
@@ -5988,6 +6010,21 @@
 @media (max-width: 415px) {
     .catalog-col-4 .catalog-list__item {
         width: 100%;
+    }
+
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count {
+        width: 100%;
+    }
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__count .c-counter {
+        margin: 0 auto;
+    }
+
+    .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket {
+        width: 100%;
+        justify-content: center;
+    }
+    .pie .catalog-col-4 .c-card-catalog-2__footer .c-card-catalog__basket span  {
+        display: none;
     }
 
     .pie .catalog-col-4 .catalog-list__item {
@@ -6525,6 +6562,10 @@
 }
 
 @media screen and (max-width: 1020px) {
+    .loft .calendar {
+        padding-top: 0;
+    }
+    .loft .calendar-navigator,
     .holiday-space-list .calendar-navigator {
         display: none;
     }
@@ -6609,6 +6650,19 @@
 
     }
 
+    .holiday-space__list .c-card-cafe__title {
+        min-height: 0;
+        margin-bottom: 1rem;
+    }
+
+    .holiday-space__list .c-card-cafe-vertical__body {
+        padding-bottom: 0;
+    }
+
+    .holiday-space__list .c-card-cafe-vertical__footer {
+        position: relative;
+    }
+
 }
 
 @media screen and (max-width: 470px) {
@@ -6691,6 +6745,7 @@
 
     .holiday-space-list .c-card-cafe-vertical__footer {
         padding-top: 0;
+        /*position: static;*/
     }
 
     .holiday-space-list .c-card-cafe-vertical__footer::after {
@@ -6711,3 +6766,47 @@
 }
 
 /*endregion*/
+
+/* Holidays All */
+.holidays .holidays-list {
+    display: none;
+}
+
+@media screen and (max-width: 1260px) {
+    .holidays .holidays-grid {
+        width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .holidays .holidays-footer {
+        padding: 2rem 0;
+        flex-flow: column;
+    }
+
+    .holidays .holidays-advantages {
+        flex-flow: column;
+    }
+
+    .holidays .holidays-advantages__item {
+        min-width: 32rem;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .holidays .holidays-grid {
+        display: none;
+    }
+    .holidays .holidays-list {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .holidays-list {
+        margin-right: -1.6rem;
+        margin-left: -1.6rem;
+    }
+}

@@ -5506,7 +5506,7 @@
                                     <div class="const-filter-card__body">
                                         <ul class="const-filter-card__list">
                                             <li class="const-filter-card__item">
-                                                <input type="radio" name="lining" id="lining-1" class="const-radio" data-lining="1">
+                                                <input type="radio" name="lining" id="lining-1" class="const-radio" data-lining="1" checked>
                                                 <label class="const-label" for="lining-1">Меренга</label>
                                             </li>
                                             <li class="const-filter-card__item">
@@ -5525,20 +5525,13 @@
                                                 <input type="radio" name="lining" id="lining-5" class="const-radio" data-lining="5">
                                                 <label class="const-label" for="lining-5">Крем Милфей</label>
                                             </li>
-                                            <li class="const-filter-card__item">
-                                                <input type="radio" name="lining" id="lining-6" class="const-radio" data-lining="6">
-                                                <label class="const-label" for="lining-6">Фисташка дробленая</label>
-                                            </li>
-                                            <li class="const-filter-card__item">
-                                                <input type="radio" name="lining" id="lining-7" class="const-radio" data-lining="7">
-                                                <label class="const-label" for="lining-7">Безе</label>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
     
-                            <li class="constructor-filter__item active" id="filter_toy">
+                            <li class="constructor-filter__item" id="filter_toy">
                                 <div class="const-filter-card">
                                     <div class="const-filter-card__header">
                                         <div class="const-filter-card__title">Марципановые игрушки, орехи, безе, ягоды</div>
@@ -5572,16 +5565,27 @@
                         
                         <ul class="constructor-steps">
                             <li class="constructor-step active constructor-product-shape" id="cake_shape">
-                                <div class="constructor-product-shape__item behind" data-shape="round" data-tier="one">
-                                    <img src="constructor/img/cake-round-one.png" alt="">
-                                    <div class="constructor-product-shape__price">от <span>4500.-</span></div>
-                                    <a href="#" class="constructor-product-shape__btn">Хочу этот торт</a>
+
+                                <div class="wrap">
+                                    <div class="cube-wrap">
+
+                                        <div class="constructor-product-shape__item behind left sides" data-shape="round" data-tier="one">
+                                            <img src="constructor/img/cake-round-one.png" alt="">
+                                            <div class="constructor-product-shape__price">от <span>4500.-</span></div>
+                                            <a href="#" class="constructor-product-shape__btn">Хочу этот торт</a>
+                                        </div>
+                                        <div class="constructor-product-shape__item selected front sides" data-shape="round" data-tier="two">
+                                            <img src="constructor/img/cake-round-two.png" alt="">
+                                            <div class="constructor-product-shape__price">от <span>7600.-</span></div>
+                                            <a href="#" class="constructor-product-shape__btn">Хочу этот торт</a>
+                                        </div>
+
+                                    </div>
+                                    <!--END cube-wrap-->
                                 </div>
-                                <div class="constructor-product-shape__item selected" data-shape="round" data-tier="two">
-                                    <img src="constructor/img/cake-round-two.png" alt="">
-                                    <div class="constructor-product-shape__price">от <span>7600.-</span></div>
-                                    <a href="#" class="constructor-product-shape__btn">Хочу этот торт</a>
-                                </div>
+                                <!--END wrap-->
+
+
                             </li>
     
                             <li class="constructor-step constructor-product-cake" id="cake">

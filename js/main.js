@@ -31,11 +31,6 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
-
-/*анимация покачиания рамки в поводах для праздника holiday-reason-card*/
-
-
-
 $(window).on('load', function(){
 
 
@@ -173,6 +168,8 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    
+
 
     /*выбор месяцав календаре праздничных пространств*/
     $(document).on('click', '.calendar-header__month a:nth-child(1)', function(e){
@@ -214,6 +211,11 @@ $(document).ready(function ($) {
 
 
     $(document).on('click', '.c-card-catalog__footer.v2 .c-card-catalog__basket', function(){
+        $(this).hide();
+        $(this).siblings('.c-card-catalog__count').show();
+    });
+
+    $(document).on('click', '.c-card-catalog-2 .c-card-catalog__basket', function(){
         $(this).hide();
         $(this).siblings('.c-card-catalog__count').show();
     });
@@ -2790,11 +2792,14 @@ $(function() {
         fit:'cover'
     });
 
-    /* Calendar Selector */
-    new SimpleBar($('.calendar-selector__list')[0], {
-        autoHide: false,
-        scrollbarMinSize: 35,
-    });
+    if($('ul').hasClass('calendar-selector__list')){
+        /* Calendar Selector */
+        new SimpleBar($('.calendar-selector__list')[0], {
+            autoHide: false,
+            scrollbarMinSize: 35,
+        });
+    };
+
 
     $('.calendar-title__wrapper').on('click', function (event) {
         event.preventDefault();
@@ -2875,44 +2880,7 @@ $(function() {
             });
         }
     });
-
     // Calendar Hall Row Events
-    //      hide&show
-    function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index, class_hidden) {
-        $(sel_column).each(function(index, element) {
-            $(element).find(sel_box).each(function(j, box) {
-                if((j >= time_slot_count * page_index) &&
-                    (j < (time_slot_count * page_index + time_slot_count))) {
-                    $(box).removeClass(class_hidden);
-                } else {
-                    $(box).addClass(class_hidden);
-                }
-            });
-        });
-    }
-
-    //    bind event
-    function calendarHallUpdateBind(options) {
-        let owl = $(options.selector_owlCarousel);
-        owl.owlCarousel();
-        owl.on('changed.owl.carousel', function(event) {
-            calendarHallUpdateGrid(
-                options.selector_column,
-                options.selector_box,
-                options.time_slot_count,
-                event.page.index,
-                options.class_hidden
-            );
-
-            calendarHallUpdateGrid(
-                options.selector_nav_column,
-                options.selector_nav_box,
-                options.time_slot_count,
-                event.page.index,
-                options.class_hidden
-            );
-        })
-    }
     //      options
     let hsl_calendar_options = {
         selector_owlCarousel: '.calendar-nav-hall__row',
@@ -2945,3 +2913,94 @@ $(function() {
 
 });
 
+// Calendar Hall Row Events
+//      hide&show
+function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index, class_hidden) {
+    $(sel_column).each(function(index, element) {
+        $(element).find(sel_box).each(function(j, box) {
+            if((j >= time_slot_count * page_index) &&
+                (j < (time_slot_count * page_index + time_slot_count))) {
+                $(box).removeClass(class_hidden);
+            } else {
+                $(box).addClass(class_hidden);
+            }
+        });
+    });
+}
+
+//    bind event
+function calendarHallUpdateBind(options) {
+    let owl = $(options.selector_owlCarousel);
+    owl.trigger('destroy.owl.carousel');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        autoHeight: true,
+        nav: true
+    });
+
+
+    owl.on('changed.owl.carousel', function(event) {
+        calendarHallUpdateGrid(
+            options.selector_column,
+            options.selector_box,
+            options.time_slot_count,
+            event.page.index,
+            options.class_hidden
+        );
+
+        calendarHallUpdateGrid(
+            options.selector_nav_column,
+            options.selector_nav_box,
+            options.time_slot_count,
+            event.page.index,
+            options.class_hidden
+        );
+    })
+}
+
+
+// Holidays All
+//  functions
+function holidaysInit(selector) {
+    $(selector).find('li').each(function(index, elem){
+        $(elem).find('.holidays-list-item__caption').on('click', function(){
+            if(!$(this).hasClass('holidays-list-item__caption_selected')) {
+                $(selector).attr('current', index);
+            } else {
+                $(selector).attr('current', -1);
+            }
+            $(this).addClass('holidays-list-item__caption_selected');
+            $(elem).find('.holidays-list-item__body').removeClass('holidays-list-item__body_hidden');
+            holidaysListCollapse(selector, $(selector).attr('current'));
+        });
+    });
+}
+
+function holidaysListCollapse(selector, index) {
+    $(selector).find('li').each(function(_index, elem) {
+        if (_index != index) {
+            $(elem).find('.holidays-list-item__caption').removeClass('holidays-list-item__caption_selected');
+            $(elem).find('.holidays-list-item__body').addClass('holidays-list-item__body_hidden');
+        }
+    });
+}
+
+function holidaysAppleFix() {
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.indexOf('safari') != -1) {
+        if (ua.indexOf('chrome') > -1) {
+            // Chrome
+        } else {
+            // Safari
+            $('.holidays-count__number').addClass('holidays-apple-fix');
+        }
+    }
+}
+
+//  events listener
+$(function() {
+    holidaysInit('.holidays-list__body');
+    holidaysAppleFix();
+});

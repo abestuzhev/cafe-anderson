@@ -18,6 +18,7 @@ $(function(){
         this.filterTitle = $('.const-filter-card__header');
         this.filterShape = $('#filter_shape');
         this.filterFilling = $('#filter_filling');
+        this.filterLining = $('#filter_lining');
         this.radioShape = $('input[name="shape"]');
 
         this.tier = ['one', 'two'];
@@ -29,6 +30,7 @@ $(function(){
         this.selectedShape = this.elementShape.find('.selected').data('shape');
         this.selectedTier = this.elementShape.find('.selected').data('tier');
         this.selectedFilling = this.filterFilling.find('input[type="radio"]:checked').data('filling');
+        this.selectedLining = this.filterLining.find('input[type="radio"]:checked').data('lining');
 
         console.log(this.selectedFilling);
         // if (this.itemsShape.length !== 2) {
@@ -77,34 +79,37 @@ $(function(){
             // this.cakeShowBtn.on('click', function(e){
             //     e.preventDefault();
             //     $(this).parents('.constructor-product-shape__item')
-            // })
+            // });
 
             this.cakeShapeBtn.on('click', function(e){
                 e.preventDefault();
                 self.showCake();
                 self.changeFilling(self.selectedFilling, self.selectedShape);
                 self.showFilterItem(self.filterFilling.find('.const-filter-card__header'));
+                self.showPiece();
             });
 
 
             this.filterTitle.on('click', function(e){
                 e.preventDefault();
+
                 self.showFilterItem($(this));
 
-
-                if ($(this).parents('.constructor-filter__item').is('#filter_fillings')) {
-                   
-                }else {
-                    
-                }
             });
 
             this.filterFilling.find('.const-filter-card__header').on('click', function (e) {
                 e.preventDefault();
-                self.changeFilling(self.selectedFilling, self.selectedShape);
                 self.showCake();
-
+                self.changeFilling(self.selectedFilling, self.selectedShape);
                 self.showPiece();
+            });
+
+            this.filterLining.find('.const-filter-card__header').on('click', function (e) {
+                e.preventDefault();
+                self.showCake();
+                self.changeLining(self.selectedLining, self.selectedShape);
+                console.log('lining');
+                self.showFilterItem($(this));
             });
 
             this.filterShape.find('.const-filter-card__header').on('click', function(e){
@@ -114,20 +119,27 @@ $(function(){
             });
 
             $('#filter_filling input[type="radio"]').on('change', function(){
-                self.typeFilling = $(this).data('filling');
-                self.changeFilling(self.selectedFilling, self.typeShape);
+                self.selectedFilling = $(this).data('filling');
+                console.log('self.selectedShape: ' + self.selectedShape);
+                self.changeFilling(self.selectedFilling, self.selectedShape);
+                self.getTier();
+                self.getShape();
+            });
+
+            $('#filter_lining input[type="radio"]').on('change', function(){
+                self.selectedLining = $(this).data('lining');
+                console.log('self.selectedLining: ' + self.selectedLining);
+                self.changeLining(self.selectedLining, self.selectedShape);
                 self.getTier();
                 self.getShape();
             });
 
 
             $('#filter_shape input[type="radio"]').on('change', function(){
-                self.typeShape = $(this).data('filterShape');
-                self.changeShape(self.typeShape);
-                self.changeFilling(self.typeFilling, self.typeShape );
-
+                self.selectedShape = $(this).data('filterShape');
+                self.changeShape(self.selectedShape);
+                self.changeFilling(self.selectedFilling, self.selectedShape);
             });
-
             
         },
 
@@ -141,7 +153,8 @@ $(function(){
             this.getShape();
             this.cake.addClass('active').find('.cake-basis').attr('src', this.pathImg + 'cake-' + this.selectedShape + '-' + this.selectedTier + '.png');
             this.filterFilling.siblings().removeClass('active');;
-            this.filterFilling.addClass('active visited');
+            // this.filterFilling.addClass('active');
+            // this.filterFilling.addClass('visited');
         },
 
         showFilterItem: function(filterTitle){
@@ -170,14 +183,21 @@ $(function(){
             // console.log('this.selectedFilling:' + this.selectedFilling);
         },
 
+        getLining: function () {
+            this.selectedLining = this.filterLining.find('input[type="radio"]:checked').data('lining');
+
+        },
+
         changeShape: function(typeShape){
 
             var self = this;
             this.elementShape.find('.constructor-product-shape__item').each(function(i, elem){
                $(elem).data('shape', typeShape).attr('data-shape', typeShape);
-                $(elem).find('img').attr('src', self.pathImg + 'cake-'+ self.typeShape + '-' + self.tier[i] + '.png');
+                $(elem).find('img').attr('src', self.pathImg + 'cake-'+ typeShape + '-' + self.tier[i] + '.png');
                 // console.log('пусть картинки N' + i + ' ' + $(elem).find('img').attr('src'));
             });
+
+            $(this.cake.find('.cake-lining')).remove();
         },
 
         changeFilling: function(filling, shape){
@@ -186,9 +206,20 @@ $(function(){
 
             $(this.cake.find('.cake-filling')).remove();
             this.cake.append(fillingIMG);
+            $(this.cake.find('.cake-lining')).remove();
             
         },
-        
+
+        changeLining: function(lining, shape){
+            this.getLining();
+            var liningIMG = $('<img class="cake-lining" src="' + this.pathImg + 'lining-' + lining + '-' + shape + '-' + this.selectedTier + '.png' + '" alt="">');
+
+            $(this.cake.find('.cake-filling')).remove();
+            $(this.cake.find('.cake-lining')).remove();
+            this.cake.append(liningIMG);
+
+        },
+
         showPiece: function(){
             var piece;
             piece = $('<img class="cake-piece" src="' + this.pathImg + 'piece-default' + '-' + this.selectedShape + '-' + this.selectedTier + '.png' + '" alt="">');
@@ -224,6 +255,21 @@ $(function(){
 
     // console.log('carousel.selectedShape ' + carousel.selectedShape);
     // console.log('carousel.selectedTier ' + carousel.selectedTier);
+
+
+    /*НОВАЯ АНИМАЦИЯ В ВЫБОРЕ ЯРУСА*/
+
+    $('.left').on('click', function(e){
+        e.preventDefault();
+        $('.cube-wrap').addClass('active');
+    });
+
+
+    $('.front').on('click', function(e){
+        e.preventDefault();
+        $('.cube-wrap').removeClass('active');
+    });
+
 
 });
 /*конец обертки*/
