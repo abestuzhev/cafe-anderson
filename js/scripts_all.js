@@ -12230,7 +12230,34 @@ function holidaysAppleFix() {
 }
 
 //  events listener
-$(function() {
+// $(function() {
+
+// });
+
+
+
+// Holidays-reason
+
+
+$('.holiday-reason__slick').slick({
+    responsive: [
+        {
+        breakpoint: 3000,
+        settings: "unslick"
+        },
+        {
+        breakpoint: 1024,
+        settings:{
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+
+
     holidaysInit('.holidays-list__body');
     holidaysAppleFix();
 });
