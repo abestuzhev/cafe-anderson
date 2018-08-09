@@ -3018,7 +3018,7 @@ $(function() {
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 1,
-                            infinite: true
+                            infinite: false
                         }
                     },
                     {
@@ -3026,7 +3026,7 @@ $(function() {
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
-                            infinite: true
+                            infinite: false
                         }
                     },
                     {
@@ -3034,8 +3034,7 @@ $(function() {
                         settings: {
                             slidesToShow: 1,
                             slidesToScroll: 1,
-                            infinite: true,
-                            adaptiveHeight: true
+                            infinite: false
                         }
                     }
                 ]
