@@ -8368,7 +8368,7 @@ main {
   background-size: 99%; }
 
 .popup-poster .popup-box {
-  overflow: visible; }
+  overflow: hidden; }
 
 .popup-poster .popup-close {
   right: 10rem;
