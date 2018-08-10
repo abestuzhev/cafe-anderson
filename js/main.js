@@ -2700,84 +2700,85 @@ $(function() {
     /* show more */
     
     /* settings*/
-    var $target = $('.show-more-target');
-    var $control = $('.show-more');
-    var target_item_selector = 'div.c-col';
-    var hsl_start_count = 0;
-
-    var hsl_sizer = {
-        0: {
-            start_count: 3,
-        },
-        420: {
-            start_count: 3,
-        },
-        620: {
-            start_count: 4,
-        },
-        940: {
-            start_count: 6,
-        },
-        1225: {
-            start_count: 8,
-        },
-    };
+    // var $target = $('.show-more-target');
+    // var $control = $('.show-more');
+    // var target_item_selector = 'div.c-col';
+    // var hsl_start_count = 0;
+    //
+    // var hsl_sizer = {
+    //     0: {
+    //         start_count: 3,
+    //     },
+    //     420: {
+    //         start_count: 3,
+    //     },
+    //     620: {
+    //         start_count: 4,
+    //     },
+    //     940: {
+    //         start_count: 6,
+    //     },
+    //     1225: {
+    //         start_count: 8,
+    //     },
+    // };
     /* end settings */
 
-    var show_more_state_collapsed = true;
-    var target_count = $target.find(target_item_selector).length;
+    // var show_more_state_collapsed = true;
+    // var target_count = $target.find(target_item_selector).length;
+    //
+    // for (var propName in hsl_sizer) {
+    //     if($(window).width() > propName) {
+    //         hsl_start_count = hsl_sizer[propName].start_count;
+    //     }
+    // }
+    //
+    // $(window).on('resize', function() {
+    //     for (var propName in hsl_sizer) {
+    //         if($(window).width() > propName) {
+    //             hsl_start_count = hsl_sizer[propName].start_count;
+    //         }
+    //     }
+    //     if(show_more_state_collapsed) {
+    //         if (hsl_start_count < target_count) {
+    //             $target.find(target_item_selector).each(function (index, elem) {
+    //                 index >= hsl_start_count ? $(elem).hide() : $(elem).show();
+    //             });
+    //         }
+    //     }
+    //
+    // });
 
-    for (var propName in hsl_sizer) {
-        if($(window).width() > propName) {
-            hsl_start_count = hsl_sizer[propName].start_count;
-        }
-    }
-
-    $(window).on('resize', function() {
-        for (var propName in hsl_sizer) {
-            if($(window).width() > propName) {
-                hsl_start_count = hsl_sizer[propName].start_count;
-            }
-        }
-        if(show_more_state_collapsed) {
-            if (hsl_start_count < target_count) {
-                $target.find(target_item_selector).each(function (index, elem) {
-                    index >= hsl_start_count ? $(elem).hide() : $(elem).show();
-                });
-            }
-        }
-
-    });
-
-    $control.find('a').on('click', function(event) {
-        event.preventDefault();
-        show_more_state_collapsed = !show_more_state_collapsed;
-
-        $target.find(target_item_selector).each(function(index, elem) {
-            if(show_more_state_collapsed) {
-                index >= hsl_start_count ? $(elem).hide(): $(elem).show();
-            } else {
-                $(elem).show();
-            }
-        });
-
-        if (show_more_state_collapsed) {
-            $control.find('a').html('показать ещё');
-        } else {
-            $control.find('a').html('скрыть');
-        }
-
+    // $control.find('a').on('click', function(event) {
+    //     event.preventDefault();
+    //     show_more_state_collapsed = !show_more_state_collapsed;
+    //
+    //     $target.find(target_item_selector).each(function(index, elem) {
+    //         if(show_more_state_collapsed) {
+    //             index >= hsl_start_count ? $(elem).hide(): $(elem).show();
+    //         } else {
+    //             $(elem).show();
+    //         }
+    //     });
+    //
+    //     if (show_more_state_collapsed) {
+    //         $control.find('a').html('показать ещё');
+    //     } else {
+    //         $control.find('a').html('скрыть');
+    //     }
+    //
 
     //        if(current > target_count) $control.hide();
-    });
+    // });
+    //
+    //
+    //
+    // if(hsl_start_count < target_count) {
+    //     $target.find(target_item_selector).each(function(index, elem) {
+    //         index >= hsl_start_count ? $(elem).hide(): $(elem).show();
+    //     });
+    // }
 
-
-
-    if(hsl_start_count < target_count) {
-        $target.find(target_item_selector).each(function(index, elem) {
-            index >= hsl_start_count ? $(elem).hide(): $(elem).show();
-        });
-    }
     /* end show more */
 
 
