@@ -12272,11 +12272,13 @@ $(function() {
                 });
             }
     
-            holidaysInit('.holidays-list__body');
-            holidaysAppleFix();
+           
     
         });
     }
+
+    holidaysInit('.holidays-list__body');
+    holidaysAppleFix();
     
 });
 
