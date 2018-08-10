@@ -1,7 +1,10 @@
 .mobile-celebration__text,
 .mobile-cake__text,
 .mobile-cafe__text,
-.c-title-decor-layout__mobile {
+.c-title-decor-layout__mobile,
+.holiday-description__bg___mibile,
+.holiday-description__text___mobile,
+.l-button__mobile {
     display: none;
 }
 
@@ -3157,7 +3160,7 @@
     }
 
     body:not(.always-bg) {
-        background-image: none;
+        
     }
 
     .page-container,
@@ -7612,5 +7615,88 @@
 @media screen and (min-width: 365px) and (max-width: 479px) {
     .c-title-decor-layout__mobile.m-5m {
         margin: 5px;
+    }
+}
+
+
+/* holiday-tortzhestvo */
+
+@media screen and (max-width: 480px) {
+    .holiday .filter-mix {
+        display: none;
+    }
+    .holiday-assemble {
+        display: block;
+        height: 6.5rem;
+        width: 100%;
+        margin-bottom: 1.8rem;
+        border-radius: inherit; 
+    }
+    .holiday-assemble .c-symbol {
+        display: none;
+    }
+    .holiday-assemble span {
+        font-size: 1.7rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    .holiday-description {
+        padding: 0rem 1.6rem;
+        height: 45rem;
+        background: #ebedf3;
+    }
+    .holiday-description__title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .holiday-box {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+        border-left: none;
+        border-right: none;
+    }
+    .holiday-description__grid {
+        display: none;
+    }
+    .holiday-description .l-button {
+        display: none;
+    }
+    .holiday-description__bg {
+        display: none;
+    }
+    .holiday-description__bg___mibile {
+        display: block;
+    }
+    .holiday-box--tortzhestvo .holiday-description__bg {
+        right: inherit;
+    }
+    .holiday-order {
+        padding: 4.5rem 1.6rem 2.7rem 1.6rem;
+    }
+    .holiday-description__text___mobile {
+        display: block;
+    }
+    .holiday-description__text___mobile p {
+        margin-bottom: 3rem;
+    }
+    .holiday-description__text {
+        margin-bottom: 0rem;
+    }
+    .l-button__mobile {
+        display: block;
+    }
+    .holiday .l-button .c-button {
+        margin-right: 0rem;
+        width: 100%;
+        padding: 1.2rem 2.2rem !important;
+        text-align: center;
+    }
+    .c-button__decor-1 {
+        margin-bottom: 1.5rem;
+    }
+    .c-button__decor-2 {
+        max-width: 100%;
+        margin-bottom: 2.8rem;
     }
 }
