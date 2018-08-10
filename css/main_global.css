@@ -19895,7 +19895,7 @@ a.show-more__button:hover {
 /* Calendar Selector */
 .calendar-selector {
   position: absolute;
-  z-index: 11;
+  z-index: 12;
   width: 100%;
   top: -2.2rem;
   left: 50%;
