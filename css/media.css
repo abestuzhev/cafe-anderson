@@ -3,8 +3,12 @@
 .mobile-cafe__text,
 .c-title-decor-layout__mobile,
 .holiday-description__bg___mibile,
+.holiday-description__bg___mibile-2,
 .holiday-description__text___mobile,
-.l-button__mobile {
+.l-button__mobile,
+.holiday-order__mobile,
+.filter-btn__reset__mdb,
+.nav-mobile {
     display: none;
 }
 
@@ -7620,58 +7624,193 @@
 
 
 /* holiday-tortzhestvo */
+@media screen and (max-width: 1300px) {
+    .holiday .filter-mix__item span {
+        display: block;
+    }
+    .holiday .holiday-order {
+        padding: 2.5rem 1.6rem;
+    }
+    .holiday .holiday-box {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 2rem;
+    }
+    .holiday-description {
+        padding: 2rem;
+        height: 64rem;
+        background: #eaecf2;
+    }
+    .holiday-description__title {
+        text-align: center;
+        margin-bottom: 0rem;
+        font-size: 4.5rem;
+        line-height: 0.8;
+    }
+    .holiday-description__bg {
+        display: none;
+    }
+    .holiday .c-input {
+        font-size: 1.7rem;
+    }
+    .holiday .c-label {
+        font-size: 1.7rem; 
+    }
+    .holiday .c-checkbox {
+        font-size: 1.4rem;
+    }
+    .holiday .c-form__info {
+        font-size: 1.5rem;
+    }
+    .holiday-box--tortzhestvo .holiday-description__bg {
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .holiday-description__bg___mibile-2 {
+        display: block;
+    }
+    .holiday .holiday-description__grid {
+        display: none;
+    }
+    .holiday .holiday-description .l-button {
+        display: none;
+    }
+    .holiday-order__mobile {
+        display: block;
+    }
+    .holiday-description__text___mobile {
+        display: block;
+    }
+    .holiday-description__text___mobile p {
+        margin-bottom: 3rem;
+    }
+    .holiday-description__text {
+        min-height: inherit;
+    }
+    .holiday-description__text {
+        margin-bottom: 0rem;
+    }
+    .l-button__mobile {
+        display: block;
+    }
+    .l-button__mobile a {
+        display: inline-block;
+    }
+    .l-button__mobile .c-button__decor-1 {
+        font-size: 2.2rem;
+        padding: 1.2rem 4.2rem;
+        margin-right: 1rem !important;
+        width: 49%;
+        text-align: center;
+    }
+    .l-button__mobile .c-button__decor-2 {
+        font-size: 2.2rem;
+        width: 49%;
+        text-align: center;
+        max-width: inherit;
+        height: 5.9rem;
+        padding: 1.8rem 1rem;
+    }
+    .holiday .c-symbol {
+        z-index: 1;
+    }
+    .holiday .filter .filter-item:nth-child(1), .holiday .filter .filter-item:nth-child(2) {
+        width: 20%;
+    }
+    .holiday .c-col-3 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .holiday .symbol-city,
+    .holiday .symbol-clock-2,
+    .holiday .symbol-table {
+        fill: #b66490;
+    }
+    .holiday .symbol-phone {
+        fill: #78bd11;
+        top: .5rem !important; 
+    }
+    .text-phone__mobile {
+        color: #78bd11;
+    }
+    .holiday .c-card-cafe-vertical__item {
+        color: #555451;
+        font-size: 1.5rem;
+    }
+    .holiday .c-button__medium {
+        font-size: 1.5rem;
+        height: 4.5rem;
+        padding: 1.4rem 2.2rem;
+        border-radius: .3rem;
+    }
+}
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 768px) {
     .holiday .filter-mix {
         display: none;
     }
-    .holiday-assemble {
+    .holiday .holiday-assemble {
         display: block;
         height: 6.5rem;
         width: 100%;
         margin-bottom: 1.8rem;
         border-radius: inherit; 
     }
-    .holiday-assemble .c-symbol {
+    .holiday .holiday-assemble .c-symbol {
         display: none;
     }
-    .holiday-assemble span {
+    .holiday .holiday-assemble span {
         font-size: 1.7rem;
         padding-top: 2rem;
         display: block;
     }
-    .holiday-description {
-        padding: 0rem 1.6rem;
-        height: 45rem;
-        background: #ebedf3;
+    .holiday .holiday-description {
+        padding: 1rem 1.6rem;
+        height: 43rem;
+        background: #eff1f5;
     }
-    .holiday-description__title {
+    .holiday .holiday-description__title {
         font-size: 4rem;
         margin-bottom: 2rem;
         text-align: center;
     }
-    .holiday-box {
+    .holiday-description__text {
+        min-height: inherit;
+    }
+    .holiday .holiday-box {
         margin-left: -1.6rem;
         margin-right: -1.6rem;
         border-left: none;
         border-right: none;
+        margin-bottom: 2rem;
     }
-    .holiday-description__grid {
+    .holiday .holiday-description__grid {
         display: none;
     }
-    .holiday-description .l-button {
+    .holiday .holiday-description .l-button {
         display: none;
     }
-    .holiday-description__bg {
+    .holiday .holiday-description__bg {
         display: none;
     }
-    .holiday-description__bg___mibile {
+    .holiday .holiday-description__bg___mibile {
         display: block;
     }
     .holiday-box--tortzhestvo .holiday-description__bg {
-        right: inherit;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
     }
-    .holiday-order {
+    .holiday .holiday-order {
         padding: 4.5rem 1.6rem 2.7rem 1.6rem;
     }
     .holiday-description__text___mobile {
@@ -7692,11 +7831,135 @@
         padding: 1.2rem 2.2rem !important;
         text-align: center;
     }
-    .c-button__decor-1 {
+    .holiday .c-button__decor-1 {
         margin-bottom: 1.5rem;
     }
-    .c-button__decor-2 {
+    .holiday .c-button__decor-2 {
         max-width: 100%;
-        margin-bottom: 2.8rem;
+    }
+    .holiday-order__mobile {
+        display: block;
+    }
+    .holiday .c-form__info {
+        margin-bottom: 1.8rem;
+    }
+    .holiday .datepicker-layout {
+        margin-bottom: 1.1rem;
+    }
+    .holiday-order__title {
+        color: #555451;
+    }
+    .holiday-box--tortzhestvo .symbol-unicorn {
+        z-index: 1;
+        bottom: -10.5rem;
+        right: -15rem;
+    }
+    .holiday .c-form__grid {
+        display: block;
+    }
+    .holiday .c-form__col {
+        width: 100%;
+    }
+    .holiday .c-input {
+        background: #ffffff;
+    }
+    .holiday .c-button__default {
+        height: 5.4rem;
+        background-color: #7cbd41;
+        font-size: 1.8rem;
+        border-radius: 0.3rem;
+    }
+    .holiday .filter .c-button {
+        width: 100%;
+    }
+    .holiday .c-title__h2 {
+        color: #5c3321;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    .holiday-space .filter {
+        display: block;
+    }
+    .holiday .c-form__col--inline {
+        display: block;
+    }
+    .holiday .filter .filter-item:nth-child(1), .holiday .filter .filter-item:nth-child(2) {
+        width: 100%;
+    }
+    .holiday .filter .filter-item:nth-child(3) {
+        width: 100%;
+    }
+    .holiday .filter .l-button__center {
+        display: none;
+        margin-top: 0rem;
+    }
+    .holiday .filter-btn__reset__mdn {
+        display: none !important;
+    }
+    .holiday .filter-btn__reset__mdb {
+        display: block;
+        margin-top: .5rem !important;
+    }
+    .holiday .c-col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .holiday .symbol-city,
+    .holiday .symbol-clock-2,
+    .holiday .symbol-table {
+        fill: #b66490;
+    }
+    .holiday .symbol-phone {
+        fill: #78bd11;
+        top: .5rem !important; 
+    }
+    .text-phone__mobile {
+        color: #78bd11;
+    }
+    .holiday .c-card-cafe-vertical__item {
+        color: #555451;
+        font-size: 1.5rem;
+    }
+    .holiday .c-button__medium {
+        font-size: 1.5rem;
+        height: 4.5rem;
+        padding: 1.4rem 2.2rem;
+        border-radius: .3rem;
+    }
+    .sub-buttons {
+        display: none;
+    }
+    .sub-buttons a {
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+        border-radius: .3rem;
+        padding: 1.4rem;
+        height: 4.5rem;
+        margin-bottom: .1rem;
+    }
+    .main-button {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+        border-radius: .3rem;
+        padding: 1.4rem;
+        height: 4.5rem;
+        margin-bottom: .5rem;
+    }
+    .nav-mobile {
+        margin-bottom: 2rem;
+        display: block;
+    }
+    .nav-mobile .c-button {
+        text-transform: capitalize;
+    }
+    .main-button__img {
+        position: absolute;
+        right: 1rem;
+        top: 1.3rem;
     }
 }

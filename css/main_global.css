@@ -20008,6 +20008,13 @@ a.show-more__button:hover {
 .holidays {
   text-align: center; }
 
+.fill-mameninyi {
+  background: #c2dd99;
+  color: #598419; }
+
+.fill-christening {
+  background: #9acc4f; }
+
 .holidays-grid {
   display: -webkit-box;
   display: -ms-flexbox;
