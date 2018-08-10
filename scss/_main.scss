@@ -2517,6 +2517,9 @@ test popup
   visibility: visible !important;
   transform: scale(1);
   transition: all .1s ease;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .is-show__smoothly {

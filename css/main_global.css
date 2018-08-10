@@ -8857,7 +8857,9 @@ test popup
           transform: scale(1);
   -webkit-transition: all .1s ease;
   -o-transition: all .1s ease;
-  transition: all .1s ease; }
+  transition: all .1s ease;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .is-show__smoothly {
   opacity: 1 !important;
