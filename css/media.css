@@ -1126,6 +1126,10 @@
     .loft-info__title {
         margin-bottom: 1rem;
     }
+
+    .calendar-period {
+        padding: 2rem 2rem;
+    }
 }
 
 @media (max-width: 1040px) {
