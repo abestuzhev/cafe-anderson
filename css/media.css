@@ -1130,6 +1130,10 @@
     .calendar-period {
         padding: 2rem 2rem;
     }
+
+    .calendar-navigator__link {
+        font-size: 2.3rem;
+    }
 }
 
 @media (max-width: 1040px) {
