@@ -193,9 +193,11 @@ $(function(){
             var self = this;
             this.elementShape.find('.constructor-product-shape__item').each(function(i, elem){
                $(elem).data('shape', typeShape).attr('data-shape', typeShape);
-                $(elem).find('img').attr('src', self.pathImg + 'cake-'+ self.typeShape + '-' + self.tier[i] + '.png');
+                $(elem).find('img').attr('src', self.pathImg + 'cake-'+ typeShape + '-' + self.tier[i] + '.png');
                 // console.log('пусть картинки N' + i + ' ' + $(elem).find('img').attr('src'));
             });
+
+            $(this.cake.find('.cake-lining')).remove();
         },
 
         changeFilling: function(filling, shape){
@@ -204,6 +206,7 @@ $(function(){
 
             $(this.cake.find('.cake-filling')).remove();
             this.cake.append(fillingIMG);
+            $(this.cake.find('.cake-lining')).remove();
             
         },
 
@@ -211,6 +214,7 @@ $(function(){
             this.getLining();
             var liningIMG = $('<img class="cake-lining" src="' + this.pathImg + 'lining-' + lining + '-' + shape + '-' + this.selectedTier + '.png' + '" alt="">');
 
+            $(this.cake.find('.cake-filling')).remove();
             $(this.cake.find('.cake-lining')).remove();
             this.cake.append(liningIMG);
 
@@ -251,6 +255,21 @@ $(function(){
 
     // console.log('carousel.selectedShape ' + carousel.selectedShape);
     // console.log('carousel.selectedTier ' + carousel.selectedTier);
+
+
+    /*НОВАЯ АНИМАЦИЯ В ВЫБОРЕ ЯРУСА*/
+
+    $('.left').on('click', function(e){
+        e.preventDefault();
+        $('.cube-wrap').addClass('active');
+    });
+
+
+    $('.front').on('click', function(e){
+        e.preventDefault();
+        $('.cube-wrap').removeClass('active');
+    });
+
 
 });
 /*конец обертки*/

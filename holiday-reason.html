@@ -38,6 +38,8 @@
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all"/>
     <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="./js/slick/slick.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="./js/slick/slick-theme.css" rel="stylesheet" media="all"/>
     <link rel="stylesheet" href="./css/main_global.css">
     <link rel="stylesheet" href="./css/sticky-header.css">
     <link rel="stylesheet" href="./css/test.css">
@@ -2401,9 +2403,10 @@
                     
                     
                 </div>
-                <div class="holiday-reason__grid">
+                <div class="holiday-reason__grid holiday-reason__slick">
                     <div class="holiday-reason__col holiday-reason--child">
                         <div class="c-title-decor-layout">
+                        	<p class="c-title-decor-layout__mobile m-5"c>Выберите тип празника:</p>
                             <h2 class="c-title-decor-1">Детские праздники</h2>
                         </div>
                         <div class="holiday-reason-card holiday-reason-card--karapuznik" style="background-image:url('./img/holiday/holiday-reason-img--karapuznik.jpg');">
@@ -2467,6 +2470,7 @@
                     </div>
                     <div class="holiday-reason__col holiday-reason--family">
                         <div class="c-title-decor-layout">
+                        	<p class="c-title-decor-layout__mobile"c>Выберите тип празника:</p>
                             <h2 class="c-title-decor-1">Взрослые/семейные праздники</h2>
                         </div>
                         <div class="holiday-reason-card holiday-reason-card--feast" style="background-image:url('./img/holiday/holiday-reason-img--feast.jpg');">
@@ -2527,6 +2531,7 @@
                     </div>
                     <div class="holiday-reason__col holiday-reason--corporate">
                         <div class="c-title-decor-layout">
+                        	<p class="c-title-decor-layout__mobile m-5m"c>Выберите тип празника:</p>
                             <h2 class="c-title-decor-1">
                                 Корпоративные праздники
                                 <span>(не) серьезные праздники</span>
@@ -3593,7 +3598,7 @@
 </div>
 
 <script src="./bower_components/jquery/dist/jquery.js"></script>
-
+<script src="./js/slick/slick.js"></script>
 <!--<script src="./js/preloader.js"></script>-->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
 <!--<div id="listScripts"></div>-->
@@ -3611,7 +3616,7 @@
 <!-- <script src="./js/ymaps-touch-scroll.bundle.js"></script> -->
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <!--<script src="./js/custom-map.js"></script>-->
-<!--<script src="./js/main.js"></script>-->
+<script src="./js/main.js"></script>
 <script async src="./js/scripts_all.js"></script>
 </body>
 </html>
