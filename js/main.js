@@ -3000,6 +3000,85 @@ function holidaysAppleFix() {
     }
 }
 
+//      gridPosition
+function customGridRefreshPosition(container, block, cols = 'auto') {
+    let container_width = $(container).width();
+    let map = [];
+
+    let cont = { height_u: 0, width_u: 0};
+
+    let minWidth = container_width;
+    let minHeight = 10000;
+    let block_count = $(block).length;
+
+    $(block).each(function(index, elem) {
+        let $block = $(elem);
+        let block_width = $block.outerWidth();
+        let block_height = $block.outerHeight();
+        if (minWidth > block_width) minWidth = block_width;
+        if (minHeight > block_height) minHeight = block_height;
+    });
+
+    let map_width = 1;
+    if(cols == 'auto') {
+        map_width = container_width / (minWidth - 1) >> 0;
+    } else {
+        map_width = cols;
+    }
+
+    for (let i=0; i < block_count; i++) {
+        map[i] = [];
+        for (let j=0; j < map_width; j++) {
+            map[i][j] = 1;
+        }
+    }
+
+    $(block).each(function(index, elem) {
+        let $block = $(elem);
+        let block_width = $block.outerWidth();
+        let block_height = $block.outerHeight();
+        let block_width_U = Math.round(block_width/minWidth);
+        let block_height_U = Math.round(block_height/minHeight);
+        let block_position = {x:-1000, y:-1000, cellSum:0};
+        let posFindFlag = false;
+
+        for (let i=0; i < map.length; i++) {
+            for (let j=0; j < map_width; j++) {
+
+                if(map[i][j] != 0) {
+                    block_position.cellSum = block_height_U * block_width_U;
+                    for (let k = 0; k < block_height_U; k++) {
+                        for (let l = 0; l < block_width_U; l++) {
+                            if (((i + k) < map.length) && ((j + l) < map_width))
+                                block_position.cellSum -= map[i + k][j + l];
+                        }
+                    }
+                    if (block_position.cellSum == 0) {
+                        posFindFlag = true;
+                        block_position.x = j * minWidth;
+                        block_position.y = i * minHeight;
+                        for (let k = 0; k < block_height_U; k++) {
+                            for (let l = 0; l < block_width_U; l++) {
+                                if (((i + k) < map.length) && ((j + l) < map_width))
+                                    map[i + k][j + l] = 0;
+                                if(cont.height_u < (i+k)) cont.height_u = i+k;
+                                if(cont.width_u < (j+l)) cont.width_u = j+l;
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+            if(posFindFlag) break;
+        }
+        $block.css('left', block_position.x);
+        $block.css('top', block_position.y);
+    });
+
+    $(container).css('height',(cont.height_u+1) * minHeight);
+}
+
+
 //  events listener
 $(function() {
     if($('div').hasClass('holiday-reason__grid')){
@@ -3050,6 +3129,15 @@ $(function() {
 
     holidaysInit('.holidays-list__body');
     holidaysAppleFix();
+
+    if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
+        customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
+        $(window).on('resize', function () {
+            customGridRefreshPosition('.holidays-grid', '.holidays-grid__container');
+        });
+    }
+
+
     
 });
 

@@ -17154,8 +17154,7 @@ a.show-more__button:hover {
 }
 
 .holidays-grid {
-    display: flex;
-    flex-flow: row wrap;
+    position: relative;
     width: 100%;
     margin-left: -1.4rem;
 
@@ -17176,6 +17175,7 @@ a.show-more__button:hover {
         min-width: 30rem;
         height: 23rem;
         padding: 1.2rem 1.4rem;
+        position: absolute;
     }
 
     &__block {
@@ -17209,7 +17209,7 @@ a.show-more__button:hover {
         display: inline-block;
         position: relative;
         z-index: 5;
-        padding: 1.8rem 2rem;
+        padding: 1.8rem 1.8rem;
         padding-bottom: 1.5rem;
         border-radius: 10px;
         border: 0;
@@ -17223,7 +17223,8 @@ a.show-more__button:hover {
         text-transform: uppercase;
         outline: none;
         border: none;
-        white-space: nowrap;
+        left: -50%;
+        max-width: 97%;
 
         &:after {
             border: none;
@@ -17233,18 +17234,18 @@ a.show-more__button:hover {
         &:hover {
             color: rgba(255,255,255,1);
         }
-
-        &:hover:after {
-            content: '';
-            background-color: rgba(255,255,255,0.1);
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 5;
-            width: 100%;
-            height: 100%;
-            border-radius: 1rem;
-        }
+        //
+        //&:hover:after {
+        //    content: '';
+        //    background-color: rgba(255,255,255,0.1);
+        //    position: absolute;
+        //    top: 0;
+        //    left: 0;
+        //    z-index: 5;
+        //    width: 100%;
+        //    height: 100%;
+        //    border-radius: 1rem;
+        //}
     }
 
     a.holidays-grid__button {
@@ -17256,10 +17257,9 @@ a.show-more__button:hover {
         display: block;
         width: 100%;
         bottom: 1rem;
-        left: 0;
-        overflow: hidden;
+        left: 50%;
+
         text-align: center;
-        height: 7rem; /* hover bug fix */
     }
 
     &__body {
@@ -17284,11 +17284,12 @@ a.show-more__button:hover {
         padding-bottom: 3rem;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
+        color: #555451;
     }
 
     /* sizes */
     &_row-span_2 {
-        height: 49rem;
+        height: 46rem;
     }
 
     &_col-span_2 {
@@ -17297,6 +17298,25 @@ a.show-more__button:hover {
     }
 
 }
+
+.holidays-clear_link {
+  color: #555451;
+
+  &:hover {
+    color: #555451;
+  }
+
+  &:after {
+    content: '';
+    border: none;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
 
 .holidays-footer {
     padding-left: 0rem;
@@ -17450,6 +17470,10 @@ a.show-more__button:hover {
 }
 
 .holidays {
+    .holidays-count {
+      transform: scale(1.15);
+      margin-left: 1.4rem;
+    }
     .holidays-count__line {
         display: flex;
         flex-flow: row nowrap;

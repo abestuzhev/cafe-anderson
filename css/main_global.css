@@ -20011,13 +20011,7 @@ a.show-more__button:hover {
   text-align: center; }
 
 .holidays-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  position: relative;
   width: 100%;
   margin-left: -1.4rem;
   /* sizes */ }
@@ -20037,7 +20031,8 @@ a.show-more__button:hover {
     width: 25%;
     min-width: 30rem;
     height: 23rem;
-    padding: 1.2rem 1.4rem; }
+    padding: 1.2rem 1.4rem;
+    position: absolute; }
   .holidays-grid__block {
     width: 100%;
     height: 100%;
@@ -20060,7 +20055,7 @@ a.show-more__button:hover {
     display: inline-block;
     position: relative;
     z-index: 5;
-    padding: 1.8rem 2rem;
+    padding: 1.8rem 1.8rem;
     padding-bottom: 1.5rem;
     border-radius: 10px;
     border: 0;
@@ -20073,22 +20068,13 @@ a.show-more__button:hover {
     text-transform: uppercase;
     outline: none;
     border: none;
-    white-space: nowrap; }
+    left: -50%;
+    max-width: 97%; }
     .holidays-grid__button:after {
       border: none;
       width: auto; }
     .holidays-grid__button:hover {
       color: white; }
-    .holidays-grid__button:hover:after {
-      content: '';
-      background-color: rgba(255, 255, 255, 0.1);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 5;
-      width: 100%;
-      height: 100%;
-      border-radius: 1rem; }
   .holidays-grid a.holidays-grid__button {
     z-index: 10; }
   .holidays-grid__block-footer {
@@ -20096,11 +20082,8 @@ a.show-more__button:hover {
     display: block;
     width: 100%;
     bottom: 1rem;
-    left: 0;
-    overflow: hidden;
-    text-align: center;
-    height: 7rem;
-    /* hover bug fix */ }
+    left: 50%;
+    text-align: center; }
   .holidays-grid__body {
     width: 100%;
     height: 100%;
@@ -20128,12 +20111,26 @@ a.show-more__button:hover {
     font-size: 1.6rem;
     padding-bottom: 3rem;
     padding-left: 1.2rem;
-    padding-right: 1.2rem; }
+    padding-right: 1.2rem;
+    color: #555451; }
   .holidays-grid_row-span_2 {
-    height: 49rem; }
+    height: 46rem; }
   .holidays-grid_col-span_2 {
     width: 50%;
     min-width: 60rem; }
+
+.holidays-clear_link {
+  color: #555451; }
+  .holidays-clear_link:hover {
+    color: #555451; }
+  .holidays-clear_link:after {
+    content: '';
+    border: none;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 0;
+    top: 0; }
 
 .holidays-footer {
   padding-left: 0rem;
@@ -20250,6 +20247,12 @@ a.show-more__button:hover {
       background-repeat: no-repeat;
       margin-right: -2.2rem;
       margin-left: -2.2rem; }
+
+.holidays .holidays-count {
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+  margin-left: 1.4rem; }
 
 .holidays .holidays-count__line {
   display: -webkit-box;
