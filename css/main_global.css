@@ -20248,6 +20248,12 @@ a.show-more__button:hover {
       margin-right: -2.2rem;
       margin-left: -2.2rem; }
 
+.holidays .holidays-count {
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+  margin-left: 1.4rem; }
+
 .holidays .holidays-count__line {
   display: -webkit-box;
   display: -ms-flexbox;

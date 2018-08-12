@@ -17470,6 +17470,10 @@ a.show-more__button:hover {
 }
 
 .holidays {
+    .holidays-count {
+      transform: scale(1.15);
+      margin-left: 1.4rem;
+    }
     .holidays-count__line {
         display: flex;
         flex-flow: row nowrap;
