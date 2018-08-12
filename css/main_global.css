@@ -6377,10 +6377,10 @@ div.c-card-catalog-2 {
       left: -1px;
       right: -1px;
       height: 6px;
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, transparent));
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(transparent));
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, rgba(0, 0, 0, 0)));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
     .header-categories-grid {
       display: -webkit-box;
@@ -9612,7 +9612,7 @@ test popup
           position: absolute;
           top: 0;
           left: 0; }
-      .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
+      .cafe-info__item i[class*="icon"] ,
       .cafe-info__item img {
         position: absolute;
         top: 0;
@@ -16696,8 +16696,7 @@ test popup
       z-index: 2;
       float: right;
       opacity: .5;
-      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
-              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
   .holiday-box--tortzhestvo {
     /*holiday-box--tortzhestvo*/ }
     .holiday-box--tortzhestvo .holiday-description-fake {
@@ -16716,8 +16715,7 @@ test popup
     .holiday-box--karapuznik .holiday-description-fake {
       width: 38%;
       height: 57rem;
-      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
-              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
   .holiday-box--mameninyi {
     /*holiday-box--mameninyi*/ }
     .holiday-box--mameninyi .holiday-description__text {
@@ -20013,13 +20011,7 @@ a.show-more__button:hover {
   text-align: center; }
 
 .holidays-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  position: relative;
   width: 100%;
   margin-left: -1.4rem;
   /* sizes */ }
@@ -20039,7 +20031,8 @@ a.show-more__button:hover {
     width: 25%;
     min-width: 30rem;
     height: 23rem;
-    padding: 1.2rem 1.4rem; }
+    padding: 1.2rem 1.4rem;
+    position: absolute; }
   .holidays-grid__block {
     width: 100%;
     height: 100%;
@@ -20062,7 +20055,7 @@ a.show-more__button:hover {
     display: inline-block;
     position: relative;
     z-index: 5;
-    padding: 1.8rem 2rem;
+    padding: 1.8rem 1.8rem;
     padding-bottom: 1.5rem;
     border-radius: 10px;
     border: 0;
@@ -20075,22 +20068,13 @@ a.show-more__button:hover {
     text-transform: uppercase;
     outline: none;
     border: none;
-    white-space: nowrap; }
+    left: -50%;
+    max-width: 97%; }
     .holidays-grid__button:after {
       border: none;
       width: auto; }
     .holidays-grid__button:hover {
       color: white; }
-    .holidays-grid__button:hover:after {
-      content: '';
-      background-color: rgba(255, 255, 255, 0.1);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 5;
-      width: 100%;
-      height: 100%;
-      border-radius: 1rem; }
   .holidays-grid a.holidays-grid__button {
     z-index: 10; }
   .holidays-grid__block-footer {
@@ -20098,11 +20082,8 @@ a.show-more__button:hover {
     display: block;
     width: 100%;
     bottom: 1rem;
-    left: 0;
-    overflow: hidden;
-    text-align: center;
-    height: 7rem;
-    /* hover bug fix */ }
+    left: 50%;
+    text-align: center; }
   .holidays-grid__body {
     width: 100%;
     height: 100%;
@@ -20130,12 +20111,26 @@ a.show-more__button:hover {
     font-size: 1.6rem;
     padding-bottom: 3rem;
     padding-left: 1.2rem;
-    padding-right: 1.2rem; }
+    padding-right: 1.2rem;
+    color: #555451; }
   .holidays-grid_row-span_2 {
-    height: 49rem; }
+    height: 46rem; }
   .holidays-grid_col-span_2 {
     width: 50%;
     min-width: 60rem; }
+
+.holidays-clear_link {
+  color: #555451; }
+  .holidays-clear_link:hover {
+    color: #555451; }
+  .holidays-clear_link:after {
+    content: '';
+    border: none;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 0;
+    top: 0; }
 
 .holidays-footer {
   padding-left: 0rem;
@@ -20649,7 +20644,8 @@ a.show-more__button:hover {
 @media screen and (max-width: 680px) {
   .pie-form__item:nth-child(1), .pie-form__item:nth-child(2), .pie-form__item:nth-child(3) {
     width: 100%; }
-  .pie-form__item:nth-child(4), .pie-form__item:nth-child(5) {
+  .pie-form__item:nth-child(4),
+  .pie-form__item:nth-child(5) {
     width: 50%; }
   .pie-form__title {
     font-size: 2rem; }
