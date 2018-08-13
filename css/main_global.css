@@ -20032,7 +20032,8 @@ a.show-more__button:hover {
     min-width: 30rem;
     height: 23rem;
     padding: 1.2rem 1.4rem;
-    position: absolute; }
+    position: absolute;
+    left: -1000rem; }
   .holidays-grid__block {
     width: 100%;
     height: 100%;
