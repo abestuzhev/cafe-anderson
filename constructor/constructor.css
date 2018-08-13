@@ -43,8 +43,8 @@
 
 .constructor-filter__item {}
 
-.constructor-filter__item.active .const-filter-card__body {
-    /*display: block;*/
+.constructor-filter__item:first-child.active .const-filter-card__body {
+    display: block;
 }
 
 .const-filter-card {}
