@@ -19489,7 +19489,10 @@ test popup
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; }
+            flex-flow: row nowrap;
+    margin-top: 2.5rem; }
+  .holiday-space-list .filter .c-button {
+    padding: .7rem 1.4rem; }
   .holiday-space-list .filter .filter-item:nth-child(1) {
     width: 100%; }
   .holiday-space-list .filter .filter-item:nth-child(2) {

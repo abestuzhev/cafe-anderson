@@ -16429,6 +16429,7 @@ test popup
 
   }
 
+
   .filter {
     width: 100%;
     display: block;
@@ -16436,6 +16437,11 @@ test popup
     .l-button__center {
       display: flex;
       flex-flow: row nowrap;
+      margin-top: 2.5rem;
+    }
+
+    .c-button {
+      padding: .7rem 1.4rem;
     }
 
     .filter-item:nth-child(1) {
