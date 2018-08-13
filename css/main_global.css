@@ -19360,13 +19360,21 @@ test popup
     z-index: 1;
     border-right: none !important;
     border-bottom: none !important; }
+    .calendar-box__wraplink {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      color: #555451; }
     .calendar-box span {
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+              transform: translate(-50%, -50%);
+      white-space: nowrap; }
     .calendar-box--last {
       background: -o-linear-gradient(55.3deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%);
       background: linear-gradient(34.7deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%); }
