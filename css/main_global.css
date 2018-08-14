@@ -19242,6 +19242,20 @@ test popup
     .calendar-period__text {
       display: inline-block;
       padding: 0 .5rem; }
+  .calendar-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .calendar-body {
     /*calendar-body*/
     display: -webkit-box;
@@ -19257,6 +19271,12 @@ test popup
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
+    .calendar-body.testcalendar {
+      display: block; }
+      .calendar-body.testcalendar .calendar-nav-hall {
+        min-height: 100%; }
+      .calendar-body.testcalendar .calendar-track {
+        padding-bottom: 0; }
   .calendar-nav {
     /*calendar-nav*/
     -webkit-box-flex: 0;

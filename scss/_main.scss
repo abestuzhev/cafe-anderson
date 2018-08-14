@@ -16166,11 +16166,30 @@ test popup
     }
   }
 
+  &-line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
   &-body { /*calendar-body*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
+
+    &.testcalendar {
+      display: block;
+
+      .calendar-nav-hall {
+        min-height: 100%;
+      }
+
+      .calendar-track {
+        padding-bottom: 0;
+      }
+    }
   }
 
   &-nav { /*calendar-nav*/
