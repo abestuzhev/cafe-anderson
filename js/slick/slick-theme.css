@@ -23,12 +23,13 @@
     line-height: 0;
 
     position: absolute;
+    z-index: 10;
     top: 50%;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 33px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -39,7 +40,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    background: rgba(0,0,0,.3);
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -48,7 +49,8 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #7cbd41;
+    opacity: 1;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -79,39 +81,58 @@
 
 .slick-prev
 {
-    left: -25px;
+    border-radius: 0 .4rem .4rem 0;
+    left: 10px;
 }
-[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
+/*[dir='rtl'] .slick-prev*/
+/*{*/
+    /*right: -25px;*/
+    /*left: auto;*/
+/*}*/
 .slick-prev:before
 {
-    content: '←';
+    /*content: '←';*/
+    content: '';
+    width: 6px;
+    height: 11px;
+    background: url(../../img/arrow-slider-sprite.png) 0 0 no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-[dir='rtl'] .slick-prev:before
-{
-    content: '→';
-}
+/*[dir='rtl'] .slick-prev:before*/
+/*{*/
+    /*content: '→';*/
+/*}*/
 
 .slick-next
 {
-    right: -25px;
+
+    border-radius: .4rem 0 0 .4rem;
+    right: 10px;
 }
-[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}
+/*[dir='rtl'] .slick-next*/
+/*{*/
+    /*right: auto;*/
+    /*left: -25px;*/
+/*}*/
 .slick-next:before
 {
-    content: '→';
+    /*content: '→';*/
+    content: '';
+    width: 6px;
+    height: 11px;
+    background: url(../../img/arrow-slider-sprite.png) -6px 0 no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
-}
+/*[dir='rtl'] .slick-next:before*/
+/*{*/
+    /*content: '←';*/
+/*}*/
 
 /* Dots */
 .slick-dotted.slick-slider
@@ -201,4 +222,10 @@
 {
     opacity: .75;
     color: black;
+}
+
+
+.slick-current .pie-slider-nav__item span{
+    border-color: #c44890;
+    box-shadow: inset 0px 0px 0px 2px #c44890;
 }
