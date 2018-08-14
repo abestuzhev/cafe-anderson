@@ -16,6 +16,9 @@ document.body.onload = function(){
 
     document.body.classList.add('onloadContent');
 
+    // var holidays = document.querySelectorAll('.holidays-grid');
+    // holidays.classList.add('no-content')
+
 };
 
 
@@ -9261,9 +9264,18 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
+
+
 $(window).on('load', function(){
 
+    if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
+        customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
+        $(window).on('resize', function () {
+            customGridRefreshPosition('.holidays-grid', '.holidays-grid__container');
+        });
+    };
 
+    $('.holidays').addClass('show');
 
     /*скролл при выборе доставки*/
     var orderDeliveryMap = $('.order-delivery__map').height(),
@@ -12360,16 +12372,24 @@ $(function() {
     holidaysInit('.holidays-list__body');
     holidaysAppleFix();
 
-    if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
-        customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
-        $(window).on('resize', function () {
-            customGridRefreshPosition('.holidays-grid', '.holidays-grid__container');
-        });
-    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
 });
+
+
 
 
 

@@ -16,6 +16,9 @@ document.body.onload = function(){
 
     document.body.classList.add('onloadContent');
 
+    // var holidays = document.querySelectorAll('.holidays-grid');
+    // holidays.classList.add('no-content')
+
 };
 
 

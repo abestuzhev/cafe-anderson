@@ -6559,6 +6559,7 @@
 @media screen and (max-width: 1150px) {
     .holiday-space-list .calendar-nav__icon-gradient {
         background: #c44890;
+        min-width: 5.3rem;
     }
 
     .holiday-space-list .calendar-nav__icon-gradient svg {

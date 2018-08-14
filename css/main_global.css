@@ -19113,7 +19113,8 @@ test popup
 
 /*loft-booking-----------------------------*/
 .loft-booking {
-  padding: 3.7rem 2.8rem; }
+  padding: 3.7rem 2.8rem;
+  margin-bottom: 4rem; }
   .loft-booking__header {
     text-align: center;
     margin-bottom: 1.8rem;
@@ -20019,7 +20020,19 @@ a.show-more__button:hover {
 
 /* Holidays-all page */
 .holidays {
-  text-align: center; }
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin-bottom: 4rem; }
+  .holidays.show {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
 
 .holidays-grid {
   position: relative;
@@ -20252,6 +20265,7 @@ a.show-more__button:hover {
               box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15);
       position: relative; }
     .holidays-list-item__decor {
+      display: block;
       height: 17rem;
       background-position: 50% 50%;
       background-size: cover;

@@ -15984,6 +15984,7 @@ test popup
 .loft-booking {
 
   padding: 3.7rem 2.8rem;
+    margin-bottom: 4rem;
   &__header {
     text-align: center;
     margin-bottom: 1.8rem;
@@ -17196,12 +17197,24 @@ a.show-more__button:hover {
 /* Holidays-all page */
 .holidays {
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+    margin-bottom: 4rem;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transition: all .2s ease-in-out;
+    }
 }
 
 .holidays-grid {
     position: relative;
     width: 100%;
     margin-left: -1.4rem;
+
+
 
 
     &__block-wrapper {
@@ -17504,6 +17517,7 @@ a.show-more__button:hover {
         }
 
         &__decor {
+            display: block;
             height: 17rem;
             background-position: 50% 50%;
             background-size: cover;
