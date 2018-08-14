@@ -8,7 +8,13 @@
 .l-button__mobile,
 .holiday-order__mobile,
 .filter-btn__reset__mdb,
-.nav-mobile {
+.nav-mobile,
+.franchise-advantages-list__mobile,
+.franchise-print_mobile,
+.show-more,
+.franchise-conditions-calc__elem-1_mobile,
+.franchise-conditions-calc__elem-2_mobile,
+.franchise-conditions-table__mobile {
     display: none;
 }
 
@@ -6829,7 +6835,7 @@
         margin-top: -6px;
         font-family: "PT Serif Caption";
     }
-    .c-holiday-count-1 {
+    .holiday-reason .c-holiday-count-1 {
         display: none;
     }
     .holiday-reason__head-layout {
@@ -6936,27 +6942,27 @@
     .holiday-reason-card--child-departure .holiday-reason-card__body {
         bottom: -80px !important;
     }  
-    .slick-prev, .slick-next { 
+    .holiday-reason .slick-prev, .holiday-reason .slick-next { 
         top: 32px;
         background: none;
     }    
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    .holiday-reason .slick-prev:hover, .holiday-reason .slick-prev:focus, .holiday-reason .slick-next:hover, .holiday-reason .slick-next:focus {
         background: none;
     }
-    .slick-prev:before {
+    .holiday-reason .slick-prev:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/left-arrow-slick.png) no-repeat;
     }
-    .slick-next:before {
+    .holiday-reason .slick-next:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/right-arrow-slick.png) no-repeat;
     }
-        /* Slider */
-    .slick-slider {
+    /* Slider */
+    .holiday-reason .slick-slider {
         position: relative;
 
         display: block;
@@ -6973,7 +6979,7 @@
             touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
     }
-    .slick-list {
+    .holiday-reason .slick-list {
         position: relative;
 
         display: block;
@@ -6982,22 +6988,22 @@
         margin: 0;
         padding: 0;
     }
-    .slick-list:focus {
+    .holiday-reason .slick-list:focus {
         outline: none;
     }
-    .slick-list.dragging {
+    .holiday-reason .slick-list.dragging {
         cursor: pointer;
         cursor: hand;
     }
-    .slick-slider .slick-track,
-    .slick-slider .slick-list {
+    .holiday-reason .slick-slider .slick-track,
+    .holiday-reason .slick-slider .slick-list {
         -webkit-transform: translate3d(0, 0, 0);
            -moz-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
              -o-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
-    .slick-track {
+    .holiday-reason .slick-track {
         position: relative;
         top: 0;
         left: 0;
@@ -7006,52 +7012,52 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .slick-track:before,
-    .slick-track:after
+    .holiday-reason .slick-track:before,
+    .holiday-reason .slick-track:after
     {
         display: table;
 
         content: '';
     }
-    .slick-track:after
+    .holiday-reason .slick-track:after
     {
         clear: both;
     }
-    .slick-loading .slick-track
+    .holiday-reason .slick-loading .slick-track
     {
         visibility: hidden;
     }
-    .slick-slide {
+    .holiday-reason .holiday-reason .slick-slide {
         display: none;
         float: left;
         height: 100%;
         min-height: 1px;
     }
-    .slick-slide
+    .holiday-reason .slick-slide
     {
         float: right;
     }
-    .slick-slide img
+    .holiday-reason .slick-slide img
     {
         display: block;
     }
-    .slick-slide.slick-loading img
+    .holiday-reason .slick-slide.slick-loading img
     {
         display: none;
     }
-    .slick-slide.dragging img
+    .holiday-reason .slick-slide.dragging img
     {
         pointer-events: none;
     }
-    .slick-initialized .slick-slide
+    .holiday-reason .slick-initialized .slick-slide
     {
         display: block;
     }
-    .slick-loading .slick-slide
+    .holiday-reason .slick-loading .slick-slide
     {
         visibility: hidden;
     }
-    .slick-vertical .slick-slide
+    .holiday-reason .slick-vertical .slick-slide
     {
         display: block;
 
@@ -7059,7 +7065,7 @@
 
         border: 1px solid transparent;
     }
-    .slick-arrow.slick-hidden {
+    .holiday-reason .slick-arrow.slick-hidden {
         display: none;
     }
 
@@ -7073,7 +7079,7 @@
         display: block;
         margin-bottom: 0px;
     }
-    .c-title-decor-1 span {
+    .holiday-reason .c-title-decor-1 span {
         display: block;
         font-size: 1.3rem;
         margin-top: -6px;
@@ -7082,7 +7088,7 @@
     .holiday-reason__header .holiday-reason__subtitle {
         display: none;
     }
-    .c-holiday-count-1 {
+    .holiday-reason .c-holiday-count-1 {
         display: none;
     }
     .holiday-reason__head {
@@ -7197,7 +7203,7 @@
         margin-bottom: 2rem;
         height: 90px;
     }
-    .c-title-decor-1 {
+    .holiday-reason .c-title-decor-1 {
         padding: 0rem;
         display: block;
         margin-bottom: 0rem;
@@ -7207,31 +7213,31 @@
         font-size: 3.3rem;
         color: #231300;
     }
-    .c-title-decor-1::before,
-    .c-title-decor-1::after {
+    .holiday-reason .c-title-decor-1::before,
+    .holiday-reason .c-title-decor-1::after {
         display: none;
     }
-    .slick-prev, .slick-next { 
+    .holiday-reason .slick-prev, .holiday-reason .slick-next { 
         top: 47px;
         background: none;
     }    
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    .holiday-reason .slick-prev:hover, .holiday-reason .slick-prev:focus, .holiday-reason .slick-next:hover, .holiday-reason .slick-next:focus {
         background: none;
     }
-    .slick-prev:before {
+    .holiday-reason .slick-prev:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/left-arrow-slick.png) no-repeat;
     }
-    .slick-next:before {
+    .holiday-reason .slick-next:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/right-arrow-slick.png) no-repeat;
     }
-        /* Slider */
-    .slick-slider {
+    /* Slider */
+    .holiday-reason .slick-slider {
         position: relative;
 
         display: block;
@@ -7248,7 +7254,7 @@
             touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
     }
-    .slick-list {
+    .holiday-reason .slick-list {
         position: relative;
 
         display: block;
@@ -7257,22 +7263,22 @@
         margin: 0;
         padding: 0;
     }
-    .slick-list:focus {
+    .holiday-reason .slick-list:focus {
         outline: none;
     }
-    .slick-list.dragging {
+    .holiday-reason .slick-list.dragging {
         cursor: pointer;
         cursor: hand;
     }
-    .slick-slider .slick-track,
-    .slick-slider .slick-list {
+    .holiday-reason .slick-slider .slick-track,
+    .holiday-reason .slick-slider .slick-list {
         -webkit-transform: translate3d(0, 0, 0);
            -moz-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
              -o-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
-    .slick-track {
+    .holiday-reason .slick-track {
         position: relative;
         top: 0;
         left: 0;
@@ -7281,52 +7287,52 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .slick-track:before,
-    .slick-track:after
+    .holiday-reason .slick-track:before,
+    .holiday-reason .slick-track:after
     {
         display: table;
 
         content: '';
     }
-    .slick-track:after
+    .holiday-reason .slick-track:after
     {
         clear: both;
     }
-    .slick-loading .slick-track
+    .holiday-reason .slick-loading .slick-track
     {
         visibility: hidden;
     }
-    .slick-slide {
+    .holiday-reason .holiday-reason .slick-slide {
         display: none;
         float: left;
         height: 100%;
         min-height: 1px;
     }
-    .slick-slide
+    .holiday-reason .slick-slide
     {
         float: right;
     }
-    .slick-slide img
+    .holiday-reason .slick-slide img
     {
         display: block;
     }
-    .slick-slide.slick-loading img
+    .holiday-reason .slick-slide.slick-loading img
     {
         display: none;
     }
-    .slick-slide.dragging img
+    .holiday-reason .slick-slide.dragging img
     {
         pointer-events: none;
     }
-    .slick-initialized .slick-slide
+    .holiday-reason .slick-initialized .slick-slide
     {
         display: block;
     }
-    .slick-loading .slick-slide
+    .holiday-reason .slick-loading .slick-slide
     {
         visibility: hidden;
     }
-    .slick-vertical .slick-slide
+    .holiday-reason .slick-vertical .slick-slide
     {
         display: block;
 
@@ -7334,7 +7340,7 @@
 
         border: 1px solid transparent;
     }
-    .slick-arrow.slick-hidden {
+    .holiday-reason .slick-arrow.slick-hidden {
         display: none;
     }
 }
@@ -7347,13 +7353,13 @@
         display: block;
         margin-bottom: 0px;
     }
-    .c-title-decor-1 span {
+    .holiday-reason .c-title-decor-1 span {
         display: none;
     }
     .holiday-reason__header .holiday-reason__subtitle {
         display: none;
     }
-    .c-holiday-count-1 {
+    .holiday-reason .c-holiday-count-1 {
         display: none;
     }
     .holiday-reason__head {
@@ -7473,7 +7479,7 @@
         margin-bottom: 2rem;
         height: 90px;
     }
-    .c-title-decor-1 {
+    .holiday-reason .c-title-decor-1 {
         padding: 0rem;
         display: block;
         margin-bottom: 0rem;
@@ -7484,31 +7490,31 @@
         color: #231300;
         line-height: 2.8rem;
     }
-    .c-title-decor-1::before,
-    .c-title-decor-1::after {
+    .holiday-reason .c-title-decor-1::before,
+    .holiday-reason.c-title-decor-1::after {
         display: none;
     }
-    .slick-prev, .slick-next { 
+     .holiday-reason.slick-prev, .holiday-reason .slick-next { 
         top: 47px;
         background: none;
     }    
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    .holiday-reason .slick-prev:hover, .holiday-reason .slick-prev:focus, .holiday-reason .slick-next:hover, .holiday-reason .slick-next:focus {
         background: none;
     }
-    .slick-prev:before {
+    .holiday-reason .slick-prev:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/left-arrow-slick.png) no-repeat;
     }
-    .slick-next:before {
+    .holiday-reason .slick-next:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/right-arrow-slick.png) no-repeat;
     }
-        /* Slider */
-    .slick-slider {
+    /* Slider */
+    .holiday-reason .slick-slider {
         position: relative;
 
         display: block;
@@ -7525,7 +7531,7 @@
             touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
     }
-    .slick-list {
+    .holiday-reason .slick-list {
         position: relative;
 
         display: block;
@@ -7534,22 +7540,22 @@
         margin: 0;
         padding: 0;
     }
-    .slick-list:focus {
+    .holiday-reason .slick-list:focus {
         outline: none;
     }
-    .slick-list.dragging {
+    .holiday-reason .slick-list.dragging {
         cursor: pointer;
         cursor: hand;
     }
-    .slick-slider .slick-track,
-    .slick-slider .slick-list {
+    .holiday-reason .slick-slider .slick-track,
+    .holiday-reason .slick-slider .slick-list {
         -webkit-transform: translate3d(0, 0, 0);
            -moz-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
              -o-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
-    .slick-track {
+    .holiday-reason .slick-track {
         position: relative;
         top: 0;
         left: 0;
@@ -7558,52 +7564,52 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .slick-track:before,
-    .slick-track:after
+    .holiday-reason .slick-track:before,
+    .holiday-reason .slick-track:after
     {
         display: table;
 
         content: '';
     }
-    .slick-track:after
+    .holiday-reason .slick-track:after
     {
         clear: both;
     }
-    .slick-loading .slick-track
+    .holiday-reason .slick-loading .slick-track
     {
         visibility: hidden;
     }
-    .slick-slide {
+    .holiday-reason .holiday-reason .slick-slide {
         display: none;
         float: left;
         height: 100%;
         min-height: 1px;
     }
-    .slick-slide
+    .holiday-reason .slick-slide
     {
         float: right;
     }
-    .slick-slide img
+    .holiday-reason .slick-slide img
     {
         display: block;
     }
-    .slick-slide.slick-loading img
+    .holiday-reason .slick-slide.slick-loading img
     {
         display: none;
     }
-    .slick-slide.dragging img
+    .holiday-reason .slick-slide.dragging img
     {
         pointer-events: none;
     }
-    .slick-initialized .slick-slide
+    .holiday-reason .slick-initialized .slick-slide
     {
         display: block;
     }
-    .slick-loading .slick-slide
+    .holiday-reason .slick-loading .slick-slide
     {
         visibility: hidden;
     }
-    .slick-vertical .slick-slide
+    .holiday-reason .slick-vertical .slick-slide
     {
         display: block;
 
@@ -7611,7 +7617,7 @@
 
         border: 1px solid transparent;
     }
-    .slick-arrow.slick-hidden {
+    .holiday-reason .slick-arrow.slick-hidden {
         display: none;
     }
 }
@@ -7990,7 +7996,12 @@
         font-size: 1.6rem;
     }
     .franchise-banner {
+        width: 100%;
         padding: 3rem 0rem 2rem 0rem;
+        background: url(../img/franchise/franchise-banner__mobile.jpg) no-repeat;
+        background-size: cover;
+        margin: 0rem;
+        min-height: 32rem;
     }
     .franchise {
         padding: 0rem 0rem !important;
@@ -8049,9 +8060,6 @@
         max-width: 100%;
         padding: 0rem 2.5rem;
     }
-    .franchise-contact-callback {
-        position: static;
-    }
     .franchise-contact__head .franchise-info {
         display: block;
         text-align: center;
@@ -8065,5 +8073,254 @@
     .franchise-contact .franchise-title-layout {
         margin-bottom: 0rem;
     }
+    .franchise-contact .c-form__grid .c-form__item:first-child {
+        width: 100%;
+    }
+    .franchise-contact__form .symbol-bird-with-bubble {
+        right: 0px;
+        left: inherit;
+    }
+    .franchise-contact__form .c-button {
+        width: 70%;
+    }
+    .franchise-contact-callback {
+        padding: 2rem 2rem 3rem 2rem;
+        width: 100%;
+        height: auto;
+        position: static;
+        background: #7cbd41;
+        text-align: center;
+    }
+    .franchise-contact-callback__phone {
+        font-size: 2.4rem;
+    }
+    .franchise-contact__body {
+        padding: 2rem 4rem 1.5rem;
+    }
+    .franchise-contact-callback__form {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .franchise-contact-callback__item {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-contact-callback__btn {
+        width: 70%;
+    }
+    .js-input--tel {
+        margin-bottom: 1rem;
+    }
+    .franchise-advantages-list__mobile {
+        display: block;
+        padding: 0rem 1rem;
+    }
+    .franchise-advantages-list {
+        display: none;
+    }
+    .franchise-advantages-list__mobile__item {
+        margin-bottom: 3rem;
+    }
+    .franchise-advantages-list__mobile__item img {
+        width: 125px;
+        height: 84px;
+        margin: 0rem 1rem 1rem 0rem;
+        float: left;
+    }
+    .franchise-advantages-card__title {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-print {
+        right: 0;
+        top: 4rem;
+        left: 0;
+        margin: auto;
+    }
+    .franchise-conditions .franchise-content {
+        margin-top: 4.4rem;
+    }
+    .franchise-conditions .symbol-holiday-decor-2 {
+        display: none;
+    }
+    .franchise-package .c-col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0rem 1.6rem;
+    }
+    .franchise .c-ul-list {
+        margin-left: 0.6rem;
+        padding: 0rem 1.6rem;
+    }
+    .franchise-review .c-col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .franchise-review-card__header {
+        width: 80%;
+    }
+    .franchise-review-card__who, .franchise-review-card__link {
+        white-space: normal;
+    }
+    .franchise-review .franchise-content {
+        padding: 0rem 1.6rem;
+    }
+    .more {
+        display: none;
+        margin-top: 1rem;
+    }
+    .show-more {
+        display: block;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+    .show-more span {
+        margin-left: 0.5rem;
+        position: relative;
+        top: -0.3rem;
+    }
+    .franchise-conditions .franchise-conditions-calc {
+        padding: 1rem 2rem;
+    }
+    .franchise-conditions-calc__item {
+        display: block;
+    }
+    .franchise-conditions-calc__title,
+    .franchise-conditions-calc__desc {
+        width: 100%;
+    }
+    .franchise-conditions-calc__title {
+        text-align: left;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
+    }
+    .franchise-conditions-calc__elem-1_mobile,
+    .franchise-conditions-calc__elem-2_mobile {
+        display: block;
+    }
+    .franchise-conditions-calc__elem-1,
+    .franchise-conditions-calc__bg {
+        display: none;
+    }
+    .franchise-conditions-calc__elem-1_mobile {
+        position: absolute;
+        top: 4rem;
+        right: 0.5rem;
+    }
+    .franchise-conditions-calc__elem-2_mobile {
+        position: absolute;
+        bottom: 6rem;
+        right: 0.2rem;
+    }
+    .franchise-conditions-card__icon {
+        display: none;
+    }
+    .franchise-conditions-card {
+        position: relative;
+        border-radius: 0rem;
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+    .franchise-conditions-list {
+        margin-top: 3rem;
+        padding: 0rem 0.8rem;
+    }
+    .franchise-conditions-card__body {
+        position: static;
+        padding: 0rem;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .franchise-conditions-list__item {
+        width: 100%;
+        display: block;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    .franchise-conditions-card:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .franchise-conditions-card__icon {
+        display: block;
+        position: static;
+        float: left;
+        width: 10%;
+        webkit-transform: inherit;
+        -ms-transform: inherit;
+        transform: inherit;
+        margin-top: 0.3rem;
+    }
+    .franchise-conditions-card__body {
+        display: block;
+        position: static;
+        float: left;
+        width: 90%;
+    }
+    .franchise-conditions-card__icon img {
+        width: 1.7rem;
+        height: 2rem;
+    }
+    .franchise-conditions__title {
+        margin-left: 0.6rem;
+    }
+    .franchise-conditions-table {
+        display: none;
+    }
+    .franchise-conditions-table__mobile {
+        display: block;
+    }
+    .franchise-conditions-table__slick__item {
+        border-bottom: 1px dotted #9b9595;
+        padding: 1rem;
+        text-align: center;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    }
+    .franchise-conditions-table__slick__item .service-title {
+        font-style: 1.3rem;
+        color: #553023;
+    }
+    .franchise-conditions-table__slick__item .service-price {
+        font-style: 1.5rem;
+        color: #555451;
+    }
+    .franchise-conditions-table__slick .title {
+        font-size: 1.5rem;
+        color: #553023;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    /*
+        slick
+    */
 
+    .franchise .slick-prev, .franchise .slick-next { 
+        top: 24px;
+        background: none;
+    }    
+    .franchise .slick-prev {
+        left: 20%;
+    }
+    .franchise .slick-next {
+        right: 20%;
+    }
+    .franchise .slick-prev:hover, .franchise .slick-prev:focus, .franchise .slick-next:hover, .franchise .slick-next:focus {
+        background: none;
+    }
+    .franchise .slick-prev:before {
+        content: '';
+        width: 30px;
+        height: 36px;
+        background: url(../img/franchise/left-arrow__slick.png) no-repeat;
+    }
+    .franchise .slick-next:before {
+        content: '';
+        width: 30px;
+        height: 36px;
+        background: url(../img/franchise/right-arrow__slick.png) no-repeat;
+    }
 }
