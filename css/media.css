@@ -2754,9 +2754,14 @@
         display: none;
     }
 
-    .calendar-week {
+    .calendar-body {
+        overflow: hidden;
+    }
+    /*.calendar-week {*/
+    .calendar-body__track {
         overflow: hidden;
         overflow-x: scroll;
+        width: 100%;
     }
 
     .calendar-body {
@@ -2766,7 +2771,7 @@
     .calendar-track {
         position: relative;
         padding-bottom: 0;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
     .calendar-track::after {
         content: '';
