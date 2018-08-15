@@ -689,23 +689,8 @@ $(document).ready(function ($) {
           slidesToScroll: 1,
           infinite: false,
           accessibility: false
-      });
-
-        $('.slick-slide-2').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false,
-          accessibility: false
-      });
-
-        $('.slick-slide-3').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false,
-          accessibility: false
-      });
-
-
+        });
+        $('.franchise-conditions-table__slick').slick('setPosition');
     }
 
 
