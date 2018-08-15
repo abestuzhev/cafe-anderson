@@ -7999,6 +7999,12 @@
     .franchise-conditions-list__item {
         width: 25%;
     }
+    .franchise-box {
+        margin-bottom: 3.4rem;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
+    }
 }
 @media screen and (max-width: 1200px) { 
     .franchise-review-card__header {
@@ -8066,6 +8072,12 @@
     .franchise-conditions-list {
         padding: 0rem 1.6rem;
     }
+    .franchise-box {
+        margin-bottom: 3.4rem;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
+    }
 }
 @media screen and (max-width: 1024px) {
     .franchise-banner__item {
@@ -8074,6 +8086,9 @@
         margin:0 auto;
         text-align: center;
         line-height: 25px;
+    }
+    .franchise-box {
+        margin-bottom: 3.4rem;
     }
     .franchise-banner__item span {
         font-size: 1.6rem;
@@ -8150,6 +8165,9 @@
         position: static;
         background: #7cbd41;
         text-align: center;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
     }
     .franchise-contact-callback__phone {
         font-size: 2.4rem;
@@ -8533,6 +8551,7 @@
         height: 36px;
         background: url(../img/franchise/right-arrow__slick.png) no-repeat;
     }
+    
 }
 
 @media screen and (min-width: 480px) and (max-width: 756px) {
@@ -8544,5 +8563,11 @@
     }
     .franchise-conditions-area .franchise-title {
         width: 336px;
+    }
+    .franchise-conditions-calc__title, .franchise-conditions-calc__desc {
+        width: 80%;
+    }
+    .franchise-contact-callback__form input {
+        width: 100% !important;
     }
 }
