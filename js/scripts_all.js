@@ -12039,8 +12039,15 @@ $(function() {
         /* Calendar Selector */
         new SimpleBar($('.calendar-selector__list')[0], {
             autoHide: false,
-            scrollbarMinSize: 35,
+            scrollbarMinSize: 35
         });
+
+
+        var holiday_calendar = $('.holiday .calendar');
+
+        if(holiday_calendar.height() < 130) {
+            holiday_calendar.find('.calendar-selector').addClass('show-up');
+        }
     };
 
 

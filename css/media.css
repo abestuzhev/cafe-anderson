@@ -2763,7 +2763,7 @@
     .calendar-body {
         overflow: hidden;
     }
-    /*.calendar-week {*/
+    .calendar-week,
     .calendar-body__track {
         overflow: hidden;
         overflow-x: scroll;
@@ -2777,8 +2777,19 @@
     .calendar-track {
         position: relative;
         padding-bottom: 0;
-        /*overflow: hidden;*/
+        overflow: hidden;
     }
+    .newcalendar .calendar-week {
+        overflow: visible;
+    }
+    .newcalendar .calendar-track {
+        overflow: visible;
+    }
+
+    .calendar-box--inreserve .c-symbol {
+        display: none;
+    }
+
     .calendar-track::after {
         content: '';
         position: absolute;
