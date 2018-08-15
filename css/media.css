@@ -7995,6 +7995,11 @@
 }
 
 /* franchise */
+@media screen and (min-width: 1200px) and (max-width: 1300px) { 
+    .franchise-conditions-list__item {
+        width: 25%;
+    }
+}
 @media screen and (max-width: 1200px) { 
     .franchise-review-card__header {
         width: 100%;
@@ -8057,6 +8062,9 @@
     }
     .franchise-contact-callback__form input {
         width: 50% !important;
+    }
+    .franchise-conditions-list {
+        padding: 0rem 1.6rem;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -8168,7 +8176,8 @@
     .c-layout__franchise {
         padding: 0rem !important;
     }
-    .franchise-direction {
+    .franchise-direction,
+    .franchise-conditions-list {
         padding: 0rem 1.6rem;
     }
 }
