@@ -16884,6 +16884,8 @@ test popup
         position: relative;
         padding-left: 23px;
         margin-bottom: 8px; }
+  .holiday .loft-booking .calendar {
+    padding-top: 0; }
 
 /*holidays общая страница со всеми праздниками---*/
 .holidays-slider {
@@ -20037,7 +20039,6 @@ a.show-more__button:hover {
 .holidays-grid {
   position: relative;
   width: 100%;
-  margin-left: -1.4rem;
   /* sizes */ }
   .holidays-grid__block-wrapper {
     opacity: 0;
