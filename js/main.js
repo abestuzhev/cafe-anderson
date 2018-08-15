@@ -3087,69 +3087,63 @@ function customGridRefreshPosition(container, block, cols = 'auto') {
     $(container).css('height',(cont.height_u+1) * minHeight);
 }
 
+function initHolidayMobileSlider(){
+    var mySlider = $('.holiday-reason__slick');
+
+    if (!mySlider.hasClass('slick-initialized')) {
+        mySlider.slick({
+            slidesToShow: 3,
+            centerMode: false,
+            responsive: [
+                {
+                    breakpoint: 9999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                },
+                {
+                    breakpoint: 740,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                }
+            ]
+        });
+    }
+}
+
 
 //  events listener
 $(function() {
     if($('div').hasClass('holiday-reason__grid')){
         $(window).on('resize orientationchange', function() {
-            var mySlider = $('.holiday-reason__slick');
-    
-            if (!mySlider.hasClass('slick-initialized')) {
-                mySlider.slick({
-                    slidesToShow: 3,
-                    centerMode: false,
-                    responsive: [
-                        {
-                            breakpoint: 9999,
-                            settings: "unslick"
-                        },
-                        {
-                            breakpoint: 1300,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1,
-                                infinite: false
-                            }
-                        },
-                        {
-                            breakpoint: 740,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                infinite: false
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                infinite: false
-                            }
-                        }
-                    ]
-                });
-            }
-    
-           
+
+            initHolidayMobileSlider();
+
     
         });
-    }
+
+        initHolidayMobileSlider();
+    };
 
     holidaysInit('.holidays-list__body');
     holidaysAppleFix();
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
