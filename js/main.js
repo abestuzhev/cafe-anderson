@@ -690,6 +690,18 @@ $(document).ready(function ($) {
         var self = $(this);
         self.parents('.franchise-title-layout').siblings('.franchise-content').slideToggle(100);
         self.siblings('.franchise-print').toggle();
+        if($('div').hasClass('franchise-conditions-table__slick')){
+            if($(window).width() < 756) {
+                initMobileSliderFranchise();
+            }
+
+            $(window).on('resize orientationchange', function() {
+
+                if($(window).width() < 756) {
+                    initMobileSliderFranchise();
+                }
+            });
+        }
     });
 
 

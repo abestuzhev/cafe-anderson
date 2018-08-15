@@ -7982,9 +7982,21 @@
     }
 }
 
+@media screen and (min-width: 400px) and (max-width: 756px) { 
+    .holiday .l-button .c-button {
+        padding: 1.7rem 2.2rem !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) { 
+    .holiday .l-button .c-button {
+        padding: 0.7rem 2.2rem !important;
+    }
+}
+
 /* franchise */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 756px) {
     .franchise-banner__item {
         font-size: 1.6rem;
         width: 256px;
@@ -8076,6 +8088,9 @@
     .franchise-contact .c-form__grid .c-form__item:first-child {
         width: 100%;
     }
+    .franchise-contact .c-form__grid {
+        display: block;
+    }
     .franchise-contact__form .symbol-bird-with-bubble {
         right: 0px;
         left: inherit;
@@ -8107,7 +8122,7 @@
     .franchise-contact-callback__btn {
         width: 70%;
     }
-    .js-input--tel {
+    .franchise .js-input--tel {
         margin-bottom: 1rem;
     }
     .franchise-advantages-list__mobile {
@@ -8135,8 +8150,15 @@
         left: 0;
         margin: auto;
     }
-    .franchise-conditions .franchise-content {
+    .franchise-conditions .franchise-content,
+    .franchise-conditions-region .franchise-content {
         margin-top: 4.4rem;
+    }
+    .franchise-conditions-area .franchise-content {
+        margin-top: 2.4rem;
+    }
+    .franchise-conditions-calc .symbol-holiday-decor-2 {
+        display: none;
     }
     .franchise-conditions .symbol-holiday-decor-2 {
         display: none;
@@ -8271,9 +8293,7 @@
     .franchise-conditions-table {
         display: none;
     }
-    .franchise-conditions-table__mobile {
-        display: block;
-    }
+
     .franchise-conditions-table__slick__item {
         border-bottom: 1px dotted #9b9595;
         padding: 1rem;
@@ -8297,16 +8317,18 @@
     /*
         slick
     */
-
+    .franchise-conditions-table__mobile {
+        display: block;
+    }
     .franchise .slick-prev, .franchise .slick-next { 
         top: 24px;
         background: none;
     }    
     .franchise .slick-prev {
-        left: 20%;
+        left: 10%;
     }
     .franchise .slick-next {
-        right: 20%;
+        right: 10%;
     }
     .franchise .slick-prev:hover, .franchise .slick-prev:focus, .franchise .slick-next:hover, .franchise .slick-next:focus {
         background: none;
