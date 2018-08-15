@@ -7995,6 +7995,183 @@
 }
 
 /* franchise */
+@media screen and (max-width: 1200px) { 
+    .franchise-review-card__header {
+        width: 100%;
+    }
+    .franchise-review-card__who, .franchise-review-card__link {
+        white-space: normal;
+    }
+    .franchise-review .franchise-content {
+        padding: 0rem 1.6rem;
+    }
+    .franchise-contact__head .franchise-info {
+        display: block;
+        text-align: center;
+    }
+    .franchise-contact__head .franchise-title {
+        display: none;
+    }
+    .franchise-contact__form {
+        width: 100%;
+    }
+    .franchise-contact .franchise-title-layout {
+        margin-bottom: 0rem;
+    }
+    .franchise-contact .c-form__grid .c-form__item:first-child {
+        width: 100%;
+    }
+    .franchise-contact .c-form__grid {
+        display: block;
+    }
+    .franchise-contact__form .symbol-bird-with-bubble {
+        right: 0px;
+        left: inherit;
+    }
+    .franchise-contact__form .c-button {
+        width: 70%;
+    }
+    .franchise-contact-callback {
+        padding: 2rem 2rem 3rem 2rem;
+        width: 100%;
+        height: auto;
+        position: static;
+        background: #7cbd41;
+        text-align: center;
+    }
+    .franchise-contact-callback__phone {
+        font-size: 2.4rem;
+    }
+    .franchise-contact__body {
+        padding: 2rem 4rem 1.5rem;
+    }
+    .franchise-contact-callback__form {
+        display: flex;
+        padding: 1rem 2rem;
+    }
+    .franchise-contact-callback__item {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-contact-callback__btn {
+        width: 50%;
+    }
+    .franchise-contact-callback__form input {
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .franchise-banner__item {
+        font-size: 1.6rem;
+        width: 256px;
+        margin:0 auto;
+        text-align: center;
+        line-height: 25px;
+    }
+    .franchise-banner__item span {
+        font-size: 1.6rem;
+    }
+    .franchise-banner {
+        width: 100%;
+        padding: 3rem 0rem 2rem 0rem;
+        background: url(../img/franchise/franchise-banner__mobile.jpg) no-repeat;
+        background-size: cover;
+        margin: 0rem;
+        min-height: 32rem;
+    }
+    .franchise-conditions-calc__elem-1_mobile,
+    .franchise-conditions-calc__elem-2_mobile {
+        display: none;
+    }
+    .franchise-conditions-calc__elem-1,
+    .franchise-conditions-calc__bg,
+    .symbol-holiday-decor-2 {
+        display: none;
+    }
+    .franchise-conditions-calc__elem-1_mobile {
+        position: absolute;
+        top: 4rem;
+        right: 0.5rem;
+    }
+    .franchise-conditions-calc__elem-2_mobile {
+        position: absolute;
+        bottom: 6rem;
+        right: 0.2rem;
+    }
+    .franchise-conditions-list__item {
+        width: 50%;
+    }
+    .franchise-review-card__header {
+        width: 100%;
+    }
+    .franchise-review-card__who, .franchise-review-card__link {
+        white-space: normal;
+    }
+    .franchise-review .franchise-content {
+        padding: 0rem 1.6rem;
+    }
+    .franchise-contact__head .franchise-info {
+        display: block;
+        text-align: center;
+    }
+    .franchise-contact__head .franchise-title {
+        display: none;
+    }
+    .franchise-contact__form {
+        width: 100%;
+    }
+    .franchise-contact .franchise-title-layout {
+        margin-bottom: 0rem;
+    }
+    .franchise-contact .c-form__grid .c-form__item:first-child {
+        width: 100%;
+    }
+    .franchise-contact .c-form__grid {
+        display: block;
+    }
+    .franchise-contact__form .symbol-bird-with-bubble {
+        right: 0px;
+        left: inherit;
+    }
+    .franchise-contact__form .c-button {
+        width: 70%;
+    }
+    .franchise-contact-callback {
+        padding: 2rem 2rem 3rem 2rem;
+        width: 100%;
+        height: auto;
+        position: static;
+        background: #7cbd41;
+        text-align: center;
+    }
+    .franchise-contact-callback__phone {
+        font-size: 2.4rem;
+    }
+    .franchise-contact__body {
+        padding: 2rem 4rem 1.5rem;
+    }
+    .franchise-contact-callback__form {
+        display: flex;
+        padding: 1rem 2rem;
+    }
+    .franchise-contact-callback__item {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-contact-callback__btn {
+        width: 50%;
+    }
+    .franchise-contact-callback__form input {
+        width: 50% !important;
+    }
+    .franchise {
+        padding: 0rem 0rem !important;
+    }
+    .c-layout__franchise {
+        padding: 0rem !important;
+    }
+    .franchise-direction {
+        padding: 0rem 1.6rem;
+    }
+}
 
 @media screen and (max-width: 756px) {
     .franchise-banner__item {
@@ -8308,7 +8485,9 @@
         font-style: 1.5rem;
         color: #555451;
     }
-    .franchise-conditions-table__slick .title {
+    .franchise-conditions-table__slick .title,
+    .franchise-conditions-table__slick-2 .title,
+    .franchise-conditions-table__slick-3 .title {
         font-size: 1.5rem;
         color: #553023;
         margin-bottom: 2rem;
@@ -8344,5 +8523,17 @@
         width: 30px;
         height: 36px;
         background: url(../img/franchise/right-arrow__slick.png) no-repeat;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 756px) {
+    .franchise-about .franchise-title, .franchise-advantages .franchise-title, .franchise-package .franchise-title {
+        width: 310px;
+    }
+    .franchise-package .franchise-title {
+        width: 380px;
+    }
+    .franchise-conditions-area .franchise-title {
+        width: 336px;
     }
 }

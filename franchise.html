@@ -3278,7 +3278,7 @@
                                 </div>
                             </div>
                             <div class="franchise-conditions-table__mobile">
-                            	<div class="franchise-conditions-table__slick">
+                            	<div class="franchise-conditions-table__slick-2">
                             		<div>
 		                            	<div class="title">
 		                            		<p>Формат - Малый</p>
@@ -3533,7 +3533,7 @@
                                 </div>
                             </div>
                             <div class="franchise-conditions-table__mobile">
-                            	<div class="franchise-conditions-table__slick">
+                            	<div class="franchise-conditions-table__slick-3">
                             		<div>
 		                            	<div class="title">
 		                            		<p>Формат - Флагман</p>
@@ -4969,6 +4969,18 @@
 		<script type="text/javascript">
 			function initMobileSliderFranchise(){
 			$('.franchise-conditions-table__slick').slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  infinite: false
+			});
+
+			$('.franchise-conditions-table__slick-2').slick({
+			  slidesToShow: 1,
+			  slidesToScroll: 1,
+			  infinite: false
+			});
+
+			$('.franchise-conditions-table__slick-3').slick({
 			  slidesToShow: 1,
 			  slidesToScroll: 1,
 			  infinite: false

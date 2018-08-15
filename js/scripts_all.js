@@ -9920,7 +9920,7 @@ $(document).ready(function ($) {
         var self = $(this);
         self.parents('.franchise-title-layout').siblings('.franchise-content').slideToggle(100);
         self.siblings('.franchise-print').toggle();
-        if($('div').hasClass('franchise-conditions-table__slick')){
+        if($('div').hasClass('franchise-conditions-table__slick') || $('div').hasClass('franchise-conditions-table__slick-2') || $('div').hasClass('franchise-conditions-table__slick-3')){
             if($(window).width() < 756) {
                 initMobileSliderFranchise();
             }
