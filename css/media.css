@@ -7701,7 +7701,8 @@
         border-right: none;
         margin-bottom: 2rem;
     }
-    .holiday-description {
+    .holiday-description,
+    .holiday-box--mameninyi .holiday-description {
         padding: 2rem;
         height: 64rem;
         background: #eaecf2;
@@ -7727,7 +7728,7 @@
     .holiday .c-form__info {
         font-size: 1.5rem;
     }
-    .holiday-box--tortzhestvo .holiday-description__bg {
+    .holiday-box .holiday-description__bg {
         margin: auto;
         top: 0;
         left: 0;
@@ -7752,7 +7753,8 @@
     .holiday-description__text___mobile p {
         margin-bottom: 3rem;
     }
-    .holiday-description__text {
+    .holiday-description__text,
+    .holiday-box--mameninyi .holiday-description__text {
         min-height: inherit;
     }
     .holiday-description__text {
@@ -7812,6 +7814,9 @@
         padding: 1.4rem 2.2rem;
         border-radius: .3rem;
     }
+    .symbol-cat {
+        display: none;
+    }
 }
 
 
@@ -7839,7 +7844,7 @@
         height: 43rem;
         background: #eff1f5;
     }
-    .holiday .holiday-description__title {
+    .holiday-description__title {
         font-size: 4rem;
         margin-bottom: 2rem;
         text-align: center;
@@ -7866,7 +7871,7 @@
     .holiday .holiday-description__bg___mibile {
         display: block;
     }
-    .holiday-box--tortzhestvo .holiday-description__bg {
+    .holiday-box .holiday-description__bg {
         margin: auto;
         top: 0;
         left: 0;
@@ -7916,6 +7921,10 @@
         z-index: 1;
         bottom: -10.5rem;
         right: -15rem;
+    }
+    .holiday .symbol-rabbit-3,
+    .symbol-cat {
+        display: none;
     }
     .holiday .c-form__grid {
         display: block;
