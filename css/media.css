@@ -5046,6 +5046,9 @@
     .popup__booking .popup-body iframe {
         height: 100vh;
     }
+    .popup__booking .mfp-container {
+        padding: 0;
+    }
 }
 
 @media (max-width: 470px) {
