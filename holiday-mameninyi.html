@@ -2590,6 +2590,45 @@
                     </a>
                 
                 </div>
+
+                <div class="nav-mobile">
+                    <span class="main-button c-button c-button__small fill-mameninyi">Маменины <img class="main-button__img" src="./img/holidays/button-arrow__nav-mobile.png"></span>
+                	<div class="sub-buttons">
+                        <a href="#" class="c-button c-button__small fill-mameninyi">
+                            <span>Папенины</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-mameninyi">
+                            <span>Бабулечник</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-mameninyi">
+                            <span>Дедулечник</span>
+                        </a>
+                		<a href="#" class="c-button c-button__small fill-tortzhestvo">
+                            <span>Первый брачный пир</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-tortzhestvo">
+                            <span>Вкусник-Выпускник</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-tortzhestvo">
+                            <span>Тортжество</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-tortzhestvo">
+                            <span>Карапузник</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-christening">
+                            <span>Крестины-угостины</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-christening">
+                            <span>Декретные посидевочки</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-christening">
+                            <span>Год как торт</span>
+                        </a>
+                        <a href="#" class="c-button c-button__small fill-christening">
+                            <span>Встречайный день</span>
+                        </a>
+                	</div>
+                </div>
                 
                 <div class="holiday-box holiday-box--mameninyi">
                     <div class="holiday-description">
@@ -2640,7 +2679,25 @@
                         </div>
                         
                         <img class="holiday-description__bg" src="./img/holiday/holiday-mameninyi.png" alt="">
+                        <img class="holiday-description__bg holiday-description__bg___mibile" src="./img/holiday/holiday-mameninyi-mobile.png" alt="">
+                        <img class="holiday-description__bg holiday-description__bg___mibile-2" src="./img/holiday/holiday-mameninyi-mobile-2.png" alt="">
                         <svg class="c-symbol symbol-cat"><use xlink:href="#symbol-cat" /></svg>
+                    </div>
+
+                    <div class="holiday-order holiday-order__mobile">
+                    	<div class="holiday-description__text holiday-description__text___mobile">
+                    		<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudant ium, totam rem aperiam, eaque ipsa quae ab illo inventore eritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    		<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit ame consectetur, adipisci velit, sed quia non numquam eius odi tempora incidunt ut labore edolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum xercitation em ullam corporis suscipit labor iosam, nisi ut aliquid ex eacommodi consequatur? Quis autem vel eum iure eprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, velillum qui dolorem eum fugiat quovoluptas nulla pariatur?"</p>
+                    		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua.</p>
+                    	</div>
+                    	<div class="l-button l-button__mobile">
+                    		<a href="#" class="c-button c-button__decor-1">
+                                Конcтруктор праздника
+                                <svg class="c-symbol symbol-holiday-decor-1"><use xlink:href="#symbol-holiday-decor-1" /></svg>
+                                <svg class="c-symbol symbol-holiday-decor-2"><use xlink:href="#symbol-holiday-decor-2" /></svg>
+                            </a>
+                            <a href="#" class="c-button c-button__decor-2"><span>Посмотреть все праздничные пространства</span></a>
+                    	</div>
                     </div>
                     
                     <div class="holiday-order">
@@ -4038,6 +4095,12 @@
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <!--<script src="./js/custom-map.js"></script>-->
 <!--<script src="./js/main.js"></script>-->
+<script type="text/javascript">
+	$('.nav-mobile').on('click', '.main-button', function(){
+	    var hBlock = $(this).siblings('.sub-buttons');
+	    hBlock.toggle('slow');
+	});
+</script>
 <script async src="./js/scripts_all.js"></script>
 </body>
 </html>
