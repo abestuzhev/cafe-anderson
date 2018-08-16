@@ -19952,7 +19952,7 @@ a.show-more__button:hover {
     bottom: -59%;
     top: auto; }
     .calendar-selector.show-up .calendar-selector__head {
-      height: 2rem; }
+      height: 2rem !important; }
     .calendar-selector.show-up .calendar-selector__footer {
       height: 8rem; }
   .calendar-selector_hidden {
