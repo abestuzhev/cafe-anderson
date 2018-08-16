@@ -9268,6 +9268,7 @@ var documentHeight = (document.documentElement.clientHeight );
 
 $(window).on('load', function(){
 
+
     if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
         customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
         $(window).on('resize', function () {
@@ -9275,6 +9276,7 @@ $(window).on('load', function(){
         });
     };
 
+    $('.preloader').find('.loader').fadeOut().end().delay(100).fadeOut(100);
     // $('.holidays').addClass('show');
 
     /*скролл при выборе доставки*/
@@ -9924,16 +9926,21 @@ $(document).ready(function ($) {
     changeDispatchCheckbox('.js-dispatch-news');
     changeDispatchCheckbox('.js-dispatch-event');
 
-    initMobileSliderFranchise();
-    function initMobileSliderFranchise(){
-        $('.franchise-conditions-table__slick').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: false,
-          accessibility: false
-        });
-        $('.franchise-conditions-table__slick').slick('setPosition');
+    if($('div').hasClass('franchise-conditions-table__slick')){
+        function initMobileSliderFranchise(){
+            $('.franchise-conditions-table__slick').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                accessibility: false
+            });
+            $('.franchise-conditions-table__slick').slick('setPosition');
+        }
+
+        initMobileSliderFranchise();
     }
+
+
 
 
     //франшиза

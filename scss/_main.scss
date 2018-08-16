@@ -686,6 +686,10 @@ main {
 
 .popup__request-call {
   //background: #fff url(../img/popup-bg_request-call.png) no-repeat 100% 100%;
+  
+  .popup {
+    overflow: hidden !important;
+  }
 
   .icon-bird-down {
     position: absolute;
@@ -13128,11 +13132,19 @@ test popup
     padding-top: 0;
   }
 
+  .calendar-title__caption {
+    z-index: 13;
+  }
+
 
 }
 
 /*holidays общая страница со всеми праздниками---*/
 .holidays {
+
+  .calendar-title__caption {
+    z-index: 13;
+  }
 
   &-slider {
     border: 2px solid rgba(0, 0, 0, .2);
