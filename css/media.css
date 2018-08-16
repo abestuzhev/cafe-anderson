@@ -8108,6 +8108,9 @@
     .franchise-contact__form .c-button {
         width: 70%;
     }
+    .franchise-contact__form .js-input--tel {
+        width: 100% !important;
+    }
     .franchise-contact-callback {
         padding: 2rem 2rem 3rem 2rem;
         width: 100%;
@@ -8143,6 +8146,12 @@
     }
     .franchise-conditions-calc__note {
         font-weight: bold;
+    }
+    .form-call_phone {
+        display: inline-block;
+        margin-right: 0.5rem;
+        position: relative;
+        top: 0.3rem;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -8224,6 +8233,9 @@
     .franchise-contact__form .c-button {
         width: 70%;
     }
+    .franchise-contact__form .js-input--tel {
+        width: 100% !important;
+    }
     .franchise-contact-callback {
         padding: 2rem 2rem 3rem 2rem;
         width: 100%;
@@ -8263,6 +8275,15 @@
     .franchise-direction,
     .franchise-conditions-list {
         padding: 0rem 1.6rem;
+    }
+    .franchise-direction-card__img {
+        height: 15rem;
+    }
+    .form-call_phone {
+        display: inline-block;
+        margin-right: 0.5rem;
+        position: relative;
+        top: 0.3rem;
     }
 }
 
@@ -8333,6 +8354,12 @@
     .franchise-info {
         display: none;
     }
+    .franchise-map .franchise-info{
+        display: block;
+        text-align: center;
+        width: 90%;
+        margin:0 auto;
+    }
     .franchise-map .franchise-map {
         height: 250px;
     }
@@ -8351,6 +8378,9 @@
     }
     .franchise-contact__form {
         width: 100%;
+    }
+    .franchise-contact__form .js-input--tel {
+        width: 100% !important;
     }
     .franchise-contact .franchise-title-layout {
         margin-bottom: 0rem;
@@ -8392,8 +8422,9 @@
     .franchise-contact-callback__btn {
         width: 70%;
     }
-    .franchise .js-input--tel {
+    .franchise-contact-callback .js-input--tel {
         margin-bottom: 1rem;
+        width: 90% !important;
     }
     .franchise-advantages-list__mobile {
         display: block;
@@ -8586,11 +8617,21 @@
         margin-bottom: 2rem;
         text-align: center;
     }
+    .franchise-about-card__body p {
+        margin-bottom: -0.3rem;
+    }
+    .form-call_phone {
+        display: inline-block;
+        margin-right: 0.5rem;
+        position: relative;
+        top: 0.3rem;
+    }
     /*
         slick
     */
     .franchise-conditions-table__mobile {
         display: block;
+        margin-bottom: 2rem;
     }
     .franchise .slick-prev, .franchise .slick-next { 
         top: 24px;
@@ -8617,7 +8658,31 @@
         height: 36px;
         background: url(../img/franchise/right-arrow__slick.png) no-repeat;
     }
-    
+    .franchise-direction-card__img {
+        height: 11rem;
+    }
+    .advantages-card__title-show-more img {
+        width: 1.2rem;
+        height: 1.2rem;
+        position: relative;
+        margin-left: 1rem;
+        top: 0.9rem;
+        float: inherit;
+    }
+    .franchise-conditions-area .franchise-content {
+        margin-top: 4.4rem;
+    }
+    .more-advantages,
+    .more-advantages-1,
+    .more-advantages-2,
+    .more-advantages-3 {
+        display: none;
+    }
+    .franchise-advantages-list__mobile__item:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 756px) {
@@ -8635,5 +8700,8 @@
     }
     .franchise-contact-callback__form input {
         width: 100% !important;
+    }
+    .franchise-direction-card__img {
+        height: 15rem;
     }
 }
