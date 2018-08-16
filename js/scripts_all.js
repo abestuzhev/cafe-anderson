@@ -12271,7 +12271,6 @@ function holidaysAppleFix() {
     }
 }
 
-
 //      gridPosition
 function customGridRefreshPosition(container, block, cols = 'auto') {
     let container_width = $(container).width();

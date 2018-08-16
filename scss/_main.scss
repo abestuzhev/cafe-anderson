@@ -671,6 +671,8 @@ main {
 
 //------------------------------------------------custom popup*/
 
+
+
 .popup__write-to-us {
   //background: #fff url(../img/popup-bg_write-to-us.jpg) no-repeat 100% 100%;
   .icon-berry {
@@ -13122,6 +13124,10 @@ test popup
 
   }
 
+  .loft-booking .calendar {
+    padding-top: 0;
+  }
+
 
 }
 
@@ -17049,11 +17055,11 @@ a.show-more__button:hover {
       bottom: -59%;
       top: auto;
 
-      &.calendar-selector__head {
-          height: 2rem;
+      .calendar-selector__head {
+          height: 2rem !important;
       }
 
-      &.calendar-selector__footer {
+      .calendar-selector__footer {
           height: 8rem;
       }
   }

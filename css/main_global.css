@@ -16884,6 +16884,8 @@ test popup
         position: relative;
         padding-left: 23px;
         margin-bottom: 8px; }
+  .holiday .loft-booking .calendar {
+    padding-top: 0; }
 
 /*holidays общая страница со всеми праздниками---*/
 .holidays-slider {
@@ -19949,9 +19951,9 @@ a.show-more__button:hover {
   .calendar-selector.show-up {
     bottom: -59%;
     top: auto; }
-    .calendar-selector.show-up.calendar-selector__head {
-      height: 2rem; }
-    .calendar-selector.show-up.calendar-selector__footer {
+    .calendar-selector.show-up .calendar-selector__head {
+      height: 2rem !important; }
+    .calendar-selector.show-up .calendar-selector__footer {
       height: 8rem; }
   .calendar-selector_hidden {
     display: none; }

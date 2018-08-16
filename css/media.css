@@ -5032,6 +5032,23 @@
     .bonus-install__body {
         padding: 3rem 0rem;
     }
+
+
+    .popup__booking .popup {
+        position: fixed !important;
+        height: 100vh !important;
+    }
+
+    .popup__booking .popup-body {
+        height: 100vh;
+    }
+
+    .popup__booking .popup-body iframe {
+        height: 100vh;
+    }
+    .popup__booking .mfp-container {
+        padding: 0;
+    }
 }
 
 @media (max-width: 470px) {
