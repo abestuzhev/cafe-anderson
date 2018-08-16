@@ -9276,7 +9276,11 @@ $(window).on('load', function(){
         });
     };
 
-    $('.preloader').find('.loader').fadeOut().end().delay(100).fadeOut(100);
+    if($('div').hasClass('preloader')) {
+        $('.preloader').find('.loader').fadeOut().end().delay(100).fadeOut(100);
+    };
+
+
     // $('.holidays').addClass('show');
 
     /*скролл при выборе доставки*/
