@@ -17053,11 +17053,11 @@ a.show-more__button:hover {
       bottom: -59%;
       top: auto;
 
-      &.calendar-selector__head {
+      .calendar-selector__head {
           height: 2rem;
       }
 
-      &.calendar-selector__footer {
+      .calendar-selector__footer {
           height: 8rem;
       }
   }
