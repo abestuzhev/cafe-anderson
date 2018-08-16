@@ -9924,14 +9924,36 @@ $(document).ready(function ($) {
     changeDispatchCheckbox('.js-dispatch-news');
     changeDispatchCheckbox('.js-dispatch-event');
 
-
+    initMobileSliderFranchise();
+    function initMobileSliderFranchise(){
+        $('.franchise-conditions-table__slick').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          accessibility: false
+        });
+        $('.franchise-conditions-table__slick').slick('setPosition');
+    }
 
 
     //франшиза
     $('.franchise-title').on('click', function(){
         var self = $(this);
+        console.log();
         self.parents('.franchise-title-layout').siblings('.franchise-content').slideToggle(100);
         self.siblings('.franchise-print').toggle();
+        if($(window).width() < 756) {
+            $('.franchise-conditions-table__slick').slick('setPosition');
+            $('.slick-slide-2').slick('setPosition');
+            $('.slick-slide-3').slick('setPosition');
+        }
+
+        $(window).on('resize orientationchange', function() {
+
+            if($(window).width() < 756) {
+                //initMobileSliderFranchise();
+            }
+        });
     });
 
 
@@ -12248,6 +12270,7 @@ function holidaysAppleFix() {
         }
     }
 }
+
 
 //      gridPosition
 function customGridRefreshPosition(container, block, cols = 'auto') {
