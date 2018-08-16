@@ -17225,16 +17225,16 @@ a.show-more__button:hover {
 /* Holidays-all page */
 .holidays {
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
+    //opacity: 0;
+    //visibility: hidden;
     transition: all .2s ease-in-out;
     margin-bottom: 4rem;
 
-    &.show {
-        opacity: 1;
-        visibility: visible;
-        transition: all .2s ease-in-out;
-    }
+    //&.show {
+    //    opacity: 1;
+    //    visibility: visible;
+    //    transition: all .2s ease-in-out;
+    //}
 }
 
 .fill-mameninyi {

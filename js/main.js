@@ -42,7 +42,7 @@ $(window).on('load', function(){
         });
     };
 
-    $('.holidays').addClass('show');
+    // $('.holidays').addClass('show');
 
     /*скролл при выборе доставки*/
     var orderDeliveryMap = $('.order-delivery__map').height(),

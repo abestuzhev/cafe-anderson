@@ -20058,18 +20058,10 @@ a.show-more__button:hover {
 /* Holidays-all page */
 .holidays {
   text-align: center;
-  opacity: 0;
-  visibility: hidden;
   -webkit-transition: all .2s ease-in-out;
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   margin-bottom: 4rem; }
-  .holidays.show {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out; }
 
 .fill-mameninyi {
   background: #c2dd99;
