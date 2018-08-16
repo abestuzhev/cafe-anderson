@@ -2813,8 +2813,8 @@
                             <div class="franchise-advantages-list__mobile">
                             	<div class="franchise-advantages-list__mobile__item">
                             		<img src="./img/franchise/franchise-advantages-1.jpg" alt="">
-                            		<p class="franchise-advantages-card__title">Оригинальные, по-домашнему вкусные и всегда свежие десерты и выпечка из собственной кондитерской.</p>
-                            		<p>
+                            		<p class="franchise-advantages-card__title show-more-advantages">Оригинальные, по-домашнему вкусные и всегда свежие десерты и выпечка из собственной кондитерской. <span class="advantages-card__title-show-more"><img src="./img/franchise/show-more.png"></span></p>
+                            		<p class="more-advantages">
                             			с уникальными анимационными программами собственного сочинения,
                             			тортами, выполненными вручную в нашей кондитерской,
                             			персональным сопровождением во время планирования и проведения праздника
@@ -2823,8 +2823,8 @@
                             	</div>
                             	<div class="franchise-advantages-list__mobile__item">
                             		<img src="./img/franchise/franchise-advantages-2.jpg" alt="">
-                            		<p class="franchise-advantages-card__title">Большие, хорошо оборудованные и безопасные игровые пространства для детей.</p>
-                            		<p>
+                            		<p class="franchise-advantages-card__title show-more-advantages-1">Большие, хорошо оборудованные и безопасные игровые пространства для детей. <span class="advantages-card__title-show-more"><img src="./img/franchise/show-more.png"></span></p>
+                            		<p class="more-advantages-1">
                             			с уникальными анимационными программами собственного сочинения,
                             			тортами, выполненными вручную в нашей кондитерской,
                             			персональным сопровождением во время планирования и проведения праздника
@@ -2833,8 +2833,8 @@
                             	</div>
                             	<div class="franchise-advantages-list__mobile__item">
                             		<img src="./img/franchise/franchise-advantages-3.jpg" alt="">
-                            		<p class="franchise-advantages-card__title">Проведение семейных праздников «под ключ».</p>
-                            		<p>
+                            		<p class="franchise-advantages-card__title show-more-advantages-2">Проведение семейных праздников «под ключ». <span class="advantages-card__title-show-more"><img src="./img/franchise/show-more.png"></span></p>
+                            		<p class="more-advantages-2">
                             			с уникальными анимационными программами собственного сочинения,
                             			тортами, выполненными вручную в нашей кондитерской,
                             			персональным сопровождением во время планирования и проведения праздника
@@ -2843,8 +2843,8 @@
                             	</div>
                             	<div class="franchise-advantages-list__mobile__item">
                             		<img src="./img/franchise/franchise-advantages-4.jpg" alt="">
-                            		<p class="franchise-advantages-card__title">Комфорт и внимание к гостям во всех деталях.</p>
-                            		<p>
+                            		<p class="franchise-advantages-card__title show-more-advantages-3">Комфорт и внимание к гостям во всех деталях. <span class="advantages-card__title-show-more"><img src="./img/franchise/show-more.png"></span></p>
+                            		<p class="more-advantages-3">
                             			Няни в детских игровых зонах, удобные мягкие кресла и стулья в зале,
                             			библиотеки с интересными книгами в свободном доступе,
                             			зоны для кормления грудничков и пеленальные столики,
@@ -3777,7 +3777,7 @@
                                 <div class="franchise-contact-callback__subtitle">Звоните!</div>
                             </div>
                             <div class="franchise-contact-callback__item">
-                                <div class="franchise-contact-callback__phone">+7 (495) 648- 61- 51</div>
+                                <div class="franchise-contact-callback__phone"><span class="form-call_phone"><img src="./img/franchise/form-call-phone.png"></span> +7 (495) 648- 61- 51</div>
                             </div>
                             <div class="franchise-contact-callback__item">
                                 <svg class="c-symbol symbol-decor-1"><use xlink:href="#symbol-decor-1" /></svg>
@@ -4961,10 +4961,24 @@
         <script async src="./js/scripts_all.js"></script>
 
         <script>
-		  $('.show-more').click(function() {
-		  $('.more').show();
-		  $(this).hide();
-		  });
+			$('.show-more').click(function() {
+			$('.more').show();
+			$(this).hide();
+			});
+		</script>
+		<script type="text/javascript">
+			$('.show-more-advantages').click(function() {
+			  $('.more-advantages').toggle();
+			});
+			$('.show-more-advantages-1').click(function() {
+			  $('.more-advantages-1').toggle();
+			});
+			$('.show-more-advantages-2').click(function() {
+			  $('.more-advantages-2').toggle();
+			});
+			$('.show-more-advantages-3').click(function() {
+			  $('.more-advantages-3').toggle();
+			});
 		</script>
 </body>
 
