@@ -31,9 +31,18 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
+
+
 $(window).on('load', function(){
 
+    if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
+        customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
+        $(window).on('resize', function () {
+            customGridRefreshPosition('.holidays-grid', '.holidays-grid__container');
+        });
+    };
 
+    $('.holidays').addClass('show');
 
     /*скролл при выборе доставки*/
     var orderDeliveryMap = $('.order-delivery__map').height(),
@@ -2722,84 +2731,85 @@ $(function() {
     /* show more */
     
     /* settings*/
-    var $target = $('.show-more-target');
-    var $control = $('.show-more');
-    var target_item_selector = 'div.c-col';
-    var hsl_start_count = 0;
-
-    var hsl_sizer = {
-        0: {
-            start_count: 3,
-        },
-        420: {
-            start_count: 3,
-        },
-        620: {
-            start_count: 4,
-        },
-        940: {
-            start_count: 6,
-        },
-        1225: {
-            start_count: 8,
-        },
-    };
+    // var $target = $('.show-more-target');
+    // var $control = $('.show-more');
+    // var target_item_selector = 'div.c-col';
+    // var hsl_start_count = 0;
+    //
+    // var hsl_sizer = {
+    //     0: {
+    //         start_count: 3,
+    //     },
+    //     420: {
+    //         start_count: 3,
+    //     },
+    //     620: {
+    //         start_count: 4,
+    //     },
+    //     940: {
+    //         start_count: 6,
+    //     },
+    //     1225: {
+    //         start_count: 8,
+    //     },
+    // };
     /* end settings */
 
-    var show_more_state_collapsed = true;
-    var target_count = $target.find(target_item_selector).length;
+    // var show_more_state_collapsed = true;
+    // var target_count = $target.find(target_item_selector).length;
+    //
+    // for (var propName in hsl_sizer) {
+    //     if($(window).width() > propName) {
+    //         hsl_start_count = hsl_sizer[propName].start_count;
+    //     }
+    // }
+    //
+    // $(window).on('resize', function() {
+    //     for (var propName in hsl_sizer) {
+    //         if($(window).width() > propName) {
+    //             hsl_start_count = hsl_sizer[propName].start_count;
+    //         }
+    //     }
+    //     if(show_more_state_collapsed) {
+    //         if (hsl_start_count < target_count) {
+    //             $target.find(target_item_selector).each(function (index, elem) {
+    //                 index >= hsl_start_count ? $(elem).hide() : $(elem).show();
+    //             });
+    //         }
+    //     }
+    //
+    // });
 
-    for (var propName in hsl_sizer) {
-        if($(window).width() > propName) {
-            hsl_start_count = hsl_sizer[propName].start_count;
-        }
-    }
-
-    $(window).on('resize', function() {
-        for (var propName in hsl_sizer) {
-            if($(window).width() > propName) {
-                hsl_start_count = hsl_sizer[propName].start_count;
-            }
-        }
-        if(show_more_state_collapsed) {
-            if (hsl_start_count < target_count) {
-                $target.find(target_item_selector).each(function (index, elem) {
-                    index >= hsl_start_count ? $(elem).hide() : $(elem).show();
-                });
-            }
-        }
-
-    });
-
-    $control.find('a').on('click', function(event) {
-        event.preventDefault();
-        show_more_state_collapsed = !show_more_state_collapsed;
-
-        $target.find(target_item_selector).each(function(index, elem) {
-            if(show_more_state_collapsed) {
-                index >= hsl_start_count ? $(elem).hide(): $(elem).show();
-            } else {
-                $(elem).show();
-            }
-        });
-
-        if (show_more_state_collapsed) {
-            $control.find('a').html('показать ещё');
-        } else {
-            $control.find('a').html('скрыть');
-        }
-
+    // $control.find('a').on('click', function(event) {
+    //     event.preventDefault();
+    //     show_more_state_collapsed = !show_more_state_collapsed;
+    //
+    //     $target.find(target_item_selector).each(function(index, elem) {
+    //         if(show_more_state_collapsed) {
+    //             index >= hsl_start_count ? $(elem).hide(): $(elem).show();
+    //         } else {
+    //             $(elem).show();
+    //         }
+    //     });
+    //
+    //     if (show_more_state_collapsed) {
+    //         $control.find('a').html('показать ещё');
+    //     } else {
+    //         $control.find('a').html('скрыть');
+    //     }
+    //
 
     //        if(current > target_count) $control.hide();
-    });
+    // });
+    //
+    //
+    //
+    // if(hsl_start_count < target_count) {
+    //     $target.find(target_item_selector).each(function(index, elem) {
+    //         index >= hsl_start_count ? $(elem).hide(): $(elem).show();
+    //     });
+    // }
 
-
-
-    if(hsl_start_count < target_count) {
-        $target.find(target_item_selector).each(function(index, elem) {
-            index >= hsl_start_count ? $(elem).hide(): $(elem).show();
-        });
-    }
     /* end show more */
 
 
@@ -2818,8 +2828,15 @@ $(function() {
         /* Calendar Selector */
         new SimpleBar($('.calendar-selector__list')[0], {
             autoHide: false,
-            scrollbarMinSize: 35,
+            scrollbarMinSize: 35
         });
+
+
+        var holiday_calendar = $('.holiday .calendar');
+
+        if(holiday_calendar.height() < 130) {
+            holiday_calendar.find('.calendar-selector').addClass('show-up');
+        }
     };
 
 
@@ -3021,53 +3038,148 @@ function holidaysAppleFix() {
     }
 }
 
-//  events listener
-$(function() {
-    $(window).on('resize orientationchange', function() {
-        var mySlider = $('.holiday-reason__slick');
+//      gridPosition
+function customGridRefreshPosition(container, block, cols = 'auto') {
+    let container_width = $(container).width();
+    let map = [];
 
-        if (!mySlider.hasClass('slick-initialized')) {
-            mySlider.slick({
-                slidesToShow: 3,
-                centerMode: false,
-                responsive: [
-                    {
-                        breakpoint: 9999,
-                        settings: "unslick"
-                    },
-                    {
-                        breakpoint: 1300,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            infinite: false
-                        }
-                    },
-                    {
-                        breakpoint: 740,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: false
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: false
+    let cont = { height_u: 0, width_u: 0};
+
+    let minWidth = container_width;
+    let minHeight = 10000;
+    let block_count = $(block).length;
+
+    $(block).each(function(index, elem) {
+        let $block = $(elem);
+        let block_width = $block.outerWidth();
+        let block_height = $block.outerHeight();
+        if (minWidth > block_width) minWidth = block_width;
+        if (minHeight > block_height) minHeight = block_height;
+    });
+
+    let map_width = 1;
+    if(cols == 'auto') {
+        map_width = container_width / (minWidth - 1) >> 0;
+    } else {
+        map_width = cols;
+    }
+
+    for (let i=0; i < block_count; i++) {
+        map[i] = [];
+        for (let j=0; j < map_width; j++) {
+            map[i][j] = 1;
+        }
+    }
+
+    $(block).each(function(index, elem) {
+        let $block = $(elem);
+        let block_width = $block.outerWidth();
+        let block_height = $block.outerHeight();
+        let block_width_U = Math.round(block_width/minWidth);
+        let block_height_U = Math.round(block_height/minHeight);
+        let block_position = {x:-1000, y:-1000, cellSum:0};
+        let posFindFlag = false;
+
+        for (let i=0; i < map.length; i++) {
+            for (let j=0; j < map_width; j++) {
+
+                if(map[i][j] != 0) {
+                    block_position.cellSum = block_height_U * block_width_U;
+                    for (let k = 0; k < block_height_U; k++) {
+                        for (let l = 0; l < block_width_U; l++) {
+                            if (((i + k) < map.length) && ((j + l) < map_width))
+                                block_position.cellSum -= map[i + k][j + l];
                         }
                     }
-                ]
-            });
+                    if (block_position.cellSum == 0) {
+                        posFindFlag = true;
+                        block_position.x = j * minWidth;
+                        block_position.y = i * minHeight;
+                        for (let k = 0; k < block_height_U; k++) {
+                            for (let l = 0; l < block_width_U; l++) {
+                                if (((i + k) < map.length) && ((j + l) < map_width))
+                                    map[i + k][j + l] = 0;
+                                if(cont.height_u < (i+k)) cont.height_u = i+k;
+                                if(cont.width_u < (j+l)) cont.width_u = j+l;
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+            if(posFindFlag) break;
         }
-
-        holidaysInit('.holidays-list__body');
-        holidaysAppleFix();
-
+        $block.css('left', block_position.x);
+        $block.css('top', block_position.y);
     });
+
+    $(container).css('height',(cont.height_u+1) * minHeight);
+}
+
+function initHolidayMobileSlider(){
+    var mySlider = $('.holiday-reason__slick');
+
+    if (!mySlider.hasClass('slick-initialized')) {
+        mySlider.slick({
+            slidesToShow: 3,
+            centerMode: false,
+            responsive: [
+                {
+                    breakpoint: 9999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                },
+                {
+                    breakpoint: 740,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                }
+            ]
+        });
+    }
+}
+
+
+//  events listener
+$(function() {
+    if($('div').hasClass('holiday-reason__grid')){
+        $(window).on('resize orientationchange', function() {
+
+            initHolidayMobileSlider();
+
+    
+        });
+
+        initHolidayMobileSlider();
+    };
+
+    holidaysInit('.holidays-list__body');
+    holidaysAppleFix();
+
+
+
+    
 });
+
+
 
 
 

@@ -160,6 +160,8 @@ $(function(){
         showFilterItem: function(filterTitle){
             $(filterTitle).parents('.constructor-filter__item').siblings().removeClass('active');
             $(filterTitle).parents('.constructor-filter__item').addClass('active');
+            $(filterTitle).parents('.constructor-filter__item').siblings().find('.const-filter-card__body').slideUp(300);
+            $(filterTitle).parents('.constructor-filter__item').find('.const-filter-card__body').slideDown(300);
         },
 
         addActive: function(elemActive, elemSiblings, nameClass){

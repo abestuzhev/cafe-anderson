@@ -91,13 +91,13 @@ body {
     margin-bottom: 2rem;
     line-height: 1.6;
     color: $black;
+    padding-left: 3.5rem;
 }
 
 .c-ul-list li {
-    list-style: disc inside;
+    list-style: disc outside;
     margin-bottom: .3rem;
     font-size: 1.5rem;
-    padding-left: 3.5rem;
 
 }
 

@@ -577,6 +577,12 @@
         padding-left: .5rem;
         padding-right: .5rem;
     }
+
+    .holiday-reason .c-title-decor-1::before,
+    .holiday-reason .c-title-decor-1::after {
+        content: '';
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -1138,6 +1144,14 @@
 
     .loft-info__title {
         margin-bottom: 1rem;
+    }
+
+    .calendar-period {
+        padding: 2rem 2rem;
+    }
+
+    .calendar-navigator__link {
+        font-size: 2.3rem;
     }
 }
 
@@ -2759,9 +2773,14 @@
         display: none;
     }
 
-    .calendar-week {
+    .calendar-body {
+        overflow: hidden;
+    }
+    .calendar-week,
+    .calendar-body__track {
         overflow: hidden;
         overflow-x: scroll;
+        width: 100%;
     }
 
     .calendar-body {
@@ -2773,6 +2792,17 @@
         padding-bottom: 0;
         overflow: hidden;
     }
+    .newcalendar .calendar-week {
+        overflow: visible;
+    }
+    .newcalendar .calendar-track {
+        overflow: visible;
+    }
+
+    .calendar-box--inreserve .c-symbol {
+        display: none;
+    }
+
     .calendar-track::after {
         content: '';
         position: absolute;
@@ -6559,6 +6589,7 @@
 @media screen and (max-width: 1150px) {
     .holiday-space-list .calendar-nav__icon-gradient {
         background: #c44890;
+        min-width: 5.3rem;
     }
 
     .holiday-space-list .calendar-nav__icon-gradient svg {
@@ -6788,7 +6819,7 @@
 
 @media screen and (max-width: 1260px) {
     .holidays .holidays-grid {
-        width: 60rem;
+        width: 90rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -6807,6 +6838,15 @@
     }
 
 }
+
+@media screen and (max-width: 950px) {
+    .holidays .holidays-grid {
+        width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 @media screen and (max-width: 670px) {
     .holidays .holidays-grid {

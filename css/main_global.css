@@ -1734,13 +1734,13 @@ body {
   font-family: "PT Serif Caption";
   margin-bottom: 2rem;
   line-height: 1.6;
-  color: #555451; }
+  color: #555451;
+  padding-left: 3.5rem; }
 
 .c-ul-list li {
-  list-style: disc inside;
+  list-style: disc outside;
   margin-bottom: .3rem;
-  font-size: 1.5rem;
-  padding-left: 3.5rem; }
+  font-size: 1.5rem; }
 
 .c-ul-list li ul {
   padding-left: 6.4rem; }
@@ -8368,7 +8368,7 @@ main {
   background-size: 99%; }
 
 .popup-poster .popup-box {
-  overflow: visible; }
+  overflow: hidden; }
 
 .popup-poster .popup-close {
   right: 10rem;
@@ -8857,7 +8857,9 @@ test popup
           transform: scale(1);
   -webkit-transition: all .1s ease;
   -o-transition: all .1s ease;
-  transition: all .1s ease; }
+  transition: all .1s ease;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
 
 .is-show__smoothly {
   opacity: 1 !important;
@@ -17063,6 +17065,9 @@ test popup
     .holidays-advantages-card__text {
       font-style: italic; }
 
+.holidays .loft-booking .calendar {
+  padding-top: 0; }
+
 /*dispatch**************************************/
 .dispatch {
   margin-bottom: 3rem; }
@@ -19111,7 +19116,8 @@ test popup
 
 /*loft-booking-----------------------------*/
 .loft-booking {
-  padding: 3.7rem 2.8rem; }
+  padding: 3.7rem 2.8rem;
+  margin-bottom: 4rem; }
   .loft-booking__header {
     text-align: center;
     margin-bottom: 1.8rem;
@@ -19240,6 +19246,20 @@ test popup
     .calendar-period__text {
       display: inline-block;
       padding: 0 .5rem; }
+  .calendar-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .calendar-body {
     /*calendar-body*/
     display: -webkit-box;
@@ -19255,6 +19275,18 @@ test popup
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
+    .calendar-body.newcalendar {
+      display: block;
+      overflow: hidden; }
+      .calendar-body.newcalendar .calendar-nav-hall {
+        min-height: 100%; }
+      .calendar-body.newcalendar .calendar-track {
+        overflow: visible;
+        width: auto; }
+  .calendar__track {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%; }
   .calendar-nav {
     /*calendar-nav*/
     -webkit-box-flex: 0;
@@ -19299,8 +19331,7 @@ test popup
   .calendar-track {
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1;
-    padding-bottom: 17px; }
+            flex: 1; }
     .calendar-track::after {
       content: '';
       clear: both;
@@ -19358,13 +19389,21 @@ test popup
     z-index: 1;
     border-right: none !important;
     border-bottom: none !important; }
+    .calendar-box__wraplink {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      color: #555451; }
     .calendar-box span {
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+              transform: translate(-50%, -50%);
+      white-space: nowrap; }
     .calendar-box--last {
       background: -o-linear-gradient(55.3deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%);
       background: linear-gradient(34.7deg, #e8e8e8 0%, #e8e8e8 50%, #ddd 51%, #ddd 100%); }
@@ -19487,7 +19526,10 @@ test popup
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap; }
+            flex-flow: row nowrap;
+    margin-top: 2.5rem; }
+  .holiday-space-list .filter .c-button {
+    padding: .7rem 1.4rem; }
   .holiday-space-list .filter .filter-item:nth-child(1) {
     width: 100%; }
   .holiday-space-list .filter .filter-item:nth-child(2) {
@@ -19893,7 +19935,7 @@ a.show-more__button:hover {
 /* Calendar Selector */
 .calendar-selector {
   position: absolute;
-  z-index: 11;
+  z-index: 12;
   width: 100%;
   top: -2.2rem;
   left: 50%;
@@ -19904,6 +19946,13 @@ a.show-more__button:hover {
   border-radius: .8rem;
   -webkit-box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33);
           box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33); }
+  .calendar-selector.show-up {
+    bottom: -59%;
+    top: auto; }
+    .calendar-selector.show-up.calendar-selector__head {
+      height: 2rem; }
+    .calendar-selector.show-up.calendar-selector__footer {
+      height: 8rem; }
   .calendar-selector_hidden {
     display: none; }
   .calendar-selector__head {
@@ -20006,7 +20055,19 @@ a.show-more__button:hover {
 
 /* Holidays-all page */
 .holidays {
-  text-align: center; }
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin-bottom: 4rem; }
+  .holidays.show {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
 
 .fill-mameninyi {
   background: #c2dd99;
@@ -20016,15 +20077,8 @@ a.show-more__button:hover {
   background: #9acc4f; }
 
 .holidays-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  position: relative;
   width: 100%;
-  margin-left: -1.4rem;
   /* sizes */ }
   .holidays-grid__block-wrapper {
     opacity: 0;
@@ -20042,7 +20096,8 @@ a.show-more__button:hover {
     width: 25%;
     min-width: 30rem;
     height: 23rem;
-    padding: 1.2rem 1.4rem; }
+    padding: 1.2rem 1.4rem;
+    position: absolute; }
   .holidays-grid__block {
     width: 100%;
     height: 100%;
@@ -20065,7 +20120,7 @@ a.show-more__button:hover {
     display: inline-block;
     position: relative;
     z-index: 5;
-    padding: 1.8rem 2rem;
+    padding: 1.8rem 1.8rem;
     padding-bottom: 1.5rem;
     border-radius: 10px;
     border: 0;
@@ -20078,22 +20133,13 @@ a.show-more__button:hover {
     text-transform: uppercase;
     outline: none;
     border: none;
-    white-space: nowrap; }
+    left: -50%;
+    max-width: 97%; }
     .holidays-grid__button:after {
       border: none;
       width: auto; }
     .holidays-grid__button:hover {
       color: white; }
-    .holidays-grid__button:hover:after {
-      content: '';
-      background-color: rgba(255, 255, 255, 0.1);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 5;
-      width: 100%;
-      height: 100%;
-      border-radius: 1rem; }
   .holidays-grid a.holidays-grid__button {
     z-index: 10; }
   .holidays-grid__block-footer {
@@ -20101,11 +20147,8 @@ a.show-more__button:hover {
     display: block;
     width: 100%;
     bottom: 1rem;
-    left: 0;
-    overflow: hidden;
-    text-align: center;
-    height: 7rem;
-    /* hover bug fix */ }
+    left: 50%;
+    text-align: center; }
   .holidays-grid__body {
     width: 100%;
     height: 100%;
@@ -20126,19 +20169,34 @@ a.show-more__button:hover {
     font-family: "PT Serif Caption";
     font-size: 2.4rem;
     color: #c7368a;
-    padding-bottom: .5rem; }
+    padding-bottom: .5rem;
+    padding: 1rem; }
   .holidays-grid__text {
     font-family: "PT Serif Caption";
     font-style: italic;
     font-size: 1.6rem;
     padding-bottom: 3rem;
     padding-left: 1.2rem;
-    padding-right: 1.2rem; }
+    padding-right: 1.2rem;
+    color: #555451; }
   .holidays-grid_row-span_2 {
-    height: 49rem; }
+    height: 46rem; }
   .holidays-grid_col-span_2 {
     width: 50%;
     min-width: 60rem; }
+
+.holidays-clear_link {
+  color: #555451; }
+  .holidays-clear_link:hover {
+    color: #555451; }
+  .holidays-clear_link:after {
+    content: '';
+    border: none;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: 0;
+    top: 0; }
 
 .holidays-footer {
   padding-left: 0rem;
@@ -20249,12 +20307,19 @@ a.show-more__button:hover {
               box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15);
       position: relative; }
     .holidays-list-item__decor {
+      display: block;
       height: 17rem;
       background-position: 50% 50%;
       background-size: cover;
       background-repeat: no-repeat;
       margin-right: -2.2rem;
       margin-left: -2.2rem; }
+
+.holidays .holidays-count {
+  -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+          transform: scale(1.15);
+  margin-left: 1.4rem; }
 
 .holidays .holidays-count__line {
   display: -webkit-box;
