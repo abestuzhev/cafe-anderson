@@ -5116,6 +5116,9 @@ div.c-card-catalog-2 {
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
+    .c-card-party__title .c-symbol {
+      margin-right: 1rem;
+      fill: #c44890; }
   .c-card-party-info {
     display: -webkit-box;
     display: -ms-flexbox;
