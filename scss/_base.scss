@@ -185,6 +185,7 @@ body {
     font-family: $font_serif;
     box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
     border-radius: .8rem;
+    margin-bottom: 4rem;
 
 }
 
@@ -4292,6 +4293,13 @@ div.c-card-catalog-2 {
         }
         
     }
+
+    &__conditions {
+        color: #672f05;
+        font-size: 1.2rem;
+        text-align: right;
+        max-width: 21rem;
+    }
     
     &__title {
         font-size: 3.5rem;
@@ -4361,9 +4369,36 @@ div.c-card-catalog-2 {
     
     &-description {
         margin-bottom: 2.8rem;
+
+        &__title {
+            font-weight: 700;
+            color: $black;
+        }
+
+        &-layout {
+            &__center {
+                text-align: center;
+                margin-bottom: .6rem;
+            }
+            &__left {
+                text-align: center;
+            }
+            &__right {
+                text-align: center;
+            }
+        }
+
         p {
             font-size: 1.3rem;
             margin-bottom: .8rem;
+        }
+
+        &__important {
+
+
+            p {
+                font-size: 1.5rem;
+            }
         }
     }
     
@@ -4477,6 +4512,54 @@ div.c-card-catalog-2 {
     
     .c-col-6 {
         padding: 0 1.4rem;
+    }
+
+    &-important {
+        text-align: center;
+        .c-card-party-box__title span {
+            font-size: 30px;
+            font-weight: 700;
+            color: #c44890;
+            max-width: 40rem;
+        }
+
+        img {
+            max-width: 80%;
+        }
+    }
+
+    &-info {
+        border-radius: .8rem;
+        border: .1rem solid #d2d2d2;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+        &__body {
+            width: 100%;
+        }
+
+        &__line {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+
+        &__col {
+            width: 50%;
+            padding: 1rem;
+            text-transform: uppercase;
+
+            &:nth-child(1) {
+                font-weight: 700;
+
+            }
+            &:nth-child(2) {
+                color: #c44890;
+            }
+        }
     }
     
 }

@@ -268,6 +268,34 @@
         /*min-width: 23%;*/
     /*}*/
 
+    .c-card-party-box .c-grid-between {
+        display: block;
+        margin: 0;
+    }
+    .c-card-party-box .c-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+
+
+    .holiday-offers-banner__icon-1 .symbol-decoration-triangle-1,
+    .holiday-offers-banner__icon-2 .symbol-decoration-triangle-2 {
+        font-size: 34.3rem;
+    }
+
+    .holiday-offers-banner__icon-1 {
+        top: -1.2rem;
+        left: -11.7rem;
+    }
+    .holiday-offers-banner__icon-2 {
+        top: -1.2rem;
+        right: -11.7rem;
+    }
+
+
 }
 
 @media (min-width: 1600px) {
@@ -723,6 +751,7 @@
         right: -3.7rem;
     }
 
+    .holiday-offers .c-caption-special__subtitle,
     .graduation-party .c-caption-special__subtitle {
         font-size: 2rem;
     }
@@ -2031,6 +2060,22 @@
         padding: 2rem 8rem;
     }
 
+
+
+    .holiday-offers-banner__icon-1 .symbol-decoration-triangle-1,
+     .holiday-offers-banner__icon-2 .symbol-decoration-triangle-2 {
+         font-size: 30rem;
+     }
+
+    .holiday-offers-banner__icon-1 {
+        top: -1.2rem;
+        left: -15.7rem;
+    }
+    .holiday-offers-banner__icon-2 {
+        top: -1.2rem;
+        right: -15.7rem;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -2130,14 +2175,26 @@
     }
 
     /*адаптивка выпускники*/
+    .holiday-offers .c-card-party .c-col-6,
     .graduation-party .c-card-party .c-grid {
         flex-flow: column nowrap;
         align-items: flex-start;
     }
 
+    .holiday-offers .c-card-party .c-col-6,
     .graduation-party .c-card-party .c-col-6 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .c-card-party__conditions {
+        margin-bottom: 1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .holiday-offers-banner__slide {
+        height: 36rem;
     }
 
     .cafe-list__box {
@@ -2279,6 +2336,7 @@
         display: block;
     }
 
+    .holiday-offers .c-caption-special__subtitle,
     .graduation-party .c-caption-special__subtitle {
         font-size: 1.7rem;
         padding: 0 4rem;
@@ -2813,6 +2871,12 @@
         width: 4rem;
         background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.2) 100%);
     }
+
+    .holiday-offers-banner__slide {
+        height: 28rem;
+    }
+
+
 
 }
 
@@ -3592,6 +3656,29 @@
         border-radius: 0;
         border-left: none;
         border-right: none;
+    }
+
+    .holiday-offers-banner {
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+        margin-top: -2rem;
+    }
+
+    .holiday-offers-banner__slide {
+        height: 24rem;
+    }
+
+    .c-card-party-info__line {
+        display: block;
+        margin: 0;
+    }
+
+    .c-card-party-info__col {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: .2rem;
     }
 
 }
@@ -4447,6 +4534,14 @@
         width: 100%;
         padding: 0;
     }
+
+
+    .holiday-offers-banner__icon-1 {
+        display: none;
+    }
+    .holiday-offers-banner__icon-2 {
+        display: none;
+    }
 }
 
 @media (max-width: 570px) {
@@ -4603,6 +4698,7 @@
         width: 87% !important;
     }
 
+    .holiday-offers .c-caption-special__subtitle,
     .graduation-party .c-caption-special__subtitle {
         font-size: 1.3rem;
         padding: 0 3rem;
@@ -5181,6 +5277,10 @@
 
     .easter-banner {
         padding: 2.5rem 0rem 4rem;
+    }
+
+    .holiday-offers .l-button__right {
+        text-align: center;
     }
 }
 

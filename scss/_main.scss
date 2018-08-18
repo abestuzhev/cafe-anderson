@@ -9696,6 +9696,206 @@ test popup
   }
 }
 
+.holiday-offers {
+    //margin-bottom: 4rem;
+
+    &-banner {
+        margin-bottom: 2.4rem;
+        &__header {
+            overflow: hidden;
+            position: relative;
+            .c-caption-special {
+
+            }
+        }
+
+        &__slider {
+            max-height: 42rem;
+
+            .owl-nav {
+                display: none;
+            }
+
+            background-color: #c44890;
+        }
+        &__slide {
+            //width: 100%;
+            //background-position: 50% 50%;
+            //-webkit-background-size: cover;
+            //background-size: cover;
+            //overflow: hidden;
+            height: 42rem;
+            position: relative;
+            overflow: hidden;
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        &__footer {
+            width: 100%;
+            height: 2.9rem;
+            background-color: #c44890;
+            background-size: cover;
+        }
+
+        &__btns {
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+
+        }
+
+        &__btn {
+            padding: 1.2rem 1.8rem;
+            font-size: 2.3rem;
+            border-radius: .6rem;
+            background-color: #7cbd41;
+            color: #ffffff;
+            margin: 0 2.2rem;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1;
+
+            span {
+                color: #231300;
+                display: block;
+            }
+
+            &::after {
+                content: '';
+                border: none;
+            }
+
+            &:hover {
+                background-color: #80c242;
+                color: #ffffff;
+            }
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+            width: .8rem;
+            height: .8rem;
+            background-color: #fff;
+            margin: 0 .5rem;
+            position: relative;
+        }
+
+        .owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: .3rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .owl-theme .owl-dots .owl-dot.active span::after {
+            content: '';
+            position: absolute;
+            top: .2rem;
+            left: .2rem;
+            width: .4rem;
+            height: .4rem;
+            background-color: #7e5847;
+            border-radius: 1rem;
+        }
+
+        &__icon-1 {
+            position: absolute;
+            z-index: 10;
+            top: -3.2rem;
+            left: -5.7rem;
+            svg {
+                fill: #fff;
+            }
+
+        }
+        &__icon-2 {
+            position: absolute;
+            z-index: 10;
+            top: -4.2rem;
+            right: -4.7rem;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+
+    .c-card-party {
+        &__title {
+            font-size: 2.1rem;
+        }
+
+        &__application {
+            max-width: 36rem;
+
+            a {
+                white-space: normal;
+                font-size: 1.3rem;
+                text-transform: none;
+                text-align: center;
+            }
+        }
+
+        &-description {
+            margin-bottom: 1rem;
+        }
+
+
+    }
+
+
+    .c-caption-special {
+
+        background-color: #c44890;
+
+        &__title {
+            color: #7cbd41;
+            text-transform: none;
+        }
+
+        .icon-ice-cream-2 {
+            position: absolute;
+            z-index: 4;
+            transform: rotate(-23deg);
+            right: 1.3rem;
+            bottom: -2.4rem;
+
+        }
+
+        .icon-balloon-2 {
+            position: absolute;
+            z-index: 4;
+            top: -3.2rem;
+            left: 4.3rem;
+
+        }
+    }
+
+
+    &__footer {
+        .c-caption-special {
+            background-color: #dadada;
+
+            &__subtitle {
+                font-size: 1.5rem;
+                color: #1d1d1b;
+            }
+        }
+
+        .c-button__large {
+            background-color: #c44890;
+            margin-top: 2rem;
+        }
+    }
+}
+
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock {
   margin-bottom: 3rem;

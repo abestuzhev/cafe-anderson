@@ -1455,6 +1455,18 @@ i.icon-chair {
   height: 1em;
   fill: #7f7d7c; }
 
+.symbol-decoration-triangle-1 {
+  font-size: 43.3rem;
+  width: 1em;
+  height: .4em;
+  fill: #7f7d7c; }
+
+.symbol-decoration-triangle-2 {
+  font-size: 43.3rem;
+  width: 1em;
+  height: .4em;
+  fill: #7f7d7c; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -1805,7 +1817,8 @@ body {
   font-family: "PT Serif Caption";
   -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
-  border-radius: .8rem; }
+  border-radius: .8rem;
+  margin-bottom: 4rem; }
 
 .page-wrapper {
   padding: 3.1rem 2.8rem 3.1rem 2.8rem;
@@ -5063,6 +5076,11 @@ div.c-card-catalog-2 {
     .c-card-party__header::after {
       content: '';
       bottom: 0; }
+  .c-card-party__conditions {
+    color: #672f05;
+    font-size: 1.2rem;
+    text-align: right;
+    max-width: 21rem; }
   .c-card-party__title {
     font-size: 3.5rem;
     color: #614f43;
@@ -5136,9 +5154,21 @@ div.c-card-catalog-2 {
         margin-right: 0; }
   .c-card-party-description {
     margin-bottom: 2.8rem; }
+    .c-card-party-description__title {
+      font-weight: 700;
+      color: #555451; }
+    .c-card-party-description-layout__center {
+      text-align: center;
+      margin-bottom: .6rem; }
+    .c-card-party-description-layout__left {
+      text-align: center; }
+    .c-card-party-description-layout__right {
+      text-align: center; }
     .c-card-party-description p {
       font-size: 1.3rem;
       margin-bottom: .8rem; }
+    .c-card-party-description__important p {
+      font-size: 1.5rem; }
   .c-card-party__item {
     font-size: 1.3rem;
     margin-bottom: .5rem; }
@@ -5227,6 +5257,47 @@ div.c-card-catalog-2 {
       margin-bottom: 0; }
   .c-card-party .c-col-6 {
     padding: 0 1.4rem; }
+  .c-card-party-important {
+    text-align: center; }
+    .c-card-party-important .c-card-party-box__title span {
+      font-size: 30px;
+      font-weight: 700;
+      color: #c44890;
+      max-width: 40rem; }
+    .c-card-party-important img {
+      max-width: 80%; }
+  .c-card-party-info {
+    border-radius: .8rem;
+    border: .1rem solid #d2d2d2;
+    background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem; }
+    .c-card-party-info__body {
+      width: 100%; }
+    .c-card-party-info__line {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      margin-left: -1rem;
+      margin-right: -1rem; }
+    .c-card-party-info__col {
+      width: 50%;
+      padding: 1rem;
+      text-transform: uppercase; }
+      .c-card-party-info__col:nth-child(1) {
+        font-weight: 700; }
+      .c-card-party-info__col:nth-child(2) {
+        color: #c44890; }
 
 .c-simple-nav {
   font-size: 0;
@@ -14259,6 +14330,147 @@ test popup
     z-index: 4;
     top: -3.2rem;
     left: 4.3rem; }
+
+.holiday-offers-banner {
+  margin-bottom: 2.4rem; }
+  .holiday-offers-banner__header {
+    overflow: hidden;
+    position: relative; }
+  .holiday-offers-banner__slider {
+    max-height: 42rem;
+    background-color: #c44890; }
+    .holiday-offers-banner__slider .owl-nav {
+      display: none; }
+  .holiday-offers-banner__slide {
+    height: 42rem;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-size: cover; }
+  .holiday-offers-banner__footer {
+    width: 100%;
+    height: 2.9rem;
+    background-color: #c44890;
+    background-size: cover; }
+  .holiday-offers-banner__btns {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%; }
+  .holiday-offers-banner__btn {
+    padding: 1.2rem 1.8rem;
+    font-size: 2.3rem;
+    border-radius: .6rem;
+    background-color: #7cbd41;
+    color: #ffffff;
+    margin: 0 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1; }
+    .holiday-offers-banner__btn span {
+      color: #231300;
+      display: block; }
+    .holiday-offers-banner__btn::after {
+      content: '';
+      border: none; }
+    .holiday-offers-banner__btn:hover {
+      background-color: #80c242;
+      color: #ffffff; }
+  .holiday-offers-banner .owl-theme .owl-dots .owl-dot span {
+    width: .8rem;
+    height: .8rem;
+    background-color: #fff;
+    margin: 0 .5rem;
+    position: relative; }
+  .holiday-offers-banner .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: .3rem;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .holiday-offers-banner .owl-theme .owl-dots .owl-dot.active span::after {
+    content: '';
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    width: .4rem;
+    height: .4rem;
+    background-color: #7e5847;
+    border-radius: 1rem; }
+  .holiday-offers-banner__icon-1 {
+    position: absolute;
+    z-index: 10;
+    top: -3.2rem;
+    left: -5.7rem; }
+    .holiday-offers-banner__icon-1 svg {
+      fill: #fff; }
+  .holiday-offers-banner__icon-2 {
+    position: absolute;
+    z-index: 10;
+    top: -4.2rem;
+    right: -4.7rem; }
+    .holiday-offers-banner__icon-2 svg {
+      fill: #fff; }
+
+.holiday-offers .c-card-party__title {
+  font-size: 2.1rem; }
+
+.holiday-offers .c-card-party__application {
+  max-width: 36rem; }
+  .holiday-offers .c-card-party__application a {
+    white-space: normal;
+    font-size: 1.3rem;
+    text-transform: none;
+    text-align: center; }
+
+.holiday-offers .c-card-party-description {
+  margin-bottom: 1rem; }
+
+.holiday-offers .c-caption-special {
+  background-color: #c44890; }
+  .holiday-offers .c-caption-special__title {
+    color: #7cbd41;
+    text-transform: none; }
+  .holiday-offers .c-caption-special .icon-ice-cream-2 {
+    position: absolute;
+    z-index: 4;
+    -webkit-transform: rotate(-23deg);
+        -ms-transform: rotate(-23deg);
+            transform: rotate(-23deg);
+    right: 1.3rem;
+    bottom: -2.4rem; }
+  .holiday-offers .c-caption-special .icon-balloon-2 {
+    position: absolute;
+    z-index: 4;
+    top: -3.2rem;
+    left: 4.3rem; }
+
+.holiday-offers__footer .c-caption-special {
+  background-color: #dadada; }
+  .holiday-offers__footer .c-caption-special__subtitle {
+    font-size: 1.5rem;
+    color: #1d1d1b; }
+
+.holiday-offers__footer .c-button__large {
+  background-color: #c44890;
+  margin-top: 2rem; }
 
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock {
