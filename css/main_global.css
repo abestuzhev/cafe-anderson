@@ -7430,7 +7430,7 @@ main {
   .popup .SumoSelect.open > .optWrapper {
     top: 3.6rem; }
   .popup .SumoSelect > .CaptionCont {
-    padding: 1rem; }
+    padding: 1.3rem 1rem; }
   .popup-box {
     position: relative;
     min-height: 100%;
