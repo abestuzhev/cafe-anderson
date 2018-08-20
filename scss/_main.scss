@@ -474,6 +474,18 @@ main {
   //@extend %transition_all;
   margin: 0 auto;
 
+  .SumoSelect {
+    width: 100%;
+  }
+
+  .SumoSelect.open > .optWrapper {
+    top: 3.6rem;
+  }
+
+  .SumoSelect > .CaptionCont {
+    padding: 1rem;
+  }
+
   &-box {
     position: relative;
     min-height: 100%;

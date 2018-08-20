@@ -7425,6 +7425,12 @@ main {
       -ms-transform: scale(1);
           transform: scale(1);
   margin: 0 auto; }
+  .popup .SumoSelect {
+    width: 100%; }
+  .popup .SumoSelect.open > .optWrapper {
+    top: 3.6rem; }
+  .popup .SumoSelect > .CaptionCont {
+    padding: 1rem; }
   .popup-box {
     position: relative;
     min-height: 100%;
