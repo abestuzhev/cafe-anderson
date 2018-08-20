@@ -2197,6 +2197,10 @@
         height: 36rem;
     }
 
+    .holiday-offers__footer .c-button__large {
+        margin-right: 0;
+    }
+
     .cafe-list__box {
         height: auto !important;
     }

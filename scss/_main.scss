@@ -9892,6 +9892,7 @@ test popup
 
 
     &__footer {
+      margin-bottom: 4rem;
         .c-caption-special {
             background-color: #dadada;
 
@@ -9903,7 +9904,7 @@ test popup
 
         .c-button__large {
             background-color: #c44890;
-            margin-top: 2rem;
+            margin: 2rem 1.3rem 0 0;
         }
     }
 }

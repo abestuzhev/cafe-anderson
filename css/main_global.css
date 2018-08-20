@@ -14471,15 +14471,16 @@ test popup
     top: -3.2rem;
     left: 4.3rem; }
 
-.holiday-offers__footer .c-caption-special {
-  background-color: #dadada; }
-  .holiday-offers__footer .c-caption-special__subtitle {
-    font-size: 1.5rem;
-    color: #1d1d1b; }
-
-.holiday-offers__footer .c-button__large {
-  background-color: #c44890;
-  margin-top: 2rem; }
+.holiday-offers__footer {
+  margin-bottom: 4rem; }
+  .holiday-offers__footer .c-caption-special {
+    background-color: #dadada; }
+    .holiday-offers__footer .c-caption-special__subtitle {
+      font-size: 1.5rem;
+      color: #1d1d1b; }
+  .holiday-offers__footer .c-button__large {
+    background-color: #c44890;
+    margin: 2rem 1.3rem 0 0; }
 
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock {
