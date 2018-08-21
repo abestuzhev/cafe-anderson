@@ -16411,6 +16411,13 @@ test popup
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
+
+      &__header {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+      }
   }
 
   &-body { /*calendar-body*/
@@ -16421,7 +16428,7 @@ test popup
 
     &.newcalendar {
       display: block;
-      overflow: hidden;
+      //overflow: hidden;
 
       .calendar-nav-hall {
           min-height: 100%;
@@ -16431,6 +16438,10 @@ test popup
       .calendar-track {
           overflow: visible;
           width: auto;
+
+      }
+      .calendar-week {
+         min-height: 100%;
 
       }
     }

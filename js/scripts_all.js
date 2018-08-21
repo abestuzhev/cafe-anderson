@@ -12165,6 +12165,7 @@ $(function() {
     });
     // Calendar Hall Row Events
     //      options
+
     let hsl_calendar_options = {
         selector_owlCarousel: '.calendar-nav-hall__row',
         selector_column: '.calendar-col',
@@ -12423,9 +12424,70 @@ $(function() {
     
 });
 
+/*новые скрипты для мобильной версии табло*/
+/*
+$(function(){
+    var calendar_options = {
+        selector_owlCarousel: '.calendar-nav-hall__row',
+        selector_line: '.newcalendar .calendar-line',
+        class_hidden: 'calendar-adapt_hidden',
+    };
+
+    //      init
+    calendar_HallUpdateGrid(
+        calendar_options.selector_line,
+        0,
+        calendar_options.class_hidden
+    );
+
+    calendar_HallUpdateBind(calendar_options);
+
+
+});
+
+function calendar_HallUpdateGrid(sel_column, page_index, class_hidden) {
+    $(sel_column).each(function(index, element) {
+        if(index == page_index) {
+            $(element).removeClass(class_hidden);
+            $(element).siblings().addClass(class_hidden);
+        } else {
+            $(element).addClass(class_hidden);
+            // $(element).siblings.removeClass(class_hidden);
+        }
+    });
+}
+
+//    bind event
+function calendar_HallUpdateBind(options) {
+    var owl = $(options.selector_owlCarousel);
+    owl.trigger('destroy.owl.carousel');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        // center: true,
+        autoHeight: true,
+        nav: true
+    });
+
+
+    owl.on('changed.owl.carousel', function(event) {
+        calendar_HallUpdateGrid(
+            options.selector_line,
+            event.page.index,
+            options.class_hidden
+        );
+
+        calendar_HallUpdateGrid(
+            options.selector_nav_column,
+            event.page.index,
+            options.class_hidden
+        );
+
+        // console.log('event.page.index: ' + event.page.index);
+    })
+}
 
 
 
-
-
+*/
 

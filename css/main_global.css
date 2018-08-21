@@ -19492,6 +19492,20 @@ test popup
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch; }
+    .calendar-line__header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
   .calendar-body {
     /*calendar-body*/
     display: -webkit-box;
@@ -19508,13 +19522,14 @@ test popup
         -ms-flex-align: stretch;
             align-items: stretch; }
     .calendar-body.newcalendar {
-      display: block;
-      overflow: hidden; }
+      display: block; }
       .calendar-body.newcalendar .calendar-nav-hall {
         min-height: 100%; }
       .calendar-body.newcalendar .calendar-track {
         overflow: visible;
         width: auto; }
+      .calendar-body.newcalendar .calendar-week {
+        min-height: 100%; }
   .calendar__track {
     overflow: hidden;
     overflow-x: scroll;

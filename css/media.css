@@ -623,7 +623,7 @@
    }
 
     .calendar-nav {
-        flex: 0 1 9rem;
+        flex: 0 1 15rem;
     }
 
     .calendar-nav-time__text span {
@@ -633,6 +633,14 @@
     .calendar-period-current {
         font-size: 1.6rem;
         letter-spacing: 0;
+    }
+
+    .calendar-nav-hall__text-head {
+        font-size: 2.3rem;
+    }
+
+    .calendar-day__week {
+        font-size: 1.1rem;
     }
 }
 
@@ -6673,6 +6681,10 @@
     display: block;
 }
 
+.holiday-space-list .newcalendar .calendar-adapt_hidden {
+    display: flex;
+}
+
 
 
 @media screen and (max-width: 1225px) {
@@ -6754,6 +6766,9 @@
     }
 
     .holiday-space-list .calendar-adapt_hidden {
+        display: none;
+    }
+    .holiday-space-list .newcalendar .calendar-adapt_hidden {
         display: none;
     }
 
