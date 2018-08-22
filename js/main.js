@@ -2932,7 +2932,7 @@ $(function() {
     });
     // Calendar Hall Row Events
     //      options
-
+/*
     let hsl_calendar_options = {
         selector_owlCarousel: '.calendar-nav-hall__row',
         selector_column: '.calendar-col',
@@ -2961,11 +2961,12 @@ $(function() {
     );
 
     calendarHallUpdateBind(hsl_calendar_options);
-
+*/
 });
 
 // Calendar Hall Row Events
 //      hide&show
+/*
 function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index, class_hidden) {
     $(sel_column).each(function(index, element) {
         $(element).find(sel_box).each(function(j, box) {
@@ -3010,7 +3011,7 @@ function calendarHallUpdateBind(options) {
         );
     })
 }
-
+*/
 
 // Holidays All
 //  functions
@@ -3192,7 +3193,7 @@ $(function() {
 });
 
 /*новые скрипты для мобильной версии табло*/
-/*
+
 $(function(){
     var calendar_options = {
         selector_owlCarousel: '.calendar-nav-hall__row',
@@ -3256,5 +3257,4 @@ function calendar_HallUpdateBind(options) {
 
 
 
-*/
 
