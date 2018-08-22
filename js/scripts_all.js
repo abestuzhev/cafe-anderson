@@ -10959,6 +10959,7 @@ $(document).ready(function ($) {
     showPopup(".js-show-pie-order", '.popup-pie');
     showPopup(".js-show-poster", '.popup-poster');
     showPopup(".calendar-box__link", '.popup-calendar-booking');
+    showPopup(".calendar-box__wraplink", '.popup-calendar-booking');
 
 
     showPopup(".calendar-nav-hall__decor-blue:not(.no-popup)", '.popup__gallery_hall_blue');
