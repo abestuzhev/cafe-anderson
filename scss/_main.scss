@@ -17820,6 +17820,26 @@ a.show-more__button:hover {
 
 
 
+.day-knowledge {
+  .easter-banner {
+    padding: 11.5rem 8rem 17rem;
+  }
+
+  .c-card-catalog__img {
+    position: absolute;
+    z-index: 1;
+    top: 41%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .easter-product .c-card-catalog__img img {
+    width: 100%;
+    -o-object-fit: fill;
+    object-fit: fill;
+    height: auto;
+  }
+}
 
 
 
