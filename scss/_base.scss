@@ -1421,6 +1421,9 @@ a.c-button {
     &-graduation {
         margin-top: -120px;
     }
+    &-knowledge {
+        margin-top: -120px;
+    }
     
     &__item {
         position: fixed;
@@ -1554,6 +1557,26 @@ a.c-button {
             background-color: rgba(206, 49, 2, 0.8);
         }
         
+    }
+    &-knowledge {
+
+        .icon-graduation {
+            position: absolute;
+            left: 1rem;
+            top: 1.9rem;
+            width: 3.1rem;
+            height: 3.4rem;
+        }
+
+        .c-reviews__text {
+            font-size: 1.3rem;
+        }
+
+        .c-reviews__btn {
+            background-color: #CE3102;
+            background-color: rgba(206, 49, 2, 0.8);
+        }
+
     }
 }
 

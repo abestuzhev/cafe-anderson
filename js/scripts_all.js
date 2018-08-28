@@ -9550,6 +9550,8 @@ $(document).ready(function ($) {
         var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
         $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).clone().prependTo($(carusel).find(".pie-slider-items"));
         $(carusel).find(".pie-slider-items").css({"left":"-"+block_width+"px"});
+        $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
+        $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).addClass('active');
         $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).remove();
         $(carusel).find(".pie-slider-items").animate({left: "0px"}, 500);
 
@@ -9559,6 +9561,8 @@ $(document).ready(function ($) {
         var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
         $(carusel).find(".pie-slider-items").animate({left: "-"+ block_width +"px"}, 500, function(){
             $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).clone().appendTo($(carusel).find(".pie-slider-items"));
+            $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
+            $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).addClass('active');
             $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).remove();
             $(carusel).find(".pie-slider-items").css({"left":"0px"});
         });
@@ -10609,6 +10613,8 @@ $(document).ready(function ($) {
         // margin:20,
         // items: 4,
         // center: true,
+        mouseDrag:false,
+        pullDrag:false,
         responsive:{
             0:{
                 items:1
@@ -10805,7 +10811,21 @@ $(document).ready(function ($) {
         allowfullscreen: true,
         nav: 'thumbs',
         fit:'cover'
-    });;
+    });
+
+
+    if($('div').hasClass('pie-fotorama')){
+        $('.pie-fotorama').fotorama({
+            thumbwidth: 125,
+            thumbHeight: 88,
+            nav: 'thumbs',
+            navposition: 'top',
+            transition: 'crossfade'
+        });
+    };
+
+
+
 
     /*Фоторама, слайдер мероприятий, слайдер отзывов*/
     // var $slider = $('.cafe-fotorama').fotorama({

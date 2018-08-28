@@ -62,12 +62,22 @@ gulp.task('js', function(){
         // './js/custom-map.js',
         './js/main.js'
     ])
-        // .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
         .pipe(concat('scripts_all.js'))
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest('js/'))
         .pipe(browserSync.stream())
 });
+//
+// gulp.task('jsMain', function(){
+//     return gulp.src([
+//         './js/main.js'
+//     ])
+//     //
+//         .pipe(concat('main.min.js'))
+//         .pipe(gulp.dest('js/'))
+//         .pipe(browserSync.stream())
+// });
 //
 // gulp.task('js', function(){
 //     return gulp.src('js/**/*.js')

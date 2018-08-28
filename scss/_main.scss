@@ -474,6 +474,18 @@ main {
   //@extend %transition_all;
   margin: 0 auto;
 
+    .c-col {
+
+        .c-col {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .c-grid {
+            margin: 0 -0.8rem !important;
+        }
+    }
+
   .SumoSelect {
     width: 100%;
   }
@@ -1774,6 +1786,27 @@ main {
   .c-card-catalog--mini .c-card-catalog__price {
     background-color: #fff;
   }
+
+    .fotorama__thumb-border {
+        border-color: #c44890;
+        //border: none;
+        box-shadow: 0 0 0 2px #c44890;
+    }
+
+    .pie-slider-nav__item.active {
+        position: relative;
+        transition: all .1s ease;
+    }
+    .pie-slider-nav__item.active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #c44890;
+        transition: all .1s ease;
+    }
 }
 
 /*popup-pie-one-click----------------------------*/
