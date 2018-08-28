@@ -318,6 +318,12 @@
 
     .easter-banner {
         padding: 7.5rem 8rem 18rem;
+
+    }
+
+    .day-knowledge .easter-banner {
+        min-height: 407px;
+
     }
 
     .easter-banner__title {
