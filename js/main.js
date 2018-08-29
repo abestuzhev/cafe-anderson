@@ -1401,6 +1401,11 @@ $(document).ready(function ($) {
         }
     });
 
+    $(".c-card-product__slider .owl-item").on("touchstart mousedown", function(e) {
+        // Prevent carousel swipe
+        e.stopPropagation();
+    })
+
     /*слайдер карусель*/
     $('.publications-slider').owlCarousel({
         loop:true,
