@@ -9504,6 +9504,8 @@ $(document).ready(function ($) {
 
     $(document).on('click', '.pie-slider-nav__item', function(){
         var self = $(this);
+        self.siblings().removeClass('active');
+        self.addClass('active');
         var path = self.children('img').attr('src');
 
         $('.pie-slider-for').find('img').attr('src', path).animate({
