@@ -319,8 +319,8 @@ $(document).ready(function ($) {
         var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
         $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).clone().prependTo($(carusel).find(".pie-slider-items"));
         $(carusel).find(".pie-slider-items").css({"left":"-"+block_width+"px"});
-        $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
-        $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).addClass('active');
+        // $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
+        // $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).addClass('active');
         $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).remove();
         $(carusel).find(".pie-slider-items").animate({left: "0px"}, 500);
 
@@ -330,8 +330,8 @@ $(document).ready(function ($) {
         var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
         $(carusel).find(".pie-slider-items").animate({left: "-"+ block_width +"px"}, 500, function(){
             $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).clone().appendTo($(carusel).find(".pie-slider-items"));
-            $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
-            $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).addClass('active');
+            // $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
+            // $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).addClass('active');
             $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).remove();
             $(carusel).find(".pie-slider-items").css({"left":"0px"});
         });
