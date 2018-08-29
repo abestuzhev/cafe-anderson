@@ -5099,7 +5099,7 @@ div.c-card-catalog-2 {
   .c-card-party__conditions {
     color: #672f05;
     font-size: 1.2rem;
-    text-align: right;
+    text-align: left;
     max-width: 21rem; }
   .c-card-party__title {
     font-size: 3.5rem;
@@ -14406,9 +14406,11 @@ test popup
     background-size: cover; }
   .holiday-offers-banner__footer {
     width: 100%;
-    height: 2.9rem;
+    padding: 1.5rem;
+    color: #fff;
     background-color: #c44890;
-    background-size: cover; }
+    background-size: cover;
+    text-align: center; }
   .holiday-offers-banner__btns {
     height: 100%;
     display: -webkit-box;

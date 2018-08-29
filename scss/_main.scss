@@ -9779,9 +9779,12 @@ test popup
 
         &__footer {
             width: 100%;
-            height: 2.9rem;
+            //height: 2.9rem;
+            padding: 1.5rem;
+             color: #fff;
             background-color: #c44890;
             background-size: cover;
+          text-align: center;
         }
 
         &__btns {
