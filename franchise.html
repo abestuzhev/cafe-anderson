@@ -37,6 +37,8 @@
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />
     <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all" />
+    <link type="text/css" href="./js/slick/slick.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="./js/slick/slick-theme.css" rel="stylesheet" media="all"/>
     <link rel="stylesheet" href="./css/main_global.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -2655,7 +2657,7 @@
                 </div>
             </section>
 
-            <div class="c-layout">
+            <div class="c-layout c-layout__franchise">
                 <nav class="c-breadcrumb">
                     <a href="/" class="c-breadcrumb__item c-breadcrumb__home"></a>
                     <span class="c-breadcrumb__item">Франшиза</span>
@@ -2808,17 +2810,59 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="franchise-advantages-list__mobile">
+                            	<div class="franchise-advantages-list__mobile__item">
+                            		<img src="./img/franchise/franchise-advantages-1.jpg" alt="">
+                            		<p class="franchise-advantages-card__title">Оригинальные, по-домашнему вкусные и всегда свежие десерты и выпечка из собственной кондитерской.</p>
+                            		<p>
+                            			с уникальными анимационными программами собственного сочинения,
+                            			тортами, выполненными вручную в нашей кондитерской,
+                            			персональным сопровождением во время планирования и проведения праздника
+                            			со стороны компетентного и внимательного банкетного менеджера;
+                            		</p>
+                            	</div>
+                            	<div class="franchise-advantages-list__mobile__item">
+                            		<img src="./img/franchise/franchise-advantages-2.jpg" alt="">
+                            		<p class="franchise-advantages-card__title">Большие, хорошо оборудованные и безопасные игровые пространства для детей.</p>
+                            		<p>
+                            			с уникальными анимационными программами собственного сочинения,
+                            			тортами, выполненными вручную в нашей кондитерской,
+                            			персональным сопровождением во время планирования и проведения праздника
+                            			со стороны компетентного и внимательного банкетного менеджера;
+                            		</p>
+                            	</div>
+                            	<div class="franchise-advantages-list__mobile__item">
+                            		<img src="./img/franchise/franchise-advantages-3.jpg" alt="">
+                            		<p class="franchise-advantages-card__title">Проведение семейных праздников «под ключ».</p>
+                            		<p>
+                            			с уникальными анимационными программами собственного сочинения,
+                            			тортами, выполненными вручную в нашей кондитерской,
+                            			персональным сопровождением во время планирования и проведения праздника
+                            			со стороны компетентного и внимательного банкетного менеджера;
+                            		</p>
+                            	</div>
+                            	<div class="franchise-advantages-list__mobile__item">
+                            		<img src="./img/franchise/franchise-advantages-4.jpg" alt="">
+                            		<p class="franchise-advantages-card__title">Комфорт и внимание к гостям во всех деталях.</p>
+                            		<p>
+                            			Няни в детских игровых зонах, удобные мягкие кресла и стулья в зале,
+                            			библиотеки с интересными книгами в свободном доступе,
+                            			зоны для кормления грудничков и пеленальные столики,
+                            			специально оборудованные детские туалеты и комфортные гигиенические сиденья,
+                            			сказки и легкая музыка, звучащие в кафе и многое-многое другое.
+                            		</p>
+                            	</div>
+                            </div>
                         </div>
                     </div>
                     <div class="franchise-box franchise-conditions">
                         <div class="franchise-title-layout">
-                            <h2 class="franchise-title">Условия для <span>Москвы</span></h2>
+                            <h2 class="franchise-title franchise-title__slider">Условия для <span>Москвы</span></h2>
                             <div class="franchise-print">
                                 <svg class="c-symbol symbol-print"><use xlink:href="#symbol-print" /></svg>
                                 <span>Распечатать условия</span>
                             </div>
-                        </div>
-                        
+                        </div>    
                         <div id="franchisePrint" class="franchise-content">
                             <div class="franchise-conditions-calc">
                                 <ul class="franchise-conditions-calc__list">
@@ -2850,6 +2894,8 @@
     
                                 <img class="franchise-conditions-calc__bg" src="./img/franchise/bg-franchise-conditions-calc.png" alt="">
                                 <img class="franchise-conditions-calc__elem-1" src="./img/franchise/franchise-elem-1.png" alt="">
+                                <img class="franchise-conditions-calc__elem-1_mobile" src="./img/franchise/franchise-elem-1__mobile.png" alt="">
+                                <img class="franchise-conditions-calc__elem-2_mobile" src="./img/franchise/franchise-elem-2__mobile.png" alt="">
                                 <svg class="c-symbol symbol-holiday-decor-2"><use xlink:href="#symbol-holiday-decor-2" /></svg>
                             </div>
                             <div class="franchise-conditions__title"><span>Централизованные услуги</span></div>
@@ -2973,6 +3019,68 @@
                                     <div class="franchise-conditions-table__col">Расчетная рентабельность до налогов, от выручки</div>
                                     <div class="franchise-conditions-table__col">15-25%</div>
                                 </div>
+                            </div>
+                            <div class="franchise-conditions-table__mobile">
+                            	<div class="franchise-conditions-table__slick slick-slide-1">
+                            		<div>
+		                            	<div class="title">
+		                            		<p>Формат - Малый</p>
+		                            	</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная сумма инвестиций</p>
+	                            			<p class="service-price">От 15 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Централизованные услуги УК «АндерСон»</p>
+	                            			<p class="service-price">В счет роялти</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки/месяц (1 год работы), руб.</p>
+	                            			<p class="service-price">От 3 до 4,5 млн </p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки /месяц (2-и далее годы работы)</p>
+	                            			<p class="service-price">от 4,5 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный срок окупаемости</p>
+	                            			<p class="service-price">От 14 до 36 месяцев</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная рентабельность до налогов, от выручки</p>
+	                            			<p class="service-price">15-25%</p>
+	                            		</div>
+                            		</div>
+                            		<div>
+		                            	<div class="title">
+		                            		<p>Формат - Оптимальный</p>
+		                            	</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная сумма инвестиций</p>
+	                            			<p class="service-price">От 20 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Централизованные услуги УК «АндерСон»</p>
+	                            			<p class="service-price">В счет роялти</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки/месяц (1 год работы), руб.</p>
+	                            			<p class="service-price">От 3 до 6,5 млн </p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки /месяц (2-и далее годы работы)</p>
+	                            			<p class="service-price">от 6,5 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный срок окупаемости</p>
+	                            			<p class="service-price">От 14 до 36 месяцев</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная рентабельность до налогов, от выручки</p>
+	                            			<p class="service-price">15-25%</p>
+	                            		</div>
+                            		</div>
+                            	</div>
                             </div>
                             <div class="franchise-conditions__title"><span>Все условия</span></div>
                             <ul class="c-ul-list">
@@ -3169,6 +3277,68 @@
                                     <div class="franchise-conditions-table__col">15-25%</div>
                                 </div>
                             </div>
+                            <div class="franchise-conditions-table__mobile">
+                            	<div class="franchise-conditions-table__slick slick-slide-2">
+                            		<div>
+		                            	<div class="title">
+		                            		<p>Формат - Малый</p>
+		                            	</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная сумма инвестиций</p>
+	                            			<p class="service-price">От 15 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Централизованные услуги УК «АндерСон»</p>
+	                            			<p class="service-price">В счет роялти</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки/месяц (1 год работы), руб.</p>
+	                            			<p class="service-price">От 3 до 4,5 млн </p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки /месяц (2-и далее годы работы)</p>
+	                            			<p class="service-price">от 4,5 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный срок окупаемости</p>
+	                            			<p class="service-price">От 14 до 36 месяцев</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная рентабельность до налогов, от выручки</p>
+	                            			<p class="service-price">15-25%</p>
+	                            		</div>
+                            		</div>
+                            		<div>
+		                            	<div class="title">
+		                            		<p>Формат - Оптимальный</p>
+		                            	</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная сумма инвестиций</p>
+	                            			<p class="service-price">От 20 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Централизованные услуги УК «АндерСон»</p>
+	                            			<p class="service-price">В счет роялти</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки/месяц (1 год работы), руб.</p>
+	                            			<p class="service-price">От 3 до 6,5 млн </p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки /месяц (2-и далее годы работы)</p>
+	                            			<p class="service-price">от 6,5 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный срок окупаемости</p>
+	                            			<p class="service-price">От 14 до 36 месяцев</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная рентабельность до налогов, от выручки</p>
+	                            			<p class="service-price">15-25%</p>
+	                            		</div>
+                            		</div>
+                            	</div>
+                            </div>
                             <div class="franchise-conditions__title"><span>Все условия</span></div>
                             <ul class="c-ul-list">
                                 <li>Договор коммерческой концессии заключается на 5 лет, с правом преимущественного продления договора для франчайзи, выполняющих договорные условия сотрудничества.
@@ -3362,6 +3532,76 @@
                                     <div class="franchise-conditions-table__col">15-25%</div>
                                 </div>
                             </div>
+                            <div class="franchise-conditions-table__mobile">
+                            	<div class="franchise-conditions-table__slick slick-slide-3">
+                            		<div>
+		                            	<div class="title">
+		                            		<p>Формат - Флагман</p>
+		                            	</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Рекомендуемая площадь</p>
+	                            			<p class="service-price">500-800 кв. м</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная сумма инвестиций</p>
+	                            			<p class="service-price">от ~ млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Централизованные услуги УК «АндерСон»</p>
+	                            			<p class="service-price">В счет роялти</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки/месяц (1 год работы), руб.</p>
+	                            			<p class="service-price">От ~ до ~ млн </p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки /месяц (2-и далее годы работы)</p>
+	                            			<p class="service-price">от 4,5 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный срок окупаемости</p>
+	                            			<p class="service-price">От 18 до 36 месяцев</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная рентабельность до налогов, от выручки</p>
+	                            			<p class="service-price">15-25%</p>
+	                            		</div>
+                            		</div>
+                            		<div>
+		                            	<div class="title">
+		                            		<p>Формат - Малый</p>
+		                            	</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Рекомендуемая площадь</p>
+	                            			<p class="service-price">от 200 кв. м</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная сумма инвестиций</p>
+	                            			<p class="service-price">от ~ млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Централизованные услуги УК «АндерСон»</p>
+	                            			<p class="service-price">В счет роялти</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки/месяц (1 год работы), руб.</p>
+	                            			<p class="service-price">От ~ до ~ млн </p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный уровень выручки /месяц (2-и далее годы работы)</p>
+	                            			<p class="service-price">от 6,5 млн рублей</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетный срок окупаемости</p>
+	                            			<p class="service-price">От 14 до 28 месяцев</p>
+	                            		</div>
+	                            		<div class="franchise-conditions-table__slick__item">
+	                            			<p class="service-title">Расчетная рентабельность до налогов, от выручки</p>
+	                            			<p class="service-price">15-25%</p>
+	                            		</div>
+                            		</div>
+                            	</div>
+                            </div>
                             <div class="franchise-conditions__title"><span>Все условия</span></div>
                             <ul class="c-ul-list">
                                 <li>Договор коммерческой концессии заключается на 5 лет, с правом преимущественного продления договора для франчайзи, выполняющих договорные условия сотрудничества.
@@ -3451,7 +3691,7 @@
                                     </div>
                                 </li>
                                 <li class="c-col c-col-6">
-                                    <div class="franchise-review-card">
+                                    <div class="franchise-review-card more">
                                         <div class="franchise-review-card__header">
                                             <div class="franchise-review-card__who">Азамат Сейтбеков (АндерСон в Алматы):</div>
                                             <a href="" class="franchise-review-card__link">АндерСон в Алматы, или Бизнес с детской душой. Как открывать бизнес...</a>
@@ -3464,6 +3704,7 @@
                                     </div>
                                 </li>
                             </ul>
+                            <div class="show-more">показать еще <span><img src="./img/franchise/bottom-arrow.png"></span></div>
                         </div>
                     </div>
                     <div class="franchise-box franchise-map">
@@ -4696,7 +4937,7 @@
 
 
         <script src="./bower_components/jquery/dist/jquery.js"></script>
-
+        <script src="./js/slick/slick.js"></script>
 <!--<script src="./js/datepicker/datepicker.min.js"></script>-->
 <!--<script async src="./js/datepicker-anderson.js"></script>-->
 
@@ -4720,7 +4961,11 @@
         <script async src="./js/scripts_all.js"></script>
 
         <script>
-        </script>
+		  $('.show-more').click(function() {
+		  $('.more').show();
+		  $(this).hide();
+		  });
+		</script>
 </body>
 
 </html>

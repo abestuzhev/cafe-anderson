@@ -1,6 +1,6 @@
 
 //gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-sourcemaps gulp-concat gulp-concat-css
-//gulp-sass gulp-autoprefixer gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-concat gulp-concat-css gulp-sourcemaps
+//gulp-sass gulp-autoprefixer gulp-livereload browser-sync gulp-minify-css
 
 //plugins for development
 var gulp = require('gulp'),
@@ -62,12 +62,22 @@ gulp.task('js', function(){
         // './js/custom-map.js',
         './js/main.js'
     ])
-        // .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
         .pipe(concat('scripts_all.js'))
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest('js/'))
         .pipe(browserSync.stream())
 });
+//
+// gulp.task('jsMain', function(){
+//     return gulp.src([
+//         './js/main.js'
+//     ])
+//     //
+//         .pipe(concat('main.min.js'))
+//         .pipe(gulp.dest('js/'))
+//         .pipe(browserSync.stream())
+// });
 //
 // gulp.task('js', function(){
 //     return gulp.src('js/**/*.js')

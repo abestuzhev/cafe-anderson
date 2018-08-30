@@ -474,6 +474,30 @@ main {
   //@extend %transition_all;
   margin: 0 auto;
 
+    .c-col {
+
+        .c-col {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .c-grid {
+            margin: 0 -0.8rem !important;
+        }
+    }
+
+  .SumoSelect {
+    width: 100%;
+  }
+
+  .SumoSelect.open > .optWrapper {
+    top: 3.6rem;
+  }
+
+  .SumoSelect > .CaptionCont {
+    padding: 1.3rem 1rem;
+  }
+
   &-box {
     position: relative;
     min-height: 100%;
@@ -671,6 +695,8 @@ main {
 
 //------------------------------------------------custom popup*/
 
+
+
 .popup__write-to-us {
   //background: #fff url(../img/popup-bg_write-to-us.jpg) no-repeat 100% 100%;
   .icon-berry {
@@ -684,6 +710,10 @@ main {
 
 .popup__request-call {
   //background: #fff url(../img/popup-bg_request-call.png) no-repeat 100% 100%;
+  
+  .popup {
+    overflow: hidden !important;
+  }
 
   .icon-bird-down {
     position: absolute;
@@ -1756,6 +1786,59 @@ main {
   .c-card-catalog--mini .c-card-catalog__price {
     background-color: #fff;
   }
+
+    .fotorama__thumb-border {
+        border-color: #c44890;
+        //border: none;
+        box-shadow: 0 0 0 2px #c44890;
+    }
+
+    .pie-slider-nav__item {
+        transition: all .2s ease;
+      position: relative;
+    }
+    .pie-slider-nav__item.active {
+        position: relative;
+        transition: all .2s ease;
+
+        &::before {
+          content: '';
+          position: absolute;
+          z-index: 10;
+          top: 8px;
+          right: 8px;
+          border-radius: 50px;
+          //background-color: #fff;
+          width: 2rem;
+          height: 2rem;
+          box-shadow: 0 3px 6px 0 rgba(0,0,0,.2);
+          background: #fff url(../img/icons/icon-chek.svg) no-repeat 50% 50%;
+          background-size: .8rem .8rem;
+        }
+    }
+
+    .pie-slider-nav__item::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #c44890;
+        transition: all .1s ease;
+        opacity: 0;
+    }
+    .pie-slider-nav__item.active::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 4px solid #c44890;
+        transition: all .1s ease;
+        opacity: 1;
+    }
 }
 
 /*popup-pie-one-click----------------------------*/
@@ -1873,7 +1956,7 @@ main {
   }
 
   .popup-box {
-    overflow: visible;
+    overflow: hidden;
   }
 
   .popup-close {
@@ -9690,6 +9773,210 @@ test popup
   }
 }
 
+.holiday-offers {
+    //margin-bottom: 4rem;
+
+    &-banner {
+        margin-bottom: 2.4rem;
+        &__header {
+            overflow: hidden;
+            position: relative;
+            .c-caption-special {
+
+            }
+        }
+
+        &__slider {
+            max-height: 42rem;
+
+            .owl-nav {
+                display: none;
+            }
+
+            background-color: #c44890;
+        }
+        &__slide {
+            //width: 100%;
+            //background-position: 50% 50%;
+            //-webkit-background-size: cover;
+            //background-size: cover;
+            //overflow: hidden;
+            height: 42rem;
+            position: relative;
+            overflow: hidden;
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        &__footer {
+            width: 100%;
+            //height: 2.9rem;
+            padding: 1.5rem;
+             color: #fff;
+            background-color: #c44890;
+            background-size: cover;
+          text-align: center;
+        }
+
+        &__btns {
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+
+        }
+
+        &__btn {
+            padding: 1.2rem 1.8rem;
+            font-size: 2.3rem;
+            border-radius: .6rem;
+            background-color: #7cbd41;
+            color: #ffffff;
+            margin: 0 2.2rem;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1;
+
+            span {
+                color: #231300;
+                display: block;
+            }
+
+            &::after {
+                content: '';
+                border: none;
+            }
+
+            &:hover {
+                background-color: #80c242;
+                color: #ffffff;
+            }
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+            width: .8rem;
+            height: .8rem;
+            background-color: #fff;
+            margin: 0 .5rem;
+            position: relative;
+        }
+
+        .owl-theme .owl-nav.disabled + .owl-dots {
+            margin-top: .3rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .owl-theme .owl-dots .owl-dot.active span::after {
+            content: '';
+            position: absolute;
+            top: .2rem;
+            left: .2rem;
+            width: .4rem;
+            height: .4rem;
+            background-color: #7e5847;
+            border-radius: 1rem;
+        }
+
+        &__icon-1 {
+            position: absolute;
+            z-index: 10;
+            top: -3.2rem;
+            left: -5.7rem;
+            svg {
+                fill: #fff;
+            }
+
+        }
+        &__icon-2 {
+            position: absolute;
+            z-index: 10;
+            top: -4.2rem;
+            right: -4.7rem;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+
+
+    .c-card-party {
+        &__title {
+            font-size: 2.1rem;
+        }
+
+        &__application {
+            max-width: 36rem;
+
+            a {
+                white-space: normal;
+                font-size: 1.3rem;
+                text-transform: none;
+                text-align: center;
+            }
+        }
+
+        &-description {
+            margin-bottom: 1rem;
+        }
+
+
+    }
+
+
+    .c-caption-special {
+
+        background-color: #c44890;
+
+        &__title {
+            color: #7cbd41;
+            text-transform: none;
+        }
+
+        .icon-ice-cream-2 {
+            position: absolute;
+            z-index: 4;
+            transform: rotate(-23deg);
+            right: 1.3rem;
+            bottom: -2.4rem;
+
+        }
+
+        .icon-balloon-2 {
+            position: absolute;
+            z-index: 4;
+            top: -3.2rem;
+            left: 4.3rem;
+
+        }
+    }
+
+
+    &__footer {
+      margin-bottom: 2rem;
+        .c-caption-special {
+            background-color: #dadada;
+
+            &__subtitle {
+                font-size: 1.5rem;
+                color: #1d1d1b;
+            }
+        }
+
+        .c-button__large {
+            background-color: #c44890;
+            margin: 2rem 1.3rem 0 0;
+        }
+    }
+}
+
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock {
   margin-bottom: 3rem;
@@ -13121,10 +13408,25 @@ test popup
     }
 
   }
+
+  .loft-booking .calendar {
+    padding-top: 0;
+  }
+
+  .calendar-title__caption {
+    z-index: 13;
+  }
+
+
 }
 
 /*holidays общая страница со всеми праздниками---*/
 .holidays {
+
+  .calendar-title__control,
+  .calendar-title__caption {
+    z-index: 13;
+  }
 
   &-slider {
     border: 2px solid rgba(0, 0, 0, .2);
@@ -13333,6 +13635,10 @@ test popup
       }
     }
   }
+
+    .loft-booking .calendar {
+        padding-top: 0;
+    }
 
 }
 
@@ -14275,6 +14581,7 @@ test popup
       border-width: 1.5rem;
     }
   }
+
 }
 
 /*panel-events****************************/
@@ -15984,6 +16291,7 @@ test popup
 .loft-booking {
 
   padding: 3.7rem 2.8rem;
+    margin-bottom: 4rem;
   &__header {
     text-align: center;
     margin-bottom: 1.8rem;
@@ -16166,11 +16474,51 @@ test popup
     }
   }
 
+  &-line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+      &__header {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          align-items: stretch;
+      }
+  }
+
   &-body { /*calendar-body*/
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
+
+    &.newcalendar {
+      display: block;
+      //overflow: hidden;
+
+      .calendar-nav-hall {
+          min-height: 100%;
+
+      }
+
+      .calendar-track {
+          overflow: visible;
+          width: auto;
+
+      }
+      .calendar-week {
+         min-height: 100%;
+
+      }
+    }
+  }
+  
+  &__track {
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
   }
 
   &-nav { /*calendar-nav*/
@@ -16183,6 +16531,7 @@ test popup
       justify-content: center;
       align-items: center;
     }
+
 
     &__icon {
       background-color: #c44890;
@@ -16213,7 +16562,7 @@ test popup
   &-track {
     flex: 1;
     //overflow: hidden;
-    padding-bottom: 17px;
+    //padding-bottom: 17px;
 
     &::after {
       content: '';
@@ -16289,12 +16638,22 @@ test popup
     border-right: none !important;
     border-bottom: none !important;
 
+    &__wraplink {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      color: $black;
+    }
+
 
     span {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      white-space: nowrap;
 
     }
 
@@ -16429,6 +16788,7 @@ test popup
 
   }
 
+
   .filter {
     width: 100%;
     display: block;
@@ -16436,6 +16796,11 @@ test popup
     .l-button__center {
       display: flex;
       flex-flow: row nowrap;
+      margin-top: 2.5rem;
+    }
+
+    .c-button {
+      padding: .7rem 1.4rem;
     }
 
     .filter-item:nth-child(1) {
@@ -16792,6 +17157,7 @@ a.show-more__button:hover {
     border: 1px solid #e4e4e4;
     border-bottom: none;
     min-height: 12rem;
+    //min-height: 100%;
     background-color: #f4f4f4;
     cursor: pointer;
     position: relative;
@@ -16981,7 +17347,7 @@ a.show-more__button:hover {
 /* Calendar Selector */
 .calendar-selector {
   position: absolute;
-  z-index: 11;
+  z-index: 12;
   width: 100%;
   top: -2.2rem;
   left: 50%;
@@ -16989,6 +17355,19 @@ a.show-more__button:hover {
   background-color: #fff;
   border-radius: .8rem;
   box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33);
+
+  &.show-up {
+      bottom: -59%;
+      top: auto;
+
+      .calendar-selector__head {
+          height: 2rem !important;
+      }
+
+      .calendar-selector__footer {
+          height: 8rem;
+      }
+  }
 
   &_hidden {
     display: none;
@@ -17151,12 +17530,32 @@ a.show-more__button:hover {
 /* Holidays-all page */
 .holidays {
     text-align: center;
+    //opacity: 0;
+    //visibility: hidden;
+    transition: all .2s ease-in-out;
+    margin-bottom: 4rem;
+
+    //&.show {
+    //    opacity: 1;
+    //    visibility: visible;
+    //    transition: all .2s ease-in-out;
+    //}
+}
+
+.fill-mameninyi {
+    background: #c2dd99;
+    color: #598419;
+}
+.fill-christening {
+    background: #9acc4f;
 }
 
 .holidays-grid {
     position: relative;
     width: 100%;
-    margin-left: -1.4rem;
+    //margin-left: -1.4rem;
+
+
 
 
     &__block-wrapper {
@@ -17277,6 +17676,7 @@ a.show-more__button:hover {
         font-size: 2.4rem;
         color: #c7368a;
         padding-bottom: .5rem;
+        padding: 1rem;
     }
     &__text {
         font-family: $font_serif;
@@ -17460,6 +17860,7 @@ a.show-more__button:hover {
         }
 
         &__decor {
+            display: block;
             height: 17rem;
             background-position: 50% 50%;
             background-size: cover;
@@ -17488,6 +17889,26 @@ a.show-more__button:hover {
 
 
 
+.day-knowledge {
+  .easter-banner {
+    padding: 11.5rem 8rem 17rem;
+  }
+
+  .c-card-catalog__img {
+    position: absolute;
+    z-index: 1;
+    top: 41%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .easter-product .c-card-catalog__img img {
+    width: 100%;
+    -o-object-fit: fill;
+    object-fit: fill;
+    height: auto;
+  }
+}
 
 
 

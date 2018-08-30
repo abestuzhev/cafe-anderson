@@ -1,7 +1,20 @@
 .mobile-celebration__text,
 .mobile-cake__text,
 .mobile-cafe__text,
-.c-title-decor-layout__mobile {
+.c-title-decor-layout__mobile,
+.holiday-description__bg___mibile,
+.holiday-description__bg___mibile-2,
+.holiday-description__text___mobile,
+.l-button__mobile,
+.holiday-order__mobile,
+.filter-btn__reset__mdb,
+.nav-mobile,
+.franchise-advantages-list__mobile,
+.franchise-print_mobile,
+.show-more,
+.franchise-conditions-calc__elem-1_mobile,
+.franchise-conditions-calc__elem-2_mobile,
+.franchise-conditions-table__mobile {
     display: none;
 }
 
@@ -255,6 +268,34 @@
         /*min-width: 23%;*/
     /*}*/
 
+    .c-card-party-box .c-grid-between {
+        display: block;
+        margin: 0;
+    }
+    .c-card-party-box .c-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+
+
+    .holiday-offers-banner__icon-1 .symbol-decoration-triangle-1,
+    .holiday-offers-banner__icon-2 .symbol-decoration-triangle-2 {
+        font-size: 34.3rem;
+    }
+
+    .holiday-offers-banner__icon-1 {
+        top: -1.2rem;
+        left: -11.7rem;
+    }
+    .holiday-offers-banner__icon-2 {
+        top: -1.2rem;
+        right: -11.7rem;
+    }
+
+
 }
 
 @media (min-width: 1600px) {
@@ -277,6 +318,12 @@
 
     .easter-banner {
         padding: 7.5rem 8rem 18rem;
+
+    }
+
+    .day-knowledge .easter-banner {
+        min-height: 407px;
+
     }
 
     .easter-banner__title {
@@ -564,6 +611,12 @@
         padding-left: .5rem;
         padding-right: .5rem;
     }
+
+    .holiday-reason .c-title-decor-1::before,
+    .holiday-reason .c-title-decor-1::after {
+        content: '';
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -576,7 +629,7 @@
    }
 
     .calendar-nav {
-        flex: 0 1 9rem;
+        flex: 0 1 15rem;
     }
 
     .calendar-nav-time__text span {
@@ -586,6 +639,14 @@
     .calendar-period-current {
         font-size: 1.6rem;
         letter-spacing: 0;
+    }
+
+    .calendar-nav-hall__text-head {
+        font-size: 2.3rem;
+    }
+
+    .calendar-day__week {
+        font-size: 1.1rem;
     }
 }
 
@@ -704,6 +765,7 @@
         right: -3.7rem;
     }
 
+    .holiday-offers .c-caption-special__subtitle,
     .graduation-party .c-caption-special__subtitle {
         font-size: 2rem;
     }
@@ -1125,6 +1187,14 @@
 
     .loft-info__title {
         margin-bottom: 1rem;
+    }
+
+    .calendar-period {
+        padding: 2rem 2rem;
+    }
+
+    .calendar-navigator__link {
+        font-size: 2.3rem;
     }
 }
 
@@ -2004,6 +2074,22 @@
         padding: 2rem 8rem;
     }
 
+
+
+    .holiday-offers-banner__icon-1 .symbol-decoration-triangle-1,
+     .holiday-offers-banner__icon-2 .symbol-decoration-triangle-2 {
+         font-size: 30rem;
+     }
+
+    .holiday-offers-banner__icon-1 {
+        top: -1.2rem;
+        left: -15.7rem;
+    }
+    .holiday-offers-banner__icon-2 {
+        top: -1.2rem;
+        right: -15.7rem;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -2103,14 +2189,30 @@
     }
 
     /*адаптивка выпускники*/
+    .holiday-offers .c-card-party .c-col-6,
     .graduation-party .c-card-party .c-grid {
         flex-flow: column nowrap;
         align-items: flex-start;
     }
 
+    .holiday-offers .c-card-party .c-col-6,
     .graduation-party .c-card-party .c-col-6 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .c-card-party__conditions {
+        margin-bottom: 1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .holiday-offers-banner__slide {
+        height: 36rem;
+    }
+
+    .holiday-offers__footer .c-button__large {
+        margin-right: 0;
     }
 
     .cafe-list__box {
@@ -2149,6 +2251,7 @@
         width: 100%;
     }
 
+    .day-knowledge .easter-banner,
     .easter-banner {
         padding: 5.5rem 1rem 7rem;
     }
@@ -2252,6 +2355,7 @@
         display: block;
     }
 
+    .holiday-offers .c-caption-special__subtitle,
     .graduation-party .c-caption-special__subtitle {
         font-size: 1.7rem;
         padding: 0 4rem;
@@ -2746,9 +2850,14 @@
         display: none;
     }
 
-    .calendar-week {
+    .calendar-body {
+        overflow: hidden;
+    }
+    .calendar-week,
+    .calendar-body__track {
         overflow: hidden;
         overflow-x: scroll;
+        width: 100%;
     }
 
     .calendar-body {
@@ -2760,6 +2869,17 @@
         padding-bottom: 0;
         overflow: hidden;
     }
+    .newcalendar .calendar-week {
+        overflow: visible;
+    }
+    .newcalendar .calendar-track {
+        overflow: visible;
+    }
+
+    .calendar-box--inreserve .c-symbol {
+        display: none;
+    }
+
     .calendar-track::after {
         content: '';
         position: absolute;
@@ -2770,6 +2890,12 @@
         width: 4rem;
         background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.2) 100%);
     }
+
+    .holiday-offers-banner__slide {
+        height: 28rem;
+    }
+
+
 
 }
 
@@ -3157,7 +3283,7 @@
     }
 
     body:not(.always-bg) {
-        background-image: none;
+        
     }
 
     .page-container,
@@ -3294,8 +3420,8 @@
     }
 
     .graduation-party {
-        margin-left: -1.6rem;
-        margin-right: -1.6rem;
+        /*margin-left: -1.6rem;*/
+        /*margin-right: -1.6rem;*/
     }
 
     .excursion .page-container {
@@ -3549,6 +3675,29 @@
         border-radius: 0;
         border-left: none;
         border-right: none;
+    }
+
+    .holiday-offers-banner {
+        margin-right: -1.5rem;
+        margin-left: -1.5rem;
+        margin-top: -2rem;
+    }
+
+    .holiday-offers-banner__slide {
+        height: 24rem;
+    }
+
+    .c-card-party-info__line {
+        display: block;
+        margin: 0;
+    }
+
+    .c-card-party-info__col {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: .2rem;
     }
 
 }
@@ -4404,6 +4553,14 @@
         width: 100%;
         padding: 0;
     }
+
+
+    .holiday-offers-banner__icon-1 {
+        display: none;
+    }
+    .holiday-offers-banner__icon-2 {
+        display: none;
+    }
 }
 
 @media (max-width: 570px) {
@@ -4560,6 +4717,7 @@
         width: 87% !important;
     }
 
+    .holiday-offers .c-caption-special__subtitle,
     .graduation-party .c-caption-special__subtitle {
         font-size: 1.3rem;
         padding: 0 3rem;
@@ -4989,6 +5147,23 @@
     .bonus-install__body {
         padding: 3rem 0rem;
     }
+
+
+    .popup__booking .popup {
+        position: fixed !important;
+        height: 100vh !important;
+    }
+
+    .popup__booking .popup-body {
+        height: 100vh;
+    }
+
+    .popup__booking .popup-body iframe {
+        height: 100vh;
+    }
+    .popup__booking .mfp-container {
+        padding: 0;
+    }
 }
 
 @media (max-width: 470px) {
@@ -5121,6 +5296,10 @@
 
     .easter-banner {
         padding: 2.5rem 0rem 4rem;
+    }
+
+    .holiday-offers .l-button__right {
+        text-align: center;
     }
 }
 
@@ -6509,6 +6688,10 @@
     display: block;
 }
 
+.holiday-space-list .newcalendar .calendar-adapt_hidden {
+    display: flex;
+}
+
 
 
 @media screen and (max-width: 1225px) {
@@ -6546,6 +6729,7 @@
 @media screen and (max-width: 1150px) {
     .holiday-space-list .calendar-nav__icon-gradient {
         background: #c44890;
+        min-width: 5.3rem;
     }
 
     .holiday-space-list .calendar-nav__icon-gradient svg {
@@ -6589,6 +6773,9 @@
     }
 
     .holiday-space-list .calendar-adapt_hidden {
+        display: none;
+    }
+    .holiday-space-list .newcalendar .calendar-adapt_hidden {
         display: none;
     }
 
@@ -6831,7 +7018,7 @@
         margin-top: -6px;
         font-family: "PT Serif Caption";
     }
-    .c-holiday-count-1 {
+    .holiday-reason .c-holiday-count-1 {
         display: none;
     }
     .holiday-reason__head-layout {
@@ -6938,27 +7125,27 @@
     .holiday-reason-card--child-departure .holiday-reason-card__body {
         bottom: -80px !important;
     }  
-    .slick-prev, .slick-next { 
+    .holiday-reason .slick-prev, .holiday-reason .slick-next { 
         top: 32px;
         background: none;
     }    
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    .holiday-reason .slick-prev:hover, .holiday-reason .slick-prev:focus, .holiday-reason .slick-next:hover, .holiday-reason .slick-next:focus {
         background: none;
     }
-    .slick-prev:before {
+    .holiday-reason .slick-prev:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/left-arrow-slick.png) no-repeat;
     }
-    .slick-next:before {
+    .holiday-reason .slick-next:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/right-arrow-slick.png) no-repeat;
     }
-        /* Slider */
-    .slick-slider {
+    /* Slider */
+    .holiday-reason .slick-slider {
         position: relative;
 
         display: block;
@@ -6975,7 +7162,7 @@
             touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
     }
-    .slick-list {
+    .holiday-reason .slick-list {
         position: relative;
 
         display: block;
@@ -6984,22 +7171,22 @@
         margin: 0;
         padding: 0;
     }
-    .slick-list:focus {
+    .holiday-reason .slick-list:focus {
         outline: none;
     }
-    .slick-list.dragging {
+    .holiday-reason .slick-list.dragging {
         cursor: pointer;
         cursor: hand;
     }
-    .slick-slider .slick-track,
-    .slick-slider .slick-list {
+    .holiday-reason .slick-slider .slick-track,
+    .holiday-reason .slick-slider .slick-list {
         -webkit-transform: translate3d(0, 0, 0);
            -moz-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
              -o-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
-    .slick-track {
+    .holiday-reason .slick-track {
         position: relative;
         top: 0;
         left: 0;
@@ -7008,52 +7195,52 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .slick-track:before,
-    .slick-track:after
+    .holiday-reason .slick-track:before,
+    .holiday-reason .slick-track:after
     {
         display: table;
 
         content: '';
     }
-    .slick-track:after
+    .holiday-reason .slick-track:after
     {
         clear: both;
     }
-    .slick-loading .slick-track
+    .holiday-reason .slick-loading .slick-track
     {
         visibility: hidden;
     }
-    .slick-slide {
+    .holiday-reason .holiday-reason .slick-slide {
         display: none;
         float: left;
         height: 100%;
         min-height: 1px;
     }
-    .slick-slide
+    .holiday-reason .slick-slide
     {
         float: right;
     }
-    .slick-slide img
+    .holiday-reason .slick-slide img
     {
         display: block;
     }
-    .slick-slide.slick-loading img
+    .holiday-reason .slick-slide.slick-loading img
     {
         display: none;
     }
-    .slick-slide.dragging img
+    .holiday-reason .slick-slide.dragging img
     {
         pointer-events: none;
     }
-    .slick-initialized .slick-slide
+    .holiday-reason .slick-initialized .slick-slide
     {
         display: block;
     }
-    .slick-loading .slick-slide
+    .holiday-reason .slick-loading .slick-slide
     {
         visibility: hidden;
     }
-    .slick-vertical .slick-slide
+    .holiday-reason .slick-vertical .slick-slide
     {
         display: block;
 
@@ -7061,7 +7248,7 @@
 
         border: 1px solid transparent;
     }
-    .slick-arrow.slick-hidden {
+    .holiday-reason .slick-arrow.slick-hidden {
         display: none;
     }
 
@@ -7075,7 +7262,7 @@
         display: block;
         margin-bottom: 0px;
     }
-    .c-title-decor-1 span {
+    .holiday-reason .c-title-decor-1 span {
         display: block;
         font-size: 1.3rem;
         margin-top: -6px;
@@ -7084,7 +7271,7 @@
     .holiday-reason__header .holiday-reason__subtitle {
         display: none;
     }
-    .c-holiday-count-1 {
+    .holiday-reason .c-holiday-count-1 {
         display: none;
     }
     .holiday-reason__head {
@@ -7199,7 +7386,7 @@
         margin-bottom: 2rem;
         height: 90px;
     }
-    .c-title-decor-1 {
+    .holiday-reason .c-title-decor-1 {
         padding: 0rem;
         display: block;
         margin-bottom: 0rem;
@@ -7209,31 +7396,31 @@
         font-size: 3.3rem;
         color: #231300;
     }
-    .c-title-decor-1::before,
-    .c-title-decor-1::after {
+    .holiday-reason .c-title-decor-1::before,
+    .holiday-reason .c-title-decor-1::after {
         display: none;
     }
-    .slick-prev, .slick-next { 
+    .holiday-reason .slick-prev, .holiday-reason .slick-next { 
         top: 47px;
         background: none;
     }    
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    .holiday-reason .slick-prev:hover, .holiday-reason .slick-prev:focus, .holiday-reason .slick-next:hover, .holiday-reason .slick-next:focus {
         background: none;
     }
-    .slick-prev:before {
+    .holiday-reason .slick-prev:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/left-arrow-slick.png) no-repeat;
     }
-    .slick-next:before {
+    .holiday-reason .slick-next:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/right-arrow-slick.png) no-repeat;
     }
-        /* Slider */
-    .slick-slider {
+    /* Slider */
+    .holiday-reason .slick-slider {
         position: relative;
 
         display: block;
@@ -7250,7 +7437,7 @@
             touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
     }
-    .slick-list {
+    .holiday-reason .slick-list {
         position: relative;
 
         display: block;
@@ -7259,22 +7446,22 @@
         margin: 0;
         padding: 0;
     }
-    .slick-list:focus {
+    .holiday-reason .slick-list:focus {
         outline: none;
     }
-    .slick-list.dragging {
+    .holiday-reason .slick-list.dragging {
         cursor: pointer;
         cursor: hand;
     }
-    .slick-slider .slick-track,
-    .slick-slider .slick-list {
+    .holiday-reason .slick-slider .slick-track,
+    .holiday-reason .slick-slider .slick-list {
         -webkit-transform: translate3d(0, 0, 0);
            -moz-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
              -o-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
-    .slick-track {
+    .holiday-reason .slick-track {
         position: relative;
         top: 0;
         left: 0;
@@ -7283,52 +7470,52 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .slick-track:before,
-    .slick-track:after
+    .holiday-reason .slick-track:before,
+    .holiday-reason .slick-track:after
     {
         display: table;
 
         content: '';
     }
-    .slick-track:after
+    .holiday-reason .slick-track:after
     {
         clear: both;
     }
-    .slick-loading .slick-track
+    .holiday-reason .slick-loading .slick-track
     {
         visibility: hidden;
     }
-    .slick-slide {
+    .holiday-reason .holiday-reason .slick-slide {
         display: none;
         float: left;
         height: 100%;
         min-height: 1px;
     }
-    .slick-slide
+    .holiday-reason .slick-slide
     {
         float: right;
     }
-    .slick-slide img
+    .holiday-reason .slick-slide img
     {
         display: block;
     }
-    .slick-slide.slick-loading img
+    .holiday-reason .slick-slide.slick-loading img
     {
         display: none;
     }
-    .slick-slide.dragging img
+    .holiday-reason .slick-slide.dragging img
     {
         pointer-events: none;
     }
-    .slick-initialized .slick-slide
+    .holiday-reason .slick-initialized .slick-slide
     {
         display: block;
     }
-    .slick-loading .slick-slide
+    .holiday-reason .slick-loading .slick-slide
     {
         visibility: hidden;
     }
-    .slick-vertical .slick-slide
+    .holiday-reason .slick-vertical .slick-slide
     {
         display: block;
 
@@ -7336,7 +7523,7 @@
 
         border: 1px solid transparent;
     }
-    .slick-arrow.slick-hidden {
+    .holiday-reason .slick-arrow.slick-hidden {
         display: none;
     }
 }
@@ -7349,13 +7536,13 @@
         display: block;
         margin-bottom: 0px;
     }
-    .c-title-decor-1 span {
+    .holiday-reason .c-title-decor-1 span {
         display: none;
     }
     .holiday-reason__header .holiday-reason__subtitle {
         display: none;
     }
-    .c-holiday-count-1 {
+    .holiday-reason .c-holiday-count-1 {
         display: none;
     }
     .holiday-reason__head {
@@ -7475,7 +7662,7 @@
         margin-bottom: 2rem;
         height: 90px;
     }
-    .c-title-decor-1 {
+    .holiday-reason .c-title-decor-1 {
         padding: 0rem;
         display: block;
         margin-bottom: 0rem;
@@ -7486,31 +7673,31 @@
         color: #231300;
         line-height: 2.8rem;
     }
-    .c-title-decor-1::before,
-    .c-title-decor-1::after {
+    .holiday-reason .c-title-decor-1::before,
+    .holiday-reason.c-title-decor-1::after {
         display: none;
     }
-    .slick-prev, .slick-next { 
+     .holiday-reason.slick-prev, .holiday-reason .slick-next { 
         top: 47px;
         background: none;
     }    
-    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    .holiday-reason .slick-prev:hover, .holiday-reason .slick-prev:focus, .holiday-reason .slick-next:hover, .holiday-reason .slick-next:focus {
         background: none;
     }
-    .slick-prev:before {
+    .holiday-reason .slick-prev:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/left-arrow-slick.png) no-repeat;
     }
-    .slick-next:before {
+    .holiday-reason .slick-next:before {
         content: '';
         width: 40px;
         height: 76px;
         background: url(../img/holidays/right-arrow-slick.png) no-repeat;
     }
-        /* Slider */
-    .slick-slider {
+    /* Slider */
+    .holiday-reason .slick-slider {
         position: relative;
 
         display: block;
@@ -7527,7 +7714,7 @@
             touch-action: pan-y;
         -webkit-tap-highlight-color: transparent;
     }
-    .slick-list {
+    .holiday-reason .slick-list {
         position: relative;
 
         display: block;
@@ -7536,22 +7723,22 @@
         margin: 0;
         padding: 0;
     }
-    .slick-list:focus {
+    .holiday-reason .slick-list:focus {
         outline: none;
     }
-    .slick-list.dragging {
+    .holiday-reason .slick-list.dragging {
         cursor: pointer;
         cursor: hand;
     }
-    .slick-slider .slick-track,
-    .slick-slider .slick-list {
+    .holiday-reason .slick-slider .slick-track,
+    .holiday-reason .slick-slider .slick-list {
         -webkit-transform: translate3d(0, 0, 0);
            -moz-transform: translate3d(0, 0, 0);
             -ms-transform: translate3d(0, 0, 0);
              -o-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
-    .slick-track {
+    .holiday-reason .slick-track {
         position: relative;
         top: 0;
         left: 0;
@@ -7560,52 +7747,52 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .slick-track:before,
-    .slick-track:after
+    .holiday-reason .slick-track:before,
+    .holiday-reason .slick-track:after
     {
         display: table;
 
         content: '';
     }
-    .slick-track:after
+    .holiday-reason .slick-track:after
     {
         clear: both;
     }
-    .slick-loading .slick-track
+    .holiday-reason .slick-loading .slick-track
     {
         visibility: hidden;
     }
-    .slick-slide {
+    .holiday-reason .holiday-reason .slick-slide {
         display: none;
         float: left;
         height: 100%;
         min-height: 1px;
     }
-    .slick-slide
+    .holiday-reason .slick-slide
     {
         float: right;
     }
-    .slick-slide img
+    .holiday-reason .slick-slide img
     {
         display: block;
     }
-    .slick-slide.slick-loading img
+    .holiday-reason .slick-slide.slick-loading img
     {
         display: none;
     }
-    .slick-slide.dragging img
+    .holiday-reason .slick-slide.dragging img
     {
         pointer-events: none;
     }
-    .slick-initialized .slick-slide
+    .holiday-reason .slick-initialized .slick-slide
     {
         display: block;
     }
-    .slick-loading .slick-slide
+    .holiday-reason .slick-loading .slick-slide
     {
         visibility: hidden;
     }
-    .slick-vertical .slick-slide
+    .holiday-reason .slick-vertical .slick-slide
     {
         display: block;
 
@@ -7613,7 +7800,7 @@
 
         border: 1px solid transparent;
     }
-    .slick-arrow.slick-hidden {
+    .holiday-reason .slick-arrow.slick-hidden {
         display: none;
     }
 }
@@ -7621,5 +7808,958 @@
 @media screen and (min-width: 365px) and (max-width: 479px) {
     .c-title-decor-layout__mobile.m-5m {
         margin: 5px;
+    }
+}
+
+
+/* holiday-tortzhestvo */
+@media screen and (max-width: 1300px) {
+    .holiday .filter-mix__item span {
+        display: block;
+    }
+    .holiday .holiday-order {
+        padding: 2.5rem 1.6rem;
+    }
+    .holiday .holiday-box {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 2rem;
+    }
+    .holiday-description,
+    .holiday-box--mameninyi .holiday-description {
+        padding: 2rem;
+        height: 64rem;
+        background: #eaecf2;
+    }
+    .holiday-description__title {
+        text-align: center;
+        margin-bottom: 0rem;
+        font-size: 4.5rem;
+        line-height: 0.8;
+    }
+    .holiday-description__bg {
+        display: none;
+    }
+    .holiday .c-input {
+        font-size: 1.7rem;
+    }
+    .holiday .c-label {
+        font-size: 1.7rem; 
+    }
+    .holiday .c-checkbox {
+        font-size: 1.4rem;
+    }
+    .holiday .c-form__info {
+        font-size: 1.5rem;
+    }
+    .holiday-box .holiday-description__bg {
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .holiday-description__bg___mibile-2 {
+        display: block;
+    }
+    .holiday .holiday-description__grid {
+        display: none;
+    }
+    .holiday .holiday-description .l-button {
+        display: none;
+    }
+    .holiday-order__mobile {
+        display: block;
+    }
+    .holiday-description__text___mobile {
+        display: block;
+    }
+    .holiday-description__text___mobile p {
+        margin-bottom: 3rem;
+    }
+    .holiday-description__text,
+    .holiday-box--mameninyi .holiday-description__text {
+        min-height: inherit;
+    }
+    .holiday-description__text {
+        margin-bottom: 0rem;
+    }
+    .l-button__mobile {
+        display: block;
+    }
+    .l-button__mobile a {
+        display: inline-block;
+    }
+    .l-button__mobile .c-button__decor-1 {
+        font-size: 2.2rem;
+        padding: 1.2rem 4.2rem;
+        margin-right: 1rem !important;
+        width: 49%;
+        text-align: center;
+    }
+    .l-button__mobile .c-button__decor-2 {
+        font-size: 2.2rem;
+        width: 49%;
+        text-align: center;
+        max-width: inherit;
+        height: 5.9rem;
+        padding: 1.8rem 1rem;
+    }
+    .holiday .c-symbol {
+        z-index: 1;
+    }
+    .holiday .filter .filter-item:nth-child(1), .holiday .filter .filter-item:nth-child(2) {
+        width: 20%;
+    }
+    .holiday .c-col-3 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .holiday .symbol-city,
+    .holiday .symbol-clock-2,
+    .holiday .symbol-table {
+        fill: #b66490;
+    }
+    .holiday .symbol-phone {
+        fill: #78bd11;
+        top: .5rem !important; 
+    }
+    .text-phone__mobile {
+        color: #78bd11;
+    }
+    .holiday .c-card-cafe-vertical__item {
+        color: #555451;
+        font-size: 1.5rem;
+    }
+    .holiday .c-button__medium {
+        font-size: 1.5rem;
+        height: 4.5rem;
+        padding: 1.4rem 2.2rem;
+        border-radius: .3rem;
+    }
+    .symbol-cat {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .holiday .filter-mix {
+        display: none;
+    }
+    .holiday .holiday-assemble {
+        display: block;
+        height: 6.5rem;
+        width: 100%;
+        margin-bottom: 1.8rem;
+        border-radius: inherit; 
+    }
+    .holiday .holiday-assemble .c-symbol {
+        display: none;
+    }
+    .holiday .holiday-assemble span {
+        font-size: 1.7rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    .holiday .holiday-description {
+        padding: 1rem 1.6rem;
+        height: 43rem;
+        background: #eff1f5;
+    }
+    .holiday-description__title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .holiday-description__text {
+        min-height: inherit;
+    }
+    .holiday .holiday-box {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 2rem;
+    }
+    .holiday .holiday-description__grid {
+        display: none;
+    }
+    .holiday .holiday-description .l-button {
+        display: none;
+    }
+    .holiday .holiday-description__bg {
+        display: none;
+    }
+    .holiday .holiday-description__bg___mibile {
+        display: block;
+    }
+    .holiday-box .holiday-description__bg {
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .holiday .holiday-order {
+        padding: 4.5rem 1.6rem 2.7rem 1.6rem;
+    }
+    .holiday-description__text___mobile {
+        display: block;
+    }
+    .holiday-description__text___mobile p {
+        margin-bottom: 3rem;
+    }
+    .holiday-description__text {
+        margin-bottom: 0rem;
+    }
+    .l-button__mobile {
+        display: block;
+    }
+    .holiday .l-button .c-button {
+        margin-right: 0rem;
+        width: 100%;
+        padding: 1.2rem 2.2rem !important;
+        text-align: center;
+    }
+    .holiday .c-button__decor-1 {
+        margin-bottom: 1.5rem;
+    }
+    .holiday .c-button__decor-2 {
+        max-width: 100%;
+    }
+    .holiday-order__mobile {
+        display: block;
+    }
+    .holiday .c-form__info {
+        margin-bottom: 1.8rem;
+    }
+    .holiday .datepicker-layout {
+        margin-bottom: 1.1rem;
+    }
+    .holiday-order__title {
+        color: #555451;
+    }
+    .holiday-box--tortzhestvo .symbol-unicorn {
+        z-index: 1;
+        bottom: -10.5rem;
+        right: -15rem;
+    }
+    .holiday .symbol-rabbit-3,
+    .symbol-cat {
+        display: none;
+    }
+    .holiday .c-form__grid {
+        display: block;
+    }
+    .holiday .c-form__col {
+        width: 100%;
+    }
+    .holiday .c-input {
+        background: #ffffff;
+    }
+    .holiday .c-button__default {
+        height: 5.4rem;
+        background-color: #7cbd41;
+        font-size: 1.8rem;
+        border-radius: 0.3rem;
+    }
+    .holiday .filter .c-button {
+        width: 100%;
+    }
+    .holiday .c-title__h2 {
+        color: #5c3321;
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    .holiday-space .filter {
+        display: block;
+    }
+    .holiday .c-form__col--inline {
+        display: block;
+    }
+    .holiday .filter .filter-item:nth-child(1), .holiday .filter .filter-item:nth-child(2) {
+        width: 100%;
+    }
+    .holiday .filter .filter-item:nth-child(3) {
+        width: 100%;
+    }
+    .holiday .filter .l-button__center {
+        display: none;
+        margin-top: 0rem;
+    }
+    .holiday .filter-btn__reset__mdn {
+        display: none !important;
+    }
+    .holiday .filter-btn__reset__mdb {
+        display: block;
+        margin-top: .5rem !important;
+    }
+    .holiday .c-col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .holiday .symbol-city,
+    .holiday .symbol-clock-2,
+    .holiday .symbol-table {
+        fill: #b66490;
+    }
+    .holiday .symbol-phone {
+        fill: #78bd11;
+        top: .5rem !important; 
+    }
+    .text-phone__mobile {
+        color: #78bd11;
+    }
+    .holiday .c-card-cafe-vertical__item {
+        color: #555451;
+        font-size: 1.5rem;
+    }
+    .holiday .c-button__medium {
+        font-size: 1.5rem;
+        height: 4.5rem;
+        padding: 1.4rem 2.2rem;
+        border-radius: .3rem;
+    }
+    .sub-buttons {
+        display: none;
+    }
+    .sub-buttons a {
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+        border-radius: .3rem;
+        padding: 1.4rem;
+        height: 4.5rem;
+        margin-bottom: .1rem;
+    }
+    .main-button {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 1.7rem;
+        border-radius: .3rem;
+        padding: 1.4rem;
+        height: 4.5rem;
+        margin-bottom: .5rem;
+    }
+    .nav-mobile {
+        margin-bottom: 2rem;
+        display: block;
+    }
+    .nav-mobile .c-button {
+        text-transform: capitalize;
+    }
+    .main-button__img {
+        position: absolute;
+        right: 1rem;
+        top: 1.3rem;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 756px) { 
+    .holiday .c-col-3 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) { 
+    .holiday .c-grid {
+        padding: 0rem 5rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 756px) { 
+    .holiday .l-button .c-button {
+        padding: 1.7rem 2.2rem !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) { 
+    .holiday .l-button .c-button {
+        padding: 0.7rem 2.2rem !important;
+    }
+}
+
+/* franchise */
+@media screen and (min-width: 1200px) and (max-width: 1300px) { 
+    .franchise-conditions-list__item {
+        width: 25%;
+    }
+    .franchise-box {
+        margin-bottom: 3.4rem;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 1200px) { 
+    .franchise-review-card__header {
+        width: 100%;
+    }
+    .franchise-review-card__who, .franchise-review-card__link {
+        white-space: normal;
+    }
+    .franchise-review .franchise-content {
+        padding: 0rem 1.6rem;
+    }
+    .franchise-contact__head .franchise-info {
+        display: block;
+        text-align: center;
+    }
+    .franchise-contact__head .franchise-title {
+        display: none;
+    }
+    .franchise-contact__form {
+        width: 100%;
+    }
+    .franchise-contact .franchise-title-layout {
+        margin-bottom: 0rem;
+    }
+    .franchise-contact .c-form__grid .c-form__item:first-child {
+        width: 100%;
+    }
+    .franchise-contact .c-form__grid {
+        display: block;
+    }
+    .franchise-contact__form .symbol-bird-with-bubble {
+        right: 0px;
+        left: inherit;
+    }
+    .franchise-contact__form .c-button {
+        width: 70%;
+    }
+    .franchise-contact-callback {
+        padding: 2rem 2rem 3rem 2rem;
+        width: 100%;
+        height: auto;
+        position: static;
+        background: #7cbd41;
+        text-align: center;
+    }
+    .franchise-contact-callback__phone {
+        font-size: 2.4rem;
+    }
+    .franchise-contact__body {
+        padding: 2rem 4rem 1.5rem;
+    }
+    .franchise-contact-callback__form {
+        display: flex;
+        padding: 1rem 2rem;
+    }
+    .franchise-contact-callback__item {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-contact-callback__btn {
+        width: 50%;
+    }
+    .franchise-contact-callback__form input {
+        width: 50% !important;
+    }
+    .franchise-conditions-list {
+        padding: 0rem 1.6rem;
+    }
+    .franchise-box {
+        margin-bottom: 3.4rem;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .franchise-banner__item {
+        font-size: 1.6rem;
+        width: 256px;
+        margin:0 auto;
+        text-align: center;
+        line-height: 25px;
+    }
+    .franchise-box {
+        margin-bottom: 3.4rem;
+    }
+    .franchise-banner__item span {
+        font-size: 1.6rem;
+    }
+    .franchise-banner {
+        width: 100%;
+        padding: 3rem 0rem 2rem 0rem;
+        background: url(../img/franchise/franchise-banner__mobile.jpg) no-repeat;
+        background-size: cover;
+        margin: 0rem;
+        min-height: 32rem;
+    }
+    .franchise-conditions-calc__elem-1_mobile,
+    .franchise-conditions-calc__elem-2_mobile {
+        display: none;
+    }
+    .franchise-conditions-calc__elem-1,
+    .franchise-conditions-calc__bg,
+    .symbol-holiday-decor-2 {
+        display: none;
+    }
+    .franchise-conditions-calc__elem-1_mobile {
+        position: absolute;
+        top: 4rem;
+        right: 0.5rem;
+    }
+    .franchise-conditions-calc__elem-2_mobile {
+        position: absolute;
+        bottom: 6rem;
+        right: 0.2rem;
+    }
+    .franchise-conditions-list__item {
+        width: 50%;
+    }
+    .franchise-review-card__header {
+        width: 100%;
+    }
+    .franchise-review-card__who, .franchise-review-card__link {
+        white-space: normal;
+    }
+    .franchise-review .franchise-content {
+        padding: 0rem 1.6rem;
+    }
+    .franchise-contact__head .franchise-info {
+        display: block;
+        text-align: center;
+    }
+    .franchise-contact__head .franchise-title {
+        display: none;
+    }
+    .franchise-contact__form {
+        width: 100%;
+    }
+    .franchise-contact .franchise-title-layout {
+        margin-bottom: 0rem;
+    }
+    .franchise-contact .c-form__grid .c-form__item:first-child {
+        width: 100%;
+    }
+    .franchise-contact .c-form__grid {
+        display: block;
+    }
+    .franchise-contact__form .symbol-bird-with-bubble {
+        right: 0px;
+        left: inherit;
+    }
+    .franchise-contact__form .c-button {
+        width: 70%;
+    }
+    .franchise-contact-callback {
+        padding: 2rem 2rem 3rem 2rem;
+        width: 100%;
+        height: auto;
+        position: static;
+        background: #7cbd41;
+        text-align: center;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
+    }
+    .franchise-contact-callback__phone {
+        font-size: 2.4rem;
+    }
+    .franchise-contact__body {
+        padding: 2rem 4rem 1.5rem;
+    }
+    .franchise-contact-callback__form {
+        display: flex;
+        padding: 1rem 2rem;
+    }
+    .franchise-contact-callback__item {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-contact-callback__btn {
+        width: 50%;
+    }
+    .franchise-contact-callback__form input {
+        width: 50% !important;
+    }
+    .franchise {
+        padding: 0rem 0rem !important;
+    }
+    .c-layout__franchise {
+        padding: 0rem !important;
+    }
+    .franchise-direction,
+    .franchise-conditions-list {
+        padding: 0rem 1.6rem;
+    }
+}
+
+@media screen and (max-width: 756px) {
+    .franchise-banner__item {
+        font-size: 1.6rem;
+        width: 256px;
+        margin:0 auto;
+        text-align: center;
+        line-height: 25px;
+    }
+    .franchise-banner__item span {
+        font-size: 1.6rem;
+    }
+    .franchise-banner {
+        width: 100%;
+        padding: 3rem 0rem 2rem 0rem;
+        background: url(../img/franchise/franchise-banner__mobile.jpg) no-repeat;
+        background-size: cover;
+        margin: 0rem;
+        min-height: 32rem;
+    }
+    .franchise {
+        padding: 0rem 0rem !important;
+    }
+    .franchise-banner__item {
+        padding: 0.6rem 0rem;
+    }
+    .franchise-box .c-col-3 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .franchise-box .c-col-3 {
+        margin-bottom: 1rem;
+    }
+    .c-col {
+        padding: 0rem 0.7rem;
+    }
+    .c-layout__franchise {
+        padding: 0rem !important;
+    }
+    .franchise-direction {
+        margin-bottom: 2rem;
+        padding: 1rem 2rem;
+    }
+    .franchise-direction-card__img {
+        margin-bottom: 0.2rem;
+    }
+    .franchise-direction-card__title {
+        font-size: 1.2rem;
+    }
+    .franchise-about .franchise-title,
+    .franchise-advantages .franchise-title,
+    .franchise-package .franchise-title {
+        width: 240px;
+        color: #9b806f;
+    }
+    .franchise-conditions .franchise-title,
+    .franchise-conditions-area .franchise-title,
+    .franchise-conditions-region .franchise-title {
+        font-size: 1.8rem;
+    }
+    .franchise-conditions-area .franchise-title,
+    .franchise-package .franchise-title {
+        width: 256px;
+    }
+    .franchise-info {
+        display: none;
+    }
+    .franchise-map .franchise-map {
+        height: 250px;
+    }
+    .franchise-about .c-col-4 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0rem 2.5rem;
+    }
+    .franchise-contact__head .franchise-info {
+        display: block;
+        text-align: center;
+    }
+    .franchise-contact__head .franchise-title {
+        display: none;
+    }
+    .franchise-contact__form {
+        width: 100%;
+    }
+    .franchise-contact .franchise-title-layout {
+        margin-bottom: 0rem;
+    }
+    .franchise-contact .c-form__grid .c-form__item:first-child {
+        width: 100%;
+    }
+    .franchise-contact .c-form__grid {
+        display: block;
+    }
+    .franchise-contact__form .symbol-bird-with-bubble {
+        right: 0px;
+        left: inherit;
+    }
+    .franchise-contact__form .c-button {
+        width: 70%;
+    }
+    .franchise-contact-callback {
+        padding: 2rem 2rem 3rem 2rem;
+        width: 100%;
+        height: auto;
+        position: static;
+        background: #7cbd41;
+        text-align: center;
+    }
+    .franchise-contact-callback__phone {
+        font-size: 2.4rem;
+    }
+    .franchise-contact__body {
+        padding: 2rem 4rem 1.5rem;
+    }
+    .franchise-contact-callback__form {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .franchise-contact-callback__item {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-contact-callback__btn {
+        width: 70%;
+    }
+    .franchise .js-input--tel {
+        margin-bottom: 1rem;
+    }
+    .franchise-advantages-list__mobile {
+        display: block;
+        padding: 0rem 1rem;
+    }
+    .franchise-advantages-list {
+        display: none;
+    }
+    .franchise-advantages-list__mobile__item {
+        margin-bottom: 3rem;
+    }
+    .franchise-advantages-list__mobile__item img {
+        width: 125px;
+        height: 84px;
+        margin: 0rem 1rem 1rem 0rem;
+        float: left;
+    }
+    .franchise-advantages-card__title {
+        margin-bottom: 1.4rem;
+    }
+    .franchise-print {
+        right: 0;
+        top: 4rem;
+        left: 0;
+        margin: auto;
+    }
+    .franchise-conditions .franchise-content,
+    .franchise-conditions-region .franchise-content {
+        margin-top: 4.4rem;
+    }
+    .franchise-conditions-area .franchise-content {
+        margin-top: 2.4rem;
+    }
+    .franchise-conditions-calc .symbol-holiday-decor-2 {
+        display: none;
+    }
+    .franchise-conditions .symbol-holiday-decor-2 {
+        display: none;
+    }
+    .franchise-package .c-col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0rem 1.6rem;
+    }
+    .franchise .c-ul-list {
+        margin-left: 0.6rem;
+        padding: 0rem 1.6rem;
+    }
+    .franchise-review .c-col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .franchise-review-card__header {
+        width: 80%;
+    }
+    .franchise-review-card__who, .franchise-review-card__link {
+        white-space: normal;
+    }
+    .franchise-review .franchise-content {
+        padding: 0rem 1.6rem;
+    }
+    .more {
+        display: none;
+        margin-top: 1rem;
+    }
+    .show-more {
+        display: block;
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+    .show-more span {
+        margin-left: 0.5rem;
+        position: relative;
+        top: -0.3rem;
+    }
+    .franchise-conditions .franchise-conditions-calc {
+        padding: 1rem 2rem;
+    }
+    .franchise-conditions-calc__item {
+        display: block;
+    }
+    .franchise-conditions-calc__title,
+    .franchise-conditions-calc__desc {
+        width: 100%;
+    }
+    .franchise-conditions-calc__title {
+        text-align: left;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    .franchise-conditions-calc__note {
+        font-weight: bold;
+    }
+    .franchise-conditions-calc__elem-1_mobile,
+    .franchise-conditions-calc__elem-2_mobile {
+        display: block;
+    }
+    .franchise-conditions-calc__elem-1,
+    .franchise-conditions-calc__bg {
+        display: none;
+    }
+    .franchise-conditions-calc__elem-1_mobile {
+        position: absolute;
+        top: 4rem;
+        right: 0.5rem;
+    }
+    .franchise-conditions-calc__elem-2_mobile {
+        position: absolute;
+        bottom: 6rem;
+        right: 0.2rem;
+    }
+    .franchise-conditions-card__icon {
+        display: none;
+    }
+    .franchise-conditions-card {
+        position: relative;
+        border-radius: 0rem;
+        border: none;
+        width: 100%;
+        height: 100%;
+    }
+    .franchise-conditions-list {
+        margin-top: 3rem;
+        padding: 0rem 0.8rem;
+    }
+    .franchise-conditions-card__body {
+        position: static;
+        padding: 0rem;
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .franchise-conditions-list__item {
+        width: 100%;
+        display: block;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+    .franchise-conditions-card:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .franchise-conditions-card__icon {
+        display: block;
+        position: static;
+        float: left;
+        width: 10%;
+        webkit-transform: inherit;
+        -ms-transform: inherit;
+        transform: inherit;
+        margin-top: 0.3rem;
+    }
+    .franchise-conditions-card__body {
+        display: block;
+        position: static;
+        float: left;
+        width: 90%;
+    }
+    .franchise-conditions-card__icon img {
+        width: 1.7rem;
+        height: 2rem;
+    }
+    .franchise-conditions__title {
+        margin-left: 0.6rem;
+    }
+    .franchise-conditions-table {
+        display: none;
+    }
+
+    .franchise-conditions-table__slick__item {
+        border-bottom: 1px dotted #9b9595;
+        padding: 1rem;
+        text-align: center;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+    }
+    .franchise-conditions-table__slick__item .service-title {
+        font-style: 1.3rem;
+        color: #553023;
+    }
+    .franchise-conditions-table__slick__item .service-price {
+        font-style: 1.5rem;
+        color: #555451;
+    }
+    .franchise-conditions-table__slick .title,
+    .franchise-conditions-table__slick-2 .title,
+    .franchise-conditions-table__slick-3 .title {
+        font-size: 1.5rem;
+        color: #553023;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    /*
+        slick
+    */
+    .franchise-conditions-table__mobile {
+        display: block;
+    }
+    .franchise .slick-prev, .franchise .slick-next { 
+        top: 24px;
+        background: none;
+    }    
+    .franchise .slick-prev {
+        left: 10%;
+    }
+    .franchise .slick-next {
+        right: 10%;
+    }
+    .franchise .slick-prev:hover, .franchise .slick-prev:focus, .franchise .slick-next:hover, .franchise .slick-next:focus {
+        background: none;
+    }
+    .franchise .slick-prev:before {
+        content: '';
+        width: 30px;
+        height: 36px;
+        background: url(../img/franchise/left-arrow__slick.png) no-repeat;
+    }
+    .franchise .slick-next:before {
+        content: '';
+        width: 30px;
+        height: 36px;
+        background: url(../img/franchise/right-arrow__slick.png) no-repeat;
+    }
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 756px) {
+    .franchise-about .franchise-title, .franchise-advantages .franchise-title, .franchise-package .franchise-title {
+        width: 310px;
+    }
+    .franchise-package .franchise-title {
+        width: 380px;
+    }
+    .franchise-conditions-area .franchise-title {
+        width: 336px;
+    }
+    .franchise-conditions-calc__title, .franchise-conditions-calc__desc {
+        width: 80%;
+    }
+    .franchise-contact-callback__form input {
+        width: 100% !important;
     }
 }

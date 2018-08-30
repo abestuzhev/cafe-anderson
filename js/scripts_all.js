@@ -16,6 +16,9 @@ document.body.onload = function(){
 
     document.body.classList.add('onloadContent');
 
+    // var holidays = document.querySelectorAll('.holidays-grid');
+    // holidays.classList.add('no-content')
+
 };
 
 
@@ -9261,9 +9264,24 @@ var documentWidth = (document.documentElement.clientWidth ); // ширина м�
 var documentHeight = (document.documentElement.clientHeight );
 // console.log('высота ' + documentHeight);
 
+
+
 $(window).on('load', function(){
 
 
+    if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
+        customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
+        $(window).on('resize', function () {
+            customGridRefreshPosition('.holidays-grid', '.holidays-grid__container');
+        });
+    };
+
+    if($('div').hasClass('preloader')) {
+        $('.preloader').find('.loader').fadeOut().end().delay(100).fadeOut(100);
+    };
+
+
+    // $('.holidays').addClass('show');
 
     /*скролл при выборе доставки*/
     var orderDeliveryMap = $('.order-delivery__map').height(),
@@ -9486,6 +9504,8 @@ $(document).ready(function ($) {
 
     $(document).on('click', '.pie-slider-nav__item', function(){
         var self = $(this);
+        self.siblings().removeClass('active');
+        self.addClass('active');
         var path = self.children('img').attr('src');
 
         $('.pie-slider-for').find('img').attr('src', path).animate({
@@ -9502,7 +9522,7 @@ $(document).ready(function ($) {
         var carusel = $(this).parents('.pie-slider');
         right_carusel(carusel);
         var path = $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).children('img').attr('src');
-        console.log(path);
+        // console.log(path);
 
         $('.pie-slider-for').find('img').animate({'opacity': 0}, 100);
         setTimeout(function(){
@@ -9522,7 +9542,7 @@ $(document).ready(function ($) {
         $('.pie-slider-for').find('img').animate({'opacity': 0}, 100);
         setTimeout(function(){
             $('.pie-slider-for').find('img').attr('src', path);
-            $('.pie-slider-for').find('img').animate({'opacity': 1}, 100);;
+            $('.pie-slider-for').find('img').animate({'opacity': 1}, 100);
         },100);
 
         return false;
@@ -9532,6 +9552,8 @@ $(document).ready(function ($) {
         var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
         $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).clone().prependTo($(carusel).find(".pie-slider-items"));
         $(carusel).find(".pie-slider-items").css({"left":"-"+block_width+"px"});
+        // $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
+        // $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).addClass('active');
         $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(-1).remove();
         $(carusel).find(".pie-slider-items").animate({left: "0px"}, 500);
 
@@ -9541,6 +9563,8 @@ $(document).ready(function ($) {
         var block_width = $(carusel).find('.pie-slider-nav__item').outerWidth();
         $(carusel).find(".pie-slider-items").animate({left: "-"+ block_width +"px"}, 500, function(){
             $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).clone().appendTo($(carusel).find(".pie-slider-items"));
+            // $(carusel).find(".pie-slider-items .pie-slider-nav__item").removeClass('active');
+            // $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(1).addClass('active');
             $(carusel).find(".pie-slider-items .pie-slider-nav__item").eq(0).remove();
             $(carusel).find(".pie-slider-items").css({"left":"0px"});
         });
@@ -9912,14 +9936,41 @@ $(document).ready(function ($) {
     changeDispatchCheckbox('.js-dispatch-news');
     changeDispatchCheckbox('.js-dispatch-event');
 
+    if($('div').hasClass('franchise-conditions-table__slick')){
+        function initMobileSliderFranchise(){
+            $('.franchise-conditions-table__slick').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                accessibility: false
+            });
+            $('.franchise-conditions-table__slick').slick('setPosition');
+        }
+
+        initMobileSliderFranchise();
+    }
+
 
 
 
     //франшиза
     $('.franchise-title').on('click', function(){
         var self = $(this);
+        console.log();
         self.parents('.franchise-title-layout').siblings('.franchise-content').slideToggle(100);
         self.siblings('.franchise-print').toggle();
+        if($(window).width() < 756) {
+            $('.franchise-conditions-table__slick').slick('setPosition');
+            $('.slick-slide-2').slick('setPosition');
+            $('.slick-slide-3').slick('setPosition');
+        }
+
+        $(window).on('resize orientationchange', function() {
+
+            if($(window).width() < 756) {
+                //initMobileSliderFranchise();
+            }
+        });
     });
 
 
@@ -10564,6 +10615,8 @@ $(document).ready(function ($) {
         // margin:20,
         // items: 4,
         // center: true,
+        mouseDrag:false,
+        pullDrag:false,
         responsive:{
             0:{
                 items:1
@@ -10582,6 +10635,11 @@ $(document).ready(function ($) {
             }
         }
     });
+
+    $(".c-card-product__slider .owl-item").on("touchstart mousedown", function(e) {
+        // Prevent carousel swipe
+        e.stopPropagation();
+    })
 
     /*слайдер карусель*/
     $('.publications-slider').owlCarousel({
@@ -10760,7 +10818,21 @@ $(document).ready(function ($) {
         allowfullscreen: true,
         nav: 'thumbs',
         fit:'cover'
-    });;
+    });
+
+
+    if($('div').hasClass('pie-fotorama')){
+        $('.pie-fotorama').fotorama({
+            thumbwidth: 125,
+            thumbHeight: 88,
+            nav: 'thumbs',
+            navposition: 'top',
+            transition: 'crossfade'
+        });
+    };
+
+
+
 
     /*Фоторама, слайдер мероприятий, слайдер отзывов*/
     // var $slider = $('.cafe-fotorama').fotorama({
@@ -10914,6 +10986,7 @@ $(document).ready(function ($) {
     showPopup(".js-show-pie-order", '.popup-pie');
     showPopup(".js-show-poster", '.popup-poster');
     showPopup(".calendar-box__link", '.popup-calendar-booking');
+    showPopup(".calendar-box__wraplink", '.popup-calendar-booking');
 
 
     showPopup(".calendar-nav-hall__decor-blue:not(.no-popup)", '.popup__gallery_hall_blue');
@@ -12027,8 +12100,15 @@ $(function() {
         /* Calendar Selector */
         new SimpleBar($('.calendar-selector__list')[0], {
             autoHide: false,
-            scrollbarMinSize: 35,
+            scrollbarMinSize: 35
         });
+
+
+        var holiday_calendar = $('.holiday .calendar');
+
+        if(holiday_calendar.height() < 130) {
+            holiday_calendar.find('.calendar-selector').addClass('show-up');
+        }
     };
 
 
@@ -12113,6 +12193,7 @@ $(function() {
     });
     // Calendar Hall Row Events
     //      options
+/*
     let hsl_calendar_options = {
         selector_owlCarousel: '.calendar-nav-hall__row',
         selector_column: '.calendar-col',
@@ -12141,11 +12222,12 @@ $(function() {
     );
 
     calendarHallUpdateBind(hsl_calendar_options);
-
+*/
 });
 
 // Calendar Hall Row Events
 //      hide&show
+/*
 function calendarHallUpdateGrid(sel_column, sel_box, time_slot_count, page_index, class_hidden) {
     $(sel_column).each(function(index, element) {
         $(element).find(sel_box).each(function(j, box) {
@@ -12190,7 +12272,7 @@ function calendarHallUpdateBind(options) {
         );
     })
 }
-
+*/
 
 // Holidays All
 //  functions
@@ -12308,69 +12390,131 @@ function customGridRefreshPosition(container, block, cols = 'auto') {
     $(container).css('height',(cont.height_u+1) * minHeight);
 }
 
+function initHolidayMobileSlider(){
+    var mySlider = $('.holiday-reason__slick');
+
+    if (!mySlider.hasClass('slick-initialized')) {
+        mySlider.slick({
+            slidesToShow: 3,
+            centerMode: false,
+            responsive: [
+                {
+                    breakpoint: 9999,
+                    settings: "unslick"
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                },
+                {
+                    breakpoint: 740,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false
+                    }
+                }
+            ]
+        });
+    }
+}
+
 
 //  events listener
 $(function() {
     if($('div').hasClass('holiday-reason__grid')){
         $(window).on('resize orientationchange', function() {
-            var mySlider = $('.holiday-reason__slick');
-    
-            if (!mySlider.hasClass('slick-initialized')) {
-                mySlider.slick({
-                    slidesToShow: 3,
-                    centerMode: false,
-                    responsive: [
-                        {
-                            breakpoint: 9999,
-                            settings: "unslick"
-                        },
-                        {
-                            breakpoint: 1300,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1,
-                                infinite: false
-                            }
-                        },
-                        {
-                            breakpoint: 740,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                infinite: false
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                infinite: false
-                            }
-                        }
-                    ]
-                });
-            }
-    
-           
+
+            initHolidayMobileSlider();
+
     
         });
-    }
+
+        initHolidayMobileSlider();
+    };
 
     holidaysInit('.holidays-list__body');
     holidaysAppleFix();
 
-    if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
-        customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
-        $(window).on('resize', function () {
-            customGridRefreshPosition('.holidays-grid', '.holidays-grid__container');
-        });
-    }
 
 
     
 });
 
+/*новые скрипты для мобильной версии табло*/
+
+$(function(){
+    var calendar_options = {
+        selector_owlCarousel: '.calendar-nav-hall__row',
+        selector_line: '.newcalendar .calendar-line',
+        class_hidden: 'calendar-adapt_hidden',
+    };
+
+    //      init
+    calendar_HallUpdateGrid(
+        calendar_options.selector_line,
+        0,
+        calendar_options.class_hidden
+    );
+
+    calendar_HallUpdateBind(calendar_options);
+
+
+});
+
+function calendar_HallUpdateGrid(sel_column, page_index, class_hidden) {
+    $(sel_column).each(function(index, element) {
+        if(index == page_index) {
+            $(element).removeClass(class_hidden);
+            $(element).siblings().addClass(class_hidden);
+        } else {
+            $(element).addClass(class_hidden);
+            // $(element).siblings.removeClass(class_hidden);
+        }
+    });
+}
+
+//    bind event
+function calendar_HallUpdateBind(options) {
+    var owl = $(options.selector_owlCarousel);
+    owl.trigger('destroy.owl.carousel');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        // center: true,
+        autoHeight: true,
+        nav: true
+    });
+
+
+    owl.on('changed.owl.carousel', function(event) {
+        calendar_HallUpdateGrid(
+            options.selector_line,
+            event.page.index,
+            options.class_hidden
+        );
+
+        calendar_HallUpdateGrid(
+            options.selector_nav_column,
+            event.page.index,
+            options.class_hidden
+        );
+
+        // console.log('event.page.index: ' + event.page.index);
+    })
+}
 
 
 
