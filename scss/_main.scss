@@ -17575,6 +17575,7 @@ a.show-more__button:hover {
         height: 23rem;
         padding: 1.2rem 1.4rem;
         position: absolute;
+        left: -1000rem;
     }
 
     &__block {
@@ -17910,5 +17911,107 @@ a.show-more__button:hover {
 }
 
 
+/* Footer reviews update */
+.footer-reviews__text {
+  margin-top: -.5rem;
+  background: url('../img/chat-bubbles.svg') 0 0 no-repeat;
+  background-size: 5.8rem;
+  padding-left: 3.2rem;
+  display: inline-block;
+  max-width: 10.2rem;
+  min-width: 10.2rem;
+  min-height: 4.2rem;
+  text-align: right;
+  font-size: 1.6rem;
+  top: -.5rem;
+  white-space: normal;
 
+  &::after {
+    left: 3.3rem;
+    width: 7rem;
+  }
 
+  &:hover {
+    background: url('../img/chat-bubbles-green.svg') 0 0 no-repeat;
+    background-size: 5.8rem;
+  }
+}
+
+.footer-reviews {
+  margin-top: -1rem;
+  margin-bottom: -1.3rem;
+  position: relative;
+  white-space: nowrap;
+
+  .footer-reviews__icons {
+    white-space: nowrap;
+  }
+
+  .footer-reviews__icon {
+    background: url('../img/positive.svg') 0 0 no-repeat;
+    background-size: 4rem;
+    padding: 0.6rem;
+    padding-bottom: 0.8rem;
+    opacity: .7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .js-negative {
+    background: url('../img/negative.svg') 0 0 no-repeat;
+    background-size: 4rem;
+    padding-right: .9rem;
+  }
+
+  .js-positive {
+    padding-right: .9rem;
+    margin-right: .3rem;
+  }
+
+  .symbol-positive {
+    width: 2.3rem;
+    height: 3.7rem;
+    fill: #7cbd41;
+
+    &:hover {
+      fill: #7cbd41;
+    }
+  }
+
+  .symbol-negative {
+    width: 2.5rem;
+    height: 3.7rem;
+    fill: #c7368a;
+
+    &:hover {
+      fill: #c7368a;
+    }
+  }
+}
+
+.footer-social svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer-site-map svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.footer-info {
+  width: 2.4rem;
+  height: 2.4rem;
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.footer-lang svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+/* /Footer reviews update */

@@ -6470,10 +6470,10 @@ div.c-card-catalog-2 {
       left: -1px;
       right: -1px;
       height: 6px;
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, rgba(0, 0, 0, 0)));
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(rgba(0, 0, 0, 0)));
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, transparent));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(transparent));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
     .header-categories-grid {
       display: -webkit-box;
@@ -9775,7 +9775,7 @@ test popup
           position: absolute;
           top: 0;
           left: 0; }
-      .cafe-info__item i[class*="icon"] ,
+      .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
       .cafe-info__item img {
         position: absolute;
         top: 0;
@@ -17003,7 +17003,8 @@ test popup
       z-index: 2;
       float: right;
       opacity: .5;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
   .holiday-box--tortzhestvo {
     /*holiday-box--tortzhestvo*/ }
     .holiday-box--tortzhestvo .holiday-description-fake {
@@ -17022,7 +17023,8 @@ test popup
     .holiday-box--karapuznik .holiday-description-fake {
       width: 38%;
       height: 57rem;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
   .holiday-box--mameninyi {
     /*holiday-box--mameninyi*/ }
     .holiday-box--mameninyi .holiday-description__text {
@@ -20419,7 +20421,8 @@ a.show-more__button:hover {
     min-width: 30rem;
     height: 23rem;
     padding: 1.2rem 1.4rem;
-    position: absolute; }
+    position: absolute;
+    left: -1000rem; }
   .holidays-grid__block {
     width: 100%;
     height: 100%;
@@ -20675,6 +20678,82 @@ a.show-more__button:hover {
   object-fit: fill;
   height: auto; }
 
+/* Footer reviews update */
+.footer-reviews__text {
+  margin-top: -.5rem;
+  background: url("../img/chat-bubbles.svg") 0 0 no-repeat;
+  background-size: 5.8rem;
+  padding-left: 3.2rem;
+  display: inline-block;
+  max-width: 10.2rem;
+  min-width: 10.2rem;
+  min-height: 4.2rem;
+  text-align: right;
+  font-size: 1.6rem;
+  top: -.5rem;
+  white-space: normal; }
+  .footer-reviews__text::after {
+    left: 3.3rem;
+    width: 7rem; }
+  .footer-reviews__text:hover {
+    background: url("../img/chat-bubbles-green.svg") 0 0 no-repeat;
+    background-size: 5.8rem; }
+
+.footer-reviews {
+  margin-top: -1rem;
+  margin-bottom: -1.3rem;
+  position: relative;
+  white-space: nowrap; }
+  .footer-reviews .footer-reviews__icons {
+    white-space: nowrap; }
+  .footer-reviews .footer-reviews__icon {
+    background: url("../img/positive.svg") 0 0 no-repeat;
+    background-size: 4rem;
+    padding: 0.6rem;
+    padding-bottom: 0.8rem;
+    opacity: .7; }
+    .footer-reviews .footer-reviews__icon:hover {
+      opacity: 1; }
+  .footer-reviews .js-negative {
+    background: url("../img/negative.svg") 0 0 no-repeat;
+    background-size: 4rem;
+    padding-right: .9rem; }
+  .footer-reviews .js-positive {
+    padding-right: .9rem;
+    margin-right: .3rem; }
+  .footer-reviews .symbol-positive {
+    width: 2.3rem;
+    height: 3.7rem;
+    fill: #7cbd41; }
+    .footer-reviews .symbol-positive:hover {
+      fill: #7cbd41; }
+  .footer-reviews .symbol-negative {
+    width: 2.5rem;
+    height: 3.7rem;
+    fill: #c7368a; }
+    .footer-reviews .symbol-negative:hover {
+      fill: #c7368a; }
+
+.footer-social svg {
+  width: 2.4rem;
+  height: 2.4rem; }
+
+.footer-site-map svg {
+  width: 2.4rem;
+  height: 2.4rem; }
+
+.footer-info {
+  width: 2.4rem;
+  height: 2.4rem; }
+  .footer-info svg {
+    width: 2.4rem;
+    height: 2.4rem; }
+
+.footer-lang svg {
+  width: 2.4rem;
+  height: 2.4rem; }
+
+/* /Footer reviews update */
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
@@ -21057,8 +21136,7 @@ a.show-more__button:hover {
 @media screen and (max-width: 680px) {
   .pie-form__item:nth-child(1), .pie-form__item:nth-child(2), .pie-form__item:nth-child(3) {
     width: 100%; }
-  .pie-form__item:nth-child(4),
-  .pie-form__item:nth-child(5) {
+  .pie-form__item:nth-child(4), .pie-form__item:nth-child(5) {
     width: 50%; }
   .pie-form__title {
     font-size: 2rem; }
