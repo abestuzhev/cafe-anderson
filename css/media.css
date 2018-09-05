@@ -4309,6 +4309,13 @@
         justify-content: center;
     }
 
+    .holiday-offers-banner__btns {
+        flex-flow: column nowrap;
+        justify-content: center;
+        top: 50%;
+    }
+
+    .holiday-offers-banner__btn,
     .graduation-party-banner__btn {
         margin-top: .8rem;
         margin-bottom: .8rem;
