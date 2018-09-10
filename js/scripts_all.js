@@ -10254,8 +10254,9 @@ $(document).ready(function ($) {
         });
     };
 
-    $('.graduation-party-banner__btn').click(function(e){
+    $('.graduation-party-banner__btn, .holiday-offers-banner__btn').click(function(e){
         e.preventDefault();
+        console.log('hello');
         var target = $($(this).attr('href'));
         if(target.length){
 
