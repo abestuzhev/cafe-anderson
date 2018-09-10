@@ -9819,6 +9819,10 @@ test popup
             background-color: #c44890;
             background-size: cover;
           text-align: center;
+
+          p {
+            color: #fff;
+          }
         }
 
         &__btns {
@@ -9976,6 +9980,17 @@ test popup
             background-color: #c44890;
             margin: 2rem 1.3rem 0 0;
         }
+
+      
+    }
+
+    .c-card-party-photo {
+      width: auto;
+      margin: 0 auto;
+    }
+
+    .c-ol-list li {
+      display: inline-block;
     }
 }
 

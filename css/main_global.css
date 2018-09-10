@@ -14444,6 +14444,8 @@ test popup
     background-color: #c44890;
     background-size: cover;
     text-align: center; }
+    .holiday-offers-banner__footer p {
+      color: #fff; }
   .holiday-offers-banner__btns {
     height: 100%;
     display: -webkit-box;
@@ -14564,6 +14566,13 @@ test popup
   .holiday-offers__footer .c-button__large {
     background-color: #c44890;
     margin: 2rem 1.3rem 0 0; }
+
+.holiday-offers .c-card-party-photo {
+  width: auto;
+  margin: 0 auto; }
+
+.holiday-offers .c-ol-list li {
+  display: inline-block; }
 
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock {
