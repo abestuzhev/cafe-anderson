@@ -5175,8 +5175,11 @@
 
 @media (max-width: 470px) {
 
-    .c-card-party-coronation {
-        
+    .c-card-party-coronation img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+
     }
 
     .mobile-cafe__title,
