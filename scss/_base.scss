@@ -4398,9 +4398,29 @@ div.c-card-catalog-2 {
     &__body {
     
     }
+
+    &-coronation {
+
+        img {
+            width: 17rem;
+            float: right;
+            margin-left: 1rem;
+        }
+        p {
+        }
+        
+    }
     
     &-description {
         margin-bottom: 2.8rem;
+
+        &::after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        
 
         &__title {
             font-weight: 700;

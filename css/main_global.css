@@ -5175,8 +5175,16 @@ div.c-card-catalog-2 {
         margin-right: .4rem; }
       .c-card-party-info__item:last-child {
         margin-right: 0; }
+  .c-card-party-coronation img {
+    width: 17rem;
+    float: right;
+    margin-left: 1rem; }
   .c-card-party-description {
     margin-bottom: 2.8rem; }
+    .c-card-party-description::after {
+      content: '';
+      clear: both;
+      display: table; }
     .c-card-party-description__title {
       font-weight: 700;
       color: #555451; }
