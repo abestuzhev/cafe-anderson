@@ -14454,6 +14454,9 @@ test popup
     text-align: center; }
     .holiday-offers-banner__footer p {
       color: #fff; }
+    .holiday-offers-banner__footer h2, .holiday-offers-banner__footer h3, .holiday-offers-banner__footer h4 {
+      color: #fff;
+      margin: 2rem 0 1rem; }
   .holiday-offers-banner__btns {
     height: 100%;
     display: -webkit-box;

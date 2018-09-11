@@ -4379,6 +4379,18 @@
         right: 0;
     }
 
+    .holiday-offers-banner__footer {
+        text-align: left;
+
+    }
+    .holiday-offers-banner__footer .c-ol-list > li:before {
+        content: counter(item) ") ";
+        left: -6px;
+    }
+    .holiday-offers-banner__footer .c-ol-list > li  {
+        padding-left: 2.5rem;
+    }
+
     .creators {
         padding: 2rem 1.5rem;
         margin-left: -2.2rem;
