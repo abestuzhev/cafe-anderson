@@ -18037,3 +18037,75 @@ a.show-more__button:hover {
   height: 2.4rem;
 }
 /* /Footer reviews update */
+
+/* Subscription */
+.subscription {
+  max-width: 43rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  padding: 1.1rem 1.1rem .1rem;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: .6rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  font-family: $font_serif;
+  position: relative;
+  z-index: 10;
+
+  &__input {
+    border: 1px solid #d2cdc4;
+    font-size: 1.2rem;
+    padding: .4rem 0 .4rem .8rem;
+    min-height: 14px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  &__control {
+    width: 20rem;
+    margin-bottom: .5rem;
+
+    &_line {
+      width: 100%;
+      margin-bottom: .5rem;
+    }
+
+    &_select {
+      .select-all {
+        height: 3rem;
+        font-size: 1.2rem;
+        span > i {
+          margin-top: .65rem;
+          margin-bottom: .65rem;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    background-color: #7cbd41;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: .6rem 1.5rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+  }
+
+}
+
+.subscription__title {
+  display: inline-block;
+}
+
+.subscription__info {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+/* /Subscription */

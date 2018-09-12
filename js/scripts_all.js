@@ -12518,5 +12518,17 @@ function calendar_HallUpdateBind(options) {
 }
 
 
+/* subscription */
+$(function() {
+
+    $('.subscription__select').SumoSelect({
+        placeholder: 'Выберите кафе',
+        selectAll: true,
+        locale: ['Ok', 'Отмена', 'Все'],
+        captionFormat: '{0} Выбрано',
+        captionFormatAllSelected: '{0} Все',
+    });
+});
+/* /subscription */
 
 
