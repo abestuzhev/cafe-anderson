@@ -6970,6 +6970,13 @@ div.c-card-catalog-2 {
     .footer-reviews__text {
       font-size: 1.4rem;
       margin-right: 1.1rem; }
+      .footer-reviews__text::after {
+        content: '';
+        display: none; }
+      .footer-reviews__text span {
+        border-bottom: 1px dotted #9b806f; }
+      .footer-reviews__text:hover span {
+        border-bottom: none; }
     .footer-reviews__icons {
       display: inline-block;
       vertical-align: bottom; }
