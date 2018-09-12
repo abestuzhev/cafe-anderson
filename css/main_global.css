@@ -1467,6 +1467,12 @@ i.icon-chair {
   height: .4em;
   fill: #7f7d7c; }
 
+.symbol-arrow-3 {
+  font-size: 2.3rem;
+  width: 1em;
+  height: 1.4em;
+  fill: #fff; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -7055,6 +7061,17 @@ div.c-card-catalog-2 {
   overflow: hidden;
   z-index: 2; }
 
+.main-btn {
+  display: inline-block;
+  font-family: "BebasNeue";
+  color: #ffffff !important;
+  font-size: 4.3rem;
+  padding: 1rem 25px 1rem 25px;
+  line-height: 1;
+  border-radius: .8rem;
+  background-image: url(../img/holidays-button-bg.png);
+  background-size: cover; }
+
 main {
   padding-bottom: 9rem; }
 
@@ -7066,6 +7083,11 @@ main {
 
 .mobile-item a:hover {
   color: #201600; }
+
+.mobile-celebration__text .symbol-arrow-3 {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg); }
 
 .home-cafe:hover,
 .home-celebration:hover,
@@ -7140,7 +7162,8 @@ main {
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    color: #201600; }
+    color: #201600;
+    margin-bottom: 1rem; }
   .home-cafe__line {
     position: absolute;
     top: 56%;
@@ -7231,7 +7254,7 @@ main {
 .home-celebration {
   position: absolute;
   z-index: 2;
-  bottom: -10px;
+  bottom: -5px;
   left: 29%;
   cursor: pointer; }
   .home-celebration a {
@@ -7337,8 +7360,8 @@ main {
     font-family: "BebasNeue";
     position: absolute;
     z-index: 1;
-    bottom: 23.2%;
-    left: 36.2%;
+    bottom: 19.2%;
+    left: 33%;
     -webkit-transform: rotate(-23deg);
         -ms-transform: rotate(-23deg);
             transform: rotate(-23deg);
@@ -7351,11 +7374,12 @@ main {
     text-transform: uppercase;
     color: #201600; }
   .home-celebration__sub-title {
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    color: #201600; }
+    color: #201600;
+    margin-bottom: 1rem; }
 
 @-webkit-keyframes bearMoon {
   0%, 100% {
@@ -7446,6 +7470,10 @@ main {
     right: 39.5%;
     fill: #201600;
     width: 46%; }
+  .home-cake .main-btn {
+    position: absolute;
+    top: 35%;
+    left: 29%; }
 
 .popup {
   max-width: 500px;

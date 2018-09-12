@@ -119,6 +119,13 @@
         /*height: 23rem;*/
     }
 
+    .main-btn {
+        font-size: 3rem;
+    }
+    .symbol-arrow-3 {
+        font-size: 1.8rem;
+    }
+
     .header-submenu {
     }
 
@@ -387,6 +394,11 @@
 }
 
 
+@media (max-width: 1400px) {
+    .home-celebration__text .main-btn {
+        font-size: 2rem;
+    }
+}
 @media (max-width: 1380px) {
     .home-cafe {
         width: 26%;
@@ -1517,6 +1529,12 @@
     .home-cake {
         width: 43%;
         top: 17.8%;
+
+
+    }
+
+    .home-cake .main-btn {
+        display: none;
     }
 
     .header {
@@ -5198,12 +5216,14 @@
     .mobile-celebration__title,
     .mobile-cake__title {
         font-size: 2.8em;
+        margin-bottom: .5rem;
     }
 
     .mobile-cafe__sub-title,
     .mobile-celebration__sub-title,
     .mobile-cake__sub-title {
         font-size: 2rem;
+        margin-bottom: .5rem;
     }
 
     .filter {

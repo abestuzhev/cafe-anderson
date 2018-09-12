@@ -7,23 +7,52 @@
   z-index: 2;
 }
 
+.main-btn {
+    display: inline-block;
+    font-family: $font_sans-serif;
+    color: #ffffff !important;
+    font-size: 4.3rem;
+    padding: 1rem 25px 1rem 25px;
+    line-height: 1;
+    border-radius: .8rem;
+    background-image: url(../img/holidays-button-bg.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    .symbol-arrow-3 {
+        //font-size: 5.3rem;
+    }
+}
+
 main {
   //padding-top: 10.4rem;
   padding-bottom: 9rem;
   //min-height: 100%;
 }
 
-.mobile-item a {
-  color: #201600;
+.mobile-item {
+    a {
+        color: #201600;
 
-  &::after {
-    content: '';
-    border: none;
-  }
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
+    //.main-btn {
+    //    display: none;
+    //}
 }
 
 .mobile-item a:hover {
   color: #201600;
+}
+
+.mobile-celebration__text {
+    .symbol-arrow-3 {
+        transform: rotate(-180deg);
+    }
 }
 
 //------------------------------------------------ховер блоков на главной*/
@@ -115,6 +144,7 @@ main {
     line-height: 1;
     text-transform: uppercase;
     color: #201600;
+      margin-bottom: 1rem;
   }
 
   &__line {
@@ -199,7 +229,7 @@ main {
 .home-celebration {
   position: absolute;
   z-index: 2;
-  bottom: -10px;
+  bottom: -5px;
   left: 29%;
   cursor: pointer;
   @extend %transition_all;
@@ -314,8 +344,8 @@ main {
     font-family: $font_sans-serif;
     position: absolute;
     z-index: 1;
-    bottom: 23.2%;
-    left: 36.2%;
+      bottom: 19.2%;
+      left: 33%;
     transform: rotate(-23deg);
     @extend %transition_all;
     color: #201600;
@@ -333,11 +363,12 @@ main {
 
   &__sub-title {
     //font-size: 2.7rem;
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
     color: #201600;
+      margin-bottom: 1rem;
   }
 
 }
@@ -447,6 +478,12 @@ main {
     fill: #201600;
     width: 46%;
   }
+
+    .main-btn {
+        position: absolute;
+        top: 35%;
+        left: 29%;
+    }
 }
 
 //------------------------------------------------модальные окна*/
