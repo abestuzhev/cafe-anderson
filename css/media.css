@@ -3718,6 +3718,11 @@
         margin-bottom: .2rem;
     }
 
+    .c-full-banner {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
 }
 
 @media (max-width: 780px) {
