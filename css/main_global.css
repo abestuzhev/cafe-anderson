@@ -20816,6 +20816,40 @@ a.show-more__button:hover {
   height: 2.4rem; }
 
 /* /Subscription */
+/* Cake update - Task #8402  */
+.cake-card-stuffing__description {
+  display: none;
+  background-color: #ffffff;
+  opacity: .9;
+  padding: 1.2rem;
+  border-radius: .5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #515151; }
+  .cake-card-stuffing__description p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #515151; }
+
+.cake-card-stuffing__control {
+  margin-bottom: .5rem;
+  font-style: normal; }
+
+.cake-card-stuffing__info {
+  margin-bottom: .5rem; }
+
+.cake-card-stuffing {
+  position: relative; }
+
+/* / Cake update - Task #8402  */
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

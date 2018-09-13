@@ -12530,4 +12530,25 @@ $(function() {
 });
 /* /subscription */
 
+/* Cake update - Task #8402  */
+    // function
 
+
+    // bind
+
+$(function() {
+
+    $('.cake-card-stuffing__control_show').on('click', function(event) {
+        event.preventDefault();
+        $(this).parent().parent().find('.cake-card-stuffing__description').toggle();
+        $(this).parent().toggle();
+    });
+
+    $('.cake-card-stuffing__control_hide').on('click', function(event) {
+        event.preventDefault();
+        $(this).parent().toggle();
+        $(this).parent().parent().find('.cake-card-stuffing__header').toggle();
+    });
+
+});
+/*  / Cake update - Task #8402  */
