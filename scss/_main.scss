@@ -3613,6 +3613,14 @@ test popup
   &__item {
     display: inline-block;
     margin-right: 1.4rem;
+      background-color: #c44890;
+      border-radius: 5rem;
+      padding: .4rem 1rem;
+
+      a {
+
+          color: #ffffff;
+      }
 
     &:last-child {
       margin-right: 0;
@@ -3622,12 +3630,22 @@ test popup
   &__item.current a {
     border: none;
     //color: $color_dark-active;
-    color: #5a2a1b;
+    color: #ffffff;;
     &::after {
       content: '';
       border: none;
     }
   }
+}
+
+.tabs-menu.v2 {
+    &__item {
+        background-color: #c44890;
+        border-radius: 5rem;
+        color: #ffffff;
+        padding: .4rem 1rem;
+
+    }
 }
 
 .tab-content {

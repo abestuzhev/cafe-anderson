@@ -9729,15 +9729,26 @@ test popup
     margin-bottom: 1.7rem; }
   .tabs-menu__item {
     display: inline-block;
-    margin-right: 1.4rem; }
+    margin-right: 1.4rem;
+    background-color: #c44890;
+    border-radius: 5rem;
+    padding: .4rem 1rem; }
+    .tabs-menu__item a {
+      color: #ffffff; }
     .tabs-menu__item:last-child {
       margin-right: 0; }
   .tabs-menu__item.current a {
     border: none;
-    color: #5a2a1b; }
+    color: #ffffff; }
     .tabs-menu__item.current a::after {
       content: '';
       border: none; }
+
+.tabs-menu.v2__item {
+  background-color: #c44890;
+  border-radius: 5rem;
+  color: #ffffff;
+  padding: .4rem 1rem; }
 
 .tab-content {
   display: none;
