@@ -6010,18 +6010,19 @@
 }
 
 .c-card-cafe__title span {
-    display: inline-block;
+    display: inline;
     position: relative;
+    border-bottom: 1px dotted #9b806f;
 }
 
-.c-card-cafe__title span::after {
+/* .c-card-cafe__title span::after {
     content: '';
     position: absolute;
     bottom: -.1rem;
     left: 0;
     width: 100%;
     border-bottom: 1px dotted #9b806f;
-}
+} */
 
 .c-card-cafe__title span:hover::after {
     content: '';
