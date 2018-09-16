@@ -7066,8 +7066,7 @@ div.c-card-catalog-2 {
   font-family: "BebasNeue";
   color: #ffffff !important;
   font-size: 4.3rem;
-  padding: 1rem 25px 1rem 25px;
-  line-height: 1;
+  padding: .2rem 25px .2rem 25px;
   border-radius: .8rem;
   background-image: url(../img/holidays-button-bg.png);
   background-size: cover; }
@@ -7360,21 +7359,21 @@ main {
     font-family: "BebasNeue";
     position: absolute;
     z-index: 1;
-    bottom: 19.2%;
-    left: 33%;
+    bottom: 20.2%;
+    left: 34%;
     -webkit-transform: rotate(-23deg);
         -ms-transform: rotate(-23deg);
             transform: rotate(-23deg);
     color: #201600; }
   .home-celebration__title {
-    font-size: 3.5vw;
+    font-size: 3.4vw;
     font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
     text-transform: uppercase;
     color: #201600; }
   .home-celebration__sub-title {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;

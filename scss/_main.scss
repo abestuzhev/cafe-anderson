@@ -12,8 +12,8 @@
     font-family: $font_sans-serif;
     color: #ffffff !important;
     font-size: 4.3rem;
-    padding: 1rem 25px 1rem 25px;
-    line-height: 1;
+    padding: .2rem 25px .2rem 25px;
+    //line-height: 1;
     border-radius: .8rem;
     background-image: url(../img/holidays-button-bg.png);
     -webkit-background-size: cover;
@@ -344,8 +344,8 @@ main {
     font-family: $font_sans-serif;
     position: absolute;
     z-index: 1;
-      bottom: 19.2%;
-      left: 33%;
+      bottom: 20.2%;
+      left: 34%;
     transform: rotate(-23deg);
     @extend %transition_all;
     color: #201600;
@@ -353,7 +353,7 @@ main {
 
   &__title {
     //font-size: 6.5rem;
-    font-size: 3.5vw;
+    font-size: 3.4vw;
     font-weight: 300;
     line-height: .9;
     margin-bottom: .1em;
@@ -363,7 +363,7 @@ main {
 
   &__sub-title {
     //font-size: 2.7rem;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
