@@ -9734,6 +9734,9 @@ test popup
     padding: .4rem 1rem; }
     .tabs-menu__item a {
       color: #ffffff; }
+      .tabs-menu__item a::after {
+        content: '';
+        border: none; }
     .tabs-menu__item:last-child {
       margin-right: 0; }
   .tabs-menu__item.current a {
@@ -9742,6 +9745,17 @@ test popup
     .tabs-menu__item.current a::after {
       content: '';
       border: none; }
+  .tabs-menu__item.current {
+    position: relative; }
+    .tabs-menu__item.current::after {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      bottom: -4px;
+      right: -4px;
+      border-radius: 50px;
+      border: 1px dashed #c44890; }
 
 .tabs-menu.v2__item {
   background-color: #c44890;

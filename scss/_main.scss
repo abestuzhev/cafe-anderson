@@ -3620,6 +3620,10 @@ test popup
       a {
 
           color: #ffffff;
+          &::after {
+              content: '';
+              border: none;
+          }
       }
 
     &:last-child {
@@ -3636,6 +3640,20 @@ test popup
       border: none;
     }
   }
+
+    &__item.current {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            bottom: -4px;
+            right: -4px;
+            border-radius: 50px;
+            border: 1px dashed #c44890;
+        }
+    }
 }
 
 .tabs-menu.v2 {
