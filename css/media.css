@@ -101,7 +101,13 @@
     }
 
     .home-celebration {
-        width: 36%;
+        width: 34%;
+        bottom: 4%;
+    }
+
+    .v2 .home-celebration {
+        width: 39%;
+        bottom: 0;
     }
 
     .home-cake {
@@ -1439,6 +1445,15 @@
 
 }
 
+@media (min-height: 1079px) {
+    .v2 .home-celebration__text {
+        top: 57%;
+        left: 34.8%;
+        bottom: auto;
+    }
+
+}
+
 @media (max-height: 920px) and (max-width: 1370px) {
 
     /*страница 404*/
@@ -1639,6 +1654,10 @@
         height: 18rem;
     }
 
+    .v2 .mobile-item:nth-child(2) {
+        height: 12rem;
+    }
+
     .mobile-item:last-child {
         height: 40rem;
     }
@@ -1736,6 +1755,13 @@
         transform: rotate(90deg);
         width: 43rem;
         bottom: -49%;
+        left: -6%;
+    }
+
+    .v2 .home-celebration {
+        transform: rotate(90deg);
+        width: 43rem;
+        bottom: -151%;
         left: -6%;
     }
 
@@ -2979,6 +3005,10 @@
         left: -13%;
         bottom: -8%;
     }
+    .v2 .home-celebration {
+        bottom: -150%;
+        left: -20%;
+    }
 
     .home-celebration:hover {
         transform: rotate(74deg);
@@ -4081,7 +4111,7 @@
     .v2 .home-celebration {
         transform: rotate(74deg);
         left: -25%;
-        bottom: -60%;
+        bottom: -130%;
     }
 
     .home-celebration:hover {
@@ -4090,6 +4120,10 @@
 
     .mobile-celebration__text {
         bottom: 48%;
+    }
+
+    .v2 .mobile-celebration__text {
+        bottom: 0;
     }
 
     .home-cake__pie-1 {
@@ -4744,6 +4778,14 @@
         transform: rotate(46deg);
     }
 
+    .v2 .home-celebration:hover {
+        transform: rotate(74deg);
+    }
+
+    .v2 .home-cake {
+        width: 66rem;
+    }
+
     .mobile-celebration__text {
         right: 9%;
     }
@@ -5387,6 +5429,10 @@
     .holiday-offers .l-button__right {
         text-align: center;
     }
+
+    .v2 .mobile-item:first-child {
+        height: 18rem;
+    }
 }
 
 @media (max-width: 440px) {
@@ -5492,6 +5538,10 @@
 
     .home-cake {
         right: -124%;
+    }
+
+    .v2 .home-cake {
+        right: -154%;
     }
 
     .home-cake__pie-1 {
@@ -5683,10 +5733,25 @@
         left: -86%;
     }
 
+
+    .home-cake__brownie {
+        display: none;
+    }
+
+
     .home-cake {
         top: -31%;
         right: -100%;
         width: 56rem;
+        top: -130px;
+    }
+
+    .v2 .home-cake {
+        top: -130px;
+    }
+
+    .v2 .home-cake {
+        right: -117%;
     }
 
     .home-cake__pie-1 {
@@ -5697,6 +5762,10 @@
 
     .mobile-item:nth-child(2) {
         height: 16rem;
+    }
+
+    .v2 .mobile-item:nth-child(2) {
+        height: 12rem;
     }
 
     .mobile-item:last-child {

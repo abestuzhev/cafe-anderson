@@ -18,11 +18,20 @@
     background-image: url(../img/holidays-button-bg.png);
     -webkit-background-size: cover;
     background-size: cover;
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 4px 4px -3px rgba(184,53,130,0.52);
 
     .symbol-arrow-3 {
         //font-size: 5.3rem;
     }
+
+    &:hover {
+        transform: translateY(-.2rem);
+        transition: all .2s ease-in-out;
+        box-shadow: 0px 11px 19px -3px rgba(184,53,130,0.52);
+    }
 }
+
 
 main {
   //padding-top: 10.4rem;
@@ -120,7 +129,7 @@ main {
     position: absolute;
     z-index: 1;
     top: 9.2%;
-    left: 29.2%;
+    left: 25.2%;
     transform: rotate(7deg);
     font-family: $font_sans-serif;
     @extend %transition_all;
@@ -344,8 +353,8 @@ main {
     font-family: $font_sans-serif;
     position: absolute;
     z-index: 1;
-      bottom: 20.2%;
-      left: 34%;
+      top: 58.2%;
+      left: 34.2%;
     transform: rotate(-23deg);
     @extend %transition_all;
     color: #201600;
@@ -363,7 +372,7 @@ main {
 
   &__sub-title {
     //font-size: 2.7rem;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
@@ -371,6 +380,18 @@ main {
       margin-bottom: 1rem;
   }
 
+}
+
+.v2 .home-celebration {
+
+
+    &__title {
+        font-size: 3vw;
+    }
+    &__text {
+        top: 57.2%;
+        left: 34.2%;
+    }
 }
 
 //------------------------------------------------заказ тортов на главной*/

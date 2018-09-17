@@ -7069,7 +7069,21 @@ div.c-card-catalog-2 {
   padding: .2rem 25px .2rem 25px;
   border-radius: .8rem;
   background-image: url(../img/holidays-button-bg.png);
-  background-size: cover; }
+  background-size: cover;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-box-shadow: 0px 4px 4px -3px rgba(184, 53, 130, 0.52);
+          box-shadow: 0px 4px 4px -3px rgba(184, 53, 130, 0.52); }
+  .main-btn:hover {
+    -webkit-transform: translateY(-0.2rem);
+        -ms-transform: translateY(-0.2rem);
+            transform: translateY(-0.2rem);
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-box-shadow: 0px 11px 19px -3px rgba(184, 53, 130, 0.52);
+            box-shadow: 0px 11px 19px -3px rgba(184, 53, 130, 0.52); }
 
 main {
   padding-bottom: 9rem; }
@@ -7143,7 +7157,7 @@ main {
     position: absolute;
     z-index: 1;
     top: 9.2%;
-    left: 29.2%;
+    left: 25.2%;
     -webkit-transform: rotate(7deg);
         -ms-transform: rotate(7deg);
             transform: rotate(7deg);
@@ -7359,8 +7373,8 @@ main {
     font-family: "BebasNeue";
     position: absolute;
     z-index: 1;
-    bottom: 20.2%;
-    left: 34%;
+    top: 58.2%;
+    left: 34.2%;
     -webkit-transform: rotate(-23deg);
         -ms-transform: rotate(-23deg);
             transform: rotate(-23deg);
@@ -7373,12 +7387,19 @@ main {
     text-transform: uppercase;
     color: #201600; }
   .home-celebration__sub-title {
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
     color: #201600;
     margin-bottom: 1rem; }
+
+.v2 .home-celebration__title {
+  font-size: 3vw; }
+
+.v2 .home-celebration__text {
+  top: 57.2%;
+  left: 34.2%; }
 
 @-webkit-keyframes bearMoon {
   0%, 100% {
