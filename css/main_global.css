@@ -20850,6 +20850,46 @@ a.show-more__button:hover {
   position: relative; }
 
 /* / Cake update - Task #8402  */
+/* Event Builder */
+.event-builder .top-navigation__button {
+  display: inline-block;
+  height: 8.1rem; }
+  .event-builder .top-navigation__button_grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .event-builder .top-navigation__button_left {
+    background: #7bc43a;
+    height: 6.6rem;
+    width: 5.8rem;
+    border-bottom-left-radius: .7rem;
+    border-top-left-radius: .7rem;
+    -webkit-box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2); }
+  .event-builder .top-navigation__button_middle {
+    background: #7bc43a;
+    height: 6.6rem;
+    -webkit-box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
+            box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
+    font-family: "SummerFont";
+    font-color: #231300;
+    font-size: 3rem;
+    font-weight: 700; }
+  .event-builder .top-navigation__button_right {
+    background: url("../img/event-builder-button.png") 0 0 no-repeat;
+    width: 4.8rem;
+    height: 100%; }
+
+/* / Event Builder */
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

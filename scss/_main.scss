@@ -18128,3 +18128,58 @@ a.show-more__button:hover {
   position: relative;
 }
 /* / Cake update - Task #8402  */
+
+/* Event Builder */
+
+.event-builder {
+
+  .top-navigation {
+
+    &__button {
+      display: inline-block;
+      //background-color: #7bc43a;
+      height: 8.1rem;
+
+      &_grid {
+        display: flex;
+        width: auto;
+        flex-flow: row nowrap;
+        height: 100%;
+        align-items: center;
+      }
+
+      &_left {
+        background: #7bc43a;
+        height: 6.6rem;
+        width: 5.8rem;
+        border-bottom-left-radius: .7rem;
+        border-top-left-radius: .7rem;
+        box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
+      }
+
+      &_middle {
+        background: #7bc43a;
+        height: 6.6rem;
+        box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
+        font-family: $font_decor;
+        font-color: #231300;
+        font-size: 3rem;
+        font-weight: $font_bold;
+      }
+
+      &_right {
+        background: url('../img/event-builder-button.png') 0 0 no-repeat;
+        width: 4.8rem;
+        height: 100%;
+      }
+
+    }
+
+
+  }
+
+
+
+}
+
+/* / Event Builder */
