@@ -20948,6 +20948,63 @@ a.show-more__button:hover {
   position: relative; }
 
 /* / Cake update - Task #8402  */
+/* Event Builder */
+.event-builder .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .event-builder .top-nav-button {
+    display: inline-block;
+    background-image: url("../img/event-builder/event-builder__button_green_middle.png");
+    height: 8.5rem;
+    position: relative; }
+    .event-builder .top-nav-button:after {
+      content: '';
+      background-image: url("../img/event-builder/event-builder__button_green_right.png");
+      width: 5.4rem;
+      height: 8.4rem;
+      display: block;
+      position: absolute;
+      right: -5.4rem;
+      top: 0; }
+    .event-builder .top-nav-button:before {
+      content: '';
+      background-image: url("../img/event-builder/event-builder__button_green_left.png");
+      width: 1.3rem;
+      height: 8.4rem;
+      display: block;
+      position: absolute;
+      left: -1.3rem;
+      top: 0; }
+    .event-builder .top-nav-button__title {
+      font-family: "SummerFont";
+      font-weight: 700;
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #231300;
+      line-height: 1; }
+      .event-builder .top-nav-button__title:after {
+        border: none; }
+    .event-builder .top-nav-button:hover {
+      cursor: pointer; }
+    .event-builder .top-nav-button:hover div {
+      color: #ffffff; }
+    .event-builder .top-nav-button__icon {
+      width: 5.2rem;
+      text-align: center; }
+      .event-builder .top-nav-button__icon img {
+        width: 3.4rem;
+        height: 3.4rem; }
+    .event-builder .top-nav-button__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+
+/* / Event Builder */
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
