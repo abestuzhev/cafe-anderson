@@ -18234,6 +18234,14 @@ a.show-more__button:hover {
 .cake-card-stuffing__control {
   margin-bottom: .5rem;
   font-style: normal;
+
+  &_show {
+    color: #67af26;
+
+    &:after {
+      border-color: #67af26;
+    }
+  }
 }
 .cake-card-stuffing__info {
   margin-bottom: .5rem;
@@ -18301,11 +18309,15 @@ a.show-more__button:hover {
         color: #ffffff;
       }
 
+      &:hover svg {
+        fill: #fff;
+      }
+
       &__icon {
         width: 5.2rem;
         text-align: center;
 
-        img {
+        svg {
           width: 3.4rem;
           height: 3.4rem;
         }

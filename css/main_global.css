@@ -20940,6 +20940,10 @@ a.show-more__button:hover {
 .cake-card-stuffing__control {
   margin-bottom: .5rem;
   font-style: normal; }
+  .cake-card-stuffing__control_show {
+    color: #67af26; }
+    .cake-card-stuffing__control_show:after {
+      border-color: #67af26; }
 
 .cake-card-stuffing__info {
   margin-bottom: .5rem; }
@@ -20989,10 +20993,12 @@ a.show-more__button:hover {
       cursor: pointer; }
     .event-builder .top-nav-button:hover div {
       color: #ffffff; }
+    .event-builder .top-nav-button:hover svg {
+      fill: #fff; }
     .event-builder .top-nav-button__icon {
       width: 5.2rem;
       text-align: center; }
-      .event-builder .top-nav-button__icon img {
+      .event-builder .top-nav-button__icon svg {
         width: 3.4rem;
         height: 3.4rem; }
     .event-builder .top-nav-button__wrapper {
