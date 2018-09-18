@@ -20851,43 +20851,60 @@ a.show-more__button:hover {
 
 /* / Cake update - Task #8402  */
 /* Event Builder */
-.event-builder .top-navigation__button {
-  display: inline-block;
-  height: 8.1rem; }
-  .event-builder .top-navigation__button_grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    height: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .event-builder .top-navigation__button_left {
-    background: #7bc43a;
-    height: 6.6rem;
-    width: 5.8rem;
-    border-bottom-left-radius: .7rem;
-    border-top-left-radius: .7rem;
-    -webkit-box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
-            box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2); }
-  .event-builder .top-navigation__button_middle {
-    background: #7bc43a;
-    height: 6.6rem;
-    -webkit-box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
-            box-shadow: 5px 0px 9.2px 0.8px rgba(0, 0, 0, 0.2);
-    font-family: "SummerFont";
-    font-color: #231300;
-    font-size: 3rem;
-    font-weight: 700; }
-  .event-builder .top-navigation__button_right {
-    background: url("../img/event-builder-button.png") 0 0 no-repeat;
-    width: 4.8rem;
-    height: 100%; }
+.event-builder .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .event-builder .top-nav-button {
+    display: inline-block;
+    background-image: url("../img/event-builder/event-builder__button_green_middle.png");
+    height: 8.5rem;
+    position: relative; }
+    .event-builder .top-nav-button:after {
+      content: '';
+      background-image: url("../img/event-builder/event-builder__button_green_right.png");
+      width: 5.4rem;
+      height: 8.4rem;
+      display: block;
+      position: absolute;
+      right: -5.4rem;
+      top: 0; }
+    .event-builder .top-nav-button:before {
+      content: '';
+      background-image: url("../img/event-builder/event-builder__button_green_left.png");
+      width: 1.3rem;
+      height: 8.4rem;
+      display: block;
+      position: absolute;
+      left: -1.3rem;
+      top: 0; }
+    .event-builder .top-nav-button__title {
+      font-family: "SummerFont";
+      font-weight: 700;
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #231300;
+      line-height: 1; }
+      .event-builder .top-nav-button__title:after {
+        border: none; }
+    .event-builder .top-nav-button:hover {
+      cursor: pointer; }
+    .event-builder .top-nav-button:hover div {
+      color: #ffffff; }
+    .event-builder .top-nav-button__icon {
+      width: 5.2rem;
+      text-align: center; }
+      .event-builder .top-nav-button__icon img {
+        width: 3.4rem;
+        height: 3.4rem; }
+    .event-builder .top-nav-button__wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
 
 /* / Event Builder */
 .popup-pie {
