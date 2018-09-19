@@ -18216,10 +18216,12 @@ a.show-more__button:hover {
       }
 
       &__icon {
+
         width: 5.2rem;
         text-align: center;
 
         svg {
+          display: none;
           width: 3.4rem;
           height: 3.4rem;
         }
@@ -18230,6 +18232,30 @@ a.show-more__button:hover {
         height: 100%;
         align-items: center;
       }
+
+
+      &_visited {
+        background-image: url('../img/event-builder/event-builder__button_visited_middle.png');
+        padding-right: 3.4rem;
+
+        &:before {
+          background: url('../img/event-builder/event-builder__button_visited_left.png');
+          width: 3.4rem;
+          left: -3.4rem;
+        }
+
+        &:after {
+          background: none;
+          width: 0;
+        }
+
+        svg {
+          display: block;
+        }
+
+
+      }
+
     }
 
 

@@ -20911,6 +20911,7 @@ a.show-more__button:hover {
       width: 5.2rem;
       text-align: center; }
       .event-builder .top-nav-button__icon svg {
+        display: none;
         width: 3.4rem;
         height: 3.4rem; }
     .event-builder .top-nav-button__wrapper {
@@ -20921,6 +20922,18 @@ a.show-more__button:hover {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+    .event-builder .top-nav-button_visited {
+      background-image: url("../img/event-builder/event-builder__button_visited_middle.png");
+      padding-right: 3.4rem; }
+      .event-builder .top-nav-button_visited:before {
+        background: url("../img/event-builder/event-builder__button_visited_left.png");
+        width: 3.4rem;
+        left: -3.4rem; }
+      .event-builder .top-nav-button_visited:after {
+        background: none;
+        width: 0; }
+      .event-builder .top-nav-button_visited svg {
+        display: block; }
 
 /* / Event Builder */
 .popup-pie {
