@@ -18215,7 +18215,7 @@ a.show-more__button:hover {
   display: none;
   background-color: #ffffff;
   opacity: .9;
-  padding: 1.2rem;
+  padding: 1.2rem 3rem 1.2rem 3rem;
   border-radius: .5rem;
   position: absolute;
   left: 0;
@@ -18229,6 +18229,7 @@ a.show-more__button:hover {
   font-size: 1.2rem;
   font-style: italic;
   color: #515151;
+  text-align: justify;
 
 
   p {
@@ -18243,6 +18244,16 @@ a.show-more__button:hover {
 
   &_show {
     color: #67af26;
+    font-size: 1.2rem;
+
+    &:after {
+      border-color: #67af26;
+    }
+  }
+
+  &_hide {
+    color: #67af26;
+    font-size: 1.2rem;
 
     &:after {
       border-color: #67af26;
@@ -18252,6 +18263,11 @@ a.show-more__button:hover {
 .cake-card-stuffing__info {
   margin-bottom: .5rem;
 }
+
+.cake-card-stuffing__line {
+  text-align: right;
+}
+
 .cake-card-stuffing {
   position: relative;
 }
@@ -18320,10 +18336,12 @@ a.show-more__button:hover {
       }
 
       &__icon {
+
         width: 5.2rem;
         text-align: center;
 
         svg {
+          display: none;
           width: 3.4rem;
           height: 3.4rem;
         }
@@ -18334,6 +18352,30 @@ a.show-more__button:hover {
         height: 100%;
         align-items: center;
       }
+
+
+      &_visited {
+        background-image: url('../img/event-builder/event-builder__button_visited_middle.png');
+        padding-right: 3.4rem;
+
+        &:before {
+          background: url('../img/event-builder/event-builder__button_visited_left.png');
+          width: 3.4rem;
+          left: -3.4rem;
+        }
+
+        &:after {
+          background: none;
+          width: 0;
+        }
+
+        svg {
+          display: block;
+        }
+
+
+      }
+
     }
 
 

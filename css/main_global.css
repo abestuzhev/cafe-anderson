@@ -20923,7 +20923,7 @@ a.show-more__button:hover {
   display: none;
   background-color: #ffffff;
   opacity: .9;
-  padding: 1.2rem;
+  padding: 1.2rem 3rem 1.2rem 3rem;
   border-radius: .5rem;
   position: absolute;
   left: 0;
@@ -20935,7 +20935,8 @@ a.show-more__button:hover {
   overflow-y: scroll;
   font-size: 1.2rem;
   font-style: italic;
-  color: #515151; }
+  color: #515151;
+  text-align: justify; }
   .cake-card-stuffing__description p {
     font-size: 1.2rem;
     font-style: italic;
@@ -20945,12 +20946,21 @@ a.show-more__button:hover {
   margin-bottom: .5rem;
   font-style: normal; }
   .cake-card-stuffing__control_show {
-    color: #67af26; }
+    color: #67af26;
+    font-size: 1.2rem; }
     .cake-card-stuffing__control_show:after {
+      border-color: #67af26; }
+  .cake-card-stuffing__control_hide {
+    color: #67af26;
+    font-size: 1.2rem; }
+    .cake-card-stuffing__control_hide:after {
       border-color: #67af26; }
 
 .cake-card-stuffing__info {
   margin-bottom: .5rem; }
+
+.cake-card-stuffing__line {
+  text-align: right; }
 
 .cake-card-stuffing {
   position: relative; }
@@ -21003,6 +21013,7 @@ a.show-more__button:hover {
       width: 5.2rem;
       text-align: center; }
       .event-builder .top-nav-button__icon svg {
+        display: none;
         width: 3.4rem;
         height: 3.4rem; }
     .event-builder .top-nav-button__wrapper {
@@ -21013,6 +21024,18 @@ a.show-more__button:hover {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+    .event-builder .top-nav-button_visited {
+      background-image: url("../img/event-builder/event-builder__button_visited_middle.png");
+      padding-right: 3.4rem; }
+      .event-builder .top-nav-button_visited:before {
+        background: url("../img/event-builder/event-builder__button_visited_left.png");
+        width: 3.4rem;
+        left: -3.4rem; }
+      .event-builder .top-nav-button_visited:after {
+        background: none;
+        width: 0; }
+      .event-builder .top-nav-button_visited svg {
+        display: block; }
 
 /* / Event Builder */
 .popup-pie {

@@ -12541,14 +12541,14 @@ $(function() {
 
     $('.cake-card-stuffing__control_show').on('click', function(event) {
         event.preventDefault();
-        $(this).parent().parent().find('.cake-card-stuffing__description').toggle();
-        $(this).parent().toggle();
+        $(this).parent().parent().parent().find('.cake-card-stuffing__description').toggle();
+        $(this).parent().parent().toggle();
     });
 
     $('.cake-card-stuffing__control_hide').on('click', function(event) {
         event.preventDefault();
-        $(this).parent().toggle();
-        $(this).parent().parent().find('.cake-card-stuffing__header').toggle();
+        $(this).parent().parent().toggle();
+        $(this).parent().parent().parent().find('.cake-card-stuffing__header').toggle();
     });
 
 });
