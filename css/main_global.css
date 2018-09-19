@@ -7066,8 +7066,9 @@ div.c-card-catalog-2 {
   font-family: "BebasNeue";
   color: #ffffff !important;
   font-size: 4.3rem;
-  padding: .2rem 25px .2rem 25px;
+  padding: 1rem 18px 1rem 25px;
   border-radius: .8rem;
+  line-height: 3rem;
   background-image: url(../img/holidays-button-bg.png);
   background-size: cover;
   -webkit-transition: all .2s ease-in-out;
@@ -7399,7 +7400,7 @@ main {
 
 .v2 .home-celebration__text {
   top: 57.2%;
-  left: 34.2%; }
+  left: 36.2%; }
 
 @-webkit-keyframes bearMoon {
   0%, 100% {

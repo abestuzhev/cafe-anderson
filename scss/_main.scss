@@ -12,9 +12,10 @@
     font-family: $font_sans-serif;
     color: #ffffff !important;
     font-size: 4.3rem;
-    padding: .2rem 25px .2rem 25px;
+    padding: 1rem 18px 1rem 25px;
     //line-height: 1;
     border-radius: .8rem;
+    line-height: 3rem;
     background-image: url(../img/holidays-button-bg.png);
     -webkit-background-size: cover;
     background-size: cover;
@@ -390,7 +391,7 @@ main {
     }
     &__text {
         top: 57.2%;
-        left: 34.2%;
+        left: 36.2%;
     }
 }
 
