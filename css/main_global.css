@@ -7399,8 +7399,11 @@ main {
   font-size: 3vw; }
 
 .v2 .home-celebration__text {
-  top: 57.2%;
-  left: 36.2%; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: rotate(-23deg) translate(-39%, 0);
+      -ms-transform: rotate(-23deg) translate(-39%, 0);
+          transform: rotate(-23deg) translate(-39%, 0); }
 
 @-webkit-keyframes bearMoon {
   0%, 100% {

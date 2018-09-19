@@ -1446,11 +1446,11 @@
 }
 
 @media (min-height: 1079px) {
-    .v2 .home-celebration__text {
-        top: 57%;
-        left: 34.8%;
-        bottom: auto;
-    }
+    /*.v2 .home-celebration__text {*/
+        /*top: 57%;*/
+        /*left: 34.8%;*/
+        /*bottom: auto;*/
+    /*}*/
 
 }
 

@@ -389,9 +389,14 @@ main {
     &__title {
         font-size: 3vw;
     }
+    //&__text {
+    //    top: 57.2%;
+    //    left: 36.2%;
+    //}
     &__text {
-        top: 57.2%;
-        left: 36.2%;
+      top: 50%;
+      left: 50%;
+      transform: rotate(-23deg) translate(-39%, 0);
     }
 }
 
