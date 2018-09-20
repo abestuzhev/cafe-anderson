@@ -1711,16 +1711,19 @@
     .mobile-cafe__text {
         top: -4%;
         left: 11%;
+        text-align: center;
     }
 
     .mobile-celebration__text {
         bottom: 15%;
         right: 27%;
+        text-align: center;
     }
 
     .mobile-cake__text {
         top: 37%;
         left: 19%;
+        text-align: center;
     }
 
     /*прячем зеленые указатели на главной и добавляем их к тексту*/
