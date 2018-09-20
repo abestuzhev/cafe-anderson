@@ -18266,6 +18266,7 @@ a.show-more__button:hover {
 
 .cake-card-stuffing__line {
   text-align: right;
+  margin-bottom: 1.3rem;
 }
 
 .cake-card-stuffing {
@@ -18279,6 +18280,7 @@ a.show-more__button:hover {
 
   .top-nav {
     display: flex;
+    align-items: center;
 
     &-button {
       display: inline-block;
@@ -18336,7 +18338,6 @@ a.show-more__button:hover {
       }
 
       &__icon {
-
         width: 5.2rem;
         text-align: center;
 
@@ -18361,7 +18362,7 @@ a.show-more__button:hover {
         &:before {
           background: url('../img/event-builder/event-builder__button_visited_left.png');
           width: 3.4rem;
-          left: -3.4rem;
+          left: -3.3rem;
         }
 
         &:after {
@@ -18369,17 +18370,82 @@ a.show-more__button:hover {
           width: 0;
         }
 
-        svg {
-          display: block;
+        &:hover div {
+          color: #9acc4e;
         }
 
+        &:hover svg {
+          fill: #9acc4e;
+        }
 
+        .top-nav-button__icon {
+          width: 4.8rem;
+
+          svg {
+            display: block;
+          }
+        }
+      }
+
+
+      &_active {
+        background-image: url('../img/event-builder/event-builder__button_active_middle.png');
+        height: 11.4rem;
+        margin-right: .5rem;
+
+        &:before {
+          background: url('../img/event-builder/event-builder__button_active_left.png');
+          width: 2.7rem;
+          left: -2.7rem;
+          height: 11.4rem;
+        }
+
+        &:after {
+          background: url('../img/event-builder/event-builder__button_active_right.png');
+          width: 7.3rem;
+          right: -7.3rem;
+          height: 11.4rem;
+        }
+
+        .top-nav-button__icon {
+          width: 5.5rem;
+
+          svg {
+            display: block;
+            fill: #fff;
+            width: 4.5rem;
+            height: 4.5rem;
+          }
+        }
+
+        .top-nav-button__title {
+          color: #fff;
+          font-size: 4.3rem;
+          line-height: 0.9;
+        }
       }
 
     }
 
-
+    .top-nav-button_last.top-nav-button_active {
+      &:after {
+        background: url('../img/event-builder/event-builder__button_active_right_last.png');
+        width: 4.1rem;
+        right: -4.1rem;
+        height: 11.4rem;
+      }
+    }
   }
+
+  .event-builder-tab {
+    display: none;
+    min-height: 10rem;
+
+    &_active {
+      display: block;
+    }
+  }
+
 
 
 

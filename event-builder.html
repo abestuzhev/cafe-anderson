@@ -5532,43 +5532,43 @@
             <div class="event-builder">
 
                 <div class="top-nav">
-                    <div class="top-nav-button top-nav-button_visited" style="z-index:1;" data-href="#place">
+                    <div class="top-nav-button top-nav-button_active" data-for-tab="#place">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#place" /></svg></div>
                             <div class="top-nav-button__title">Площадка</div>
                         </div>
                     </div>
-                    <div class="top-nav-button top-nav-button_visited" style="z-index:2;" data-href="#details">
+                    <div class="top-nav-button" data-for-tab="#details">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#details" /></svg></div>
                             <div class="top-nav-button__title">Реквизиты</div>
                         </div>
                     </div>
-                    <div class="top-nav-button top-nav-button_visited" style="z-index:3;" data-href="#welcome">
+                    <div class="top-nav-button" data-for-tab="#welcome">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#welcome" /></svg></div>
                             <div class="top-nav-button__title">Welcome-меню</div>
                         </div>
                     </div>
-                    <div class="top-nav-button top-nav-button_visited" style="z-index:4;" data-href="#main">
+                    <div class="top-nav-button" data-for-tab="#main">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#main" /></svg></div>
                             <div class="top-nav-button__title">Основное меню</div>
                         </div>
                     </div>
-                    <div class="top-nav-button" style="z-index:2;" data-href="#tea">
+                    <div class="top-nav-button" data-for-tab="#tea">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#tea" /></svg></div>
                             <div class="top-nav-button__title">Чаепитие</div>
                         </div>
                     </div>
-                    <div class="top-nav-button" style="z-index:1;" data-href="#prog">
+                    <div class="top-nav-button" data-for-tab="#prog">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#prog" /></svg></div>
                             <div class="top-nav-button__title">Праздничная<br>программа</div>
                         </div>
                     </div>
-                    <div class="top-nav-button" style="z-index:0;" data-href="#order">
+                    <div class="top-nav-button top-nav-button_last" data-for-tab="#order">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#order" /></svg></div>
                             <div class="top-nav-button__title">Оформление заказа</div>
@@ -5576,7 +5576,13 @@
                     </div>
                 </div>
 
-                <div style="height:1000px;"></div>
+                <div class="event-builder-tab event-builder-tab_active" data-tab="#place">
+                   place
+                </div>
+                <div class="event-builder-tab" data-tab="#details">
+                    details
+                </div>
+
 
             </div>
             <!--/event-builder-->
@@ -5726,18 +5732,18 @@
                                     <div class="c-grid c-grid-between">
                                         <div class="c-col c-col-6">
                                             <div class="popup-form__item">
-                                                <label class="c-label" for="calendar-booking-email">Кол-во взрослых
+                                                <label class="c-label" for="calendar-booking-email1">Кол-во взрослых
                                                     <span class="c-obligatory-field">*</span>
                                                 </label>
-                                                <input class="c-input" type="text" placeholder="ваш email" name="calendar-booking-email" id="calendar-booking-email" required>
+                                                <input class="c-input" type="text" placeholder="ваш email" name="calendar-booking-email1" id="calendar-booking-email1" required>
                                             </div>
                                         </div>
                                         <div class="c-col c-col-6">
                                             <div class="popup-form__item">
-                                                <label class="c-label" for="calendar-booking-email">Кол-во детей
+                                                <label class="c-label" for="calendar-booking-email2">Кол-во детей
                                                     <span class="c-obligatory-field">*</span>
                                                 </label>
-                                                <input class="c-input" type="text" placeholder="ваш email" name="calendar-booking-email" id="calendar-booking-email" required>
+                                                <input class="c-input" type="text" placeholder="ваш email" name="calendar-booking-email2" id="calendar-booking-email2" required>
                                             </div>
                                         </div>
                                     </div>

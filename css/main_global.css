@@ -20960,7 +20960,8 @@ a.show-more__button:hover {
   margin-bottom: .5rem; }
 
 .cake-card-stuffing__line {
-  text-align: right; }
+  text-align: right;
+  margin-bottom: 1.3rem; }
 
 .cake-card-stuffing {
   position: relative; }
@@ -20970,7 +20971,10 @@ a.show-more__button:hover {
 .event-builder .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .event-builder .top-nav-button {
     display: inline-block;
     background-image: url("../img/event-builder/event-builder__button_green_middle.png");
@@ -21030,12 +21034,54 @@ a.show-more__button:hover {
       .event-builder .top-nav-button_visited:before {
         background: url("../img/event-builder/event-builder__button_visited_left.png");
         width: 3.4rem;
-        left: -3.4rem; }
+        left: -3.3rem; }
       .event-builder .top-nav-button_visited:after {
         background: none;
         width: 0; }
-      .event-builder .top-nav-button_visited svg {
-        display: block; }
+      .event-builder .top-nav-button_visited:hover div {
+        color: #9acc4e; }
+      .event-builder .top-nav-button_visited:hover svg {
+        fill: #9acc4e; }
+      .event-builder .top-nav-button_visited .top-nav-button__icon {
+        width: 4.8rem; }
+        .event-builder .top-nav-button_visited .top-nav-button__icon svg {
+          display: block; }
+    .event-builder .top-nav-button_active {
+      background-image: url("../img/event-builder/event-builder__button_active_middle.png");
+      height: 11.4rem;
+      margin-right: .5rem; }
+      .event-builder .top-nav-button_active:before {
+        background: url("../img/event-builder/event-builder__button_active_left.png");
+        width: 2.7rem;
+        left: -2.7rem;
+        height: 11.4rem; }
+      .event-builder .top-nav-button_active:after {
+        background: url("../img/event-builder/event-builder__button_active_right.png");
+        width: 7.3rem;
+        right: -7.3rem;
+        height: 11.4rem; }
+      .event-builder .top-nav-button_active .top-nav-button__icon {
+        width: 5.5rem; }
+        .event-builder .top-nav-button_active .top-nav-button__icon svg {
+          display: block;
+          fill: #fff;
+          width: 4.5rem;
+          height: 4.5rem; }
+      .event-builder .top-nav-button_active .top-nav-button__title {
+        color: #fff;
+        font-size: 4.3rem;
+        line-height: 0.9; }
+  .event-builder .top-nav .top-nav-button_last.top-nav-button_active:after {
+    background: url("../img/event-builder/event-builder__button_active_right_last.png");
+    width: 4.1rem;
+    right: -4.1rem;
+    height: 11.4rem; }
+
+.event-builder .event-builder-tab {
+  display: none;
+  min-height: 10rem; }
+  .event-builder .event-builder-tab_active {
+    display: block; }
 
 /* / Event Builder */
 .popup-pie {
