@@ -20858,7 +20858,8 @@ a.show-more__button:hover {
   margin-bottom: .5rem; }
 
 .cake-card-stuffing__line {
-  text-align: right; }
+  text-align: right;
+  margin-bottom: 1.3rem; }
 
 .cake-card-stuffing {
   position: relative; }
