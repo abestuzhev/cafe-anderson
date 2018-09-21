@@ -20793,13 +20793,19 @@ a.show-more__button:hover {
   text-align: right;
   font-size: 1.6rem;
   top: -.5rem;
-  white-space: normal; }
+  white-space: normal;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
   .footer-reviews__text::after {
     left: 3.3rem;
     width: 7rem; }
   .footer-reviews__text:hover {
     background: url("../img/chat-bubbles-green.svg") 0 0 no-repeat;
-    background-size: 5.8rem; }
+    background-size: 5.8rem;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none; }
 
 .footer-reviews {
   margin-top: -1rem;

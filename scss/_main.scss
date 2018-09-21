@@ -18047,6 +18047,7 @@ a.show-more__button:hover {
   font-size: 1.6rem;
   top: -.5rem;
   white-space: normal;
+  transition: none;
 
   &::after {
     left: 3.3rem;
@@ -18056,6 +18057,7 @@ a.show-more__button:hover {
   &:hover {
     background: url('../img/chat-bubbles-green.svg') 0 0 no-repeat;
     background-size: 5.8rem;
+    transition: none;
   }
 }
 
