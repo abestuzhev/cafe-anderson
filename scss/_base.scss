@@ -1991,6 +1991,11 @@ a.c-button {
             color: #c44890;
         }
     }
+
+    &-booking {
+        padding: 1.2rem 2rem;
+        background: #fdf7e8 url(../img/bg-header.png) repeat;
+    }
 }
 
 .c-card-cafe-vertical {
@@ -5143,4 +5148,89 @@ div.c-card-catalog-2 {
     right: 1.2rem;
     top: 50%;
     transform: translateY(-50%);
+}
+
+//c-card-place
+.c-card-city {
+    //min-height: 28rem;
+    overflow: hidden;
+    border-radius: .6rem;
+    box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+
+
+    &__img {
+        overflow: hidden;
+        max-height: 20rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    
+    &__body {
+        background-color: #fff;
+        padding: 1.6rem 2.5rem;
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 1.2rem;
+            background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+        }
+    }
+
+    &__name {
+        font-family:$font_sans-serif;
+        font-size: 4rem;
+        flex:1;
+        position: relative;
+
+        span {
+            position: relative;
+            z-index: 10;
+            display: inline-block;
+            background-color: #fff;
+            padding: 0 1rem;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 9;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 0.1rem;
+            border-top: 1px dotted #868686;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 9;
+            top: 43%;
+            left: 0;
+            width: 100%;
+            height: 0.9rem;
+            border-top: 1px dotted #868686;
+            border-bottom: 1px dotted #868686;
+        }
+    }
+
+    &__variant {
+        padding-left: 1.5rem;
+        font-style: italic;
+        font-size: 1.5rem;
+        color: #3c3c3c;
+        font-family: $font_serif;
+    }
 }

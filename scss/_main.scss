@@ -18279,6 +18279,7 @@ a.show-more__button:hover {
 /* Event Builder */
 
 .event-builder {
+    margin-bottom: 6rem;
 
   .top-nav {
     display: flex;
@@ -18448,9 +18449,117 @@ a.show-more__button:hover {
     }
   }
 
+    &-city {/*event-builder-city, redacted by abestuzhev*/
+
+        &__list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            margin-left: -1.6rem;
+            margin-right: -1.6rem;
+        }
+
+        &__item {
+            width: 50%;
+            padding: 1.6rem;
+        }
+
+        .filter {
+            display: inline-block;
+        }
+        
+        .filter-annotation {
+            font-style: italic;
+            color: $black;
+            margin-bottom: .5rem;
+            font-size: 1.6rem;
+            font-family: $font_serif;
+        }
+
+        .filter .l-button__center {
+            display: block;
+        }
+
+        .filter .SumoSelect {
+            width: 18rem;
+        }
+
+        .filter-form {
+            justify-content: flex-start;
+        }
+    }
+
+    &-place {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        justify-content: flex-start;
+        &__aside {
+            max-width: 23.5rem;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+
+
+            .filter-item {
+                display: block;
+                width: 100%;
+
+                .SumoSelect {
+                    width: 100%;
+                }
+            }
+
+
+            &-title {
+                border-radius: .6rem .6rem 0 0;
+                font-size: 3rem;
+                color: #ffffff;
+                font-family:$font_sans-serif;
+                text-align: center;
+                display: block;
+                background-color: #c44890;
+                padding: .8rem;
+                font-weight: 700;
+            }
+        }
+
+        &__content {
+            padding-left: 4rem;
+            flex: 1;
+
+            .c-card-cafe {
+                height: 100%;
+                min-height: 18rem;
+
+                &__img {
+                    width: 20%;
+                }
+
+                &__body {
+                    width: 80%;
+                    padding: 1rem 1.5rem;
+                }
+
+                &-advantages {
+                    position: static !important;
+                    border:none;
+                }
+            }
+
+
+        }
+
+        .filter {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
 
 
 
 }
 
 /* / Event Builder */
+
