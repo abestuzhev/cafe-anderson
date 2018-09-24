@@ -6470,10 +6470,10 @@ div.c-card-catalog-2 {
       left: -1px;
       right: -1px;
       height: 6px;
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, rgba(0, 0, 0, 0)));
-      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(rgba(0, 0, 0, 0)));
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.14)), color-stop(100%, transparent));
+      background: -o-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.14)), to(transparent));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, transparent 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 ); }
     .header-categories-grid {
       display: -webkit-box;
@@ -9775,7 +9775,7 @@ test popup
           position: absolute;
           top: 0;
           left: 0; }
-      .cafe-info__item i[class*="icon"] ,
+      .cafe-info__item i[class*="icon"]:not(.icon-label-metro):not(.icon-metro-2),
       .cafe-info__item img {
         position: absolute;
         top: 0;
@@ -17003,7 +17003,8 @@ test popup
       z-index: 2;
       float: right;
       opacity: .5;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0% 83%, 10% 77%, 10% 54%, 28% 48%); }
   .holiday-box--tortzhestvo {
     /*holiday-box--tortzhestvo*/ }
     .holiday-box--tortzhestvo .holiday-description-fake {
@@ -17022,7 +17023,8 @@ test popup
     .holiday-box--karapuznik .holiday-description-fake {
       width: 38%;
       height: 57rem;
-      shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
+      -webkit-shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%);
+              shape-outside: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 74%, 19% 48%, 20% 34%, 37% 30%); }
   .holiday-box--mameninyi {
     /*holiday-box--mameninyi*/ }
     .holiday-box--mameninyi .holiday-description__text {
@@ -20989,6 +20991,69 @@ a.show-more__button:hover {
   .event-builder .event-builder-tab_active {
     display: block; }
 
+.event-builder .event-builder-check {
+  display: none;
+  padding-left: 2.5rem; }
+  .event-builder .event-builder-check_show {
+    display: block; }
+  .event-builder .event-builder-check__body {
+    width: 24.5rem;
+    min-height: 20rem;
+    border: 1px solid #d1d1d1;
+    border-radius: .4rem;
+    background: url("../img/event-builder/event-builder_check_background.jpg");
+    margin-top: -11.4rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    font-family: "PT Serif Caption"; }
+  .event-builder .event-builder-check__header {
+    text-align: center;
+    font-family: "PT Serif Caption";
+    font-size: 2.6rem;
+    color: #6a6a6a;
+    font-style: italic; }
+  .event-builder .event-builder-check__hr {
+    height: 1rem;
+    border-bottom: 1px dashed #828282;
+    margin-bottom: 1rem; }
+  .event-builder .event-builder-check__line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .event-builder .event-builder-check__icon {
+    padding-top: .2rem;
+    padding-right: .2rem; }
+    .event-builder .event-builder-check__icon svg {
+      width: 2.1rem;
+      height: 2.1rem; }
+  .event-builder .event-builder-check__title {
+    font-size: 1.9rem;
+    font-style: italic;
+    color: #231300;
+    padding-left: .8rem;
+    line-height: 1;
+    padding-top: .5rem; }
+  .event-builder .event-builder-check__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #3a3a3a; }
+  .event-builder .event-builder-check__price {
+    font-size: 2.3rem;
+    color: #c44890;
+    font-style: italic;
+    paddin-top: .2rem; }
+
 .event-builder .event-builder-tab-layout {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20997,6 +21062,51 @@ a.show-more__button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap; }
+
+.event-builder-rating__title {
+  font-family: "PT Serif Caption";
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #515151;
+  padding-bottom: .5rem; }
+
+.event-builder-rating__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.event-builder-rating__result {
+  font-family: "SummerFont";
+  font-size: 3.1rem;
+  color: #272727;
+  text-transform: uppercase;
+  line-height: 0.75;
+  margin-left: 1rem;
+  white-space: nowrap; }
+
+.event-builder-progressbar {
+  width: 16rem;
+  height: 2.5rem;
+  background: url("../img/event-builder/event-builder__progress_gradient.png") 0 0 no-repeat;
+  position: relative; }
+  .event-builder-progressbar__mask {
+    z-index: 2;
+    position: relative; }
+  .event-builder-progressbar__bar {
+    z-index: 1;
+    background-color: #dee0e7;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 2.5rem; }
 
 .event-builder .event-builder-tab-list {
   background: #fff;
@@ -21029,6 +21139,8 @@ a.show-more__button:hover {
       color: #231300;
       font-weight: 700;
       text-transform: uppercase; }
+    .event-builder .event-builder-tab-list-title__side {
+      min-width: 27rem; }
   .event-builder .event-builder-tab-list-block {
     margin-bottom: 2rem; }
     .event-builder .event-builder-tab-list-block__title {
@@ -21576,8 +21688,7 @@ a.show-more__button:hover {
 @media screen and (max-width: 680px) {
   .pie-form__item:nth-child(1), .pie-form__item:nth-child(2), .pie-form__item:nth-child(3) {
     width: 100%; }
-  .pie-form__item:nth-child(4),
-  .pie-form__item:nth-child(5) {
+  .pie-form__item:nth-child(4), .pie-form__item:nth-child(5) {
     width: 50%; }
   .pie-form__title {
     font-size: 2rem; }

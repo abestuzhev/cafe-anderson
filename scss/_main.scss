@@ -18330,10 +18330,139 @@ a.show-more__button:hover {
     }
   }
 
+  .event-builder-check {
+    display: none;
+    padding-left: 2.5rem;
+
+    &_show {
+      display: block;
+    }
+
+    &__body {
+      width: 24.5rem;
+      min-height: 20rem;
+      border: 1px solid #d1d1d1;
+      border-radius: .4rem;
+      background: url('../img/event-builder/event-builder_check_background.jpg');
+      margin-top: -11.4rem;
+      padding: 1.5rem 2rem 1.5rem 2rem;
+      box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+      font-family: $font_serif;
+
+    }
+
+    &__header {
+      text-align: center;
+      font-family: $font_serif;
+      font-size: 2.6rem;
+      color: #6a6a6a;
+      font-style: italic;
+    }
+
+    &__hr {
+      height: 1rem;
+      border-bottom: 1px dashed #828282;
+      margin-bottom: 1rem;
+    }
+
+    &__line {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__icon {
+      padding-top: .2rem;
+      padding-right: .2rem;
+      svg{
+        width: 2.1rem;
+        height: 2.1rem;
+      }
+
+    }
+
+    &__title {
+      font-size: 1.9rem;
+      font-style: italic;
+      color: #231300;
+      padding-left: .8rem;
+      line-height: 1;
+      padding-top: .5rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #3a3a3a;
+    }
+
+    &__price {
+      font-size: 2.3rem;
+      color: #c44890;
+      font-style: italic;
+      paddin-top: .2rem;
+    }
+
+
+
+  }
+
   .event-builder-tab-layout {
     display: flex;
     flex-flow: row nowrap;
 
+  }
+
+  &-rating {
+
+    &__title {
+      font-family: $font_serif;
+      font-style: italic;
+      font-size: 1.5rem;
+      color: #515151;
+      padding-bottom: .5rem;
+    }
+
+    &__line {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+
+    &__result {
+      font-family: $font_decor;
+      font-size: 3.1rem;
+      color: #272727;
+      text-transform: uppercase;
+      line-height: 0.75;
+      margin-left: 1rem;
+      white-space: nowrap;
+    }
+
+  }
+
+  &-progressbar {
+    width: 16rem;
+    height: 2.5rem;
+    background: url('../img/event-builder/event-builder__progress_gradient.png') 0 0 no-repeat;
+    position: relative;
+
+
+    &__mask {
+      z-index: 2;
+      position: relative;
+    }
+
+    &__bar {
+      z-index: 1;
+      background-color: #dee0e7;
+      position: absolute;
+      right:0;
+      top:0;
+      width: 0%;
+      height: 2.5rem;
+    }
   }
 
   .event-builder-tab-list {
@@ -18359,6 +18488,10 @@ a.show-more__button:hover {
         color: #231300;
         font-weight: $font_bold;
         text-transform: uppercase;
+      }
+
+      &__side {
+        min-width: 27rem;
       }
     }
 
@@ -18575,6 +18708,7 @@ a.show-more__button:hover {
   .event-builder-check {
     width: 26rem;
   }
+
 
 
 }
