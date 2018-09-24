@@ -3189,8 +3189,64 @@ a.c-button:hover {
   .c-card-cafe.v2 b {
     color: #c44890; }
   .c-card-cafe-booking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px dotted #553023;
     padding: 1.2rem 2rem;
+    background: #fdf7e8 url(../img/bg-header.png) repeat;
+    text-transform: uppercase;
+    font-family: "BebasNeue";
+    color: #c44890;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem; }
+    .c-card-cafe-booking span {
+      color: #77c600; }
+    .c-card-cafe-booking__btn {
+      background-color: #c44890;
+      border-radius: .6rem;
+      font-size: 2rem;
+      color: #ffffff;
+      font-family: "BebasNeue";
+      padding: 1.2rem 1.5rem;
+      font-weight: 400; }
+      .c-card-cafe-booking__btn:hover {
+        color: #ffffff;
+        background-color: #a54178; }
+      .c-card-cafe-booking__btn::after {
+        content: '';
+        border: none; }
+  .c-card-cafe-info {
+    padding: 2.2rem 3rem;
     background: #fdf7e8 url(../img/bg-header.png) repeat; }
+    .c-card-cafe-info .c-form__grid {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+    .c-card-cafe-info .c-form__item {
+      width: 25%;
+      padding: 0 .5rem; }
+    .c-card-cafe-info .c-label {
+      color: #553023;
+      font-style: italic;
+      font-family: "PT Serif Caption"; }
+    .c-card-cafe-info .c-button__default {
+      text-transform: uppercase;
+      color: #3e492f;
+      font-family: "BebasNeue";
+      font-size: 2.3rem; }
 
 .c-card-cafe-vertical {
   border: 2px solid #d1d1d1;
@@ -21247,10 +21303,11 @@ a.show-more__button:hover {
           width: 20%; }
         .event-builder-place__content .c-card-cafe__body {
           width: 80%;
-          padding: 1rem 1.5rem; }
+          padding: 1rem 1.5rem 0 1.5rem; }
         .event-builder-place__content .c-card-cafe-advantages {
           position: static !important;
-          border: none; }
+          border: none;
+          margin-bottom: 2rem; }
     .event-builder-place .filter {
       border: none;
       -webkit-box-shadow: none;

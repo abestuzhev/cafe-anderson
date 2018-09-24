@@ -18538,12 +18538,13 @@ a.show-more__button:hover {
 
                 &__body {
                     width: 80%;
-                    padding: 1rem 1.5rem;
+                    padding: 1rem 1.5rem 0 1.5rem;
                 }
 
                 &-advantages {
                     position: static !important;
                     border:none;
+                    margin-bottom: 2rem;
                 }
             }
 
@@ -18555,6 +18556,7 @@ a.show-more__button:hover {
             box-shadow: none;
         }
     }
+
 
 
 

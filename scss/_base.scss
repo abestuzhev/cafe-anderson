@@ -1993,8 +1993,73 @@ a.c-button {
     }
 
     &-booking {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px dotted #553023;
+        //border-bottom: 1px dotted #553023;
         padding: 1.2rem 2rem;
         background: #fdf7e8 url(../img/bg-header.png) repeat;
+        text-transform: uppercase;
+        font-family: $font_sans-serif;
+        color: #c44890;
+        font-size: 2.1rem;
+        font-weight: 700;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+
+        span {
+            color: #77c600;
+        }
+
+        &__btn {
+            background-color: #c44890;
+            border-radius: .6rem;
+            font-size: 2rem;
+            color: #ffffff;
+            font-family: $font_sans-serif;
+            padding: 1.2rem 1.5rem;
+            font-weight: 400;
+
+            &:hover {
+                color: #ffffff;
+                background-color: #a54178;
+            }
+
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+    }
+
+
+    &-info {
+        padding: 2.2rem 3rem;
+        background: #fdf7e8 url(../img/bg-header.png) repeat;
+
+        .c-form__grid {
+            align-items: flex-end;
+        }
+
+        .c-form__item {
+            width: 25%;
+            padding: 0 .5rem;
+        }
+
+        .c-label {
+            color: #553023;
+            font-style: italic;
+            font-family: $font_serif;
+        }
+
+        .c-button__default {
+            text-transform: uppercase;
+            color: #3e492f;
+            font-family: $font_sans-serif;
+            font-size: 2.3rem;
+        }
     }
 }
 
