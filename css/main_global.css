@@ -20879,7 +20879,9 @@ a.show-more__button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 3.4rem; }
+  padding-left: 1.9rem; }
+  .event-builder .top-nav_back {
+    padding-left: 3.4rem; }
   .event-builder .top-nav-button {
     display: inline-block;
     background-image: url("../img/event-builder/event-builder__button_green_middle.png");
@@ -21003,7 +21005,8 @@ a.show-more__button:hover {
     border-radius: .4rem;
     background: url("../img/event-builder/event-builder_check_background.jpg");
     margin-top: -11.4rem;
-    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin-bottom: 4rem;
+    padding: 1.5rem 2rem 5rem 2rem;
     -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
     font-family: "PT Serif Caption"; }
@@ -21037,6 +21040,8 @@ a.show-more__button:hover {
     .event-builder .event-builder-check__icon svg {
       width: 2.1rem;
       height: 2.1rem; }
+    .event-builder .event-builder-check__icon_danger svg {
+      fill: #b01116; }
   .event-builder .event-builder-check__title {
     font-size: 1.9rem;
     font-style: italic;
@@ -21048,11 +21053,97 @@ a.show-more__button:hover {
     font-size: 1.5rem;
     font-style: italic;
     color: #3a3a3a; }
+    .event-builder .event-builder-check__text_danger {
+      color: #b01116;
+      font-size: 1.5rem; }
+  .event-builder .event-builder-check-rating {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .event-builder .event-builder-check-rating_show {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .event-builder .event-builder-check-rating__icon {
+      background-color: #7bc43a;
+      width: 4.2rem;
+      height: 4.2rem;
+      border-radius: 2.1rem;
+      border: .1rem solid #5daa18;
+      position: relative;
+      -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.17);
+              box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.17);
+      margin: .5rem 0 .5rem 0; }
+      .event-builder .event-builder-check-rating__icon_level_1 {
+        background-color: #c44b8e;
+        border-color: #ba3d82; }
+      .event-builder .event-builder-check-rating__icon_level_2 {
+        background-color: #d49a3c;
+        border-color: #ab7826; }
+      .event-builder .event-builder-check-rating__icon_level_3 {
+        background-color: #cae021;
+        border-color: #bdd313; }
+      .event-builder .event-builder-check-rating__icon_level_4 {
+        background-color: #8dd325;
+        border-color: #80c718; }
+      .event-builder .event-builder-check-rating__icon_level_5 {
+        background-color: #70c111;
+        border-color: #5daa18; }
+      .event-builder .event-builder-check-rating__icon svg {
+        position: absolute;
+        top: .8rem;
+        left: .8rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: #000; }
+    .event-builder .event-builder-check-rating__text {
+      color: #272727;
+      font-family: "SummerFont";
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      padding-left: .9rem; }
+      .event-builder .event-builder-check-rating__text_thin {
+        font-size: 3.1rem; }
   .event-builder .event-builder-check__price {
     font-size: 2.3rem;
     color: #c44890;
     font-style: italic;
     paddin-top: .2rem; }
+  .event-builder .event-builder-check-result {
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+    text-align: right;
+    background: url("../img/event-builder/cat_check.svg") 0 0 no-repeat;
+    background-size: 39%;
+    padding-top: 3rem; }
+    .event-builder .event-builder-check-result__text {
+      font-style: italic;
+      font-size: 1.8rem;
+      color: #000000;
+      vertical-align: bottom; }
+    .event-builder .event-builder-check-result__price {
+      font-style: italic;
+      font-size: 2.7rem;
+      color: #c44890;
+      vertical-align: bottom; }
+  .event-builder .event-builder-check__button {
+    display: block;
+    border: .1rem solid #bcbcbc;
+    border-radius: .4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #101010;
+    font-size: 1.4rem;
+    padding: 1.2rem 0 1.2rem 0;
+    margin: .4rem 0 .4rem 0; }
+    .event-builder .event-builder-check__button:after {
+      border: none; }
+    .event-builder .event-builder-check__button:hover {
+      color: #7cbd41; }
 
 .event-builder .event-builder-tab-layout {
   display: -webkit-box;
