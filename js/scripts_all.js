@@ -10954,7 +10954,15 @@ $(document).ready(function ($) {
         $('.header.sticky').css({
             // 'right':'0'
         });
+
+
     });
+
+
+    if(typeof onSiteEvent == 'function') {
+        onSiteEvent('onModalClose');
+    }
+
 
 
     showPopup(".header-phone", '.popup__request-call');
