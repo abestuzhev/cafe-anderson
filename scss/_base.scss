@@ -5299,3 +5299,111 @@ div.c-card-catalog-2 {
         font-family: $font_serif;
     }
 }
+
+
+/*c-card-hall*/
+.c-card-hall {
+    font-family: $font_serif;
+    background-color: #fff;
+    padding: 1.4rem;
+
+    &__title {
+        font-family: $font_serif;
+        font-size: 2rem;
+        color: $black;
+        font-weight: 700;
+        margin-bottom: .8rem;
+    }
+    &__body {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &-time {
+        width: 34%;
+        font-size: 1.5rem;
+        font-style: italic;
+        &__list {
+
+        }
+
+
+        &__item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: -.5rem;
+            margin-right: -.5rem;
+            margin-bottom: .2rem;
+
+            &:first-child {
+                text-align: center;
+                margin-bottom: .6rem;
+            }
+        }
+
+        &__col {
+            width: 50%;
+            padding: 0 .5rem;
+        }
+
+        &__btn {
+            display: block;
+            font-family: $font_sans-serif;
+            text-transform: uppercase;
+            font-size: 2.3rem;
+            color: #3e492f;
+            background-color: #a9df5f;
+            border-radius: .6rem;
+            padding: .3rem;
+            text-align: center;
+            font-style: normal;
+            line-height: 1;
+
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+    }
+
+    &__list {
+
+    }
+
+    &__description {
+        width: 66%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    &__img {
+        width: 34%;
+        height: 11.5rem;
+        overflow: hidden;
+        border-radius: .6rem;
+        margin: 0 1rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        width: 66%;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-family: $font_serif;
+        line-height: 1;
+    }
+
+
+}

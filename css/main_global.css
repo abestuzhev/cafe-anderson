@@ -5871,6 +5871,106 @@ div.c-card-catalog-2 {
     color: #3c3c3c;
     font-family: "PT Serif Caption"; }
 
+/*c-card-hall*/
+.c-card-hall {
+  font-family: "PT Serif Caption";
+  background-color: #fff;
+  padding: 1.4rem; }
+  .c-card-hall__title {
+    font-family: "PT Serif Caption";
+    font-size: 2rem;
+    color: #555451;
+    font-weight: 700;
+    margin-bottom: .8rem; }
+  .c-card-hall__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .c-card-hall-time {
+    width: 34%;
+    font-size: 1.5rem;
+    font-style: italic; }
+    .c-card-hall-time__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-left: -.5rem;
+      margin-right: -.5rem;
+      margin-bottom: .2rem; }
+      .c-card-hall-time__item:first-child {
+        text-align: center;
+        margin-bottom: .6rem; }
+    .c-card-hall-time__col {
+      width: 50%;
+      padding: 0 .5rem; }
+    .c-card-hall-time__btn {
+      display: block;
+      font-family: "BebasNeue";
+      text-transform: uppercase;
+      font-size: 2.3rem;
+      color: #3e492f;
+      background-color: #a9df5f;
+      border-radius: .6rem;
+      padding: .3rem;
+      text-align: center;
+      font-style: normal;
+      line-height: 1; }
+      .c-card-hall-time__btn::after {
+        content: '';
+        border: none; }
+  .c-card-hall__description {
+    width: 66%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .c-card-hall__img {
+    width: 34%;
+    height: 11.5rem;
+    overflow: hidden;
+    border-radius: .6rem;
+    margin: 0 1rem; }
+    .c-card-hall__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .c-card-hall__text {
+    width: 66%;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: "PT Serif Caption";
+    line-height: 1; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
