@@ -20937,7 +20937,7 @@ a.show-more__button:hover {
               align-items: center; }
     .event-builder .top-nav-button_visited {
       background-image: url("../img/event-builder/event-builder__button_visited_middle.png");
-      padding-right: 3.4rem; }
+      padding-right: 3rem; }
       .event-builder .top-nav-button_visited:before {
         background: url("../img/event-builder/event-builder__button_visited_left.png");
         width: 3.4rem;
@@ -20956,7 +20956,8 @@ a.show-more__button:hover {
     .event-builder .top-nav-button_active {
       background-image: url("../img/event-builder/event-builder__button_active_middle.png");
       height: 11.4rem;
-      margin-right: .5rem; }
+      margin-right: .5rem;
+      margin-left: -.9rem; }
       .event-builder .top-nav-button_active:before {
         background: url("../img/event-builder/event-builder__button_active_left.png");
         width: 2.7rem;
@@ -21169,9 +21170,9 @@ a.show-more__button:hover {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .event-builder-rating__result {
   font-family: "SummerFont";
@@ -21344,7 +21345,8 @@ a.show-more__button:hover {
     .event-builder .event-builder-tab-list-block__price {
       font-size: 1.7rem;
       font-weight: 700;
-      margin-right: .5rem; }
+      margin-right: .5rem;
+      white-space: nowrap; }
     .event-builder .event-builder-tab-list-block__counter {
       display: inline-block; }
       .event-builder .event-builder-tab-list-block__counter .c-counter {

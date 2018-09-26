@@ -18244,7 +18244,7 @@ a.show-more__button:hover {
 
       &_visited {
         background-image: url('../img/event-builder/event-builder__button_visited_middle.png');
-        padding-right: 3.4rem;
+        padding-right: 3rem;
 
         &:before {
           background: url('../img/event-builder/event-builder__button_visited_left.png');
@@ -18279,6 +18279,7 @@ a.show-more__button:hover {
         background-image: url('../img/event-builder/event-builder__button_active_middle.png');
         height: 11.4rem;
         margin-right: .5rem;
+        margin-left: -.9rem;
 
         &:before {
           background: url('../img/event-builder/event-builder__button_active_left.png');
@@ -18561,7 +18562,7 @@ a.show-more__button:hover {
     &__line {
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-between;
+      justify-content: flex-start;
     }
 
     &__result {
@@ -18760,6 +18761,7 @@ a.show-more__button:hover {
         font-size: 1.7rem;
         font-weight: $font_bold;
         margin-right: .5rem;
+        white-space: nowrap;
 
 
       }
