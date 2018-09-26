@@ -21253,7 +21253,8 @@ a.show-more__button:hover {
       margin-bottom: 1rem; }
       .event-builder .event-builder-tab-list-block__title_head1 {
         color: #a43c34;
-        font-size: 1.9rem; }
+        font-size: 1.9rem;
+        padding-right: 1.5rem; }
       .event-builder .event-builder-tab-list-block__title_head2 {
         color: #6faa3a;
         font-size: 1.6rem;
@@ -21273,7 +21274,8 @@ a.show-more__button:hover {
         border-radius: 1.5rem;
         width: 3.1rem;
         height: 3.1rem;
-        padding-top: .1rem; }
+        padding-top: .1rem;
+        margin: 0 .5rem 0 .5rem; }
     .event-builder .event-builder-tab-list-block__line {
       font-family: "PT Serif Caption";
       font-size: 1.6rem;
@@ -21361,6 +21363,41 @@ a.show-more__button:hover {
       display: block; }
       .event-builder .event-builder-tab-list-block__content_collapse {
         display: none; }
+    .event-builder .event-builder-tab-list-block-plate {
+      padding: 0 .4rem 0 .4rem;
+      border-radius: .4rem;
+      background-color: #c44890;
+      -webkit-box-shadow: 0px 3px 8.28px 0.72px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 3px 8.28px 0.72px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2rem; }
+      .event-builder .event-builder-tab-list-block-plate__body {
+        background-color: #ffffff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+      .event-builder .event-builder-tab-list-block-plate__image {
+        width: 17rem;
+        height: 15.3rem;
+        background-size: cover;
+        background-position: 50% 50%; }
+      .event-builder .event-builder-tab-list-block-plate__content {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        padding: 1.5rem; }
+      .event-builder .event-builder-tab-list-block-plate__title {
+        font-family: "PT Serif Caption";
+        font-size: 1.6rem;
+        color: #3a3a3a;
+        text-transform: uppercase;
+        margin-bottom: 1rem; }
 
 .event-builder-button__collapse {
   font-family: "PT Serif Caption";
@@ -21397,6 +21434,18 @@ a.show-more__button:hover {
 
 .event-builder .event-builder-check {
   width: 26rem; }
+
+.event-builder-select {
+  min-width: 35rem; }
+  .event-builder-select .SumoSelect {
+    width: 100%; }
+  .event-builder-select .SelectBox {
+    font-size: 1.3rem;
+    padding: 1.5rem 1.3rem 1.2rem 1.3rem; }
+  .event-builder-select .SumoSelect.open > .optWrapper {
+    top: 4.6rem; }
+  .event-builder-select .opt {
+    color: #515151; }
 
 /* / Event Builder */
 .popup-pie {

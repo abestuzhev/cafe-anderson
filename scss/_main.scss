@@ -18646,6 +18646,7 @@ a.show-more__button:hover {
         &_head1 {
           color: #a43c34;
           font-size: 1.9rem;
+          padding-right: 1.5rem;
         }
 
         &_head2 {
@@ -18670,6 +18671,7 @@ a.show-more__button:hover {
           width: 3.1rem;
           height: 3.1rem;
           padding-top: .1rem;
+          margin: 0 .5rem 0 .5rem;
         }
 
       }
@@ -18796,6 +18798,41 @@ a.show-more__button:hover {
 
       }
 
+      &-plate {
+        padding: 0 .4rem 0 .4rem;
+        border-radius: .4rem;
+        background-color: #c44890;
+        box-shadow: 0px 3px 8.28px 0.72px rgba(0, 0, 0, 0.2);
+        margin-bottom: 2rem;
+
+        &__body {
+          background-color: #ffffff;
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: flex-start;
+        }
+
+        &__image {
+          width: 17rem;
+          height: 15.3rem;
+          background-size: cover;
+          background-position: 50% 50%;
+        }
+
+        &__content {
+          flex-grow: 1;
+          padding: 1.5rem;
+        }
+
+        &__title {
+          font-family: $font_serif;
+          font-size: 1.6rem;
+          color: #3a3a3a;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+      }
+
     }
   }
 
@@ -18845,7 +18882,28 @@ a.show-more__button:hover {
     width: 26rem;
   }
 
+  &-select {
+    min-width: 35rem;
 
+    .SumoSelect {
+      width: 100%;
+    }
+
+    .SelectBox {
+      font-size: 1.3rem;
+      padding: 1.5rem 1.3rem 1.2rem 1.3rem;
+    }
+
+    .SumoSelect.open > .optWrapper {
+      top: 4.6rem;
+    }
+
+    .opt {
+      color: #515151;
+    }
+
+
+  }
 
 }
 
