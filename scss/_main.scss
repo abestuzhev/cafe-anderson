@@ -18333,6 +18333,11 @@ a.show-more__button:hover {
     &_active {
       display: block;
     }
+
+    &.event-builder-tab-order {
+      max-width: none;
+    }
+
   }
 
   .event-builder-check {
@@ -18610,12 +18615,95 @@ a.show-more__button:hover {
     max-width: 115rem;
     margin-bottom: 4rem;
 
+
     &-title {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 3.9rem;
+      position: relative;
+
+      &.event-builder-tab-list-title_order {
+        background: url('../img/event-builder/event-builder-background-bubbles.png');
+        margin: 0 -2.5rem 3.9rem -2.5rem;
+        height: 9rem;
+
+        .event-builder-tab-list-title {
+
+          &__middle {
+            color: #ffffff;
+            font-size: 5rem;
+            font-weight: $font_light;
+          }
+
+        }
+      }
+
+      &__decor {
+
+        &_v {
+
+          &_1 {
+            position: absolute;
+            left: 5rem;
+            top: 3rem;
+            width: 6.5rem;
+            height: 3.5rem;
+
+            svg {
+              transform: rotate(8deg);
+              width: 6.5rem;
+              height: 3.5rem;
+              fill: #7bc43a;
+            }
+          }
+          &_2 {
+            position: absolute;
+            left: 12.6rem;
+            top: 3.3rem;
+            width: 5.8rem;
+            height: 5.8rem;
+
+            svg {
+              transform: rotate(-150deg);
+              width: 5.8rem;
+              height: 5.8rem;
+              fill: #ffffff;
+            }
+          }
+          &_3 {
+            position: absolute;
+            right: 11.6rem;
+            top: .3rem;
+            width: 5.8rem;
+            height: 5.8rem;
+
+            svg {
+              transform: rotate(-150deg);
+              width: 5.8rem;
+              height: 5.8rem;
+              fill: #7bc43a;
+            }
+          }
+
+          &_4 {
+            position: absolute;
+            right: 4rem;
+            top: 3.3rem;
+            width: 6.5rem;
+            height: 3.5rem;
+
+            svg {
+              transform: rotate(8deg);
+              width: 6.5rem;
+              height: 3.5rem;
+              fill: #ffffff;
+            }
+          }
+
+        }
+      }
 
       &__middle {
         font-family: $font_decor;
@@ -18659,6 +18747,12 @@ a.show-more__button:hover {
           font-size: 1.6rem;
           font-style: italic;
         }
+        &_head4 {
+          color: #231300;
+          font-size: 3.5rem;
+          font-family: $font_decor;
+          text-transform: uppercase;
+        }
         &_bubble {
           color: #ffffff;
           font-size: 1.9rem;
@@ -18672,6 +18766,66 @@ a.show-more__button:hover {
           height: 3.1rem;
           padding-top: .1rem;
           margin: 0 .5rem 0 .5rem;
+        }
+
+        &_icon {
+          &_edit {
+            position: relative;
+            top: -.4rem;
+            margin-left: .5rem;
+            svg {
+              width: 1.2rem;
+              height: 1.8rem;
+              fill: #a6a09c;
+            }
+          }
+        }
+
+        &_side {
+          width: 2rem;
+          height: 2.8rem;
+          background-color: #f3efe4;
+        }
+
+        &.event-builder-tab-list-block__title_order {
+          display: block;
+        }
+
+        &_price {
+          position: absolute;
+          right: 2.5rem;
+          top: 1.6rem;
+          color: #c75396;
+          font-size: 1.7rem;
+          font-weight: $font_bold;
+        }
+
+        &_line {
+
+          &_up {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+
+            background-color: #f3efe4;
+
+            margin-left: -2.5rem;
+            margin-right: -2.5rem;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            position: relative;
+          }
+
+          &_bottom {
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: flex-start;
+          }
         }
 
       }
@@ -18757,6 +18911,11 @@ a.show-more__button:hover {
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: center;
+
+
+        &_thin {
+          width: auto;
+        }
       }
 
       &__price {
@@ -18765,7 +18924,14 @@ a.show-more__button:hover {
         margin-right: .5rem;
         white-space: nowrap;
 
+      }
 
+      &__details {
+        color: #b4b4b4;
+        font-size: 1.5rem;
+        font-style: italic;
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
 
       &__counter {
@@ -18875,6 +19041,45 @@ a.show-more__button:hover {
         }
       }
 
+      &.event-builder-button__collapse_order {
+        border: none;
+        background-color: #f3efe4;
+        border-radius: 0 0 1.5rem 1.5rem;
+        opacity: 1;
+        padding: 0rem 4.5rem .9rem 4.5rem;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 2rem;
+          height: 2.8rem;
+          right:-2rem;
+          top:0;
+          border-top-left-radius: 1.8rem 1.2rem;
+          background-color: #ffffff;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 2rem;
+          height: 2.8rem;
+          left:-2rem;
+          top:0;
+          border-top-right-radius: 1.8rem 1.2rem;
+          background-color: #ffffff;
+        }
+
+        &:hover {
+          color: #c44890;
+
+          svg {
+            fill: #c44890;
+          }
+        }
+      }
+
+
     }
   }
 
@@ -18904,6 +19109,8 @@ a.show-more__button:hover {
 
 
   }
+
+
 
 }
 
