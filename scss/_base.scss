@@ -1798,6 +1798,21 @@ a.c-button {
     justify-content: space-between;
     align-items: stretch;
     //overflow: hidden;
+
+    &__wrap {
+        width: 100%;
+        height: 100%;
+        min-height: 18rem;
+        width: 100%;
+        //height: 100%;
+        background-color: $white;
+        font-size: 1.3rem;
+        line-height: 1.2;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
     
     b {
         color: $black;
@@ -1999,7 +2014,7 @@ a.c-button {
         align-items: center;
         border-top: 1px dotted #553023;
         //border-bottom: 1px dotted #553023;
-        padding: 1.2rem 2rem;
+        padding: .8rem 2rem;
         background: #fdf7e8 url(../img/bg-header.png) repeat;
         text-transform: uppercase;
         font-family: $font_sans-serif;
@@ -2019,7 +2034,7 @@ a.c-button {
             font-size: 2rem;
             color: #ffffff;
             font-family: $font_sans-serif;
-            padding: 1.2rem 1.5rem;
+            padding: .8rem 1.5rem;
             font-weight: 400;
 
             &:hover {
@@ -2034,10 +2049,31 @@ a.c-button {
         }
     }
 
+    &__link {
+        text-align: center;
+        padding: 1.2rem 1rem;
+        background-color: rgba(0,0,0,.8);
+        color: #fff;
+        font-family: $font_serif;
+        font-size: 1.5rem;
+        font-style: italic;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+    }
+
 
     &-info {
-        padding: 2.2rem 3rem;
+
+        margin-top: 2rem;
         background: #fdf7e8 url(../img/bg-header.png) repeat;
+
+        &__form {
+            padding: 2.2rem 1.8rem;
+        }
 
         .c-form__grid {
             align-items: flex-end;
@@ -2152,17 +2188,29 @@ a.c-button {
     }
 }
 
+//#event-builder-place__map .c-card-cafe
+
+#event-builder-place__map .c-card-cafe__item:nth-child(1),
+#event-builder-place__map .c-card-cafe__entertainment,
 #map .c-card-cafe__item:nth-child(1),
 #map .c-card-cafe__entertainment {
     height: 3rem;
     overflow: hidden;
 }
 
+#event-builder-place__map .c-card-map__body {
+    overflow: hidden;
+    height: 18rem;
+}
 #map .c-card-map__body {
     overflow: hidden;
     height: 22.1rem;
 }
 
+#event-builder-place__map .c-card-cafe__img {
+    width: 35%;
+}
+#event-builder-place__map .c-card-map,
 #map .c-card-map {
     width: 660px;
     height: 265px;
@@ -2211,6 +2259,31 @@ a.c-button {
         border-style: solid;
         border-width: 17px 16px 0 16px;
         border-color: #7dbd41 transparent transparent transparent;
+    }
+}
+
+#event-builder-place__map .c-card-map {
+    height: 224px;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -.8rem;
+        left: 0;
+        width: 100%;
+        height: 1rem;
+        border-radius: 0 0 .6rem .6rem;
+        background-color: #c44890;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 100%;
+        left: 90px;
+        bottom: -2rem;
+        border-style: solid;
+        border-width: 17px 16px 0 16px;
+        border-color: #c44890 transparent transparent transparent;
     }
 }
 
@@ -5348,6 +5421,10 @@ div.c-card-catalog-2 {
         &__col {
             width: 50%;
             padding: 0 .5rem;
+
+            &:first-child {
+                font-size: 1.4rem;
+            }
         }
 
         &__btn {
@@ -5366,6 +5443,12 @@ div.c-card-catalog-2 {
             &::after {
                 content: '';
                 border: none;
+            }
+
+            &.disabled {
+                background-color: #e0e0e0;
+                color: #ababab;
+                cursor: default;
             }
         }
     }

@@ -183,7 +183,21 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-    
+    /*конструктор праздников. Показ информации о карточки*/
+    $(document).on('click', '.c-card-cafe-booking__btn', function(e){
+        var self = $(this);
+        e.preventDefault();
+
+        self.parents('.c-card-cafe').find('.c-card-cafe-info').slideToggle(300);
+
+        console.log($(this).html());
+        if($(this).html() == 'свернуть'){
+
+            self.html('посмотреть');
+        }else{
+            self.html('свернуть');
+        }
+    });
 
 
     /*выбор месяцав календаре праздничных пространств*/
