@@ -1473,6 +1473,12 @@ i.icon-chair {
   height: 1.4em;
   fill: #fff; }
 
+.symbol-adult {
+  font-size: 2.9rem;
+  width: 1em;
+  height: .6em;
+  fill: #fff; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -21438,6 +21444,14 @@ a.show-more__button:hover {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
+    .event-builder-city .filter .l-button__center {
+      margin-top: 2.5rem; }
+    .event-builder-city .symbol-mark {
+      font-size: 1.2rem; }
+    .event-builder-city .c-button__small {
+      padding: .6rem 1.4rem; }
+    .event-builder-city .symbol-baby {
+      font-size: 2.1rem; }
   .event-builder-place {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21517,6 +21531,14 @@ a.show-more__button:hover {
       margin-bottom: 1rem; }
     .event-builder-place .c-card-cafe-hall:last-child {
       margin-bottom: 0; }
+    .event-builder-place .c-symbol {
+      fill: #c44890; }
+    .event-builder-place .symbol-mark {
+      font-size: 1.2rem; }
+    .event-builder-place .c-button__small {
+      padding: .6rem 1.4rem; }
+    .event-builder-place .symbol-baby {
+      font-size: 2.1rem; }
 
 /* / Event Builder */
 .popup-pie {
