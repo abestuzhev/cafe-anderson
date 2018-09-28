@@ -19837,6 +19837,160 @@ a.show-more__button:hover {
 
   }
 
+  &-head {
+    color: #9b806f;
+    font-size: 2.6rem;
+    font-family: $font_serif;
+    padding-bottom: 4rem;
+  }
+
+  &-thanks {
+    background: #fff;
+    border-radius: .4rem;
+    border: 1px solid #d1d1d1;
+    padding: 0rem 2.5rem 1rem 2.5rem;
+    box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    &-title {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      background: url('../img/event-builder/event-builder-background-bubbles.png');
+      margin: 0 -2.5rem 1.8rem -2.5rem;
+      height: 9rem;
+
+      &__decor {
+
+        &_v {
+
+          &_1 {
+            position: absolute;
+            left: 5rem;
+            top: 3rem;
+            width: 6.5rem;
+            height: 3.5rem;
+
+            svg {
+              transform: rotate(8deg);
+              width: 6.5rem;
+              height: 3.5rem;
+              fill: #7bc43a;
+            }
+          }
+          &_2 {
+            position: absolute;
+            left: 12.6rem;
+            top: 3.3rem;
+            width: 5.8rem;
+            height: 5.8rem;
+
+            svg {
+              transform: rotate(-150deg);
+              width: 5.8rem;
+              height: 5.8rem;
+              fill: #ffffff;
+            }
+          }
+          &_3 {
+            position: absolute;
+            right: 11.6rem;
+            top: .3rem;
+            width: 5.8rem;
+            height: 5.8rem;
+
+            svg {
+              transform: rotate(-150deg);
+              width: 5.8rem;
+              height: 5.8rem;
+              fill: #7bc43a;
+            }
+          }
+          &_4 {
+            position: absolute;
+            right: 4rem;
+            top: 3.3rem;
+            width: 6.5rem;
+            height: 3.5rem;
+
+            svg {
+              transform: rotate(8deg);
+              width: 6.5rem;
+              height: 3.5rem;
+              fill: #ffffff;
+            }
+          }
+
+        }
+      }
+
+      &__middle {
+        font-family: $font_decor;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 5rem;
+        font-weight: $font_light;
+
+      }
+
+      &__side {
+        min-width: 27rem;
+      }
+
+    }
+
+    &__body {
+      text-align: center;
+      padding-top: 2.5rem;
+    }
+
+    &__head {
+      &_1 {
+        font-family: $font_decor;
+        font-size: 3rem;
+        color: #231300;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-weight: $font_bold;
+      }
+      &_2 {
+        font-family: $font_decor;
+        font-size: 3rem;
+        color: #c44890;
+        text-transform: uppercase;
+        font-weight: $font_bold;
+      }
+      &_3 {
+        font-family: $font_serif;
+        font-size: 1.8rem;
+        color: #7bc43a;
+      }
+    }
+
+    &__text {
+      color: #515151;
+      font-family: $font-serif;
+      font-style: italic;
+      font-size: 1.6rem;
+    }
+
+    &__button {
+      background-color: #c44890;
+      text-transform: none;
+      font-size: 1.8rem;
+      font-weight: normal;
+    }
+
+    &__space {
+      padding-top: 2.8rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+
+
 }
 
 /* / Event Builder */
