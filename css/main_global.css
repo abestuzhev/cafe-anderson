@@ -6055,12 +6055,29 @@ div.c-card-catalog-2 {
     height: 11.5rem;
     overflow: hidden;
     border-radius: .6rem;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    position: relative; }
     .c-card-hall__img img {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
+    .c-card-hall__img-icon {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 3.2rem;
+      height: 3.2rem;
+      background-color: #c44890;
+      border-radius: 50px; }
+      .c-card-hall__img-icon .c-symbol {
+        fill: #fff !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
   .c-card-hall__text {
     width: 66%;
     font-size: 1.5rem;
@@ -21498,6 +21515,14 @@ a.show-more__button:hover {
         background-color: #c44890;
         padding: .8rem;
         font-weight: 700; }
+      .event-builder-place__aside .c-symbol {
+        fill: #c44890; }
+      .event-builder-place__aside .symbol-mark {
+        font-size: 1.2rem; }
+      .event-builder-place__aside .symbol-baby {
+        font-size: 2.1rem; }
+      .event-builder-place__aside .filter .l-button__center {
+        display: block; }
     .event-builder-place__content {
       padding-left: 4rem;
       -webkit-box-flex: 1;
@@ -21543,14 +21568,6 @@ a.show-more__button:hover {
       margin-bottom: 1rem; }
     .event-builder-place .c-card-cafe-hall:last-child {
       margin-bottom: 0; }
-    .event-builder-place .c-symbol {
-      fill: #c44890; }
-    .event-builder-place .symbol-mark {
-      font-size: 1.2rem; }
-    .event-builder-place .c-button__small {
-      padding: .6rem 1.4rem; }
-    .event-builder-place .symbol-baby {
-      font-size: 2.1rem; }
 
 /* / Event Builder */
 .popup-pie {

@@ -18539,6 +18539,23 @@ a.show-more__button:hover {
                 padding: .8rem;
                 font-weight: 700;
             }
+
+
+          .c-symbol {
+            fill: #c44890;
+          }
+
+          .symbol-mark {
+            font-size: 1.2rem;
+          }
+
+          .symbol-baby {
+            font-size: 2.1rem;
+          }
+
+          .filter .l-button__center {
+            display: block;
+          }
         }
 
         &__content {
@@ -18618,21 +18635,6 @@ a.show-more__button:hover {
             margin-bottom: 0;
         }
 
-      .c-symbol {
-        fill: #c44890;
-      }
-
-      .symbol-mark {
-        font-size: 1.2rem;
-      }
-
-      .c-button__small {
-        padding: .6rem 1.4rem;
-      }
-
-      .symbol-baby {
-        font-size: 2.1rem;
-      }
 
 
 

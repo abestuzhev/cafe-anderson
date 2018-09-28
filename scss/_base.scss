@@ -5471,6 +5471,7 @@ div.c-card-catalog-2 {
         overflow: hidden;
         border-radius: .6rem;
         margin: 0 1rem;
+        position: relative;
 
         img {
             width: 100%;
@@ -5478,6 +5479,26 @@ div.c-card-catalog-2 {
             -o-object-fit: cover;
             object-fit: cover;
         }
+
+        &-icon {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            background-color: #c44890;
+            border-radius: 50px;
+
+            .c-symbol {
+                fill: #fff !important;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+
     }
 
     &__text {
