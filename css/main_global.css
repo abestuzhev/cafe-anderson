@@ -1479,6 +1479,18 @@ i.icon-chair {
   height: .6em;
   fill: #fff; }
 
+.symbol-adult {
+  font-size: 1.9rem;
+  width: 1em;
+  height: 1em;
+  fill: #fff; }
+
+.symbol-cake-7 {
+  font-size: 2.7rem;
+  width: 1em;
+  height: .6em;
+  fill: #fff; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
