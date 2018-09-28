@@ -6576,6 +6576,143 @@
 
                                 <div class="event-builder-tab-list-block__title_line_up">
                                     <div>
+                                        <span class="event-builder-tab-list-block__title_head4">Реквизиты праздника</span>
+                                        <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__title_line_bottom">
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                    <div class="event-builder-tab-list-block__title_control">
+                                        <div class="event-builder-button__collapse event-builder-button__collapse_order">
+                                            <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                            <span class="event-builder-button__collapse_text_2">Показать</span>
+                                            <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <label class="c-label" for="event-builder-place">Зал:</label>
+                                        <input class="c-input" type="text" id="event-builder-place" required value="Андерсон в Медведково">
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <label class="c-label" for="event-builder-event">Торжество:</label>
+                                        <input class="c-input" type="text" id="event-builder-event" required value="День рождения">
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_compact">
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline event-builder-tab-list-block__control_label-middle">Когда:</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                                <label class="c-label">Дата:</label>
+                                                <div class="datepicker-layout">
+                                                    <input type="text" class="c-input datepicker-custom" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-start">Начало:</label>
+                                                <span class="event-builder-input__time">
+                                                    <input class="c-input" type="text" id="event-builder-start" required placeholder="11:00">
+                                                </span>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline event-builder-tab-list-block__control_label-middle">-</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-end">Окончание:</label>
+                                                <span class="event-builder-input__time">
+                                                    <input class="c-input" type="text" id="event-builder-end" required placeholder="12:00">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_compact">
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline event-builder-tab-list-block__control_label-middle">Гости:</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-adult">Взрослых:</label>
+                                                <span class="event-builder-input__boy">
+                                                    <input class="c-input" type="text" id="event-builder-adult" required placeholder="">
+                                                </span>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-baby">Детей:</label>
+                                                <span class="event-builder-input__baby">
+                                                    <input class="c-input" type="text" id="event-builder-baby" required placeholder="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__filler event-builder-tab-list-block__filler_expand"></div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-client">Заказчик: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-client" required>
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-phone">Телефон: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-phone" required placeholder="+7 () -  -">
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-email">E-mail: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-email" required placeholder="...@...">
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__filler event-builder-tab-list-block__filler_expand"></div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_8">
+                                        <label class="c-label" for="event-builder-client_main">Именинник: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-client_main" required>
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-age_from">Укажите возраст:</label>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline">от</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
+                                                <input class="c-input" type="text" id="event-builder-age_from" required>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline">и до</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
+                                                <input class="c-input" type="text" id="event-builder-age_till" required>
+                                            </div>
+                                        </div>
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title event-builder-tab-list-block__title_order">
+
+                                <div class="event-builder-tab-list-block__title_line_up">
+                                    <div>
                                         <span class="event-builder-tab-list-block__title_head4">Аренда зала</span>
                                         <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
                                     </div>
@@ -7057,6 +7194,30 @@
 
                             </div>
 
+                        </div>
+
+                        <div class="event-builder-tab-list-block event-builder-tab-list-block_decor">
+                            <div class="event-builder-tab-list-block__line">
+                                <div class="event-builder-tab-list-block__filler event-builder-tab-list-block__filler_expand"></div>
+                            </div>
+                            <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_center event-builder-tab-list-block__line_compact">
+                                <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
+                                    <label class="c-label c-label_center" for="event-builder-comment">Вы можете добавить комментарий к своему заказу:</label>
+                                    <textarea class="event-builder-input__textarea" id="event-builder-comment"></textarea>
+                                    <div class="event-builder-summary">
+                                        <span class="event-builder-icon__summary"></span>
+                                        <span class="event-builder-summary__head_1">ИТОГО:</span>
+                                        <span class="event-builder-summary__head_2">999 990 Р</span>
+
+                                    </div>
+
+                                    <div class="event-builder-send"><button class="c-button c-button__default">ОФОРМИТЬ ЗАКАЗ</button></div>
+
+                                </div>
+
+
+
+                            </div>
                         </div>
 
 
