@@ -3380,16 +3380,86 @@ $(function() {
     function eventBuilderHideTabs() {
         $('.event-builder-tab').each(function(item,element) {
             $(element).removeClass('event-builder-tab_active');
+
         });
+        $('.event-builder-check').removeClass('event-builder-check_show');
+        $('.top-nav').removeClass('top-nav_back');
     }
 
     function eventBuilderShowTab(tabName) {
         $('.event-builder-tab[data-tab="' + tabName + '"]').addClass('event-builder-tab_active');
+        if ($('.event-builder-tab[data-tab="' + tabName + '"]').attr('data-show-check') == 'show') {
+            $('.event-builder-check').addClass('event-builder-check_show');
+        }
+        if ($('.event-builder-tab[data-tab="' + tabName + '"]').attr('data-with-back') == 'true') {
+            $('.top-nav').addClass('top-nav_back');
+        }
     }
-    // bind
+
+    function eventBuilderCheckLines() {
+        $('.event-builder-tab-list-block__line').each(function(index, element) {
+            var $counter = $(element).find('input.c-counter__field');
+            if($counter.length) {
+                if($counter.val() == 0 && $counter.val() != '') {
+                    $(element).addClass('event-builder-tab-list-block__line_disable');
+                } else {
+                    $(element).removeClass('event-builder-tab-list-block__line_disable');
+                }
+            }
+
+        });
+    }
+
+    function eventBuilderProgressBar() {
+        $('.event-builder-progressbar').each(function(index, element) {
+            $(element).find('.event-builder-progressbar__bar').css('width', (100 - $(element).attr('data-value')) + '%');
+        });
+    }
+
+    function showPopup(icon, popup) {
+        $(document).on('click', icon, function (e) {
+            var $html = $('html');
+            e.preventDefault();
+            $(popup).addClass('is-visible');
+            $('.mfp-bg').addClass('is-visible');
+
+
+            $html.addClass('lock-html');
+            $('body').addClass('fixed-input');
+            if(windowWidth > documentWidth){
+                $html.css({
+                    'margin-right':'17px'
+                });
+                $('.mfp-wrap').css({
+                    'overflow-y':'scroll'
+                });
+                // console.log('Есть полоса прокрутки');
+            }else {
+                // console.log('Нет полосы прокрутки');
+            }
+        });
+    }
+
+    function eventBuilderCheckRating() {
+        $('.event-builder-check-rating-block').each(function(index, element) {
+            $(element).find('.event-builder-check-rating:nth-child(' + $(element).attr('data-rating') + ')').addClass('event-builder-check-rating_show');
+        });
+    }
+
+// Main
 
 $(function() {
+    /* init */
+    topNavVisited();
     topNavZIndex();
+    eventBuilderHideTabs();
+    eventBuilderShowTab($('.top-nav-button_active').attr('data-for-tab'));
+    eventBuilderCheckLines();
+    eventBuilderProgressBar();
+    showPopup('.event-builder__icon_1','.popup__gallery_event_item_1');
+    showPopup('.event-builder__icon_2','.popup__gallery_event_item_1');
+    eventBuilderCheckRating();
+    /* events */
 
     $('.top-nav-button').on('click', function() {
         topNavClear();
@@ -3400,6 +3470,22 @@ $(function() {
         eventBuilderHideTabs();
         eventBuilderShowTab($(this).attr('data-for-tab'));
     });
+
+    $('.event-builder-button__collapse').on('click', function () {
+        $(this).toggleClass('event-builder-button__collapse_flip');
+        $(this).find('.event-builder-button__collapse_text_1').toggle();
+        $(this).find('.event-builder-button__collapse_text_2').toggle();
+        $(this).closest('.event-builder-tab-list-block').find('.event-builder-tab-list-block__content').toggleClass('event-builder-tab-list-block__content_collapse');
+    });
+
+    $('.event-builder-tab-list-block__counter button').on('click', function() {
+        eventBuilderCheckLines();
+    });
+    $('.event-builder-tab-list-block__counter input').on('change keyup', function() {
+        eventBuilderCheckLines();
+    });
+
+
 
 
 });

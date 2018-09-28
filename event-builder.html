@@ -5274,7 +5274,7 @@
                             <svg class="c-symbol symbol-logo">
                                 <use xlink:href="#symbol-logo" />
                             </svg>
-                                <span class="header-logo__beta">
+                            <span class="header-logo__beta">
                                     <i class="icon-beta"></i>
                                     <span>-версия</span>
                                 </span>
@@ -5532,19 +5532,32 @@
             <div class="event-builder">
 
                 <div class="top-nav">
-                    <div class="top-nav-button top-nav-button_active" data-for-tab="#place">
+
+                    <div class="top-nav-imgloader" style="display:none;">
+                        <img src="img/event-builder/event-builder__button_visited_middle.png" height="84" width="140"/>
+                        <img src="img/event-builder/event-builder__button_visited_left.png" height="84" width="33"/>
+                        <img src="img/event-builder/event-builder__button_green_right.png" height="84" width="54"/>
+                        <img src="img/event-builder/event-builder__button_green_middle.png" height="84" width="40"/>
+                        <img src="img/event-builder/event-builder__button_green_left.png" height="84" width="13"/>
+                        <img src="img/event-builder/event-builder__button_active_right_last.png" height="114" width="41"/>
+                        <img src="img/event-builder/event-builder__button_active_right.png" height="114" width="73"/>
+                        <img src="img/event-builder/event-builder__button_active_middle.png" height="114" width="189"/>
+                        <img src="img/event-builder/event-builder__button_active_left.png" height="114" width="27"/>
+                    </div>
+
+                    <div class="top-nav-button" data-for-tab="#place">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#place" /></svg></div>
                             <div class="top-nav-button__title">Площадка</div>
                         </div>
                     </div>
-                    <div class="top-nav-button" data-for-tab="#details">
+                    <div class="top-nav-button" data-for-tab="#decor">
                         <div class="top-nav-button__wrapper">
-                            <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#details" /></svg></div>
-                            <div class="top-nav-button__title">Реквизиты</div>
+                            <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#decor" /></svg></div>
+                            <div class="top-nav-button__title">Оформление</div>
                         </div>
                     </div>
-                    <div class="top-nav-button" data-for-tab="#welcome">
+                    <div class="top-nav-button top-nav-button_active" data-for-tab="#welcome">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#welcome" /></svg></div>
                             <div class="top-nav-button__title">Welcome-меню</div>
@@ -5562,12 +5575,6 @@
                             <div class="top-nav-button__title">Чаепитие</div>
                         </div>
                     </div>
-                    <div class="top-nav-button" data-for-tab="#prog">
-                        <div class="top-nav-button__wrapper">
-                            <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#prog" /></svg></div>
-                            <div class="top-nav-button__title">Праздничная<br>программа</div>
-                        </div>
-                    </div>
                     <div class="top-nav-button top-nav-button_last" data-for-tab="#order">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#order" /></svg></div>
@@ -5575,6 +5582,1742 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="event-builder-tab-layout">
+                    <div class="event-builder-tab" data-tab="#place">
+                        place
+                    </div>
+
+                    <!--DECOR TAB-->
+                    <div class="event-builder-tab event-builder-tab-list" data-tab="#decor" data-show-check="show" data-with-back="true">
+                        <div class="event-builder-tab-list-title">
+                            <div class="event-builder-tab-list-title__side"></div>
+                            <div class="event-builder-tab-list-title__middle">Оформление</div>
+                            <div class="event-builder-tab-list-title__side">
+
+                                <div class="event-builder-rating">
+                                    <div class="event-builder-rating__title">Рейтинг вашего оформления:</div>
+                                    <div class="event-builder-rating__line">
+                                        <div class="event-builder-rating__progress">
+                                            <div class="event-builder-progressbar" data-value="75">
+                                                <div class="event-builder-progressbar__bar"></div>
+                                                <img class="event-builder-progressbar__mask" src="img/event-builder/event-builder__progress_mask.png" height="25" width="160"/>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-rating__result">Хорошо!</div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Шариковое меню</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного праздника мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_head3">шаров:</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">1</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+                                <div class="event-builder-tab-list-block-plate">
+                                    <div class="event-builder-tab-list-block-plate__body">
+                                        <div class="event-builder-tab-list-block-plate__image_wrapper">
+                                            <div class="event-builder-tab-list-block-plate__image" style="background-image: url('./img/event-builder/event-builder-decor-1.jpg');"></div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block-plate__content">
+                                            <div class="event-builder-tab-list-block-plate__title">ЛЕТАЮЩИЕ ШАРИКИ, 50 ШТ.</div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-select">
+                                                        <select name="select" class="c-select event-builder-select__body">
+                                                            <option value="Салатовый (размер 12D), наполнен гелием">Салатовый (размер 12D), наполнен гелием</option>
+                                                            <option value="Фиолетовый, наполнен гелием">Фиолетовый, наполнен гелием</option>
+                                                            <option value="Красный, наполнен гелием">Красный, наполнен гелием</option>
+                                                            <option value="Зелёный, наполнен гелием">Зелёный, наполнен гелием</option>
+                                                            <option value="Синий, наполнен гелием">Синий, наполнен гелием</option>
+                                                            <option value="Белый, наполнен гелием">Белый, наполнен гелием</option>
+                                                            <option value="Оранжевый, наполнен гелием">Оранжевый, наполнен гелием</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">3 100 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="0"
+                                                                   data-min="1" data-max="101">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block-plate">
+                                    <div class="event-builder-tab-list-block-plate__body">
+                                        <div class="event-builder-tab-list-block-plate__image_wrapper">
+                                            <div class="event-builder-tab-list-block-plate__image" style="background-image: url('./img/event-builder/event-builder-decor-2.jpg');"></div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block-plate__content">
+                                            <div class="event-builder-tab-list-block-plate__title">БОЛЬШОЙ ШАР, 70 СМ, 1 ШТ</div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-select">
+                                                        <select name="select" class="c-select event-builder-select__body">
+                                                            <option value="Фиолетовый, наполнен гелием">Фиолетовый, наполнен гелием</option>
+                                                            <option value="Салатовый (размер 12D), наполнен гелием">Салатовый (размер 12D), наполнен гелием</option>
+                                                            <option value="Красный, наполнен гелием">Красный, наполнен гелием</option>
+                                                            <option value="Зелёный, наполнен гелием">Зелёный, наполнен гелием</option>
+                                                            <option value="Синий, наполнен гелием">Синий, наполнен гелием</option>
+                                                            <option value="Белый, наполнен гелием">Белый, наполнен гелием</option>
+                                                            <option value="Оранжевый, наполнен гелием">Оранжевый, наполнен гелием</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-tab-list-block__text">На гирлянде тассел</div>
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">2 000 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="1"
+                                                                   data-min="1" data-max="10">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-tab-list-block__text">На атласной ленте</div>
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">1 500 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="0"
+                                                                   data-min="1" data-max="10">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-tab-list-block__text">На бумажной ленте</div>
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">1 350 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="0"
+                                                                   data-min="1" data-max="10">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Декор</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного праздника мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_head3">декор:</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">2</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block-plate">
+                                    <div class="event-builder-tab-list-block-plate__body">
+                                        <div class="event-builder-tab-list-block-plate__image_wrapper">
+                                            <div class="event-builder-tab-list-block-plate__image" style="background-image: url('./img/event-builder/event-builder-decor-3.jpg');"></div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block-plate__content">
+                                            <div class="event-builder-tab-list-block-plate__title">ДЕКОР «BOX» (8 ЧЕЛ.)</div>
+
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-tab-list-block__text">Яркие шапочки на стул, колпачки, трубочки, табличка–приветствие</div>
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">3 800 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="1"
+                                                                   data-min="1" data-max="10">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-tab-list-block__text">*Дополнительный гость</div>
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">490 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="0"
+                                                                   data-min="1" data-max="10">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block-plate">
+                                    <div class="event-builder-tab-list-block-plate__body">
+                                        <div class="event-builder-tab-list-block-plate__image_wrapper">
+                                            <div class="event-builder-tab-list-block-plate__image" style="background-image: url('./img/event-builder/event-builder-decor-4.jpg');"></div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block-plate__content">
+                                            <div class="event-builder-tab-list-block-plate__title">ГИРЛЯНДА ИЗ ФЛАЖКОВ</div>
+
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-tab-list-block__text">Цвет фона розовый</div>
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">2 000 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="1"
+                                                                   data-min="1" data-max="10">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__left">
+                                                    <div class="event-builder-tab-list-block__text">Цвет фона голубой</div>
+                                                </div>
+                                                <div class="event-builder-tab-list-block__filler"></div>
+                                                <div class="event-builder-tab-list-block__right">
+                                                    <div class="event-builder-tab-list-block__price">2 000 Р</div>
+                                                    <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="0"
+                                                                   data-min="1" data-max="10">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!--/ DECOR TAB-->
+
+                    <!--WELCOME TAB-->
+                    <div class="event-builder-tab event-builder-tab-list" data-tab="#welcome" data-show-check="show" data-with-back="true">
+                        <div class="event-builder-tab-list-title">
+                            <div class="event-builder-tab-list-title__side"></div>
+                            <div class="event-builder-tab-list-title__middle">WELCOME-меню</div>
+                            <div class="event-builder-tab-list-title__side">
+
+                                <div class="event-builder-rating">
+                                    <div class="event-builder-rating__title">Рейтинг вашего welcome-меню:</div>
+                                    <div class="event-builder-rating__line">
+                                        <div class="event-builder-rating__progress">
+                                            <div class="event-builder-progressbar" data-value="93">
+                                                <div class="event-builder-progressbar__bar"></div>
+                                                <img class="event-builder-progressbar__mask" src="img/event-builder/event-builder__progress_mask.png" height="25" width="160"/>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-rating__result">Превосходно!</div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Заголовок</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного праздника мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">10</span>
+                                    <span class="event-builder-tab-list-block__title_head3">проций еды:</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">980 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти стандартного размера 1х4см на высоту до 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">300 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="4"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">680 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Купи в АндерСоне</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного праздника мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">5</span>
+                                    <span class="event-builder-tab-list-block__title_head3">литров напитков:</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_1"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">980 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти стандартного размера 1х4см на высоту до 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">300 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="4"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">680 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">980 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти стандартного размера 1х4см на высоту до 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">300 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="4"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">680 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--/ WELCOME TAB -->
+
+                    <!-- MAIN MENU TAB -->
+                    <div class="event-builder-tab event-builder-tab-list" data-tab="#main" data-show-check="show" data-with-back="true">
+                        <div class="event-builder-tab-list-title">
+                            <div class="event-builder-tab-list-title__side"></div>
+                            <div class="event-builder-tab-list-title__middle">Основное меню</div>
+                            <div class="event-builder-tab-list-title__side">
+
+                                <div class="event-builder-rating">
+                                    <div class="event-builder-rating__title">Рейтинг вашего основного меню:</div>
+                                    <div class="event-builder-rating__line">
+                                        <div class="event-builder-rating__progress">
+                                            <div class="event-builder-progressbar" data-value="25">
+                                                <div class="event-builder-progressbar__bar"></div>
+                                                <img class="event-builder-progressbar__mask" src="img/event-builder/event-builder__progress_mask.png" height="25" width="160"/>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-rating__result">Удовлетворительно!</div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Основное меню</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного праздника мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">20</span>
+                                    <span class="event-builder-tab-list-block__title_head3">еды:</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Вариант блюда 1</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Другое название продукта</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">22 980 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Напитки</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного праздника мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">15</span>
+                                    <span class="event-builder-tab-list-block__title_head3">литров напитков:</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_1"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Морс клюевенный</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Морс смородина</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">980 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Газированная вода</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">300 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">680 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!--/ MAIN MENU TAB -->
+
+                    <!-- TEA TAB -->
+                    <div class="event-builder-tab event-builder-tab-list" data-tab="#tea" data-show-check="show" data-with-back="true">
+                        <div class="event-builder-tab-list-title">
+                            <div class="event-builder-tab-list-title__side"></div>
+                            <div class="event-builder-tab-list-title__middle">Чаепитие</div>
+                            <div class="event-builder-tab-list-title__side">
+
+                                <div class="event-builder-rating">
+                                    <div class="event-builder-rating__title">Рейтинг вашего чаепития:</div>
+                                    <div class="event-builder-rating__line">
+                                        <div class="event-builder-rating__progress">
+                                            <div class="event-builder-progressbar" data-value="50">
+                                                <div class="event-builder-progressbar__bar"></div>
+                                                <img class="event-builder-progressbar__mask" src="img/event-builder/event-builder__progress_mask.png" height="25" width="160"/>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-rating__result">Хорошо!</div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Чайное меню</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного чаепития мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">3</span>
+                                    <span class="event-builder-tab-list-block__title_head3">видов чая:</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Вариант чая 1</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">1 580 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Другое название чая</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">25 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="8"
+                                                       data-min="1" data-max="10">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title">
+                                <div class="event-builder-tab-list-block__title_text">
+                                    <span class="event-builder-tab-list-block__title_head1">Печенье</span>
+                                    <span class="event-builder-tab-list-block__title_head2">Для успешного праздника мы рекомендуем</span>
+                                    <span class="event-builder-tab-list-block__title_bubble">7</span>
+                                    <span class="event-builder-tab-list-block__title_head3">видов печенья:</span>
+                                </div>
+                                <div class="event-builder-tab-list-block__title_control">
+                                    <div class="event-builder-button__collapse">
+                                        <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                        <span class="event-builder-button__collapse_text_2">Показать</span>
+                                        <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_1"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Овсянное печенье</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">120 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="0"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Домашнее печенье</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right">
+                                        <div class="event-builder-tab-list-block__price">130 Р</div>
+                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                            <div class="c-counter">
+                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                <input type="text" class="c-counter__field fieldCount" value="1"
+                                                       data-min="1" data-max="101">
+                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!--/ TEA TAB -->
+
+                    <!-- ORDER TAB -->
+                    <div class="event-builder-tab event-builder-tab-list event-builder-tab-order" data-tab="#order" data-with-back="true">
+                        <div class="event-builder-tab-list-title event-builder-tab-list-title_order">
+                            <div class="event-builder-tab-list-title__decor event-builder-tab-list-title__decor_v_1"><svg><use xlink:href="./img/event-builder/event-builder.svg#candy1" /></svg></div>
+                            <div class="event-builder-tab-list-title__decor event-builder-tab-list-title__decor_v_2"><svg><use xlink:href="./img/event-builder/event-builder.svg#candy2" /></svg></div>
+                            <div class="event-builder-tab-list-title__decor event-builder-tab-list-title__decor_v_3"><svg><use xlink:href="./img/event-builder/event-builder.svg#candy2" /></svg></div>
+                            <div class="event-builder-tab-list-title__decor event-builder-tab-list-title__decor_v_4"><svg><use xlink:href="./img/event-builder/event-builder.svg#candy1" /></svg></div>
+                            <div class="event-builder-tab-list-title__side"></div>
+                            <div class="event-builder-tab-list-title__middle">Проверьте ваш заказ</div>
+                            <div class="event-builder-tab-list-title__side"></div>
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title event-builder-tab-list-block__title_order">
+
+                                <div class="event-builder-tab-list-block__title_line_up">
+                                    <div>
+                                        <span class="event-builder-tab-list-block__title_head4">Реквизиты праздника</span>
+                                        <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__title_line_bottom">
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                    <div class="event-builder-tab-list-block__title_control">
+                                        <div class="event-builder-button__collapse event-builder-button__collapse_order">
+                                            <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                            <span class="event-builder-button__collapse_text_2">Показать</span>
+                                            <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <label class="c-label" for="event-builder-place">Зал:</label>
+                                        <input class="c-input" type="text" id="event-builder-place" required value="Андерсон в Медведково">
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <label class="c-label" for="event-builder-event">Торжество:</label>
+                                        <input class="c-input" type="text" id="event-builder-event" required value="День рождения">
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_compact">
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline event-builder-tab-list-block__control_label-middle">Когда:</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                                <label class="c-label">Дата:</label>
+                                                <div class="datepicker-layout">
+                                                    <input type="text" class="c-input datepicker-custom" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-start">Начало:</label>
+                                                <span class="event-builder-input__time">
+                                                    <input class="c-input" type="text" id="event-builder-start" required placeholder="11:00">
+                                                </span>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline event-builder-tab-list-block__control_label-middle">-</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-end">Окончание:</label>
+                                                <span class="event-builder-input__time">
+                                                    <input class="c-input" type="text" id="event-builder-end" required placeholder="12:00">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_6">
+                                        <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_compact">
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline event-builder-tab-list-block__control_label-middle">Гости:</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-adult">Взрослых:</label>
+                                                <span class="event-builder-input__boy">
+                                                    <input class="c-input" type="text" id="event-builder-adult" required placeholder="">
+                                                </span>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_3">
+                                                <label class="c-label" for="event-builder-baby">Детей:</label>
+                                                <span class="event-builder-input__baby">
+                                                    <input class="c-input" type="text" id="event-builder-baby" required placeholder="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__filler event-builder-tab-list-block__filler_expand"></div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-client">Заказчик: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-client" required>
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-phone">Телефон: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-phone" required placeholder="+7 () -  -">
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-email">E-mail: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-email" required placeholder="...@...">
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__filler event-builder-tab-list-block__filler_expand"></div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_8">
+                                        <label class="c-label" for="event-builder-client_main">Именинник: <span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" id="event-builder-client_main" required>
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_4">
+                                        <label class="c-label" for="event-builder-age_from">Укажите возраст:</label>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline">от</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
+                                                <input class="c-input" type="text" id="event-builder-age_from" required>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_label-inline">и до</div>
+                                            <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
+                                                <input class="c-input" type="text" id="event-builder-age_till" required>
+                                            </div>
+                                        </div>
+                                        <span class="event-builder-tab-list-block__control_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title event-builder-tab-list-block__title_order">
+
+                                <div class="event-builder-tab-list-block__title_line_up">
+                                    <div>
+                                        <span class="event-builder-tab-list-block__title_head4">Аренда зала</span>
+                                        <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_price">10 500 Р</div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__title_line_bottom">
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                    <div class="event-builder-tab-list-block__title_control">
+                                        <div class="event-builder-button__collapse event-builder-button__collapse_order">
+                                            <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                            <span class="event-builder-button__collapse_text_2">Показать</span>
+                                            <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Андерсон в Медведково</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__price">10 500 Р</div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title event-builder-tab-list-block__title_order">
+
+                                <div class="event-builder-tab-list-block__title_line_up">
+                                    <div>
+                                        <span class="event-builder-tab-list-block__title_head4">Welcome-меню</span>
+                                        <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_price">18 000 Р</div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__title_line_bottom">
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                    <div class="event-builder-tab-list-block__title_control">
+                                        <div class="event-builder-button__collapse event-builder-button__collapse_order">
+                                            <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                            <span class="event-builder-button__collapse_text_2">Показать</span>
+                                            <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title event-builder-tab-list-block__title_order">
+
+                                <div class="event-builder-tab-list-block__title_line_up">
+                                    <div>
+                                        <span class="event-builder-tab-list-block__title_head4">Основное меню</span>
+                                        <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_price">23 700 Р</div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__title_line_bottom">
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                    <div class="event-builder-tab-list-block__title_control">
+                                        <div class="event-builder-button__collapse event-builder-button__collapse_order">
+                                            <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                            <span class="event-builder-button__collapse_text_2">Показать</span>
+                                            <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title event-builder-tab-list-block__title_order">
+
+                                <div class="event-builder-tab-list-block__title_line_up">
+                                    <div>
+                                        <span class="event-builder-tab-list-block__title_head4">Чаепитие</span>
+                                        <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_price">4 290 Р</div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__title_line_bottom">
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                    <div class="event-builder-tab-list-block__title_control">
+                                        <div class="event-builder-button__collapse event-builder-button__collapse_order">
+                                            <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                            <span class="event-builder-button__collapse_text_2">Показать</span>
+                                            <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block">
+
+                            <div class="event-builder-tab-list-block__title event-builder-tab-list-block__title_order">
+
+                                <div class="event-builder-tab-list-block__title_line_up">
+                                    <div>
+                                        <span class="event-builder-tab-list-block__title_head4">Праздничная программа</span>
+                                        <span class="event-builder-tab-list-block__title_icon_edit"><svg><use xlink:href="./img/event-builder/event-builder.svg#edit" /></svg></span>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_price">15 300 Р</div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__title_line_bottom">
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                    <div class="event-builder-tab-list-block__title_control">
+                                        <div class="event-builder-button__collapse event-builder-button__collapse_order">
+                                            <span class="event-builder-button__collapse_text_1">Свернуть</span>
+                                            <span class="event-builder-button__collapse_text_2">Показать</span>
+                                            <span class="event-builder-button__collapse_arrow"><svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__title_side"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="event-builder-tab-list-block__content">
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+                                <div class="event-builder-tab-list-block__line">
+                                    <div class="event-builder-tab-list-block__left">
+                                        <div class="event-builder-tab-list-block__photo event-builder__icon_2"><svg class="c-symbol symbol-camera"><use xlink:href="#symbol-camera" /></svg></div>
+                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                    </div>
+                                    <div class="event-builder-tab-list-block__filler"></div>
+                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="event-builder-tab-list-block event-builder-tab-list-block_decor">
+                            <div class="event-builder-tab-list-block__line">
+                                <div class="event-builder-tab-list-block__filler event-builder-tab-list-block__filler_expand"></div>
+                            </div>
+                            <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_center event-builder-tab-list-block__line_compact">
+                                <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
+                                    <label class="c-label c-label_center" for="event-builder-comment">Вы можете добавить комментарий к своему заказу:</label>
+                                    <textarea class="event-builder-input__textarea" id="event-builder-comment"></textarea>
+                                    <div class="event-builder-summary">
+                                        <span class="event-builder-icon__summary"></span>
+                                        <span class="event-builder-summary__head_1">ИТОГО:</span>
+                                        <span class="event-builder-summary__head_2">999 990 Р</span>
+
+                                    </div>
+
+                                    <div class="event-builder-send"><button class="c-button c-button__default">ОФОРМИТЬ ЗАКАЗ</button></div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <!--/ ORDER TAB -->
+
+
+                    <!--CHECK-->
+                    <div class="event-builder-check">
+                        <div class="event-builder-check__body">
+                            <div class="event-builder-check__header">Чек</div>
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#place-alt" /></svg></div>
+                                <div class="event-builder-check__title">Аренда зала</div>
+                            </div>
+                            <div class="event-builder-check__text">Андерсон в Медведково</div>
+                            <div class="event-builder-check__price">10 500 P</div>
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#decor" /></svg></div>
+                                <div class="event-builder-check__title">Оформление</div>
+                            </div>
+                            <div class="event-builder-check__price">1 540 P</div>
+                            <div class="event-builder-check__hr"></div>
+
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#welcome" /></svg></div>
+                                <div class="event-builder-check__title">Welcome-меню</div>
+                            </div>
+                            <div class="event-builder-check__price">3 690 P</div>
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#main" /></svg></div>
+                                <div class="event-builder-check__title">Основное меню</div>
+                            </div>
+                            <div class="event-builder-check__price">6 220 P</div>
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#tea" /></svg></div>
+                                <div class="event-builder-check__title">Чаепитие</div>
+                            </div>
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon event-builder-check__icon_danger"><svg><use xlink:href="./img/event-builder/event-builder.svg#danger" /></svg></div>
+                                <div class="event-builder-check__title event-builder-check__text_danger">Недостаточно чаепития выберите его несколько строк текста</div>
+                            </div>
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#masks" /></svg></div>
+                                <div class="event-builder-check__title">Общая крутость праздника</div>
+                            </div>
+
+                            <div class="event-builder-check-rating-block" data-rating="5">
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_1"><svg><use xlink:href="./img/event-builder/smiles.svg#smile1" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Плохо</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_2"><svg><use xlink:href="./img/event-builder/smiles.svg#smile2" /></svg></div>
+                                    <div class="event-builder-check-rating__text event-builder-check-rating__text_thin">Удовлетворительно</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_3"><svg><use xlink:href="./img/event-builder/smiles.svg#smile3" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Хорошо</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_4"><svg><use xlink:href="./img/event-builder/smiles.svg#smile4" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Отлично</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_5"><svg><use xlink:href="./img/event-builder/smiles.svg#smile5" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Превосходно</div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check-result">
+
+                                <div class="event-builder-check-result__text">ИТОГО:</div>
+                                <div class="event-builder-check-result__price">999 990 Р</div>
+                            </div>
+
+                            <a href="#" class="event-builder-check__button">Оформить в 1 клик</a>
+                            <a href="#" class="event-builder-check__button">Добавить в корзину</a>
+
+                        </div>
+                    </div>
+                    <!-- / CHECK-->
+
 
                 <div class="event-builder-tab event-builder-tab_active" data-tab="#place">
                         <div class="event-builder-city">
@@ -6026,6 +7769,8 @@
                 </div>
 
 
+                </div>
+
             </div>
             <!--/event-builder-->
 
@@ -6342,7 +8087,7 @@
                                     </div>
                                 </div>
                                 <div class="excursion__total">Итого:
-                                        <span>39 980
+                                    <span>39 980
                                             <span class="c-currency-symbol">&#8381;</span>
                                         </span>
                                 </div>
@@ -6854,7 +8599,7 @@
                         <div class="mobile-request-call_sub-title">Ваш город</div>
                         <div class="mobile-request-call_city">
                             Алексанровск-Сахалинск
-                                <span class="mobile-request-call__icon">
+                            <span class="mobile-request-call__icon">
                                     <img src="./img/icons/icon-dropdown__down.png" alt="">
                                 </span>
                         </div>
@@ -6866,7 +8611,7 @@
                         </div>
                         <a class="mobile-request-call_inquiry">
                             Запросить обратный звонок
-                                <span class="mobile-request-call__icon">
+                            <span class="mobile-request-call__icon">
                                     <img src="./img/icons/icon-dropdown__down.png" alt="">
                                 </span>
                         </a>
@@ -6887,8 +8632,8 @@
                             <label class="c-label" for="request-call__comment">Комментарий
                                 <span class="c-obligatory-field">*</span>
                             </label>
-                                <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4" placeholder="желательно заполнить"
-                                          required></textarea>
+                            <textarea class="c-input" name="request-call__comment" id="request-call__comment" rows="4" placeholder="желательно заполнить"
+                                      required></textarea>
                         </div>
                         <div class="popup-form__item">
                             <div class="popup-info">
@@ -7265,8 +9010,8 @@
                                 <label class="c-label" for="reviews-textarea">Отзыв
                                     <span class="c-obligatory-field">*</span>
                                 </label>
-                                    <textarea class="c-input" name="popup-reviews-textarea" id="popup-reviews-textarea" rows="5" placeholder="Пожалуйста, оставьте Ваш отзыв. Ваше мнение очень важно для нас."
-                                              required></textarea>
+                                <textarea class="c-input" name="popup-reviews-textarea" id="popup-reviews-textarea" rows="5" placeholder="Пожалуйста, оставьте Ваш отзыв. Ваше мнение очень важно для нас."
+                                          required></textarea>
                             </div>
                             <div class="c-grid c-grid-between">
                                 <div class="c-col c-col-4">
@@ -7304,6 +9049,31 @@
         </div>
     </div>
 </div>
+
+<!--галерея фото мыльные пузыри и т.п. -->
+<div class="mfp-wrap popup__gallery popup__gallery_event_item_1" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <div class="popup-fotorama">
+                    <img src="img/cafe-slider-3.jpg" alt="">
+                    <img src="img/cafe-slider-1.jpg" alt="">
+                    <img src="img/cafe-slider-3.jpg" alt="">
+                    <img src="img/cafe-slider-4.jpg" alt="">
+                    <img src="img/cafe-slider-5.jpg" alt="">
+                    <img src="img/cafe-slider-6.jpg" alt="">
+                    <img src="img/cafe-slider-7.jpg" alt="">
+                    <img src="img/cafe-slider-8.jpg" alt="">
+                    <img src="img/cafe-slider-9.jpg" alt="">
+                    <img src="img/cafe-slider-10.jpg" alt="">
+                    <img src="img/cafe-slider-11.jpg" alt="">
+                    <img src="img/cafe-slider-12.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="mfp-bg mfp-ready"></div>
 <!--задний фон модального окна-->
