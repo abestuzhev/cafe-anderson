@@ -183,7 +183,21 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
-    
+    /*конструктор праздников. Показ информации о карточки*/
+    $(document).on('click', '.c-card-cafe-booking__btn', function(e){
+        var self = $(this);
+        e.preventDefault();
+
+        self.parents('.c-card-cafe').find('.c-card-cafe-info').slideToggle(300);
+
+        console.log($(this).html());
+        if($(this).html() == 'свернуть'){
+
+            self.html('посмотреть');
+        }else{
+            self.html('свернуть');
+        }
+    });
 
 
     /*выбор месяцав календаре праздничных пространств*/
@@ -1021,8 +1035,9 @@ $(document).ready(function ($) {
         });
     };
 
-    $('.graduation-party-banner__btn').click(function(e){
+    $('.graduation-party-banner__btn, .holiday-offers-banner__btn').click(function(e){
         e.preventDefault();
+        console.log('hello');
         var target = $($(this).attr('href'));
         if(target.length){
 
@@ -1720,7 +1735,15 @@ $(document).ready(function ($) {
         $('.header.sticky').css({
             // 'right':'0'
         });
+
+
     });
+
+
+    if(typeof onSiteEvent == 'function') {
+        onSiteEvent('onModalClose');
+    }
+
 
 
     showPopup(".header-phone", '.popup__request-call');

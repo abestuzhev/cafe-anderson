@@ -148,6 +148,21 @@
         &__text {
             font-size: 1.4rem;
             margin-right: 1.1rem;
+
+            &::after {
+                content: '';
+                display: none;
+            }
+
+            span {
+                border-bottom: 1px dotted #9b806f;
+            }
+
+            &:hover {
+                span {
+                    border-bottom: none;
+                }
+            }
         }
 
         &__icons {

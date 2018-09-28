@@ -101,7 +101,13 @@
     }
 
     .home-celebration {
-        width: 36%;
+        width: 34%;
+        bottom: 4%;
+    }
+
+    .v2 .home-celebration {
+        width: 39%;
+        bottom: 0;
     }
 
     .home-cake {
@@ -117,6 +123,13 @@
 @media (max-width: 1600px) {
     .cafe-description__text {
         /*height: 23rem;*/
+    }
+
+    .main-btn {
+        font-size: 3rem;
+    }
+    .symbol-arrow-3 {
+        font-size: 1.8rem;
     }
 
     .header-submenu {
@@ -387,6 +400,11 @@
 }
 
 
+@media (max-width: 1400px) {
+    .home-celebration__text .main-btn {
+        font-size: 2rem;
+    }
+}
 @media (max-width: 1380px) {
     .home-cafe {
         width: 26%;
@@ -1407,6 +1425,14 @@
         bottom: 5%;
     }
 
+    .home-celebration__title {
+        font-size: 3vw;
+    }
+
+    .home-celebration__sub-title {
+        font-size: 1.2vw;
+    }
+
     .home-cake {
         width: 43%;
         top: 12.8%;
@@ -1416,6 +1442,15 @@
     .footer {
         bottom: 0;
     }
+
+}
+
+@media (min-height: 1079px) {
+    /*.v2 .home-celebration__text {*/
+        /*top: 57%;*/
+        /*left: 34.8%;*/
+        /*bottom: auto;*/
+    /*}*/
 
 }
 
@@ -1517,6 +1552,12 @@
     .home-cake {
         width: 43%;
         top: 17.8%;
+
+
+    }
+
+    .home-cake .main-btn {
+        display: none;
     }
 
     .header {
@@ -1587,6 +1628,10 @@
         width: 100%;
     }
 
+    .home-page.v2{
+        padding-top: 2rem !important;
+    }
+
     .home-cafe {
         width: 48%;
     }
@@ -1597,12 +1642,28 @@
         position: relative;
     }
 
+    .v2 .mobile-item {
+        height: 22rem;
+    }
+
+    .v2 .home-cafe {
+        top: -146%;
+    }
+
     .mobile-item:nth-child(2) {
         height: 18rem;
     }
 
+    .v2 .mobile-item:nth-child(2) {
+        height: 12rem;
+    }
+
     .mobile-item:last-child {
         height: 40rem;
+    }
+
+    .v2 .mobile-item:last-child {
+        height: 32rem;
     }
 
     .mobile-celebration__text,
@@ -1650,16 +1711,19 @@
     .mobile-cafe__text {
         top: -4%;
         left: 11%;
+        text-align: center;
     }
 
     .mobile-celebration__text {
         bottom: 15%;
         right: 27%;
+        text-align: center;
     }
 
     .mobile-cake__text {
         top: 37%;
         left: 19%;
+        text-align: center;
     }
 
     /*прячем зеленые указатели на главной и добавляем их к тексту*/
@@ -1694,6 +1758,13 @@
         transform: rotate(90deg);
         width: 43rem;
         bottom: -49%;
+        left: -6%;
+    }
+
+    .v2 .home-celebration {
+        transform: rotate(90deg);
+        width: 43rem;
+        bottom: -151%;
         left: -6%;
     }
 
@@ -2937,6 +3008,10 @@
         left: -13%;
         bottom: -8%;
     }
+    .v2 .home-celebration {
+        bottom: -150%;
+        left: -20%;
+    }
 
     .home-celebration:hover {
         transform: rotate(74deg);
@@ -3700,6 +3775,11 @@
         margin-bottom: .2rem;
     }
 
+    .c-full-banner {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -4031,12 +4111,22 @@
         bottom: -8%;
     }
 
+    .v2 .home-celebration {
+        transform: rotate(74deg);
+        left: -25%;
+        bottom: -130%;
+    }
+
     .home-celebration:hover {
         transform: rotate(74deg);
     }
 
     .mobile-celebration__text {
         bottom: 48%;
+    }
+
+    .v2 .mobile-celebration__text {
+        bottom: 0;
     }
 
     .home-cake__pie-1 {
@@ -4379,6 +4469,18 @@
         right: 0;
     }
 
+    .holiday-offers-banner__footer {
+        text-align: left;
+
+    }
+    .holiday-offers-banner__footer .c-ol-list > li:before {
+        content: counter(item) ") ";
+        left: -6px;
+    }
+    .holiday-offers-banner__footer .c-ol-list > li  {
+        padding-left: 2.5rem;
+    }
+
     .creators {
         padding: 2rem 1.5rem;
         margin-left: -2.2rem;
@@ -4671,8 +4773,20 @@
         bottom: 9%;
     }
 
+    .v2 .home-celebration {
+        left: -48%;
+    }
+
     .home-celebration:hover {
         transform: rotate(46deg);
+    }
+
+    .v2 .home-celebration:hover {
+        transform: rotate(74deg);
+    }
+
+    .v2 .home-cake {
+        width: 66rem;
     }
 
     .mobile-celebration__text {
@@ -5174,16 +5288,26 @@
 }
 
 @media (max-width: 470px) {
+
+    .c-card-party-coronation img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+
+    }
+
     .mobile-cafe__title,
     .mobile-celebration__title,
     .mobile-cake__title {
         font-size: 2.8em;
+        margin-bottom: .5rem;
     }
 
     .mobile-cafe__sub-title,
     .mobile-celebration__sub-title,
     .mobile-cake__sub-title {
         font-size: 2rem;
+        margin-bottom: .5rem;
     }
 
     .filter {
@@ -5308,6 +5432,10 @@
     .holiday-offers .l-button__right {
         text-align: center;
     }
+
+    .v2 .mobile-item:first-child {
+        height: 18rem;
+    }
 }
 
 @media (max-width: 440px) {
@@ -5413,6 +5541,10 @@
 
     .home-cake {
         right: -124%;
+    }
+
+    .v2 .home-cake {
+        right: -154%;
     }
 
     .home-cake__pie-1 {
@@ -5600,10 +5732,29 @@
         width: 47rem;
     }
 
+    .v2 .home-celebration {
+        left: -86%;
+    }
+
+
+    .home-cake__brownie {
+        display: none;
+    }
+
+
     .home-cake {
         top: -31%;
         right: -100%;
         width: 56rem;
+        top: -130px;
+    }
+
+    .v2 .home-cake {
+        top: -130px;
+    }
+
+    .v2 .home-cake {
+        right: -150%;
     }
 
     .home-cake__pie-1 {
@@ -5614,6 +5765,10 @@
 
     .mobile-item:nth-child(2) {
         height: 16rem;
+    }
+
+    .v2 .mobile-item:nth-child(2) {
+        height: 12rem;
     }
 
     .mobile-item:last-child {
@@ -5965,18 +6120,19 @@
 }
 
 .c-card-cafe__title span {
-    display: inline-block;
+    display: inline;
     position: relative;
+    border-bottom: 1px dotted #9b806f;
 }
 
-.c-card-cafe__title span::after {
+/* .c-card-cafe__title span::after {
     content: '';
     position: absolute;
     bottom: -.1rem;
     left: 0;
     width: 100%;
     border-bottom: 1px dotted #9b806f;
-}
+} */
 
 .c-card-cafe__title span:hover::after {
     content: '';
