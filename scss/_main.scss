@@ -13286,6 +13286,21 @@ test popup
       left: 0;
     }
   }
+  &-box--ded { /*holiday-box--ded*/
+
+
+
+
+    .holiday-description {
+      padding-left: 69rem;
+    }
+
+    .holiday-description__bg {
+        right: auto;
+        left: 0;
+    }
+
+  }
 
   .symbol-airplane {
     position: absolute;
@@ -13306,6 +13321,10 @@ test popup
     left: 3.4rem;
     fill: #000;
   }
+
+    .c-button__decor-1 {
+        margin-bottom: 1rem;
+    }
 
   &-description {
     position: relative;
@@ -14409,6 +14428,7 @@ test popup
     box-shadow: 0 2px 30px 0 rgba(0, 0, 0, .3);
     width: 50rem;
     margin-bottom: 4rem;
+      opacity: 0;
 
     a {
       padding: 12px 40px;
@@ -14424,6 +14444,7 @@ test popup
     &-layout {
       display: inline-block;
       position: relative;
+        min-height: 12rem;
 
       .c-holiday-count-1 {
         position: absolute;
@@ -14615,9 +14636,9 @@ test popup
     &:last-child {
       margin-bottom: 0;
 
-      .holiday-reason-card__body {
-        background: #9acc4f url(../img/pattern-round-2.png) 0 0 repeat;
-      }
+      //.holiday-reason-card__body {
+      //  background: #9acc4f url(../img/pattern-round-2.png) 0 0 repeat;
+      //}
     }
 
     &--child-departure { /*holiday-reason-card--child-departure*/
