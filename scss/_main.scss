@@ -18313,9 +18313,13 @@ a.show-more__button:hover {
 
         &-button {
             display: inline-block;
-            background-image: url('../img/event-builder/event-builder__button_green_middle.png');
-            height: 8.5rem;
+            //background-image: url('../img/event-builder/event-builder__button_green_middle.png');
+            height: 6.7rem;
             position: relative;
+            background-color: #7bc43a;
+            transition: all .2s ease-in-out;
+            margin-left: -20px;
+            padding-left: 20px;
 
             &:after {
                 content: '';
@@ -18323,21 +18327,24 @@ a.show-more__button:hover {
                 width: 5.4rem;
                 height: 8.4rem;
                 display: block;
+                -webkit-background-size: cover;
+                background-size: cover;
                 position: absolute;
                 right: -5.4rem;
-                top: 0;
+                top: -8px;
             }
 
-            &:before {
-                content: '';
-                background-image: url('../img/event-builder/event-builder__button_green_left.png');
-                width: 1.3rem;
-                height: 8.4rem;
-                display: block;
-                position: absolute;
-                left: -1.3rem;
-                top: 0;
-            }
+            //&:before {
+            //    content: '';
+            //    background-image: url('../img/event-builder/event-builder__button_green_left.png');
+            //
+            //    width: 1.3rem;
+            //    height: 8.4rem;
+            //    display: block;
+            //    position: absolute;
+            //    left: -1.3rem;
+            //    top: 0;
+            //}
 
             &__title {
                 font-family: $font_decor;
@@ -18387,11 +18394,23 @@ a.show-more__button:hover {
             &_visited {
                 background-image: url('../img/event-builder/event-builder__button_visited_middle.png');
                 padding-right: 3rem;
+                height: 67px;
+                background-position: 0;
+                //overflow: hidden;
+                border-radius: 16px 0 0 16px;
+                padding-left: 10px;
+                box-shadow:         -5px 0px 8px -3px rgb(197,197,197);
+                border: 1px solid #ece5d3;
 
                 &:before {
-                    background: url('../img/event-builder/event-builder__button_visited_left.png');
+                    //background: url('../img/event-builder/event-builder__button_visited_left.png');
                     width: 3.4rem;
-                    left: -3.3rem;
+                    //left: -3.3rem;
+                    left: 0;
+                    top: -9px;
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                    background: none;
                 }
 
                 &:after {
@@ -18408,7 +18427,7 @@ a.show-more__button:hover {
                 }
 
                 .top-nav-button__icon {
-                    width: 4.8rem;
+                    width: 3.8rem;
 
                     svg {
                         display: block;
@@ -18418,23 +18437,36 @@ a.show-more__button:hover {
 
 
             &_active {
-                background-image: url('../img/event-builder/event-builder__button_active_middle.png');
-                height: 11.4rem;
-                margin-right: .5rem;
-                margin-left: -.9rem;
+                background: #c44890 url('../img/event-builder/event-builder__button_active_middle.png') 0 0 repeat;
+                //height: 11.4rem;
+                //margin-right: .5rem;
+                //margin-left: -.9rem;
+                transform: scale(1.05);
+                -webkit-background-size: cover;
+                background-size: cover;
+                border-radius: 10px 0 0 10px;
+                padding-left: 12px;
+                background: #fdf7e8 url(../img/holidays-button-bg.png) repeat;
+                transition: transform .1s ease-in-out;
+                box-shadow: 0 0px 16px 0 rgba(0,0,0,.45);
 
                 &:before {
-                    background: url('../img/event-builder/event-builder__button_active_left.png');
-                    width: 2.7rem;
-                    left: -2.7rem;
-                    height: 11.4rem;
+                    content: '';
+                    //background: url('../img/event-builder/event-builder__button_active_left.png') no-repeat;
+                    //width: 2.7rem;
+                    //left: -2.7rem;
+                    //height: 11.4rem;
+                    display: none;
                 }
 
                 &:after {
-                    background: url('../img/event-builder/event-builder__button_active_right.png');
-                    width: 7.3rem;
-                    right: -7.3rem;
-                    height: 11.4rem;
+                    background: url('../img/event-builder/event-builder__button_active_right.png') no-repeat;
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                    width: 61px;
+                    right: -60px;
+                    height: 94px;
+                    top: -14px;
                 }
 
                 .top-nav-button__icon {
@@ -18452,6 +18484,17 @@ a.show-more__button:hover {
                     color: #fff;
                     font-size: 4.3rem;
                     line-height: 0.9;
+                }
+
+            }
+
+            &_last {
+                padding: 0 20px;
+                border-radius: 10px;
+
+                &::after {
+                    content: '';
+                    display: none;
                 }
             }
 

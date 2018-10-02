@@ -21340,27 +21340,24 @@ a.show-more__button:hover {
       padding-left: 3.4rem; }
     .event-builder .top-nav-button {
       display: inline-block;
-      background-image: url("../img/event-builder/event-builder__button_green_middle.png");
-      height: 8.5rem;
-      position: relative; }
+      height: 6.7rem;
+      position: relative;
+      background-color: #7bc43a;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      margin-left: -20px;
+      padding-left: 20px; }
       .event-builder .top-nav-button:after {
         content: '';
         background-image: url("../img/event-builder/event-builder__button_green_right.png");
         width: 5.4rem;
         height: 8.4rem;
         display: block;
+        background-size: cover;
         position: absolute;
         right: -5.4rem;
-        top: 0; }
-      .event-builder .top-nav-button:before {
-        content: '';
-        background-image: url("../img/event-builder/event-builder__button_green_left.png");
-        width: 1.3rem;
-        height: 8.4rem;
-        display: block;
-        position: absolute;
-        left: -1.3rem;
-        top: 0; }
+        top: -8px; }
       .event-builder .top-nav-button__title {
         font-family: "SummerFont";
         font-weight: 700;
@@ -21393,11 +21390,20 @@ a.show-more__button:hover {
                 align-items: center; }
       .event-builder .top-nav-button_visited {
         background-image: url("../img/event-builder/event-builder__button_visited_middle.png");
-        padding-right: 3rem; }
+        padding-right: 3rem;
+        height: 67px;
+        background-position: 0;
+        border-radius: 16px 0 0 16px;
+        padding-left: 10px;
+        -webkit-box-shadow: -5px 0px 8px -3px #c5c5c5;
+                box-shadow: -5px 0px 8px -3px #c5c5c5;
+        border: 1px solid #ece5d3; }
         .event-builder .top-nav-button_visited:before {
-          background: url("../img/event-builder/event-builder__button_visited_left.png");
           width: 3.4rem;
-          left: -3.3rem; }
+          left: 0;
+          top: -9px;
+          background-size: cover;
+          background: none; }
         .event-builder .top-nav-button_visited:after {
           background: none;
           width: 0; }
@@ -21406,24 +21412,35 @@ a.show-more__button:hover {
         .event-builder .top-nav-button_visited:hover svg {
           fill: #9acc4e; }
         .event-builder .top-nav-button_visited .top-nav-button__icon {
-          width: 4.8rem; }
+          width: 3.8rem; }
           .event-builder .top-nav-button_visited .top-nav-button__icon svg {
             display: block; }
       .event-builder .top-nav-button_active {
-        background-image: url("../img/event-builder/event-builder__button_active_middle.png");
-        height: 11.4rem;
-        margin-right: .5rem;
-        margin-left: -.9rem; }
+        background: #c44890 url("../img/event-builder/event-builder__button_active_middle.png") 0 0 repeat;
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
+        background-size: cover;
+        border-radius: 10px 0 0 10px;
+        padding-left: 12px;
+        background: #fdf7e8 url(../img/holidays-button-bg.png) repeat;
+        -webkit-transition: -webkit-transform .1s ease-in-out;
+        transition: -webkit-transform .1s ease-in-out;
+        -o-transition: transform .1s ease-in-out;
+        transition: transform .1s ease-in-out;
+        transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
+        -webkit-box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.45);
+                box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.45); }
         .event-builder .top-nav-button_active:before {
-          background: url("../img/event-builder/event-builder__button_active_left.png");
-          width: 2.7rem;
-          left: -2.7rem;
-          height: 11.4rem; }
+          content: '';
+          display: none; }
         .event-builder .top-nav-button_active:after {
-          background: url("../img/event-builder/event-builder__button_active_right.png");
-          width: 7.3rem;
-          right: -7.3rem;
-          height: 11.4rem; }
+          background: url("../img/event-builder/event-builder__button_active_right.png") no-repeat;
+          background-size: cover;
+          width: 61px;
+          right: -60px;
+          height: 94px;
+          top: -14px; }
         .event-builder .top-nav-button_active .top-nav-button__icon {
           width: 5.5rem; }
           .event-builder .top-nav-button_active .top-nav-button__icon svg {
@@ -21435,6 +21452,12 @@ a.show-more__button:hover {
           color: #fff;
           font-size: 4.3rem;
           line-height: 0.9; }
+      .event-builder .top-nav-button_last {
+        padding: 0 20px;
+        border-radius: 10px; }
+        .event-builder .top-nav-button_last::after {
+          content: '';
+          display: none; }
     .event-builder .top-nav .top-nav-button_last.top-nav-button_active:after {
       background: url("../img/event-builder/event-builder__button_active_right_last.png");
       width: 4.1rem;
