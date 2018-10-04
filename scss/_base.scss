@@ -5511,3 +5511,25 @@ div.c-card-catalog-2 {
 
 
 }
+
+.c-text-message {
+
+    font-family: $font_serif;
+    font-style: italic;
+    letter-spacing: -1px;
+    &__icon {
+        display: inline-block;
+        width: 1.9rem;
+        height: 1.9rem;
+        border-radius: 5rem;
+        background-color: #c44890;
+        text-align: center;
+        line-height: 1.9rem;
+        color: #ffffff;
+        margin-right: .3rem;
+    }
+
+    span {
+        vertical-align: middle;
+    }
+}
