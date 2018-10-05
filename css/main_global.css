@@ -4475,6 +4475,9 @@ div.c-card-catalog-2 {
           justify-content: space-between;
   margin-bottom: 4rem;
   margin-right: 4.1rem; }
+  .c-card-product-supplements__slider .pie-slider-nav__item.active::after, .c-card-product-supplements__slider .pie-slider-nav__item.active::before {
+    content: '';
+    display: none; }
   .c-card-product-supplements__item {
     width: 50%;
     margin-bottom: 1.3rem; }

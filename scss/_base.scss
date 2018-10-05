@@ -3527,6 +3527,18 @@ div.c-card-catalog-2 {
         justify-content: space-between;
         margin-bottom: 4rem;
         margin-right: 4.1rem;
+
+        &__slider {
+            .pie-slider-nav__item.active {
+
+                &::after,
+                &::before {
+                    content: '';
+                    display: none;
+                }
+
+            }
+        }
         
         &__item {
             width: 50%;
