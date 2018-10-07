@@ -18258,9 +18258,9 @@ test popup
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -18280,7 +18280,6 @@ test popup
               transform: translateX(-50%);
       top: 100%; }
     .holiday-reason__col:nth-child(1) {
-      margin-top: -5.5rem;
       background: url(../img/holiday/rope-1.png) 50% 0 repeat-y; }
       .holiday-reason__col:nth-child(1)::after {
         content: '';
@@ -18312,7 +18311,8 @@ test popup
           margin-top: -6px;
           font-family: "PT Serif Caption"; }
   .holiday-reason__header {
-    text-align: center; }
+    text-align: center;
+    display: none; }
   .holiday-reason__head {
     display: inline-block;
     vertical-align: top;
@@ -18327,8 +18327,7 @@ test popup
     -webkit-box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
             box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.3);
     width: 50rem;
-    margin-bottom: 4rem;
-    opacity: 0; }
+    margin-bottom: 4rem; }
     .holiday-reason__head a {
       padding: 12px 40px;
       display: block;
@@ -18338,8 +18337,7 @@ test popup
         border: none; }
     .holiday-reason__head-layout {
       display: inline-block;
-      position: relative;
-      min-height: 12rem; }
+      position: relative; }
       .holiday-reason__head-layout .c-holiday-count-1 {
         position: absolute;
         left: 105%;
@@ -21347,7 +21345,8 @@ a.show-more__button:hover {
 /* / Cake update - Task #8402  */
 /* Event Builder */
 .event-builder {
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  margin-top: 4rem; }
   .event-builder .top-nav {
     display: -webkit-box;
     display: -ms-flexbox;
