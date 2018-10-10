@@ -183,6 +183,21 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    $('.c-card-cafe-info__close').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.c-card-cafe-info__form').slideUp(200);
+    });
+
+
+
+    $('.c-card-hall-time__btn').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.c-card-cafe').find('.c-card-cafe-info__form').slideDown(200);
+    });
+
+
+
     /*конструктор праздников. Показ информации о карточки*/
     $(document).on('click', '.c-card-cafe-booking__btn', function(e){
         var self = $(this);

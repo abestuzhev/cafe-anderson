@@ -2072,6 +2072,8 @@ a.c-button {
         background: #fdf7e8 url(../img/bg-header.png) repeat;
 
         &__form {
+            display: none;
+            position: relative;
             padding: 2.2rem 1.8rem;
         }
 
@@ -2095,6 +2097,22 @@ a.c-button {
             color: #3e492f;
             font-family: $font_sans-serif;
             font-size: 2.3rem;
+        }
+
+        &__close {
+            position: absolute;
+            right: 1.5rem;
+            top: 0;
+            padding: 1.4rem 1.6rem 2rem;
+            border-radius: 0 0 50px 50px;
+            background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+            background-size: 10px 11px;
+            cursor: pointer;
+
+            &::after {
+                content:'';
+                border: none;
+            }
         }
     }
 }
