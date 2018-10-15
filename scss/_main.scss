@@ -3437,6 +3437,7 @@ test popup
         position: absolute;
         top: 100%;
         left:0;
+        width: 100%;
 
         .cafe-list__tabs {
             margin: 0;
@@ -3449,9 +3450,11 @@ test popup
 
         .tabs-menu__item {
             border-radius: 0 0 .6rem .6rem;
+            padding: .9rem 1.2rem;
 
             &.current::after {
                 content:'';
+                top: 0;
                 border-radius: 0 0 .6rem .6rem;
             }
         }
@@ -3463,7 +3466,7 @@ test popup
   margin-bottom: 4rem;
 
   &__tabs {
-    text-align: right;
+    text-align: center;
     margin-bottom: 1.7rem;
   }
 
@@ -3474,6 +3477,7 @@ test popup
   }
 
   &__city {
+      margin-top: 4rem;
     margin-bottom: 2rem;
   }
 

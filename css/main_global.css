@@ -10020,29 +10020,33 @@ test popup
             justify-content: flex-start;
     position: absolute;
     top: 100%;
-    left: 0; }
+    left: 0;
+    width: 100%; }
     .filter-switch .cafe-list__tabs {
       margin: 0; }
     .filter-switch .filter-more {
       position: static;
       margin-right: 3rem; }
     .filter-switch .tabs-menu__item {
-      border-radius: 0 0 .6rem .6rem; }
+      border-radius: 0 0 .6rem .6rem;
+      padding: .9rem 1.2rem; }
       .filter-switch .tabs-menu__item.current::after {
         content: '';
+        top: 0;
         border-radius: 0 0 .6rem .6rem; }
 
 .cafe-list {
   font-family: "PT Serif Caption";
   margin-bottom: 4rem; }
   .cafe-list__tabs {
-    text-align: right;
+    text-align: center;
     margin-bottom: 1.7rem; }
   .cafe-list__title {
     font-size: 2.6rem;
     color: #5c3321;
     margin-bottom: .6rem; }
   .cafe-list__city {
+    margin-top: 4rem;
     margin-bottom: 2rem; }
   .cafe-list-layout #cafe-list {
     margin-top: -4.6rem; }

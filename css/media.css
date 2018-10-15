@@ -3147,8 +3147,10 @@
     }
 
     .filter-more {
-        right: 50%;
-        transform: translateX(50%);
+        margin-right: 0 !important;
+        width: 100%;
+        /*right: 50%;*/
+        /*transform: translateX(50%);*/
     }
 
     .filter-mobile-sort {
@@ -3168,6 +3170,14 @@
 
     .filter .filter-item--city {
         display: none;
+    }
+
+    .cafe-list__tabs {
+        width: 100%;
+    }
+
+    .cafe-list__city {
+        margin-top: 6rem;
     }
 
     .c-card-event {
@@ -3671,8 +3681,9 @@
     }
 
     .events-header__btn {
-        top: -57px;
+        top: -25px;
     }
+
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
         box-shadow: none;
@@ -3778,6 +3789,14 @@
     .c-full-banner {
         margin-left: -1.5rem;
         margin-right: -1.5rem;
+    }
+
+
+    .tabs-menu__list {
+        text-align: left;
+    }
+    .tabs-menu__item {
+        padding: .4rem .6rem;
     }
 
 }
@@ -4902,6 +4921,10 @@
 
     .popup-calendar-booking .popup-footer .c-button {
         width: 100%;
+    }
+
+    .tabs-menu__item {
+        margin-right: 0;
     }
 }
 
