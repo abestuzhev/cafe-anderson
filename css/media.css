@@ -4787,7 +4787,19 @@
 
     .v2 .home-cake {
         width: 66rem;
+        top: -88.2%;
+        right: -90%;
     }
+
+    .v2 .mobile-cake__text {
+        top: 10%;
+    }
+
+    .v2 .mobile-item:last-child {
+        height: 21rem;
+    }
+
+
 
     .mobile-celebration__text {
         right: 9%;
@@ -5544,7 +5556,16 @@
     }
 
     .v2 .home-cake {
-        right: -154%;
+        right: -127%;
+    }
+
+    .v2 .home-celebration {
+        left: -57%;
+        bottom: -132%;
+    }
+
+    .v2 .home-celebration__star-3 {
+        display: none;
     }
 
     .home-cake__pie-1 {
@@ -6691,6 +6712,11 @@
 
     .popup-poster .poster-card__title {
         font-size: 4.6rem;
+    }
+
+    .c-title__layout {
+        flex-flow: column wrap;
+        align-items: flex-start;
     }
 
 }

@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="./css/sticky-header.css">
     <link rel="stylesheet" href="./css/test.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/media-constructor.css">
     <link rel="stylesheet" href="./css/sticky-animation.css">
 
 
@@ -5533,17 +5534,17 @@
 
                 <div class="top-nav">
 
-                    <div class="top-nav-imgloader" style="display:none;">
-                        <img src="img/event-builder/event-builder__button_visited_middle.png" height="84" width="140"/>
-                        <img src="img/event-builder/event-builder__button_visited_left.png" height="84" width="33"/>
-                        <img src="img/event-builder/event-builder__button_green_right.png" height="84" width="54"/>
-                        <img src="img/event-builder/event-builder__button_green_middle.png" height="84" width="40"/>
-                        <img src="img/event-builder/event-builder__button_green_left.png" height="84" width="13"/>
-                        <img src="img/event-builder/event-builder__button_active_right_last.png" height="114" width="41"/>
-                        <img src="img/event-builder/event-builder__button_active_right.png" height="114" width="73"/>
-                        <img src="img/event-builder/event-builder__button_active_middle.png" height="114" width="189"/>
-                        <img src="img/event-builder/event-builder__button_active_left.png" height="114" width="27"/>
-                    </div>
+                    <!--<div class="top-nav-imgloader" style="display:none;">-->
+                        <!--<img src="img/event-builder/event-builder__button_visited_middle.png" height="84" width="140"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_visited_left.png" height="84" width="33"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_green_right.png" height="84" width="54"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_green_middle.png" height="84" width="40"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_green_left.png" height="84" width="13"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_active_right_last.png" height="114" width="41"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_active_right.png" height="114" width="73"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_active_middle.png" height="114" width="189"/>-->
+                        <!--<img src="img/event-builder/event-builder__button_active_left.png" height="114" width="27"/>-->
+                    <!--</div>-->
 
                     <div class="top-nav-button top-nav-button_active" data-for-tab="#place">
                         <div class="top-nav-button__wrapper">
@@ -5838,191 +5839,211 @@
                                 </div>
                             </div>
                             <div class="event-builder-place__content">
-                                <div class="event-builder-place__list">
-                                    <div class="cafe-list__box">
-                                        <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
-                                        <div class="c-card-cafe v2">
 
-                                            <div class="c-card-cafe__wrap">
-                                                <div class="c-card-cafe__img" style="background-image:url(./img/event-builder/event-builder-cafe-foto-1.jpg);">
-                                                    <a class="c-pic_link" href="#"></a>
-                                                    <a href="#" class="c-card-cafe__link">смотреть на карте</a>
-                                                </div>
-                                                <div class="c-card-cafe__body">
-                                                    <div class="c-card-cafe__item c-card-cafe__address">
-                                                        <svg class="c-symbol symbol-mark">
-                                                            <use xlink:href="#symbol-mark"/>
-                                                        </svg>
+                                <div class="cafe-list__tabs">
+                                    <div class="c-text-message">
+                                        <span class="c-text-message__icon">!</span>
+                                        <span>Вы не успели! На вашу дату все залы забронированы! Посмотрите другие варианты ниже.</span>
+                                    </div>
+                                    <ul class="tabs-menu" id="tabs-cafe-list">
+                                        <li class="tabs-menu__item current"><a href="#tab-place__list">Списком</a></li>
+                                        <li class="tabs-menu__item"><a href="#tab-place__map">На карте</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab">
+                                    <div class="tab-content" id="tab-place__list">
+                                        <div class="event-builder-place__list">
+                                            <div class="cafe-list__box">
+                                                <a href="#" class="c-card-cafe__title"><span>АндерСон на Митинской</span></a>
+                                                <div class="c-card-cafe v2">
 
-                                                        <b>Московский, ул. Хабарова, дом 2, ТРЦ
-                                                            Новомосковский, вход со стороны пруда</b>
-                                                    </div>
+                                                    <div class="c-card-cafe__wrap">
+                                                        <div class="c-card-cafe__img" style="background-image:url(./img/event-builder/event-builder-cafe-foto-1.jpg);">
+                                                            <a class="c-pic_link" href="#"></a>
+                                                            <a href="#" class="c-card-cafe__link">смотреть на карте</a>
+                                                        </div>
+                                                        <div class="c-card-cafe__body">
+                                                            <div class="c-card-cafe__item c-card-cafe__address">
+                                                                <svg class="c-symbol symbol-mark">
+                                                                    <use xlink:href="#symbol-mark"/>
+                                                                </svg>
+
+                                                                <b>Московский, ул. Хабарова, дом 2, ТРЦ
+                                                                    Новомосковский, вход со стороны пруда</b>
+                                                            </div>
 
 
-                                                    <div class="c-card-cafe__item">
-                                                        <svg class="c-symbol symbol-clock-2">
-                                                            <use xlink:href="#symbol-clock-2"/>
-                                                        </svg>
-                                                        <b>Время работы: </b> пн-вс с 09:00 до 23:00
-                                                    </div>
+                                                            <div class="c-card-cafe__item">
+                                                                <svg class="c-symbol symbol-clock-2">
+                                                                    <use xlink:href="#symbol-clock-2"/>
+                                                                </svg>
+                                                                <b>Время работы: </b> пн-вс с 09:00 до 23:00
+                                                            </div>
 
-                                                    <ul class="c-card-cafe-advantages">
-                                                        <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
-                                                            <i class="advantages-coffe"></i>
-                                                            <div class="tooltip_templates">
+                                                            <ul class="c-card-cafe-advantages">
+                                                                <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content="#tooltip_content">
+                                                                    <i class="advantages-coffe"></i>
+                                                                    <div class="tooltip_templates">
                                                                 <span id="tooltip_content">
                                                                     <i class="advantages-coffe"></i>
                                                                     <span>В кафе варят вкусное кофе</span>
                                                                 </span>
-                                                            </div>
-                                                        </li>
-                                                        <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
-                                                            <!--<i class="advantages-guests"></i>-->
-                                                            <svg class="c-symbol symbol-guests-2">
-                                                                <use xlink:href="#symbol-guests-2"/>
-                                                            </svg>
-                                                            150
-                                                            <div class="tooltip_templates">
+                                                                    </div>
+                                                                </li>
+                                                                <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_guests">
+                                                                    <!--<i class="advantages-guests"></i>-->
+                                                                    <svg class="c-symbol symbol-guests-2">
+                                                                        <use xlink:href="#symbol-guests-2"/>
+                                                                    </svg>
+                                                                    150
+                                                                    <div class="tooltip_templates">
                                                             <span class="tooltip_guests">
                                                                 <i class="icon-chair"></i>
                                                                 <span>Можем накормить 150 человек за раз</span>
                                                             </span>
-                                                            </div>
-                                                        </li>
-                                                        <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
-                                                            <!--<i class="advantages-teddy"></i>-->
-                                                            <svg class="c-symbol symbol-bruin">
-                                                                <use xlink:href="#symbol-bruin"/>
-                                                            </svg>
-                                                            <div class="tooltip_templates">
+                                                                    </div>
+                                                                </li>
+                                                                <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_teddy">
+                                                                    <!--<i class="advantages-teddy"></i>-->
+                                                                    <svg class="c-symbol symbol-bruin">
+                                                                        <use xlink:href="#symbol-bruin"/>
+                                                                    </svg>
+                                                                    <div class="tooltip_templates">
                                                             <span class="tooltip_teddy">
                                                                 <i class="advantages-teddy"></i>
                                                                 <span>В кафе есть игровая</span>
                                                             </span>
-                                                            </div>
-                                                        </li>
-                                                        <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">
-                                                            <i class="advantages-nipple"></i>
-                                                            <div class="tooltip_templates">
+                                                                    </div>
+                                                                </li>
+                                                                <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_nipple">
+                                                                    <i class="advantages-nipple"></i>
+                                                                    <div class="tooltip_templates">
                                                             <span class="tooltip_nipple">
                                                                 <i class="advantages-nipple"></i>
                                                                 <span>В кафе есть малышковая</span>
                                                             </span>
-                                                            </div>
-                                                        </li>
-                                                        <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">
-                                                            <i class="advantages-balloon"></i>
-                                                            <div class="tooltip_templates">
+                                                                    </div>
+                                                                </li>
+                                                                <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_balloon">
+                                                                    <i class="advantages-balloon"></i>
+                                                                    <div class="tooltip_templates">
                                                             <span class="tooltip_balloon">
                                                                 <i class="advantages-balloon"></i>
                                                                 <span>В кафе есть праздничное пространство</span>
                                                             </span>
-                                                            </div>
-                                                        </li>
-                                                        <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">
-                                                            <i class="advantages-umbrella"></i>
-                                                            <div class="tooltip_templates">
+                                                                    </div>
+                                                                </li>
+                                                                <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_veranda">
+                                                                    <i class="advantages-umbrella"></i>
+                                                                    <div class="tooltip_templates">
                                                             <span class="tooltip_veranda">
                                                                 <i class="advantages-umbrella"></i>
                                                                 <span>В кафе есть уютная веранда</span>
                                                             </span>
-                                                            </div>
-                                                        </li>
-                                                        <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">
-                                                            <i class="advantages-bottle"></i>
-                                                            <div class="tooltip_templates">
+                                                                    </div>
+                                                                </li>
+                                                                <li class="c-card-cafe-advantages__item tooltip" data-tooltip-content=".tooltip_bottle">
+                                                                    <i class="advantages-bottle"></i>
+                                                                    <div class="tooltip_templates">
                                                             <span class="tooltip_bottle">
                                                                 <i class="advantages-bottle"></i>
                                                                 <span>В кафе есть алкогольные напитки</span>
                                                             </span>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="c-card-cafe-booking">
-                                                        <div class="c-card-cafe-booking__text">На 19.08 доступно для бронирования <span>2 из 3</span> залов</div>
-                                                        <a href="#" class="c-card-cafe-booking__btn">Посмотреть</a>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="c-card-cafe-booking">
+                                                                <div class="c-card-cafe-booking__text">На 19.08 доступно для бронирования <span>2 из 3</span> залов</div>
+                                                                <a href="#" class="c-card-cafe-booking__btn">Посмотреть</a>
 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="c-card-cafe-info">
-                                                <form action="" class="c-card-cafe-info__form">
-                                                    <div class="c-form__grid">
-                                                        <div class="c-form__item">
-                                                            <label class="c-label" for="franchise__user">Имя<span class="c-obligatory-field">*</span></label>
-                                                            <input class="c-input" type="text" placeholder="Имя" name="franchise__user" id="franchise__user" required="">
-                                                        </div>
-                                                        <div class="c-form__item">
-                                                            <label class="c-label" for="franchise__phone">Email<span class="c-obligatory-field">*</span></label>
-                                                            <input class="c-input c-input--small " type="text" placeholder="email" name="franchise__phone" id="franchise__phone" maxlength="15">
-                                                        </div>
-                                                        <div class="c-form__item">
-                                                            <label class="c-label" for="franchise__city">Телефон<span class="c-obligatory-field">*</span></label>
-                                                            <input class="c-input c-input--small js-input--tel" type="text" placeholder="+7(___)___-__-__" name="franchise__city" id="franchise__city">
-                                                        </div>
-                                                        <div class="c-form__item">
-                                                            <button class="c-button c-button__default">Продолжить</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="c-form__info">
-                                                        <span class="c-obligatory-field">*</span> - поля обязательные для заполнения
-                                                        <span class="c-obligatory-field">!</span> - бронь без предоплаты действительна в течение двух дней
-                                                    </div>
-                                                </form>
-                                                <div class="c-card-cafe-hall">
-                                                    <div class="c-card-hall">
-                                                        <div class="c-card-hall__title">"Музыкальная гостиная" (150 мест)</div>
-                                                        <div class="c-card-hall__body">
-                                                            <div class="c-card-hall-time">
-                                                                <ul class="c-card-hall-time__list">
-                                                                    <li class="c-card-hall-time__item">
-                                                                        <div class="c-card-hall-time__col">Времяработы зала:</div>
-                                                                        <div class="c-card-hall-time__col">Доступно:</div>
-                                                                    </li>
-                                                                    <li class="c-card-hall-time__item">
-                                                                        <div class="c-card-hall-time__col">Утро (11:00 - 14.00)</div>
-                                                                        <div class="c-card-hall-time__col"><a href="#" class="c-card-hall-time__btn">Бронировать</a></div>
-                                                                    </li>
-                                                                    <li class="c-card-hall-time__item">
-                                                                        <div class="c-card-hall-time__col">День (11:00 - 14.00)</div>
-                                                                        <div class="c-card-hall-time__col"><a href="" class="c-card-hall-time__btn disabled">Бронировать</a></div>
-                                                                    </li>
-                                                                    <li class="c-card-hall-time__item">
-                                                                        <div class="c-card-hall-time__col">Вечер (11:00 - 14.00)</div>
-                                                                        <div class="c-card-hall-time__col"><a href="#" class="c-card-hall-time__btn">Бронировать</a></div>
-                                                                    </li>
-                                                                </ul>
                                                             </div>
-                                                            <div class="c-card-hall__description">
-                                                                <div class="c-card-hall__img">
-                                                                    <img src="./img/event-builder/hall-img-1.jpg" alt="">
-                                                                    <div class="c-card-hall__img-icon"><svg class="c-symbol symbol-search"><use xlink:href="#symbol-search" /></svg></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c-card-cafe-info">
+                                                        <form action="" class="c-card-cafe-info__form">
+                                                            <a href="#" class="c-card-cafe-info__close"></a>
+                                                            <div class="c-form__grid">
+                                                                <div class="c-form__item">
+                                                                    <label class="c-label" for="franchise__user">Имя<span class="c-obligatory-field">*</span></label>
+                                                                    <input class="c-input" type="text" placeholder="Имя" name="franchise__user" id="franchise__user" required="">
                                                                 </div>
-                                                                <div class="c-card-hall__text">
-                                                                    Взрослых ждёт уютный зал с очень атмосферно -путевым
-                                                                    настроением, шахматным столом и даже столом для
-                                                                    переговоров. Взрослых ждёт уютный зал с очень
-                                                                    атмосферно-путевым настроением, шахматным столом
-                                                                    и даже столом для переговоров.
+                                                                <div class="c-form__item">
+                                                                    <label class="c-label" for="franchise__phone">Email<span class="c-obligatory-field">*</span></label>
+                                                                    <input class="c-input c-input--small " type="text" placeholder="email" name="franchise__phone" id="franchise__phone" maxlength="15">
+                                                                </div>
+                                                                <div class="c-form__item">
+                                                                    <label class="c-label" for="franchise__city">Телефон<span class="c-obligatory-field">*</span></label>
+                                                                    <input class="c-input c-input--small js-input--tel" type="text" placeholder="+7(___)___-__-__" name="franchise__city" id="franchise__city">
+                                                                </div>
+                                                                <div class="c-form__item">
+                                                                    <button class="c-button c-button__default">Продолжить</button>
                                                                 </div>
                                                             </div>
+                                                            <div class="c-form__info">
+                                                                <span class="c-obligatory-field">*</span> - поля обязательные для заполнения
+                                                                <span class="c-obligatory-field">!</span> - бронь без предоплаты действительна в течение двух дней
+                                                            </div>
+                                                        </form>
+                                                        <div class="c-card-cafe-hall">
+                                                            <div class="c-card-hall">
+                                                                <div class="c-card-hall__title">"Музыкальная гостиная" (150 мест)</div>
+                                                                <div class="c-card-hall__body">
+                                                                    <div class="c-card-hall-time">
+                                                                        <ul class="c-card-hall-time__list">
+                                                                            <li class="c-card-hall-time__item">
+                                                                                <div class="c-card-hall-time__col">Времяработы зала:</div>
+                                                                                <div class="c-card-hall-time__col">Доступно:</div>
+                                                                            </li>
+                                                                            <li class="c-card-hall-time__item">
+                                                                                <div class="c-card-hall-time__col">Утро (11:00 - 14.00)</div>
+                                                                                <div class="c-card-hall-time__col"><a href="#" class="c-card-hall-time__btn">Бронировать</a></div>
+                                                                            </li>
+                                                                            <li class="c-card-hall-time__item">
+                                                                                <div class="c-card-hall-time__col">День (11:00 - 14.00)</div>
+                                                                                <div class="c-card-hall-time__col"><a href="" class="c-card-hall-time__btn disabled">Бронировать</a></div>
+                                                                            </li>
+                                                                            <li class="c-card-hall-time__item">
+                                                                                <div class="c-card-hall-time__col">Вечер (11:00 - 14.00)</div>
+                                                                                <div class="c-card-hall-time__col"><a href="#" class="c-card-hall-time__btn">Бронировать</a></div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="c-card-hall__description">
+                                                                        <div class="c-card-hall__img">
+                                                                            <img src="./img/event-builder/hall-img-1.jpg" alt="">
+                                                                            <div class="c-card-hall__img-icon"><svg class="c-symbol symbol-search"><use xlink:href="#symbol-search" /></svg></div>
+                                                                        </div>
+                                                                        <div class="c-card-hall__text">
+                                                                            Взрослых ждёт уютный зал с очень атмосферно -путевым
+                                                                            настроением, шахматным столом и даже столом для
+                                                                            переговоров. Взрослых ждёт уютный зал с очень
+                                                                            атмосферно-путевым настроением, шахматным столом
+                                                                            и даже столом для переговоров.
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
+
+
                                                 </div>
+
+
+
+
+
                                             </div>
-
-
                                         </div>
-
-
-
-
-
+                                    </div>
+                                    <div class="tab-content" id="tab-place__map">
+                                        <div class="event-builder-place__map" >
+                                            <div id="event-builder-place__map"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="event-builder-place__map" >
-                                    <div id="event-builder-place__map"></div>
-                                </div>
+
+
 
                             </div>
                         </div>

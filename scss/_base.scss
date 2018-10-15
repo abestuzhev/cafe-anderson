@@ -455,6 +455,22 @@ p {
     font-weight: 400;
     margin-bottom: 1rem;
 }
+.c-title__layout {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.c-title__layout .c-title__h1 {
+    float: left;
+    margin-right: 3rem;
+}
+.c-title__layout::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
 
 .c-title-decor-layout {
     text-align: center;
@@ -2072,6 +2088,8 @@ a.c-button {
         background: #fdf7e8 url(../img/bg-header.png) repeat;
 
         &__form {
+            display: none;
+            position: relative;
             padding: 2.2rem 1.8rem;
         }
 
@@ -2095,6 +2113,22 @@ a.c-button {
             color: #3e492f;
             font-family: $font_sans-serif;
             font-size: 2.3rem;
+        }
+
+        &__close {
+            position: absolute;
+            right: 1.5rem;
+            top: 0;
+            padding: 1.4rem 1.6rem 2rem;
+            border-radius: 0 0 50px 50px;
+            background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+            background-size: 10px 11px;
+            cursor: pointer;
+
+            &::after {
+                content:'';
+                border: none;
+            }
         }
     }
 }
@@ -3527,6 +3561,18 @@ div.c-card-catalog-2 {
         justify-content: space-between;
         margin-bottom: 4rem;
         margin-right: 4.1rem;
+
+        &__slider {
+            .pie-slider-nav__item.active {
+
+                &::after,
+                &::before {
+                    content: '';
+                    display: none;
+                }
+
+            }
+        }
         
         &__item {
             width: 50%;
@@ -5510,4 +5556,26 @@ div.c-card-catalog-2 {
     }
 
 
+}
+
+.c-text-message {
+
+    font-family: $font_serif;
+    font-style: italic;
+    letter-spacing: -1px;
+    &__icon {
+        display: inline-block;
+        width: 1.9rem;
+        height: 1.9rem;
+        border-radius: 5rem;
+        background-color: #c44890;
+        text-align: center;
+        line-height: 1.9rem;
+        color: #ffffff;
+        margin-right: .3rem;
+    }
+
+    span {
+        vertical-align: middle;
+    }
 }
