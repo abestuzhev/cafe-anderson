@@ -3428,6 +3428,34 @@ test popup
   .c-select--search + .SelectBox .search-txt {
     padding: .3rem .6rem;
   }
+
+    &-switch {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        top: 100%;
+        left:0;
+
+        .cafe-list__tabs {
+            margin: 0;
+        }
+
+        .filter-more {
+            position: static;
+            margin-right: 3rem;
+        }
+
+        .tabs-menu__item {
+            border-radius: 0 0 .6rem .6rem;
+
+            &.current::after {
+                content:'';
+                border-radius: 0 0 .6rem .6rem;
+            }
+        }
+    }
 }
 
 .cafe-list {
@@ -4734,7 +4762,7 @@ test popup
 
 .owl-carousel .owl-nav .owl-prev {
   position: absolute;
-  right: 0;
+  left: 0;
   width: 3.3rem;
   height: 3.3rem;
   text-indent: -99999px;
@@ -4749,7 +4777,7 @@ test popup
 
 .owl-carousel .owl-nav .owl-next {
   position: absolute;
-  left: 0;
+  right: 0;
   width: 3.3rem;
   height: 3.3rem;
   text-indent: -99999px;
@@ -18521,6 +18549,23 @@ a.show-more__button:hover {
                 right: -4.1rem;
                 height: 11.4rem;
             }
+        }
+
+        .owl-nav {
+            margin-top: -.7rem;
+        }
+
+        .owl-nav .owl-prev {
+            width: 1rem;
+            height: 1.3rem;
+            left: 32%;
+            background: url(../img/icons/icon-arr-left.svg) 0 0 no-repeat;
+        }
+        .owl-nav .owl-next {
+            width: 1rem;
+            height: 1.3rem;
+            right: 32%;
+            background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
         }
     }
 

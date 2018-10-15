@@ -1,0 +1,140 @@
+@media (max-width: 1080px) {
+
+    .event-builder .top-nav {
+        display: block;
+        padding-left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+    .event-builder .top-nav-button {
+        background: none;
+        color: #d5d3d4;
+        margin: 0;
+        padding: 0 .6rem;
+        height: auto;
+    }
+
+    .event-builder .top-nav-button:hover .top-nav-button__title {
+        color: #c44890;
+    }
+
+    .event-builder .top-nav-button__icon {
+        display: none;
+    }
+
+    .event-builder .top-nav-button:after {
+        content: '';
+        display: none;
+    }
+
+    .event-builder .top-nav-button_active {
+        box-shadow: none;
+        /*padding: 0;*/
+        color: #c44890;
+        transform: none;
+    }
+
+    .event-builder .top-nav-button_active .top-nav-button__title {
+        color: #c44890;
+    }
+
+    .event-builder .top-nav-button_visited {
+        box-shadow: none;
+        border-color: transparent;
+    }
+
+
+}
+
+@media (max-width: 998px) {
+
+    .event-builder-city .filter .l-button__center {
+        margin-top: 0;
+    }
+
+    .event-builder-city__list {
+        margin: 0 -.5rem;
+    }
+    .event-builder-city__item {
+        padding: .5rem;
+    }
+
+    .c-card-city__name span {
+        padding-left: 0;
+        line-height: 1;
+    }
+
+    .c-card-city__body {
+        padding: 1.6rem 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .event-builder .top-nav .owl-item {
+        text-align: center;
+    }
+
+    .event-builder .top-nav-button__title {
+        color: #d5d3d4;
+    }
+
+
+    .event-builder .top-nav-button_active .top-nav-button__title {
+        color: #c44890;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 640px) {
+    .c-card-city__body {
+        display: block;
+    }
+
+    .c-card-city__variant {
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 730px) {
+    .event-builder-city .filter {
+        width: 100%;
+    }
+
+    .event-builder-city .filter .SumoSelect {
+        width: 100%;
+    }
+
+    .event-builder-city .filter .SumoSelect > .CaptionCont {
+        padding: .6rem 1.4rem;
+        font-size: 1.4rem;
+    }
+    .SumoSelect.open > .optWrapper {
+        top: 100%;
+    }
+}
+
+
+
+@media (max-width: 640px) {
+    .event-builder-city__item {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .c-card-city__name {
+        font-size: 2.6rem;
+    }
+
+    .c-card-city__variant {
+        font-size: 1.2rem;
+    }
+
+    .c-card-city__body {
+        padding: .8rem 1.3rem 1rem;
+    }
+}

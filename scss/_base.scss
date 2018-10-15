@@ -455,6 +455,22 @@ p {
     font-weight: 400;
     margin-bottom: 1rem;
 }
+.c-title__layout {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.c-title__layout .c-title__h1 {
+    float: left;
+    margin-right: 3rem;
+}
+.c-title__layout::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
 
 .c-title-decor-layout {
     text-align: center;

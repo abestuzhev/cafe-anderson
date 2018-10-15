@@ -184,6 +184,10 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+
+
+
+
     $('.c-card-cafe-info__close').on('click', function(e){
         e.preventDefault();
         $(this).parents('.c-card-cafe-info__form').slideUp(200);
@@ -2462,7 +2466,8 @@ $(document).ready(function ($) {
         $(this).parent().addClass("current");
         $(this).parent().siblings().removeClass("current");
         var tab = $(this).attr("href");
-        $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
+        $('.tab').find(".tab-content").not(tab).css("display", "none");
+        // $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
         $(tab).fadeIn();
     });
 
@@ -3360,6 +3365,34 @@ $(function() {
 
 /* Event Builder */
     // function
+
+
+    // $()
+
+        function initEventBuilderNav (elem){
+            if($(window).width() <= 800) {
+                $(elem).owlCarousel({
+                    loop:false,
+                    nav:true,
+                    // margin:20,
+                    items: 3,
+                    center: true,
+                    mouseDrag:false,
+                    pullDrag:false
+                });
+                $(elem).addClass('owl-carousel');
+            }else {
+                $(elem).trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+                $(elem).find('.owl-stage-outer').children().unwrap();
+            }
+        }
+        if($('div').hasClass('top-nav')){
+            initEventBuilderNav('.event-builder .top-nav');
+            $(window).on('resize', function () {
+                initEventBuilderNav('.event-builder .top-nav');
+            });
+        }
+
 
     function topNavClear() {
         $('.top-nav-button').each(function(index, element) {
