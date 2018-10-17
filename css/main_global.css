@@ -22781,6 +22781,196 @@ a.show-more__button:hover {
       padding-bottom: 5rem; }
 
 /* / Event Builder */
+/* Catering */
+.catering {
+  font-family: "PT Serif Caption";
+  margin-bottom: 4rem; }
+  .catering-plate {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: .4rem;
+    padding-bottom: 4rem; }
+  .catering-banner {
+    height: 37rem;
+    background: url(../img/catering-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 3.8rem;
+    border-radius: .4rem; }
+    .catering-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.4rem;
+      background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; }
+    .catering-banner__box {
+      position: absolute;
+      bottom: 4rem;
+      left: 0;
+      display: block;
+      text-align: center;
+      width: 100%; }
+    .catering-banner__title {
+      background: url(../img/decor-button-green.png) 0 0 repeat;
+      font-family: "BebasNeue";
+      color: #ffffff;
+      font-size: 3.7rem;
+      border-radius: .7rem;
+      padding: .7rem 1.5rem .7rem 1.5rem;
+      display: inline-block;
+      position: relative; }
+      .catering-banner__title::after {
+        content: '';
+        position: absolute;
+        top: -.8rem;
+        left: -.8rem;
+        width: 105.5%;
+        height: 124%;
+        border: .5rem solid #ffffff;
+        border-radius: 1.1rem;
+        display: inline-block; }
+  .catering-title {
+    display: block;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-weight: 700;
+    color: #c44890;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 1; }
+  .catering-subtitle {
+    display: block;
+    text-align: center;
+    font-family: "PT Serif Caption";
+    color: #555451;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+    .catering-subtitle__lead {
+      color: #79b224;
+      font-size: 2rem; }
+  .catering-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-top: 1.5rem; }
+    .catering-options__item {
+      height: 25rem;
+      width: 50%;
+      padding: 2.2rem; }
+      .catering-options__item:nth-child(4n-3) {
+        background: url(../img/decor-bg-dot.png); }
+      .catering-options__item:nth-child(4n) {
+        background: url(../img/decor-bg-dot.png); }
+    .catering-options__image {
+      display: inline-block;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 10rem;
+      float: left;
+      margin: 0rem 2.2rem 2.2rem 2.2rem; }
+    .catering-options__title {
+      font-size: 2rem;
+      color: #000000; }
+    .catering-options p {
+      font-size: 1.4rem;
+      color: #545454;
+      margin-top: 1.5rem; }
+  .catering-separator {
+    background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
+    display: block;
+    margin: 4rem 2.8rem 4rem 2.8rem;
+    height: .6rem; }
+  .catering-gallery {
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
+    .catering-gallery__background {
+      width: 100%;
+      height: 100%;
+      background: url(../img/catering/catering-slide-1.jpg) 50% 50% no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-filter: blur(0.3rem);
+              filter: blur(0.3rem); }
+    .catering-gallery__wrapper {
+      max-width: 92rem;
+      margin: auto; }
+  .catering-decor-pink {
+    display: block;
+    position: relative;
+    height: 3rem;
+    background-color: #c44890;
+    overflow: hidden; }
+    .catering-decor-pink__decor-1 {
+      position: absolute;
+      right: 3rem;
+      top: 1rem;
+      -webkit-transform: rotate(6.3deg);
+          -ms-transform: rotate(6.3deg);
+              transform: rotate(6.3deg); }
+      .catering-decor-pink__decor-1 svg {
+        width: 7rem;
+        height: 3.5rem;
+        fill: #f368b9; }
+    .catering-decor-pink__decor-2 {
+      position: absolute;
+      right: 12rem;
+      top: -1.5rem;
+      -webkit-transform: rotate(30deg);
+          -ms-transform: rotate(30deg);
+              transform: rotate(30deg); }
+      .catering-decor-pink__decor-2 svg {
+        width: 6rem;
+        height: 6rem;
+        fill: #f368b9; }
+  .catering-decor-dotted {
+    display: block;
+    position: relative;
+    height: 5rem;
+    background: url(../img/decor-bg-dot.png);
+    margin-bottom: 2.5rem; }
+    .catering-decor-dotted::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: .5rem;
+      background: url(../img/catering/catering-decor-wave-1.png); }
+    .catering-decor-dotted__box {
+      position: absolute;
+      bottom: -2.5rem;
+      left: 0;
+      display: block;
+      text-align: center;
+      width: 100%; }
+    .catering-decor-dotted__title {
+      background: url(../img/decor-button-pink.png) 0 0 repeat;
+      font-family: "BebasNeue";
+      color: #ffffff;
+      font-size: 3.7rem;
+      border-radius: .7rem;
+      padding: .7rem 1.5rem .7rem 1.5rem;
+      display: inline-block;
+      position: relative;
+      z-index: 2; }
+  .catering-fotorama {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .catering .fotorama__thumb-border {
+    border-color: #c44890; }
+
+/* / Catering */
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

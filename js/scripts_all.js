@@ -12772,3 +12772,20 @@ $(function() {
 });
 
 /* / Event Builder */
+
+/* Catering */
+
+$('.catering-fotorama').fotorama({
+    width: '100%',
+    height: '47.5rem',
+    ratio: 16/9,
+    loop: true,
+    thumbwidth: 88,
+    allowfullscreen: false,
+    nav: 'thumbs',
+
+});
+
+/* / Catering */
+
+
