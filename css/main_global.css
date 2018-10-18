@@ -22790,7 +22790,23 @@ a.show-more__button:hover {
     -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
     border-radius: .4rem;
-    padding-bottom: 4rem; }
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+    position: relative; }
+    .catering-plate_last {
+      padding-bottom: 0; }
+    .catering-plate__caption {
+      padding: 2.5rem 3.5rem 2rem 3.5rem; }
+    .catering-plate__head {
+      color: #c44890;
+      font-size: 2.3rem; }
+    .catering-plate__subtext {
+      color: #212121;
+      font-size: 1.2rem; }
+      .catering-plate__subtext .c-obligatory-field {
+        font-size: 1.6rem; }
+    .catering-plate__grey {
+      background: url(../img/catering/catering-decor-dotted-grey.png) 0 0; }
   .catering-banner {
     height: 37rem;
     background: url(../img/catering-banner.jpg) 50% 50% no-repeat;
@@ -22888,6 +22904,10 @@ a.show-more__button:hover {
     display: block;
     margin: 4rem 2.8rem 4rem 2.8rem;
     height: .6rem; }
+    .catering-separator__dotted {
+      background: url(../img/catering/catering-decor-dotted-green.png) 0 0 repeat-x;
+      height: .2rem;
+      margin: 0rem 2.8rem 0rem 2.8rem; }
   .catering-gallery {
     text-align: center;
     position: relative;
@@ -22905,6 +22925,13 @@ a.show-more__button:hover {
     .catering-gallery__wrapper {
       max-width: 92rem;
       margin: auto; }
+  .catering-decor-star {
+    position: absolute;
+    width: 5.3rem;
+    height: 5.5rem;
+    bottom: 2.5rem;
+    right: 4rem;
+    background: url(../img/catering/catering-decor-star.png) 0 0 no-repeat; }
   .catering-decor-pink {
     display: block;
     position: relative;
@@ -22963,7 +22990,77 @@ a.show-more__button:hover {
       padding: .7rem 1.5rem .7rem 1.5rem;
       display: inline-block;
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      cursor: pointer; }
+      .catering-decor-dotted__title:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.0;
+        background-color: #ffffff; }
+      .catering-decor-dotted__title:hover:after {
+        opacity: 0.1; }
+  .catering-calendar {
+    padding: 3.2rem 2.8rem 3.2rem 2.8rem; }
+    .catering-calendar .calendar {
+      padding-top: 2rem;
+      -webkit-box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1); }
+  .catering-line {
+    display: block;
+    text-align: center; }
+  .catering-collapse {
+    color: #b58f80;
+    font-size: 1.3rem;
+    vertical-align: bottom; }
+    .catering-collapse:after {
+      content: '';
+      width: 100%;
+      border-bottom: 1px dotted #a49591; }
+    .catering-collapse span {
+      color: #a49591;
+      font-size: 1.5rem;
+      padding-bottom: .3rem;
+      display: inline-block; }
+  .catering-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0 2.8rem 0 2.8rem;
+    font-family: "SummerFont";
+    font-size: 3.5rem;
+    text-transform: uppercase; }
+    .catering-price__name {
+      color: #61a028; }
+    .catering-price__value {
+      color: #9c4e98; }
+  .catering-info {
+    background-color: #fcfcfc;
+    margin-top: 3.5rem;
+    padding: 3.2rem 2.8rem 3.2rem 2.8rem;
+    list-style-type: circle; }
+    .catering-info li {
+      margin-bottom: 1.5rem;
+      color: #555451;
+      list-style-type: circle; }
+  .catering .bonus-info {
+    border-radius: .4rem; }
+    .catering .bonus-info__bird {
+      left: 24%; }
+      .catering .bonus-info__bird svg {
+        width: 4rem;
+        height: 4rem; }
   .catering-fotorama {
     margin-top: 1rem;
     margin-bottom: 1rem; }
