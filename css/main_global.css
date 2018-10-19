@@ -22806,7 +22806,49 @@ a.show-more__button:hover {
       .catering-plate__subtext .c-obligatory-field {
         font-size: 1.6rem; }
     .catering-plate__grey {
-      background: url(../img/catering/catering-decor-dotted-grey.png) 0 0; }
+      background: url(../img/catering/catering-decor-dotted-grey.png) 0 0;
+      position: relative;
+      padding: 0 2.8rem 0 2.8rem; }
+    .catering-plate__inner {
+      position: relative; }
+    .catering-plate__separator {
+      position: relative; }
+      .catering-plate__separator:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+      .catering-plate__separator_reverse:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        -webkit-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+                transform: scaleY(-1); }
+    .catering-plate__decor:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url(../img/catering/catering-bg-contact.png) 0 0 no-repeat;
+      background-size: cover;
+      width: 38rem;
+      height: 25rem; }
+    .catering-plate__comment {
+      max-width: 80rem;
+      position: relative;
+      padding-bottom: 2.4rem; }
+    .catering-plate__input {
+      padding-bottom: 2rem; }
+    .catering-plate__textarea {
+      height: 11.6rem; }
   .catering-banner {
     height: 37rem;
     background: url(../img/catering-banner.jpg) 50% 50% no-repeat;
@@ -23003,6 +23045,13 @@ a.show-more__button:hover {
         background-color: #ffffff; }
       .catering-decor-dotted__title:hover:after {
         opacity: 0.1; }
+  .catering-decor-bird {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 12.5rem; }
+    .catering-decor-bird svg {
+      width: 10.2rem;
+      height: 5rem; }
   .catering-calendar {
     padding: 3.2rem 2.8rem 3.2rem 2.8rem; }
     .catering-calendar .calendar {
@@ -23054,8 +23103,113 @@ a.show-more__button:hover {
       margin-bottom: 1.5rem;
       color: #555451;
       list-style-type: circle; }
+  .catering-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2.8rem 0 2.3rem 0; }
+    .catering-form__item {
+      padding: 0 1rem 0 1rem; }
+      .catering-form__item label {
+        white-space: nowrap;
+        color: #212121;
+        margin-bottom: .5rem; }
+      .catering-form__item input {
+        color: #555451; }
+      .catering-form__item:nth-child(1) {
+        padding-left: 0; }
+        .catering-form__item:nth-child(1) input {
+          min-width: 25.6rem; }
+      .catering-form__item:nth-child(3) {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+        .catering-form__item:nth-child(3) input {
+          min-width: 25.6rem; }
+      .catering-form__item:last-child {
+        padding-right: 0; }
+    .catering-form .SumoSelect {
+      width: 100%; }
+    .catering-form .SelectBox {
+      padding: 1.4rem 0 1.4rem .8rem; }
+    .catering-form .SumoSelect.open > .optWrapper {
+      top: 4.6rem; }
+  .catering-send {
+    text-transform: uppercase;
+    background-color: #c44890;
+    font-size: 1.4rem;
+    padding: 1.7rem 2.2rem 1.7rem 2.2rem;
+    border-radius: .3rem; }
+    .catering-send_recall {
+      font-size: 1.5rem;
+      text-transform: none;
+      background-color: #7cbd41; }
+  .catering .c-personal-data__item {
+    margin: 1.2rem 0 1.2rem 0; }
   .catering .bonus-info {
     border-radius: .4rem; }
+    .catering .bonus-info__content {
+      text-align: center; }
+    .catering .bonus-info__title {
+      color: #7cbd41;
+      font-size: 3.6rem;
+      text-transform: uppercase; }
+    .catering .bonus-info__lead {
+      color: #7cbd41; }
+    .catering .bonus-info__subtitle {
+      color: #553023;
+      font-size: 1.7rem;
+      margin-bottom: .5rem; }
+    .catering .bonus-info__phone {
+      color: #222222;
+      font-style: italic;
+      font-size: 3rem;
+      position: relative;
+      display: inline-block; }
+      .catering .bonus-info__phone:after {
+        content: '';
+        position: absolute;
+        top: 1.2rem;
+        left: -3.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        background: url(../img/catering/phone-call.svg) 0 0 no-repeat;
+        background-size: cover; }
+    .catering .bonus-info__recall {
+      color: #553023;
+      font-size: 1.6rem;
+      margin-bottom: 1rem; }
+    .catering .bonus-info__form {
+      margin: auto;
+      max-width: 39rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      position: relative; }
+    .catering .bonus-info a {
+      color: #fff; }
+    .catering .bonus-info__decor_heart svg {
+      width: 7.2rem;
+      height: 1.9rem;
+      margin: 1.3rem 0 1.3rem 0; }
+    .catering .bonus-info__decor_hare {
+      position: absolute;
+      bottom: 2.2rem;
+      right: -13rem; }
+      .catering .bonus-info__decor_hare svg {
+        width: 10rem;
+        height: 9rem; }
     .catering .bonus-info__bird {
       left: 24%; }
       .catering .bonus-info__bird svg {

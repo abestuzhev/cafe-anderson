@@ -5923,15 +5923,81 @@
                         <span class="catering-plate__subtext"><span class="c-obligatory-field">*</span> - обязательные поля</span>
                     </div>
 
-                    <div class="catering-plate__grey">
-                        asdfas
-                        asdf
-                        asdf
-                        asdf1
+                    <div class="catering-plate__grey catering-plate__decor">
+                        <div class="catering-plate__inner">
+                            <div class="catering-plate__separator"></div>
+                            <div class="catering-form">
+
+                                <div class="catering-form__item">
+                                    <label class="c-label" for="catering-name">Представьтесь, пожалуйста <span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" id="catering-name" required="" value="" placeholder="Ваше ФИО">
+                                </div>
+                                <div class="catering-form__item">
+                                    <label class="c-label" for="catering-phone">Телефон <span class="c-obligatory-field">*</span></label>
+                                    <input class="c-input" type="text" id="catering-phone" required="" value="" placeholder="+7 (***) ***-**-**">
+                                </div>
+                                <div class="catering-form__item">
+                                    <label class="c-label" for="catering-place">Место мероприятия</label>
+                                    <select class="c-select" id="catering-place">
+                                        <option>Незнаю... Посоветуйте мне?</option>
+                                        <option>АндерСон в ЖК Шуваловский</option>
+                                        <option>АндерСон в Крылатском</option>
+                                        <option>АндерСон в Океании</option>
+                                        <option>АндерСон в Таганском парке</option>
+                                        <option>АндерСон в Формуле Кино (ТРЦ "Фестиваль")</option>
+                                    </select>
+
+                                </div>
+                                <div class="catering-form__item">
+                                    <label class="c-label" for="catering-date">Дата мероприятия</label>
+                                    <div class="datepicker-layout">
+                                        <input class="c-input datepicker-here" type="text" id="catering-date" value="" placeholder="">
+                                    </div>
+
+                                </div>
+                                <div class="catering-form__item">
+                                    <label class="c-label" for="catering-count">Сколько будет гостей?</label>
+                                    <input class="c-input" type="text" id="catering-count" value="" placeholder="">
+                                </div>
+
+                            </div>
+
+                            <div class="catering-plate__comment">
+                                <div class="catering-plate__input"><textarea class="c-input catering-plate__textarea" placeholder="Расскажите нам про мероприятие"></textarea></div>
+                                <div class="catering-plate__separator catering-plate__separator_reverse"></div>
+                                <div class="c-personal-data__item">
+                                    <input type="checkbox" name="write-to-us__regulations" id="write-to-us__regulations_1" checked="">
+                                    <label class="c-checkbox" for="write-to-us__regulations">Я ознакомлен с
+                                        <a href="#">правилами обработки
+                                        </a> моих персональных данных.
+                                    </label>
+                                </div>
+                                <a href="" class="c-button c-button__default catering-send">Рассчитать</a>
+                                <div class="catering-decor-bird"><svg><use xlink:href="./img/catering/catering.svg#bird" /></svg></div>
+
+                            </div>
+
+
+                        </div>
                     </div>
 
 
                     <div class="bonus-info">
+
+                        <div class="bonus-info__content">
+                            <div class="bonus-info__title">Есть вопросы?</div>
+                            <div class="bonus-info__subtitle"><span class="bonus-info__lead">Звоните,</span> мы все раскажем!</div>
+                            <div class="bonus-info__phone">+7 (495) 648- 61- 51</div>
+                            <div class="bonus-info__decor bonus-info__decor_heart"><svg><use xlink:href="./img/catering/catering.svg#heart" /></svg></div>
+                            <div class="bonus-info__recall">или оставьте свой номер <span class="bonus-info__lead">и мы перезвоним вам:</span></div>
+                            <div class="bonus-info__form">
+                                <input class="c-input" type="text" id="catering-phone-recall" value="" placeholder="+7 (&nbsp;&nbsp;&nbsp;) &nbsp;- &nbsp;-">
+                                <a href="" class="c-button c-button__default catering-send catering-send_recall">Перезвоните мне</a>
+                                <div class="bonus-info__decor bonus-info__decor_hare"><svg><use xlink:href="./img/catering/catering.svg#hare" /></svg></div>
+                            </div>
+
+                        </div>
+
 
                         <div class="bonus-info__bird">
                             <svg class="c-symbol symbol-bird-left"><use xlink:href="#symbol-bird-left"></use></svg>

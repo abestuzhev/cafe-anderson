@@ -20204,8 +20204,70 @@ a.show-more__button:hover {
 
     &__grey {
       background: url(../img/catering/catering-decor-dotted-grey.png) 0 0;
+      position: relative;
+      padding: 0 2.8rem 0 2.8rem;
+    }
+
+    &__inner {
+      position: relative;
+    }
+
+    &__separator {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+      }
+
+      &_reverse {
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: .4rem;
+          background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+          transform: scaleY(-1);
+        }
+      }
 
     }
+
+    &__decor {
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url(../img/catering/catering-bg-contact.png) 0 0 no-repeat;
+        background-size: cover;
+        width: 38rem;
+        height: 25rem;
+      }
+    }
+
+    &__comment {
+      max-width: 80rem;
+      position: relative;
+      padding-bottom: 2.4rem;
+    }
+
+    &__input {
+      padding-bottom: 2rem;
+    }
+
+    &__textarea {
+      height: 11.6rem;
+    }
+
 
   }
 
@@ -20478,6 +20540,16 @@ a.show-more__button:hover {
     }
   }
 
+  &-decor-bird {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 12.5rem;
+    svg {
+      width: 10.2rem;
+      height: 5rem;
+    }
+  }
+
   &-calendar {
     padding: 3.2rem 2.8rem 3.2rem 2.8rem;
 
@@ -20546,11 +20618,163 @@ a.show-more__button:hover {
     }
   }
 
+  &-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2.8rem 0 2.3rem 0;
+
+    &__item {
+      padding: 0 1rem 0 1rem;
+
+      label {
+        white-space: nowrap;
+        color: #212121;
+        margin-bottom: .5rem;
+      }
+
+      input {
+        color: #555451;
+      }
+
+      &:nth-child(1) {
+        padding-left: 0;
+        input {
+          min-width: 25.6rem;
+        }
+      }
+
+      &:nth-child(3) {
+        flex-grow: 1;
+        input {
+          min-width: 25.6rem;
+        }
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .SumoSelect {
+      width: 100%;
+    }
+
+    .SelectBox {
+      padding: 1.4rem 0 1.4rem .8rem;
+
+    }
+
+    .SumoSelect.open > .optWrapper {
+      top: 4.6rem;
+    }
 
 
+  }
+
+  &-send {
+    text-transform: uppercase;
+    background-color: #c44890;
+    font-size: 1.4rem;
+    padding: 1.7rem 2.2rem 1.7rem 2.2rem;
+    border-radius: .3rem;
+
+
+    &_recall {
+      font-size: 1.5rem;
+      text-transform: none;
+      background-color: #7cbd41;
+
+    }
+  }
+
+  .c-personal-data__item {
+    margin: 1.2rem 0 1.2rem 0;
+  }
 
   .bonus-info {
     border-radius: .4rem;
+
+    &__content {
+      text-align: center;
+    }
+
+    &__title {
+      color: #7cbd41;
+      font-size: 3.6rem;
+      text-transform: uppercase;
+    }
+
+    &__lead {
+      color: #7cbd41;
+    }
+
+    &__subtitle {
+      color: #553023;
+      font-size: 1.7rem;
+      margin-bottom: .5rem;
+    }
+
+    &__phone {
+      color: #222222;
+      font-style: italic;
+      font-size: 3rem;
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 1.2rem;
+        left: -3.5rem;
+
+        width: 2.4rem;
+        height: 2.4rem;
+
+        background: url(../img/catering/phone-call.svg) 0 0 no-repeat;
+        background-size: cover;
+
+      }
+    }
+
+    &__recall {
+      color: #553023;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    &__form {
+      margin: auto;
+      max-width: 39rem;
+      display: flex;
+      flex-flow: row nowrap;
+      position: relative;
+
+    }
+
+    a {
+      color: #fff;
+    }
+
+    &__decor {
+      &_heart {
+        svg {
+          width: 7.2rem;
+          height: 1.9rem;
+          margin: 1.3rem 0 1.3rem 0;
+        }
+      }
+
+      &_hare {
+        position: absolute;
+        bottom: 2.2rem;
+        right: -13rem;
+        svg {
+          width: 10rem;
+          height: 9rem;
+        }
+      }
+    }
 
     &__bird {
       left: 24%;
@@ -20560,8 +20784,6 @@ a.show-more__button:hover {
       }
     }
   }
-
-
 
   &-fotorama {
     margin-top: 1rem;
