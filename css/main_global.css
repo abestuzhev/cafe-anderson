@@ -2095,15 +2095,38 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.c-title__layout .c-title__h1 {
-  float: left;
-  margin-right: 3rem; }
-
-.c-title__layout::after {
-  content: '';
-  clear: both;
-  display: table; }
+  .c-title__layout .c-title__h1 {
+    float: left;
+    margin-right: 3rem; }
+  .c-title__layout::after {
+    content: '';
+    clear: both;
+    display: table; }
+  .c-title__layout .c-simple-nav {
+    margin-right: 2rem; }
+    .c-title__layout .c-simple-nav__item {
+      font-family: "PT Serif Caption";
+      font-size: 2.6rem;
+      font-weight: 500;
+      line-height: 1;
+      color: #9b806f;
+      background: none;
+      margin-right: 0; }
+      .c-title__layout .c-simple-nav__item.active {
+        background: none; }
+        .c-title__layout .c-simple-nav__item.active span {
+          color: #c44890;
+          position: relative; }
+          .c-title__layout .c-simple-nav__item.active span::after {
+            content: '';
+            position: absolute;
+            bottom: -.1rem;
+            left: 0;
+            width: 100%;
+            border-bottom: 1px dotted #c44890; }
+      .c-title__layout .c-simple-nav__item::after {
+        content: '';
+        display: none; }
 
 .c-title-decor-layout {
   text-align: center; }

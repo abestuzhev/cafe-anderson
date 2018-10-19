@@ -3796,7 +3796,7 @@
         text-align: left;
     }
     .tabs-menu__item {
-        padding: .4rem .6rem;
+        padding: .4rem .8rem;
     }
 
 }
@@ -4924,7 +4924,8 @@
     }
 
     .tabs-menu__item {
-        margin-right: 0;
+        margin-right: .6rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -7209,6 +7210,18 @@
     }
     .holidays .holidays-list {
         display: block;
+    }
+
+    .c-title__layout {
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    .c-title__layout .c-simple-nav {
+        margin-right: 0;
+        margin-bottom: .5rem;
+    }
+    .c-title__layout .c-simple-nav__item {
+        padding-left: 0;
     }
 
 }
