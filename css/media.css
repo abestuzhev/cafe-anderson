@@ -7218,10 +7218,10 @@
     }
     .c-title__layout .c-simple-nav {
         margin-right: 0;
-        margin-bottom: .5rem;
+        margin-bottom: 1.5rem;
     }
     .c-title__layout .c-simple-nav__item {
-        padding-left: 0;
+        /* padding-left: 0; */
     }
 
 }
