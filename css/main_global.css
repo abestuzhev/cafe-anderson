@@ -2125,6 +2125,8 @@ p {
       line-height: 1;
       margin-right: 0;
       padding: 1rem 1.1rem; }
+      .c-title__layout .c-simple-nav__item.active h1 {
+        color: #ffffff; }
       .c-title__layout .c-simple-nav__item.active span {
         position: relative; }
         .c-title__layout .c-simple-nav__item.active span::after {
