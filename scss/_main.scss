@@ -18556,19 +18556,20 @@ a.show-more__button:hover {
         }
 
         .owl-nav {
-            margin-top: -.7rem;
+            top: 50% !important;
+            margin-top: -.7rem !important;
         }
 
         .owl-nav .owl-prev {
             width: 1rem;
             height: 1.3rem;
-            left: 32%;
+            left: 32% !important;
             background: url(../img/icons/icon-arr-left.svg) 0 0 no-repeat;
         }
         .owl-nav .owl-next {
             width: 1rem;
             height: 1.3rem;
-            right: 32%;
+            right: 32% !important;
             background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
         }
     }
@@ -19346,11 +19347,15 @@ a.show-more__button:hover {
             }
 
             &__left {
-                white-space: nowrap;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                //white-space: nowrap;
 
             }
 
             &__photo {
+                margin-right: .8rem;
 
                 display: inline-block;
                 width: 3.2rem;
@@ -19574,6 +19579,7 @@ a.show-more__button:hover {
             position: relative;
             cursor: pointer;
             opacity: .9;
+            white-space: nowrap;
             user-select: none;
 
             &_text_2 {
