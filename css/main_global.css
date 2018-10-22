@@ -22920,9 +22920,9 @@ a.show-more__button:hover {
             flex-flow: row wrap;
     margin-top: 1.5rem; }
     .catering-options__item {
-      height: 25rem;
       width: 50%;
-      padding: 2.2rem; }
+      padding: 2.2rem;
+      overflow: hidden; }
       .catering-options__item:nth-child(4n-3) {
         background: url(../img/decor-bg-dot.png); }
       .catering-options__item:nth-child(4n) {
@@ -22932,15 +22932,29 @@ a.show-more__button:hover {
       width: 20rem;
       height: 20rem;
       border-radius: 10rem;
+      background-size: cover;
       float: left;
       margin: 0rem 2.2rem 2.2rem 2.2rem; }
     .catering-options__title {
       font-size: 2rem;
-      color: #000000; }
+      color: #000000;
+      display: block;
+      margin-bottom: 1.5rem; }
     .catering-options p {
       font-size: 1.4rem;
       color: #545454;
-      margin-top: 1.5rem; }
+      margin-bottom: 1.5rem; }
+    .catering-options__show {
+      margin-bottom: 1.5rem;
+      display: none; }
+    .catering-options__collapse {
+      display: none; }
+    .catering-options__cut {
+      display: block; }
+    .catering-options__pull_right {
+      text-align: right; }
+    .catering-options__pull_left {
+      text-align: left; }
   .catering-separator {
     background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
     display: block;
@@ -22955,6 +22969,7 @@ a.show-more__button:hover {
     position: relative;
     overflow: hidden; }
     .catering-gallery__background {
+      max-height: 61rem;
       width: 100%;
       height: 100%;
       background: url(../img/catering/catering-slide-1.jpg) 50% 50% no-repeat;
@@ -22971,7 +22986,7 @@ a.show-more__button:hover {
     position: absolute;
     width: 5.3rem;
     height: 5.5rem;
-    bottom: 2.5rem;
+    bottom: 2rem;
     right: 4rem;
     background: url(../img/catering/catering-decor-star.png) 0 0 no-repeat; }
   .catering-decor-pink {
@@ -23086,10 +23101,12 @@ a.show-more__button:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    padding: 0 2.8rem 0 2.8rem;
+    padding: 0rem 2.8rem 0 2.8rem;
     font-family: "SummerFont";
     font-size: 3.5rem;
     text-transform: uppercase; }
+    .catering-price__first {
+      padding-top: 3rem; }
     .catering-price__name {
       color: #61a028; }
     .catering-price__value {
@@ -23114,27 +23131,24 @@ a.show-more__button:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2.8rem 0 2.3rem 0; }
+    padding: 2.8rem 0 2.3rem 0;
+    margin-left: -1rem;
+    margin-right: -1rem; }
     .catering-form__item {
-      padding: 0 1rem 0 1rem; }
+      padding: .5rem 1rem .5rem 1rem;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
       .catering-form__item label {
         white-space: nowrap;
         color: #212121;
         margin-bottom: .5rem; }
       .catering-form__item input {
         color: #555451; }
-      .catering-form__item:nth-child(1) {
-        padding-left: 0; }
-        .catering-form__item:nth-child(1) input {
-          min-width: 25.6rem; }
-      .catering-form__item:nth-child(3) {
-        -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1; }
-        .catering-form__item:nth-child(3) input {
-          min-width: 25.6rem; }
-      .catering-form__item:last-child {
-        padding-right: 0; }
+      .catering-form__item:nth-child(1) input {
+        min-width: 25.6rem; }
+      .catering-form__item:nth-child(3) input {
+        min-width: 25.6rem; }
     .catering-form .SumoSelect {
       width: 100%; }
     .catering-form .SelectBox {

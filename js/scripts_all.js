@@ -12795,9 +12795,23 @@ $(function() {
     });
 
     $('#catering-show-calendar').on('click', function(event) {
-       var id = $(this).attr('data-for');
-       $('#'+id).show();
+        event.preventDefault();
+        var id = $(this).attr('data-for');
+        $('#'+id).show();
     });
+
+    $('.catering-options__show').on('click', function(event) {
+        event.preventDefault();
+        $(this).siblings('.catering-options__cut').toggle();
+        $(this).toggle();
+    });
+
+    $('.catering-options__collapse').on('click', function(event) {
+        event.preventDefault();
+        $(this).closest('.catering-options__cut').siblings('.catering-options__show').toggle();
+        $(this).closest('.catering-options__cut').toggle();
+    });
+
 
 });
 

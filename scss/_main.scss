@@ -20359,9 +20359,9 @@ a.show-more__button:hover {
     margin-top: 1.5rem;
 
     &__item {
-      height: 25rem;
       width: 50%;
       padding: 2.2rem;
+      overflow: hidden;
 
       &:nth-child(4n-3) {
         background: url(../img/decor-bg-dot.png);
@@ -20378,6 +20378,7 @@ a.show-more__button:hover {
       width: 20rem;
       height: 20rem;
       border-radius: 10rem;
+      background-size: cover;
       float: left;
       margin: 0rem 2.2rem 2.2rem 2.2rem;
     }
@@ -20385,12 +20386,37 @@ a.show-more__button:hover {
     &__title {
       font-size: 2rem;
       color: #000000;
+      display: block;
+      margin-bottom: 1.5rem;
     }
 
     & p {
       font-size: 1.4rem;
       color: #545454;
-      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+
+    &__show {
+      margin-bottom: 1.5rem;
+      display: none;
+    }
+
+    &__collapse {
+      display: none;
+    }
+
+    &__cut {
+      display: block;
+    }
+
+    &__pull {
+      &_right {
+        text-align: right;
+      }
+      &_left {
+        text-align: left;
+      }
     }
 
 
@@ -20415,6 +20441,7 @@ a.show-more__button:hover {
     overflow: hidden;
 
     &__background {
+      max-height: 61rem;
       width: 100%;
       height: 100%;
       background: url(../img/catering/catering-slide-1.jpg) 50% 50% no-repeat;
@@ -20437,7 +20464,7 @@ a.show-more__button:hover {
     position: absolute;
     width: 5.3rem;
     height: 5.5rem;
-    bottom: 2.5rem;
+    bottom: 2rem;
     right: 4rem;
     background: url(../img/catering/catering-decor-star.png) 0 0 no-repeat;
 
@@ -20586,15 +20613,20 @@ a.show-more__button:hover {
   }
 
   &-price {
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     width: 100%;
-    padding: 0 2.8rem 0 2.8rem;
+    padding: 0rem 2.8rem 0 2.8rem;
 
     font-family: $font_decor;
     font-size: 3.5rem;
     text-transform: uppercase;
+
+    &__first {
+      padding-top: 3rem;
+    }
 
     &__name {
       color: #61a028;
@@ -20623,9 +20655,12 @@ a.show-more__button:hover {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 2.8rem 0 2.3rem 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
 
     &__item {
-      padding: 0 1rem 0 1rem;
+      padding: .5rem 1rem .5rem 1rem;
+      flex-grow: 1;
 
       label {
         white-space: nowrap;
@@ -20638,22 +20673,18 @@ a.show-more__button:hover {
       }
 
       &:nth-child(1) {
-        padding-left: 0;
         input {
           min-width: 25.6rem;
         }
       }
 
       &:nth-child(3) {
-        flex-grow: 1;
+
         input {
           min-width: 25.6rem;
         }
       }
 
-      &:last-child {
-        padding-right: 0;
-      }
     }
 
     .SumoSelect {
