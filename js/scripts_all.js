@@ -12772,3 +12772,49 @@ $(function() {
 });
 
 /* / Event Builder */
+
+/* Catering */
+    // function
+
+    // main
+$(function() {
+    $('.catering-fotorama').fotorama({
+        width: '100%',
+        height: '47.5rem',
+        ratio: 16/9,
+        loop: true,
+        thumbwidth: 88,
+        allowfullscreen: false,
+        nav: 'thumbs',
+
+    });
+
+    $('.catering-collapse').on('click', function(event) {
+        event.preventDefault();
+        $(this).closest('.catering-cut').toggle();
+    });
+
+    $('#catering-show-calendar').on('click', function(event) {
+        event.preventDefault();
+        var id = $(this).attr('data-for');
+        $('#'+id).show();
+    });
+
+    $('.catering-options__show').on('click', function(event) {
+        event.preventDefault();
+        $(this).siblings('.catering-options__cut').toggle();
+        $(this).toggle();
+    });
+
+    $('.catering-options__collapse').on('click', function(event) {
+        event.preventDefault();
+        $(this).closest('.catering-options__cut').siblings('.catering-options__show').toggle();
+        $(this).closest('.catering-options__cut').toggle();
+    });
+
+
+});
+
+/* / Catering */
+
+

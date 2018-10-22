@@ -9104,3 +9104,273 @@
     }
 }
 /* /Footer */
+
+/* Catering */
+@media screen and (max-width: 1200px) {
+    .catering-options__item {
+        padding: 1.8rem;
+    }
+    .catering-options__image {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 7.5rem;
+        margin: 0 1.8rem 1.8rem 1.8rem;
+    }
+
+    .catering-subtitle {
+        padding: 0 2rem 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1170px) {
+
+    .catering .calendar-navigator__month {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .catering-form {
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .catering-plate__decor:after {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .catering .calendar-navigator {
+        display: none;
+    }
+
+    .catering-calendar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .catering .calendar {
+        padding: 0;
+    }
+
+    .catering .calendar-header {
+        display: block;
+        padding: 1.6rem;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    .catering-options__item {
+        padding: 1.5rem;
+    }
+    .catering-options__image {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 5rem;
+        margin: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .catering .bonus-info__bird {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .catering-options {
+        flex-flow: column;
+    }
+
+    .catering-options__item {
+        width: 100%;
+        padding: 2.2rem;
+    }
+
+    .catering-options__item:nth-child(2n) {
+        background-image: none;
+    }
+
+    .catering-options__item:nth-child(2n+1) {
+        background: url(../img/decor-bg-dot.png);
+    }
+
+    .catering-options__image {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10rem;
+        margin: 0 2.2rem 2.2rem 2.2rem;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .catering .bonus-info__decor_hare {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 541px) {
+    .catering-options__cut {
+        display: block!important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .catering {
+        margin: 0 -1.6rem;
+    }
+
+    .catering-banner {
+        height: 25rem;
+    }
+
+    .catering-options__item {
+        padding: 1.8rem;
+    }
+    .catering-options__image {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 7.5rem;
+        margin: 0 1.8rem 1.8rem 1.8rem;
+    }
+
+    .catering-options__cut {
+        display: none;
+    }
+
+    .catering-options__show {
+        display: inline;
+    }
+
+    .catering-options__collapse {
+        display: inline;
+    }
+
+    .catering-info {
+        margin-top: 1.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 1;
+    }
+
+    .catering-info  ul {
+        padding-left: 2rem;
+    }
+
+    .catering-info li {
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    .catering-plate:first-child {
+        margin-bottom: 0;
+    }
+
+    .catering-plate {
+        border-radius: 0;
+    }
+
+    .catering .bonus-info__form {
+        flex-flow: column;
+    }
+
+    .catering .bonus-info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .catering-plate__head {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .catering .bonus-info__phone:after {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .catering-options__item {
+        padding: 1.5rem;
+    }
+    .catering-options__image {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 5rem;
+        margin: 0 1.5rem 1.5rem 1.5rem;
+    }
+
+    .catering-options__image {
+        margin-bottom: 0;
+    }
+
+    .catering-options__item p {
+        margin: 0;
+    }
+
+    .catering-options__title {
+        line-height: 1;
+    }
+
+    .catering-separator {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .catering-separator__dotted {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .catering-subtitle {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .catering-subtitle__lead {
+        display: block;
+    }
+
+    .catering .calendar {
+        border: none;
+        box-shadow: none;
+    }
+
+    .catering-calendar {
+        padding: 0;
+    }
+
+    .catering-price {
+        flex-flow: column;
+        line-height: 1;
+        padding: 1.8rem 2.5rem 1.8rem 2.5rem;
+    }
+
+    .catering .bonus-info__title {
+        font-size: 2.4rem;
+    }
+
+    .catering .bonus-info__phone {
+        font-size: 2.9rem;
+    }
+
+    .catering-plate__head {
+        font-size: 2.2rem;
+    }
+
+    .catering .bonus-info__subtitle {
+        display: block;
+    }
+
+}
+
+/* /Catering */

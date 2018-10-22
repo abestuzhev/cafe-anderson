@@ -20174,3 +20174,668 @@ a.show-more__button:hover {
 
 /* / Event Builder */
 
+
+/* Catering */
+
+.catering {
+  font-family: $font-serif;
+  margin-bottom: 4rem;
+
+  &-plate {
+    background-color: #fff;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: .4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &_last {
+      padding-bottom: 0;
+    }
+
+    &__caption {
+      padding: 2.5rem 3.5rem 2rem 3.5rem;
+
+    }
+
+    &__head {
+      color: #c44890;
+      font-size: 2.3rem;
+    }
+
+    &__subtext {
+      color: #212121;
+      font-size: 1.2rem;
+
+      .c-obligatory-field {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__grey {
+      background: url(../img/catering/catering-decor-dotted-grey.png) 0 0;
+      position: relative;
+      padding: 0 2.8rem 0 2.8rem;
+    }
+
+    &__inner {
+      position: relative;
+    }
+
+    &__separator {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+      }
+
+      &_reverse {
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: .4rem;
+          background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+          transform: scaleY(-1);
+        }
+      }
+
+    }
+
+    &__decor {
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url(../img/catering/catering-bg-contact.png) 0 0 no-repeat;
+        background-size: cover;
+        width: 38rem;
+        height: 25rem;
+      }
+    }
+
+    &__comment {
+      max-width: 80rem;
+      position: relative;
+      padding-bottom: 2.4rem;
+    }
+
+    &__input {
+      padding-bottom: 2rem;
+    }
+
+    &__textarea {
+      height: 11.6rem;
+    }
+
+
+  }
+
+  &-banner {
+    height: 37rem;
+    background: url(../img/catering-banner.jpg) 50% 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 3.8rem;
+    border-radius: .4rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.4rem;
+      background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+    }
+
+    &__box {
+      position: absolute;
+      bottom: 4rem;
+      left: 0;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__title {
+      background: url(../img/decor-button-green.png) 0 0 repeat;
+      font-family: $font_sans-serif;
+      color: #ffffff;
+      font-size: 3.7rem;
+      border-radius: .7rem;
+      padding: .7rem 1.5rem .7rem 1.5rem;
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -.8rem;
+        left: -.8rem;
+        width: 105.5%;
+        height: 124%;
+        border: .5rem solid #ffffff;
+        border-radius: 1.1rem;
+        display: inline-block;
+
+      }
+    }
+
+
+  }
+
+  &-title {
+    display: block;
+    text-align: center;
+    font-family: $font_sans-serif;
+    font-weight: 700;
+    color: #c44890;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  &-subtitle {
+    display: block;
+    text-align: center;
+    font-family: $font_serif;
+    color: #555451;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+    &__lead {
+      color: #79b224;
+      font-size: 2rem;
+    }
+  }
+
+
+  &-options {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1.5rem;
+
+    &__item {
+      width: 50%;
+      padding: 2.2rem;
+      overflow: hidden;
+
+      &:nth-child(4n-3) {
+        background: url(../img/decor-bg-dot.png);
+      }
+
+      &:nth-child(4n) {
+        background: url(../img/decor-bg-dot.png);
+      }
+
+    }
+
+    &__image {
+      display: inline-block;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 10rem;
+      background-size: cover;
+      float: left;
+      margin: 0rem 2.2rem 2.2rem 2.2rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+      color: #000000;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    & p {
+      font-size: 1.4rem;
+      color: #545454;
+      margin-bottom: 1.5rem;
+    }
+
+
+    &__show {
+      margin-bottom: 1.5rem;
+      display: none;
+    }
+
+    &__collapse {
+      display: none;
+    }
+
+    &__cut {
+      display: block;
+    }
+
+    &__pull {
+      &_right {
+        text-align: right;
+      }
+      &_left {
+        text-align: left;
+      }
+    }
+
+
+  }
+
+  &-separator {
+    background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
+    display: block;
+    margin: 4rem 2.8rem 4rem 2.8rem;
+    height: .6rem;
+
+    &__dotted {
+      background: url(../img/catering/catering-decor-dotted-green.png) 0 0 repeat-x;
+      height: .2rem;
+      margin: 0rem 2.8rem 0rem 2.8rem;
+    }
+  }
+
+  &-gallery {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &__background {
+      max-height: 61rem;
+      width: 100%;
+      height: 100%;
+      background: url(../img/catering/catering-slide-1.jpg) 50% 50% no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: blur(.3rem);
+    }
+
+    &__wrapper {
+      max-width: 92rem;
+      margin: auto;
+    }
+
+
+  }
+
+  &-decor-star {
+    position: absolute;
+    width: 5.3rem;
+    height: 5.5rem;
+    bottom: 2rem;
+    right: 4rem;
+    background: url(../img/catering/catering-decor-star.png) 0 0 no-repeat;
+
+  }
+
+  &-decor-pink {
+    display: block;
+    position: relative;
+    height: 3rem;
+    background-color: #c44890;
+    overflow: hidden;
+
+    &__decor {
+
+      &-1 {
+        position: absolute;
+        right: 3rem;
+        top: 1rem;
+        transform: rotate(6.3deg);
+
+        svg {
+          width: 7rem;
+          height: 3.5rem;
+          fill: #f368b9;
+        }
+      }
+
+      &-2 {
+        position: absolute;
+        right: 12rem;
+        top: -1.5rem;
+        transform: rotate(30deg);
+
+        svg {
+          width: 6rem;
+          height: 6rem;
+          fill: #f368b9;
+        }
+      }
+
+
+    }
+  }
+
+  &-decor-dotted {
+    display: block;
+    position: relative;
+    height: 5rem;
+    background: url(../img/decor-bg-dot.png);
+    margin-bottom: 2.5rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: .5rem;
+      background: url(../img/catering/catering-decor-wave-1.png);
+    }
+
+    &__box {
+      position: absolute;
+      bottom: -2.5rem;
+      left: 0;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+
+    &__title {
+      background: url(../img/decor-button-pink.png) 0 0 repeat;
+      font-family: $font_sans-serif;
+      color: #ffffff;
+      font-size: 3.7rem;
+      border-radius: .7rem;
+      padding: .7rem 1.5rem .7rem 1.5rem;
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.0;
+        background-color: #ffffff;
+      }
+
+      &:hover {
+        &:after {
+          opacity: 0.1;
+        }
+      }
+
+    }
+  }
+
+  &-decor-bird {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 12.5rem;
+    svg {
+      width: 10.2rem;
+      height: 5rem;
+    }
+  }
+
+  &-calendar {
+    padding: 3.2rem 2.8rem 3.2rem 2.8rem;
+
+    .calendar {
+      padding-top: 2rem;
+      box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+  &-line {
+    display: block;
+    text-align: center;
+  }
+
+  &-collapse {
+    color: #b58f80;
+    font-size: 1.3rem;
+    vertical-align: bottom;
+
+    &:after {
+      content: '';
+      width: 100%;
+      border-bottom: 1px dotted #a49591;
+    }
+
+    span {
+      color: #a49591;
+      font-size: 1.5rem;
+      padding-bottom: .3rem;
+      display: inline-block;
+
+    }
+  }
+
+  &-price {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 2.8rem 0 2.8rem;
+
+    font-family: $font_decor;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+
+    &__first {
+      padding-top: 3rem;
+    }
+
+    &__name {
+      color: #61a028;
+    }
+
+    &__value {
+      color: #9c4e98;
+    }
+  }
+
+  &-info {
+    background-color: #fcfcfc;
+    margin-top: 3.5rem;
+    padding: 3.2rem 2.8rem 3.2rem 2.8rem;
+    list-style-type: circle;
+
+    li {
+      margin-bottom: 1.5rem;
+      color: #555451;
+      list-style-type: circle;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2.8rem 0 2.3rem 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+    &__item {
+      padding: .5rem 1rem .5rem 1rem;
+      flex-grow: 1;
+
+      label {
+        white-space: nowrap;
+        color: #212121;
+        margin-bottom: .5rem;
+      }
+
+      input {
+        color: #555451;
+      }
+
+      &:nth-child(1) {
+        input {
+          min-width: 25.6rem;
+        }
+      }
+
+      &:nth-child(3) {
+
+        input {
+          min-width: 25.6rem;
+        }
+      }
+
+    }
+
+    .SumoSelect {
+      width: 100%;
+    }
+
+    .SelectBox {
+      padding: 1.4rem 0 1.4rem .8rem;
+
+    }
+
+    .SumoSelect.open > .optWrapper {
+      top: 4.6rem;
+    }
+
+
+  }
+
+  &-send {
+    text-transform: uppercase;
+    background-color: #c44890;
+    font-size: 1.4rem;
+    padding: 1.7rem 2.2rem 1.7rem 2.2rem;
+    border-radius: .3rem;
+
+
+    &_recall {
+      font-size: 1.5rem;
+      text-transform: none;
+      background-color: #7cbd41;
+
+    }
+  }
+
+  .c-personal-data__item {
+    margin: 1.2rem 0 1.2rem 0;
+  }
+
+  .bonus-info {
+    border-radius: .4rem;
+
+    &__content {
+      text-align: center;
+    }
+
+    &__title {
+      color: #7cbd41;
+      font-size: 3.6rem;
+      text-transform: uppercase;
+    }
+
+    &__lead {
+      color: #7cbd41;
+    }
+
+    &__subtitle {
+      color: #553023;
+      font-size: 1.7rem;
+      margin-bottom: .5rem;
+    }
+
+    &__phone {
+      color: #222222;
+      font-style: italic;
+      font-size: 3rem;
+      position: relative;
+      display: inline-block;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 1.2rem;
+        left: -3.5rem;
+
+        width: 2.4rem;
+        height: 2.4rem;
+
+        background: url(../img/catering/phone-call.svg) 0 0 no-repeat;
+        background-size: cover;
+
+      }
+    }
+
+    &__recall {
+      color: #553023;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    &__form {
+      margin: auto;
+      max-width: 39rem;
+      display: flex;
+      flex-flow: row nowrap;
+      position: relative;
+
+    }
+
+    a {
+      color: #fff;
+    }
+
+    &__decor {
+      &_heart {
+        svg {
+          width: 7.2rem;
+          height: 1.9rem;
+          margin: 1.3rem 0 1.3rem 0;
+        }
+      }
+
+      &_hare {
+        position: absolute;
+        bottom: 2.2rem;
+        right: -13rem;
+        svg {
+          width: 10rem;
+          height: 9rem;
+        }
+      }
+    }
+
+    &__bird {
+      left: 24%;
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+
+  &-fotorama {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .fotorama__thumb-border {
+    border-color: #c44890;
+  }
+
+
+}
+
+/* / Catering */
