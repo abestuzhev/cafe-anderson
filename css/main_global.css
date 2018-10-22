@@ -2130,7 +2130,17 @@ p {
       .c-title__layout .c-simple-nav__item.active span {
         position: relative; }
         .c-title__layout .c-simple-nav__item.active span::after {
-          content: ''; }
+          content: '';
+          display: none; }
+      .c-title__layout .c-simple-nav__item span {
+        position: relative; }
+        .c-title__layout .c-simple-nav__item span::after {
+          content: '';
+          position: absolute;
+          bottom: -.1rem;
+          left: 0;
+          width: 100%;
+          border-bottom: 1px dotted #c44890; }
       .c-title__layout .c-simple-nav__item::after {
         content: '';
         display: none; }

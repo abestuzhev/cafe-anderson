@@ -507,6 +507,7 @@ p {
                     position: relative;
                     &::after {
                         content: '';
+                        display: none;
                         // position: absolute;
                         // bottom: -.1rem;
                         // left: 0;
@@ -517,6 +518,19 @@ p {
 
 
 
+            }
+
+            span {
+                // color: #c44890;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -.1rem;
+                    left: 0;
+                    width: 100%;
+                    border-bottom: 1px dotted #c44890;
+                }
             }
 
             &::after {
