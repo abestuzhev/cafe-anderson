@@ -4991,6 +4991,10 @@
     .event-builder-button__collapse_arrow svg {
         margin: 0;
     }
+
+    .tabs-menu__list {
+        margin-bottom: 1.4rem;
+    }
 }
 
 @media (max-width: 540px) {
@@ -5797,7 +5801,7 @@
     }
 
     .events-header__btn {
-        top: -51px;
+        top: -19px;
     }
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
