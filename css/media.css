@@ -610,6 +610,11 @@
     .bonus-banner__rabbit {
         left: 1%;
     }
+
+    .event-builder .cafe-list__tabs .c-text-message {
+        width: 68%;
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 1170px) {
@@ -747,6 +752,23 @@
     .bonus-install__giraffe {
         top: 8%;
     }
+
+    .event-builder-place {
+        display: block;
+    }
+
+    .event-builder-place__content {
+        padding-left: 2rem;
+    }
+
+    .event-builder-place__aside {
+        max-width: 100%;
+    }
+
+    .event-builder-place__aside .filter-item {
+        width: 49%;
+    }
+
 
 }
 
@@ -2348,6 +2370,22 @@
         width: 50%;
         padding: 0 .7rem;
     }
+
+    .c-card-hall-time {
+        width: 100%;
+    }
+
+    .c-card-hall__img {
+        width: 100%;
+    }
+
+    .c-card-hall__text {
+        display: none;
+    }
+
+    .c-card-hall-time__col {
+        width: 46%;
+    }
 }
 
 @media (max-width: 940px) {
@@ -3078,6 +3116,14 @@
 
     .filter {
         padding: 1.4rem;
+    }
+
+    .event-builder-place .filter {
+        display: block;
+    }
+
+    .event-builder-place__aside .filter-item {
+        width: 100%;
     }
 
     .filter-mobile-btn,
@@ -3835,6 +3881,24 @@
     }
     .tabs-menu__item {
         padding: .4rem .8rem;
+    }
+
+
+    .event-builder .cafe-list__tabs {
+        flex-flow: column wrap;
+        align-items: flex-end;
+    }
+
+    .event-builder .cafe-list__tabs .c-text-message {
+        order: 2;
+        width: 100%;
+    }
+    .event-builder .cafe-list__tabs .tabs-menu {
+        order: 1;
+    }
+
+    .event-builder-city {
+        display: none;
     }
 
 }
