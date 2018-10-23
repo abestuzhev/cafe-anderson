@@ -9418,6 +9418,13 @@ $(document).ready(function ($) {
 
 
 
+    /*filter-subscription*/
+    /*пдписка в фильтре*/
+    $(document).on('click', '.filter-subscription__btn', function(e){
+        e.preventDefault();
+        $(this).parents('.filter-subscription').find('.filter-subscription__body').addClass('is-show');
+        $(this).parents('.filter-subscription__btn-layout').hide();
+    })
 
 
 
@@ -12772,49 +12779,3 @@ $(function() {
 });
 
 /* / Event Builder */
-
-/* Catering */
-    // function
-
-    // main
-$(function() {
-    $('.catering-fotorama').fotorama({
-        width: '100%',
-        height: '47.5rem',
-        ratio: 16/9,
-        loop: true,
-        thumbwidth: 88,
-        allowfullscreen: false,
-        nav: 'thumbs',
-
-    });
-
-    $('.catering-collapse').on('click', function(event) {
-        event.preventDefault();
-        $(this).closest('.catering-cut').toggle();
-    });
-
-    $('#catering-show-calendar').on('click', function(event) {
-        event.preventDefault();
-        var id = $(this).attr('data-for');
-        $('#'+id).show();
-    });
-
-    $('.catering-options__show').on('click', function(event) {
-        event.preventDefault();
-        $(this).siblings('.catering-options__cut').toggle();
-        $(this).toggle();
-    });
-
-    $('.catering-options__collapse').on('click', function(event) {
-        event.preventDefault();
-        $(this).closest('.catering-options__cut').siblings('.catering-options__show').toggle();
-        $(this).closest('.catering-options__cut').toggle();
-    });
-
-
-});
-
-/* / Catering */
-
-

@@ -3459,6 +3459,69 @@ test popup
             }
         }
     }
+
+    &-subscription {
+        max-width: 30rem;
+        &__body {
+            display: none;
+            &.is-show {
+                display: block;
+
+            }
+
+            form {
+                display: block;
+            }
+
+            button {
+                cursor:pointer;
+            }
+        }
+        &__box {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: .4rem;
+
+
+        }
+
+        &__col:nth-child(1) {
+            flex:1;
+            padding-right: 1rem;
+
+            input {
+                padding: .8rem 1rem;
+            }
+        }
+
+        &__btn {
+
+            &-layout {
+
+            }
+
+            display: inline-block;
+            padding: 1.2rem 1.5rem;
+            background-color: $color_brand;
+            border-radius: .6rem;
+            color: #ffffff;
+            vertical-align: bottom;
+
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+
+        &__note {
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 12px;
+            max-width: 100px;
+        }
+    }
 }
 
 .cafe-list {

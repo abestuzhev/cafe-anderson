@@ -10074,6 +10074,53 @@ test popup
         content: '';
         top: 0;
         border-radius: 0 0 .6rem .6rem; }
+  .filter-subscription {
+    max-width: 30rem; }
+    .filter-subscription__body {
+      display: none; }
+      .filter-subscription__body.is-show {
+        display: block; }
+      .filter-subscription__body form {
+        display: block; }
+      .filter-subscription__body button {
+        cursor: pointer; }
+    .filter-subscription__box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: .4rem; }
+    .filter-subscription__col:nth-child(1) {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-right: 1rem; }
+      .filter-subscription__col:nth-child(1) input {
+        padding: .8rem 1rem; }
+    .filter-subscription__btn {
+      display: inline-block;
+      padding: 1.2rem 1.5rem;
+      background-color: #9acc4e;
+      border-radius: .6rem;
+      color: #ffffff;
+      vertical-align: bottom; }
+      .filter-subscription__btn::after {
+        content: '';
+        border: none; }
+    .filter-subscription__note {
+      display: inline-block;
+      vertical-align: bottom;
+      font-size: 12px;
+      max-width: 100px; }
 
 .cafe-list {
   font-family: "PT Serif Caption";
