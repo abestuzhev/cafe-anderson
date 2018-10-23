@@ -3677,7 +3677,7 @@ test popup
       padding: .4rem 1rem;
 
       a {
-
+        white-space: nowrap;
           color: #ffffff;
           &::after {
               content: '';

@@ -10234,6 +10234,7 @@ test popup
     border-radius: 5rem;
     padding: .4rem 1rem; }
     .tabs-menu__item a {
+      white-space: nowrap;
       color: #ffffff; }
       .tabs-menu__item a::after {
         content: '';
