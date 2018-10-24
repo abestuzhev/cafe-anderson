@@ -184,6 +184,19 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    /*pie-filling__show*/
+    // показывать начинки на странице с тортами
+    $(document).on('click', '.pie-filling__show', function(e){
+        e.preventDefault();
+        $('.pie-filling-wrapper').slideToggle(300);
+
+        var textBtn = $(this).html();
+        if(textBtn == 'Посмотреть'){
+            $(this).html('Свернуть');
+        }else{
+            $(this).html('Посмотреть');
+        }
+    });
 
     /*filter-subscription*/
     /*пдписка в фильтре*/
@@ -3546,7 +3559,6 @@ $(function() {
 });
 
 /* / Event Builder */
-
 
 /* Catering */
 // function

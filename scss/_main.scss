@@ -15469,7 +15469,7 @@ test popup
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
 
     form {
       width: 100%;
@@ -15760,7 +15760,8 @@ test popup
     position: relative;
     margin-bottom: 1rem;
 
-    &-left, &-right {
+    &-left,
+    &-right {
       position: absolute;
       z-index: 10;
       display: block;
@@ -15822,8 +15823,13 @@ test popup
     .c-card-slide__dropdown {
     }
 
-    &__wrapper {
+    &-wrapper {
       //transition: all .2s ease;
+
+        &.is-hidden {
+            display: none;
+        }
+
     }
 
     &__items {
@@ -15837,6 +15843,26 @@ test popup
     &__item {
       //transition: all .2s ease;
       //width: 25% !important;
+    }
+
+    &__show {
+        font-family: $font_serif;
+        border-radius: 5rem;
+        padding: .4rem 1rem;
+        margin: 0 0 1.8rem 1.2rem;
+        border: .1rem dashed #9b806f;
+        transition: all .2s ease;
+
+        &:hover {
+            border: .1rem dashed #c7368a;
+            color: #c7368a;
+            transition: all .2s ease;
+        }
+
+        &::after {
+            content: '';
+            border: none;
+        }
     }
   }
 
