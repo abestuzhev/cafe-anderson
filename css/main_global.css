@@ -22886,6 +22886,461 @@ a.show-more__button:hover {
       padding-bottom: 5rem; }
 
 /* / Event Builder */
+/* Catering */
+.catering {
+  font-family: "PT Serif Caption";
+  margin-bottom: 4rem; }
+  .catering-plate {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: .4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+    position: relative; }
+    .catering-plate_last {
+      padding-bottom: 0; }
+    .catering-plate__caption {
+      padding: 2.5rem 3.5rem 2rem 3.5rem; }
+    .catering-plate__head {
+      color: #c44890;
+      font-size: 2.3rem; }
+    .catering-plate__subtext {
+      color: #212121;
+      font-size: 1.2rem; }
+      .catering-plate__subtext .c-obligatory-field {
+        font-size: 1.6rem; }
+    .catering-plate__grey {
+      background: url(../img/catering/catering-decor-dotted-grey.png) 0 0;
+      position: relative;
+      padding: 0 2.8rem 0 2.8rem; }
+    .catering-plate__inner {
+      position: relative; }
+    .catering-plate__separator {
+      position: relative; }
+      .catering-plate__separator:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+      .catering-plate__separator_reverse:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        -webkit-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+                transform: scaleY(-1); }
+    .catering-plate__decor:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url(../img/catering/catering-bg-contact.png) 0 0 no-repeat;
+      background-size: cover;
+      width: 38rem;
+      height: 25rem; }
+    .catering-plate__comment {
+      max-width: 80rem;
+      position: relative;
+      padding-bottom: 2.4rem; }
+    .catering-plate__input {
+      padding-bottom: 2rem; }
+    .catering-plate__textarea {
+      height: 11.6rem; }
+  .catering-banner {
+    height: 37rem;
+    background: url(../img/catering-banner.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 3.8rem;
+    border-radius: .4rem; }
+    .catering-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.4rem;
+      background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; }
+    .catering-banner__box {
+      position: absolute;
+      bottom: 4rem;
+      left: 0;
+      display: block;
+      text-align: center;
+      width: 100%; }
+    .catering-banner__title {
+      background: url(../img/decor-button-green.png) 0 0 repeat;
+      font-family: "BebasNeue";
+      color: #ffffff;
+      font-size: 3.7rem;
+      border-radius: .7rem;
+      padding: .7rem 1.5rem .7rem 1.5rem;
+      display: inline-block;
+      position: relative; }
+      .catering-banner__title::after {
+        content: '';
+        position: absolute;
+        top: -.8rem;
+        left: -.8rem;
+        width: 105.5%;
+        height: 124%;
+        border: .5rem solid #ffffff;
+        border-radius: 1.1rem;
+        display: inline-block; }
+  .catering-title {
+    display: block;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-weight: 700;
+    color: #c44890;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 1; }
+  .catering-subtitle {
+    display: block;
+    text-align: center;
+    font-family: "PT Serif Caption";
+    color: #555451;
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+    .catering-subtitle__lead {
+      color: #79b224;
+      font-size: 2rem; }
+  .catering-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin-top: 1.5rem; }
+    .catering-options__item {
+      width: 50%;
+      padding: 2.2rem;
+      overflow: hidden; }
+      .catering-options__item:nth-child(4n-3) {
+        background: url(../img/decor-bg-dot.png); }
+      .catering-options__item:nth-child(4n) {
+        background: url(../img/decor-bg-dot.png); }
+    .catering-options__image {
+      display: inline-block;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 10rem;
+      background-size: cover;
+      float: left;
+      margin: 0rem 2.2rem 2.2rem 2.2rem; }
+    .catering-options__title {
+      font-size: 2rem;
+      color: #000000;
+      display: block;
+      margin-bottom: 1.5rem; }
+    .catering-options p {
+      font-size: 1.4rem;
+      color: #545454;
+      margin-bottom: 1.5rem; }
+    .catering-options__show {
+      margin-bottom: 1.5rem;
+      display: none; }
+    .catering-options__collapse {
+      display: none; }
+    .catering-options__cut {
+      display: block; }
+    .catering-options__pull_right {
+      text-align: right; }
+    .catering-options__pull_left {
+      text-align: left; }
+  .catering-separator {
+    background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
+    display: block;
+    margin: 4rem 2.8rem 4rem 2.8rem;
+    height: .6rem; }
+    .catering-separator__dotted {
+      background: url(../img/catering/catering-decor-dotted-green.png) 0 0 repeat-x;
+      height: .2rem;
+      margin: 0rem 2.8rem 0rem 2.8rem; }
+  .catering-gallery {
+    text-align: center;
+    position: relative;
+    overflow: hidden; }
+    .catering-gallery__background {
+      max-height: 61rem;
+      width: 100%;
+      height: 100%;
+      background: url(../img/catering/catering-slide-1.jpg) 50% 50% no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-filter: blur(0.3rem);
+              filter: blur(0.3rem); }
+    .catering-gallery__wrapper {
+      max-width: 92rem;
+      margin: auto; }
+  .catering-decor-star {
+    position: absolute;
+    width: 5.3rem;
+    height: 5.5rem;
+    bottom: 2rem;
+    right: 4rem;
+    background: url(../img/catering/catering-decor-star.png) 0 0 no-repeat; }
+  .catering-decor-pink {
+    display: block;
+    position: relative;
+    height: 3rem;
+    background-color: #c44890;
+    overflow: hidden; }
+    .catering-decor-pink__decor-1 {
+      position: absolute;
+      right: 3rem;
+      top: 1rem;
+      -webkit-transform: rotate(6.3deg);
+          -ms-transform: rotate(6.3deg);
+              transform: rotate(6.3deg); }
+      .catering-decor-pink__decor-1 svg {
+        width: 7rem;
+        height: 3.5rem;
+        fill: #f368b9; }
+    .catering-decor-pink__decor-2 {
+      position: absolute;
+      right: 12rem;
+      top: -1.5rem;
+      -webkit-transform: rotate(30deg);
+          -ms-transform: rotate(30deg);
+              transform: rotate(30deg); }
+      .catering-decor-pink__decor-2 svg {
+        width: 6rem;
+        height: 6rem;
+        fill: #f368b9; }
+  .catering-decor-dotted {
+    display: block;
+    position: relative;
+    height: 5rem;
+    background: url(../img/decor-bg-dot.png);
+    margin-bottom: 2.5rem; }
+    .catering-decor-dotted::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: .5rem;
+      background: url(../img/catering/catering-decor-wave-1.png); }
+    .catering-decor-dotted__box {
+      position: absolute;
+      bottom: -2.5rem;
+      left: 0;
+      display: block;
+      text-align: center;
+      width: 100%; }
+    .catering-decor-dotted__title {
+      background: url(../img/decor-button-pink.png) 0 0 repeat;
+      font-family: "BebasNeue";
+      color: #ffffff;
+      font-size: 3.7rem;
+      border-radius: .7rem;
+      padding: .7rem 1.5rem .7rem 1.5rem;
+      display: inline-block;
+      position: relative;
+      z-index: 2;
+      cursor: pointer; }
+      .catering-decor-dotted__title:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.0;
+        background-color: #ffffff; }
+      .catering-decor-dotted__title:hover:after {
+        opacity: 0.1; }
+  .catering-decor-bird {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 12.5rem; }
+    .catering-decor-bird svg {
+      width: 10.2rem;
+      height: 5rem; }
+  .catering-calendar {
+    padding: 3.2rem 2.8rem 3.2rem 2.8rem; }
+    .catering-calendar .calendar {
+      padding-top: 2rem;
+      -webkit-box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 10px 18.4px 1.6px rgba(0, 0, 0, 0.1); }
+  .catering-line {
+    display: block;
+    text-align: center; }
+  .catering-collapse {
+    color: #b58f80;
+    font-size: 1.3rem;
+    vertical-align: bottom; }
+    .catering-collapse:after {
+      content: '';
+      width: 100%;
+      border-bottom: 1px dotted #a49591; }
+    .catering-collapse span {
+      color: #a49591;
+      font-size: 1.5rem;
+      padding-bottom: .3rem;
+      display: inline-block; }
+  .catering-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0rem 2.8rem 0 2.8rem;
+    font-family: "SummerFont";
+    font-size: 3.5rem;
+    text-transform: uppercase; }
+    .catering-price__first {
+      padding-top: 3rem; }
+    .catering-price__name {
+      color: #61a028; }
+    .catering-price__value {
+      color: #9c4e98; }
+  .catering-info {
+    background-color: #fcfcfc;
+    margin-top: 3.5rem;
+    padding: 3.2rem 2.8rem 3.2rem 2.8rem;
+    list-style-type: circle; }
+    .catering-info li {
+      margin-bottom: 1.5rem;
+      color: #555451;
+      list-style-type: circle; }
+  .catering-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2.8rem 0 2.3rem 0;
+    margin-left: -1rem;
+    margin-right: -1rem; }
+    .catering-form__item {
+      padding: .5rem 1rem .5rem 1rem;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      .catering-form__item label {
+        white-space: nowrap;
+        color: #212121;
+        margin-bottom: .5rem; }
+      .catering-form__item input {
+        color: #555451; }
+      .catering-form__item:nth-child(1) input {
+        min-width: 25.6rem; }
+      .catering-form__item:nth-child(3) input {
+        min-width: 25.6rem; }
+    .catering-form .SumoSelect {
+      width: 100%; }
+    .catering-form .SelectBox {
+      padding: 1.4rem 0 1.4rem .8rem; }
+    .catering-form .SumoSelect.open > .optWrapper {
+      top: 4.6rem; }
+  .catering-send {
+    text-transform: uppercase;
+    background-color: #c44890;
+    font-size: 1.4rem;
+    padding: 1.7rem 2.2rem 1.7rem 2.2rem;
+    border-radius: .3rem; }
+    .catering-send_recall {
+      font-size: 1.5rem;
+      text-transform: none;
+      background-color: #7cbd41; }
+  .catering .c-personal-data__item {
+    margin: 1.2rem 0 1.2rem 0; }
+  .catering .bonus-info {
+    border-radius: .4rem; }
+    .catering .bonus-info__content {
+      text-align: center; }
+    .catering .bonus-info__title {
+      color: #7cbd41;
+      font-size: 3.6rem;
+      text-transform: uppercase; }
+    .catering .bonus-info__lead {
+      color: #7cbd41; }
+    .catering .bonus-info__subtitle {
+      color: #553023;
+      font-size: 1.7rem;
+      margin-bottom: .5rem; }
+    .catering .bonus-info__phone {
+      color: #222222;
+      font-style: italic;
+      font-size: 3rem;
+      position: relative;
+      display: inline-block; }
+      .catering .bonus-info__phone:after {
+        content: '';
+        position: absolute;
+        top: 1.2rem;
+        left: -3.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        background: url(../img/catering/phone-call.svg) 0 0 no-repeat;
+        background-size: cover; }
+    .catering .bonus-info__recall {
+      color: #553023;
+      font-size: 1.6rem;
+      margin-bottom: 1rem; }
+    .catering .bonus-info__form {
+      margin: auto;
+      max-width: 39rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      position: relative; }
+    .catering .bonus-info a {
+      color: #fff; }
+    .catering .bonus-info__decor_heart svg {
+      width: 7.2rem;
+      height: 1.9rem;
+      margin: 1.3rem 0 1.3rem 0; }
+    .catering .bonus-info__decor_hare {
+      position: absolute;
+      bottom: 2.2rem;
+      right: -13rem; }
+      .catering .bonus-info__decor_hare svg {
+        width: 10rem;
+        height: 9rem; }
+    .catering .bonus-info__bird {
+      left: 24%; }
+      .catering .bonus-info__bird svg {
+        width: 4rem;
+        height: 4rem; }
+  .catering-fotorama {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .catering .fotorama__thumb-border {
+    border-color: #c44890; }
+
+/* / Catering */
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
