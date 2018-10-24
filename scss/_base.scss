@@ -460,16 +460,94 @@ p {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+
+    .c-title__h1 {
+        float: left;
+        margin-right: 3rem;
+    }
+
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+    .c-simple-nav {
+        margin-right: 2rem;
+
+        h1 {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;       
+        }
+        &__item {
+            // display: block;
+            font-family: $font_serif;
+            font-size: 2.6rem;
+            font-weight: 500;
+            line-height: 1;
+            // color: #9b806f;
+            // background: none;
+            margin-right: 0;
+            padding: 1rem 1.1rem;
+
+            
+
+            
+
+            &.active {
+                // background: none;
+                
+
+                h1 {
+                    color: #ffffff;
+                }
+
+                span {
+                    // color: #c44890;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        display: none;
+                        // position: absolute;
+                        // bottom: -.1rem;
+                        // left: 0;
+                        // width: 100%;
+                        // border-bottom: 1px dotted #c44890;
+                    }
+                }
+
+
+
+            }
+
+            span {
+                // color: #c44890;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -.1rem;
+                    left: 0;
+                    width: 100%;
+                    border-bottom: 1px dotted #c44890;
+                }
+            }
+
+            &::after {
+                content: '';
+                display: none;
+                //border: none;
+            }
+
+
+        }
+
+    }
 }
-.c-title__layout .c-title__h1 {
-    float: left;
-    margin-right: 3rem;
-}
-.c-title__layout::after {
-    content: '';
-    clear: both;
-    display: table;
-}
+
+
 
 
 .c-title-decor-layout {

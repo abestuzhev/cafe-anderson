@@ -610,6 +610,11 @@
     .bonus-banner__rabbit {
         left: 1%;
     }
+
+    .event-builder .cafe-list__tabs .c-text-message {
+        width: 68%;
+        text-align: left;
+    }
 }
 
 @media screen and (max-width: 1170px) {
@@ -747,6 +752,23 @@
     .bonus-install__giraffe {
         top: 8%;
     }
+
+    .event-builder-place {
+        display: block;
+    }
+
+    .event-builder-place__content {
+        padding-left: 2rem;
+    }
+
+    .event-builder-place__aside {
+        max-width: 100%;
+    }
+
+    .event-builder-place__aside .filter-item {
+        width: 49%;
+    }
+
 
 }
 
@@ -2230,6 +2252,20 @@
         font-size: 1.9rem;
         margin-top: 1rem;
     }
+
+    .event-builder .event-builder-tab-list-block__title_head1 {
+        display: block;
+    }
+
+    .event-builder-tab-list-block__title {
+        position: relative;
+    }
+
+    .event-builder-tab-list-block__title_control {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 @media (max-width: 930px) {
@@ -2333,6 +2369,22 @@
     .loft-advantages__item {
         width: 50%;
         padding: 0 .7rem;
+    }
+
+    .c-card-hall-time {
+        width: 100%;
+    }
+
+    .c-card-hall__img {
+        width: 100%;
+    }
+
+    .c-card-hall__text {
+        display: none;
+    }
+
+    .c-card-hall-time__col {
+        width: 46%;
     }
 }
 
@@ -2776,6 +2828,30 @@
         width: 50%;
     }
 
+    .event-builder-tab-list-title__middle {
+        display: none;
+    }
+
+    .event-builder .event-builder-tab-list-title__side {
+        /*flex: 1;*/
+        min-width: 0;
+    }
+
+    .event-builder .event-builder-tab-list-block-plate__body {
+        display: block;
+        position: relative;
+    }
+
+    .event-builder .event-builder-tab-list-block-plate__title {
+        position: absolute;
+        top: 1.3rem;
+        left: 18rem;
+        width: 37%;
+    }
+
+    .event-builder .event-builder-tab-list {
+        padding: 12rem 1.5rem 1rem 1.5rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -3042,6 +3118,14 @@
         padding: 1.4rem;
     }
 
+    .event-builder-place .filter {
+        display: block;
+    }
+
+    .event-builder-place__aside .filter-item {
+        width: 100%;
+    }
+
     .filter-mobile-btn,
     .filter-hold-mobile-btn {
         display: block;
@@ -3147,8 +3231,10 @@
     }
 
     .filter-more {
-        right: 50%;
-        transform: translateX(50%);
+        margin-right: 0 !important;
+        width: 100%;
+        /*right: 50%;*/
+        /*transform: translateX(50%);*/
     }
 
     .filter-mobile-sort {
@@ -3168,6 +3254,14 @@
 
     .filter .filter-item--city {
         display: none;
+    }
+
+    .cafe-list__tabs {
+        width: 100%;
+    }
+
+    .cafe-list__city {
+        margin-top: 6rem;
     }
 
     .c-card-event {
@@ -3671,8 +3765,9 @@
     }
 
     .events-header__btn {
-        top: -57px;
+        top: -25px;
     }
+
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
         box-shadow: none;
@@ -3778,6 +3873,32 @@
     .c-full-banner {
         margin-left: -1.5rem;
         margin-right: -1.5rem;
+    }
+
+
+    .tabs-menu__list {
+        text-align: left;
+    }
+    .tabs-menu__item {
+        padding: .4rem .8rem;
+    }
+
+
+    .event-builder .cafe-list__tabs {
+        flex-flow: column wrap;
+        align-items: flex-end;
+    }
+
+    .event-builder .cafe-list__tabs .c-text-message {
+        order: 2;
+        width: 100%;
+    }
+    .event-builder .cafe-list__tabs .tabs-menu {
+        order: 1;
+    }
+
+    .event-builder-city {
+        display: none;
     }
 
 }
@@ -4903,6 +5024,41 @@
     .popup-calendar-booking .popup-footer .c-button {
         width: 100%;
     }
+
+    .tabs-menu__item {
+        margin-right: .6rem;
+        font-size: 1.3rem;
+    }
+
+    .event-builder .event-builder-tab-list-block-plate__image {
+        width: 11.7rem;
+    }
+
+    .event-builder .event-builder-tab-list-block-plate__title {
+        left: 12.4rem;
+    }
+
+    .event-builder {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+    }
+
+    .event-builder-city {
+        padding: 0 1.6rem;
+    }
+
+    .event-builder .event-builder-button__collapse_text_1,
+    .event-builder .event-builder-button__collapse_text_2 {
+        display: none !important;
+    }
+
+    .event-builder-button__collapse_arrow svg {
+        margin: 0;
+    }
+
+    .tabs-menu__list {
+        margin-bottom: 1.4rem;
+    }
 }
 
 @media (max-width: 540px) {
@@ -5709,7 +5865,7 @@
     }
 
     .events-header__btn {
-        top: -51px;
+        top: -19px;
     }
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
@@ -6170,6 +6326,14 @@
     .no-adaptive .page-container {
         min-width: 1200px;
         box-sizing: border-box;
+    }
+
+    .event-builder .event-builder-check {
+        display: none !important;
+    }
+
+    .event-builder .event-builder-tab-list {
+        max-width: 100%;
     }
 }
 
@@ -7186,6 +7350,34 @@
     }
     .holidays .holidays-list {
         display: block;
+    }
+
+    .c-title__layout {
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    .c-title__layout .c-simple-nav {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    .c-title__layout .c-simple-nav__item {
+        /* padding-left: 0; */
+    }
+
+    .event-builder .event-builder-tab-list-block__line {
+        flex-flow: row wrap;
+
+    }
+
+    .event-builder-tab-list-block__left {
+        flex:1 0 100%;
+        margin-bottom: -1.1rem;
+    }
+
+    .event-builder-select {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 2.5rem;
     }
 
 }

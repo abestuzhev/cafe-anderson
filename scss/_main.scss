@@ -3437,6 +3437,7 @@ test popup
         position: absolute;
         top: 100%;
         left:0;
+        width: 100%;
 
         .cafe-list__tabs {
             margin: 0;
@@ -3449,11 +3450,76 @@ test popup
 
         .tabs-menu__item {
             border-radius: 0 0 .6rem .6rem;
+            padding: .9rem 1.2rem;
 
             &.current::after {
                 content:'';
+                top: 0;
                 border-radius: 0 0 .6rem .6rem;
             }
+        }
+    }
+
+    &-subscription {
+        max-width: 30rem;
+        &__body {
+            display: none;
+            &.is-show {
+                display: block;
+
+            }
+
+            form {
+                display: block;
+            }
+
+            button {
+                cursor:pointer;
+            }
+        }
+        &__box {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: .4rem;
+
+
+        }
+
+        &__col:nth-child(1) {
+            flex:1;
+            padding-right: 1rem;
+
+            input {
+                padding: .8rem 1rem;
+            }
+        }
+
+        &__btn {
+
+            &-layout {
+
+            }
+
+            display: inline-block;
+            padding: 1.2rem 1.5rem;
+            background-color: $color_brand;
+            border-radius: .6rem;
+            color: #ffffff;
+            vertical-align: bottom;
+
+            &::after {
+                content: '';
+                border: none;
+            }
+        }
+
+        &__note {
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 12px;
+            max-width: 100px;
         }
     }
 }
@@ -3463,7 +3529,7 @@ test popup
   margin-bottom: 4rem;
 
   &__tabs {
-    text-align: right;
+    text-align: center;
     margin-bottom: 1.7rem;
   }
 
@@ -3474,6 +3540,7 @@ test popup
   }
 
   &__city {
+      margin-top: 4rem;
     margin-bottom: 2rem;
   }
 
@@ -10135,7 +10202,7 @@ test popup
   .filter {
     display: inline-block;
     width: auto;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 
   .filter select,
@@ -18552,19 +18619,20 @@ a.show-more__button:hover {
         }
 
         .owl-nav {
-            margin-top: -.7rem;
+            top: 50% !important;
+            margin-top: -.7rem !important;
         }
 
         .owl-nav .owl-prev {
             width: 1rem;
             height: 1.3rem;
-            left: 32%;
+            left: 32% !important;
             background: url(../img/icons/icon-arr-left.svg) 0 0 no-repeat;
         }
         .owl-nav .owl-next {
             width: 1rem;
             height: 1.3rem;
-            right: 32%;
+            right: 32% !important;
             background: url(../img/icons/icon-arr-right.svg) 0 0 no-repeat;
         }
     }
@@ -19342,11 +19410,15 @@ a.show-more__button:hover {
             }
 
             &__left {
-                white-space: nowrap;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                //white-space: nowrap;
 
             }
 
             &__photo {
+                margin-right: .8rem;
 
                 display: inline-block;
                 width: 3.2rem;
@@ -19570,6 +19642,7 @@ a.show-more__button:hover {
             position: relative;
             cursor: pointer;
             opacity: .9;
+            white-space: nowrap;
             user-select: none;
 
             &_text_2 {
@@ -19955,6 +20028,10 @@ a.show-more__button:hover {
             margin-bottom: 0;
         }
 
+        .c-card-cafe .c-card-cafe__body {
+            padding-bottom: 0;
+        }
+
 
 
 
@@ -20004,6 +20081,8 @@ a.show-more__button:hover {
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
+
+
     }
 
     &-head {
@@ -20163,7 +20242,6 @@ a.show-more__button:hover {
 }
 
 /* / Event Builder */
-
 
 /* Catering */
 
