@@ -15846,6 +15846,7 @@ test popup
     }
 
     &__show {
+        display: inline-block;
         font-family: $font_serif;
         border-radius: 5rem;
         padding: .4rem 1rem;

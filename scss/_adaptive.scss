@@ -949,6 +949,11 @@
     .pie-filling__title {
         text-align: center;
         padding: 0 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .pie-filling .c-title__layout  {
+        align-items: center;
     }
 
     .pie-filling .pie-slider-left, .pie-filling .pie-slider-right {

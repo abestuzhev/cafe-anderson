@@ -9626,46 +9626,53 @@ $(document).ready(function ($) {
 
 
     /*START карусель*/
-    //Обработка клика на стрелку вправо
-    $(".pie-filling-right").on('click',function(e){
-        e.preventDefault();
-        var carusel = $(this).parents('.pie-filling');
-        filling_right_carusel(carusel);
-        console.log('право');
 
-        // console.log('filling_left_carusel : ' + filling_left_carusel(carusel));
-        // console.log('filling_right_carusel : ' + filling_right_carusel(carusel));
+    if(($('.pie-filling-wrapper').not('.is-hidden'))){
+        console.log('no hidden');
+        $('.pie-filling-left').hide();
+        $('.pie-filling-right').hide();
+    }else{
+        console.log('class hidden');
 
-    });
+        //Обработка клика на стрелку вправо
+        $(".pie-filling-right").on('click',function(e){
+            e.preventDefault();
+            var carusel = $(this).parents('.pie-filling');
+            filling_right_carusel(carusel);
+            // console.log('право');
 
-    //Обработка клика на стрелку влево
-    $('.pie-filling-left').on('click', function(e){
-        e.preventDefault();
-        var carusel = $(this).parents('.pie-filling');
-        filling_left_carusel(carusel);
-        console.log('лево');
+            // console.log('filling_left_carusel : ' + filling_left_carusel(carusel));
+            // console.log('filling_right_carusel : ' + filling_right_carusel(carusel));
 
-    });
-    // var block_width = $('.pie-filling').find('.pie-filling__item').outerWidth();
-    var filling_block_width = $('.pie-filling-wrapper').width();
-    $('.pie-filling__item').css({
-        'width': filling_block_width - 9
-    });
+        });
 
-    $(window).resize(function(){
+        //Обработка клика на стрелку влево
+        $('.pie-filling-left').on('click', function(e){
+            e.preventDefault();
+            var carusel = $(this).parents('.pie-filling');
+            filling_left_carusel(carusel);
+            // console.log('лево');
+
+        });
+        // var block_width = $('.pie-filling').find('.pie-filling__item').outerWidth();
         var filling_block_width = $('.pie-filling-wrapper').width();
-        var w = $(window).width();
-        if(w < 627){
-            $('.pie-filling__item').css({
-                'width': filling_block_width - 9
-            });
-        }else{
+        $('.pie-filling__item').css({
+            'width': filling_block_width - 9
+        });
 
-        }
+        $(window).resize(function(){
+            var filling_block_width = $('.pie-filling-wrapper').width();
+            var w = $(window).width();
+            if(w < 627){
+                $('.pie-filling__item').css({
+                    'width': filling_block_width - 9
+                });
+            }else{
 
-    });
+            }
 
-
+        });
+    }
 
 
     function filling_right_carusel(carusel){

@@ -19544,6 +19544,7 @@ test popup
       clear: both;
       display: table; }
     .pie-filling__show {
+      display: inline-block;
       font-family: "PT Serif Caption";
       border-radius: 5rem;
       padding: .4rem 1rem;
@@ -24095,7 +24096,12 @@ a.show-more__button:hover {
     display: block; }
   .pie-filling__title {
     text-align: center;
-    padding: 0 4rem; }
+    padding: 0 4rem;
+    margin-bottom: 1rem; }
+  .pie-filling .c-title__layout {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .pie-filling .pie-slider-left, .pie-filling .pie-slider-right {
     display: block; }
   .pie-filling-wrapper {
