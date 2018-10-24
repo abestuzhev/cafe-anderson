@@ -5265,6 +5265,45 @@ test popup
       background-size: cover;
       padding: 4.3rem 39rem 4.3rem 4.3rem;
     }
+    &--helloween {
+      background: url(../img/halloween.jpg) 50% 50% no-repeat;
+      background-size: cover;
+        background-position: 50% 50%;
+      padding: 1rem;
+      overflow:hidden;
+
+        &:hover .catalog-banner__btn {
+            transform: translateX(-50%) scale(1.05);
+            transition: all .2s ease;
+        }
+    }
+
+      &__btn {
+          position: absolute;
+          background-color: #c03485;
+          padding: .8rem 2rem;
+          color: #ffffff;
+          font-family: $font_decor;
+          font-size: 4rem;
+          bottom: 4rem;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: .6rem;
+          text-align: center;
+          line-height: 1;
+          text-transform: uppercase;
+
+          &::after {
+              content:'';
+              border: none;
+          }
+
+          &:hover {
+              color: #ffffff;
+
+              transition: all .2s ease;
+          }
+      }
 
     &__title {
       font-family: $font_serif;
@@ -11264,9 +11303,17 @@ test popup
     }
 
     .c-form__grid {
+
+        .c-form__col {
+            width: auto;
+            flex: 1 1 100%;
+            padding: 0 .5rem;
+        }
+
+
       .c-form__item {
         &:first-child {
-          width: 35%;
+          //width: 35%;
         }
 
         &:last-child {

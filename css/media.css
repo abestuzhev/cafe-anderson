@@ -261,7 +261,10 @@
         font-size: 2.3rem;
     }
     .catalog-banner {
-        min-height: 0;
+        min-height: 24rem;
+    }
+    .catalog-banner--helloween {
+        min-height: 34rem;
     }
 
 
@@ -3901,6 +3904,14 @@
         display: none;
     }
 
+    .catalog-banner__btn {
+        font-size: 3rem;
+    }
+
+    .catalog-banner--helloween {
+        min-height: 23rem;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -4879,6 +4890,11 @@
         min-width: 0;
     }
 
+    .catalog-banner__btn {
+        padding: .6rem 1.2rem;
+        font-size: 2.4rem;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -5059,6 +5075,8 @@
     .tabs-menu__list {
         margin-bottom: 1.4rem;
     }
+
+
 }
 
 @media (max-width: 540px) {
