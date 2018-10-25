@@ -972,6 +972,7 @@
         padding: 0 12px;
     }
 
+    
     .pie-filling-wrapper .pie-filling__items .pie-filling__item {
         width: 267px;
         height: 41rem;
@@ -982,6 +983,18 @@
     }
 
 
+    .pie-filling-wrapper.is-hidden .pie-filling__items {
+        width: auto;
+        display: flex;
+    }
+
+    .pie-filling-wrapper.is-hidden .pie-filling__items .pie-filling__item {
+        width: 50%;
+        height: auto;
+        margin: 0 0 .6rem;
+        padding: .6rem;
+    }
+
     .pie-filling .catalog-list__item:nth-child(2n) {
         padding: 0;
     }
@@ -991,7 +1004,7 @@
     }
     
     .pie-filling__item:nth-child(1n) {
-        padding: 0 !important;
+        // padding: 0 !important;
     }
 
 }
@@ -1103,7 +1116,15 @@
         }
     }
 }
+@media screen and (max-width: 430px) {
+    .pie-filling-wrapper.is-hidden .pie-filling__items .pie-filling__item {
+        width: 100%;
+    }
 
+    .pie-filling-wrapper.is-hidden .c-card-slide {
+        height: 30rem;  
+    }
+}
 @media screen and (max-width: 370px) {
     .popup-pie {
         .c-card-product__slider {

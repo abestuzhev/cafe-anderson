@@ -9627,7 +9627,7 @@ $(document).ready(function ($) {
 
     /*START карусель*/
 
-    if(($('.pie-filling-wrapper').not('.is-hidden'))){
+    if($('.pie-filling-wrapper').hasClass('is-hidden')){
         console.log('no hidden');
         $('.pie-filling-left').hide();
         $('.pie-filling-right').hide();
