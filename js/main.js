@@ -190,11 +190,17 @@ $(document).ready(function ($) {
         e.preventDefault();
         $('.pie-filling-wrapper').slideToggle(300);
 
-        var textBtn = $(this).html();
+        var textBtn = $(this).find('span').html();
         if(textBtn == 'Посмотреть'){
-            $(this).html('Свернуть');
+            $(this).find('span').html('Свернуть');
+            $(this).find('svg').css({
+                transform: 'rotate(180deg)'
+            });
         }else{
-            $(this).html('Посмотреть');
+            $(this).find('span').html('Посмотреть');
+            $(this).find('svg').css({
+                transform: 'rotate(0)'
+            });
         }
     });
 

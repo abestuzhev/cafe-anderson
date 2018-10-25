@@ -15759,6 +15759,11 @@ test popup
   &-filling {
     position: relative;
     margin-bottom: 1rem;
+      background-color: #fff;
+      border-radius: .6rem;
+      padding: 1.6rem 2.3rem 0;
+      margin-bottom: 2rem;
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
 
     &-left,
     &-right {
@@ -15849,20 +15854,41 @@ test popup
         display: inline-block;
         font-family: $font_serif;
         border-radius: 5rem;
-        padding: .4rem 1rem;
+        //padding: .4rem 1rem;
         margin: 0 0 1.8rem 1.2rem;
-        border: .1rem dashed #9b806f;
+        //border: .1rem dashed #9b806f;
         transition: all .2s ease;
 
         &:hover {
-            border: .1rem dashed #c7368a;
+            //border: .1rem dashed #c7368a;
             color: #c7368a;
             transition: all .2s ease;
+
+            .c-symbol {
+                fill: #c7368a;
+            }
         }
 
         &::after {
             content: '';
             border: none;
+        }
+
+        .c-symbol {
+            fill: #9b806f;
+        }
+
+        span {
+            display: inline-block;
+            border-bottom: 1px dotted #9b806f;
+            //&::after {
+            //    content: '';
+            //    position: absolute;
+            //    bottom: -.1rem;
+            //    left: 0;
+            //    width: 100%;
+            //    border-bottom: 1px dotted #9b806f;
+            //}
         }
     }
   }
