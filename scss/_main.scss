@@ -3462,11 +3462,23 @@ test popup
 
     &-subscription {
         max-width: 30rem;
+        margin-bottom: 1rem;
+        min-height: 66px;
+        display: flex;
+        align-items: center;
         &__body {
-            display: none;
+            //display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .2s ease;
+            position: absolute;
+            z-index: -1;
             &.is-show {
-                display: block;
-
+                opacity: 1;
+                visibility: visible;
+                transition: all .2s ease;
+                position: static;
+                z-index: 1;
             }
 
             form {
@@ -3492,19 +3504,25 @@ test popup
             padding-right: 1rem;
 
             input {
-                padding: .8rem 1rem;
+                padding: .6rem 1rem;
             }
         }
 
         &__btn {
+            margin-left: 1.6rem;
 
             &-layout {
+                //position: relative;
+                //top: 4px;
+                margin-top: 4px;
 
+                width: 30rem;
             }
 
+            transition: all .2s ease;
             display: inline-block;
-            padding: 1.2rem 1.5rem;
-            background-color: $color_brand;
+            padding: 1rem 1.5rem;
+            background-color: #7cbd41;
             border-radius: .6rem;
             color: #ffffff;
             vertical-align: bottom;
@@ -3513,6 +3531,17 @@ test popup
                 content: '';
                 border: none;
             }
+            
+            &:hover {
+                color: #ffffff;
+                opacity: .9;
+                transition: all .2s ease;
+            }
+            
+            svg {
+                margin-right: .3rem;
+                fill: #fff;
+            }
         }
 
         &__note {
@@ -3520,6 +3549,15 @@ test popup
             vertical-align: bottom;
             font-size: 12px;
             max-width: 100px;
+            margin-left: .5rem;
+        }
+
+        .c-button__small {
+            padding: .6rem 1.4rem;
+        }
+
+        .c-personal-data {
+            margin-bottom: 0;
         }
     }
 }
@@ -6491,8 +6529,9 @@ test popup
   }
 
   .filter {
-    margin-bottom: 0;
+    margin-bottom: 3rem;
   }
+
   .filter .l-button__center {
     display: block;
   }
@@ -6515,6 +6554,7 @@ test popup
 
   .filter-item {
     margin-right: 1.4rem;
+      //margin-bottom: 0;
   }
 
   #event-calendar {
