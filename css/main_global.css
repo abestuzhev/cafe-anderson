@@ -10058,9 +10058,6 @@ test popup
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    position: absolute;
-    top: 100%;
-    left: 0;
     width: 100%; }
     .filter-switch .cafe-list__tabs {
       margin: 0; }
@@ -10369,6 +10366,12 @@ test popup
     text-align: left;
     color: #9b806f;
     margin-bottom: 2.1rem; }
+  .cafe-list-layout .filter {
+    margin-bottom: 0; }
+  .cafe-list-layout .filter-layout {
+    margin-bottom: 3rem; }
+  .cafe-list-layout .filter-mobile-btn {
+    margin-bottom: 0; }
   .cafe__body {
     position: relative;
     background-color: #fff;

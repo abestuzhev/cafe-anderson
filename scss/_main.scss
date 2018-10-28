@@ -3434,9 +3434,9 @@ test popup
         flex-flow: row wrap;
         align-items: flex-start;
         justify-content: flex-start;
-        position: absolute;
-        top: 100%;
-        left:0;
+        //position: absolute;
+        //top: 100%;
+        //left:0;
         width: 100%;
 
         .cafe-list__tabs {
@@ -3851,6 +3851,22 @@ test popup
     text-align: left;
     color: #9b806f;
     margin-bottom: 2.1rem;
+  }
+
+  &-list {
+      &-layout {
+          .filter {
+              margin-bottom: 0;
+          }
+
+          .filter-layout {
+              margin-bottom: 3rem;
+          }
+
+          .filter-mobile-btn {
+              margin-bottom: 0;
+          }
+      }
   }
 
   &__body {

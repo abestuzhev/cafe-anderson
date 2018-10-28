@@ -3121,6 +3121,14 @@
         padding: 1.4rem;
     }
 
+    .filter-more {
+        display: none;
+    }
+
+    .filter-more.active {
+        display: block;
+    }
+
     .event-builder-place .filter {
         display: block;
     }
@@ -3910,6 +3918,14 @@
 
     .catalog-banner--helloween {
         min-height: 23rem;
+    }
+
+    .cafe-list-layout .filter-layout {
+        margin-bottom: 0;
+    }
+
+    #cafe-map {
+        margin-top: 3rem;
     }
 
 }

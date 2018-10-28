@@ -2245,13 +2245,18 @@ $(document).ready(function ($) {
             e.preventDefault();
             $(this).toggleClass('dropdown-show');
             $(this).siblings(showBlock).slideToggle(200);
+
         });
     }
     ShowMobileBtnFilter('.filter-mobile-btn', '.filter');
     ShowMobileBtnFilter('.filter-mobile-btn', '.reviews-form');
     ShowMobileBtnFilter('.filter-hold-mobile-btn', '.filter-hold');
 
-
+    $('.filter-mobile-btn').on('click', function (e) {
+        e.preventDefault();
+        $('.filter-more').toggleClass('active');
+        console.log('filter more');
+    });
 
     /*показ подменю в мобильной версии меню*/
     $('.header-mobile__list .icon-dropdown').on('click', function (e) {
