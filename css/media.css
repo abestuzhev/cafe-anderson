@@ -3055,7 +3055,7 @@
     }
 
     .events .filter {
-        display: inline-block !important;
+        /*display: inline-block !important;*/
     }
 
     .filter-hold {

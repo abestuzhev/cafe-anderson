@@ -10072,7 +10072,8 @@ test popup
         top: 0;
         border-radius: 0 0 .6rem .6rem; }
   .filter-subscription {
-    max-width: 30rem;
+    width: 46rem;
+    height: 6.6rem;
     margin-bottom: 1rem;
     min-height: 66px;
     display: -webkit-box;
@@ -10080,15 +10081,15 @@ test popup
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    overflow: hidden; }
     .filter-subscription__body {
-      opacity: 0;
-      visibility: hidden;
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease;
       position: absolute;
-      z-index: -1; }
+      z-index: 1;
+      top: 11px; }
       .filter-subscription__body.is-show {
         opacity: 1;
         visibility: visible;
@@ -10120,23 +10121,43 @@ test popup
       -webkit-box-flex: 1;
           -ms-flex: 1;
               flex: 1;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      width: 32rem; }
       .filter-subscription__col:nth-child(1) input {
         padding: .6rem 1rem; }
+    .filter-subscription__col .filter-subscription__btn {
+      margin: 0; }
+    .filter-subscription__col .c-personal-data {
+      margin-top: .5rem; }
     .filter-subscription__btn {
-      margin-left: 1.6rem;
+      text-align: center;
+      font-family: "PT Serif Caption";
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease;
       display: inline-block;
-      padding: 1rem 1.5rem;
+      padding: 1.3rem 1.5rem;
       background-color: #7cbd41;
       border-radius: .6rem;
       color: #ffffff;
-      vertical-align: bottom; }
+      vertical-align: middle; }
       .filter-subscription__btn-layout {
-        margin-top: 4px;
-        width: 30rem; }
+        position: relative;
+        z-index: 2;
+        width: 49rem;
+        background-color: #fff; }
+        .filter-subscription__btn-layout.animate {
+          -webkit-transform: translateX(320px);
+              -ms-transform: translateX(320px);
+                  transform: translateX(320px);
+          -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          transition: all .3s ease; }
+          .filter-subscription__btn-layout.animate .filter-subscription__note {
+            opacity: 0;
+            -webkit-transition: all .1s ease;
+            -o-transition: all .1s ease;
+            transition: all .1s ease; }
       .filter-subscription__btn::after {
         content: '';
         border: none; }
@@ -10146,12 +10167,16 @@ test popup
         -webkit-transition: all .2s ease;
         -o-transition: all .2s ease;
         transition: all .2s ease; }
+      .filter-subscription__btn span {
+        display: block;
+        text-align: center; }
       .filter-subscription__btn svg {
         margin-right: .3rem;
-        fill: #fff; }
+        fill: #fff;
+        margin-bottom: .4rem; }
     .filter-subscription__note {
       display: inline-block;
-      vertical-align: bottom;
+      vertical-align: middle;
       font-size: 12px;
       max-width: 100px;
       margin-left: .5rem; }
@@ -12415,7 +12440,20 @@ test popup
     height: 17px; }
 
 .events .filter {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .events .filter .l-button__center {
   display: block; }
