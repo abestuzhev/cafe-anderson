@@ -19358,7 +19358,7 @@ test popup
     border-radius: .6rem;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
     .pie-form .datepicker-layout::after {
       content: '';
       position: absolute;
@@ -19537,7 +19537,7 @@ test popup
     background-color: #fff;
     border-radius: .6rem;
     padding: 1.6rem 2.3rem 0;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1); }
     .pie-filling-left, .pie-filling-right {
@@ -19594,7 +19594,7 @@ test popup
       display: inline-block;
       font-family: "PT Serif Caption";
       border-radius: 5rem;
-      margin: 0 0 1.8rem 1.2rem;
+      margin: 0 0 0 1.2rem;
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease; }
@@ -19611,8 +19611,7 @@ test popup
       .pie-filling__show .c-symbol {
         fill: #9b806f; }
       .pie-filling__show span {
-        display: inline-block;
-        border-bottom: 1px dotted #9b806f; }
+        display: inline-block; }
   .pie-description {
     padding: 4.6rem 0 3.4rem;
     font-family: "PT Serif Caption";
