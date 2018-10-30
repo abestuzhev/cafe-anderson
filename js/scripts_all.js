@@ -9448,7 +9448,8 @@ $(document).ready(function ($) {
     $(document).on('click', '.filter-subscription__btn', function(e){
         e.preventDefault();
         // $(this).parents('.filter-subscription').find('.filter-subscription__body').addClass('is-show');
-        $(this).parents('.filter-subscription__btn-layout').addClass('animate');
+        $(this).parents('.filter-subscription').addClass('animate');
+        $(this).parents('.filter-subscription').find('input').focus();
     });
 
 

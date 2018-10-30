@@ -10074,28 +10074,50 @@ test popup
   .filter-subscription {
     width: 46rem;
     height: 6.6rem;
-    margin-bottom: 1rem;
     min-height: 66px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow: hidden;
+    position: relative; }
+    .filter-subscription.animate .filter-subscription__btn-layout {
+      -webkit-transform: translateX(280px);
+          -ms-transform: translateX(280px);
+              transform: translateX(280px);
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease; }
+      .filter-subscription.animate .filter-subscription__btn-layout .filter-subscription__note {
+        opacity: 0;
+        -webkit-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease; }
+    .filter-subscription.animate .c-personal-data {
+      opacity: 1;
+      top: 32px;
+      -webkit-transition: top .2s ease 1s;
+      -o-transition: top .2s ease 1s;
+      transition: top .2s ease 1s;
+      -webkit-transition: opacity .2s ease .4s;
+      -o-transition: opacity .2s ease .4s;
+      transition: opacity .2s ease .4s; }
     .filter-subscription__body {
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease;
-      position: absolute;
+      position: relative;
       z-index: 1;
-      top: 11px; }
+      top: 2px;
+      width: 100%; }
       .filter-subscription__body.is-show {
         opacity: 1;
         visibility: visible;
-        -webkit-transition: all .2s ease;
-        -o-transition: all .2s ease;
-        transition: all .2s ease;
+        -webkit-transition: all .1s ease;
+        -o-transition: all .1s ease;
+        transition: all .1s ease;
         position: static;
         z-index: 1; }
       .filter-subscription__body form {
@@ -10122,7 +10144,7 @@ test popup
           -ms-flex: 1;
               flex: 1;
       padding-right: 1rem;
-      width: 32rem; }
+      width: 28rem; }
       .filter-subscription__col:nth-child(1) input {
         padding: .6rem 1rem; }
     .filter-subscription__col .filter-subscription__btn {
@@ -10136,28 +10158,18 @@ test popup
       -o-transition: all .2s ease;
       transition: all .2s ease;
       display: inline-block;
-      padding: 1.3rem 1.5rem;
+      padding: .6rem 1.5rem .5rem;
       background-color: #7cbd41;
       border-radius: .6rem;
       color: #ffffff;
       vertical-align: middle; }
       .filter-subscription__btn-layout {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         z-index: 2;
         width: 49rem;
         background-color: #fff; }
-        .filter-subscription__btn-layout.animate {
-          -webkit-transform: translateX(320px);
-              -ms-transform: translateX(320px);
-                  transform: translateX(320px);
-          -webkit-transition: all .3s ease;
-          -o-transition: all .3s ease;
-          transition: all .3s ease; }
-          .filter-subscription__btn-layout.animate .filter-subscription__note {
-            opacity: 0;
-            -webkit-transition: all .1s ease;
-            -o-transition: all .1s ease;
-            transition: all .1s ease; }
       .filter-subscription__btn::after {
         content: '';
         border: none; }
@@ -10168,7 +10180,6 @@ test popup
         -o-transition: all .2s ease;
         transition: all .2s ease; }
       .filter-subscription__btn span {
-        display: block;
         text-align: center; }
       .filter-subscription__btn svg {
         margin-right: .3rem;
@@ -10178,12 +10189,24 @@ test popup
       display: inline-block;
       vertical-align: middle;
       font-size: 12px;
-      max-width: 100px;
+      max-width: 115px;
       margin-left: .5rem; }
+    .filter-subscription input.c-input {
+      width: 270px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding: 7px 10px; }
     .filter-subscription .c-button__small {
       padding: .6rem 1.4rem; }
     .filter-subscription .c-personal-data {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; }
 
 .cafe-list {
   font-family: "PT Serif Caption";

@@ -3463,23 +3463,47 @@ test popup
     &-subscription {
         width: 46rem;
         height: 6.6rem;
-        margin-bottom: 1rem;
+        //margin-bottom: 1rem;
         min-height: 66px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         overflow: hidden;
+        position: relative;
+
+        &.animate {
+            .filter-subscription__btn-layout {
+                transform:translateX(280px);
+                transition: all .3s ease;
+
+                .filter-subscription__note {
+                    opacity: 0;
+                    transition: all .1s ease;
+                }
+            }
+
+            .c-personal-data {
+                opacity: 1;
+                top: 32px;
+                //transition: 5s opacity .2s ease;
+
+                transition: top .2s ease 1s;
+                transition: opacity .2s ease .4s;
+            }
+        }
+
         &__body {
             //display: none;
             //opacity: 0;
             //visibility: hidden;
             transition: all .2s ease;
-            position: absolute;
+            position: relative;
             z-index: 1;
-            top: 11px;
+            top: 2px;
+            width: 100%;
             &.is-show {
                 opacity: 1;
                 visibility: visible;
-                transition: all .2s ease;
+                transition: all .1s ease;
                 position: static;
                 z-index: 1;
             }
@@ -3506,7 +3530,7 @@ test popup
             &:nth-child(1) {
                 flex:1;
                 padding-right: 1rem;
-                width: 32rem;
+                width: 28rem;
 
                 input {
                     padding: .6rem 1rem;
@@ -3533,25 +3557,18 @@ test popup
                 //position: relative;
                 //top: 4px;
                 //margin-top: 4px;
-                position: relative;
+                position: absolute;
+                top: 0;
+                left: 0;
                 z-index: 2;
                 width: 49rem;
                 background-color: #fff;
 
-                &.animate {
-                    transform:translateX(320px);
-                    transition: all .3s ease;
-
-                    .filter-subscription__note {
-                        opacity: 0;
-                        transition: all .1s ease;
-                    }
-                }
             }
 
             transition: all .2s ease;
             display: inline-block;
-            padding: 1.3rem 1.5rem;
+            padding: .6rem 1.5rem .5rem;
             background-color: #7cbd41;
             border-radius: .6rem;
             color: #ffffff;
@@ -3569,7 +3586,7 @@ test popup
             }
 
             span {
-                display: block;
+                //display: block;
                 text-align: center;
             }
             
@@ -3585,8 +3602,16 @@ test popup
             display: inline-block;
             vertical-align: middle;
             font-size: 12px;
-            max-width: 100px;
+            max-width: 115px;
             margin-left: .5rem;
+        }
+        input.c-input {
+            width: 270px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            padding: 7px 10px;
         }
 
         .c-button__small {
@@ -3595,6 +3620,13 @@ test popup
 
         .c-personal-data {
             margin-bottom: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            //transition: 2s opacity .2s ease;
+            //transition: .3s top .3s ease;
         }
     }
 }
