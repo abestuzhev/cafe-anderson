@@ -15890,7 +15890,7 @@ test popup
     margin-bottom: 1rem;
       background-color: #fff;
       border-radius: .6rem;
-      padding: 1.6rem 2.3rem 0;
+      padding: 1.6rem 2.3rem .4rem;
       margin-bottom: 2.5rem;
       box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
 
@@ -15950,7 +15950,7 @@ test popup
 
     &__title {
       color: #9b806f;
-      margin-bottom: 1.8rem;
+      margin: 0 auto 1.6rem;
 
     }
 
@@ -16002,16 +16002,16 @@ test popup
         &::after {
             content: '';
             border: none;
-            //border-bottom: 1px dotted #9b806f;
+
         }
 
         .c-symbol {
             fill: #9b806f;
         }
 
-        span {
-            display: inline-block;
-
+        & > span {
+            display: inline;
+          border-bottom: 1px dotted #9b806f;
             //&::after {
             //    content: '';
             //    position: absolute;

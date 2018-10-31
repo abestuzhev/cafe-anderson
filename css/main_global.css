@@ -19600,7 +19600,7 @@ test popup
     margin-bottom: 1rem;
     background-color: #fff;
     border-radius: .6rem;
-    padding: 1.6rem 2.3rem 0;
+    padding: 1.6rem 2.3rem .4rem;
     margin-bottom: 2.5rem;
     -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.1); }
@@ -19647,7 +19647,7 @@ test popup
       display: none; }
     .pie-filling__title {
       color: #9b806f;
-      margin-bottom: 1.8rem; }
+      margin: 0 auto 1.6rem; }
     .pie-filling-wrapper.is-hidden {
       display: none; }
     .pie-filling__items::after {
@@ -19674,8 +19674,9 @@ test popup
         border: none; }
       .pie-filling__show .c-symbol {
         fill: #9b806f; }
-      .pie-filling__show span {
-        display: inline-block; }
+      .pie-filling__show > span {
+        display: inline;
+        border-bottom: 1px dotted #9b806f; }
   .pie-description {
     padding: 4.6rem 0 3.4rem;
     font-family: "PT Serif Caption";

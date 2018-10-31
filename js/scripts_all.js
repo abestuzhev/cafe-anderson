@@ -9423,14 +9423,14 @@ $(document).ready(function ($) {
         e.preventDefault();
         $('.pie-filling-wrapper').slideToggle(300);
 
-        var textBtn = $(this).find('span').html();
+        var textBtn = $(this).find('.pie-filling__show-word').html();
         if(textBtn == 'Посмотреть'){
-            $(this).find('span').html('Свернуть');
+            $(this).find('.pie-filling__show-word').html('Свернуть');
             $(this).find('svg').css({
                 transform: 'rotate(180deg)'
             });
         }else{
-            $(this).find('span').html('Посмотреть');
+            $(this).find('.pie-filling__show-word').html('Посмотреть');
             $(this).find('svg').css({
                 transform: 'rotate(0)'
             });
