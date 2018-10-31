@@ -3193,7 +3193,7 @@ function customGridRefreshPosition(container, block, cols = 'auto') {
         map_width = cols;
     }
 
-    for (let i=0; i < block_count; i++) {
+    for (let i=0; i <= block_count; i++) {
         map[i] = [];
         for (let j=0; j < map_width; j++) {
             map[i][j] = 1;
