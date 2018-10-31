@@ -14925,6 +14925,12 @@ test popup
   width: 1em;
   height: 1em; }
 
+.popup-party-order .party-order .c-input {
+  padding: 1.2rem 1.6rem; }
+
+.popup-party-order .party-order .popup-form__item {
+  margin-bottom: 1.5rem; }
+
 .popup-party-order .popup-bg__img {
   position: absolute;
   z-index: -1;
