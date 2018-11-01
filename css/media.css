@@ -5092,6 +5092,12 @@
         margin-bottom: 1.4rem;
     }
 
+    .catering-form__item:nth-child(3) {
+        width: 100%;
+    }
+    .catering-form__item {
+        flex: 0 1 100%;
+    }
 
 }
 

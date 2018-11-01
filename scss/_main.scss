@@ -20977,7 +20977,8 @@ a.show-more__button:hover {
 
     &__item {
       padding: .5rem 1rem .5rem 1rem;
-      flex-grow: 1;
+      //flex-grow: 1;
+        flex: 1;
 
       label {
         white-space: nowrap;
@@ -20991,14 +20992,16 @@ a.show-more__button:hover {
 
       &:nth-child(1) {
         input {
-          min-width: 25.6rem;
+          //min-width: 25.6rem;
         }
       }
 
       &:nth-child(3) {
+          flex: 0 1 auto;
+          width: 30rem;
 
         input {
-          min-width: 25.6rem;
+          //min-width: 25.6rem;
         }
       }
 
