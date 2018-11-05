@@ -9417,6 +9417,13 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    /*кнопка заказать новогодний праздник*/
+    $('.new-year-order__btn').on('click', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $('.new-year-order-request').slideDown(300);
+    })
+
     /*pie-filling__show*/
     // показывать начинки на странице с тортами
     $(document).on('click', '.pie-filling__show', function(e){

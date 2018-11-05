@@ -5698,6 +5698,31 @@ div.c-card-catalog-2 {
         }
     }
 
+    &--important {
+        width: 345px;
+        height: 370px;
+        top: -10px;
+        position: relative;
+        background: url(../img/new-year/bg-event-important.png) 0 0 no-repeat;
+
+        &:hover {
+            background: url(../img/new-year/bg-event-importan-hovert.png) 0 0 no-repeat;
+            transition: all .1s ease;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        .c-card-new-year__content {
+            padding-top: 40px;
+        }
+
+        .c-card-new-year__title {
+            padding: 0 7.3rem;
+            font-size: 4rem;
+            color: #d43b36;
+        }
+    }
+
     &__box {
         width: 200px;
         height: 200px;
@@ -5742,8 +5767,8 @@ div.c-card-catalog-2 {
     }
 
     &__title {
-        font-size: 32px;
-        color: #7d3637;
+        font-size: 40px;
+        color: #964898;
         margin-bottom: 14px;
         padding: 0 60px;
         font-family: 'SummerFont', sans-serif;

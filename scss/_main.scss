@@ -21164,7 +21164,7 @@ a.show-more__button:hover {
     }
 
     &-body {/*new-year-body*/
-        padding: 0 10rem 2rem;
+        padding: 0 12.4rem 0;
     }
 
     &-month {/*new-year-month*/
@@ -21181,9 +21181,10 @@ a.show-more__button:hover {
         align-items: center;
         //margin-left: -2rem;
         //margin-right: -2rem;
+        margin-bottom: 4rem;
         &__item {
             //width: 33.3333%;
-            padding: 1.5rem 0;
+            padding: 1.5rem 0 2.5rem;
         }
     }
 
@@ -21196,7 +21197,7 @@ a.show-more__button:hover {
         &__item {
             margin-right: 1.4rem;
             &:nth-child(1) {
-                width: 38rem;
+                width: 37rem;
             }
             &:nth-child(2) {
                 width: 20rem;
@@ -21229,11 +21230,15 @@ a.show-more__button:hover {
 
     &-banner {/*new-year-banner*/
         background-color: #c73d38;
+        background-image: url('../img/new-year/new-year-bannerr-bg.png');
+        background-position: 50% 50%;
+        -webkit-background-size: cover;
+        background-size: cover;
         padding: 1.8rem 1.8rem 3.7rem;
         text-align: center;
         position: relative;
         color: #ffffff;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
 
         &::before {
             content: '';
@@ -21289,12 +21294,309 @@ a.show-more__button:hover {
             padding: .4rem 2.5rem;
             color: #ffffff;
             line-height: 1;
+            transition: all .2s ease;
+
             &::after {
                 content:'';
                 border:none;
             }
+
+            &:hover {
+                color: #ffffff;
+                opacity: .9;
+                transition: all .2s ease;
+            }
+
         }
     }
+
+    &-info {
+        font-family: $font_serif;
+        &__title {
+            margin-bottom: 2rem;
+            font-size: 6rem;
+            font-family:$font_decor;
+            line-height: 1;
+        }
+
+        &-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+
+            &__item {
+                margin-right: 2rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &-order {
+        margin-bottom: 2rem;
+
+        &__grid {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__col {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            &:nth-child(2) {
+                justify-content: flex-end;
+            }
+        }
+
+        &__item {
+            margin-right: 1.3rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .c-counter {
+            padding: .4rem .4rem;
+            border-radius: .8rem;
+            border: none;
+            height: 100%;
+            font-family: $font_decor;
+
+            .dec {
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2Rpc3BsYXk6bm9uZTt9LnN0MXtkaXNwbGF5OmlubGluZTtmaWxsOiNGRkZGRkY7fS5zdDJ7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxnIGNsYXNzPSJzdDAiPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LDB2Ny4xaDd2MS44SDlWMTZIN1Y4LjlIMFY3LjFoN1YwSDl6Ii8+PC9nPjxyZWN0IHg9IjAiIHk9IjcuMSIgY2xhc3M9InN0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEuOCIvPjwvc3ZnPg==);
+                background-size: 45%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+            }
+
+            .inc {
+                background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNOSwwdjcuMWg3djEuOEg5VjE2SDdWOC45SDBWNy4xaDdWMEg5eiIvPjwvZz48L3N2Zz4=);
+                background-size: 45%;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+            }
+
+            .c-counter__btn {
+                width: 3.4rem;
+                height: 3.4rem;
+                border-radius: 3.4rem;
+                font-size: 0;
+                //line-height: 2.8rem;
+                text-align: center;
+                color: #2c2c2c;
+                background-color: #c5c5c5;
+                //background-color: #6faa3a;
+            }
+
+            .c-counter__btn:hover {
+                background-color: #6faa3a;
+                color: #ffffff;
+            }
+
+            .c-counter__field {
+                width: 3.9rem !important;
+                //flex: 1 0 3.4rem;
+                font-size: 3.5rem;
+                line-height: 1;
+                color: #2c2c2c;
+                background-color: transparent;
+                letter-spacing: -.2rem;
+                font-family: $font_decor;
+            }
+        }
+
+        &__price {
+            color: #73ac1c;
+            font-size: 3.5rem;
+            font-family: $font_decor;
+        }
+
+        &__total {
+            color: #73ac1c;
+            font-size: 6rem;
+            font-family: $font_decor;
+        }
+
+        &__btn {
+            display: inline-block;
+            font-size: 3.7rem;
+            text-transform: uppercase;
+            font-family:$font_decor;
+            border-radius: 5rem;
+            background-color: #9acc4e;
+            padding: 1rem 2.5rem;
+            color: #ffffff;
+            line-height: 1;
+            transition: all .2s ease;
+
+            &::after {
+                content:'';
+                border:none;
+            }
+
+            &:hover {
+                color: #ffffff;
+                opacity: .9;
+                transition: all .2s ease;
+            }
+        }
+
+        &-description {
+            font-size: 1.5rem;
+        }
+
+        &-request {
+            position: relative;
+            display: none;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: .4rem;
+                background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+            }
+
+
+                .c-personal-data {
+                width: 100%;
+            }
+
+            &__btn {
+                display: inline-block;
+                font-size: 3.7rem;
+                text-transform: uppercase;
+                font-family:$font_decor;
+                border-radius: 5rem;
+                background-color: #9acc4e;
+                padding: 1rem 2.5rem;
+                color: #ffffff;
+                line-height: 1;
+                transition: all .2s ease;
+                cursor: pointer;
+
+                &::after {
+                    content:'';
+                    border:none;
+                }
+
+                &:hover {
+                    color: #ffffff;
+                    opacity: .9;
+                    transition: all .2s ease;
+                }
+            }
+
+            .c-grid {
+                margin-left: -.5rem;
+                margin-right: -.5rem;
+            }
+
+            .c-col {
+                padding: 1.4rem .5rem;
+            }
+
+            .c-col-6 {
+                &:nth-child(2) {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+    &-delivery {
+        &__list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &__item {
+            width: 50%;
+            margin-bottom: 1.8rem;
+        }
+
+        &__title {
+            font-size: 1.7rem;
+        }
+
+        &__metro {
+            font-size: 1.5rem;
+
+            .icon-label-metro {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    z-index: 10;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #9b9696;
+                    border-radius: 5rem;
+                }
+            }
+
+            .icon-metro-2 {
+                z-index: 11;
+            }
+        }
+
+        &__ticket {
+            font-size: 1.5rem;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input[type="radio"]:checked + .order-radio::before {
+            content: '';
+            background-color: #7cbd41;
+        }
+
+        input[type="radio"]:checked + .order-radio {
+            color: #6c6c6c;
+        }
+
+        input[type="radio"]:checked + .order-radio > .new-year-delivery__title {
+            color: #231300;
+        }
+
+        input[type="radio"]:checked + .order-radio .icon-label-metro::after {
+            display: none;
+        }
+
+        input[type="radio"]:checked + .order-radio > .new-year-delivery__ticket {
+            color: #c2478f;
+        }
+
+        .order-radio::before {
+            content: '';
+            top:1rem;
+        }
+        .order-radio::after {
+            content: '';
+            top:1rem;
+        }
+    }
+
+
+
 }
 
 .popup-new-year {
@@ -21308,11 +21610,13 @@ a.show-more__button:hover {
         }
 
         &-footer {
-            padding: 3rem 5rem 2.6rem;
+            padding: 2rem 5rem 2.6rem;
+            position: relative;
 
             &::before {
                 content: '';
                 position: absolute;
+                top: 0;
                 left: 0;
                 width: 100%;
                 height: .4rem;
@@ -21374,24 +21678,32 @@ a.show-more__button:hover {
 
     &__col {
         &:nth-child(2) {
+            padding-left: 2rem;
             flex:1;
         }
     }
 
     .datepicker-inline {
         .datepicker {
-            width: 42rem;
+            width: 40rem;
             margin-bottom: 2rem;
         }
     }
 
     .datepicker-inline .datepicker--cell {
-        height: 5.1rem; }
+        height: 5.1rem;
+    }
 
     .datepicker-inline .datepicker--cell-day {
         width: 13.28571%;
-        margin: .8% .4%; }
+        margin: .8% .4%;
+    }
 
     .datepicker-inline .datepicker--nav {
-        padding: 1.4rem .4rem; }
+        padding: 1.4rem .4rem;
+    }
+
+
+
+
 }
