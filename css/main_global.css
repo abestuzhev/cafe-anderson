@@ -6183,6 +6183,121 @@ div.c-card-catalog-2 {
   .c-text-message span {
     vertical-align: middle; }
 
+/*c-card-new-year---------------------------*/
+.c-card-new-year {
+  width: 325px;
+  height: 325px;
+  background: url(../img/new-year/bg-event.png) 0 0 no-repeat;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row nowrap;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease; }
+  .c-card-new-year:hover {
+    background: url(../img/new-year/bg-event-hover.png) 0 0 no-repeat;
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+    background-size: cover; }
+    .c-card-new-year:hover .c-card-new-year__box {
+      z-index: 10;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: all .2s ease-out;
+      -o-transition: all .2s ease-out;
+      transition: all .2s ease-out; }
+  .c-card-new-year__box {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: #fff;
+    color: #bf364d;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    .c-card-new-year__box span {
+      position: absolute;
+      font-family: 'SummerFont', sans-serif;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .c-card-new-year__box::after {
+      content: '';
+      border: none; }
+  .c-card-new-year__content {
+    text-align: center;
+    padding-top: 16px; }
+  .c-card-new-year__title {
+    font-size: 32px;
+    color: #7d3637;
+    margin-bottom: 14px;
+    padding: 0 60px;
+    font-family: 'SummerFont', sans-serif;
+    text-transform: uppercase;
+    line-height: 1; }
+  .c-card-new-year__price {
+    display: inline-block;
+    color: #99c506;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 26px; }
+    .c-card-new-year__price::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 19px;
+      height: 6px;
+      background: url(../img/new-year/icon-decor.png) 0 0 no-repeat; }
+    .c-card-new-year__price::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 5px;
+      width: 19px;
+      height: 6px;
+      background: url(../img/new-year/icon-decor.png) -19px 0 no-repeat; }
+  .c-card-new-year__date {
+    font-size: 14px;
+    color: #808080;
+    margin-bottom: 4px; }
+  .c-card-new-year__time {
+    font-size: 14px;
+    color: #808080; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -23525,6 +23640,224 @@ a.show-more__button:hover {
     border-color: #c44890; }
 
 /* / Catering */
+/*new year 2019-----------------------------*/
+.new-year-header {
+  /*new-year-header*/
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: cover;
+  min-height: 78rem;
+  padding: 5rem;
+  margin-bottom: 5rem; }
+
+.new-year-body {
+  /*new-year-body*/
+  padding: 0 10rem 2rem; }
+
+.new-year-month {
+  /*new-year-month*/ }
+  .new-year-month__title {
+    margin-bottom: 1rem;
+    font-size: 2.6rem; }
+
+.new-year-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .new-year-list__item {
+    padding: 1.5rem 0; }
+
+.new-year-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 3.8rem; }
+  .new-year-filter__item {
+    margin-right: 1.4rem; }
+    .new-year-filter__item:nth-child(1) {
+      width: 38rem; }
+    .new-year-filter__item:nth-child(2) {
+      width: 20rem; }
+    .new-year-filter__item:nth-child(3) {
+      width: 18rem; }
+    .new-year-filter__item:last-child {
+      margin-right: 0; }
+  .new-year-filter .SumoSelect {
+    width: 100%; }
+  .new-year-filter input,
+  .new-year-filter select,
+  .new-year-filter .SumoSelect > .CaptionCont {
+    border-radius: 5rem;
+    padding: 1rem 3rem 1rem 4rem;
+    width: 100%; }
+  .new-year-filter .SumoSelect.open > .optWrapper {
+    top: 100%; }
+
+.new-year-banner {
+  /*new-year-banner*/
+  background-color: #c73d38;
+  padding: 1.8rem 1.8rem 3.7rem;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 4rem; }
+  .new-year-banner::before {
+    content: '';
+    position: absolute;
+    top: -.8rem;
+    left: 0;
+    width: 100%;
+    height: 2.2rem;
+    background: url(../img/decor-line-waves.png) 0 0 repeat-x; }
+  .new-year-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -.8rem;
+    left: 0;
+    width: 100%;
+    height: 2.2rem;
+    background: url(../img/decor-line-waves.png) 0 0 repeat-x; }
+  .new-year-banner__title {
+    text-transform: uppercase;
+    font-family: "SummerFont";
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    line-height: 1; }
+  .new-year-banner__btn {
+    position: absolute;
+    bottom: -1.7rem;
+    z-index: 10;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: inline-block;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    font-family: "SummerFont";
+    border-radius: 5rem;
+    background-color: #9acc4e;
+    padding: .4rem 2.5rem;
+    color: #ffffff;
+    line-height: 1; }
+    .new-year-banner__btn::after {
+      content: '';
+      border: none; }
+
+.popup-new-year .popup {
+  max-width: 113.6rem;
+  width: 113.6rem; }
+  .popup-new-year .popup-body {
+    padding: 3rem 5rem 2.6rem; }
+  .popup-new-year .popup-footer {
+    padding: 3rem 5rem 2.6rem; }
+    .popup-new-year .popup-footer::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+  .popup-new-year .popup-close {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    background-color: #f6f6f6;
+    right: 49px;
+    top: 31px;
+    border-radius: 56px;
+    font-size: 14px;
+    color: #2c2c2c;
+    padding: 0;
+    line-height: 56px;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    font-family: Arial, sans-serif; }
+  .popup-new-year .popup-header {
+    margin-bottom: 2.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+
+.popup-new-year__title {
+  font-size: 6rem;
+  font-family: "SummerFont";
+  margin-right: 2.2rem;
+  line-height: 1; }
+
+.popup-new-year__box {
+  color: #964898;
+  font-size: 1.8rem;
+  font-family: "BebasNeue";
+  margin-right: 2.2rem; }
+  .popup-new-year__box span {
+    font-size: 2.5rem; }
+
+.popup-new-year__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.popup-new-year__col:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.popup-new-year .datepicker-inline .datepicker {
+  width: 42rem;
+  margin-bottom: 2rem; }
+
+.popup-new-year .datepicker-inline .datepicker--cell {
+  height: 5.1rem; }
+
+.popup-new-year .datepicker-inline .datepicker--cell-day {
+  width: 13.28571%;
+  margin: .8% .4%; }
+
+.popup-new-year .datepicker-inline .datepicker--nav {
+  padding: 1.4rem .4rem; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

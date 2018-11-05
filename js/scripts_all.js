@@ -9370,20 +9370,20 @@ $(window).on('load', function(){
     });
 
 
-    var disabledPartyDays = [0, 6];
+    var disabledPartyDays = [0, 7];
     $('#party-datepicker').datepicker({
         minDate: new Date(),
         inline: true,
-        onRenderCell: function (date, cellType) {
-            if (cellType == 'day') {
-                var day = date.getDay(),
-                    isDisabled = disabledPartyDays.indexOf(day) != -1;
-
-                return {
-                    disabled: isDisabled
-                }
-            }
-        }
+        // onRenderCell: function (date, cellType) {
+        //     if (cellType == 'day') {
+        //         var day = date.getDay(),
+        //             isDisabled = disabledPartyDays.indexOf(day) != -1;
+        //
+        //         return {
+        //             disabled: isDisabled
+        //         }
+        //     }
+        // }
     });
 
     //календарь в мероприятиях
@@ -11073,6 +11073,7 @@ $(document).ready(function ($) {
 
     showPopup(".calendar-nav-hall__decor-blue:not(.no-popup)", '.popup__gallery_hall_blue');
     showPopup(".calendar-nav-hall__decor-red:not(.no-popup)", '.popup__gallery_hall_red');
+    showPopup(".c-card-new-year__box", '.popup-new-year');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();

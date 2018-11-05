@@ -5657,3 +5657,140 @@ div.c-card-catalog-2 {
         vertical-align: middle;
     }
 }
+
+
+/*c-card-new-year---------------------------*/
+
+.c-card-new-year {
+    width: 325px;
+    height: 325px;
+    background: url(../img/new-year/bg-event.png) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: all .1s ease;
+
+    &:hover {
+        background: url(../img/new-year/bg-event-hover.png) 0 0 no-repeat;
+        transition: all .1s ease;
+        -webkit-background-size: cover;
+        background-size: cover;
+
+        .c-card-new-year__box {
+            z-index: 10;
+            opacity: 1;
+            visibility: visible;
+            transition: all .2s ease-out;
+        }
+    }
+
+    &__box {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-color: #fff;
+        color: #bf364d;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s ease-out;
+
+        span {
+            position: absolute;
+            font-family: 'SummerFont', sans-serif;
+            text-transform: uppercase;
+            line-height: 1.2;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        padding-top: 16px;
+    }
+
+    &__title {
+        font-size: 32px;
+        color: #7d3637;
+        margin-bottom: 14px;
+        padding: 0 60px;
+        font-family: 'SummerFont', sans-serif;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    &__price {
+        display: inline-block;
+        color: #99c506;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 26px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 19px;
+            height: 6px;
+            background: url(../img/new-year/icon-decor.png) 0 0 no-repeat;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 5px;
+            width: 19px;
+            height: 6px;
+            background: url(../img/new-year/icon-decor.png) -19px 0 no-repeat;
+        }
+    }
+
+    &__date {
+        font-size: 14px;
+        color: #808080;
+        margin-bottom: 4px;
+    }
+
+    &__time {
+        font-size: 14px;
+        color: #808080;
+    }
+
+
+}

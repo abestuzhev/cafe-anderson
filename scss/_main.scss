@@ -21149,3 +21149,249 @@ a.show-more__button:hover {
 }
 
 /* / Catering */
+
+
+
+/*new year 2019-----------------------------*/
+.new-year {
+    &-header {/*new-year-header*/
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: cover;
+        min-height: 78rem;
+        padding: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    &-body {/*new-year-body*/
+        padding: 0 10rem 2rem;
+    }
+
+    &-month {/*new-year-month*/
+        &__title {
+            margin-bottom: 1rem;
+            font-size: 2.6rem;
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        //margin-left: -2rem;
+        //margin-right: -2rem;
+        &__item {
+            //width: 33.3333%;
+            padding: 1.5rem 0;
+        }
+    }
+
+    &-filter {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 3.8rem;
+        &__item {
+            margin-right: 1.4rem;
+            &:nth-child(1) {
+                width: 38rem;
+            }
+            &:nth-child(2) {
+                width: 20rem;
+            }
+            &:nth-child(3) {
+                width: 18rem;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .SumoSelect {
+            width: 100%;
+        }
+
+        input,
+        select,
+        .SumoSelect > .CaptionCont {
+            border-radius: 5rem;
+            padding: 1rem 3rem 1rem 4rem;
+            width: 100%;
+        }
+
+        .SumoSelect.open > .optWrapper {
+            top: 100%;
+        }
+    }
+
+    &-banner {/*new-year-banner*/
+        background-color: #c73d38;
+        padding: 1.8rem 1.8rem 3.7rem;
+        text-align: center;
+        position: relative;
+        color: #ffffff;
+        margin-bottom: 4rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 2.2rem;
+            background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 2.2rem;
+            background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+
+        }
+
+        &__title {
+            text-transform: uppercase;
+            font-family:$font_decor;
+            font-size: 4rem;
+            margin-bottom: .5rem;
+            line-height: 1;
+
+        }
+
+        &__price {
+
+        }
+
+        &__cafe {
+
+        }
+
+        &__btn {
+            position: absolute;
+            bottom: -1.7rem;
+            z-index: 10;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            font-size: 3.7rem;
+            text-transform: uppercase;
+            font-family:$font_decor;
+            border-radius: 5rem;
+            background-color: #9acc4e;
+            padding: .4rem 2.5rem;
+            color: #ffffff;
+            line-height: 1;
+            &::after {
+                content:'';
+                border:none;
+            }
+        }
+    }
+}
+
+.popup-new-year {
+    .popup {
+        max-width: 113.6rem;
+        width: 113.6rem;
+
+
+        &-body {
+            padding: 3rem 5rem 2.6rem;
+        }
+
+        &-footer {
+            padding: 3rem 5rem 2.6rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: .4rem;
+                background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+            }
+        }
+
+        &-close {
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            background-color: #f6f6f6;
+            right: 49px;
+            top: 31px;
+            border-radius: 56px;
+            font-size: 14px;
+            color: #2c2c2c;
+            padding: 0;
+            line-height: 56px;
+            text-align: center;
+            cursor: pointer;
+            background-image: none;
+            font-family: Arial, sans-serif;
+        }
+
+        &-header {
+            margin-bottom: 2.4rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-family: $font_decor;
+        margin-right: 2.2rem;
+        line-height: 1;
+
+    }
+
+    &__box {
+        color: #964898;
+        font-size: 1.8rem;
+        font-family: $font_sans-serif;
+        margin-right: 2.2rem;
+        span {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    &__col {
+        &:nth-child(2) {
+            flex:1;
+        }
+    }
+
+    .datepicker-inline {
+        .datepicker {
+            width: 42rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .datepicker-inline .datepicker--cell {
+        height: 5.1rem; }
+
+    .datepicker-inline .datepicker--cell-day {
+        width: 13.28571%;
+        margin: .8% .4%; }
+
+    .datepicker-inline .datepicker--nav {
+        padding: 1.4rem .4rem; }
+}
