@@ -6228,11 +6228,12 @@ div.c-card-catalog-2 {
     position: relative;
     background: url(../img/new-year/bg-event-important.png) 0 0 no-repeat; }
     .c-card-new-year--important:hover {
+      width: 345px;
+      height: 370px;
       background: url(../img/new-year/bg-event-importan-hovert.png) 0 0 no-repeat;
-      -webkit-transition: all .1s ease;
-      -o-transition: all .1s ease;
-      transition: all .1s ease;
-      background-size: cover; }
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; }
     .c-card-new-year--important .c-card-new-year__content {
       padding-top: 40px; }
     .c-card-new-year--important .c-card-new-year__title {
@@ -23666,7 +23667,26 @@ a.show-more__button:hover {
   background-size: cover;
   min-height: 78rem;
   padding: 5rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  position: relative; }
+  .new-year-header__body {
+    position: absolute;
+    top: 22rem;
+    left: 5.5rem; }
+  .new-year-header__title {
+    font-family: "SummerFont";
+    font-size: 7rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .new-year-header__subtitle {
+    font-family: "SummerFont";
+    font-size: 4.7rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-transform: uppercase; }
 
 .new-year-body {
   /*new-year-body*/
@@ -23712,7 +23732,18 @@ a.show-more__button:hover {
           align-items: flex-start;
   margin-bottom: 3.8rem; }
   .new-year-filter__item {
-    margin-right: 1.4rem; }
+    margin-right: 1.4rem;
+    position: relative; }
+    .new-year-filter__item svg, .new-year-filter__item i {
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+      z-index: 10;
+      fill: #92c647; }
+    .new-year-filter__item .icon-a {
+      display: inline-block;
+      width: 2.2rem;
+      height: 1.7rem; }
     .new-year-filter__item:nth-child(1) {
       width: 37rem; }
     .new-year-filter__item:nth-child(2) {
@@ -23731,6 +23762,9 @@ a.show-more__button:hover {
     width: 100%; }
   .new-year-filter .SumoSelect.open > .optWrapper {
     top: 100%; }
+  .new-year-filter .datepicker-layout::after {
+    content: '';
+    display: none; }
 
 .new-year-banner {
   /*new-year-banner*/

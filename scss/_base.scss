@@ -5706,10 +5706,13 @@ div.c-card-catalog-2 {
         background: url(../img/new-year/bg-event-important.png) 0 0 no-repeat;
 
         &:hover {
+            width: 345px;
+            height: 370px;
             background: url(../img/new-year/bg-event-importan-hovert.png) 0 0 no-repeat;
-            transition: all .1s ease;
-            -webkit-background-size: cover;
-            background-size: cover;
+            //background: url(../img/new-year/bg-event-important.png) 0 0 no-repeat;
+            transition: all .2s ease;
+            //-webkit-background-size: cover;
+            //background-size: cover;
         }
 
         .c-card-new-year__content {

@@ -21161,6 +21161,32 @@ a.show-more__button:hover {
         min-height: 78rem;
         padding: 5rem;
         margin-bottom: 5rem;
+        position: relative;
+
+      &__body {
+        position: absolute;
+        top: 22rem;
+        left: 5.5rem;
+      }
+
+      &__title {
+        font-family: $font_decor;
+        font-size: 7rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        text-transform: uppercase;
+
+      }
+
+      &__subtitle {
+        font-family: $font_decor;
+        font-size: 4.7rem;
+        line-height: 1;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
     }
 
     &-body {/*new-year-body*/
@@ -21196,11 +21222,32 @@ a.show-more__button:hover {
         margin-bottom: 3.8rem;
         &__item {
             margin-right: 1.4rem;
+          position: relative;
+
+          svg, i {
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            z-index: 10;
+            fill: #92c647;
+
+          }
+
+          .icon-a {
+            display: inline-block;
+            width: 2.2rem;
+            height: 1.7rem;
+          }
+
             &:nth-child(1) {
                 width: 37rem;
+
+
             }
             &:nth-child(2) {
                 width: 20rem;
+
+
             }
             &:nth-child(3) {
                 width: 18rem;
@@ -21226,6 +21273,11 @@ a.show-more__button:hover {
         .SumoSelect.open > .optWrapper {
             top: 100%;
         }
+
+      .datepicker-layout::after {
+        content: '';
+        display: none;
+      }
     }
 
     &-banner {/*new-year-banner*/
