@@ -21165,7 +21165,7 @@ a.show-more__button:hover {
 
       &__body {
         position: absolute;
-        top: 22rem;
+        top: 24%;
         left: 5.5rem;
       }
 
@@ -21347,6 +21347,7 @@ a.show-more__button:hover {
             color: #ffffff;
             line-height: 1;
             transition: all .2s ease;
+            white-space: nowrap;
 
             &::after {
                 content:'';
@@ -21654,7 +21655,7 @@ a.show-more__button:hover {
 .popup-new-year {
     .popup {
         max-width: 113.6rem;
-        width: 113.6rem;
+        width: auto;
 
 
         &-body {

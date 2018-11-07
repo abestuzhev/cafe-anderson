@@ -23671,7 +23671,7 @@ a.show-more__button:hover {
   position: relative; }
   .new-year-header__body {
     position: absolute;
-    top: 22rem;
+    top: 24%;
     left: 5.5rem; }
   .new-year-header__title {
     font-family: "SummerFont";
@@ -23818,7 +23818,8 @@ a.show-more__button:hover {
     line-height: 1;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
-    transition: all .2s ease; }
+    transition: all .2s ease;
+    white-space: nowrap; }
     .new-year-banner__btn::after {
       content: '';
       border: none; }
@@ -24075,7 +24076,7 @@ a.show-more__button:hover {
 
 .popup-new-year .popup {
   max-width: 113.6rem;
-  width: 113.6rem; }
+  width: auto; }
   .popup-new-year .popup-body {
     padding: 3rem 5rem 2.6rem; }
   .popup-new-year .popup-footer {
