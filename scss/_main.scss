@@ -21155,6 +21155,11 @@ a.show-more__button:hover {
 
 /*new year 2019-----------------------------*/
 .new-year {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+    margin-bottom: 4rem;
     &-header {/*new-year-header*/
         background-repeat: no-repeat;
         background-position: 0 100%;
@@ -21191,7 +21196,9 @@ a.show-more__button:hover {
     }
 
     &-body {/*new-year-body*/
-        padding: 0 12.4rem 0;
+        padding: 0 15.4rem 0;
+        position: relative;
+        overflow:hidden;
     }
 
     &-month {/*new-year-month*/
@@ -21306,7 +21313,7 @@ a.show-more__button:hover {
             content: '';
             position: absolute;
             top: 0;
-            left: -11px;
+            left: -9px;
             width: 1.1rem;
             height: 100%;
             z-index: 10;
@@ -21318,7 +21325,7 @@ a.show-more__button:hover {
             content: '';
             position: absolute;
             top: 0;
-            right: -11px;
+            right: -9px;
             width: 1.1rem;
             height: 100%;
             z-index: 10;
@@ -21371,7 +21378,7 @@ a.show-more__button:hover {
         &__btn {
             position: absolute;
             bottom: -1.7rem;
-            z-index: 10;
+            z-index: 15;
             left: 50%;
             transform: translateX(-50%);
             display: inline-block;
@@ -21691,6 +21698,28 @@ a.show-more__button:hover {
         }
     }
 
+    &__decor-1 {
+        position: absolute;
+        top: 16%;
+        left: -30%;
+    }
+    &__decor-2 {
+        position: absolute;
+        top: 15%;
+        right: -20%;
+    }
+    &__decor-3 {
+        position: absolute;
+        bottom: -9%;
+        right: -11%;
+
+    }
+    &__decor-4 {
+        position: absolute;
+        bottom: -6%;
+        left: -13%;
+    }
+
 
 
 }
@@ -21763,6 +21792,17 @@ a.show-more__button:hover {
         margin-right: 2.2rem;
         span {
             font-size: 2.5rem;
+        }
+
+        svg {
+            fill: #964898;
+            margin-bottom: .5rem;
+            position: relative;
+            top: -2px;
+        }
+
+        .symbol-baby {
+            font-size: 2.1rem;
         }
     }
 

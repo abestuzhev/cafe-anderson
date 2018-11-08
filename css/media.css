@@ -334,6 +334,10 @@
     .new-year-header__subtitle {
         font-size: 3.7rem;
     }
+
+    .new-year__decor {
+        display: none;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -4029,7 +4033,7 @@
     }
 
 
-    .new-year-banner {
+    .new-year-banner-layout {
         margin-left: -1.5rem;
         margin-right: -1.5rem;
     }
@@ -4050,6 +4054,46 @@
     .popup-new-year__box {
         display: inline-block;
     }
+
+
+    .new-year {
+        margin-left: -2.2rem;
+        margin-right: -2.2rem;
+    }
+
+    .new-year-banner-layout {
+        width: auto;
+        /*margin: 0;*/
+    }
+    .new-year-banner-layout {
+        background: #c73d38;
+
+    }
+
+    .new-year-banner-layout::before {
+        content: '';
+        position: absolute;
+        top: -.8rem;
+        bottom: auto;
+        left: 0;
+        width: 100%;
+        height: 2.2rem;
+        background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+
+    }
+
+    .new-year-banner-layout::after {
+       content: '';
+       position: absolute;
+       bottom: -.8rem;
+        top: auto;
+       left: 0;
+       width: 100%;
+       height: 2.2rem;
+       background: url(../img/decor-line-waves.png) 0 0 repeat-x;
+    }
+
+
 }
 
 @media (max-width: 780px) {
@@ -5258,10 +5302,6 @@
         flex: 0 1 100%;
     }
 
-    .new-year {
-        margin-left: -1.6rem;
-        margin-right: -1.6rem;
-    }
     .new-year .page-container {
         margin-bottom: 0;
     }
@@ -5323,6 +5363,12 @@
     }
     .new-year-order__item:last-child {
         margin-right: 0;
+    }
+
+
+    .new-year {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
     }
 
 }
@@ -6950,7 +6996,7 @@
     }
 
     .new-year-body {
-        padding: 0;
+        padding: 0 1rem;
     }
 
     .new-year-list__item {

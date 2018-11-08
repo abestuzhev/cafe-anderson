@@ -23660,212 +23660,51 @@ a.show-more__button:hover {
 
 /* / Catering */
 /*new year 2019-----------------------------*/
-.new-year-header {
-  /*new-year-header*/
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: cover;
-  min-height: 78rem;
-  padding: 5rem;
-  margin-bottom: 5rem;
-  position: relative; }
-  .new-year-header__body {
-    position: absolute;
-    top: 24%;
-    left: 5.5rem; }
-  .new-year-header__title {
-    font-family: "SummerFont";
-    font-size: 7rem;
-    line-height: 1;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    text-transform: uppercase; }
-  .new-year-header__subtitle {
-    font-family: "SummerFont";
-    font-size: 4.7rem;
-    line-height: 1;
-    margin-bottom: 1rem;
-    color: #ffffff;
-    text-transform: uppercase; }
-
-.new-year-body {
-  /*new-year-body*/
-  padding: 0 12.4rem 0; }
-
-.new-year-month {
-  /*new-year-month*/ }
-  .new-year-month__title {
-    margin-bottom: 1rem;
-    font-size: 2.6rem; }
-
-.new-year-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 4rem; }
-  .new-year-list__item {
-    padding: 1.5rem 0 2.5rem; }
-
-.new-year-filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 3.8rem; }
-  .new-year-filter__item {
-    margin-right: 1.4rem;
-    position: relative; }
-    .new-year-filter__item svg, .new-year-filter__item i {
-      position: absolute;
-      top: 1rem;
-      left: 1.5rem;
-      z-index: 10;
-      fill: #92c647; }
-    .new-year-filter__item .icon-a {
-      display: inline-block;
-      width: 2.2rem;
-      height: 1.7rem; }
-    .new-year-filter__item:nth-child(1) {
-      width: 37rem; }
-    .new-year-filter__item:nth-child(2) {
-      width: 20rem; }
-    .new-year-filter__item:nth-child(3) {
-      width: 18rem; }
-    .new-year-filter__item:last-child {
-      margin-right: 0; }
-  .new-year-filter .SumoSelect {
-    width: 100%; }
-  .new-year-filter input,
-  .new-year-filter select,
-  .new-year-filter .SumoSelect > .CaptionCont {
-    border-radius: 5rem;
-    padding: 1rem 3rem 1rem 4rem;
-    width: 100%; }
-  .new-year-filter .SumoSelect.open > .optWrapper {
-    top: 100%; }
-  .new-year-filter .datepicker-layout::after {
-    content: '';
-    display: none; }
-
-.new-year-banner {
-  /*new-year-banner*/
-  background-image: url("../img/new-year/new-year-bannerr-bg.png");
-  background-position: 50% 50%;
-  background-size: cover;
-  padding: 1.8rem 1.8rem 3.7rem;
-  text-align: center;
+.new-year {
   position: relative;
-  color: #ffffff;
-  margin-bottom: 3rem; }
-  .new-year-banner-layout {
-    background-image: url("../img/new-year/banner-bg.png");
-    background-repeat: repeat-x;
-    position: relative;
-    width: calc(100% - 22px);
-    margin-left: 11px; }
-    .new-year-banner-layout::before {
-      content: '';
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .4rem;
+  margin-bottom: 4rem; }
+  .new-year-header {
+    /*new-year-header*/
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: cover;
+    min-height: 78rem;
+    padding: 5rem;
+    margin-bottom: 5rem;
+    position: relative; }
+    .new-year-header__body {
       position: absolute;
-      top: 0;
-      left: -11px;
-      width: 1.1rem;
-      height: 100%;
-      z-index: 10;
-      background: url(../img/new-year/banner-right-vawe.png) 0 0 no-repeat; }
-    .new-year-banner-layout::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: -11px;
-      width: 1.1rem;
-      height: 100%;
-      z-index: 10;
-      background: url(../img/new-year/banner-left-vawe.png) 0 0 no-repeat; }
-  .new-year-banner__title {
-    text-transform: uppercase;
-    font-family: "SummerFont";
-    font-size: 4rem;
-    margin-bottom: .5rem;
-    line-height: 1; }
-  .new-year-banner__btn {
-    position: absolute;
-    bottom: -1.7rem;
-    z-index: 10;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    display: inline-block;
-    font-size: 3.7rem;
-    text-transform: uppercase;
-    font-family: "SummerFont";
-    border-radius: 5rem;
-    background-color: #9acc4e;
-    padding: .4rem 2.5rem;
-    color: #ffffff;
-    line-height: 1;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
-    white-space: nowrap; }
-    .new-year-banner__btn::after {
-      content: '';
-      border: none; }
-    .new-year-banner__btn:hover {
+      top: 24%;
+      left: 5.5rem; }
+    .new-year-header__title {
+      font-family: "SummerFont";
+      font-size: 7rem;
+      line-height: 1;
+      margin-bottom: 1rem;
       color: #ffffff;
-      background-color: #81af4a;
-      -webkit-transition: all .2s ease;
-      -o-transition: all .2s ease;
-      transition: all .2s ease; }
-
-.new-year-info {
-  font-family: "PT Serif Caption"; }
-  .new-year-info__title {
-    margin-bottom: 2rem;
-    font-size: 6rem;
-    font-family: "SummerFont";
-    line-height: 1; }
-  .new-year-info-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-    .new-year-info-list__item {
-      margin-right: 2rem; }
-      .new-year-info-list__item:last-child {
-        margin-right: 0; }
-
-.new-year-order {
-  margin-bottom: 2rem; }
-  .new-year-order__grid {
+      text-transform: uppercase; }
+    .new-year-header__subtitle {
+      font-family: "SummerFont";
+      font-size: 4.7rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      text-transform: uppercase; }
+  .new-year-body {
+    /*new-year-body*/
+    padding: 0 15.4rem 0;
+    position: relative;
+    overflow: hidden; }
+  .new-year-month {
+    /*new-year-month*/ }
+    .new-year-month__title {
+      margin-bottom: 1rem;
+      font-size: 2.6rem; }
+  .new-year-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -23878,8 +23717,11 @@ a.show-more__button:hover {
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-  .new-year-order__col {
+            align-items: center;
+    margin-bottom: 4rem; }
+    .new-year-list__item {
+      padding: 1.5rem 0 2.5rem; }
+  .new-year-filter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -23890,106 +23732,228 @@ a.show-more__button:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .new-year-order__col:nth-child(1) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap; }
-    .new-year-order__col:nth-child(2) {
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; }
-  .new-year-order__item {
-    margin-right: 1.3rem; }
-    .new-year-order__item:last-child {
-      margin-right: 0; }
-  .new-year-order .c-counter {
-    padding: .4rem .4rem;
-    border-radius: .8rem;
-    border: none;
-    height: 100%;
-    font-family: "SummerFont"; }
-    .new-year-order .c-counter .dec {
-      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2Rpc3BsYXk6bm9uZTt9LnN0MXtkaXNwbGF5OmlubGluZTtmaWxsOiNGRkZGRkY7fS5zdDJ7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxnIGNsYXNzPSJzdDAiPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LDB2Ny4xaDd2MS44SDlWMTZIN1Y4LjlIMFY3LjFoN1YwSDl6Ii8+PC9nPjxyZWN0IHg9IjAiIHk9IjcuMSIgY2xhc3M9InN0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEuOCIvPjwvc3ZnPg==);
-      background-size: 45%;
-      background-repeat: no-repeat;
-      background-position: 50% 50%; }
-    .new-year-order .c-counter .inc {
-      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNOSwwdjcuMWg3djEuOEg5VjE2SDdWOC45SDBWNy4xaDdWMEg5eiIvPjwvZz48L3N2Zz4=);
-      background-size: 45%;
-      background-repeat: no-repeat;
-      background-position: 50% 50%; }
-    .new-year-order .c-counter .c-counter__btn {
-      width: 3.4rem;
-      height: 3.4rem;
-      border-radius: 3.4rem;
-      font-size: 0;
-      text-align: center;
-      color: #2c2c2c;
-      background-color: #c5c5c5; }
-    .new-year-order .c-counter .c-counter__btn:hover {
-      background-color: #6faa3a;
-      color: #ffffff; }
-    .new-year-order .c-counter .c-counter__field {
-      width: 3.9rem !important;
-      font-size: 3.5rem;
-      line-height: 1;
-      color: #2c2c2c;
-      background-color: transparent;
-      letter-spacing: -.2rem;
-      font-family: "SummerFont"; }
-  .new-year-order__price {
-    color: #73ac1c;
-    font-size: 3.5rem;
-    font-family: "SummerFont";
-    white-space: nowrap; }
-  .new-year-order__total {
-    color: #73ac1c;
-    font-size: 6rem;
-    font-family: "SummerFont";
-    white-space: nowrap; }
-  .new-year-order__btn {
-    display: inline-block;
-    font-size: 3.7rem;
-    text-transform: uppercase;
-    font-family: "SummerFont";
-    border-radius: 5rem;
-    background-color: #9acc4e;
-    padding: 1rem 2.5rem;
-    color: #ffffff;
-    line-height: 1;
-    -webkit-transition: all .2s ease;
-    -o-transition: all .2s ease;
-    transition: all .2s ease;
-    white-space: nowrap; }
-    .new-year-order__btn::after {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 3.8rem; }
+    .new-year-filter__item {
+      margin-right: 1.4rem;
+      position: relative; }
+      .new-year-filter__item svg, .new-year-filter__item i {
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        z-index: 10;
+        fill: #92c647; }
+      .new-year-filter__item .icon-a {
+        display: inline-block;
+        width: 2.2rem;
+        height: 1.7rem; }
+      .new-year-filter__item:nth-child(1) {
+        width: 37rem; }
+      .new-year-filter__item:nth-child(2) {
+        width: 20rem; }
+      .new-year-filter__item:nth-child(3) {
+        width: 18rem; }
+      .new-year-filter__item:last-child {
+        margin-right: 0; }
+    .new-year-filter .SumoSelect {
+      width: 100%; }
+    .new-year-filter input,
+    .new-year-filter select,
+    .new-year-filter .SumoSelect > .CaptionCont {
+      border-radius: 5rem;
+      padding: 1rem 3rem 1rem 4rem;
+      width: 100%; }
+    .new-year-filter .SumoSelect.open > .optWrapper {
+      top: 100%; }
+    .new-year-filter .datepicker-layout::after {
       content: '';
-      border: none; }
-    .new-year-order__btn:hover {
+      display: none; }
+  .new-year-banner {
+    /*new-year-banner*/
+    background-image: url("../img/new-year/new-year-bannerr-bg.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 1.8rem 1.8rem 3.7rem;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 3rem; }
+    .new-year-banner-layout {
+      background-image: url("../img/new-year/banner-bg.png");
+      background-repeat: repeat-x;
+      position: relative;
+      width: calc(100% - 22px);
+      margin-left: 11px; }
+      .new-year-banner-layout::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -9px;
+        width: 1.1rem;
+        height: 100%;
+        z-index: 10;
+        background: url(../img/new-year/banner-right-vawe.png) 0 0 no-repeat; }
+      .new-year-banner-layout::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -9px;
+        width: 1.1rem;
+        height: 100%;
+        z-index: 10;
+        background: url(../img/new-year/banner-left-vawe.png) 0 0 no-repeat; }
+    .new-year-banner__title {
+      text-transform: uppercase;
+      font-family: "SummerFont";
+      font-size: 4rem;
+      margin-bottom: .5rem;
+      line-height: 1; }
+    .new-year-banner__btn {
+      position: absolute;
+      bottom: -1.7rem;
+      z-index: 15;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      display: inline-block;
+      font-size: 3.7rem;
+      text-transform: uppercase;
+      font-family: "SummerFont";
+      border-radius: 5rem;
+      background-color: #9acc4e;
+      padding: .4rem 2.5rem;
       color: #ffffff;
-      opacity: .9;
+      line-height: 1;
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
-      transition: all .2s ease; }
-  .new-year-order-description {
-    font-size: 1.5rem; }
-  .new-year-order-request {
-    position: relative;
-    display: none; }
-    .new-year-order-request::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: .4rem;
-      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
-    .new-year-order-request .c-personal-data {
-      width: 100%; }
-    .new-year-order-request__btn {
+      transition: all .2s ease;
+      white-space: nowrap; }
+      .new-year-banner__btn::after {
+        content: '';
+        border: none; }
+      .new-year-banner__btn:hover {
+        color: #ffffff;
+        background-color: #81af4a;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease; }
+  .new-year-info {
+    font-family: "PT Serif Caption"; }
+    .new-year-info__title {
+      margin-bottom: 2rem;
+      font-size: 6rem;
+      font-family: "SummerFont";
+      line-height: 1; }
+    .new-year-info-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .new-year-info-list__item {
+        margin-right: 2rem; }
+        .new-year-info-list__item:last-child {
+          margin-right: 0; }
+  .new-year-order {
+    margin-bottom: 2rem; }
+    .new-year-order__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .new-year-order__col {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .new-year-order__col:nth-child(1) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap; }
+      .new-year-order__col:nth-child(2) {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+    .new-year-order__item {
+      margin-right: 1.3rem; }
+      .new-year-order__item:last-child {
+        margin-right: 0; }
+    .new-year-order .c-counter {
+      padding: .4rem .4rem;
+      border-radius: .8rem;
+      border: none;
+      height: 100%;
+      font-family: "SummerFont"; }
+      .new-year-order .c-counter .dec {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2Rpc3BsYXk6bm9uZTt9LnN0MXtkaXNwbGF5OmlubGluZTtmaWxsOiNGRkZGRkY7fS5zdDJ7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxnIGNsYXNzPSJzdDAiPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LDB2Ny4xaDd2MS44SDlWMTZIN1Y4LjlIMFY3LjFoN1YwSDl6Ii8+PC9nPjxyZWN0IHg9IjAiIHk9IjcuMSIgY2xhc3M9InN0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEuOCIvPjwvc3ZnPg==);
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; }
+      .new-year-order .c-counter .inc {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNOSwwdjcuMWg3djEuOEg5VjE2SDdWOC45SDBWNy4xaDdWMEg5eiIvPjwvZz48L3N2Zz4=);
+        background-size: 45%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; }
+      .new-year-order .c-counter .c-counter__btn {
+        width: 3.4rem;
+        height: 3.4rem;
+        border-radius: 3.4rem;
+        font-size: 0;
+        text-align: center;
+        color: #2c2c2c;
+        background-color: #c5c5c5; }
+      .new-year-order .c-counter .c-counter__btn:hover {
+        background-color: #6faa3a;
+        color: #ffffff; }
+      .new-year-order .c-counter .c-counter__field {
+        width: 3.9rem !important;
+        font-size: 3.5rem;
+        line-height: 1;
+        color: #2c2c2c;
+        background-color: transparent;
+        letter-spacing: -.2rem;
+        font-family: "SummerFont"; }
+    .new-year-order__price {
+      color: #73ac1c;
+      font-size: 3.5rem;
+      font-family: "SummerFont";
+      white-space: nowrap; }
+    .new-year-order__total {
+      color: #73ac1c;
+      font-size: 6rem;
+      font-family: "SummerFont";
+      white-space: nowrap; }
+    .new-year-order__btn {
       display: inline-block;
       font-size: 3.7rem;
       text-transform: uppercase;
@@ -24002,92 +23966,133 @@ a.show-more__button:hover {
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease;
-      cursor: pointer; }
-      .new-year-order-request__btn::after {
+      white-space: nowrap; }
+      .new-year-order__btn::after {
         content: '';
         border: none; }
-      .new-year-order-request__btn:hover {
+      .new-year-order__btn:hover {
         color: #ffffff;
         opacity: .9;
         -webkit-transition: all .2s ease;
         -o-transition: all .2s ease;
         transition: all .2s ease; }
-    .new-year-order-request .c-grid {
-      margin-left: -.5rem;
-      margin-right: -.5rem; }
-    .new-year-order-request .c-col {
-      padding: 1.4rem .5rem; }
-    .new-year-order-request .c-col-6:nth-child(2) {
-      text-align: right; }
-
-.new-year-delivery__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.new-year-delivery__item {
-  width: 50%;
-  margin-bottom: 1.8rem; }
-
-.new-year-delivery__title {
-  font-size: 1.7rem; }
-
-.new-year-delivery__metro {
-  font-size: 1.5rem; }
-  .new-year-delivery__metro .icon-label-metro {
-    position: relative; }
-    .new-year-delivery__metro .icon-label-metro::after {
-      content: '';
-      position: absolute;
-      z-index: 10;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #9b9696;
-      border-radius: 5rem; }
-  .new-year-delivery__metro .icon-metro-2 {
-    z-index: 11; }
-
-.new-year-delivery__ticket {
-  font-size: 1.5rem; }
-
-.new-year-delivery input[type="radio"] {
-  display: none; }
-
-.new-year-delivery input[type="radio"]:checked + .order-radio::before {
-  content: '';
-  background-color: #7cbd41; }
-
-.new-year-delivery input[type="radio"]:checked + .order-radio {
-  color: #6c6c6c; }
-
-.new-year-delivery input[type="radio"]:checked + .order-radio > .new-year-delivery__title {
-  color: #231300; }
-
-.new-year-delivery input[type="radio"]:checked + .order-radio .icon-label-metro::after {
-  display: none; }
-
-.new-year-delivery input[type="radio"]:checked + .order-radio > .new-year-delivery__ticket {
-  color: #c2478f; }
-
-.new-year-delivery .order-radio::before {
-  content: '';
-  top: 1rem; }
-
-.new-year-delivery .order-radio::after {
-  content: '';
-  top: 1rem; }
+    .new-year-order-description {
+      font-size: 1.5rem; }
+    .new-year-order-request {
+      position: relative;
+      display: none; }
+      .new-year-order-request::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+      .new-year-order-request .c-personal-data {
+        width: 100%; }
+      .new-year-order-request__btn {
+        display: inline-block;
+        font-size: 3.7rem;
+        text-transform: uppercase;
+        font-family: "SummerFont";
+        border-radius: 5rem;
+        background-color: #9acc4e;
+        padding: 1rem 2.5rem;
+        color: #ffffff;
+        line-height: 1;
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+        cursor: pointer; }
+        .new-year-order-request__btn::after {
+          content: '';
+          border: none; }
+        .new-year-order-request__btn:hover {
+          color: #ffffff;
+          opacity: .9;
+          -webkit-transition: all .2s ease;
+          -o-transition: all .2s ease;
+          transition: all .2s ease; }
+      .new-year-order-request .c-grid {
+        margin-left: -.5rem;
+        margin-right: -.5rem; }
+      .new-year-order-request .c-col {
+        padding: 1.4rem .5rem; }
+      .new-year-order-request .c-col-6:nth-child(2) {
+        text-align: right; }
+  .new-year-delivery__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .new-year-delivery__item {
+    width: 50%;
+    margin-bottom: 1.8rem; }
+  .new-year-delivery__title {
+    font-size: 1.7rem; }
+  .new-year-delivery__metro {
+    font-size: 1.5rem; }
+    .new-year-delivery__metro .icon-label-metro {
+      position: relative; }
+      .new-year-delivery__metro .icon-label-metro::after {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #9b9696;
+        border-radius: 5rem; }
+    .new-year-delivery__metro .icon-metro-2 {
+      z-index: 11; }
+  .new-year-delivery__ticket {
+    font-size: 1.5rem; }
+  .new-year-delivery input[type="radio"] {
+    display: none; }
+  .new-year-delivery input[type="radio"]:checked + .order-radio::before {
+    content: '';
+    background-color: #7cbd41; }
+  .new-year-delivery input[type="radio"]:checked + .order-radio {
+    color: #6c6c6c; }
+  .new-year-delivery input[type="radio"]:checked + .order-radio > .new-year-delivery__title {
+    color: #231300; }
+  .new-year-delivery input[type="radio"]:checked + .order-radio .icon-label-metro::after {
+    display: none; }
+  .new-year-delivery input[type="radio"]:checked + .order-radio > .new-year-delivery__ticket {
+    color: #c2478f; }
+  .new-year-delivery .order-radio::before {
+    content: '';
+    top: 1rem; }
+  .new-year-delivery .order-radio::after {
+    content: '';
+    top: 1rem; }
+  .new-year__decor-1 {
+    position: absolute;
+    top: 16%;
+    left: -30%; }
+  .new-year__decor-2 {
+    position: absolute;
+    top: 15%;
+    right: -20%; }
+  .new-year__decor-3 {
+    position: absolute;
+    bottom: -9%;
+    right: -11%; }
+  .new-year__decor-4 {
+    position: absolute;
+    bottom: -6%;
+    left: -13%; }
 
 .popup-new-year .popup {
   max-width: 113.6rem;
@@ -24151,6 +24156,13 @@ a.show-more__button:hover {
   margin-right: 2.2rem; }
   .popup-new-year__box span {
     font-size: 2.5rem; }
+  .popup-new-year__box svg {
+    fill: #964898;
+    margin-bottom: .5rem;
+    position: relative;
+    top: -2px; }
+  .popup-new-year__box .symbol-baby {
+    font-size: 2.1rem; }
 
 .popup-new-year__grid {
   display: -webkit-box;
