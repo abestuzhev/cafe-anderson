@@ -4033,6 +4033,11 @@
         margin-left: -1.5rem;
         margin-right: -1.5rem;
     }
+
+    .cafe-list .c-grid {
+        margin-left: -.6rem;
+        margin-right: -.6rem;
+    }
 }
 
 @media (max-width: 780px) {
@@ -5251,6 +5256,11 @@
     .new-year-delivery__item {
         width: 100%;
         margin-bottom: 1.4rem;
+    }
+
+    .cafe-list-layout {
+        margin-left: -.6rem;
+        margin-right: -.6rem;
     }
 
 }
