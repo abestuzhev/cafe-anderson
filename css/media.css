@@ -3374,7 +3374,7 @@
         width: 100%;
     }
 
-    .cafe-list__city {
+    .cafe-list__city:first-child {
         margin-top: 6rem;
     }
 
@@ -5261,6 +5261,18 @@
     .cafe-list-layout {
         margin-left: -.6rem;
         margin-right: -.6rem;
+    }
+
+    .c-card-cafe .c-card-cafe__body {
+        padding: 1rem 1.5rem;
+    }
+
+    .c-card-cafe-advantages {
+        position: static !important;
+    }
+
+    .c-card-cafe {
+        margin-bottom: 1.4rem;
     }
 
 }
@@ -9966,6 +9978,10 @@
     .catering .bonus-info {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .cafe-list__city {
+        margin-top: 3rem;
     }
 
 }
