@@ -4038,6 +4038,18 @@
         margin-left: -.6rem;
         margin-right: -.6rem;
     }
+
+    .popup-new-year__title {
+        font-size: 4rem;
+    }
+
+    .popup-new-year .popup-header {
+        display: block;
+    }
+
+    .popup-new-year__box {
+        display: inline-block;
+    }
 }
 
 @media (max-width: 780px) {
@@ -4338,6 +4350,21 @@
     .popup-calendar-booking .popup .c-col {
         padding: .8rem;
     }
+
+    .popup-new-year .popup-close {
+        right: 1.6rem;
+        top: 1.1rem;
+    }
+
+    .popup-new-year .popup-body {
+        padding: 1rem 5rem 2.6rem;
+    }
+
+    .popup-new-year .popup-header {
+        margin-bottom: 1.4rem;
+    }
+
+
 }
 
 @media screen and (max-height: 600px) {
@@ -5273,6 +5300,29 @@
 
     .c-card-cafe {
         margin-bottom: 1.4rem;
+    }
+
+    .popup-new-year .datepicker-inline .datepicker--cell {
+        height: 3.5rem;
+    }
+
+    .new-year-order__btn {
+        width: 100%;
+        text-align: center;
+    }
+    .new-year-order__item:last-child {
+        flex:1;
+    }
+
+    .new-year-info-list {
+        margin-bottom: 1rem;
+    }
+
+    .new-year-order__item {
+        margin-right: .5rem;
+    }
+    .new-year-order__item:last-child {
+        margin-right: 0;
     }
 
 }
