@@ -23768,7 +23768,6 @@ a.show-more__button:hover {
 
 .new-year-banner {
   /*new-year-banner*/
-  background-color: #c73d38;
   background-image: url("../img/new-year/new-year-bannerr-bg.png");
   background-position: 50% 50%;
   background-size: cover;
@@ -23777,22 +23776,30 @@ a.show-more__button:hover {
   position: relative;
   color: #ffffff;
   margin-bottom: 3rem; }
-  .new-year-banner::before {
-    content: '';
-    position: absolute;
-    top: -.8rem;
-    left: 0;
-    width: 100%;
-    height: 2.2rem;
-    background: url(../img/decor-line-waves.png) 0 0 repeat-x; }
-  .new-year-banner::after {
-    content: '';
-    position: absolute;
-    bottom: -.8rem;
-    left: 0;
-    width: 100%;
-    height: 2.2rem;
-    background: url(../img/decor-line-waves.png) 0 0 repeat-x; }
+  .new-year-banner-layout {
+    background-image: url("../img/new-year/banner-bg.png");
+    background-repeat: repeat-x;
+    position: relative;
+    width: calc(100% - 22px);
+    margin-left: 11px; }
+    .new-year-banner-layout::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -11px;
+      width: 1.1rem;
+      height: 100%;
+      z-index: 10;
+      background: url(../img/new-year/banner-right-vawe.png) 0 0 no-repeat; }
+    .new-year-banner-layout::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -11px;
+      width: 1.1rem;
+      height: 100%;
+      z-index: 10;
+      background: url(../img/new-year/banner-left-vawe.png) 0 0 no-repeat; }
   .new-year-banner__title {
     text-transform: uppercase;
     font-family: "SummerFont";
@@ -23825,7 +23832,7 @@ a.show-more__button:hover {
       border: none; }
     .new-year-banner__btn:hover {
       color: #ffffff;
-      opacity: .9;
+      background-color: #81af4a;
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease; }
