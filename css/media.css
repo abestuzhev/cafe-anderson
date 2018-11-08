@@ -4093,6 +4093,19 @@
        background: url(../img/decor-line-waves.png) 0 0 repeat-x;
     }
 
+    .filter-switch .tabs-menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    .filter-switch .tabs-menu__item {
+        width: 48.5%;
+    }
+
+    .cafe-list-layout .filter-mobile-btn {
+        border-radius: .6rem .6rem 0 0;
+    }
+
 
 }
 
