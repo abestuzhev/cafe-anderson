@@ -338,6 +338,10 @@
     .new-year__decor {
         display: none;
     }
+
+    .child-holiday-banner {
+        height: 38rem;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -5382,6 +5386,19 @@
     .new-year {
         margin-left: -1.6rem;
         margin-right: -1.6rem;
+    }
+
+    .new-year-order .c-personal-data {
+        margin-bottom: 0;
+    }
+
+    .new-year-order .c-col {
+        padding: .5rem 0 .8rem;
+    }
+
+    .new-year-order-request__btn {
+        width: 100%;
+        margin-bottom: 2rem;
     }
 
 }
