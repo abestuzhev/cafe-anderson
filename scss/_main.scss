@@ -3458,13 +3458,17 @@ test popup
 
     &-subscription {
         width: 46rem;
-        height: 6.6rem;
         //margin-bottom: 1rem;
-        min-height: 66px;
+        height: 78px;
         display: flex;
+        margin: -12px -12px 0 0;
         align-items: flex-start;
         overflow: hidden;
         position: relative;
+        background: url(../img/filter-subscription-bg.png) 0 0 no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 13px 13px 13px 0;
 
         &.animate {
             .filter-subscription__btn-layout {
@@ -3484,6 +3488,19 @@ test popup
 
                 transition: top .2s ease 1s;
                 transition: opacity .2s ease .4s;
+            }
+
+            input.c-input {
+                opacity: 1;
+                transition: opacity .2s ease;
+            }
+
+
+            .symbol-bird-left,
+            .filter-subscription-stripes,
+            .filter-subscription-mark {
+                opacity: 0;
+                transition: opacity .2s ease;
             }
         }
 
@@ -3551,11 +3568,11 @@ test popup
                 //top: 4px;
                 //margin-top: 4px;
                 position: absolute;
-                top: 0;
+                top: 13px;
                 left: 0;
                 z-index: 2;
                 width: 49rem;
-                background-color: #fff;
+                //background-color: #fff;
 
             }
 
@@ -3594,8 +3611,8 @@ test popup
         &__note {
             display: inline-block;
             vertical-align: middle;
-            font-size: 12px;
-            max-width: 115px;
+            font-size: 14px;
+            //max-width: 115px;
             margin-left: .5rem;
         }
         input.c-input {
@@ -3605,6 +3622,7 @@ test popup
             left: 0;
             z-index: 1;
             padding: 7px 10px;
+            opacity: 0;
         }
 
         .c-button__small {
@@ -3620,6 +3638,39 @@ test popup
             width: 100%;
             //transition: 2s opacity .2s ease;
             //transition: .3s top .3s ease;
+        }
+
+        .c-checkbox {
+            text-indent: -3px;
+        }
+
+        &-mark {
+            position: absolute;
+            top: -3px;
+            right: .2rem;
+            width: 5.6rem;
+            height: 3.7rem;
+            background: url(../img/icon-mark.png) 0 0 no-repeat;
+        }
+
+        &-stripes {
+            position: absolute;
+            left: 0;
+            top: 3.9rem;
+            width: 30rem;
+            height: 1rem;
+            overflow: hidden;
+
+            background: url(../img/icon-stripes.png) 0 0 repeat-x;
+
+        }
+
+        .symbol-bird-left {
+            position: absolute;
+            top: 27px;
+            right: 62px;
+            font-size: 3rem;
+            fill:$black;
         }
     }
 }
@@ -21534,18 +21585,17 @@ a.show-more__button:hover {
                 margin-right: -.5rem;
             }
 
-<<<<<<< HEAD
+
             .c-col {
                 padding: 1.4rem .5rem;
             }
-=======
+
     &-body {/*new-year-body*/
         padding: 0 15.4rem 0;
         position: relative;
         overflow:hidden;
         min-height: 33rem;
     }
->>>>>>> fb3c7fabe884d32bd9fa98487931cf863278e12b
 
             .c-col-6 {
                 &:nth-child(2) {
@@ -21805,7 +21855,8 @@ a.show-more__button:hover {
             text-transform: uppercase;
             text-align: center;
             border-radius: .8rem;
-            transtion: all .1s ease;
+            transition: all .1s ease;
+            white-space: nowrap;
             background: #7cbd41 url('../img/decor-button-green.png') 0 0 repeat;
 
             &::after {
@@ -21870,7 +21921,7 @@ a.show-more__button:hover {
 
         position: relative;
 
-        margin-bottom: 4rem;
+        //margin-bottom: 4rem;
 
         &__list {
             margin-left: -3rem;
@@ -21985,9 +22036,10 @@ a.show-more__button:hover {
 
         &__img {
             width: 33.3333%;
-            background-position: 50% 50%;
+            background-position: 100% 50%;
             -webkit-background-size: cover;
             background-size: cover;
+
         }
 
         &__btn {
@@ -22314,6 +22366,7 @@ a.show-more__button:hover {
 
     .loft-booking {
         margin-bottom: 0;
+        padding-top: 0;
     }
     .bonus-info {
         border-radius: .4rem;

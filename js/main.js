@@ -218,8 +218,17 @@ $(document).ready(function ($) {
         loop:true,
         margin:10,
         responsive:{
-            600:{
-                items:4
+            1200:{
+                items:3
+            },
+            800:{
+                items:2
+            },
+            540:{
+                items:1
+            },
+            310:{
+                items:1
             }
         }
     });

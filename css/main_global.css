@@ -10207,16 +10207,19 @@ test popup
         border-radius: 0 0 .6rem .6rem; }
   .filter-subscription {
     width: 46rem;
-    height: 6.6rem;
-    min-height: 66px;
+    height: 78px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: -12px -12px 0 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    background: url(../img/filter-subscription-bg.png) 0 0 no-repeat;
+    background-size: cover;
+    padding: 13px 13px 13px 0; }
     .filter-subscription.animate .filter-subscription__btn-layout {
       -webkit-transform: translateX(280px);
           -ms-transform: translateX(280px);
@@ -10238,6 +10241,18 @@ test popup
       -webkit-transition: opacity .2s ease .4s;
       -o-transition: opacity .2s ease .4s;
       transition: opacity .2s ease .4s; }
+    .filter-subscription.animate input.c-input {
+      opacity: 1;
+      -webkit-transition: opacity .2s ease;
+      -o-transition: opacity .2s ease;
+      transition: opacity .2s ease; }
+    .filter-subscription.animate .symbol-bird-left,
+    .filter-subscription.animate .filter-subscription-stripes,
+    .filter-subscription.animate .filter-subscription-mark {
+      opacity: 0;
+      -webkit-transition: opacity .2s ease;
+      -o-transition: opacity .2s ease;
+      transition: opacity .2s ease; }
     .filter-subscription__body {
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
@@ -10299,11 +10314,10 @@ test popup
       vertical-align: middle; }
       .filter-subscription__btn-layout {
         position: absolute;
-        top: 0;
+        top: 13px;
         left: 0;
         z-index: 2;
-        width: 49rem;
-        background-color: #fff; }
+        width: 49rem; }
       .filter-subscription__btn::after {
         content: '';
         border: none; }
@@ -10322,8 +10336,7 @@ test popup
     .filter-subscription__note {
       display: inline-block;
       vertical-align: middle;
-      font-size: 12px;
-      max-width: 115px;
+      font-size: 14px;
       margin-left: .5rem; }
     .filter-subscription input.c-input {
       width: 270px;
@@ -10331,7 +10344,8 @@ test popup
       top: 0;
       left: 0;
       z-index: 1;
-      padding: 7px 10px; }
+      padding: 7px 10px;
+      opacity: 0; }
     .filter-subscription .c-button__small {
       padding: .6rem 1.4rem; }
     .filter-subscription .c-personal-data {
@@ -10341,6 +10355,29 @@ test popup
       top: 0;
       left: 0;
       width: 100%; }
+    .filter-subscription .c-checkbox {
+      text-indent: -3px; }
+    .filter-subscription-mark {
+      position: absolute;
+      top: -3px;
+      right: .2rem;
+      width: 5.6rem;
+      height: 3.7rem;
+      background: url(../img/icon-mark.png) 0 0 no-repeat; }
+    .filter-subscription-stripes {
+      position: absolute;
+      left: 0;
+      top: 3.9rem;
+      width: 30rem;
+      height: 1rem;
+      overflow: hidden;
+      background: url(../img/icon-stripes.png) 0 0 repeat-x; }
+    .filter-subscription .symbol-bird-left {
+      position: absolute;
+      top: 27px;
+      right: 62px;
+      font-size: 3rem;
+      fill: #555451; }
 
 .cafe-list {
   font-family: "PT Serif Caption";
@@ -24022,6 +24059,12 @@ a.show-more__button:hover {
         margin-right: -.5rem; }
       .new-year-order-request .c-col {
         padding: 1.4rem .5rem; }
+      .new-year-order-request-body {
+        /*new-year-body*/
+        padding: 0 15.4rem 0;
+        position: relative;
+        overflow: hidden;
+        min-height: 33rem; }
       .new-year-order-request .c-col-6:nth-child(2) {
         text-align: right; }
   .new-year-delivery__list {
@@ -24231,7 +24274,10 @@ a.show-more__button:hover {
       text-transform: uppercase;
       text-align: center;
       border-radius: .8rem;
-      transtion: all .1s ease;
+      -webkit-transition: all .1s ease;
+      -o-transition: all .1s ease;
+      transition: all .1s ease;
+      white-space: nowrap;
       background: #7cbd41 url("../img/decor-button-green.png") 0 0 repeat; }
       .child-holiday-banner__btn::after {
         content: '';
@@ -24274,8 +24320,7 @@ a.show-more__button:hover {
     .child-holiday__text p {
       margin-bottom: 0; }
   .child-holiday-advantages {
-    position: relative;
-    margin-bottom: 4rem; }
+    position: relative; }
     .child-holiday-advantages__list {
       margin-left: -3rem;
       margin-right: -3rem;
@@ -24375,7 +24420,7 @@ a.show-more__button:hover {
           font-size: 8rem; }
     .child-holiday-program__img {
       width: 33.3333%;
-      background-position: 50% 50%;
+      background-position: 100% 50%;
       background-size: cover; }
     .child-holiday-program__btn {
       display: inline-block;
@@ -24657,7 +24702,8 @@ a.show-more__button:hover {
   .child-holiday .catering-plate {
     margin-bottom: 0; }
   .child-holiday .loft-booking {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-top: 0; }
   .child-holiday .bonus-info {
     border-radius: .4rem; }
     .child-holiday .bonus-info__content {

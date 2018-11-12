@@ -711,6 +711,11 @@
     .calendar-day__week {
         font-size: 1.1rem;
     }
+
+
+    .child-holiday-people__item {
+        padding: 0 2rem;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -877,6 +882,15 @@
         padding: 0;
     }
 
+    .child-holiday-people__text {
+        margin-bottom: 2rem;
+    }
+
+    .child-holiday-people__title {
+        padding: 1rem 0;
+    }
+
+
 }
 
 @media screen and (max-width: 985px) {
@@ -996,6 +1010,16 @@
 
     .about-advantages__item.no-point .about-advantages__point {
         display: block;
+    }
+
+
+    .child-holiday-program__info {
+        flex: 1 0 41rem;
+    }
+
+    .child-holiday-food__decor-1,
+    .child-holiday-food__decor-2 {
+        display: none;
     }
 
 }
@@ -2287,6 +2311,16 @@
         right: -15.7rem;
     }
 
+
+    .child-holiday-booking__item {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .events .filter {
+        display: block;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -2490,6 +2524,10 @@
 
     .c-card-hall-time__col {
         width: 46%;
+    }
+
+    .child-holiday-people__item {
+        padding: 0 .5rem;
     }
 }
 
@@ -2803,6 +2841,32 @@
         width: 100%;
         margin-bottom: 2rem;
         padding: 0 1.5rem;
+    }
+
+
+    .child-holiday-add {
+        padding: 2rem 0 3rem;
+    }
+
+    .child-holiday-add__item {
+        min-height: 19.5rem;
+        padding: 0 .5rem;
+    }
+
+    .child-holiday-people__list {
+        display: block;
+    }
+
+    .child-holiday-people__item {
+        width: 100%;
+    }
+
+    .child-holiday-food {
+        padding-bottom: 3rem;
+    }
+
+    .child-holiday-say .owl-nav {
+        top: 50% !important;
     }
 }
 
@@ -3173,6 +3237,10 @@
 
     .events .filter {
         /*display: inline-block !important;*/
+    }
+
+    .events .filter .filter-form {
+        margin-bottom: 2rem;
     }
 
     .filter-hold {
@@ -4143,6 +4211,66 @@
         padding-bottom: 3rem;
     }
 
+    .child-holiday-banner {
+        margin-bottom: 1rem;
+    }
+
+
+    .child-holiday-advantages__list {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .child-holiday__title {
+        padding: 0 1.4rem;
+    }
+    .child-holiday__subtitle {
+        font-size: 1.6rem;
+        padding: 0 1.4rem;
+    }
+    .child-holiday__text {
+        padding: 0 1.4rem;
+    }
+
+    .child-holiday-program {
+        margin: 2rem 0 0;
+    }
+
+    .child-holiday-program__text p:nth-child(1) {
+        font-size: 3rem;
+    }
+    .child-holiday-program__text p:nth-child(2) {
+        font-size: 5rem;
+    }
+    .child-holiday-program__text p:nth-child(3) {
+        font-size: 7rem;
+    }
+
+    .child-holiday-program__text p {
+        line-height: 1.1;
+    }
+
+    .child-holiday-program__decor-1 {
+        width: 75%;
+    }
+
+    .events .filter-form {
+        margin-bottom: 2rem;
+    }
+
+    .events .filter .datepicker-layout {
+        width: 100%;
+    }
+
+    .events .filter .datepicker-layout input {
+        padding: 1.2rem 1.6rem;
+    }
+
+    /*.events .filter {*/
+        /*display: inline-block !important;*/
+    /*}*/
+
+
 }
 
 @media (max-width: 780px) {
@@ -4775,6 +4903,25 @@
     .popup-new-year .popup-footer {
         padding: 2rem 2rem 2.6rem;
     }
+
+    .child-holiday-advantages__item {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .child-holiday-banner__btn {
+        font-size: 2.6rem;
+    }
+
+
+    .child-holiday-banner {
+        height: 30rem;
+    }
+
+    .child-holiday-banner__btn {
+        bottom: 2rem;
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -5164,6 +5311,51 @@
         font-size: 2.4rem;
     }
 
+    .filter-subscription {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 1.6rem 0;
+    }
+
+    .filter-subscription input.c-input {
+        position: static;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .filter-subscription__btn-layout {
+        position: static;
+        width: 100%;
+    }
+
+    .filter-subscription-mark,
+    .filter-subscription-stripes,
+    .filter-subscription .symbol-bird-left {
+        display: none;
+    }
+
+    .filter-subscription__body {
+        margin-bottom: 1rem;
+    }
+
+    .filter-subscription__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .filter-subscription__note {
+        display: block;
+        text-align: center;
+    }
+
+    .filter-subscription .c-personal-data {
+        position: static;
+        opacity: 1;
+        margin-top: .7rem;
+    }
+
+
 }
 
 @media (max-width: 540px) {
@@ -5432,6 +5624,55 @@
         width: 100%;
         margin-bottom: 2rem;
     }
+
+    .child-holiday-say .owl-nav .owl-next,
+    .child-holiday-say .owl-nav .owl-prev {
+        width: 2.4rem;
+        height: 5.1rem;
+    }
+
+    .child-holiday-say {
+        padding: 1rem 2rem 0;
+    }
+
+    .child-holiday-say .owl-nav .owl-prev::after {
+        content: '';
+        left: 4px;
+        width: 1rem;
+        height: 1rem;
+        border: 7px solid transparent;
+        border-right: 6px solid #fff;
+    }
+    .child-holiday-say .owl-nav .owl-next::after {
+        content: '';
+        right: 4px;
+        width: 1rem;
+        height: 1rem;
+        border: 7px solid transparent;
+        border-left: 6px solid #fff;
+    }
+
+    .child-holiday-say .center .child-holiday-say-card {
+        border-color: transparent;
+        padding: .4rem 2rem 1rem;
+    }
+
+    .child-holiday-say .owl-stage {
+        display: block;
+    }
+
+    /*.child-holiday-say__item,*/
+    /*.owl-carousel .owl-stage-outer,*/
+    /*.child-holiday-say-card,*/
+    .child-holiday-say-card__text {
+        height: auto;
+    }
+
+
+    .child-holiday-booking__item {
+        width: 100%;
+    }
+
 
 }
 
@@ -5976,6 +6217,57 @@
     .v2 .mobile-item:first-child {
         height: 18rem;
     }
+
+    .child-holiday__title {
+        font-size: 3rem;
+    }
+
+    .child-holiday-advantages__list {
+        padding: 1rem 0 2rem;
+    }
+
+
+    .child-holiday-advantages__item {
+        padding: 0 1rem;
+    }
+
+    .child-holiday-banner {
+        height: 24rem;
+    }
+
+
+    .child-holiday-program__text p:nth-child(1) {
+        font-size: 2.5rem;
+    }
+    .child-holiday-program__text p:nth-child(2) {
+        font-size: 2.8rem;
+    }
+    .child-holiday-program__text p:nth-child(3) {
+        font-size: 3.6rem;
+    }
+
+    .child-holiday-program__btn {
+        font-size: 1.9rem;
+        padding: .8rem 1.5rem .6rem 3rem;
+    }
+
+    .child-holiday-program__info {
+        flex: 1 0 24rem;
+    }
+
+    .child-holiday-program__text {
+        margin-bottom: 2.8rem;
+    }
+
+    .child-holiday-program__decor-1 {
+        width: 80%;
+        bottom: 17%;
+    }
+
+    .child-holiday-program__info {
+        padding: 1rem;
+    }
+
 }
 
 @media (max-width: 440px) {
@@ -7192,6 +7484,7 @@
         max-width: 50%;
         padding-right: 0;
     }
+
 
 }
 
@@ -9315,6 +9608,7 @@
     .franchise-conditions-calc__note {
         font-weight: bold;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
