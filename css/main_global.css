@@ -23700,7 +23700,8 @@ a.show-more__button:hover {
     /*new-year-body*/
     padding: 0 15.4rem 0;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 33rem; }
   .new-year-month {
     /*new-year-month*/ }
     .new-year-month__title {

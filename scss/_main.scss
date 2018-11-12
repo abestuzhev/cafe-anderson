@@ -21131,6 +21131,7 @@ a.show-more__button:hover {
         padding: 0 15.4rem 0;
         position: relative;
         overflow: hidden;
+        min-height: 33rem;
     }
 
     &-month { /*new-year-month*/
@@ -21533,9 +21534,18 @@ a.show-more__button:hover {
                 margin-right: -.5rem;
             }
 
+<<<<<<< HEAD
             .c-col {
                 padding: 1.4rem .5rem;
             }
+=======
+    &-body {/*new-year-body*/
+        padding: 0 15.4rem 0;
+        position: relative;
+        overflow:hidden;
+        min-height: 33rem;
+    }
+>>>>>>> fb3c7fabe884d32bd9fa98487931cf863278e12b
 
             .c-col-6 {
                 &:nth-child(2) {
