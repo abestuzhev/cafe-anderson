@@ -20409,6 +20409,8 @@ test popup
     font-family: "PT Serif Caption";
     font-size: 2.1rem;
     color: #555451; }
+  .loft-booking .calendar-nav-hall__row {
+    display: none; }
 
 /*calendar--------------------------------*/
 .calendar {
@@ -24205,12 +24207,14 @@ a.show-more__button:hover {
           box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
   border-radius: .4rem;
   overflow: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 4.6rem;
+  font-family: "PT Serif Caption"; }
   .child-holiday-banner {
     height: 53rem;
     background-size: cover;
     background-position: 50% 50%;
-    position: relative; }
+    position: relative;
+    margin-bottom: 3rem; }
     .child-holiday-banner__btn {
       padding: 1.2rem 2rem;
       font-size: 3.7rem;
@@ -24226,7 +24230,16 @@ a.show-more__button:hover {
       text-transform: uppercase;
       text-align: center;
       border-radius: .8rem;
+      transtion: all .1s ease;
       background: #7cbd41 url("../img/decor-button-green.png") 0 0 repeat; }
+      .child-holiday-banner__btn::after {
+        content: '';
+        border: none; }
+      .child-holiday-banner__btn:hover {
+        color: #ffffff;
+        transtion: all .1s ease;
+        -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2); }
     .child-holiday-banner::after {
       content: '';
       position: absolute;
@@ -24242,7 +24255,470 @@ a.show-more__button:hover {
     font-size: 5rem;
     color: #c44890;
     text-transform: uppercase;
-    line-height: 1; }
+    line-height: 1;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: .5rem; }
+  .child-holiday__subtitle {
+    font-size: 2rem;
+    color: #79b224;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .child-holiday__text {
+    font-size: 1.5rem;
+    color: #555451;
+    text-align: center;
+    max-width: 77rem;
+    margin: 0 auto; }
+    .child-holiday__text p {
+      margin-bottom: 0; }
+  .child-holiday-advantages {
+    position: relative;
+    margin-bottom: 4rem; }
+    .child-holiday-advantages__list {
+      margin-left: -3rem;
+      margin-right: -3rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 3rem 0; }
+    .child-holiday-advantages::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.2rem;
+      background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x; }
+    .child-holiday-advantages__item {
+      width: 25%;
+      text-align: center;
+      padding: 0 3rem; }
+    .child-holiday-advantages__icon {
+      text-align: center;
+      margin-bottom: 1.5rem; }
+    .child-holiday-advantages__text {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #555451;
+      line-height: 1; }
+  .child-holiday-program {
+    margin: 4rem 0 0rem;
+    padding-bottom: 4rem;
+    position: relative; }
+    .child-holiday-program::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.2rem;
+      background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x; }
+    .child-holiday-program__decor-1 {
+      position: absolute;
+      left: 57%;
+      bottom: 15%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .child-holiday-program__head {
+      background: url(../img/bg-slider-header-2.jpg) 50% 50% no-repeat;
+      background-size: cover; }
+    .child-holiday-program__footer {
+      background-color: #c44890; }
+    .child-holiday-program__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .child-holiday-program__info {
+      background-color: #944aa3;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      width: 33.3333%;
+      position: relative; }
+    .child-holiday-program__text {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 4.8rem; }
+      .child-holiday-program__text p {
+        color: #ffffff;
+        font-family: "SummerFont";
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 0; }
+        .child-holiday-program__text p:nth-child(1) {
+          font-size: 4rem; }
+        .child-holiday-program__text p:nth-child(2) {
+          font-size: 6rem; }
+        .child-holiday-program__text p:nth-child(3) {
+          font-size: 8rem; }
+    .child-holiday-program__img {
+      width: 33.3333%;
+      background-position: 50% 50%;
+      background-size: cover; }
+    .child-holiday-program__btn {
+      display: inline-block;
+      font-size: 3rem;
+      color: #000000;
+      font-family: "BebasNeue";
+      text-align: center;
+      padding: .8rem 2rem .6rem 5.6rem;
+      background-color: #fff;
+      border-radius: .6rem;
+      cursor: pointer; }
+      .child-holiday-program__btn::after {
+        content: '';
+        border: none; }
+  .child-holiday-add {
+    padding: 4rem 0 5rem;
+    position: relative; }
+    .child-holiday-add::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.2rem;
+      background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x; }
+    .child-holiday-add__list {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .child-holiday-add__item {
+      width: 33.3333%;
+      min-height: 26.5rem;
+      max-height: 26.5rem;
+      padding: 0 1.5rem; }
+      .child-holiday-add__item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+  .child-holiday-booking__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    list-style-type: none;
+    counter-reset: item; }
+  .child-holiday-booking__item {
+    width: 25%;
+    padding: 0 2.5rem;
+    position: relative; }
+    .child-holiday-booking__item:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      position: absolute;
+      top: -2px;
+      left: -3px;
+      font-weight: 700;
+      width: 2.4rem;
+      text-align: right;
+      font-size: 2.4rem;
+      color: #7cbd41; }
+  .child-holiday-people__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .child-holiday-people__item {
+    width: 50%;
+    padding: 0 1.9rem; }
+  .child-holiday-people__title {
+    font-size: 4rem;
+    color: #7cbd41;
+    font-family: "SummerFont";
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem 0; }
+  .child-holiday-people__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4rem; }
+    .child-holiday-people__text span {
+      font-size: 1.5rem;
+      color: #555451; }
+  .child-holiday-food {
+    position: relative;
+    padding-bottom: 4rem; }
+    .child-holiday-food::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.2rem;
+      background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x; }
+    .child-holiday-food__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .child-holiday-food__item {
+      width: 50%;
+      padding: 0 .5rem;
+      margin-bottom: .9rem;
+      overflow: hidden; }
+      .child-holiday-food__item img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .child-holiday-food__decor-1 {
+      position: absolute;
+      left: 50%;
+      top: -11%;
+      margin-left: -39%; }
+    .child-holiday-food__decor-2 {
+      position: absolute;
+      right: 50%;
+      top: -5%;
+      margin-right: -45%; }
+  .child-holiday-say {
+    padding: 3rem 6rem 4rem;
+    position: relative; }
+    .child-holiday-say::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.2rem;
+      background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x; }
+    .child-holiday-say__item {
+      height: 100%; }
+    .child-holiday-say-card {
+      padding: 1.4rem 4rem 2.5rem;
+      background-color: #f5f5f5;
+      border: 3px solid #f5f5f5;
+      border-radius: .4rem;
+      height: 100%; }
+      .child-holiday-say-card__date {
+        font-size: 1.2rem; }
+      .child-holiday-say-card__cafe {
+        margin-bottom: 1.4rem; }
+        .child-holiday-say-card__cafe a {
+          font-size: 1.6rem; }
+      .child-holiday-say-card__user {
+        margin-bottom: 1.4rem; }
+        .child-holiday-say-card__user span {
+          display: inline-block;
+          margin-right: .9rem; }
+      .child-holiday-say-card__text {
+        height: 25.4rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        color: #494949;
+        line-height: 1.2; }
+      .child-holiday-say-card__btn {
+        font-size: 1.4rem; }
+    .child-holiday-say .center .child-holiday-say-card {
+      border-color: #7cbd41;
+      background-color: #fff; }
+    .child-holiday-say .owl-stage {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .child-holiday-say .owl-nav {
+      width: auto;
+      left: 0;
+      right: 0; }
+    .child-holiday-say .owl-nav .owl-prev {
+      width: 4.5rem;
+      height: 9.5rem;
+      background: #7cbd41;
+      border-radius: 0 10rem 10rem 0;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .child-holiday-say .owl-nav .owl-prev::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 1rem;
+        height: 2rem;
+        border: 12px solid transparent;
+        border-right: 10px solid #fff; }
+    .child-holiday-say .owl-nav .owl-next {
+      width: 4.5rem;
+      height: 9.5rem;
+      background: #7cbd41;
+      border-radius: 10rem 0 0 10rem;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
+      .child-holiday-say .owl-nav .owl-next::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 1rem;
+        height: 2rem;
+        border: 12px solid transparent;
+        border-left: 10px solid #fff; }
+  .child-holiday .cafe-slider {
+    margin-bottom: 0; }
+  .child-holiday .cafe-slider__header {
+    background: url(../img/bg-slider-header-2.jpg) 50% 50% no-repeat;
+    background-size: cover; }
+  .child-holiday .cafe-slider__footer {
+    background: url(../img/bg-slider-footer-2.jpg) 50% 50% no-repeat;
+    background-size: cover; }
+  .child-holiday .catering-plate {
+    margin-bottom: 0; }
+  .child-holiday .loft-booking {
+    margin-bottom: 0; }
+  .child-holiday .bonus-info {
+    border-radius: .4rem; }
+    .child-holiday .bonus-info__content {
+      text-align: center; }
+    .child-holiday .bonus-info__title {
+      color: #7cbd41;
+      font-size: 3.6rem;
+      text-transform: uppercase; }
+    .child-holiday .bonus-info__lead {
+      color: #7cbd41; }
+    .child-holiday .bonus-info__subtitle {
+      color: #553023;
+      font-size: 1.7rem;
+      margin-bottom: .5rem; }
+    .child-holiday .bonus-info__phone {
+      color: #222222;
+      font-style: italic;
+      font-size: 3rem;
+      position: relative;
+      display: inline-block; }
+      .child-holiday .bonus-info__phone:after {
+        content: '';
+        position: absolute;
+        top: 1.2rem;
+        left: -3.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        background: url(../img/catering/phone-call.svg) 0 0 no-repeat;
+        background-size: cover; }
+    .child-holiday .bonus-info__recall {
+      color: #553023;
+      font-size: 1.6rem;
+      margin-bottom: 1rem; }
+    .child-holiday .bonus-info__form {
+      margin: auto;
+      max-width: 39rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      position: relative; }
+    .child-holiday .bonus-info a {
+      color: #fff; }
+    .child-holiday .bonus-info__decor_heart svg {
+      width: 7.2rem;
+      height: 1.9rem;
+      margin: 1.3rem 0 1.3rem 0; }
+    .child-holiday .bonus-info__decor_hare {
+      position: absolute;
+      bottom: 2.2rem;
+      right: -13rem; }
+      .child-holiday .bonus-info__decor_hare svg {
+        width: 10rem;
+        height: 9rem; }
+    .child-holiday .bonus-info__bird {
+      left: 24%; }
+      .child-holiday .bonus-info__bird svg {
+        width: 4rem;
+        height: 4rem; }
 
 .popup-pie {
   /* Ручной readmore */

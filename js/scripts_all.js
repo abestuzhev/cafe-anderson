@@ -9417,6 +9417,47 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+
+
+    // $('.child-holiday-say').slick({
+    //     centerMode: true,
+    //     centerPadding: '60px',
+    //     slidesToShow: 3,
+    //     responsive: [
+    //         {
+    //             breakpoint: 768,
+    //             settings: {
+    //                 arrows: false,
+    //                 centerMode: true,
+    //                 centerPadding: '40px',
+    //                 slidesToShow: 3
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 480,
+    //             settings: {
+    //                 arrows: false,
+    //                 centerMode: true,
+    //                 centerPadding: '40px',
+    //                 slidesToShow: 1
+    //             }
+    //         }
+    //     ]
+    // });
+
+    $('.child-holiday-say').owlCarousel({
+        center: true,
+        items:3,
+        loop:true,
+        margin:10,
+        responsive:{
+            600:{
+                items:4
+            }
+        }
+    });
+
+
     /*кнопка заказать новогодний праздник*/
     $('.new-year-order__btn').on('click', function(e){
         e.preventDefault();

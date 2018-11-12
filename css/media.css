@@ -427,6 +427,13 @@
     .pie-filling__item {
         width: 25% !important;
     }
+
+    .child-holiday-food__decor-1 {
+        margin-left: -33%;
+    }
+    .child-holiday-food__decor-2 {
+        margin-right: -37%;
+    }
 }
 
 @media (max-width: 1400px) {
@@ -3966,6 +3973,11 @@
         border-right: none;
     }
 
+    .child-holiday .calendar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .holiday-offers-banner {
         margin-right: -1.5rem;
         margin-left: -1.5rem;
@@ -4110,6 +4122,26 @@
         border-radius: .6rem .6rem 0 0;
     }
 
+    .child-holiday {
+        margin-left: -2.2rem;
+        margin-right: -2.2rem;
+    }
+
+    .child-holiday__title {
+        font-size: 4rem;
+    }
+
+    .child-holiday__box {
+        padding: 2rem;
+    }
+
+    .child-holiday-advantages {
+
+    }
+
+    .child-holiday-program {
+        padding-bottom: 3rem;
+    }
 
 }
 
