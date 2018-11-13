@@ -21917,6 +21917,14 @@ a.show-more__button:hover {
         }
     }
 
+    &-map {
+        margin-top: 2rem;
+        height: 57rem;
+        background-color: #eee;
+        position: relative;
+
+    }
+
     &-advantages {
 
         position: relative;
@@ -22052,10 +22060,17 @@ a.show-more__button:hover {
             background-color: #fff;
             border-radius: .6rem;
             cursor: pointer;
+            position: relative;
 
             &::after {
                 content: '';
                 border: none;
+                position: absolute;
+                top: 15px;
+                left: 20px;
+                width: 25px;
+                height: 25px;
+                background: url(../img/child-holiday/child-holiday-programm-arrow.png) 0 0 no-repeat;
             }
         }
     }
