@@ -6777,6 +6777,11 @@ test popup
     .filter .symbol-calendar-3 {
         font-size: 1.3rem;
     }
+
+    .filter select {
+        height: 26px;
+        display: block;
+    }
 }
 
 .popup-event-map {

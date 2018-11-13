@@ -11714,7 +11714,15 @@ $(document).ready(function ($) {
     $('.c-select').SumoSelect( {
         forceCustomRendering: false
     });
+
+
     $('.c-select--search').SumoSelect( {
+        forceCustomRendering: false,
+        search: true,
+        searchText: 'Искать...'
+    });
+
+    $('.c-select--multiply').SumoSelect( {
         forceCustomRendering: false,
         search: true,
         searchText: 'Искать...'

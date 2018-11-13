@@ -12803,6 +12803,10 @@ test popup
 .events .filter .symbol-calendar-3 {
   font-size: 1.3rem; }
 
+.events .filter select {
+  height: 26px;
+  display: block; }
+
 .popup-event-map {
   width: 61rem;
   border-radius: .8rem;
