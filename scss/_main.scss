@@ -22076,7 +22076,20 @@ a.show-more__button:hover {
                 width: 25px;
                 height: 25px;
                 background: url(../img/child-holiday/child-holiday-programm-arrow.png) 0 0 no-repeat;
+                -webkit-background-size: cover;
+                background-size: cover;
             }
+        }
+
+        .symbol-paraplane {
+            position: absolute;
+            left: 8%;
+            bottom: 42%;
+        }
+        .symbol-giraffe-on-plane {
+            position: absolute;
+            right: 6%;
+            bottom: 38%;
         }
     }
 
@@ -22189,6 +22202,32 @@ a.show-more__button:hover {
                 color: $black;
             }
 
+        }
+
+        &__icon {
+            margin-right: 12px;
+            position: relative;
+            min-width: 4rem;
+
+            .icon-boy-smiling {
+                position: absolute;
+                top: -4px;
+                left: -8px;
+                transform: rotate(-45deg);
+            }
+
+            .icon-girl-smiling {
+                position: absolute;
+                top: -26px;
+                right: -2px;
+                transform: rotate(32deg);
+
+            }
+        }
+
+        .icon-baby-2 {
+            font-size: 1.8rem;
+            height: 1.9em;
         }
     }
 

@@ -1491,6 +1491,18 @@ i.icon-chair {
   height: .6em;
   fill: #fff; }
 
+.symbol-paraplane {
+  font-size: 3.9rem;
+  width: 1em;
+  height: .6em;
+  fill: #fff; }
+
+.symbol-giraffe-on-plane {
+  font-size: 9.4rem;
+  width: 1em;
+  height: .87em;
+  fill: #fff; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -24522,7 +24534,16 @@ a.show-more__button:hover {
         left: 20px;
         width: 25px;
         height: 25px;
-        background: url(../img/child-holiday/child-holiday-programm-arrow.png) 0 0 no-repeat; }
+        background: url(../img/child-holiday/child-holiday-programm-arrow.png) 0 0 no-repeat;
+        background-size: cover; }
+    .child-holiday-program .symbol-paraplane {
+      position: absolute;
+      left: 8%;
+      bottom: 42%; }
+    .child-holiday-program .symbol-giraffe-on-plane {
+      position: absolute;
+      right: 6%;
+      bottom: 38%; }
   .child-holiday-add {
     padding: 4rem 0 5rem;
     position: relative; }
@@ -24634,6 +24655,27 @@ a.show-more__button:hover {
     .child-holiday-people__text span {
       font-size: 1.5rem;
       color: #555451; }
+  .child-holiday-people__icon {
+    margin-right: 12px;
+    position: relative;
+    min-width: 4rem; }
+    .child-holiday-people__icon .icon-boy-smiling {
+      position: absolute;
+      top: -4px;
+      left: -8px;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    .child-holiday-people__icon .icon-girl-smiling {
+      position: absolute;
+      top: -26px;
+      right: -2px;
+      -webkit-transform: rotate(32deg);
+          -ms-transform: rotate(32deg);
+              transform: rotate(32deg); }
+  .child-holiday-people .icon-baby-2 {
+    font-size: 1.8rem;
+    height: 1.9em; }
   .child-holiday-food {
     position: relative;
     padding-bottom: 4rem; }
