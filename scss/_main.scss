@@ -16901,7 +16901,7 @@ test popup
     }
 
     .calendar {
-        padding-top: 2rem;
+        //padding-top: 2rem;
     }
 
     &__title {
@@ -16942,6 +16942,33 @@ test popup
         display: none;
     }
 
+    &-decor {
+        position: relative;
+
+        &__one {
+            position: absolute;
+            left: 6%;
+            bottom: 3px;
+            overflow:hidden;
+            height: 9rem;
+
+            svg {
+                transform: rotate(-40deg)
+            }
+        }
+        &__two {
+            position: absolute;
+            bottom: 3px;
+            right: 4%;
+            overflow:hidden;
+            height: 6.4rem;
+        }
+        &__tree {
+            position: absolute;
+            top: 12%;
+            right: 2%;
+        }
+    }
 }
 
 /*calendar--------------------------------*/
