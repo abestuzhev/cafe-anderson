@@ -5359,6 +5359,14 @@
         margin-top: .7rem;
     }
 
+    .filter-subscription.animate .filter-subscription__btn-layout {
+        transform: translateX(0) !important;
+    }
+
+    .filter-subscription.animate .filter-subscription__btn-layout .filter-subscription__note {
+        opacity: 1 !important;
+        margin-left: 0;
+    }
 
 }
 
