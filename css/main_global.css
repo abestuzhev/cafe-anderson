@@ -15462,7 +15462,6 @@ test popup
     background-size: cover; }
   .holiday-offers-banner__footer {
     width: 100%;
-    padding: 1.5rem;
     color: #fff;
     background-color: #c44890;
     background-size: cover;
@@ -15548,6 +15547,70 @@ test popup
     right: -4.7rem; }
     .holiday-offers-banner__icon-2 svg {
       fill: #fff; }
+
+.holiday-offers-secret {
+  text-align: center;
+  padding: 1.8rem 10rem 1.8rem;
+  position: relative; }
+  .holiday-offers-secret__title {
+    font-family: "SummerFont";
+    margin-bottom: 1rem;
+    font-size: 5.1rem;
+    text-transform: uppercase;
+    line-height: 1; }
+  .holiday-offers-secret__text {
+    margin-bottom: 1.5rem; }
+    .holiday-offers-secret__text p {
+      margin-bottom: 0; }
+  .holiday-offers-secret__list {
+    list-style-type: none;
+    counter-reset: item;
+    text-align: center;
+    margin-top: 1rem; }
+  .holiday-offers-secret__item {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    position: relative;
+    max-width: 42rem;
+    vertical-align: top;
+    min-height: 4rem; }
+    .holiday-offers-secret__item:before {
+      content: counter(item) "";
+      counter-increment: item;
+      position: absolute;
+      left: 1.7rem;
+      top: 0;
+      width: 4.1rem;
+      height: 4.1rem;
+      line-height: 36px;
+      color: #a8d44a;
+      font-size: 2.4rem;
+      border-radius: 100%;
+      border: 2px dotted #fff;
+      text-align: center; }
+  .holiday-offers-secret__card {
+    padding-left: 5.4rem;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+  .holiday-offers-secret__decor-1 {
+    position: absolute;
+    top: 38%;
+    right: 35%; }
+  .holiday-offers-secret__decor-2 {
+    position: absolute;
+    top: 7%;
+    left: 33%; }
+  .holiday-offers-secret__decor-3 {
+    position: absolute;
+    top: 21%;
+    left: 21%; }
 
 .holiday-offers .c-card-party__title {
   font-size: 2.1rem; }

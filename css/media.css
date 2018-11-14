@@ -342,6 +342,23 @@
     .child-holiday-banner {
         height: 38rem;
     }
+
+    .holiday-offers-secret__decor-3 {
+        left: 11%;
+    }
+
+    .holiday-offers-secret__decor-1 {
+        top: 34%;
+        right: 27%;
+    }
+
+    .holiday-offers-secret__decor-2 {
+        left: 27%;
+    }
+
+    .holiday-offers-secret {
+        padding: 1.8rem 2rem 1.8rem;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -2325,6 +2342,23 @@
         display: block;
     }
 
+
+    .holiday-offers-secret__decor-3 {
+        left: 6%;
+    }
+
+    .holiday-offers-secret__decor-2 {
+        left: 22%;
+    }
+
+    .holiday-offers-secret__decor-1 {
+        right: 21%;
+    }
+
+    .holiday-offers-secret__title {
+        font-size: 4.6rem;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -2801,6 +2835,32 @@
 
     .new-year-filter .new-year-filter__item {
         width: 100%;
+    }
+
+    .holiday-offers-secret__list {
+        text-align: left;
+    }
+
+    .holiday-offers-secret__item {
+        max-width: 80%;
+        padding: 0;
+    }
+
+    .holiday-offers-secret__item:before {
+        left: .5rem;
+    }
+
+    .holiday-offers-secret__decor-3 {
+        display: none;
+    }
+
+    .holiday-offers-secret__decor-1 {
+        top: 28%;
+        right: 18%
+    }
+
+    .holiday-offers-secret__decor-2 {
+        left: 16%;
     }
 
 }
@@ -4926,6 +4986,22 @@
         bottom: 2rem;
     }
 
+    .holiday-offers-secret__item {
+        max-width: 100%;
+    }
+
+    .holiday-offers-secret__decor-1 {
+        right: 4%;
+    }
+    .holiday-offers-secret__decor-2 {
+        left: 4%;
+        top: 1%;
+    }
+
+    .holiday-offers-secret__title {
+        font-size: 4rem;
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -6515,6 +6591,19 @@
 
     .new-year-header__body {
         left: 5%;
+    }
+
+    .holiday-offers-secret {
+        overflow: hidden;
+    }
+
+    .holiday-offers-secret__decor-1 {
+        right: -4%;
+        top: 19%;
+    }
+    .holiday-offers-secret__decor-2 {
+        left: -4%;
+        top: 19%;
     }
 
 }
