@@ -12263,6 +12263,11 @@ $(function() {
         if(holiday_calendar.height() < 130) {
             holiday_calendar.find('.calendar-selector').addClass('show-up');
         }
+        var loft_calendar = $('.loft-booking .calendar');
+
+        if(loft_calendar.height() < 130) {
+            loft_calendar.find('.calendar-selector').addClass('show-up');
+        }
     };
 
 

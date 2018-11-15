@@ -2369,6 +2369,15 @@
         margin-bottom: 2rem;
     }
 
+    .loft-booking-decor__one,
+    .loft-booking-decor__tree {
+        display: none;
+    }
+
+    .loft-booking-decor__two {
+        right: -5%;
+    }
+
 }
 
 @media (max-width: 940px) {
