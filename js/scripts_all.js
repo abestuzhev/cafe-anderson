@@ -8463,7 +8463,7 @@ return function(){return t(this,arguments.length>0?arguments[0]:void 0)}},m={get
             placeholder: '',   // Dont change it here.
             csvDispCount: 3,              // display no. of items in multiselect. 0 to display all.
             captionFormat:'Вы выбрали: {0}', // format of caption text. you can set your locale.
-            captionFormatAllSelected:'{0} all selected!', // format of caption text when all elements are selected. set null to use captionFormat. It will not work if there are disabled elements in select.
+            captionFormatAllSelected:'Вы выбраны все!', // format of caption text when all elements are selected. set null to use captionFormat. It will not work if there are disabled elements in select.
             floatWidth: 400,              // Screen width of device at which the list is rendered in floating popup fashion.
             forceCustomRendering: false,  // force the custom modal on all devices below floatWidth resolution.
             nativeOnDevice: ['Android', 'BlackBerry', 'iPhone', 'iPad', 'iPod', 'Opera Mini', 'IEMobile', 'Silk'], //
@@ -10396,6 +10396,17 @@ $(document).ready(function ($) {
         }
     });
 
+    $('.child-holiday-banner__btn').click(function(e){
+        e.preventDefault();
+        var target = $($(this).attr('href'));
+        if(target.length){
+
+            var heightHeader = $('.header').height();
+            var scrollTo = target.offset().top - (+heightHeader + 100);
+            $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+        }
+    });
+
     // $('#excursion-program-btn').click(function(e){
     //     e.preventDefault();
     //     var target = $($(this).attr('href'));
@@ -10407,6 +10418,7 @@ $(document).ready(function ($) {
     //     }
     // });
 
+    // scrollToAnchor('.graduation-party-banner__btn');
     // scrollToAnchor('.graduation-party-banner__btn');
 
 
