@@ -2375,7 +2375,7 @@
     }
 
     .loft-booking-decor__two {
-        right: -5%;
+        right: 0;
     }
 
 }
@@ -4143,6 +4143,15 @@
         border-right: none;
     }
 
+    .graduation-party .calendar {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+    }
+
+    .graduation-party .calendar .calendar-title__wrapper {
+        padding: 0 1rem;
+    }
+
     .child-holiday .calendar {
         margin-left: 0;
         margin-right: 0;
@@ -4603,6 +4612,12 @@
         max-width: 100%;
     }
 
+}
+
+@media (max-width: 668px) {
+    .calendar-selector.show-up {
+        bottom: -32%;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -6648,6 +6663,20 @@
 
 }
 
+@media (max-width: 410px) {
+    .calendar-selector.show-up {
+        bottom: -4%;
+    }
+
+    .calendar-title__caption {
+        font-size: 2.7rem;
+    }
+
+    .calendar-selector__footer {
+        height: 3rem !important;
+    }
+}
+
 @media (max-width: 390px) {
     .loft-conditions .loft-conditions-check {
         left: 50%;
@@ -8269,6 +8298,10 @@
         width: 100%;
         min-width: 0;
         margin-bottom: 2.5rem;
+    }
+
+    .calendar-selector.show-up .calendar-selector__footer {
+
     }
 
 }

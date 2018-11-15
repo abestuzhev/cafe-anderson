@@ -2491,8 +2491,8 @@ $(document).ready(function ($) {
 
     $('.c-select--multiply').SumoSelect( {
         forceCustomRendering: false,
-        search: true,
-        searchText: 'Искать...'
+        placeholder: 'Выберите...',
+        selectAll: true
     });
 
     function showNegative(clickElem){

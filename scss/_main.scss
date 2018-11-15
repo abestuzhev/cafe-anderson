@@ -17405,6 +17405,13 @@ test popup
 
     }
 
+    &-title {
+        &__caption {
+            svg {
+                fill: #968274;
+            }
+        }
+    }
 }
 
 /* Holiday Space List   */
@@ -17992,7 +17999,16 @@ a.show-more__button:hover {
         }
 
         .calendar-selector__footer {
-            height: 8rem;
+            min-height: 8rem;
+            z-index: 20;
+            font-family: "BebasNeue";
+            font-size: 3rem;
+            font-weight: 700;
+            color: #555451;
+            display: inline-block;
+            padding: 24px 0px;
+            height: auto;
+            opacity: 0;
         }
     }
 

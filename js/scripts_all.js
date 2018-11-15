@@ -8477,7 +8477,7 @@ return function(){return t(this,arguments.length>0?arguments[0]:void 0)}},m={get
             searchText: 'Search...',      // placeholder for search input
             noMatch: 'No matches for "{0}"',
             prefix: '',                   // some prefix usually the field name. eg. '<b>Hello</b>'
-            locale: ['OK', 'Cancel', 'Select All'],  // all text that is used. don't change the index.
+            locale: ['OK', 'Cancel', 'Выбрать все'],  // all text that is used. don't change the index.
             up: false                     // set true to open upside.
         }, options);
 
@@ -11724,8 +11724,8 @@ $(document).ready(function ($) {
 
     $('.c-select--multiply').SumoSelect( {
         forceCustomRendering: false,
-        search: true,
-        searchText: 'Искать...'
+        placeholder: 'Выберите...',
+        selectAll: true
     });
 
     function showNegative(clickElem){

@@ -1073,6 +1073,15 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     }
 }
 
+.SumoSelect .select-all {
+    height: auto;
+    font-size: 1.3rem;
+}
+
+.SumoSelect.open > .optWrapper {
+    top: 100% !important;
+}
+
 
 
 .c-select,

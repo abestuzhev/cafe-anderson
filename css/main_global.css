@@ -2586,6 +2586,13 @@ input[type="checkbox"]:checked + .c-checkbox::after {
 .c-form .SumoSelect.open > .optWrapper {
   top: 4.3rem; }
 
+.SumoSelect .select-all {
+  height: auto;
+  font-size: 1.3rem; }
+
+.SumoSelect.open > .optWrapper {
+  top: 100% !important; }
+
 .c-select-layout,
 .c-select--search-layout,
 .js-select-search-copy-layout {
@@ -21011,6 +21018,8 @@ test popup
         content: '';
         bottom: .3rem;
         border-color: #81c15f; }
+  .calendar-title__caption svg {
+    fill: #968274; }
 
 /* Holiday Space List   */
 .holiday-space-list .filter-layout {
@@ -21458,7 +21467,16 @@ a.show-more__button:hover {
     .calendar-selector.show-up .calendar-selector__head {
       height: 2rem !important; }
     .calendar-selector.show-up .calendar-selector__footer {
-      height: 8rem; }
+      min-height: 8rem;
+      z-index: 20;
+      font-family: "BebasNeue";
+      font-size: 3rem;
+      font-weight: 700;
+      color: #555451;
+      display: inline-block;
+      padding: 24px 0px;
+      height: auto;
+      opacity: 0; }
   .calendar-selector_hidden {
     display: none; }
   .calendar-selector__head {
