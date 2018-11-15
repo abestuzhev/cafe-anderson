@@ -733,6 +733,12 @@
     .child-holiday-people__item {
         padding: 0 2rem;
     }
+
+    .events-header__btn {
+        position: absolute;
+        top: -6.8rem;
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -2359,6 +2365,10 @@
         font-size: 4.6rem;
     }
 
+    .events .filter .filter-form {
+        margin-bottom: 2rem;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -3096,6 +3106,25 @@
 
     .event-builder .event-builder-tab-list {
         padding: 12rem 1.5rem 1rem 1.5rem;
+    }
+
+    .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
+        width: 100%;
+    }
+
+    .events-header__btn {
+        position: static;
+        margin-bottom: 2rem;
+        display: block;
+        width: 100%;
+    }
+
+    .events-header__btn .cafe-info-card__btn {
+        box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    }
+
+    .events .filter {
+        margin-bottom: 2rem;
     }
 }
 
@@ -4020,16 +4049,16 @@
         padding-right: 0;
     }
 
-    .events .filter-layout {
-        margin-top: 2rem;
-    }
+    /*.events .filter-layout {*/
+        /*margin-top: 2rem;*/
+    /*}*/
 
     .events-header__btn {
         top: -25px;
     }
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
-        box-shadow: none;
+        /*box-shadow: none;*/
     }
 
     .loft {
@@ -7915,6 +7944,8 @@
     .holiday-space-list .calendar-nav__icon-gradient svg {
         display: block;
     }
+
+
 
 }
 
