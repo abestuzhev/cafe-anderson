@@ -6635,6 +6635,8 @@
         top: 19%;
     }
 
+
+
 }
 
 @media (max-width: 390px) {
@@ -6706,6 +6708,18 @@
 
     .loft .bonus-info {
         padding: 2rem 6rem;
+    }
+
+    .events-header__btn {
+        position: absolute;
+        display: inline-block;
+        width: auto;
+        top: -5px;
+        margin-bottom: 0;
+    }
+
+    .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
+        padding: .4rem 1rem;
     }
 }
 
