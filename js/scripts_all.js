@@ -12309,6 +12309,34 @@ $(function() {
         resizeSelectorHead('#hsl-addr-selector');
     });
 
+    function resizeSelectorFooter(target, delta = 21) {
+        if($(target).hasClass('show-up')){
+            console.log('has class');
+            let $_wrapper = $(target).closest('.calendar-selector_wrapper');
+            let $_elem = $(target).find('.calendar-selector__footer');
+            let $_textHeight = $('.calendar-title__wrapper').height();
+            if($_elem.height() !== ($_wrapper.height() + delta)) {
+                $_elem.css('height', ($_wrapper.height() + delta) / 10 + "rem");
+
+
+            }
+            // $(target).css({
+            //     'bottom': '-' + ($_textHeight / 2 + 'px')
+            // });
+
+            // $(target).css({
+            //     'bottom': -20
+            // });
+        }
+
+    }
+
+    resizeSelectorFooter('#hsl-addr-selector');
+
+    $(window).on('resize', function() {
+        resizeSelectorFooter('#hsl-addr-selector');
+    });
+
 
 
 

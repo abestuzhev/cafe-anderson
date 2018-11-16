@@ -21018,8 +21018,10 @@ test popup
         content: '';
         bottom: .3rem;
         border-color: #81c15f; }
-  .calendar-title__caption svg {
-    fill: #968274; }
+  .calendar-title__caption {
+    line-height: 1; }
+    .calendar-title__caption svg {
+      fill: #968274; }
 
 /* Holiday Space List   */
 .holiday-space-list .filter-layout {
@@ -21462,7 +21464,7 @@ a.show-more__button:hover {
   -webkit-box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33);
           box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33); }
   .calendar-selector.show-up {
-    bottom: -59%;
+    bottom: -2rem !important;
     top: auto; }
     .calendar-selector.show-up .calendar-selector__head {
       height: 2rem !important; }

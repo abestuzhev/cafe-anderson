@@ -17407,6 +17407,7 @@ test popup
 
     &-title {
         &__caption {
+            line-height: 1;
             svg {
                 fill: #968274;
             }
@@ -17991,7 +17992,7 @@ a.show-more__button:hover {
     box-shadow: 0px 0px 34.96px 3.04px rgba(0, 0, 0, 0.33);
 
     &.show-up {
-        bottom: -59%;
+        bottom: -2rem !important;
         top: auto;
 
         .calendar-selector__head {
