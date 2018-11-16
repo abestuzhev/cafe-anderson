@@ -8023,10 +8023,11 @@
         display: inline-block;
     }
 
-    .holiday-space-list .calendar-title {
-        padding: 0;
-        padding-top: 1.6rem;
-    }
+    /*.holiday-space-list .calendar-title {*/
+        /*padding: 0;*/
+        /*padding-top: 1.6rem;*/
+    /*}*/
+
 
     .holiday-space-list .calendar-nav-hall__column {
         display: none;
