@@ -21321,8 +21321,7 @@ a.show-more__button:hover {
 
 .calendar-nav-hall {
   text-align: center;
-  border: 1px solid #e4e4e4;
-  border-bottom: none;
+  border-bottom: 1px solid #e4e4e4;
   min-height: 12rem;
   background-color: #f4f4f4;
   cursor: pointer;
