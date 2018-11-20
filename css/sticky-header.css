@@ -293,6 +293,14 @@
     animation: slide-down .3s ease-out;
 } */
 
+.header-wrap.header-wrap-v2.sticky.no-compress {
+    transition: none;
+}
+
+.is-content-hidden.visible .no-compress .header {
+    transition: none;
+}
+
 .header-wrap.sticky.no-compress .header-city,
 .header-wrap.sticky .header-time {
     opacity: 1;
