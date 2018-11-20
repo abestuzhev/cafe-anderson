@@ -15691,6 +15691,8 @@ test popup
     display: inline-block;
     width: auto;
     margin-bottom: 2rem; }
+    .news-and-stock .filter .l-button__center {
+      margin-top: 2.3rem; }
   .news-and-stock .filter select,
   .news-and-stock .SelectBox {
     width: 23.6rem; }

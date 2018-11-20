@@ -10507,6 +10507,10 @@ test popup
         display: inline-block;
         width: auto;
         margin-bottom: 2rem;
+
+        .l-button__center {
+            margin-top: 2.3rem;
+        }
     }
 
     .filter select,
