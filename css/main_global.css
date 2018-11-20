@@ -7841,13 +7841,14 @@ main {
     text-align: center;
     position: absolute;
     z-index: 1;
-    top: 9.2%;
-    left: 25.2%;
-    -webkit-transform: rotate(7deg);
-        -ms-transform: rotate(7deg);
-            transform: rotate(7deg);
+    top: 14.2%;
+    left: 50%;
+    -webkit-transform: rotate(7deg) translateX(-42%);
+        -ms-transform: rotate(7deg) translateX(-42%);
+            transform: rotate(7deg) translateX(-42%);
     font-family: "BebasNeue";
-    color: #201600; }
+    color: #201600;
+    min-width: 31rem; }
   .home-cafe__title {
     font-size: 3.5vw;
     font-weight: 300;
