@@ -44,9 +44,13 @@
 
 
 /*раскомментировать, если надо убрать нижнюю надпись*/
-/* .fixed-logo .logo-text  {
-    display: none !important;
-} */
+.fixed-logo .logo-text  {
+    display: none;
+}
+
+.fixed-logo.no-compress-logo .logo-text  {
+    display: block;
+}
 
 .header-city,
 .header-time {

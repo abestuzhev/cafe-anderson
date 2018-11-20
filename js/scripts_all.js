@@ -9418,6 +9418,8 @@ $(document).ready(function ($) {
 
 
 
+    
+
 
     // $('.child-holiday-say').slick({
     //     centerMode: true,
@@ -11721,6 +11723,12 @@ $(document).ready(function ($) {
             })
         }
     });
+
+    if($('.header-wrap').hasClass('no-compress')){
+        $("#symbol-logo").addClass('no-compress-logo');
+    }else{
+        $("#symbol-logo").removeClass('no-compress-logo');
+    }
 
     /*кастомный селект*/
     $('.c-select').SumoSelect( {
