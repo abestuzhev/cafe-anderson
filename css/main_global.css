@@ -6501,10 +6501,6 @@ div.c-card-catalog-2 {
 .sticky .header-menu__item {
   padding: .8rem; }
 
-.sticky .header-col__left,
-.sticky .header-col__right {
-  width: 46%; }
-
 .sticky .header-col__left .header-top {
   margin-bottom: .6rem; }
 
@@ -6879,7 +6875,7 @@ div.c-card-catalog-2 {
     font-size: 1.8rem;
     margin-bottom: -.1rem; }
     .header-menu__item {
-      padding: 1rem; }
+      padding: .8rem; }
       .header-menu__item:first-child {
         padding-left: 0; }
       .header-menu__item:last-child {

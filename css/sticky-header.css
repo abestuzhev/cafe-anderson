@@ -42,9 +42,11 @@
     transition: all .3s ease-out;
 }
 
-.fixed-logo .logo-text  {
+
+/*раскомментировать, если надо убрать нижнюю надпись*/
+/* .fixed-logo .logo-text  {
     display: none !important;
-}
+} */
 
 .header-city,
 .header-time {
@@ -120,6 +122,7 @@
 .header-top {
     margin-bottom: .4rem !important;
 }
+
 
 
 @media (max-width: 1380px) {
@@ -277,3 +280,124 @@
         padding-bottom: 0 !important;
     }
 }
+
+
+/*убираем сжатие шапки------------------*/
+
+/* .header-wrap.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-out;
+    animation: slide-down .3s ease-out;
+} */
+
+.header-wrap.sticky.no-compress .header-city,
+.header-wrap.sticky .header-time {
+    opacity: 1;
+}
+
+.header-wrap.sticky.no-compress .header-top {
+    height:auto;
+}
+
+.header-wrap.sticky.no-compress .header-mobile__top {
+    opacity: 1;
+}
+
+.header-wrap.sticky.no-compress .symbol-logo{
+    font-size: 38rem;
+}
+
+.header-wrap.sticky.no-compress .header-menu__link {
+    transition: all .3s ease-out;
+}
+
+.sticky.no-compress + .header-navigation {
+    transition: all .1s ease-out;
+    transform: translateY(0);
+}
+
+
+.header-wrap.sticky.no-compress .top-message {
+    top: auto;
+    display: block;
+}
+
+.sticky.no-compress .header-city, .sticky.no-compress .header-time {
+    display: block;
+}
+
+
+.sticky.no-compress .header-col__left,
+.sticky.no-compress .header-col__right {
+    width: 33%;
+}
+
+
+.sticky.no-compress .header-menu__item {
+    padding: .8rem;
+    transition: none;
+}
+
+.sticky.no-compress .header-menu__item:last-child {
+    padding-right: 0;
+}
+.sticky.no-compress .header-menu__item:first-child {
+    padding-left: 0;
+}
+
+.sticky.no-compress .header-col__center {
+    position: static;
+    transform: none;
+}
+
+.sticky.no-compress .header-personal {
+    margin-bottom: 0.5rem !important;
+}
+
+
+.sticky.no-compress .header-contact {
+    margin-bottom: 0.2rem !important;
+}
+
+@media (max-width:1380px){
+    .sticky.no-compress .header-col__left, 
+    .sticky.no-compress .header-col__right {
+        width: 46%;
+    }
+
+    .sticky.no-compress .header-col__center {
+        display: block;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 1380px) and (min-width: 1020px){
+    .header-wrap.sticky.no-compress .header-col__center {
+        height: 4.9rem;
+    }
+
+    .header-wrap.sticky.no-compress .symbol-logo-wrap {
+        top: 0;
+        transition: none;
+    }
+
+    .header-wrap.sticky.no-compress .symbol-logo {
+        transition: none;
+    }
+}
+
+@media (max-width: 1026px){ 
+    .header-wrap.sticky.no-compress .symbol-logo {
+        font-size: 21rem;
+    }
+
+    .header-wrap.sticky.no-compress .header-city, .header-wrap.sticky.no-compress .header-time {
+        opacity: 0;
+        display: none;
+    }
+}
+

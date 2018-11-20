@@ -73,10 +73,10 @@
 }
 
 
-.sticky .header-col__left,
-.sticky .header-col__right {
-    width: 46%;
-}
+// .sticky .header-col__left,
+// .sticky .header-col__right {
+//     width: 46%;
+// }
 
 .sticky .header-col__left {
 
@@ -590,7 +590,7 @@
         margin-bottom: -.1rem;
 
         &__item {
-            padding: 1rem;
+            padding: .8rem;
 
             &:first-child {
                 padding-left: 0;
