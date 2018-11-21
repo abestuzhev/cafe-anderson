@@ -9090,7 +9090,7 @@ main {
   padding: 0 1.5rem; }
 
 .popup-pie .c-card-supplements__price {
-  margin-top: .5rem; }
+  margin: .5rem 0 0 .5rem; }
 
 .popup-pie .c-card-supplements > div {
   margin-right: .8rem; }
