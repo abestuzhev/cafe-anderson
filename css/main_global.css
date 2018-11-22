@@ -24147,10 +24147,6 @@ a.show-more__button:hover {
         -webkit-box-direction: normal;
             -ms-flex-flow: row nowrap;
                 flex-flow: row nowrap; }
-      .new-year-order__col:nth-child(2) {
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
     .new-year-order__item {
       margin-right: 1.3rem; }
       .new-year-order__item:last-child {

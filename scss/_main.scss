@@ -21570,9 +21570,9 @@ a.show-more__button:hover {
             &:nth-child(1) {
                 flex-flow: row nowrap;
             }
-            &:nth-child(2) {
-                justify-content: flex-end;
-            }
+            // &:nth-child(2) {
+            //     justify-content: flex-end;
+            // }
         }
 
         &__item {
@@ -21744,6 +21744,8 @@ a.show-more__button:hover {
         }
     }
 
+   
+
     &-delivery {
         &__list {
             display: flex;
@@ -21847,6 +21849,10 @@ a.show-more__button:hover {
     }
 
 }
+
+// .banner-new-order .new-year-order__col:nth-child(2) {
+//     justify-content: flex-start;
+// }
 
 .popup-new-year {
     .popup {
