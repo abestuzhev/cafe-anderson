@@ -381,7 +381,7 @@
     }
 
     .sticky.no-compress .header-col__center {
-        display: block;
+        /*display: block;*/
         position: absolute;
         transform: translateX(-50%);
     }
@@ -389,11 +389,11 @@
 
 @media screen and (max-width: 1380px) and (min-width: 1020px){
     .header-wrap.sticky.no-compress .header-col__center {
-        height: 4.9rem;
+        height: 6.2rem;
     }
 
     .header-wrap.sticky.no-compress .symbol-logo-wrap {
-        top: 0;
+        /*top: 0;*/
         transition: none;
     }
 
