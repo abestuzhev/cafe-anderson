@@ -24343,7 +24343,7 @@ a.show-more__button:hover {
     left: -13%; }
 
 .banner-new-order .new-year-order__item:first-child {
-  max-width: 13rem; }
+  width: 13rem; }
 
 .popup-new-year .popup {
   max-width: 113.6rem;
