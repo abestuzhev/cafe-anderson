@@ -26197,26 +26197,6 @@ a.show-more__button:hover {
     margin-bottom: 8px; } }
 
 @media screen and (max-width: 400px) {
-  .header {
-    -webkit-animation: none;
-            animation: none; }
-  div.header-mobile__top {
-    display: none; }
-  .header-wrap.sticky {
-    -webkit-animation: none;
-            animation: none;
-    top: auto;
-    -webkit-transform: translateY(0px) !important;
-        -ms-transform: translateY(0px) !important;
-            transform: translateY(0px) !important;
-    -webkit-transition: all .2s ease-out !important;
-    -o-transition: all .2s ease-out !important;
-    transition: all .2s ease-out !important; }
-  div.header-layout div.header-col__center a span {
-    display: none !important; }
-  .wrapper header:not(.header-top__hide) section.c-layout {
-    padding-top: 1.6rem;
-    padding-bottom: 1.6rem; }
   .wrapper header:not(.header-top__hide) .header-mobile__bottom section.c-layout {
     padding-top: 0;
     padding-bottom: 0; }
