@@ -1521,6 +1521,12 @@ i.icon-chair {
   height: 1.3em;
   fill: #000; }
 
+.symbol-celebration-bear-all {
+  font-size: 6.1rem;
+  width: 1em;
+  height: .65em;
+  fill: #000; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -5410,7 +5416,8 @@ div.c-card-catalog-2 {
 
 /*c-card-party--------------------------------------------------*/
 .c-card-party {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  /*.c-card-party .v2*/ }
   .c-card-party__header {
     position: relative;
     padding: 2rem 1.4rem;
@@ -5675,6 +5682,62 @@ div.c-card-catalog-2 {
         font-weight: 700; }
       .c-card-party-info__col:nth-child(2) {
         color: #c44890; }
+  .c-card-party__decor-1-left {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -28rem; }
+  .c-card-party__decor-1-right {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    margin-right: -30rem; }
+  .c-card-party__decor-2-left {
+    position: absolute;
+    bottom: 1rem;
+    left: 0; }
+  .c-card-party__decor-2-right {
+    position: absolute;
+    bottom: 1rem;
+    right: 0; }
+  .c-card-party.v2 {
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: .8rem;
+    font-family: "PT Serif Caption";
+    padding: 0 3rem 1rem; }
+    .c-card-party.v2 .c-card-party__title {
+      display: block;
+      text-align: center;
+      font-size: 3.2rem;
+      font-family: "PT Serif Caption";
+      color: #c44890;
+      padding: 2.7rem 1rem;
+      position: relative; }
+    .c-card-party.v2 .c-card-party__header {
+      padding: .9rem 1.4rem .9rem 4rem;
+      margin-left: -3rem;
+      margin-right: -3rem; }
+    .c-card-party.v2 .c-card-party__conditions {
+      color: #672f05;
+      font-size: 1.4rem;
+      max-width: 100%;
+      font-family: "PT Serif Caption"; }
+    .c-card-party.v2 .c-card-party__application {
+      font-size: 1.6rem;
+      color: #c44890;
+      font-family: "PT Serif Caption";
+      padding-left: 8rem;
+      max-width: 50rem;
+      position: relative; }
+    .c-card-party.v2 .c-card-party-info {
+      margin: 0 2rem 2rem; }
+    .c-card-party.v2 .symbol-celebration-bear-all {
+      fill: #5c3524;
+      position: absolute;
+      left: 0;
+      bottom: -13px; }
 
 .c-simple-nav {
   font-size: 0;
@@ -15515,14 +15578,28 @@ test popup
     width: 100%; }
   .holiday-offers-banner__btn {
     padding: 1.2rem 1.8rem;
-    font-size: 2.3rem;
+    font-size: 3.7rem;
     border-radius: .6rem;
-    background-color: #7cbd41;
+    background: #7cbd41 url("../img/decor-button-green.png") 0 0 repeat;
     color: #ffffff;
     margin: 0 2.2rem;
     text-transform: uppercase;
     text-align: center;
-    line-height: 1; }
+    font-family: "BebasNeue";
+    line-height: 1;
+    position: relative; }
+    .holiday-offers-banner__btn::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      border: 5px solid #fff;
+      border-radius: 1rem;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease; }
     .holiday-offers-banner__btn span {
       color: #231300;
       display: block; }
@@ -15532,6 +15609,11 @@ test popup
     .holiday-offers-banner__btn:hover {
       background-color: #80c242;
       color: #ffffff; }
+    .holiday-offers-banner__btn:hover::before {
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+      border-color: transparent; }
   .holiday-offers-banner .owl-theme .owl-dots .owl-dot span {
     width: .8rem;
     height: .8rem;

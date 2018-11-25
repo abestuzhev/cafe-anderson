@@ -10266,14 +10266,29 @@ test popup
 
         &__btn {
             padding: 1.2rem 1.8rem;
-            font-size: 2.3rem;
+            font-size: 3.7rem;
             border-radius: .6rem;
-            background-color: #7cbd41;
+            background: #7cbd41 url('../img/decor-button-green.png') 0 0 repeat;
             color: #ffffff;
             margin: 0 2.2rem;
             text-transform: uppercase;
             text-align: center;
+            font-family: $font_sans-serif;
             line-height: 1;
+            position: relative;
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                right: -10px;
+                bottom: -10px;
+                border: 5px solid #fff;
+                border-radius: 1rem;
+                transition: all .2s ease;
+            }
 
             span {
                 color: #231300;
@@ -10288,6 +10303,11 @@ test popup
             &:hover {
                 background-color: #80c242;
                 color: #ffffff;
+            }
+
+            &:hover::before {
+                transition: all .2s ease;
+                border-color: transparent;
             }
         }
 
