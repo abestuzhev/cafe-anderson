@@ -880,7 +880,7 @@
     }
 
     .new-year-header__subtitle {
-        display: none;
+        /* display: none; */
     }
 
     .new-year-header {
@@ -888,8 +888,9 @@
     }
 
     .new-year-header__body {
-        width: 22rem;
         left: 3%;
+        width: 26rem;
+        top:20%;  
     }
 
 
@@ -2585,6 +2586,10 @@
 
     .child-holiday-people__item {
         padding: 0 .5rem;
+    }
+
+    .new-year-header__body {
+        top: 12%;
     }
 }
 
@@ -4380,6 +4385,11 @@
     /*.events .filter {*/
         /*display: inline-block !important;*/
     /*}*/
+
+    .new-year-header__body {
+        left: 4%;
+        width: 36rem;
+    }
 
 
 }
@@ -7788,6 +7798,14 @@
         align-items: flex-start;
     }
 
+    .new-year-header {
+        background-size: 150%;
+    }
+
+    .new-year-header__subtitle {
+        font-size: 3rem;
+    }
+
 }
 
 @media (max-width: 430px) {
@@ -7811,6 +7829,23 @@
 
     .popup-poster .poster-banner__right .poster-banner__text {
         font-size: 6rem;
+    }
+
+    .new-year-header__body {
+        width: 19rem;
+    }
+
+    .new-year-header__body {
+        top: 6%;
+    }
+
+    .new-year-header__title {
+        font-size: 3.4rem;
+        margin-bottom: 0;
+    }
+
+    .new-year-header__subtitle {
+        font-size: 2.8rem;
     }
 }
 
