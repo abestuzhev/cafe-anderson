@@ -3335,6 +3335,24 @@
         height: 28rem;
     }
 
+    .child-holiday-say-card__text {
+        height: auto;
+    }
+
+    .child-holiday-say .owl-stage-outer {
+        padding: 0 3px;
+    }
+
+    .child-holiday-say__item,
+    .child-holiday-say-card {
+        height: auto;
+    }
+
+    .child-holiday-say-card {
+        background-color: #fff;
+        border-color: transparent;
+    }
+
 }
 
 @media (min-width: 730px) {

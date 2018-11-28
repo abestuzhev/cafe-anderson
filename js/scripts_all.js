@@ -9457,13 +9457,16 @@ $(document).ready(function ($) {
                 items:3
             },
             800:{
-                items:2
+                items:2,
+                margin:0
             },
             540:{
-                items:1
+                items:1,
+                margin:0
             },
             310:{
-                items:1
+                items:1,
+                margin:0
             }
         }
     });
