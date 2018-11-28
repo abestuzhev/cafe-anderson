@@ -219,7 +219,8 @@ $(document).ready(function ($) {
         items:3,
         loop:true,
         margin:10,
-        adaptiveHeight: true,
+
+        autoHeight:true,
         responsive:{
             1200:{
                 items:3

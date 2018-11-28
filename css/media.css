@@ -3337,6 +3337,7 @@
 
     .child-holiday-say-card__text {
         height: auto;
+        margin-bottom: 0;
     }
 
     .child-holiday-say .owl-stage-outer {
