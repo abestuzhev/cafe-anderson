@@ -41,7 +41,6 @@
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
-<body>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="symbol-logo" viewBox="0 0 380 79">
         <path d="M345.5,8c0.8,0,1.4-0.4,1.4-1.2c0-0.7-0.4-1-1.3-1c-0.3,0-0.6,0-0.7,0V8H345.5z M343.3,5.4h2.4
@@ -4962,10 +4961,10 @@
     </symbol>
 </svg>
 
-<div id="page-preloader" class="preloader">
-    <div class="loader">
-    </div>
-</div>
+<!--<div id="page-preloader" class="preloader">-->
+    <!--<div class="loader">-->
+    <!--</div>-->
+<!--</div>-->
 
 <div class="wrapper">
     <header class="header">
@@ -6120,23 +6119,23 @@
 <!----------------------------------------------START popup-->
 
 <!--модальное окно выпоускные-->
-<!--<div class="mfp-wrap popup-graduation" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">-->
-    <!--<div class="mfp-container mfp-inline-holder">-->
-        <!--<div class="mfp-content">-->
-            <!--<div class="popup">-->
-                <!--<a href="#" class="popup-graduation__close js-popup-close"> <svg class="c-symbol symbol-close"><use xlink:href="#symbol-close" /></svg></a>-->
-                <!--<div class="popup-body">-->
-                    <!--<img class="popup-graduation__logo" src="./img/logo-anderson-small.svg" alt="">-->
-                    <!--<div class="popup-graduation__title"><span>Ой!</span> Скоро Выпускной!</div>-->
-                    <!--<div class="l-button l-button__center">-->
-                        <!--<a href="#" class="c-button c-button__default">Жми!</a>-->
-                    <!--</div>-->
-                <!--</div>-->
+<div class="mfp-wrap popup-graduation" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <a href="#" class="popup-graduation__close js-popup-close"> <svg class="c-symbol symbol-close"><use xlink:href="#symbol-close" /></svg></a>
+                <div class="popup-body">
+                    <img class="popup-graduation__logo" src="./img/logo-anderson-small.svg" alt="">
+                    <div class="popup-graduation__title"><span>Ой!</span> Скоро Выпускной!</div>
+                    <div class="l-button l-button__center">
+                        <a href="#" class="c-button c-button__default">Жми!</a>
+                    </div>
+                </div>
 
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--заказ выпускнова-->
 <div class="mfp-wrap popup-party-order" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
@@ -6908,7 +6907,7 @@
     </div>
 </div>
 
-<!--<div class="mfp-bg mfp-ready"></div>-->
+<div class="mfp-bg mfp-ready"></div>
 <!--задний фон модального окна-->
 
 <!----------------------------------------------END popup-->
@@ -6961,22 +6960,22 @@
 <script src="./bower_components/jquery/dist/jquery.js"></script>
 
 <script>
-//    $(function(){
-//        setTimeout(function(){
-//            $(".popup-graduation").addClass('is-visible');
-//            $('.mfp-bg').addClass('is-visible');
-//            $('html').addClass('lock-html');
-//
-//            if(windowWidth > documentWidth){
-//                $('html').css({
-//                    'margin-right':'17px'
-//                });
-//                $('.mfp-wrap').css({
-//                    'overflow-y':'scroll'
-//                });
-//            }
-//        }, 3000);
-//    })
+    $(function(){
+        setTimeout(function(){
+            $(".popup-graduation").addClass('is-visible');
+            $('.mfp-bg').addClass('is-visible');
+            $('html').addClass('lock-html');
+
+            if(windowWidth > documentWidth){
+                $('html').css({
+                    'margin-right':'17px'
+                });
+                $('.mfp-wrap').css({
+                    'overflow-y':'scroll'
+                });
+            }
+        }, 3000);
+    })
 
 </script>
 

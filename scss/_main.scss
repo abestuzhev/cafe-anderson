@@ -9967,6 +9967,28 @@ test popup
         &::after {
             content: '';
             border: none;
+            position: absolute;
+            top: 15px;
+            left: 6px;
+            transform: rotate(45deg);
+            width: 19px;
+            height: 2px;
+            border-radius: 20px;
+            background-color: #a2d744;
+
+        }
+        &::before {
+            content: '';
+            border: none;
+            position: absolute;
+            top: 6px;
+            left: 14px;
+            transform: rotate(45deg);
+            height: 19px;
+            width: 2px;
+            border-radius: 20px;
+            background-color: #a2d744;
+
         }
 
         svg {
@@ -9976,7 +9998,9 @@ test popup
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            display: none;
         }
+
     }
 }
 

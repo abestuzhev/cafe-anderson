@@ -15347,7 +15347,30 @@ test popup
     border: 1px solid #a2d744; }
   .popup-graduation__close::after {
     content: '';
-    border: none; }
+    border: none;
+    position: absolute;
+    top: 15px;
+    left: 6px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 19px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: #a2d744; }
+  .popup-graduation__close::before {
+    content: '';
+    border: none;
+    position: absolute;
+    top: 6px;
+    left: 14px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    height: 19px;
+    width: 2px;
+    border-radius: 20px;
+    background-color: #a2d744; }
   .popup-graduation__close svg {
     font-size: 1rem;
     fill: #a2d744;
@@ -15356,7 +15379,8 @@ test popup
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+            transform: translate(-50%, -50%);
+    display: none; }
 
 .popup-offer .popup {
   width: 63.5rem;
