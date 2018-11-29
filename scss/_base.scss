@@ -5089,6 +5089,33 @@ div.c-card-catalog-2 {
             bottom: -13px;
         }
 
+        &.hide-card {
+            .c-card-party__body .c-col-6:nth-child(2) {
+                display: none;
+            }
+
+
+            .c-card-party__body .c-col-6:nth-child(1) {
+                .c-card-party-box {
+                    display: none;
+                }
+            }
+            .c-card-party-info {
+                display: none;
+            }
+
+            .holiday-offers__footer {
+                display: none;
+            }
+
+            .holiday-offers__mobile-btn {
+                svg {
+                    transform: rotate(0);
+                }
+
+            }
+        }
+
     }
     
 }

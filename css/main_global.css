@@ -5738,6 +5738,18 @@ div.c-card-catalog-2 {
       position: absolute;
       left: 0;
       bottom: -13px; }
+    .c-card-party.v2.hide-card .c-card-party__body .c-col-6:nth-child(2) {
+      display: none; }
+    .c-card-party.v2.hide-card .c-card-party__body .c-col-6:nth-child(1) .c-card-party-box {
+      display: none; }
+    .c-card-party.v2.hide-card .c-card-party-info {
+      display: none; }
+    .c-card-party.v2.hide-card .holiday-offers__footer {
+      display: none; }
+    .c-card-party.v2.hide-card .holiday-offers__mobile-btn svg {
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+              transform: rotate(0); }
 
 .c-simple-nav {
   font-size: 0;
@@ -15792,6 +15804,16 @@ test popup
 
 .holiday-offers .c-ol-list li {
   display: inline-block; }
+
+.holiday-offers__mobile-btn {
+  text-align: center;
+  padding: 0 0 1rem 0;
+  display: none; }
+  .holiday-offers__mobile-btn .symbol-dropdown {
+    font-size: 2rem;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 /*news and stock--------------------------------------------------------------*/
 .news-and-stock {

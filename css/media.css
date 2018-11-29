@@ -642,6 +642,22 @@
     .new-year-body {
         padding: 0 2rem 0;
     }
+
+    .c-card-party__decor-2-right {
+        position: absolute;
+        bottom: auto;
+        right: -3rem;
+        width: 30rem;
+        top: -1rem;
+    }
+
+    .c-card-party__decor-2-left {
+        position: absolute;
+        bottom: auto;
+        left: -3rem;
+        width: 30rem;
+        top: -1rem;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -2379,6 +2395,10 @@
         right: 0;
     }
 
+    .c-card-party__decor-2-left,
+    .c-card-party__decor-2-right {
+        width: 23rem;
+    }
 }
 
 @media (max-width: 940px) {
@@ -2543,6 +2563,10 @@
 
     .c-card-party__title {
         font-size: 2.6rem;
+    }
+
+    .c-card-party.v2 .c-card-party__title {
+        margin-bottom: 0;
     }
 
     .c-button__large {
@@ -3194,6 +3218,26 @@
     .c-card-party.v2 .c-card-party__conditions::before {
         content: '';
         top: 0;
+    }
+
+    .c-card-party__decor-2-left {
+        left: -1rem;
+    }
+    .c-card-party__decor-2-right {
+        right: -1rem;
+    }
+
+
+    .c-card-party__decor-2-right {
+        display: none;
+    }
+
+    .c-card-party__decor-2-left {
+        position: absolute;
+        bottom: auto;
+        left: 50%;
+        width: 23rem;
+        transform: translateX(-50%);
     }
 }
 
@@ -4464,8 +4508,15 @@
         left: 4%;
         width: 36rem;
     }
+    
+    .holiday-offers__footer {
+        margin-bottom: 0;
+    }
 
 
+    .holiday-offers__mobile-btn {
+        display: block;
+    }
 }
 
 @media (max-width: 780px) {
@@ -5449,6 +5500,11 @@
         top: 0;
     }
 
+    .c-card-party.v2 .c-card-party__title span {
+        max-width: 19rem;
+        display: inline-block;
+    }
+
 
 
 }
@@ -5914,6 +5970,26 @@
     .child-holiday-booking__item {
         width: 100%;
     }
+
+    .c-card-party.v2 {
+        padding: 0 1rem .5rem;
+    }
+
+    .c-card-party.v2 .c-card-party__header {
+        margin-right: -1rem;
+        margin-left: -1rem;
+    }
+
+    .c-card-party__decor-1-right {
+        right: -12px;
+        width: 97px;
+    }
+
+    .c-card-party__decor-1-left {
+        left: -10px;
+        width: 66px;
+    }
+
 
 
 }

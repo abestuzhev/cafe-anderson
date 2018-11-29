@@ -10546,6 +10546,18 @@ test popup
     .c-ol-list li {
         display: inline-block;
     }
+
+    &__mobile-btn {
+        text-align: center;
+        padding: 0 0 1rem 0;
+        display: none;
+        .symbol-dropdown {
+            font-size: 2rem;
+            transform: rotate(180deg);
+        }
+
+    }
+
 }
 
 /*news and stock--------------------------------------------------------------*/

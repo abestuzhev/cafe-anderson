@@ -9417,7 +9417,31 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    function ShowholidayOffersCard(){
+        $('.c-card-party.v2').removeClass('hide-card');
+    }
+    function HideholidayOffersCard(){
+        $('.c-card-party.v2').addClass('hide-card');
+    }
 
+    $(window).on('resize', function () {
+        if($(window).width() <= 730){
+            HideholidayOffersCard();
+        }else{
+            ShowholidayOffersCard();
+        }
+    });
+
+    if($(window).width() <= 730){
+        HideholidayOffersCard();
+    }else{
+        ShowholidayOffersCard()
+    }
+
+    $('.holiday-offers__mobile-btn').on('click', function(e){
+        e.preventDefault();
+        $(this).parents('.c-card-party.v2').toggleClass('hide-card')
+    })
     
 
 
