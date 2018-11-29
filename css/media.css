@@ -6048,6 +6048,29 @@
     .c-card-catalog__basket {
         padding: .9rem 1.3rem;
     }
+
+    .new-year-2019-banner {
+        background: url(../img/new-year/new-year-2019-banner-mobile.png) 0 0 no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding-top: 68%;
+        position: relative;
+    }
+
+    .new-year-2019-banner img {
+        display: none;
+    }
+    .new-year-2019-banner a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -6907,11 +6930,11 @@
         top: -19px;
     }
 
-    .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
-        padding: .6rem .8rem;
-        box-shadow: none;
-        font-size: 18px;
-    }
+    /*.events .filter-layout .events-header__btn .cafe-info-card__btn--poster {*/
+        /*padding: .6rem .8rem;*/
+        /*box-shadow: none;*/
+        /*font-size: 18px;*/
+    /*}*/
 
     .loft-banner__btn {
         font-size: 2rem;
@@ -6925,13 +6948,13 @@
         padding: 2rem 6rem;
     }
 
-    .events-header__btn {
-        position: absolute;
-        display: inline-block;
-        width: auto;
-        top: -5px;
-        margin-bottom: 0;
-    }
+    /*.events-header__btn {*/
+        /*position: absolute;*/
+        /*display: inline-block;*/
+        /*width: auto;*/
+        /*top: -5px;*/
+        /*margin-bottom: 0;*/
+    /*}*/
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
         padding: .4rem 1rem;

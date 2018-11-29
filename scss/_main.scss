@@ -21909,6 +21909,19 @@ a.show-more__button:hover {
     }
 
 }
+.new-year-2019-banner {
+    padding: 10px 0 20px 0;
+
+    img {
+        width: 100%;
+    }
+
+
+    a::after {
+        content: '';
+        border: none;
+    }
+}
 
 // .banner-new-order .new-year-order__col:nth-child(2) {
 //     justify-content: flex-start;
