@@ -2578,6 +2578,10 @@ test popup
     //overflow-y: scroll;
 }
 
+.mfp-wrap.is-visible {
+    padding-right: 17px;
+}
+
 .popup {
     transform: scale(.9);
 }

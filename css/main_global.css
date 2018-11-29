@@ -9761,6 +9761,9 @@ test popup
   -o-transition: all .3s ease-out;
   transition: all .3s ease-out; }
 
+.mfp-wrap.is-visible {
+  padding-right: 17px; }
+
 .popup {
   -webkit-transform: scale(0.9);
       -ms-transform: scale(0.9);

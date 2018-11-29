@@ -5139,6 +5139,18 @@
         font-size: 4rem;
     }
 
+    .c-card-party__decor-1-left {
+        left: 0;
+        margin: 0;
+        width: 71px;
+    }
+
+    .c-card-party__decor-1-right {
+        margin: 0;
+        right: 0; 
+        width: 116px
+    }
+
 }
 
 @media (max-width: 650px) {

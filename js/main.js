@@ -227,7 +227,8 @@ $(document).ready(function ($) {
             },
             800:{
                 items:2,
-                margin:0
+                margin:0,
+                center: false
             },
             540:{
                 items:1,
@@ -2167,7 +2168,10 @@ $(document).ready(function ($) {
 
 
         if (e.which === 1) {
-            hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup', '.fancybox-container');
+            // hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup', '.fancybox-container');
+            // hideOutZone('.popup-mini', '.datepicker', '.main-user-consent-request-popup', '.fancybox-container');
+            // console.log('correct');
+            hideOutZone();
         }
 
     });
