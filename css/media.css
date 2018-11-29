@@ -3140,6 +3140,61 @@
     .events .filter {
         margin-bottom: 2rem;
     }
+
+    .c-card-party.v2 .c-card-party__header {
+        background: none;
+        padding: 1rem 0;
+    }
+    .c-card-party.v2 .c-card-party__header::before,
+    .c-card-party.v2 .c-card-party__header::after {
+        content: '';
+        display: none;
+    }
+
+    .c-card-party.v2 .c-card-party__conditions {
+        padding: .8rem;
+        order:2;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+        width: 100%;
+        position: relative;
+    }
+    .c-card-party.v2 .c-card-party__application {
+        order:1;
+        padding-bottom: 0;
+        width: 100%;
+        padding-top: 1rem;
+        max-width: 100%;
+    }
+    .c-card-party.v2 .c-card-party__application svg {
+        position: static;
+        margin-right: 1rem;
+    }
+
+    .c-card-party.v2 .symbol-celebration-bear-all {
+        bottom: 0;
+    }
+
+    .c-card-party.v2 .c-card-party__application::before,
+    .c-card-party.v2 .c-card-party__conditions::after,
+    .c-card-party.v2 .c-card-party__conditions::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: .4rem;
+        background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+    }
+
+    .c-card-party.v2 .c-card-party__conditions::after {
+        content: '';
+        bottom: 0;
+    }
+
+    .c-card-party.v2 .c-card-party__application::before,
+    .c-card-party.v2 .c-card-party__conditions::before {
+        content: '';
+        top: 0;
+    }
 }
 
 @media (max-width: 800px) {
@@ -4181,11 +4236,11 @@
         margin-right: 0;
     }
 
-    .holiday-offers-banner {
-        margin-right: -1.5rem;
-        margin-left: -1.5rem;
-        margin-top: -2rem;
-    }
+    /*.holiday-offers-banner {*/
+        /*margin-right: -1.5rem;*/
+        /*margin-left: -1.5rem;*/
+        /*margin-top: -2rem;*/
+    /*}*/
 
     .holiday-offers-banner__slide {
         height: 24rem;
@@ -5101,6 +5156,11 @@
         flex-flow: column nowrap;
         justify-content: center;
         top: 50%;
+    }
+
+    .holiday-offers-banner__btn::before {
+        content: '';
+        display: none;
     }
 
     .holiday-offers-banner__btn,
@@ -8358,6 +8418,47 @@
     .calendar-selector.show-up .calendar-selector__footer {
 
     }
+
+    .c-card-party.v2 .c-card-party__application svg {
+        position: absolute;
+        left: 1rem;
+    }
+
+    .c-card-party.v2 .c-card-party__application span {
+        line-height: .9;
+    }
+
+    .c-card-party.v2 .c-card-party__application {
+        padding: 0 12px 0 80px;
+        min-height: 5rem;
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .c-card-party.v2 .c-card-party__conditions {
+        text-align: left;
+        padding: 12px;
+        font-size: 1.3rem;
+    }
+
+    .c-card-party.v2 .c-card-party__header {
+        margin-bottom: 18px;
+    }
+
+    .c-card-party.v2 .c-card-party__title {
+        font-size: 2.4rem;
+        padding: 1.5rem 1rem 1rem;
+        margin-bottom: 0;
+        line-height: 1.2;
+
+    }
+
+    .c-card-party-important .c-card-party-box__title span {
+        font-size: 2.4rem;
+    }
+
 
 }
 
