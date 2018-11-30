@@ -6053,8 +6053,9 @@
         background: url(../img/new-year/new-year-2019-banner-mobile.png) 0 0 no-repeat;
         -webkit-background-size: cover;
         background-size: cover;
-        padding-top: 68%;
+        padding-top: 68% !important;
         position: relative;
+        margin-bottom: 1rem;
     }
 
     .new-year-2019-banner img {
