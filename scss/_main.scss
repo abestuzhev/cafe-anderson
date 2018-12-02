@@ -536,6 +536,20 @@ main {
     //transition: transform .2s ease;
     //@extend %transition_all;
     margin: 0 auto;
+    position: relative;
+    z-index: 10;
+
+    //&::after {
+    //    content:'';
+    //    position: absolute;
+    //    z-index: 9;
+    //    top: 0;
+    //    left: 0;
+    //    right: 0;
+    //    bottom: 0;
+    //    background-color: rgba(244, 235, 38, 0.2);
+    //
+    //}
 
     .c-col {
 
@@ -2619,6 +2633,16 @@ test popup
     text-align: left;
     z-index: 1045;
     width: 98%;
+}
+
+.mfp-content-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:red;
+    opacity:.5;
 }
 
 .white-popup-block {

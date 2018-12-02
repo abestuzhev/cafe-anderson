@@ -2114,6 +2114,13 @@ $(document).ready(function ($) {
     //     }
     // });
 
+    // function appendFixScroll() {
+    //     var fixscroll = "<div class='scroll-fix'></div>";
+    //     $('html').append(fixscroll);
+    // }
+
+    // appendFixScroll();
+
     /*скрываем попапы вне зоны элемента для карточки товара*/
     $(document).mousedown(function (e) { // событие клика по веб-документу
         // var div = $('.popup');
@@ -2193,11 +2200,27 @@ $(document).ready(function ($) {
 
         if (e.which === 1) {
             // hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup', '.fancybox-container');
-            // hideOutZone('.popup-mini', '.datepicker', '.main-user-consent-request-popup', '.fancybox-container');
+            // hideOutZone('.popup', '.popup-mini', '.datepicker', '.main-user-consent-request-popup', '.fancybox-container');
             // console.log('correct');
-            hideOutZone();
+            // hideOutZone();
         }
 
+    });
+
+    $('.mfp-content-bg').on('click', function(e){
+
+        // $('.js-popup-close').trigger('click');
+        var $html = $('html');
+        $(this).parents('.mfp-wrap').removeClass('is-visible');
+        $('.mfp-bg').removeClass('is-visible');
+        $html.css({
+            'margin-right':'0'
+        }).removeClass('lock-html');
+        $('.wrapper').removeClass('fixed-input');
+        $('.header.sticky').css({
+            // 'right':'0'
+        });
+        console.log('hide popup');
     });
 
 

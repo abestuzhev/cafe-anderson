@@ -6501,6 +6501,14 @@ div.c-card-catalog-2 {
     font-size: 14px;
     color: #808080; }
 
+.scroll-fix {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 17px;
+  height: 100vh;
+  background-color: #00e; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -8270,7 +8278,9 @@ main {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 10; }
   .popup .c-col .c-col {
     padding-top: 0 !important;
     padding-bottom: 0 !important; }
@@ -9809,6 +9819,15 @@ test popup
   text-align: left;
   z-index: 1045;
   width: 98%; }
+
+.mfp-content-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  opacity: .5; }
 
 .white-popup-block {
   background: #FFF;
