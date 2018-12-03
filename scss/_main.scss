@@ -4209,6 +4209,14 @@ test popup
                     padding: 1.4rem .9rem 1rem;
                     font-size: 1.2rem;
                 }
+
+                &--holiday {
+                    background: url(../img/holidays-button-bg.png);
+                    font-size: 1.3rem;
+                    padding: 13px 3px;
+                    width: 165px;
+                    text-align: center
+                }
             }
 
             &.v2 {
