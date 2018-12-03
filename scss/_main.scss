@@ -4211,11 +4211,18 @@ test popup
                 }
 
                 &--holiday {
+                    box-shadow: inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
+                   
                     background: url(../img/holidays-button-bg.png);
+                    background-size: 171%;
                     font-size: 1.3rem;
                     padding: 13px 3px;
                     width: 165px;
-                    text-align: center
+                    text-align: center;
+
+                    span {
+
+                    }
                 }
             }
 
