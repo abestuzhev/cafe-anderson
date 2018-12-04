@@ -4177,6 +4177,11 @@
         display: block;
     }
 
+    .cafe-info-card__btn--holiday {
+        width: 100%;
+        background-size: 99%;
+    }
+
     .c-card-event__title {
         padding-right: 0;
     }
