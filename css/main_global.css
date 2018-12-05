@@ -10408,7 +10408,7 @@ test popup
         border-radius: 0 0 .6rem .6rem; }
   .filter-subscription {
     width: 46rem;
-    height: 78px;
+    height: 94px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -10418,7 +10418,7 @@ test popup
             align-items: flex-start;
     overflow: hidden;
     position: relative;
-    background: url(../img/filter-subscription-bg.png) 0 0 no-repeat;
+    background: url(../img/filter-subscription-bg-1.png) 0 0 no-repeat;
     background-size: cover;
     padding: 13px 13px 13px 0; }
     .filter-subscription.animate .filter-subscription__btn-layout {
