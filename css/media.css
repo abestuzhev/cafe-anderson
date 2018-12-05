@@ -7890,6 +7890,12 @@
         padding-right: 0;
     }
 
+    .italian-item {
+        position: static;
+        text-align: left !important;
+        font-size: 13px;
+    }
+
 
 }
 
