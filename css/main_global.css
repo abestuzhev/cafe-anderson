@@ -3202,10 +3202,11 @@ a.c-button:hover {
     color: #555451; }
   .c-card-cafe__title {
     display: inline-block;
-    font-family: "PT Serif Caption";
-    font-size: 1.7rem;
-    color: #9b806f;
-    margin-bottom: 1.6rem;
+    font-family: "SummerFont";
+    font-size: 3.8rem;
+    color: #555451;
+    line-height: .9;
+    margin-bottom: 1.8rem;
     border: none; }
   .c-card-cafe__img {
     display: block;

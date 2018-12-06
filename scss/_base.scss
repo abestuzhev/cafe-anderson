@@ -1923,10 +1923,13 @@ a.c-button {
     
     &__title {
         display: inline-block;
-        font-family: $font_serif;
-        font-size: 1.7rem;
-        color: #9b806f;
-        margin-bottom: 1.6rem;
+        // font-family: $font_serif;
+        font-family: $font_decor;
+        font-size: 3.8rem;
+        // color: #9b806f;
+        color: $black;
+        line-height: .9;
+        margin-bottom: 1.8rem;
         border: none;
         
     }
