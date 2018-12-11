@@ -646,6 +646,19 @@
                 border: none;
             }
         }
+
+        &__tree {
+            position: relative;
+
+            &-decor {
+                width: 161px;
+                height: 69px;
+                position: absolute;
+                bottom: 0;
+                left: -2.9rem;
+                background: url(../img/new-year/header-menu-tree.png) 0 0 no-repeat;
+            }
+        }
     }
 
     &-personal {

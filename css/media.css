@@ -359,6 +359,38 @@
     .holiday-offers-secret {
         padding: 1.8rem 2rem 1.8rem;
     }
+
+    /*перенес стили из разрешения 1380, а атм закоментировал
+    Необходимо для большего количества пунктов меню*/
+
+    .header-col__center {
+        position: absolute;
+        z-index: 20;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header-logo__beta span {
+        display: none;
+    }
+
+    .header-logo {
+        width: auto;
+        padding-top: .4rem;
+        overflow: hidden;
+        height: 5.5rem;
+    }
+
+    .header-logo__mobile {
+        display: none;
+    }
+
+    .header-col__left,
+    .header-col__right {
+        width: 46%;
+    }
+
+    /**/
 }
 
 @media (min-width: 1600px) {
@@ -451,6 +483,8 @@
     .child-holiday-food__decor-2 {
         margin-right: -37%;
     }
+
+
 }
 
 @media (max-width: 1400px) {
@@ -487,32 +521,32 @@
         bottom: 0;
     }
 
-    .header-col__center {
-        position: absolute;
-        z-index: 20;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    /*.header-col__center {*/
+        /*position: absolute;*/
+        /*z-index: 20;*/
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+    /*}*/
 
-    .header-logo__beta span {
-        display: none;
-    }
+    /*.header-logo__beta span {*/
+        /*display: none;*/
+    /*}*/
 
-    .header-logo {
-        width: auto;
-        padding-top: .4rem;
-        overflow: hidden;
-        height: 5.5rem;
-    }
+    /*.header-logo {*/
+        /*width: auto;*/
+        /*padding-top: .4rem;*/
+        /*overflow: hidden;*/
+        /*height: 5.5rem;*/
+    /*}*/
 
-    .header-logo__mobile {
-        display: none;
-    }
+    /*.header-logo__mobile {*/
+        /*display: none;*/
+    /*}*/
 
-    .header-col__left,
-    .header-col__right {
-        width: 46%;
-    }
+    /*.header-col__left,*/
+    /*.header-col__right {*/
+        /*width: 46%;*/
+    /*}*/
 
     .panel-logo {
         font-size: 3.5rem;
@@ -554,7 +588,7 @@
     }
 }
 
-@media screen and (max-width: 1380px) and (min-width: 1020px) {
+@media screen and (max-width: 1600px) and (min-width: 1020px) {
     .header-col__center {
         overflow: hidden;
         height: 6.2rem;
