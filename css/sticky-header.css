@@ -344,8 +344,16 @@
 
 .sticky.no-compress .header-col__left,
 .sticky.no-compress .header-col__right {
-    width: 33%;
+    width: 46%;
 }
+
+
+.sticky.no-compress .header-col__center {
+    height: 6.2rem;
+    padding-bottom: 0;
+    top: 28px;
+}
+
 
 
 .sticky.no-compress .header-menu__item {

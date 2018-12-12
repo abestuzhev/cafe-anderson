@@ -598,9 +598,9 @@
         top: 25px;
     }
 
-    .header-wrap.sticky .header-col__center {
+    /* .header-wrap.sticky .header-col__center {
         height: 3.8rem;
-    }
+    } */
 
     .header-wrap.sticky .symbol-logo-wrap {
         top: 25px;
