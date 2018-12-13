@@ -6995,6 +6995,8 @@ div.c-card-catalog-2 {
         border: none; }
     .header-menu__tree {
       position: relative; }
+      .header-menu__tree .header-menu__link {
+        z-index: 20; }
       .header-menu__tree-decor {
         width: 161px;
         height: 69px;

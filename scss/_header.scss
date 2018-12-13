@@ -650,6 +650,10 @@
         &__tree {
             position: relative;
 
+            .header-menu__link {
+                z-index: 20;
+            }
+
             &-decor {
                 width: 161px;
                 height: 69px;
