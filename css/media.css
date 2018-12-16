@@ -391,6 +391,10 @@
     }
 
     /**/
+
+    .contact-us__header {
+        background: #fdf7e8 url(../img/bg-header.png) repeat;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -1507,6 +1511,10 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+    }
+
+    .contact-us__decor-1 {
+        display: none;
     }
 }
 
@@ -4682,6 +4690,36 @@
 
     .popup-event .c-card-event__item {
         margin-bottom: .6rem;
+    }
+
+    .contact-us__info {
+        padding: 2rem;
+    }
+
+    .contact-us__info .c-grid{
+        display: block;
+    }
+    .contact-us__info .c-col {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact-us__header .c-grid {
+        display: block;
+    }
+
+    .contact-us__header .c-col {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact-us__header .l-button__right {
+        text-align: center;
+    }
+
+    .contact-us__decor-2 {
+        right: 1rem;
     }
 
 }
@@ -10965,6 +11003,11 @@
 @media screen and (max-width: 400px) {
     .catering .bonus-info__phone:after {
         background-image: none;
+    }
+
+    .contact-us {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
     }
 }
 

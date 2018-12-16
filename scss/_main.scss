@@ -5386,6 +5386,212 @@ test popup
     }
 
 }
+/*связаться с нами (contact-us)----------------------------------------------------*/
+.contact-us {
+    font-family: $font_serif;
+    background-color: #fff;
+    margin-bottom: 3rem;
+
+    &__header {
+        padding: 2.4rem 2.4rem 0;
+        background: url(../img/contact-us/contact-us-bg.png) 0 0 no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bootm: 0;
+            width: 100%;
+            height: .4rem;
+            background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+        }
+
+        .c-col {
+            padding: .6rem 1.4rem;
+        }
+    }
+
+    &__section {
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    select,
+    .SelectBox {
+        width: 23.6rem;
+    }
+
+    &__layout {
+        max-width: 80rem;
+        margin: 0 auto 2rem;
+        position: relative;
+    }
+
+    &__form {
+
+        .SumoSelect {
+            width: 100%;
+        }
+        select,
+        .SelectBox {
+            padding: 1.3rem 1.6rem;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color: $black;
+        font-size: 4.8rem;
+        font-family: $font_decor;
+        text-transform: uppercase;
+    }
+
+    &__body {
+        padding: 3.1rem 2.8rem;
+    }
+
+    &__btn {
+        padding: .8rem 6rem;
+        font-size: 3.7rem;
+        font-family:$font_decor;
+        text-transform: uppercase;
+        background-color: #9acc4e;
+        border-radius: 50rem;
+        color: #ffffff;
+        line-height: 1;
+    }
+
+    &__info {
+        padding: .4rem 2rem;
+        position: relative;
+        background: url(../img/contact-us/bg-texture-opacity-30.png) 0 0 repeat;
+
+        .c-personal-data {
+            margin-bottom: 0;
+        }
+
+        .contact-us__layout {
+            margin-bottom: 0;
+        }
+
+        &::after {
+            content:'';
+            position: absolute;
+            bottom: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 1.2rem;
+            background: url(../img/decor-line-waves-outline.png) 0 0 repeat-x;
+        }
+
+    }
+
+    &__decor-1 {
+        position: absolute;
+        right: 4rem;
+        top: 2rem;
+    }
+
+    &__decor-2 {
+        position: absolute;
+        right: 8rem;
+        top: 5.4rem;
+
+        .icon-bird-down {
+            //transform: rotate(-90deg);
+            width: 5.4rem;
+        }
+    }
+
+
+    &-office {
+        position: relative;
+        padding: 3.1rem 2.4rem;
+        background: #fbfbfb url(../img/bg-cafe-info.png) 0 0 repeat;
+
+        &__list {
+
+        }
+
+        &__bg {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 45.1rem;
+            height: 32.2rem;
+            background: url(../img/bg-contact.png) 100% 100% no-repeat;
+        }
+
+        &__item {
+            margin-bottom: 4rem;
+            padding: 0 1.4rem;
+        }
+    }
+
+    &__decor-line {
+        width: 100%;
+        height: 2.9rem;
+        background: url(../img/bg-slider-header.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        margin-bottom: 5rem;
+    }
+
+    .filter {
+        display: inline-block !important;
+        width: auto;
+    }
+
+    .filter-form,
+    .filter-item {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .filter .l-button__center {
+        display: block;
+    }
+
+
+
+    &-cafe {
+
+        &-city {
+            &__title {
+                font-size: 2.6rem;
+                color: #5c3321;
+                margin-bottom: 2.3rem;
+            }
+
+        }
+
+        &__list {
+
+        }
+
+        &__item {
+            margin-bottom: 3.2rem;
+            padding: 0 1.4rem;
+
+            span {
+                margin-left: 2.4rem;
+            }
+
+        }
+    }
+
+    .c-inputfile label {
+        font-size: 1.4rem;
+        font-style: italic;
+        color: $black;
+        text-transform: none;
+    }
+
+}
 
 /*Поиск (search)----------------------------------------------------*/
 .search {
@@ -22777,6 +22983,52 @@ a.show-more__button:hover {
                 width: 4rem;
                 height: 4rem;
             }
+        }
+    }
+}
+
+/*animation-program----------------------------------------------------*/
+.animation-program {
+    background-color: #fff;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+    border-radius: .4rem;
+    margin-bottom: 4.6rem;
+    font-family: "PT Serif Caption";
+
+    &__banner {
+        height: 37.5rem;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: 50% 50%;
+        position: relative;
+        margin-bottom: 4.5rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -.8rem;
+            left: 0;
+            width: 100%;
+            height: 1.2rem;
+            background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+        }
+    }
+}
+
+.file-tab {
+    &-item {
+        position: relative;
+        height: 300px;
+        background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            right: 15px;
+            height: 10px;
+            background-color: #eee;
         }
     }
 }
