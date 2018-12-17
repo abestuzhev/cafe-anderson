@@ -10185,6 +10185,7 @@ test popup
         margin-right: .3rem;
         font-size: 1.7rem;
         fill: #553023; }
+      .filter-hold__item > c-icon,
       .filter-hold__item > .c-symbol {
         position: absolute;
         left: 0;
@@ -10219,7 +10220,7 @@ test popup
       display: inline-block;
       font-size: 1.5rem;
       padding: .8rem 0;
-      padding-left: 24px; }
+      padding-left: 26px; }
       .filter-hold__link::after {
         content: '';
         border: none; }
