@@ -3116,7 +3116,7 @@ test popup
                 // flex: 1;
             }
 
-            & > c-icon,
+            & > .c-icon,
             & > .c-symbol {
 
                 position: absolute;
@@ -3177,7 +3177,7 @@ test popup
             display: inline-block;
             font-size: 1.5rem;
             padding: .8rem 0;
-            padding-left: 26px;
+            padding-left: 28px;
             //text-transform: lowercase;
 
             &::after {
