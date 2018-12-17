@@ -10177,10 +10177,18 @@ test popup
       -webkit-transition: color .2s ease-in-out;
       -o-transition: color .2s ease-in-out;
       transition: color .2s ease-in-out; }
+      .filter-hold__item::after {
+        content: '';
+        clear: both;
+        display: table; }
       .filter-hold__item .c-symbol {
         margin-right: .3rem;
         font-size: 1.7rem;
         fill: #553023; }
+      .filter-hold__item > .c-symbol {
+        position: absolute;
+        left: 0;
+        top: 9px; }
       .filter-hold__item:hover .c-symbol {
         fill: #75ae1f;
         -webkit-transition: color .2s ease-in-out;
@@ -10210,7 +10218,8 @@ test popup
       color: #553023;
       display: inline-block;
       font-size: 1.5rem;
-      padding: .8rem 0; }
+      padding: .8rem 0;
+      padding-left: 24px; }
       .filter-hold__link::after {
         content: '';
         border: none; }

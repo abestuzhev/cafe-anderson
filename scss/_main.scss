@@ -3098,11 +3098,29 @@ test popup
             position: relative;
             font-family: $font_serif;
             transition: color .2s ease-in-out;
+            // display:flex;
+            // flex-flow: row nowrap;
+            // justify-content: flex-start;
+            // align-items: flex-start;
+
+            &::after {
+                content: '';
+                clear: both;
+                display: table;
+            }
 
             .c-symbol {
                 margin-right: .3rem;
                 font-size: 1.7rem;
                 fill: #553023;
+                // flex: 1;
+            }
+
+            & > .c-symbol {
+
+                position: absolute;
+                left: 0;
+                top: 9px;
             }
 
             &:hover .c-symbol {
@@ -3158,6 +3176,7 @@ test popup
             display: inline-block;
             font-size: 1.5rem;
             padding: .8rem 0;
+            padding-left: 24px;
             //text-transform: lowercase;
 
             &::after {
