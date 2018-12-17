@@ -7535,7 +7535,7 @@
     .show-category .catalog-col-4 .c-card-catalog__price {
         flex: 0 1 100%;
         margin-bottom: 8px;
-        padding: .3rem 1rem 0.3rem 1rem;
+        padding: 0 1rem 0 1rem;
     }
 
     .show-category .catalog-col-4 .c-card-catalog__footer.v2 .c-card-catalog__price {
