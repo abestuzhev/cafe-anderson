@@ -4230,9 +4230,9 @@ a.c-button:hover {
   .c-card-catalog__price {
     font-family: "BebasNeue";
     font-weight: 500;
-    padding: .3rem 1rem 0.3rem 3rem;
+    padding: .1rem 1rem 0.1rem 3rem;
     font-size: 3.9rem;
-    line-height: 1;
+    line-height: .9;
     text-align: left;
     color: #553023;
     background-color: #fff;
@@ -4261,8 +4261,8 @@ a.c-button:hover {
       border: none;
       height: 100%; }
     .c-card-catalog__count .c-counter__btn {
-      width: 3.4rem;
-      height: 3.4rem;
+      width: 3rem;
+      height: 3rem;
       border-radius: 3.4rem;
       font-size: 2.8rem;
       line-height: 2.8rem;
@@ -4272,7 +4272,7 @@ a.c-button:hover {
       background-color: #6faa3a; }
     .c-card-catalog__count .c-counter__field {
       width: 4.9rem !important;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       line-height: 1;
       color: #fff;
       background-color: transparent;
