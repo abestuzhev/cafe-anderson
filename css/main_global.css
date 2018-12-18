@@ -25382,19 +25382,139 @@ a.show-more__button:hover {
       width: 100%;
       height: 1.2rem;
       background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; }
+  .animation-program + .bonus-info {
+    margin-bottom: 4rem; }
+  .animation-program__footer {
+    padding: 2rem 0;
+    background: #eae2cb url(../img/animation-program/bg-texture-opacity-30.png) repeat; }
+    .animation-program__footer .c-button {
+      font-size: 1.6rem;
+      background-color: #c44890; }
 
-.file-tab-item {
-  position: relative;
-  height: 300px;
-  background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat; }
-  .file-tab-item::before {
-    content: '';
+.file-tab {
+  padding-top: 30px; }
+  .file-tab-item {
+    position: relative;
+    height: 45px;
+    border-top: 4px solid #f7eace;
+    background-color: #e2cc98;
+    background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat; }
+    .file-tab-item::before {
+      content: '';
+      position: absolute;
+      top: -13px;
+      left: 15px;
+      right: 15px;
+      height: 10px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1); }
+    .file-tab-item:nth-child(1) .file-tab-inset {
+      left: 5%;
+      z-index: 1; }
+    .file-tab-item:nth-child(2) .file-tab-inset {
+      left: 10%;
+      z-index: 2; }
+    .file-tab-item:nth-child(3) .file-tab-inset {
+      left: 15%;
+      z-index: 3; }
+    .file-tab-item:nth-child(4) .file-tab-inset {
+      left: 20%;
+      z-index: 4; }
+    .file-tab-item__last {
+      height: 195px; }
+  .file-tab-inset {
     position: absolute;
-    top: -10px;
-    left: 15px;
-    right: 15px;
-    height: 10px;
-    background-color: #eee; }
+    top: -30px;
+    left: 10%;
+    background-color: #e2cc98;
+    border-top: 4px solid #f7eace;
+    background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
+    padding: 8px 20px 0;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer; }
+    .file-tab-inset span {
+      font-size: 3.5rem;
+      color: #231300;
+      font-family: "SummerFont";
+      text-transform: uppercase;
+      padding: .2rem 1.3rem;
+      background-color: #f9f7f1;
+      border-radius: .6rem; }
+    .file-tab-inset__color {
+      width: 3.9rem;
+      height: 2rem;
+      border-radius: 6px 6px 0 0;
+      position: absolute;
+      top: -23px;
+      right: 8px;
+      z-index: 0;
+      -webkit-box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
+              box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21); }
+
+.bonus-info {
+  border-radius: .4rem;
+  font-family: "PT Serif Caption"; }
+  .bonus-info__content {
+    text-align: center; }
+  .bonus-info__title {
+    color: #7cbd41;
+    font-size: 3.6rem;
+    text-transform: uppercase; }
+  .bonus-info__lead {
+    color: #7cbd41; }
+  .bonus-info__subtitle {
+    color: #553023;
+    font-size: 1.7rem;
+    margin-bottom: .5rem; }
+  .bonus-info__phone {
+    color: #222222;
+    font-style: italic;
+    font-size: 3rem;
+    position: relative;
+    display: inline-block; }
+    .bonus-info__phone:after {
+      content: '';
+      position: absolute;
+      top: 1.2rem;
+      left: -3.5rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      background: url(../img/catering/phone-call.svg) 0 0 no-repeat;
+      background-size: cover; }
+  .bonus-info__recall {
+    color: #553023;
+    font-size: 1.6rem;
+    margin-bottom: 1rem; }
+  .bonus-info__form {
+    margin: auto;
+    max-width: 39rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    position: relative; }
+  .bonus-info a {
+    color: #fff; }
+  .bonus-info__decor_heart svg {
+    width: 7.2rem;
+    height: 1.9rem;
+    margin: 1.3rem 0 1.3rem 0; }
+  .bonus-info__decor_hare {
+    position: absolute;
+    bottom: 2.2rem;
+    right: -13rem; }
+    .bonus-info__decor_hare svg {
+      width: 10rem;
+      height: 9rem; }
+  .bonus-info__bird {
+    left: 24%; }
+    .bonus-info__bird svg {
+      width: 4rem;
+      height: 4rem; }
 
 .popup-pie {
   /* Ручной readmore */

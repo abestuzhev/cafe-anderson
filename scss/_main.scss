@@ -23061,22 +23061,247 @@ a.show-more__button:hover {
             background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
         }
     }
+
+    & + .bonus-info {
+        margin-bottom: 4rem;
+    }
+
+    &__footer {
+        padding: 2rem 0;
+        background: #eae2cb url(../img/animation-program/bg-texture-opacity-30.png) repeat;
+    
+        .c-button {
+            font-size: 1.6rem;
+            background-color: #c44890;
+        }
+    }
+
+
 }
 
 .file-tab {
+    padding-top: 30px;
     &-item {
         position: relative;
-        height: 300px;
+        height: 45px;
+        border-top: 4px solid #f7eace;
+        background-color: #e2cc98;
         background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
 
         &::before {
             content: '';
             position: absolute;
-            top: -10px;
+            top: -13px;
             left: 15px;
             right: 15px;
             height: 10px;
-            background-color: #eee;
+            background-color: #fff;
+            box-shadow: 0 -3px 7px 0 rgba(0,0,0,.1);
+        }
+
+        &:nth-child(1) .file-tab-inset {
+            left: 5%;
+            z-index: 1;
+        }
+        &:nth-child(2) .file-tab-inset {
+            left: 10%;
+            z-index:2;
+        }
+        &:nth-child(3) .file-tab-inset {
+            left: 15%;
+            z-index:3;
+        }
+        &:nth-child(4) .file-tab-inset {
+            left: 20%;
+            z-index:4;
+        }
+
+        &__last {
+            height: 195px;
+        }
+    }
+    &-inset {
+        position: absolute;
+        top: -30px;
+        left: 10%;
+        //padding: 0 33px;
+        background-color: #e2cc98;
+        border-top: 4px solid #f7eace;
+        background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
+        //margin: 5px -10px 0;
+        //border-top-right-radius: 25px 170px;
+        //border-top-left-radius: 20px 90px;
+        //padding: 0 30px 0 25px;
+        //height: 170px;
+        //background: #ddd;
+        //position: relative;
+        //box-shadow: 0 10px 20px rgba(0,0,0,.5);
+        //max-width: 200px;
+        padding: 8px 20px 0 ;
+        border-radius: 10px 10px 0 0;
+        cursor:pointer;
+
+        span {
+            font-size: 3.5rem;
+            color: #231300;
+            font-family: $font_decor;
+            text-transform: uppercase;
+            padding: .2rem 1.3rem;
+            background-color: #f9f7f1;
+            border-radius: .6rem;
+        }
+
+        //&::before,
+        //&::after {
+        //    content:'';
+        //    background: transparent;
+        //    height: 20px;
+        //    width: 20px;
+        //    border-radius: 100%;
+        //    border-width: 10px;
+        //    top: 0px;
+        //    border-style: solid;
+        //    position: absolute;
+        //}
+
+        //&::before {
+        //    border-color: transparent #ddd transparent transparent;
+        //    -webkit-transform: rotate(48deg);
+        //    left: -23px;
+        //}
+        //
+        //&::after {
+        //    border-color: transparent transparent transparent #ddd;
+        //    -webkit-transform: rotate(-48deg);
+        //    right: -17px;
+        //
+        //}
+        //&::before {
+        //    content:'';
+        //    position: absolute;
+        //    right: 100%;
+        //    top: 0;
+        //    width: 33px;
+        //    height: 35px;
+        //    background: url(../img/animation-program/tab-decor-left.png) 0 0 no-repeat;
+        //}
+        //
+        //&::after {
+        //    content:'';
+        //    position: absolute;
+        //    left: 100%;
+        //    top: 0;
+        //    width: 33px;
+        //    height: 35px;
+        //    background: url(../img/animation-program/tab-decor-right.png) 0 0 no-repeat;
+        //
+        //}
+
+        &__color {
+            width: 3.9rem;
+            height: 2rem;
+            border-radius: 6px 6px 0 0;
+            position: absolute;
+            top: -23px;
+            right: 8px;
+            z-index: 0;
+            box-shadow: inset 0px -7px 25px 0px rgba(0,0,0,0.21);
+        }
+
+
+    }
+}
+
+.bonus-info {
+    border-radius: .4rem;
+    font-family:$font_serif;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        color: #7cbd41;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+    }
+
+    &__lead {
+        color: #7cbd41;
+    }
+
+    &__subtitle {
+        color: #553023;
+        font-size: 1.7rem;
+        margin-bottom: .5rem;
+    }
+
+    &__phone {
+        color: #222222;
+        font-style: italic;
+        font-size: 3rem;
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 1.2rem;
+            left: -3.5rem;
+
+            width: 2.4rem;
+            height: 2.4rem;
+
+            background: url(../img/catering/phone-call.svg) 0 0 no-repeat;
+            background-size: cover;
+
+        }
+    }
+
+    &__recall {
+        color: #553023;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &__form {
+        margin: auto;
+        max-width: 39rem;
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
+
+    }
+
+    a {
+        color: #fff;
+    }
+
+    &__decor {
+        &_heart {
+            svg {
+                width: 7.2rem;
+                height: 1.9rem;
+                margin: 1.3rem 0 1.3rem 0;
+            }
+        }
+
+        &_hare {
+            position: absolute;
+            bottom: 2.2rem;
+            right: -13rem;
+            svg {
+                width: 10rem;
+                height: 9rem;
+            }
+        }
+    }
+
+    &__bird {
+        left: 24%;
+        svg {
+            width: 4rem;
+            height: 4rem;
         }
     }
 }
