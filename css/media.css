@@ -2657,6 +2657,19 @@
     .new-year-header__body {
         top: 12%;
     }
+
+    .new-year-description__img {
+        width: 100%;
+        height: 24rem;
+    }
+
+    
+    .new-year-description__text {
+       margin-bottom: 16px;
+    }
+    .new-year-description {
+        display:block;
+    }
 }
 
 @media (max-width: 940px) {
