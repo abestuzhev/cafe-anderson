@@ -14246,6 +14246,7 @@ test popup
                 span {
                     text-decoration: underline;
                     border: none;
+                    line-height: .9;
                     &::after {
                         content: '';
                         border: none;
@@ -17841,8 +17842,8 @@ test popup
 
     .c-card-cafe {
         &__title {
-            min-height: 4.5rem;
-            max-height: 4.5rem;
+            min-height: 8.5rem;
+            max-height: 8.5rem;
             overflow: hidden;
         }
 

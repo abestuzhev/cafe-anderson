@@ -10220,7 +10220,7 @@ test popup
       display: inline-block;
       font-size: 1.5rem;
       padding: .8rem 0;
-      padding-left: 26px; }
+      padding-left: 28px; }
       .filter-hold__link::after {
         content: '';
         border: none; }
@@ -18603,7 +18603,8 @@ test popup
         display: none; }
       .holiday-space__list .c-card-cafe__title span {
         text-decoration: underline;
-        border: none; }
+        border: none;
+        line-height: .9; }
         .holiday-space__list .c-card-cafe__title span::after {
           content: '';
           border: none;
@@ -21402,8 +21403,8 @@ test popup
   margin-left: 100px; }
 
 .holiday-space-list .c-card-cafe__title {
-  min-height: 4.5rem;
-  max-height: 4.5rem;
+  min-height: 8.5rem;
+  max-height: 8.5rem;
   overflow: hidden; }
 
 .holiday-space-list .c-card-cafe-vertical__item {
