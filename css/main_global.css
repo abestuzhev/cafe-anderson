@@ -24646,6 +24646,36 @@ a.show-more__button:hover {
     position: absolute;
     bottom: -6%;
     left: -13%; }
+  .new-year-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-bottom: 3rem; }
+    .new-year-description__text {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-right: 2rem; }
+    .new-year-description__img {
+      width: 36rem;
+      height: 19rem;
+      overflow: hidden;
+      border-radius: 6px; }
+      .new-year-description__img img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
 
 .new-year-2019-banner {
   padding: 10px 0 20px 0; }
