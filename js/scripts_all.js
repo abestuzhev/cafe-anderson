@@ -12234,3 +12234,11 @@ $(function() {
     holidaysInit('.holidays-list__body');
     holidaysAppleFix();
 });
+
+
+// $('.js-italian-weeks__menu-slider').owlCarousel({
+//         items:2,
+//         // loop:true,
+//         // nav:false,
+//         // margin:10,
+//     });

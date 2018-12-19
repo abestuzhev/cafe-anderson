@@ -17558,7 +17558,6 @@ a.show-more__button:hover {
       width: 4.4rem;
       height: 5.2rem;
       background: url(../img/italian-weeks/italian-weeks-gift.png) no-repeat center;
-
     }
 
     &::after {
@@ -17620,6 +17619,63 @@ a.show-more__button:hover {
         line-height: 3.7rem;
         text-transform: uppercase;
         color: #bce75e;
+      }
+    }
+  }
+
+
+  &__menu {
+    padding: 4.5rem 0;
+
+    &-title {
+      margin-bottom: 2rem;
+      font: 700 4rem/1 $font_sans-serif;
+      color: #c7368a;
+    }
+
+    &-descr {
+      margin-bottom: 2.5rem;
+    }
+
+    &-slider {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4.5rem;
+    }
+
+    &-card {
+      position: relative;
+      width: 100%;
+      max-width: 34.1rem;
+      border-radius: .4rem;
+      box-shadow: 0 0.3rem 1.38rem 0.12rem rgba(0, 0, 0, 0.2);
+
+      &-banner {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: .5rem;
+          left: 0;
+          width: 100%;
+          height: .4rem;
+          background: url(../img/italian-weeks/italian-weeks-line-white.png) repeat-x;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+      }
+
+      &-title {
+        min-height: 9.4rem;
+        padding: 1.7rem;
+        padding-bottom: 2.3rem;
+        color: #2e1a13;
+        font: 400 1.7rem/2.1rem $font_serif;
       }
     }
   }
