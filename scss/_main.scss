@@ -17680,6 +17680,90 @@ a.show-more__button:hover {
     }
   }
 
+
+
+  &__workshop {
+
+
+    &-inner {
+      padding: 4.7rem 3.3rem 3.7rem;
+      border: 0.3rem solid #7cbd41;
+      box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2);
+    }
+
+    &-list {
+      position: relative;
+      padding-bottom: 6rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 3rem;
+        left: 0;
+        width: 100%;
+        height: 0.6rem;
+        background: url(../img/italian-weeks/italian-weeks-line-grey.png) repeat-x;
+      }
+    }
+
+    &-card {
+      display: flex;
+      align-items: flex-start;
+
+      &+& {
+        margin-top: 1.5rem;
+      }
+
+      &-banner {
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+      }
+
+      &-info {
+        width: calc(100% - 260px);
+        padding-left: 3rem;
+      }
+
+      &-title {
+        margin-bottom: 1.8rem;
+        font: 300 4.8rem/3.9rem $font_decor;
+        text-transform: uppercase;
+      }
+
+      &-descr {
+
+
+        p {
+          font-size: 1.6rem;
+          line-height: 2rem;
+
+          &+& {
+            margin-top: 22px;
+          }
+        }
+
+        span {
+          color: #7cbd41;
+        }
+      }
+    }
+
+    &-btn {
+      height: 5.4rem;
+      padding: 0 3.5rem;
+      margin-left: 28.8rem;
+      border-radius: 2.5rem;
+      font: 300 3.7rem/1 $font_decor;
+      text-transform: uppercase;
+      color: $white;
+      background-color: #c44890;
+    }
+  }
+
 }
 
 

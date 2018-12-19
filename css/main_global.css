@@ -20437,6 +20437,57 @@ a.show-more__button:hover {
         padding-bottom: 2.3rem;
         color: #2e1a13;
         font: 400 1.7rem/2.1rem "PT Serif Caption"; }
+  .italian-weeks__workshop-inner {
+    padding: 4.7rem 3.3rem 3.7rem;
+    border: 0.3rem solid #7cbd41;
+    -webkit-box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2); }
+  .italian-weeks__workshop-list {
+    position: relative;
+    padding-bottom: 6rem; }
+    .italian-weeks__workshop-list::after {
+      content: '';
+      position: absolute;
+      bottom: 3rem;
+      left: 0;
+      width: 100%;
+      height: 0.6rem;
+      background: url(../img/italian-weeks/italian-weeks-line-grey.png) repeat-x; }
+  .italian-weeks__workshop-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .italian-weeks__workshop-card + .italian-weeks__workshop-card {
+      margin-top: 1.5rem; }
+    .italian-weeks__workshop-card-banner img {
+      max-width: 100%;
+      height: auto; }
+    .italian-weeks__workshop-card-info {
+      width: calc(100% - 260px);
+      padding-left: 3rem; }
+    .italian-weeks__workshop-card-title {
+      margin-bottom: 1.8rem;
+      font: 300 4.8rem/3.9rem "SummerFont";
+      text-transform: uppercase; }
+    .italian-weeks__workshop-card-descr p {
+      font-size: 1.6rem;
+      line-height: 2rem; }
+      .italian-weeks__workshop-card-descr p + .italian-weeks__workshop-card-descr p {
+        margin-top: 22px; }
+    .italian-weeks__workshop-card-descr span {
+      color: #7cbd41; }
+  .italian-weeks__workshop-btn {
+    height: 5.4rem;
+    padding: 0 3.5rem;
+    margin-left: 28.8rem;
+    border-radius: 2.5rem;
+    font: 300 3.7rem/1 "SummerFont";
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #c44890; }
 
 .popup-pie {
   /* Ручной readmore */
@@ -21715,7 +21766,9 @@ a.show-more__button:hover {
   .italian-weeks__advert {
     padding: 2.5rem 0; }
     .italian-weeks__advert-title br {
-      display: none; } }
+      display: none; }
+  .italian-weeks__workshop-inner {
+    padding: 2.6rem 2rem 3.1rem; } }
 
 @media screen and (max-width: 768px) {
   .italian-weeks__advert-list {
@@ -21729,7 +21782,25 @@ a.show-more__button:hover {
       margin-right: 0;
       margin-bottom: .6rem; }
   .italian-weeks__advert-prize span {
-    display: block; } }
+    display: block; }
+  .italian-weeks__workshop-inner {
+    border: none; }
+  .italian-weeks__workshop-card {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 8.5rem; }
+    .italian-weeks__workshop-card-info {
+      width: 100%;
+      padding-left: 0; }
+    .italian-weeks__workshop-card-title {
+      position: absolute;
+      top: 0;
+      max-width: 240px; }
+  .italian-weeks__workshop-btn {
+    margin-left: 0; } }
 
 @media screen and (max-width: 480px) {
   .italian-weeks__banner {

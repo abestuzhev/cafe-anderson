@@ -1840,6 +1840,15 @@
             }
         }
 
+
+        &__workshop {
+
+            &-inner {
+                padding: 2.6rem 2rem 3.1rem;
+            }
+        }
+            
+
     }
 }
 
@@ -1866,6 +1875,36 @@
                 span {
                     display: block;
                 }
+            }
+        }
+
+
+        &__workshop {
+
+            &-inner {
+                border: none;
+            }
+
+            &-card {
+                position: relative;
+                flex-direction: column;
+
+                padding-top: 8.5rem;
+            
+                &-info {
+                    width: 100%;
+                    padding-left: 0;
+                }
+
+                &-title {
+                    position: absolute;
+                    top: 0;
+                    max-width: 240px;
+                }
+            }
+
+            &-btn {
+                margin-left: 0;
             }
         }
     }
