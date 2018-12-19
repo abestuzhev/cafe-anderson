@@ -25386,19 +25386,91 @@ a.show-more__button:hover {
     margin-bottom: 4rem; }
   .animation-program__footer {
     padding: 2rem 0;
-    background: #eae2cb url(../img/animation-program/bg-texture-opacity-30.png) repeat; }
+    background: #fdf7e8 url(../img/bg-header.png) repeat; }
     .animation-program__footer .c-button {
       font-size: 1.6rem;
+      background-color: #c44890; }
+  .animation-program-list__item {
+    padding: 0 20px;
+    margin-bottom: 8px; }
+  .animation-program-card {
+    padding: 20px 10px;
+    border-top: 1px dashed #828282;
+    border-bottom: 1px dashed #828282;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .animation-program-card__img {
+      margin-right: 2.3rem;
+      min-width: 40rem; }
+    .animation-program-card__title {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+      color: #944aa3;
+      line-height: 1; }
+    .animation-program-card__category {
+      padding-bottom: .6rem;
+      border-bottom: 1px solid #cec9c0; }
+      .animation-program-card__category span {
+        font-size: 1.4rem;
+        color: #373737;
+        font-style: italic; }
+    .animation-program-card-info {
+      padding: 6px 0;
+      margin-bottom: 1rem; }
+      .animation-program-card-info__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; }
+      .animation-program-card-info__item {
+        margin-right: 2rem; }
+        .animation-program-card-info__item span {
+          font-style: italic;
+          color: #555451;
+          font-size: 1.4rem; }
+    .animation-program-card__text {
+      font-size: 1.5rem;
+      color: #555451;
+      margin-bottom: 1.4rem; }
+    .animation-program-card .c-button {
       background-color: #c44890; }
 
 .file-tab {
   padding-top: 30px; }
   .file-tab-item {
     position: relative;
-    height: 45px;
+    height: 50px;
     border-top: 4px solid #f7eace;
     background-color: #e2cc98;
     background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat; }
+    .file-tab-item.remove-last {
+      height: 50px; }
+      .file-tab-item.remove-last .file-tab-tag {
+        display: none; }
+    .file-tab-item.active {
+      height: auto; }
+      .file-tab-item.active .file-tab__body {
+        display: block; }
     .file-tab-item::before {
       content: '';
       position: absolute;
@@ -25406,9 +25478,10 @@ a.show-more__button:hover {
       left: 15px;
       right: 15px;
       height: 10px;
-      background-color: #fff;
-      -webkit-box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1);
-              box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1); }
+      background-color: #ecedf2;
+      -webkit-box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1), 0px -6px 0px 0px white;
+              box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1), 0px -6px 0px 0px white;
+      border-radius: 4px 4px 0 0; }
     .file-tab-item:nth-child(1) .file-tab-inset {
       left: 5%;
       z-index: 1; }
@@ -25451,6 +25524,70 @@ a.show-more__button:hover {
       z-index: 0;
       -webkit-box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
               box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21); }
+  .file-tab-tag {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: .5rem 5rem;
+    line-height: 1;
+    border-radius: .6rem;
+    background-color: #f9f7f1;
+    font-size: 5rem;
+    font-family: "SummerFont";
+    text-transform: uppercase; }
+    .file-tab-tag::before {
+      content: '';
+      position: absolute;
+      opacity: .7;
+      left: -3rem;
+      bottom: -.7rem;
+      width: 5.5rem;
+      height: 4.4rem;
+      background: url(../img/animation-program/icon-tape-2.png) 0 0 no-repeat; }
+    .file-tab-tag::after {
+      content: '';
+      position: absolute;
+      opacity: .7;
+      right: -3rem;
+      top: -10px;
+      width: 5.9rem;
+      height: 5.8rem;
+      background: url(../img/animation-program/icon-tape-1.png) 0 0 no-repeat; }
+    .file-tab-tag__icon {
+      position: absolute;
+      z-index: 1;
+      top: -34px;
+      right: 22%;
+      overflow: hidden;
+      height: 34px; }
+  .file-tab__body {
+    display: none;
+    background-color: #fff;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    min-height: 14rem; }
+    .file-tab__body::before {
+      content: '';
+      position: absolute;
+      top: 14px;
+      right: 68px;
+      width: 22px;
+      height: 67px;
+      background: url(../img/animation-program/clip.png) 0 0 no-repeat; }
+  .file-tab-close {
+    position: absolute;
+    right: 1.5rem;
+    top: -.2rem;
+    padding: 24px 1.6rem 2rem;
+    border-radius: 50px 50px 0 0;
+    background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+    background-size: 10px 11px;
+    cursor: pointer; }
 
 .bonus-info {
   border-radius: .4rem;

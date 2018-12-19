@@ -23068,10 +23068,89 @@ a.show-more__button:hover {
 
     &__footer {
         padding: 2rem 0;
-        background: #eae2cb url(../img/animation-program/bg-texture-opacity-30.png) repeat;
-    
+        background: #fdf7e8 url(../img/bg-header.png) repeat;
         .c-button {
             font-size: 1.6rem;
+            background-color: #c44890;
+        }
+    }
+
+    &-list {
+        &__item {
+            padding: 0 20px;
+            margin-bottom: 8px;
+        }
+    }
+
+
+    &-card {
+        padding: 20px 10px;
+        border-top: 1px dashed #828282;
+        border-bottom: 1px dashed #828282;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__img {
+            margin-right: 2.3rem;
+            min-width: 40rem;
+
+        }
+
+        &__body {
+
+        }
+
+        &__title {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            color: #944aa3;
+            line-height: 1;
+
+        }
+
+        &__category {
+            padding-bottom: .6rem;
+            border-bottom: 1px solid #cec9c0;
+            span {
+                font-size: 1.4rem;
+                color: #373737;
+                font-style: italic;
+            }
+        }
+
+        &-info {
+            padding: 6px 0;
+            margin-bottom: 1rem;
+
+            &__list {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            &__item {
+                margin-right: 2rem;
+
+                span {
+                    font-style: italic;
+                    color:$black;
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            color: $black;
+            margin-bottom: 1.4rem;
+
+        }
+
+        .c-button {
             background-color: #c44890;
         }
     }
@@ -23083,11 +23162,26 @@ a.show-more__button:hover {
     padding-top: 30px;
     &-item {
         position: relative;
-        height: 45px;
+        height: 50px;
         border-top: 4px solid #f7eace;
         background-color: #e2cc98;
         background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
 
+
+
+        &.remove-last {
+            height:50px;
+            .file-tab-tag {
+                display: none;
+            }
+        }
+        &.active {
+            height: auto;
+
+            .file-tab__body {
+                display: block;
+            }
+        }
         &::before {
             content: '';
             position: absolute;
@@ -23095,8 +23189,10 @@ a.show-more__button:hover {
             left: 15px;
             right: 15px;
             height: 10px;
-            background-color: #fff;
-            box-shadow: 0 -3px 7px 0 rgba(0,0,0,.1);
+            background-color: #ecedf2;
+            box-shadow: 0 -3px 7px 0 rgba(0,0,0,.1),
+            0px -6px 0px 0px rgba(255,255,255,1);
+            border-radius:4px 4px 0 0;
         }
 
         &:nth-child(1) .file-tab-inset {
@@ -23210,6 +23306,93 @@ a.show-more__button:hover {
 
 
     }
+
+    &-tag {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        display: inline-block;
+        padding: .5rem 5rem;
+        line-height: 1;
+        border-radius: .6rem;
+        background-color: #f9f7f1;
+        font-size: 5rem;
+        font-family: $font_decor;
+        text-transform: uppercase;
+        &__text {
+
+        }
+        &::before {
+            content:'';
+            position: absolute;
+            opacity: .7;
+            left: -3rem;
+            bottom: -.7rem;
+            width: 5.5rem;
+            height: 4.4rem;
+            background: url(../img/animation-program/icon-tape-2.png) 0 0 no-repeat;
+        }
+
+        &::after {
+            content:'';
+            position: absolute;
+            opacity: .7;
+            right: -3rem;
+            top: -10px;
+            width: 5.9rem;
+            height: 5.8rem;
+            background: url(../img/animation-program/icon-tape-1.png) 0 0 no-repeat;
+
+        }
+
+        &__icon {
+            position: absolute;
+            z-index: 1;
+            top: -34px;
+            right: 22%;
+            overflow: hidden;
+            height: 34px;
+        }
+    }
+    
+    &__body {
+        display: none;
+        background-color: #fff;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+        min-height: 14rem;
+
+        &::before {
+            content:'';
+            position: absolute;
+            top: 14px;
+            right: 68px;
+            width: 22px;
+            height: 67px;
+            background: url(../img/animation-program/clip.png) 0 0 no-repeat;
+        }
+    }
+
+    &-list {
+        &__item {
+
+        }
+    }
+
+    &-close {
+        position: absolute;
+        right: 1.5rem;
+        top: -.2rem;
+        padding: 24px 1.6rem 2rem;
+        border-radius: 50px 50px 0 0;
+        background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+        background-size: 10px 11px;
+        cursor: pointer;
+    }
+
+
 }
 
 .bonus-info {

@@ -9416,6 +9416,30 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    $(document).on('click', '.file-tab-inset', function(e){
+        e.preventDefault();
+        $(this).parents('.file-tab-item').siblings().removeClass('active');
+        $(this).parents('.file-tab-item').toggleClass('active');
+
+
+        if($('.file-tab-item').hasClass('active')){
+            $('.file-tab-item__last').addClass('remove-last');
+        }else{
+            $('.file-tab-item__last').removeClass('remove-last');
+        }
+    });
+
+
+
+    $(document).on('click', '.file-tab-close', function(e){
+        e.preventDefault();
+        $(this).parents('.file-tab-item').removeClass('active');
+        
+        $('.file-tab-item__last').removeClass('remove-last');
+    });
+
+
+
 
     function ShowholidayOffersCard(){
         $('.c-card-party.v2').removeClass('hide-card');
