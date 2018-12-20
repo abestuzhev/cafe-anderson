@@ -1847,6 +1847,25 @@
                 padding: 2.6rem 2rem 3.1rem;
             }
         }
+
+
+        &__info {
+            padding-top: 7rem;
+            padding-bottom: 4rem;
+            text-align: left;
+
+            &-title {
+                text-align: center;
+            }
+
+            &-item {
+                span {
+                    display: inline-block;
+                    width: calc(100% - 25px);
+                    vertical-align: top;
+                }
+            }
+        }
             
 
     }
