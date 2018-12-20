@@ -23062,6 +23062,10 @@ a.show-more__button:hover {
         }
     }
 
+    &-range {
+        margin: 0 4rem 4rem;
+    }
+
     & + .bonus-info {
         margin-bottom: 4rem;
     }
@@ -23154,6 +23158,27 @@ a.show-more__button:hover {
             background-color: #c44890;
         }
     }
+
+   .irs--round .irs-line {
+    background-color: #7cbd41;
+   }
+
+   .irs--round .irs-bar {
+    background-color: #b81f79;
+   }
+
+   .irs--round .irs-handle {
+    border-color: #b81f79;
+    background-color: #c44890;
+   }
+
+   .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
+    font-size: 14px;
+    line-height: 1;
+    text-shadow: none;
+    padding: 3px 5px;
+    background-color: #b81f79;
+   }
 
 
 }

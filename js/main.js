@@ -183,6 +183,7 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+    /*анимационные программы*/
     $(document).on('click', '.file-tab-inset', function(e){
         e.preventDefault();
         $(this).parents('.file-tab-item').siblings().removeClass('active');
@@ -195,6 +196,30 @@ $(document).ready(function ($) {
             $('.file-tab-item__last').removeClass('remove-last');
         }
     });
+
+    $("#animation-program-range").ionRangeSlider({
+        skin: "round",
+        type: "double",
+        grid: true,
+        min: 1.5,
+        max: 18,
+        from: 2,
+        to: 10
+    });
+
+    var slider = $("#animation-program-range").data("ionRangeSlider");
+
+    // Get values
+    
+
+    $("#animation-program-range").on('change', function(){
+        var from = slider.result.from;
+        var to = slider.result.to;
+        console.log('from: ' + from);
+        console.log('to: ' + to);
+    })
+
+    /*------------------------------------------*/
 
 
 

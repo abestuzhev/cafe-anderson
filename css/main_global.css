@@ -25382,6 +25382,8 @@ a.show-more__button:hover {
       width: 100%;
       height: 1.2rem;
       background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; }
+  .animation-program-range {
+    margin: 0 4rem 4rem; }
   .animation-program + .bonus-info {
     margin-bottom: 4rem; }
   .animation-program__footer {
@@ -25454,6 +25456,19 @@ a.show-more__button:hover {
       margin-bottom: 1.4rem; }
     .animation-program-card .c-button {
       background-color: #c44890; }
+  .animation-program .irs--round .irs-line {
+    background-color: #7cbd41; }
+  .animation-program .irs--round .irs-bar {
+    background-color: #b81f79; }
+  .animation-program .irs--round .irs-handle {
+    border-color: #b81f79;
+    background-color: #c44890; }
+  .animation-program .irs--round .irs-from, .animation-program .irs--round .irs-to, .animation-program .irs--round .irs-single {
+    font-size: 14px;
+    line-height: 1;
+    text-shadow: none;
+    padding: 3px 5px;
+    background-color: #b81f79; }
 
 .file-tab {
   padding-top: 30px; }
