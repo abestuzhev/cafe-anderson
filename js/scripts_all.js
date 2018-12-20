@@ -9435,22 +9435,52 @@ $(document).ready(function ($) {
         type: "double",
         grid: true,
         min: 1.5,
-        max: 18,
-        from: 2,
+        max: 16,
+        from: 6,
         to: 10
     });
 
     var slider = $("#animation-program-range").data("ionRangeSlider");
 
     // Get values
-    
+    var from = slider.result.from;
+    var to = slider.result.to;
+    console.log('from: ' + from);
+    console.log('to: ' + to);
+
+    $('.file-tab-item').each(function(){
+        if($(this).data('age-min') <= from && $(this).data('age-max') >= to){
+            $(this).addClass('show-card');
+        }else {
+            $(this).removeClass('show-card');
+        }
+    });
 
     $("#animation-program-range").on('change', function(){
-        var from = slider.result.from;
-        var to = slider.result.to;
-        console.log('from: ' + from);
-        console.log('to: ' + to);
-    })
+        from = slider.result.from;
+        to = slider.result.to;
+
+
+        $('.file-tab-item').each(function(){
+            if($(this).data('age-min') <= from && $(this).data('age-max') >= to){
+                $(this).addClass('show-card');
+            }else {
+                $(this).removeClass('show-card');
+            }
+
+            if(!$('.file-tab-item').hasClass('show-card')){
+                $('.file-tab-item__error').addClass('show-error');
+            }else{
+                $('.file-tab-item__error').removeClass('show-error');
+            }
+        });
+
+
+    });
+
+
+
+
 
     /*------------------------------------------*/
 

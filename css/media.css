@@ -2527,6 +2527,7 @@
 }
 
 @media (max-width: 930px) {
+
     .popup-product .popup {
         position: fixed;
         top: 0;
@@ -2669,6 +2670,15 @@
     }
     .new-year-description {
         display:block;
+    }
+
+    .animation-program-card__img {
+        min-width: 35rem;
+        overflow: hidden;
+    }
+
+    .animation-program-card__title {
+        font-size: 3rem;
     }
 }
 
@@ -3293,6 +3303,19 @@
         left: 50%;
         width: 23rem;
         transform: translateX(-50%);
+    }
+
+    .animation-program-card {
+        display: block;
+    }
+
+    .animation-program-card__img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: .6rem;
+    }
+    .animation-program-card__img img {
+        width: 100%;
     }
 }
 
@@ -4576,6 +4599,78 @@
 
     .holiday-offers__mobile-btn {
         display: block;
+    }
+
+
+    .animation-program-card__title {
+        font-size: 2.5rem;
+    }
+
+    .animation-program {
+        margin-left: -2.2rem;
+        margin-right: -2.2rem;
+    }
+
+    .file-tab-item .file-tab-inset {
+        left: 2rem !important;
+        right: 2rem;
+    }
+
+    .file-tab-item::before {
+        content: '';
+        left: 0;
+        right: 5px;
+    }
+
+    .file-tab-inset span {
+        padding: 0 1.3rem;
+    }
+
+    .file-tab-item {
+        height: 5.7rem;
+    }
+
+    .file-tab-item__last {
+        height: 104px;
+    }
+
+    .file-tab-tag {
+        font-size: 4rem;
+    }
+
+    .file-tab-tag__icon {
+        display: none;
+    }
+
+    .animation-program-range {
+        margin: 0 2rem 2rem;
+    }
+
+    .animation-program .irs--round .irs-bar,
+    .animation-program .irs--round .irs-line {
+        height: 7px;
+    }
+
+    .animation-program .irs--round .irs-handle {
+        width: 30px;
+        height: 30px;
+        top: 26px;
+    }
+
+    .file-tab-inset {
+        padding: 4px 20px 0;
+    }
+
+    .animation-program-list__item {
+        padding: 0 12px;
+    }
+
+    .animation-program-card__title {
+        margin-bottom: .5rem;
+    }
+
+    .file-tab__body {
+        margin-bottom: 2rem;
     }
 }
 
@@ -6081,7 +6176,38 @@
     }
 
 
+    .animation-program-card__title {
+        font-size: 2rem;
+    }
 
+
+    .animation-program {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+    }
+
+    .file-tab-tag {
+        top: 63%;
+    }
+
+    .file-tab-tag {
+        font-size: 3.6rem;
+        top: 57%;
+    }
+
+    .animation-program-card .c-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bonus-info__form {
+        flex-flow: column;
+    }
+
+    .bonus-info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 @media (max-width: 540px) {
@@ -11022,6 +11148,16 @@
         margin-left: -1.6rem;
         margin-right: -1.6rem;
     }
+
+    .bonus-info__phone:after {
+        content: '';
+        display: none;
+    }
+
+    .bonus-info {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -11095,6 +11231,14 @@
 
     .catering .bonus-info__subtitle {
         display: block;
+    }
+
+    .bonus-info__title {
+        font-size: 2.4rem;
+    }
+
+    .bonus-info__phone {
+        font-size: 2.9rem;
     }
 
 }
