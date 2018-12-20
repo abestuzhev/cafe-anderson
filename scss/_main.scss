@@ -17429,10 +17429,6 @@ a.show-more__button:hover {
             border-bottom: 1px solid #d9d9d9;
             box-shadow: 0 9px 9px 0 rgba(0,0,0,0.15);
             position: relative;
-
-
-
-
         }
 
         &__decor {
@@ -17458,6 +17454,525 @@ a.show-more__button:hover {
     }
 }
 
+
+/*Итальянские недели в АндерСон (italian-weeks)------------------------------------------------*/
+.italian-weeks {
+      margin: -3.1rem -2.8rem;
+
+  &__banner {
+    padding-top: 8.5rem;
+    padding-bottom: 12rem;
+    background: url(../img/italian-weeks/italian-weeks-banner-bg.png) no-repeat left top / cover;
+    
+    &-title {
+      position: relative;
+      max-width: 64.6rem;
+      padding-left: 14.1rem;
+      padding-right: 13.3rem;
+      margin-left: 3.9rem;
+      margin-bottom: 3.5rem;
+      font: 300 7.5rem/6.5rem $font_decor;
+      color: #4c4c4c;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        width: 97px;
+        height: 161px;
+        background: url(../img/italian-weeks/italian-weeks-branch.png) no-repeat center / cover;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+        transform: scale(-1, 1);
+      }
+
+      span {
+        display: block;
+        margin-top: 1.8rem;
+        font-size: 5.2rem;
+        line-height: 4.7rem;
+        text-transform: uppercase;
+      }
+    }
+
+    &-descr {
+      display: inline-block;
+      padding: 1.6rem 2.5rem 1.1rem;
+      margin-left: 18rem;
+      border: .2rem dotted $white;
+      box-sizing: border-box;
+      background-color: #a9cb58;
+
+      span {
+        display: block;
+        font-family: $font_serif;
+        line-height: 4rem;
+        color: #4c4c4c;
+
+        &:nth-child(1) {
+          font-size: 3.7rem;
+        }
+
+        &:nth-child(2) {
+          font-size: 3rem;
+        }
+
+        &:nth-child(3) {
+          color: white;
+          font-size: 5.3rem;
+          line-height: 5.5rem;
+          text-transform: uppercase;
+        }
+
+        &:nth-child(4) {
+          font-size: 3.9rem;
+        }
+      }
+    }
+  }
+
+
+  &__advert {
+    position: relative;
+    padding-top: 3.8rem;
+    padding-bottom: 2.9rem;
+    font-family: $font_serif;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: center;
+    color: $white;
+    background-color: #c44890;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2.8rem;
+      right: 19rem;
+      width: 4.4rem;
+      height: 5.2rem;
+      background: url(../img/italian-weeks/italian-weeks-gift.png) no-repeat center;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -0.7rem;
+      left: 0;
+      width: 100%;
+      height: 1.4rem;
+      background: url(../img/italian-weeks/italian-weeks-line-green.png) repeat-x center;
+    }
+
+    &-title {
+      margin-bottom: 1.5rem;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    &-item {
+      display: inline-flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 3.5rem;
+      }
+
+      span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.1rem;
+        height: 4.1rem;
+        border: 0.2rem dotted white;
+        border-radius: 50%;
+        color: #a8d44a;
+        font-weight: 700;
+        font-size: 2.4rem;
+      }
+
+      p {
+        width: calc(100% - 41px);
+        margin-bottom: 0;
+        padding-left: 1.8rem;
+        line-height: inherit;
+        text-align: left;
+        color: inherit;
+      }
+    }
+
+    &-prize {
+
+      span {
+        font-size: 2.5rem;
+        line-height: 3.7rem;
+        text-transform: uppercase;
+        color: #bce75e;
+      }
+    }
+  }
+
+
+  &__menu {
+    padding: 4.5rem 0;
+
+    &-title {
+      margin-bottom: 2rem;
+      font: 700 4rem/1 $font_sans-serif;
+      color: #c7368a;
+    }
+
+    &-descr {
+      margin-bottom: 2.5rem;
+    }
+
+    &-slider {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4.5rem;
+    }
+
+    &-card {
+      position: relative;
+      width: 100%;
+      max-width: 34.1rem;
+      border-radius: .4rem;
+      box-shadow: 0 0.3rem 1.38rem 0.12rem rgba(0, 0, 0, 0.2);
+
+      &-banner {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: .5rem;
+          left: 0;
+          width: 100%;
+          height: .4rem;
+          background: url(../img/italian-weeks/italian-weeks-line-white.png) repeat-x;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+      }
+
+      &-title {
+        min-height: 9.4rem;
+        padding: 1.7rem;
+        padding-bottom: 2.3rem;
+        color: #2e1a13;
+        font: 400 1.7rem/2.1rem $font_serif;
+      }
+    }
+  }
+
+
+
+  &__workshop {
+    margin-bottom: 4.5rem;
+
+    &-inner {
+      padding: 4.7rem 3.3rem 3.7rem;
+      border: 0.3rem solid #7cbd41;
+      box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2);
+    }
+
+    &-list {
+      position: relative;
+      padding-bottom: 6rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 3rem;
+        left: 0;
+        width: 100%;
+        height: 0.6rem;
+        background: url(../img/italian-weeks/italian-weeks-line-grey.png) repeat-x;
+      }
+    }
+
+    &-card {
+      display: flex;
+      align-items: flex-start;
+
+      &+& {
+        margin-top: 1.5rem;
+      }
+
+      &-banner {
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+      }
+
+      &-info {
+        width: calc(100% - 260px);
+        padding-left: 3rem;
+      }
+
+      &-title {
+        margin-bottom: 1.8rem;
+        font: 300 4.8rem/3.9rem $font_decor;
+        text-transform: uppercase;
+      }
+
+      &-descr {
+
+
+        p {
+          font-size: 1.6rem;
+          line-height: 2rem;
+
+          &+& {
+            margin-top: 22px;
+          }
+        }
+
+        span {
+          color: #7cbd41;
+        }
+      }
+    }
+
+    &-btn {
+      height: 5.4rem;
+      padding: 0 3.5rem;
+      margin-left: 28.8rem;
+      border-radius: 2.5rem;
+      font: 300 3.7rem/1 $font_decor;
+      text-transform: uppercase;
+      color: $white;
+      background-color: #c44890;
+    }
+  }
+
+
+  &__contest {
+    position: relative;
+    padding-top: 4.1rem;
+    padding-bottom: 7.4rem;
+    color: $white;
+    background: url(../img/italian-weeks/italian-weeks-contest-bg.png) no-repeat center / cover;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.7rem;
+      left: 0;
+      width: 100%;
+      height: 1.4rem;
+      background: url(../img/italian-weeks/italian-weeks-line-green.png) repeat-x center;
+    }
+
+    &-title {
+      margin-bottom: 2.5rem;
+      font: 300 3.5rem/1 $font_decor;
+      text-align: center;
+      text-transform: uppercase;
+
+      span {
+        font-size: 4.8rem;
+
+        &:last-child {
+          display: block;
+          color: #9dee23;
+        }
+      }
+    }
+
+    &-descr {
+      margin-bottom: 1.5rem;
+      font-family: $font_serif;
+      font-size: 1.7rem;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    &-item {
+      display: inline-flex;
+      align-items: center;
+      width: 50%;
+      margin-bottom: 3.5rem;
+
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        order: 3;
+      }
+
+      &:nth-child(3) {
+        order: 5;
+      }
+
+      &:nth-child(4) {
+        order: 2;
+      }
+
+      &:nth-child(5) {
+        order: 4;
+      }
+
+      &:nth-child(6) {
+        order: 6;
+      }
+
+      & > span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.1rem;
+        height: 4.1rem;
+        border: 0.2rem dotted white;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: #a8d44a;
+      }
+
+      p {
+        width: calc(100% - 41px);
+        padding-left: 2rem;
+        margin-bottom: 0;
+        color: inherit;
+
+        span {
+          color: #a8d44a;
+        }
+      }
+    }
+
+    &-program {
+      position: absolute;
+      left: 50%;
+      bottom: -10rem;
+      height: 5.4rem;
+      padding: 0 30px;
+      border: 0.2rem solid #c44890;
+      border-radius: 3rem;
+      color: #c44890;
+      font: 700 3.7rem/5rem $font_decor;
+      text-transform: uppercase;
+      background-color: $white;
+      transform: translateX(-50%);
+      z-index: 1;
+
+      .symbol-dropdown {
+        width: 1.9rem;
+        height: 1.2rem;
+        margin-top: -7px;
+        margin-left: 8px;
+        fill: #c44890;
+        transform: scaleY(-1);
+      }
+    }
+  }
+
+
+
+  &__info {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    text-align: center;
+
+    &-title {
+      padding-bottom: 2.5rem;
+      font: 700 4.8rem/1 $font_decor;
+        text-transform: uppercase;
+
+      span {
+        font-weight: 300;
+        text-transform: none;
+      }
+    }
+
+    &-item {
+      vertical-align: top;
+
+      &+& {
+        margin-top: 1.5rem;
+      }
+
+      & + .italian-weeks__info-title {
+        margin-top: 3.5rem;
+      }
+
+      .symbol-narrow-down {
+        width: 1.5rem;
+        height: 1.3rem;
+        margin-right: 5px;
+        fill: #7cbd41;
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+
+  &__in {
+    position: relative;
+    padding: 4rem 0;
+    text-align: center;
+    background: #f9f5ea url(../img/bg-header.png) repeat;
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x;
+    }
+    &-title {
+      margin-bottom: 2.5rem;
+      font: 400 3rem/1 $font_serif;
+      text-transform: uppercase;
+      color: #7cbd41;
+    }
+
+    &-descr {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+
+   &-link {
+      color: #c44890;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+}
 
 
 

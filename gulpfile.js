@@ -76,8 +76,9 @@ gulp.task('js', function(){
 // });
 
 gulp.task('html', function(){
-    return gulp.src('**/*.html')
-        .pipe(browserSync.stream())
+    // return gulp.src('**/*.html')
+    return gulp.src('italian-weeks.html')
+        .pipe(browserSync.stream());
 });
 
 // gulp.task('css', function(){
@@ -129,10 +130,13 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function(){
+    global.watch = true;
+
     gulp.watch('scss/**/*.scss', ['sass']);
     gulp.watch('demo-head/**/*.scss', ['head']);
     gulp.watch('js/**/*.js', ['js']);
-    gulp.watch('**/*.html', ['html']);
+    // gulp.watch('**/*.html', ['html']);
+    gulp.watch('italian-weeks.html', ['html']);
     // gulp.watch('home.html', ['critical']);
     gulp.watch('**/*.css', ['css']);
 });

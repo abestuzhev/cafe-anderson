@@ -1759,3 +1759,225 @@
 
 
 // #endregion Заказать торт
+
+
+/*Итальянские недели в АндерСон (italian-weeks)------------------------------------------------*/
+
+@media screen and (max-width: 1600px) {
+    .italian-weeks__advert-item {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .italian-weeks {
+
+        &__banner {
+            padding-top: 4rem;
+            padding-bottom: 5.5rem;
+
+            &-title {
+                max-width: 38.5rem;
+                padding: 0;
+                margin-left: 0;
+                font-size: 5.7rem;
+                line-height: 4.7rem;
+
+                &::before {
+                    display: none;
+                }
+
+                &::after {
+                    width: 74px;
+                    height: 123px;
+                }
+
+                span {
+                    font-size: 3.9rem;
+                    line-height: 3.6rem;
+                }
+            }
+
+            &-descr {
+                display: inline-block;
+                padding: 1.1rem 2rem .8rem;
+                margin-left: 0;
+
+                span {
+                    line-height: 3.1rem;
+
+                    &:nth-child(1) {
+                        font-size: 2.8rem;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 2.3rem;
+                    }
+
+                    &:nth-child(3) {
+                        font-size: 4.1rem;
+                        line-height: 4.2rem;
+                    }
+
+                    &:nth-child(4) {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+
+
+        &__advert {
+            padding: 2.5rem 0;
+
+            &-title {
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+
+        &__workshop {
+
+            &-inner {
+                padding: 2.6rem 2rem 3.1rem;
+            }
+        }
+
+
+        &__info {
+            padding-top: 7rem;
+            padding-bottom: 4rem;
+            text-align: left;
+
+            &-title {
+                text-align: center;
+            }
+
+            &-item {
+                span {
+                    display: inline-block;
+                    width: calc(100% - 25px);
+                    vertical-align: top;
+                }
+            }
+        }
+            
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+   .italian-weeks {
+
+        &__advert {
+
+            &-list {
+                flex-direction: column;
+            }
+
+            &-item {
+                 max-width: 300px;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: .6rem;
+                }
+            }
+
+            &-prize {
+                span {
+                    display: block;
+                }
+            }
+        }
+
+
+        &__workshop {
+
+            &-inner {
+                border: none;
+            }
+
+            &-card {
+                position: relative;
+                flex-direction: column;
+
+                padding-top: 8.5rem;
+            
+                &-info {
+                    width: 100%;
+                    padding-left: 0;
+                }
+
+                &-title {
+                    position: absolute;
+                    top: 0;
+                    max-width: 240px;
+                }
+            }
+
+            &-btn {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .italian-weeks {
+
+        &__banner {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+
+            &-title {
+                margin-bottom: 1rem;
+                font-size: 3.5rem;
+                line-height: 2.8rem;
+
+                &:after {
+                    display: none;
+                }
+
+                span {
+                    font-size: 2.5rem;
+                    line-height: 2.1rem;
+                }
+            }
+
+            &-descr {
+                display: inline-block;
+                padding: .6rem .9rem;
+                margin-left: 0;
+
+                span {
+                    line-height: 1.9rem;
+
+                    &:nth-child(1) {
+                        font-size: 1.8rem;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 1.5rem;
+                    }
+
+                    &:nth-child(3) {
+                        font-size: 2.6rem;
+                        line-height: 2.6rem;
+                    }
+
+                    &:nth-child(4) {
+                        font-size: 1.9rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -20258,6 +20258,410 @@ a.show-more__button:hover {
   .holidays .holidays-count__line .holidays-apple-fix {
     font-weight: normal; }
 
+/*Итальянские недели в АндерСон (italian-weeks)------------------------------------------------*/
+.italian-weeks {
+  margin: -3.1rem -2.8rem; }
+  .italian-weeks__banner {
+    padding-top: 8.5rem;
+    padding-bottom: 12rem;
+    background: url(../img/italian-weeks/italian-weeks-banner-bg.png) no-repeat left top/cover; }
+    .italian-weeks__banner-title {
+      position: relative;
+      max-width: 64.6rem;
+      padding-left: 14.1rem;
+      padding-right: 13.3rem;
+      margin-left: 3.9rem;
+      margin-bottom: 3.5rem;
+      font: 300 7.5rem/6.5rem "SummerFont";
+      color: #4c4c4c; }
+      .italian-weeks__banner-title::before, .italian-weeks__banner-title::after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        width: 97px;
+        height: 161px;
+        background: url(../img/italian-weeks/italian-weeks-branch.png) no-repeat center/cover; }
+      .italian-weeks__banner-title::before {
+        left: 0; }
+      .italian-weeks__banner-title::after {
+        right: 0;
+        -webkit-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+                transform: scale(-1, 1); }
+      .italian-weeks__banner-title span {
+        display: block;
+        margin-top: 1.8rem;
+        font-size: 5.2rem;
+        line-height: 4.7rem;
+        text-transform: uppercase; }
+    .italian-weeks__banner-descr {
+      display: inline-block;
+      padding: 1.6rem 2.5rem 1.1rem;
+      margin-left: 18rem;
+      border: 0.2rem dotted #fff;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      background-color: #a9cb58; }
+      .italian-weeks__banner-descr span {
+        display: block;
+        font-family: "PT Serif Caption";
+        line-height: 4rem;
+        color: #4c4c4c; }
+        .italian-weeks__banner-descr span:nth-child(1) {
+          font-size: 3.7rem; }
+        .italian-weeks__banner-descr span:nth-child(2) {
+          font-size: 3rem; }
+        .italian-weeks__banner-descr span:nth-child(3) {
+          color: white;
+          font-size: 5.3rem;
+          line-height: 5.5rem;
+          text-transform: uppercase; }
+        .italian-weeks__banner-descr span:nth-child(4) {
+          font-size: 3.9rem; }
+  .italian-weeks__advert {
+    position: relative;
+    padding-top: 3.8rem;
+    padding-bottom: 2.9rem;
+    font-family: "PT Serif Caption";
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    text-align: center;
+    color: #fff;
+    background-color: #c44890; }
+    .italian-weeks__advert::before {
+      content: '';
+      position: absolute;
+      top: 2.8rem;
+      right: 19rem;
+      width: 4.4rem;
+      height: 5.2rem;
+      background: url(../img/italian-weeks/italian-weeks-gift.png) no-repeat center; }
+    .italian-weeks__advert::after {
+      content: '';
+      position: absolute;
+      top: -0.7rem;
+      left: 0;
+      width: 100%;
+      height: 1.4rem;
+      background: url(../img/italian-weeks/italian-weeks-line-green.png) repeat-x center; }
+    .italian-weeks__advert-title {
+      margin-bottom: 1.5rem; }
+    .italian-weeks__advert-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 1.5rem; }
+    .italian-weeks__advert-item {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .italian-weeks__advert-item:not(:last-child) {
+        margin-right: 3.5rem; }
+      .italian-weeks__advert-item span {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 4.1rem;
+        height: 4.1rem;
+        border: 0.2rem dotted white;
+        border-radius: 50%;
+        color: #a8d44a;
+        font-weight: 700;
+        font-size: 2.4rem; }
+      .italian-weeks__advert-item p {
+        width: calc(100% - 41px);
+        margin-bottom: 0;
+        padding-left: 1.8rem;
+        line-height: inherit;
+        text-align: left;
+        color: inherit; }
+    .italian-weeks__advert-prize span {
+      font-size: 2.5rem;
+      line-height: 3.7rem;
+      text-transform: uppercase;
+      color: #bce75e; }
+  .italian-weeks__menu {
+    padding: 4.5rem 0; }
+    .italian-weeks__menu-title {
+      margin-bottom: 2rem;
+      font: 700 4rem/1 "BebasNeue";
+      color: #c7368a; }
+    .italian-weeks__menu-descr {
+      margin-bottom: 2.5rem; }
+    .italian-weeks__menu-slider {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-bottom: 4.5rem; }
+    .italian-weeks__menu-card {
+      position: relative;
+      width: 100%;
+      max-width: 34.1rem;
+      border-radius: .4rem;
+      -webkit-box-shadow: 0 0.3rem 1.38rem 0.12rem rgba(0, 0, 0, 0.2);
+              box-shadow: 0 0.3rem 1.38rem 0.12rem rgba(0, 0, 0, 0.2); }
+      .italian-weeks__menu-card-banner {
+        position: relative; }
+        .italian-weeks__menu-card-banner::after {
+          content: '';
+          position: absolute;
+          bottom: .5rem;
+          left: 0;
+          width: 100%;
+          height: .4rem;
+          background: url(../img/italian-weeks/italian-weeks-line-white.png) repeat-x; }
+        .italian-weeks__menu-card-banner img {
+          max-width: 100%;
+          height: auto; }
+      .italian-weeks__menu-card-title {
+        min-height: 9.4rem;
+        padding: 1.7rem;
+        padding-bottom: 2.3rem;
+        color: #2e1a13;
+        font: 400 1.7rem/2.1rem "PT Serif Caption"; }
+  .italian-weeks__workshop {
+    margin-bottom: 4.5rem; }
+    .italian-weeks__workshop-inner {
+      padding: 4.7rem 3.3rem 3.7rem;
+      border: 0.3rem solid #7cbd41;
+      -webkit-box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2);
+              box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.2); }
+    .italian-weeks__workshop-list {
+      position: relative;
+      padding-bottom: 6rem; }
+      .italian-weeks__workshop-list::after {
+        content: '';
+        position: absolute;
+        bottom: 3rem;
+        left: 0;
+        width: 100%;
+        height: 0.6rem;
+        background: url(../img/italian-weeks/italian-weeks-line-grey.png) repeat-x; }
+    .italian-weeks__workshop-card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+      .italian-weeks__workshop-card + .italian-weeks__workshop-card {
+        margin-top: 1.5rem; }
+      .italian-weeks__workshop-card-banner img {
+        max-width: 100%;
+        height: auto; }
+      .italian-weeks__workshop-card-info {
+        width: calc(100% - 260px);
+        padding-left: 3rem; }
+      .italian-weeks__workshop-card-title {
+        margin-bottom: 1.8rem;
+        font: 300 4.8rem/3.9rem "SummerFont";
+        text-transform: uppercase; }
+      .italian-weeks__workshop-card-descr p {
+        font-size: 1.6rem;
+        line-height: 2rem; }
+        .italian-weeks__workshop-card-descr p + .italian-weeks__workshop-card-descr p {
+          margin-top: 22px; }
+      .italian-weeks__workshop-card-descr span {
+        color: #7cbd41; }
+    .italian-weeks__workshop-btn {
+      height: 5.4rem;
+      padding: 0 3.5rem;
+      margin-left: 28.8rem;
+      border-radius: 2.5rem;
+      font: 300 3.7rem/1 "SummerFont";
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #c44890; }
+  .italian-weeks__contest {
+    position: relative;
+    padding-top: 4.1rem;
+    padding-bottom: 7.4rem;
+    color: #fff;
+    background: url(../img/italian-weeks/italian-weeks-contest-bg.png) no-repeat center/cover; }
+    .italian-weeks__contest::after {
+      content: '';
+      position: absolute;
+      bottom: -0.7rem;
+      left: 0;
+      width: 100%;
+      height: 1.4rem;
+      background: url(../img/italian-weeks/italian-weeks-line-green.png) repeat-x center; }
+    .italian-weeks__contest-title {
+      margin-bottom: 2.5rem;
+      font: 300 3.5rem/1 "SummerFont";
+      text-align: center;
+      text-transform: uppercase; }
+      .italian-weeks__contest-title span {
+        font-size: 4.8rem; }
+        .italian-weeks__contest-title span:last-child {
+          display: block;
+          color: #9dee23; }
+    .italian-weeks__contest-descr {
+      margin-bottom: 1.5rem;
+      font-family: "PT Serif Caption";
+      font-size: 1.7rem;
+      line-height: 1.5rem;
+      text-align: center; }
+    .italian-weeks__contest-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .italian-weeks__contest-item {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 50%;
+      margin-bottom: 3.5rem; }
+      .italian-weeks__contest-item:nth-child(1) {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
+      .italian-weeks__contest-item:nth-child(2) {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; }
+      .italian-weeks__contest-item:nth-child(3) {
+        -webkit-box-ordinal-group: 6;
+            -ms-flex-order: 5;
+                order: 5; }
+      .italian-weeks__contest-item:nth-child(4) {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
+      .italian-weeks__contest-item:nth-child(5) {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4; }
+      .italian-weeks__contest-item:nth-child(6) {
+        -webkit-box-ordinal-group: 7;
+            -ms-flex-order: 6;
+                order: 6; }
+      .italian-weeks__contest-item > span {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 4.1rem;
+        height: 4.1rem;
+        border: 0.2rem dotted white;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 2.4rem;
+        color: #a8d44a; }
+      .italian-weeks__contest-item p {
+        width: calc(100% - 41px);
+        padding-left: 2rem;
+        margin-bottom: 0;
+        color: inherit; }
+        .italian-weeks__contest-item p span {
+          color: #a8d44a; }
+    .italian-weeks__contest-program {
+      position: absolute;
+      left: 50%;
+      bottom: -10rem;
+      height: 5.4rem;
+      padding: 0 30px;
+      border: 0.2rem solid #c44890;
+      border-radius: 3rem;
+      color: #c44890;
+      font: 700 3.7rem/5rem "SummerFont";
+      text-transform: uppercase;
+      background-color: #fff;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      z-index: 1; }
+      .italian-weeks__contest-program .symbol-dropdown {
+        width: 1.9rem;
+        height: 1.2rem;
+        margin-top: -7px;
+        margin-left: 8px;
+        fill: #c44890;
+        -webkit-transform: scaleY(-1);
+            -ms-transform: scaleY(-1);
+                transform: scaleY(-1); }
+  .italian-weeks__info {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    text-align: center; }
+    .italian-weeks__info-title {
+      padding-bottom: 2.5rem;
+      font: 700 4.8rem/1 "SummerFont";
+      text-transform: uppercase; }
+      .italian-weeks__info-title span {
+        font-weight: 300;
+        text-transform: none; }
+    .italian-weeks__info-item {
+      vertical-align: top; }
+      .italian-weeks__info-item + .italian-weeks__info-item {
+        margin-top: 1.5rem; }
+      .italian-weeks__info-item + .italian-weeks__info-title {
+        margin-top: 3.5rem; }
+      .italian-weeks__info-item .symbol-narrow-down {
+        width: 1.5rem;
+        height: 1.3rem;
+        margin-right: 5px;
+        fill: #7cbd41;
+        -webkit-transform: scaleX(-1);
+            -ms-transform: scaleX(-1);
+                transform: scaleX(-1); }
+  .italian-weeks__in {
+    position: relative;
+    padding: 4rem 0;
+    text-align: center;
+    background: #f9f5ea url(../img/bg-header.png) repeat; }
+    .italian-weeks__in::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+    .italian-weeks__in-title {
+      margin-bottom: 2.5rem;
+      font: 400 3rem/1 "PT Serif Caption";
+      text-transform: uppercase;
+      color: #7cbd41; }
+    .italian-weeks__in-descr {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      line-height: 2rem; }
+    .italian-weeks__in-link {
+      color: #c44890;
+      font-size: 1.8rem;
+      line-height: 2rem; }
+      .italian-weeks__in-link::after {
+        display: none; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
@@ -21492,3 +21896,120 @@ a.show-more__button:hover {
             main .pie .catalog-list .catalog-list__item .c-card-catalog-2 div.c-card-catalog-2__body .c-card-catalog-2__footer .c-card-catalog__basket .icon-shopping-cart {
               width: 18px;
               height: 19px; } }
+
+/*Итальянские недели в АндерСон (italian-weeks)------------------------------------------------*/
+@media screen and (max-width: 1600px) {
+  .italian-weeks__advert-item {
+    width: 100%;
+    max-width: 280px; } }
+
+@media screen and (max-width: 992px) {
+  .italian-weeks__banner {
+    padding-top: 4rem;
+    padding-bottom: 5.5rem; }
+    .italian-weeks__banner-title {
+      max-width: 38.5rem;
+      padding: 0;
+      margin-left: 0;
+      font-size: 5.7rem;
+      line-height: 4.7rem; }
+      .italian-weeks__banner-title::before {
+        display: none; }
+      .italian-weeks__banner-title::after {
+        width: 74px;
+        height: 123px; }
+      .italian-weeks__banner-title span {
+        font-size: 3.9rem;
+        line-height: 3.6rem; }
+    .italian-weeks__banner-descr {
+      display: inline-block;
+      padding: 1.1rem 2rem .8rem;
+      margin-left: 0; }
+      .italian-weeks__banner-descr span {
+        line-height: 3.1rem; }
+        .italian-weeks__banner-descr span:nth-child(1) {
+          font-size: 2.8rem; }
+        .italian-weeks__banner-descr span:nth-child(2) {
+          font-size: 2.3rem; }
+        .italian-weeks__banner-descr span:nth-child(3) {
+          font-size: 4.1rem;
+          line-height: 4.2rem; }
+        .italian-weeks__banner-descr span:nth-child(4) {
+          font-size: 3rem; }
+  .italian-weeks__advert {
+    padding: 2.5rem 0; }
+    .italian-weeks__advert-title br {
+      display: none; }
+  .italian-weeks__workshop-inner {
+    padding: 2.6rem 2rem 3.1rem; }
+  .italian-weeks__info {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    text-align: left; }
+    .italian-weeks__info-title {
+      text-align: center; }
+    .italian-weeks__info-item span {
+      display: inline-block;
+      width: calc(100% - 25px);
+      vertical-align: top; } }
+
+@media screen and (max-width: 768px) {
+  .italian-weeks__advert-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .italian-weeks__advert-item {
+    max-width: 300px; }
+    .italian-weeks__advert-item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: .6rem; }
+  .italian-weeks__advert-prize span {
+    display: block; }
+  .italian-weeks__workshop-inner {
+    border: none; }
+  .italian-weeks__workshop-card {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 8.5rem; }
+    .italian-weeks__workshop-card-info {
+      width: 100%;
+      padding-left: 0; }
+    .italian-weeks__workshop-card-title {
+      position: absolute;
+      top: 0;
+      max-width: 240px; }
+  .italian-weeks__workshop-btn {
+    margin-left: 0; } }
+
+@media screen and (max-width: 480px) {
+  .italian-weeks__banner {
+    padding-top: 3rem;
+    padding-bottom: 2rem; }
+    .italian-weeks__banner-title {
+      margin-bottom: 1rem;
+      font-size: 3.5rem;
+      line-height: 2.8rem; }
+      .italian-weeks__banner-title:after {
+        display: none; }
+      .italian-weeks__banner-title span {
+        font-size: 2.5rem;
+        line-height: 2.1rem; }
+    .italian-weeks__banner-descr {
+      display: inline-block;
+      padding: .6rem .9rem;
+      margin-left: 0; }
+      .italian-weeks__banner-descr span {
+        line-height: 1.9rem; }
+        .italian-weeks__banner-descr span:nth-child(1) {
+          font-size: 1.8rem; }
+        .italian-weeks__banner-descr span:nth-child(2) {
+          font-size: 1.5rem; }
+        .italian-weeks__banner-descr span:nth-child(3) {
+          font-size: 2.6rem;
+          line-height: 2.6rem; }
+        .italian-weeks__banner-descr span:nth-child(4) {
+          font-size: 1.9rem; } }
