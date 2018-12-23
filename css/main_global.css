@@ -6030,6 +6030,13 @@ div.c-card-catalog-2 {
   height: .4rem;
   background: url(../img/bg-dot-big.png) 0 0 repeat-x; }
 
+.c-banner {
+  height: 37.5rem;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  margin-bottom: 4.5rem; }
+
 .c-full-banner {
   margin-left: -2.8rem;
   margin-right: -2.8rem; }
@@ -6509,6 +6516,55 @@ div.c-card-catalog-2 {
   width: 17px;
   height: 100vh;
   background-color: #00e; }
+
+/*сквозной баннер*/
+.c-pass-banner {
+  background-color: #a9cb58;
+  padding: 1.2rem 1.2rem;
+  position: relative;
+  margin-bottom: 4rem; }
+  .c-pass-banner__body {
+    text-align: center;
+    position: relative; }
+  .c-pass-banner__title {
+    color: #fff;
+    font-family: "SummerFont";
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: .3rem; }
+  .c-pass-banner__subtitle {
+    color: #fff;
+    font-family: "PT Serif Caption";
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: .6rem; }
+  .c-pass-banner__btn {
+    padding: .4rem 4rem;
+    background-color: #fff;
+    line-height: 1;
+    border-radius: 5rem;
+    color: #555451;
+    font-family: "SummerFont";
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block; }
+    .c-pass-banner__btn::after {
+      content: '';
+      border: none; }
+  .c-pass-banner__decor-1 {
+    position: absolute;
+    left: 2%;
+    bottom: 0%; }
+  .c-pass-banner__decor-2 {
+    position: absolute;
+    right: 2%;
+    bottom: 0%; }
+  .c-pass-banner__decor-3 {
+    position: absolute;
+    right: 15%;
+    bottom: 0%; }
 
 .header.sticky {
   padding: 1rem 0 .3rem; }
@@ -25730,6 +25786,301 @@ a.show-more__button:hover {
       height: 4rem; }
   .bonus-info .c-symbol {
     fill: #000 !important; }
+
+.corporate-cake {
+  margin-bottom: 4rem;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.15);
+  border-radius: .6rem; }
+  .corporate-cake__head {
+    margin-bottom: 2rem; }
+  .corporate-cake__title {
+    text-align: center;
+    font-size: 4.8rem;
+    line-height: 1;
+    font-family: "SummerFont";
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+    color: #555451; }
+  .corporate-cake__actitle {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 1;
+    font-family: "SummerFont";
+    text-transform: uppercase;
+    margin-bottom: .2rem;
+    color: #ee107b; }
+  .corporate-cake__subtitle {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-family: "PT Serif Caption";
+    color: #555451; }
+  .corporate-cake__banner::after {
+    content: '';
+    position: absolute;
+    bottom: -.8rem;
+    left: 0;
+    width: 100%;
+    height: 1.8rem;
+    background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+  .corporate-cake__body {
+    padding: 0 5rem 2rem; }
+  .corporate-cake-size {
+    padding-bottom: 4rem;
+    position: relative;
+    margin-bottom: 4.6rem; }
+    .corporate-cake-size::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.8rem;
+      background: url(../img/decor-line-waves-outline.png) 0 0 repeat-x; }
+    .corporate-cake-size__card {
+      width: 100%;
+      height: 22rem;
+      overflow: hidden;
+      border-radius: .6rem; }
+      .corporate-cake-size__card img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .corporate-cake-size__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-left: -.5rem;
+      margin-right: -.5rem; }
+    .corporate-cake-size__item {
+      width: 20%;
+      padding: .5rem; }
+  .corporate-cake-dish__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-left: -2.3rem;
+    margin-right: -2.3rem; }
+  .corporate-cake-dish__item {
+    width: 50%;
+    padding: 0 2.3rem;
+    margin-bottom: 3.5rem; }
+    .corporate-cake-dish__item:nth-child(2) .corporate-cake-dish-card {
+      border-color: #c44890; }
+  .corporate-cake-dish-card {
+    border: 3px solid #7cbd41;
+    border-radius: .6rem;
+    padding: 1rem 2.4rem 2rem;
+    font-family: "PT Serif Caption"; }
+    .corporate-cake-dish-card__title {
+      font-size: 4.8rem;
+      text-transform: uppercase;
+      color: #555451;
+      font-family: "SummerFont"; }
+    .corporate-cake-dish-card__text {
+      min-height: 6.3rem;
+      margin-bottom: 1.2rem; }
+    .corporate-cake-dish-card__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .corporate-cake-dish-card__img {
+      width: 50%;
+      min-height: 27rem;
+      overflow: hidden;
+      border-radius: .6rem; }
+    .corporate-cake-dish-card__body {
+      width: 50%;
+      padding-left: 3rem; }
+    .corporate-cake-dish-card__header {
+      margin-bottom: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+    .corporate-cake-dish-card__price {
+      margin-right: .2rem; }
+      .corporate-cake-dish-card__price .c-card-catalog__price {
+        padding-left: 0; }
+    .corporate-cake-dish-card__size {
+      font-size: 1.6rem;
+      font-style: italic; }
+    .corporate-cake-dish-card-order {
+      margin-bottom: 1.6rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+      .corporate-cake-dish-card-order__col .c-card-catalog__count {
+        height: 100%;
+        margin: 0;
+        margin-right: 1rem; }
+      .corporate-cake-dish-card-order__col:nth-child(2) {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1; }
+  .corporate-cake-discount {
+    padding: .5rem 1.6rem;
+    background-color: #eef1f3;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .corporate-cake-discount__name {
+      font-size: 1.6rem;
+      color: #555451;
+      font-style: italic;
+      padding-right: 1rem; }
+    .corporate-cake-discount__number {
+      color: #bb2b7f;
+      font-size: 3.5rem;
+      font-family: "BebasNeue";
+      font-weight: 700; }
+  .corporate-cake-filling .c-pass-banner__decor-1 {
+    bottom: 13%; }
+  .corporate-cake-filling .c-pass-banner__decor-2 {
+    bottom: -20%; }
+  .corporate-cake-gingerbread__slider .catalog-list__item {
+    width: auto; }
+  .corporate-cake-gift {
+    position: relative;
+    padding: 3rem 7rem 7rem;
+    border: 3px solid #ee107b;
+    border-radius: .6rem;
+    margin-bottom: 4.8rem;
+    -webkit-box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.2); }
+    .corporate-cake-gift__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .corporate-cake-gift__item {
+      padding: 0 2.4rem; }
+    .corporate-cake-gift-card {
+      position: relative; }
+      .corporate-cake-gift-card__btn {
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        display: inline-block;
+        padding: .6rem 4rem;
+        background-color: #7cbd41;
+        line-height: 1;
+        border-radius: 5rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: "SummerFont";
+        font-size: 3.7rem; }
+        .corporate-cake-gift-card__btn::after {
+          content: '';
+          border: none; }
+        .corporate-cake-gift-card__btn:hover {
+          color: #fff;
+          background-color: #73b23f; }
+    .corporate-cake-gift__decor-1 {
+      position: absolute;
+      top: 4.3rem;
+      left: 6rem; }
+    .corporate-cake-gift__decor-2 {
+      position: absolute;
+      bottom: -7px;
+      right: 4.2rem; }
+  .corporate-cake-wishes {
+    background-color: #c44890;
+    padding: 2rem 2rem 3.5rem;
+    position: relative; }
+    .corporate-cake-wishes .c-pass-banner__btn {
+      position: absolute;
+      bottom: -6rem;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background-color: #fff;
+      border: 2px solid #c44890; }
+      .corporate-cake-wishes .c-pass-banner__btn:hover {
+        color: #c44890; }
+    .corporate-cake-wishes .c-pass-banner__decor-1 {
+      left: 1.3rem;
+      bottom: -3rem; }
+    .corporate-cake-wishes .c-pass-banner__decor-2 {
+      right: 2.3rem;
+      bottom: -5rem; }
 
 .popup-pie {
   /* Ручной readmore */

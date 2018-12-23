@@ -9416,6 +9416,42 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    /*корпоративные торты*/
+
+    if($('div').hasClass('corporate-cake-gingerbread__slider')){
+
+
+
+        $('.corporate-cake-gingerbread__slider').owlCarousel({
+            loop:true,
+            // nav:true,
+            // margin:20,
+            items: 4
+            // center: true,
+            // mouseDrag:false,
+            // pullDrag:false
+            // responsive:{
+            //     0:{
+            //         items:1
+            //     },
+            //     600:{
+            //         nav: true,
+            //         items:2
+            //     },
+            //     1200:{
+            //         nav: true,
+            //         items:3
+            //     },
+            //     1600:{
+            //         nav: true,
+            //         items:4
+            //     }
+            // }
+        });
+    }
+
+
     /*анимационные программы*/
 
     if($('div').hasClass('animation-program')){
