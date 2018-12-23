@@ -120,6 +120,72 @@
 }
 
 @media (max-width: 1600px) {
+
+    .corporate-cake-banner__title {
+        font-size: 6rem;
+    }
+
+    .corporate-cake-banner__subtitle {
+        font-size: 4.5rem;
+    }
+
+    /*.corporate-cake-dish-card-order {*/
+        /*flex-flow: column wrap;*/
+        /*align-items: flex-start;*/
+    /*}*/
+
+    .corporate-cake-dish-card-order__col:nth-child(2) {
+        width: 100%;
+    }
+
+
+    .corporate-cake-dish-card__body {
+        padding-left: 2rem;
+    }
+
+    .corporate-cake-gift__decor-1 {
+        position: absolute;
+        top: 1.3rem;
+        left: 3rem;
+    }
+
+    .corporate-cake-gift {
+        padding: 3rem 3rem 5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .corporate-cake-gift-card__img img {
+        width: 100%;
+    }
+
+    .c-pass-banner__subtitle {
+        max-width: 54rem;
+        margin: 0 auto .6rem;
+    }
+
+    .corporate-cake-filling .c-pass-banner__decor-1 {
+        bottom: -6%;
+    }
+
+    .corporate-cake-size {
+        padding-bottom: 3rem;
+        margin-bottom: 2.6rem;
+    }
+
+
+    .corporate-cake-dish__list {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .corporate-cake-dish__item {
+        padding: 0 1rem;
+    }
+
+    .corporate-cake-dish-card .c-card-catalog__price {
+        margin: 0;
+    }
+
     .cafe-description__text {
         /*height: 23rem;*/
     }
@@ -398,6 +464,11 @@
 }
 
 @media (min-width: 1600px) {
+
+    .corporate-cake-size__list .owl-nav {
+        display: none;
+    }
+
     .vacancies .select-city + .SelectBox,
     .vacancies .select-metro + .SelectBox {
         width: 37rem;
@@ -796,8 +867,64 @@
 }
 
 @media screen and (max-width: 1100px) {
+
+
+    .corporate-cake-dish__list {
+        display: block;
+    }
+
+    .corporate-cake-dish__item {
+        width: 100%;
+    }
+
+    .corporate-cake-dish-card__body {
+        width: 80%;
+    }
+
+    .corporate-cake-dish-card-order {
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+
+    /*.corporate-cake-dish-card-order__col:nth-child(1) {*/
+        /*margin: 0 1rem 0 0;*/
+    /*}*/
+
+    .corporate-cake-dish-card .c-button__width {
+        width: auto;
+        text-align: center;
+    }
+
+    .corporate-cake-dish-card__text {
+        min-height: 0;
+    }
+
+
     .cafe-list-layout .filter-item:nth-child(2) {
         width: 62%;
+    }
+
+    .corporate-cake-banner__decor {
+        right: 0;
+    }
+
+    .corporate-cake-banner {
+        padding: 2rem 8rem 2rem 3rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .corporate-cake-banner__title {
+        font-size: 5rem;
+    }
+
+    .corporate-cake-banner__subtitle{
+        font-size: 4rem;
+    }
+    
+    .corporate-cake-banner__decor {
+        width: 74px;
+        overflow: hidden;
     }
 
     .popup-event-map {
@@ -2078,6 +2205,30 @@
 }
 
 @media (max-width: 980px) {
+
+    .corporate-cake-dish-card__body {
+        width: 50%;
+    }
+
+    .corporate-cake__body {
+        padding: 0 2rem 2rem;
+    }
+
+    .corporate-cake-dish__item {
+        margin-bottom: 2rem;
+    }
+
+    .corporate-cake-gift__decor-1 {
+        display: none;
+    }
+
+    .corporate-cake-gift {
+        padding: 2rem 1rem 5rem;
+    }
+
+    .corporate-cake-gift__item {
+        padding: 0 1.4rem;
+    }
 
     .cafe-info {
         flex-flow: column nowrap;
@@ -3565,6 +3716,50 @@
 }
 
 @media (max-width: 730px) {
+
+    .corporate-cake-dish-card-order .c-button {
+        padding: 1.4rem 3.4rem;
+    }
+
+    .corporate-cake {
+        margin-left: -2.2rem;
+        margin-right: -2.2rem;
+    }
+
+    .c-pass-banner {
+        margin-bottom: 2.4rem;
+    }
+
+    .corporate-cake-gift__list {
+        display: block;
+    }
+
+    .corporate-cake-gift__item {
+        margin-bottom: 3.5rem;
+    }
+
+    .corporate-cake-gift {
+        padding: 2rem 1rem 2rem;
+    }
+
+    .corporate-cake-banner {
+        margin-bottom: 2.5rem;
+        height: 59vw;
+    }
+
+
+    .corporate-cake-banner__title {
+        font-size: 4.2rem;
+    }
+
+    .corporate-cake-banner__subtitle{
+        font-size: 3.5rem;
+    }
+
+    /*.corporate-cake__title {*/
+        /*font-size: 3.8rem;*/
+    /*}*/
+
     .home-cafe {
         right: -9%;
         top: -5%;
@@ -5480,6 +5675,14 @@
 
     }
 
+    .corporate-cake .owl-carousel .owl-nav {
+        top: 50% !important;
+    }
+
+    .corporate-cake .catalog-list__item {
+        padding: 0 !important;
+    }
+
     .holiday-offers-banner__footer .c-ol-list > li:before {
         content: counter(item) ") ";
         left: -6px;
@@ -5842,6 +6045,57 @@
 }
 
 @media (max-width: 540px) {
+
+    .corporate-cake {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+    }
+
+    .corporate-cake__body {
+        padding: 0 1.6rem 2rem;
+    }
+
+    .corporate-cake-dish-card__img {
+        min-height: 0;
+    }
+
+    .corporate-cake-dish-card {
+        padding: 1rem 1.4rem 2rem;
+    }
+
+    .corporate-cake-wishes .c-pass-banner__subtitle {
+        display: none;
+    }
+
+    .corporate-cake-gift {
+        padding: 0 0 1rem;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    .corporate-cake-gift__item {
+        padding: 0;
+    }
+
+    .corporate-cake-gift__decor-2 {
+        display: none;
+    }
+
+
+    .corporate-cake-banner__title {
+        font-size: 3.8rem;
+    }
+
+    .corporate-cake-banner__subtitle{
+        font-size: 3rem;
+    }
+
+    .corporate-cake-banner {
+        padding: 2rem 0rem 2rem 2rem;
+        height: 92vw;
+    }
+
     .home-cafe {
         right: -45%;
         top: -41%;
@@ -8147,6 +8401,20 @@
 }
 
 @media (max-width: 580px) {
+
+    .corporate-cake-dish-card__grid {
+        display: block;
+    }
+
+    .corporate-cake-dish-card__body,
+    .corporate-cake-dish-card__img {
+        width: 100%;
+    }
+
+    .corporate-cake-dish-card__body {
+        padding: 0;
+    }
+
     .popup-poster__title span {
         font-size: 4.5rem;
     }
@@ -10976,6 +11244,15 @@
     .catering-form {
         flex-flow: row wrap;
     }
+
+    .corporate-cake-filling .c-pass-banner__decor-1,
+    .corporate-cake-filling .c-pass-banner__decor-2,
+    .corporate-cake-wishes .c-pass-banner__decor-1,
+    .corporate-cake-wishes .c-pass-banner__decor-2,
+    .corporate-cake-wishes .c-pass-banner__decor-3 {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 1020px) {

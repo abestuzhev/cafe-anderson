@@ -9417,40 +9417,6 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
-    /*корпоративные торты*/
-
-    if($('div').hasClass('corporate-cake-gingerbread__slider')){
-
-
-
-        $('.corporate-cake-gingerbread__slider').owlCarousel({
-            loop:true,
-            // nav:true,
-            // margin:20,
-            items: 4
-            // center: true,
-            // mouseDrag:false,
-            // pullDrag:false
-            // responsive:{
-            //     0:{
-            //         items:1
-            //     },
-            //     600:{
-            //         nav: true,
-            //         items:2
-            //     },
-            //     1200:{
-            //         nav: true,
-            //         items:3
-            //     },
-            //     1600:{
-            //         nav: true,
-            //         items:4
-            //     }
-            // }
-        });
-    }
-
 
     /*анимационные программы*/
 
@@ -11087,15 +11053,97 @@ $(document).ready(function ($) {
         }
     });
 
+    if($('div').hasClass('owl-carousel')){
+
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            center: true,
+            autoHeight:true,
+            nav: true
+        });
 
 
-    $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        center: true,
-        autoHeight:true,
-        nav: true
-    });
+    }
+
+
+
+
+    /*корпоративные торты*/
+
+    if($('ul').hasClass('corporate-cake-gingerbread__slider')){
+
+
+        $('.corporate-cake-gingerbread__slider').owlCarousel({
+            loop:true,
+            // nav:true,
+            // margin:20,
+            items: 4,
+            // center: true,
+            mouseDrag:false,
+            pullDrag:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    nav: true,
+                    items:2
+                },
+                1200:{
+                    nav: true,
+                    items:3
+                },
+                1600:{
+                    nav: true,
+                    items:4
+                }
+            }
+        });
+
+    }
+
+
+    if($('ul').hasClass('corporate-cake-size__list')){
+
+
+        $('.corporate-cake-size__list').owlCarousel({
+            loop:false,
+            nav:false,
+            // margin:20,
+            items: 5,
+            // center: true,
+            mouseDrag:false,
+            pullDrag:false,
+            responsive:{
+                0:{
+                    loop:true,
+                    items:1
+
+                },
+                600:{
+                    nav: true,
+                    loop:true,
+                    items:3
+                },
+                1200:{
+                    nav: true,
+                    loop:true,
+                    items:4
+                },
+                1600:{
+                    nav: true,
+                    loop:true,
+                    items:5
+
+                }
+            }
+        });
+
+    }
+
+
+
 
 
     $('.cafe-fotorama').on('fotorama:ready', function (e, fotorama) {

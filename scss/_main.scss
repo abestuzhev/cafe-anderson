@@ -11271,6 +11271,8 @@ test popup
     .timeline-body {
         width: 100%;
     }
+
+
 }
 
 .franchise {
@@ -23649,7 +23651,30 @@ a.show-more__button:hover {
     }
 
 
-    &__banner {
+    &-banner {
+        color: $black;
+        padding: 2rem 5rem;
+        position: relative;
+
+        &__decor {
+            position: absolute;
+            right: 8%;
+            top: 20px;
+        }
+
+        &__title {
+            font-size: 7rem;
+            text-transform: uppercase;
+            font-family: $font_decor;
+            line-height: 1;
+        }
+
+        &__subtitle {
+            font-size: 5.5rem;
+            text-transform: uppercase;
+            font-family: $font_decor;
+            line-height: 1;
+        }
 
         &::after {
             content: '';
@@ -23706,7 +23731,7 @@ a.show-more__button:hover {
         }
 
         &__item {
-            width: 20%;
+            //width: 20%;
             padding: .5rem;
         }
     }
@@ -23737,12 +23762,14 @@ a.show-more__button:hover {
             border-radius: .6rem;
             padding: 1rem 2.4rem 2rem;
             font-family: $font_serif;
+            height: 100%;
 
             &__title {
                 font-size: 4.8rem;
                 text-transform: uppercase;
                 color:$black;
                 font-family: $font_decor;
+                line-height: 1;
             }
 
             &__text {
@@ -23762,6 +23789,10 @@ a.show-more__button:hover {
                 min-height: 27rem;
                 overflow: hidden;
                 border-radius: .6rem;
+
+                img {
+                    width: 100%;
+                }
             }
 
             &__body {
@@ -23791,13 +23822,14 @@ a.show-more__button:hover {
             }
 
             &-order {
-                margin-bottom: 1.6rem;
+                margin-bottom: .6rem;
                 display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-between;
+                flex-flow: row wrap;
+                justify-content: flex-start;
                 align-items: stretch;
 
                 &__col {
+                    margin-bottom: 1rem;
 
                     .c-card-catalog__count {
                         height: 100%;
@@ -23812,6 +23844,10 @@ a.show-more__button:hover {
 
                         }
                     }
+                }
+
+                .c-button {
+                    text-align: center;
                 }
             }
 
@@ -23864,6 +23900,10 @@ a.show-more__button:hover {
             .catalog-list__item {
                 width: auto;
             }
+        }
+
+        .catalog-list {
+            margin: 0;
         }
     }
 
@@ -23969,5 +24009,9 @@ a.show-more__button:hover {
 
         }
 
+    }
+
+    .c-pass-banner__btn {
+        white-space: nowrap;
     }
 }
