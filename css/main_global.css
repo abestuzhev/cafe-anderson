@@ -25788,6 +25788,8 @@ a.show-more__button:hover {
       height: 4rem; }
   .bonus-info .c-symbol {
     fill: #000 !important; }
+  .bonus-info .c-personal-data a {
+    color: #7cbd41; }
 
 .corporate-cake {
   margin-bottom: 4rem;

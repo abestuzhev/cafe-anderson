@@ -5650,6 +5650,10 @@
 }
 
 @media (max-width: 600px) {
+
+    
+    
+
     .owl-carousel:not(.ignore-600px) {
         width: 100%;
         margin: 0;
@@ -5677,6 +5681,12 @@
 
     .corporate-cake .owl-carousel .owl-nav {
         top: 50% !important;
+        margin-top: -1.7rem !important;
+    }
+
+    
+    .corporate-cake .corporate-cake-gingerbread .owl-nav {    
+        margin-top: -9rem !important;
     }
 
     .corporate-cake .catalog-list__item {
@@ -6461,6 +6471,10 @@
     .bonus-info {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .bonus-info .c-input {
+        margin-bottom: 1rem;
     }
 }
 
@@ -11434,6 +11448,10 @@
     .bonus-info {
         margin-left: -1.6rem;
         margin-right: -1.6rem;
+    }
+
+    .corporate-cake .bonus-info {
+        margin: 0;
     }
 }
 
