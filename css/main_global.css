@@ -25998,6 +25998,8 @@ a.show-more__button:hover {
                   flex: 1; }
       .corporate-cake-dish-card-order .c-button {
         text-align: center; }
+    .corporate-cake-dish-card .c-button__width {
+      padding: 1.4rem 4.4rem; }
   .corporate-cake-discount {
     padding: .5rem 1.6rem;
     background-color: #eef1f3;
