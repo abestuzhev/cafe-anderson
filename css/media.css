@@ -7444,6 +7444,11 @@
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
         padding: .4rem 1rem;
     }
+
+    .popup-corporate-cake .c-col-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 370px) {

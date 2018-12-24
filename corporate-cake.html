@@ -5821,7 +5821,7 @@
 
                                                 </div>
                                                 <div class="corporate-cake-dish-card-order__col">
-                                                    <a href="#" class="c-button c-button__width">Заказать</a>
+                                                    <a href="#" class="corporate-cake-order c-button c-button__width">Заказать</a>
 
                                                 </div>
                                             </div>
@@ -6273,6 +6273,129 @@
 </footer>
 
 <!----------------------------------------------START popup-->
+
+<div class="mfp-wrap popup-corporate-cake" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="popup">
+                <div class="popup-box">
+                    <h3 class="popup-title">Оформить заказ<div class="popup-close"></div></h3>
+                    <div class="popup-body">
+                        <form action="#" class="popup-form" id="excursion-form">
+                            <div class="c-grid c-grid-between">
+                                <div class="c-col c-col-4">
+                                    <div class="popup-form__item">
+                                        <label class="c-label" for="excursion-order__surname">Фамилия<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Ваша фамилия" name="excursion-order__surname" id="excursion-order__surname" required>
+                                    </div>
+                                </div>
+                                <div class="c-col c-col-4">
+                                    <div class="popup-form__item">
+                                        <label class="c-label" for="excursion-order__name">Имя<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Ваше имя" name="excursion-order__name" id="excursion-order__name" required>
+                                    </div>
+                                </div>
+                                <div class="c-col c-col-4">
+                                    <div class="popup-form__item">
+                                        <label class="c-label" for="excursion-order__patronymic">Отчество<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Ваше отчество" name="excursion-order__patronymic" id="excursion-order__patronymic" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-grid c-grid-between">
+                                <div class="c-col c-col-6">
+                                    <div class="popup-form__item">
+                                        <label class="c-label" for="excursion-order__phone">Телефон<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input js-input--tel" type="text" placeholder="Email:" name="excursion-order__phone" id="excursion-order__phone" required>
+                                    </div>
+                                </div>
+                                <div class="c-col c-col-6">
+                                    <div class="popup-form__item">
+                                        <label class="c-label" for="excursion-order__email">Email<span class="c-obligatory-field">*</span></label>
+                                        <input class="c-input" type="text" placeholder="Email:" name="excursion-order__email" id="excursion-order__email" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-grid c-grid-between">
+                                <div class="c-col c-col-6">
+                                    <div class="popup-form__item">
+                                        <select name="order-corporate-cake-type" class="c-select" tabindex="-1">
+                                            <option value="">Пряник 1</option>
+                                            <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="c-col c-col-6">
+                                    <div class="popup-form__item">
+                                        <div class="pie-form-download">
+
+                                            <div class="pie-form-download__img">
+                                                <svg class="c-symbol symbol-cake-6"><use xlink:href="#symbol-cake-6" /></svg>
+                                                <img id="pie-form-download__img" src="#" alt="your image" />                                    </div>
+                                            <div class="pie-form-download__file">
+                                                <label for="pie-form-download__file">
+                                                    <svg class="c-symbol symbol-clip-2"><use xlink:href="#symbol-clip-2" /></svg>
+                                                    <span>Прикрепить фотографию уникального изделия</span>
+                                                </label>
+                                                <input type='file' id="pie-form-download__file"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="c-grid c-grid-between">
+                                <div class="c-col c-col-12">
+                                    <div class="popup-form__item">
+                                        <label class="c-label" for="excursion-order__message">Ваше сообщение<span
+                                                class="c-obligatory-field">*</span></label>
+                                        <textarea class="c-input" name="excursion-order__message" id="excursion-order__message" rows="3" placeholder="текст сообщения"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="c-grid c-grid-between">
+                                <div class="c-col c-col-7">
+                                    <div class="c-personal-data">
+                                        <div class="c-personal-data__item">
+                                            <input type="checkbox" name="excursion__regulations" id="excursion__regulations" checked="">
+                                            <label class="c-checkbox" for="excursion__regulations">Я ознакомлен с <a href="#">правилами обработки</a> моих персональных данных.</label>
+                                        </div>
+                                        <div class="c-personal-data__item">
+                                            <input type="checkbox" name="excursion__dispatch" id="excursion__dispatch">
+                                            <label class="c-checkbox" for="excursion__dispatch">Я согласен получать рассылку с сайта на электронную почту</label>
+                                        </div>
+
+                                        <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                                    </div>
+                                </div>
+                                <div class="c-col c-col-5">
+                                    <div class="popup-form__item">
+                                        <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля</div>
+                                    </div>
+                                    <div class="l-button l-button__left">
+                                        <button class="c-button c-button__default">Оставить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+                        <div class="reviews-form__rabbit"></div>
+
+                    </div><!--popup-body-->
+                    <img class="popup-bg__img" src="./img/bg-party.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--модальное окно выпоускные-->
 <div class="mfp-wrap popup-graduation" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">

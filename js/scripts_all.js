@@ -11343,6 +11343,8 @@ $(document).ready(function ($) {
     showPopup(".calendar-nav-hall__decor-red:not(.no-popup)", '.popup__gallery_hall_red');
     showPopup(".c-card-new-year__box", '.popup-new-year');
 
+    showPopup(".corporate-cake-order", '.popup-corporate-cake');
+
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();
     //     $(this).parents('.popup-cake-order').removeClass('is-visible');
