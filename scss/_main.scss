@@ -17879,6 +17879,13 @@ test popup
             min-height: 8.5rem;
             max-height: 8.5rem;
             overflow: hidden;
+            font-family: $font_serif;
+            font-size: 1.9rem;
+            line-height: 1.2;
+
+            span {
+                line-height: 1.2;
+            }
         }
 
         &-vertical__item {

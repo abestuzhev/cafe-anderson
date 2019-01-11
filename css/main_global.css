@@ -21486,7 +21486,12 @@ test popup
 .holiday-space-list .c-card-cafe__title {
   min-height: 8.5rem;
   max-height: 8.5rem;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: "PT Serif Caption";
+  font-size: 1.9rem;
+  line-height: 1.2; }
+  .holiday-space-list .c-card-cafe__title span {
+    line-height: 1.2; }
 
 .holiday-space-list .c-card-cafe-vertical__item {
   color: #2a2a2a;
