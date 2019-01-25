@@ -30,6 +30,10 @@
     <link rel="stylesheet" href="./js/owlcarousel/owl.carousel.css">
     <!--<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.green.css">-->
 
+     <!--datepicker-->
+     <link href="./js/datepicker/datepicker.css" rel="stylesheet">
+     <link href="css/datepicker-anderson.css" rel="stylesheet">
+
     <!-- styles needed by jScrollPane -->
     <link type="text/css" href="./js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all"/>
     <link type="text/css" href="./bower_components/sumoselect/sumoselect.css" rel="stylesheet" media="all"/>
@@ -819,6 +823,16 @@
                                     <option value="Нижний Новгород">Нижний Новгород</option>
                                     <option value="Королёв">Королёв</option>
                                 </select>
+                            </div>
+
+                            <div class="c-form__col">
+                                <label class="c-label" for="reviews-date">Дата посещения<span class="c-obligatory-field">*</span></label>
+                                <div class="datepicker-layout">
+                                    <input type="text" class="c-input datepicker-custom" name="form_date_88" id="reviews-date" placeholder="" readonly="readonly" placeholder="Дата посещения">
+                                </div>
+                                <!-- <div class="datepicker-layout">
+                                    <input class="c-input  datepicker-custom" type="text" placeholder="Дата посещения" name="form_date_88" id="reviews-date" required="" value="" readonly="">
+                                </div> -->
                             </div>
                         </div>
                         <div class="c-form__item">
@@ -1850,6 +1864,8 @@
 <!-- Подключаем API  карт 2.1  -->
 <!-- <script src="./js/ymaps-touch-scroll.bundle.js"></script> -->
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="./js/datepicker/datepicker.min.js"></script>
+<script async src="./js/datepicker-anderson.js"></script>
 <!--<script src="./js/custom-map.js"></script>-->
 <!--<script src="./js/main.js"></script>-->
 <script async src="./js/scripts_all.js"></script>
