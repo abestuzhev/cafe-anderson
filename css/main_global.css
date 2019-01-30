@@ -6568,6 +6568,12 @@ div.c-card-catalog-2 {
     right: 15%;
     bottom: 0%; }
 
+.datepicker-here,
+.datepicker-custom,
+.datepicker-alldate {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
