@@ -6574,6 +6574,25 @@ div.c-card-catalog-2 {
   -moz-appearance: none;
   -webkit-appearance: none; }
 
+@media (max-width: 730px) {
+  .wrapper input[type="color"],
+  .wrapper input[type="date"],
+  .wrapper input[type="datetime"],
+  .wrapper input[type="datetime-local"],
+  .wrapper input[type="email"],
+  .wrapper input[type="month"],
+  .wrapper input[type="number"],
+  .wrapper input[type="password"],
+  .wrapper input[type="search"],
+  .wrapper input[type="tel"],
+  .wrapper input[type="text"],
+  .wrapper input[type="time"],
+  .wrapper input[type="url"],
+  .wrapper input[type="week"],
+  .wrapper select:focus,
+  .wrapper textarea {
+    font-size: 16px; } }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
