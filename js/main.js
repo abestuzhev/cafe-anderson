@@ -1035,11 +1035,6 @@ $(document).ready(function ($) {
             autoClose: true
         });
     }
-    if($('input').hasClass('datepicker-alldate') || $('div').hasClass('datepicker-alldate')){
-        $('.datepicker-alldate').datepicker({
-            autoClose: true
-        });
-    }
 
     if($('input').hasClass('datepicker-custom-clock') || $('div').hasClass('datepicker-custom-clock')){
         $('.datepicker-custom-clock').datepicker({
