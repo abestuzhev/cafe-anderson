@@ -1027,6 +1027,11 @@ $(document).ready(function ($) {
         // PrintElem(divToPrint);
     });
 
+    if($('input').hasClass('datepicker-alldate') || $('div').hasClass('datepicker-alldate')){
+        $('.datepicker-alldate').datepicker({
+            autoClose: true
+        });
+    }
 
 
     if($('input').hasClass('datepicker-custom') || $('div').hasClass('datepicker-custom')){

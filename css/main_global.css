@@ -6568,6 +6568,31 @@ div.c-card-catalog-2 {
     right: 15%;
     bottom: 0%; }
 
+.datepicker-here,
+.datepicker-custom,
+.datepicker-alldate {
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+@media (max-width: 730px) {
+  .wrapper input[type="color"],
+  .wrapper input[type="date"],
+  .wrapper input[type="datetime"],
+  .wrapper input[type="datetime-local"],
+  .wrapper input[type="email"],
+  .wrapper input[type="month"],
+  .wrapper input[type="number"],
+  .wrapper input[type="password"],
+  .wrapper input[type="search"],
+  .wrapper input[type="tel"],
+  .wrapper input[type="text"],
+  .wrapper input[type="time"],
+  .wrapper input[type="url"],
+  .wrapper input[type="week"],
+  .wrapper select:focus,
+  .wrapper textarea {
+    font-size: 16px; } }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -14011,98 +14036,91 @@ test popup
   display: block !important; }
 
 /*Оформление заказа. Финальная страница (ordering-finish)----------------------------------------------------*/
-.order-finish__header {
-  padding-bottom: 3.2rem;
-  margin-bottom: 2.5rem;
-  position: relative;
-  text-align: center; }
-  .order-finish__header::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: .4rem;
-    background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
-
-.order-finish__title {
-  font-size: 2.6rem;
-  line-height: 1;
-  color: #9b806f;
-  margin-bottom: .8rem; }
-
-.order-finish__subtitle {
-  font-size: 1.6rem;
-  font-style: italic;
-  line-height: 1.2;
-  color: #231300;
-  max-width: 55.5rem;
-  margin: 0 auto; }
-  .order-finish__subtitle span {
-    color: #7cbd41;
-    font-size: 1.8rem; }
-  .order-finish__subtitle a {
-    color: #7cbd41; }
-    .order-finish__subtitle a:after {
+.order-finish {
+  margin-bottom: 4rem; }
+  .order-finish__header {
+    padding: 0 1.6rem 3.2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    text-align: center; }
+    .order-finish__header::after {
       content: '';
-      border-color: #7cbd41; }
-
-.order-finish-item {
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
-  border-radius: .8rem;
-  padding: 2.3rem 3.3rem;
-  margin-bottom: 3rem;
-  overflow: hidden; }
-
-.order-finish__grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.order-finish__col {
-  width: 50%;
-  padding-right: 2rem; }
-  .order-finish__col:last-child {
-    padding: 0; }
-
-.order-finish-info__item {
-  margin-bottom: 2.2rem; }
-
-.order-finish-info__list-item {
-  display: inline-block;
-  font-size: 1.4rem;
-  font-style: italic;
-  line-height: 1;
-  color: #231300;
-  margin-right: .4rem; }
-  .order-finish-info__list-item:last-child {
-    margin-right: 0; }
-
-.order-finish-info__text {
-  font-size: 1.4rem;
-  font-style: italic;
-  line-height: 1;
-  color: #231300; }
-
-.order-finish-message {
-  text-align: center;
-  color: #9b806f;
-  font-size: 1.6rem;
-  font-family: "PT Serif Caption"; }
-  .order-finish-message p {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: .4rem;
+      background: url(../img/pattern-round.jpg) 0 0 repeat-x; }
+  .order-finish__title {
+    font-size: 2.6rem;
+    line-height: 1;
+    color: #9b806f;
+    margin-bottom: .8rem; }
+  .order-finish__subtitle {
+    font-size: 1.6rem;
+    font-style: italic;
+    line-height: 1.2;
+    color: #231300;
+    max-width: 55.5rem;
+    margin: 0 auto; }
+    .order-finish__subtitle span {
+      color: #7cbd41;
+      font-size: 1.8rem; }
+    .order-finish__subtitle a {
+      color: #7cbd41; }
+      .order-finish__subtitle a:after {
+        content: '';
+        border-color: #7cbd41; }
+  .order-finish-item {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 9.2px 0.8px rgba(0, 0, 0, 0.1);
+    border-radius: .8rem;
+    padding: 2.3rem 3.3rem;
+    margin-bottom: 3rem;
+    overflow: hidden; }
+  .order-finish__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .order-finish__col {
+    width: 50%;
+    padding-right: 2rem; }
+    .order-finish__col:last-child {
+      padding: 0; }
+  .order-finish-info__item {
     margin-bottom: 2.2rem; }
+  .order-finish-info__list-item {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1;
+    color: #231300;
+    margin-right: .4rem; }
+    .order-finish-info__list-item:last-child {
+      margin-right: 0; }
+  .order-finish-info__text {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1;
+    color: #231300; }
+  .order-finish-message {
+    text-align: center;
+    color: #9b806f;
+    font-size: 1.6rem;
+    font-family: "PT Serif Caption"; }
+    .order-finish-message p {
+      margin-bottom: 2.2rem; }
 
 /*Оформление заказа. Форма входа (ordering-auth)----------------------------------------------------*/
 .order-auth {
