@@ -3300,7 +3300,8 @@ $(function() {
     });
 
     // resize top modal (1 or 2 line text etc)
-    function resizeSelectorHead(target, delta = 21) {
+    function resizeSelectorHead(target) {
+        var delta = 21;
         let $_wrapper = $(target).closest('.calendar-selector_wrapper');
         let $_elem = $(target).find('.calendar-selector__head');
         if($_elem.height() !== ($_wrapper.height() + delta)) {
@@ -3314,7 +3315,8 @@ $(function() {
         resizeSelectorHead('#hsl-addr-selector');
     });
 
-    function resizeSelectorFooter(target, delta = 21) {
+    function resizeSelectorFooter(target) {
+        var delta = 21;
         if($(target).hasClass('show-up')){
             console.log('has class');
             let $_wrapper = $(target).closest('.calendar-selector_wrapper');
