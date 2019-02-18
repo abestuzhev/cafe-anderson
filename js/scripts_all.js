@@ -12535,10 +12535,10 @@ $(function() {
     // resize top modal (1 or 2 line text etc)
     function resizeSelectorHead(target) {
         var delta = 21;
-        let $_wrapper = $(target).closest('.calendar-selector_wrapper');
-        let $_elem = $(target).find('.calendar-selector__head');
-        if($_elem.height() !== ($_wrapper.height() + delta)) {
-            $_elem.css('height', ($_wrapper.height() + delta) / 10 + "rem")
+        var $wrapper = $(target).closest('.calendar-selector_wrapper');
+        var $elem = $(target).find('.calendar-selector__head');
+        if($elem.height() !== ($wrapper.height() + delta)) {
+            $elem.css('height', ($wrapper.height() + delta) / 10 + "rem")
         }
     }
 
@@ -12552,11 +12552,11 @@ $(function() {
         var delta = 21;
         if($(target).hasClass('show-up')){
             console.log('has class');
-            let $_wrapper = $(target).closest('.calendar-selector_wrapper');
-            let $_elem = $(target).find('.calendar-selector__footer');
-            let $_textHeight = $('.calendar-title__wrapper').height();
-            if($_elem.height() !== ($_wrapper.height() + delta)) {
-                $_elem.css('height', ($_wrapper.height() + delta) / 10 + "rem");
+            var $wrapper = $(target).closest('.calendar-selector_wrapper');
+            var $elem = $(target).find('.calendar-selector__footer');
+            var $textHeight = $('.calendar-title__wrapper').height();
+            if($elem.height() !== ($wrapper.height() + delta)) {
+                $elem.css('height', ($wrapper.height() + delta) / 10 + "rem");
 
 
             }
@@ -12582,8 +12582,8 @@ $(function() {
 
     // hide on click other element
     function hideSelector(target_selector, event) {
-        let elemclass = $(event.target).attr('class');
-        let elemid = $(event.target).attr('id');
+        var elemclass = $(event.target).attr('class');
+        var elemid = $(event.target).attr('id');
         if(!elemid) elemid = '';
         if(!elemclass) elemclass = '';
 
