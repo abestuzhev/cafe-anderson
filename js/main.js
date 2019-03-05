@@ -476,6 +476,13 @@ $(document).ready(function ($) {
     });
 
 
+    $(document).on('click', '.c-card-catalog-3 .c-card-catalog__basket', function(e){
+        e.preventDefault();
+        $(this).hide();
+        $(this).siblings('.c-card-catalog__count').show();
+    });
+
+
 
     if($('div').hasClass('js-readmore')){
         $('.cake-order-composition').readmore({

@@ -5583,6 +5583,33 @@
         width: 116px
     }
 
+
+    /*c-card-catalog-3*/
+
+
+
+    div.c-card-catalog-3__img {
+        height: 16rem;
+    }
+
+
+    div.c-card-catalog-3 .c-card-catalog-3__footer {
+        justify-content: space-between;
+    }
+
+    div.c-card-catalog-3 .c-card-catalog-3-property {
+        display: block;
+    }
+
+    div.c-card-catalog-3 .c-card-catalog-3-property__col {
+        margin-bottom: 3px;
+        width: 100%;
+    }
+
+    div.c-card-catalog-3 .c-card-catalog-3-property__col:last-child {
+        margin-bottom: 0;
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -6746,6 +6773,41 @@
     .lk-profile-subscription .lk-profile-edit .c-form__item {
         margin-right: 1rem;
     }
+
+
+    div.c-card-catalog-3 .c-card-catalog__price {
+        font-size: 2.8rem;
+        flex: 0 1 auto !important;
+        margin-bottom: 0 !important;
+    }
+
+    div.c-card-catalog-3__title {
+        font-size: 1.5rem;
+        min-height: 2rem;
+    }
+    div.c-card-catalog-3 .SelectBox {
+        font-size: 1.2rem;
+    }
+
+    div.c-card-catalog-3 .SumoSelect > .CaptionCont > span.placeholder {
+        font-size: 1.2rem;
+    }
+
+    div.c-card-catalog-3__footer .c-card-catalog__basket {
+        padding: .3rem .8rem;
+    }
+
+    div.c-card-catalog-3 .SumoSelect > .CaptionCont {
+        padding: .6rem 1rem;
+    }
+
+    div.c-card-catalog-3__footer {
+        margin-bottom: .6rem;
+    }
+
+    div.c-card-catalog-3__img {
+        height: 12rem;
+    }
 }
 
 @media (max-width: 520px) {
@@ -7116,6 +7178,10 @@
         display: none;
     }
 
+    div.c-card-catalog-3__body {
+        padding: 1rem .8rem;
+    }
+
 }
 
 @media (max-width: 440px) {
@@ -7365,6 +7431,32 @@
     .calendar-selector__footer {
         height: 3rem !important;
     }
+
+    div.c-card-catalog-3 .c-card-catalog__price {
+        font-size: 2.3rem;
+    }
+
+
+    div.c-card-catalog-3 .icon-shopping-cart {
+        width: 1.9rem;
+        height: 2.2rem;
+    }
+    div.c-card-catalog-3 .c-counter__field {
+        width: 2.7rem !important;
+    }
+
+    div.c-card-catalog-3__footer .c-card-catalog__price {
+        padding: 0 .3rem 0 0;
+    }
+    div.c-card-catalog-3__footer .c-card-catalog__count .c-counter__btn {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    div.c-card-catalog-3__footer .c-card-catalog__count {
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 390px) {
