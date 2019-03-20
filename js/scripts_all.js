@@ -13188,7 +13188,18 @@ $(function() {
         loop: true,
         thumbwidth: 88,
         allowfullscreen: false,
-        nav: 'thumbs',
+        nav: 'thumbs'
+
+    });
+
+    $('.holiday-hall-fotorama').fotorama({
+        // width: '100%',
+        // height: '34rem',
+        // ratio: 1556/606,
+        loop: true,
+        thumbwidth: 88,
+        allowfullscreen: false,
+        nav: 'thumbs'
 
     });
 

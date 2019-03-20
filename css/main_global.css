@@ -26272,6 +26272,309 @@ a.show-more__button:hover {
   .corporate-cake .c-pass-banner__btn {
     white-space: nowrap; }
 
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+.holiday-hall {
+  margin-bottom: 4rem;
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.15);
+  border-radius: .6rem;
+  padding-bottom: 40px; }
+  .holiday-hall__head {
+    padding: 2.5rem 5.3rem 4rem;
+    text-align: center; }
+  .holiday-hall__title {
+    font-size: 5rem;
+    color: #c44890;
+    font-family: "BebasNeue";
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 1; }
+  .holiday-hall__subtitle {
+    font-size: 2.4rem;
+    color: #79b224;
+    text-transform: uppercase;
+    font-family: "PT Serif Caption";
+    margin-bottom: 1.3rem;
+    line-height: 1.2;
+    letter-spacing: 1px; }
+  .holiday-hall__desc {
+    padding-bottom: 1rem;
+    position: relative; }
+    .holiday-hall__desc p {
+      position: relative;
+      z-index: 10;
+      background-color: #fff;
+      font-size: 1.5rem;
+      color: #1a1a1a;
+      font-family: "PT Serif Caption";
+      max-width: 44rem;
+      margin: 0 auto;
+      line-height: 1.1;
+      padding: 0 1rem; }
+    .holiday-hall__desc::after {
+      content: '';
+      position: absolute;
+      z-index: 9;
+      top: 50%;
+      margin-top: -1rem;
+      left: 0;
+      background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
+      display: block;
+      width: 100%;
+      height: .6rem; }
+    .holiday-hall__desc::before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      background: #fff url(../img/holiday-hall/decor-arrow-down.png) 50% 50% no-repeat;
+      display: block;
+      width: 3.7rem;
+      height: .9rem; }
+  .holiday-hall-card__title {
+    padding: 1.6rem 2.1rem;
+    text-align: center;
+    background-color: #c44890;
+    overflow: hidden;
+    position: relative; }
+    .holiday-hall-card__title h3 {
+      text-align: center;
+      font-family: "SummerFont";
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 4.8rem;
+      margin: 0;
+      padding: 0;
+      line-height: 1; }
+    .holiday-hall-card__title .candy-decor-1 {
+      position: absolute;
+      fill: #f368b9;
+      right: 2.6rem;
+      bottom: -1.7rem; }
+      .holiday-hall-card__title .candy-decor-1 svg {
+        font-size: 7.1rem;
+        width: 1em;
+        height: .5em; }
+    .holiday-hall-card__title .candy-decor-2 {
+      position: absolute;
+      fill: #f368b9;
+      right: 8rem;
+      bottom: -2rem; }
+      .holiday-hall-card__title .candy-decor-2 svg {
+        font-size: 12rem;
+        width: 1em;
+        height: .5em;
+        -webkit-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+                transform: rotate(30deg); }
+  .holiday-hall-card__slider {
+    position: relative;
+    overflow: hidden;
+    max-height: 600px; }
+    .holiday-hall-card__slider::after {
+      content: '';
+      position: absolute;
+      bottom: -.8rem;
+      left: 0;
+      width: 100%;
+      height: 1.5rem;
+      background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; }
+    .holiday-hall-card__slider .fotorama__nav-wrap {
+      position: absolute;
+      z-index: 99999;
+      bottom: 38px;
+      left: 0;
+      width: 100%; }
+    .holiday-hall-card__slider .fotorama__thumb-border {
+      border-color: #c44890; }
+    .holiday-hall-card__slider .fotorama__arr--next {
+      right: 96px; }
+    .holiday-hall-card__slider .fotorama__arr--prev {
+      left: 96px; }
+  .holiday-hall-card__body {
+    padding: 0 5.3rem;
+    margin-bottom: 4rem; }
+  .holiday-hall-card-info {
+    padding: 2.4rem 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .holiday-hall-card-desc {
+    padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+    .holiday-hall-card-desc::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
+      display: block;
+      width: 100%;
+      height: .6rem; }
+    .holiday-hall-card-desc__text {
+      font-family: "PT Serif Caption";
+      font-size: 1.7rem;
+      color: #262526;
+      padding-right: 10%; }
+    .holiday-hall-card-desc__btn {
+      text-align: center;
+      display: inline-block;
+      padding: 1rem 5rem;
+      font-family: "SummerFont";
+      color: #ffffff;
+      background-color: #9ac359;
+      text-transform: uppercase;
+      font-size: 3.7rem;
+      -webkit-transition: all .2s ease;
+      -o-transition: all .2s ease;
+      transition: all .2s ease;
+      line-height: 1;
+      border-radius: 2.5rem; }
+      .holiday-hall-card-desc__btn::after {
+        content: '';
+        border: none; }
+      .holiday-hall-card-desc__btn:hover {
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+        color: #ffffff;
+        background-color: #8eb54f; }
+  .holiday-hall .holiday-hall-info {
+    font-family: "PT Serif Caption"; }
+    .holiday-hall .holiday-hall-info__img {
+      text-align: center;
+      margin-bottom: 7px; }
+      .holiday-hall .holiday-hall-info__img img {
+        display: inline-block; }
+    .holiday-hall .holiday-hall-info__title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #272727;
+      text-align: center;
+      margin-bottom: .2rem;
+      font-weight: 700;
+      line-height: 1; }
+    .holiday-hall .holiday-hall-info__text {
+      font-size: 1.5rem;
+      color: #555451;
+      text-align: center;
+      text-transform: uppercase; }
+  .holiday-hall__footer {
+    padding: 0 5.3rem; }
+  .holiday-hall-sentence {
+    padding: 2.8rem 2.8rem;
+    background: #c44890 url(../img/holiday-hall/sentence-bg.png) 0 0 no-repeat;
+    margin-bottom: 30px; }
+    .holiday-hall-sentence__title {
+      text-align: center;
+      color: #ffffff;
+      font-family: "SummerFont";
+      text-transform: uppercase;
+      font-size: 4.8rem;
+      line-height: 1;
+      margin-bottom: 2.6rem; }
+    .holiday-hall-sentence__body {
+      max-width: 65rem;
+      margin: 0 auto; }
+    .holiday-hall-sentence__form {
+      padding-bottom: 2rem;
+      position: relative; }
+      .holiday-hall-sentence__form .c-label {
+        color: #ffffff;
+        font-family: "PT Serif Caption"; }
+      .holiday-hall-sentence__form .c-input {
+        background-color: #fff; }
+        .holiday-hall-sentence__form .c-input:focus {
+          border-color: #a62e74;
+          -webkit-box-shadow: 0 0 10px 0 #a62e74;
+                  box-shadow: 0 0 10px 0 #a62e74; }
+      .holiday-hall-sentence__form .c-personal-data {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 0; }
+        .holiday-hall-sentence__form .c-personal-data .c-checkbox {
+          color: #ffffff; }
+          .holiday-hall-sentence__form .c-personal-data .c-checkbox a {
+            color: #ffffff; }
+            .holiday-hall-sentence__form .c-personal-data .c-checkbox a::after {
+              border-color: #fff; }
+        .holiday-hall-sentence__form .c-personal-data .c-checkbox::before {
+          content: '';
+          border-color: #fff;
+          background-color: #fff; }
+    .holiday-hall-sentence__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-left: -2.1rem;
+      margin-right: -2.1rem; }
+    .holiday-hall-sentence__col {
+      width: 50%;
+      padding: 0 2.1rem;
+      margin-bottom: 1.4rem; }
+    .holiday-hall-sentence__btn {
+      white-space: nowrap;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: -60px;
+      text-align: center;
+      color: #c44890;
+      font-family: "SummerFont";
+      text-transform: uppercase;
+      font-size: 3.7rem;
+      line-height: 1;
+      padding: 1rem 5.4rem;
+      background-color: #fff;
+      border: 2px solid #c44890;
+      border-radius: 50px;
+      cursor: pointer; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

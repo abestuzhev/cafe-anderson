@@ -1096,6 +1096,10 @@
         padding: 1rem 0;
     }
 
+    .holiday-hall-sentence {
+        background: #c44890
+    }
+
 
 }
 
@@ -1226,6 +1230,10 @@
     .child-holiday-food__decor-1,
     .child-holiday-food__decor-2 {
         display: none;
+    }
+
+    .holiday-hall-card-info__item {
+        width: 25%;
     }
 
 }
@@ -2593,6 +2601,74 @@
     .c-card-party__decor-2-right {
         width: 23rem;
     }
+
+    .holiday-hall-fotorama .fotorama__nav-wrap {
+        display: none;
+    }
+
+    .fotorama__img {
+        width: auto !important;
+        top: 0 !important;
+        height: 100% !important;
+    }
+
+    .holiday-hall-card__slider .fotorama__arr--prev {
+        left: 20px;
+    }
+
+    .holiday-hall-card__slider .fotorama__arr--next {
+        right: 20px;
+    }
+
+
+    .holiday-hall__title {
+        font-size: 4rem;
+        margin-bottom: .6rem;
+    }
+
+    .holiday-hall__subtitle {
+        font-size: 1.8rem;
+    }
+
+    .holiday-hall__footer,
+    .holiday-hall-card__body {
+        padding: 0 3.5rem;
+    }
+
+    .holiday-hall__head {
+        padding: 2.5rem 3.5rem 3rem;
+    }
+
+    .holiday-hall-card-desc,
+    .holiday-hall-card-info {
+        padding: 1.5rem 0;
+    }
+
+    .holiday-hall-card-desc__text {
+        padding-right: 5%;
+    }
+
+    .holiday-hall-card__title h3 {
+        font-size: 4rem;
+    }
+
+    .holiday-hall-sentence__grid {
+        margin-left: -1.1rem;
+        margin-right: -1.1rem;
+    }
+
+    .holiday-hall-sentence__col {
+        width: 50%;
+        padding: 0 1.1rem;
+    }
+
+    .holiday-hall-card-info__item {
+        width: 50%;
+        margin-bottom: 1.5rem;
+    }
+    .holiday-hall-card-info__item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 940px) {
@@ -2675,6 +2751,30 @@
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .holiday-hall-card-desc {
+        flex-flow: column wrap;
+    }
+
+    .holiday-hall-card-desc__text {
+        margin-bottom: 1.2rem;
+        padding: 0;
+    }
+
+    .holiday-hall-card-desc__btn {
+        position: relative;
+        z-index: 10;
+    }
+
+    .holiday-hall-card-desc::after {
+        content: '';
+        z-index: 9;
+        bottom: 40px;
+    }
+
+    .holiday-hall-card__body {
+        margin-bottom: 1rem;
     }
 }
 
@@ -4868,6 +4968,21 @@
     .file-tab__body {
         margin-bottom: 2rem;
     }
+
+    .holiday-hall {
+        margin-left: -22px;
+        margin-right: -22px;
+    }
+
+    .holiday-hall__footer, .holiday-hall-card__body {
+        padding: 0 1.6rem;
+    }
+
+    .holiday-hall-card__title .candy-decor-1,
+    .holiday-hall-card__title .candy-decor-2 {
+        display: none;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -5216,6 +5331,24 @@
 
     .popup-new-year .popup-header {
         margin-bottom: 1.4rem;
+    }
+
+    .holiday-hall-sentence__title {
+        font-size: 4.4rem;
+    }
+
+    .holiday-hall-sentence__grid {
+        display: block;
+        margin: 0;
+    }
+
+    .holiday-hall-sentence__col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .holiday-hall-sentence__form .c-personal-data {
+        text-align: left;
     }
 
 
@@ -6504,6 +6637,22 @@
     .bonus-info .c-input {
         margin-bottom: 1rem;
     }
+
+
+
+    .holiday-hall__desc::after {
+        content: '';
+        top: auto;
+        bottom: -7px;
+    }
+
+    .holiday-hall-sentence {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .holiday-hall__head {
+        padding: 2.5rem 1.6rem 3rem;
+    }
 }
 
 @media (max-width: 540px) {
@@ -7269,6 +7418,38 @@
     .pie-product .catalog-list__item {
         padding: 0 .5rem !important;
     }
+
+
+    .holiday-hall-card-info {
+        display: block;
+    }
+
+    .holiday-hall-info {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .holiday-hall .holiday-hall-info__img {
+        /*margin-right: 1.8rem;*/
+        /*width: 75px;*/
+        margin: 0;
+        width:23%
+    }
+
+    .holiday-hall .holiday-hall-info__body {
+        width: 77%;
+    }
+
+    .holiday-hall-card-info__item {
+        width: 100%;
+    }
+
+    .holiday-hall .holiday-hall-info__text,
+    .holiday-hall .holiday-hall-info__title {
+        text-align: left;
+    }
 }
 
 @media (max-width: 430px) {
@@ -7456,6 +7637,7 @@
     div.c-card-catalog-3__footer .c-card-catalog__count {
         margin: 0;
     }
+
 
 }
 
