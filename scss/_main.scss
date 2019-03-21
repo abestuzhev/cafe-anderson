@@ -24320,6 +24320,11 @@ a.show-more__button:hover {
         &__img {
             text-align: center;
             margin-bottom: 7px;
+            height: 53px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
 
             img {
                 display: inline-block;
