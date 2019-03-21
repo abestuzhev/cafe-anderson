@@ -26645,7 +26645,8 @@ a.show-more__button:hover {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 3rem; }
+  top: 3rem;
+  margin-left: -1rem; }
 
 .holiday-hall-more .holiday-hall-card-tour__btn {
   display: inline-block;
@@ -26656,7 +26657,7 @@ a.show-more__button:hover {
   padding: .8rem 2rem 1rem;
   border-radius: 50px;
   line-height: .7;
-  margin: 0 6px;
+  margin: 0 10px;
   -webkit-transition: all .1s ease-in-out;
   -o-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
@@ -26667,7 +26668,9 @@ a.show-more__button:hover {
   .holiday-hall-more .holiday-hall-card-tour__btn.active {
     background-color: #cc3298;
     color: #ffffff;
-    padding: 12px 3rem 13px; }
+    -webkit-transform: scale(1.13);
+        -ms-transform: scale(1.13);
+            transform: scale(1.13); }
     .holiday-hall-more .holiday-hall-card-tour__btn.active svg {
       fill: #fff; }
 

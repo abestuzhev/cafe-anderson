@@ -24529,6 +24529,7 @@ a.show-more__button:hover {
         left: 50%;
         transform:translateX(-50%);
         top: 3rem;
+        margin-left: -1rem;
     }
 
     .holiday-hall-card-tour__btn {
@@ -24540,7 +24541,7 @@ a.show-more__button:hover {
         padding: .8rem 2rem 1rem;
         border-radius: 50px;
         line-height: .7;
-        margin: 0 6px;
+        margin: 0 10px;
         transition: all .1s ease-in-out;
         cursor:pointer;
 
@@ -24552,7 +24553,8 @@ a.show-more__button:hover {
         &.active {
             background-color: #cc3298;
             color: #ffffff;
-            padding: 12px 3rem 13px;
+            //padding: 12px 3rem 13px;
+            transform: scale(1.13);
 
             svg {
                 fill: #fff;
