@@ -26378,7 +26378,7 @@ a.show-more__button:hover {
                 transform: rotate(30deg); }
   .holiday-hall-card__slider {
     position: relative;
-    max-height: 600px; }
+    max-height: 608px; }
     .holiday-hall-card__slider::after {
       content: '';
       position: absolute;
@@ -26778,7 +26778,6 @@ a.show-more__button:hover {
         -ms-flex-align: center;
             align-items: center; }
     .holiday-hall-more .holiday-hall-card-client .holiday-hall-carousel__item img {
-      height: auto;
       display: inline-block;
       -o-object-fit: none;
       object-fit: none; }

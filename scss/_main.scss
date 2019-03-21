@@ -24210,7 +24210,7 @@ a.show-more__button:hover {
         &__slider {
             position: relative;
             //overflow:hidden;
-            max-height: 600px;
+            max-height: 608px;
 
             &::after {
                 content: '';
@@ -24688,7 +24688,7 @@ a.show-more__button:hover {
             justify-content: center;
             align-items: center;
             img {
-                height:auto;
+                
                 display: inline-block;
                 -o-object-fit: none;
                 object-fit: none;
