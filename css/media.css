@@ -2234,7 +2234,7 @@
 
     .holiday-hall-more .holiday-hall-card-know__text {
         padding-right: 0;
-        margin-bottom: 1.6rem;
+        margin-bottom: 2rem;
     }
 
     .holiday-hall-more .holiday-hall-card-know__box {
@@ -6183,6 +6183,21 @@
         padding: 0 1.6rem 33px;
     }
 
+    .holiday-hall-card-menu .holiday-hall-carousel .owl-nav .owl-prev {
+        left:1.6rem !important;
+    }
+    .holiday-hall-card-menu .holiday-hall-carousel .owl-nav .owl-next {
+        right:1.6rem;
+    }
+
+    .holiday-hall-card-client .holiday-hall-carousel .owl-nav .owl-prev {
+        left:.6rem !important;
+    }
+    .holiday-hall-card-client .holiday-hall-carousel .owl-nav .owl-next {
+        right: .5rem;
+    }
+
+
 }
 
 @media (max-width: 570px) {
@@ -6769,6 +6784,11 @@
 
     .holiday-hall__head {
         padding: 2.5rem 1.6rem 3rem;
+    }
+
+    .holiday-hall {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
     }
 }
 
