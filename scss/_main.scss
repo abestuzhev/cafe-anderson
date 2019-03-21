@@ -24209,7 +24209,7 @@ a.show-more__button:hover {
 
         &__slider {
             position: relative;
-            overflow:hidden;
+            //overflow:hidden;
             max-height: 600px;
 
             &::after {
@@ -24488,6 +24488,7 @@ a.show-more__button:hover {
 
     .holiday-hall-card-tour {
         margin-bottom: 2rem;
+        min-height:350px;
     }
 
     .holiday-hall-card-menu {
@@ -24543,10 +24544,122 @@ a.show-more__button:hover {
         transition: all .1s ease-in-out;
         cursor:pointer;
 
+        &::after {
+            content:'';
+            border: none;
+        }
+
         &.active {
             background-color: #cc3298;
             color: #ffffff;
             padding: 12px 4rem 13px;
+        }
+    }
+
+    .holiday-hall-card__body {
+        margin-bottom: 0;
+    }
+
+    .holiday-hall-card-know {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        position: relative;
+
+
+        &__text {
+            padding-right: 5rem;
+            font-family:$font_serif;
+            h2, h3 {
+                font-size: 2.4rem;
+                color: #79b224;
+                text-transform: uppercase;
+                margin-bottom: 1.6rem;
+            }
+
+            ul {
+                margin-bottom: 1.6rem;
+            }
+
+            li {
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #181818;
+            }
+
+            p {
+                color: #262526;
+                font-size: 1.7rem;
+            }
+
+
+        }
+
+        .box-decor-1 {
+            position: absolute;
+            z-index: 10;
+            left: 7%;
+            top: 13%;
+        }
+
+        .box-decor-2 {
+            position: absolute;
+            z-index: 10;
+            left: 8%;
+            bottom: -13%;
+        }
+
+        .box-decor-3 {
+            position: absolute;
+            z-index: 10;
+            right: 2%;
+            bottom: -11%;
+        }
+
+        &__box {
+            background-color: #a9cb58;
+            background: url(../img/holiday-hall/know-box-bg.png) 0 0 no-repeat;
+            -webkit-background-size:cover;
+            background-size:cover;
+            padding: 37px 98px;
+            min-width: 40rem;
+            position: relative;
+        }
+
+        &__title {
+            font-size: 4rem;
+            color: #ffffff;
+            font-family:$font_decor;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 1.6rem;
+        }
+
+        &__btn {
+            display: block;
+            font-size: 3.7rem;
+            color: #555451;
+            background-color: #fff;
+            border-radius: 50px;
+            font-family:$font_decor;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            padding: 8px 14px;
+            line-height: .8;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+                transition: all .2s ease-in-out;
+            }
+
+            &::after {
+                content:'';
+                border:none;
+            }
         }
     }
 
@@ -24575,6 +24688,7 @@ a.show-more__button:hover {
             justify-content: center;
             align-items: center;
             img {
+                height:auto;
                 display: inline-block;
                 -o-object-fit: none;
                 object-fit: none;

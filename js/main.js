@@ -1660,11 +1660,11 @@ $(document).ready(function ($) {
             0:{
                 items:1
             },
-            540:{
+            730:{
                 nav: true,
                 items:2
             },
-            780:{
+            880:{
                 nav: true,
                 items:3
             },

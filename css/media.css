@@ -1114,6 +1114,7 @@
     }
 
 
+
 }
 
 @media screen and (max-width: 985px) {
@@ -2224,6 +2225,61 @@
     .lk-profile-edit__address .c-form__item:last-child {
         flex: 0 1 7%;
     }
+
+
+    .holiday-hall-more .holiday-hall-card-know {
+        display: block;
+        padding: 2rem 0 3rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__text {
+        padding-right: 0;
+        margin-bottom: 1.6rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__box {
+        background: #a9cb58;
+        text-align: center;
+        padding: 17px 45px 20px;
+        min-width: 0;
+        margin-left: -5.3rem;
+        margin-right: -5.3rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__box::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -.8rem;
+        left: 0;
+        width: 100%;
+        height: 1.5rem;
+        background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+    }
+    .holiday-hall-more .holiday-hall-card-know__box::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        bottom: -.8rem;
+        left: 0;
+        width: 100%;
+        height: 1.5rem;
+        background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know .box-decor-1 {
+        left: 1%
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__title {
+        margin-bottom: 1rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__btn {
+        width: auto;
+        display: inline-block;
+    }
+
 }
 
 @media (max-width: 980px) {
@@ -2681,6 +2737,30 @@
     }
     .holiday-hall-card-info__item:last-child {
         margin-bottom: 0;
+    }
+
+    .holiday-hall-more .holiday-hall-card__title h3 {
+        font-size: 4rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-tour {
+        overflow: hidden;
+        height:350px;
+    }
+
+    .holiday-hall-more .holiday-hall-card-tour img {
+        height: 100%;
+        width: auto;
+    }
+
+    .holiday-hall-more .holiday-hall-card-tour__btns {
+        width: 100%;
+        text-align: center;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__box {
+        margin-left: -3.5rem;
+        margin-right: -3.5rem;
     }
 }
 
@@ -4996,6 +5076,11 @@
         display: none;
     }
 
+    .holiday-hall-more .holiday-hall-card-know__box {
+        margin-left: -1.6rem;
+        margin-right: -1.6rem;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -5824,8 +5909,6 @@
 }
 
 @media (max-width: 600px) {
-
-    
     
 
     .owl-carousel:not(.ignore-600px) {
@@ -6078,6 +6161,27 @@
     }
 
 
+    .holiday-hall-more .holiday-hall-card-menu {
+        padding: 0;
+    }
+
+    .holiday-hall-more .holiday-hall-card-menu__title,
+    .holiday-hall-more .holiday-hall-card-menu__text {
+        padding: 0 1.6rem;
+    }
+
+    .holiday-hall-card-menu .owl-nav {
+        top: 50% !important;
+
+    }
+
+    .holiday-hall-card-menu {
+        margin-bottom: 1rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-client {
+        padding: 0 1.6rem 33px;
+    }
 
 }
 
@@ -10883,6 +10987,19 @@
         font-weight: bold;
     }
 
+    .holiday-hall-more .holiday-hall-card-know__text li {
+        font-size: 1.5rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__text p {
+        font-size: 1.5rem;
+    }
+
+    .holiday-hall-more .holiday-hall-card-know__text h3 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -11034,6 +11151,8 @@
     .franchise-conditions-list {
         padding: 0rem 1.6rem;
     }
+
+
 }
 
 @media screen and (max-width: 756px) {
