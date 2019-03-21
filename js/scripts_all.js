@@ -10881,6 +10881,33 @@ $(document).ready(function ($) {
         }
     });
 
+    /*слайдер карусель*/
+    $('.holiday-hall-carousel').owlCarousel({
+        loop:true,
+        // nav:true,
+        margin:20,
+        // items: 4,
+        // center: true,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            540:{
+                nav: true,
+                items:2
+            },
+            780:{
+                nav: true,
+                items:3
+            },
+            1200:{
+                nav: true,
+                items:4
+            }
+        }
+    });
+
     $('.c-card-product__slider').owlCarousel({
         loop:true,
         // nav:true,

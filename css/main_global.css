@@ -26496,7 +26496,20 @@ a.show-more__button:hover {
   .holiday-hall-sentence {
     padding: 2.8rem 2.8rem;
     background: #c44890 url(../img/holiday-hall/sentence-bg.png) 0 0 no-repeat;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    position: relative; }
+    .holiday-hall-sentence .decor-grass-1 {
+      position: absolute;
+      right: 4%;
+      bottom: 5%; }
+    .holiday-hall-sentence .decor-grass-2 {
+      position: absolute;
+      right: 23%;
+      bottom: 9%; }
+    .holiday-hall-sentence .decor-grass-3 {
+      position: absolute;
+      left: 24%;
+      bottom: 7%; }
     .holiday-hall-sentence__title {
       text-align: center;
       color: #ffffff;
@@ -26574,6 +26587,125 @@ a.show-more__button:hover {
       border: 2px solid #c44890;
       border-radius: 50px;
       cursor: pointer; }
+
+/*------------------------------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+.holiday-hall-more .holiday-hall-card__title {
+  background-color: #fff; }
+  .holiday-hall-more .holiday-hall-card__title h3 {
+    font-size: 5rem;
+    color: #c44890;
+    font-family: "BebasNeue";
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.holiday-hall-more .holiday-hall-card-tour {
+  margin-bottom: 2rem; }
+
+.holiday-hall-more .holiday-hall-card-menu {
+  padding: 0 5.3rem; }
+  .holiday-hall-more .holiday-hall-card-menu__title {
+    color: #555451;
+    font-family: "SummerFont";
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    line-height: 1;
+    margin-bottom: .6rem;
+    text-align: center; }
+  .holiday-hall-more .holiday-hall-card-menu__text {
+    color: #555451;
+    font-size: 1.6rem;
+    font-family: "PT Serif Caption";
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2.2rem; }
+
+.holiday-hall-more .holiday-hall-card-tour {
+  position: relative; }
+  .holiday-hall-more .holiday-hall-card-tour img {
+    width: 100%;
+    height: auto; }
+
+.holiday-hall-more .holiday-hall-card-tour__btns {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 3rem; }
+
+.holiday-hall-more .holiday-hall-card-tour__btn {
+  display: inline-block;
+  color: #2e2e2e;
+  font-size: 3.7rem;
+  font-family: "SummerFont";
+  background-color: #fff;
+  padding: .8rem 2rem 1rem;
+  border-radius: 50px;
+  line-height: .7;
+  margin: 0 6px;
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  cursor: pointer; }
+  .holiday-hall-more .holiday-hall-card-tour__btn.active {
+    background-color: #cc3298;
+    color: #ffffff;
+    padding: 12px 4rem 13px; }
+
+.holiday-hall-more .holiday-hall-card-client {
+  padding: 0 5.3rem;
+  margin-bottom: 3rem; }
+  .holiday-hall-more .holiday-hall-card-client__title {
+    color: #555451;
+    font-family: "SummerFont";
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1.4rem; }
+  .holiday-hall-more .holiday-hall-card-client .holiday-hall-card-client {
+    margin-bottom: 0; }
+  .holiday-hall-more .holiday-hall-card-client .holiday-hall-carousel__item {
+    height: 200px;
+    -webkit-box-shadow: 0px 3px 13.8px 1.2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 3px 13.8px 1.2px rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .holiday-hall-more .holiday-hall-card-client .holiday-hall-carousel__item img {
+      display: inline-block;
+      -o-object-fit: none;
+      object-fit: none; }
+  .holiday-hall-more .holiday-hall-card-client .holiday-hall-carousel .owl-item {
+    padding: 6px; }
+
+.holiday-hall-carousel {
+  margin-bottom: 1.5rem; }
+  .holiday-hall-carousel__item {
+    height: 315px;
+    border-radius: 4px;
+    overflow: hidden; }
+    .holiday-hall-carousel__item img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .holiday-hall-carousel .owl-nav .owl-next {
+    right: -4rem; }
+  .holiday-hall-carousel .owl-nav .owl-prev {
+    left: -4rem; }
 
 .popup-pie {
   /* Ручной readmore */

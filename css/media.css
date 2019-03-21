@@ -462,6 +462,14 @@
     .contact-us__header {
         background: #fdf7e8 url(../img/bg-header.png) repeat;
     }
+
+    .holiday-hall-sentence .decor-grass-3 {
+        left: 6%;
+    }
+
+    .holiday-hall-sentence .decor-grass-2 {
+        display: none;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -1098,6 +1106,11 @@
 
     .holiday-hall-sentence {
         background: #c44890
+    }
+
+    .holiday-hall-sentence .decor-grass-1,
+    .holiday-hall-sentence .decor-grass-3 {
+        display: none;
     }
 
 
