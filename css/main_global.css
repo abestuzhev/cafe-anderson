@@ -1527,6 +1527,18 @@ i.icon-chair {
   height: .65em;
   fill: #000; }
 
+.symbol-3d {
+  font-size: 3.6rem;
+  width: 1em;
+  height: .8em;
+  fill: #000; }
+
+.symbol-video {
+  font-size: 3.2rem;
+  width: 1em;
+  height: 1em;
+  fill: #000; }
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -26655,7 +26667,9 @@ a.show-more__button:hover {
   .holiday-hall-more .holiday-hall-card-tour__btn.active {
     background-color: #cc3298;
     color: #ffffff;
-    padding: 12px 4rem 13px; }
+    padding: 12px 3rem 13px; }
+    .holiday-hall-more .holiday-hall-card-tour__btn.active svg {
+      fill: #fff; }
 
 .holiday-hall-more .holiday-hall-card__body {
   margin-bottom: 0; }

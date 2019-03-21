@@ -24552,7 +24552,11 @@ a.show-more__button:hover {
         &.active {
             background-color: #cc3298;
             color: #ffffff;
-            padding: 12px 4rem 13px;
+            padding: 12px 3rem 13px;
+
+            svg {
+                fill: #fff;
+            }
         }
     }
 
