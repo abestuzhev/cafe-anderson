@@ -5144,6 +5144,20 @@
         border-radius: 0;
     }
 
+    .popup-graduation .popup,
+    .popup-offer--easter .popup {
+        position: static !important;
+        background-size: cover !important;
+        /*height: auto !important;*/
+        height: 38rem !important;
+    }
+
+    .popup-graduation .popup-graduation__close,
+    .popup-offer--easter .popup-graduation__close {
+        top: 4px !important;
+        right: 9px !important;
+    }
+
     .fixed-input {
         position: fixed;
         width: 100%;
