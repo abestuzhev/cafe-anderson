@@ -10856,6 +10856,8 @@ test popup
       margin-bottom: 0; }
   .cafe-list-layout .filter {
     margin-bottom: 6rem; }
+  .cafe-list-layout .SumoSelect.open > .optWrapper {
+    min-width: 350px; }
 
 .cafe-map {
   width: 100%;
