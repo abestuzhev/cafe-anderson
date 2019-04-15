@@ -24,7 +24,9 @@
     
     <!--tooltipster-->
     <link rel="stylesheet" href="bower_components/tooltipster/dist/css/tooltipster.bundle.css">
-    
+
+    <!--fancybox-->
+    <link rel="stylesheet" type="text/css" href="./js/fancybox/jquery.fancybox.min.css">
     
     <!--owl carousel-->
     <link rel="stylesheet" href="./js/owlcarousel/owl.carousel.css">
@@ -1192,7 +1194,13 @@
                         <a href="#" class="popup-product__check-mobile">Чек</a>
                         <div class="c-card-product">
                             <div class="c-card-product__header">
-                                <div class="c-card-product__img"><img src="./img/product-1.png" alt=""></div>
+                                <div class="c-card-product__img">
+                                    <a href="./img/product-1.png" data-fancybox>
+                                        <img src="./img/product-1.png" alt="">
+                                    </a>
+
+
+                                </div>
                                 <div class="c-card-product__info">
                                     <div class="c-card-product__weight">Основной состав (250г.):</div>
                                     <div class="c-card-product__ingredients">
@@ -3992,6 +4000,7 @@
 <!--<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
 <!--<script src="./js/custom-map.js"></script>-->
 <!--<script src="./js/main.js"></script>-->
+<script src="./js/fancybox/jquery.fancybox.min.js"></script>
 <script async src="./js/scripts_all.js"></script>
 <script async src="./js/lazyload.js"></script>
 
