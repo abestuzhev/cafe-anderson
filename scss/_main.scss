@@ -772,6 +772,25 @@ main {
 
 //------------------------------------------------custom popup*/
 
+.popup__virtual {
+    .popup {
+        max-width: 780px;
+        width: 100%;
+    }
+
+    .popup-body {
+        padding: 15px 10px;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: auto !important;
+        //padding-top: 25.65%;
+        min-height: 70vh;
+    }
+}
+
+
 .popup__write-to-us {
     //background: #fff url(../img/popup-bg_write-to-us.jpg) no-repeat 100% 100%;
     .icon-berry {

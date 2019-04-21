@@ -8672,6 +8672,18 @@ main {
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
+.popup__virtual .popup {
+  max-width: 780px;
+  width: 100%; }
+
+.popup__virtual .popup-body {
+  padding: 15px 10px; }
+
+.popup__virtual iframe {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 70vh; }
+
 .popup__write-to-us .icon-berry {
   position: absolute;
   bottom: 2.6%;

@@ -2150,6 +2150,7 @@ $(document).ready(function ($) {
     showPopup(".c-card-new-year__box", '.popup-new-year');
 
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
+    showPopup(".js-test-21042019", '.popup__virtual');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();

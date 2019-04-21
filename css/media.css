@@ -2341,6 +2341,11 @@
         bottom: -6.5rem;
     }
 
+    .cafe-slider__body {
+        overflow: visible;
+        box-shadow: none;
+    }
+
     .cafe-slider__tour::after {
         content: '';
         border: none;
@@ -5079,6 +5084,10 @@
     .holiday-hall-more .holiday-hall-card-know__box {
         margin-left: -1.6rem;
         margin-right: -1.6rem;
+    }
+
+    .popup__virtual iframe {
+        min-height: 90vh;
     }
 
 }
