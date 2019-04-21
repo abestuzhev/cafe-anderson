@@ -2678,7 +2678,7 @@
     .fotorama__img {
         width: auto !important;
         top: 0 !important;
-        height: 100% !important;
+        /*height: 100% !important;*/
     }
 
     .holiday-hall-card__slider .fotorama__arr--prev {
@@ -5462,6 +5462,7 @@
     .holiday-hall-sentence__form .c-personal-data {
         text-align: left;
     }
+
 
 
 }
