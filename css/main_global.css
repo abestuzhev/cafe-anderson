@@ -26859,6 +26859,145 @@ a.show-more__button:hover {
   .holiday-hall-carousel .owl-nav .owl-prev {
     left: -4rem; }
 
+/*-----------------------------------*/
+.sitemap {
+  padding: 37px;
+  background-color: #fff;
+  font-family: "PT Serif Caption";
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .4rem;
+  font-family: "PT Serif Caption";
+  margin-bottom: 70px; }
+
+.sitemap-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.sitemap-grid__col {
+  width: 25%;
+  margin-bottom: 26px; }
+  .sitemap-grid__col.has-child {
+    width: 100%; }
+
+.sitemap-card__title {
+  font-size: 20px;
+  color: #9b806f;
+  margin-bottom: 11px; }
+  .sitemap-card__title a {
+    color: #9b806f; }
+    .sitemap-card__title a::after {
+      content: '';
+      border: none; }
+
+.sitemap-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.sitemap-card-list__item {
+  width: 25%; }
+  .sitemap-card-list__item ul {
+    color: #555451;
+    border-left: 1px dotted #808080; }
+  .sitemap-card-list__item li {
+    padding-left: 20px;
+    margin-bottom: 4px;
+    position: relative; }
+    .sitemap-card-list__item li::after {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 11px;
+      width: 8px;
+      height: 1px;
+      border-top: 1px dotted #808080; }
+    .sitemap-card-list__item li:last-child::before {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: 13px;
+      width: 10px;
+      bottom: 0;
+      background-color: #fff; }
+  .sitemap-card-list__item a {
+    text-decoration: none; }
+    .sitemap-card-list__item a::after {
+      content: '';
+      border: none; }
+
+.sitemap-card-list__title {
+  font-size: 17px;
+  color: #7cbd41;
+  margin-bottom: 8px; }
+
+/*---------------------------------------*/
+.promocode {
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: .4rem;
+  font-family: "PT Serif Caption";
+  margin-bottom: 70px; }
+  .promocode .holiday-hall-sentence {
+    background: #c44890; }
+
+.promocode-banner {
+  height: 547px;
+  background: url(../img/promocode/promocode-banner-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 14px; }
+  .promocode-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -.8rem;
+    left: 0;
+    width: 100%;
+    height: 1.4rem;
+    background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+
+.promocode-body {
+  padding: 42px 54px; }
+
+.promocode-regulations__list {
+  list-style-type: none;
+  counter-reset: item;
+  position: relative; }
+
+.promocode-regulations__item {
+  margin-bottom: 20px;
+  padding-left: 28px; }
+  .promocode-regulations__item::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    position: absolute;
+    left: 0;
+    width: 2.4rem;
+    text-align: right;
+    font-weight: 700; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
