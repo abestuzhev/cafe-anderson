@@ -776,6 +776,10 @@
         width: 30rem;
         top: -1rem;
     }
+
+    .promocode-body {
+        padding: 30px 24px;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -1337,6 +1341,15 @@
         margin-right: 0;
         padding: .8rem .6rem .8rem 1rem;
     }
+
+    .promocode-banner {
+        height:37vw;
+    }
+
+    .promocode-how__title {
+        font-size: 38px;
+        margin-bottom: 14px;
+    }
 }
 
 @media (max-width: 1178px) {
@@ -1398,6 +1411,10 @@
 
     #child-holiday-map .c-card-map .c-card-cafe__img {
         height: auto;
+    }
+
+    .promocode-how__item {
+        width: 50%;
     }
 }
 
@@ -5090,6 +5107,16 @@
         min-height: 90vh;
     }
 
+    .promocode {
+        margin-left: -22px;
+        margin-right: -22px;
+        margin-bottom: 2.4em;
+    }
+
+    .promocode-body {
+        padding: 20px 16px 30px;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -6377,6 +6404,10 @@
         margin-left: 0;
     }
 
+    .promocode-how__item {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 540px) {
@@ -6810,6 +6841,11 @@
         bottom: -7px;
     }
 
+    .promocode .holiday-hall__desc::after {
+        content: '';
+        bottom: 16px;
+    }
+
     .holiday-hall-sentence {
         padding: 1.8rem 1.2rem;
     }
@@ -6821,6 +6857,18 @@
     .holiday-hall {
         margin-left: -1.6rem;
         margin-right: -1.6rem;
+    }
+
+    .promocode {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+
+    .promocode .holiday-hall-sentence__btn {
+        bottom: -40px;
+        font-size: 3.7rem;
+        padding: .6rem 3.4rem;
     }
 }
 
@@ -9188,6 +9236,22 @@
     .holiday-space-list .calendar-navigator__month {
         padding-left: .7rem;
         padding-right: .7rem;
+    }
+
+    .promocode-table-row {
+        display: block;
+    }
+    .promocode .promocode-table-col {
+        margin-bottom: 6px;
+        width: 100%;
+    }
+
+    .promocode-table-header .promocode-table-col:nth-child(2) {
+        display: none;
+    }
+
+    .promocode-table-row {
+        padding: 9px 0 3px;
     }
 
 }
@@ -12002,6 +12066,10 @@
 
     .bonus-info__phone {
         font-size: 2.9rem;
+    }
+
+    .promocode-table-header .promocode-table-col {
+        opacity: 0;
     }
 
 }

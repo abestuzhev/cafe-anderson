@@ -24889,6 +24889,19 @@ a.show-more__button:hover {
     .holiday-hall-sentence {
         background: #c44890;
     }
+
+  .holiday-hall__desc {
+    margin-bottom: 4px;
+    p {
+      text-align: center;
+      max-width: 17rem;
+    }
+
+    &::before {
+      content:'';
+      display: none;
+    }
+  }
 }
 
 .promocode-banner {
@@ -24937,4 +24950,119 @@ a.show-more__button:hover {
             font-weight: 700;
         }
     }
+}
+
+.promocode-table {
+  position: relative;
+
+  &-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-top: 1px dotted #9b9595;
+    //border-bottom: 1px dotted #9b9595;
+
+    &:last-child {
+      border-bottom: 1px dotted #9b9595;
+    }
+  }
+
+  &-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 6px;
+    position: relative;
+
+    .promocode-table-col {
+      color: #5e9905;
+      font-size: 13px;
+    }
+  }
+
+  &-body {
+
+    background-color: #fcfcfc;
+  }
+
+  &-col {
+    padding: 0 18px;
+    color: #553023;
+
+    &:nth-child(1) {
+      width: 40%;
+    }
+
+  }
+
+  &-btn {
+    position: absolute;
+    color: #5e9905;
+    font-size: 13px;
+    right: 0;
+    top: 0;
+
+    &::after {
+      content: '';
+      border: none;
+    }
+  }
+}
+
+.promocode-how {
+  &__title {
+    color: #555451;
+    font-family:$font_decor;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  &__item {
+    width: 25%;
+    margin-bottom: 20px;
+
+
+
+
+  }
+
+  &-card {
+    position: relative;
+    padding: 6px;
+    &__num {
+      width: 40px;
+      height: 40px;
+      background-color: #a9cb58;
+      border-radius: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-weight: 700;
+      font-size: 16px;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+      }
+    }
+
+    &__text {
+      padding-left: 50px;
+    }
+  }
 }
