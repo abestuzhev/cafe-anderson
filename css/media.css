@@ -1351,6 +1351,11 @@
         font-size: 38px;
         margin-bottom: 14px;
     }
+
+    .sitemap-grid__col,
+    .sitemap-card-list__item {
+        width: 33%;
+    }
 }
 
 @media (max-width: 1178px) {
@@ -2784,6 +2789,11 @@
     .holiday-hall-more .holiday-hall-card-know__box {
         margin-left: -3.5rem;
         margin-right: -3.5rem;
+    }
+
+    .sitemap-grid__col,
+    .sitemap-card-list__item {
+        width: 50%;
     }
 }
 
@@ -5726,10 +5736,15 @@
 
 
     .sitemap {
-        padding: 1.8rem 0;
+        padding: 18px;
         margin-left: -14px;
         margin-right: -14px;
         margin-bottom: 2.4rem;
+    }
+
+    .sitemap-card__title {
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .contact .filter-layout,
@@ -6416,6 +6431,14 @@
 
     .promocode-how__item {
         width: 100%;
+    }
+
+    .sitemap-grid__col, .sitemap-card-list__item {
+        width: 100%;
+    }
+
+    .sitemap-grid__col {
+        margin-bottom: 10px;
     }
 
 }
