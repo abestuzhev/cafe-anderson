@@ -790,7 +790,6 @@ main {
     }
 }
 
-
 .popup__write-to-us {
     //background: #fff url(../img/popup-bg_write-to-us.jpg) no-repeat 100% 100%;
     .icon-berry {
@@ -2693,7 +2692,7 @@ test popup
     right: 0;
     bottom: 0;
     // background-color:red;
-    opacity:.5;
+    opacity: .5;
 }
 
 .white-popup-block {
@@ -3595,7 +3594,6 @@ test popup
                 transition: opacity .2s ease;
             }
 
-
             .symbol-bird-left,
             .filter-subscription-stripes,
             .filter-subscription-mark {
@@ -3770,7 +3768,7 @@ test popup
             top: 27px;
             right: 62px;
             font-size: 3rem;
-            fill:$black;
+            fill: $black;
         }
     }
 }
@@ -4287,7 +4285,7 @@ test popup
 
                 &--holiday {
                     box-shadow: inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
-                   
+
                     background: url(../img/holidays-button-bg.png);
                     background-size: 171%;
                     font-size: 1.3rem;
@@ -5461,6 +5459,7 @@ test popup
     }
 
 }
+
 /*связаться с нами (contact-us)----------------------------------------------------*/
 .contact-us {
     font-family: $font_serif;
@@ -5533,7 +5532,7 @@ test popup
     &__btn {
         padding: .8rem 6rem;
         font-size: 3.7rem;
-        font-family:$font_decor;
+        font-family: $font_decor;
         text-transform: uppercase;
         background-color: #9acc4e;
         border-radius: 50rem;
@@ -5555,7 +5554,7 @@ test popup
         }
 
         &::after {
-            content:'';
+            content: '';
             position: absolute;
             bottom: -.8rem;
             left: 0;
@@ -5582,7 +5581,6 @@ test popup
             width: 5.4rem;
         }
     }
-
 
     &-office {
         position: relative;
@@ -5630,8 +5628,6 @@ test popup
     .filter .l-button__center {
         display: block;
     }
-
-
 
     &-cafe {
 
@@ -10626,7 +10622,6 @@ test popup
             line-height: 1;
             position: relative;
 
-
             &::before {
                 content: '';
                 position: absolute;
@@ -10749,7 +10744,6 @@ test popup
             vertical-align: top;
             min-height: 4rem;
 
-
             &:before {
                 content: counter(item) "";
                 counter-increment: item;
@@ -10769,7 +10763,7 @@ test popup
 
         &__card {
             padding-left: 5.4rem;
-            text-align:left;
+            text-align: left;
             display: flex;
             align-items: center;
             height: 100%;
@@ -11327,7 +11321,6 @@ test popup
     .timeline-body {
         width: 100%;
     }
-
 
 }
 
@@ -17339,7 +17332,7 @@ test popup
             position: absolute;
             left: 6%;
             bottom: 3px;
-            overflow:hidden;
+            overflow: hidden;
             height: 9rem;
 
             svg {
@@ -17350,7 +17343,7 @@ test popup
             position: absolute;
             bottom: 3px;
             right: 4%;
-            overflow:hidden;
+            overflow: hidden;
             height: 6.4rem;
         }
         &__tree {
@@ -22116,17 +22109,16 @@ a.show-more__button:hover {
                 margin-right: -.5rem;
             }
 
-
             .c-col {
                 padding: 1.4rem .5rem;
             }
 
-    &-body {/*new-year-body*/
-        padding: 0 15.4rem 0;
-        position: relative;
-        overflow:hidden;
-        min-height: 33rem;
-    }
+            &-body { /*new-year-body*/
+                padding: 0 15.4rem 0;
+                position: relative;
+                overflow: hidden;
+                min-height: 33rem;
+            }
 
             .c-col-6 {
                 &:nth-child(2) {
@@ -22135,8 +22127,6 @@ a.show-more__button:hover {
             }
         }
     }
-
-   
 
     &-delivery {
         &__list {
@@ -22268,13 +22258,13 @@ a.show-more__button:hover {
     }
 
 }
+
 .new-year-2019-banner {
     padding: 10px 0 20px 0;
 
     img {
         width: 100%;
     }
-
 
     a::after {
         content: '';
@@ -22286,13 +22276,13 @@ a.show-more__button:hover {
 //     justify-content: flex-start;
 // }
 
-    .banner-new-order .new-year-order__item:first-child {
-        width: 13rem;
-    }
+.banner-new-order .new-year-order__item:first-child {
+    width: 13rem;
+}
 
-    .banner-new-order .new-year-order__price {
-        min-width: 9rem;
-    }
+.banner-new-order .new-year-order__price {
+    min-width: 9rem;
+}
 
 .popup-new-year {
     .popup {
@@ -22446,14 +22436,14 @@ a.show-more__button:hover {
 
             &::after {
                 content: '';
-                border:none;
+                border: none;
 
             }
 
             &:hover {
                 color: #ffffff;
                 transtion: all .1s ease;
-                box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,.2);
+                box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .2);
             }
         }
 
@@ -22600,7 +22590,6 @@ a.show-more__button:hover {
             text-align: center;
             width: 33.3333%;
             position: relative;
-
 
         }
 
@@ -22764,7 +22753,7 @@ a.show-more__button:hover {
         &__title {
             font-size: 4rem;
             color: #7cbd41;
-            font-family:$font_decor;
+            font-family: $font_decor;
             text-align: center;
             text-transform: uppercase;
             padding: 2rem 0;
@@ -22883,7 +22872,7 @@ a.show-more__button:hover {
             background-color: #f5f5f5;
             border: 3px solid #f5f5f5;
             border-radius: .4rem;
-            height:100%;
+            height: 100%;
 
             &__date {
                 font-size: 1.2rem;
@@ -22918,7 +22907,6 @@ a.show-more__button:hover {
             &__btn {
                 font-size: 1.4rem;
             }
-
 
         }
 
@@ -23152,7 +23140,6 @@ a.show-more__button:hover {
         }
     }
 
-
     &-card {
         padding: 20px 10px;
         border-top: 1px dashed #828282;
@@ -23206,7 +23193,7 @@ a.show-more__button:hover {
 
                 span {
                     font-style: italic;
-                    color:$black;
+                    color: $black;
                     font-size: 1.4rem;
                 }
             }
@@ -23225,26 +23212,26 @@ a.show-more__button:hover {
         }
     }
 
-   .irs--round .irs-line {
-    background-color: #7cbd41;
-   }
+    .irs--round .irs-line {
+        background-color: #7cbd41;
+    }
 
-   .irs--round .irs-bar {
-    background-color: #b81f79;
-   }
+    .irs--round .irs-bar {
+        background-color: #b81f79;
+    }
 
-   .irs--round .irs-handle {
-    border-color: #c44890;
-    background-color: #c44890;
-   }
+    .irs--round .irs-handle {
+        border-color: #c44890;
+        background-color: #c44890;
+    }
 
-   .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
-    font-size: 14px;
-    line-height: 1;
-    text-shadow: none;
-    padding: 3px 5px;
-    background-color: #b81f79;
-   }
+    .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
+        font-size: 14px;
+        line-height: 1;
+        text-shadow: none;
+        padding: 3px 5px;
+        background-color: #b81f79;
+    }
 
     .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
 
@@ -23261,10 +23248,9 @@ a.show-more__button:hover {
     }
 
     & + .bonus-info:after {
-        content:'';
+        content: '';
         display: none;
     }
-
 
 }
 
@@ -23278,10 +23264,8 @@ a.show-more__button:hover {
         background-color: #e2cc98;
         background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
 
-
-
         &.remove-last {
-            height:50px;
+            height: 50px;
             .file-tab-tag {
                 display: none;
             }
@@ -23326,9 +23310,9 @@ a.show-more__button:hover {
             right: 15px;
             height: 10px;
             background-color: #ecedf2;
-            box-shadow: 0 -3px 7px 0 rgba(0,0,0,.1),
-            0px -6px 0px 0px rgba(255,255,255,1);
-            border-radius:4px 4px 0 0;
+            box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, .1),
+            0px -6px 0px 0px rgba(255, 255, 255, 1);
+            border-radius: 4px 4px 0 0;
         }
 
         &:nth-child(1) .file-tab-inset {
@@ -23337,47 +23321,47 @@ a.show-more__button:hover {
         }
         &:nth-child(2) .file-tab-inset {
             left: 8%;
-            z-index:2;
+            z-index: 2;
         }
         &:nth-child(3) .file-tab-inset {
             left: 12%;
-            z-index:3;
+            z-index: 3;
         }
         &:nth-child(4) .file-tab-inset {
             left: 16%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(5) .file-tab-inset {
             left: 22%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(6) .file-tab-inset {
             left: 26%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(7) .file-tab-inset {
             left: 30%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(8) .file-tab-inset {
             left: 34%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(9) .file-tab-inset {
             left: 38%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(10) .file-tab-inset {
             left: 42%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(11) .file-tab-inset {
             left: 46%;
-            z-index:4;
+            z-index: 4;
         }
         &:nth-child(12) .file-tab-inset {
             left: 50%;
-            z-index:4;
+            z-index: 4;
         }
 
         &__last {
@@ -23401,9 +23385,9 @@ a.show-more__button:hover {
         //position: relative;
         //box-shadow: 0 10px 20px rgba(0,0,0,.5);
         //max-width: 200px;
-        padding: 8px 20px 0 ;
+        padding: 8px 20px 0;
         border-radius: 10px 10px 0 0;
-        cursor:pointer;
+        cursor: pointer;
 
         span {
             font-size: 3.5rem;
@@ -23469,9 +23453,8 @@ a.show-more__button:hover {
             top: -23px;
             right: 8px;
             z-index: 0;
-            box-shadow: inset 0px -7px 25px 0px rgba(0,0,0,0.21);
+            box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
         }
-
 
     }
 
@@ -23480,7 +23463,7 @@ a.show-more__button:hover {
         z-index: 2;
         top: 50%;
         left: 50%;
-        transform:translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         display: inline-block;
         padding: .5rem 5rem;
         line-height: 1;
@@ -23494,7 +23477,7 @@ a.show-more__button:hover {
 
         }
         &::before {
-            content:'';
+            content: '';
             position: absolute;
             opacity: .7;
             left: -3rem;
@@ -23505,7 +23488,7 @@ a.show-more__button:hover {
         }
 
         &::after {
-            content:'';
+            content: '';
             position: absolute;
             opacity: .7;
             right: -3rem;
@@ -23525,7 +23508,7 @@ a.show-more__button:hover {
             height: 34px;
         }
     }
-    
+
     &__body {
         display: none;
         background-color: #fff;
@@ -23536,7 +23519,7 @@ a.show-more__button:hover {
         z-index: 3;
 
         &::before {
-            content:'';
+            content: '';
             position: absolute;
             top: -27px;
             right: 68px;
@@ -23565,7 +23548,7 @@ a.show-more__button:hover {
 
     &-error {
         margin-bottom: 1rem;
-        font-family:$font_decor;
+        font-family: $font_decor;
         text-align: center;
         font-size: 5rem;
         text-transform: uppercase;
@@ -23573,12 +23556,11 @@ a.show-more__button:hover {
         padding-top: 1.4rem;
     }
 
-
 }
 
 .bonus-info {
     border-radius: .4rem;
-    font-family:$font_serif;
+    font-family: $font_serif;
 
     &__content {
         text-align: center;
@@ -23685,7 +23667,6 @@ a.show-more__button:hover {
     box-shadow: 0px 5px 9.2px 0.8px rgba(0, 0, 0, 0.15);
     border-radius: .6rem;
 
-
     &__head {
         margin-bottom: 2rem;
     }
@@ -23717,7 +23698,6 @@ a.show-more__button:hover {
         font-family: $font_serif;
         color: $black;
     }
-
 
     &-banner {
         color: $black;
@@ -23804,7 +23784,6 @@ a.show-more__button:hover {
         }
     }
 
-
     &-dish {
         &__list {
             display: flex;
@@ -23835,7 +23814,7 @@ a.show-more__button:hover {
             &__title {
                 font-size: 4.8rem;
                 text-transform: uppercase;
-                color:$black;
+                color: $black;
                 font-family: $font_decor;
                 line-height: 1;
             }
@@ -23907,7 +23886,7 @@ a.show-more__button:hover {
                     &:nth-child(1) {
                     }
                     &:nth-child(2) {
-                        flex:1;
+                        flex: 1;
                         .c-button__width {
 
                         }
@@ -23928,7 +23907,6 @@ a.show-more__button:hover {
             }
         }
 
-
     }
 
     &-discount {
@@ -23941,7 +23919,7 @@ a.show-more__button:hover {
         align-items: center;
         &__name {
             font-size: 1.6rem;
-            color:$black;
+            color: $black;
             font-style: italic;
             padding-right: 1rem;
         }
@@ -23949,12 +23927,11 @@ a.show-more__button:hover {
         &__number {
             color: #bb2b7f;
             font-size: 3.5rem;
-            font-family:$font_sans-serif;
+            font-family: $font_sans-serif;
             font-weight: 700;
 
         }
     }
-
 
     &-filling {
         .c-pass-banner__decor-1 {
@@ -23979,16 +23956,13 @@ a.show-more__button:hover {
         }
     }
 
-
-
     &-gift {
         position: relative;
         padding: 3rem 7rem 7rem;
-        border:3px solid #ee107b;
+        border: 3px solid #ee107b;
         border-radius: .6rem;
         margin-bottom: 4.8rem;
         box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, 0.2);
-
 
         &__list {
             display: flex;
@@ -24029,7 +24003,7 @@ a.show-more__button:hover {
                 }
 
                 &:hover {
-                    color:#fff;
+                    color: #fff;
                     background-color: #73b23f;
                 }
             }
@@ -24078,7 +24052,6 @@ a.show-more__button:hover {
         }
         .c-pass-banner__decor-3 {
 
-
         }
 
     }
@@ -24087,7 +24060,6 @@ a.show-more__button:hover {
         white-space: nowrap;
     }
 }
-
 
 /*-------------------------------------------*/
 /*-------------------------------------------*/
@@ -24120,16 +24092,15 @@ a.show-more__button:hover {
         font-size: 2.4rem;
         color: #79b224;
         text-transform: uppercase;
-        font-family:$font_serif;
+        font-family: $font_serif;
         margin-bottom: 1.3rem;
         line-height: 1.2;
-        letter-spacing:1px;
+        letter-spacing: 1px;
     }
 
     &__desc {
         padding-bottom: 1rem;
         position: relative;
-
 
         p {
             position: relative;
@@ -24137,7 +24108,7 @@ a.show-more__button:hover {
             background-color: #fff;
             font-size: 1.5rem;
             color: #1a1a1a;
-            font-family:$font_serif;
+            font-family: $font_serif;
             max-width: 44rem;
             margin: 0 auto;
             line-height: 1.1;
@@ -24145,7 +24116,7 @@ a.show-more__button:hover {
         }
 
         &::after {
-            content:'';
+            content: '';
             position: absolute;
             z-index: 9;
             top: 50%;
@@ -24158,7 +24129,7 @@ a.show-more__button:hover {
         }
 
         &::before {
-            content:'';
+            content: '';
             position: absolute;
             z-index: 10;
             top: 100%;
@@ -24179,7 +24150,6 @@ a.show-more__button:hover {
         &__item {
 
         }
-
 
     }
 
@@ -24295,7 +24265,7 @@ a.show-more__button:hover {
             position: relative;
 
             &::after {
-                content:'';
+                content: '';
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -24306,7 +24276,7 @@ a.show-more__button:hover {
             }
 
             &__text {
-                font-family:$font_serif;
+                font-family: $font_serif;
                 font-size: 1.7rem;
                 color: #262526;
                 padding-right: 10%;
@@ -24321,17 +24291,17 @@ a.show-more__button:hover {
                 background-color: #9ac359;
                 text-transform: uppercase;
                 font-size: 3.7rem;
-                transition:all .2s ease;
+                transition: all .2s ease;
                 line-height: 1;
                 border-radius: 2.5rem;
 
                 &::after {
                     content: '';
-                    border:none;
+                    border: none;
                 }
 
                 &:hover {
-                    transition:all .2s ease;
+                    transition: all .2s ease;
                     color: #ffffff;
                     background-color: #8eb54f;
                 }
@@ -24400,11 +24370,16 @@ a.show-more__button:hover {
             left: 24%;
             bottom: 7%;
         }
+        .decor-grass-4 {
+            position: absolute;
+            left: 3%;
+            top: 14%;
+        }
 
         &__title {
             text-align: center;
             color: #ffffff;
-            font-family:$font_decor;
+            font-family: $font_decor;
             text-transform: uppercase;
             font-size: 4.8rem;
             line-height: 1;
@@ -24483,7 +24458,7 @@ a.show-more__button:hover {
             bottom: -60px;
             text-align: center;
             color: #c44890;
-            font-family:$font_decor;
+            font-family: $font_decor;
             text-transform: uppercase;
             font-size: 3.7rem;
             line-height: 1;
@@ -24504,7 +24479,7 @@ a.show-more__button:hover {
 
     .holiday-hall-card__title {
         background-color: #fff;
-        
+
         h3 {
             font-size: 5rem;
             color: #c44890;
@@ -24512,12 +24487,12 @@ a.show-more__button:hover {
             text-transform: uppercase;
             font-weight: 700;
         }
-        
+
     }
 
     .holiday-hall-card-tour {
         margin-bottom: 2rem;
-        min-height:350px;
+        min-height: 350px;
     }
 
     .holiday-hall-card-menu {
@@ -24525,7 +24500,7 @@ a.show-more__button:hover {
 
         &__title {
             color: #555451;
-            font-family:$font_decor;
+            font-family: $font_decor;
             text-transform: uppercase;
             font-size: 4.8rem;
             line-height: 1;
@@ -24536,7 +24511,7 @@ a.show-more__button:hover {
         &__text {
             color: #555451;
             font-size: 1.6rem;
-            font-family:$font_serif;
+            font-family: $font_serif;
             line-height: 1;
             text-align: center;
             margin-bottom: 2.2rem;
@@ -24556,7 +24531,7 @@ a.show-more__button:hover {
     .holiday-hall-card-tour__btns {
         position: absolute;
         left: 50%;
-        transform:translateX(-50%);
+        transform: translateX(-50%);
         top: 3rem;
         margin-left: -1rem;
     }
@@ -24572,10 +24547,10 @@ a.show-more__button:hover {
         line-height: .7;
         margin: 0 10px;
         transition: all .1s ease-in-out;
-        cursor:pointer;
+        cursor: pointer;
 
         &::after {
-            content:'';
+            content: '';
             border: none;
         }
 
@@ -24603,10 +24578,9 @@ a.show-more__button:hover {
         padding: 2rem 0;
         position: relative;
 
-
         &__text {
             padding-right: 5rem;
-            font-family:$font_serif;
+            font-family: $font_serif;
             h2, h3 {
                 font-size: 2.4rem;
                 color: #79b224;
@@ -24628,7 +24602,6 @@ a.show-more__button:hover {
                 color: #262526;
                 font-size: 1.7rem;
             }
-
 
         }
 
@@ -24656,8 +24629,8 @@ a.show-more__button:hover {
         &__box {
             background-color: #a9cb58;
             background: url(../img/holiday-hall/know-box-bg.png) 0 0 no-repeat;
-            -webkit-background-size:cover;
-            background-size:cover;
+            -webkit-background-size: cover;
+            background-size: cover;
             padding: 37px 98px;
             min-width: 40rem;
             position: relative;
@@ -24666,7 +24639,7 @@ a.show-more__button:hover {
         &__title {
             font-size: 4rem;
             color: #ffffff;
-            font-family:$font_decor;
+            font-family: $font_decor;
             text-transform: uppercase;
             line-height: 1.2;
             margin-bottom: 1.6rem;
@@ -24678,7 +24651,7 @@ a.show-more__button:hover {
             color: #555451;
             background-color: #fff;
             border-radius: 50px;
-            font-family:$font_decor;
+            font-family: $font_decor;
             text-transform: uppercase;
             text-align: center;
             width: 100%;
@@ -24687,13 +24660,13 @@ a.show-more__button:hover {
             transition: all .2s ease-in-out;
 
             &:hover {
-                box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .1);
                 transition: all .2s ease-in-out;
             }
 
             &::after {
-                content:'';
-                border:none;
+                content: '';
+                border: none;
             }
         }
     }
@@ -24703,7 +24676,7 @@ a.show-more__button:hover {
         margin-bottom: 3rem;
         &__title {
             color: #555451;
-            font-family:$font_decor;
+            font-family: $font_decor;
             text-transform: uppercase;
             font-size: 4.8rem;
             line-height: 1;
@@ -24739,11 +24712,9 @@ a.show-more__button:hover {
     }
 }
 
-
 .holiday-hall-carousel {
     //padding: 0 55px;
     margin-bottom: 1.5rem;
-
 
     &__item {
         height: 315px;
@@ -24767,7 +24738,6 @@ a.show-more__button:hover {
     }
 }
 
-
 /*-----------------------------------*/
 
 .sitemap {
@@ -24781,7 +24751,6 @@ a.show-more__button:hover {
     margin-bottom: 70px;
 }
 
-
 .sitemap-grid {
     display: flex;
     flex-flow: row wrap;
@@ -24790,7 +24759,7 @@ a.show-more__button:hover {
 }
 
 .sitemap-grid__col {
-    width:25%;
+    width: 25%;
     margin-bottom: 26px;
 
     &.has-child {
@@ -24827,7 +24796,7 @@ a.show-more__button:hover {
     width: 25%;
     ul {
         color: #555451;
-        border-left:1px dotted #808080;
+        border-left: 1px dotted #808080;
 
     }
 
@@ -24843,26 +24812,26 @@ a.show-more__button:hover {
             top: 11px;
             width: 8px;
             height: 1px;
-            border-top:1px dotted #808080;
+            border-top: 1px dotted #808080;
         }
         &:last-child::before {
             content: '';
             position: absolute;
             left: -2px;
             top: 13px;
-            width:10px;
-            bottom:0;
+            width: 10px;
+            bottom: 0;
             background-color: #fff;
         }
 
     }
 
     a {
-        text-decoration:none;
+        text-decoration: none;
 
         &::after {
             content: '';
-            border:none;
+            border: none;
         }
 
     }
@@ -24874,8 +24843,6 @@ a.show-more__button:hover {
     margin-bottom: 8px;
 }
 
-
-
 /*---------------------------------------*/
 
 .promocode {
@@ -24885,23 +24852,59 @@ a.show-more__button:hover {
     border-radius: .4rem;
     font-family: $font_serif;
     margin-bottom: 70px;
-    
+
     .holiday-hall-sentence {
         background: #c44890;
     }
 
-  .holiday-hall__desc {
-    margin-bottom: 4px;
-    p {
-      text-align: center;
-      max-width: 17rem;
+    .holiday-hall__desc {
+        margin-bottom: 4px;
+        p {
+            text-align: center;
+            max-width: 17rem;
+        }
+
+        &::before {
+            content: '';
+            display: none;
+        }
     }
 
-    &::before {
-      content:'';
-      display: none;
+    .promocode-desc-close {
+        //position: relative;
+        text-align: center;
+        cursor:pointer;
+        margin-bottom: 20px;
+
+        p {
+            max-width: 19rem;
+        }
+
+
+
+        &.hide::before {
+            content:'';
+            position: absolute;
+            display: block !important;
+            z-index: 10;
+            width: 17px;
+            height: 16px;
+            top: -20px;
+            background: url(../img/promocode/promo-close-icon.png) 0 0 no-repeat;
+            left: 50%;
+            transform:translateX(-50%);
+        }
     }
-  }
+
+    .holiday-hall-sentence__body {
+        max-width: 81rem;
+    }
+
+    .holiday-hall-sentence__btn {
+        background-color: #98c22f;
+        color: #ffffff;
+        border:none;
+    }
 }
 
 .promocode-banner {
@@ -24929,6 +24932,16 @@ a.show-more__button:hover {
 }
 
 .promocode-regulations {
+
+    &.active {
+
+
+
+        .promocode-regulations__item {
+            display: block;
+        }
+    }
+
     &__list {
         list-style-type: none;
         counter-reset: item;
@@ -24937,8 +24950,16 @@ a.show-more__button:hover {
     }
 
     &__item {
+
+        display: none;
         margin-bottom: 20px;
         padding-left: 28px;
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+            display: block;
+        }
 
         &::before {
             content: counter(item) ". ";
@@ -24953,116 +24974,133 @@ a.show-more__button:hover {
 }
 
 .promocode-table {
-  position: relative;
-
-  &-row {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 12px 0;
-    border-top: 1px dotted #9b9595;
-    //border-bottom: 1px dotted #9b9595;
-
-    &:last-child {
-      border-bottom: 1px dotted #9b9595;
-    }
-  }
-
-  &-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 6px;
     position: relative;
+    margin-top: 20px;
 
-    .promocode-table-col {
-      color: #5e9905;
-      font-size: 13px;
+    &-row {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 12px 0;
+        border-top: 1px dotted #9b9595;
+        //border-bottom: 1px dotted #9b9595;
+        display: none;
+
+        &:nth-child(1) {
+            display: flex;
+        }
+
+        &:last-child {
+            border-bottom: 1px dotted #9b9595;
+        }
     }
-  }
 
-  &-body {
+    &-header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 6px;
+        position: relative;
 
-    background-color: #fcfcfc;
-  }
-
-  &-col {
-    padding: 0 18px;
-    color: #553023;
-
-    &:nth-child(1) {
-      width: 40%;
+        .promocode-table-col {
+            color: #5e9905;
+            font-size: 13px;
+        }
     }
 
-  }
+    &-body {
 
-  &-btn {
-    position: absolute;
-    color: #5e9905;
-    font-size: 13px;
-    right: 0;
-    top: 0;
+        background-color: #fcfcfc;
 
-    &::after {
-      content: '';
-      border: none;
+        &.active {
+
+            .promocode-table-row {
+                display: flex;
+            }
+
+            .promocode-table-row:nth-child(1) {
+                display: flex;
+            }
+
+        }
     }
-  }
+
+    &-col {
+        padding: 0 18px;
+        color: #553023;
+
+        &:nth-child(1) {
+            width: 40%;
+        }
+
+    }
+
+    &-btn {
+        position: absolute;
+        color: #5e9905;
+        font-size: 13px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        z-index: 10;
+
+        &::after {
+            content: '';
+            border: none;
+        }
+    }
 }
 
 .promocode-how {
-  &__title {
-    color: #555451;
-    font-family:$font_decor;
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-
-  }
-
-  &__item {
-    width: 25%;
-    margin-bottom: 20px;
-
-
-
-
-  }
-
-  &-card {
-    position: relative;
-    padding: 6px;
-    &__num {
-      width: 40px;
-      height: 40px;
-      background-color: #a9cb58;
-      border-radius: 50px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-weight: 700;
-      font-size: 16px;
-
-      span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform:translate(-50%,-50%);
-      }
+    &__title {
+        color: #555451;
+        font-family: $font_decor;
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
     }
 
-    &__text {
-      padding-left: 50px;
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+
     }
-  }
+
+    &__item {
+        width: 25%;
+        margin-bottom: 20px;
+
+    }
+
+    &-card {
+        position: relative;
+        padding: 6px;
+        &__num {
+            width: 40px;
+            height: 40px;
+            background-color: #a9cb58;
+            border-radius: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 700;
+            font-size: 16px;
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &__text {
+            padding-left: 50px;
+        }
+    }
 }

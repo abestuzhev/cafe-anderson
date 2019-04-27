@@ -12332,9 +12332,6 @@ test popup
     line-height: 1.1;
     margin-bottom: 1rem;
     text-shadow: 0px 1px 5px white, 0px 2px 10px white, 0px 3px 15px white, 0px 4px 20px white, 0px 5px 30px white, 0px 6px 40px white, 0px 7px 45px white, 0px 8px 40px white, 0px 9px 40px white, 0px 10px 40px white; }
-    .catalog-banner__title::-moz-selection {
-      background-color: #fff8d3;
-      color: #c03485; }
     .catalog-banner__title::selection {
       background-color: #fff8d3;
       color: #c03485; }
@@ -12345,9 +12342,6 @@ test popup
     font-style: italic;
     line-height: 1.1;
     text-shadow: 0px 1px 5px white, 0px 2px 10px white, 0px 3px 15px white, 0px 4px 20px white, 0px 5px 30px white, 0px 6px 40px white, 0px 7px 45px white, 0px 8px 40px white, 0px 9px 40px white, 0px 10px 40px white; }
-    .catalog-banner p::-moz-selection {
-      background-color: #fff8d3;
-      color: #553023; }
     .catalog-banner p::selection {
       background-color: #fff8d3;
       color: #553023; }
@@ -18487,9 +18481,6 @@ test popup
       .easter-banner__title span {
         display: inline;
         padding: 0; }
-        .easter-banner__title span::-moz-selection {
-          background-color: #fff8d3;
-          color: #553023; }
         .easter-banner__title span::selection {
           background-color: #fff8d3;
           color: #553023; }
@@ -26572,6 +26563,10 @@ a.show-more__button:hover {
       position: absolute;
       left: 24%;
       bottom: 7%; }
+    .holiday-hall-sentence .decor-grass-4 {
+      position: absolute;
+      left: 3%;
+      top: 14%; }
     .holiday-hall-sentence__title {
       text-align: center;
       color: #ffffff;
@@ -26979,6 +26974,31 @@ a.show-more__button:hover {
     .promocode .holiday-hall__desc::before {
       content: '';
       display: none; }
+  .promocode .promocode-desc-close {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px; }
+    .promocode .promocode-desc-close p {
+      max-width: 19rem; }
+    .promocode .promocode-desc-close.hide::before {
+      content: '';
+      position: absolute;
+      display: block !important;
+      z-index: 10;
+      width: 17px;
+      height: 16px;
+      top: -20px;
+      background: url(../img/promocode/promo-close-icon.png) 0 0 no-repeat;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .promocode .holiday-hall-sentence__body {
+    max-width: 81rem; }
+  .promocode .holiday-hall-sentence__btn {
+    background-color: #98c22f;
+    color: #ffffff;
+    border: none; }
 
 .promocode-banner {
   height: 547px;
@@ -26998,14 +27018,20 @@ a.show-more__button:hover {
 .promocode-body {
   padding: 42px 54px; }
 
+.promocode-regulations.active .promocode-regulations__item {
+  display: block; }
+
 .promocode-regulations__list {
   list-style-type: none;
   counter-reset: item;
   position: relative; }
 
 .promocode-regulations__item {
+  display: none;
   margin-bottom: 20px;
   padding-left: 28px; }
+  .promocode-regulations__item:nth-child(1), .promocode-regulations__item:nth-child(2), .promocode-regulations__item:nth-child(3) {
+    display: block; }
   .promocode-regulations__item::before {
     content: counter(item) ". ";
     counter-increment: item;
@@ -27016,7 +27042,8 @@ a.show-more__button:hover {
     font-weight: 700; }
 
 .promocode-table {
-  position: relative; }
+  position: relative;
+  margin-top: 20px; }
   .promocode-table-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -27032,7 +27059,12 @@ a.show-more__button:hover {
         -ms-flex-align: start;
             align-items: flex-start;
     padding: 12px 0;
-    border-top: 1px dotted #9b9595; }
+    border-top: 1px dotted #9b9595;
+    display: none; }
+    .promocode-table-row:nth-child(1) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
     .promocode-table-row:last-child {
       border-bottom: 1px dotted #9b9595; }
   .promocode-table-header {
@@ -27056,6 +27088,14 @@ a.show-more__button:hover {
       font-size: 13px; }
   .promocode-table-body {
     background-color: #fcfcfc; }
+    .promocode-table-body.active .promocode-table-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .promocode-table-body.active .promocode-table-row:nth-child(1) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .promocode-table-col {
     padding: 0 18px;
     color: #553023; }
@@ -27066,7 +27106,9 @@ a.show-more__button:hover {
     color: #5e9905;
     font-size: 13px;
     right: 0;
-    top: 0; }
+    top: 0;
+    cursor: pointer;
+    z-index: 10; }
     .promocode-table-btn::after {
       content: '';
       border: none; }

@@ -1113,7 +1113,8 @@
     }
 
     .holiday-hall-sentence .decor-grass-1,
-    .holiday-hall-sentence .decor-grass-3 {
+    .holiday-hall-sentence .decor-grass-3,
+    .holiday-hall-sentence .decor-grass-4 {
         display: none;
     }
 
@@ -5115,6 +5116,15 @@
 
     .promocode-body {
         padding: 20px 16px 30px;
+    }
+
+    .promocode .promocode-desc-close::before {
+        content: '';
+        width: 14px;
+        height: 14px;
+        top: -15px;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
 
 }
@@ -9238,12 +9248,10 @@
         padding-right: .7rem;
     }
 
-    .promocode-table-row {
-        display: block;
-    }
     .promocode .promocode-table-col {
         margin-bottom: 6px;
         width: 100%;
+        padding: 0 6px;
     }
 
     .promocode-table-header .promocode-table-col:nth-child(2) {
@@ -9252,6 +9260,14 @@
 
     .promocode-table-row {
         padding: 9px 0 3px;
+    }
+
+    .promocode-table-row:nth-child(1) {
+        flex-flow: column wrap;
+    }
+
+    .promocode-table-body.active .promocode-table-row {
+        flex-flow: column wrap;
     }
 
 }

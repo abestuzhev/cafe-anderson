@@ -35,6 +35,32 @@ var documentHeight = (document.documentElement.clientHeight );
 
 $(window).on('load', function(){
 
+    $(document).on('click', '.promocode-table-btn', function(e){
+        e.preventDefault();
+        $('.promocode-table-body').toggleClass('active');
+        var textBtn = $(this).html();
+        if(textBtn == 'показать таблицу'){
+            $(this).html('свернуть таблицу');
+
+        }else{
+            $(this).html('показать таблицу');
+
+        }
+    });
+    $(document).on('click', '.promocode-desc-close', function(e){
+        e.preventDefault();
+        $('.promocode-regulations').toggleClass('active');
+        $(this).toggleClass('hide');
+        var textBtn = $(this).find('p').html();
+        if(textBtn == 'показать все правила'){
+            $(this).find('p').html('свернуть правила');
+
+        }else{
+            $(this).find('p').html('показать все правила');
+
+        }
+    });
+
 
     if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
         customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
