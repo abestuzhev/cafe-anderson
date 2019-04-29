@@ -1423,3 +1423,21 @@
 //------------------------------------------------------------header###
 
 
+@media (min-width: 1027px) {
+    .symbol-logo-wrap {
+        top: initial!important;
+        height: 4.5rem!important;
+    }
+}
+
+
+@media (min-width: 1027px) {
+    .header-col__center {
+        overflow: hidden!important;
+        position: absolute!important;
+        z-index: 20!important;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
+    }
+}
+

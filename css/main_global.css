@@ -7838,6 +7838,21 @@ div.c-card-catalog-3 {
   top: 2.6rem;
   margin: 0; }
 
+@media (min-width: 1027px) {
+  .symbol-logo-wrap {
+    top: initial !important;
+    height: 4.5rem !important; } }
+
+@media (min-width: 1027px) {
+  .header-col__center {
+    overflow: hidden !important;
+    position: absolute !important;
+    z-index: 20 !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+        -ms-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important; } }
+
 .footer {
   margin-top: -7.6rem;
   position: relative;
