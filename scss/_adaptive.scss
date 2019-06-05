@@ -714,14 +714,18 @@
             justify-content: space-around;
         }
 
+        .cake-order-final__total {
+            margin-bottom: 0;
+        }
+
         .cake-order-operations .c-counter__btn.dec {
             margin-right: 5px;
-            margin-left: 15px;
+            margin-left: 5px;
         }
 
         .cake-order-operations .c-counter__btn.inc {
             margin-left: 5px;
-            margin-right: 15px;
+            margin-right: 5px;
         }
 
         .c-card-catalog__price {
@@ -734,7 +738,7 @@
         }
 
         .c-counter__field {
-            width: 25px !important;
+            width: 34px !important;
         }
 
         .c-card-catalog__basket {
