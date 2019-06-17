@@ -11630,6 +11630,10 @@ $(document).ready(function ($) {
                     window.cakeCartItem = {};
                 }
 
+                if ($('.popup-offer--easter').hasClass('is-visible')) {
+                    $.cookie("adversting", "1", {path: '/', expires: 3});
+               }
+
 
 
                 div2.parents('.mfp-wrap').removeClass('is-visible');

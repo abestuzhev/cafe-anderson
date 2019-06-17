@@ -10417,7 +10417,17 @@ test popup
             margin: -10px 0;
         }
     }
+
+    img {
+        display:block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
 }
+
+
 
 .graduation-party {
 
