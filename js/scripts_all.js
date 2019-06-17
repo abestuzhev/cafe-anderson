@@ -11548,6 +11548,11 @@ $(document).ready(function ($) {
         $('.popup').parents().removeClass('is-visible');
         // $('.fixed-overlay').removeClass('is-visible');
         $('html').removeClass('body-popup');
+
+        if ($('.popup-offer--easter').hasClass('is-visible')) {
+            $.cookie("adversting", "1", {path: '/', expires: 3});
+       }
+
     });
 
 
