@@ -2316,9 +2316,7 @@ $(document).ready(function ($) {
         // $('.fixed-overlay').removeClass('is-visible');
         $('html').removeClass('body-popup');
 
-        if ($('.popup-offer--easter').hasClass('is-visible')) {
-            $.cookie("adversting", "1", {path: '/', expires: 3});
-       }
+        
 
     });
 
@@ -2464,7 +2462,11 @@ $(document).ready(function ($) {
         $('.header.sticky').css({
             // 'right':'0'
         });
-        console.log('hide popup');
+        // console.log('hide popup');
+
+        if ($('.popup-offer--easter').hasClass('is-visible')) {
+            $.cookie("adversting", "1", {path: '/', expires: 3});
+       }
     });
 
 
