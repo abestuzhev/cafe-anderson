@@ -19142,6 +19142,9 @@ test popup
 .partner-panel .header-top {
   min-height: 2.4rem; }
 
+.partner-panel .header-menu {
+  margin-top: 7px; }
+
 .panel {
   margin: 7rem 0; }
   .panel-work-list {
@@ -19212,12 +19215,13 @@ test popup
     .panel-cafe__body {
       display: none; }
   .panel-logo {
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: lowercase;
     color: #000000;
     line-height: 1;
     position: relative;
-    top: -6px; }
+    width: 230px;
+    display: inline-block; }
   .panel .c-grid {
     margin-left: -.7rem;
     margin-right: -.7rem; }

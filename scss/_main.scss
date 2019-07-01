@@ -14656,6 +14656,10 @@ test popup
     .header-top {
         min-height: 2.4rem;
     }
+
+    .header-menu {
+        margin-top: 7px;
+    }
 }
 
 .panel {
@@ -14760,12 +14764,14 @@ test popup
     }
 
     &-logo {
-        font-size: 6rem;
+        font-size: 5rem;
         text-transform: lowercase;
         color: #000000;
         line-height: 1;
         position: relative;
-        top: -6px;
+        // top: -6px;
+        width: 230px;
+        display: inline-block;
     }
 
     .c-grid {

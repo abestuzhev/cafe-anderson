@@ -637,7 +637,7 @@
     }
 
     img.panel-logo {
-        width: 70%;
+        width: 65%;
     }
 
     /*.header-col__right .header-top {*/
@@ -6902,6 +6902,11 @@
         bottom: -40px;
         font-size: 3.7rem;
         padding: .6rem 3.4rem;
+    }
+
+    img.panel-logo {
+        width: 150px;
+        top: auto;
     }
 }
 
