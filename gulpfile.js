@@ -1,6 +1,6 @@
 
 //gulp-sass gulp-autoprefixer gulp-plumber gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-sourcemaps gulp-concat gulp-concat-css
-//gulp-sass gulp-autoprefixer gulp-livereload browser-sync gulp-minify-css
+//gulp-sass gulp-autoprefixer gulp-livereload browser-sync gulp-minify-css gulp-clean-css gulp-concat gulp-concat-css
 
 //plugins for development
 var gulp = require('gulp'),
