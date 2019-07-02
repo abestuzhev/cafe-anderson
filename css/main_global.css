@@ -10106,13 +10106,13 @@ test popup
   margin: 0 auto;
   text-align: left;
   z-index: 1045;
-  width: 98%; }
+  width: auto; }
 
 .mfp-content-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 17px;
   bottom: 0;
   opacity: .5; }
 

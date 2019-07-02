@@ -11345,6 +11345,10 @@ $(document).ready(function ($) {
         $('.header.sticky').css({
             // 'right':'0'
         });
+        var parentModal = $(this).parents('.mfp-wrap');
+        if(parentModal.data('save')){
+            onPopupClose(parentModal);
+        }
         // console.log('popup-close!!!!');
     });
 
@@ -11360,6 +11364,12 @@ $(document).ready(function ($) {
         $('.header.sticky').css({
             // 'right':'0'
         });
+
+        var parentModal = $(this).parents('.mfp-wrap');
+        if(parentModal.data('save')){
+            onPopupClose(parentModal);
+        }
+        
 
 
     });
@@ -11696,6 +11706,11 @@ $(document).ready(function ($) {
             // 'right':'0'
         });
         // console.log('hide popup');
+
+        var parentModal = $(this).parents('.mfp-wrap');
+        if(parentModal.data('save')){
+            onPopupClose(parentModal);
+        }
 
         if ($('.popup-offer--easter').hasClass('is-visible')) {
             $.cookie("adversting", "1", {path: '/', expires: 3});
