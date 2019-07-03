@@ -25120,3 +25120,175 @@ a.show-more__button:hover {
         }
     }
 }
+
+
+
+/*праздничное меню*/
+#top-menu {
+    //position: fixed;
+    z-index: 1;
+    display: block;
+}
+
+#top-menu li {
+    display: inline-block;
+}
+
+#top-menu a {
+    display: block;
+    padding: 5px 25px 7px 25px;
+    width: 4em;
+    text-align: center;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+    border-top: 3px solid white;
+    color: #aaa;
+    text-decoration: none;
+}
+
+#top-menu a:hover {
+    color: #000;
+}
+
+#top-menu li.active a {
+    border-top: 3px solid #333;
+    color: #333;
+}
+
+#foo {
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: #eee;
+    display: block;
+}
+
+#bar {
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: #eee;
+    display: block;
+}
+
+#baz {
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: #eee;
+    display: block;
+}
+
+.holiday-menu {
+
+}
+
+.holiday-menu-filter {
+    width: 24rem;
+    border-radius: .6rem;
+    background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
+    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.holiday-menu-filter__header {
+    background-color: #c44890;
+    border-radius: .6rem .6rem 0 0;
+    padding: .8rem .5rem;
+    font-size: 3rem;
+    font-family: "BebasNeue";
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.holiday-menu-filter__body {
+    padding: .5rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.holiday-menu-filter__list {
+    padding-top: 1rem;
+    border-top:1px dashed #828282;
+    //border-bottom:1px dashed #828282;
+}
+
+.holiday-menu-filter__item {
+
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed #828282;
+}
+
+.holiday-menu-filter-card {
+
+}
+
+.holiday-menu-filter-card__head {
+    width: 100%;
+    padding: 1rem 3.5rem 1rem 1.6rem;
+    background-color: #aadf5d;
+    border: 1px solid #98d149;
+    cursor: pointer;
+    position: relative;
+    border-radius: .2rem;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.17);
+
+}
+
+.holiday-menu-filter-card__head::after {
+    content: '';
+    position: absolute;
+    right: .8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 3rem;
+    background-color: #91bd4d;
+}
+
+.holiday-menu-filter-card__head::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 1.5rem;
+    top: 50%;
+    transform: rotate(180deg) translateY(-50%);
+    transform-origin: 50% 0%;
+    width: 1.1rem;
+    height: .6rem;
+    background: url(../img/holiday-menu/new-arrow.svg) 0 0 no-repeat;
+}
+
+.holiday-menu-filter-card__title {
+    font-style: italic;
+}
+
+.holiday-menu-filter-card__body {
+    padding: 1rem 0 0;
+}
+
+.holiday-menu-filter-card__list {
+
+}
+
+.holiday-menu-filter-card__item {
+    margin-bottom: .8rem;
+}
+
+.holiday-menu-filter-card__link {
+    padding-left: 2.3rem;
+    position: relative;
+    font-style: italic;
+    font-size: 1.4rem;
+    display: block;
+    cursor: pointer;
+    text-decoration:none;
+    margin-bottom: .8rem;
+    font-family: 'PT Serif Caption', serif;
+    color: #555451;
+
+    &::after {
+        content:'';
+        border:none;
+    }
+}
