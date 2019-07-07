@@ -21130,6 +21130,7 @@ a.show-more__button:hover {
         justify-content: center;
         align-items: center;
         position: relative;
+        padding: 14px 0;
         &__icon {
             font-size: 300px;
             color: rgb(123, 196, 58);
@@ -21154,6 +21155,7 @@ a.show-more__button:hover {
     }
 
     &-change {
+        counter-reset: item;
         &__item {
             position: relative;
             margin-bottom: 20px;
@@ -21197,6 +21199,28 @@ a.show-more__button:hover {
             }
 
             &__more {
+                white-space: nowrap;
+                position: relative;
+
+                span {
+                    display: inline-block;
+                    margin-right: 6px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -.1rem;
+                    left: 0;
+                    width: 100%;
+                    border-bottom: 1px dotted #9b806f;
+                }
+
+                &:hover {
+                    svg {
+                        fill: #67af26;
+                    }
+                }
 
             }
 
@@ -21204,6 +21228,61 @@ a.show-more__button:hover {
                 font-family:$font_serif;
                 padding: 10px 0;
                 display: none;
+            }
+        }
+    }
+
+    &-combo {
+        &__list {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        &__item {
+            width: 50%;
+            padding: 10px;
+        }
+
+        &-card {
+            width: 100%;
+            height: 540px;
+            border-radius: 6px;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            padding: 15px 17px;
+
+            &__title {
+                font-size: 48px;
+                color: #553023;
+                font-family:$font_decor;
+
+                span {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    &-contact {
+
+        &__item {
+            margin-bottom: 14px;
+        }
+
+        &-price {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+
+            &__item {
+                margin-right: 30px;
             }
         }
     }
@@ -21223,6 +21302,43 @@ a.show-more__button:hover {
         padding-right: 80px;
         padding-bottom: 40px;
     }
+
+    .SumoSelect {
+        width: 100%;
+    }
+
+    .catalog-list__item {
+        margin-bottom: 1.4rem;
+    }
+
+    .event-builder .event-builder-tab-list-block__price {
+        min-width: 70px;
+        text-align: right;
+    }
+
+    .event-builder-tab-list-block__head {
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: flex-start;
+        align-items:center;
+
+    .event-builder-title {
+        color: #bb2b7f;
+    }
+
+        svg {
+            display: inline-block;
+            margin-right: 8px;
+            fill: #bb2b7f;
+        }
+
+
+    }
+
+    .event-builder .event-builder-tab-list-block__control {
+        width: 100%;
+    }
+
 }
 
 .c-checkbox-custom,
@@ -21249,6 +21365,56 @@ a.show-more__button:hover {
             box-shadow: inset 0 0 rgba(0, 0, 0, 0.2), inset 20px 0 #11bf0f;
             border-color: #11bf0f;
         }
+    }
+}
+
+.c-radio-custom-2 {
+    padding: 10px 0;
+    input {
+        display: none;
+    }
+
+    label {
+        font-size: 16px;
+        color: #231300;
+        font-family:$font_serif;
+        position: relative;
+        padding-left: 50px;
+        cursor:pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            left: 0;
+            top: -10px;
+            border-radius:50px;
+            border: 1px solid #dedede;
+            background-color: #f8f8f8;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+
+
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 8px;
+            top: -2px;
+            border-radius:50px;
+            border: 1px solid #dedede;
+            background-color: #fff;
+        }
+    }
+
+    input:checked + label::after {
+        content: '';
+        background-color: #11bf0f;
+        border-color: #11af0f;
+
     }
 }
 
