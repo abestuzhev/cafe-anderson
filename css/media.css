@@ -3589,6 +3589,21 @@
         padding: 12rem 1.5rem 1rem 1.5rem;
     }
 
+    .event-builder .event-builder-title {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .event-builder .event-builder-tab-list-block__control {
+        padding: 0 .4rem 0 .4rem;
+        position: relative;
+    }
+
+    .holiday-builder .event-builder-tab-list-title__middle {
+         display: block;
+        font-size: 35px;
+    }
+
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
         width: 100%;
     }
