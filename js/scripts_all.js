@@ -9449,59 +9449,7 @@ $(document).ready(function ($) {
     })
 
 
-    //start календарь праздника
-    $(function(){
-        var minDateJuly = new Date(2019,6,1),
-            maxDateJuly = new Date(2019,6,31),
-            minDateAugest = new Date(2019,7,1),
-            maxDateAugest = new Date(2019,7,31);
-        // console.log('minDateJuly: ' + minDateJuly + ' | ' + 'maxDateJuly: ' + maxDateJuly);
-
-        var datepickerJuly =  $('#july-datepicker'),
-            datepickerAugest = $('#augest-datepicker');
-
-
-
-
-        datepickerJuly.datepicker({
-            minDate: minDateJuly,
-            maxDate: maxDateJuly,
-            inline: true,
-            onSelect: function(db, d, picker){
-
-                if(db){
-                    // $('#augest-datepicker').datepicker("option", "disabled", true);
-                    // $('#augest-datepicker').datepicker({
-                    //     disabled:true
-                    // });
-                    var datepickerAugestUpdate = $('#augest-datepicker').datepicker().data('datepicker');
-
-                    datepickerAugestUpdate.update({
-                        onRenderCell: function(date, cellType) {
-                            if (cellType == 'day' ) {
-                                return {
-                                    disabled: true
-                                }
-                            }
-                        }
-                    });
-
-
-                    console.log('disabled');
-                }else {
-                    $('#augest-datepicker').datepicker("option", "disabled", false);
-                }
-
-
-            }
-        });
-        datepickerAugest.datepicker({
-            minDate: minDateAugest,
-            maxDate: maxDateAugest,
-            inline: true,
-            selectOtherMonths:false
-        });
-    })
+    
 
 
     /*START праздничное меню*/
