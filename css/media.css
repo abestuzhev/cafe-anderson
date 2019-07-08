@@ -1286,6 +1286,17 @@
         display: block;
     }
 
+    .holiday-builder .event-builder-combo-card__title span {
+        display: block;
+    }
+
+    .holiday-builder .event-builder-combo-card__title {
+        line-height: 1;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
 }
 
 @media screen and (max-width: 1270px) {
@@ -3768,6 +3779,10 @@
     .event-builder-when-guest__count  input.c-input {
         width: 100%;
     }
+
+    .holiday-builder .event-builder-combo-card {
+        height: 400px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -5592,6 +5607,17 @@
         text-align: left;
     }
 
+    .holiday-builder .event-builder-combo__list {
+        display: block;
+    }
+
+    .holiday-builder .event-builder-combo__item {
+        width: 100%;
+    }
+
+    .holiday-builder .event-builder-combo-card {
+        height: 200px;
+    }
 
 
 }
