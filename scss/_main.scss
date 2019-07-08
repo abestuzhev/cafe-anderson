@@ -21038,6 +21038,7 @@ a.show-more__button:hover {
     }
 
     &-when {
+        margin-bottom: 10px;
         &-calendar {
             display: flex;
             flex-flow: row wrap;
@@ -21045,7 +21046,8 @@ a.show-more__button:hover {
             margin-right: -17px;
             margin-left: -17px;
             &__item {
-                padding: 14px 17px;
+                padding: 10px 17px;
+                margin-bottom: 8px;
 
             }
         }
@@ -21057,10 +21059,10 @@ a.show-more__button:hover {
             align-items: stretch;
             margin-left: -15px;
             margin-right: -15px;
+            margin-bottom: 15px;
 
             &__item {
-                padding: 10px 15px;
-                margin-bottom: 8px;
+                padding: 6px 15px;
             }
 
             &__label {
@@ -21272,7 +21274,7 @@ a.show-more__button:hover {
     &-contact {
 
         &__item {
-            margin-bottom: 14px;
+            margin-right:14px;
         }
 
         &-price {
@@ -21282,7 +21284,7 @@ a.show-more__button:hover {
             align-items: center;
 
             &__item {
-                margin-right: 30px;
+                margin: 0 30px 10px 0;
             }
         }
     }
@@ -21337,6 +21339,20 @@ a.show-more__button:hover {
 
     .event-builder .event-builder-tab-list-block__control {
         width: 100%;
+    }
+
+    .event-builder-tab-list-block__control  {
+        margin-bottom: 10px;
+    }
+
+    .event-builder .top-nav-button_active {
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01)
+    }
+
+    .event-builder .top-nav {
+        padding-left: 4.9rem;
     }
 
 }
