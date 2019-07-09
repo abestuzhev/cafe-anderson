@@ -25675,117 +25675,239 @@ a.show-more__button:hover {
 }
 
 .holiday-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
 
-}
+    &-filter {
+        width: 24rem;
+        border-radius: .6rem;
+        background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
+        box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
 
-.holiday-menu-filter {
-    width: 24rem;
-    border-radius: .6rem;
-    background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
-    box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
-}
+        &__header {
+            background-color: #c44890;
+            border-radius: .6rem .6rem 0 0;
+            padding: .8rem .5rem;
+            font-size: 3rem;
+            font-family: "BebasNeue";
+            color: #ffffff;
+            font-weight: 700;
+            text-align: center;
 
-.holiday-menu-filter__header {
-    background-color: #c44890;
-    border-radius: .6rem .6rem 0 0;
-    padding: .8rem .5rem;
-    font-size: 3rem;
-    font-family: "BebasNeue";
-    color: #ffffff;
-    font-weight: 700;
-    text-align: center;
+        }
 
-}
+        &__body {
+            padding: .5rem 1.5rem;
+            margin: 1.5rem 0;
+        }
 
-.holiday-menu-filter__body {
-    padding: .5rem 1.5rem;
-    margin: 1.5rem 0;
-}
+        &__list {
+            padding-top: 1rem;
+            border-top:1px dashed #828282;
+            //border-bottom:1px dashed #828282;
+        }
 
-.holiday-menu-filter__list {
-    padding-top: 1rem;
-    border-top:1px dashed #828282;
-    //border-bottom:1px dashed #828282;
-}
+        &__item {
 
-.holiday-menu-filter__item {
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed #828282;
+        }
 
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px dashed #828282;
-}
+        &-card {
 
-.holiday-menu-filter-card {
+            &__head {
+                width: 100%;
+                padding: 1rem 3.5rem 1rem 1.6rem;
+                background-color: #aadf5d;
+                border: 1px solid #98d149;
+                cursor: pointer;
+                position: relative;
+                border-radius: .2rem;
+                box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.17);
 
-}
 
-.holiday-menu-filter-card__head {
-    width: 100%;
-    padding: 1rem 3.5rem 1rem 1.6rem;
-    background-color: #aadf5d;
-    border: 1px solid #98d149;
-    cursor: pointer;
-    position: relative;
-    border-radius: .2rem;
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.17);
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: .8rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 2.7rem;
+                    height: 2.7rem;
+                    border-radius: 3rem;
+                    background-color: #91bd4d;
+                }
 
-}
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    right: 1.5rem;
+                    top: 50%;
+                    transform: rotate(180deg) translateY(-50%);
+                    transform-origin: 50% 0%;
+                    width: 1.1rem;
+                    height: .6rem;
+                    background: url(../img/holiday-menu/new-arrow.svg) 0 0 no-repeat;
+                }
+            }
 
-.holiday-menu-filter-card__head::after {
-    content: '';
-    position: absolute;
-    right: .8rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2.7rem;
-    height: 2.7rem;
-    border-radius: 3rem;
-    background-color: #91bd4d;
-}
+            &__title {
+                font-style: italic;
+            }
 
-.holiday-menu-filter-card__head::before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    right: 1.5rem;
-    top: 50%;
-    transform: rotate(180deg) translateY(-50%);
-    transform-origin: 50% 0%;
-    width: 1.1rem;
-    height: .6rem;
-    background: url(../img/holiday-menu/new-arrow.svg) 0 0 no-repeat;
-}
+            &__body {
+                padding: 1rem 0 0;
+            }
 
-.holiday-menu-filter-card__title {
-    font-style: italic;
-}
+            &__list {
 
-.holiday-menu-filter-card__body {
-    padding: 1rem 0 0;
-}
+            }
 
-.holiday-menu-filter-card__list {
+            &__item {
+                margin-bottom: .8rem;
+            }
 
-}
+            &_link {
+                padding-left: 2.3rem;
+                position: relative;
+                font-style: italic;
+                font-size: 1.4rem;
+                display: block;
+                cursor: pointer;
+                text-decoration:none;
+                margin-bottom: .8rem;
+                font-family: 'PT Serif Caption', serif;
+                color: #555451;
 
-.holiday-menu-filter-card__item {
-    margin-bottom: .8rem;
-}
+                &::after {
+                    content:'';
+                    border:none;
+                }
+            }
 
-.holiday-menu-filter-card__link {
-    padding-left: 2.3rem;
-    position: relative;
-    font-style: italic;
-    font-size: 1.4rem;
-    display: block;
-    cursor: pointer;
-    text-decoration:none;
-    margin-bottom: .8rem;
-    font-family: 'PT Serif Caption', serif;
-    color: #555451;
-
-    &::after {
-        content:'';
-        border:none;
+        }
     }
+
+    &-list {
+        width: 100%;
+        padding-left: 18px;
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-card {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.15);
+
+        &-grid {
+
+            padding: 32px 40px;
+
+        }
+
+        &-line {
+            margin-bottom: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &__title {
+                font-size: 24px;
+                color: #262526;
+                text-transform: uppercase;
+                line-height: 1;
+                margin-bottom: 14px;
+                font-family: $font_serif;
+                font-weight: 700;
+                letter-spacing: 3px;
+
+            }
+        }
+
+        &__img {
+            width: 40%;
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+
+        &__title {
+            padding: 24px 54px;
+            background-color: #c2478e;
+            color: #ffffff;
+            font-family: $font_decor;
+            font-size: 48px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        &__body {
+            width: 60%;
+            border-left: 4px solid #c2478e;
+            border-bottom: 4px solid #c2478e;
+            border-radius: 0 0 0 10px;
+        }
+
+        &-list {
+
+            &__item {
+                border-bottom: 1px dotted #90929b;
+                
+                &:nth-child(odd) {
+                    background-color: #f3f3f9;
+                }
+
+                &:last-child {
+                    border:none;
+                }
+
+            }
+        }
+    }
+
+    &-product {
+
+        padding: 16px 11px;
+        font-family: $font_serif;
+        color: #262526;
+        font-size: 17px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1;
+        text-decoration:none;
+
+        &::after {
+            content:'';
+            border: none;
+        }
+        
+        &:hover {
+            background-color: #f2f9e7;
+            color: #6a942c;
+            text-decoration: underline;
+        }
+
+        &__title {
+
+        }
+
+        &__price {
+
+        }
+    }
+
 }
