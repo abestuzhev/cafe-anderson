@@ -1522,6 +1522,18 @@
         padding-left: 0rem;
     }
 
+    .event-builder .top-nav-button  {
+        width:100%;
+    }
+
+    .event-builder .top-nav-button__wrapper {
+        justify-content: center;
+    }
+
+    .event-builder .top-nav-button_active {
+        width:100%;
+    }
+
 }
 
 @media (max-width: 1060px) {
