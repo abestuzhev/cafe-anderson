@@ -22689,6 +22689,8 @@ a.show-more__button:hover {
     text-transform: uppercase;
     font-family: "SummerFont";
     margin-bottom: 6px; }
+    .event-builder-title span {
+      color: #c44890; }
   .event-builder .top-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -24208,6 +24210,8 @@ a.show-more__button:hover {
     .event-builder-change__item {
       position: relative;
       margin-bottom: 20px; }
+      .event-builder-change__item:last-child {
+        margin-bottom: 0; }
       .event-builder-change__item::before {
         content: counter(item) ". ";
         counter-increment: item;
@@ -24324,6 +24328,30 @@ a.show-more__button:hover {
             align-items: center; }
     .event-builder-contact-price__item {
       margin: 0 30px 10px 0; }
+  .event-builder-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 8px; }
+    .event-builder-info__item {
+      margin-right: 20px;
+      font-size: 18px;
+      color: #4c4c4c;
+      margin-bottom: 8px; }
+      .event-builder-info__item b {
+        font-family: "PT Serif Caption"; }
+    .event-builder-info .c-symbol {
+      font-size: 2rem; }
 
 /* / Event Builder */
 .holiday-builder .event-builder-tab {
@@ -24378,6 +24406,17 @@ a.show-more__button:hover {
 
 .holiday-builder .event-builder .event-builder-tab-list {
   max-width: 100%; }
+
+.holiday-builder .c-card-catalog__basket {
+  display: none; }
+
+.holiday-builder div.c-card-catalog-3__footer .c-card-catalog__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.holiday-builder .event-builder .event-builder-tab-list-block__details {
+  white-space: nowrap; }
 
 .c-checkbox-custom input,
 .c-radio-custom input {

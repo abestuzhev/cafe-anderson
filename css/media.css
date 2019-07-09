@@ -1255,27 +1255,17 @@
         width: 25%;
     }
 
-    .holiday-builder .event-builder .event-builder-tab-list-block__line {
-        display: block;
-    }
-
-    .holiday-builder .event-builder-tab-list-block__filler {
-        display: none;
-    }
     .holiday-builder .event-builder-tab-list-block__left {
         margin: 0;
     }
 
-    .holiday-builder .event-builder .event-builder-tab-list-block__right {
-        display: block;
-    }
 
     .holiday-builder .event-builder .event-builder-tab-list-block__price {
         text-align: left;
-        min-width:100%;
+        /*min-width:100%;*/
     }
     .holiday-builder .event-builder .event-builder-tab-list-block__details {
-        padding: 0;
+        padding: 0 10px;
     }
 
     .event-builder .event-builder-tab-list-block__control {
@@ -3644,7 +3634,7 @@
     }
 
     .event-builder .event-builder-tab-list {
-        padding: 12rem 1.5rem 1rem 1.5rem;
+        padding: 12rem 1.5rem 2.5rem 1.5rem;
     }
 
     .event-builder .event-builder-title {
@@ -3659,11 +3649,25 @@
 
     .holiday-builder .event-builder-tab-list-title__middle {
          display: block;
-        font-size: 35px;
+        font-size: 40px;
+    }
+
+    .holiday-builder .event-builder {
+        margin-bottom: 0;
     }
 
     .events .filter-layout .events-header__btn .cafe-info-card__btn--poster {
         width: 100%;
+    }
+
+    .event-builder-contact__item .event-builder-tab-list-block__line-3 .event-builder-tab-list-block__control:nth-child(2),
+    .event-builder-contact__item .event-builder-tab-list-block__line-3 .event-builder-tab-list-block__control:last-child {
+        width: 50%;
+    }
+
+    .event-builder-contact__item .event-builder-tab-list-block__control:nth-child(3),
+    .event-builder-contact__item .event-builder-tab-list-block__control:last-child {
+        width: 50%;
     }
 
     .events-header__btn {
@@ -3771,11 +3775,11 @@
 
 
     .holiday-builder .event-builder .event-builder-change {
-        padding: 0 17px;
+        padding: 0 0 0 17px;
     }
 
     .holiday-builder .event-builder-plus__icon {
-        font-size: 250px;
+        font-size: 230px;
         width: 109px;
         height: 93px;
     }
@@ -3799,6 +3803,11 @@
     .holiday-builder .event-builder-combo-card {
         height: 400px;
     }
+
+    .event-builder-plus {
+        padding: 4px 0;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -5635,6 +5644,35 @@
         height: 200px;
     }
 
+    .event-builder-when-calendar {
+        display: block;
+    }
+    .event-builder-when-calendar .datepicker {
+        width: 100%;
+    }
+    .event-builder-when-calendar__item {
+        width: 100%;
+    }
+
+    .event-builder-when-calendar .datepicker--cell {
+        height: 11vw;
+    }
+
+    .event-builder-when-time__label {
+        font-size: 20px;
+    }
+
+    .event-builder-when-time__label {
+        padding: 8px 14px;
+    }
+
+    .event-builder-when-time {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .event-builder-when-time__item {
+        padding: 5px 5px;
+    }
 
 }
 
@@ -8401,6 +8439,15 @@
     /* .catalog-list .no-product img {
         display: none;
     } */
+
+    .holiday-builder .catalog-list {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .holiday-builder .catalog-list__item {
+        width: 50%;
+        padding: 0 5px;
+    }
 }
 
 @media (max-width: 320px) {
