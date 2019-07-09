@@ -1518,6 +1518,10 @@
         padding-left: 34rem;
     }
 
+    .holiday-builder .event-builder .top-nav {
+        padding-left: 0rem;
+    }
+
 }
 
 @media (max-width: 1060px) {
