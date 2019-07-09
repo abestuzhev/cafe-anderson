@@ -24282,7 +24282,24 @@ a.show-more__button:hover {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    padding: 15px 17px; }
+    position: relative; }
+    .event-builder-combo-card input {
+      display: none; }
+    .event-builder-combo-card input:checked + label {
+      -webkit-box-shadow: inset 0px 0px 0px 2px #c44890;
+      box-shadow: inset 0px 0px 0px 2px #c44890; }
+    .event-builder-combo-card label {
+      padding: 15px 17px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      border-radius: 6px; }
     .event-builder-combo-card__title {
       font-size: 48px;
       color: #553023;
@@ -24358,6 +24375,9 @@ a.show-more__button:hover {
 
 .holiday-builder .event-builder .top-nav {
   padding-left: 4.9rem; }
+
+.holiday-builder .event-builder .event-builder-tab-list {
+  max-width: 100%; }
 
 .c-checkbox-custom input,
 .c-radio-custom input {

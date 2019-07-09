@@ -21257,7 +21257,36 @@ a.show-more__button:hover {
             background-size: cover;
             background-position: 50% 50%;
             background-repeat: no-repeat;
-            padding: 15px 17px;
+            // padding: 15px 17px;
+            position: relative;
+
+            input {
+                display:none;
+
+                &:checked + label {
+
+                }
+            }
+
+            input:checked + label {
+                -webkit-box-shadow: inset 0px 0px 0px 2px rgba(196,72,144,1);
+                -moz-box-shadow: inset 0px 0px 0px 2px rgba(196,72,144,1);
+                box-shadow: inset 0px 0px 0px 2px rgba(196,72,144,1);                    
+            }
+
+            label {
+                padding: 15px 17px;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                border-radius:6px;
+            }
 
             &__title {
                 font-size: 48px;
@@ -21353,6 +21382,10 @@ a.show-more__button:hover {
 
     .event-builder .top-nav {
         padding-left: 4.9rem;
+    }
+
+    .event-builder .event-builder-tab-list {
+        max-width:100%;
     }
 
 }
