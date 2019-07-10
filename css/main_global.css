@@ -27869,6 +27869,8 @@ a.show-more__button:hover {
       background-color: #f2f9e7;
       color: #6a942c;
       text-decoration: underline; }
+    .holiday-menu-product__price {
+      white-space: nowrap; }
 
 .popup-pie {
   /* Ручной readmore */

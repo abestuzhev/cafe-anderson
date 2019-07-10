@@ -2950,6 +2950,11 @@
     .holiday-hall-card__body {
         margin-bottom: 1rem;
     }
+
+    /*holiday-menu*/
+    .holiday-menu {
+        display: block;
+    }
 }
 
 @media (max-width: 930px) {
