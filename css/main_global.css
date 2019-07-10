@@ -27685,25 +27685,60 @@ a.show-more__button:hover {
   display: block; }
 
 .holiday-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  margin-bottom: 70px; }
+  .holiday-menu-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .holiday-menu-filter {
     width: 24rem;
     border-radius: .6rem;
     background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
     -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1); }
+    .holiday-menu-filter-mobile {
+      background-color: #c44890;
+      color: #ffffff;
+      padding: 22px 24px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: none;
+      cursor: pointer; }
+      .holiday-menu-filter-mobile__icon {
+        margin-right: 10px;
+        width: 19px; }
+        .holiday-menu-filter-mobile__icon span {
+          display: block;
+          height: 3px;
+          background-color: #fff;
+          margin-bottom: 3px; }
+          .holiday-menu-filter-mobile__icon span:last-child {
+            margin-bottom: 0; }
+      .holiday-menu-filter-mobile__title {
+        font-size: 15px;
+        font-family: "PT Serif Caption";
+        font-style: italic; }
     .holiday-menu-filter__header {
       background-color: #c44890;
       border-radius: .6rem .6rem 0 0;
@@ -27804,6 +27839,34 @@ a.show-more__button:hover {
     border-radius: 10px;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+    .holiday-menu-card-start {
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+      .holiday-menu-card-start__img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        max-height: 458px; }
+      .holiday-menu-card-start__body {
+        background-color: #fff;
+        padding: 40px 37px; }
+      .holiday-menu-card-start__title {
+        font-family: "BebasNeue";
+        font-size: 50px;
+        color: #c44890;
+        line-height: 1;
+        margin-bottom: 14px;
+        font-weight: 700;
+        text-align: center; }
+      .holiday-menu-card-start__text {
+        font-size: 24px;
+        color: #91be4f;
+        text-transform: uppercase;
+        line-height: 1.4;
+        text-align: center;
+        font-family: "PT Serif Caption"; }
     .holiday-menu-card-grid {
       padding: 32px 40px; }
     .holiday-menu-card-line {
@@ -27870,7 +27933,158 @@ a.show-more__button:hover {
       color: #6a942c;
       text-decoration: underline; }
     .holiday-menu-product__price {
-      white-space: nowrap; }
+      white-space: nowrap;
+      font-weight: 700; }
+  .holiday-menu-request {
+    background: url(../img/holiday-menu/card-requestt-img.jpg) 50% 50% no-repeat;
+    padding: 70px 0;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 26.68px 2.32px rgba(0, 0, 0, 0.18), inset 0px 3px 32px 0px rgba(0, 0, 0, 0.13);
+            box-shadow: 0px 5px 26.68px 2.32px rgba(0, 0, 0, 0.18), inset 0px 3px 32px 0px rgba(0, 0, 0, 0.13);
+    border: 1px solid #fff; }
+    .holiday-menu-request__btn {
+      font-family: "SummerFont";
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      display: inline-block;
+      padding: 8px 60px;
+      border-radius: 100px;
+      background-color: #85c14e;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      line-height: 1; }
+      .holiday-menu-request__btn::after {
+        content: '';
+        border: none; }
+      .holiday-menu-request__btn:hover {
+        border: 2px solid #fff;
+        color: #fff;
+        -webkit-box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+                box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2); }
+
+.popup-holiday-menu .mfp-content {
+  width: 98%; }
+
+.popup-holiday-menu .popup {
+  max-width: 1294px;
+  width: 100%; }
+
+.popup-holiday-menu .popup-title {
+  padding: 22px 30px;
+  font-size: 36px;
+  font-family: "SummerFont";
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1;
+  background-color: #91be4f; }
+
+.popup-holiday-menu .popup-body {
+  padding: 0; }
+
+.popup-holiday-menu .popup-close {
+  top: 0;
+  bottom: auto;
+  border-radius: 0 0 50px 50px;
+  padding: 1rem 1.6rem 3rem; }
+
+.popup-holiday-menu__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border: 4px solid #91be4f;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden; }
+
+.popup-holiday-menu__img {
+  width: 40%;
+  background-position: 50% 50%;
+  background-size: cover;
+  margin-right: 20px; }
+
+.popup-holiday-menu__body {
+  width: 60%;
+  padding: 25px 40px 25px 40px; }
+
+.popup-holiday-menu__desc {
+  margin-bottom: 30px; }
+
+.popup-holiday-menu__price {
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  font-family: "PT Serif Caption";
+  background-color: #f3f3f9;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  padding: 16px; }
+
+.popup-holiday-menu-composition {
+  margin-bottom: 30px; }
+  .popup-holiday-menu-composition__title {
+    font-size: 24px;
+    color: #262526;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 14px;
+    font-family: "PT Serif Caption";
+    font-weight: 700;
+    letter-spacing: 3px; }
+  .popup-holiday-menu-composition__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .popup-holiday-menu-composition__col:nth-child(1) {
+    width: 30%;
+    padding-right: 30px; }
+  .popup-holiday-menu-composition__col:nth-child(2) {
+    width: 70%; }
+  .popup-holiday-menu-composition__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dotted #90929b; }
+    .popup-holiday-menu-composition__item:last-child {
+      border: none; }
+  .popup-holiday-menu-composition__text:nth-child(1) {
+    text-align: left;
+    padding-right: 14px; }
+  .popup-holiday-menu-composition__text:nth-child(2) {
+    text-align: right; }
 
 .popup-pie {
   /* Ручной readmore */

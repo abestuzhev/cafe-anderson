@@ -2955,7 +2955,96 @@
     .holiday-menu {
         display: block;
     }
+
+    .holiday-menu-filter-mobile {
+        display: flex;
+    }
+
+    .holiday-menu-filter {
+        display: none;
+    }
+
+    .holiday-menu-list {
+        padding: 0;
+    }
+
+    .holiday-menu-card-grid {
+        padding: 16px 16px;
+    }
+
+    .holiday-menu-card__title {
+        padding: 14px 24px;
+        font-size: 40px;
+    }
+
+    .holiday-menu-card-start__title {
+        font-size: 40px;
+    }
+
+    .holiday-menu-card-start__text {
+        font-size: 19px;
+    }
+
+    .holiday-menu-card-start__body {
+        padding: 30px 24px;
+    }
+
+    .holiday-menu-card {
+        overflow: hidden;
+        border-radius: 0;
+    }
+
+    .holiday-menu-card__body {
+        border-radius: 0;
+    }
+
+    .holiday-menu-list__item {
+        margin-bottom: 20px;
+    }
+
+    .holiday-menu-product {
+        font-size: 15px
+    }
+
+    .holiday-menu-card-line__title {
+        font-size: 20px;
+    }
+
+    .popup-holiday-menu__body {
+        width: 60%;
+        padding: 20px 20px 25px 20px;
+    }
+
+    .popup-holiday-menu-composition,
+    .popup-holiday-menu__desc {
+        margin-bottom: 20px;
+    }
+
+    .popup-holiday-menu__img {
+        margin-right: 0;
+    }
+
+    .popup-holiday-menu__price {
+        font-size: 24px;
+        padding: 10px 16px;
+    }
+
+    .popup-holiday-menu-composition__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .popup-holiday-menu-composition__col:nth-child(1),
+    .popup-holiday-menu-composition__col:nth-child(2) {
+        width: 50%;
+    }
+
+    .popup-holiday-menu__grid,
+    .popup-holiday-menu-composition__item {
+        font-size: 15px;
+    }
 }
+
 
 @media (max-width: 930px) {
 
@@ -5255,6 +5344,17 @@
         background-size: cover;
     }
 
+    .popup-holiday-menu-composition__grid {
+        display: block;
+    }
+
+    .popup-holiday-menu-composition__col:nth-child(1),
+    .popup-holiday-menu-composition__col:nth-child(2) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -5301,6 +5401,27 @@
 
     .lk-profile-address .c-col-6:last-child {
         margin-bottom: 0;
+    }
+
+    .popup-holiday-menu__grid {
+        display: block;
+        border:none;
+    }
+
+    .popup-holiday-menu .popup-title {
+        padding: 16px 16px;
+        background-color: #c2478e;
+        font-size: 17px;
+        font-family:serif;
+        text-transform: none;
+    }
+
+    .popup-holiday-menu__img {
+        height: 300px;
+        width: 100%;
+    }
+    .popup-holiday-menu__body {
+        width: 100%;
     }
 
 }
@@ -5529,12 +5650,16 @@
         max-width: 100%;
     }
 
+
+
 }
 
 @media (max-width: 668px) {
     .calendar-selector.show-up {
         bottom: -32%;
     }
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -6439,6 +6564,70 @@
         right: .5rem;
     }
 
+    .holiday-menu-card {
+        flex-flow: column wrap;
+    }
+
+    .holiday-menu-card__body {
+        order:2;
+        width: 100%;
+    }
+
+    .holiday-menu-card__img {
+        order:1;
+        height: 300px;
+        width: 100%;
+    }
+
+    .holiday-menu-card__body {
+        border:none;
+    }
+
+    .holiday-menu-card__title {
+        background-color: #91be4f;
+    }
+
+    .holiday-menu-card__title {
+        font-size: 37px;
+        padding: 14px 16px;
+    }
+
+    .holiday-menu {
+        margin-left: -22px;
+        margin-right: -22px;
+    }
+
+    .holiday-menu-filter-mobile {
+        background-color: #c44890;
+        color: #ffffff;
+        padding: 22px 16px;
+    }
+
+    .holiday-menu-card-start__title {
+        font-size: 37px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .holiday-menu-card-start__text {
+        display: none;
+    }
+
+    .holiday-menu-card-start__body {
+        padding: 18px 16px;
+    }
+
+    .holiday-menu-list__item {
+        margin-bottom: 0;
+    }
+
+    .holiday-menu-request__btn {
+        background-color: #c2478e;
+    }
+
+    .holiday-menu-request {
+        margin: 20px 0;
+    }
 
 }
 
@@ -7144,6 +7333,10 @@
         left: 0;
         right: 0;
         bottom: 0;
+    }
+
+    .holiday-menu-card__img {
+        height: 220px;
     }
 
 }

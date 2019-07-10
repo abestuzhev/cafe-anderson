@@ -2237,6 +2237,7 @@ $(document).ready(function ($) {
 
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
     showPopup(".js-test-21042019", '.popup__virtual');
+    showPopup(".holiday-menu-product", '.popup-holiday-menu');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();
