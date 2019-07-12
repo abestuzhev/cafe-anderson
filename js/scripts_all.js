@@ -9454,7 +9454,7 @@ $(document).ready(function ($) {
 
     /*START праздничное меню*/
 
-    if($('div').has('.holiday-menu-filter-layout')){
+    if($('div').hasClass('holiday-menu-filter-layout')){
         $(".holiday-menu-filter-layout").stick_in_parent({
             container: $(".holiday-menu-grid"),
             offset_top: 130,
