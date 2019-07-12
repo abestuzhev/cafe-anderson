@@ -5536,6 +5536,7 @@
             </div>
         </section>
     </div>
+    
 
     <main>
 
@@ -5559,7 +5560,14 @@
                         </div>
 
                         <div class="holiday-menu-filter" id="holiday-menu-filter">
-                            <div class="holiday-menu-filter__header"></div>
+                            <div class="holiday-menu-filter__header">
+                                <div class="holiday-menu-filter__search">
+                                    <form action="" method="POST">
+                                        <input type="text" name="holiday-menu-filter__search" placeholder="Поиск по названию">
+                                        <button type="submit"><svg class="c-symbol symbol-search"><use xlink:href="#symbol-search" /></svg></button>
+                                    </form>
+                                </div> 
+                            </div>
                             <div class="holiday-menu-filter__body">
                                 <div class="holiday-menu-filter__list">
 
@@ -5686,7 +5694,7 @@
                         </div>
                         <!--START holiday-menu-list__item-->
                         <div id="box-1" class="holiday-menu-list__item">
-                            <div class="holiday-menu-card">
+                            <div class="holiday-menu-card ltr">
                                 <div class="holiday-menu-card__body">
                                     <div class="holiday-menu-card__title">закуски на компанию</div>
                                     <div class="holiday-menu-card-grid">
@@ -5756,7 +5764,7 @@
 
                         <!--START holiday-menu-list__item-->
                         <div id="box-2" class="holiday-menu-list__item">
-                            <div class="holiday-menu-card">
+                            <div class="holiday-menu-card rtl">
                                 <div class="holiday-menu-card__img"
                                      style="background-image:url(./img/holiday-menu/holiday-menu-box-2.jpg)">
                                 </div>
@@ -5869,7 +5877,7 @@
 
                         <!--START holiday-menu-list__item-->
                         <div id="box-3" class="holiday-menu-list__item">
-                            <div class="holiday-menu-card">
+                            <div class="holiday-menu-card ltr">
                                 <div class="holiday-menu-card__body">
                                     <div class="holiday-menu-card__title">мини холодные закуски (заказ от 4х штук)</div>
                                     <div class="holiday-menu-card-grid">
@@ -5980,7 +5988,7 @@
 
                         <!--START holiday-menu-list__item-->
                         <div id="box-4" class="holiday-menu-list__item">
-                            <div class="holiday-menu-card">
+                            <div class="holiday-menu-card rtl">
                                 <div class="holiday-menu-card__img"
                                      style="background-image:url(./img/holiday-menu/holiday-menu-box-4.jpg)">
                                 </div>
@@ -6093,9 +6101,7 @@
                         <img src="./img/promocode/cake-promo-img.png" alt="">
                     </div>
                     <div class="holiday-hall-sentence__body">
-                        <div class="holiday-hall-sentence__title">Заполните форму и <br>
-                            получите промо код на скидку 10%
-                        </div>
+                        <div class="holiday-hall-sentence__title">Оставить заявку </div>
                         <form action="" method="POST" class="holiday-hall-sentence__form">
                             <div class="holiday-hall-sentence__grid">
                                 <div class="holiday-hall-sentence__col">
@@ -6121,7 +6127,7 @@
                                         </a> моих персональных данных.</label>
                                 </div>
                             </div>
-                            <button class="holiday-hall-sentence__btn">Получить скидку</button>
+                            <button class="holiday-hall-sentence__btn">Отправить</button>
 
                         </form>
                     </div>
@@ -6131,29 +6137,6 @@
 
             </div>
 
-
-            <!--<ul id="top-menu">-->
-            <!--<li class="active">-->
-            <!--<a href="#">Top</a>-->
-            <!--</li>-->
-            <!--<li>-->
-            <!--<a href="#foo">Foo</a>-->
-            <!--</li>-->
-            <!--<li>-->
-            <!--<a href="#bar">Bar</a>-->
-            <!--</li>-->
-            <!--<li>-->
-            <!--<a href="#baz">Baz</a>-->
-            <!--</li>-->
-            <!--</ul>-->
-
-            <!--<a id="foo">Foo</a>-->
-
-
-            <!--<a id="bar">Bar</a>-->
-
-
-            <!--<a id="baz">Baz</a>-->
 
 
         </div>
@@ -6257,7 +6240,139 @@
 <!--#region POPUP
  -------------------------------------------START popup-->
 
+ <div class="mfp-wrap popup-holiday-filter" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+    <div class="mfp-container mfp-inline-holder">
+        <div class="mfp-content">
+            <div class="mfp-content-bg"></div>
+            <div class="popup">
+                <h3 class="popup-title">
+                    <div class="holiday-menu-filter__search">
+                        <form action="" method="POST">
+                            <input type="text" name="holiday-menu-filter__search" placeholder="Поиск по названию">
+                            <button type="submit"><svg class="c-symbol symbol-search"><use xlink:href="#symbol-search" /></svg></button>
+                        </form>
+                    </div> 
+                    <span class="popup-close"></span>
+                </h3>
+                <div class="popup-body">
+                    <div class="holiday-menu-filter">
+                        
+                        <div class="holiday-menu-filter__body">
+                            <div class="holiday-menu-filter__list">
 
+                                <div class="holiday-menu-filter__item ">
+                                    <div class="holiday-menu-filter-card active">
+                                        <div class="holiday-menu-filter-card__head">
+                                            <a href="#box-1" class="holiday-menu-filter-card__title">Закуски на компанию</a>
+                                            <a href="#" class="holiday-menu-filter-card__btn"></a>
+                                        </div>
+                                        <div class="holiday-menu-filter-card__body">
+                                            <ul class="holiday-menu-filter-card__list">
+                                                <li class="holiday-menu-filter-card__item">
+                                                    <a href="#" class="holiday-menu-filter-card__link">Брускетты</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Корзиночки</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Канапе</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Тар-Тар</a>
+                                                </li>
+                                                <li class="holiday-menu-filter-card__item">
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="holiday-menu-filter__item">
+                                <div class="holiday-menu-filter-card">
+                                    <div class="holiday-menu-filter-card__head">
+                                        <a href="#box-2" class="holiday-menu-filter-card__title">Мини холодные закуски</a>
+                                        <a href="#" class="holiday-menu-filter-card__btn"></a>
+                                    </div>
+                                    <div class="holiday-menu-filter-card__body">
+                                        <ul class="holiday-menu-filter-card__list">
+                                            <li class="holiday-menu-filter-card__item">
+                                                <a href="#" class="holiday-menu-filter-card__link">Брускетты</a>
+                                                <a href="#" class="holiday-menu-filter-card__link">Корзиночки</a>
+                                                <a href="#" class="holiday-menu-filter-card__link">Канапе</a>
+                                                <a href="#" class="holiday-menu-filter-card__link">Тар-Тар</a>
+                                            </li>
+                                            <li class="holiday-menu-filter-card__item">
+
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div class="holiday-menu-filter__item">
+                                    <div class="holiday-menu-filter-card">
+                                        <div class="holiday-menu-filter-card__head">
+                                            <a href="#box-3" class="holiday-menu-filter-card__title">Горячие закуски</a>
+                                            <a href="#" class="holiday-menu-filter-card__btn"></a>
+                                        </div>
+                                        <div class="holiday-menu-filter-card__body">
+                                            <ul class="holiday-menu-filter-card__list">
+                                                <li class="holiday-menu-filter-card__item">
+                                                    <a href="#" class="holiday-menu-filter-card__link">Брускетты</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Корзиночки</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Канапе</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Тар-Тар</a>
+                                                </li>
+                                                <li class="holiday-menu-filter-card__item">
+
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="holiday-menu-filter__item">
+                                    <div class="holiday-menu-filter-card">
+                                        <div class="holiday-menu-filter-card__head">
+                                            <a href="#box-4" class="holiday-menu-filter-card__title">Салаты</a>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="holiday-menu-filter__item">
+                                    <div class="holiday-menu-filter-card">
+                                        <div class="holiday-menu-filter-card__head">
+                                            <a href="#box-5" class="holiday-menu-filter-card__title">Горячее</a>
+                                            <a href="#" class="holiday-menu-filter-card__btn"></a>
+                                        </div>
+                                        <div class="holiday-menu-filter-card__body">
+                                            <ul class="holiday-menu-filter-card__list">
+                                                <li class="holiday-menu-filter-card__item">
+                                                    <a href="#" class="holiday-menu-filter-card__link">Брускетты</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Корзиночки</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Канапе</a>
+                                                    <a href="#" class="holiday-menu-filter-card__link">Тар-Тар</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--popup-body-->
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--модальное окно меню кафе-->
 <div class="mfp-wrap popup-holiday-menu " tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">

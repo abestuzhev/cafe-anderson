@@ -2957,8 +2957,13 @@
         display: block;
     }
 
+    .holiday-menu-filter-layout {
+        width: 100%;
+        min-width:100%;
+    }
     .holiday-menu-filter-mobile {
         display: flex;
+        width: 100%;
     }
 
     .holiday-menu-filter {

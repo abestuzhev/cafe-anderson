@@ -9454,11 +9454,30 @@ $(document).ready(function ($) {
 
     /*START праздничное меню*/
 
-    $(".holiday-menu-filter-layout").stick_in_parent({
-        container: $(".holiday-menu-grid"),
-        offset_top: 130,
-        offset_bottom: 30
-    });
+    if($('div').has('.holiday-menu-filter-layout')){
+        $(".holiday-menu-filter-layout").stick_in_parent({
+            container: $(".holiday-menu-grid"),
+            offset_top: 130,
+            offset_bottom: 30
+        });
+    
+        if($(window).width() < 960){
+            $(".holiday-menu-filter-layout").trigger("sticky_kit:detach");
+        }
+    
+        $(window).resize(function() {
+            if($(window).width() < 960){
+                $(".holiday-menu-filter-layout").trigger("sticky_kit:detach");
+            }
+        });
+    }
+
+    
+
+    // $(document).on('click', '.holiday-menu-filter-mobile', function(e){
+    //     e.preventDefault();
+    //     $(this).parents('.holiday-menu-filter-layout').find('.holiday-menu-filter').toggleClass('is-visible');
+    // });
 
     $(document).on('click', '.holiday-menu-filter-card__btn', function(e){
         e.preventDefault();
@@ -11482,6 +11501,7 @@ $(document).ready(function ($) {
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
     showPopup(".js-test-21042019", '.popup__virtual');
     showPopup(".holiday-menu-product", '.popup-holiday-menu');
+    showPopup(".holiday-menu-filter-mobile", '.popup-holiday-filter');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();

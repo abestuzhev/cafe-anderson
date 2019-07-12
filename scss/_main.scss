@@ -25692,6 +25692,16 @@ a.show-more__button:hover {
         box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
         margin-bottom: 38px;
 
+        &.is-visible {
+            display: block;
+            position: fixed;
+            z-index: 1090;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+        }
+
 
         &-layout {
             display: flex;
@@ -25740,13 +25750,54 @@ a.show-more__button:hover {
         &__header {
             background-color: #c44890;
             border-radius: .6rem .6rem 0 0;
-            padding: .8rem .5rem;
+            padding: .8rem 1.5rem;
             font-size: 3rem;
             font-family: "BebasNeue";
             color: #ffffff;
             font-weight: 700;
             text-align: center;
+        }
 
+        &__search {
+            overflow:hidden;
+            border-radius:4px;
+            position:relative;
+            input {
+                display:block;
+                width: 100%;
+                background-color: #9b3a73;
+                border:none;
+                outline:none;
+                line-height:1;
+                padding: 8px 12px;
+                font-style: italic;
+                font-size: 15px;
+                color:#e9d2df;
+            }
+
+            button {
+                width: 20px;
+                height: 20px;
+                position:absolute;
+                right: 10px;
+                top: 8px;
+                cursor:pointer;
+                
+            }
+
+            .c-symbol {
+                fill:#e9d2df;
+                transform:rotate(270deg);
+                font-size: 1.8rem;
+                position:absolute;
+                right: 0px;
+                top: 0px;  
+            }
+
+            input::-webkit-input-placeholder { color: #e9d2df; }
+            input:-ms-input-placeholder { color: #e9d2df; }
+            input::-ms-input-placeholder { color: #e9d2df; }
+            input::placeholder { color: #e9d2df; } 
         }
 
         &__body {
@@ -25906,6 +25957,23 @@ a.show-more__button:hover {
         border-radius: 10px;
         box-shadow: 0 5px 10px rgba(0,0,0,.15);
 
+        &.rtl {
+            .holiday-menu-card__body{
+                border-right: 4px solid #c2478e;
+                border-bottom: 4px solid #c2478e;
+                border-radius: 0 0 10px 0;
+             }
+        }
+
+        &.ltr {
+             .holiday-menu-card__body{
+                border-left: 4px solid #c2478e;
+                border-bottom: 4px solid #c2478e;
+                border-radius: 0 0 0 10px;
+             }
+        }
+
+
         &-start {
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
             &__img {
@@ -25990,9 +26058,7 @@ a.show-more__button:hover {
 
         &__body {
             width: 60%;
-            border-left: 4px solid #c2478e;
-            border-bottom: 4px solid #c2478e;
-            border-radius: 0 0 0 10px;
+            
         }
 
         &-list {
@@ -26086,6 +26152,45 @@ a.show-more__button:hover {
 
 
         }
+    }
+
+    .holiday-hall-sentence {
+        background:url(../img/holiday-menu/sentence-bg.jpg) 50% 50% no-repeat;
+        background-size:cover;
+    }
+
+    .holiday-hall-sentence .decor-grass-4 {
+        position: absolute;
+        left: 6%;
+        top:auto;
+        bottom: -6%;
+    }
+
+    .holiday-hall-sentence .decor-grass-3 {
+        position: absolute;
+        left: 4%;
+        bottom: auto;
+        top:6%;
+    }
+
+    .holiday-hall-sentence__grid {
+        margin-left: -0.8rem;
+        margin-right: -0.8rem;
+    }
+
+    .holiday-hall-sentence__col {
+        padding: 0 .8rem;
+    }
+
+    .holiday-hall-sentence__body {
+        max-width: 74rem;
+    }
+
+    .holiday-hall-sentence__btn {
+        background-color: #98c22f;
+        color:#fff;
+        border:none;
+        font-weight: 700;
     }
 
 }
@@ -26221,6 +26326,76 @@ a.show-more__button:hover {
             &:nth-child(2) {
                 text-align: right;
             }
+        }
+    }
+}
+
+.popup-holiday-filter {
+    .popup-title {
+        background-color: #c03887;
+        padding: 1rem 1.4rem 1rem;
+        padding-right: 60px !important;
+    }
+    .popup-body {
+        padding: 0 !important;
+    }
+    .holiday-menu-filter {
+        display:block;
+        margin-bottom:0;
+    }
+
+    .holiday-menu-filter__body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .holiday-menu-filter-card__head {
+        background-color: transparent;
+        border:none;
+        box-shadow:none;
+    }
+
+    .popup-close {
+        top: 0;
+        bottom: auto;
+        border-radius: 0 0 50px 50px;
+        padding: 1rem 1.6rem 3.4rem;
+    }
+
+    .holiday-menu-filter-card.active .holiday-menu-filter-card__head {
+        background-color: #abde57;
+        color: #3e492f;
+        border:none;
+    }
+
+    .holiday-menu-filter-card__head {
+
+        font-size:19px;
+    }
+
+    .holiday-menu-filter-card__title {
+        padding: 6px 16px;
+    }
+
+    .holiday-menu-filter-card.active .holiday-menu-filter-card__btn {
+        background-color: #91bd4d;
+    }
+
+    .holiday-menu-filter-card.active a {
+        color: #3e492f;
+    }
+
+    .holiday-menu-filter-card.active {
+        background-color: #abde57;
+        color: #ffffff;
+    }
+
+    .holiday-menu-filter__item {
+        padding: 6px 0;
+        margin: 0;
+
+        &:last-child {
+            border:none;
         }
     }
 }
