@@ -215,10 +215,6 @@ $(document).ready(function ($) {
         $(this).parents('.event-builder-change-card').find('.event-builder-change-card__body').slideToggle(300);
     });
 
-
-    
-
-
     /*START праздничное меню*/
 
     if($('div').hasClass('holiday-menu-filter-layout')){
@@ -252,7 +248,7 @@ $(document).ready(function ($) {
     });
 
     var lastId,
-        topMenu = $("#holiday-menu-filter"),
+        topMenu = $(".holiday-menu-filter"),
         topMenuHeight = 130,
         menuItems = topMenu.find('.holiday-menu-filter-card__title'),
         scrollItems = menuItems.map(function(){
@@ -2267,7 +2263,7 @@ $(document).ready(function ($) {
 
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
     showPopup(".js-test-21042019", '.popup__virtual');
-    showPopup(".holiday-menu-product", '.popup-holiday-menu');
+    showPopup(".js-holiday-menu-product", '.popup-holiday-menu');
     showPopup(".holiday-menu-filter-mobile", '.popup-holiday-filter');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
