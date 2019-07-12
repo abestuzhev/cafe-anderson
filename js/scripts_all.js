@@ -9446,7 +9446,7 @@ $(document).ready(function ($) {
     $(document).on('click', '.event-builder-change-card__more', function(e){
         e.preventDefault();
         $(this).parents('.event-builder-change-card').find('.event-builder-change-card__body').slideToggle(300);
-    })
+    });
 
 
     
@@ -9454,41 +9454,52 @@ $(document).ready(function ($) {
 
     /*START праздничное меню*/
 
-    // var lastId,
-    //     topMenu = $("#top-menu"),
-    //     topMenuHeight = topMenu.outerHeight()+15,
-    //     menuItems = topMenu.find("a"),
-    //     scrollItems = menuItems.map(function(){
-    //         var item = $($(this).attr("href"));
-    //         if (item.length) { return item; }
-    //     });
-    //
-    // menuItems.click(function(e){
-    //     var href = $(this).attr("href"),
-    //         offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
-    //     $('html, body').stop().animate({
-    //         scrollTop: offsetTop
-    //     }, 300);
-    //     e.preventDefault();
-    // });
-    //
-    // $(window).scroll(function(){
-    //     var fromTop = $(this).scrollTop()+topMenuHeight;
-    //
-    //     var cur = scrollItems.map(function(){
-    //         if ($(this).offset().top < fromTop)
-    //             return this;
-    //     });
-    //     cur = cur[cur.length-1];
-    //     var id = cur && cur.length ? cur[0].id : "";
-    //
-    //     if (lastId !== id) {
-    //         lastId = id;
-    //         menuItems
-    //             .parent().removeClass("active")
-    //             .end().filter("[href='#"+id+"']").parent().addClass("active");
-    //     }
-    // });
+    $(".holiday-menu-filter-layout").stick_in_parent({
+        container: $(".holiday-menu-grid"),
+        offset_top: 130,
+        offset_bottom: 30
+    });
+
+    $(document).on('click', '.holiday-menu-filter-card__btn', function(e){
+        e.preventDefault();
+        $(this).parents('.holiday-menu-filter-card').find('.holiday-menu-filter-card__body').slideToggle(200);
+    });
+
+    var lastId,
+        topMenu = $("#holiday-menu-filter"),
+        topMenuHeight = 130,
+        menuItems = topMenu.find('.holiday-menu-filter-card__title'),
+        scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+        });
+
+    menuItems.click(function(e){
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        e.preventDefault();
+    });
+
+    $(window).scroll(function(){
+        var fromTop = $(this).scrollTop()+topMenuHeight;
+
+        var cur = scrollItems.map(function(){
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        cur = cur[cur.length-1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+            lastId = id;
+            menuItems
+                .parents('.holiday-menu-filter-card').removeClass("active")
+                .end().filter("[href='#"+id+"']").parents('.holiday-menu-filter-card').addClass("active");
+        }
+    });
 
     /*END праздничное меню*/
 

@@ -27694,18 +27694,34 @@ a.show-more__button:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
   .holiday-menu-filter {
-    width: 24rem;
     border-radius: .6rem;
     background: #fff url(../img/bg-cafe-info.png) 0 0 repeat;
     -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1); }
+            box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 38px; }
+    .holiday-menu-filter-layout {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 240px;
+      min-width: 240px; }
     .holiday-menu-filter-mobile {
       background-color: #c44890;
       color: #ffffff;
@@ -27755,37 +27771,66 @@ a.show-more__button:hover {
       padding-top: 1rem;
       border-top: 1px dashed #828282; }
     .holiday-menu-filter__item {
-      padding-bottom: 1rem;
+      padding-bottom: .5rem;
       margin-bottom: 1rem;
       border-bottom: 1px dashed #828282; }
+    .holiday-menu-filter-card.active {
+      background-color: #c03887;
+      color: #ffffff; }
+      .holiday-menu-filter-card.active .holiday-menu-filter-card__head {
+        background-color: #c03887;
+        color: #ffffff;
+        border: 1px dashed #7e1753;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border-radius: .2rem; }
+      .holiday-menu-filter-card.active .holiday-menu-filter-card__btn {
+        background-color: #7e1753; }
+      .holiday-menu-filter-card.active a {
+        color: #ffffff; }
     .holiday-menu-filter-card__head {
       width: 100%;
-      padding: 1rem 3.5rem 1rem 1.6rem;
       background-color: #aadf5d;
       border: 1px solid #98d149;
       cursor: pointer;
       position: relative;
       border-radius: .2rem;
       -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.17);
-              box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.17); }
-      .holiday-menu-filter-card__head::after {
+              box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.17);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-right: 10px; }
+    .holiday-menu-filter-card__btn {
+      position: relative;
+      display: block;
+      width: 2.7rem;
+      min-width: 2.7rem;
+      height: 2.7rem;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 27px;
+              flex: 0 1 27px;
+      border-radius: 3rem;
+      background-color: #91bd4d; }
+      .holiday-menu-filter-card__btn::after {
         content: '';
-        position: absolute;
-        right: .8rem;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-        width: 2.7rem;
-        height: 2.7rem;
-        border-radius: 3rem;
-        background-color: #91bd4d; }
-      .holiday-menu-filter-card__head::before {
+        border: none; }
+      .holiday-menu-filter-card__btn::before {
         content: '';
         position: absolute;
         z-index: 1;
-        right: 1.5rem;
-        top: 50%;
+        right: 8px;
+        top: 52%;
         -webkit-transform: rotate(180deg) translateY(-50%);
             -ms-transform: rotate(180deg) translateY(-50%);
                 transform: rotate(180deg) translateY(-50%);
@@ -27796,12 +27841,16 @@ a.show-more__button:hover {
         height: .6rem;
         background: url(../img/holiday-menu/new-arrow.svg) 0 0 no-repeat; }
     .holiday-menu-filter-card__title {
-      font-style: italic; }
+      font-style: italic;
+      color: #3e492f;
+      padding: 1rem 1rem 1rem 1.6rem; }
+      .holiday-menu-filter-card__title::after {
+        content: '';
+        border: none; }
     .holiday-menu-filter-card__body {
-      padding: 1rem 0 0; }
-    .holiday-menu-filter-card__item {
-      margin-bottom: .8rem; }
-    .holiday-menu-filter-card_link {
+      padding: 1rem 0 .5rem;
+      display: none; }
+    .holiday-menu-filter-card__link {
       padding-left: 2.3rem;
       position: relative;
       font-style: italic;
@@ -27812,7 +27861,7 @@ a.show-more__button:hover {
       margin-bottom: .8rem;
       font-family: 'PT Serif Caption', serif;
       color: #555451; }
-      .holiday-menu-filter-card_link::after {
+      .holiday-menu-filter-card__link::after {
         content: '';
         border: none; }
   .holiday-menu-list {

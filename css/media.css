@@ -2952,6 +2952,7 @@
     }
 
     /*holiday-menu*/
+    .holiday-menu-grid,
     .holiday-menu {
         display: block;
     }
