@@ -1737,6 +1737,10 @@
     .contact-us__decor-1 {
         display: none;
     }
+
+    .event-builder-combo__item {
+        width:50%;
+    }
 }
 
 @media (min-width: 1020px) {

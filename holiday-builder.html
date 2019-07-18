@@ -5551,7 +5551,7 @@
                         <!--<img src="img/event-builder/event-builder__button_active_left.png" height="114" width="27"/>-->
                     <!--</div>-->
 
-                    <div class="top-nav-button " data-for-tab="#when">
+                    <div class="top-nav-button top-nav-button_active" data-for-tab="#when">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#calendar" /></svg></div>
                             <div class="top-nav-button__title">Когда?</div>
@@ -5563,7 +5563,7 @@
                             <div class="top-nav-button__title">Анимация</div>
                         </div>
                     </div>
-                    <div class="top-nav-button top-nav-button_active" data-for-tab="#eat">
+                    <div class="top-nav-button" data-for-tab="#eat">
                         <div class="top-nav-button__wrapper">
                             <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#eat" /></svg></div>
                             <div class="top-nav-button__title">Еда и торт</div>
@@ -5867,9 +5867,85 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="event-builder-combo__item">
+                                        <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                            <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
+                                            <label for="event-builder-combo-1" >
+                                                <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
+                                            </label>
+                                        </div> -->
 
-                                        
+                                        <div class="c-card-catalog-3 c-card-catalog__change">
+                                            <div class="c-card-catalog__check">
+                                                <div class="c-checkbox-custom">
+                                                    <input type="checkbox" name="event-builder-change">
+                                                </div>
+                                            </div>
+                                            <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
+                                            </div>
+                                            <div class="c-card-catalog-3__body">
+                                                <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
+                                                <div class="c-card-catalog-3__footer">
+                                                    <div class="c-card-catalog__price"><div>
+                                                        <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                    </div>
+                                                    </div>
+    
+                                                    <a href="#" class="c-card-catalog__basket">
+                                                        <i class="icon-shopping-cart"></i>
+                                                    </a>
+                                                    <div class="c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    <div class="event-builder-combo__item">
+                                        <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                            <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
+                                            <label for="event-builder-combo-1" >
+                                                <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
+                                            </label>
+                                        </div> -->
+
+                                        <div class="c-card-catalog-3 c-card-catalog__change">
+                                            <div class="c-card-catalog__check">
+                                                <div class="c-checkbox-custom">
+                                                    <input type="checkbox" name="event-builder-change">
+                                                </div>
+                                            </div>
+                                            <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
+                                            </div>
+                                            <div class="c-card-catalog-3__body">
+                                                <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
+                                                <div class="c-card-catalog-3__footer">
+                                                    <div class="c-card-catalog__price"><div>
+                                                        <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                    </div>
+                                                    </div>
+    
+                                                    <a href="#" class="c-card-catalog__basket">
+                                                        <i class="icon-shopping-cart"></i>
+                                                    </a>
+                                                    <div class="c-card-catalog__count">
+                                                        <div class="c-counter">
+                                                            <button type="button" class="but c-counter__btn dec">-</button>
+                                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
                                     </div>
                                     <div class="event-builder-combo__item">
                                         <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-2.jpg);">
@@ -6461,14 +6537,94 @@
                     </div>
                     <!--/ ORDER TAB -->
 
+                    <!--CHECK-->
+                    <div class="event-builder-check">
+                        <div class="event-builder-check__body">
+                            <div class="event-builder-check__header">Чек</div>
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#place-alt" /></svg></div>
+                                <div class="event-builder-check__title">Аренда зала</div>
+                            </div>
+                            <div class="event-builder-check__text">Андерсон в Медведково</div>
+                            <div class="event-builder-check__price">10 500 P</div>
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#decor" /></svg></div>
+                                <div class="event-builder-check__title">Оформление</div>
+                            </div>
+                            <div class="event-builder-check__price">1 540 P</div>
+                            <div class="event-builder-check__hr"></div>
 
 
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#welcome" /></svg></div>
+                                <div class="event-builder-check__title">Welcome-меню</div>
+                            </div>
+                            <div class="event-builder-check__price">3 690 P</div>
+                            <div class="event-builder-check__hr"></div>
 
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#main" /></svg></div>
+                                <div class="event-builder-check__title">Основное меню</div>
+                            </div>
+                            <div class="event-builder-check__price">6 220 P</div>
+                            <div class="event-builder-check__hr"></div>
 
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#tea" /></svg></div>
+                                <div class="event-builder-check__title">Чаепитие</div>
+                            </div>
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon event-builder-check__icon_danger"><svg><use xlink:href="./img/event-builder/event-builder.svg#danger" /></svg></div>
+                                <div class="event-builder-check__title event-builder-check__text_danger">Недостаточно чаепития выберите его несколько строк текста</div>
+                            </div>
+                            <div class="event-builder-check__hr"></div>
 
-                <!--<div class="event-builder-tab" data-tab="#details">-->
-                    <!--details-->
-                <!--</div>-->
+                            <div class="event-builder-check__line">
+                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#masks" /></svg></div>
+                                <div class="event-builder-check__title">Общая крутость праздника</div>
+                            </div>
+
+                            <div class="event-builder-check-rating-block" data-rating="5">
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_1"><svg><use xlink:href="./img/event-builder/smiles.svg#smile1" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Плохо</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_2"><svg><use xlink:href="./img/event-builder/smiles.svg#smile2" /></svg></div>
+                                    <div class="event-builder-check-rating__text event-builder-check-rating__text_thin">Удовлетворительно</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_3"><svg><use xlink:href="./img/event-builder/smiles.svg#smile3" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Хорошо</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_4"><svg><use xlink:href="./img/event-builder/smiles.svg#smile4" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Отлично</div>
+                                </div>
+                                <div class="event-builder-check-rating">
+                                    <div class="event-builder-check-rating__icon event-builder-check-rating__icon_level_5"><svg><use xlink:href="./img/event-builder/smiles.svg#smile5" /></svg></div>
+                                    <div class="event-builder-check-rating__text">Превосходно</div>
+                                </div>
+                            </div>
+
+                            <div class="event-builder-check__hr"></div>
+
+                            <div class="event-builder-check-result">
+
+                                <div class="event-builder-check-result__text">ИТОГО:</div>
+                                <div class="event-builder-check-result__price">999 990 Р</div>
+                            </div>
+
+                            <a href="#" class="event-builder-check__button">Оформить в 1 клик</a>
+                            <a href="#" class="event-builder-check__button">Добавить в корзину</a>
+
+                        </div>
+                    </div>
+                    <!-- / CHECK-->
 
 
                 </div>

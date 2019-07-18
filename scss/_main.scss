@@ -21245,15 +21245,15 @@ a.show-more__button:hover {
     &-combo {
         &__list {
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
+            flex-flow: row wrap;
+            justify-content: flex-start;
             align-items: stretch;
             margin-left: -10px;
             margin-right: -10px;
         }
 
         &__item {
-            width: 50%;
+            width: 33%;
             padding: 10px;
         }
 

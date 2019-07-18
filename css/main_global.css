@@ -24287,18 +24287,18 @@ a.show-more__button:hover {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
     margin-left: -10px;
     margin-right: -10px; }
   .event-builder-combo__item {
-    width: 50%;
+    width: 33%;
     padding: 10px; }
   .event-builder-combo-card {
     width: 100%;
