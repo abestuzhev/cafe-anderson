@@ -22868,7 +22868,8 @@ a.show-more__button:hover {
         line-height: 1; }
   .event-builder .event-builder-check {
     display: none;
-    padding-left: 2.5rem; }
+    padding-left: 2.5rem;
+    position: relative; }
     .event-builder .event-builder-check_show {
       display: block; }
     .event-builder .event-builder-check__body {

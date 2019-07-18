@@ -19481,6 +19481,7 @@ a.show-more__button:hover {
     .event-builder-check {
         display: none;
         padding-left: 2.5rem;
+        position: relative;
 
         &_show {
             display: block;
