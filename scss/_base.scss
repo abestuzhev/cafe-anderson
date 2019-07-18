@@ -3185,6 +3185,36 @@ a.c-button {
     overflow: hidden;
     text-align: left;
     color: #515151;
+
+    &__change::after {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .1;
+    }
+
+    &__change.checked::after {
+        content:'';
+        display:none;
+    }
+
+    &__check {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 50;  
+
+        .c-checkbox-custom input, 
+        .c-radio-custom input {
+            box-shadow: inset 0 0 transparent, 
+            inset -20px 0 rgba(138, 138, 138, 0.2), 
+            inset 0px 0 rgba(138, 138, 138, 0.2);
+        }
+    }   
     
     a::after {
         content: '';
@@ -3550,6 +3580,8 @@ div.c-card-catalog-3 {
     //overflow: hidden;
     height: 100%;
     position: relative;
+
+
 
     &__img {
         overflow: hidden;

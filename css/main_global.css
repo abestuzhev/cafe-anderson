@@ -4183,6 +4183,27 @@ a.c-button:hover {
   overflow: hidden;
   text-align: left;
   color: #515151; }
+  .c-card-catalog__change::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .1; }
+  .c-card-catalog__change.checked::after {
+    content: '';
+    display: none; }
+  .c-card-catalog__check {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 50; }
+    .c-card-catalog__check .c-checkbox-custom input,
+    .c-card-catalog__check .c-radio-custom input {
+      -webkit-box-shadow: inset 0 0 transparent, inset -20px 0 rgba(138, 138, 138, 0.2), inset 0px 0 rgba(138, 138, 138, 0.2);
+              box-shadow: inset 0 0 transparent, inset -20px 0 rgba(138, 138, 138, 0.2), inset 0px 0 rgba(138, 138, 138, 0.2); }
   .c-card-catalog a::after {
     content: '';
     border: none; }

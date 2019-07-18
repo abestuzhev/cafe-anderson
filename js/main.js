@@ -210,6 +210,19 @@ $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
 
+    $('.c-checkbox-custom').on('click', function(){ 
+          
+        if($(this).children('input').prop("checked")) { 
+            console.log('click');   
+            $(this).parents('.c-card-catalog__change').addClass('checked');
+        }else{
+            console.log('no click');   
+            $(this).parents('.c-card-catalog__change').removeClass('checked');
+        }
+    });
+
+
+
     $(document).on('click', '.event-builder-change-card__more', function(e){
         e.preventDefault();
         $(this).parents('.event-builder-change-card').find('.event-builder-change-card__body').slideToggle(300);
