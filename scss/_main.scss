@@ -19213,6 +19213,19 @@ a.show-more__button:hover {
         }
     }
 
+    &-grid {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &__col {
+            &:nth-child(1) {
+                width: 100%;
+            }
+
+        }
+    }
+
     .top-nav {
         display: flex;
         align-items: center;
@@ -21188,6 +21201,9 @@ a.show-more__button:hover {
         .event-builder-change
 
         &-card {
+
+
+
             &__head {
                 font-family:$font_serif;
 
@@ -21239,6 +21255,21 @@ a.show-more__button:hover {
                 font-family:$font_serif;
                 padding: 10px 0;
                 display: none;
+
+                &::after {
+                    content:'';
+                    clear:both;
+                    display: table;
+                }
+
+
+
+                img {
+                    float: left;
+                    max-width:250px;
+                    display: inline-block;
+                    padding: 0 16px 0px 0;
+                }
             }
         }
     }
@@ -21433,6 +21464,20 @@ a.show-more__button:hover {
         white-space:nowrap;
     }
 
+    .event-builder-check__body {
+        margin-top: 0;
+    }
+
+
+
+}
+
+.event-builder-check {
+    &.is_stuck {
+        //position: absolute !important;
+        right:0 !important;
+        left:auto !important;
+    }
 }
 
 .c-checkbox-custom,

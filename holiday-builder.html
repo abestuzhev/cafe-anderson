@@ -5537,443 +5537,567 @@
 
             <div class="event-builder">
 
-                <div class="top-nav">
+                <div class="event-builder-grid">
+                    <div class="event-builder-grid__col">
+                        <div class="top-nav">
 
-                    <!--<div class="top-nav-imgloader" style="display:none;">-->
-                        <!--<img src="img/event-builder/event-builder__button_visited_middle.png" height="84" width="140"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_visited_left.png" height="84" width="33"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_green_right.png" height="84" width="54"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_green_middle.png" height="84" width="40"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_green_left.png" height="84" width="13"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_active_right_last.png" height="114" width="41"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_active_right.png" height="114" width="73"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_active_middle.png" height="114" width="189"/>-->
-                        <!--<img src="img/event-builder/event-builder__button_active_left.png" height="114" width="27"/>-->
-                    <!--</div>-->
+                            <!--<div class="top-nav-imgloader" style="display:none;">-->
+                            <!--<img src="img/event-builder/event-builder__button_visited_middle.png" height="84" width="140"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_visited_left.png" height="84" width="33"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_green_right.png" height="84" width="54"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_green_middle.png" height="84" width="40"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_green_left.png" height="84" width="13"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_active_right_last.png" height="114" width="41"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_active_right.png" height="114" width="73"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_active_middle.png" height="114" width="189"/>-->
+                            <!--<img src="img/event-builder/event-builder__button_active_left.png" height="114" width="27"/>-->
+                            <!--</div>-->
 
-                    <div class="top-nav-button top-nav-button_active" data-for-tab="#when">
-                        <div class="top-nav-button__wrapper">
-                            <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#calendar" /></svg></div>
-                            <div class="top-nav-button__title">Когда?</div>
+                            <div class="top-nav-button top-nav-button_active" data-for-tab="#when">
+                                <div class="top-nav-button__wrapper">
+                                    <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#calendar" /></svg></div>
+                                    <div class="top-nav-button__title">Когда?</div>
+                                </div>
+                            </div>
+                            <div class="top-nav-button " data-for-tab="#animation">
+                                <div class="top-nav-button__wrapper">
+                                    <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#animation" /></svg></div>
+                                    <div class="top-nav-button__title">Анимация</div>
+                                </div>
+                            </div>
+                            <div class="top-nav-button" data-for-tab="#eat">
+                                <div class="top-nav-button__wrapper">
+                                    <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#eat" /></svg></div>
+                                    <div class="top-nav-button__title">Еда и торт</div>
+                                </div>
+                            </div>
+
+                            <div class="top-nav-button top-nav-button_last" data-for-tab="#where">
+                                <div class="top-nav-button__wrapper">
+                                    <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#place" /></svg></div>
+                                    <div class="top-nav-button__title">Где?</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="top-nav-button " data-for-tab="#animation">
-                        <div class="top-nav-button__wrapper">
-                            <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#animation" /></svg></div>
-                            <div class="top-nav-button__title">Анимация</div>
-                        </div>
-                    </div>
-                    <div class="top-nav-button" data-for-tab="#eat">
-                        <div class="top-nav-button__wrapper">
-                            <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#eat" /></svg></div>
-                            <div class="top-nav-button__title">Еда и торт</div>
-                        </div>
-                    </div>
+                        <div class="event-builder-tab-layout">
+                            <div class="event-builder-tab event-builder-tab-list event-builder-tab_active" data-show-check="show" data-tab="#when" >
 
-                    <div class="top-nav-button top-nav-button_last" data-for-tab="#where">
-                        <div class="top-nav-button__wrapper">
-                            <div class="top-nav-button__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#place" /></svg></div>
-                            <div class="top-nav-button__title">Где?</div>
-                        </div>
-                    </div>
-                </div>
+                                <div class="event-builder-tab__body">
+                                    <div class="event-builder-when">
+                                        <form action="" method="POST">
+                                            <div class="event-builder-when__item">
+                                                <div class="event-builder-title">Когда у вас праздник?</div>
+                                                <div class="event-builder-when-calendar">
+                                                    <div class="event-builder-when-calendar__item">
+                                                        <!--<input type="text" id="july-datepicker" />-->
+                                                        <div id="july-datepicker"></div>
 
-                <div class="event-builder-tab-layout">
-                    <div class="event-builder-tab event-builder-tab-list event-builder-tab_active" data-show-check="show" data-tab="#when" >
-
-                        <div class="event-builder-tab__body">
-                            <div class="event-builder-when">
-                                <form action="" method="POST">
-                                    <div class="event-builder-when__item">
-                                        <div class="event-builder-title">Когда у вас праздник?</div>
-                                        <div class="event-builder-when-calendar">
-                                            <div class="event-builder-when-calendar__item">
-                                                <!--<input type="text" id="july-datepicker" />-->
-                                                <div id="july-datepicker"></div>
-
-                                            </div>
-                                            <div class="event-builder-when-calendar__item">
-                                                <!--<input type="text" id="augest-datepicker" />-->
-                                                <div id="augest-datepicker"></div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="event-builder-when__item">
-                                        <div class="event-builder-when-form">
-                                            <div class="event-builder-when-form__item">
-                                                <div class="event-builder-title">Во сколько у вас праздник?</div>
-                                                <div class="event-builder-when-time">
-                                                    <div class="event-builder-when-time__item">
-                                                        <input id="event-builder-when-time__10" type="radio" name="event-builder-when-time" class="event-builder-when-time__input" checked>
-                                                        <label for="event-builder-when-time__10" class="event-builder-when-time__label">10:00</label>
                                                     </div>
-                                                    <div class="event-builder-when-time__item">
-                                                        <input id="event-builder-when-time__13" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
-                                                        <label for="event-builder-when-time__13" class="event-builder-when-time__label">13:00</label>
-                                                    </div>
-                                                    <div class="event-builder-when-time__item">
-                                                        <input id="event-builder-when-time__16" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
-                                                        <label for="event-builder-when-time__16" class="event-builder-when-time__label">16:00</label>
-                                                    </div>
-                                                    <div class="event-builder-when-time__item">
-                                                        <input id="event-builder-when-time__18" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
-                                                        <label for="event-builder-when-time__18" class="event-builder-when-time__label">18:00</label>
-                                                    </div>
-                                                    <div class="event-builder-when-time__item">
-                                                        <input id="event-builder-when-time__19" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
-                                                        <label for="event-builder-when-time__19" class="event-builder-when-time__label">19:00</label>
+                                                    <div class="event-builder-when-calendar__item">
+                                                        <!--<input type="text" id="augest-datepicker" />-->
+                                                        <div id="augest-datepicker"></div>
+
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="event-builder-when-form__item">
-                                                <div class="event-builder-when-guest">
-                                                    <div class="event-builder-when-guest__item">
-                                                        <div class="event-builder-title">Сколько будет маленьких гостей?</div>
-                                                        <div class="event-builder-when-guest__count">
-                                                            <input class="c-input" type="text">
+                                            <div class="event-builder-when__item">
+                                                <div class="event-builder-when-form">
+                                                    <div class="event-builder-when-form__item">
+                                                        <div class="event-builder-title">Во сколько у вас праздник?</div>
+                                                        <div class="event-builder-when-time">
+                                                            <div class="event-builder-when-time__item">
+                                                                <input id="event-builder-when-time__10" type="radio" name="event-builder-when-time" class="event-builder-when-time__input" checked>
+                                                                <label for="event-builder-when-time__10" class="event-builder-when-time__label">10:00</label>
+                                                            </div>
+                                                            <div class="event-builder-when-time__item">
+                                                                <input id="event-builder-when-time__13" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
+                                                                <label for="event-builder-when-time__13" class="event-builder-when-time__label">13:00</label>
+                                                            </div>
+                                                            <div class="event-builder-when-time__item">
+                                                                <input id="event-builder-when-time__16" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
+                                                                <label for="event-builder-when-time__16" class="event-builder-when-time__label">16:00</label>
+                                                            </div>
+                                                            <div class="event-builder-when-time__item">
+                                                                <input id="event-builder-when-time__18" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
+                                                                <label for="event-builder-when-time__18" class="event-builder-when-time__label">18:00</label>
+                                                            </div>
+                                                            <div class="event-builder-when-time__item">
+                                                                <input id="event-builder-when-time__19" type="radio" name="event-builder-when-time" class="event-builder-when-time__input">
+                                                                <label for="event-builder-when-time__19" class="event-builder-when-time__label">19:00</label>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="event-builder-when-guest__item">
-                                                        <div class="event-builder-title">Возраст?</div>
-                                                        <div class="event-builder-when-guest__count">
-                                                            <input class="c-input" type="text">
+                                                    <div class="event-builder-when-form__item">
+                                                        <div class="event-builder-when-guest">
+                                                            <div class="event-builder-when-guest__item">
+                                                                <div class="event-builder-title">Сколько будет маленьких гостей?</div>
+                                                                <div class="event-builder-when-guest__count">
+                                                                    <input class="c-input" type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="event-builder-when-guest__item">
+                                                                <div class="event-builder-title">Возраст?</div>
+                                                                <div class="event-builder-when-guest__count">
+                                                                    <input class="c-input" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="event-builder-when-note">
+                                                            <p>ПОЧЕМУ НАМ ВАЖНО ЗНАТЬ ЗАРАНЕЕ КОЛИЧЕСТВО ВАШИХ ГОСТЕЙ?</p>
+                                                            <ol>
+                                                                <li>
+                                                                    1. Все наши анимационные программы рассчитаны на команду из 8 детей, исходя из этой цифры, планируется реквизит, подарки и расходные материалы.  Если на праздник без предупреждения пришло больше детей, чем оговаривалось – мы, к сожалению, не сможем уделить внимание всем. В том случае, если дополнительный аниматор  будет в это время доступен в кафе, то доплата за каждого ребенка составит 1000 р/чел. Если нет – увы,  мы не сможем принять на программу детей, которых Вы не запланировали.
+
+                                                                </li>
+                                                                <li>
+                                                                    2. Мы всегда заботимся о безопасности наших маленьких гостей и поэтому дети на празднике должны находиться только в сопровождении взрослых, которые несут ответственность за их жизнь и здоровье (до 10 человек - один сопровождающий, более 10 - двое, более 18 детей - трое).
+                                                                </li>
+                                                            </ol>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="event-builder-when-note">
-                                                    <p>ПОЧЕМУ НАМ ВАЖНО ЗНАТЬ ЗАРАНЕЕ КОЛИЧЕСТВО ВАШИХ ГОСТЕЙ?</p>
-                                                    <ol>
-                                                        <li>
-                                                            1. Все наши анимационные программы рассчитаны на команду из 8 детей, исходя из этой цифры, планируется реквизит, подарки и расходные материалы.  Если на праздник без предупреждения пришло больше детей, чем оговаривалось – мы, к сожалению, не сможем уделить внимание всем. В том случае, если дополнительный аниматор  будет в это время доступен в кафе, то доплата за каждого ребенка составит 1000 р/чел. Если нет – увы,  мы не сможем принять на программу детей, которых Вы не запланировали.
 
-                                                        </li>
-                                                        <li>
-                                                            2. Мы всегда заботимся о безопасности наших маленьких гостей и поэтому дети на празднике должны находиться только в сопровождении взрослых, которые несут ответственность за их жизнь и здоровье (до 10 человек - один сопровождающий, более 10 - двое, более 18 детей - трое).
-                                                        </li>
-                                                    </ol>
-                                                </div>
                                             </div>
-                                        </div>
+                                        </form>
 
 
                                     </div>
-                                </form>
+
+
+                                </div>
+                                <div class="event-builder-tab__footer">
+                                    <div class="l-button l-button__right">
+                                        <a href="#" class="c-button c-button__default">продолжить</a>
+                                    </div>
+
+                                </div>
 
 
                             </div>
 
+                            <!--DECOR TAB-->
+                            <div class="event-builder-tab event-builder-tab-list" data-tab="#animation" data-show-check="show" data-with-back="true">
 
-                        </div>
-                        <div class="event-builder-tab__footer">
-                            <div class="l-button l-button__right">
-                                <a href="#" class="c-button c-button__default">продолжить</a>
-                            </div>
+                                <div class="event-builder-tab__body">
 
-                        </div>
-
-
-                    </div>
-
-                    <!--DECOR TAB-->
-                    <div class="event-builder-tab event-builder-tab-list" data-tab="#animation" data-show-check="show" data-with-back="true">
-
-                        <div class="event-builder-tab__body">
-
-                            <ol class="event-builder-change">
-                                <li class="event-builder-change__item">
-                                    <div class="event-builder-change-card">
-                                        <div class="event-builder-change-card__head">
-                                            <div class="event-builder-change-card__head-layout">
-                                                <div class="event-builder-title">Зайчики в трамвайчике (для детей от 0-4 лет)</div>
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change">
-                                                </div>
-                                            </div>
-
-                                            <div class="event-builder-change-card__desc"><b>до 8 детей 9500 ₽</b> + 1000 ₽ за каждого дополнительного ребенка</div>
-                                            <a href="#" class="event-builder-change-card__more">
-                                                <span>показать описание</span>
-                                                <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
-                                            </a>
-                                        </div>
-                                        <div class="event-builder-change-card__body">
-                                            Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="event-builder-change__item">
-                                    <div class="event-builder-change-card">
-                                        <div class="event-builder-change-card__head">
-                                            <div class="event-builder-change-card__head-layout">
-                                                <div class="event-builder-title">На абордаж! (для детей 5-7 лет)</div>
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change">
-                                                </div>
-                                            </div>
-                                            <div class="event-builder-change-card__desc"><b>до 8 детей 12000 ₽</b> + 1000 ₽ за каждого дополнительного ребенка</div>
-                                            <a href="#" class="event-builder-change-card__more">
-                                                <span>показать описание</span>
-                                                <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
-                                            </a>
-                                        </div>
-                                        <div class="event-builder-change-card__body">
-                                            Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="event-builder-change__item">
-                                    <div class="event-builder-change-card">
-                                        <div class="event-builder-change-card__head">
-                                            <div class="event-builder-change-card__head-layout">
-                                                <div class="event-builder-title">Монстр Lab (для детей 5-7 лет)   </div>
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change">
-                                                </div>
-                                            </div>
-                                            <div class="event-builder-change-card__desc"><b>до 8 детей 14000 ₽</b> + 1000 ₽ за каждого дополнительного ребенка</div>
-                                            <a href="#" class="event-builder-change-card__more">
-                                                <span>показать описание</span>
-                                                <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
-                                            </a>
-                                        </div>
-                                        <div class="event-builder-change-card__body">
-                                            Добрый и милый мишка придет в гости к имениннику. Он поздравит его, исполнив зажигательный танец вместе с малышом, споет веселую поздравительную песенку и подарит ему подарок от АндерСона (большой вкусный пряник)!
-
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ol>
-                            <div class="event-builder-plus">
-                                <div class="event-builder-plus__icon">+</div>
-                                <div class="event-builder-plus__text"> классное дополнение к празднику: </div>
-                            </div>
-                            <ol class="event-builder-change">
-                                <li class="event-builder-change__item">
-                                    <div class="event-builder-change-card">
-                                        <div class="event-builder-change-card__head">
-                                            <div class="event-builder-change-card__head-layout">
-                                                <div class="event-builder-title">Поздравление от ростового мишки Густава  (для детей и взрослых) за 4500 руб.</div>
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change-dop">
-                                                </div>
-                                            </div>
-                                            <a href="#" class="event-builder-change-card__more">
-                                                <span>показать описание</span>
-                                                <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
-                                            </a>
-                                        </div>
-                                        <div class="event-builder-change-card__body">
-                                            Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="event-builder-change__item">
-                                    <div class="event-builder-change-card">
-                                        <div class="event-builder-change-card__head">
-                                            <div class="event-builder-change-card__head-layout">
-                                                <div class="event-builder-title">Коронация именинника (для детей от 0 лет) за 4000 руб.</div>
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change-dop">
-                                                </div>
-                                            </div>
-                                            <a href="#" class="event-builder-change-card__more">
-                                                <span>показать описание</span>
-                                                <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
-                                            </a>
-                                        </div>
-                                        <div class="event-builder-change-card__body">
-                                            Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="event-builder-change__item">
-                                    <div class="event-builder-change-card">
-                                        <div class="event-builder-change-card__head">
-                                            <div class="event-builder-change-card__head-layout">
-                                                <div class="event-builder-title">Детсоктека с бумагой (для детей и взрослых) за 14000 руб.</div>
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change-dop">
-                                                </div>
-                                            </div>
-                                            <a href="#" class="event-builder-change-card__more">
-                                                <span>показать описание</span>
-                                                <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
-                                            </a>
-                                        </div>
-                                        <div class="event-builder-change-card__body">
-                                            Добрый и милый мишка придет в гости к имениннику. Он поздравит его, исполнив зажигательный танец вместе с малышом, споет веселую поздравительную песенку и подарит ему подарок от АндерСона (большой вкусный пряник)!
-
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ol>
-
-                        </div>
-                        <div class="event-builder-tab__footer">
-                            <div class="l-button l-button__right">
-                                <a href="#" class="c-button c-button__default">продолжить</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <!--/ DECOR TAB-->
-
-                    <!--WELCOME TAB-->
-                    <div class="event-builder-tab event-builder-tab-list" data-tab="#eat" data-show-check="show" data-with-back="true">
-
-                        <div class="event-builder-tab__body">
-                            <div class="event-builder-combo">
-                                <div class="event-builder-title">выберите комбонабор за <span>560 руб.</span> на ребенка</div>
-                                <div class="event-builder-combo__list">
-                                    <div class="event-builder-combo__item">
-                                        <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
-                                            <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
-                                            <label for="event-builder-combo-1" >
-                                                <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
-                                            </label>
-                                        </div> -->
-
-                                        <div class="c-card-catalog-3 c-card-catalog__change">
-                                            <div class="c-card-catalog__check">
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change">
-                                                </div>
-                                            </div>
-                                            <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
-                                                <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
-                                            </div>
-                                            <div class="c-card-catalog-3__body">
-                                                <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
-                                                <div class="c-card-catalog-3__footer">
-                                                    <div class="c-card-catalog__price"><div>
-                                                        <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                    <ol class="event-builder-change">
+                                        <li class="event-builder-change__item">
+                                            <div class="event-builder-change-card">
+                                                <div class="event-builder-change-card__head">
+                                                    <div class="event-builder-change-card__head-layout">
+                                                        <div class="event-builder-title">Зайчики в трамвайчике (для детей от 0-4 лет)</div>
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change">
+                                                        </div>
                                                     </div>
-                                                    </div>
-    
-                                                    <a href="#" class="c-card-catalog__basket">
-                                                        <i class="icon-shopping-cart"></i>
+
+                                                    <div class="event-builder-change-card__desc"><b>до 8 детей 9500 ₽</b> + 1000 ₽ за каждого дополнительного ребенка</div>
+                                                    <a href="#" class="event-builder-change-card__more">
+                                                        <span>показать описание</span>
+                                                        <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
                                                     </a>
-                                                    <div class="c-card-catalog__count">
-                                                        <div class="c-counter">
-                                                            <button type="button" class="but c-counter__btn dec">-</button>
-                                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                </div>
+                                                <div class="event-builder-change-card__body">
+                                                    <img src="./img/holiday-builder/change-card-img.jpg" alt="">
+                                                    Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
+                                                    Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застр
+                                                    Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застр
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event-builder-change__item">
+                                            <div class="event-builder-change-card">
+                                                <div class="event-builder-change-card__head">
+                                                    <div class="event-builder-change-card__head-layout">
+                                                        <div class="event-builder-title">На абордаж! (для детей 5-7 лет)</div>
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change">
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="event-builder-combo__item">
-                                        <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
-                                            <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
-                                            <label for="event-builder-combo-1" >
-                                                <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
-                                            </label>
-                                        </div> -->
-
-                                        <div class="c-card-catalog-3 c-card-catalog__change">
-                                            <div class="c-card-catalog__check">
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change">
-                                                </div>
-                                            </div>
-                                            <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
-                                                <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
-                                            </div>
-                                            <div class="c-card-catalog-3__body">
-                                                <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
-                                                <div class="c-card-catalog-3__footer">
-                                                    <div class="c-card-catalog__price"><div>
-                                                        <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
-                                                    </div>
-                                                    </div>
-    
-                                                    <a href="#" class="c-card-catalog__basket">
-                                                        <i class="icon-shopping-cart"></i>
+                                                    <div class="event-builder-change-card__desc"><b>до 8 детей 12000 ₽</b> + 1000 ₽ за каждого дополнительного ребенка</div>
+                                                    <a href="#" class="event-builder-change-card__more">
+                                                        <span>показать описание</span>
+                                                        <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
                                                     </a>
-                                                    <div class="c-card-catalog__count">
-                                                        <div class="c-counter">
-                                                            <button type="button" class="but c-counter__btn dec">-</button>
-                                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                </div>
+                                                <div class="event-builder-change-card__body">
+                                                    Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event-builder-change__item">
+                                            <div class="event-builder-change-card">
+                                                <div class="event-builder-change-card__head">
+                                                    <div class="event-builder-change-card__head-layout">
+                                                        <div class="event-builder-title">Монстр Lab (для детей 5-7 лет)   </div>
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change">
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="event-builder-combo__item">
-                                        <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
-                                            <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
-                                            <label for="event-builder-combo-1" >
-                                                <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
-                                            </label>
-                                        </div> -->
-
-                                        <div class="c-card-catalog-3 c-card-catalog__change">
-                                            <div class="c-card-catalog__check">
-                                                <div class="c-checkbox-custom">
-                                                    <input type="checkbox" name="event-builder-change">
-                                                </div>
-                                            </div>
-                                            <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
-                                                <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
-                                            </div>
-                                            <div class="c-card-catalog-3__body">
-                                                <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
-                                                <div class="c-card-catalog-3__footer">
-                                                    <div class="c-card-catalog__price"><div>
-                                                        <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
-                                                    </div>
-                                                    </div>
-    
-                                                    <a href="#" class="c-card-catalog__basket">
-                                                        <i class="icon-shopping-cart"></i>
+                                                    <div class="event-builder-change-card__desc"><b>до 8 детей 14000 ₽</b> + 1000 ₽ за каждого дополнительного ребенка</div>
+                                                    <a href="#" class="event-builder-change-card__more">
+                                                        <span>показать описание</span>
+                                                        <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
                                                     </a>
-                                                    <div class="c-card-catalog__count">
-                                                        <div class="c-counter">
-                                                            <button type="button" class="but c-counter__btn dec">-</button>
-                                                            <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                            <button type="button" class="but c-counter__btn inc">+</button>
+                                                </div>
+                                                <div class="event-builder-change-card__body">
+                                                    Добрый и милый мишка придет в гости к имениннику. Он поздравит его, исполнив зажигательный танец вместе с малышом, споет веселую поздравительную песенку и подарит ему подарок от АндерСона (большой вкусный пряник)!
+
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ol>
+                                    <div class="event-builder-plus">
+                                        <div class="event-builder-plus__icon">+</div>
+                                        <div class="event-builder-plus__text"> классное дополнение к празднику: </div>
+                                    </div>
+                                    <ol class="event-builder-change">
+                                        <li class="event-builder-change__item">
+                                            <div class="event-builder-change-card">
+                                                <div class="event-builder-change-card__head">
+                                                    <div class="event-builder-change-card__head-layout">
+                                                        <div class="event-builder-title">Поздравление от ростового мишки Густава  (для детей и взрослых) за 4500 руб.</div>
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change-dop">
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="event-builder-change-card__more">
+                                                        <span>показать описание</span>
+                                                        <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
+                                                    </a>
+                                                </div>
+                                                <div class="event-builder-change-card__body">
+
+                                                    <img src="./img/holiday-builder/change-card-img.jpg" alt="">
+                                                    Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event-builder-change__item">
+                                            <div class="event-builder-change-card">
+                                                <div class="event-builder-change-card__head">
+                                                    <div class="event-builder-change-card__head-layout">
+                                                        <div class="event-builder-title">Коронация именинника (для детей от 0 лет) за 4000 руб.</div>
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change-dop">
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="event-builder-change-card__more">
+                                                        <span>показать описание</span>
+                                                        <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
+                                                    </a>
+                                                </div>
+                                                <div class="event-builder-change-card__body">
+                                                    Все ребятки перевоплотятся в зайчат и найдут нового друга — Плюшевого длинноухого Зайку и отправятся с ним в самое настоящее путешествие по всем временам года. Оказывается в одно из времен года родился зайка-именинник! На каждой остановке зайчат ждут веселые игры: пострелять кочанами капусты в дырявую морковку, собрать грибочки на зиму, посадить морковку в большую грядку и вместе собрать ее, а так же помогут вытянуть заячьи ушки, застрявшие в норке! Во время путешест-вия ребята будут передвигаться по временам года на трамвайчике в виде морковки!
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="event-builder-change__item">
+                                            <div class="event-builder-change-card">
+                                                <div class="event-builder-change-card__head">
+                                                    <div class="event-builder-change-card__head-layout">
+                                                        <div class="event-builder-title">Детсоктека с бумагой (для детей и взрослых) за 14000 руб.</div>
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change-dop">
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="event-builder-change-card__more">
+                                                        <span>показать описание</span>
+                                                        <svg class="c-symbol symbol-dropdown"><use xlink:href="#symbol-dropdown" /></svg>
+                                                    </a>
+                                                </div>
+                                                <div class="event-builder-change-card__body">
+                                                    Добрый и милый мишка придет в гости к имениннику. Он поздравит его, исполнив зажигательный танец вместе с малышом, споет веселую поздравительную песенку и подарит ему подарок от АндерСона (большой вкусный пряник)!
+
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ol>
+
+                                </div>
+                                <div class="event-builder-tab__footer">
+                                    <div class="l-button l-button__right">
+                                        <a href="#" class="c-button c-button__default">продолжить</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--/ DECOR TAB-->
+
+                            <!--WELCOME TAB-->
+                            <div class="event-builder-tab event-builder-tab-list" data-tab="#eat" data-show-check="show" data-with-back="true">
+
+                                <div class="event-builder-tab__body">
+                                    <div class="event-builder-combo">
+                                        <div class="event-builder-title">выберите комбонабор за <span>560 руб.</span> на ребенка</div>
+                                        <div class="event-builder-combo__list">
+                                            <div class="event-builder-combo__item">
+                                                <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                    <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
+                                                    <label for="event-builder-combo-1" >
+                                                        <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
+                                                    </label>
+                                                </div> -->
+
+                                                <div class="c-card-catalog-3 c-card-catalog__change">
+                                                    <div class="c-card-catalog__check">
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change">
+                                                        </div>
+                                                    </div>
+                                                    <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                        <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
+                                                    </div>
+                                                    <div class="c-card-catalog-3__body">
+                                                        <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
+                                                        <div class="c-card-catalog-3__footer">
+                                                            <div class="c-card-catalog__price"><div>
+                                                                <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                            </div>
+                                                            </div>
+
+                                                            <a href="#" class="c-card-catalog__basket">
+                                                                <i class="icon-shopping-cart"></i>
+                                                            </a>
+                                                            <div class="c-card-catalog__count">
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="event-builder-combo__item">
-                                        <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-2.jpg);">
-                                            <input type="radio" id="event-builder-combo-2" name="event-builder-combo">
-                                            <label for="event-builder-combo-2" >
-                                                <div class="event-builder-combo-card__title">Комбо №2 <span>(Шашлычок из индейки + пюре+ Овощи)</span></div>
-                                            </label>
-                                        </div> -->
+                                            <div class="event-builder-combo__item">
+                                                <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                    <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
+                                                    <label for="event-builder-combo-1" >
+                                                        <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
+                                                    </label>
+                                                </div> -->
 
-                                        <div class="c-card-catalog-3 c-card-catalog__change">
+                                                <div class="c-card-catalog-3 c-card-catalog__change">
+                                                    <div class="c-card-catalog__check">
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change">
+                                                        </div>
+                                                    </div>
+                                                    <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                        <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
+                                                    </div>
+                                                    <div class="c-card-catalog-3__body">
+                                                        <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
+                                                        <div class="c-card-catalog-3__footer">
+                                                            <div class="c-card-catalog__price"><div>
+                                                                <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                            </div>
+                                                            </div>
+
+                                                            <a href="#" class="c-card-catalog__basket">
+                                                                <i class="icon-shopping-cart"></i>
+                                                            </a>
+                                                            <div class="c-card-catalog__count">
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-combo__item">
+                                                <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                    <input type="radio" id="event-builder-combo-1" name="event-builder-combo" checked>
+                                                    <label for="event-builder-combo-1" >
+                                                        <div class="event-builder-combo-card__title">Комбо №1 <span>(Картофельная тачка + Овощи)</span></div>
+                                                    </label>
+                                                </div> -->
+
+                                                <div class="c-card-catalog-3 c-card-catalog__change">
+                                                    <div class="c-card-catalog__check">
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change">
+                                                        </div>
+                                                    </div>
+                                                    <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-1.jpg);">
+                                                        <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
+                                                    </div>
+                                                    <div class="c-card-catalog-3__body">
+                                                        <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
+                                                        <div class="c-card-catalog-3__footer">
+                                                            <div class="c-card-catalog__price"><div>
+                                                                <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                            </div>
+                                                            </div>
+
+                                                            <a href="#" class="c-card-catalog__basket">
+                                                                <i class="icon-shopping-cart"></i>
+                                                            </a>
+                                                            <div class="c-card-catalog__count">
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="event-builder-combo__item">
+                                                <!-- <div class="event-builder-combo-card" style="background-image: url(./img/holiday-builder/holiday-combo-2.jpg);">
+                                                    <input type="radio" id="event-builder-combo-2" name="event-builder-combo">
+                                                    <label for="event-builder-combo-2" >
+                                                        <div class="event-builder-combo-card__title">Комбо №2 <span>(Шашлычок из индейки + пюре+ Овощи)</span></div>
+                                                    </label>
+                                                </div> -->
+
+                                                <div class="c-card-catalog-3 c-card-catalog__change">
+                                                    <div class="c-card-catalog__check">
+                                                        <div class="c-checkbox-custom">
+                                                            <input type="checkbox" name="event-builder-change">
+                                                        </div>
+                                                    </div>
+                                                    <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-2.jpg);">
+                                                        <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
+                                                    </div>
+                                                    <div class="c-card-catalog-3__body">
+                                                        <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
+
+
+                                                        <div class="c-card-catalog-3__footer">
+                                                            <div class="c-card-catalog__price"><div>
+                                                                <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                            </div>
+                                                            </div>
+
+                                                            <a href="#" class="c-card-catalog__basket">
+                                                                <i class="icon-shopping-cart"></i>
+                                                            </a>
+                                                            <div class="c-card-catalog__count">
+                                                                <div class="c-counter">
+                                                                    <button type="button" class="but c-counter__btn dec">-</button>
+                                                                    <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                    <button type="button" class="but c-counter__btn inc">+</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="event-builder-plus">
+                                        <div class="event-builder-plus__icon">+</div>
+                                    </div>
+
+
+                                    <div class="event-builder-tab-list-block">
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Морс из черной смородины, 1 л.</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right">
+                                                <div class="event-builder-tab-list-block__price">410 Р</div>
+                                                <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Декор стола (колпачки, бум. фанты-шары, трубочки) на 8 человек</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right">
+                                                <div class="event-builder-tab-list-block__price">1600 Р</div>
+                                                <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Одноразовые приборы</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right">
+                                                <div class="event-builder-tab-list-block__price">100 Р</div>
+                                                <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Компот</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right">
+                                                <div class="event-builder-tab-list-block__price">200 Р</div>
+                                                <div class="event-builder-tab-list-block__counter c-card-catalog__count">
+                                                    <div class="c-counter">
+                                                        <button type="button" class="but c-counter__btn dec">-</button>
+                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
+                                                        <button type="button" class="but c-counter__btn inc">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="event-builder-plus">
+                                        <div class="event-builder-plus__icon">+</div>
+                                    </div>
+                                    <ul class="catalog-list catalog-col-3">
+                                        <li class="catalog-list__item">
+                                            <!--START c-card-catalog-2-->
+                                            <div class="c-card-catalog-3 c-card-catalog__change">
                                                 <div class="c-card-catalog__check">
                                                     <div class="c-checkbox-custom">
                                                         <input type="checkbox" name="event-builder-change">
                                                     </div>
                                                 </div>
-                                                <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/holiday-builder/holiday-combo-2.jpg);">
+                                                <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/pie-product-2.jpg);">
                                                     <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
                                                 </div>
                                                 <div class="c-card-catalog-3__body">
                                                     <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
-        
-        
+
+
                                                     <div class="c-card-catalog-3__footer">
                                                         <div class="c-card-catalog__price"><div>
                                                             <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
                                                         </div>
                                                         </div>
-        
+
                                                         <a href="#" class="c-card-catalog__basket">
                                                             <i class="icon-shopping-cart"></i>
                                                         </a>
@@ -5985,557 +6109,445 @@
                                                             </div>
                                                         </div>
                                                     </div>
-        
-                                                    
+
+                                                    <div class="c-card-catalog-3-property">
+                                                        <div class="c-card-catalog-3-property__col">
+                                                            <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                                                <option disabled selected value="Вес" >Вес</option>
+                                                                <option value="">1 кг</option>
+                                                                <option value="">2 кг</option>
+                                                                <option value="">3 кг</option>
+                                                                <option value="">4 кг</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="c-card-catalog-3-property__col">
+                                                            <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                                                <option disabled selected value="Начинка" >Начинка</option>
+                                                                <option value="">Чернично-шоколадная</option>
+                                                                <option value="">Чернично-шоколадная в нескоьлко строк</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="event-builder-plus">
-                                <div class="event-builder-plus__icon">+</div>
-                            </div>
-
-
-                            <div class="event-builder-tab-list-block">
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Морс из черной смородины, 1 л.</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right">
-                                        <div class="event-builder-tab-list-block__price">410 Р</div>
-                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec">-</button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
-                                                <button type="button" class="but c-counter__btn inc">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Декор стола (колпачки, бум. фанты-шары, трубочки) на 8 человек</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right">
-                                        <div class="event-builder-tab-list-block__price">1600 Р</div>
-                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec">-</button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
-                                                <button type="button" class="but c-counter__btn inc">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Одноразовые приборы</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right">
-                                        <div class="event-builder-tab-list-block__price">100 Р</div>
-                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec">-</button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
-                                                <button type="button" class="but c-counter__btn inc">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Компот</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right">
-                                        <div class="event-builder-tab-list-block__price">200 Р</div>
-                                        <div class="event-builder-tab-list-block__counter c-card-catalog__count">
-                                            <div class="c-counter">
-                                                <button type="button" class="but c-counter__btn dec">-</button>
-                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="10">
-                                                <button type="button" class="but c-counter__btn inc">+</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class="event-builder-plus">
-                                <div class="event-builder-plus__icon">+</div>
-                            </div>
-                            <ul class="catalog-list catalog-col-3">
-                                <li class="catalog-list__item">
-                                    <!--START c-card-catalog-2-->
-                                    <div class="c-card-catalog-3 c-card-catalog__change">
-                                        <div class="c-card-catalog__check">
-                                            <div class="c-checkbox-custom">
-                                                <input type="checkbox" name="event-builder-change">
-                                            </div>
-                                        </div>
-                                        <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/pie-product-2.jpg);">
-                                            <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
-                                        </div>
-                                        <div class="c-card-catalog-3__body">
-                                            <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
-
-
-                                            <div class="c-card-catalog-3__footer">
-                                                <div class="c-card-catalog__price"><div>
-                                                    <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                            <!--END c-card-catalog-2-->
+                                        </li>
+                                        <li class="catalog-list__item">
+                                            <!--START c-card-catalog-2-->
+                                            <div class="c-card-catalog-3 c-card-catalog__change">
+                                                <div class="c-card-catalog__check">
+                                                    <div class="c-checkbox-custom">
+                                                        <input type="checkbox" name="event-builder-change">
+                                                    </div>
                                                 </div>
+                                                <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/pie-product-2.jpg);">
+                                                    <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
                                                 </div>
+                                                <div class="c-card-catalog-3__body">
+                                                    <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
 
-                                                <a href="#" class="c-card-catalog__basket">
-                                                    <i class="icon-shopping-cart"></i>
-                                                </a>
-                                                <div class="c-card-catalog__count">
-                                                    <div class="c-counter">
-                                                        <button type="button" class="but c-counter__btn dec">-</button>
-                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                        <button type="button" class="but c-counter__btn inc">+</button>
+
+                                                    <div class="c-card-catalog-3__footer">
+                                                        <div class="c-card-catalog__price"><div>
+                                                            <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                        </div>
+                                                        </div>
+
+                                                        <a href="#" class="c-card-catalog__basket">
+                                                            <i class="icon-shopping-cart"></i>
+                                                        </a>
+                                                        <div class="c-card-catalog__count">
+                                                            <div class="c-counter">
+                                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="c-card-catalog-3-property">
+                                                        <div class="c-card-catalog-3-property__col">
+                                                            <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                                                <option disabled selected value="Вес" >Вес</option>
+                                                                <option value="">1 кг</option>
+                                                                <option value="">2 кг</option>
+                                                                <option value="">3 кг</option>
+                                                                <option value="">4 кг</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="c-card-catalog-3-property__col">
+                                                            <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                                                <option disabled selected value="Начинка" >Начинка</option>
+                                                                <option value="">Чернично-шоколадная</option>
+                                                                <option value="">Чернично-шоколадная в нескоьлко строк</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--END c-card-catalog-2-->
+                                        </li>
+                                        <li class="catalog-list__item">
+                                            <!--START c-card-catalog-2-->
+                                            <div class="c-card-catalog-3 c-card-catalog__change">
+                                                <div class="c-card-catalog__check">
+                                                    <div class="c-checkbox-custom">
+                                                        <input type="checkbox" name="event-builder-change">
+                                                    </div>
+                                                </div>
+                                                <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/pie-product-2.jpg);">
+                                                    <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
+                                                </div>
+                                                <div class="c-card-catalog-3__body">
+                                                    <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45</div>
+
+
+                                                    <div class="c-card-catalog-3__footer">
+                                                        <div class="c-card-catalog__price"><div>
+                                                            <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
+                                                        </div>
+                                                        </div>
+
+                                                        <a href="#" class="c-card-catalog__basket">
+                                                            <i class="icon-shopping-cart"></i>
+                                                        </a>
+                                                        <div class="c-card-catalog__count">
+                                                            <div class="c-counter">
+                                                                <button type="button" class="but c-counter__btn dec">-</button>
+                                                                <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                                                                <button type="button" class="but c-counter__btn inc">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="c-card-catalog-3-property">
+                                                        <div class="c-card-catalog-3-property__col">
+                                                            <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
+                                                                <option disabled selected value="Вес" >Вес</option>
+                                                                <option value="">1 кг</option>
+                                                                <option value="">2 кг</option>
+                                                                <option value="">3 кг</option>
+                                                                <option value="">4 кг</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                        <div class="c-card-catalog-3-property__col">
+                                                            <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
+                                                                <option disabled selected value="Начинка" >Начинка</option>
+                                                                <option value="">Чернично-шоколадная</option>
+                                                                <option value="">Чернично-шоколадная в нескоьлко строк</option>
+
+                                                            </select>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--END c-card-catalog-2-->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="event-builder-tab__footer">
+                                    <div class="l-button l-button__right">
+                                        <a href="#" class="c-button c-button__default">продолжить</a>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <!--/ WELCOME TAB -->
+
+                            <!-- ORDER TAB -->
+                            <div class="event-builder-tab event-builder-tab-list event-builder-tab-order" data-tab="#where" data-show-check="show" data-with-back="true">
+
+                                <div class="event-builder-contact">
+                                    <form action="" method="POST">
+                                        <div class="event-builder-contact__item">
+                                            <div class="event-builder-title">Доставка</div>
+                                            <div class="event-builder-contact-price">
+                                                <div class="event-builder-contact-price__item">
+                                                    <div class="c-radio-custom-2">
+                                                        <input type="radio" id="event-builder-contact-price-01" name="event-builder-contact-price" checked>
+                                                        <label for="event-builder-contact-price-01">До МКАД - <b>2000 ₽</b></label>
+                                                    </div>
+                                                </div>
+                                                <div class="event-builder-contact-price__item">
+                                                    <div class="c-radio-custom-2">
+                                                        <input type="radio" id="event-builder-contact-price-02" name="event-builder-contact-price">
+                                                        <label for="event-builder-contact-price-02">От 5 км. от МКАД - <b>3000 ₽</b></label>
+                                                    </div>
+                                                </div>
+                                                <div class="event-builder-contact-price__item">
+                                                    <div class="c-radio-custom-2">
+                                                        <input type="radio" id="event-builder-contact-price-03" name="event-builder-contact-price">
+                                                        <label for="event-builder-contact-price-03">До 35 км. от МКАД - <b>5000 ₽</b></label>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="c-card-catalog-3-property">
-                                                <div class="c-card-catalog-3-property__col">
-                                                    <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
-                                                        <option disabled selected value="Вес" >Вес</option>
-                                                        <option value="">1 кг</option>
-                                                        <option value="">2 кг</option>
-                                                        <option value="">3 кг</option>
-                                                        <option value="">4 кг</option>
 
-                                                    </select>
+                                        </div>
+                                        <div class="event-builder-contact__item">
+                                            <div class="event-builder-title">Адрес доставки праздника</div>
+                                            <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line-3">
+                                                <div class="event-builder-tab-list-block__control ">
+                                                    <label class="c-label" for="holiday-builder-street">Улица: <span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input" type="text" id="holiday-builder-street" required="" placeholder="Улица">
+
                                                 </div>
+                                                <div class="event-builder-tab-list-block__control ">
+                                                    <label class="c-label" for="holiday-builder-house">Дом: <span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input" type="text" id="holiday-builder-house" required="" placeholder="Дом">
 
-                                                <div class="c-card-catalog-3-property__col">
-                                                    <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
-                                                        <option disabled selected value="Начинка" >Начинка</option>
-                                                        <option value="">Чернично-шоколадная</option>
-                                                        <option value="">Чернично-шоколадная в нескоьлко строк</option>
-
-                                                    </select>
                                                 </div>
+                                                <div class="event-builder-tab-list-block__control ">
+                                                    <label class="c-label" for="holiday-builder-apartment">Квартира: <span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input" type="text" id="holiday-builder-apartment" required="" placeholder="Квартира">
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                        <div class="event-builder-contact__item">
+                                            <div class="event-builder-title">Контакты заказчика</div>
+                                            <div class="event-builder-tab-list-block__line">
+                                                <div class="event-builder-tab-list-block__control ">
+                                                    <label class="c-label" for="holiday-builder-client">Ваше имя: <span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input" type="text" id="holiday-builder-client" required="" placeholder="Ваше имя">
+
+                                                </div>
+                                                <div class="event-builder-tab-list-block__control ">
+                                                    <label class="c-label" for="holiday-builder-child">Имя ребенка: <span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input" type="text" id="holiday-builder-child" required="" placeholder="Имя ребенка">
+
+                                                </div>
+                                                <div class="event-builder-tab-list-block__control ">
+                                                    <label class="c-label" for="holiday-builder-email">E-mail: <span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input" type="text" id="holiday-builder-email" required="" placeholder="...@...">
+                                                </div>
+                                                <div class="event-builder-tab-list-block__control ">
+                                                    <label class="c-label" for="holiday-builder-phone">Телефон: <span class="c-obligatory-field">*</span></label>
+                                                    <input class="c-input js-input--tel" type="text" id="holiday-builder-phone"  required="" placeholder="+7 () -  -">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="event-builder-contact__item">
+                                            <div class="c-personal-data">
+                                                <div class="c-personal-data__item">
+                                                    <input type="checkbox" name="holiday-builder__regulations" id="holiday-builder__regulations" checked="">
+                                                    <label class="c-checkbox" for="holiday-builder__regulations">Я ознакомлен с
+                                                        <a href="#">правилами обработки
+                                                        </a> моих персональных данных.</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="event-builder-tab-list-title event-builder-tab-list-title_order">
+
+                                    <div class="event-builder-tab-list-title__side"></div>
+                                    <div class="event-builder-tab-list-title__middle">Проверьте ваш заказ</div>
+                                    <div class="event-builder-tab-list-title__side"></div>
+                                </div>
+
+                                <div class="event-builder-info">
+
+                                    <div class="event-builder-info__item">
+                                        <svg class="c-symbol symbol-builder-calendar"><use xlink:href="./img/event-builder/top-nav.svg#calendar" /></svg>
+                                        Дата праздника: <b>10.08.2019</b>
+                                    </div>
+                                    <div class="event-builder-info__item">
+                                        <svg class="c-symbol symbol-clock-2"><use xlink:href="#symbol-clock-2" /></svg>
+                                        Время:  <b>17:00 </b>
+                                    </div>
+                                    <div class="event-builder-info__item">
+                                        <svg class="c-symbol symbol-baby"><use xlink:href="#symbol-baby" /></svg>
+
+                                        Количество маленьких гостей: <b>10</b>
+                                    </div>
+
+                                </div>
+
+                                <div class="event-builder-tab-list-block">
+                                    <div class="event-builder-tab-list-block__head">
+                                        <svg class="c-symbol symbol-builder-eat"><use xlink:href="./img/event-builder/top-nav.svg#eat" /></svg>
+                                        <div class="event-builder-title">еда и торт</div>
+                                    </div>
+
+                                    <div class="event-builder-tab-list-block__content">
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Монстр Lab (для детей 5-7 лет)   </div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__price">12 000 Р</div>
+                                            </div>
+                                        </div>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Поздравление от ростового мишки Густава (для детей и взрослых)</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__price">12 000 Р</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--END c-card-catalog-2-->
-                                </li>
-                                <li class="catalog-list__item">
-                                    <!--START c-card-catalog-2-->
-                                    <div class="c-card-catalog-3 c-card-catalog__change">
-                                        <div class="c-card-catalog__check">
-                                            <div class="c-checkbox-custom">
-                                                <input type="checkbox" name="event-builder-change">
+                                </div>
+
+                                <div class="event-builder-tab-list-block">
+                                    <div class="event-builder-tab-list-block__head">
+                                        <svg class="c-symbol symbol-builder-animation"><use xlink:href="./img/event-builder/top-nav.svg#animation" /></svg>
+                                        <div class="event-builder-title">Анимация</div>
+
+                                    </div>
+                                    <div class="event-builder-tab-list-block__content">
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                                <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                                <div class="event-builder-tab-list-block__price">3 000 Р</div>
                                             </div>
                                         </div>
-                                        <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/pie-product-2.jpg);">
-                                            <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
-                                        </div>
-                                        <div class="c-card-catalog-3__body">
-                                            <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45 (одного дня в несколько строк)</div>
 
-
-                                            <div class="c-card-catalog-3__footer">
-                                                <div class="c-card-catalog__price"><div>
-                                                    <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
-                                                </div>
-                                                </div>
-
-                                                <a href="#" class="c-card-catalog__basket">
-                                                    <i class="icon-shopping-cart"></i>
-                                                </a>
-                                                <div class="c-card-catalog__count">
-                                                    <div class="c-counter">
-                                                        <button type="button" class="but c-counter__btn dec">-</button>
-                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                        <button type="button" class="but c-counter__btn inc">+</button>
-                                                    </div>
-                                                </div>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
                                             </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                                <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                                <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                            </div>
+                                        </div>
 
-                                            <div class="c-card-catalog-3-property">
-                                                <div class="c-card-catalog-3-property__col">
-                                                    <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
-                                                        <option disabled selected value="Вес" >Вес</option>
-                                                        <option value="">1 кг</option>
-                                                        <option value="">2 кг</option>
-                                                        <option value="">3 кг</option>
-                                                        <option value="">4 кг</option>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                                <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                                <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                            </div>
+                                        </div>
 
-                                                    </select>
-                                                </div>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                                <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                                <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                            </div>
+                                        </div>
 
-                                                <div class="c-card-catalog-3-property__col">
-                                                    <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
-                                                        <option disabled selected value="Начинка" >Начинка</option>
-                                                        <option value="">Чернично-шоколадная</option>
-                                                        <option value="">Чернично-шоколадная в нескоьлко строк</option>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                                <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                                <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                            </div>
+                                        </div>
 
-                                                    </select>
-                                                </div>
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
+                                                <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
+                                                <div class="event-builder-tab-list-block__price">3 000 Р</div>
+                                            </div>
+                                        </div>
 
+
+                                    </div>
+
+                                </div>
+
+                                <div class="event-builder-tab-list-block">
+                                    <div class="event-builder-tab-list-block__head">
+
+                                        <svg class="c-symbol symbol-builder-place" class="symbol-builder-place"><use xlink:href="./img/event-builder/top-nav.svg#place" /></svg>
+                                        <div class="event-builder-title">Доставка</div>
+                                    </div>
+
+                                    <div class="event-builder-tab-list-block__content">
+                                        <div class="event-builder-tab-list-block__line">
+                                            <div class="event-builder-tab-list-block__left">
+                                                <div class="event-builder-tab-list-block__text">От 5 км. от МКАД</div>
+                                            </div>
+                                            <div class="event-builder-tab-list-block__filler"></div>
+                                            <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
+                                                <div class="event-builder-tab-list-block__price">5 000 Р</div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--END c-card-catalog-2-->
-                                </li>
-                                <li class="catalog-list__item">
-                                    <!--START c-card-catalog-2-->
-                                    <div class="c-card-catalog-3 c-card-catalog__change">
-                                        <div class="c-card-catalog__check">
-                                            <div class="c-checkbox-custom">
-                                                <input type="checkbox" name="event-builder-change">
-                                            </div>
-                                        </div>
-                                        <div class="c-card-catalog-3__img js-show-pie-order" style="background-image:url(./img/pie-product-2.jpg);">
-                                            <!--<img class="" src="./img/pie-product-2.jpg" alt="">-->
-                                        </div>
-                                        <div class="c-card-catalog-3__body">
-                                            <div class="c-card-catalog-3__title js-show-pie-order">Торт № 45</div>
+                                </div>
 
 
-                                            <div class="c-card-catalog-3__footer">
-                                                <div class="c-card-catalog__price"><div>
-                                                    <div class="c-card-catalog__price-layout">1590 <span class="c-currency-symbol rub">руб</span></div>
-                                                </div>
-                                                </div>
+                                <div class="event-builder-tab-list-block event-builder-tab-list-block_decor">
 
-                                                <a href="#" class="c-card-catalog__basket">
-                                                    <i class="icon-shopping-cart"></i>
-                                                </a>
-                                                <div class="c-card-catalog__count">
-                                                    <div class="c-counter">
-                                                        <button type="button" class="but c-counter__btn dec">-</button>
-                                                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
-                                                        <button type="button" class="but c-counter__btn inc">+</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="c-card-catalog-3-property">
-                                                <div class="c-card-catalog-3-property__col">
-                                                    <select name="catalog-3-property-1" class="c-select " placeholder="Вес">
-                                                        <option disabled selected value="Вес" >Вес</option>
-                                                        <option value="">1 кг</option>
-                                                        <option value="">2 кг</option>
-                                                        <option value="">3 кг</option>
-                                                        <option value="">4 кг</option>
-
-                                                    </select>
-                                                </div>
-
-                                                <div class="c-card-catalog-3-property__col">
-                                                    <select name="catalog-3-property-2" class="c-select " placeholder="Начинка">
-                                                        <option disabled selected value="Начинка" >Начинка</option>
-                                                        <option value="">Чернично-шоколадная</option>
-                                                        <option value="">Чернично-шоколадная в нескоьлко строк</option>
-
-                                                    </select>
-                                                </div>
+                                    <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_center event-builder-tab-list-block__line_compact">
+                                        <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
+                                            <label class="c-label c-label_center" for="event-builder-comment">Вы можете добавить комментарий к своему заказу:</label>
+                                            <textarea class="event-builder-input__textarea" id="event-builder-comment"></textarea>
+                                            <div class="event-builder-summary">
+                                                <span class="event-builder-icon__summary"></span>
+                                                <span class="event-builder-summary__head_1">ИТОГО:</span>
+                                                <span class="event-builder-summary__head_2">999 990 Р</span>
 
                                             </div>
+
+                                            <div class="event-builder-send"><button class="c-button c-button__default">ОФОРМИТЬ ЗАКАЗ</button></div>
+
                                         </div>
+
+
+
                                     </div>
-                                    <!--END c-card-catalog-2-->
-                                </li>
-                            </ul>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                            <!--/ ORDER TAB -->
+
+
+
+
                         </div>
-                        <div class="event-builder-tab__footer">
-                            <div class="l-button l-button__right">
-                                <a href="#" class="c-button c-button__default">продолжить</a>
-                            </div>
-                        </div>
-
-
-
                     </div>
-                    <!--/ WELCOME TAB -->
-
-                    <!-- ORDER TAB -->
-                    <div class="event-builder-tab event-builder-tab-list event-builder-tab-order" data-tab="#where" data-show-check="show" data-with-back="true">
-
-                        <div class="event-builder-contact">
-                            <form action="" method="POST">
-                                <div class="event-builder-contact__item">
-                                    <div class="event-builder-title">Доставка</div>
-                                    <div class="event-builder-contact-price">
-                                        <div class="event-builder-contact-price__item">
-                                            <div class="c-radio-custom-2">
-                                                <input type="radio" id="event-builder-contact-price-01" name="event-builder-contact-price" checked>
-                                                <label for="event-builder-contact-price-01">До МКАД - <b>2000 ₽</b></label>
-                                            </div>
-                                        </div>
-                                        <div class="event-builder-contact-price__item">
-                                            <div class="c-radio-custom-2">
-                                                <input type="radio" id="event-builder-contact-price-02" name="event-builder-contact-price">
-                                                <label for="event-builder-contact-price-02">От 5 км. от МКАД - <b>3000 ₽</b></label>
-                                            </div>
-                                        </div>
-                                        <div class="event-builder-contact-price__item">
-                                            <div class="c-radio-custom-2">
-                                                <input type="radio" id="event-builder-contact-price-03" name="event-builder-contact-price">
-                                                <label for="event-builder-contact-price-03">До 35 км. от МКАД - <b>5000 ₽</b></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-
-                                </div>
-                                <div class="event-builder-contact__item">
-                                    <div class="event-builder-title">Адрес доставки праздника</div>
-                                    <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line-3">
-                                        <div class="event-builder-tab-list-block__control ">
-                                            <label class="c-label" for="holiday-builder-street">Улица: <span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" id="holiday-builder-street" required="" placeholder="Улица">
-
-                                        </div>
-                                        <div class="event-builder-tab-list-block__control ">
-                                            <label class="c-label" for="holiday-builder-house">Дом: <span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" id="holiday-builder-house" required="" placeholder="Дом">
-
-                                        </div>
-                                        <div class="event-builder-tab-list-block__control ">
-                                            <label class="c-label" for="holiday-builder-apartment">Квартира: <span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" id="holiday-builder-apartment" required="" placeholder="Квартира">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="event-builder-contact__item">
-                                    <div class="event-builder-title">Контакты заказчика</div>
-                                    <div class="event-builder-tab-list-block__line">
-                                        <div class="event-builder-tab-list-block__control ">
-                                            <label class="c-label" for="holiday-builder-client">Ваше имя: <span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" id="holiday-builder-client" required="" placeholder="Ваше имя">
-
-                                        </div>
-                                        <div class="event-builder-tab-list-block__control ">
-                                            <label class="c-label" for="holiday-builder-child">Имя ребенка: <span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" id="holiday-builder-child" required="" placeholder="Имя ребенка">
-
-                                        </div>
-                                        <div class="event-builder-tab-list-block__control ">
-                                            <label class="c-label" for="holiday-builder-email">E-mail: <span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input" type="text" id="holiday-builder-email" required="" placeholder="...@...">
-                                        </div>
-                                        <div class="event-builder-tab-list-block__control ">
-                                            <label class="c-label" for="holiday-builder-phone">Телефон: <span class="c-obligatory-field">*</span></label>
-                                            <input class="c-input js-input--tel" type="text" id="holiday-builder-phone"  required="" placeholder="+7 () -  -">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="event-builder-contact__item">
-                                    <div class="c-personal-data">
-                                        <div class="c-personal-data__item">
-                                            <input type="checkbox" name="holiday-builder__regulations" id="holiday-builder__regulations" checked="">
-                                            <label class="c-checkbox" for="holiday-builder__regulations">Я ознакомлен с
-                                                <a href="#">правилами обработки
-                                                </a> моих персональных данных.</label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="event-builder-tab-list-title event-builder-tab-list-title_order">
-
-                            <div class="event-builder-tab-list-title__side"></div>
-                            <div class="event-builder-tab-list-title__middle">Проверьте ваш заказ</div>
-                            <div class="event-builder-tab-list-title__side"></div>
-                        </div>
-
-                        <div class="event-builder-info">
-
-                            <div class="event-builder-info__item">
-                                <svg class="c-symbol symbol-builder-calendar"><use xlink:href="./img/event-builder/top-nav.svg#calendar" /></svg>
-                                Дата праздника: <b>10.08.2019</b>
-                            </div>
-                            <div class="event-builder-info__item">
-                                <svg class="c-symbol symbol-clock-2"><use xlink:href="#symbol-clock-2" /></svg>
-                                Время:  <b>17:00 </b>
-                            </div>
-                            <div class="event-builder-info__item">
-                                <svg class="c-symbol symbol-baby"><use xlink:href="#symbol-baby" /></svg>
-
-                                Количество маленьких гостей: <b>10</b>
-                            </div>
-
-                        </div>
-
-                        <div class="event-builder-tab-list-block">
-                            <div class="event-builder-tab-list-block__head">
-                                <svg class="c-symbol symbol-builder-eat"><use xlink:href="./img/event-builder/top-nav.svg#eat" /></svg>
-                                <div class="event-builder-title">еда и торт</div>
-                            </div>
-
-                            <div class="event-builder-tab-list-block__content">
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Монстр Lab (для детей 5-7 лет)   </div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__price">12 000 Р</div>
-                                    </div>
-                                </div>
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Поздравление от ростового мишки Густава (для детей и взрослых)</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__price">12 000 Р</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="event-builder-tab-list-block">
-                            <div class="event-builder-tab-list-block__head">
-                                <svg class="c-symbol symbol-builder-animation"><use xlink:href="./img/event-builder/top-nav.svg#animation" /></svg>
-                                <div class="event-builder-title">Анимация</div>
-
-                            </div>
-                            <div class="event-builder-tab-list-block__content">
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
-                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
-                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
-                                    </div>
-                                </div>
-
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
-                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
-                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
-                                    </div>
-                                </div>
-
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
-                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
-                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
-                                    </div>
-                                </div>
-
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Дождь из мыльных пузырей</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
-                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
-                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
-                                    </div>
-                                </div>
-
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Залпы из конфетти машины/пушки</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
-                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
-                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
-                                    </div>
-                                </div>
-
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">Выброс металлизированного конфетти размера 1х4см на высоту 30 метров!</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__details">Цена за 1 шт.: 1 500 Р.</div>
-                                        <div class="event-builder-tab-list-block__details">Всего в заказе: 2 шт.</div>
-                                        <div class="event-builder-tab-list-block__price">3 000 Р</div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                        <div class="event-builder-tab-list-block">
-                            <div class="event-builder-tab-list-block__head">
-
-                                <svg class="c-symbol symbol-builder-place" class="symbol-builder-place"><use xlink:href="./img/event-builder/top-nav.svg#place" /></svg>
-                                <div class="event-builder-title">Доставка</div>
-                            </div>
-
-                            <div class="event-builder-tab-list-block__content">
-                                <div class="event-builder-tab-list-block__line">
-                                    <div class="event-builder-tab-list-block__left">
-                                        <div class="event-builder-tab-list-block__text">От 5 км. от МКАД</div>
-                                    </div>
-                                    <div class="event-builder-tab-list-block__filler"></div>
-                                    <div class="event-builder-tab-list-block__right event-builder-tab-list-block__right_thin">
-                                        <div class="event-builder-tab-list-block__price">5 000 Р</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="event-builder-tab-list-block event-builder-tab-list-block_decor">
-
-                            <div class="event-builder-tab-list-block__line event-builder-tab-list-block__line_center event-builder-tab-list-block__line_compact">
-                                <div class="event-builder-tab-list-block__control event-builder-tab-list-block__control_col_5">
-                                    <label class="c-label c-label_center" for="event-builder-comment">Вы можете добавить комментарий к своему заказу:</label>
-                                    <textarea class="event-builder-input__textarea" id="event-builder-comment"></textarea>
-                                    <div class="event-builder-summary">
-                                        <span class="event-builder-icon__summary"></span>
-                                        <span class="event-builder-summary__head_1">ИТОГО:</span>
-                                        <span class="event-builder-summary__head_2">999 990 Р</span>
-
-                                    </div>
-
-                                    <div class="event-builder-send"><button class="c-button c-button__default">ОФОРМИТЬ ЗАКАЗ</button></div>
-
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-
-
-
-
-
-                    </div>
-                    <!--/ ORDER TAB -->
 
                     <!--CHECK-->
                     <div class="event-builder-check">
@@ -6559,12 +6571,7 @@
                             <div class="event-builder-check__hr"></div>
 
 
-                            <div class="event-builder-check__line">
-                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#welcome" /></svg></div>
-                                <div class="event-builder-check__title">Welcome-меню</div>
-                            </div>
-                            <div class="event-builder-check__price">3 690 P</div>
-                            <div class="event-builder-check__hr"></div>
+
 
                             <div class="event-builder-check__line">
                                 <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#main" /></svg></div>
@@ -6573,14 +6580,8 @@
                             <div class="event-builder-check__price">6 220 P</div>
                             <div class="event-builder-check__hr"></div>
 
-                            <div class="event-builder-check__line">
-                                <div class="event-builder-check__icon"><svg><use xlink:href="./img/event-builder/top-nav.svg#tea" /></svg></div>
-                                <div class="event-builder-check__title">Чаепитие</div>
-                            </div>
-                            <div class="event-builder-check__line">
-                                <div class="event-builder-check__icon event-builder-check__icon_danger"><svg><use xlink:href="./img/event-builder/event-builder.svg#danger" /></svg></div>
-                                <div class="event-builder-check__title event-builder-check__text_danger">Недостаточно чаепития выберите его несколько строк текста</div>
-                            </div>
+
+
                             <div class="event-builder-check__hr"></div>
 
                             <div class="event-builder-check__line">
@@ -6625,9 +6626,11 @@
                         </div>
                     </div>
                     <!-- / CHECK-->
-
-
                 </div>
+
+
+
+
 
             </div>
 
@@ -7869,7 +7872,7 @@
                                 </div>
                             </div>
                             <div class="popup-form__item">
-                                <label class="c-label" for="reviews-textarea">Отзыв
+                                <label class="c-label" >Отзыв
                                     <span class="c-obligatory-field">*</span>
                                 </label>
                                 <textarea class="c-input" name="popup-reviews-textarea" id="popup-reviews-textarea" rows="5" placeholder="Пожалуйста, оставьте Ваш отзыв. Ваше мнение очень важно для нас."

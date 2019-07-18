@@ -248,20 +248,20 @@ $(document).ready(function ($) {
         });
     }
 
-    // if($('div').hasClass('event-builder-check__body')){
-    //     $(".event-builder-check__body").stick_in_parent({
-    //         container: $(".event-builder-tab-layout"),
+    // if($('div').hasClass('event-builder-check')){
+    //     $(".event-builder-check").stick_in_parent({
+    //         container: $(".event-builder-grid"),
     //         offset_top: 130,
     //         offset_bottom: 30
     //     });
-    
+    //
     //     if($(window).width() < 960){
-    //         $(".event-builder-check__body").trigger("sticky_kit:detach");
+    //         $(".event-builder-check").trigger("sticky_kit:detach");
     //     }
-    
+    //
     //     $(window).resize(function() {
     //         if($(window).width() < 960){
-    //             $(".event-builder-check__body").trigger("sticky_kit:detach");
+    //             $(".event-builder-check").trigger("sticky_kit:detach");
     //         }
     //     });
     // }
