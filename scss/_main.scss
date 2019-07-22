@@ -4136,7 +4136,7 @@ test popup
             }
 
             a {
-                font-size: 3.5rem;
+                font-size: 28px;
                 color: #231300;
                 font-family: "SummerFont";
                 text-transform: uppercase;
@@ -26561,6 +26561,24 @@ a.show-more__button:hover {
     //padding-bottom: 4rem;
     position: relative;
 
+    &-slider {
+        position:relative;
+        margin-bottom:24px;
+        .fotorama__nav-wrap {
+            display:none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height:16px;
+            background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+        }
+    }
+
     &-title {
         font-size: 5rem;
         color: #c44890;
@@ -26573,6 +26591,7 @@ a.show-more__button:hover {
     }
 
     &-info {
+        margin-bottom:24px;
 
         &-list {
             display: flex;
@@ -26795,6 +26814,29 @@ a.show-more__button:hover {
         -webkit-background-size: cover;
         background-size: cover;
         padding: 34px 16px;
+        position:relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            height:16px;
+            background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            height:16px;
+            background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+        }
 
         .wedding-info-card__text {
             color: #ffffff;

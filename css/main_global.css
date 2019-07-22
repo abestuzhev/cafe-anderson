@@ -11188,7 +11188,7 @@ test popup
       -webkit-box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
       box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21); }
     .tabs-folder .tabs-menu-inset a {
-      font-size: 3.5rem;
+      font-size: 28px;
       color: #231300;
       font-family: "SummerFont";
       text-transform: uppercase;
@@ -27943,8 +27943,6 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
-        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -28410,6 +28408,19 @@ a.show-more__button:hover {
           box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
   border-radius: .4rem;
   position: relative; }
+  .wedding-slider {
+    position: relative;
+    margin-bottom: 24px; }
+    .wedding-slider .fotorama__nav-wrap {
+      display: none; }
+    .wedding-slider::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 16px;
+      background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
   .wedding-title {
     font-size: 5rem;
     color: #c44890;
@@ -28419,49 +28430,51 @@ a.show-more__button:hover {
     text-align: center;
     font-weight: 700;
     line-height: 1; }
-  .wedding-info-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-bottom: 20px; }
-  .wedding-info__item {
-    width: 25%;
-    padding: 0 30px; }
-  .wedding-info-card__img {
-    text-align: center;
-    margin-bottom: 14px;
-    height: 64px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .wedding-info-card__img img {
-      display: inline-block; }
-  .wedding-info-card__text {
-    color: #555451;
-    font-size: 15px;
-    font-family: "PT Serif Caption";
-    text-align: center;
-    text-transform: uppercase; }
+  .wedding-info {
+    margin-bottom: 24px; }
+    .wedding-info-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-bottom: 20px; }
+    .wedding-info__item {
+      width: 25%;
+      padding: 0 30px; }
+    .wedding-info-card__img {
+      text-align: center;
+      margin-bottom: 14px;
+      height: 64px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .wedding-info-card__img img {
+        display: inline-block; }
+    .wedding-info-card__text {
+      color: #555451;
+      font-size: 15px;
+      font-family: "PT Serif Caption";
+      text-align: center;
+      text-transform: uppercase; }
   .wedding-hall {
     margin-left: -8px;
     margin-right: -8px;
@@ -28633,7 +28646,26 @@ a.show-more__button:hover {
   .wedding-gift {
     background: #c44890 url(../img/wedding/bg-gift.jpg) 50% 50% no-repeat;
     background-size: cover;
-    padding: 34px 16px; }
+    padding: 34px 16px;
+    position: relative; }
+    .wedding-gift::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      height: 16px;
+      background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; }
+    .wedding-gift::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      height: 16px;
+      background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
     .wedding-gift .wedding-info-card__text {
       color: #ffffff; }
     .wedding-gift .wedding-info-list {
