@@ -4030,6 +4030,8 @@ test popup
             border: 1px dashed #c44890;
         }
     }
+
+
 }
 
 .tabs-menu.v2 {
@@ -4049,6 +4051,111 @@ test popup
 
 .tab-content:first-child {
     display: block;
+}
+
+.tabs-folder {
+    .tabs-menu {
+        padding: 0 54px;
+        position: relative;
+        margin-bottom: 20px;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -37px;
+            left: 20px;
+            right: 20px;
+            height: 20px;
+            z-index: 10;
+            //background-color: #ecedf2;
+            background: #ecedf2; /* Old browsers */
+            background: -moz-linear-gradient(top,  #ecedf2 0%, #ffffff 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #ecedf2 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #ecedf2 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecedf2', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+            -webkit-box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1), 0px -6px 0px 0px white;
+            box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1), 0px -6px 0px 0px white;
+            border-radius: 4px 4px 0 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: -20px;
+            height: 20px;
+            background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
+        }
+
+        &__item {
+            position: relative;
+            //height: 50px;
+            //border-top: 4px solid #f7eace;
+            //background-color: #e2cc98;
+            //background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
+            background: transparent;
+            padding: 0;
+            margin: 0;
+            left: -15px;
+
+            &:first-child {
+                left: 0;
+            }
+
+            &.current {
+                z-index: 15;
+                box-shadow: 5px 0 10px 0 rgba(0,0,0,.2);
+                &::after {
+                    content:'';
+                    display: none;
+                }
+            }
+        }
+
+        &-inset {
+            position: relative;
+            //top: -30px;
+            //left: 10%;
+            background-color: #e2cc98;
+            border-top: 4px solid #f7eace;
+            background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
+            padding: 8px 20px 0;
+            border-radius: 10px 10px 0 0;
+            cursor: pointer;
+            &__color {
+                width: 3.9rem;
+                height: 2rem;
+                border-radius: 6px 6px 0 0;
+                position: absolute;
+                top: -23px;
+                right: 8px;
+                z-index: 0;
+                -webkit-box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
+                box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
+            }
+
+            a {
+                font-size: 3.5rem;
+                color: #231300;
+                font-family: "SummerFont";
+                text-transform: uppercase;
+                padding: .2rem 1.3rem;
+                background-color: #f9f7f1;
+                border-radius: .6rem;
+
+                &::after {
+                    content:'';
+                    border:none;
+                }
+            }
+        }
+
+    }
+
+    .tab {
+        padding: 34px 54px;
+    }
 }
 
 //
@@ -26444,4 +26551,301 @@ a.show-more__button:hover {
             border:none;
         }
     }
+}
+
+.wedding {
+    margin-bottom: 80px;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: .4rem;
+    //padding-bottom: 4rem;
+    position: relative;
+
+    &-title {
+        font-size: 5rem;
+        color: #c44890;
+        font-family: $font_sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        text-align:center;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    &-info {
+
+        &-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            width: 25%;
+            padding: 0 30px;
+        }
+
+        &-card {
+
+            &__img {
+                text-align:center;
+                margin-bottom: 14px;
+                height: 64px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    display: inline-block;
+
+                }
+            }
+
+            &__text {
+                color: #555451;
+                font-size: 15px;
+                font-family:$font_serif;
+                text-align: center;
+                text-transform:uppercase;
+            }
+
+        }
+    }
+
+    &-hall {
+        margin-left: -8px;
+        margin-right: -8px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        &__item {
+            padding: 8px;
+            flex: 0 1 50%;
+
+            &:last-child {
+                flex: 0 1 100%;
+            }
+        }
+
+        &-card {
+            background-position: 50% 50%;
+            -webkit-background-size: cover;
+            background-size: cover;
+            position: relative;
+            height: 280px;
+
+            a {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+               & ::after {
+                   content:'';
+                   border:none;
+                }
+
+            }
+        }
+
+        &-body {
+            padding: 8px 90px;
+            background-color: #c55093;
+            color: #ffbce3;
+            font-size: 25px;
+            font-family:$font_serif;
+            line-height: 1.1;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform:translateX(-50%);
+            white-space: nowrap;
+            min-height: 80px;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed #fff;
+
+            span {
+                font-size: 30px;
+                text-transform:uppercase;
+                color: #ffffff;
+                display: block;
+            }
+
+        }
+    }
+
+    &-body {
+        padding: 20px 54px 0;
+    }
+
+    &-gallery {
+        position: relative;
+        padding: 40px 0;
+        overflow: hidden;
+
+        .bg-blur {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            filter: blur(5px);
+
+        }
+
+        .fotorama__wrap {
+            margin: 0 auto;
+        }
+    }
+
+    &-sale {
+        &-list {
+            &__item {
+                padding: 34px;
+                border:1px solid #bababa;
+                border-radius: 4px;
+                margin-bottom: 20px;
+
+            }
+        }
+
+        &-card {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            &__img {
+                margin-right: 30px;
+                overflow: hidden;
+                border-radius:10px;
+                flex: 1 0 260px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__title {
+                font-size: 48px;
+                color: #555451;
+                font-family:$font_decor;
+                text-transform: uppercase;
+                margin-bottom: 22px;
+                line-height: 1;
+
+            }
+            &__text {
+                font-family:$font_serif;
+                color: #555451;
+                font-size: 16px;
+                line-height: 1.1;
+                margin-bottom: 22px;
+
+            }
+
+            &__body {
+            }
+            &__footer {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            &__price {
+                margin-right: 50px;
+                font-family:$font_decor;
+                color: #ffffff;
+                font-size: 35px;
+                width: 177px;
+                height: 66px;
+                padding: 12px 12px 12px 16px;
+                background: url(../img/wedding/wedding-sale-card__price.png) 0 0 no-repeat;
+            }
+
+            &__btn {
+                display: inline-block;
+                border-radius:50px;
+                font-family:$font_decor;
+                line-height:1;
+                text-transform: uppercase;
+                font-size: 37px;
+                padding: 10px 40px;
+                background-color: #9acc4e;
+                color: #ffffff;
+
+                &::after {
+                    content:'';
+                    border:none;
+                }
+            }
+        }
+    }
+
+    &-gift {
+        background: #c44890 url(../img/wedding/bg-gift.jpg) 50% 50% no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 34px 16px;
+
+        .wedding-info-card__text {
+            color: #ffffff;
+        }
+
+        .wedding-info-list {
+            padding: 0 10%;
+
+        }
+        &__head {
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 48px;
+            font-family:$font_decor;
+            text-align: center;
+            text-transform: uppercase;
+            color: #9dee23;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            color: #ffffff;
+            font-family: $font_serif;
+            text-align: center;
+            line-height: 1;
+
+            span {
+                display: block;
+            }
+
+        }
+
+        &__body {
+
+        }
+    }
+
+    .holiday-menu {
+        margin: 0;
+    }
+
+    .fotorama__arr--next {
+        right: 96px;
+    }
+
+    .fotorama__arr--prev {
+        left: 96px;
+    }
+
+
 }
