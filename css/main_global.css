@@ -28488,7 +28488,8 @@ a.show-more__button:hover {
     margin-bottom: 1rem;
     text-align: center;
     font-weight: 700;
-    line-height: 1; }
+    line-height: 1;
+    letter-spacing: 1px; }
   .wedding-subtitle {
     font-size: 16px;
     color: #555451;
