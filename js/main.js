@@ -3058,6 +3058,20 @@ $(document).ready(function ($) {
         $(tab).fadeIn();
     });
 
+    // табы для tabs-folder
+
+    if($('div').hasClass('tabs-folder')){
+        $(document).on('click', '.tabs-folder .tabs-menu a', function(event) {
+            event.preventDefault();
+            $(this).parents('.tabs-menu__item').addClass("current");
+            $(this).parents('.tabs-menu__item').siblings().removeClass("current");
+            var tab = $(this).attr("href");
+            $('.tab').find(".tab-content").not(tab).css("display", "none");
+            $(tab).fadeIn();
+        });
+    }
+    
+
     /*scroll*/
     // $(".popup-basket__scroll").scrollBox();
     // $('#scrollbarY').tinyscrollbar();
