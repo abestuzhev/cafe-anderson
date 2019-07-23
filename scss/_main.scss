@@ -4061,7 +4061,7 @@ test popup
         &::before {
             content: '';
             position: absolute;
-            bottom: -37px;
+            bottom: -46px;
             left: 20px;
             right: 20px;
             height: 20px;
@@ -4083,8 +4083,8 @@ test popup
             position: absolute;
             width: 100%;
             left: 0;
-            bottom: -20px;
-            height: 20px;
+            bottom: -30px;
+            height: 30px;
             background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
         }
 
@@ -4097,7 +4097,7 @@ test popup
             background: transparent;
             padding: 0;
             margin: 0;
-            left: -15px;
+            left: -12px;
             border-radius: .8rem;
            
 
@@ -4124,20 +4124,20 @@ test popup
             background-color: #e2cc98;
             border-top: 4px solid #f7eace;
             background: #e0cb96 url(../img/animation-program/bg-texture-opacity-30.png) repeat;
-            padding: 8px 20px 0;
-            border-radius: 10px 10px 0 0;
+            padding: 15px 20px 0;
+            border-radius: 20px 20px 0 0;
             cursor: pointer;
             -webkit-box-shadow: inset 0px -3px 18px 0px rgba(150,107,21,.3);
             -moz-box-shadow: inset 0px -3px 18px 0px rgba(150,107,21,.3);
             box-shadow: inset 0px -3px 18px 0px rgba(150,107,21,.3);
 
             &__color {
-                width: 3.9rem;
-                height: 2rem;
+                width: 39px;
+                height: 15px;
                 border-radius: 6px 6px 0 0;
                 position: absolute;
-                top: -23px;
-                right: 8px;
+                top: -19px;
+                right: 20px;
                 z-index: 0;
                 -webkit-box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
                 box-shadow: inset 0px -7px 25px 0px rgba(0, 0, 0, 0.21);
@@ -4145,10 +4145,11 @@ test popup
 
             a {
                 font-size: 28px;
+                line-height: .8;
                 color: #231300;
                 font-family: "SummerFont";
                 text-transform: uppercase;
-                padding: .2rem 1.3rem;
+                padding: 2px 30px;
                 background-color: #f9f7f1;
                 border-radius: .6rem;
 
@@ -26576,6 +26577,76 @@ a.show-more__button:hover {
             display:none;
         }
 
+        .owl-nav .owl-prev {
+            left: 54px;
+        }
+        .owl-nav .owl-next {
+            right: 54px;
+        }
+
+        &__item {
+            height:100%;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: 50% 50%;
+            //height:36vw;
+            padding: 70px 183px;
+        }
+
+        &__title {
+            font-size: 100px;
+            color: #4c4c4c;
+            font-family:$font_decor;
+            line-height: 1;
+            margin-bottom: 34px;
+            font-weight:400;
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content:'';
+                position: absolute;
+                top: -15px;
+                left: 104%;
+                width: 97px;
+                height: 161px;
+                background: url(../img/wedding/wedding-slider-decor-2.png) 0 0 no-repeat;
+            }
+
+            &::before {
+                content:'';
+                position: absolute;
+                top: -17px;
+                left: -127px;
+                width: 97px;
+                height: 161px;
+                background: url(../img/wedding/wedding-slider-decor-1.png) 0 0 no-repeat;
+            }
+        }
+
+        &__body {
+            max-width: 565px;
+            background-color: #a9cb58;
+            border:1px dotted #fff;
+            padding: 10px 60px 14px;
+
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 24px;
+            color: #4c4c4c;
+            line-height: 1.2;
+            font-family:$font_serif;
+            padding: 18px 0;
+        }
+
+        &-decor-border {
+            width: 130px;
+            margin: 0 auto;
+            border:1px dotted #fff;
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -26592,9 +26663,17 @@ a.show-more__button:hover {
         color: #c44890;
         font-family: $font_sans-serif;
         text-transform: uppercase;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         text-align:center;
         font-weight: 700;
+        line-height: 1;
+    }
+
+    &-subtitle {
+        font-size: 16px;
+        color: $black;
+        font-family: "PT Serif Caption";
+        text-align: center;
         line-height: 1;
     }
 
@@ -26649,6 +26728,7 @@ a.show-more__button:hover {
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: stretch;
+
         &__item {
             padding: 8px;
             flex: 0 1 50%;
@@ -26676,6 +26756,14 @@ a.show-more__button:hover {
                 }
 
             }
+
+            &__data {
+                color: #fff;
+                font-size: 30px;
+                text-transform:uppercase;
+                color: #ffffff;
+                display: block;
+            }
         }
 
         &-body {
@@ -26699,10 +26787,7 @@ a.show-more__button:hover {
             border: 1px dashed #fff;
 
             span {
-                font-size: 30px;
-                text-transform:uppercase;
-                color: #ffffff;
-                display: block;
+
             }
 
         }
@@ -26895,6 +26980,37 @@ a.show-more__button:hover {
 
     .fotorama__arr--prev {
         left: 96px;
+    }
+
+    .holiday-hall-sentence__btn {
+        position: relative;
+        bottom: -20px;
+    }
+
+    .holiday-hall-sentence .decor-grass-1 {
+        position: absolute;
+        right: 27%;
+        bottom: 54%;
+    }
+
+    .holiday-hall-sentence .decor-grass-3 {
+        position: absolute;
+        left: auto;
+        right: 12%;
+        bottom: 18%;
+        top: auto;
+    }
+
+    .holiday-hall-sentence .decor-grass-2 {
+        position: absolute;
+        left: 35%;
+        right: auto;
+        bottom: auto;
+        top: 19%;
+    }
+
+    .holiday-hall-sentence .decor-grass-4 img {
+        width: 110%;
     }
 
 

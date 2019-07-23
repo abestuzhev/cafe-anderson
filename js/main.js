@@ -238,6 +238,33 @@ $(document).ready(function ($) {
 
     });
 
+    // $('.wedding-slider')
+
+    // $('.wedding-slider').owlCarousel({
+    //     center: true,
+    //     items:1,
+    //     loop:true,
+    //     margin:10,
+    //     autoHeight:true
+    // });
+
+    $('.wedding-slider').owlCarousel({
+        center: true,
+        items:1,
+        loop:true,
+        margin:10,
+        autoHeight:true
+    });
+    //
+    // $('.wedding-slider').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     speed: 500,
+    //     dots: true,
+    //     centerMode: true,
+    //     focusOnSelect: true
+    // });
+
 
 
     $('.c-checkbox-custom').on('click', function(){ 
