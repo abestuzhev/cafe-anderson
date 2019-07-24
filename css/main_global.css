@@ -11160,7 +11160,7 @@ test popup
     padding: 0;
     margin: 0;
     left: -12px;
-    border-radius: .8rem; }
+    border-radius: 22px; }
     .tabs-folder .tabs-menu__item:first-child {
       left: 0; }
     .tabs-folder .tabs-menu__item.current {
@@ -27949,8 +27949,6 @@ a.show-more__button:hover {
       .holiday-menu-filter__search input:-ms-input-placeholder {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
-        color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
         color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
