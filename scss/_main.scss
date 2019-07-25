@@ -27026,6 +27026,14 @@ a.show-more__button:hover {
         width: 100% !important;
         min-width: 100% !important;
         height: 100% !important;
+        position:relative !important;
+        overflow:hidden !important;
+    }
+
+    .mfp-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     img {
@@ -27060,6 +27068,7 @@ a.show-more__button:hover {
         border: 1px solid #a2d744;
         position: absolute;
         background:#fff;
+        z-index: 50;
 
         &:hover {
             border: 1px solid #a2d744;

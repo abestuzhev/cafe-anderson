@@ -28787,7 +28787,19 @@ a.show-more__button:hover {
     max-width: 100% !important;
     width: 100% !important;
     min-width: 100% !important;
-    height: 100% !important; }
+    height: 100% !important;
+    position: relative !important;
+    overflow: hidden !important; }
+  .popup-banner .mfp-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .popup-banner img {
     display: block; }
   .popup-banner a::after {
@@ -28812,7 +28824,8 @@ a.show-more__button:hover {
     border-radius: 5rem;
     border: 1px solid #a2d744;
     position: absolute;
-    background: #fff; }
+    background: #fff;
+    z-index: 50; }
     .popup-banner-close:hover {
       border: 1px solid #a2d744; }
     .popup-banner-close::before {
