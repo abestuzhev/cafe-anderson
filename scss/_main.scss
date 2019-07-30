@@ -27115,13 +27115,13 @@ a.show-more__button:hover {
     height: 492px;
     background-color: #aa5884;
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     &-element-1 {
       position: absolute;
       right: 0;
       bottom: 0;
-      display: flex;
-      justify-content: flex-end;
+      //display: flex;
+      //justify-content: flex-end;
 
       img {
         display: block;
