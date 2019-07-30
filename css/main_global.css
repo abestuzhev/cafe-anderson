@@ -28861,7 +28861,8 @@ a.show-more__button:hover {
   width: 100%;
   height: 492px;
   background-color: #aa5884;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .birthday-banner-element-1 {
     position: absolute;
     right: 0;
