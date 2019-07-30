@@ -934,7 +934,7 @@
     .corporate-cake-banner__subtitle{
         font-size: 4rem;
     }
-    
+
     .corporate-cake-banner__decor {
         width: 74px;
         overflow: hidden;
@@ -1084,7 +1084,7 @@
     .new-year-header__body {
         left: 3%;
         width: 26rem;
-        top:20%;  
+        top:20%;
     }
 
 
@@ -3194,7 +3194,7 @@
         height: 24rem;
     }
 
-    
+
     .new-year-description__text {
        margin-bottom: 16px;
     }
@@ -5230,7 +5230,7 @@
         left: 4%;
         width: 36rem;
     }
-    
+
     .holiday-offers__footer {
         margin-bottom: 0;
     }
@@ -6187,7 +6187,7 @@
 
     .c-card-party__decor-1-right {
         margin: 0;
-        right: 0; 
+        right: 0;
         width: 116px
     }
 
@@ -6286,7 +6286,7 @@
 }
 
 @media (max-width: 600px) {
-    
+
 
     .owl-carousel:not(.ignore-600px) {
         width: 100%;
@@ -6318,8 +6318,8 @@
         margin-top: -1.7rem !important;
     }
 
-    
-    .corporate-cake .corporate-cake-gingerbread .owl-nav {    
+
+    .corporate-cake .corporate-cake-gingerbread .owl-nav {
         margin-top: -9rem !important;
     }
 
@@ -12211,6 +12211,22 @@
     .corporate-cake-wishes .c-pass-banner__decor-2,
     .corporate-cake-wishes .c-pass-banner__decor-3 {
         display: none;
+    }
+
+    .birthday-banner {
+      height:40vw;
+    }
+
+    .birthday-banner-element-1 img {
+      width: 60vw;
+    }
+
+    .birthday-banner-element-2 img {
+      width: 50vw;
+    }
+
+    .birthday-banner-element-2 {
+      left: -20px;
     }
 
 }

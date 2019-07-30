@@ -4099,7 +4099,7 @@ test popup
             margin: 0;
             left: -12px;
             border-radius: 22px;
-           
+
 
             &:first-child {
                 left: 0;
@@ -21427,7 +21427,7 @@ a.show-more__button:hover {
             input:checked + label {
                 -webkit-box-shadow: inset 0px 0px 0px 2px rgba(196,72,144,1);
                 -moz-box-shadow: inset 0px 0px 0px 2px rgba(196,72,144,1);
-                box-shadow: inset 0px 0px 0px 2px rgba(196,72,144,1);                    
+                box-shadow: inset 0px 0px 0px 2px rgba(196,72,144,1);
             }
 
             label {
@@ -21558,7 +21558,7 @@ a.show-more__button:hover {
         transform: scale(1.01);
     }
 
-    
+
 
     .event-builder .top-nav {
         padding-left: 4.9rem;
@@ -25944,7 +25944,7 @@ a.show-more__button:hover {
                 right: 10px;
                 top: 8px;
                 cursor:pointer;
-                
+
             }
 
             .c-symbol {
@@ -25953,13 +25953,13 @@ a.show-more__button:hover {
                 font-size: 1.8rem;
                 position:absolute;
                 right: 0px;
-                top: 0px;  
+                top: 0px;
             }
 
             input::-webkit-input-placeholder { color: #e9d2df; }
             input:-ms-input-placeholder { color: #e9d2df; }
             input::-ms-input-placeholder { color: #e9d2df; }
-            input::placeholder { color: #e9d2df; } 
+            input::placeholder { color: #e9d2df; }
         }
 
         &__body {
@@ -26220,14 +26220,14 @@ a.show-more__button:hover {
 
         &__body {
             width: 60%;
-            
+
         }
 
         &-list {
 
             &__item {
                 border-bottom: 1px dotted #90929b;
-                
+
                 &:nth-child(odd) {
                     background-color: #f3f3f9;
                 }
@@ -26257,7 +26257,7 @@ a.show-more__button:hover {
             content:'';
             border: none;
         }
-        
+
         &:hover {
             background-color: #f2f9e7;
             color: #6a942c;
@@ -26920,7 +26920,7 @@ a.show-more__button:hover {
             height:16px;
             background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
         }
-        
+
         &::after {
             content: '';
             position: absolute;
@@ -27104,4 +27104,67 @@ a.show-more__button:hover {
             background-color: #a2d744;
         }
     }
+}
+
+
+// birthday-banner
+
+.birthday {
+  &-banner {
+    width: 100%;
+    height: 492px;
+    background-color: #aa5884;
+    position: relative;
+    overflow: hidden;
+    &-element-1 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        display: block;
+      }
+
+    }
+
+    &-element-2 {
+      position: absolute;
+      left: -50px;
+      top: 50%;
+      transform:translateY(-50%);
+      display: flex;
+      justify-content: flex-start;
+      img {
+        display: block;
+      }
+
+    }
+
+    &-round {
+      position: absolute;
+      top: 50%;
+      left: -50px;
+      transform:translateY(-50%) rotate(-15deg);
+      width: 742px;
+      height: 742px;
+      border-radius: 742px;
+      background-color: #7cbd41;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-flow:   row nowrap;
+      justify-content: center;
+      align-items: center;
+
+      &__text {
+        font-family: $font_decor;
+        color: #fff;
+        font-size: 80px;
+        text-transform: uppercase;
+
+      }
+    }
+  }
 }
