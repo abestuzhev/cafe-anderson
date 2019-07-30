@@ -27130,16 +27130,19 @@ a.show-more__button:hover {
     }
 
     &-element-2 {
+
       position: absolute;
-      left: -50px;
-      top: 50%;
-      transform:translateY(-50%);
+      left: 28%;
+      top: 42%;
+      width: 271px;
+      height: 271px;
       display: flex;
       justify-content: flex-start;
       img {
         display: block;
+        width: 100%;
+        height:auto;
       }
-
     }
 
     &-round {
@@ -27163,8 +27166,52 @@ a.show-more__button:hover {
         color: #fff;
         font-size: 80px;
         text-transform: uppercase;
-
       }
+    }
+
+    &-body {
+      padding: 67px 40px;
+      position:relative;
+      z-index: 10;
+    }
+
+    &__title {
+      font-size: 80px;
+      font-family: "SummerFont";
+      color:#fff;
+      line-height: 1;
+      font-weight:700;
+    }
+
+    &__btn {
+      display: inline-block;
+      padding: 0 20px;
+      border-radius: 21px;
+      background-color: #98c22f;
+      font-size: 37px;
+      font-family: "SummerFont";
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+
+      &::after {
+        content:'';
+        border:none;
+      }
+
+      &:hover {
+        color:#fff;
+        box-shadow:0 5px 10px 0 rgba(0,0,0,.1);
+      }
+    }
+
+    &__text {
+      margin: 15px 0 25px;
+      font-size: 47px;
+      font-family: "SummerFont";
+      color:#fff;
+      line-height: 1;
     }
   }
 }

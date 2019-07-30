@@ -28875,11 +28875,10 @@ a.show-more__button:hover {
       display: block; }
   .birthday-banner-element-2 {
     position: absolute;
-    left: -50px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    left: 28%;
+    top: 42%;
+    width: 271px;
+    height: 271px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28887,7 +28886,9 @@ a.show-more__button:hover {
         -ms-flex-pack: start;
             justify-content: flex-start; }
     .birthday-banner-element-2 img {
-      display: block; }
+      display: block;
+      width: 100%;
+      height: auto; }
   .birthday-banner-round {
     position: absolute;
     top: 50%;
@@ -28918,6 +28919,40 @@ a.show-more__button:hover {
       color: #fff;
       font-size: 80px;
       text-transform: uppercase; }
+  .birthday-banner-body {
+    padding: 67px 40px;
+    position: relative;
+    z-index: 10; }
+  .birthday-banner__title {
+    font-size: 80px;
+    font-family: "SummerFont";
+    color: #fff;
+    line-height: 1;
+    font-weight: 700; }
+  .birthday-banner__btn {
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 21px;
+    background-color: #98c22f;
+    font-size: 37px;
+    font-family: "SummerFont";
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer; }
+    .birthday-banner__btn::after {
+      content: '';
+      border: none; }
+    .birthday-banner__btn:hover {
+      color: #fff;
+      -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1); }
+  .birthday-banner__text {
+    margin: 15px 0 25px;
+    font-size: 47px;
+    font-family: "SummerFont";
+    color: #fff;
+    line-height: 1; }
 
 .popup-pie {
   /* Ручной readmore */

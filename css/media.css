@@ -834,6 +834,8 @@
         content: '';
         display: none;
     }
+
+
 }
 
 @media screen and (max-width: 1150px) {
@@ -876,6 +878,42 @@
         position: absolute;
         top: -6.8rem;
         right: 0;
+    }
+
+    .birthday-banner {
+      height:auto;
+    }
+
+    .birthday-banner-body {
+      background: #aa5884;
+      display: inline-block;
+      padding: 3vw 3.3vw;
+    }
+
+    .birthday-banner-element-1 {
+      position: absolute;
+      width: 48vw;
+      overflow: hidden;
+    }
+
+    .birthday-banner__title {
+      font-size:7.2vw;
+    }
+
+
+    .birthday-banner__text {
+      font-size:4vw;
+    }
+    .birthday-banner__btn {
+      font-size:3vw;
+    }
+
+    .birthday-banner-element-1 img {
+      width: 60vw;
+    }
+
+    .birthday-banner-element-2 {
+      display: none;
     }
 }
 
@@ -5661,6 +5699,16 @@
     }
 
 
+.birthday-banner__text {
+  padding: 12px 0;
+  margin: 0;
+  font-size: 6vw;
+}
+
+.birthday-banner__btn {
+    font-size: 4vw;
+}
+
 
 }
 
@@ -7674,6 +7722,18 @@
 
     .order-finish__title {
         font-size: 2rem;
+    }
+
+    .birthday-banner__title {
+        font-size: 10.2vw;
+    }
+
+    .birthday-banner__text {
+        padding: 8px 0;
+        font-size: 6.7vw;
+    }
+    .birthday-banner__btn {
+      display: none;
     }
 }
 
@@ -12213,21 +12273,6 @@
         display: none;
     }
 
-    .birthday-banner {
-      height:40vw;
-    }
-
-    .birthday-banner-element-1 img {
-      width: 60vw;
-    }
-
-    .birthday-banner-element-2 img {
-      width: 50vw;
-    }
-
-    .birthday-banner-element-2 {
-      left: -20px;
-    }
 
 }
 
