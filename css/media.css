@@ -892,7 +892,7 @@
 
     .birthday-banner-element-1 {
       position: absolute;
-      width: 48vw;
+      width: 60vw;
       overflow: hidden;
     }
 
@@ -909,7 +909,8 @@
     }
 
     .birthday-banner-element-1 img {
-      width: 60vw;
+      /* width: 60vw; */
+      width:100%;
     }
 
     .birthday-banner-element-2 {
