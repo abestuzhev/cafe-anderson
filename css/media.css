@@ -7728,6 +7728,7 @@
 
     .birthday-banner__title {
         font-size: 33px;
+        letter-spacing: -0.5px;
     }
 
     .birthday-banner-body {
