@@ -893,7 +893,7 @@
     .birthday-banner-element-1 {
       position: absolute;
       width: 63%;
-      overflow: hidden;
+      /* overflow: hidden; */
     }
 
     .birthday-banner__title {
