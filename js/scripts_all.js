@@ -9444,6 +9444,31 @@ $(document).ready(function ($) {
 
 
 
+    $('.celebration-slider').owlCarousel({
+        center: true,
+        items:1,
+        loop:true,
+        margin:10,
+        autoHeight:true
+    });
+
+    $('.celebration-slider-fotorama').fotorama({
+        loop: true,
+        thumbwidth: 88,
+        allowfullscreen: false
+    });
+
+    $('.celebration-fotorama').on('fotorama:ready', function (e, fotorama) {
+
+        var path = fotorama.activeFrame.img;
+        $('.bg-blur').attr('src', path);
+    }).fotorama({
+        loop: true,
+        thumbwidth: 88,
+        allowfullscreen: false,
+        nav: 'thumbs'
+    });
+
 
     $('.wedding-fotorama').on('fotorama:ready', function (e, fotorama) {
 
@@ -9468,7 +9493,6 @@ $(document).ready(function ($) {
         loop: true,
         thumbwidth: 88,
         allowfullscreen: false
-
     });
 
     // $('.wedding-slider')
@@ -9488,15 +9512,7 @@ $(document).ready(function ($) {
         margin:10,
         autoHeight:true
     });
-    //
-    // $('.wedding-slider').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     speed: 500,
-    //     dots: true,
-    //     centerMode: true,
-    //     focusOnSelect: true
-    // });
+
 
 
 

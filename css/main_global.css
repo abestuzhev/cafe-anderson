@@ -6779,6 +6779,52 @@ div.c-card-catalog-3 {
   .wrapper textarea {
     font-size: 16px; } }
 
+.c-celebration-card {
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+  min-height: 280px; }
+  .c-celebration-card a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    .c-celebration-card a::after {
+      content: '';
+      border: none; }
+  .c-celebration-card__body {
+    padding: 12px 75px;
+    background-color: #c55093;
+    color: #ffbce3;
+    font-family: "PT Serif Caption";
+    line-height: 1.1;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border: 1px dashed #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .c-celebration-card__text {
+    font-size: 20px;
+    color: #ffffff;
+    display: block; }
+
 .header.sticky {
   padding: 1rem 0 .3rem; }
 
@@ -27950,6 +27996,8 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
+      .holiday-menu-filter__search input::-moz-placeholder {
+        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -28947,6 +28995,307 @@ a.show-more__button:hover {
     font-family: "SummerFont";
     color: #fff;
     line-height: 1; }
+
+.celebration {
+  margin-bottom: 80px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+  border-radius: .4rem;
+  position: relative; }
+  .celebration-slider {
+    position: relative;
+    margin-bottom: 24px; }
+    .celebration-slider .fotorama__nav-wrap {
+      display: none; }
+    .celebration-slider .owl-nav .owl-prev {
+      left: 54px; }
+    .celebration-slider .owl-nav .owl-next {
+      right: 54px; }
+    .celebration-slider__item {
+      height: 100%;
+      background-size: cover;
+      background-position: 50% 50%;
+      padding: 70px 183px; }
+    .celebration-slider__title {
+      font-size: 100px;
+      color: #4c4c4c;
+      font-family: "SummerFont";
+      line-height: 1;
+      margin-bottom: 34px;
+      font-weight: 400;
+      position: relative;
+      display: inline-block; }
+      .celebration-slider__title::after {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: 104%;
+        width: 97px;
+        height: 161px;
+        background: url(../img/wedding/wedding-slider-decor-2.png) 0 0 no-repeat; }
+      .celebration-slider__title::before {
+        content: '';
+        position: absolute;
+        top: -17px;
+        left: -127px;
+        width: 97px;
+        height: 161px;
+        background: url(../img/wedding/wedding-slider-decor-1.png) 0 0 no-repeat; }
+    .celebration-slider__body {
+      max-width: 565px;
+      background-color: #a9cb58;
+      border: 1px dotted #fff;
+      padding: 10px 60px 14px; }
+    .celebration-slider__text {
+      text-align: center;
+      font-size: 24px;
+      color: #4c4c4c;
+      line-height: 1.2;
+      font-family: "PT Serif Caption";
+      padding: 18px 0; }
+    .celebration-slider-decor-border {
+      width: 130px;
+      margin: 0 auto;
+      border: 1px dotted #fff; }
+    .celebration-slider::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 16px;
+      background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+  .celebration-title {
+    font-size: 5rem;
+    color: #c44890;
+    font-family: "BebasNeue";
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px; }
+  .celebration-subtitle {
+    font-size: 16px;
+    color: #555451;
+    font-family: "PT Serif Caption";
+    text-align: center;
+    line-height: 1; }
+  .celebration-info {
+    margin-bottom: 24px; }
+    .celebration-info-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-bottom: 20px; }
+    .celebration-info__item {
+      width: 25%;
+      padding: 0 30px; }
+    .celebration-info-card__img {
+      text-align: center;
+      margin-bottom: 14px;
+      height: 64px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .celebration-info-card__img img {
+        display: inline-block; }
+    .celebration-info-card__text {
+      color: #555451;
+      font-size: 15px;
+      font-family: "PT Serif Caption";
+      text-align: center;
+      text-transform: uppercase; }
+    .celebration-info-card__num {
+      font-size: 30px;
+      color: #97bd3b;
+      line-height: 1; }
+  .celebration-hall {
+    margin-left: -8px;
+    margin-right: -8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .celebration-hall__item {
+      padding: 8px;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 50%;
+              flex: 0 1 50%; }
+      .celebration-hall__item:last-child {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 100%;
+                flex: 0 1 100%; }
+    .celebration-hall-card {
+      background-position: 50% 50%;
+      background-size: cover;
+      position: relative;
+      height: 280px; }
+      .celebration-hall-card a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .celebration-hall-card a ::after {
+          content: '';
+          border: none; }
+      .celebration-hall-card__data {
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: block; }
+    .celebration-hall-body {
+      padding: 8px 90px;
+      background-color: #c55093;
+      color: #ffbce3;
+      font-size: 25px;
+      font-family: "PT Serif Caption";
+      line-height: 1.1;
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      white-space: nowrap;
+      min-height: 80px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      border: 1px dashed #fff; }
+  .celebration-body {
+    padding: 20px 54px 0; }
+  .celebration-gallery {
+    position: relative;
+    padding: 40px 0;
+    overflow: hidden; }
+    .celebration-gallery .bg-blur {
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      -webkit-filter: blur(5px);
+              filter: blur(5px); }
+    .celebration-gallery .fotorama__wrap {
+      margin: 0 auto; }
+  .celebration-gift {
+    background: #c44890 url(../img/celebration/bg-gift.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    padding: 34px 16px;
+    position: relative; }
+    .celebration-gift::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      height: 16px;
+      background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; }
+    .celebration-gift::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      height: 16px;
+      background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+    .celebration-gift .celebration-info-card__text {
+      color: #ffffff; }
+    .celebration-gift .celebration-info-list {
+      padding: 0 10%; }
+    .celebration-gift__head {
+      margin-bottom: 30px; }
+    .celebration-gift__title {
+      font-size: 48px;
+      font-family: "SummerFont";
+      text-align: center;
+      text-transform: uppercase;
+      color: #9dee23;
+      line-height: 1;
+      margin-bottom: 10px; }
+    .celebration-gift__subtitle {
+      font-size: 16px;
+      color: #ffffff;
+      font-family: "PT Serif Caption";
+      text-align: center;
+      line-height: 1; }
+      .celebration-gift__subtitle span {
+        display: block; }
+  .celebration-section {
+    margin-bottom: 30px; }
+  .celebration .c-col {
+    padding: 7px; }
+  .celebration .holiday-menu {
+    margin: 0; }
+  .celebration .fotorama__arr--next {
+    right: 96px; }
+  .celebration .fotorama__arr--prev {
+    left: 96px; }
+  .celebration .holiday-hall-sentence__btn {
+    position: relative;
+    bottom: -20px; }
+  .celebration .holiday-hall-sentence .decor-grass-1 {
+    position: absolute;
+    right: 27%;
+    bottom: 54%; }
+  .celebration .holiday-hall-sentence .decor-grass-3 {
+    position: absolute;
+    left: auto;
+    right: 12%;
+    bottom: 18%;
+    top: auto; }
+  .celebration .holiday-hall-sentence .decor-grass-2 {
+    position: absolute;
+    left: 35%;
+    right: auto;
+    bottom: auto;
+    top: 19%; }
+  .celebration .holiday-hall-sentence .decor-grass-4 img {
+    width: 110%; }
 
 .popup-pie {
   /* Ручной readmore */

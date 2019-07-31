@@ -6339,3 +6339,47 @@ div.c-card-catalog-3 {
 
 
 
+.c-celebration-card {
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+    min-height: 280px;
+    a {
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right:0;
+        &::after {
+            content:'';
+            border:none;
+        }
+    }
+    &__body {
+        padding: 12px 75px;
+        background-color: #c55093;
+        color: #ffbce3;
+        font-family: "PT Serif Caption";
+        line-height: 1.1;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        //right: 17%;
+        transform:translateX(-50%);
+        border: 1px dashed #fff;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__text {
+        font-size:20px;
+        color: #ffffff;
+        display: block;
+        //white-space: nowrap;
+    }
+}
