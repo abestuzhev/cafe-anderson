@@ -6344,6 +6344,7 @@ div.c-card-catalog-3 {
     background-size: cover;
     position: relative;
     min-height: 280px;
+    height: 100%;
     a {
 
         position: absolute;
@@ -6357,7 +6358,7 @@ div.c-card-catalog-3 {
         }
     }
     &__body {
-        padding: 12px 75px;
+        padding: 12px 50px;
         background-color: #c55093;
         color: #ffbce3;
         font-family: "PT Serif Caption";

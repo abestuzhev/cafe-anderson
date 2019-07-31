@@ -6783,7 +6783,8 @@ div.c-card-catalog-3 {
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
-  min-height: 280px; }
+  min-height: 280px;
+  height: 100%; }
   .c-celebration-card a {
     position: absolute;
     top: 0;
@@ -6794,7 +6795,7 @@ div.c-card-catalog-3 {
       content: '';
       border: none; }
   .c-celebration-card__body {
-    padding: 12px 75px;
+    padding: 12px 50px;
     background-color: #c55093;
     color: #ffbce3;
     font-family: "PT Serif Caption";
@@ -28175,6 +28176,33 @@ a.show-more__button:hover {
         font-family: "PT Serif Caption";
         font-weight: 700;
         letter-spacing: 3px; }
+      .holiday-menu-card-line__note {
+        font-size: 24px;
+        color: #79b224;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        font-family: "PT Serif Caption"; }
+      .holiday-menu-card-line__btn {
+        display: inline-block;
+        white-space: nowrap;
+        text-align: center;
+        color: #fff;
+        font-family: "SummerFont";
+        text-transform: uppercase;
+        font-size: 3.7rem;
+        line-height: 1;
+        padding: 1rem 5.4rem;
+        background-color: #c44890;
+        border-radius: 50px;
+        cursor: pointer; }
+        .holiday-menu-card-line__btn:hover {
+          border: none;
+          color: #fff;
+          background-color: #b34383; }
+        .holiday-menu-card-line__btn::after {
+          content: '';
+          border: none; }
     .holiday-menu-card__img {
       width: 40%;
       background-position: 50% 50%;
@@ -28998,14 +29026,10 @@ a.show-more__button:hover {
 
 .celebration {
   margin-bottom: 80px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
   border-radius: .4rem;
   position: relative; }
   .celebration-slider {
-    position: relative;
-    margin-bottom: 24px; }
+    position: relative; }
     .celebration-slider .fotorama__nav-wrap {
       display: none; }
     .celebration-slider .owl-nav .owl-prev {
@@ -29083,7 +29107,7 @@ a.show-more__button:hover {
     text-align: center;
     line-height: 1; }
   .celebration-info {
-    margin-bottom: 24px; }
+    margin-bottom: 10px; }
     .celebration-info-list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -29206,7 +29230,10 @@ a.show-more__button:hover {
               justify-content: center;
       border: 1px dashed #fff; }
   .celebration-body {
-    padding: 20px 54px 0; }
+    padding: 30px 54px 24px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15); }
   .celebration-gallery {
     position: relative;
     padding: 40px 0;
@@ -29267,6 +29294,12 @@ a.show-more__button:hover {
         display: block; }
   .celebration-section {
     margin-bottom: 30px; }
+    .celebration-section .holiday-menu-card {
+      margin: 40px 0; }
+  .celebration-footer {
+    background-color: #fff; }
+  .celebration .c-grid .c-grid {
+    padding: 0; }
   .celebration .c-col {
     padding: 7px; }
   .celebration .holiday-menu {

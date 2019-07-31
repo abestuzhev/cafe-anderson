@@ -26199,6 +26199,41 @@ a.show-more__button:hover {
                 letter-spacing: 3px;
 
             }
+
+            &__note {
+                font-size: 24px;
+                color: #79b224;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                line-height: 1.2;
+                font-family:$font_serif;
+            }
+
+            &__btn {
+                display: inline-block;
+                white-space: nowrap;
+                text-align: center;
+                color: #fff;
+                font-family: "SummerFont";
+                text-transform: uppercase;
+                font-size: 3.7rem;
+                line-height: 1;
+                padding: 1rem 5.4rem;
+                background-color: #c44890;
+                //border: 2px solid #c44890;
+                border-radius: 50px;
+                cursor: pointer;
+
+                &:hover {
+                    border:none;
+                    color:#fff;
+                    background-color: #b34383;
+                }
+                &::after {
+                    content:'';
+                    border:none;
+                }
+            }
         }
 
         &__img {
@@ -27219,15 +27254,15 @@ a.show-more__button:hover {
 
 .celebration {
     margin-bottom: 80px;
-    background-color: #fff;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+
+
     border-radius: .4rem;
     //padding-bottom: 4rem;
     position: relative;
 
     &-slider {
         position:relative;
-        margin-bottom:24px;
+        //margin-bottom:24px;
         .fotorama__nav-wrap {
             display:none;
         }
@@ -27334,7 +27369,7 @@ a.show-more__button:hover {
     }
 
     &-info {
-        margin-bottom:24px;
+        margin-bottom:10px;
 
         &-list {
             display: flex;
@@ -27456,7 +27491,9 @@ a.show-more__button:hover {
     }
 
     &-body {
-        padding: 20px 54px 0;
+        padding: 30px 54px 24px;
+        background-color: #fff;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
     }
 
     &-gallery {
@@ -27550,6 +27587,21 @@ a.show-more__button:hover {
 
     &-section {
         margin-bottom: 30px;
+
+        .holiday-menu-card {
+            margin: 40px 0;
+        }
+    }
+    
+    &-footer {
+        background-color: #fff;
+
+    }
+
+    .c-grid {
+        .c-grid {
+            padding: 0;
+        }
     }
     .c-col {
         padding: 7px;
