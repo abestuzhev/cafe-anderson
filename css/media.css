@@ -575,7 +575,62 @@
     .home-celebration__text .main-btn {
         font-size: 2rem;
     }
+
+    .celebration-slider__item {
+      padding: 30px 80px;
+    }
+
+    .celebration-slider .owl-nav .owl-prev {
+        left: 0;
+    }
+
+    .celebration-slider .owl-nav .owl-next {
+        right: 0;
+    }
+
+    .celebration-slider__title {
+        font-size: 80px;
+        margin-bottom: 24px;
+    }
+
+    .celebration-slider__text {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .celebration-body {
+      padding: 30px 30px 24px;
+    }
+
+    .celebration .fotorama__arr--next {
+      right: 0;
+    }
+    .celebration .fotorama__arr--prev {
+      left: 0;
+    }
+
+    .c-celebration-card__body,
+    .celebration-hall-body {
+      left: 10%;
+      right: 10%;
+      transform:none;
+      padding: 8px 10px;
+      font-size: 18px;
+      min-height: auto;
+
+      padding: 17px 10px;
+    }
+
+    .c-celebration-card__text {
+      font-size: 16px;
+    }
+
+    .celebration-hall-card__data {
+          font-size: 20px;
+    }
 }
+/* end 1400 */
+
 
 @media (max-width: 1380px) {
     .home-cafe {
@@ -1780,6 +1835,33 @@
 
     .event-builder-combo__item {
         width:50%;
+    }
+
+    .celebration-slider__title::after,
+    .celebration-slider__title::before {
+      content: '';
+      display: none;
+    }
+
+    .celebration-slider__text div,
+    .celebration-slider__text span,
+    .celebration-slider__text {
+        display: block;
+        font-size: 20px !important;
+
+    }
+
+    .celebration-slider__text {
+      padding: 13px 0;
+    }
+
+    .celebration-slider__body {
+        max-width: 100%;
+    }
+
+    .celebration-slider__title {
+        font-size: 60px;
+        margin-bottom: 16px;
     }
 }
 
@@ -3952,7 +4034,74 @@
         padding: 4px 0;
     }
 
+    .celebration-slider .owl-nav .owl-prev,
+    .celebration-slider .owl-nav .owl-next {
+        display: none;
+    }
+
+    .celebration-slider__item {
+        padding: 30px 40px;
+    }
+
+    .celebration-slider__title {
+        font-size: 50px;
+        line-height: .8;
+    }
+
+    .celebration-slider__text div,
+    .celebration-slider__text span,
+    .celebration-slider__text {
+          font-size: 16px !important;
+      }
+
+    .celebration-title {
+      font-size: 45px;
+    }
+
+    .celebration-section {
+        margin-bottom: 20px;
+    }
+
+    .celebration-info-list {
+      margin-bottom: 0;
+    }
+
+    .celebration-info-card {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .celebration-info-card__img {
+      margin-right: 18px;
+      width: 70px;
+    }
+
+
+    .celebration-info-card__text {
+      text-align: left;
+    }
+
+    .celebration-info__item {
+      width: 50%;
+      padding: 0 5px;
+      margin-bottom: 14px;
+    }
+
+    .celebration-section .holiday-menu-card {
+      margin: 20px 0;
+    }
+
+    .holiday-menu-card-line__note {
+        font-size: 20px;
+    }
+
+
+
 }
+
+/* end 840 */
 
 @media (max-width: 800px) {
     .mobile-cake__text {
@@ -5405,6 +5554,11 @@
         margin-bottom: 10px;
     }
 
+    .celebration {
+      margin-left: -22px;
+      margin-right: -22px;
+    }
+
 }
 
 @media (max-width: 780px) {
@@ -6639,12 +6793,25 @@
         width: 100%;
     }
 
+    .celebration .holiday-menu-card__img {
+        order:2;
+        height: 200px;
+    }
+
     .holiday-menu-card__body {
         border:none;
     }
 
+    .celebration .holiday-menu-card.rtl .holiday-menu-card__body {
+      border:none;
+    }
+
     .holiday-menu-card__title {
         background-color: #91be4f;
+    }
+
+    .celebration .holiday-menu-card__title {
+        background-color: #c2478e;
     }
 
     .holiday-menu-card__title {
@@ -6848,7 +7015,58 @@
         margin-bottom: 10px;
     }
 
+    .celebration-slider__body {
+        padding: 10px 20px 14px;
+    }
+
+    .celebration-slider__text div,
+    .celebration-slider__text span,
+    .celebration-slider__text {
+        font-size: 14px !important;
+    }
+
+    .celebration-slider__title {
+        font-size: 46px;
+    }
+
+    .celebration-slider__item {
+      padding: 18px 16px 24px;
+    }
+
+    .celebration-title {
+      font-size: 40px;
+    }
+
+    .celebration-body {
+      padding: 24px 16px 24px;
+    }
+
+    .c-celebration-card__body, .celebration-hall-body {
+
+        padding: 25px 10px;
+    }
+
+    .c-celebration-card__body, .celebration-hall-body {
+        left: 6%;
+        right: 6%;
+    }
+
+    .celebration-hall__item {
+        flex: 0 1 100%;
+    }
+
+    .celebration-info {
+      margin-bottom: 0;
+    }
+
+    .celebration-section {
+      margin-bottom: 10px;
+    }
+
+
 }
+
+/* end 570 */
 
 @media (max-width: 540px) {
 
@@ -7475,6 +7693,11 @@
         padding: 0 1.6rem;
     }
 
+    .celebration {
+      margin-left: -1.6rem;
+      margin-right: -1.6rem;
+    }
+
     .cafe__body,
     .cafe__footer {
         padding: 1.5rem;
@@ -7749,6 +7972,10 @@
     .birthday-banner__btn {
       display: none;
     }
+
+
+
+
 }
 
 @media (max-width: 500px) {
@@ -8021,7 +8248,12 @@
         padding: 1rem .8rem;
     }
 
+    .celebration-info__item {
+      width: 100%;
+    }
 }
+
+/* end 470 */
 
 @media (max-width: 440px) {
     .header-col__center {
@@ -10080,8 +10312,29 @@
         font-size: 2.4rem;
     }
 
+    .celebration-section .c-col-6,
+    .celebration-section .c-col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 
+
+    .c-celebration-card {
+      min-height: 200px;
+    }
+
+    .celebration-hall-card {
+      height: 200px;
+    }
+
+    .celebration-section .holiday-menu-card {
+      margin: 0;
+    }
+    .holiday-menu-card-line__note {
+        font-size: 17px;
+    }
 }
+/* end 670 */
 
 @media screen and (max-width: 540px) {
     .holidays-list {

@@ -27382,6 +27382,10 @@ a.show-more__button:hover {
         &__item {
             width: 25%;
             padding: 0 30px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
         }
 
         &-card {
@@ -27592,7 +27596,7 @@ a.show-more__button:hover {
             margin: 40px 0;
         }
     }
-    
+
     &-footer {
         background-color: #fff;
 

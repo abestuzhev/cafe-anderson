@@ -27997,8 +27997,6 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
-        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -29126,6 +29124,8 @@ a.show-more__button:hover {
     .celebration-info__item {
       width: 25%;
       padding: 0 30px; }
+      .celebration-info__item:last-child {
+        margin-bottom: 0; }
     .celebration-info-card__img {
       text-align: center;
       margin-bottom: 14px;
