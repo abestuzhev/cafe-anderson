@@ -7100,6 +7100,30 @@
        right: 16px !important;
     }
 
+    .celebration-hall-card__data {
+        font-size: 18px;
+    }
+
+    .celebration-gallery {
+      padding: 0;
+    }
+
+    .celebration-gallery .fotorama__stage {
+      height:450px !important;
+    }
+
+    .celebration-gallery .fotorama__stage .fotorama__img {
+      height:100% !important;
+    }
+
+    .celebration .fotorama__arr--prev {
+        left: 16px;
+    }
+
+    .celebration .fotorama__arr--next {
+        right: 16px;
+    }
+
 
 }
 
