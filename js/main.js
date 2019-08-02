@@ -250,7 +250,7 @@ $(document).ready(function ($) {
         allowfullscreen: false,
         nav: 'thumbs'
     });
-    
+
     //wedding-fotorama
 
     $('.wedding-slider-fotorama').fotorama({
@@ -283,13 +283,13 @@ $(document).ready(function ($) {
 
 
 
-    $('.c-checkbox-custom').on('click', function(){ 
-          
-        if($(this).children('input').prop("checked")) { 
-            console.log('click');   
+    $('.c-checkbox-custom').on('click', function(){
+
+        if($(this).children('input').prop("checked")) {
+            console.log('click');
             $(this).parents('.c-card-catalog__change').addClass('checked');
         }else{
-            console.log('no click');   
+            console.log('no click');
             $(this).parents('.c-card-catalog__change').removeClass('checked');
         }
     });
@@ -309,11 +309,11 @@ $(document).ready(function ($) {
             offset_top: 130,
             offset_bottom: 30
         });
-    
+
         if($(window).width() < 960){
             $(".holiday-menu-filter-layout").trigger("sticky_kit:detach");
         }
-    
+
         $(window).resize(function() {
             if($(window).width() < 960){
                 $(".holiday-menu-filter-layout").trigger("sticky_kit:detach");
@@ -339,7 +339,7 @@ $(document).ready(function ($) {
     //     });
     // }
 
-    
+
 
     // $(document).on('click', '.holiday-menu-filter-mobile', function(e){
     //     e.preventDefault();
@@ -398,15 +398,15 @@ $(document).ready(function ($) {
     //         e.preventDefault();
     //         $(this).parents('.file-tab-item').siblings().removeClass('active');
     //         $(this).parents('.file-tab-item').toggleClass('active');
-    
-    
+
+
     //         if($('.file-tab-item').hasClass('active')){
     //             $('.file-tab-item__last').addClass('remove-last');
     //         }else{
     //             $('.file-tab-item__last').removeClass('remove-last');
     //         }
     //     });
-    
+
     //     $("#animation-program-range").ionRangeSlider({
     //         skin: "round",
     //         type: "double",
@@ -416,15 +416,15 @@ $(document).ready(function ($) {
     //         from: 6,
     //         to: 10
     //     });
-    
+
     //     var slider = $("#animation-program-range").data("ionRangeSlider");
-    
+
     //     // Get values
     //     var from = slider.result.from;
     //     var to = slider.result.to;
     //     console.log('from: ' + from);
     //     console.log('to: ' + to);
-    
+
     //     $('.file-tab-item').each(function(){
     //         if($(this).data('age-min') <= from && $(this).data('age-max') >= to){
     //             $(this).addClass('show-card');
@@ -432,32 +432,32 @@ $(document).ready(function ($) {
     //             $(this).removeClass('show-card');
     //         }
     //     });
-    
+
     //     $("#animation-program-range").on('change', function(){
     //         from = slider.result.from;
     //         to = slider.result.to;
-    
-    
+
+
     //         $('.file-tab-item').each(function(){
     //             if($(this).data('age-min') <= from && $(this).data('age-max') >= to){
     //                 $(this).addClass('show-card');
     //             }else {
     //                 $(this).removeClass('show-card');
     //             }
-    
+
     //             if(!$('.file-tab-item').hasClass('show-card')){
     //                 $('.file-tab-item__error').addClass('show-error');
     //             }else{
     //                 $('.file-tab-item__error').removeClass('show-error');
     //             }
     //         });
-    
-    
+
+
     //     });
-    
-    
+
+
     // }
-    
+
 
 
 
@@ -468,7 +468,7 @@ $(document).ready(function ($) {
     $(document).on('click', '.file-tab-close', function(e){
         e.preventDefault();
         $(this).parents('.file-tab-item').removeClass('active');
-        
+
         $('.file-tab-item__last').removeClass('remove-last');
     });
 
@@ -500,7 +500,7 @@ $(document).ready(function ($) {
         e.preventDefault();
         $(this).parents('.c-card-party.v2').toggleClass('hide-card')
     })
-    
+
 
 
     // $('.child-holiday-say').slick({
@@ -1298,7 +1298,7 @@ $(document).ready(function ($) {
     }
 
 
-    
+
 
     $('document').on('click', '.order__btn.disabled', function(e){
         e.preventDefault();
@@ -1521,7 +1521,7 @@ $(document).ready(function ($) {
     // });
 
     // scrollToAnchor('.graduation-party-banner__btn');
-    // scrollToAnchor('.graduation-party-banner__btn');
+    scrollToAnchor('.holiday-menu-card-line__btn');
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа
@@ -2316,7 +2316,7 @@ $(document).ready(function ($) {
         if(parentModal.data('save')){
             onPopupClose(parentModal);
         }
-        
+
 
 
     });
@@ -2508,7 +2508,7 @@ $(document).ready(function ($) {
         // $('.fixed-overlay').removeClass('is-visible');
         $('html').removeClass('body-popup');
 
-        
+
 
     });
 
@@ -3113,7 +3113,7 @@ $(document).ready(function ($) {
             $(tab).fadeIn();
         });
     }
-    
+
 
     /*scroll*/
     // $(".popup-basket__scroll").scrollBox();
@@ -3455,7 +3455,7 @@ $(function(){
 /* holiday space list */
 $(function() {
     /* show more */
-    
+
     /* settings*/
     // var $target = $('.show-more-target');
     // var $control = $('.show-more');
@@ -3928,7 +3928,7 @@ $(function() {
 
             initHolidayMobileSlider();
 
-    
+
         });
 
         initHolidayMobileSlider();
@@ -3939,7 +3939,7 @@ $(function() {
 
 
 
-    
+
 });
 
 /*новые скрипты для мобильной версии табло*/
