@@ -6798,6 +6798,11 @@
         height: 200px;
     }
 
+    .celebration .holiday-menu-card {
+      position: relative;
+      padding-top: 65px;
+    }
+
     .holiday-menu-card__body {
         border:none;
     }
@@ -6812,6 +6817,11 @@
 
     .celebration .holiday-menu-card__title {
         background-color: #c2478e;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
 
     .holiday-menu-card__title {
@@ -7049,6 +7059,11 @@
     .c-celebration-card__body, .celebration-hall-body {
         left: 6%;
         right: 6%;
+        padding: 28px 16px;
+    }
+
+    .c-celebration-card__text {
+      font-size: 20px;
     }
 
     .celebration-hall__item {
@@ -7061,6 +7076,19 @@
 
     .celebration-section {
       margin-bottom: 10px;
+    }
+
+    .holiday-menu-card-line__btns {
+      text-align: center;
+    }
+
+    .celebration .holiday-hall-sentence__btn {
+        position: absolute;
+        bottom: -47px;
+    }
+
+    .celebration .holiday-menu .holiday-hall-sentence {
+      background-position: 19% 50%;
     }
 
 
@@ -8249,7 +8277,7 @@
     }
 
     .celebration-info__item {
-      width: 100%;
+      width: 81%;
     }
 }
 

@@ -28123,6 +28123,19 @@ a.show-more__button:hover {
     border-radius: 10px;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); }
+    .holiday-menu-card-slider {
+      height: 100%; }
+      .holiday-menu-card-slider .owl-stage-outer,
+      .holiday-menu-card-slider .owl-stage,
+      .holiday-menu-card-slider .owl-item {
+        height: 100% !important; }
+      .holiday-menu-card-slider .owl-nav {
+        top: 50% !important;
+        margin-top: -17px !important; }
+      .holiday-menu-card-slider__item {
+        height: 100%;
+        background-size: cover;
+        background-position: 50% 50%; }
     .holiday-menu-card.rtl .holiday-menu-card__body {
       border-right: 4px solid #c2478e;
       border-bottom: 4px solid #c2478e;
@@ -29302,6 +29315,10 @@ a.show-more__button:hover {
     padding: 0; }
   .celebration .c-col {
     padding: 7px; }
+  .celebration .holiday-hall-sentence__form {
+    padding: 0 16px 20px; }
+  .celebration .holiday-hall-more {
+    padding-top: 30px; }
   .celebration .holiday-menu {
     margin: 0; }
   .celebration .fotorama__arr--next {

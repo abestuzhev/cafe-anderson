@@ -26119,6 +26119,28 @@ a.show-more__button:hover {
         border-radius: 10px;
         box-shadow: 0 5px 10px rgba(0,0,0,.15);
 
+        &-slider {
+          height: 100%;
+          .owl-stage-outer,
+          .owl-stage,
+          .owl-item {
+            height: 100% !important;
+          }
+
+          .owl-nav {
+            top: 50% !important;
+            margin-top:-17px !important;
+          }
+          &__item {
+            height: 100%;
+            background-size:cover;
+            background-position: 50% 50%;
+
+          }
+        }
+
+
+
         &.rtl {
             .holiday-menu-card__body{
                 border-right: 4px solid #c2478e;
@@ -27611,6 +27633,14 @@ a.show-more__button:hover {
         padding: 7px;
     }
 
+
+    .holiday-hall-sentence__form {
+      padding: 0 16px 20px;
+    }
+
+    .holiday-hall-more {
+      padding-top: 30px;
+    }
     .holiday-menu {
         margin: 0;
     }
