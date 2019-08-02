@@ -6800,7 +6800,7 @@
 
     .celebration .holiday-menu-card {
       position: relative;
-      padding-top: 61px;
+      padding-top: 48px;
     }
 
     .holiday-menu-card__body {
@@ -6818,15 +6818,16 @@
     .celebration .holiday-menu-card__title {
         background-color: #c2478e;
         position: absolute;
+        z-index: 10;
         top: 0;
         left: 0;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     .holiday-menu-card__title {
-        font-size: 33px;
-        padding: 14px 16px;
+        font-size: 28px;
+        padding: 10px 16px;
     }
 
     .holiday-menu {
@@ -7089,6 +7090,14 @@
 
     .celebration .holiday-menu .holiday-hall-sentence {
       background-position: 19% 50%;
+    }
+
+    .holiday-menu-card-slider .owl-prev {
+      left: 16px !important;
+    }
+
+    .holiday-menu-card-slider .owl-next {
+       right: 16px !important;
     }
 
 
