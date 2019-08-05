@@ -28001,6 +28001,8 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
+      .holiday-menu-filter__search input::-moz-placeholder {
+        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -29092,7 +29094,7 @@ a.show-more__button:hover {
       max-width: 565px;
       background-color: #a9cb58;
       border: 1px dotted #fff;
-      padding: 10px 60px 14px; }
+      padding: 10px 50px 14px; }
     .celebration-slider__text {
       text-align: center;
       font-size: 24px;
@@ -29322,8 +29324,16 @@ a.show-more__button:hover {
       margin: 40px 0; }
   .celebration-footer {
     background-color: #fff; }
-  .celebration .c-grid .c-grid {
-    padding: 0; }
+  .celebration-row {
+    background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
+    display: block;
+    margin: 0 0 30px;
+    height: 6px; }
+  .celebration .c-grid {
+    margin-left: -7px;
+    margin-right: -7px; }
+    .celebration .c-grid .c-grid {
+      padding: 0; }
   .celebration .c-col {
     padding: 7px; }
   .celebration .holiday-hall-sentence__form {
@@ -29333,9 +29343,9 @@ a.show-more__button:hover {
   .celebration .holiday-menu {
     margin: 0; }
   .celebration .fotorama__arr--next {
-    right: 96px; }
+    right: 21px; }
   .celebration .fotorama__arr--prev {
-    left: 96px; }
+    left: 21px; }
   .celebration .holiday-hall-sentence__btn {
     position: relative;
     bottom: -20px; }
@@ -29357,6 +29367,34 @@ a.show-more__button:hover {
     top: 19%; }
   .celebration .holiday-hall-sentence .decor-grass-4 img {
     width: 110%; }
+  .celebration .c-ul-list {
+    margin-bottom: 10px; }
+    .celebration .c-ul-list li {
+      list-style: circle outside; }
+  .celebration.child-holiday-all .celebration-slider {
+    height: 645px;
+    position: relative; }
+  .celebration.child-holiday-all .celebration-slider__body {
+    position: absolute;
+    bottom: 54px;
+    left: 178px;
+    padding: 0px 150px;
+    max-width: 100%; }
+  .celebration.child-holiday-all .owl-stage-outer,
+  .celebration.child-holiday-all .owl-stage,
+  .celebration.child-holiday-all .owl-item,
+  .celebration.child-holiday-all .celebration-slider__item {
+    height: 100% !important; }
+  .celebration.child-holiday-all .c-celebration-card__text {
+    white-space: nowrap; }
+  .celebration.child-holiday-all .celebration-subtitle {
+    margin-bottom: 26px; }
+  .celebration.child-holiday-all .child-holiday-food__decor-2 {
+    top: -13%; }
+  .celebration.child-holiday-all .child-holiday-food__decor-1 {
+    top: -13%; }
+  .celebration.child-holiday-all .child-holiday-people__text {
+    font-family: "PT Serif Caption"; }
 
 .popup-pie {
   /* Ручной readmore */

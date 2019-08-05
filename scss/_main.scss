@@ -27358,7 +27358,7 @@ a.show-more__button:hover {
             max-width: 565px;
             background-color: #a9cb58;
             border:1px dotted #fff;
-            padding: 10px 60px 14px;
+            padding: 10px 50px 14px;
 
         }
 
@@ -27642,7 +27642,16 @@ a.show-more__button:hover {
 
     }
 
+    &-row {
+        background: url(../img/decor-line-waves-thin.png) 0 0 repeat-x;
+        display: block;
+        margin: 0 0 30px;
+        height: 6px;
+    }
+
     .c-grid {
+        margin-left: -7px;
+        margin-right: -7px;
         .c-grid {
             padding: 0;
         }
@@ -27664,11 +27673,11 @@ a.show-more__button:hover {
     }
 
     .fotorama__arr--next {
-        right: 96px;
+        right: 21px;
     }
 
     .fotorama__arr--prev {
-        left: 96px;
+        left: 21px;
     }
 
     .holiday-hall-sentence__btn {
@@ -27700,6 +27709,62 @@ a.show-more__button:hover {
 
     .holiday-hall-sentence .decor-grass-4 img {
         width: 110%;
+    }
+
+    .c-ul-list {
+        margin-bottom: 10px;
+        li {
+
+            list-style: circle outside;
+        }
+    }
+
+    &.child-holiday {
+
+
+        &-all {
+
+            .celebration-slider {
+                height: 645px;
+                position: relative;
+            }
+
+            .celebration-slider__body {
+                position: absolute;
+                bottom: 54px;
+                left: 178px;
+                padding: 0px 150px;
+                max-width: 100%;
+            }
+
+            .owl-stage-outer,
+            .owl-stage,
+            .owl-item,
+            .celebration-slider__item {
+                height: 100% !important;
+            }
+
+            .c-celebration-card__text {
+                white-space: nowrap;
+            }
+
+            .celebration-subtitle {
+                margin-bottom: 26px;
+            }
+
+            .child-holiday-food__decor-2 {
+                top: -13%;
+            }
+
+            .child-holiday-food__decor-1 {
+                top: -13%;
+            }
+
+            .child-holiday-people__text {
+                font-family:$font_serif;
+            }
+
+        }
     }
 
 
