@@ -27997,6 +27997,8 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
+      .holiday-menu-filter__search input::-moz-placeholder {
+        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -28842,6 +28844,8 @@ a.show-more__button:hover {
         display: block; }
   .wedding .holiday-menu {
     margin: 0; }
+  .wedding .holiday-hall-sentence__form {
+    padding: 0 16px 20px; }
   .wedding .fotorama__arr--next {
     right: 96px; }
   .wedding .fotorama__arr--prev {

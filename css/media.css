@@ -576,40 +576,50 @@
         font-size: 2rem;
     }
 
+    .wedding-slider__item,
     .celebration-slider__item {
       padding: 30px 80px;
     }
 
+    .wedding-slider .owl-nav .owl-prev,
     .celebration-slider .owl-nav .owl-prev {
         left: 0;
     }
 
+    .wedding-slider .owl-nav .owl-next,
     .celebration-slider .owl-nav .owl-next {
         right: 0;
     }
 
+    .wedding-slider__title,
     .celebration-slider__title {
         font-size: 80px;
         margin-bottom: 24px;
     }
 
+    .wedding-slider__text,
     .celebration-slider__text {
         text-align: center;
         font-size: 20px;
     }
 
+    .wedding-body,
     .celebration-body {
       padding: 30px 30px 24px;
     }
 
+    .wedding .fotorama__arr--next,
     .celebration .fotorama__arr--next {
       right: 0;
     }
+
+    .wedding .fotorama__arr--prev,
     .celebration .fotorama__arr--prev {
       left: 0;
     }
 
     .c-celebration-card__body,
+    .wedding-hall-body,
     .celebration-hall-body {
       left: 10%;
       right: 10%;
@@ -625,6 +635,7 @@
       font-size: 16px;
     }
 
+    .wedding-hall-card__data,
     .celebration-hall-card__data {
           font-size: 20px;
     }
@@ -1837,12 +1848,17 @@
         width:50%;
     }
 
+    .wedding-slider__title::after,
     .celebration-slider__title::after,
+    .wedding-slider__title::before,
     .celebration-slider__title::before {
       content: '';
       display: none;
     }
 
+    .wedding-slider__text div,
+    .wedding-slider__text span,
+    .wedding-slider__text,
     .celebration-slider__text div,
     .celebration-slider__text span,
     .celebration-slider__text {
@@ -1851,14 +1867,17 @@
 
     }
 
+    .wedding-slider__text,
     .celebration-slider__text {
       padding: 13px 0;
     }
 
+    .wedding-slider__body,
     .celebration-slider__body {
         max-width: 100%;
     }
 
+    .wedding-slider__title,
     .celebration-slider__title {
         font-size: 60px;
         margin-bottom: 16px;
@@ -4034,38 +4053,49 @@
         padding: 4px 0;
     }
 
+    .wedding-slider .owl-nav .owl-prev,
+    .wedding-slider .owl-nav .owl-next,
     .celebration-slider .owl-nav .owl-prev,
     .celebration-slider .owl-nav .owl-next {
         display: none;
     }
 
+    .wedding-slider__item,
     .celebration-slider__item {
         padding: 30px 40px;
     }
 
+    .wedding-slider__title,
     .celebration-slider__title {
         font-size: 50px;
         line-height: .8;
     }
 
+    .wedding-slider__text div,
+    .wedding-slider__text span,
+    .wedding-slider__text,
     .celebration-slider__text div,
     .celebration-slider__text span,
     .celebration-slider__text {
           font-size: 16px !important;
       }
 
+    .wedding-title,
     .celebration-title {
       font-size: 45px;
     }
 
+    .wedding-section,
     .celebration-section {
         margin-bottom: 20px;
     }
 
+    .wedding-info-list,
     .celebration-info-list {
       margin-bottom: 0;
     }
 
+    .wedding-info-card,
     .celebration-info-card {
       display: flex;
       flex-flow: row nowrap;
@@ -4073,16 +4103,22 @@
       align-items: center;
     }
 
+    .wedding-info-card__img,
     .celebration-info-card__img {
       margin-right: 18px;
       width: 70px;
     }
 
 
+    .wedding-info-card__text {
+        font-size: 13px;
+    }
+    .wedding-info-card__text,
     .celebration-info-card__text {
       text-align: left;
     }
 
+    .wedding-info__item,
     .celebration-info__item {
       width: 50%;
       padding: 0 5px;
@@ -5554,6 +5590,7 @@
         margin-bottom: 10px;
     }
 
+    .wedding,
     .celebration {
       margin-left: -22px;
       margin-right: -22px;
@@ -7026,38 +7063,49 @@
         margin-bottom: 10px;
     }
 
+    .wedding-slider__body,
     .celebration-slider__body {
         padding: 10px 20px 14px;
     }
 
+    .wedding-slider__text div,
+    .wedding-slider__text span,
+    .wedding-slider__text,
     .celebration-slider__text div,
     .celebration-slider__text span,
     .celebration-slider__text {
         font-size: 14px !important;
     }
 
+    .wedding-slider__title,
     .celebration-slider__title {
         font-size: 46px;
     }
 
+    .wedding-slider__item,
     .celebration-slider__item {
       padding: 18px 16px 24px;
     }
 
+    .wedding-title,
     .celebration-title {
       font-size: 40px;
     }
 
+    .wedding-body,
     .celebration-body {
       padding: 24px 16px 24px;
     }
 
-    .c-celebration-card__body, .celebration-hall-body {
-
+    .c-celebration-card__body,
+    .wedding-hall-body,
+    .celebration-hall-body {
         padding: 25px 10px;
     }
 
-    .c-celebration-card__body, .celebration-hall-body {
+    .c-celebration-card__body,
+    .wedding-hall-body,
+    .celebration-hall-body {
         left: 6%;
         right: 6%;
         padding: 28px 16px;
@@ -7067,6 +7115,7 @@
       font-size: 20px;
     }
 
+    .wedding-hall__item,
     .celebration-hall__item {
         flex: 0 1 100%;
     }
@@ -7083,11 +7132,13 @@
       text-align: center;
     }
 
+    .wedding .holiday-hall-sentence__btn,
     .celebration .holiday-hall-sentence__btn {
         position: absolute;
         bottom: -47px;
     }
 
+    .wedding .holiday-menu .holiday-hall-sentence,
     .celebration .holiday-menu .holiday-hall-sentence {
       background-position: 19% 50%;
     }
@@ -7100,18 +7151,22 @@
        right: 16px !important;
     }
 
+    .wedding-hall-card__data,
     .celebration-hall-card__data {
         font-size: 18px;
     }
 
+    .wedding-gallery,
     .celebration-gallery {
       padding: 0;
     }
 
+    .wedding-gallery .fotorama__stage,
     .celebration-gallery .fotorama__stage {
       height:450px !important;
     }
 
+    .wedding-gallery .fotorama__stage .fotorama__img,
     .celebration-gallery .fotorama__stage .fotorama__img {
       height:100% !important;
     }
@@ -7754,6 +7809,7 @@
         padding: 0 1.6rem;
     }
 
+    .wedding,
     .celebration {
       margin-left: -1.6rem;
       margin-right: -1.6rem;
@@ -8309,6 +8365,7 @@
         padding: 1rem .8rem;
     }
 
+    .wedding-info__item,
     .celebration-info__item {
       width: 81%;
     }
@@ -10384,6 +10441,7 @@
       min-height: 200px;
     }
 
+    .wedding-hall-card,
     .celebration-hall-card {
       height: 200px;
     }
