@@ -4105,6 +4105,10 @@ test popup
                 left: 0;
             }
 
+            .tab-content {
+              display: none;
+            }
+
             &.current {
                 z-index: 15;
                 box-shadow: 0 -3px 9px 0px rgba(130, 89, 13, 0.1);
@@ -4115,6 +4119,10 @@ test popup
 
                 .tabs-menu-inset {
                     box-shadow: none;
+                }
+
+                .tab-content {
+                  display: block;
                 }
             }
         }
@@ -26951,6 +26959,12 @@ a.show-more__button:hover {
                 padding: 10px 40px;
                 background-color: #9acc4e;
                 color: #ffffff;
+                white-space: nowrap;
+
+                &:hover {
+                  color:#fff;
+                  box-shadow: 0 5px 10px 0 rgba(0,0,0,.05);
+                }
 
                 &::after {
                     content:'';

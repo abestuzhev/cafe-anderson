@@ -211,6 +211,40 @@ $(document).ready(function ($) {
 
 
 
+		/*мобильные табы*/
+		function mobileTabs(){
+        $('.tabs-folder .tabs-menu__item').each(function(){
+            var tab = $(this).find('a').attr("href");
+            $(this).append($(tab));
+        });
+    };
+
+    function mobileTabsDestroy(){
+        $('.tabs-folder .tabs-menu__item').each(function(){
+            var tab = $(this).find('a').attr("href");
+            $(this).parents('.tabs-folder').find('.tab').append($(tab));
+            if($(this).hasClass('current')){
+                var tabLink = $(this).find('a').attr("href");
+                $(this).parents('.tabs-folder').find(tabLink).css("display", "block");
+            }
+
+        });
+    };
+
+    if ($(window).width() < 570) {
+        mobileTabs();
+    }
+
+    $(window).resize(function() {
+        if ($(window).width() < 570) {
+            mobileTabs();
+        }else {
+            mobileTabsDestroy();
+        }
+    });
+
+
+
     $('.celebration-slider').owlCarousel({
         center: true,
         items:1,

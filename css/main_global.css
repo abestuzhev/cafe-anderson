@@ -11210,6 +11210,8 @@ test popup
     border-radius: 22px; }
     .tabs-folder .tabs-menu__item:first-child {
       left: 0; }
+    .tabs-folder .tabs-menu__item .tab-content {
+      display: none; }
     .tabs-folder .tabs-menu__item.current {
       z-index: 15;
       -webkit-box-shadow: 0 -3px 9px 0px rgba(130, 89, 13, 0.1);
@@ -11220,6 +11222,8 @@ test popup
       .tabs-folder .tabs-menu__item.current .tabs-menu-inset {
         -webkit-box-shadow: none;
                 box-shadow: none; }
+      .tabs-folder .tabs-menu__item.current .tab-content {
+        display: block; }
   .tabs-folder .tabs-menu-inset {
     position: relative;
     background-color: #e2cc98;
@@ -27997,8 +28001,6 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
-        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -28793,7 +28795,12 @@ a.show-more__button:hover {
       font-size: 37px;
       padding: 10px 40px;
       background-color: #9acc4e;
-      color: #ffffff; }
+      color: #ffffff;
+      white-space: nowrap; }
+      .wedding-sale-card__btn:hover {
+        color: #fff;
+        -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05); }
       .wedding-sale-card__btn::after {
         content: '';
         border: none; }

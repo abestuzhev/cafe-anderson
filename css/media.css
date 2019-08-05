@@ -603,11 +603,14 @@
         font-size: 20px;
     }
 
-    .wedding-body,
+
     .celebration-body {
       padding: 30px 30px 24px;
     }
 
+    .wedding-body {
+      padding: 24px 16px 14px;
+    }
     .wedding .fotorama__arr--next,
     .celebration .fotorama__arr--next {
       right: 0;
@@ -616,6 +619,39 @@
     .wedding .fotorama__arr--prev,
     .celebration .fotorama__arr--prev {
       left: 0;
+    }
+
+    .wedding-sale .tabs-folder {
+      padding-top: 25px;
+    }
+
+    .tabs-folder .tab {
+          padding: 30px 34px;
+    }
+
+    .wedding-sale-card__btn {
+      font-size: 30px;
+    }
+
+    .wedding-sale-card__price {
+      margin-right: 0;
+    }
+
+    .wedding-sale-list__item {
+      padding: 16px 18px;
+    }
+
+    .wedding-sale-card__img {
+      margin-right: 20px;
+    }
+
+    .wedding-sale-card__title {
+      font-size: 44px;
+      margin-bottom: 10px;
+    }
+
+    .wedding-title {
+      margin-bottom: 5px;
     }
 
     .c-celebration-card__body,
@@ -638,6 +674,10 @@
     .wedding-hall-card__data,
     .celebration-hall-card__data {
           font-size: 20px;
+    }
+
+    .wedding-gift .wedding-info-list {
+        padding: 0;
     }
 }
 /* end 1400 */
@@ -4133,6 +4173,56 @@
         font-size: 20px;
     }
 
+    .wedding-sale-card {
+      flex-flow: column wrap;
+    }
+
+    .wedding-sale-card__img {
+      margin: 0 0 14px;
+    }
+
+    .tabs-folder .tab {
+        padding: 28px 16px 20px;
+    }
+
+    .tabs-folder .tabs-menu::after {
+      content: '';
+      bottom: -28px;
+    }
+
+    .tabs-folder .tabs-menu {
+      padding: 0 22px;
+    }
+
+    .wedding-gift {
+      padding: 16px 16px;
+    }
+
+    .wedding-info-card__img {
+      margin-right: 10px;
+
+    }
+    .wedding-sale-card__img {
+      flex: auto;
+    }
+
+
+
+    .tabs-folder .tab {
+      padding: 28px 0 20px;
+    }
+    .wedding-sale-list__item {
+      border:none;
+    }
+
+    .tabs-folder .tabs-menu-inset {
+      padding: 15px 13px 0;
+    }
+
+    .tabs-folder .tabs-menu {
+        padding: 0 16px;
+    }
+
 
 
 }
@@ -7092,9 +7182,13 @@
       font-size: 40px;
     }
 
-    .wedding-body,
+
     .celebration-body {
       padding: 24px 16px 24px;
+    }
+
+    .wedding-body {
+      padding: 24px 16px 0px;
     }
 
     .c-celebration-card__body,
@@ -7177,6 +7271,47 @@
 
     .celebration .fotorama__arr--next {
         right: 16px;
+    }
+
+    .wedding-sale-list__item {
+        margin-bottom: 0;
+    }
+
+    .tabs-folder .tabs-menu::before,
+    .tabs-folder .tabs-menu::after {
+        content: '';
+        display:none;
+    }
+
+    .tabs-folder .tabs-menu__item {
+      width:100%;
+      left:0;
+      margin-bottom: 10px;
+    }
+
+    .tabs-folder .tab {
+      padding: 0;
+    }
+
+    .tabs-folder .tabs-menu__item.current {
+      border:none;
+      box-shadow: none;
+    }
+
+    .tabs-folder .tabs-menu {
+        padding: 0;
+    }
+    .tabs-folder .tabs-menu-inset {
+      border-radius: 0 20px 0 0;
+    }
+
+    .wedding-sale-card__btn {
+      width:100%;
+      text-align: center;
+    }
+
+    .tabs-folder .tabs-menu-inset {
+        padding: 12px 13px 8px;
     }
 
 
@@ -9874,6 +10009,18 @@
 
     .new-year-header__subtitle {
         font-size: 2.8rem;
+    }
+
+    .wedding-sale-card__text {
+        margin-bottom: 10px;
+    }
+
+    .wedding-sale-card__footer {
+        flex-flow:column wrap;
+        align-items: flex-start;
+    }
+    .wedding-sale-card__price {
+      margin-bottom: 10px;
     }
 }
 
