@@ -4223,9 +4223,10 @@
         padding: 0 16px;
     }
 
-    .fotorama__stage,
-    .fotorama__wrap {
-      /* margin: 0 10% !important; */
+    .celebration .fotorama__stage,
+    .celebration .fotorama__wrap,
+    .wedding .fotorama__stage,
+    .wedding .fotorama__wrap {
       width:56vw !important;
     }
 
@@ -7320,8 +7321,10 @@
         padding: 12px 13px 8px;
     }
 
-    .fotorama__stage,
-    .fotorama__wrap {
+    .celebration .fotorama__stage,
+    .celebration .fotorama__wrap,
+    .wedding .fotorama__stage,
+    .wedding .fotorama__wrap {
       width:98vw !important;
     }
 

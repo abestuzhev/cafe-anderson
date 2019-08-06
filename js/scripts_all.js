@@ -9497,6 +9497,8 @@ $(document).ready(function ($) {
         var path = fotorama.activeFrame.img;
         $('.bg-blur').attr('src', path);
     }).fotorama({
+				width: '56%',
+				ratio: 19/12,
         loop: true,
         thumbwidth: 88,
         allowfullscreen: false,
