@@ -4199,7 +4199,7 @@ a.c-button:hover {
     position: absolute;
     right: 20px;
     top: 20px;
-    z-index: 50; }
+    z-index: 5; }
     .c-card-catalog__check .c-checkbox-custom input,
     .c-card-catalog__check .c-radio-custom input {
       -webkit-box-shadow: inset 0 0 transparent, inset -20px 0 rgba(138, 138, 138, 0.2), inset 0px 0 rgba(138, 138, 138, 0.2);

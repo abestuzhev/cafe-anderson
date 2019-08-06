@@ -7328,6 +7328,13 @@
       width:98vw !important;
     }
 
+    .holiday-builder .c-card-catalog__count {
+      width: 85px;
+    }
+    .event-builder .event-builder-tab-list-block__counter .c-counter__field {
+      font-size: 18px;
+    }
+
 
 }
 
