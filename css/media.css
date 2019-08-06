@@ -4223,6 +4223,12 @@
         padding: 0 16px;
     }
 
+    .fotorama__stage,
+    .fotorama__wrap {
+      /* margin: 0 10% !important; */
+      width:56vw !important;
+    }
+
 
 
 }
@@ -7312,6 +7318,11 @@
 
     .tabs-folder .tabs-menu-inset {
         padding: 12px 13px 8px;
+    }
+
+    .fotorama__stage,
+    .fotorama__wrap {
+      width:98vw !important;
     }
 
 

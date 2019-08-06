@@ -9509,9 +9509,9 @@ $(document).ready(function ($) {
         var path = fotorama.activeFrame.img;
         $('.bg-blur').attr('src', path);
     }).fotorama({
-        // width: '100%',
-        // height: '47.5rem',
-        // ratio: 16/9,
+        width: '56%',
+        // height: '60vw',
+        ratio: 19/12,
         loop: true,
         thumbwidth: 88,
         allowfullscreen: false,
