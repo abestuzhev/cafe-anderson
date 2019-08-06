@@ -679,6 +679,24 @@
     .wedding-gift .wedding-info-list {
         padding: 0;
     }
+
+    .celebration.child-holiday-all .celebration-slider {
+        height: 44vw;
+        min-height: 260px;
+    }
+
+    .celebration .c-ul-list {
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+
+    .celebration.child-holiday-all .celebration-slider__body {
+        left: 20%;
+        right: 20%;
+
+        padding: 0px 20px;
+        max-width: 100%;
+    }
 }
 /* end 1400 */
 
@@ -4230,7 +4248,9 @@
       width:56vw !important;
     }
 
-
+    .celebration.child-holiday-all .celebration-slider__body {
+        bottom: 26px;
+    }
 
 }
 
@@ -7333,6 +7353,15 @@
     }
     .event-builder .event-builder-tab-list-block__counter .c-counter__field {
       font-size: 18px;
+    }
+
+    .celebration.child-holiday-all .celebration-slider__body {
+        left: 10%;
+        right: 10%;
+    }
+
+    .child-holiday-map {
+        height: 455px;
     }
 
 
