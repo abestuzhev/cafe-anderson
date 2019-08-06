@@ -4054,6 +4054,7 @@ test popup
 }
 
 .tabs-folder {
+    padding-top: 18px;
     .tabs-menu {
         padding: 0 54px;
         position: relative;
@@ -4097,8 +4098,19 @@ test popup
             background: transparent;
             padding: 0;
             margin: 0;
-            left: -12px;
+            //left: -12px;
             border-radius: 22px;
+
+            &:nth-child(1n) {
+
+            }
+
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    left: -12px* $i;
+                    z-index: 10 - $i;
+                }
+            }
 
 
             &:first-child {
@@ -27304,7 +27316,7 @@ a.show-more__button:hover {
 
     &-slider {
         position:relative;
-        //margin-bottom:24px;
+        //margin-bottom:10px;
         .fotorama__nav-wrap {
             display:none;
         }
@@ -27408,6 +27420,8 @@ a.show-more__button:hover {
         font-family: "PT Serif Caption";
         text-align: center;
         line-height: 1;
+        max-width:757px;
+        margin: 0 auto 10px;
     }
 
     &-info {
@@ -27651,6 +27665,105 @@ a.show-more__button:hover {
         height: 6px;
     }
 
+    &-ol {
+        counter-reset: item;
+
+        text-align: left;
+        &__item {
+            padding-left: 54px;
+            position: relative;
+            margin-bottom: 16px;
+            &::before {
+                content: counter(item);
+                counter-increment: item;
+                position: absolute;
+                top: -8px;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                border-radius:60px;
+                border:2px dotted #fff;
+                color:#fff;
+                line-height: 36px;
+                text-align: center;
+            }
+        }
+    }
+
+    &-accent {
+        background: #c44890 url(../img/celebration/bg-accent.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        padding: 28px 16px 34px;
+        position: relative;
+
+        &__title {
+            font-size: 48px;
+            color: #9dee23;
+            font-family:$font_decor;
+            line-height:1;
+            text-align: center;
+            text-transform:uppercase;
+            margin-bottom: 34px;
+        }
+
+        &__decor-1 {
+            position: absolute;
+            top: 27%;
+            left: 33%;
+
+            img {
+                width: 55%;
+            }
+        }
+
+        &__decor-2 {
+            position: absolute;
+            top: 5%;
+            right: 30%;
+            img {
+                width: 55%;
+            }
+        }
+
+        .celebration-ol {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: flex-start;
+
+            &__item {
+                margin-right: 90px;
+                color: #ffffff;
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            height: 16px;
+            background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            height: 16px;
+            background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+        }
+    }
+
     .c-grid {
         margin-left: -7px;
         margin-right: -7px;
@@ -27663,6 +27776,9 @@ a.show-more__button:hover {
     }
 
 
+    .holiday-hall-sentence {
+        margin-bottom: 0;
+    }
     .holiday-hall-sentence__form {
       padding: 0 16px 20px;
     }
@@ -27703,7 +27819,7 @@ a.show-more__button:hover {
 
     .holiday-hall-sentence .decor-grass-2 {
         position: absolute;
-        left: 35%;
+        left: 21%;
         right: auto;
         bottom: auto;
         top: 19%;
@@ -27722,6 +27838,18 @@ a.show-more__button:hover {
     }
 
     &.child-holiday {
+
+        &__2-4 {
+
+            .celebration-slider__text,
+            .celebration-slider__body {
+                text-align: left;
+            }
+
+            .celebration-slider__body {
+                max-width: 720px;
+            }
+        }
 
 
         &-all {

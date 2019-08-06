@@ -7312,8 +7312,9 @@
 
     .tabs-folder .tabs-menu__item {
       width:100%;
-      left:0;
-      margin-bottom: 10px;
+      left: 0 !important;
+      z-index: 10 !important;
+      margin-bottom: 0;
     }
 
     .tabs-folder .tab {
