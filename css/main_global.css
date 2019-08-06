@@ -29476,34 +29476,34 @@ a.show-more__button:hover {
     margin-bottom: 10px; }
     .celebration .c-ul-list li {
       list-style: circle outside; }
-  .celebration.child-holiday__2-4 .celebration-slider__text,
-  .celebration.child-holiday__2-4 .celebration-slider__body {
+  .celebration.child-holidays__2-4 .celebration-slider__text,
+  .celebration.child-holidays__2-4 .celebration-slider__body {
     text-align: left; }
-  .celebration.child-holiday__2-4 .celebration-slider__body {
+  .celebration.child-holidays__2-4 .celebration-slider__body {
     max-width: 720px; }
-  .celebration.child-holiday-all .celebration-slider {
+  .celebration.child-holidays-all .celebration-slider {
     height: 645px;
     position: relative; }
-  .celebration.child-holiday-all .celebration-slider__body {
+  .celebration.child-holidays-all .celebration-slider__body {
     position: absolute;
     bottom: 54px;
     left: 178px;
     padding: 0px 150px;
     max-width: 100%; }
-  .celebration.child-holiday-all .owl-stage-outer,
-  .celebration.child-holiday-all .owl-stage,
-  .celebration.child-holiday-all .owl-item,
-  .celebration.child-holiday-all .celebration-slider__item {
+  .celebration.child-holidays-all .owl-stage-outer,
+  .celebration.child-holidays-all .owl-stage,
+  .celebration.child-holidays-all .owl-item,
+  .celebration.child-holidays-all .celebration-slider__item {
     height: 100% !important; }
-  .celebration.child-holiday-all .c-celebration-card__text {
+  .celebration.child-holidays-all .c-celebration-card__text {
     white-space: nowrap; }
-  .celebration.child-holiday-all .celebration-subtitle {
+  .celebration.child-holidays-all .celebration-subtitle {
     margin-bottom: 26px; }
-  .celebration.child-holiday-all .child-holiday-food__decor-2 {
+  .celebration.child-holidays-all .child-holiday-food__decor-2 {
     top: -13%; }
-  .celebration.child-holiday-all .child-holiday-food__decor-1 {
+  .celebration.child-holidays-all .child-holiday-food__decor-1 {
     top: -13%; }
-  .celebration.child-holiday-all .child-holiday-people__text {
+  .celebration.child-holidays-all .child-holiday-people__text {
     font-family: "PT Serif Caption"; }
 
 .popup-pie {

@@ -697,6 +697,22 @@
         padding: 0px 20px;
         max-width: 100%;
     }
+
+    .celebration-accent .celebration-ol__item {
+        margin-right: 40px;
+    }
+
+    .celebration-accent__decor-1 {
+        top: 5%;
+        left: 23%;
+    }
+
+    .celebration-accent__decor-2 {
+        top: 5%;
+        right: 20%;
+    }
+
+
 }
 /* end 1400 */
 
@@ -4250,6 +4266,16 @@
 
     .celebration.child-holiday-all .celebration-slider__body {
         bottom: 26px;
+    }
+
+    .celebration-accent__decor-1 {
+        top: 5%;
+        left: 5%;
+    }
+
+    .celebration-accent__decor-2 {
+        top: 5%;
+        right: 5%;
     }
 
 }
