@@ -680,7 +680,7 @@
         padding: 0;
     }
 
-    .celebration.child-holiday-all .celebration-slider {
+    .celebration.child-holidays-all .celebration-slider {
         height: 44vw;
         min-height: 260px;
     }
@@ -690,7 +690,7 @@
         margin-bottom: 0;
     }
 
-    .celebration.child-holiday-all .celebration-slider__body {
+    .celebration.child-holidays-all .celebration-slider__body {
         left: 20%;
         right: 20%;
 
@@ -1298,9 +1298,45 @@
         display: none;
     }
 
+/* child-holidays__2-4 */
+    .tabs-folder .tabs-menu__item {
+        width: 100%;
+        left: 0 !important;
+        z-index: 10 !important;
+        margin-bottom: 0;
+    }
 
+/* child-holidays__2-4 */
+    .tabs-folder .tabs-menu {
+        padding: 0;
+    }
 
+/* child-holidays__2-4 */
+    .tabs-folder .tabs-menu-inset {
+        border-radius: 0 20px 0 0;
+        padding: 15px 13px 24px;
+    }
+
+    .tabs-folder .tabs-menu::before,
+    .tabs-folder .tabs-menu::after {
+      content: '';
+      display: none;
+    }
+
+    .tabs-folder .tab {
+        padding: 0 0 20px;
+    }
+
+    .tabs-folder .tabs-menu__item:last-child .tabs-menu-inset {
+
+    }
+
+    .tabs-folder .tabs-menu__item {
+      margin-top: -16px;
+    }
 }
+
+/* end 1100px */
 
 @media screen and (max-width: 985px) {
     .cafe-list-layout .filter-item:nth-child(2) {
@@ -4216,7 +4252,7 @@
     }
 
     .tabs-folder .tab {
-        padding: 28px 16px 20px;
+        /* padding: 28px 16px 20px; */
     }
 
     .tabs-folder .tabs-menu::after {
@@ -4243,14 +4279,14 @@
 
 
     .tabs-folder .tab {
-      padding: 28px 0 20px;
+      /* padding: 28px 0 20px; */
     }
     .wedding-sale-list__item {
       border:none;
     }
 
     .tabs-folder .tabs-menu-inset {
-      padding: 15px 13px 0;
+      /* padding: 15px 13px 0; */
     }
 
     .tabs-folder .tabs-menu {
@@ -4264,7 +4300,7 @@
       width:56vw !important;
     }
 
-    .celebration.child-holiday-all .celebration-slider__body {
+    .celebration.child-holidays-all .celebration-slider__body {
         bottom: 26px;
     }
 
@@ -7047,6 +7083,7 @@
         margin: 20px 0;
     }
 
+
 }
 
 @media (max-width: 570px) {
@@ -7355,8 +7392,13 @@
     .tabs-folder .tabs-menu {
         padding: 0;
     }
-    .tabs-folder .tabs-menu-inset {
-      border-radius: 0 20px 0 0;
+
+    .tabs-folder .tabs-menu__item.current .tabs-menu-inset {
+        padding: 15px 13px 15px;
+    }
+
+    .tabs-folder .tabs-menu .tab-content {
+      margin-bottom: 24px;
     }
 
     .wedding-sale-card__btn {
@@ -7364,9 +7406,17 @@
       text-align: center;
     }
 
-    .tabs-folder .tabs-menu-inset {
-        padding: 12px 13px 8px;
+    .wedding-sale-card__footer {
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
+
+    .wedding-sale-card__price {
+      margin-bottom: 10px;
+    }
+
+
 
     .celebration .fotorama__stage,
     .celebration .fotorama__wrap,
@@ -7382,7 +7432,7 @@
       font-size: 18px;
     }
 
-    .celebration.child-holiday-all .celebration-slider__body {
+    .celebration.child-holidays-all .celebration-slider__body {
         left: 10%;
         right: 10%;
     }
@@ -10095,9 +10145,6 @@
     .wedding-sale-card__footer {
         flex-flow:column wrap;
         align-items: flex-start;
-    }
-    .wedding-sale-card__price {
-      margin-bottom: 10px;
     }
 }
 
