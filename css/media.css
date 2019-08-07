@@ -7441,6 +7441,18 @@
         height: 455px;
     }
 
+    .celebration-accent .celebration-ol {
+      justify-content: flex-start;
+    }
+
+    .celebration-accent__title {
+        padding: 0 9%;
+        margin-bottom: 20px;
+    }
+    .celebration-accent__decor-2 {
+        right: -6%;
+    }
+
 
 }
 
