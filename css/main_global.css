@@ -28019,6 +28019,8 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
+      .holiday-menu-filter__search input::-moz-placeholder {
+        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -28774,7 +28776,25 @@ a.show-more__button:hover {
       font-family: "SummerFont";
       text-transform: uppercase;
       margin-bottom: 22px;
-      line-height: 1; }
+      line-height: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .wedding-sale-card__time {
+      color: #79bb3f; }
+      .wedding-sale-card__time svg {
+        fill: #79bb3f;
+        font-size: 40px; }
     .wedding-sale-card__text {
       font-family: "PT Serif Caption";
       color: #555451;

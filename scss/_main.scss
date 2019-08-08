@@ -26932,8 +26932,26 @@ a.show-more__button:hover {
                 text-transform: uppercase;
                 margin-bottom: 22px;
                 line-height: 1;
-
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
             }
+
+            &__time {
+                //font-size: 48px;
+                color: #79bb3f;
+                //font-family:$font_decor;
+                //text-transform: uppercase;
+                //margin-bottom: 22px;
+                //line-height: 1;
+
+                svg {
+                    fill: #79bb3f;
+                    font-size: 40px;
+                }
+            }
+
             &__text {
                 font-family:$font_serif;
                 color: #555451;
