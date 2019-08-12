@@ -2704,6 +2704,30 @@ input[type="checkbox"]:checked + .c-checkbox::after {
     /* Firefox 18- */
     color: #ec3e3e; }
 
+.c-input.success {
+  position: relative;
+  -webkit-box-shadow: 0 0 0 1px #7cbd41;
+          box-shadow: 0 0 0 1px #7cbd41;
+  border-color: #7cbd41;
+  color: #7cbd41;
+  background: url(../img/icons/icon-success.png) 98% 50% no-repeat;
+  padding-right: 4rem; }
+  .c-input.success:focus {
+    -webkit-box-shadow: 0 0 0 2px #7cbd41, 0 0 10px 0 #7cbd41;
+            box-shadow: 0 0 0 2px #7cbd41, 0 0 10px 0 #7cbd41; }
+  .c-input.success input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #7cbd41; }
+  .c-input.success input::-moz-placeholder:first-letter {
+    /* Firefox 19+ */
+    color: #7cbd41; }
+  .c-input.success input:-ms-input-placeholder:first-letter {
+    /* IE 10+ */
+    color: #7cbd41; }
+  .c-input.success input:-moz-placeholder:first-letter {
+    /* Firefox 18- */
+    color: #7cbd41; }
+
 .order-input:checked + .order-radio {
   color: #555451; }
 
@@ -29163,7 +29187,6 @@ a.show-more__button:hover {
     color: #555451;
     font-family: "PT Serif Caption";
     text-align: center;
-    line-height: 1;
     max-width: 757px;
     margin: 0 auto 10px; }
   .celebration-info {
