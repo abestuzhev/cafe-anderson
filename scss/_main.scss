@@ -26436,6 +26436,26 @@ a.show-more__button:hover {
 
 .popup-holiday-menu {
 
+    &.no-description {
+      .popup-holiday-menu__img {
+        width:100%;
+        margin-right: 0;
+        min-height:260px;
+      }
+      .popup {
+        max-width: 550px;
+      }
+      .popup-holiday-menu__body {
+        display: none;
+      }
+
+      .popup-body {
+        padding: 0 !important;
+      }
+
+
+    }
+
     .mfp-content {
         width: 98%;
     }

@@ -5859,6 +5859,16 @@
         border-radius: 0;
     }
 
+    .popup-holiday-menu.no-description .popup{
+      position: static;
+      margin: 0;
+      padding: 0;
+      width:100%;
+      height:auto;
+      overflow:hidden;
+          border-radius: 0 0 13px 13px;
+    }
+
     .popup-graduation .popup,
     .popup-offer--easter .popup {
         position: static !important;
