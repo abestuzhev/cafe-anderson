@@ -24649,6 +24649,9 @@ a.show-more__button:hover {
 .holiday-builder .event-builder-check__body {
   margin-top: 0; }
 
+.holiday-builder .event-builder-check__body {
+  margin-top: -30px; }
+
 .event-builder-check.is_stuck {
   right: 0 !important;
   left: auto !important; }
