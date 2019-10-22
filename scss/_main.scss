@@ -28091,7 +28091,13 @@ a.show-more__button:hover {
             min-height: 50px;
             transition: right 0.6s ease;
             img{
+                position: relative;
                 width: 100%;
+                left: -50%;
+                + img{
+                    position: absolute;
+                    left: 40%;
+                }
             }
         }
         
