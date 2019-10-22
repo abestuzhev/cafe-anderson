@@ -13565,7 +13565,7 @@ function grassAnimate(element){
 
         scrollPercent = (s / (d - c));
 
-        var position = (scrollPercent * ($(document).width())- $(element).width()/2);
+        var position = (scrollPercent * ($(document).width())/2- $(element).width()/2);
         
         $element.css({
             'right': position
