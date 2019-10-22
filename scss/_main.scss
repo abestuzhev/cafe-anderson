@@ -27940,3 +27940,637 @@ a.show-more__button:hover {
 
 
 }
+
+.halloween-new{
+    font-family: $font_clear-sans;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+
+    &__title{
+        font-family: $font_RobotoSlabBold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 47px;
+        margin: 0 0 10px 0;
+        color: $color_halloween_title;
+    }
+    &__description{
+        font-family: $font_clear-sans;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 20px 0;
+        color: $black;
+    }
+    &__btn{
+        display: inline-block;
+        font-family: $font_clear-sans;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 9px 34px;
+        color: $white;
+        background: $color_halloween_button;
+        box-shadow: 0px 0px 0px 5px rgba(206, 86, 142, 0.7);
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            color: $white;
+            box-shadow: 0px 0px 0px 5px rgba(206, 86, 142, 0.3), inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    &-header{
+        position: relative;
+        margin-bottom: 90px;
+        @media screen and (max-width: 860px) {
+            margin-bottom: 40px;
+        }
+
+        &-wrapper{
+            width: 80%;
+            @media screen and (max-width: 860px) {
+                width: 100%;
+            }
+        }
+
+        &__img{
+            width: 20%;
+            position: absolute;
+            right: -400px;
+            top: 0;
+            text-align: end;
+            transition: right 1s ease-out;
+            @media screen and (max-width: 860px) {
+                display: none;
+            }
+            @media screen and (min-width: 1601px) {
+                right: -800px;
+            }
+        }
+        .mod-onscreen{
+            right: 0;
+        }
+        &__category{
+            .category-background{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+            p{
+                position: relative;
+                font-family: $font_open-sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                padding: 7px 14px;
+                color: $white;
+                margin: 0 0 10px 0;
+                z-index:2;
+            }
+        }
+
+    }
+    &-banner{
+        height: 75rem;
+        background-size: cover;
+        background-position: 100% 50%;
+        position: relative;
+        margin-bottom: 95px;
+        @media screen and (max-width: 860px) {
+            height: 35rem;
+            margin-bottom: 40px;
+        }
+        
+    }
+    &-features{
+        position: relative;
+        display: flex;
+        background-color: $white;
+        background-image: url(../img/halloween-new/webs.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        padding: 36px 30px 56px 30px;
+        margin-bottom: 127px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        @media screen and (max-width: 860px) {
+            margin-bottom: 40px;
+            flex-direction: column;
+        }
+        ul{
+            
+            width: 50%;
+            @media screen and (max-width: 860px) {
+                width: 100%;
+            }
+            li{
+                background: url(../img/halloween-new/pumpkin.png) no-repeat left top;
+                padding-left: 30px;
+                & + li{
+                    margin-top: 20px;
+                }
+            }
+        }
+        &-first-column{
+            @media screen and (max-width: 860px) {
+                margin-bottom: 20px;
+            }
+        }
+        &__grass{
+            position: absolute;
+            bottom: -30px;
+            width: 100%;
+            min-width: 1000px;
+            min-height: 50px;
+            transition: right 0.6s ease;
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+    &-application{
+        overflow: hidden;
+        background: $white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 86px;
+        @media screen and (max-width: 860px) {
+            margin-bottom: 40px;
+        }
+        @media screen and (min-width: 1601px) {
+            margin-right: 40px;
+        }
+        
+        &-form{
+            position: relative;
+            width: 810px;
+            display: flex;
+            flex-wrap: wrap;
+            float: right;
+            z-index: 2;
+            padding: 26px 13px 24px;
+            @media screen and (max-width: 860px) {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .halloween-new__title{
+                width: 760px;
+                text-align: center;
+                margin-bottom: 20px;
+                @media screen and (max-width: 860px) {
+                    width: 100%;
+                }
+            }
+            &-customer{
+                width: 380px;
+                z-index: 2;
+                padding: 0 30px 0 10px;
+                border-right: 1px solid $color_halloween_border;
+                margin-bottom: 20px;
+                @media screen and (max-width: 860px) {
+                    width: 100%;
+                    border-right: none;
+                    padding: 0;
+                }
+                input[type="text"]{
+                    font-family: $font_clear-sans;
+                }
+                .c-input{
+                    font-family: $font_clear-sans;
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding: 14px 18px;
+                    & + .c-input{
+                        margin-top: 20px;
+                    }
+                }
+                
+                
+            }
+            &-inputs{
+                width: 380px;
+                padding: 0 12px 0 30px;
+                z-index: 2;
+                @media screen and (max-width: 860px) {
+                    width: 100%;
+                    padding: 0px 18px;
+                    margin-bottom: 20px;
+                }
+                &-group{
+                    display: flex;
+                    @media screen and (max-width: 860px) {
+                        width: 100%;
+                        justify-content: space-between;
+                    }
+                    + .halloween-new-application-form-inputs-group{
+                        border-top: 1px solid $color_halloween_border;
+                        padding: 13px 0 0 0;
+                    }
+                    label{
+                        display: flex;
+                        flex-direction: column;
+                        align-content: center;
+                        
+                        
+                        .name{
+                            font-family: $font_clear-sans;
+                            font-size: 18px;
+                            line-height: 24px;
+                            margin-bottom: 2px;
+                            width: 170px;
+                            @media screen and (max-width: 860px) {
+                                width: 160px;
+                            }
+                            @media screen and (max-width: 470px) {
+                                width: auto;
+                            }
+
+                        }
+                        .price{
+                            font-family: $font_clear-sans;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: $color_halloween_gray;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    .c-counter-big{
+                        background: transparent;
+                        padding: .4rem 0;
+                        &:hover{
+                            background-color: transparent;
+                        }
+                        &__btn{
+                            background-size: 50%;
+                            height: auto;
+                            font-family: $font_clear-sans;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: $color_halloween_gray;
+                            vertical-align: baseline;
+                            &:hover{
+                                background-color: transparent;
+                            }
+                        }
+                        &__field{
+                            font-family: $font_clear-sans;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: $black;
+                            vertical-align: baseline;
+                        }
+                        input[type="text"]{
+                            font-family: $font_clear-sans;
+                            
+                        }
+                    }
+                    .price-total p{
+                        width: 112px;
+                        font-family: $font_clear-sans;
+                        font-size: 24px;
+                        line-height: 32px;
+                        text-align: right;
+                        color: $color_halloween_gray;
+                        padding: .8rem 0;
+                        @media screen and (max-width: 860px) {
+                            width: 100px;
+                        }
+                        @media screen and (max-width: 470px) {
+                            width: auto;
+                        }
+                    }
+                } 
+            }
+            .cake-order-final-coupon{
+                width: 340px;
+                z-index: 2;
+                margin: 0 30px 25px 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                @media screen and (max-width: 860px) {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 0 20px 0;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &__left{
+                    padding-right: 0;
+                    @media screen and (max-width: 860px) {
+                        margin: 0;
+                    }
+                    
+                    input[type="text"]{
+                        height: 50px;
+                        font-family: $font_clear-sans;
+                        font-size: 16px;
+                        line-height: 22px;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        @media screen and (max-width: 860px) {
+                            width: 100%;
+                            margin: 0;
+                            border-bottom-left-radius: 0;
+                            border-top-right-radius: .4rem;
+                        }
+                    }
+                }
+                &__right{
+                    @media screen and (max-width: 860px) {
+                        width: 100%;
+                    }
+                    .c-button{
+                        height: 50px;
+                        width: 160px;
+                        font-family: $font_clear-sans;
+                        font-size: 16px;
+                        line-height: 22px;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        padding: 0;
+                        text-align: center;
+                        text-transform: none;
+                        @media screen and (max-width: 860px) {
+                            width: 100%;
+                            border-bottom-left-radius: .4rem;
+                            border-top-right-radius: 0;
+                        }
+                    }
+                }
+            }
+            &-total{
+                width: 380px;
+                font-family: $font_clear-sans;
+                font-size: 24px;
+                line-height: 32px;
+                text-align: right;
+                margin: 10px 0 30px;
+                @media screen and (max-width: 860px) {
+                    width: 100%;
+                    padding: 0 18px;
+                }
+                .halloween-new__totalprice{
+                    color: $color_halloween_button;
+                    font-weight: $font_bold;
+                }
+            }
+            .halloween-new__btn{
+                width: 340px;
+                height: 40px;
+                margin: 5px 35px 5px 15px;
+                z-index: 2;
+                @media screen and (max-width: 860px) {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 0 20px;
+                }
+            }
+            .halloween-new__regulations{
+                width: 370px;
+                font-family: $font_clear-sans;
+                font-size: 12px;
+                line-height: 16px;
+                color: $color_halloween_gray;
+                margin-bottom: 0;
+                @media screen and (max-width: 860px) {
+                    width: 100%;
+                    padding: 0 18px;
+                    margin: 0;
+                }
+            }
+            &__img{
+                position: absolute;
+                top: 0;
+                left: -460px;
+                z-index: 1;
+                height: 100%;
+                @media screen and (max-width: 860px) {
+                    display: none;
+                }
+                @media screen and (min-width: 1601px) {
+                    left: -720px;
+                    height: 130%;
+                }
+            }
+            &__bat{
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: top 1s ease, left 1s ease;
+                z-index: 2;
+            }
+            &__background{
+                height: 100%;
+            }
+        }
+
+    }
+    &-contest{
+        position: relative;
+        margin-bottom: 90px;
+        @media screen and (max-width: 860px) {
+            margin-bottom: 40px;
+        }
+        &-wrapper{
+            width: 65%;
+            @media screen and (max-width: 860px) {
+                width: 100%;
+            }
+        }
+        ul{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 1px;
+                top: 0;
+                bottom: 0;
+                left: 12px;
+                background: repeating-linear-gradient(to bottom, transparent, transparent 3px, $color_halloween_title 3px, $color_halloween_title 6px);
+            }
+        }
+        li{
+            & + li{
+                margin-top: 22px;
+            }
+            .list-item{
+                position: relative;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: $color_halloween_title;
+                margin-right: 20px;
+                border-radius: 50%;
+                font-family: 'Segoe Script';
+                font-weight: $font_bold;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+                color: $white;
+                z-index: 2;
+            }
+        }
+
+        &__img{
+            width: 30%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            text-align: end;
+            @media screen and (max-width: 860px) {
+                    display: none;
+                }
+        }
+        
+    }
+    &-entertainment{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 860px) {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        &-left{
+            width: 60%;
+            @media screen and (max-width: 860px) {
+                width: 100%;
+            }
+            p{
+                font-family: $font_clear-sans;
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+        }
+        &-right{
+            width: 370px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            @media screen and (max-width: 860px) {
+                width: 100%;
+            }
+            &__icon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 170px;
+                margin-bottom: 20px;
+                @media screen and (max-width: 860px) {
+                    width: 50%;
+                }
+            }
+            &__img{
+                width: 80px;
+                height: 80px;
+                margin-bottom: 10px;
+            }
+            &__text{
+                font-family: $font_clear-sans;
+                font-size: 24px;
+                line-height: 32px;
+                @media screen and (max-width: 860px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+
+    }
+    &-footer{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        right: 0;
+        &__img{
+            width: 100vw;
+        }
+    }
+    .mod-pink-text{
+        color: $color_halloween_button;
+    }
+    .mod-black-text{
+        color: $black;
+    }
+
+    @-webkit-keyframes swing {
+        12% {
+            -webkit-transform: translateX(5px) rotate(20deg);
+            -ms-transform: translateX(5px) rotate(20deg);
+            transform: translateX(5px) rotate(20deg);
+        }
+        37% {
+            -webkit-transform: translateX(-5px) rotate(-20deg);
+            -ms-transform: translateX(-5px) rotate(-20deg);
+            transform: translateX(-5px) rotate(-20deg);
+        }
+        62% {
+            -webkit-transform: translateX(5px) rotate(20deg);
+            -ms-transform: translateX(5px) rotate(20deg);
+            transform: translateX(5px) rotate(20deg);
+        }
+        87% {
+            -webkit-transform: translateX(-5px) rotate(-20deg);
+            -ms-transform: translateX(-5px) rotate(-20deg);
+            transform: translateX(-5px) rotate(-20deg);
+        }
+        100% {
+            -webkit-transform: translateX(0) rotate(0);
+            -ms-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0);
+        }
+      }
+
+      @keyframes swing {
+        12% {
+            -webkit-transform: translateX(5px) rotate(20deg);
+            -ms-transform: translateX(5px) rotate(20deg);
+            transform: translateX(5px) rotate(20deg);
+        }
+        37% {
+            -webkit-transform: translateX(-5px) rotate(-20deg);
+            -ms-transform: translateX(-5px) rotate(-20deg);
+            transform: translateX(-5px) rotate(-20deg);
+        }
+        62% {
+            -webkit-transform: translateX(5px) rotate(20deg);
+            -ms-transform: translateX(5px) rotate(20deg);
+            transform: translateX(5px) rotate(20deg);
+        }
+        87% {
+            -webkit-transform: translateX(-5px) rotate(-20deg);
+            -ms-transform: translateX(-5px) rotate(-20deg);
+            transform: translateX(-5px) rotate(-20deg);
+        }
+        100% {
+            -webkit-transform: translateX(0) rotate(0);
+            -ms-transform: translateX(0) rotate(0);
+            transform: translateX(0) rotate(0);
+        }
+      }
+      
+      .mod-swing{
+        cursor: pointer;
+        &:hover {
+            -webkit-animation: swing 0.6s ease;
+            animation: swing 0.6s ease;
+             -webkit-animation-iteration-count: 1;
+             animation-iteration-count: 1;
+          }
+      }
+      
+      
+
+
+}
