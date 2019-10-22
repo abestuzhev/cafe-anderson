@@ -2983,7 +2983,6 @@ $(document).ready(function ($) {
     backToTop('.cd-top', 'body,html');
     backToTop('.popup-product__btn-back', '.popup');
 
-
     var wrapperHeight = parseInt($('.wrapper').height());
     /*липкая шапка*/
     $(window).scroll(function(){
@@ -4310,3 +4309,168 @@ $(function() {
 });
 
 /* / Catering */
+
+
+/* Halloween */
+
+function pumpkinheadAnimate(element){
+    var offset = 200,
+        $element = $(element);
+    $element.addClass('mod-onscreen');
+    $(window).scroll(function(){
+        ( $(this).scrollTop() > offset ) ? $element.removeClass('mod-onscreen') : $element.addClass('mod-onscreen');
+    });
+}
+
+function grassAnimate(element){
+    var $element = $(element);
+    
+    $(window).scroll(function () {
+        var s = $(this).scrollTop(),
+            d = $(document).height(),
+            c = $(this).height();
+
+        scrollPercent = (s / (d - c));
+
+        var position = (scrollPercent * ($(document).width())- $(element).width()/2);
+        
+        $element.css({
+            'right': position
+        });
+    });
+}
+
+function halloweenTicketPrice(){
+    var grownPrice = $('.js-grown-count').data('price'),
+        childrenPrice = $('.js-children-count').data('price'),
+        allPrice = $('.js-all-count').data('price'),
+        grownTickets = 0,
+        childrenTickets = 0,
+        allTickets = 0;
+
+    $('.js-add-ticket').on('click', function(event) {
+        $(this).siblings('.js-grown-count').each(
+            function (){
+                grownTickets++;
+                $('.js-grown-count').val(grownTickets);
+                $('.js-grown-price').text((grownPrice*grownTickets) + ' р.');
+                $('.js-price-total').text((grownPrice*grownTickets + childrenPrice*childrenTickets + allPrice*allTickets) + ' р.');
+                $('.js-grown-price').css({
+                    'color': '#91C84A'
+                });
+            }
+        );
+        $(this).siblings('.js-children-count').each(
+            function (){
+                childrenTickets++;
+                $('.js-children-count').val(childrenTickets);
+                $('.js-children-price').text((childrenPrice*childrenTickets) + ' р.');
+                $('.js-price-total').text((grownPrice*grownTickets + childrenPrice*childrenTickets + allPrice*allTickets) + ' р.');
+                $('.js-children-price').css({
+                    'color': '#91C84A'
+                });
+            }
+        );
+        $(this).siblings('.js-all-count').each(
+            function (){
+                allTickets++;
+                $('.js-all-count').val(allTickets);
+                $('.js-all-price').text((allPrice*allTickets) + ' р.');
+                $('.js-price-total').text((grownPrice*grownTickets + childrenPrice*childrenTickets + allPrice*allTickets) + ' р.');
+                $('.js-all-price').css({
+                    'color': '#91C84A'
+                });
+            }
+        );
+    });
+    $('.js-remove-ticket').on('click', function(event) {
+        $(this).siblings('.js-grown-count').each(
+            function (){
+                if (grownTickets > 0){
+                grownTickets--;
+                $('.js-grown-count').val(grownTickets);
+                $('.js-grown-price').text((grownPrice*grownTickets) + ' р.');
+                $('.js-price-total').text((grownPrice*grownTickets + childrenPrice*childrenTickets + allPrice*allTickets) + ' р.');
+                if (grownTickets == 0){
+                    $('.js-grown-price').css({
+                        'color': '#9F9F9F'
+                    });
+                }
+                }
+                
+            }
+        );
+        $(this).siblings('.js-children-count').each(
+            function (){
+                if (childrenTickets > 0){
+                    childrenTickets--;
+                    $('.js-children-count').val(childrenTickets);
+                    $('.js-children-price').text((childrenPrice*childrenTickets) + ' р.');
+                    $('.js-price-total').text((grownPrice*grownTickets + childrenPrice*childrenTickets + allPrice*allTickets) + ' р.');
+                    if (childrenTickets == 0){
+                        $('.js-children-price').css({
+                            'color': '#9F9F9F'
+                        });
+                    }
+                }
+                
+            }
+        );
+        $(this).siblings('.js-all-count').each(
+            function (){
+                if (allTickets > 0){
+                    allTickets--;
+                    $('.js-all-count').val(allTickets);
+                    $('.js-all-price').text((allPrice*allTickets) + ' р.');
+                    $('.js-price-total').text((grownPrice*grownTickets + childrenPrice*childrenTickets + allPrice*allTickets) + ' р.');
+                    if (allTickets == 0){
+                        $('.js-all-price').css({
+                            'color': '#9F9F9F'
+                        });
+                    }
+                }
+                
+            }
+        );
+    });
+}
+
+function halloweenBats(){
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    $(".js-bat").each(
+        function (){
+            $(this).css({
+                top: getRandomInt(10, 300)+"px",
+                left: getRandomInt(20, 300)+"px"
+            })
+        }
+    );
+
+    $(".js-bat").hover(function () { 
+        let x1 = parseInt($(this).css("left")),
+        y1 = parseInt($(this).css("top")),
+        x2 = getRandomInt(10, 300),
+        y2 = getRandomInt(20, 300),
+        x = x2 - x1,
+        y = y1 - y2,
+        angleRad = Math.acos( y / Math.sqrt(x*x + y*y)),
+        angleDeg = angleRad * 180 / Math.PI;
+        if (x2<x1) angleDeg = -angleDeg;
+        
+        $(this).css({
+            top: y2+"px",
+            left: x2+"px"
+        }).css('transform','rotate(' + angleDeg + 'deg)');
+    }, function () { });
+}
+
+$(function() {
+    /* init */
+    pumpkinheadAnimate('.js-pumpkinhead');
+    grassAnimate('.js-grass');
+    halloweenTicketPrice();
+    halloweenBats();
+});

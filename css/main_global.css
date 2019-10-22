@@ -1781,6 +1781,27 @@ div {
   font-weight: 100;
   font-style: normal; }
 
+@font-face {
+  font-family: "Roboto Slab Bold";
+  src: url("../fonts/RobotoSlab-Bold.eot");
+  src: url("../fonts/RobotoSlab-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab-Bold.ttf") format("truetype"), url("../fonts/RobotoSlab-Bold.svg#Roboto Slab Bold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/ClearSans-Regular.eot");
+  src: url("../fonts/ClearSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-Regular.woff") format("woff"), url("../fonts/ClearSans-Regular.ttf") format("truetype"), url("../fonts/ClearSans-Regular.svg#Clear Sans") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg#Open Sans") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
 .is-content-hidden .header,
 .is-content-hidden main,
 .is-content-hidden .header-navigation,
@@ -19859,17 +19880,6 @@ test popup
     -o-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out; }
 
-@-webkit-keyframes swing {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); }
-  50% {
-    -webkit-transform: translateX(-6px) rotate(1deg);
-            transform: translateX(-6px) rotate(1deg); }
-  100% {
-    -webkit-transform: translateX(0) rotate(0);
-            transform: translateX(0) rotate(0); } }
-
 @keyframes swing {
   0% {
     -webkit-transform: rotate(0);
@@ -28046,6 +28056,8 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
+      .holiday-menu-filter__search input::-moz-placeholder {
+        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -29560,6 +29572,588 @@ a.show-more__button:hover {
     top: -13%; }
   .celebration.child-holidays-all .child-holiday-people__text {
     font-family: "PT Serif Caption"; }
+
+.halloween-new {
+  font-family: "Clear Sans";
+  font-size: 18px;
+  line-height: 24px;
+  color: #555451; }
+  .halloween-new__title {
+    font-family: "Roboto Slab Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    margin: 0 0 10px 0;
+    color: #91C84A; }
+  .halloween-new__description {
+    font-family: "Clear Sans";
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 20px 0;
+    color: #555451; }
+  .halloween-new__btn {
+    display: inline-block;
+    font-family: "Clear Sans";
+    font-size: 16px;
+    line-height: 22px;
+    padding: 9px 34px;
+    color: #fff;
+    background: #CC4685;
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(206, 86, 142, 0.7);
+            box-shadow: 0px 0px 0px 5px rgba(206, 86, 142, 0.7);
+    border-radius: 5px;
+    cursor: pointer; }
+    .halloween-new__btn:hover {
+      color: #fff;
+      -webkit-box-shadow: 0px 0px 0px 5px rgba(206, 86, 142, 0.3), inset 0px 0px 20px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 0px 0px 5px rgba(206, 86, 142, 0.3), inset 0px 0px 20px rgba(0, 0, 0, 0.2); }
+  .halloween-new-header {
+    position: relative;
+    margin-bottom: 90px; }
+    @media screen and (max-width: 860px) {
+      .halloween-new-header {
+        margin-bottom: 40px; } }
+    .halloween-new-header-wrapper {
+      width: 80%; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-header-wrapper {
+          width: 100%; } }
+    .halloween-new-header__img {
+      width: 20%;
+      position: absolute;
+      right: -400px;
+      top: 0;
+      text-align: end;
+      -webkit-transition: right 1s ease-out;
+      -o-transition: right 1s ease-out;
+      transition: right 1s ease-out; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-header__img {
+          display: none; } }
+      @media screen and (min-width: 1601px) {
+        .halloween-new-header__img {
+          right: -800px; } }
+    .halloween-new-header .mod-onscreen {
+      right: 0; }
+    .halloween-new-header__category .category-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
+    .halloween-new-header__category p {
+      position: relative;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      padding: 7px 14px;
+      color: #fff;
+      margin: 0 0 10px 0;
+      z-index: 2; }
+  .halloween-new-banner {
+    height: 75rem;
+    background-size: cover;
+    background-position: 100% 50%;
+    position: relative;
+    margin-bottom: 95px; }
+    @media screen and (max-width: 860px) {
+      .halloween-new-banner {
+        height: 35rem;
+        margin-bottom: 40px; } }
+  .halloween-new-features {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    background-image: url(../img/halloween-new/webs.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    padding: 36px 30px 56px 30px;
+    margin-bottom: 127px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; }
+    @media screen and (max-width: 860px) {
+      .halloween-new-features {
+        margin-bottom: 40px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .halloween-new-features ul {
+      width: 50%; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-features ul {
+          width: 100%; } }
+      .halloween-new-features ul li {
+        background: url(../img/halloween-new/pumpkin.png) no-repeat left top;
+        padding-left: 30px; }
+        .halloween-new-features ul li + li {
+          margin-top: 20px; }
+    @media screen and (max-width: 860px) {
+      .halloween-new-features-first-column {
+        margin-bottom: 20px; } }
+    .halloween-new-features__grass {
+      position: absolute;
+      bottom: -30px;
+      width: 100%;
+      min-width: 1000px;
+      min-height: 50px;
+      -webkit-transition: right 0.6s ease;
+      -o-transition: right 0.6s ease;
+      transition: right 0.6s ease; }
+      .halloween-new-features__grass img {
+        width: 100%; }
+  .halloween-new-application {
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 86px; }
+    @media screen and (max-width: 860px) {
+      .halloween-new-application {
+        margin-bottom: 40px; } }
+    @media screen and (min-width: 1601px) {
+      .halloween-new-application {
+        margin-right: 40px; } }
+    .halloween-new-application-form {
+      position: relative;
+      width: 810px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      float: right;
+      z-index: 2;
+      padding: 26px 13px 24px; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-application-form {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%; } }
+      .halloween-new-application-form .halloween-new__title {
+        width: 760px;
+        text-align: center;
+        margin-bottom: 20px; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form .halloween-new__title {
+            width: 100%; } }
+      .halloween-new-application-form-customer {
+        width: 380px;
+        z-index: 2;
+        padding: 0 30px 0 10px;
+        border-right: 1px solid #E0E0E0;
+        margin-bottom: 20px; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form-customer {
+            width: 100%;
+            border-right: none;
+            padding: 0; } }
+        .halloween-new-application-form-customer input[type="text"] {
+          font-family: "Clear Sans"; }
+        .halloween-new-application-form-customer .c-input {
+          font-family: "Clear Sans";
+          font-size: 16px;
+          line-height: 22px;
+          padding: 14px 18px; }
+          .halloween-new-application-form-customer .c-input + .c-input {
+            margin-top: 20px; }
+      .halloween-new-application-form-inputs {
+        width: 380px;
+        padding: 0 12px 0 30px;
+        z-index: 2; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form-inputs {
+            width: 100%;
+            padding: 0px 18px;
+            margin-bottom: 20px; } }
+        .halloween-new-application-form-inputs-group {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          @media screen and (max-width: 860px) {
+            .halloween-new-application-form-inputs-group {
+              width: 100%;
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; } }
+          .halloween-new-application-form-inputs-group + .halloween-new-application-form-inputs-group {
+            border-top: 1px solid #E0E0E0;
+            padding: 13px 0 0 0; }
+          .halloween-new-application-form-inputs-group label {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-line-pack: center;
+                align-content: center; }
+            .halloween-new-application-form-inputs-group label .name {
+              font-family: "Clear Sans";
+              font-size: 18px;
+              line-height: 24px;
+              margin-bottom: 2px;
+              width: 170px; }
+              @media screen and (max-width: 860px) {
+                .halloween-new-application-form-inputs-group label .name {
+                  width: 160px; } }
+              @media screen and (max-width: 470px) {
+                .halloween-new-application-form-inputs-group label .name {
+                  width: auto; } }
+            .halloween-new-application-form-inputs-group label .price {
+              font-family: "Clear Sans";
+              font-size: 14px;
+              line-height: 19px;
+              color: #9F9F9F;
+              margin-bottom: 12px; }
+          .halloween-new-application-form-inputs-group .c-counter-big {
+            background: transparent;
+            padding: .4rem 0; }
+            .halloween-new-application-form-inputs-group .c-counter-big:hover {
+              background-color: transparent; }
+            .halloween-new-application-form-inputs-group .c-counter-big__btn {
+              background-size: 50%;
+              height: auto;
+              font-family: "Clear Sans";
+              font-size: 24px;
+              line-height: 32px;
+              color: #9F9F9F;
+              vertical-align: baseline; }
+              .halloween-new-application-form-inputs-group .c-counter-big__btn:hover {
+                background-color: transparent; }
+            .halloween-new-application-form-inputs-group .c-counter-big__field {
+              font-family: "Clear Sans";
+              font-size: 24px;
+              line-height: 32px;
+              color: #555451;
+              vertical-align: baseline; }
+            .halloween-new-application-form-inputs-group .c-counter-big input[type="text"] {
+              font-family: "Clear Sans"; }
+          .halloween-new-application-form-inputs-group .price-total p {
+            width: 112px;
+            font-family: "Clear Sans";
+            font-size: 24px;
+            line-height: 32px;
+            text-align: right;
+            color: #9F9F9F;
+            padding: .8rem 0; }
+            @media screen and (max-width: 860px) {
+              .halloween-new-application-form-inputs-group .price-total p {
+                width: 100px; } }
+            @media screen and (max-width: 470px) {
+              .halloween-new-application-form-inputs-group .price-total p {
+                width: auto; } }
+      .halloween-new-application-form .cake-order-final-coupon {
+        width: 340px;
+        z-index: 2;
+        margin: 0 30px 25px 10px;
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form .cake-order-final-coupon {
+            width: 100%;
+            padding: 0;
+            margin: 0 0 20px 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; } }
+        .halloween-new-application-form .cake-order-final-coupon__left {
+          padding-right: 0; }
+          @media screen and (max-width: 860px) {
+            .halloween-new-application-form .cake-order-final-coupon__left {
+              margin: 0; } }
+          .halloween-new-application-form .cake-order-final-coupon__left input[type="text"] {
+            height: 50px;
+            font-family: "Clear Sans";
+            font-size: 16px;
+            line-height: 22px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0; }
+            @media screen and (max-width: 860px) {
+              .halloween-new-application-form .cake-order-final-coupon__left input[type="text"] {
+                width: 100%;
+                margin: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: .4rem; } }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form .cake-order-final-coupon__right {
+            width: 100%; } }
+        .halloween-new-application-form .cake-order-final-coupon__right .c-button {
+          height: 50px;
+          width: 160px;
+          font-family: "Clear Sans";
+          font-size: 16px;
+          line-height: 22px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          padding: 0;
+          text-align: center;
+          text-transform: none; }
+          @media screen and (max-width: 860px) {
+            .halloween-new-application-form .cake-order-final-coupon__right .c-button {
+              width: 100%;
+              border-bottom-left-radius: .4rem;
+              border-top-right-radius: 0; } }
+      .halloween-new-application-form-total {
+        width: 380px;
+        font-family: "Clear Sans";
+        font-size: 24px;
+        line-height: 32px;
+        text-align: right;
+        margin: 10px 0 30px; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form-total {
+            width: 100%;
+            padding: 0 18px; } }
+        .halloween-new-application-form-total .halloween-new__totalprice {
+          color: #CC4685;
+          font-weight: 700; }
+      .halloween-new-application-form .halloween-new__btn {
+        width: 340px;
+        height: 40px;
+        margin: 5px 35px 5px 15px;
+        z-index: 2; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form .halloween-new__btn {
+            width: 100%;
+            padding: 0;
+            margin: 0 0 20px; } }
+      .halloween-new-application-form .halloween-new__regulations {
+        width: 370px;
+        font-family: "Clear Sans";
+        font-size: 12px;
+        line-height: 16px;
+        color: #9F9F9F;
+        margin-bottom: 0; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form .halloween-new__regulations {
+            width: 100%;
+            padding: 0 18px;
+            margin: 0; } }
+      .halloween-new-application-form__img {
+        position: absolute;
+        top: 0;
+        left: -460px;
+        z-index: 1;
+        height: 100%; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-application-form__img {
+            display: none; } }
+        @media screen and (min-width: 1601px) {
+          .halloween-new-application-form__img {
+            left: -720px;
+            height: 130%; } }
+      .halloween-new-application-form__bat {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transition: top 1s ease, left 1s ease;
+        -o-transition: top 1s ease, left 1s ease;
+        transition: top 1s ease, left 1s ease;
+        z-index: 2; }
+      .halloween-new-application-form__background {
+        height: 100%; }
+  .halloween-new-contest {
+    position: relative;
+    margin-bottom: 90px; }
+    @media screen and (max-width: 860px) {
+      .halloween-new-contest {
+        margin-bottom: 40px; } }
+    .halloween-new-contest-wrapper {
+      width: 65%; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-contest-wrapper {
+          width: 100%; } }
+    .halloween-new-contest ul {
+      position: relative; }
+      .halloween-new-contest ul::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        top: 0;
+        bottom: 0;
+        left: 12px;
+        background: -o-repeating-linear-gradient(top, transparent, transparent 3px, #91C84A 3px, #91C84A 6px);
+        background: repeating-linear-gradient(to bottom, transparent, transparent 3px, #91C84A 3px, #91C84A 6px); }
+    .halloween-new-contest li + li {
+      margin-top: 22px; }
+    .halloween-new-contest li .list-item {
+      position: relative;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: #91C84A;
+      margin-right: 20px;
+      border-radius: 50%;
+      font-family: 'Segoe Script';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #fff;
+      z-index: 2; }
+    .halloween-new-contest__img {
+      width: 30%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: end; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-contest__img {
+          display: none; } }
+  .halloween-new-entertainment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media screen and (max-width: 860px) {
+      .halloween-new-entertainment {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse; } }
+    .halloween-new-entertainment-left {
+      width: 60%; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-entertainment-left {
+          width: 100%; } }
+      .halloween-new-entertainment-left p {
+        font-family: "Clear Sans";
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px; }
+    .halloween-new-entertainment-right {
+      width: 370px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      @media screen and (max-width: 860px) {
+        .halloween-new-entertainment-right {
+          width: 100%; } }
+      .halloween-new-entertainment-right__icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 170px;
+        margin-bottom: 20px; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-entertainment-right__icon {
+            width: 50%; } }
+      .halloween-new-entertainment-right__img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px; }
+      .halloween-new-entertainment-right__text {
+        font-family: "Clear Sans";
+        font-size: 24px;
+        line-height: 32px; }
+        @media screen and (max-width: 860px) {
+          .halloween-new-entertainment-right__text {
+            font-size: 18px;
+            line-height: 22px; } }
+  .halloween-new-footer {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 0;
+    right: 0; }
+    .halloween-new-footer__img {
+      width: 100vw; }
+  .halloween-new .mod-pink-text {
+    color: #CC4685; }
+  .halloween-new .mod-black-text {
+    color: #555451; }
+
+@-webkit-keyframes swing {
+  12% {
+    -webkit-transform: translateX(5px) rotate(20deg);
+    -ms-transform: translateX(5px) rotate(20deg);
+    transform: translateX(5px) rotate(20deg); }
+  37% {
+    -webkit-transform: translateX(-5px) rotate(-20deg);
+    -ms-transform: translateX(-5px) rotate(-20deg);
+    transform: translateX(-5px) rotate(-20deg); }
+  62% {
+    -webkit-transform: translateX(5px) rotate(20deg);
+    -ms-transform: translateX(5px) rotate(20deg);
+    transform: translateX(5px) rotate(20deg); }
+  87% {
+    -webkit-transform: translateX(-5px) rotate(-20deg);
+    -ms-transform: translateX(-5px) rotate(-20deg);
+    transform: translateX(-5px) rotate(-20deg); }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0); } }
+
+@keyframes swing {
+  12% {
+    -webkit-transform: translateX(5px) rotate(20deg);
+    -ms-transform: translateX(5px) rotate(20deg);
+    transform: translateX(5px) rotate(20deg); }
+  37% {
+    -webkit-transform: translateX(-5px) rotate(-20deg);
+    -ms-transform: translateX(-5px) rotate(-20deg);
+    transform: translateX(-5px) rotate(-20deg); }
+  62% {
+    -webkit-transform: translateX(5px) rotate(20deg);
+    -ms-transform: translateX(5px) rotate(20deg);
+    transform: translateX(5px) rotate(20deg); }
+  87% {
+    -webkit-transform: translateX(-5px) rotate(-20deg);
+    -ms-transform: translateX(-5px) rotate(-20deg);
+    transform: translateX(-5px) rotate(-20deg); }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+    -ms-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0); } }
+  .halloween-new .mod-swing {
+    cursor: pointer; }
+    .halloween-new .mod-swing:hover {
+      -webkit-animation: swing 0.6s ease;
+      animation: swing 0.6s ease;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1; }
 
 .popup-pie {
   /* Ручной readmore */

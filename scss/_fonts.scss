@@ -13,11 +13,17 @@
 
 @include font_face(SummerFont-Light, SummerFont,'../fonts/', 100);
 
+@include font_face(RobotoSlab-Bold, 'Roboto Slab Bold','../fonts/', 700);
+@include font_face(ClearSans-Regular, 'Clear Sans','../fonts/', 400);
+@include font_face(OpenSans-Regular, 'Open Sans','../fonts/', 400);
 
 $font_sans-serif: 'BebasNeue';
 $font_serif: 'PT Serif Caption';
 $font_decor: 'SummerFont';
 $font_RoubleSerif: 'RoubleSerif';
+$font_RobotoSlabBold: 'Roboto Slab Bold';
+$font_clear-sans: 'Clear Sans';
+$font_open-sans: 'Open Sans';
 
 $font_bold: 700;
 $font_light: 300;
