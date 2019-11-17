@@ -8847,7 +8847,7 @@
         height: 10px;
         right: 9px;
         top: 0;
-        background: url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+        background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
         border: 1px solid #9b806f;
         border-top: transparent;
         background-size: 10px 11px;
