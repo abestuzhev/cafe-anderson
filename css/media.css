@@ -5857,6 +5857,8 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-transform: translateZ(0px);
+        -webkit-overflow-scrolling: touch;
     }
 
     .popup-holiday-menu.no-description .popup{

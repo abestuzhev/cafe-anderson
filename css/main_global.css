@@ -7029,7 +7029,9 @@ div.c-card-catalog-3 {
     .header-mobile-scroll {
       width: 100%;
       overflow-y: scroll;
-      height: 91%; }
+      height: 91%;
+      -webkit-transform: translateZ(0px);
+      -webkit-overflow-scrolling: touch; }
     .header-mobile__top {
       display: none;
       padding: 0 0 .4rem;
@@ -7127,9 +7129,10 @@ div.c-card-catalog-3 {
       height: 100vh;
       opacity: 0;
       visibility: hidden;
-      -webkit-transform: scale(1);
-          -ms-transform: scale(1);
-              transform: scale(1); }
+      -ms-transform: scale(1);
+          transform: scale(1);
+      -webkit-transform: translateZ(0px);
+      -webkit-overflow-scrolling: touch; }
       .header-mobile__dropdown-close {
         display: none; }
     .header-mobile__item-top {
@@ -7171,7 +7174,9 @@ div.c-card-catalog-3 {
         left: -3rem;
         top: -1px; }
     .header-mobile__list {
-      padding: 1em 0 7rem; }
+      padding: 1em 0 8rem;
+      -webkit-transform: translateZ(0px);
+      -webkit-overflow-scrolling: touch; }
       .header-mobile__list a {
         border-bottom: 1px dotted #555451; }
         .header-mobile__list a::after {
@@ -8699,7 +8704,7 @@ main {
       content: '';
       border: none; }
   .popup-body {
-    padding: 3rem 6rem 7rem;
+    padding: 3rem 6rem 8rem;
     position: relative;
     z-index: 10;
     overflow: hidden; }
