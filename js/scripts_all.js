@@ -12167,6 +12167,7 @@ $(document).ready(function ($) {
 		$('.header-mobile__dropdown').toggleClass('popup-show');
 		// $('.header').toggleClass('header-top__hide');
         $('html').toggleClass('overflow');
+        $('body').addClass('fixed-input');
         $('.c-reviews__item').toggleClass('is-hide');
 
 
@@ -12182,6 +12183,7 @@ $(document).ready(function ($) {
         $('.header-mobile__menu').toggleClass('icon-menu__transform');
         $('.header-mobile__dropdown').toggleClass('popup-show');
         $('html').removeClass('overflow');
+        $('body').removeClass('fixed-input');
         $('.c-reviews__item').removeClass('is-hide');
 	});
 

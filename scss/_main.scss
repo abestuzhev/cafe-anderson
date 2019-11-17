@@ -599,7 +599,8 @@ main {
     }
 
     &-body {
-        padding: 3rem 6rem 4.5rem;
+        //padding: 3rem 6rem 4.5rem;
+        padding: 3rem 6rem 7rem;
         position: relative;
         z-index: 10;
         overflow: hidden;
@@ -622,6 +623,7 @@ main {
         background-color: $custom_bg;
         font-size: 1.9rem;
         padding: 1.8rem 2rem 1.4rem;
+        z-index: 10;
 
         &__layout {
             font-size: 0;

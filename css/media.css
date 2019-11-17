@@ -5886,6 +5886,7 @@
     .fixed-input {
         position: fixed;
         width: 100%;
+        overflow: hidden;
     }
 
     .popup-offer .popup,

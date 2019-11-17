@@ -7171,7 +7171,7 @@ div.c-card-catalog-3 {
         left: -3rem;
         top: -1px; }
     .header-mobile__list {
-      padding-top: 1em; }
+      padding: 1em 0 1.6rem; }
       .header-mobile__list a {
         border-bottom: 1px dotted #555451; }
         .header-mobile__list a::after {
@@ -8699,7 +8699,7 @@ main {
       content: '';
       border: none; }
   .popup-body {
-    padding: 3rem 6rem 4.5rem;
+    padding: 3rem 6rem 7rem;
     position: relative;
     z-index: 10;
     overflow: hidden; }
@@ -8715,7 +8715,8 @@ main {
     color: #553023;
     background-color: #fdf7e8;
     font-size: 1.9rem;
-    padding: 1.8rem 2rem 1.4rem; }
+    padding: 1.8rem 2rem 1.4rem;
+    z-index: 10; }
     .popup-title__layout {
       font-size: 0; }
     .popup-title__btn {
