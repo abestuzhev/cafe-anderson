@@ -10182,7 +10182,8 @@ test popup
   padding: 10px; }
 
 .lock-html {
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 .mfp-bg {
   top: 0;
@@ -10196,7 +10197,8 @@ test popup
   filter: alpha(opacity=80);
   /*display: none;*/
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 .mfp-wrap {
   top: 0;
@@ -10212,7 +10214,8 @@ test popup
   visibility: hidden;
   -webkit-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
-  transition: all .3s ease-out; }
+  transition: all .3s ease-out;
+  -webkit-overflow-scrolling: touch; }
 
 .mfp-wrap.is-visible {
   padding-right: 17px; }
@@ -11734,7 +11737,8 @@ test popup
       font-size: 1.5rem;
       line-height: 1.33;
       text-align: left;
-      color: #ffffff; }
+      color: #ffffff;
+      -webkit-overflow-scrolling: touch; }
       .cafe-description__text p {
         margin-bottom: 2.3rem;
         color: #ffffff; }
@@ -15792,7 +15796,8 @@ test popup
       height: 100vh;
       margin: 0;
       overflow-y: scroll;
-      border-radius: 0; }
+      border-radius: 0;
+      -webkit-overflow-scrolling: touch; }
     .popup-cake-order .cake-order-operations {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -21627,7 +21632,8 @@ test popup
   .calendar__track {
     overflow: hidden;
     overflow-x: scroll;
-    width: 100%; }
+    width: 100%;
+    -webkit-overflow-scrolling: touch; }
   .calendar-nav {
     /*calendar-nav*/
     -webkit-box-flex: 0;
@@ -22863,6 +22869,7 @@ a.show-more__button:hover {
   max-width: 100%;
   max-height: 100%;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   font-size: 1.2rem;
   font-style: italic;
   color: #515151;
@@ -28061,8 +28068,6 @@ a.show-more__button:hover {
       .holiday-menu-filter__search input:-ms-input-placeholder {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
-        color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
         color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }

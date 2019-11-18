@@ -2603,6 +2603,7 @@ test popup
 .lock-html {
     overflow: hidden;
     //overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
 }
 
 .popup-fix {
@@ -2626,6 +2627,7 @@ test popup
     //transform: scale(1);
     //@extend %transition_all;
     //overflow-y: hidden !important;
+    -webkit-overflow-scrolling:touch;
 }
 
 .mfp-wrap {
@@ -2643,6 +2645,7 @@ test popup
     //transform: scale(.9);
     transition: all .3s ease-out;
     //overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
 }
 
 .mfp-wrap.is-visible {
@@ -4761,6 +4764,7 @@ test popup
             //overflow-x: auto;
             //overflow-y: scroll;
             //max-height: 28rem;
+            -webkit-overflow-scrolling:touch;
 
             p {
                 margin-bottom: 2.3rem;
@@ -10088,6 +10092,7 @@ test popup
             margin: 0;
             overflow-y: scroll;
             border-radius: 0;
+            -webkit-overflow-scrolling:touch;
         }
 
         .cake-order-operations {
@@ -17688,6 +17693,7 @@ test popup
         overflow: hidden;
         overflow-x: scroll;
         width: 100%;
+        -webkit-overflow-scrolling:touch;
     }
 
     &-nav { /*calendar-nav*/
@@ -19283,6 +19289,7 @@ a.show-more__button:hover {
     max-width: 100%;
     max-height: 100%;
     overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
 
     font-size: 1.2rem;
     font-style: italic;
