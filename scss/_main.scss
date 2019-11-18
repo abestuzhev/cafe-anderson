@@ -2748,6 +2748,7 @@ test popup
 
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
 }
 
 .is-show__smoothly {
@@ -4765,6 +4766,7 @@ test popup
             //overflow-y: scroll;
             //max-height: 28rem;
             -webkit-overflow-scrolling:touch;
+            transform: translateZ(0);
 
             p {
                 margin-bottom: 2.3rem;

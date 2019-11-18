@@ -10303,7 +10303,9 @@ test popup
   -o-transition: all .1s ease;
   transition: all .1s ease;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 .is-show__smoothly {
   opacity: 1 !important;
@@ -11738,7 +11740,9 @@ test popup
       line-height: 1.33;
       text-align: left;
       color: #ffffff;
-      -webkit-overflow-scrolling: touch; }
+      -webkit-overflow-scrolling: touch;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0); }
       .cafe-description__text p {
         margin-bottom: 2.3rem;
         color: #ffffff; }
