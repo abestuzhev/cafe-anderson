@@ -28587,8 +28587,24 @@ a.show-more__button:hover {
              animation-iteration-count: 1;
           }
       }
-      
-      
+}
 
 
+/*fix bug modal*/
+.new-year-order {
+
+}
+
+.popup-new-year .popup {
+    padding-bottom: 8rem;
+}
+
+.popup-new-year .c-counter__field {
+    margin: 0 !important;
+    min-width: 39px !important;
+    max-width:39px !important;
+}
+
+.new-year-order .c-counter {
+    min-width: 115px !important;
 }
