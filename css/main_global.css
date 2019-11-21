@@ -25483,7 +25483,8 @@ a.show-more__button:hover {
         color: #2c2c2c;
         background-color: transparent;
         letter-spacing: -.2rem;
-        font-family: "SummerFont"; }
+        font-family: "SummerFont";
+        padding: 0 !important; }
     .new-year-order__price {
       color: #73ac1c;
       font-size: 3.5rem;
