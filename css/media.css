@@ -7676,6 +7676,10 @@
         width: 100%;
     }
 
+    .popup-body {
+        padding-bottom: 11rem;
+    }
+
     .tabs-menu__item {
         margin-right: .6rem;
         font-size: 1.3rem;
