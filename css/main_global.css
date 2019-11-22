@@ -7029,7 +7029,9 @@ div.c-card-catalog-3 {
     .header-mobile-scroll {
       width: 100%;
       overflow-y: scroll;
-      height: 91%; }
+      height: 91%;
+      -webkit-transform: translateZ(0px);
+      -webkit-overflow-scrolling: touch; }
     .header-mobile__top {
       display: none;
       padding: 0 0 .4rem;
@@ -7127,9 +7129,10 @@ div.c-card-catalog-3 {
       height: 100vh;
       opacity: 0;
       visibility: hidden;
-      -webkit-transform: scale(1);
-          -ms-transform: scale(1);
-              transform: scale(1); }
+      -ms-transform: scale(1);
+          transform: scale(1);
+      -webkit-transform: translateZ(0px);
+      -webkit-overflow-scrolling: touch; }
       .header-mobile__dropdown-close {
         display: none; }
     .header-mobile__item-top {
@@ -7171,7 +7174,9 @@ div.c-card-catalog-3 {
         left: -3rem;
         top: -1px; }
     .header-mobile__list {
-      padding-top: 1em; }
+      padding: 1em 0 8rem;
+      -webkit-transform: translateZ(0px);
+      -webkit-overflow-scrolling: touch; }
       .header-mobile__list a {
         border-bottom: 1px dotted #555451; }
         .header-mobile__list a::after {
@@ -8715,7 +8720,8 @@ main {
     color: #553023;
     background-color: #fdf7e8;
     font-size: 1.9rem;
-    padding: 1.8rem 2rem 1.4rem; }
+    padding: 1.8rem 2rem 1.4rem;
+    z-index: 10; }
     .popup-title__layout {
       font-size: 0; }
     .popup-title__btn {
@@ -10176,7 +10182,8 @@ test popup
   padding: 10px; }
 
 .lock-html {
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 .mfp-bg {
   top: 0;
@@ -10190,7 +10197,8 @@ test popup
   filter: alpha(opacity=80);
   /*display: none;*/
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  -webkit-overflow-scrolling: touch; }
 
 .mfp-wrap {
   top: 0;
@@ -10206,7 +10214,8 @@ test popup
   visibility: hidden;
   -webkit-transition: all .3s ease-out;
   -o-transition: all .3s ease-out;
-  transition: all .3s ease-out; }
+  transition: all .3s ease-out;
+  -webkit-overflow-scrolling: touch; }
 
 .mfp-wrap.is-visible {
   padding-right: 17px; }
@@ -10294,7 +10303,9 @@ test popup
   -o-transition: all .1s ease;
   transition: all .1s ease;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 .is-show__smoothly {
   opacity: 1 !important;
@@ -11728,7 +11739,10 @@ test popup
       font-size: 1.5rem;
       line-height: 1.33;
       text-align: left;
-      color: #ffffff; }
+      color: #ffffff;
+      -webkit-overflow-scrolling: touch;
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0); }
       .cafe-description__text p {
         margin-bottom: 2.3rem;
         color: #ffffff; }
@@ -15786,7 +15800,8 @@ test popup
       height: 100vh;
       margin: 0;
       overflow-y: scroll;
-      border-radius: 0; }
+      border-radius: 0;
+      -webkit-overflow-scrolling: touch; }
     .popup-cake-order .cake-order-operations {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -21621,7 +21636,8 @@ test popup
   .calendar__track {
     overflow: hidden;
     overflow-x: scroll;
-    width: 100%; }
+    width: 100%;
+    -webkit-overflow-scrolling: touch; }
   .calendar-nav {
     /*calendar-nav*/
     -webkit-box-flex: 0;
@@ -22857,6 +22873,7 @@ a.show-more__button:hover {
   max-width: 100%;
   max-height: 100%;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   font-size: 1.2rem;
   font-style: italic;
   color: #515151;
@@ -25466,7 +25483,8 @@ a.show-more__button:hover {
         color: #2c2c2c;
         background-color: transparent;
         letter-spacing: -.2rem;
-        font-family: "SummerFont"; }
+        font-family: "SummerFont";
+        padding: 0 !important; }
     .new-year-order__price {
       color: #73ac1c;
       font-size: 3.5rem;
@@ -28056,8 +28074,6 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
-        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -30159,6 +30175,18 @@ a.show-more__button:hover {
       animation: swing 0.6s ease;
       -webkit-animation-iteration-count: 1;
       animation-iteration-count: 1; }
+
+/*fix bug modal*/
+.popup-new-year .popup {
+  padding-bottom: 8rem; }
+
+.popup-new-year .c-counter__field {
+  margin: 0 !important;
+  min-width: 39px !important;
+  max-width: 39px !important; }
+
+.new-year-order .c-counter {
+  min-width: 115px !important; }
 
 .popup-pie {
   /* Ручной readmore */

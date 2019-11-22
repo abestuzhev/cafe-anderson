@@ -851,6 +851,7 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-overflow-scrolling: touch;
     }
 
     .popup-event .c-card-event__label {
@@ -1948,6 +1949,7 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-overflow-scrolling: touch;
     }
 
     .contact-us__decor-1 {
@@ -2078,6 +2080,7 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-overflow-scrolling: touch;
     }
 
     .about-banner-slogan {
@@ -2713,11 +2716,13 @@
         overflow: auto !important;
         margin: 0 !important;
         padding: 0 !important;
+        -webkit-overflow-scrolling: touch;
     }
 
     .cafe-description__text {
         overflow: auto;
         height: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .cafe-holiday-count {
@@ -3111,6 +3116,7 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-overflow-scrolling: touch;
     }
 
     .popup-party-order .popup-body {
@@ -3320,6 +3326,7 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-overflow-scrolling: touch;
     }
 
     .popup-product .popup-mini {
@@ -3531,6 +3538,7 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-overflow-scrolling: touch;
     }
 
     .cafe-list__one {
@@ -3899,6 +3907,7 @@
     .factory-layout {
         width: 100%;
         /* overflow-x: scroll; */
+        -webkit-overflow-scrolling: touch;
     }
 
     .factory .simplebar-track {
@@ -4401,6 +4410,7 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-overflow-scrolling: touch;
     }
 
     .bonus-ranks__item {
@@ -4472,6 +4482,7 @@
         overflow: hidden;
         overflow-x: scroll;
         width: 100%;
+        -webkit-overflow-scrolling: touch;
     }
 
     .calendar-body {
@@ -4858,6 +4869,7 @@
         /*overflow: auto;*/
         /*text-overflow: clip;*/
         white-space: normal;
+        -webkit-overflow-scrolling: touch;
     }
 
     .vacancies .select-city + .SelectBox,
@@ -5857,6 +5869,8 @@
         margin: 0;
         overflow-y: scroll;
         border-radius: 0;
+        -webkit-transform: translateZ(0px);
+        -webkit-overflow-scrolling: touch;
     }
 
     .popup-holiday-menu.no-description .popup{
@@ -5886,6 +5900,7 @@
     .fixed-input {
         position: fixed;
         width: 100%;
+        overflow: hidden;
     }
 
     .popup-offer .popup,
@@ -7661,6 +7676,10 @@
         width: 100%;
     }
 
+    .popup-body {
+        padding-bottom: 11rem;
+    }
+
     .tabs-menu__item {
         margin-right: .6rem;
         font-size: 1.3rem;
@@ -8846,7 +8865,7 @@
         height: 10px;
         right: 9px;
         top: 0;
-        background: url(../img/icons/icon-close.svg) no-repeat 50% 46%;
+        background: #fff url(../img/icons/icon-close.svg) no-repeat 50% 46%;
         border: 1px solid #9b806f;
         border-top: transparent;
         background-size: 10px 11px;
@@ -9239,6 +9258,7 @@
     .header-mobile__dropdown {
         /*height: 460px;*/
         overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch;
     }
 }
 
@@ -9767,6 +9787,7 @@
         padding: 0 20px 20px;
         overflow: hidden;
         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .popup-poster .popup-box {
