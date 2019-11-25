@@ -30342,7 +30342,7 @@ a.show-more__button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 18px; }
+  margin-bottom: 8px; }
   .new-year-2020-tables .new-year-2020-raw .celebration-ol {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -30442,6 +30442,7 @@ a.show-more__button:hover {
   background-color: #dcdcdc;
   border-radius: 4px;
   font-size: 12px;
+  font-weight: bold;
   color: #29292d;
   border: 1px solid #aeaeae;
   cursor: pointer; }
@@ -30483,6 +30484,7 @@ a.show-more__button:hover {
   background-color: #dcdcdc;
   border-radius: 50%;
   font-size: 12px;
+  font-weight: bold;
   color: #29292d;
   border: 1px solid #aeaeae;
   cursor: pointer; }

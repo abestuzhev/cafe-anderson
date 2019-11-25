@@ -28644,7 +28644,6 @@ a.show-more__button:hover {
         left: -5rem;
         overflow: hidden;
         
-        
         img{
             position: absolute; 
             top: 0; 
@@ -28690,8 +28689,6 @@ a.show-more__button:hover {
             text-transform: uppercase;
             color: $color_purple;
             margin-bottom: 20px;
-            
-              
         }
         &__text{
             font-size: 16px;
@@ -28777,13 +28774,13 @@ a.show-more__button:hover {
 
     &::after{
         content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    height: 16px;
-    background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        height: 16px;
+        background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
     }
 
     &::before{
@@ -28803,7 +28800,7 @@ a.show-more__button:hover {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        margin-bottom: 18px;
+        margin-bottom: 8px;
         .celebration-ol{
             display: flex;
             flex-wrap: nowrap;
@@ -28833,7 +28830,6 @@ a.show-more__button:hover {
                 text-align: center;
                 margin: 0;
             }
-
         }
     }   
 
@@ -28882,7 +28878,6 @@ a.show-more__button:hover {
 
 /* планы столов для нового года */
 .new-year-2020-tables-plan{
-
     .new-year-plan__back{
         position: absolute;
         display: flex;
@@ -28909,6 +28904,7 @@ a.show-more__button:hover {
         background-color: #dcdcdc;
         border-radius: 4px;
         font-size: 12px;
+        font-weight: bold;
         color: #29292d;
         border: 1px solid #aeaeae;
         cursor: pointer;
@@ -28950,6 +28946,7 @@ a.show-more__button:hover {
         background-color: #dcdcdc;
         border-radius: 50%;
         font-size: 12px;
+        font-weight: bold;
         color: #29292d;
         border: 1px solid #aeaeae;
         cursor: pointer;
