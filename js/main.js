@@ -2401,6 +2401,7 @@ $(document).ready(function ($) {
     showPopup(".calendar-nav-hall__decor-blue:not(.no-popup)", '.popup__gallery_hall_blue');
     showPopup(".calendar-nav-hall__decor-red:not(.no-popup)", '.popup__gallery_hall_red');
     showPopup(".c-card-new-year__box", '.popup-new-year');
+    showPopup(".js-show-popup-new-year", '.popup-new-year');
 
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
     showPopup(".js-test-21042019", '.popup__virtual');
@@ -4475,4 +4476,68 @@ $(function() {
     grassAnimate('.js-grass');
     halloweenTicketPrice();
     halloweenBats();
+});
+
+/* new year 2020 functions */
+
+function newYearMore(){
+    let element = $('.js-new-year-more');
+
+    $('.js-new-year-more-button').on('click', function(event) {
+        if (element.hasClass('open')){
+            element.removeClass('open');
+            $(this).text('Подробно');
+        } else {
+            element.addClass('open');
+            $(this).text('Свернуть');
+        }
+    });
+}
+
+function newYearShowPlan(){
+    let gilPlan = $('.js-new-year-plan-gil'),
+        semPlan = $('.js-new-year-plan-sem'),
+        tolPlan = $('.js-new-year-plan-tol');
+
+    $('.js-new-year-show-plan-gil').on('click', function(event) {
+        gilPlan.addClass('active');
+        semPlan.removeClass('active');
+        tolPlan.removeClass('active');
+        $(this).addClass('active');
+        $('.js-new-year-show-plan-sem').removeClass('active');
+        $('.js-new-year-show-plan-tol').removeClass('active');
+    });
+    $('.js-new-year-show-plan-sem').on('click', function(event) {
+        semPlan.addClass('active');
+        gilPlan.removeClass('active');
+        tolPlan.removeClass('active');
+        $(this).addClass('active');
+        $('.js-new-year-show-plan-gil').removeClass('active');
+        $('.js-new-year-show-plan-tol').removeClass('active');
+    });
+    $('.js-new-year-show-plan-tol').on('click', function(event) {
+        tolPlan.addClass('active');
+        gilPlan.removeClass('active');
+        semPlan.removeClass('active');
+        $(this).addClass('active');
+        $('.js-new-year-show-plan-sem').removeClass('active');
+        $('.js-new-year-show-plan-gil').removeClass('active');
+    });
+}
+
+function newYearSelectTable(){
+    $('.js-new-year-table').on('click', function(event) {
+        if ($(this).hasClass('available')||$(this).hasClass('partial')){
+            $('.js-new-year-table').removeClass('active');
+            $(this).addClass('active')
+        }
+    });
+}
+
+
+$(function() {
+    /* init */
+    newYearMore();
+    newYearShowPlan();
+    newYearSelectTable();
 });

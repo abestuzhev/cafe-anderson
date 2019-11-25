@@ -28609,3 +28609,444 @@ a.show-more__button:hover {
 .new-year-order .c-counter {
     min-width: 115px !important;
 }
+
+/*new year 2020*/
+.new-year-2020-head{
+    position: relative;
+    &__decor1{
+        position: absolute;
+        left: 65rem;
+        top: -11.5rem;
+    }
+    &__decor2{
+        position: absolute;
+        left: -3rem;
+        top: -6rem;
+    }
+    &__decor3{
+        position: absolute;
+        left: 75rem;
+        top: -1.2rem;
+    }
+    &-more{
+        position: relative;
+        max-height: 0;
+        overflow: hidden;
+        &.open{
+            max-height: 100%;
+            overflow: initial;
+        }
+    }
+    &__img{
+        position: relative;
+        width: 113.6rem;
+        padding-top: 50%;
+        left: -5rem;
+        overflow: hidden;
+        
+        
+        img{
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            bottom: 0; 
+            right: 0; 
+            text-align: center;
+            width: 100%;
+
+        }
+    }
+
+    .holiday-nav{
+        position: absolute;
+        top: 2.3rem;
+        .filter-mix{
+            &--child{
+                background-color: $color_green;
+
+                &.active{
+                    background-color: $color_purple;
+                    &::before{
+                        border: 2px dashed $color_purple;
+                    }
+                }
+
+                &::before{
+                    border: 2px dashed $color_green;
+                }
+                &:not(:last-child){
+                    margin-right: 28px;
+                }
+            }
+        }
+    }
+
+    &-more{
+        &-textbox{
+            margin-top: 22px;
+        }
+        &__title{
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $color_purple;
+            margin-bottom: 20px;
+            
+              
+        }
+        &__text{
+            font-size: 16px;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 46px;
+            }
+        }
+        &__decor1{
+            position: absolute;
+            right: -3%;
+            bottom: 0;
+        }
+        &__decor2{
+            position: absolute;
+            right: -2%;
+            top: 48%;
+        }
+        &__decor3{
+            position: absolute;
+            right: -6%;
+            top: 3%;
+        }
+        &__decor4{
+            position: absolute;
+            left: -4%;
+            top: 5%;
+        }
+        &__decor5{
+            position: absolute;
+            left: -6%;
+            bottom: 12%;
+        }
+    }
+    &__button{
+        position: absolute;
+        left: 42%;
+        z-index: 12;
+        border: 2px solid $color_purple;
+        color: $color_purple;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        top: -30px;
+        cursor: pointer;
+    }
+}
+
+.new-year-2020-section{
+    position: relative;
+    background-color: $color_purple;
+    width: 113.6rem;
+    left: -5rem;
+    display: flex;
+    padding: 5rem 5rem 3rem;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &__decor1{
+        position: absolute;
+        left: 35%;
+        top: 32%;
+    }
+    &__decor2{
+        position: absolute;
+        left: 77%;
+        bottom: 0;
+    }
+
+    &__title{
+        font-size: 15px;
+        color: #9dee23;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    &__text{
+        font-size: 15px;
+        color: #fd9fd5;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    &::after{
+        content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 16px;
+    background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        height: 16px;
+        background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+    }
+}
+
+.new-year-2020-tables{
+    .new-year-2020-raw{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 18px;
+        .celebration-ol{
+            display: flex;
+            flex-wrap: nowrap;
+            &__item{
+                
+                margin-right: 24px;
+                padding-left: 48px;
+                
+                &::before{
+                    border: 2px dotted $black;
+                    color: $black;
+                    line-height: 26px;
+                    width: 30px;
+                    height: 30px;
+                    top: -2px;
+                }
+            }
+            &__text{
+                font-size: 16px;
+                line-height: 1.5;
+                margin:0;
+            }
+            &__subtext{
+                font-size: 12px;
+                color: #29292d;
+                line-height: 1;
+                text-align: center;
+                margin: 0;
+            }
+
+        }
+    }   
+
+    &-available{
+        display: flex;
+        flex-wrap: nowrap;
+        &__item{
+            position: relative;
+            padding-left: 24px;
+            font-size: 12px;
+            line-height: 2;
+            margin-left: 22px;
+            font-weight: bold;
+            &::before{
+                content: '';
+                border: 1px solid $black;
+                background-color: $white;
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+            }
+            &:first-child{
+                &::before{
+                    background-color: #a9cb58;
+                    border-color: #708e4d;
+                }
+            }
+            &:nth-child(2){
+                &::before{
+                    background-color: #ffe699;
+                    border-color: #cbb77b;
+                }
+            }
+            &:nth-child(3){
+                &::before{
+                    background-color: #dcdcdc;
+                    border-color: #aeaeae;
+                }
+            }
+        }
+    }
+}
+
+/* планы столов для нового года */
+.new-year-2020-tables-plan{
+
+    .new-year-plan__back{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #eeeeee;
+        border-radius: 4px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+        &.vertical{
+            transform: rotate(-90deg);
+        }
+    }
+
+    .new-year-plan__table-square{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #dcdcdc;
+        border-radius: 4px;
+        font-size: 12px;
+        color: #29292d;
+        border: 1px solid #aeaeae;
+        cursor: pointer;
+        &.available{
+            background-color: #a9cb58;
+            border: 1px solid #708e4d;
+        }
+        &.partial{
+            background-color: #ffe699;
+            border: 1px solid #cbb77b;
+        }
+        &.active{
+            background-color: $color_purple;
+            border: 1px solid #a72e74;
+            text-transform: uppercase;
+            color: transparent;
+            font-size: 10px;
+            &::before{
+                content: 'СТОЛИК';
+                position: absolute;
+                padding-bottom: 1em;
+                color: $white;
+            }
+            &::after{
+                content: 'ВЫБРАН';
+                position: absolute;
+                padding-top: 1em;
+                color: $white;
+            }
+        }
+    }
+
+    .new-year-plan__table-round{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #dcdcdc;
+        border-radius: 50%;
+        font-size: 12px;
+        color: #29292d;
+        border: 1px solid #aeaeae;
+        cursor: pointer;
+        &.available{
+            background-color: #a9cb58;
+            border: 1px solid #708e4d;
+        }
+        &.partial{
+            background-color: #ffe699;
+            border: 1px solid #cbb77b;
+        }
+        &.active{
+            background-color: $color_purple;
+            border: 1px solid #a72e74;
+            color: transparent;
+            text-transform: uppercase;
+            font-size: 10px;
+            &::before{
+                content: 'СТОЛИК';
+                position: absolute;
+                padding-bottom: 1em;
+                color: $white;
+            }
+            &::after{
+                content: 'ВЫБРАН';
+                position: absolute;
+                padding-top: 1em;
+                color: $white;
+            }
+        }
+    }
+
+    .new-year-plan__el{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #a9cb58;
+        border-radius: 4px;
+        border: 1px solid #708e4d;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+        &.vertical{
+            transform: rotate(-90deg);
+        }
+    }
+
+    .new-year-plan__el-round{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #a9cb58;
+        border-radius: 50%;
+        border: 1px solid #708e4d;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+
+    &-map-gil{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 44%;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+    &-map-sem{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 70%;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+    &-map-tol{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 36%;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+}
+
+.new-year-2020-form{
+    &::before{
+        background: none;
+    }
+}

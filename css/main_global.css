@@ -28074,6 +28074,8 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
+      .holiday-menu-filter__search input::-moz-placeholder {
+        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -30187,6 +30189,397 @@ a.show-more__button:hover {
 
 .new-year-order .c-counter {
   min-width: 115px !important; }
+
+/*new year 2020*/
+.new-year-2020-head {
+  position: relative; }
+  .new-year-2020-head__decor1 {
+    position: absolute;
+    left: 65rem;
+    top: -11.5rem; }
+  .new-year-2020-head__decor2 {
+    position: absolute;
+    left: -3rem;
+    top: -6rem; }
+  .new-year-2020-head__decor3 {
+    position: absolute;
+    left: 75rem;
+    top: -1.2rem; }
+  .new-year-2020-head-more {
+    position: relative;
+    max-height: 0;
+    overflow: hidden; }
+    .new-year-2020-head-more.open {
+      max-height: 100%;
+      overflow: initial; }
+  .new-year-2020-head__img {
+    position: relative;
+    width: 113.6rem;
+    padding-top: 50%;
+    left: -5rem;
+    overflow: hidden; }
+    .new-year-2020-head__img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      width: 100%; }
+  .new-year-2020-head .holiday-nav {
+    position: absolute;
+    top: 2.3rem; }
+    .new-year-2020-head .holiday-nav .filter-mix--child {
+      background-color: #6eac45; }
+      .new-year-2020-head .holiday-nav .filter-mix--child.active {
+        background-color: #c44890; }
+        .new-year-2020-head .holiday-nav .filter-mix--child.active::before {
+          border: 2px dashed #c44890; }
+      .new-year-2020-head .holiday-nav .filter-mix--child::before {
+        border: 2px dashed #6eac45; }
+      .new-year-2020-head .holiday-nav .filter-mix--child:not(:last-child) {
+        margin-right: 28px; }
+  .new-year-2020-head-more-textbox {
+    margin-top: 22px; }
+  .new-year-2020-head-more__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #c44890;
+    margin-bottom: 20px; }
+  .new-year-2020-head-more__text {
+    font-size: 16px;
+    margin-bottom: 30px; }
+    .new-year-2020-head-more__text:last-child {
+      margin-bottom: 46px; }
+  .new-year-2020-head-more__decor1 {
+    position: absolute;
+    right: -3%;
+    bottom: 0; }
+  .new-year-2020-head-more__decor2 {
+    position: absolute;
+    right: -2%;
+    top: 48%; }
+  .new-year-2020-head-more__decor3 {
+    position: absolute;
+    right: -6%;
+    top: 3%; }
+  .new-year-2020-head-more__decor4 {
+    position: absolute;
+    left: -4%;
+    top: 5%; }
+  .new-year-2020-head-more__decor5 {
+    position: absolute;
+    left: -6%;
+    bottom: 12%; }
+  .new-year-2020-head__button {
+    position: absolute;
+    left: 42%;
+    z-index: 12;
+    border: 2px solid #c44890;
+    color: #c44890;
+    line-height: 1.4;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    top: -30px;
+    cursor: pointer; }
+
+.new-year-2020-section {
+  position: relative;
+  background-color: #c44890;
+  width: 113.6rem;
+  left: -5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 5rem 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px; }
+  .new-year-2020-section__decor1 {
+    position: absolute;
+    left: 35%;
+    top: 32%; }
+  .new-year-2020-section__decor2 {
+    position: absolute;
+    left: 77%;
+    bottom: 0; }
+  .new-year-2020-section__title {
+    font-size: 15px;
+    color: #9dee23;
+    line-height: 1.6;
+    margin-bottom: 0; }
+  .new-year-2020-section__text {
+    font-size: 15px;
+    color: #fd9fd5;
+    line-height: 1.6;
+    margin-bottom: 0; }
+  .new-year-2020-section::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 16px;
+    background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+  .new-year-2020-section::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 16px;
+    background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+
+.new-year-2020-tables .new-year-2020-raw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 18px; }
+  .new-year-2020-tables .new-year-2020-raw .celebration-ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .new-year-2020-tables .new-year-2020-raw .celebration-ol__item {
+      margin-right: 24px;
+      padding-left: 48px; }
+      .new-year-2020-tables .new-year-2020-raw .celebration-ol__item::before {
+        border: 2px dotted #555451;
+        color: #555451;
+        line-height: 26px;
+        width: 30px;
+        height: 30px;
+        top: -2px; }
+    .new-year-2020-tables .new-year-2020-raw .celebration-ol__text {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0; }
+    .new-year-2020-tables .new-year-2020-raw .celebration-ol__subtext {
+      font-size: 12px;
+      color: #29292d;
+      line-height: 1;
+      text-align: center;
+      margin: 0; }
+
+.new-year-2020-tables-available {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .new-year-2020-tables-available__item {
+    position: relative;
+    padding-left: 24px;
+    font-size: 12px;
+    line-height: 2;
+    margin-left: 22px;
+    font-weight: bold; }
+    .new-year-2020-tables-available__item::before {
+      content: '';
+      border: 1px solid #555451;
+      background-color: #fff;
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%; }
+    .new-year-2020-tables-available__item:first-child::before {
+      background-color: #a9cb58;
+      border-color: #708e4d; }
+    .new-year-2020-tables-available__item:nth-child(2)::before {
+      background-color: #ffe699;
+      border-color: #cbb77b; }
+    .new-year-2020-tables-available__item:nth-child(3)::before {
+      background-color: #dcdcdc;
+      border-color: #aeaeae; }
+
+/* планы столов для нового года */
+.new-year-2020-tables-plan .new-year-plan__back {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black; }
+  .new-year-2020-tables-plan .new-year-plan__back.vertical {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+
+.new-year-2020-tables-plan .new-year-plan__table-square {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #dcdcdc;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #29292d;
+  border: 1px solid #aeaeae;
+  cursor: pointer; }
+  .new-year-2020-tables-plan .new-year-plan__table-square.available {
+    background-color: #a9cb58;
+    border: 1px solid #708e4d; }
+  .new-year-2020-tables-plan .new-year-plan__table-square.partial {
+    background-color: #ffe699;
+    border: 1px solid #cbb77b; }
+  .new-year-2020-tables-plan .new-year-plan__table-square.active {
+    background-color: #c44890;
+    border: 1px solid #a72e74;
+    text-transform: uppercase;
+    color: transparent;
+    font-size: 10px; }
+    .new-year-2020-tables-plan .new-year-plan__table-square.active::before {
+      content: 'СТОЛИК';
+      position: absolute;
+      padding-bottom: 1em;
+      color: #fff; }
+    .new-year-2020-tables-plan .new-year-plan__table-square.active::after {
+      content: 'ВЫБРАН';
+      position: absolute;
+      padding-top: 1em;
+      color: #fff; }
+
+.new-year-2020-tables-plan .new-year-plan__table-round {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #29292d;
+  border: 1px solid #aeaeae;
+  cursor: pointer; }
+  .new-year-2020-tables-plan .new-year-plan__table-round.available {
+    background-color: #a9cb58;
+    border: 1px solid #708e4d; }
+  .new-year-2020-tables-plan .new-year-plan__table-round.partial {
+    background-color: #ffe699;
+    border: 1px solid #cbb77b; }
+  .new-year-2020-tables-plan .new-year-plan__table-round.active {
+    background-color: #c44890;
+    border: 1px solid #a72e74;
+    color: transparent;
+    text-transform: uppercase;
+    font-size: 10px; }
+    .new-year-2020-tables-plan .new-year-plan__table-round.active::before {
+      content: 'СТОЛИК';
+      position: absolute;
+      padding-bottom: 1em;
+      color: #fff; }
+    .new-year-2020-tables-plan .new-year-plan__table-round.active::after {
+      content: 'ВЫБРАН';
+      position: absolute;
+      padding-top: 1em;
+      color: #fff; }
+
+.new-year-2020-tables-plan .new-year-plan__el {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #a9cb58;
+  border-radius: 4px;
+  border: 1px solid #708e4d;
+  font-size: 14px;
+  font-weight: bold;
+  color: black; }
+  .new-year-2020-tables-plan .new-year-plan__el.vertical {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+
+.new-year-2020-tables-plan .new-year-plan__el-round {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #a9cb58;
+  border-radius: 50%;
+  border: 1px solid #708e4d;
+  font-size: 14px;
+  font-weight: bold;
+  color: black; }
+
+.new-year-2020-tables-plan-map-gil {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 44%;
+  display: none; }
+  .new-year-2020-tables-plan-map-gil.active {
+    display: block; }
+
+.new-year-2020-tables-plan-map-sem {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 70%;
+  display: none; }
+  .new-year-2020-tables-plan-map-sem.active {
+    display: block; }
+
+.new-year-2020-tables-plan-map-tol {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 36%;
+  display: none; }
+  .new-year-2020-tables-plan-map-tol.active {
+    display: block; }
+
+.new-year-2020-form::before {
+  background: none; }
 
 .popup-pie {
   /* Ручной readmore */
