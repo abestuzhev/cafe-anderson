@@ -28878,6 +28878,11 @@ a.show-more__button:hover {
 
 /* планы столов для нового года */
 .new-year-2020-tables-plan{
+    span{
+        font-family: "PTSerif";
+        font-size: 14px;
+        color: #29292d;
+    }
     .new-year-plan__back{
         position: absolute;
         display: flex;
@@ -28886,11 +28891,15 @@ a.show-more__button:hover {
         text-align: center;
         background-color: #eeeeee;
         border-radius: 4px;
+        font-family: "PTSerif";
         font-size: 14px;
         text-transform: uppercase;
         font-weight: bold;
         color: black;
         &.vertical{
+            font-size: 17px;
+            text-transform: none;
+            font-weight: normal;
             transform: rotate(-90deg);
         }
     }
@@ -28903,8 +28912,9 @@ a.show-more__button:hover {
         text-align: center;
         background-color: #dcdcdc;
         border-radius: 4px;
-        font-size: 12px;
-        font-weight: bold;
+        font-family: "PTSerif";
+        font-size: 14px;
+        line-height: 1;
         color: #29292d;
         border: 1px solid #aeaeae;
         cursor: pointer;
@@ -28922,17 +28932,18 @@ a.show-more__button:hover {
             text-transform: uppercase;
             color: transparent;
             font-size: 10px;
-            &::before{
-                content: 'СТОЛИК';
-                position: absolute;
-                padding-bottom: 1em;
-                color: $white;
-            }
             &::after{
-                content: 'ВЫБРАН';
+                content: 'СТОЛИК\0aВЫБРАН';
                 position: absolute;
-                padding-top: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
                 color: $white;
+                white-space: pre;
             }
         }
     }
@@ -28945,9 +28956,10 @@ a.show-more__button:hover {
         text-align: center;
         background-color: #dcdcdc;
         border-radius: 50%;
-        font-size: 12px;
-        font-weight: bold;
+        font-family: "PTSerif";
+        font-size: 14px;
         color: #29292d;
+        line-height: 1;
         border: 1px solid #aeaeae;
         cursor: pointer;
         &.available{
@@ -28964,17 +28976,18 @@ a.show-more__button:hover {
             color: transparent;
             text-transform: uppercase;
             font-size: 10px;
-            &::before{
-                content: 'СТОЛИК';
-                position: absolute;
-                padding-bottom: 1em;
-                color: $white;
-            }
             &::after{
-                content: 'ВЫБРАН';
+                content: 'СТОЛИК\0aВЫБРАН';
                 position: absolute;
-                padding-top: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
                 color: $white;
+                white-space: pre;
             }
         }
     }
@@ -28988,8 +29001,8 @@ a.show-more__button:hover {
         background-color: #a9cb58;
         border-radius: 4px;
         border: 1px solid #708e4d;
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 17px;
+        line-height: 1;
         color: black;
         &.vertical{
             transform: rotate(-90deg);
