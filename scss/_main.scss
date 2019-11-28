@@ -28611,22 +28611,153 @@ a.show-more__button:hover {
 }
 
 /*new year 2020*/
+
+.popup-new-year-2020{
+    .popup{
+        .popup-body{
+            @media screen and (max-width: 760px) {
+                padding-top: 0;
+                overflow: hidden;
+            }
+            .popup-close{
+                @media screen and (max-width: 760px) {
+                    z-index: 1;
+                    width: 32px;
+                    height: 100%;
+                    top: 50%;
+                    background: #fff url(../img/icons/icon-close-new-year.svg) no-repeat 50% 16%;
+                    background-size: 10px 11px;
+                    color: transparent;
+                }
+            }
+        }
+        .popup-header{
+            @media screen and (max-width: 760px) {
+                position: relative;
+                background-color: #f3efe4;
+                width: calc(100% + 3.2rem);
+                left: -1.6rem;
+                margin: 0;
+            }
+            .popup-new-year__title{
+                @media screen and (max-width: 760px) {
+                    padding: 1.8rem 1.6rem 1.3rem;
+                    font-size: 23px;
+                    font-family: "PT Serif Caption";
+                    color: #555451;
+                }
+                .mod-new-year-title{
+                    text-transform: uppercase;
+                    @media screen and (max-width: 760px) {
+                        margin: 0;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+        .popup-footer{
+            .new-year-order .c-counter .c-counter__btn {
+                width: 4.0rem;
+                height: 4.0rem;
+                background-size: 25%;
+                &:hover{
+                    background-color: #9acc4e;
+                    color: #fff;
+                }
+            }
+
+            .new-year-info__title {
+                @media screen and (max-width: 760px) {
+                    font-size: 36px;
+                }
+            }
+
+            .new-year-order__col{
+                @media screen and (max-width: 760px) {
+                    flex-wrap: wrap;
+                }
+                & + .new-year-order__col{
+                    margin-top: 16px;
+                }
+                
+                .new-year-order__item:first-child{
+                    @media screen and (max-width: 760px) {
+                        width:100%;
+                    }
+                }
+            }
+            .new-year-order__grid > .new-year-order__col{
+                @media screen and (max-width: 760px) {
+                    flex-wrap: nowrap;
+                    margin-bottom: 16px;
+                }
+                .new-year-order__item:first-child{
+                    @media screen and (max-width: 760px) {
+                        width: auto;
+                    }
+                }
+            }
+            .banner-new-order .new-year-order__price {
+                color: #9acc4e;
+            }
+            .new-year-order__total {
+                color: #9acc4e;
+            }
+            .c-grid {
+                @media screen and (max-width: 760px) {
+                    margin: 0 0 24px;
+                }
+                .c-col + .c-col{
+                    @media screen and (max-width: 760px) {
+                        margin-top:12px;
+                    }
+                }
+            }
+            .c-form__item {
+                @media screen and (max-width: 760px) {
+                    margin-bottom: 2.6rem;
+                }
+            }
+            .new-year-2020-textarea{
+                @media screen and (max-width: 760px) {
+                    height: 120px;
+                }
+            }
+            .new-year-order .c-personal-data {
+                @media screen and (max-width: 760px) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+
 .new-year-2020-head{
     position: relative;
+    z-index: 2;
     &__decor1{
         position: absolute;
         left: 65rem;
         top: -11.5rem;
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
     }
     &__decor2{
         position: absolute;
         left: -3rem;
         top: -6rem;
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
     }
     &__decor3{
         position: absolute;
         left: 75rem;
         top: -1.2rem;
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
     }
     &-more{
         position: relative;
@@ -28639,10 +28770,14 @@ a.show-more__button:hover {
     }
     &__img{
         position: relative;
-        width: 113.6rem;
+        width: calc(100% + 10rem);
         padding-top: 50%;
         left: -5rem;
         overflow: hidden;
+        @media screen and (max-width: 760px) {
+            width: calc(100% + 3.2rem);
+            left: -1.6rem;
+        }
         
         img{
             position: absolute; 
@@ -28689,6 +28824,9 @@ a.show-more__button:hover {
             text-transform: uppercase;
             color: $color_purple;
             margin-bottom: 20px;
+            @media screen and (max-width: 760px) {
+                font-size: 16px;
+            }
         }
         &__text{
             font-size: 16px;
@@ -28701,26 +28839,41 @@ a.show-more__button:hover {
             position: absolute;
             right: -3%;
             bottom: 0;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
         }
         &__decor2{
             position: absolute;
             right: -2%;
             top: 48%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
         }
         &__decor3{
             position: absolute;
             right: -6%;
             top: 3%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
         }
         &__decor4{
             position: absolute;
             left: -4%;
             top: 5%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
         }
         &__decor5{
             position: absolute;
             left: -6%;
             bottom: 12%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
         }
     }
     &__button{
@@ -28734,28 +28887,56 @@ a.show-more__button:hover {
         letter-spacing: 0.2rem;
         top: -30px;
         cursor: pointer;
+        @media screen and (max-width: 760px) {
+            line-height: 1.1;
+            top: -22px;
+            left: calc(50% - 60px);
+            font-size: 2.4rem;
+            letter-spacing: 0.1rem;
+            padding: .6rem 3rem;
+        }
     }
 }
 
 .new-year-2020-section{
     position: relative;
     background-color: $color_purple;
-    width: 113.6rem;
+    width: calc(100% + 10rem);
     left: -5rem;
     display: flex;
     padding: 5rem 5rem 3rem;
     justify-content: space-between;
     margin-bottom: 24px;
-
+    @media screen and (max-width: 760px) {
+        flex-direction: column;
+        width: calc(100% + 3.2rem);
+        left: -1.6rem;
+        padding: 4.2rem 1.6rem 2.4rem;
+    }
+    &-col{
+        &:not(:last-child){
+            @media screen and (max-width: 760px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
     &__decor1{
         position: absolute;
         left: 35%;
         top: 32%;
+        @media screen and (max-width: 760px) {
+            left: 78%;
+            top: 26%;
+        }
     }
     &__decor2{
         position: absolute;
         left: 77%;
         bottom: 0;
+        @media screen and (max-width: 760px) {
+            left: 74%;
+        }
+        
     }
 
     &__title{
@@ -28763,6 +28944,9 @@ a.show-more__button:hover {
         color: #9dee23;
         line-height: 1.6;
         margin-bottom: 0;
+        @media screen and (max-width: 760px) {
+            font-size: 14px;
+        }
     }
 
     &__text{
@@ -28770,6 +28954,11 @@ a.show-more__button:hover {
         color: #fd9fd5;
         line-height: 1.6;
         margin-bottom: 0;
+        @media screen and (max-width: 760px) {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+        }
     }
 
     &::after{
@@ -28801,9 +28990,16 @@ a.show-more__button:hover {
         flex-wrap: nowrap;
         justify-content: space-between;
         margin-bottom: 8px;
+        @media screen and (max-width: 760px) {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
         .celebration-ol{
             display: flex;
             flex-wrap: nowrap;
+            @media screen and (max-width: 760px) {
+                flex-direction: column;
+            }
             &__item{
                 
                 margin-right: 24px;
@@ -28829,6 +29025,10 @@ a.show-more__button:hover {
                 line-height: 1;
                 text-align: center;
                 margin: 0;
+                @media screen and (max-width: 760px) {
+                    text-align: left;
+                    margin-left: 16px;
+                }
             }
         }
     }   
@@ -28843,6 +29043,12 @@ a.show-more__button:hover {
             line-height: 2;
             margin-left: 22px;
             font-weight: bold;
+            @media screen and (max-width: 760px) {
+                margin-left: 0;
+                &:not(:first-child){
+                    margin-left: 12px;
+                }
+            }
             &::before{
                 content: '';
                 border: 1px solid $black;
@@ -29058,5 +29264,73 @@ a.show-more__button:hover {
 .new-year-2020-form{
     &::before{
         background: none;
+    }
+}
+
+.new-year-select-mobile{
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+    font-family: "PT Serif Caption";
+    font-size: 14px;
+    display: none;
+    
+    @media screen and (max-width: 760px) {
+        display: block;
+    }
+    select{
+        display: none;
+    }
+    .select-selected{
+        background-color: #c44890;
+        border-radius: .4rem;
+        white-space: nowrap;
+        &:before{
+            content: '';
+            position: absolute;
+            border: 2px dashed #c44890;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+        }
+        
+        &:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            width: 34px;
+            height: 34px;
+            background: #c44890 url(../img/icons/icon-arrow-down.svg) no-repeat 50% 50%;
+            background-size: 8px 8px;
+            border-radius: .4rem;
+        }
+        &.select-arrow-active{
+            border-radius: 0;
+            &:after {
+                transform: rotate(180deg);
+                border-radius: 0;
+            }
+        }
+    }
+    .select-items div,.select-selected{
+        color: #fff;
+        padding: 8px;
+        cursor: pointer;
+    }
+    .select-items {
+        position: absolute;
+        background-color: #c44890;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    .select-hide{
+        display: none;
+    }
+    .select-items div:hover, .same-as-selected{
+        background-color: rgba(0, 0, 0, 0.1);
     }
 }

@@ -5869,7 +5869,7 @@
  -------------------------------------------START popup-->
 
  <!--заказ праздника в календаре праздников-->
-<div class="mfp-wrap popup-new-year is-open" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+<div class="mfp-wrap popup-new-year popup-new-year-2020" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
     <div class="mfp-container mfp-inline-holder">
         <div class="mfp-content">
             <div class="mfp-content-bg"></div>
@@ -5877,9 +5877,10 @@
                 <div class="popup-box">
 
                     <div class="popup-body">
-                        <div class="popup-close">[Х]</div>
+                        
                         <div class="popup-header">
-                            <div class="popup-new-year__title">НОВОГОДНЯЯ НОЧЬ в АндерСон на Гиляровского</div>
+                            <div class="popup-new-year__title"><span class="mod-new-year-title">Новогодняя ночь</span> в АндерСон на Гиляровского</div>
+                            <div class="popup-close">[Х]</div>
                         </div>
                         <div class="new-year-2020-head">
                             <div class="new-year-2020-head__decor1">
@@ -5908,6 +5909,16 @@
                                     </button>
                                 </div>
                             </div>
+
+                            <div class="new-year-select-mobile js-custom-select" style="width:100%;">
+                                <select>
+                                  <option value="0">Место проведения</option>
+                                  <option value="1" selected>АндерСон на Гиляровского</option>
+                                  <option value="2">АндерСон на Большой Семеновской</option>
+                                  <option value="3">АндерСон на Льва Толстого</option>
+                                </select>
+                              </div>
+
                             <div class="new-year-2020-head-more js-new-year-more open">
                                 <div class="new-year-2020-head-more__decor1">
                                     <img src="img/new-year-2020/angel.png" alt="Декорация Ангел АндерСон">
@@ -5940,14 +5951,14 @@
                                 <button class="c-pass-banner__btn new-year-2020-head__button js-new-year-more-button">Свернуть</button>
                                 <div class="new-year-2020-section-col">
                                     <p class="new-year-2020-section__title">Стоимость билетов в основном зале </p>
-                                    <p class="new-year-2020-section__text">Взрослый 15 000 руб., Детский 5000 руб.</p>
+                                    <p class="new-year-2020-section__text"><span>Взрослый 15 000 руб., </span><span>Детский 5000 руб.</span></p>
                                 </div>
                                 <div class="new-year-2020-section__decor1">
                                     <img src="img/new-year-2020/franchise-girl.png" alt="Декорация Девочка АндерСон">
                                 </div>
                                 <div class="new-year-2020-section-col">
                                     <p class="new-year-2020-section__title">Стоимость билетов в каминном зале </p>
-                                    <p class="new-year-2020-section__text">Взрослый 10 000 руб., Детский 5000 руб.</p>
+                                    <p class="new-year-2020-section__text"><span>Взрослый 10 000 руб., </span><span>Детский 5000 руб.</span></p>
                                 </div>
                                 <div class="new-year-2020-section__decor2">
                                         <img src="img/new-year-2020/icon-rabbit-half.png" alt="Декорация Кролик АндерСон">
@@ -6161,12 +6172,10 @@
                                     </div>
                                 </div>
                                 <div class="c-form__item">
-                                    <textarea class="c-input" name="reviews-textarea" id="reviews-textarea" rows="1" placeholder="Комментарий к заказу"></textarea>
+                                    <textarea class="c-input new-year-2020-textarea" name="reviews-textarea" id="reviews-textarea" rows="1" placeholder="Комментарий к заказу"></textarea>
                                 </div>
                                 <div class="c-grid c-grid-between">
                                     <div class="c-col c-col-6">
-                                        <!--<div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля-->
-                                        <!--</div>-->
                                         <div class="c-personal-data">
                                             <div class="c-personal-data__item">
                                                 <input type="checkbox" name="new-year-order__regulations" id="new-year-order__regulations" checked="">
@@ -6179,6 +6188,8 @@
                                                 <label class="c-checkbox" for="new-year-order__dispatch">Я согласен получать рассылку с сайта на
                                                     электронную почту</label>
                                             </div>
+                                        </div>
+                                        <div class="popup-info"><span class="c-obligatory-field">*</span> обязательные поля
                                         </div>
                                     </div>
                                     <div class="c-col c-col-6">

@@ -30191,20 +30191,127 @@ a.show-more__button:hover {
   min-width: 115px !important; }
 
 /*new year 2020*/
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-body {
+    padding-top: 0;
+    overflow: hidden; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-body .popup-close {
+    z-index: 1;
+    width: 32px;
+    height: 100%;
+    top: 50%;
+    background: #fff url(../img/icons/icon-close-new-year.svg) no-repeat 50% 16%;
+    background-size: 10px 11px;
+    color: transparent; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-header {
+    position: relative;
+    background-color: #f3efe4;
+    width: calc(100% + 3.2rem);
+    left: -1.6rem;
+    margin: 0; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-header .popup-new-year__title {
+    padding: 1.8rem 1.6rem 1.3rem;
+    font-size: 23px;
+    font-family: "PT Serif Caption";
+    color: #555451; } }
+
+.popup-new-year-2020 .popup .popup-header .popup-new-year__title .mod-new-year-title {
+  text-transform: uppercase; }
+  @media screen and (max-width: 760px) {
+    .popup-new-year-2020 .popup .popup-header .popup-new-year__title .mod-new-year-title {
+      margin: 0;
+      text-transform: none; } }
+
+.popup-new-year-2020 .popup .popup-footer .new-year-order .c-counter .c-counter__btn {
+  width: 4.0rem;
+  height: 4.0rem;
+  background-size: 25%; }
+  .popup-new-year-2020 .popup .popup-footer .new-year-order .c-counter .c-counter__btn:hover {
+    background-color: #9acc4e;
+    color: #fff; }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-info__title {
+    font-size: 36px; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-order__col {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.popup-new-year-2020 .popup .popup-footer .new-year-order__col + .new-year-order__col {
+  margin-top: 16px; }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-order__col .new-year-order__item:first-child {
+    width: 100%; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-order__grid > .new-year-order__col {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 16px; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-order__grid > .new-year-order__col .new-year-order__item:first-child {
+    width: auto; } }
+
+.popup-new-year-2020 .popup .popup-footer .banner-new-order .new-year-order__price {
+  color: #9acc4e; }
+
+.popup-new-year-2020 .popup .popup-footer .new-year-order__total {
+  color: #9acc4e; }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .c-grid {
+    margin: 0 0 24px; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .c-grid .c-col + .c-col {
+    margin-top: 12px; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .c-form__item {
+    margin-bottom: 2.6rem; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-2020-textarea {
+    height: 120px; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-order .c-personal-data {
+    margin-bottom: 12px; } }
+
 .new-year-2020-head {
-  position: relative; }
+  position: relative;
+  z-index: 2; }
   .new-year-2020-head__decor1 {
     position: absolute;
     left: 65rem;
     top: -11.5rem; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head__decor1 {
+        display: none; } }
   .new-year-2020-head__decor2 {
     position: absolute;
     left: -3rem;
     top: -6rem; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head__decor2 {
+        display: none; } }
   .new-year-2020-head__decor3 {
     position: absolute;
     left: 75rem;
     top: -1.2rem; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head__decor3 {
+        display: none; } }
   .new-year-2020-head-more {
     position: relative;
     max-height: 0;
@@ -30214,10 +30321,14 @@ a.show-more__button:hover {
       overflow: initial; }
   .new-year-2020-head__img {
     position: relative;
-    width: 113.6rem;
+    width: calc(100% + 10rem);
     padding-top: 50%;
     left: -5rem;
     overflow: hidden; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head__img {
+        width: calc(100% + 3.2rem);
+        left: -1.6rem; } }
     .new-year-2020-head__img img {
       position: absolute;
       top: 0;
@@ -30246,6 +30357,9 @@ a.show-more__button:hover {
     text-transform: uppercase;
     color: #c44890;
     margin-bottom: 20px; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head-more__title {
+        font-size: 16px; } }
   .new-year-2020-head-more__text {
     font-size: 16px;
     margin-bottom: 30px; }
@@ -30255,22 +30369,37 @@ a.show-more__button:hover {
     position: absolute;
     right: -3%;
     bottom: 0; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head-more__decor1 {
+        display: none; } }
   .new-year-2020-head-more__decor2 {
     position: absolute;
     right: -2%;
     top: 48%; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head-more__decor2 {
+        display: none; } }
   .new-year-2020-head-more__decor3 {
     position: absolute;
     right: -6%;
     top: 3%; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head-more__decor3 {
+        display: none; } }
   .new-year-2020-head-more__decor4 {
     position: absolute;
     left: -4%;
     top: 5%; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head-more__decor4 {
+        display: none; } }
   .new-year-2020-head-more__decor5 {
     position: absolute;
     left: -6%;
     bottom: 12%; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head-more__decor5 {
+        display: none; } }
   .new-year-2020-head__button {
     position: absolute;
     left: 42%;
@@ -30282,11 +30411,19 @@ a.show-more__button:hover {
     letter-spacing: 0.2rem;
     top: -30px;
     cursor: pointer; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head__button {
+        line-height: 1.1;
+        top: -22px;
+        left: calc(50% - 60px);
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+        padding: .6rem 3rem; } }
 
 .new-year-2020-section {
   position: relative;
   background-color: #c44890;
-  width: 113.6rem;
+  width: calc(100% + 10rem);
   left: -5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30296,24 +30433,56 @@ a.show-more__button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 24px; }
+  @media screen and (max-width: 760px) {
+    .new-year-2020-section {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: calc(100% + 3.2rem);
+      left: -1.6rem;
+      padding: 4.2rem 1.6rem 2.4rem; } }
+  @media screen and (max-width: 760px) {
+    .new-year-2020-section-col:not(:last-child) {
+      margin-bottom: 30px; } }
   .new-year-2020-section__decor1 {
     position: absolute;
     left: 35%;
     top: 32%; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-section__decor1 {
+        left: 78%;
+        top: 26%; } }
   .new-year-2020-section__decor2 {
     position: absolute;
     left: 77%;
     bottom: 0; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-section__decor2 {
+        left: 74%; } }
   .new-year-2020-section__title {
     font-size: 15px;
     color: #9dee23;
     line-height: 1.6;
     margin-bottom: 0; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-section__title {
+        font-size: 14px; } }
   .new-year-2020-section__text {
     font-size: 15px;
     color: #fd9fd5;
     line-height: 1.6;
     margin-bottom: 0; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-section__text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        font-size: 14px; } }
   .new-year-2020-section::after {
     content: '';
     position: absolute;
@@ -30343,12 +30512,25 @@ a.show-more__button:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 8px; }
+  @media screen and (max-width: 760px) {
+    .new-year-2020-tables .new-year-2020-raw {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 20px; } }
   .new-year-2020-tables .new-year-2020-raw .celebration-ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables .new-year-2020-raw .celebration-ol {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .new-year-2020-tables .new-year-2020-raw .celebration-ol__item {
       margin-right: 24px;
       padding-left: 48px; }
@@ -30369,6 +30551,10 @@ a.show-more__button:hover {
       line-height: 1;
       text-align: center;
       margin: 0; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables .new-year-2020-raw .celebration-ol__subtext {
+          text-align: left;
+          margin-left: 16px; } }
 
 .new-year-2020-tables-available {
   display: -webkit-box;
@@ -30383,6 +30569,11 @@ a.show-more__button:hover {
     line-height: 2;
     margin-left: 22px;
     font-weight: bold; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables-available__item {
+        margin-left: 0; }
+        .new-year-2020-tables-available__item:not(:first-child) {
+          margin-left: 12px; } }
     .new-year-2020-tables-available__item::before {
       content: '';
       border: 1px solid #555451;
@@ -30609,6 +30800,63 @@ a.show-more__button:hover {
 
 .new-year-2020-form::before {
   background: none; }
+
+.new-year-select-mobile {
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+  font-family: "PT Serif Caption";
+  font-size: 14px;
+  display: none; }
+  @media screen and (max-width: 760px) {
+    .new-year-select-mobile {
+      display: block; } }
+  .new-year-select-mobile select {
+    display: none; }
+  .new-year-select-mobile .select-selected {
+    background-color: #c44890;
+    border-radius: .4rem;
+    white-space: nowrap; }
+    .new-year-select-mobile .select-selected:before {
+      content: '';
+      position: absolute;
+      border: 2px dashed #c44890;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px; }
+    .new-year-select-mobile .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 34px;
+      height: 34px;
+      background: #c44890 url(../img/icons/icon-arrow-down.svg) no-repeat 50% 50%;
+      background-size: 8px 8px;
+      border-radius: .4rem; }
+    .new-year-select-mobile .select-selected.select-arrow-active {
+      border-radius: 0; }
+      .new-year-select-mobile .select-selected.select-arrow-active:after {
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+        border-radius: 0; }
+  .new-year-select-mobile .select-items div, .new-year-select-mobile .select-selected {
+    color: #fff;
+    padding: 8px;
+    cursor: pointer; }
+  .new-year-select-mobile .select-items {
+    position: absolute;
+    background-color: #c44890;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99; }
+  .new-year-select-mobile .select-hide {
+    display: none; }
+  .new-year-select-mobile .select-items div:hover, .new-year-select-mobile .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .popup-pie {
   /* Ручной readmore */
