@@ -13768,6 +13768,9 @@ function newYearSelectTable(){
                 $('.js-new-year-table').removeClass('active');
                 $(this).addClass('active')
             } else {
+                $('.js-new-year-plan-table__number').text($(this).data('number'));
+                $('.js-new-year-plan-table__seats').text($(this).data('seats'));
+                $('.js-new-year-plan-table__reserved').text($(this).data('reserved'));
                 $('.js-table-popup').addClass('active');
                 if ($(this).hasClass('available')){
                     $('.js-table-popup').addClass('green');
@@ -13777,6 +13780,7 @@ function newYearSelectTable(){
                 }
                 $(this).addClass('in-process');
             }
+            
             
         }
     });
