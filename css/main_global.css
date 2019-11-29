@@ -30595,208 +30595,360 @@ a.show-more__button:hover {
       border-color: #aeaeae; }
 
 /* планы столов для нового года */
-.new-year-2020-tables-plan span {
-  font-family: "PTSerif";
-  font-size: 14px;
-  color: #29292d; }
-
-.new-year-2020-tables-plan .new-year-plan__back {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: #eeeeee;
-  border-radius: 4px;
-  font-family: "PTSerif";
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: black; }
-  .new-year-2020-tables-plan .new-year-plan__back.vertical {
+.new-year-2020-tables-plan {
+  position: relative; }
+  .new-year-2020-tables-plan span {
+    font-family: "PTSerif";
+    font-size: 14px;
+    color: #29292d; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables-plan span {
+        display: none; } }
+  .new-year-2020-tables-plan .new-year-plan__back {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    font-family: "PTSerif";
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black; }
+    .new-year-2020-tables-plan .new-year-plan__back.vertical {
+      font-size: 17px;
+      text-transform: none;
+      font-weight: normal;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+    .new-year-2020-tables-plan .new-year-plan__back::before {
+      content: attr(data-name);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #eeeeee;
+      border-radius: 4px;
+      font-family: "PTSerif";
+      font-size: 6px;
+      display: none;
+      color: black; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__back::before {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables-plan .new-year-plan__back {
+        color: transparent;
+        overflow: hidden; } }
+  .new-year-2020-tables-plan .new-year-plan__table-square {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+    font-family: "PTSerif";
+    font-size: 14px;
+    line-height: 1;
+    color: #29292d;
+    border: 1px solid #aeaeae;
+    cursor: pointer; }
+    .new-year-2020-tables-plan .new-year-plan__table-square.available {
+      background-color: #a9cb58;
+      border: 1px solid #708e4d; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-square.available::before {
+          background-color: #a9cb58; } }
+    .new-year-2020-tables-plan .new-year-plan__table-square.partial {
+      background-color: #ffe699;
+      border: 1px solid #cbb77b; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-square.partial::before {
+          background-color: #ffe699; } }
+    .new-year-2020-tables-plan .new-year-plan__table-square.active {
+      background-color: #c44890;
+      border: 1px solid #a72e74;
+      text-transform: uppercase;
+      color: transparent;
+      font-size: 10px; }
+      .new-year-2020-tables-plan .new-year-plan__table-square.active::after {
+        content: 'СТОЛИК\0aВЫБРАН';
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color: #fff;
+        white-space: pre; }
+        @media screen and (max-width: 760px) {
+          .new-year-2020-tables-plan .new-year-plan__table-square.active::after {
+            display: none; } }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-square.active::before {
+          background-color: #c44890;
+          color: #fff; } }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables-plan .new-year-plan__table-square {
+        color: transparent;
+        overflow: hidden; } }
+    .new-year-2020-tables-plan .new-year-plan__table-square::before {
+      content: attr(data-number);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #eeeeee;
+      border-radius: 4px;
+      font-family: "PTSerif";
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: none;
+      color: black; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-square::before {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables-plan .new-year-plan__table-square {
+        color: transparent;
+        overflow: hidden; } }
+  .new-year-2020-tables-plan .new-year-plan__table-round {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    font-family: "PTSerif";
+    font-size: 14px;
+    color: #29292d;
+    line-height: 1;
+    border: 1px solid #aeaeae;
+    cursor: pointer; }
+    .new-year-2020-tables-plan .new-year-plan__table-round.available {
+      background-color: #a9cb58;
+      border: 1px solid #708e4d; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-round.available::before {
+          background-color: #a9cb58; } }
+    .new-year-2020-tables-plan .new-year-plan__table-round.partial {
+      background-color: #ffe699;
+      border: 1px solid #cbb77b; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-round.partial::before {
+          background-color: #ffe699; } }
+    .new-year-2020-tables-plan .new-year-plan__table-round.active {
+      background-color: #c44890;
+      border: 1px solid #a72e74;
+      color: transparent;
+      text-transform: uppercase;
+      font-size: 10px; }
+      .new-year-2020-tables-plan .new-year-plan__table-round.active::after {
+        content: 'СТОЛИК\0aВЫБРАН';
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        color: #fff;
+        white-space: pre; }
+        @media screen and (max-width: 760px) {
+          .new-year-2020-tables-plan .new-year-plan__table-round.active::after {
+            display: none; } }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-round.active::before {
+          background-color: #c44890;
+          color: #fff; } }
+    .new-year-2020-tables-plan .new-year-plan__table-round::before {
+      content: attr(data-number);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #eeeeee;
+      border-radius: 50%;
+      font-family: "PTSerif";
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: none;
+      color: black; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__table-round::before {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables-plan .new-year-plan__table-round {
+        color: transparent;
+        overflow: hidden; } }
+  .new-year-2020-tables-plan .new-year-plan__el {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-color: #a9cb58;
+    border-radius: 4px;
+    border: 1px solid #708e4d;
     font-size: 17px;
-    text-transform: none;
-    font-weight: normal;
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-
-.new-year-2020-tables-plan .new-year-plan__table-square {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: #dcdcdc;
-  border-radius: 4px;
-  font-family: "PTSerif";
-  font-size: 14px;
-  line-height: 1;
-  color: #29292d;
-  border: 1px solid #aeaeae;
-  cursor: pointer; }
-  .new-year-2020-tables-plan .new-year-plan__table-square.available {
-    background-color: #a9cb58;
-    border: 1px solid #708e4d; }
-  .new-year-2020-tables-plan .new-year-plan__table-square.partial {
-    background-color: #ffe699;
-    border: 1px solid #cbb77b; }
-  .new-year-2020-tables-plan .new-year-plan__table-square.active {
-    background-color: #c44890;
-    border: 1px solid #a72e74;
-    text-transform: uppercase;
-    color: transparent;
-    font-size: 10px; }
-    .new-year-2020-tables-plan .new-year-plan__table-square.active::after {
-      content: 'СТОЛИК\0aВЫБРАН';
+    line-height: 1;
+    color: black; }
+    .new-year-2020-tables-plan .new-year-plan__el::before {
+      content: attr(data-name);
       position: absolute;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       width: 100%;
       height: 100%;
-      top: 0;
-      left: 0;
-      color: #fff;
-      white-space: pre; }
-
-.new-year-2020-tables-plan .new-year-plan__table-round {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: #dcdcdc;
-  border-radius: 50%;
-  font-family: "PTSerif";
-  font-size: 14px;
-  color: #29292d;
-  line-height: 1;
-  border: 1px solid #aeaeae;
-  cursor: pointer; }
-  .new-year-2020-tables-plan .new-year-plan__table-round.available {
+      background-color: #a9cb58;
+      border-radius: 4px;
+      font-family: "PTSerif";
+      font-size: 8px;
+      display: none;
+      color: black; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-tables-plan .new-year-plan__el::before {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; } }
+    .new-year-2020-tables-plan .new-year-plan__el.vertical {
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+      .new-year-2020-tables-plan .new-year-plan__el.vertical::before {
+        font-size: 5px; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-tables-plan .new-year-plan__el {
+        color: transparent;
+        overflow: hidden; } }
+    .new-year-2020-tables-plan .new-year-plan__el.exit::before {
+      font-size: 5px; }
+  .new-year-2020-tables-plan .new-year-plan__el-round {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
     background-color: #a9cb58;
-    border: 1px solid #708e4d; }
-  .new-year-2020-tables-plan .new-year-plan__table-round.partial {
-    background-color: #ffe699;
-    border: 1px solid #cbb77b; }
-  .new-year-2020-tables-plan .new-year-plan__table-round.active {
-    background-color: #c44890;
-    border: 1px solid #a72e74;
-    color: transparent;
-    text-transform: uppercase;
-    font-size: 10px; }
-    .new-year-2020-tables-plan .new-year-plan__table-round.active::after {
-      content: 'СТОЛИК\0aВЫБРАН';
-      position: absolute;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      color: #fff;
-      white-space: pre; }
-
-.new-year-2020-tables-plan .new-year-plan__el {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: #a9cb58;
-  border-radius: 4px;
-  border: 1px solid #708e4d;
-  font-size: 17px;
-  line-height: 1;
-  color: black; }
-  .new-year-2020-tables-plan .new-year-plan__el.vertical {
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-
-.new-year-2020-tables-plan .new-year-plan__el-round {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background-color: #a9cb58;
-  border-radius: 50%;
-  border: 1px solid #708e4d;
-  font-size: 14px;
-  font-weight: bold;
-  color: black; }
-
-.new-year-2020-tables-plan-map-gil {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 44%;
-  display: none; }
-  .new-year-2020-tables-plan-map-gil.active {
-    display: block; }
-
-.new-year-2020-tables-plan-map-sem {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 70%;
-  display: none; }
-  .new-year-2020-tables-plan-map-sem.active {
-    display: block; }
-
-.new-year-2020-tables-plan-map-tol {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-top: 36%;
-  display: none; }
-  .new-year-2020-tables-plan-map-tol.active {
-    display: block; }
+    border-radius: 50%;
+    border: 1px solid #708e4d;
+    font-size: 14px;
+    font-weight: bold;
+    color: black; }
+  .new-year-2020-tables-plan-map-gil {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 44%;
+    display: none; }
+    .new-year-2020-tables-plan-map-gil.active {
+      display: block; }
+    .new-year-2020-tables-plan-map-gil .new-year-plan__table-round::before {
+      font-size: 10px; }
+    .new-year-2020-tables-plan-map-gil .new-year-plan__table-square::before {
+      font-size: 10px; }
+  .new-year-2020-tables-plan-map-sem {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 70%;
+    display: none; }
+    .new-year-2020-tables-plan-map-sem.active {
+      display: block; }
+    .new-year-2020-tables-plan-map-sem .new-year-plan__table-round::before {
+      font-size: 16px; }
+    .new-year-2020-tables-plan-map-sem .new-year-plan__table-square::before {
+      font-size: 16px; }
+  .new-year-2020-tables-plan-map-tol {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 36%;
+    display: none;
+    margin-bottom: 30px; }
+    .new-year-2020-tables-plan-map-tol.active {
+      display: block; }
+    .new-year-2020-tables-plan-map-tol .new-year-plan__table-round::before {
+      font-size: 7px; }
+    .new-year-2020-tables-plan-map-tol .new-year-plan__table-square::before {
+      font-size: 7px; }
 
 .new-year-2020-form::before {
   background: none; }
@@ -30857,6 +31009,78 @@ a.show-more__button:hover {
     display: none; }
   .new-year-select-mobile .select-items div:hover, .new-year-select-mobile .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1); }
+
+.new-year-plan-popup {
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  padding: 0.8rem 1.6rem;
+  background-color: #a9cb58;
+  width: 100%;
+  min-height: 100%; }
+  .new-year-plan-popup span {
+    display: inline;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit; }
+  .new-year-plan-popup__number {
+    font-family: "SummerFont";
+    line-height: 1;
+    margin: 0 0 12px;
+    padding: 0;
+    color: black;
+    font-size: 34px;
+    text-transform: uppercase; }
+  .new-year-plan-popup__seats {
+    margin: 0;
+    padding: 0;
+    color: black; }
+  .new-year-plan-popup__reserved {
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin: 0 0 12px; }
+  .new-year-plan-popup-raw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .new-year-plan-popup__button {
+    z-index: 12;
+    color: #fff;
+    width: 48%;
+    height: 36px;
+    font-size: 17px;
+    background-color: #c44890;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    padding: .4rem 1rem;
+    cursor: pointer; }
+  .new-year-plan-popup.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (min-width: 761px) {
+      .new-year-plan-popup.active {
+        display: none; } }
+  .new-year-plan-popup.yellow {
+    background-color: #eccf74; }
+  .new-year-plan-popup.green {
+    background-color: #a9cb58; }
+  @media screen and (min-width: 761px) {
+    .new-year-plan-popup {
+      display: none; } }
 
 .popup-pie {
   /* Ручной readmore */

@@ -29084,10 +29084,15 @@ a.show-more__button:hover {
 
 /* планы столов для нового года */
 .new-year-2020-tables-plan{
+    position: relative;
     span{
         font-family: "PTSerif";
         font-size: 14px;
         color: #29292d;
+        @media screen and (max-width: 760px) {
+            display: none;
+
+        }
     }
     .new-year-plan__back{
         position: absolute;
@@ -29107,6 +29112,29 @@ a.show-more__button:hover {
             text-transform: none;
             font-weight: normal;
             transform: rotate(-90deg);
+            
+        }
+        &::before{
+            content: attr(data-name);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+            border-radius: 4px;
+            font-family: "PTSerif";
+            font-size: 6px;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
         }
     }
 
@@ -29127,10 +29155,20 @@ a.show-more__button:hover {
         &.available{
             background-color: #a9cb58;
             border: 1px solid #708e4d;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #a9cb58;
+                }
+            }
         }
         &.partial{
             background-color: #ffe699;
             border: 1px solid #cbb77b;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #ffe699;
+                }
+            }
         }
         &.active{
             background-color: $color_purple;
@@ -29150,7 +29188,43 @@ a.show-more__button:hover {
                 left: 0;
                 color: $white;
                 white-space: pre;
+                @media screen and (max-width: 760px) {
+                    display: none;
+                }
             }
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: $color_purple;
+                    color: $white;
+                }
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
+        }
+        &::before{
+            content: attr(data-number);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+            border-radius: 4px;
+            font-family: "PTSerif";
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
         }
     }
 
@@ -29171,10 +29245,20 @@ a.show-more__button:hover {
         &.available{
             background-color: #a9cb58;
             border: 1px solid #708e4d;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #a9cb58;
+                }
+            }
         }
         &.partial{
             background-color: #ffe699;
             border: 1px solid #cbb77b;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #ffe699;
+                }
+            }
         }
         &.active{
             background-color: $color_purple;
@@ -29194,7 +29278,39 @@ a.show-more__button:hover {
                 left: 0;
                 color: $white;
                 white-space: pre;
+                @media screen and (max-width: 760px) {
+                    display: none;
+                }
             }
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: $color_purple;
+                    color: $white;
+                }
+            }
+        }
+        &::before{
+            content: attr(data-number);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+            border-radius: 50%;
+            font-family: "PTSerif";
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
         }
     }
 
@@ -29210,8 +29326,39 @@ a.show-more__button:hover {
         font-size: 17px;
         line-height: 1;
         color: black;
+        &::before{
+            content: attr(data-name);
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #a9cb58;
+            border-radius: 4px;
+            font-family: "PTSerif";
+            font-size: 8px;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
         &.vertical{
             transform: rotate(-90deg);
+            &::before{
+                font-size: 5px;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
+        }
+        &.exit{
+            &::before{
+                font-size: 5px;
+            }
         }
     }
 
@@ -29238,6 +29385,16 @@ a.show-more__button:hover {
         &.active{
             display: block;
         }
+        .new-year-plan__table-round{
+            &::before{
+                font-size: 10px;
+            }
+        }
+        .new-year-plan__table-square{
+            &::before{
+                font-size: 10px;
+            }
+        }
     }
     &-map-sem{
         position: relative;
@@ -29248,6 +29405,16 @@ a.show-more__button:hover {
         &.active{
             display: block;
         }
+        .new-year-plan__table-round{
+            &::before{
+                font-size: 16px;
+            }
+        }
+        .new-year-plan__table-square{
+            &::before{
+                font-size: 16px;
+            }
+        }
     }
     &-map-tol{
         position: relative;
@@ -29255,8 +29422,19 @@ a.show-more__button:hover {
         height: 0;
         padding-top: 36%;
         display: none;
+        margin-bottom: 30px;
         &.active{
             display: block;
+        }
+        .new-year-plan__table-round{
+            &::before{
+                font-size: 7px;
+            }
+        }
+        .new-year-plan__table-square{
+            &::before{
+                font-size: 7px;
+            }
         }
     }
 }
@@ -29332,5 +29510,77 @@ a.show-more__button:hover {
     }
     .select-items div:hover, .same-as-selected{
         background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.new-year-plan-popup{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 1.6rem;
+    background-color: #a9cb58;
+    width: 100%;
+    min-height: 100%;
+
+    span{
+        display: inline;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+    }
+    &__number{
+        font-family: "SummerFont";
+        line-height: 1;
+        margin: 0 0 12px;
+        padding: 0;
+        color: black;
+        font-size: 34px;
+        text-transform: uppercase;
+    }
+    &__seats{
+        margin: 0;
+        padding: 0;
+        color: black;
+    }
+    &__reserved{
+        margin: 0;
+        padding: 0;
+        color: black;
+        margin: 0 0 12px;
+    }
+    &-raw{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button{
+        z-index: 12;
+        color: $white;
+        width: 48%;
+        height: 36px;
+        font-size: 17px;
+        background-color: #c44890;
+        line-height: 1;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        padding: .4rem 1rem;
+        cursor: pointer;
+    }
+    &.active{
+        display: flex;
+        @media screen and (min-width: 761px) {
+            display: none;
+        }
+    }
+    &.yellow{
+        background-color: #eccf74;
+    }
+    &.green{
+        background-color: #a9cb58;
+    }
+    @media screen and (min-width: 761px) {
+        display: none;
     }
 }

@@ -4531,10 +4531,33 @@ function newYearShowPlan(){
 function newYearSelectTable(){
     $('.js-new-year-table').on('click', function(event) {
         if ($(this).hasClass('available')||$(this).hasClass('partial')){
-            $('.js-new-year-table').removeClass('active');
-            $(this).addClass('active')
+            if (window.screen.width > 760){
+                $('.js-new-year-table').removeClass('active');
+                $(this).addClass('active')
+            } else {
+                $('.js-table-popup').addClass('active');
+                if ($(this).hasClass('available')){
+                    $('.js-table-popup').addClass('green');
+                }
+                if ($(this).hasClass('partial')){
+                    $('.js-table-popup').addClass('yellow');
+                }
+                $(this).addClass('in-process');
+            }
+            
         }
     });
+    $('.js-new-year-tables-add').on('click', function(event) {
+        $('.js-new-year-table').removeClass('active');
+        $('.js-new-year-table.in-process').addClass('active');
+        $('.js-table-popup').removeClass('active yellow green');
+        $('.js-new-year-table').removeClass('in-process');
+    });
+    $('.js-new-year-tables-different').on('click', function(event) {
+        $('.js-table-popup').removeClass('active yellow green');
+        $('.js-new-year-table').removeClass('in-process');
+    });
+    
 }
 
 function initNewYearSelect(){
@@ -4552,7 +4575,7 @@ function initNewYearSelect(){
 			c = document.createElement("DIV");
 			c.innerHTML = selElmnt.options[j].innerHTML;
 			c.addEventListener("click", function(e) {
-				var y, i, k, s, h;
+				let y, i, k, s, h;
 				s = this.parentNode.parentNode.getElementsByTagName("select")[0];
 				h = this.parentNode.previousSibling;
 				for (i = 0; i < s.length; i++) {
