@@ -28609,3 +28609,978 @@ a.show-more__button:hover {
 .new-year-order .c-counter {
     min-width: 115px !important;
 }
+
+/*new year 2020*/
+
+.popup-new-year-2020{
+    .popup{
+        .popup-body{
+            @media screen and (max-width: 760px) {
+                padding-top: 0;
+                overflow: hidden;
+            }
+            .popup-close{
+                @media screen and (max-width: 760px) {
+                    z-index: 1;
+                    width: 32px;
+                    height: 100%;
+                    top: 50%;
+                    background: #fff url(../img/icons/icon-close-new-year.svg) no-repeat 50% 16%;
+                    background-size: 10px 11px;
+                    color: transparent;
+                }
+            }
+        }
+        .popup-header{
+            @media screen and (max-width: 760px) {
+                position: relative;
+                background-color: #f3efe4;
+                width: calc(100% + 3.2rem);
+                left: -1.6rem;
+                margin: 0;
+            }
+            .popup-new-year__title{
+                @media screen and (max-width: 760px) {
+                    padding: 1.8rem 1.6rem 1.3rem;
+                    font-size: 23px;
+                    font-family: "PT Serif Caption";
+                    color: #555451;
+                }
+                .mod-new-year-title{
+                    text-transform: uppercase;
+                    @media screen and (max-width: 760px) {
+                        margin: 0;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+        .popup-footer{
+            .new-year-order .c-counter .c-counter__btn {
+                width: 4.0rem;
+                height: 4.0rem;
+                background-size: 25%;
+                &:hover{
+                    background-color: #9acc4e;
+                    color: #fff;
+                }
+            }
+
+            .new-year-info__title {
+                @media screen and (max-width: 760px) {
+                    font-size: 36px;
+                }
+            }
+
+            .new-year-order__col{
+                @media screen and (max-width: 760px) {
+                    flex-wrap: wrap;
+                }
+                & + .new-year-order__col{
+                    margin-top: 16px;
+                }
+                
+                .new-year-order__item:first-child{
+                    @media screen and (max-width: 760px) {
+                        width:100%;
+                    }
+                }
+            }
+            .new-year-order__grid > .new-year-order__col{
+                @media screen and (max-width: 760px) {
+                    flex-wrap: nowrap;
+                    margin-bottom: 16px;
+                }
+                .new-year-order__item:first-child{
+                    @media screen and (max-width: 760px) {
+                        width: auto;
+                    }
+                }
+            }
+            .banner-new-order .new-year-order__price {
+                color: #9acc4e;
+            }
+            .new-year-order__total {
+                color: #9acc4e;
+            }
+            .c-grid {
+                @media screen and (max-width: 760px) {
+                    margin: 0 0 24px;
+                }
+                .c-col + .c-col{
+                    @media screen and (max-width: 760px) {
+                        margin-top:12px;
+                    }
+                }
+            }
+            .c-form__item {
+                @media screen and (max-width: 760px) {
+                    margin-bottom: 2.6rem;
+                }
+            }
+            .new-year-2020-textarea{
+                @media screen and (max-width: 760px) {
+                    height: 120px;
+                }
+            }
+            .new-year-order .c-personal-data {
+                @media screen and (max-width: 760px) {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+
+.new-year-2020-head{
+    position: relative;
+    z-index: 2;
+    &__decor1{
+        position: absolute;
+        left: 65rem;
+        top: -11.5rem;
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
+    }
+    &__decor2{
+        position: absolute;
+        left: -3rem;
+        top: -6rem;
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
+    }
+    &__decor3{
+        position: absolute;
+        left: 75rem;
+        top: -1.2rem;
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
+    }
+    &-more{
+        position: relative;
+        max-height: 0;
+        overflow: hidden;
+        &.open{
+            max-height: 100%;
+            overflow: initial;
+        }
+    }
+    &__img{
+        position: relative;
+        width: calc(100% + 10rem);
+        padding-top: 50%;
+        left: -5rem;
+        overflow: hidden;
+        @media screen and (max-width: 760px) {
+            width: calc(100% + 3.2rem);
+            left: -1.6rem;
+        }
+        
+        img{
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            bottom: 0; 
+            right: 0; 
+            text-align: center;
+            width: 100%;
+
+        }
+    }
+
+    .holiday-nav{
+        position: absolute;
+        top: 2.3rem;
+        .filter-mix{
+            &--child{
+                background-color: $color_green;
+
+                &.active{
+                    background-color: $color_purple;
+                    &::before{
+                        border: 2px dashed $color_purple;
+                    }
+                }
+
+                &::before{
+                    border: 2px dashed $color_green;
+                }
+                &:not(:last-child){
+                    margin-right: 28px;
+                }
+            }
+        }
+    }
+
+    &-more{
+        &-textbox{
+            margin-top: 22px;
+        }
+        &__title{
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $color_purple;
+            margin-bottom: 20px;
+            @media screen and (max-width: 760px) {
+                font-size: 16px;
+            }
+        }
+        &__text{
+            font-size: 16px;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 46px;
+            }
+        }
+        &__decor1{
+            position: absolute;
+            right: -3%;
+            bottom: 0;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
+        }
+        &__decor2{
+            position: absolute;
+            right: -2%;
+            top: 48%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
+        }
+        &__decor3{
+            position: absolute;
+            right: -6%;
+            top: 3%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
+        }
+        &__decor4{
+            position: absolute;
+            left: -4%;
+            top: 5%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
+        }
+        &__decor5{
+            position: absolute;
+            left: -6%;
+            bottom: 12%;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
+        }
+    }
+    &__button{
+        position: absolute;
+        left: 42%;
+        z-index: 12;
+        border: 2px solid $color_purple;
+        color: $color_purple;
+        line-height: 1.4;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        top: -30px;
+        cursor: pointer;
+        @media screen and (max-width: 760px) {
+            line-height: 1.1;
+            top: -22px;
+            left: calc(50% - 60px);
+            font-size: 2.4rem;
+            letter-spacing: 0.1rem;
+            padding: .6rem 3rem;
+        }
+    }
+}
+
+.new-year-2020-section{
+    position: relative;
+    background-color: $color_purple;
+    width: calc(100% + 10rem);
+    left: -5rem;
+    display: flex;
+    padding: 5rem 5rem 3rem;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @media screen and (max-width: 760px) {
+        flex-direction: column;
+        width: calc(100% + 3.2rem);
+        left: -1.6rem;
+        padding: 4.2rem 1.6rem 2.4rem;
+    }
+    &-col{
+        &:not(:last-child){
+            @media screen and (max-width: 760px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &__decor1{
+        position: absolute;
+        left: 35%;
+        top: 32%;
+        @media screen and (max-width: 760px) {
+            left: 78%;
+            top: 26%;
+        }
+    }
+    &__decor2{
+        position: absolute;
+        left: 77%;
+        bottom: 0;
+        @media screen and (max-width: 760px) {
+            left: 74%;
+        }
+        
+    }
+
+    &__title{
+        font-size: 15px;
+        color: #9dee23;
+        line-height: 1.6;
+        margin-bottom: 0;
+        @media screen and (max-width: 760px) {
+            font-size: 14px;
+        }
+    }
+
+    &__text{
+        font-size: 15px;
+        color: #fd9fd5;
+        line-height: 1.6;
+        margin-bottom: 0;
+        @media screen and (max-width: 760px) {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+        }
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        height: 16px;
+        background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        height: 16px;
+        background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+    }
+}
+
+.new-year-2020-tables{
+    .new-year-2020-raw{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        @media screen and (max-width: 760px) {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .celebration-ol{
+            display: flex;
+            flex-wrap: nowrap;
+            @media screen and (max-width: 760px) {
+                flex-direction: column;
+            }
+            &__item{
+                
+                margin-right: 24px;
+                padding-left: 48px;
+                
+                &::before{
+                    border: 2px dotted $black;
+                    color: $black;
+                    line-height: 26px;
+                    width: 30px;
+                    height: 30px;
+                    top: -2px;
+                }
+            }
+            &__text{
+                font-size: 16px;
+                line-height: 1.5;
+                margin:0;
+            }
+            &__subtext{
+                font-size: 12px;
+                color: #29292d;
+                line-height: 1;
+                text-align: center;
+                margin: 0;
+                @media screen and (max-width: 760px) {
+                    text-align: left;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }   
+
+    &-available{
+        display: flex;
+        flex-wrap: nowrap;
+        &__item{
+            position: relative;
+            padding-left: 24px;
+            font-size: 12px;
+            line-height: 2;
+            margin-left: 22px;
+            font-weight: bold;
+            @media screen and (max-width: 760px) {
+                margin-left: 0;
+                &:not(:first-child){
+                    margin-left: 12px;
+                }
+            }
+            &::before{
+                content: '';
+                border: 1px solid $black;
+                background-color: $white;
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+            }
+            &:first-child{
+                &::before{
+                    background-color: #a9cb58;
+                    border-color: #708e4d;
+                }
+            }
+            &:nth-child(2){
+                &::before{
+                    background-color: #ffe699;
+                    border-color: #cbb77b;
+                }
+            }
+            &:nth-child(3){
+                &::before{
+                    background-color: #dcdcdc;
+                    border-color: #aeaeae;
+                }
+            }
+        }
+    }
+}
+
+/* планы столов для нового года */
+.new-year-2020-tables-plan{
+    position: relative;
+    span{
+        font-family: "PTSerif";
+        font-size: 14px;
+        color: #29292d;
+        @media screen and (max-width: 760px) {
+            display: none;
+
+        }
+    }
+    .new-year-plan__back{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #eeeeee;
+        border-radius: 4px;
+        font-family: "PTSerif";
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+        &.vertical{
+            font-size: 17px;
+            text-transform: none;
+            font-weight: normal;
+            transform: rotate(-90deg);
+            
+        }
+        &::before{
+            content: attr(data-name);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+            border-radius: 4px;
+            font-family: "PTSerif";
+            font-size: 6px;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
+        }
+    }
+
+    .new-year-plan__table-square{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #dcdcdc;
+        border-radius: 4px;
+        font-family: "PTSerif";
+        font-size: 14px;
+        line-height: 1;
+        color: #29292d;
+        border: 1px solid #aeaeae;
+        cursor: pointer;
+        &.available{
+            background-color: #a9cb58;
+            border: 1px solid #708e4d;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #a9cb58;
+                }
+            }
+        }
+        &.partial{
+            background-color: #ffe699;
+            border: 1px solid #cbb77b;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #ffe699;
+                }
+            }
+        }
+        &.active{
+            background-color: $color_purple;
+            border: 1px solid #a72e74;
+            text-transform: uppercase;
+            color: transparent;
+            font-size: 10px;
+            &::after{
+                content: 'СТОЛИК\0aВЫБРАН';
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                color: $white;
+                white-space: pre;
+                @media screen and (max-width: 760px) {
+                    display: none;
+                }
+            }
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: $color_purple;
+                    color: $white;
+                }
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
+        }
+        &::before{
+            content: attr(data-number);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+            border-radius: 4px;
+            font-family: "PTSerif";
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
+        }
+    }
+
+    .new-year-plan__table-round{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #dcdcdc;
+        border-radius: 50%;
+        font-family: "PTSerif";
+        font-size: 14px;
+        color: #29292d;
+        line-height: 1;
+        border: 1px solid #aeaeae;
+        cursor: pointer;
+        &.available{
+            background-color: #a9cb58;
+            border: 1px solid #708e4d;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #a9cb58;
+                }
+            }
+        }
+        &.partial{
+            background-color: #ffe699;
+            border: 1px solid #cbb77b;
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: #ffe699;
+                }
+            }
+        }
+        &.active{
+            background-color: $color_purple;
+            border: 1px solid #a72e74;
+            color: transparent;
+            text-transform: uppercase;
+            font-size: 10px;
+            &::after{
+                content: 'СТОЛИК\0aВЫБРАН';
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                color: $white;
+                white-space: pre;
+                @media screen and (max-width: 760px) {
+                    display: none;
+                }
+            }
+            &::before{
+                @media screen and (max-width: 760px) {
+                    background-color: $color_purple;
+                    color: $white;
+                }
+            }
+        }
+        &::before{
+            content: attr(data-number);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+            border-radius: 50%;
+            font-family: "PTSerif";
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
+        }
+    }
+
+    .new-year-plan__el{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #a9cb58;
+        border-radius: 4px;
+        border: 1px solid #708e4d;
+        font-size: 17px;
+        line-height: 1;
+        color: black;
+        &::before{
+            content: attr(data-name);
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #a9cb58;
+            border-radius: 4px;
+            font-family: "PTSerif";
+            font-size: 8px;
+            display: none;
+            color: black;
+            @media screen and (max-width: 760px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+        &.vertical{
+            transform: rotate(-90deg);
+            &::before{
+                font-size: 5px;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            color: transparent;
+            overflow: hidden;
+        }
+        &.exit{
+            &::before{
+                font-size: 5px;
+            }
+        }
+    }
+
+    .new-year-plan__el-round{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #a9cb58;
+        border-radius: 50%;
+        border: 1px solid #708e4d;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+
+    &-map-gil{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 44%;
+        display: none;
+        &.active{
+            display: block;
+        }
+        .new-year-plan__table-round{
+            &::before{
+                font-size: 10px;
+            }
+        }
+        .new-year-plan__table-square{
+            &::before{
+                font-size: 10px;
+            }
+        }
+    }
+    &-map-sem{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 70%;
+        display: none;
+        &.active{
+            display: block;
+        }
+        .new-year-plan__table-round{
+            &::before{
+                font-size: 16px;
+            }
+        }
+        .new-year-plan__table-square{
+            &::before{
+                font-size: 16px;
+            }
+        }
+    }
+    &-map-tol{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 36%;
+        display: none;
+        margin-bottom: 30px;
+        &.active{
+            display: block;
+        }
+        .new-year-plan__table-round{
+            &::before{
+                font-size: 7px;
+            }
+        }
+        .new-year-plan__table-square{
+            &::before{
+                font-size: 7px;
+            }
+        }
+    }
+}
+
+.new-year-2020-form{
+    &::before{
+        background: none;
+    }
+}
+
+.new-year-select-mobile{
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+    font-family: "PT Serif Caption";
+    font-size: 14px;
+    display: none;
+    
+    @media screen and (max-width: 760px) {
+        display: block;
+    }
+    select{
+        display: none;
+    }
+    .select-selected{
+        background-color: #c44890;
+        border-radius: .4rem;
+        white-space: nowrap;
+        &:before{
+            content: '';
+            position: absolute;
+            border: 2px dashed #c44890;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+        }
+        
+        &:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            width: 34px;
+            height: 34px;
+            background: #c44890 url(../img/icons/icon-arrow-down.svg) no-repeat 50% 50%;
+            background-size: 8px 8px;
+            border-radius: .4rem;
+        }
+        &.select-arrow-active{
+            border-radius: 0;
+            &:after {
+                transform: rotate(180deg);
+                border-radius: 0;
+            }
+        }
+    }
+    .select-items div,.select-selected{
+        color: #fff;
+        padding: 8px;
+        cursor: pointer;
+    }
+    .select-items {
+        position: absolute;
+        background-color: #c44890;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+    .select-hide{
+        display: none;
+    }
+    .select-items div:hover, .same-as-selected{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.new-year-plan-popup{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 1.6rem;
+    background-color: #a9cb58;
+    width: 100%;
+    min-height: 100%;
+
+    span{
+        display: inline;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+    }
+    &__number{
+        font-family: "SummerFont";
+        line-height: 1;
+        margin: 0 0 12px;
+        padding: 0;
+        color: black;
+        font-size: 34px;
+        text-transform: uppercase;
+    }
+    &__seats{
+        margin: 0;
+        padding: 0;
+        color: black;
+    }
+    &__reserved{
+        margin: 0;
+        padding: 0;
+        color: black;
+        margin: 0 0 12px;
+    }
+    &-raw{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button{
+        z-index: 12;
+        color: $white;
+        width: 48%;
+        height: 36px;
+        font-size: 17px;
+        background-color: #c44890;
+        line-height: 1;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        padding: .4rem 1rem;
+        cursor: pointer;
+    }
+    &.active{
+        display: flex;
+        @media screen and (min-width: 761px) {
+            display: none;
+        }
+    }
+    &.yellow{
+        background-color: #eccf74;
+    }
+    &.green{
+        background-color: #a9cb58;
+    }
+    @media screen and (min-width: 761px) {
+        display: none;
+    }
+}

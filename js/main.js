@@ -2401,6 +2401,7 @@ $(document).ready(function ($) {
     showPopup(".calendar-nav-hall__decor-blue:not(.no-popup)", '.popup__gallery_hall_blue');
     showPopup(".calendar-nav-hall__decor-red:not(.no-popup)", '.popup__gallery_hall_red');
     showPopup(".c-card-new-year__box", '.popup-new-year');
+    showPopup(".js-show-popup-new-year", '.popup-new-year');
 
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
     showPopup(".js-test-21042019", '.popup__virtual');
@@ -4475,4 +4476,171 @@ $(function() {
     grassAnimate('.js-grass');
     halloweenTicketPrice();
     halloweenBats();
+});
+
+/* new year 2020 functions */
+
+function newYearMore(){
+    let element = $('.js-new-year-more');
+
+    $('.js-new-year-more-button').on('click', function(event) {
+        if (element.hasClass('open')){
+            element.removeClass('open');
+            $(this).text('Подробно');
+        } else {
+            element.addClass('open');
+            $(this).text('Свернуть');
+        }
+    });
+}
+
+function newYearShowPlan(){
+    let gilPlan = $('.js-new-year-plan-gil'),
+        semPlan = $('.js-new-year-plan-sem'),
+        tolPlan = $('.js-new-year-plan-tol');
+
+    $('.js-new-year-show-plan-gil').on('click', function(event) {
+        gilPlan.addClass('active');
+        semPlan.removeClass('active');
+        tolPlan.removeClass('active');
+        $(this).addClass('active');
+        $('.js-new-year-show-plan-sem').removeClass('active');
+        $('.js-new-year-show-plan-tol').removeClass('active');
+        $('.select-items').children()[0].click();
+    });
+    $('.js-new-year-show-plan-sem').on('click', function(event) {
+        semPlan.addClass('active');
+        gilPlan.removeClass('active');
+        tolPlan.removeClass('active');
+        $(this).addClass('active');
+        $('.js-new-year-show-plan-gil').removeClass('active');
+        $('.js-new-year-show-plan-tol').removeClass('active');
+        $('.select-items').children()[1].click();
+    });
+    $('.js-new-year-show-plan-tol').on('click', function(event) {
+        tolPlan.addClass('active');
+        gilPlan.removeClass('active');
+        semPlan.removeClass('active');
+        $(this).addClass('active');
+        $('.js-new-year-show-plan-sem').removeClass('active');
+        $('.js-new-year-show-plan-gil').removeClass('active');
+        $('.select-items').children()[2].click();
+    });
+}
+
+function newYearSelectTable(){
+    $('.js-new-year-table').on('click', function(event) {
+        if ($(this).hasClass('available')||$(this).hasClass('partial')){
+            if (window.screen.width > 760){
+                $('.js-new-year-table').removeClass('active');
+                $(this).addClass('active')
+            } else {
+                $('.js-new-year-plan-table__number').text($(this).data('number'));
+                $('.js-new-year-plan-table__seats').text($(this).data('seats'));
+                $('.js-new-year-plan-table__reserved').text($(this).data('reserved'));
+                $('.js-table-popup').addClass('active');
+                if ($(this).hasClass('available')){
+                    $('.js-table-popup').addClass('green');
+                }
+                if ($(this).hasClass('partial')){
+                    $('.js-table-popup').addClass('yellow');
+                }
+                $(this).addClass('in-process');
+            }
+            
+            
+        }
+    });
+    $('.js-new-year-tables-add').on('click', function(event) {
+        $('.js-new-year-table').removeClass('active');
+        $('.js-new-year-table.in-process').addClass('active');
+        $('.js-table-popup').removeClass('active yellow green');
+        $('.js-new-year-table').removeClass('in-process');
+    });
+    $('.js-new-year-tables-different').on('click', function(event) {
+        $('.js-table-popup').removeClass('active yellow green');
+        $('.js-new-year-table').removeClass('in-process');
+    });
+    
+}
+
+function initNewYearSelect(){
+	let x, i, j, selElmnt, a, b, c;
+	x = document.getElementsByClassName("js-custom-select");
+	for (i = 0; i < x.length; i++) {
+		selElmnt = x[i].getElementsByTagName("select")[0];
+		a = document.createElement("DIV");
+		a.setAttribute("class", "select-selected");
+		a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+		x[i].appendChild(a);
+		b = document.createElement("DIV");
+		b.setAttribute("class", "select-items select-hide");
+		for (j = 1; j < selElmnt.length; j++) {
+			c = document.createElement("DIV");
+			c.innerHTML = selElmnt.options[j].innerHTML;
+			c.addEventListener("click", function(e) {
+				let y, i, k, s, h;
+				s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+				h = this.parentNode.previousSibling;
+				for (i = 0; i < s.length; i++) {
+					if (s.options[i].innerHTML == this.innerHTML) {
+						s.selectedIndex = i;
+						h.innerHTML = this.innerHTML;
+						y = this.parentNode.getElementsByClassName("same-as-selected");
+						for (k = 0; k < y.length; k++) {
+						    y[k].removeAttribute("class");
+						}
+                        this.setAttribute("class", "same-as-selected");
+                        if (i==1 && !$('.js-new-year-show-plan-gil').hasClass('active')) {
+                            $('.js-new-year-show-plan-gil').click();
+                        }
+                        if (i==2 && !$('.js-new-year-show-plan-sem').hasClass('active')) {
+                            $('.js-new-year-show-plan-sem').click();
+                        }
+                        if (i==3 && !$('.js-new-year-show-plan-tol').hasClass('active')) {
+                            $('.js-new-year-show-plan-tol').click();
+                        }
+                        
+						break;
+					}
+				}
+				h.click();
+			});
+			b.appendChild(c);
+		}
+		x[i].appendChild(b);
+		a.addEventListener("click", function(e) {
+			e.stopPropagation();
+			closeAllSelect(this);
+			this.nextSibling.classList.toggle("select-hide");
+			this.classList.toggle("select-arrow-active");
+		});
+	}
+
+	function closeAllSelect(elmnt) {
+		var x, y, i, arrNo = [];
+		x = document.getElementsByClassName("select-items");
+		y = document.getElementsByClassName("select-selected");
+		for (i = 0; i < y.length; i++) {
+			if (elmnt == y[i]) {
+				arrNo.push(i)
+			} else {
+				y[i].classList.remove("select-arrow-active");
+			}
+		}
+		for (i = 0; i < x.length; i++) {
+			if (arrNo.indexOf(i)) {
+				x[i].classList.add("select-hide");
+			}
+		}
+	}
+	document.addEventListener("click", closeAllSelect);
+}
+
+$(function() {
+    /* init */
+    newYearMore();
+    newYearShowPlan();
+    newYearSelectTable();
+    initNewYearSelect();
 });
