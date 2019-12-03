@@ -20400,7 +20400,9 @@ test popup
           .about-advantages__right .about-advantages__item:nth-child(2) .about-advantages__point {
             background-color: #9acc4f; }
         .about-advantages__right .about-advantages__item:nth-child(3) {
-          margin-right: 16rem; }
+          margin-right: 6rem;
+          margin-top: 3rem;
+          margin-left: 6rem; }
           .about-advantages__right .about-advantages__item:nth-child(3)::before {
             content: '';
             left: -12px;
@@ -20420,7 +20422,7 @@ test popup
             top: 1rem; }
           .about-advantages__right .about-advantages__item:nth-child(3) .about-advantages__point {
             left: 0%;
-            top: -25%;
+            top: -14%;
             background-color: #865f9e; }
     .about-advantages__item {
       margin-bottom: 1.2rem;
@@ -28073,8 +28075,6 @@ a.show-more__button:hover {
       .holiday-menu-filter__search input:-ms-input-placeholder {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
-        color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
         color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }

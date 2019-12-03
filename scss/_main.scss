@@ -16104,7 +16104,9 @@ test popup
                 }
 
                 &:nth-child(3) {
-                    margin-right: 16rem;
+                    margin-right: 6rem;
+                    margin-top: 3rem;
+                    margin-left: 6rem;
 
                     &::before {
                         content: '';
@@ -16127,7 +16129,7 @@ test popup
 
                     .about-advantages__point {
                         left: 0%;
-                        top: -25%;
+                        top: -14%;
                         background-color: #865f9e;
                     }
                 }
