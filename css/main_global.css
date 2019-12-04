@@ -28076,6 +28076,8 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
+      .holiday-menu-filter__search input::-moz-placeholder {
+        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -30201,10 +30203,11 @@ a.show-more__button:hover {
     z-index: 1;
     width: 32px;
     height: 100%;
-    top: 50%;
-    background: #fff url(../img/icons/icon-close-new-year.svg) no-repeat 50% 16%;
+    top: 30%;
+    background: #fff url(../img/icons/icon-close-new-year.svg) no-repeat 50% 12px;
     background-size: 10px 11px;
-    color: transparent; } }
+    color: transparent;
+    right: 1.6rem; } }
 
 @media screen and (max-width: 760px) {
   .popup-new-year-2020 .popup .popup-header {
@@ -30212,14 +30215,16 @@ a.show-more__button:hover {
     background-color: #f3efe4;
     width: calc(100% + 3.2rem);
     left: -1.6rem;
-    margin: 0; } }
+    margin: 0;
+    overflow: hidden; } }
 
 @media screen and (max-width: 760px) {
   .popup-new-year-2020 .popup .popup-header .popup-new-year__title {
-    padding: 1.8rem 1.6rem 1.3rem;
+    padding: 1.8rem 0 1.3rem 1.6rem;
     font-size: 23px;
     font-family: "PT Serif Caption";
-    color: #555451; } }
+    color: #555451;
+    margin: 0; } }
 
 .popup-new-year-2020 .popup .popup-header .popup-new-year__title .mod-new-year-title {
   text-transform: uppercase; }
@@ -30229,8 +30234,6 @@ a.show-more__button:hover {
       text-transform: none; } }
 
 .popup-new-year-2020 .popup .popup-footer .new-year-order .c-counter .c-counter__btn {
-  width: 4.0rem;
-  height: 4.0rem;
   background-size: 25%; }
   .popup-new-year-2020 .popup .popup-footer .new-year-order .c-counter .c-counter__btn:hover {
     background-color: #9acc4e;
@@ -30257,6 +30260,16 @@ a.show-more__button:hover {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-bottom: 16px; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-order__grid > .new-year-order__col.christmas-story__col {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 760px) {
+  .popup-new-year-2020 .popup .popup-footer .new-year-order__grid > .new-year-order__col.christmas-story__add {
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 760px) {
   .popup-new-year-2020 .popup .popup-footer .new-year-order__grid > .new-year-order__col .new-year-order__item:first-child {
@@ -30300,7 +30313,7 @@ a.show-more__button:hover {
         display: none; } }
   .new-year-2020-head__decor2 {
     position: absolute;
-    left: -3rem;
+    left: -4rem;
     top: -6rem; }
     @media screen and (max-width: 760px) {
       .new-year-2020-head__decor2 {
@@ -30337,6 +30350,61 @@ a.show-more__button:hover {
       right: 0;
       text-align: center;
       width: 100%; }
+  .new-year-2020-head-description {
+    position: absolute;
+    top: 6rem;
+    left: -5.2rem; }
+    @media screen and (max-width: 760px) {
+      .new-year-2020-head-description {
+        position: relative;
+        width: calc(100% + 3.2rem);
+        left: -1.6rem;
+        top: 0;
+        padding-bottom: 3.6rem;
+        background: url(../img/holidays-button-bg.png); } }
+    .new-year-2020-head-description__list {
+      position: relative;
+      margin: 2.4rem 0.6rem 0rem 8rem;
+      z-index: 2; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-head-description__list {
+          margin: 0 1.6rem;
+          padding-top: 24px;
+          padding: 2.2rem 1.6rem;
+          top: 0;
+          left: 0; } }
+      .new-year-2020-head-description__list li {
+        position: relative;
+        font-size: 16px;
+        color: #fff; }
+        .new-year-2020-head-description__list li:not(:last-child) {
+          margin-bottom: 16px; }
+        .new-year-2020-head-description__list li:before {
+          content: '• ';
+          position: absolute;
+          top: 0;
+          left: -16px; }
+    .new-year-2020-head-description__attention {
+      position: relative;
+      margin: 1.8rem 0 1.8rem 6rem;
+      padding: 0 2rem;
+      color: #000;
+      background-color: #a9cb58;
+      font-size: 14px;
+      line-height: 32px;
+      border-radius: 16px;
+      z-index: 2;
+      text-align: center; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-head-description__attention {
+          margin: 0 1.6rem;
+          padding: 0 1.6rem; } }
+    .new-year-2020-head-description__bg {
+      position: absolute;
+      z-index: 1; }
+      @media screen and (max-width: 760px) {
+        .new-year-2020-head-description__bg {
+          display: none; } }
   .new-year-2020-head .holiday-nav {
     position: absolute;
     top: 2.3rem; }
@@ -31081,6 +31149,72 @@ a.show-more__button:hover {
   @media screen and (min-width: 761px) {
     .new-year-plan-popup {
       display: none; } }
+
+.christmas-story-img {
+  position: relative;
+  width: calc(100% + 10rem);
+  left: -5rem; }
+  .christmas-story-img .new-year-2020-head__img img {
+    top: -18%; }
+  .christmas-story-img::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 16px;
+    background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+    @media screen and (max-width: 760px) {
+      .christmas-story-img::after {
+        display: none; } }
+
+.christmas-story .new-year-2020-head-more__title {
+  text-transform: none; }
+
+.christmas-story .new-year-2020-section {
+  padding-left: 10rem;
+  background-color: #b93b80; }
+  @media screen and (max-width: 760px) {
+    .christmas-story .new-year-2020-section {
+      padding: 3.2rem 4.8rem; } }
+  @media screen and (max-width: 760px) {
+    .christmas-story .new-year-2020-section-col:last-child {
+      margin: 0 0 0 4rem; } }
+  .christmas-story .new-year-2020-section__decor3 {
+    position: absolute;
+    top: 36%;
+    left: 1%; }
+    @media screen and (max-width: 760px) {
+      .christmas-story .new-year-2020-section__decor3 {
+        top: 8%;
+        left: 74%; } }
+  .christmas-story .new-year-2020-section__decor4 {
+    position: absolute;
+    top: 44%;
+    left: 30%; }
+    @media screen and (max-width: 760px) {
+      .christmas-story .new-year-2020-section__decor4 {
+        top: 35%;
+        left: 5%; } }
+  .christmas-story .new-year-2020-section__decor5 {
+    position: absolute;
+    top: 51%;
+    left: 57%; }
+    @media screen and (max-width: 760px) {
+      .christmas-story .new-year-2020-section__decor5 {
+        top: 57%;
+        left: 5%; } }
+  .christmas-story .new-year-2020-section__decor6 {
+    position: absolute;
+    top: 33%;
+    left: 82%; }
+    @media screen and (max-width: 760px) {
+      .christmas-story .new-year-2020-section__decor6 {
+        top: 77%;
+        left: 8%; } }
+  .christmas-story .new-year-2020-section__title {
+    font-size: 18px; }
 
 .popup-pie {
   /* Ручной readmore */
