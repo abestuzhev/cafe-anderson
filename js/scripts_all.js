@@ -13719,7 +13719,7 @@ function newYearMore(){
     $('.js-new-year-more-button').on('click', function(event) {
         if (element.hasClass('open')){
             element.removeClass('open');
-            $(this).text('Подробно');
+            $(this).text('Подробнее');
         } else {
             element.addClass('open');
             $(this).text('Свернуть');

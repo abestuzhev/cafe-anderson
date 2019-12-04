@@ -28626,10 +28626,11 @@ a.show-more__button:hover {
                     z-index: 1;
                     width: 32px;
                     height: 100%;
-                    top: 50%;
-                    background: #fff url(../img/icons/icon-close-new-year.svg) no-repeat 50% 16%;
+                    top: 30%;
+                    background: #fff url(../img/icons/icon-close-new-year.svg) no-repeat 50% 12px;
                     background-size: 10px 11px;
                     color: transparent;
+                    right: 1.6rem;
                 }
             }
         }
@@ -28640,13 +28641,15 @@ a.show-more__button:hover {
                 width: calc(100% + 3.2rem);
                 left: -1.6rem;
                 margin: 0;
+                overflow: hidden;
             }
             .popup-new-year__title{
                 @media screen and (max-width: 760px) {
-                    padding: 1.8rem 1.6rem 1.3rem;
+                    padding: 1.8rem 0 1.3rem 1.6rem;
                     font-size: 23px;
                     font-family: "PT Serif Caption";
                     color: #555451;
+                    margin: 0;
                 }
                 .mod-new-year-title{
                     text-transform: uppercase;
@@ -28659,8 +28662,6 @@ a.show-more__button:hover {
         }
         .popup-footer{
             .new-year-order .c-counter .c-counter__btn {
-                width: 4.0rem;
-                height: 4.0rem;
                 background-size: 25%;
                 &:hover{
                     background-color: #9acc4e;
@@ -28692,6 +28693,17 @@ a.show-more__button:hover {
                 @media screen and (max-width: 760px) {
                     flex-wrap: nowrap;
                     margin-bottom: 16px;
+                }
+                &.christmas-story__col{
+                    @media screen and (max-width: 760px) {
+                        flex-wrap: wrap;
+                        margin-bottom: 0;
+                    }
+                }
+                &.christmas-story__add{
+                    @media screen and (max-width: 760px) {
+                        margin-bottom: 0;
+                    }
                 }
                 .new-year-order__item:first-child{
                     @media screen and (max-width: 760px) {
@@ -28747,7 +28759,7 @@ a.show-more__button:hover {
     }
     &__decor2{
         position: absolute;
-        left: -3rem;
+        left: -4rem;
         top: -6rem;
         @media screen and (max-width: 760px) {
             display: none;
@@ -28790,6 +28802,73 @@ a.show-more__button:hover {
             text-align: center;
             width: 100%;
 
+        }
+    }
+
+    &-description{
+        position: absolute;
+        top: 6rem;
+        left: -5.2rem;
+        @media screen and (max-width: 760px) {
+            position: relative;
+            width: calc(100% + 3.2rem);
+            left: -1.6rem;
+            top: 0;
+            padding-bottom: 3.6rem;
+            background: url(../img/holidays-button-bg.png);
+        }
+
+        &__list{
+            position: relative;
+            margin: 2.4rem 0.6rem 0rem 8rem;
+            z-index: 2;
+
+            @media screen and (max-width: 760px) {
+                margin: 0 1.6rem;
+                padding-top: 24px;
+                padding: 2.2rem 1.6rem;
+                top: 0;
+                left: 0;
+            }
+            
+            li{
+                position: relative;
+                font-size: 16px;
+                color: #fff;
+                &:not(:last-child){
+                    margin-bottom: 16px;
+                }
+                &:before{
+                    content: '• ';
+                    position: absolute;
+                    top: 0;
+                    left: -16px;
+                }
+            }
+        }
+        &__attention{
+            position: relative;
+            margin: 1.8rem 0 1.8rem 6rem;
+            padding: 0 2rem;
+            color: #000;
+            background-color: #a9cb58;
+            font-size: 14px;
+            line-height: 32px;
+            border-radius: 16px;
+            z-index: 2;
+            text-align: center;
+            @media screen and (max-width: 760px) {
+                margin: 0 1.6rem;
+                padding: 0 1.6rem;
+            }
+            
+        }
+        &__bg{
+            position: absolute;
+            z-index: 1;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
         }
     }
 
@@ -29585,4 +29664,89 @@ a.show-more__button:hover {
     @media screen and (min-width: 761px) {
         display: none;
     }
+}
+
+.christmas-story{
+    &-img{
+        position: relative;
+        width: calc(100% + 10rem);
+        left: -5rem;
+        .new-year-2020-head__img{
+            img{
+                top: -18%;
+            }
+            
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            height: 16px;
+            background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+            @media screen and (max-width: 760px) {
+                display: none;
+            }
+        }
+    }
+    .new-year-2020-head-more__title{
+        text-transform: none;
+    }
+    .new-year-2020-section{
+        padding-left: 10rem;
+        background-color: #b93b80;
+        @media screen and (max-width: 760px) {
+            padding: 3.2rem 4.8rem;
+        }
+        &-col{
+            &:last-child{
+                @media screen and (max-width: 760px) {
+                    margin: 0 0 0 4rem;
+                }
+            }
+        }
+        &__decor3{
+            position: absolute;
+            top: 36%;
+            left: 1%;
+            @media screen and (max-width: 760px) {
+                top: 8%;
+                left: 74%;
+            }
+        }
+        &__decor4{
+            position: absolute;
+            top: 44%;
+            left: 30%;
+            @media screen and (max-width: 760px) {
+                top: 35%;
+                left: 5%;
+            }
+        }
+        &__decor5{
+            position: absolute;
+            top: 51%;
+            left: 57%;
+            @media screen and (max-width: 760px) {
+                top: 57%;
+                left: 5%;
+            }
+        }
+        &__decor6{
+            position: absolute;
+            top: 33%;
+            left: 82%;
+            @media screen and (max-width: 760px) {
+                top: 77%;
+                left: 8%;
+            }
+        }
+        &__title{
+            font-size: 18px;
+        }
+    }
+    
 }
