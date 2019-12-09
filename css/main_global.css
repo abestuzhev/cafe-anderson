@@ -32013,6 +32013,9 @@ a.show-more__button:hover {
     border: none;
     font-weight: 700;
     margin-top: 20px; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays-content .holiday-hall-sentence__btn {
+        width: 100%; } }
   .popup-child-holidays-content .child-holidays-2019-programs-element-description__price {
     margin-bottom: 0;
     margin-right: 20px; }

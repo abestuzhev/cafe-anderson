@@ -30577,6 +30577,9 @@ a.show-more__button:hover {
             border: none;
             font-weight: 700;
             margin-top: 20px;
+            @media screen and (max-width: 1040px){
+                width: 100%;
+            }
         }
         
         .child-holidays-2019-programs-element-description__price {
