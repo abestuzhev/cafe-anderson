@@ -2402,6 +2402,7 @@ $(document).ready(function ($) {
     showPopup(".calendar-nav-hall__decor-red:not(.no-popup)", '.popup__gallery_hall_red');
     showPopup(".c-card-new-year__box", '.popup-new-year');
     showPopup(".js-show-popup-new-year", '.popup-new-year');
+    showPopup(".js-show-popup-child-holidays", '.popup-child-holidays');
 
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
     showPopup(".js-test-21042019", '.popup__virtual');

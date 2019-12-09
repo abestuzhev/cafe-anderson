@@ -31216,6 +31216,811 @@ a.show-more__button:hover {
   .christmas-story .new-year-2020-section__title {
     font-size: 18px; }
 
+/* детские праздники 2019 */
+.child-holidays-2019 {
+  overflow: hidden; }
+  .child-holidays-2019 .celebration-slider__title {
+    text-transform: uppercase;
+    font-size: 69px; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019 .celebration-slider__title {
+        font-size: 45px;
+        line-height: 1; } }
+    .child-holidays-2019 .celebration-slider__title::before {
+      display: none; }
+    .child-holidays-2019 .celebration-slider__title::after {
+      display: none; }
+  .child-holidays-2019 .celebration-slider__text {
+    font-size: 18px; }
+    .child-holidays-2019 .celebration-slider__text-up {
+      color: #fff;
+      font-size: 31px;
+      text-transform: uppercase; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019 .celebration-slider__text-up {
+          font-size: 23px !important; } }
+    .child-holidays-2019 .celebration-slider__text-down {
+      color: #fff;
+      font-size: 21px;
+      text-transform: uppercase; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019 .celebration-slider__text-down {
+          font-size: 15px !important; } }
+  .child-holidays-2019 .celebration-slider__item {
+    position: relative;
+    padding: 60px 70px 148px; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019 .celebration-slider__item {
+        padding: 24px 15px; } }
+    .child-holidays-2019 .celebration-slider__item::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 16px;
+      background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+  .child-holidays-2019 .celebration-slider__body {
+    max-width: 430px; }
+  .child-holidays-2019 .holiday-hall-sentence__body {
+    position: relative;
+    max-width: 92rem; }
+  .child-holidays-2019 .holiday-hall-sentence {
+    background-image: url(../img/child-holiday-2019/form-back.jpg); }
+    .child-holidays-2019 .holiday-hall-sentence .decor-grass-1 {
+      right: -18%;
+      bottom: -4%; }
+    .child-holidays-2019 .holiday-hall-sentence .decor-grass-3 {
+      left: -15%;
+      top: 30%;
+      right: auto;
+      bottom: auto; }
+  .child-holidays-2019 .cafe-slider__header {
+    background: url(../img/bg-slider-header-3.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    height: 16px; }
+  .child-holidays-2019 .cafe-slider__footer {
+    background: url(../img/bg-slider-footer-3.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    height: 16px; }
+  .child-holidays-2019 .fotorama__nav-wrap {
+    position: absolute;
+    z-index: 99999;
+    bottom: 38px;
+    left: 0;
+    width: 100%; }
+  .child-holidays-2019-programs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019-programs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .child-holidays-2019-programs-element {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      width: calc(50% - 15px);
+      border: 3px solid #c44890;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 29px; }
+      .child-holidays-2019-programs-element:nth-child(2n+1) {
+        margin-right: 29px; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-programs-element {
+          margin-right: 0;
+          width: 100%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
+      .child-holidays-2019-programs-element__img {
+        position: relative;
+        width: 45%;
+        height: 100%;
+        background: url(../img/child-holiday-2019/program-1.jpg) 50% 50% no-repeat;
+        background-size: cover; }
+        .child-holidays-2019-programs-element__img::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: -.8rem;
+          width: 1.5rem;
+          height: 100%;
+          background: url(../img/decor-line-waves-pink-vertical.png) 0 0 repeat-y; }
+          @media screen and (max-width: 1040px) {
+            .child-holidays-2019-programs-element__img::after {
+              left: 0;
+              right: 0;
+              top: auto;
+              bottom: -.8rem;
+              width: 100%;
+              height: 1.5rem;
+              background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; } }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-programs-element__img {
+            width: 100%;
+            padding-top: 65%; } }
+      .child-holidays-2019-programs-element-description {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        width: 55%;
+        min-width: 390px;
+        padding: 36px 26px 36px 46px; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-programs-element-description {
+            padding: 30px 16px;
+            width: 100%;
+            min-width: auto; } }
+        .child-holidays-2019-programs-element-description__title {
+          font-size: 60px;
+          font-family: "SummerFont";
+          color: #7bc43a;
+          margin-bottom: 20px;
+          line-height: 0.8; }
+        .child-holidays-2019-programs-element-description__price {
+          position: relative;
+          font-size: 40px;
+          font-family: "SummerFont";
+          color: #fff;
+          margin-bottom: 8px; }
+          .child-holidays-2019-programs-element-description__price-text {
+            position: absolute;
+            top: 21px;
+            left: 36px; }
+        .child-holidays-2019-programs-element-description__features {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          font-size: 39px;
+          font-family: "SummerFont";
+          color: #c44890;
+          text-transform: uppercase;
+          margin-bottom: 20px; }
+          .child-holidays-2019-programs-element-description__features-text {
+            line-height: 1;
+            white-space: nowrap; }
+            .child-holidays-2019-programs-element-description__features-text:not(:last-child) {
+              margin-right: 30px; }
+              @media screen and (max-width: 1040px) {
+                .child-holidays-2019-programs-element-description__features-text:not(:last-child) {
+                  margin-right: 15px; } }
+          .child-holidays-2019-programs-element-description__features-icon {
+            margin-right: 13px; }
+            @media screen and (max-width: 1040px) {
+              .child-holidays-2019-programs-element-description__features-icon {
+                margin-right: 8px; } }
+        .child-holidays-2019-programs-element-description__text {
+          font-size: 15px;
+          font-family: "PT Serif Caption";
+          margin-bottom: 24px; }
+        .child-holidays-2019-programs-element-description__button {
+          display: block;
+          overflow: hidden;
+          width: 160px;
+          height: 44px;
+          line-height: 34px;
+          background-color: #7cbd41;
+          font-family: "SummerFont";
+          font-size: 40px;
+          color: #fff;
+          padding: 5px 30px;
+          border-radius: .4rem;
+          cursor: pointer;
+          margin-top: auto;
+          margin-bottom: 0; }
+  .child-holidays-2019-menu {
+    border: 1px solid #cecece;
+    border-radius: 8px; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019-menu {
+        border: none; } }
+    .child-holidays-2019-menu__title {
+      position: relative;
+      font-size: 60px;
+      font-family: "SummerFont";
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-menu__title {
+          font-size: 42px;
+          width: calc(100% + 32px);
+          left: -16px;
+          background: url(../img/holidays-button-bg.png); } }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-menu__title::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -.8rem;
+          bottom: 0;
+          width: 100%;
+          height: 1.5rem;
+          background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; } }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-menu__title::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: auto;
+          bottom: -.8rem;
+          width: 100%;
+          height: 1.5rem;
+          background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; } }
+      .child-holidays-2019-menu__title-img {
+        position: absolute;
+        top: -6px;
+        left: calc((-1450px + 100%) / 2 - 5px);
+        z-index: 1; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-menu__title-img {
+            display: none; } }
+    .child-holidays-2019-menu .child-holidays-2019-menu__title .holiday-hall-sentence__btn {
+      top: -16px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      background-color: #98c22f;
+      color: #fff;
+      border: none;
+      font-weight: 700;
+      margin: 0 0 0 12px;
+      z-index: 2; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-menu .child-holidays-2019-menu__title .holiday-hall-sentence__btn {
+          position: relative;
+          top: -6px;
+          margin: 0; } }
+    .child-holidays-2019-menu__text {
+      position: relative;
+      z-index: 2;
+      top: -10px; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-menu__text {
+          top: -5px;
+          display: block; } }
+    .child-holidays-2019-menu-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 10px; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-menu-wrapper {
+          padding: 16px 0 10px; } }
+    .child-holidays-2019-menu__item {
+      width: calc(25% - 13px);
+      padding-top: calc((25% - 13px)*1.0814);
+      margin: 6px;
+      background: url(../img/child-holiday-2019/menu-1.jpg) 50% 50% no-repeat;
+      background-size: cover; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-menu__item {
+          margin: 2px;
+          width: calc(25% - 5px);
+          padding-top: calc((25% - 5px)*1.0814); } }
+  .child-holidays-2019-cake {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    padding: 17px; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019-cake {
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: calc(100% + 32px);
+        left: -16px;
+        border-right: none;
+        border-left: none;
+        border-radius: 0; } }
+    .child-holidays-2019-cake-description {
+      position: relative;
+      padding: 40px;
+      min-width: 600px; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-cake-description {
+          padding: 0;
+          min-width: auto;
+          width: 100%;
+          margin-bottom: 20px; } }
+      .child-holidays-2019-cake-description__title {
+        font-size: 60px;
+        font-family: "SummerFont";
+        text-transform: uppercase;
+        margin-left: 70px; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-cake-description__title {
+            font-size: 38px;
+            margin-left: 37px; } }
+      .child-holidays-2019-cake-description__text {
+        font-size: 15px;
+        font-family: "PT Serif Caption";
+        margin: 0; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-cake-description__text {
+            font-size: 14px; } }
+      .child-holidays-2019-cake-description__attention {
+        font-size: 40px;
+        font-family: "SummerFont";
+        text-transform: uppercase;
+        color: #c44890;
+        margin: 0; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-cake-description__attention {
+            font-size: 35px; } }
+      .child-holidays-2019-cake-description__decor {
+        position: absolute;
+        top: 48px;
+        left: 32px; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-cake-description__decor {
+            top: 8px;
+            left: 0; } }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-cake-description__decor img {
+            height: 35px;
+            width: 35px; } }
+    .child-holidays-2019-cake .child-holidays-2019-cake-description .holiday-hall-sentence__btn {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      background-color: #98c22f;
+      color: #fff;
+      border: none;
+      font-weight: 700;
+      margin-top: 20px; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-cake .child-holidays-2019-cake-description .holiday-hall-sentence__btn {
+          position: relative;
+          width: 100%;
+          padding: 10px 24px;
+          font-size: 34px;
+          margin-top: 12px; } }
+    .child-holidays-2019-cake-image {
+      background: url(../img/child-holiday-2019/cake-1.jpg) 50% 50% no-repeat;
+      background-size: cover;
+      width: 30%; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-cake-image {
+          width: 50%;
+          padding-top: 50%; } }
+      .child-holidays-2019-cake-image:not(:last-child) {
+        margin-right: 12px; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-cake-image-wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+  .child-holidays-2019-slider__title {
+    font-size: 48px;
+    font-family: "SummerFont";
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    position: relative;
+    margin-bottom: 24px; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019-slider__title {
+        font-size: 36px;
+        padding: 0 16px; } }
+  .child-holidays-2019-slider__img {
+    position: absolute;
+    top: 0;
+    left: -70px; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019-slider__img {
+        left: auto;
+        right: -8%;
+        -webkit-transform: rotate(-30deg);
+            -ms-transform: rotate(-30deg);
+                transform: rotate(-30deg); } }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019-slider__img img {
+        height: 76px;
+        width: 53px; } }
+  @media screen and (max-width: 1040px) {
+    .child-holidays-2019-slider .cafe-slider__body .fotorama__wrap {
+      width: 100% !important; } }
+  .child-holidays-2019-bonus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 50px;
+    overflow: hidden; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019-bonus {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 16px; } }
+    .child-holidays-2019-bonus-body {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-bonus-body {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: column-reverse;
+                  flex-direction: column-reverse; } }
+      .child-holidays-2019-bonus-body__contacts {
+        min-width: 370px; }
+      .child-holidays-2019-bonus-body__number {
+        background: url(../img/child-holiday-2019/phone-back.png) 50% 50% no-repeat;
+        background-size: contain;
+        padding: 30px 50px 20px;
+        margin-bottom: 12px; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-bonus-body__number {
+            text-align: center;
+            padding: 16px; } }
+        .child-holidays-2019-bonus-body__number .header-tel {
+          font-size: 28px;
+          font-family: "PT Serif Caption";
+          padding: 0;
+          margin: 0; }
+          @media screen and (max-width: 1040px) {
+            .child-holidays-2019-bonus-body__number .header-tel {
+              display: inline-block;
+              font-size: 24px; } }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-bonus-body__numbertext {
+          font-size: 1.3rem; } }
+      .child-holidays-2019-bonus-body__social {
+        text-align: center;
+        position: relative; }
+      .child-holidays-2019-bonus-body__programs {
+        background: url(../img/child-holiday-2019/programs-back.png) 50% 50% no-repeat;
+        background-size: contain;
+        min-width: 550px;
+        text-align: center;
+        padding: 36px 0; }
+        @media screen and (max-width: 1040px) {
+          .child-holidays-2019-bonus-body__programs {
+            min-width: auto;
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 10px; } }
+        .child-holidays-2019-bonus-body__programs-text {
+          font-family: "SummerFont";
+          font-size: 46px;
+          line-height: 1;
+          margin: 0 0 4px;
+          text-transform: uppercase;
+          color: #fff; }
+          @media screen and (max-width: 1040px) {
+            .child-holidays-2019-bonus-body__programs-text {
+              font-size: 25px; } }
+    .child-holidays-2019-bonus .footer-social {
+      text-align: center;
+      margin: 0; }
+    .child-holidays-2019-bonus .footer-social__item:not(:last-child) {
+      margin-right: 20px; }
+    .child-holidays-2019-bonus .celebration-title {
+      z-index: 1; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-bonus .celebration-title {
+          font-size: 35px; } }
+    .child-holidays-2019-bonus .bonus-decor-2 {
+      position: relative;
+      right: 0;
+      top: -190px;
+      height: 0; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-bonus .bonus-decor-2 {
+          display: none; } }
+    .child-holidays-2019-bonus .bonus-decor-3 {
+      position: absolute;
+      right: -12%;
+      top: 0; }
+      @media screen and (max-width: 1040px) {
+        .child-holidays-2019-bonus .bonus-decor-3 {
+          right: 6%;
+          top: 20%; } }
+  .child-holidays-2019 .holiday-menu .col-name {
+    width: 66.66%; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019 .holiday-menu .col-name {
+        width: 100%; } }
+  .child-holidays-2019 .holiday-menu .col-birth {
+    width: 33.33%; }
+    @media screen and (max-width: 1040px) {
+      .child-holidays-2019 .holiday-menu .col-birth {
+        width: 100%; } }
+  @media screen and (max-width: 1040px) {
+    .child-holidays-2019 .holiday-menu .holiday-hall-sentence__btn {
+      position: relative;
+      bottom: -20px; } }
+
+/* попап детских праздников */
+.popup-child-holidays .fotorama__wrap--only-active .fotorama__stage__frame.fotorama__active {
+  visibility: hidden; }
+
+.popup-child-holidays.is-visible .fotorama__wrap--only-active .fotorama__stage__frame.fotorama__active {
+  visibility: visible; }
+
+.popup-child-holidays .popup {
+  max-width: 113.6rem;
+  width: auto;
+  padding-bottom: 0; }
+  .popup-child-holidays .popup-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays .popup-box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+  .popup-child-holidays .popup-slider {
+    width: 30%; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays .popup-slider {
+        width: 100%;
+        height: 250px; } }
+    .popup-child-holidays .popup-slider .holiday-hall-card__slider {
+      height: 100%;
+      max-height: none; }
+      .popup-child-holidays .popup-slider .holiday-hall-card__slider::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: -.8rem;
+        width: 1.5rem;
+        height: 100%;
+        background: url(../img/decor-line-waves-pink-vertical.png) 0 0 repeat-y; }
+        @media screen and (max-width: 1040px) {
+          .popup-child-holidays .popup-slider .holiday-hall-card__slider::after {
+            left: 0;
+            right: 0;
+            top: auto;
+            bottom: -.8rem;
+            width: 100%;
+            height: 1.5rem;
+            background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x; } }
+    .popup-child-holidays .popup-slider .holiday-hall-photorama {
+      height: auto;
+      max-height: none; }
+    .popup-child-holidays .popup-slider .fotorama {
+      height: 100%; }
+    .popup-child-holidays .popup-slider .fotorama__wrap {
+      height: 100%; }
+    .popup-child-holidays .popup-slider .fotorama__stage {
+      height: 100% !important; }
+    .popup-child-holidays .popup-slider .slider-element {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url(../img/child-holiday-2019/program-1.jpg) 50% 50% no-repeat;
+      background-size: cover; }
+  .popup-child-holidays .popup-body {
+    position: absolute;
+    width: 70%;
+    right: 0;
+    padding: 30px; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays .popup-body {
+        position: relative;
+        width: 100%; } }
+  .popup-child-holidays .popup-close {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    background-color: #f6f6f6;
+    right: 49px;
+    top: 31px;
+    border-radius: 56px;
+    font-size: 14px;
+    color: #2c2c2c;
+    padding: 0;
+    line-height: 56px;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    font-family: Arial, sans-serif; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays .popup-close {
+        width: 40px;
+        height: 40px;
+        right: 29px;
+        top: 25px;
+        line-height: 36px;
+        font-size: 12px; } }
+
+.popup-child-holidays__title {
+  font-size: 60px;
+  font-family: "SummerFont";
+  color: #7bc43a;
+  line-height: 0.8; }
+  @media screen and (max-width: 1040px) {
+    .popup-child-holidays__title {
+      font-size: 40px; } }
+
+.popup-child-holidays-content {
+  width: 72%;
+  padding: 108px 30px 44px 34px; }
+  @media screen and (max-width: 1040px) {
+    .popup-child-holidays-content {
+      width: 100%;
+      padding: 30px 16px; } }
+  .popup-child-holidays-content-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays-content-details {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
+  .popup-child-holidays-content__title {
+    font-size: 40px;
+    font-family: "SummerFont";
+    color: #a91f6f; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays-content__title {
+        line-height: 25px;
+        margin: 16px 0 12px; } }
+  .popup-child-holidays-content__text {
+    font-size: 15px;
+    font-family: "PT Serif Caption"; }
+    .popup-child-holidays-content__text::before {
+      content: '• ';
+      color: #c44890; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays-content__text {
+        margin-bottom: 0; } }
+  .popup-child-holidays-content__text-inline {
+    display: inline-block;
+    font-size: 15px;
+    font-family: "PT Serif Caption";
+    margin-right: 1rem; }
+    .popup-child-holidays-content__text-inline::before {
+      content: '•';
+      color: #c44890;
+      margin-right: 1rem; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays-content__text-inline {
+        margin-bottom: 0; } }
+  .popup-child-holidays-content__description {
+    font-size: 15px;
+    font-family: "PT Serif Caption";
+    font-style: italic; }
+    @media screen and (max-width: 1040px) {
+      .popup-child-holidays-content__description {
+        margin-bottom: 0;
+        margin-top: 12px; } }
+  .popup-child-holidays-content .mod-comment {
+    font-size: 15px;
+    font-family: "PT Serif Caption";
+    font-style: italic;
+    color: #7bc43a; }
+  .popup-child-holidays-content .mod-price {
+    font-size: 15px;
+    font-family: "PT Serif Caption";
+    color: #c44890; }
+  .popup-child-holidays-content .holiday-hall-sentence__btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    background-color: #98c22f;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    margin-top: 20px; }
+  .popup-child-holidays-content .child-holidays-2019-programs-element-description__price {
+    margin-bottom: 0;
+    margin-right: 20px; }
+  .popup-child-holidays-content .child-holidays-2019-programs-element-description__features {
+    margin: 0; }
+
+@media screen and (max-width: 1040px) {
+  .popup-child-holidays .holiday-hall-fotorama .fotorama__nav-wrap {
+    display: block;
+    bottom: 24px; } }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }

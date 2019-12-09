@@ -29750,3 +29750,844 @@ a.show-more__button:hover {
     }
     
 }
+
+/* детские праздники 2019 */
+.child-holidays-2019{
+    overflow: hidden;
+    .celebration-slider__title{
+        text-transform: uppercase;
+        font-size: 69px;
+        @media screen and (max-width: 1040px){
+            font-size: 45px;
+            line-height: 1;
+        }
+        &::before{
+            display: none;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    .celebration-slider__text{
+        font-size: 18px;
+        &-up{
+            color:#fff;
+            font-size:31px;
+            text-transform:uppercase;
+            @media screen and (max-width: 1040px){
+                font-size: 23px !important
+            }
+        }
+        &-down{
+            color:#fff;
+            font-size:21px;
+            text-transform:uppercase;
+            @media screen and (max-width: 1040px){
+                font-size: 15px !important
+            }
+        }
+    }
+    .celebration-slider__item {
+        position: relative;
+        padding: 60px 70px 148px;
+        @media screen and (max-width: 1040px){
+            padding: 24px 15px;
+        }
+        
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 16px;
+            background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+        }
+    }
+    .celebration-slider__body {
+        max-width: 430px;
+    }
+    .holiday-hall-sentence__body{
+        position: relative;
+        max-width: 92rem;
+    }
+    .holiday-hall-sentence{
+        background-image: url(../img/child-holiday-2019/form-back.jpg);
+        .decor-grass-1{
+            right: -18%;
+            bottom: -4%;
+        }
+        .decor-grass-3{
+            left: -15%;
+            top: 30%;
+            right: auto;
+            bottom: auto;
+        }
+    }
+    .cafe-slider__header {
+        background: url(../img/bg-slider-header-3.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        height: 16px;
+    }
+    .cafe-slider__footer {
+        background: url(../img/bg-slider-footer-3.jpg) 50% 50% no-repeat;
+        background-size: cover;
+        height: 16px;
+    }
+    .fotorama__nav-wrap {
+        position: absolute;
+        z-index: 99999;
+        bottom: 38px;
+        left: 0;
+        width: 100%;
+    }
+
+    &-programs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media screen and (max-width: 1040px){
+            flex-direction: column;
+        }
+        &-element{
+            display: flex;
+            flex-direction: row;
+            width: calc(50% - 15px);
+            border: 3px solid #c44890;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 29px;
+            &:nth-child(2n+1){
+                margin-right:29px;
+            }
+            @media screen and (max-width: 1040px){
+                margin-right: 0;
+                width: 100%;
+                flex-direction: column;
+            }
+            &__img{
+                position: relative;
+                width: 45%;
+                height: 100%;
+                background: url(../img/child-holiday-2019/program-1.jpg) 50% 50% no-repeat;
+                background-size: cover;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: -.8rem;
+                    width: 1.5rem;
+                    height: 100%;
+                    background: url(../img/decor-line-waves-pink-vertical.png) 0 0 repeat-y;
+                    
+                    @media screen and (max-width: 1040px){
+                        left: 0;
+                        right: 0;
+                        top: auto;
+                        bottom: -.8rem;
+                        width: 100%;
+                        height: 1.5rem;
+                        background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+                    }
+                }
+                @media screen and (max-width: 1040px){
+                    width: 100%;
+                    padding-top: 65%;
+                }
+            }
+            &-description{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 55%;
+                min-width: 390px;
+                padding: 36px 26px 36px 46px;
+                @media screen and (max-width: 1040px){
+                    padding: 30px 16px;
+                    width: 100%;
+                    min-width: auto;
+                }
+                &__title{
+                    font-size: 60px;
+                    font-family: "SummerFont";
+                    color: #7bc43a;
+                    margin-bottom: 20px;
+                    line-height: 0.8;
+                }
+                &__price{
+                    position: relative;
+                    font-size: 40px;
+                    font-family: "SummerFont";
+                    color: #fff;
+                    margin-bottom: 8px;
+                    &-text{
+                        position: absolute;
+                        top: 21px;
+                        left: 36px;
+                    }
+                }
+                &__features{
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 39px;
+                    font-family: "SummerFont";
+                    color: #c44890;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    &-text{
+                        line-height: 1;
+                        white-space: nowrap;
+                        &:not(:last-child){
+                            margin-right: 30px;
+                            @media screen and (max-width: 1040px){
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                    &-icon{
+                        margin-right: 13px;
+                        @media screen and (max-width: 1040px){
+                            margin-right: 8px;
+                        }
+                    }
+                }
+                &__text{
+                    font-size: 15px;
+                    font-family: "PT Serif Caption";
+                    margin-bottom: 24px;
+                }
+                &__button{
+                    display: block;
+                    overflow: hidden;
+                    width: 160px;
+                    height: 44px;
+                    line-height: 34px;
+                    background-color: #7cbd41;
+                    font-family: "SummerFont";
+                    font-size: 40px;
+                    color: #fff;
+                    padding: 5px 30px;
+                    border-radius: .4rem;
+                    cursor: pointer;
+                    margin-top: auto;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    &-menu{
+        border: 1px solid #cecece;
+        border-radius: 8px;
+        @media screen and (max-width: 1040px){
+            border: none;
+        }
+        &__title{
+            position: relative;
+            font-size: 60px;
+            font-family: "SummerFont";
+            color: #fff;
+            text-transform: uppercase;
+            text-align: center;
+            @media screen and (max-width: 1040px){
+                font-size: 42px;
+                width: calc(100% + 32px);
+                left: -16px;
+                background: url(../img/holidays-button-bg.png);
+            }
+            &::before {
+                @media screen and (max-width: 1040px){
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: -.8rem;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1.5rem;
+                    background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+                }
+            }
+            &::after {
+                @media screen and (max-width: 1040px){
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: auto;
+                    bottom: -.8rem;
+                    width: 100%;
+                    height: 1.5rem;
+                    background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+                }
+            }
+            
+            
+            &-img{
+                position: absolute;
+                top: -6px;
+                left: calc((-1450px + 100%) / 2 - 5px);
+                z-index: 1;
+                @media screen and (max-width: 1040px){
+                    display: none;
+                }
+
+            }
+        }
+        .child-holidays-2019-menu__title .holiday-hall-sentence__btn{
+            top: -16px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: none;
+            background-color: #98c22f;
+            color: #fff;
+            border: none;
+            font-weight: 700;
+            margin: 0 0 0 12px;;
+            z-index: 2;
+            @media screen and (max-width: 1040px){
+                position: relative;
+                top: -6px;
+                margin: 0;
+            }
+        }
+        &__text{
+            position: relative;
+            z-index: 2;
+            top: -10px;
+            @media screen and (max-width: 1040px){
+                top: -5px;
+                display: block;
+            }
+        }
+        &-wrapper{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+            @media screen and (max-width: 1040px){
+                padding: 16px 0 10px;
+            }
+        }
+        &__item{
+            width: calc(25% - 13px);
+            padding-top: calc((25% - 13px)*1.0814);
+            margin: 6px;
+            background: url(../img/child-holiday-2019/menu-1.jpg) 50% 50% no-repeat;
+            background-size: cover;
+            @media screen and (max-width: 1040px){
+                margin: 2px;
+                width: calc(25% - 5px);
+                padding-top: calc((25% - 5px)*1.0814);
+            }
+        }
+
+
+    }
+
+    &-cake{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #cecece;
+        border-radius: 8px;
+        padding: 17px;
+        @media screen and (max-width: 1040px){
+            position: relative;
+            flex-direction: column;
+            width: calc(100% + 32px);
+            left: -16px;
+            border-right: none;
+            border-left: none;
+            border-radius: 0;
+        }
+        
+        &-description{
+            position: relative;
+            padding: 40px;
+            min-width: 600px;
+            @media screen and (max-width: 1040px){
+                padding: 0;
+                min-width: auto;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            
+            &__title{
+                font-size: 60px;
+                font-family: "SummerFont";
+                text-transform: uppercase;
+                margin-left: 70px;
+                @media screen and (max-width: 1040px){
+                    font-size: 38px;
+                    margin-left: 37px;
+                }
+            }
+            &__text{
+                font-size: 15px;
+                font-family: "PT Serif Caption";
+                margin: 0;
+                @media screen and (max-width: 1040px){
+                    font-size: 14px;
+                }
+            }
+            &__attention{
+                font-size: 40px;
+                font-family: "SummerFont";
+                text-transform: uppercase;
+                color: #c44890;
+                margin: 0;
+                @media screen and (max-width: 1040px){
+                    font-size: 35px;
+                }
+            }
+            &__decor{
+                position: absolute;
+                top: 48px;
+                left: 32px;
+                @media screen and (max-width: 1040px){
+                    top: 8px;
+                    left: 0;
+                }
+                img{
+                    @media screen and (max-width: 1040px){
+                        height: 35px;
+                        width: 35px;
+                    }
+                }
+            }
+        }
+        .child-holidays-2019-cake-description .holiday-hall-sentence__btn {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: none;
+            background-color: #98c22f;
+            color: #fff;
+            border: none;
+            font-weight: 700;
+            margin-top: 20px;
+            @media screen and (max-width: 1040px){
+                position: relative;
+                width: 100%;
+                padding: 10px 24px;
+                font-size: 34px;
+                margin-top: 12px;
+            }
+        }
+        &-image{
+            background: url(../img/child-holiday-2019/cake-1.jpg) 50% 50% no-repeat;
+            background-size: cover;
+            width:30%;
+            @media screen and (max-width: 1040px){
+                width: 50%;
+                padding-top: 50%;
+            }
+            &:not(:last-child){
+                margin-right: 12px;
+            }
+            &-wrapper{
+                @media screen and (max-width: 1040px){
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+            }
+        }
+    }
+
+    &-slider{
+        &__title{
+            font-size: 48px;
+            font-family: "SummerFont";
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1;
+            position: relative;
+            margin-bottom: 24px;
+            @media screen and (max-width: 1040px){
+                font-size: 36px;
+                padding: 0 16px;
+            }
+        }
+        &__img{
+            position: absolute;
+            top: 0;
+            left: -70px;
+            @media screen and (max-width: 1040px){
+                left: auto;
+                right: -8%;
+                transform: rotate(-30deg);
+            }
+            img{
+                @media screen and (max-width: 1040px){
+                    height: 76px;
+                    width: 53px;
+                }
+            }
+        }
+        .cafe-slider__body .fotorama__wrap{
+            @media screen and (max-width: 1040px){
+                width: 100% !important;
+            }
+        }
+    }
+    &-bonus{
+        display: flex;
+        flex-direction: column;
+        padding: 60px 50px;
+        overflow: hidden;
+        @media screen and (max-width: 1040px){
+            flex-direction: column;
+            padding: 16px;
+        }
+        &-body{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            @media screen and (max-width: 1040px){
+                flex-direction: column-reverse;
+            }
+            
+            &__contacts{
+                min-width: 370px;
+            }
+            &__number{
+                background: url(../img/child-holiday-2019/phone-back.png) 50% 50% no-repeat;
+                background-size: contain;
+                padding: 30px 50px 20px;
+                margin-bottom: 12px;
+                @media screen and (max-width: 1040px){
+                    text-align: center;
+                    padding: 16px;
+                }
+                
+                .header-tel{
+                    font-size: 28px;
+                    font-family: "PT Serif Caption";
+                    padding: 0;
+                    margin: 0;
+                    @media screen and (max-width: 1040px){
+                        display: inline-block;
+                        font-size: 24px;
+                    }
+                }
+            }
+            &__numbertext{
+                @media screen and (max-width: 1040px){
+                    font-size: 1.3rem;
+                }
+            }
+            &__social{
+                text-align: center;
+                position: relative;
+            }
+            &__programs{
+                background: url(../img/child-holiday-2019/programs-back.png) 50% 50% no-repeat;
+                background-size: contain;
+                min-width: 550px;
+                text-align: center;
+                padding: 36px 0;
+                @media screen and (max-width: 1040px){
+                    min-width: auto;
+                    width: 100%;
+                    padding: 20px 0;
+                    margin-bottom: 10px;
+                }
+                &-text{
+                    font-family: "SummerFont";
+                    font-size: 46px;
+                    line-height: 1;
+                    margin: 0 0 4px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    @media screen and (max-width: 1040px){
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .footer-social {
+            text-align: center;
+            margin: 0;
+        }
+        .footer-social__item {
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+        }
+        .celebration-title{
+            z-index: 1;
+            @media screen and (max-width: 1040px){
+                font-size: 35px;
+            }
+        }
+
+        .bonus-decor-1{          
+
+        }
+        .bonus-decor-2{
+            position: relative;
+            right: 0;
+            top: -190px;
+            height: 0;
+            @media screen and (max-width: 1040px){
+                display: none;
+            }
+        }
+        .bonus-decor-3{
+            position: absolute;
+            right: -12%;
+            top: 0;
+            @media screen and (max-width: 1040px){
+                right: 6%;
+                top: 20%;
+            }
+        }
+    }
+    .holiday-menu .col-name{
+        width: 66.66%;
+        @media screen and (max-width: 1040px){
+            width: 100%;
+        }
+    }
+    .holiday-menu .col-birth{
+        width: 33.33%;
+        @media screen and (max-width: 1040px){
+            width: 100%;
+        }
+    }
+    .holiday-menu .holiday-hall-sentence__btn {
+        @media screen and (max-width: 1040px){
+            position: relative;
+            bottom: -20px;
+        }
+    }
+}
+
+/* попап детских праздников */
+.popup-child-holidays{
+    .fotorama__wrap--only-active .fotorama__stage__frame.fotorama__active {
+        visibility: hidden;
+    }
+    &.is-visible{
+        .fotorama__wrap--only-active .fotorama__stage__frame.fotorama__active {
+            visibility: visible;
+        }
+    }
+    .popup{
+        &-box{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            @media screen and (max-width: 1040px){
+                flex-direction: column;
+            }
+        }
+        max-width: 113.6rem;
+        width: auto;
+        padding-bottom: 0;
+        &-slider{
+            width: 30%;
+            @media screen and (max-width: 1040px){
+                width: 100%;
+                height: 250px;
+            }
+            
+            .holiday-hall-card__slider {
+                height: 100%;
+                max-height: none;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: auto;
+                    right: -.8rem;
+                    width: 1.5rem;
+                    height: 100%;
+                    background: url(../img/decor-line-waves-pink-vertical.png) 0 0 repeat-y;
+                    @media screen and (max-width: 1040px){
+                        left: 0;
+                        right: 0;
+                        top: auto;
+                        bottom: -.8rem;
+                        width: 100%;
+                        height: 1.5rem;
+                        background: url(../img/decor-line-waves-pink.png) 0 0 repeat-x;
+                    }
+                }
+            }
+            .holiday-hall-photorama{
+                height: auto;
+                max-height: none;
+            }
+            .fotorama {
+                height: 100%;
+            }
+            .fotorama__wrap {
+                height: 100%;
+            }
+            .fotorama__stage {
+                height: 100% !important;
+            }
+            .slider-element{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: url(../img/child-holiday-2019/program-1.jpg) 50% 50% no-repeat;
+                background-size: cover;
+            }
+        }
+        &-body{
+            position: absolute;
+            width: 70%;
+            right: 0;
+            padding: 30px;
+            @media screen and (max-width: 1040px){
+                position: relative;
+                width: 100%;
+            }
+            
+        }
+        &-close {
+            position: absolute;
+            width: 56px;
+            height: 56px;
+            background-color: #f6f6f6;
+            right: 49px;
+            top: 31px;
+            border-radius: 56px;
+            font-size: 14px;
+            color: #2c2c2c;
+            padding: 0;
+            line-height: 56px;
+            text-align: center;
+            cursor: pointer;
+            background-image: none;
+            font-family: Arial, sans-serif;
+            @media screen and (max-width: 1040px){
+                width: 40px;
+                height: 40px;
+                right: 29px;
+                top: 25px;
+                line-height: 36px;
+                font-size: 12px;
+            }
+        }
+    }
+    &__title{
+        font-size: 60px;
+        font-family: "SummerFont";
+        color: #7bc43a;
+        line-height: 0.8;
+        @media screen and (max-width: 1040px){
+            font-size: 40px;
+        }
+    }
+    &-content{
+        width: 72%;
+        padding: 108px 30px 44px 34px;
+        @media screen and (max-width: 1040px){
+            width: 100%;
+            padding: 30px 16px;
+        }
+        &-details{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            @media screen and (max-width: 1040px){
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+        }
+        &__title{
+            font-size: 40px;
+            font-family: "SummerFont";
+            color: rgb(169, 31, 111);
+            @media screen and (max-width: 1040px){
+                line-height: 25px;
+                margin: 16px 0 12px;
+            }
+        }
+        &__text{
+            font-size: 15px;
+            font-family: "PT Serif Caption";
+            &::before{
+                content: '• ';
+                color: #c44890;
+            }
+            @media screen and (max-width: 1040px){
+                margin-bottom: 0;
+            }
+        }
+        &__text-inline{
+            display: inline-block;
+            font-size: 15px;
+            font-family: "PT Serif Caption";
+            margin-right: 1rem;
+            &::before{
+                content: '•';
+                color: #c44890;
+                margin-right: 1rem;
+            }
+            @media screen and (max-width: 1040px){
+                margin-bottom: 0;
+            }
+        }
+        &__description{
+            font-size: 15px;
+            font-family: "PT Serif Caption";
+            font-style: italic;
+            @media screen and (max-width: 1040px){
+                margin-bottom: 0;
+                margin-top: 12px;
+            }
+        }
+        .mod-comment{
+            font-size: 15px;
+            font-family: "PT Serif Caption";
+            font-style: italic;
+            color: #7bc43a;
+        }
+        .mod-price{
+            font-size: 15px;
+            font-family: "PT Serif Caption";
+            color: #c44890;
+        }
+        .holiday-hall-sentence__btn {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: none;
+            background-color: #98c22f;
+            color: #fff;
+            border: none;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+        
+        .child-holidays-2019-programs-element-description__price {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+        .child-holidays-2019-programs-element-description__features {
+            margin: 0;
+        }
+    }
+    .holiday-hall-fotorama .fotorama__nav-wrap {
+        @media screen and (max-width: 1040px){
+            display: block;
+            bottom: 24px;
+        }
+    }
+}
