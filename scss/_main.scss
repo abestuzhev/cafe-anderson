@@ -30181,7 +30181,7 @@ a.show-more__button:hover {
         &-image{
             background: url(../img/child-holiday-2019/cake-1.jpg) 50% 50% no-repeat;
             background-size: cover;
-            width:30%;
+            width:50%;
             @media screen and (max-width: 1040px){
                 width: 50%;
                 padding-top: 50%;
@@ -30190,11 +30190,9 @@ a.show-more__button:hover {
                 margin-right: 12px;
             }
             &-wrapper{
-                @media screen and (max-width: 1040px){
-                    display: flex;
-                    flex-direction: row;
-                }
-                
+                display: flex;
+                flex-direction: row;
+                width: 100%;
             }
         }
     }
@@ -30232,6 +30230,11 @@ a.show-more__button:hover {
             }
         }
         .cafe-slider__body .fotorama__wrap{
+            @media screen and (max-width: 1040px){
+                width: 100% !important;
+            }
+        }
+        .cafe-slider__body .fotorama__stage{
             @media screen and (max-width: 1040px){
                 width: 100% !important;
             }

@@ -31635,22 +31635,22 @@ a.show-more__button:hover {
     .child-holidays-2019-cake-image {
       background: url(../img/child-holiday-2019/cake-1.jpg) 50% 50% no-repeat;
       background-size: cover;
-      width: 30%; }
+      width: 50%; }
       @media screen and (max-width: 1040px) {
         .child-holidays-2019-cake-image {
           width: 50%;
           padding-top: 50%; } }
       .child-holidays-2019-cake-image:not(:last-child) {
         margin-right: 12px; }
-      @media screen and (max-width: 1040px) {
-        .child-holidays-2019-cake-image-wrapper {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row; } }
+      .child-holidays-2019-cake-image-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 100%; }
   .child-holidays-2019-slider__title {
     font-size: 48px;
     font-family: "SummerFont";
@@ -31682,6 +31682,9 @@ a.show-more__button:hover {
         width: 53px; } }
   @media screen and (max-width: 1040px) {
     .child-holidays-2019-slider .cafe-slider__body .fotorama__wrap {
+      width: 100% !important; } }
+  @media screen and (max-width: 1040px) {
+    .child-holidays-2019-slider .cafe-slider__body .fotorama__stage {
       width: 100% !important; } }
   .child-holidays-2019-bonus {
     display: -webkit-box;
