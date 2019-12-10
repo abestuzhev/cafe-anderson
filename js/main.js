@@ -1559,6 +1559,7 @@ $(document).ready(function ($) {
     // scrollToAnchor('.graduation-party-banner__btn');
     scrollToAnchor('.holiday-menu-card-line__btn');
     scrollToAnchor('.wedding-sale-card__btn');
+    scrollToAnchor('.js-button-child-form');
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа
