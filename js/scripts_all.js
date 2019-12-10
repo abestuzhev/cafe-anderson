@@ -10792,6 +10792,7 @@ $(document).ready(function ($) {
     // scrollToAnchor('.graduation-party-banner__btn');
     scrollToAnchor('.holiday-menu-card-line__btn');
     scrollToAnchor('.wedding-sale-card__btn');
+    scrollToAnchor('.js-button-child-form');
 
 
     //поиск по кафе на странице с тортами и в оформлении заказа
@@ -11635,6 +11636,7 @@ $(document).ready(function ($) {
     showPopup(".calendar-nav-hall__decor-red:not(.no-popup)", '.popup__gallery_hall_red');
     showPopup(".c-card-new-year__box", '.popup-new-year');
     showPopup(".js-show-popup-new-year", '.popup-new-year');
+    showPopup(".js-show-popup-child-holidays", '.popup-child-holidays');
 
     showPopup(".corporate-cake-order", '.popup-corporate-cake');
     showPopup(".js-test-21042019", '.popup__virtual');
