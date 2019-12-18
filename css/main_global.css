@@ -31154,8 +31154,19 @@ a.show-more__button:hover {
   position: relative;
   width: calc(100% + 10rem);
   left: -5rem; }
-  .christmas-story-img .new-year-2020-head__img img {
-    top: -18%; }
+  @media screen and (max-width: 760px) {
+    .christmas-story-img {
+      width: calc(100% + 3.2rem);
+      left: -1.6rem; } }
+  .christmas-story-img .new-year-2020-head__img {
+    width: 100%;
+    left: 0; }
+    .christmas-story-img .new-year-2020-head__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      top: 0; }
   .christmas-story-img::after {
     content: '';
     position: absolute;
@@ -31178,9 +31189,45 @@ a.show-more__button:hover {
   @media screen and (max-width: 760px) {
     .christmas-story .new-year-2020-section {
       padding: 3.2rem 4.8rem; } }
-  @media screen and (max-width: 760px) {
-    .christmas-story .new-year-2020-section-col:last-child {
-      margin: 0 0 0 4rem; } }
+  .christmas-story .new-year-2020-section-col {
+    position: relative; }
+    .christmas-story .new-year-2020-section-col:not(:last-child) {
+      margin-right: 20px; }
+    @media screen and (max-width: 760px) {
+      .christmas-story .new-year-2020-section-col:nth-of-type(4) {
+        margin-left: 4rem; } }
+    .christmas-story .new-year-2020-section-col__decor3 {
+      position: absolute;
+      top: 0;
+      left: -84px; }
+      @media screen and (max-width: 760px) {
+        .christmas-story .new-year-2020-section-col__decor3 {
+          top: 0;
+          left: 190px; } }
+    .christmas-story .new-year-2020-section-col__decor4 {
+      position: absolute;
+      top: 10px;
+      left: -40px; }
+      @media screen and (max-width: 760px) {
+        .christmas-story .new-year-2020-section-col__decor4 {
+          top: 15px;
+          left: -34px; } }
+    .christmas-story .new-year-2020-section-col__decor5 {
+      position: absolute;
+      top: 18px;
+      left: -50px; }
+      @media screen and (max-width: 760px) {
+        .christmas-story .new-year-2020-section-col__decor5 {
+          top: 12px;
+          left: -34px; } }
+    .christmas-story .new-year-2020-section-col__decor6 {
+      position: absolute;
+      top: -4px;
+      left: -56px; }
+      @media screen and (max-width: 760px) {
+        .christmas-story .new-year-2020-section-col__decor6 {
+          top: -4px;
+          left: -56px; } }
   .christmas-story .new-year-2020-section__decor3 {
     position: absolute;
     top: 36%;
