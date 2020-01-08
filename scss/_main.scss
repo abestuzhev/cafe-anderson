@@ -30647,3 +30647,876 @@ a.show-more__button:hover {
         }
     }
 }
+
+/* анимационные программы 2019 */
+.animation-programs-2019{
+    @media screen and (max-width: 1200px){
+        position: relative;
+        width: calc(100% + 44px);
+        left: -22px;
+    }
+    @media screen and (max-width: 540px){
+        width: calc(100% + 3.2rem);
+        left: -1.6rem;
+    }
+    
+    &-head{
+        width: 100%;
+        position: relative;
+        margin-bottom: 42px;
+        &-banner{
+            position: relative;
+            height:0;
+            width: 100%;
+            padding-top: 50%;
+            background: url(../img/animation-programs-2019/banner.jpg) 50% 50% no-repeat;
+            background-color: white;
+            background-size: cover;
+            @media screen and (max-width: 540px){
+                padding-top: 80%;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+                height: 16px;
+                background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+            }
+
+            &-top{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                top: 50px;
+                z-index: 1;
+                @media screen and (max-width: 1200px){
+                    position: relative;
+                    flex-direction: column;
+                    top: 0;
+                }
+                &-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 0px 32px;
+                    border: 2px dotted white;
+                    background-color: #c44890;
+                    @media screen and (max-width: 1200px){
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        padding: 2.4rem 2.8rem;
+                    }
+                    @media screen and (max-width: 540px){
+                        padding: 1.2rem 1.6rem;
+                    }
+                }
+                .banner-top-text{
+                    font-size: 82px;
+                    font-family: "SummerFont";
+                    margin-bottom: 28px;
+                    color: white;
+                    text-transform: uppercase;
+                    margin-right: 12px;
+                    @media screen and (max-width: 1200px){
+                        font-size: 48px;
+                        margin: 0;
+                        line-height: 1;
+                    }
+                    @media screen and (max-width: 540px){
+                        font-size: 35px;
+                    }
+                }
+                .banner-top-subtext{
+                    font-size: 82px;
+                    font-family: "SummerFont";
+                    margin-bottom: 20px;
+                    color: #9acc4d;
+                    text-transform: uppercase;
+                    margin-top: 28px;
+                    @media screen and (max-width: 1200px){
+                        font-size: 48px;
+                        margin: 0;
+                        line-height: 1;
+                    }
+                    @media screen and (max-width: 540px){
+                        font-size: 35px;
+                    }
+                }
+            }
+
+            &-bottom{
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                bottom: 30px;
+                z-index: 1;
+                @media screen and (max-width: 1200px){
+                    bottom: 0px;
+                }
+
+                &-wrapper{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding: 0px 32px;
+                    border: 2px dotted white;
+                    background-color: rgba(11, 18, 24, 0.4);
+                    @media screen and (max-width: 1200px){
+                        flex-direction: column;
+                        padding: 2.4rem 2.8rem;
+                        width: 100%;
+                    }
+                    @media screen and (max-width: 540px){
+                        padding: 0.6rem 3.2rem;
+                    }
+                }
+                .banner-bottom-text{
+                    font-size: 76px;
+                    font-family: "SummerFont";
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+                    @media screen and (max-width: 1200px){
+                        font-size: 48px;
+                        line-height: 1;
+                        margin-bottom: 6px;
+                    }
+                    @media screen and (max-width: 540px){
+                        font-size: 36px;
+                    }
+                }
+            }
+        }
+        &-body{
+            position: relative;
+            padding: 44px 68px 16px;
+            background-color: #c44890;
+            @media screen and (max-width: 1200px){
+                padding: 4rem 2.8rem 1.6rem;
+            }
+            @media screen and (max-width: 540px){
+                padding: 4rem 1.6rem 1.6rem;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 100%;
+                z-index: 10;
+                height: 16px;
+                background: url(../img/decor-line-waves-green.png) 0 0 repeat-x;
+                
+            }
+
+            .decor-banner-1{
+                position: absolute;
+                top: 48%;
+                left: 40%;
+                @media screen and (max-width: 1200px){
+                    left: auto;
+                    right: -16px;
+                    top: 58%;
+                }
+            }
+            .decor-banner-2{
+                position: absolute;
+                top: 30%;
+                right: 3%;
+                @media screen and (max-width: 1200px){
+                    top: 15%;
+                }
+            }
+            .celebration-ol{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                @media screen and (max-width: 1200px){
+                    flex-direction: column;
+                    padding-right: 3.2rem;
+                }
+
+                :nth-child(1){ 
+                    order: 1; 
+                }
+                :nth-child(2){ 
+                    order: 3;
+                    @media screen and (max-width: 1200px){
+                        order: 3;
+                    }
+                }
+                :nth-child(3){ 
+                    order: 2;
+                    @media screen and (max-width: 1200px){
+                        order: 3;
+                    }
+                }
+                :nth-child(4){ 
+                    order: 4;
+                }
+                :nth-child(5){ 
+                    order: 5; 
+                }
+                &__item{
+                    width: 50%;
+                    padding-left: 74px;
+                    margin-bottom: 32px;
+                    @media screen and (max-width: 1200px){
+                        width: 100%;
+                        padding: 0;
+                    }
+                    &::before{
+                        width: 50px;
+                        height: 50px;
+                        top: 0;
+                        font-size: 24px;
+                        font-family: "PT Serif Caption";
+                        color: #68ef00;
+                        line-height: 44px;
+                        @media screen and (max-width: 1200px){
+                            margin-right: 16px;
+                            position: relative;
+                            float: left;
+                            width: 42px;
+                            height: 42px;
+                            margin-top: 4px;
+                            font-size: 20px;
+                            line-height: 38px;
+                        }
+                    }
+                }
+                &__text{
+                    font-size: 18px;
+                    font-family: "PT Serif Caption";
+                    color: #68ef00;
+                    margin: 0;
+                    @media screen and (max-width: 1200px){
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                    
+                }
+            }
+
+        }
+
+    }
+    &-program{
+        margin-bottom: 42px;
+        position: relative;
+        &-new{
+            position: relative;
+            height:0;
+            width: 100%;
+            padding-top: 53.8%;
+            background: none 50% 50% no-repeat;
+            background-color: #dadada;
+            background-size: cover;
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+            @media screen and (max-width: 1200px){
+                padding-top: 80%;
+            }
+            @media screen and (max-width: 540px){
+                padding-top: 140%;
+            }
+            &-top{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                padding: 12px 42px 30px;
+                align-items: flex-end;
+                top: 40px;
+                right: 32px;
+                border: 2px dotted white;
+                background-color: #c44890;
+                z-index: 1;
+                @media screen and (max-width: 1200px){
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    padding: 2.4rem 2.8rem;
+                    align-items: flex-start;
+                }
+                @media screen and (max-width: 540px){
+                    padding: 1.2rem 1.6rem;
+                    align-items: flex-start;
+                }
+                &__title{
+                    font-size: 72px;
+                    font-family: "SummerFont";
+                    color:  white;
+                    @media screen and (max-width: 1200px){
+                        font-size: 60px;
+                        line-height: 1;
+                    }
+                    @media screen and (max-width: 540px){
+                        font-size: 48px;
+                    }
+                }
+                &-details{
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: row;
+                    font-size: 48px;
+                    font-family: "SummerFont";
+                    color: white;
+                    @media screen and (max-width: 1200px){
+                        font-size: 32px;
+                        line-height: 1;
+                    }
+                    &__price{
+                        margin-right: 20px;
+                        @media screen and (max-width: 1200px){
+                            margin: 0;
+                        }
+                    }
+                    &__icon{
+                        margin: 11px 20px 11px 8px;
+                        @media screen and (max-width: 1200px){
+                            margin: 12px 12px 4px 12px;
+                            height: 24px;
+                        }
+                    }
+                    &__age{
+                        margin-right: 28px;
+                        @media screen and (max-width: 1200px){
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            &-bottom{
+                position: absolute;
+                bottom: 40px;
+                right: 32px;
+                padding: 36px 32px;
+                border: 2px dotted white;
+                background-color: rgba(11, 18, 24, 0.4);
+                max-width: calc(50% - 64px);
+                @media screen and (max-width: 1600px){
+                    max-width: calc(100% - 64px);
+                    background-color: rgba(11, 18, 24, 0.7);
+                }
+                @media screen and (max-width: 1200px){
+                    width: 100%;
+                    max-width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    padding: 2.4rem 2.8rem 3.6rem;
+                }
+                @media screen and (max-width: 540px){
+                    padding: 1.2rem 1.6rem 3rem;
+                }
+
+                &__text{
+                    font-size: 18px;
+                    font-family: "PT Serif Caption";
+                    line-height: 32px;
+                    color: white;
+                    @media screen and (max-width: 1200px){
+                        max-height: 148px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        overflow: hidden;
+                    }
+                }
+                &-links{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 36px;
+                    @media screen and (max-width: 1200px){
+                        flex-direction: column;
+                        margin-top: 12px;
+                    }
+                    &-cell:first-child{
+                        min-width: 50%;
+                        @media screen and (max-width: 1200px){
+                            margin-bottom: 16px;
+                        }
+                    }
+                    &__details{
+                        font-size: 18px;
+                        font-family: "PT Serif Caption";
+                        color: #a9cb58;
+                        text-transform: uppercase;
+                        margin-right: 24px;
+                        @media screen and (max-width: 1200px){
+                            margin-right: 0px;
+                            white-space: nowrap;
+                        }
+                        &:hover{
+                            color: #a9cb58;
+                        }
+                        &::after {
+                            bottom: -.5rem;
+                            border-bottom: 1px dotted #a9cb58;
+                        }
+    
+                    }
+                    &__order{
+                        font-size: 18px;
+                        font-family: "PT Serif Caption";
+                        color: #c44890;
+                        text-transform: uppercase;
+                        &:hover{
+                            color: #c44890;
+                        }
+                        &::after {
+                            bottom: -.5rem;
+                            border-bottom: 1px dotted #c44890;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+    
+
+    &-program-standart{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 42px;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+        @media screen and (max-width: 1200px){
+            position: relative;
+        }
+        &-image{
+            width: 50%;
+            background: none 50% 50% no-repeat;
+            background-color: #dadada;
+            background-size: cover;
+            @media screen and (max-width: 1200px){
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+            }
+        }
+        &-description{
+            width: 50%;
+            padding: 32px 32px 20px;
+            background-color: white;
+            @media screen and (max-width: 1200px){
+                position: relative;
+                width: 100%;
+                z-index: 2;
+                padding: 0;
+                background-color: transparent;
+            }
+            &-top{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 22px 42px 30px;
+                border: 2px dotted white;
+                background-color: #c44890;
+                @media screen and (max-width: 1200px){
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    padding: 2.4rem 2.8rem;
+                    align-items: flex-start;
+                }
+                @media screen and (max-width: 540px){
+                    padding: 1.2rem 1.6rem;
+                }
+                &__title{
+                    font-size: 72px;
+                    line-height: 1;
+                    font-family: "SummerFont";
+                    color: white;
+                    margin-bottom: 20px;
+                    @media screen and (max-width: 1200px){
+                        font-size: 60px;
+                        line-height: 1;
+                        margin-bottom: 0;
+                    }
+                    @media screen and (max-width: 540px){
+                        font-size: 48px;
+                    }
+                }
+                &-details{
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: row;
+                    padding: 8px 0 12px;
+                    &:not(:last-child){
+                        border-bottom: 1px solid rgba(255,255,255,0.4);
+                    }
+                    @media screen and (max-width: 1200px){
+                        font-size: 32px;
+                        line-height: 1;
+                        flex-wrap: wrap;
+                    }
+                    p{
+                        font-size: 34px;
+                        line-height: 1;
+                        font-family: "SummerFont";
+                        color: white;
+                        margin: 0;
+                    }
+                    &-wrapper{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-end;
+                    }
+                    &__price{
+                        margin-right: 20px;
+                        &.fixed{
+                            width: 220px;
+                            @media screen and (max-width: 1600px){
+                                width: 180px;
+                            }
+                        }
+                        @media screen and (max-width: 1200px){
+                            margin: 0 12px 0 0;
+                        }
+                    }
+                    &__icon{
+                        margin: 0 20px 0 8px;
+                        @media screen and (max-width: 1200px){
+                            margin: 12px 12px 4px 0;
+                            height: 24px;
+                        }
+                    }
+                    &__age{
+                        margin-right: 28px;
+                        &.fixed{
+                            width: 80px;
+                            @media screen and (max-width: 1600px){
+                                width: 60px;
+                            }
+                        }
+                        @media screen and (max-width: 1200px){
+                            margin: 0 12px 0 0;
+                        }
+                    }
+                    .mod-subtext{
+                        font-size: 22px;
+                        margin: 0;
+                    }
+                }
+
+            }
+            &-bottom{
+                padding: 32px;
+                @media screen and (max-width: 1200px){
+                    border: 2px dotted white;
+                    background-color: rgba(11, 18, 24, 0.7);
+                    margin-top: 420px;
+                    padding: 2.4rem 2.8rem 3.6rem;
+                }
+                @media screen and (max-width: 540px){
+                    margin-top: 220px;
+                    padding: 1.2rem 1.6rem 3rem;
+                }
+                &__text{
+                    font-size: 18px;
+                    font-family: "PT Serif Caption";
+                    line-height: 32px;
+                    color: black;
+                    @media screen and (max-width: 1200px){
+                        max-height: 148px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        overflow: hidden;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    &-form__button{
+        font-size: 3.7rem;
+        line-height: 1;
+        padding: 1rem 5.4rem;
+        font-family: "SummerFont";
+        color: black;
+        text-transform: uppercase;
+        background-color: #a9cb58;
+        margin: 0 0 0 8px;
+        border-radius: 50px;
+        cursor: pointer;
+        @media screen and (max-width: 1200px){
+            position: absolute;
+            bottom: -56px;
+            width: calc(100% - 1.6rem);
+            margin: 0 0.8rem;
+            left: 0;
+        }
+        @media screen and (max-width: 540px){
+            bottom: -46px;
+        }
+        
+    }
+    .holiday-menu{
+        margin-bottom: 42px;
+        @media screen and (max-width: 1200px){
+            margin: 0;
+        }
+    }
+    .holiday-hall-sentence__grid {
+        justify-content: space-around;
+        @media screen and (max-width: 1200px){
+            margin: 0;
+        }
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    .c-personal-data {
+        text-align: left;
+        @media screen and (max-width: 540px){
+            padding: 0 0.8rem;
+            margin-bottom: 4px;
+        }
+        &__item{
+            @media screen and (max-width: 540px){
+                width: 84%;
+            }
+        }
+    }
+    .holiday-hall-sentence {
+        background: url(../img/animation-programs-2019/bg-form.png) 50% 50% no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        background-color: #c44890;
+        @media screen and (max-width: 1200px){
+            overflow: visible;
+            margin-bottom: 64px;
+        }
+    }
+    .decor-1{
+        position: absolute;
+        top:0;
+        left:0;
+        @media screen and (max-width: 1200px){
+            display: none;
+        }
+        @media screen and (max-width: 640px){
+            display: block;
+            top: 270px;
+            left: auto;
+            right: 0;
+            transform: scale(-1, 1);
+            overflow: hidden;
+            img{
+                position: relative;
+                left: -26px;
+            }
+        }
+        @media screen and (max-width: 540px){
+            top: 260px;
+        }
+    }
+    .decor-2{
+        position: absolute;
+        top: 32%;
+        left: 13%;
+        @media screen and (max-width: 1600px){
+            display: none;
+        }
+        
+    }
+    .decor-3{
+        position: absolute;
+        top: 22%;
+        right: 18%;
+        @media screen and (max-width: 1600px){
+            display: none;
+        }
+        
+    }
+    .decor-4{
+        position: absolute;
+        top: 20%;
+        right: 4%;
+        @media screen and (max-width: 1200px){
+            display: none;
+        }
+        
+    }
+
+    &.details{
+        margin-top: 0;
+        .animation-programs-2019-program{
+            margin-bottom: 0;
+        }
+        .animation-programs-2019-program-standart{
+            margin-bottom: 0;
+        }
+        .animation-programs-2019-program-new{
+            @media screen and (max-width: 1200px){
+                padding-top: 70%;
+            }
+            &-bottom{
+                @media screen and (max-width: 1200px){
+                    position: relative;
+                    background-color: white;
+                    padding: 2.4rem 2.8rem 0.8rem;
+                }
+                @media screen and (max-width: 540px){
+                    padding: 1.2rem 1.6rem 0.8rem;
+                }
+                &__text{
+                    @media screen and (max-width: 1200px){
+                        color: black;
+                        max-height: none;
+                        font-size: 18px;
+                        line-height: 31px;
+                    }
+                }
+            }
+        }
+        .animation-programs-2019-program-standart-image{
+            @media screen and (max-width: 1200px){
+                position: absolute;
+                width: 100%;
+                height: 0;
+                padding-top: 80%;
+            }
+            @media screen and (max-width: 540px){
+                padding-top: 120%;
+            }
+        }
+        .animation-programs-2019-program-standart-description{
+            &-top{
+                @media screen and (max-width: 1200px){
+                    position: absolute;
+                }
+            }
+            &-bottom{
+                @media screen and (max-width: 1200px){
+                    margin-top: 80%;
+                    background-color: white;
+                    padding: 2.4rem 2.8rem 0.8rem;
+                    border: none;
+                }
+                @media screen and (max-width: 540px){
+                    padding: 1.2rem 1.6rem 0.8rem;
+                    margin-top: 120%;
+                }
+                &__text{
+                    @media screen and (max-width: 1200px){
+                        color: black;
+                        max-height: none;
+                        font-size: 18px;
+                        line-height: 31px;
+                    }
+                }
+            }
+        }
+    }
+    &-program-info{
+        display: flex;
+        flex-direction: row;
+        padding: 12px 32px 4px;
+        align-items: baseline;
+        background-color: white;
+        @media screen and (max-width: 1200px){
+            display: none;
+        }
+        &__title{
+            font-size: 72px;
+            font-family: "SummerFont";
+            color: #c44890;
+            line-height: 1;
+            margin-right: 32px;
+            @media screen and (max-width: 1200px){
+                font-size: 60px;
+                line-height: 1;
+            }
+            @media screen and (max-width: 540px){
+                font-size: 48px;
+            }
+        }
+        &-details{
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row;
+            font-size: 48px;
+            font-family: "SummerFont";
+            color: #c44890;
+            &__price{
+                margin-right: 20px;
+            }
+            &__icon{
+                margin: 11px 20px 11px 8px;
+            }
+            &__age{
+                margin-right: 28px;
+            }
+        }
+    }
+    &-program-details{
+        position: relative;
+        padding: 40px 32px;
+        background-color: white;
+        @media screen and (max-width: 1200px){
+            padding: 2.4rem 2.8rem;
+        }
+        @media screen and (max-width: 540px){
+            padding: 20px 8px 32px;
+        }
+        &__title{
+            position: absolute;
+            top: 16px;
+            left: 58px;
+            padding: 12px;
+            font-size: 16px;
+            font-family: "PT Serif Caption";
+            color: #83a635;
+            text-transform: uppercase;
+            background-color: white;
+            @media screen and (max-width: 1200px){
+                left: 42px;
+                top: 2px;
+                padding: 10px 12px;
+            }
+            @media screen and (max-width: 540px){
+                left: 22px;
+                top: 0;
+            }
+        }
+        &-list{
+            border: 1px dashed #15191e;
+            padding: 33px 12px 37px;
+            @media screen and (max-width: 1200px){
+                padding: 20px 12px;
+            }
+            &__item{
+                font-size: 18px;
+                line-height: 31px;
+                font-family: "PT Serif Caption";
+                color: #414141;
+                font-style: italic;
+                padding-left: 12px;
+                @media screen and (max-width: 1200px){
+                    line-height: 26px;
+                    padding-left: 0;
+                }
+                &::before{
+                    content: "- ";
+                }
+                &:not(:last-child){
+                    @media screen and (max-width: 1200px){
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
