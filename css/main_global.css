@@ -32074,6 +32074,904 @@ a.show-more__button:hover {
     display: block;
     bottom: 24px; } }
 
+/* анимационные программы 2019 */
+@media screen and (max-width: 1200px) {
+  .animation-programs-2019 {
+    position: relative;
+    width: calc(100% + 44px);
+    left: -22px; } }
+
+@media screen and (max-width: 540px) {
+  .animation-programs-2019 {
+    width: calc(100% + 3.2rem);
+    left: -1.6rem; } }
+
+.animation-programs-2019-head {
+  width: 100%;
+  position: relative;
+  margin-bottom: 42px; }
+  .animation-programs-2019-head-banner {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 50%;
+    background: url(../img/animation-programs-2019/banner.jpg) 50% 50% no-repeat;
+    background-color: white;
+    background-size: cover; }
+    @media screen and (max-width: 540px) {
+      .animation-programs-2019-head-banner {
+        padding-top: 80%; } }
+    .animation-programs-2019-head-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      height: 16px;
+      background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+    .animation-programs-2019-head-banner-top {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      top: 50px;
+      z-index: 1; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-head-banner-top {
+          position: relative;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          top: 0; } }
+      .animation-programs-2019-head-banner-top-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 0px 32px;
+        border: 2px dotted white;
+        background-color: #c44890; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-banner-top-wrapper {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            padding: 2.4rem 2.8rem; } }
+        @media screen and (max-width: 540px) {
+          .animation-programs-2019-head-banner-top-wrapper {
+            padding: 1.2rem 1.6rem; } }
+      .animation-programs-2019-head-banner-top .banner-top-text {
+        font-size: 82px;
+        font-family: "SummerFont";
+        margin-bottom: 28px;
+        color: white;
+        text-transform: uppercase;
+        margin-right: 12px; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-banner-top .banner-top-text {
+            font-size: 48px;
+            margin: 0;
+            line-height: 1; } }
+        @media screen and (max-width: 540px) {
+          .animation-programs-2019-head-banner-top .banner-top-text {
+            font-size: 35px; } }
+      .animation-programs-2019-head-banner-top .banner-top-subtext {
+        font-size: 82px;
+        font-family: "SummerFont";
+        margin-bottom: 20px;
+        color: #9acc4d;
+        text-transform: uppercase;
+        margin-top: 28px; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-banner-top .banner-top-subtext {
+            font-size: 48px;
+            margin: 0;
+            line-height: 1; } }
+        @media screen and (max-width: 540px) {
+          .animation-programs-2019-head-banner-top .banner-top-subtext {
+            font-size: 35px; } }
+    .animation-programs-2019-head-banner-bottom {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      bottom: 30px;
+      z-index: 1; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-head-banner-bottom {
+          bottom: 0px; } }
+      .animation-programs-2019-head-banner-bottom-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding: 0px 32px;
+        border: 2px dotted white;
+        background-color: rgba(11, 18, 24, 0.4); }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-banner-bottom-wrapper {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            padding: 2.4rem 2.8rem;
+            width: 100%; } }
+        @media screen and (max-width: 540px) {
+          .animation-programs-2019-head-banner-bottom-wrapper {
+            padding: 0.6rem 3.2rem; } }
+      .animation-programs-2019-head-banner-bottom .banner-bottom-text {
+        font-size: 76px;
+        font-family: "SummerFont";
+        color: white;
+        text-transform: uppercase;
+        text-align: center; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-banner-bottom .banner-bottom-text {
+            font-size: 48px;
+            line-height: 1;
+            margin-bottom: 6px; } }
+        @media screen and (max-width: 540px) {
+          .animation-programs-2019-head-banner-bottom .banner-bottom-text {
+            font-size: 36px; } }
+  .animation-programs-2019-head-body {
+    position: relative;
+    padding: 44px 68px 16px;
+    background-color: #c44890; }
+    @media screen and (max-width: 1200px) {
+      .animation-programs-2019-head-body {
+        padding: 4rem 2.8rem 1.6rem; } }
+    @media screen and (max-width: 540px) {
+      .animation-programs-2019-head-body {
+        padding: 4rem 1.6rem 1.6rem; } }
+    .animation-programs-2019-head-body::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      height: 16px;
+      background: url(../img/decor-line-waves-green.png) 0 0 repeat-x; }
+    .animation-programs-2019-head-body .decor-banner-1 {
+      position: absolute;
+      top: 48%;
+      left: 40%; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-head-body .decor-banner-1 {
+          left: auto;
+          right: -16px;
+          top: 58%; } }
+    .animation-programs-2019-head-body .decor-banner-2 {
+      position: absolute;
+      top: 30%;
+      right: 3%; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-head-body .decor-banner-2 {
+          top: 15%; } }
+    .animation-programs-2019-head-body .celebration-ol {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-head-body .celebration-ol {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          padding-right: 3.2rem; } }
+      .animation-programs-2019-head-body .celebration-ol :nth-child(1) {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
+      .animation-programs-2019-head-body .celebration-ol :nth-child(2) {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-body .celebration-ol :nth-child(2) {
+            -webkit-box-ordinal-group: 4;
+                -ms-flex-order: 3;
+                    order: 3; } }
+      .animation-programs-2019-head-body .celebration-ol :nth-child(3) {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-body .celebration-ol :nth-child(3) {
+            -webkit-box-ordinal-group: 4;
+                -ms-flex-order: 3;
+                    order: 3; } }
+      .animation-programs-2019-head-body .celebration-ol :nth-child(4) {
+        -webkit-box-ordinal-group: 5;
+            -ms-flex-order: 4;
+                order: 4; }
+      .animation-programs-2019-head-body .celebration-ol :nth-child(5) {
+        -webkit-box-ordinal-group: 6;
+            -ms-flex-order: 5;
+                order: 5; }
+      .animation-programs-2019-head-body .celebration-ol__item {
+        width: 50%;
+        padding-left: 74px;
+        margin-bottom: 32px; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-body .celebration-ol__item {
+            width: 100%;
+            padding: 0; } }
+        .animation-programs-2019-head-body .celebration-ol__item::before {
+          width: 50px;
+          height: 50px;
+          top: 0;
+          font-size: 24px;
+          font-family: "PT Serif Caption";
+          color: #68ef00;
+          line-height: 44px; }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-head-body .celebration-ol__item::before {
+              margin-right: 16px;
+              position: relative;
+              float: left;
+              width: 42px;
+              height: 42px;
+              margin-top: 4px;
+              font-size: 20px;
+              line-height: 38px; } }
+      .animation-programs-2019-head-body .celebration-ol__text {
+        font-size: 18px;
+        font-family: "PT Serif Caption";
+        color: #68ef00;
+        margin: 0; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-head-body .celebration-ol__text {
+            font-size: 16px;
+            line-height: 26px; } }
+
+.animation-programs-2019-program {
+  margin-bottom: 42px;
+  position: relative; }
+  .animation-programs-2019-program-new {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-top: 53.8%;
+    background: none 50% 50% no-repeat;
+    background-color: #dadada;
+    background-size: cover;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15); }
+    @media screen and (max-width: 1200px) {
+      .animation-programs-2019-program-new {
+        padding-top: 80%; } }
+    @media screen and (max-width: 540px) {
+      .animation-programs-2019-program-new {
+        padding-top: 140%; } }
+    .animation-programs-2019-program-new-top {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 12px 42px 30px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      top: 40px;
+      right: 32px;
+      border: 2px dotted white;
+      background-color: #c44890;
+      z-index: 1; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-program-new-top {
+          position: relative;
+          top: 0;
+          right: 0;
+          left: 0;
+          padding: 2.4rem 2.8rem;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; } }
+      @media screen and (max-width: 540px) {
+        .animation-programs-2019-program-new-top {
+          padding: 1.2rem 1.6rem;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; } }
+      .animation-programs-2019-program-new-top__title {
+        font-size: 72px;
+        font-family: "SummerFont";
+        color: white; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-program-new-top__title {
+            font-size: 60px;
+            line-height: 1; } }
+        @media screen and (max-width: 540px) {
+          .animation-programs-2019-program-new-top__title {
+            font-size: 48px; } }
+      .animation-programs-2019-program-new-top-details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        font-size: 48px;
+        font-family: "SummerFont";
+        color: white; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-program-new-top-details {
+            font-size: 32px;
+            line-height: 1; } }
+        .animation-programs-2019-program-new-top-details__price {
+          margin-right: 20px; }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-new-top-details__price {
+              margin: 0; } }
+        .animation-programs-2019-program-new-top-details__icon {
+          margin: 11px 20px 11px 8px; }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-new-top-details__icon {
+              margin: 12px 12px 4px 12px;
+              height: 24px; } }
+        .animation-programs-2019-program-new-top-details__age {
+          margin-right: 28px; }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-new-top-details__age {
+              margin: 0; } }
+    .animation-programs-2019-program-new-bottom {
+      position: absolute;
+      bottom: 40px;
+      right: 32px;
+      padding: 36px 32px;
+      border: 2px dotted white;
+      background-color: rgba(11, 18, 24, 0.4);
+      max-width: calc(50% - 64px); }
+      @media screen and (max-width: 1600px) {
+        .animation-programs-2019-program-new-bottom {
+          max-width: calc(100% - 64px);
+          background-color: rgba(11, 18, 24, 0.7); } }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-program-new-bottom {
+          width: 100%;
+          max-width: 100%;
+          left: 0;
+          bottom: 0;
+          padding: 2.4rem 2.8rem 3.6rem; } }
+      @media screen and (max-width: 540px) {
+        .animation-programs-2019-program-new-bottom {
+          padding: 1.2rem 1.6rem 3rem; } }
+      .animation-programs-2019-program-new-bottom__text {
+        font-size: 18px;
+        font-family: "PT Serif Caption";
+        line-height: 32px;
+        color: white; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-program-new-bottom__text {
+            max-height: 148px;
+            font-size: 16px;
+            line-height: 24px;
+            overflow: hidden; } }
+      .animation-programs-2019-program-new-bottom-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-top: 36px; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-program-new-bottom-links {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            margin-top: 12px; } }
+        .animation-programs-2019-program-new-bottom-links-cell:first-child {
+          min-width: 50%; }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-new-bottom-links-cell:first-child {
+              margin-bottom: 16px; } }
+        .animation-programs-2019-program-new-bottom-links__details {
+          font-size: 18px;
+          font-family: "PT Serif Caption";
+          color: #a9cb58;
+          text-transform: uppercase;
+          margin-right: 24px; }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-new-bottom-links__details {
+              margin-right: 0px;
+              white-space: nowrap; } }
+          .animation-programs-2019-program-new-bottom-links__details:hover {
+            color: #a9cb58; }
+          .animation-programs-2019-program-new-bottom-links__details::after {
+            bottom: -.5rem;
+            border-bottom: 1px dotted #a9cb58; }
+        .animation-programs-2019-program-new-bottom-links__order {
+          font-size: 18px;
+          font-family: "PT Serif Caption";
+          color: #c44890;
+          text-transform: uppercase; }
+          .animation-programs-2019-program-new-bottom-links__order:hover {
+            color: #c44890; }
+          .animation-programs-2019-program-new-bottom-links__order::after {
+            bottom: -.5rem;
+            border-bottom: 1px dotted #c44890; }
+
+.animation-programs-2019-program-standart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 42px;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15); }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019-program-standart {
+      position: relative; } }
+  .animation-programs-2019-program-standart-image {
+    width: 50%;
+    background: none 50% 50% no-repeat;
+    background-color: #dadada;
+    background-size: cover; }
+    @media screen and (max-width: 1200px) {
+      .animation-programs-2019-program-standart-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1; } }
+  .animation-programs-2019-program-standart-description {
+    width: 50%;
+    padding: 32px 32px 20px;
+    background-color: white; }
+    @media screen and (max-width: 1200px) {
+      .animation-programs-2019-program-standart-description {
+        position: relative;
+        width: 100%;
+        z-index: 2;
+        padding: 0;
+        background-color: transparent; } }
+    .animation-programs-2019-program-standart-description-top {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      padding: 22px 42px 30px;
+      border: 2px dotted white;
+      background-color: #c44890; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-program-standart-description-top {
+          position: relative;
+          top: 0;
+          right: 0;
+          left: 0;
+          padding: 2.4rem 2.8rem;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; } }
+      @media screen and (max-width: 540px) {
+        .animation-programs-2019-program-standart-description-top {
+          padding: 1.2rem 1.6rem; } }
+      .animation-programs-2019-program-standart-description-top__title {
+        font-size: 72px;
+        line-height: 1;
+        font-family: "SummerFont";
+        color: white;
+        margin-bottom: 20px; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-program-standart-description-top__title {
+            font-size: 60px;
+            line-height: 1;
+            margin-bottom: 0; } }
+        @media screen and (max-width: 540px) {
+          .animation-programs-2019-program-standart-description-top__title {
+            font-size: 48px; } }
+      .animation-programs-2019-program-standart-description-top-details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding: 8px 0 12px; }
+        .animation-programs-2019-program-standart-description-top-details:not(:last-child) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-program-standart-description-top-details {
+            font-size: 32px;
+            line-height: 1;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
+        .animation-programs-2019-program-standart-description-top-details p {
+          font-size: 34px;
+          line-height: 1;
+          font-family: "SummerFont";
+          color: white;
+          margin: 0; }
+        .animation-programs-2019-program-standart-description-top-details-wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end; }
+        .animation-programs-2019-program-standart-description-top-details__price {
+          margin-right: 20px; }
+          .animation-programs-2019-program-standart-description-top-details__price.fixed {
+            width: 220px; }
+            @media screen and (max-width: 1600px) {
+              .animation-programs-2019-program-standart-description-top-details__price.fixed {
+                width: 180px; } }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-standart-description-top-details__price {
+              margin: 0 12px 0 0; } }
+        .animation-programs-2019-program-standart-description-top-details__icon {
+          margin: 0 20px 0 8px; }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-standart-description-top-details__icon {
+              margin: 12px 12px 4px 0;
+              height: 24px; } }
+        .animation-programs-2019-program-standart-description-top-details__age {
+          margin-right: 28px; }
+          .animation-programs-2019-program-standart-description-top-details__age.fixed {
+            width: 80px; }
+            @media screen and (max-width: 1600px) {
+              .animation-programs-2019-program-standart-description-top-details__age.fixed {
+                width: 60px; } }
+          @media screen and (max-width: 1200px) {
+            .animation-programs-2019-program-standart-description-top-details__age {
+              margin: 0 12px 0 0; } }
+        .animation-programs-2019-program-standart-description-top-details .mod-subtext {
+          font-size: 22px;
+          margin: 0; }
+    .animation-programs-2019-program-standart-description-bottom {
+      padding: 32px; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-program-standart-description-bottom {
+          border: 2px dotted white;
+          background-color: rgba(11, 18, 24, 0.7);
+          margin-top: 420px;
+          padding: 2.4rem 2.8rem 3.6rem; } }
+      @media screen and (max-width: 540px) {
+        .animation-programs-2019-program-standart-description-bottom {
+          margin-top: 220px;
+          padding: 1.2rem 1.6rem 3rem; } }
+      .animation-programs-2019-program-standart-description-bottom__text {
+        font-size: 18px;
+        font-family: "PT Serif Caption";
+        line-height: 32px;
+        color: black; }
+        @media screen and (max-width: 1200px) {
+          .animation-programs-2019-program-standart-description-bottom__text {
+            max-height: 148px;
+            font-size: 16px;
+            line-height: 24px;
+            overflow: hidden;
+            color: white; } }
+
+.animation-programs-2019-form__button {
+  font-size: 3.7rem;
+  line-height: 1;
+  padding: 1rem 5.4rem;
+  font-family: "SummerFont";
+  color: black;
+  text-transform: uppercase;
+  background-color: #a9cb58;
+  margin: 0 0 0 8px;
+  border-radius: 50px;
+  cursor: pointer; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019-form__button {
+      position: absolute;
+      bottom: -56px;
+      width: calc(100% - 1.6rem);
+      margin: 0 0.8rem;
+      left: 0; } }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019-form__button {
+      bottom: -46px; } }
+
+.animation-programs-2019 .holiday-menu {
+  margin-bottom: 42px; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019 .holiday-menu {
+      margin: 0; } }
+
+.animation-programs-2019 .holiday-hall-sentence__grid {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019 .holiday-hall-sentence__grid {
+      margin: 0; } }
+  .animation-programs-2019 .holiday-hall-sentence__grid:not(:last-child) {
+    margin-bottom: 10px; }
+
+.animation-programs-2019 .c-personal-data {
+  text-align: left; }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019 .c-personal-data {
+      padding: 0 0.8rem;
+      margin-bottom: 4px; } }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019 .c-personal-data__item {
+      width: 84%; } }
+
+.animation-programs-2019 .holiday-hall-sentence {
+  background: url(../img/animation-programs-2019/bg-form.png) 50% 50% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-color: #c44890; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019 .holiday-hall-sentence {
+      overflow: visible;
+      margin-bottom: 64px; } }
+
+.animation-programs-2019 .decor-1 {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019 .decor-1 {
+      display: none; } }
+  @media screen and (max-width: 640px) {
+    .animation-programs-2019 .decor-1 {
+      display: block;
+      top: 270px;
+      left: auto;
+      right: 0;
+      -webkit-transform: scale(-1, 1);
+          -ms-transform: scale(-1, 1);
+              transform: scale(-1, 1);
+      overflow: hidden; }
+      .animation-programs-2019 .decor-1 img {
+        position: relative;
+        left: -26px; } }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019 .decor-1 {
+      top: 260px; } }
+
+.animation-programs-2019 .decor-2 {
+  position: absolute;
+  top: 32%;
+  left: 13%; }
+  @media screen and (max-width: 1600px) {
+    .animation-programs-2019 .decor-2 {
+      display: none; } }
+
+.animation-programs-2019 .decor-3 {
+  position: absolute;
+  top: 22%;
+  right: 18%; }
+  @media screen and (max-width: 1600px) {
+    .animation-programs-2019 .decor-3 {
+      display: none; } }
+
+.animation-programs-2019 .decor-4 {
+  position: absolute;
+  top: 20%;
+  right: 4%; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019 .decor-4 {
+      display: none; } }
+
+.animation-programs-2019.details {
+  margin-top: 0; }
+  .animation-programs-2019.details .animation-programs-2019-program {
+    margin-bottom: 0; }
+  .animation-programs-2019.details .animation-programs-2019-program-standart {
+    margin-bottom: 0; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019.details .animation-programs-2019-program-new {
+      padding-top: 70%; } }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019.details .animation-programs-2019-program-new-bottom {
+      position: relative;
+      background-color: white;
+      padding: 2.4rem 2.8rem 0.8rem; } }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019.details .animation-programs-2019-program-new-bottom {
+      padding: 1.2rem 1.6rem 0.8rem; } }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019.details .animation-programs-2019-program-new-bottom__text {
+      color: black;
+      max-height: none;
+      font-size: 18px;
+      line-height: 31px; } }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019.details .animation-programs-2019-program-standart-image {
+      position: absolute;
+      width: 100%;
+      height: 0;
+      padding-top: 80%; } }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019.details .animation-programs-2019-program-standart-image {
+      padding-top: 120%; } }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019.details .animation-programs-2019-program-standart-description-top {
+      position: absolute; } }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019.details .animation-programs-2019-program-standart-description-bottom {
+      margin-top: 80%;
+      background-color: white;
+      padding: 2.4rem 2.8rem 0.8rem;
+      border: none; } }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019.details .animation-programs-2019-program-standart-description-bottom {
+      padding: 1.2rem 1.6rem 0.8rem;
+      margin-top: 120%; } }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019.details .animation-programs-2019-program-standart-description-bottom__text {
+      color: black;
+      max-height: none;
+      font-size: 18px;
+      line-height: 31px; } }
+
+.animation-programs-2019-program-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 12px 32px 4px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: white; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019-program-info {
+      display: none; } }
+  .animation-programs-2019-program-info__title {
+    font-size: 72px;
+    font-family: "SummerFont";
+    color: #c44890;
+    line-height: 1;
+    margin-right: 32px; }
+    @media screen and (max-width: 1200px) {
+      .animation-programs-2019-program-info__title {
+        font-size: 60px;
+        line-height: 1; } }
+    @media screen and (max-width: 540px) {
+      .animation-programs-2019-program-info__title {
+        font-size: 48px; } }
+  .animation-programs-2019-program-info-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 48px;
+    font-family: "SummerFont";
+    color: #c44890; }
+    .animation-programs-2019-program-info-details__price {
+      margin-right: 20px; }
+    .animation-programs-2019-program-info-details__icon {
+      margin: 11px 20px 11px 8px; }
+    .animation-programs-2019-program-info-details__age {
+      margin-right: 28px; }
+
+.animation-programs-2019-program-details {
+  position: relative;
+  padding: 40px 32px;
+  background-color: white; }
+  @media screen and (max-width: 1200px) {
+    .animation-programs-2019-program-details {
+      padding: 2.4rem 2.8rem; } }
+  @media screen and (max-width: 540px) {
+    .animation-programs-2019-program-details {
+      padding: 20px 8px 32px; } }
+  .animation-programs-2019-program-details__title {
+    position: absolute;
+    top: 16px;
+    left: 58px;
+    padding: 12px;
+    font-size: 16px;
+    font-family: "PT Serif Caption";
+    color: #83a635;
+    text-transform: uppercase;
+    background-color: white; }
+    @media screen and (max-width: 1200px) {
+      .animation-programs-2019-program-details__title {
+        left: 42px;
+        top: 2px;
+        padding: 10px 12px; } }
+    @media screen and (max-width: 540px) {
+      .animation-programs-2019-program-details__title {
+        left: 22px;
+        top: 0; } }
+  .animation-programs-2019-program-details-list {
+    border: 1px dashed #15191e;
+    padding: 33px 12px 37px; }
+    @media screen and (max-width: 1200px) {
+      .animation-programs-2019-program-details-list {
+        padding: 20px 12px; } }
+    .animation-programs-2019-program-details-list__item {
+      font-size: 18px;
+      line-height: 31px;
+      font-family: "PT Serif Caption";
+      color: #414141;
+      font-style: italic;
+      padding-left: 12px; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-program-details-list__item {
+          line-height: 26px;
+          padding-left: 0; } }
+      .animation-programs-2019-program-details-list__item::before {
+        content: "- "; }
+      @media screen and (max-width: 1200px) {
+        .animation-programs-2019-program-details-list__item:not(:last-child) {
+          margin-bottom: 12px; } }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
