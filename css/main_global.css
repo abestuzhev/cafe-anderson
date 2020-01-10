@@ -32723,7 +32723,7 @@ a.show-more__button:hover {
   margin: 0 0 0 8px;
   border-radius: 50px;
   cursor: pointer; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 740px) {
     .animation-programs-2019-form__button {
       position: absolute;
       bottom: -56px;
