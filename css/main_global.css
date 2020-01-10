@@ -32722,8 +32722,9 @@ a.show-more__button:hover {
   background-color: #a9cb58;
   margin: 0 0 0 8px;
   border-radius: 50px;
+  min-width: 260px;
   cursor: pointer; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 640px) {
     .animation-programs-2019-form__button {
       position: absolute;
       bottom: -56px;
