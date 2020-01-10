@@ -32078,8 +32078,7 @@ a.show-more__button:hover {
 @media screen and (max-width: 1200px) {
   .animation-programs-2019 {
     position: relative;
-    width: calc(100% + 44px);
-    left: -22px; } }
+    width: 100%; } }
 
 @media screen and (max-width: 540px) {
   .animation-programs-2019 {
