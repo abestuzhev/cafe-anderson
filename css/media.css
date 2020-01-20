@@ -5787,7 +5787,20 @@
       margin-right: -22px;
     }
 
+    .father-2020-details .c-grid {
+        display: block;
+    }
+    .father-2020-details .c-col {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 14px;
+        border: none !important;
+    }
+
 }
+
+/* end 730 */
 
 @media (max-width: 780px) {
     .home-cafe {

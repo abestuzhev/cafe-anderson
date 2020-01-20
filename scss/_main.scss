@@ -31520,3 +31520,38 @@ a.show-more__button:hover {
         }
     }
 }
+
+.father-2020-details {
+    font-family: sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #b43c7e;
+    color: #fff;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .c-ul-list {
+        li {
+            color: #fff; 
+        }
+    }
+
+    .c-col:first-child {
+        border-right: 1px solid #8dc746;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #201600;
+        margin-bottom: 20px;
+        border: 2px solid #8dc746;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+        padding: 20px;
+        color: #fff; 
+    }
+}

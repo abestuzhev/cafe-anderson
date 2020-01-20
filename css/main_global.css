@@ -28076,8 +28076,6 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
-        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -32971,6 +32969,32 @@ a.show-more__button:hover {
       @media screen and (max-width: 1200px) {
         .animation-programs-2019-program-details-list__item:not(:last-child) {
           margin-bottom: 12px; } }
+
+.father-2020-details {
+  font-family: sans-serif;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #b43c7e;
+  color: #fff; }
+  .father-2020-details * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .father-2020-details .c-ul-list li {
+    color: #fff; }
+  .father-2020-details .c-col:first-child {
+    border-right: 1px solid #8dc746; }
+  .father-2020-details__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #201600;
+    margin-bottom: 20px;
+    border: 2px solid #8dc746;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+    color: #fff; }
 
 .popup-pie {
   /* Ручной readmore */
