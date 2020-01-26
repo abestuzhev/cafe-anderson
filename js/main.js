@@ -2409,6 +2409,7 @@ $(document).ready(function ($) {
     showPopup(".js-test-21042019", '.popup__virtual');
     showPopup(".js-holiday-menu-product", '.popup-holiday-menu');
     showPopup(".holiday-menu-filter-mobile", '.popup-holiday-filter');
+    showPopup(".c-card-father-event__box", '.popup-new-year-2020');
 
     // $(document).on('click', '#cake-order-issue', function (e) {
     //     e.preventDefault();
