@@ -61,6 +61,8 @@ $(window).on('load', function(){
         }
     });
 
+    
+
 
     if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
         customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
@@ -209,6 +211,9 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    
+    
 
 
 		/*мобильные табы*/
