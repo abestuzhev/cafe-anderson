@@ -26521,6 +26521,11 @@ a.show-more__button:hover {
         -webkit-background-size: cover;
         background-size: cover;
         margin-right: 20px;
+
+        img {
+            display: block;
+            
+        }
     }
 
     &__body {
@@ -31520,6 +31525,8 @@ a.show-more__button:hover {
         }
     }
 }
+
+
 
 .father-2020-details {
     font-family: sans-serif;

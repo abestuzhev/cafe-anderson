@@ -2298,6 +2298,8 @@ $(document).ready(function ($) {
         $(this).parents('.l-button').siblings('.cafe-info__phone-number').show();
     });
 
+    var imgPopupHolidayWidth = $('.popup-holiday-menu__img img').width();
+
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
         $(document).on('click', icon, function (e) {

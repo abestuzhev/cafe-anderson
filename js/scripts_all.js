@@ -9294,6 +9294,8 @@ $(window).on('load', function(){
         }
     });
 
+    
+
 
     if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
         customGridRefreshPosition('.holidays-grid', '.holidays-grid__container' );
@@ -9442,6 +9444,9 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    
+    
 
 
 		/*мобильные табы*/
@@ -11525,6 +11530,8 @@ $(document).ready(function ($) {
         $(this).hide();
         $(this).parents('.l-button').siblings('.cafe-info__phone-number').show();
     });
+
+    var imgPopupHolidayWidth = $('.popup-holiday-menu__img img').width();
 
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
