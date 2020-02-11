@@ -26524,6 +26524,8 @@ a.show-more__button:hover {
 
         img {
             display: block;
+            width: 100%;
+            object-fit: cover;
             
         }
     }

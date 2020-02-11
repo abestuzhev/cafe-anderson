@@ -28461,7 +28461,10 @@ a.show-more__button:hover {
   background-size: cover;
   margin-right: 20px; }
   .popup-holiday-menu__img img {
-    display: block; }
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .popup-holiday-menu__body {
   width: 60%;

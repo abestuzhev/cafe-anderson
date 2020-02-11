@@ -11555,6 +11555,40 @@ $(document).ready(function ($) {
             }else {
                 // console.log('Нет полосы прокрутки');
             }
+
+            if(windowWidth > documentWidth){
+               
+            }else {
+               
+            }
+
+            var popupHolidayImg = $('.popup-holiday-menu__img img');
+                var popupHolidayImgWidth = popupHolidayImg.width();
+                var popupHolidayImgHeight = popupHolidayImg.height();
+                var addpopupHolidayImgSize = function(){
+                    $('.popup-holiday-menu .popup-holiday-menu__img').css({
+                        width: popupHolidayImgWidth,
+                        height: popupHolidayImgHeight
+                    });
+                }
+
+            if(popup === '.popup-holiday-menu' && windowWidth >= 730){                
+                addpopupHolidayImgSize();                     
+            }
+
+            $(window).resize(function(){
+                if(windowWidth >= 730){
+                    addpopupHolidayImgSize();
+                }else {
+                    $('.popup-holiday-menu .popup-holiday-menu__img').css({
+                        width: auto,
+                        height: auto
+                    });
+                }
+            });
+            
+
+            
         });
     }
 
