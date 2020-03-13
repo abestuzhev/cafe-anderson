@@ -1,0 +1,30 @@
+/* .header,
+.header-navigation,
+.top-nav,
+.header-wrap.header-wrap-v2.sticky .header-navigation,
+.event-builder-when-time {
+    opacity: 0.2;
+} */
+
+.event-builder {
+    margin-right: 24.5rem;
+}
+
+.event-builder .event-builder-check {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 2.4rem;
+}
+
+.holiday-builder .event-builder-check__body {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    
+}
+
+@media (max-width: 1300px) {
+    .event-builder {
+        margin-right: 0;
+    }
+}
