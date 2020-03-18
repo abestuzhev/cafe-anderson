@@ -5787,7 +5787,25 @@
       margin-right: -22px;
     }
 
+    .father-2020-details .c-grid {
+        display: block;
+    }
+    .father-2020-details .c-col {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 14px;
+        border: none !important;
+    }
+
+    .popup-holiday-menu__img {
+        width: auto !important;
+        height: auto !important;
+    }
+
 }
+
+/* end 730 */
 
 @media (max-width: 780px) {
     .home-cafe {
@@ -7072,8 +7090,8 @@
     }
 
     .holiday-menu {
-        margin-left: -22px;
-        margin-right: -22px;
+        /* margin-left: -22px;
+        margin-right: -22px; */
     }
 
     .holiday-menu-filter-mobile {

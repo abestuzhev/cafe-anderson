@@ -1778,7 +1778,7 @@ div {
   font-family: "SummerFont";
   src: url("../fonts/SummerFont-Light.eot");
   src: url("../fonts/SummerFont-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SummerFont-Light.woff") format("woff"), url("../fonts/SummerFont-Light.ttf") format("truetype"), url("../fonts/SummerFont-Light.svg#SummerFont") format("svg");
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
@@ -24681,10 +24681,6 @@ a.show-more__button:hover {
 .holiday-builder .event-builder-check__body {
   margin-top: -30px; }
 
-.event-builder-check.is_stuck {
-  right: 0 !important;
-  left: auto !important; }
-
 .c-checkbox-custom input,
 .c-radio-custom input {
   display: block !important;
@@ -28076,8 +28072,6 @@ a.show-more__button:hover {
         color: #e9d2df; }
       .holiday-menu-filter__search input::-ms-input-placeholder {
         color: #e9d2df; }
-      .holiday-menu-filter__search input::-moz-placeholder {
-        color: #e9d2df; }
       .holiday-menu-filter__search input::placeholder {
         color: #e9d2df; }
     .holiday-menu-filter__body {
@@ -28462,6 +28456,11 @@ a.show-more__button:hover {
   background-position: 50% 50%;
   background-size: cover;
   margin-right: 20px; }
+  .popup-holiday-menu__img img {
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .popup-holiday-menu__body {
   width: 60%;
@@ -32972,6 +32971,32 @@ a.show-more__button:hover {
         .animation-programs-2019-program-details-list__item:not(:last-child) {
           margin-bottom: 12px; } }
 
+.father-2020-details {
+  font-family: sans-serif;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #b43c7e;
+  color: #fff; }
+  .father-2020-details * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .father-2020-details .c-ul-list li {
+    color: #fff; }
+  .father-2020-details .c-col:first-child {
+    border-right: 1px solid #8dc746; }
+  .father-2020-details__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #201600;
+    margin-bottom: 20px;
+    border: 2px solid #8dc746;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+    color: #fff; }
+
 .popup-pie {
   /* Ручной readmore */
   /* /Ручной readmore */ }
@@ -34207,3 +34232,1045 @@ a.show-more__button:hover {
             main .pie .catalog-list .catalog-list__item .c-card-catalog-2 div.c-card-catalog-2__body .c-card-catalog-2__footer .c-card-catalog__basket .icon-shopping-cart {
               width: 18px;
               height: 19px; } }
+
+.header-menu__father-decor {
+  width: 176px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: -5.9rem;
+  background: url(../img/father-2020/icon-header-father.png) 0 0 no-repeat; }
+
+.father-day-ok-order .center {
+  text-align: center; }
+
+.father-day .banner-block .title br {
+  display: none; }
+
+.father-day {
+  background-color: #fff;
+  margin-bottom: 2.5rem; }
+
+.father-day .banner-block {
+  background: url(../img/father-2020/banner-father-2020.jpg) 50% 50% no-repeat;
+  height: 78rem;
+  background-size: cover;
+  position: relative;
+  border-radius: .4rem; }
+
+.father-day .banner-block:before {
+  content: "";
+  position: absolute;
+  background: url(../img/decor-line-waves-green.png);
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  height: 1.5rem;
+  z-index: 2; }
+
+.father-day .banner-block .title, .father-day .birthday-banner .title {
+  font-size: 10.2rem;
+  font-family: "SummerFont";
+  color: #fff;
+  text-transform: uppercase;
+  line-height: .559;
+  text-align: left;
+  background: url(../img/father-2020/banner-title.png);
+  background-size: cover;
+  display: inline-block;
+  padding: 3.5rem 5rem;
+  letter-spacing: .2rem;
+  position: absolute;
+  top: 3%;
+  z-index: 2; }
+
+.father-day .banner-block .description,
+.father-day .banner-block .buy-text {
+  color: #4e3629 !important; }
+
+.father-day {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative; }
+  .father-day * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .father-day__decor-1 {
+    position: absolute;
+    top: 63%;
+    right: 0; }
+  .father-day__decor-2 {
+    position: absolute;
+    top: 74%;
+    right: 0; }
+  .father-day__decor-3 {
+    position: absolute;
+    top: 76%;
+    right: 24%; }
+  .father-day-details {
+    font-family: sans-serif;
+    padding: 20px 110px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fff;
+    background: #b43c7e url(../img/father-2020/bg-father-day-details.jpg) 0 0 no-repeat;
+    background-size: cover;
+    position: relative; }
+    .father-day-details__decor-1 {
+      position: absolute;
+      top: 38%;
+      right: 7%; }
+    .father-day-details__decor-2 {
+      position: absolute;
+      bottom: -3%;
+      left: 28%; }
+    .father-day-details::before {
+      content: "";
+      position: absolute;
+      background: url(../img/decor-line-waves-green.png);
+      bottom: -1rem;
+      left: 0;
+      width: 100%;
+      height: 1.5rem;
+      z-index: 2; }
+    .father-day-details__list {
+      padding: 0;
+      margin: 0;
+      height: 100%; }
+      .father-day-details__list li {
+        color: #fff;
+        padding-left: 44px;
+        position: relative;
+        margin-bottom: 20px; }
+        .father-day-details__list li::before {
+          content: '';
+          width: 29px;
+          height: 34px;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          background: url("../img/father-2020/icon-star.png") 0 0 no-repeat; }
+        .father-day-details__list li a, .father-day-details__list li span {
+          text-decoration: none;
+          color: #9acc4e; }
+    .father-day-details__title {
+      text-transform: uppercase;
+      font-family: "PT Serif Caption";
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 1.5;
+      text-align: left;
+      color: #bce75e; }
+  .father-day-header {
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center; }
+    .father-day-header__decor-1 {
+      position: absolute; }
+    .father-day-header__decor-2 {
+      position: absolute; }
+    .father-day-header__subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #555451;
+      margin-bottom: 16px;
+      font-family: "PT Serif Caption"; }
+    .father-day-header__title {
+      text-align: center;
+      font-family: "BebasNeue";
+      color: #c44890;
+      font-size: 55px;
+      line-height: .8;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+      font-weight: 700;
+      letter-spacing: .5px; }
+    .father-day-header__date {
+      text-align: center;
+      font-family: "BebasNeue";
+      font-size: 30px;
+      line-height: .8;
+      color: #8dc63f;
+      margin-bottom: 13px;
+      font-weight: 700;
+      letter-spacing: .5px; }
+    .father-day-header__desc {
+      background-size: cover;
+      display: inline-block; }
+  .father-day-body {
+    padding: 50px 140px; }
+  .father-day-section__head {
+    color: #2d2d2d;
+    font-family: 'SummerFont', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400; }
+
+.father-event-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .father-event-list__item {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+    padding: 0 8px; }
+
+.c-card-father-event {
+  width: 348px;
+  height: 348px;
+  background: url(../img/father-2020/border-card-father.png) 0 0 no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease; }
+  .c-card-father-event.father-event {
+    background: url(../img/father-2020/border-card-father.png) 0 0 no-repeat;
+    background-size: cover; }
+  .c-card-father-event.love-event {
+    background: url(../img/father-2020/border-card-love.png) 0 0 no-repeat;
+    background-size: cover; }
+  .c-card-father-event.mother-event {
+    background: url(../img/father-2020/border-card-mother.png) 0 0 no-repeat;
+    background-size: cover; }
+    .c-card-father-event.mother-event .c-card-father-event__title {
+      color: #d8216c; }
+  .c-card-father-event:hover .c-card-father-event__box {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+  .c-card-father-event__box {
+    width: 170px;
+    height: 170px;
+    border-radius: 500px;
+    background-color: #fff;
+    color: #bf364d;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 50px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+    .c-card-father-event__box::after {
+      content: '';
+      border: none; }
+    .c-card-father-event__box span {
+      position: absolute;
+      font-family: 'SummerFont', sans-serif;
+      text-transform: uppercase;
+      color: #2b83ba;
+      line-height: 50px;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .c-card-father-event__content {
+    position: absolute;
+    width: 186px;
+    height: 186px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .c-card-father-event__title {
+    font-family: 'SummerFont', sans-serif;
+    color: #2b83ba;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    text-align: center; }
+  .c-card-father-event__date {
+    font-size: 19px;
+    color: #99c506;
+    font-weight: 700; }
+
+@media (max-width: 1600px) {
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    font-size: 8.2rem;
+    background-position: right; }
+  .father-day-header__desc {
+    background: none !important; }
+  .father-day-header__decor-1 {
+    display: none; }
+  .father-day-header__decor-2 {
+    right: 6% !important;
+    top: 10% !important; }
+  .father-day-header__desc {
+    padding: 0 !important; }
+  .father-day-body {
+    padding: 50px 60px; } }
+
+.father-day .banner-block .banner-text, .father-day .birthday-banner .banner-text {
+  display: inline-block;
+  position: absolute;
+  top: 23%;
+  left: 3%; }
+
+.father-day .banner-block .banner-text .text, .father-day .birthday-banner .banner-text .text {
+  font-size: 7.1rem;
+  font-family: "SummerFont";
+  color: #c44890;
+  text-transform: uppercase;
+  line-height: .803;
+  text-align: left;
+  font-weight: bold; }
+
+.father-day .banner-block .banner-text .description, .father-day .birthday-banner .banner-text .description {
+  margin-top: 1.5rem;
+  font-size: 4.7rem;
+  font-family: "SummerFont";
+  color: #8cccf2;
+  line-height: 1;
+  text-align: left; }
+
+.father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  font-size: 3.7rem;
+  font-family: "SummerFont";
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.289;
+  text-align: center; }
+
+@media (max-width: 1600px) {
+  .father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+    left: 28%; } }
+
+.father-day .banner-block .buy-ticket, .father-day .birthday-banner .buy-ticket {
+  position: absolute;
+  bottom: 5%;
+  left: 24%;
+  padding: 0rem 2rem;
+  border-radius: 21px;
+  background-color: #98c22f;
+  font-size: 3.7rem;
+  font-family: "SummerFont";
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer; }
+
+@media (max-width: 1600px) {
+  .father-day .banner-block .buy-ticket, .father-day .birthday-banner .buy-ticket {
+    left: 27%; } }
+
+.father-day .banner-block .crown {
+  position: absolute;
+  left: 57%;
+  top: 17%;
+  background: url(../img/father-2020/banner-crown.png) no-repeat;
+  width: 95px;
+  height: 91px;
+  background-size: contain; }
+
+.father-day .banner-block .branch {
+  position: absolute;
+  top: 48%;
+  left: 18%;
+  z-index: 2;
+  background: url(../img/father-2020/banner-branch.png) no-repeat;
+  width: 135px;
+  height: 124px;
+  background-size: contain; }
+
+.father-day .banner-block .stick-up {
+  position: absolute;
+  top: 69%;
+  left: 47%;
+  background: url(../img/father-2020/stick-1.png) no-repeat;
+  width: 119px;
+  height: 96px;
+  background-size: contain; }
+
+.father-day .banner-block .stick-down {
+  position: absolute;
+  top: 85%;
+  left: 41%;
+  background: url(../img/stick-2.png) no-repeat;
+  width: 41px;
+  height: 32px;
+  background-size: contain; }
+
+.father-day .banner-block .banner-pic {
+  position: absolute;
+  top: 59%;
+  left: 5%;
+  background: url(../img/father-2020/banner-pic.png) no-repeat;
+  width: 284px;
+  height: 284px;
+  background-size: contain; }
+
+.father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+  position: absolute;
+  top: 62%;
+  left: 28%;
+  background: url(../img/father-2020/banner-dotted.png) no-repeat;
+  height: 201px;
+  width: 195px;
+  background-size: contain; }
+
+@media (max-width: 1600px) {
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    left: 31%; } }
+
+.slick-arrow {
+  display: none !important; }
+
+ul.slick-dots li {
+  background-color: #c8c8c8;
+  border-radius: 25px;
+  width: 10px;
+  height: 10px; }
+
+ul.slick-dots li button {
+  display: none; }
+
+ul.slick-dots li.slick-active {
+  background-color: #98c22f; }
+
+@media (max-width: 1240px) {
+  .father-day .banner-block .banner-pic {
+    width: 247px; }
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    font-size: 7.2rem; }
+  .father-day .banner-block {
+    background-size: cover;
+    height: 60rem; }
+  .father-day .banner-block .banner-pic {
+    width: 220px; }
+  .father-day .banner-block .branch {
+    width: 95px;
+    top: 52%; }
+  .father-day .banner-block .banner-text .description, .father-day .birthday-banner .banner-text .description {
+    font-size: 3.7rem; }
+  .father-day .banner-block .banner-text .text, .father-day .birthday-banner .banner-text .text {
+    font-size: 6.1rem; }
+  .father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+    font-size: 2.7rem; }
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    width: 135px; }
+  .father-day .banner-block .buy-ticket, .father-day .birthday-banner .buy-ticket {
+    font-size: 2.7rem;
+    left: 26%;
+    bottom: 6%; }
+  .father-day .banner-block .stick-up {
+    top: 65%;
+    left: 47%; }
+  .father-day-details__decor-1 {
+    top: 90%;
+    right: 7%; }
+  .father-day-details__decor-2 {
+    bottom: -3%;
+    left: 40%; }
+  .father-day-details {
+    padding: 20px 70px; }
+  .c-card-father-event {
+    width: 310px;
+    height: 310px; }
+  .father-day-body {
+    padding: 30px; }
+  .c-card-father-event__title {
+    font-size: 34px;
+    line-height: 34px; }
+  .c-card-father-event__box {
+    width: 150px;
+    height: 150px;
+    font-size: 40px; }
+  .c-card-father-event__content {
+    width: 150px;
+    height: 150px; }
+  .c-card-father-event__box span {
+    line-height: 40px; }
+  .father-day__decor-2 {
+    display: none; }
+  .father-day__decor-3 {
+    top: 76%;
+    right: 0%; } }
+
+@media (max-width: 1140px) {
+  .father-day .main-block .event-block .decor-balls {
+    width: 169px; } }
+
+@media (max-width: 1100px) {
+  .father-day .banner-block .stick-up {
+    top: 66%;
+    left: 47%; }
+  .father-day .banner-block .stick-down {
+    top: 85%;
+    left: 40%;
+    width: 34px; }
+  .c-card-father-event {
+    width: 275px;
+    height: 275px; }
+  .father-day-body {
+    padding: 26px; }
+  .father-event-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media (max-width: 1050px) {
+  .father-day .main-block .form-block .form-block-head .input-block .c-col-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 55%; }
+  .father-day .main-block .form-block .form-block-head .input-block .c-col-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 55%; }
+  .father-event-list__item {
+    width: 50%;
+    margin-bottom: 20px; }
+  .father-day-header {
+    margin-bottom: 15px; } }
+
+@media (max-width: 1060px) {
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    width: 130px; }
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    font-size: 6.2rem; }
+  .father-day .main-block .form-block .form-footer .pic-3 {
+    width: 77px;
+    left: 91%; }
+  .father-day .banner-footer-block .pic-dotted {
+    width: 240px;
+    top: 69%; } }
+
+@media (max-width: 1000px) {
+  .father-day .banner-block .banner-pic {
+    width: 192px; }
+  .father-day .banner-block .buy-ticket, .father-day .birthday-banner .buy-ticket {
+    left: 24%; }
+  .father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+    left: 26%; }
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    left: 30%; }
+  .father-day .banner-footer-block .pic-dotted {
+    display: none; }
+  .father-day .main-block .form-block .form-footer .pic-3 {
+    display: none; }
+  .father-day .banner-footer-block .list ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+  .father-day .banner-footer-block .list ul > li {
+    margin-bottom: 2.5rem; }
+  .father-day .banner-footer-block .list {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-bottom: 2.5rem; }
+  .father-day .banner-footer-block {
+    background-color: #c44890;
+    background-image: none;
+    height: auto; } }
+
+@media (max-width: 955px) {
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    font-size: 5.3rem;
+    letter-spacing: 0; }
+  .father-day .banner-block .banner-text .text, .father-day .birthday-banner .banner-text .text {
+    font-size: 4.6rem; }
+  .father-day .banner-block .banner-text .description, .father-day .birthday-banner .banner-text .description {
+    font-size: 3rem; }
+  .father-day .banner-block .banner-pic {
+    width: 150px;
+    top: 62%; }
+  .father-day .banner-block .branch {
+    top: 53%;
+    left: 15%; }
+  .father-day .banner-block .buy-ticket, .father-day .birthday-banner .buy-ticket {
+    left: 22%; }
+  .father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+    left: 25%; }
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    left: 28%; }
+  .father-day .main-block .event-block .decor-balls {
+    display: none; }
+  .father-day .main-block .event-block .img-block img {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0; }
+  .father-day .main-block .event-block .img-block {
+    width: 40%; }
+  .father-day .main-block .event-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .father-day .main-block .event-block .text-block {
+    width: 60%; } }
+
+@media (max-width: 865px) {
+  .father-day .main-block .form-block .form-footer .input-block {
+    padding: 2.5rem;
+    text-align: left; }
+  .father-day .main-block .form-block .form-footer .container.green {
+    margin-right: 11rem; }
+  .father-day .main-block .form-block .form-footer {
+    background-image: none;
+    background-color: #c44890;
+    height: auto; }
+  .father-day .main-block .form-block .form-footer .pic-1 {
+    left: 4%;
+    top: 55%; }
+  .father-day .main-block .form-block .form-footer .pic-2 {
+    top: 16%;
+    left: 73%; }
+  .father-day .main-block .form-block .form-footer .container {
+    margin-bottom: 2.5rem; }
+  .father-day .main-block .form-block .form-footer .total-block-center {
+    margin-top: 0; }
+  .father-day .main-block .form-block .form-footer .total-block-center .buy {
+    position: relative;
+    top: 2.2rem; }
+  .father-day-details {
+    padding: 20px 40px; }
+  .father-day-details__title {
+    font-size: 21px; } }
+
+@media (max-width: 825px) {
+  .father-day .banner-block {
+    height: 50rem; }
+  .father-day .banner-block .banner-pic {
+    left: 3%; }
+  .father-day .banner-block .branch {
+    width: 80px; }
+  .father-day .banner-block .crown {
+    width: 73px; }
+  .father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+    left: 24%; }
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    width: 106px; }
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    left: 30%; }
+  .father-day .banner-block .stick-up {
+    width: 96px; }
+  .father-day .banner-block .stick-down {
+    width: 22px; } }
+
+@media (max-width: 768px) {
+  main .c-layout {
+    padding: 0 !important; }
+  .c-breadcrumb {
+    padding: 0 22px !important; }
+  .father-day .banner-block {
+    border-radius: 0; }
+  .father-day .main-block .carousel .carousel-slider-new .owl-nav .owl-prev {
+    left: -19px; }
+  .father-day .main-block .carousel .carousel-slider-new .owl-nav .owl-next {
+    right: -21px; } }
+
+@media (max-width: 700px) {
+  .father-day .banner-block .banner-pic {
+    display: none; }
+  .father-day .banner-block .branch {
+    display: none; }
+  .father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+    left: 10%; }
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    left: 17%; }
+  .father-day .banner-block .buy-ticket, .father-day .birthday-banner .buy-ticket {
+    left: 9%; }
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    font-size: 4.3rem; } }
+
+@media (max-width: 670px) {
+  .father-day .main-block .event-block .img-block {
+    width: 100%; }
+  .father-day .main-block .form-block .form-footer .group .container.children {
+    padding-right: 1.1rem; }
+  .father-day .main-block .event-block .text-block {
+    width: 100%; }
+  .father-day .main-block .event-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+  .father-day .main-block .form-block .form-footer .container.green {
+    width: 100%; }
+  .father-day .main-block .form-block .form-footer .pic-1 {
+    display: none; }
+  .father-day .banner-footer-block .buy-ticket {
+    left: 33%; }
+  .father-day .main-block .form-block .form-block-head .pic-1 {
+    display: none; }
+  .father-day .main-block .form-block .form-block-head .pic-2 {
+    display: none; }
+  .father-day-details .c-grid {
+    display: block; }
+  .father-day-details .c-col {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .father-day-details__decor-1 {
+    top: 41%;
+    right: 11%; }
+  .father-day-details__decor-2 {
+    bottom: -3%;
+    left: auto;
+    right: 1%; } }
+
+@media (max-width: 640px) {
+  .father-event-list__item {
+    width: 100%; } }
+
+@media (max-width: 620px) {
+  .father-day .banner-block {
+    background-color: #222122;
+    background-size: 110%;
+    background-position-y: 100%;
+    height: 42rem; }
+  .father-day .banner-block .banner-text .text, .father-day .birthday-banner .banner-text .text {
+    font-size: 3.6rem;
+    padding-top: 2.5rem; }
+  .father-day .banner-block .banner-text .description, .father-day .birthday-banner .banner-text .description {
+    width: 24rem; }
+  .father-day .banner-block .buy-text, .father-day .birthday-banner .buy-text {
+    display: none; }
+  .father-day .banner-block .pic-dotted, .father-day .birthday-banner .pic-dotted {
+    display: none; }
+  .father-day .banner-block .crown {
+    width: 64px;
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg);
+    left: 64%;
+    top: 25%; } }
+
+@media (max-width: 600px) {
+  .owl-carousel:not(.ignore-600px) .owl-nav:not(.ignore-600px) {
+    top: 45% !important; }
+  .owl-carousel:not(.ignore-600px) .owl-nav:not(.ignore-600px) .owl-prev:not(.ignore-600px) {
+    left: -8px !important; }
+  .father-day .banner-block .crown {
+    top: 28%; }
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    font-size: 3.3rem; } }
+
+@media (max-width: 565px) {
+  .father-day .banner-block {
+    height: 40rem; } }
+
+@media (max-width: 560px) {
+  .father-day .banner-block .banner-text, .father-day .birthday-banner .banner-text {
+    width: 64%; }
+  .father-day .banner-block .banner-text .text {
+    line-height: 2.8rem; }
+  .father-day .banner-block .banner-text .description {
+    color: #4e3629;
+    margin-bottom: 16px; } }
+
+@media (max-width: 545px) {
+  .father-day .banner-block {
+    height: 39rem; }
+  .father-day .main-block .carousel .carousel-slider-new .owl-nav .owl-next {
+    right: -11px; } }
+
+@media (max-width: 535px) {
+  .father-day .banner-block {
+    height: 38rem; }
+  .father-day__decor-3,
+  .father-day__decor-1 {
+    display: none; }
+  .father-day-header__decor-2 {
+    right: -7% !important; } }
+
+@media (max-width: 510px) {
+  .father-day .banner-block {
+    height: 37rem; } }
+
+@media (max-width: 500px) {
+  .father-day .banner-block {
+    background-size: 120%; }
+  .father-day .main-block .form-block .form-block-head .input-block .c-col-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .father-day .main-block .form-block .form-block-head .input-block .c-col-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  .father-day .main-block .form-block .form-footer .total-block {
+    width: 80%; }
+  .father-day-details {
+    padding: 20px; }
+  .father-day-details__decor-1,
+  .father-day-details__decor-2 {
+    display: none; } }
+
+@media (max-width: 480px) {
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    padding: 2.5rem 1rem;
+    padding-right: 0;
+    width: 100%;
+    background-position: center; } }
+
+@media (max-width: 446px) {
+  .father-day .banner-block {
+    background-size: 130%; } }
+
+@media (max-width: 420px) {
+  .father-day .banner-block .title, .father-day .birthday-banner .title {
+    line-height: .9; }
+  .father-day .banner-block .title br, .father-day .birthday-banner .title br {
+    display: block; }
+  .father-day .banner-block .banner-text .text, .father-day .birthday-banner .banner-text .text {
+    padding-top: 4.5rem; } }
+
+@media (max-width: 340px) {
+  .father-day .banner-block .crown {
+    top: 40%;
+    width: 45px;
+    left: 68%; } }
+
+@media (max-width: 360px) {
+  .father-day .banner-block .crown {
+    top: 35%;
+    width: 45px;
+    left: 68%; } }
+
+@media (max-width: 380px) {
+  .father-day .banner-block .crown {
+    top: 32%;
+    width: 45px;
+    left: 68%; } }
+
+@media (max-width: 400px) {
+  .father-day .banner-block .crown {
+    top: 30%;
+    width: 45px;
+    left: 68%; } }
+
+@media (max-width: 400px) and (min-width: 320px) {
+  .father-day .banner-block {
+    background-size: 155%; }
+  .father-day .banner-block .banner-text .description {
+    width: 19rem;
+    font-size: 2.5rem; }
+  .father-day .banner-block .banner-text .text {
+    font-size: 2.8rem; }
+  .father-day .banner-block .buy-ticket, .father-day .birthday-banner .buy-ticket {
+    left: 3%; }
+  .father-day .banner-block .stick-up {
+    width: 71px;
+    top: 71%; }
+  .father-day .banner-block .stick-down {
+    width: 22px;
+    top: 91%;
+    left: 35%; }
+  .father-day .banner-footer-block .buy-ticket {
+    left: 20%; }
+  .father-day .main-block .event-block .text-block ul > li {
+    line-height: 1.2;
+    margin-bottom: .5rem; }
+  .father-day .main-block .event-block .text-block {
+    padding-left: 2rem; }
+  .father-day .main-block .form-block .form-footer .container {
+    margin-bottom: 0; }
+  .father-day .main-block .form-block .form-footer .group .c-counter-big {
+    padding-bottom: .5rem; }
+  .father-day .main-block .form-block .form-footer .price-total {
+    padding-left: 32px;
+    width: 100%; }
+  .father-day .main-block .form-block .form-footer .group {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+  .father-day .main-block .carousel .carousel-slider-new .owl-nav .owl-next {
+    right: -11px; } }
+
+.total-block-center .c-checkbox {
+  color: #fff; }
+
+.total-block-center .c-checkbox a {
+  color: #9dee23; }
+
+.father-day .main-block .form-block .form-footer-v2 .input-block {
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 10px 0; }
+
+.father-day .main-block .form-block .form-footer-v2 .group {
+  position: relative;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px; }
+
+.father-day .main-block .form-block .form-footer-v2 .container {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.father-day .birthday-banner .banner-text, .father-day .birthday-banner .buy-text, .father-day .birthday-banner .buy-ticket, .father-day .birthday-banner .pic-dotted {
+  z-index: 1; }
+
+.father-day .birthday-banner .banner-text .description {
+  color: #fff; }
+
+.father-day .main-block .form-block .form-footer-v2 .input-block {
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 10px 0; }
+
+.father-day .main-block .form-block .form-footer-v2 .group {
+  position: relative;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px; }
+
+.father-day .main-block .form-block .form-footer-v2 .container {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+@media (max-width: 1000px) {
+  .father-day .banner-footer-block.mini {
+    height: auto;
+    padding: 10px 12px 46px; }
+  .father-day .banner-footer-block .text {
+    padding: 0;
+    font-size: 20px; } }
