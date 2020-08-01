@@ -34,6 +34,7 @@ var documentHeight = (document.documentElement.clientHeight );
 
 
 $(window).on('load', function(){
+    console.log('hello world');
 
     $(document).on('click', '.promocode-table-btn', function(e){
         e.preventDefault();
@@ -2340,6 +2341,20 @@ $(document).ready(function ($) {
             onPopupClose(parentModal);
         }
         // console.log('popup-close!!!!');
+
+        // размеры картинки в модалке праздничное меню
+        // $(".popup-holiday-menu__img img").load(function() {
+            
+            
+        // });
+
+        // var holidayImgHeight = $('.popup-holiday-menu__img img').height();
+        //     var holidayImgWidth = $('.popup-holiday-menu__img img').width();
+        //     console.log('holidayImgWidth: ' + holidayImgWidth);
+        // $('.popup-holiday-menu__img').css({
+        //     height: holidayImgHeight,
+        //     width: holidayImgWidth
+        // });
     });
 
     $(document).on('click', '.js-popup-close', function (e) {

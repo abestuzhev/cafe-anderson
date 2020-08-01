@@ -1,354 +1,384 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Cписок страниц АндерСон</title>
-    <link rel="shortcut icon" href="favicon.png">
-    <!--[if lt IE 10]><script src="js/IE9.js"></script><![endif]-->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <title>Cписок страниц АндерСон</title>
+   <link rel="shortcut icon" href="favicon.png">
+   <!--[if lt IE 10]>
+   <script src="js/IE9.js"></script><![endif]-->
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
 
-<style>
-    html {
-      min-height: 100%;
-    }
+   <style>
+      html {
+         min-height: 100%;
+      }
 
-    body {
-        color: #292929;
-        padding: 0;
-        margin: 0;
+      body {
+         color: #292929;
+         padding: 0;
+         margin: 0;
+         min-height: 100%;
+         font: 16px/32px 'Roboto', sans-serif;
+         background: url('./img/bg-page.jpg') repeat;
+
+      }
+
+      /*.bg {
+        width: 100%;
         min-height: 100%;
-        font: 16px/32px 'Roboto', sans-serif;
-        background: url('./img/bg-page.jpg') repeat;
 
-    }
-
-    /*.bg {
-      width: 100%;
-      min-height: 100%;
-
-      -webkit-filter: blur(5px);
-      -moz-filter: blur(5px);
-      -o-filter: blur(5px);
-      -ms-filter: blur(5px);
-      filter: blur(5px);
-    }*/
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+      }*/
 
 
+      h1 {
+         color: #292929;
+         margin: 0 0 20px;
+         padding-bottom: 10px;
+         font-size: 28px;
+         border-bottom: 1px solid #292929;
+         font-weight: 700;
+         font-family: Roboto, Arial, sans-serif;
+      }
 
-    h1 {
-        color: #292929;
-        margin: 0 0 20px;
-        padding-bottom: 10px;
-        font-size: 28px;
-        border-bottom: 1px solid #292929;
-        font-weight: 700;
-        font-family: Roboto, Arial, sans-serif;
-    }
+      ol {
+         padding: 0;
+         list-style-position: inside;
+      }
 
-    ol {
-        padding: 0;
-        list-style-position: inside;
-    }
+      .item {
+         position: relative;
+         /*padding-left: 25px;*/
+         color: #292929;
+         font-size: 1em;
+         margin: 0;
+         line-height: 1.2;
+         margin-bottom: 10px;
+      }
 
-    .item {
-      position: relative;
-      /*padding-left: 25px;*/
-      color: #292929;
-      font-size: 1em;
-      margin: 0;
-      line-height: 1.2;
-      margin-bottom: 10px;
-    }
+      .block-date {
+         border: 1px solid #eee;
+         border-radius: 2px;
+         padding-top: 10px;
+         margin-bottom: 10px;
+      }
 
-	.block-date {
-		border: 1px solid #eee;
-		border-radius: 2px;
-		padding-top: 10px;
-		margin-bottom: 10px;
-	}
-	.block-date_title {
-		font-size: 10px;
-		line-height: 1;
-		padding-left: 25px;
-		margin-bottom: 10px;
-	}
+      .block-date_title {
+         font-size: 10px;
+         line-height: 1;
+         padding-left: 25px;
+         margin-bottom: 10px;
+      }
 
-    .corrected::before {
-      content: '⌘';
-      position: absolute;
-      top: 0;
-      left: -20px;
-      color: #292929;
-    }
+      .corrected {
+         border: 1px dotted #292929;
+         padding: 3px;
+      }
 
-    .disable {
-      opacity: .6;
-      cursor: default;
-    }
+      .corrected::before {
+         content: '⌘';
+         position: absolute;
+         top: 4px;
+         left: -23px;
+         color: #292929;
+      }
 
-    .disable:hover {
-      color: #292929;
-      opacity: .6;
-      text-decoration: none;
-    }
+      .disable {
+         opacity: .6;
+         cursor: default;
+      }
 
-
-    section {
-        margin: 10px auto;
-        max-width: 400px;
-        /*background: rgba(255, 255, 255, .95);*/
-        background-color: #fff;
-        padding: 40px 60px;
-        /*padding-left: 0;*/
-        border-radius: 6px;
-        box-shadow: 0 20px 20px rgba(0,0,0,.2);
-        min-width: 200px;
-    }
+      .disable:hover {
+         color: #292929;
+         opacity: .6;
+         text-decoration: none;
+      }
 
 
+      section {
+         margin: 10px auto;
+         max-width: 400px;
+         /*background: rgba(255, 255, 255, .95);*/
+         background-color: #fff;
+         padding: 40px 60px;
+         /*padding-left: 0;*/
+         border-radius: 6px;
+         box-shadow: 0 20px 20px rgba(0, 0, 0, .2);
+         min-width: 200px;
+      }
 
-    a {
-        text-decoration: none;
-        color: #292929;
-        font-weight: 500;
-    }
 
-    a:hover { color: #8dc746; text-decoration: underline;}
+      a {
+         text-decoration: none;
+         color: #292929;
+         font-weight: 500;
+      }
 
-    .logo {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: #333;
-    }
+      a:hover {
+         color: #8dc746;
+         text-decoration: underline;
+      }
 
-    body {
-        text-align: center;
-    }
+      .logo {
+         display: block;
+         text-align: center;
+         text-decoration: none;
+         color: #333;
+      }
 
-    * {
-        box-sizing: border-box;
-    }
+      body {
+         text-align: center;
+      }
 
-    section {
-        display: inline-block;
-        vertical-align: top;
-        padding: 20px 40px;
-        text-align: left;
-        margin-left: 10px;
-        margin-right: 10px;
-        box-sizing: border-box;
-        margin-bottom: 30px;
-    }
+      * {
+         box-sizing: border-box;
+      }
 
-    .item span {
-        display: block;
-        font-size: 13px;
-        font-style: italic;
-        margin-left: 18px;
-        color: #969696;
-    }
+      section {
+         display: inline-block;
+         vertical-align: top;
+         padding: 20px 40px;
+         text-align: left;
+         margin-left: 10px;
+         margin-right: 10px;
+         box-sizing: border-box;
+         margin-bottom: 30px;
+      }
 
-    .item:hover span {
-        color: #8dc746;
-    }
+      .item span {
+         display: block;
+         font-size: 13px;
+         font-style: italic;
+         margin-left: 18px;
+         color: #969696;
+      }
 
-    h3 {
-        display: block;
-        margin-bottom: 6px;
-        font-size: 22px;
-        font-weight: 400;
-        border-bottom: 1px solid #ccc;
-    }
+      .item:hover span {
+         color: #8dc746;
+      }
 
-    .layout {
-        /*position: fixed;*/
-        /*top: 40%;*/
-        /*left: 50%;*/
-        /*transform: translate(-50%, -50%);*/
-        margin-top: 20px;
-    }
+      h3 {
+         display: block;
+         margin-bottom: 6px;
+         font-size: 22px;
+         font-weight: 400;
+         border-bottom: 1px solid #ccc;
+      }
 
-    .col {
-        display: inline-block;
-    }
-    .col > section {
-        display: block;
-    }
+      .layout {
+         /*position: fixed;*/
+         /*top: 40%;*/
+         /*left: 50%;*/
+         /*transform: translate(-50%, -50%);*/
+         margin-top: 20px;
+      }
 
-    @media screen and (max-width: 700px) {
-        section {
+      .col {
+         display: inline-block;
+      }
+
+      .col > section {
+         display: block;
+      }
+
+      @media screen and (max-width: 700px) {
+         section {
             width: 100%;
             padding: 20px;
             max-width: none;
             margin-left: 0;
             margin-right: 0;
-        }
+         }
 
-        .item {
+         .item {
             padding: 0;
-        }
+         }
 
-        .col {
+         .col {
             width: 100%;
-        }
+         }
 
-        body {
+         body {
             background: #fdf7e8 !important;
-        }
+         }
 
-        .layout {
+         .layout {
             padding: 0 20px;
-        }
-    }
-</style>
+         }
+      }
+   </style>
 </head>
 
 <body>
-  <div class="bg"></div>
+<div class="bg"></div>
 
-  <div class="layout">
-      <a href="home.html" class="logo" target="_blank">
-          <img src="img/logonew.png" alt="">
-      </a>
-      <div class="col">
-          <section>
-              <h3>1 этап</h3>
-              <ol>
-                  <li class="item"><a target="_blank" href="home.html">Главная</a></li>
-                  <li class="item"><a target="_blank" href="cafe-list.html">Список кафе</a></li>
-                  <li class="item"><a target="_blank" href="cafe-card.html">Карточка кафе</a></li>
-                  <li class="item"><a target="_blank" href="vacancies.html">Вакансии</a></li>
-                  <li class="item"><a target="_blank" href="partners.html">Наши партнеры</a></li>
-                  <li class="item"><a target="_blank" href="404.html">Ошибка 404</a></li>
-                  <li class="item"><a target="_blank" href="reviews.html">Отзывы</a></li>
-                  <li class="item"><a target="_blank" href="star-guests.html">Звездные гости</a></li>
-                  <li class="item"><a target="_blank" href="contact.html">Контакты</a></li>
-                  <li class="item"><a target="_blank" href="search.html">Поисковая выдача</a></li>
-                  <li class="item"><a target="_blank" href="creators.html">Создатели Андерсон</a></li>
-                  <li class="item"><a target="_blank" href="factory-happiness.html">Фабрика счастья</a></li>
-                  <li class="item"><a target="_blank" href="dispatch.html">Управление рассылками</a></li>
-                  <li class="item"><a target="_blank" href="about.html">О нас</a></li>
-              </ol>
-          </section>
-
-          <section>
-              <h3>Служебные</h3>
-              <ol>
-                  <li class="item"><a target="_blank" href="test-modal.html">Тест модалки</a></li>
-                  <li class="item"><a target="_blank" href="icon.html">Иконки</a></li>
-                  <li class="item"><a target="_blank" href="catalog-test.html">Тестовый каталог</a></li>
-                  <li class="item"><a target="_blank" href="header-test.html">Тестовая шапка</a></li>
-                  <li class="item"><a target="_blank" href="demo-inst/index.html">Инстаграм</a></li>
-                  <li class="item"><a target="_blank" href="widget_check.html">Виджет бронирования</a></li>
-                  <li class="item"><a target="_blank" href="datepicker-test.html">datepicker</a></li>
-              </ol>
-          </section>
-      </div>
+<div class="layout">
+   <a href="home.html" class="logo" target="_blank">
+      <img src="img/logonew.png" alt="">
+   </a>
+   <div class="col">
       <section>
-          <h3>2-3 этап</h3>
-          <ol>
-              <li class="item"><a target="_blank" href="bonus-program.html">Бонусная программа</a></li>
-              <li class="item"><a target="_blank" href="holiday-wedding.html">Повод для праздника. Свадьба</a></li>
-              <li class="item"><a target="_blank" href="holiday-tortzhestvo.html">Повод для праздника. Тортжество</a></li>
-              <li class="item"><a target="_blank" href="holiday-karapuznik.html">Повод для праздника. Карапузник</a></li>
-              <li class="item"><a target="_blank" href="holiday-mameninyi.html">Повод для праздника. Маменины</a></li>
-              <li class="item"><a target="_blank" href="holiday-ded.html">Повод для праздника. Дедулечник</a></li>
-              <li class="item"><a target="_blank" href="holiday-reason.html">Поводы для праздника</a></li>
-              <li class="item"><a target="_blank" href="cake-page.html">Торты NEW</a></li>
-              <li class="item"><a target="_blank" href="holidays-all.html">Праздники. Общая страница</a></li>
-              <li class="item"><a target="_blank" href="loft.html">Карточка лофта</a></li>
-              <li class="item"><a target="_blank" href="holiday-space-list.html">Список праздничных пространств <span>Новая версия</span></a></li>
-              <li class="item"><a target="_blank" href="holiday-space-list.old.html">Список праздничных пространств <span>Первоначальаня версия</span></a></li>
-              <li class="item"><a target="_blank" href="constructor.html">Конструктор тортов</a></li>
-              <li class="item"><a target="_blank" href="holiday-offers.html">Праздники предложения</a></li>
-              <li class="item"><a target="_blank" href="event-builder.html">Конструктор праздника <span>Основная страница</span></a></li>
-              <li class="item"><a target="_blank" href="event-builder-thanks.html">Конструктор праздника <span>Спасибо за ваш заказ</span></a></li>
-              <li class="item"><a target="_blank" href="catering.html">Кейтеринг</a></li>
-              <li class="item"><a target="_blank" href="children-holidays.html">Детские праздники</a></li>
-              <li class="item"><a target="_blank" href="animation-programs.html">Анимационные программы</a></li>
-              <li class="item"><a target="_blank" href="corporate-cake.html">Корпоративные торты</a></li>
-              <li class="item"><a target="_blank" href="holiday-halls.html">Праздничные залы</a></li>
-              <li class="item"><a target="_blank" href="holiday-halls-more.html">Праздничные залы. Подробно.</a></li>
-              <li class="item"><a target="_blank" href="holiday-menu.html">Праздничное меню</a></li>
-              <li class="item"><a target="_blank" href="holiday-builder.html">Конструктор выездного праздника</a></li>
-              <li class="item"><a target="_blank" href="wedding.html">Странциа "Свадьба"</a></li>
-              <li class="item"><a target="_blank" href="11.html">10 лет АндерСон</a></li>
-              <li class="item"><a target="_blank" href="celebration.html">Праздники</a></li>
-              <li class="item"><a target="_blank" href="family-holidays.html">Семейные праздники</a></li>
-              <li class="item"><a target="_blank" href="corporate-events.html">Корпоративные мероприятия</a></li>
-              <li class="item corrected"><a target="_blank" href="child-holiday_all.html">Детские праздники. Общая</a></li>
-              <li class="item corrected"><a target="_blank" href="child-holiday_2-4.html">Детские праздники 2-4 лет</a></li>
-              <li class="item corrected"><a target="_blank" href="child-holiday_4-6.html">Детские праздники 4-6 лет</a></li>
-
-          </ol>
+         <h3>1 этап</h3>
+         <ol>
+            <li class="item"><a target="_blank" href="home.html">Главная</a></li>
+            <li class="item"><a target="_blank" href="cafe-list.html">Список кафе</a></li>
+            <li class="item"><a target="_blank" href="cafe-card.html">Карточка кафе</a></li>
+            <li class="item"><a target="_blank" href="vacancies.html">Вакансии</a></li>
+            <li class="item"><a target="_blank" href="partners.html">Наши партнеры</a></li>
+            <li class="item"><a target="_blank" href="404.html">Ошибка 404</a></li>
+            <li class="item"><a target="_blank" href="reviews.html">Отзывы</a></li>
+            <li class="item"><a target="_blank" href="star-guests.html">Звездные гости</a></li>
+            <li class="item"><a target="_blank" href="contact.html">Контакты</a></li>
+            <li class="item"><a target="_blank" href="search.html">Поисковая выдача</a></li>
+            <li class="item"><a target="_blank" href="creators.html">Создатели Андерсон</a></li>
+            <li class="item"><a target="_blank" href="factory-happiness.html">Фабрика счастья</a></li>
+            <li class="item"><a target="_blank" href="dispatch.html">Управление рассылками</a></li>
+            <li class="item"><a target="_blank" href="about.html">О нас</a></li>
+         </ol>
       </section>
 
-
       <section>
-          <h3>4 этап</h3>
-          <ol>
-              <li class="item"><a target="_blank" href="catalog.html">Каталог</a></li>
-              <li class="item"><a target="_blank" href="basket.html">Корзина</a></li>
-              <li class="item"><a target="_blank" href="error-basket.html">Корзина<span>Ошибка</span></a></li>
-              <li class="item"><a target="_blank" href="ordering.html">Оформление заказа</a></li>
-              <li class="item"><a target="_blank" href="ordering-auth.html">Оформление заказа <span>Форма входа</span></a></li>
-              <li class="item"><a target="_blank" href="ordering-finish.html">Оформление заказа <span>Результирующая страница</span></a></li>
-              <li class="item"><a target="_blank" href="ordering-finish-paid.html">Оформление заказа <span>Всё оплачено</span></a></li>
-              <li class="item"><a target="_blank" href="ordering-finish-error.html">Оформление заказа <span>Ошибка</span></a></li>
-              <li class="item"><a target="_blank" href="lk-history.html">Личный кабинет <span>История заказов</span></a></li>
-              <li class="item"><a target="_blank" href="lk-profile-edit.html">Личный кабинет <span>Редактировать профиль</span></a></li>
-              <li class="item"><a target="_blank" href="lk-profile.html">Личный кабинет <span>Профиль пользователя</span></a></li>
-              <li class="item"><a target="_blank" href="events.html">Афиша</a></li>
-              <li class="item"><a target="_blank" href="news.html">Новости</a></li>
-              <li class="item"><a target="_blank" href="news-post.html">Подробная новость</a></li>
-              <li class="item"><a target="_blank" href="stock.html">Акции</a></li>
-              <li class="item"><a target="_blank" href="franchise.html">Франшиза</a></li>
-          </ol>
-
+         <h3>Служебные</h3>
+         <ol>
+            <li class="item"><a target="_blank" href="test-modal.html">Тест модалки</a></li>
+            <li class="item"><a target="_blank" href="icon.html">Иконки</a></li>
+            <li class="item"><a target="_blank" href="catalog-test.html">Тестовый каталог</a></li>
+            <li class="item"><a target="_blank" href="header-test.html">Тестовая шапка</a></li>
+            <li class="item"><a target="_blank" href="demo-inst/index.html">Инстаграм</a></li>
+            <li class="item"><a target="_blank" href="widget_check.html">Виджет бронирования</a></li>
+            <li class="item"><a target="_blank" href="datepicker-test.html">datepicker</a></li>
+         </ol>
       </section>
-      <section>
-          <h3>Дополнительные страницы</h3>
-          <ol>
-              <li class="item"><a target="_blank" href="cake.html">Торты</a></li>
-              <li class="item"><a target="_blank" href="graduation-party.html">Выпускные</a></li>
-              <li class="item"><a target="_blank" href="styles.html">Стили оформления</a></li>
-              <li class="item"><a target="_blank" href="excursion.html">Экскурсии</a></li>
-              <li class="item"><a target="_blank" href="easter.html">Пасха</a></li>
-              <li class="item"><a target="_blank" href="partner-panel-cafe.html">Административная панель. <span>Список кафе</span></a></li>
-              <li class="item"><a target="_blank" href="partner-panel-dish.html">Административная панель. <span>Список блюд</span></a></li>
-              <li class="item"><a target="_blank" href="partner-panel-dish-card.html">Административная панель. <span>Карточка блюда</span></a></li>
-              <li class="item"><a target="_blank" href="partner-panel-events.html">Административная панель. <span>Мероприятия</span></a></li>
-              <li class="item"><a target="_blank" href="partner-panel-events-card.html">Административная панель. <span>Карточка мероприятия</span></a></li>
-              <li class="item"><a target="_blank" href="partner-panel-hall.html">Административная панель. <span>Список залов</span></a></li>
-              <li class="item"><a target="_blank" href="partner-panel-hall-card.html">Административная панель. <span>Карточка зала</span></a></li>
-              <li class="item"><a target="_blank" href="catalog-dessert.html">Десерты</a></li>
-              <li class="item"><a target="_blank" href="phone-page.html">Номер телефона</a></li>
-              <li class="item"><a target="_blank" href="email-sentence.html">Email рассылка</a></li>
-              <li class="item"><a target="_blank" href="email-afisha.html">Email рассылка. Афиша</a></li>
-              <li class="item"><a target="_blank" href="day-knowledge.html">1 сентября</a></li>
-              <li class="item"><a target="_blank" href="new-year-2019.html">Новогодние программы 2018 </a></li>
-              <li class="item"><a target="_blank" href="contact-us.html">Связаться с нами</a></li>
-              <li class="item"><a target="_blank" href="sitemap.html">Карта сайта</a></li>
-              <li class="item"><a target="_blank" href="promocode.html">Промокод</a></li>
-              <li class="item"><a target="_blank" href="halloween-2019.html">Хэллоуин 2019</a></li>
-              <li class="item"><a target="_blank" href="new-year-2020.html">Новогодние ёлки 2020 <span>Бронирование столиков</span></a></li>
-              <li class="item"><a target="_blank" href="new-year-2020-christmas-story.html">Новогодние ёлки 2020 <span>Новогодняя сказка</span></a></li>
-              <li class="item"><a target="_blank" href="child-holidays-2019.html">Детские праздники 2019</a></li>
-              <li class="item"><a target="_blank" href="animation-programs-2019.html">Анимационные программы 2019</a></li>
-              <li class="item"><a target="_blank" href="animation-programs-details-2019.html">Анимационные программы 2019 <span>Подробнее</span></a></li>
-              <li class="item"><a target="_blank" href="animation-programs-details-standart-2019.html">Анимационные программы 2019 <span>Подробнее, стандартные</span></a></li>
-              <li class="item"><a target="_blank" href="father-2020.html">Лучший папа 2020</a></li>
+   </div>
+   <section>
+      <h3>2-3 этап</h3>
+      <ol>
+         <li class="item"><a target="_blank" href="bonus-program.html">Бонусная программа</a></li>
+         <li class="item"><a target="_blank" href="holiday-wedding.html">Повод для праздника. Свадьба</a></li>
+         <li class="item"><a target="_blank" href="holiday-tortzhestvo.html">Повод для праздника. Тортжество</a></li>
+         <li class="item"><a target="_blank" href="holiday-karapuznik.html">Повод для праздника. Карапузник</a></li>
+         <li class="item"><a target="_blank" href="holiday-mameninyi.html">Повод для праздника. Маменины</a></li>
+         <li class="item"><a target="_blank" href="holiday-ded.html">Повод для праздника. Дедулечник</a></li>
+         <li class="item"><a target="_blank" href="holiday-reason.html">Поводы для праздника</a></li>
+         <li class="item"><a target="_blank" href="cake-page.html">Торты NEW</a></li>
+         <li class="item"><a target="_blank" href="holidays-all.html">Праздники. Общая страница</a></li>
+         <li class="item"><a target="_blank" href="loft.html">Карточка лофта</a></li>
+         <li class="item"><a target="_blank" href="holiday-space-list.html">Список праздничных пространств <span>Новая версия</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="holiday-space-list.old.html">Список праздничных пространств <span>Первоначальаня версия</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="constructor.html">Конструктор тортов</a></li>
+         <li class="item"><a target="_blank" href="holiday-offers.html">Праздники предложения</a></li>
+         <li class="item"><a target="_blank" href="event-builder.html">Конструктор праздника
+            <span>Основная страница</span></a></li>
+         <li class="item"><a target="_blank" href="event-builder-thanks.html">Конструктор праздника <span>Спасибо за ваш заказ</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="catering.html">Кейтеринг</a></li>
+         <li class="item"><a target="_blank" href="children-holidays.html">Детские праздники</a></li>
+         <li class="item"><a target="_blank" href="animation-programs.html">Анимационные программы</a></li>
+         <li class="item"><a target="_blank" href="corporate-cake.html">Корпоративные торты</a></li>
+         <li class="item"><a target="_blank" href="holiday-halls.html">Праздничные залы</a></li>
+         <li class="item"><a target="_blank" href="holiday-halls-more.html">Праздничные залы. Подробно.</a></li>
+         <li class="item"><a target="_blank" href="holiday-menu.html">Праздничное меню</a></li>
+         <li class="item"><a target="_blank" href="holiday-builder.html">Конструктор выездного праздника</a></li>
+         <li class="item"><a target="_blank" href="wedding.html">Странциа "Свадьба"</a></li>
+         <li class="item"><a target="_blank" href="11.html">10 лет АндерСон</a></li>
+         <li class="item"><a target="_blank" href="celebration.html">Праздники</a></li>
+         <li class="item"><a target="_blank" href="family-holidays.html">Семейные праздники</a></li>
+         <li class="item"><a target="_blank" href="corporate-events.html">Корпоративные мероприятия</a></li>
+         <li class="item"><a target="_blank" href="child-holiday_all.html">Детские праздники. Общая</a></li>
+         <li class="item"><a target="_blank" href="child-holiday_2-4.html">Детские праздники 2-4 лет</a></li>
+         <li class="item"><a target="_blank" href="child-holiday_4-6.html">Детские праздники 4-6 лет</a></li>
 
-          </ol>
-      </section>
-  </div>
+      </ol>
+   </section>
 
+
+   <section>
+      <h3>4 этап</h3>
+      <ol>
+         <li class="item"><a target="_blank" href="catalog.html">Каталог</a></li>
+         <li class="item"><a target="_blank" href="basket.html">Корзина</a></li>
+         <li class="item"><a target="_blank" href="error-basket.html">Корзина<span>Ошибка</span></a></li>
+         <li class="item"><a target="_blank" href="ordering.html">Оформление заказа</a></li>
+         <li class="item"><a target="_blank" href="ordering-auth.html">Оформление заказа <span>Форма входа</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="ordering-finish.html">Оформление заказа
+            <span>Результирующая страница</span></a></li>
+         <li class="item"><a target="_blank" href="ordering-finish-paid.html">Оформление заказа
+            <span>Всё оплачено</span></a></li>
+         <li class="item"><a target="_blank" href="ordering-finish-error.html">Оформление заказа <span>Ошибка</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="lk-history.html">Личный кабинет <span>История заказов</span></a></li>
+         <li class="item"><a target="_blank" href="lk-profile-edit.html">Личный кабинет
+            <span>Редактировать профиль</span></a></li>
+         <li class="item"><a target="_blank" href="lk-profile.html">Личный кабинет <span>Профиль пользователя</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="events.html">Афиша</a></li>
+         <li class="item"><a target="_blank" href="news.html">Новости</a></li>
+         <li class="item"><a target="_blank" href="news-post.html">Подробная новость</a></li>
+         <li class="item"><a target="_blank" href="stock.html">Акции</a></li>
+         <li class="item"><a target="_blank" href="franchise.html">Франшиза</a></li>
+      </ol>
+
+   </section>
+   <section>
+      <h3>Дополнительные страницы</h3>
+      <ol>
+         <li class="item corrected"><a target="_blank" href="events-calendar.html">Календарь эвентов</a></li>
+         <li class="item"><a target="_blank" href="cake.html">Торты</a></li>
+         <li class="item"><a target="_blank" href="graduation-party.html">Выпускные</a></li>
+         <li class="item"><a target="_blank" href="styles.html">Стили оформления</a></li>
+         <li class="item"><a target="_blank" href="excursion.html">Экскурсии</a></li>
+         <li class="item"><a target="_blank" href="easter.html">Пасха</a></li>
+         <li class="item"><a target="_blank" href="partner-panel-cafe.html">Административная панель.
+            <span>Список кафе</span></a></li>
+         <li class="item"><a target="_blank" href="partner-panel-dish.html">Административная панель.
+            <span>Список блюд</span></a></li>
+         <li class="item"><a target="_blank" href="partner-panel-dish-card.html">Административная панель. <span>Карточка блюда</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="partner-panel-events.html">Административная панель.
+            <span>Мероприятия</span></a></li>
+         <li class="item"><a target="_blank" href="partner-panel-events-card.html">Административная панель. <span>Карточка мероприятия</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="partner-panel-hall.html">Административная панель.
+            <span>Список залов</span></a></li>
+         <li class="item"><a target="_blank" href="partner-panel-hall-card.html">Административная панель. <span>Карточка зала</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="catalog-dessert.html">Десерты</a></li>
+         <li class="item"><a target="_blank" href="phone-page.html">Номер телефона</a></li>
+         <li class="item"><a target="_blank" href="email-sentence.html">Email рассылка</a></li>
+         <li class="item"><a target="_blank" href="email-afisha.html">Email рассылка. Афиша</a></li>
+         <li class="item"><a target="_blank" href="day-knowledge.html">1 сентября</a></li>
+         <li class="item"><a target="_blank" href="new-year-2019.html">Новогодние программы 2018 </a></li>
+         <li class="item"><a target="_blank" href="contact-us.html">Связаться с нами</a></li>
+         <li class="item"><a target="_blank" href="sitemap.html">Карта сайта</a></li>
+         <li class="item"><a target="_blank" href="promocode.html">Промокод</a></li>
+         <li class="item"><a target="_blank" href="halloween-2019.html">Хэллоуин 2019</a></li>
+         <li class="item"><a target="_blank" href="new-year-2020.html">Новогодние ёлки 2020
+            <span>Бронирование столиков</span></a></li>
+         <li class="item"><a target="_blank" href="new-year-2020-christmas-story.html">Новогодние ёлки 2020 <span>Новогодняя сказка</span></a>
+         </li>
+         <li class="item"><a target="_blank" href="child-holidays-2019.html">Детские праздники 2019</a></li>
+         <li class="item"><a target="_blank" href="animation-programs-2019.html">Анимационные программы 2019</a></li>
+         <li class="item"><a target="_blank" href="animation-programs-details-2019.html">Анимационные программы 2019
+            <span>Подробнее</span></a></li>
+         <li class="item"><a target="_blank" href="animation-programs-details-standart-2019.html">Анимационные программы
+            2019 <span>Подробнее, стандартные</span></a></li>
+         <li class="item"><a target="_blank" href="father-2020.html">Лучший папа 2020</a></li>
+
+      </ol>
+   </section>
+</div>
 
 
 </body>

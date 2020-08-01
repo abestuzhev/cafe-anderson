@@ -1,0 +1,30 @@
+//@import url('https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&subset=cyrillic,cyrillic-ext');
+
+@include font_face(BebasNeue-Bold, BebasNeue,'../fonts/', 700);
+@include font_face(PTSerifCaption, 'PT Serif Caption','../fonts/', 400);
+@include font_face(PTSerifCaptionItalic, 'PT Serif Caption', '../fonts/', 400, italic);
+@include font_face(PTSerifBold, 'PT Serif Caption', '../fonts/', 700);
+@include font_face(PTSerifBoldItalic, 'PT Serif Caption', '../fonts/', 700, italic);
+@include font_face(BebasNeue-Regular, BebasNeue,'../fonts/', 500);
+@include font_face(BebasNeue-Book, BebasNeue,'../fonts/', 400);
+@include font_face(BebasNeue-Light, BebasNeue,'../fonts/', 300);
+@include font_face(BebasNeue-Thin, BebasNeue,'../fonts/', 100);
+@include font_face(PTRoubleSerif, RoubleSerif,'../fonts/', 400);
+
+@include font_face(SummerFont-Light, SummerFont,'../fonts/', 300);
+
+@include font_face(RobotoSlab-Bold, 'Roboto Slab Bold','../fonts/', 700);
+@include font_face(ClearSans-Regular, 'Clear Sans','../fonts/', 400);
+@include font_face(OpenSans-Regular, 'Open Sans','../fonts/', 400);
+
+$font_sans-serif: 'BebasNeue';
+$font_serif: 'PT Serif Caption';
+$font_decor: 'SummerFont';
+$font_RoubleSerif: 'RoubleSerif';
+$font_RobotoSlabBold: 'Roboto Slab Bold';
+$font_clear-sans: 'Clear Sans';
+$font_open-sans: 'Open Sans';
+
+$font_bold: 700;
+$font_light: 300;
+$font_thin: 100;

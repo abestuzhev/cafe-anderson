@@ -28402,7 +28402,9 @@ a.show-more__button:hover {
 .popup-holiday-menu.no-description .popup-holiday-menu__img {
   width: 100%;
   margin-right: 0;
-  min-height: 260px; }
+  min-height: 250px; }
+  .popup-holiday-menu.no-description .popup-holiday-menu__img img {
+    display: inline-block; }
 
 .popup-holiday-menu.no-description .popup {
   max-width: 550px; }
@@ -28462,6 +28464,8 @@ a.show-more__button:hover {
   background-position: 50% 50%;
   background-size: cover;
   margin-right: 20px; }
+  .popup-holiday-menu__img img {
+    display: inline-block; }
 
 .popup-holiday-menu__body {
   width: 60%;
@@ -35275,3 +35279,283 @@ ul.slick-dots li.slick-active {
   .father-day .banner-footer-block .text {
     padding: 0;
     font-size: 20px; } }
+
+.events-calendar {
+  border-radius: 10px;
+  border: 4px solid #c44890;
+  background-color: #fff;
+  margin-bottom: 6rem; }
+  .events-calendar-banner {
+    position: relative; }
+    .events-calendar-banner img {
+      display: block;
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100%; }
+    .events-calendar-banner__body {
+      max-width: 580px;
+      position: absolute;
+      bottom: 21%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      text-align: center; }
+    .events-calendar-banner__title {
+      font-size: 6rem;
+      color: #c44890;
+      font-family: "BebasNeue", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1; }
+    .events-calendar-banner__text {
+      font-family: "PT Serif Caption", serif;
+      font-size: 1.7rem;
+      color: #555451; }
+
+.e-calendar-period {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c44890;
+  color: #ffffff;
+  padding: 16px; }
+  .e-calendar-period svg {
+    fill: #ffffff; }
+  .e-calendar-period__date {
+    font-family: "BebasNeue", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 3rem;
+    color: #ffc7e8; }
+
+.e-calendar-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.e-calendar-body {
+  padding: 5.1rem; }
+
+.e-calendar__grid {
+  border: 1px solid #dddddd;
+  border-top: none; }
+
+.e-calendar__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border-bottom: 1px solid #dddddd; }
+  .e-calendar__row:last-child {
+    border: none; }
+
+.e-calendar__col {
+  width: calc(100% / 7);
+  border-right: 1px solid #dddddd; }
+  .e-calendar__col:last-child {
+    border: none; }
+
+.e-calendar__day {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffc7e8;
+  background-color: #c44890;
+  font-family: "BebasNeue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  padding: 20px 8px;
+  border-right: 1px solid #9d3a73; }
+
+.e-calendar-card {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 206px;
+  padding: 19px 12px 21px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .e-calendar-card.no-event {
+    background: #f4f4f4 url(../img/events-calendar/e-calendar-no-event.png) 0 0 no-repeat;
+    background-size: cover; }
+  .e-calendar-card__day {
+    color: #cacaca;
+    font-size: 6rem;
+    font-family: "BebasNeue", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 46px;
+            flex: 1 0 46px;
+    letter-spacing: -4px;
+    text-align: center; }
+    .e-calendar-card__day span {
+      display: block;
+      margin-left: -11px; }
+  .e-calendar-card-list {
+    width: 100%; }
+    .e-calendar-card-list__item {
+      margin-bottom: .3rem; }
+      .e-calendar-card-list__item:nth-child(1) .e-calendar-card__event {
+        background-color: #a9ca3d; }
+      .e-calendar-card-list__item:nth-child(2) .e-calendar-card__event {
+        background-color: #dc78b2; }
+      .e-calendar-card-list__item:nth-child(3) .e-calendar-card__event {
+        background-color: #55afbb; }
+      .e-calendar-card-list__item:nth-child(4) .e-calendar-card__event {
+        background-color: #dcdb78; }
+      .e-calendar-card-list__item:nth-child(5) .e-calendar-card__event {
+        background-color: #a9ca3d; }
+      .e-calendar-card-list__item:nth-child(6) .e-calendar-card__event {
+        background-color: #dc78b2; }
+      .e-calendar-card-list__item:nth-child(7) .e-calendar-card__event {
+        background-color: #55afbb; }
+      .e-calendar-card-list__item:nth-child(8) .e-calendar-card__event {
+        background-color: #dcdb78; }
+  .e-calendar-card__event {
+    padding: 8px 9px;
+    border-radius: 4px;
+    color: #555451;
+    font-size: 1.1rem;
+    font-family: "PT Serif Caption", serif;
+    height: 3.9rem;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    -o-transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    overflow: hidden; }
+    .e-calendar-card__event.no-event {
+      background-color: transparent !important;
+      border: 1px solid #cacaca;
+      cursor: auto; }
+      .e-calendar-card__event.no-event:hover {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        background: transparent !important;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: 1px solid #cacaca; }
+        .e-calendar-card__event.no-event:hover span {
+          display: none; }
+    .e-calendar-card__event span {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      line-height: 1.1;
+      display: inline-block; }
+    .e-calendar-card__event a {
+      width: 100%;
+      height: 100%;
+      display: none;
+      color: #81c15f;
+      font-family: "BebasNeue", sans-serif;
+      font-size: 2.3rem;
+      font-style: normal;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1; }
+      .e-calendar-card__event a:after {
+        content: '';
+        border: none; }
+    .e-calendar-card__event:hover {
+      -webkit-transform: scale(1.15) translateY(1px);
+          -ms-transform: scale(1.15) translateY(1px);
+              transform: scale(1.15) translateY(1px);
+      z-index: 10;
+      border-radius: 4px;
+      border-color: transparent;
+      -webkit-box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3);
+              box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3);
+      -webkit-transition: -webkit-transform .1s ease-in-out;
+      transition: -webkit-transform .1s ease-in-out;
+      -o-transition: transform .1s ease-in-out;
+      transition: transform .1s ease-in-out;
+      transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
+      background-image: url(../img/icons/icon-cat.svg);
+      background-color: #fff !important;
+      background-position: 107% 11px;
+      background-repeat: no-repeat; }
+      .e-calendar-card__event:hover a {
+        display: block; }
+      .e-calendar-card__event:hover span {
+        display: none; }
+
+@media (max-width: 1600px) {
+  .e-calendar-layout {
+    overflow-x: scroll;
+    cursor: move; }
+  .e-calendar__grid {
+    width: 1444px; } }
+
+@media (max-width: 1026px) {
+  .e-calendar-layout {
+    overflow: hidden;
+    cursor: auto; }
+  .e-calendar__grid {
+    width: 100%; }
+  .e-calendar-days {
+    display: none; }
+  .e-calendar-body {
+    padding: 0; }
+  .e-calendar-period {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .e-calendar__row {
+    display: none; }
+  .e-calendar__row:first-child {
+    display: block; }
+  .e-calendar__col {
+    width: 100%; }
+  .e-calendar-card {
+    height: 147px; }
+  .e-calendar-card__event {
+    height: 2.9rem; }
+  .e-calendar__col {
+    border-right: none;
+    border-bottom: 1px solid #dddddd; } }

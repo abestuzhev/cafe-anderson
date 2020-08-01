@@ -1,0 +1,883 @@
+
+.c-symbol {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    cursor: pointer;
+}
+//.c-symbol:hover {
+//    fill: #7cbd41;
+//}
+
+.symbol-vk {
+    fill: #7f7d7c;
+    font-size: 1rem;
+    width: 2.1em;
+    height: 1.9em;
+}
+.symbol-vk:hover {
+    fill: #7cbd41;
+}
+
+.symbol-o {
+    fill: #7f7d7c;
+    font-size: 2rem;
+    width: 1em;
+    height: 1em;
+}
+.symbol-fb {
+    fill: #7f7d7c;
+    font-size: 1rem;
+    width: 1.8em;
+    height: 1.9em;
+}
+
+.symbol-calendar-3 {
+    fill: #7f7d7c;
+    font-size: 2rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-mark {
+    fill: #7f7d7c;
+    font-size: 1.4rem;
+    width: 1em;
+    height: 1.5em;
+}
+
+.symbol-stock {
+    fill: #7f7d7c;
+    font-size: 1.4rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-stock-bg {
+    fill: #7f7d7c;
+    font-size: 1.4rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-metro {
+    fill: #7f7d7c;
+    font-size: 1.8rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-baby {
+    fill: #7f7d7c;
+    font-size: 1.7rem;
+    width: 1em;
+    height: .9em;
+}
+.symbol-clock-2 {
+    fill: #7f7d7c;
+    font-size: 1.7rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-table {
+    fill: #7f7d7c;
+    font-size: 2.1rem;
+    width: 1em;
+    height: .7em;
+}
+
+.symbol-credit-card {
+    fill: #7f7d7c;
+    font-size: 2.2rem;
+    width: 1em;
+    height: .8em;
+}
+.symbol-click {
+    fill: #7f7d7c;
+    font-size: 1.7rem;
+    width: 1em;
+    height: 1.2em;
+}
+.symbol-ticket {
+    fill: #7f7d7c;
+    font-size: 2rem;
+    width: 1em;
+    height: .8em;
+}
+
+.symbol-positive {
+    fill: #7f7d7c;
+    font-size: 1.7rem;
+    width: 1em;
+    height: 1.6em;
+}
+
+.symbol-negative {
+    fill: #7f7d7c;
+    font-size: 1.7rem;
+    width: 1em;
+    height: 1.6em;
+}
+
+.symbol-logo {
+    transition: all .2s ease-out;
+    //fill: #7cbd41;
+    fill: #a9cb58;
+    font-size: 38rem;
+    width: 1em;
+    height: .2em;
+}
+
+.symbol-search {
+    fill: #7f7d7c;
+    font-size: 2rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-email {
+    fill: #7f7d7c;
+    font-size: 1.9rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-phone {
+    fill: #7f7d7c;
+    font-size: 1.6rem;
+    width: 1em;
+    height: 1.1em;
+}
+
+.symbol-cabinet {
+    fill: #7f7d7c;
+    font-size: 1.9rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-basket {
+    fill: #7f7d7c;
+    font-size: 2.2rem;
+    width: 1em;
+    height: .95em;
+}
+
+.symbol-site-map {
+    fill: #7f7d7c;
+    font-size: 2.1rem;
+    width: 1em;
+    height: .9em;
+}
+
+.symbol-info {
+    fill: #7f7d7c;
+    font-size: 1.9rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-ru,
+.symbol-en {
+    fill: #7f7d7c;
+    font-size: 1.9rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-city {
+    fill: #7f7d7c;
+    font-size: 1.5rem;
+    width: 1em;
+    height: 1.26em;
+}
+
+.symbol-salad {
+    fill: #7f7d7c;
+    font-size: 2rem;
+    width: 1em;
+    height: .9em;
+}
+
+.symbol-dropdown {
+    fill: #7f7d7c;
+    font-size: 1rem;
+    width: 1em;
+    height: .6em;
+}
+
+.symbol-ice-cream {
+    fill: #7f7d7c;
+    font-size: 1.6rem;
+    width: 1em;
+    height: 1.3em;
+}
+
+.symbol-hot-tea {
+    fill: #7f7d7c;
+    font-size: 1.7rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-shopping-bag {
+    fill: #7f7d7c;
+    font-size: 1.6rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-roll-cake {
+    fill: #7f7d7c;
+    font-size: 1.6rem;
+    width: 1em;
+    height: .6em;
+}
+
+.symbol-cash-courier {
+    fill: #7f7d7c;
+    font-size: 5.3rem;
+    width: 1em;
+    height: .5em;
+}
+
+.symbol-lean {
+    fill: #7f7d7c;
+    font-size: 3.6rem;
+    width: 1em;
+    height: .5em;
+}
+.symbol-lean-porridge {
+    fill: #7f7d7c;
+    font-size: 3.6rem;
+    width: 1em;
+    height: .5em;
+}
+
+.symbol-close {
+    fill: #7f7d7c;
+    font-size: 1rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-rabbit {
+    fill: #7f7d7c;
+    font-size: 2.8rem;
+    width: 1em;
+    height: 2.6em;
+}
+
+.symbol-arr-left,
+.symbol-arr-right {
+    fill: #7f7d7c;
+    font-size: 1rem;
+    width: 1em;
+    height: 1.7em;
+}
+.symbol-narrow-down,
+.symbol-narrow-up {
+    fill: #7f7d7c;
+    font-size: 1rem;
+    width: 1em;
+    height: 1em;
+}
+
+.symbol-bird-left {
+    fill: #7f7d7c;
+    font-size: 3.8rem;
+    width: 1em;
+    height: 1.1em;
+}
+.symbol-basket-2 {
+    font-size: 2.4rem;
+    width: 1em;
+    height: 1em;
+    //fill:#9ACC4F;
+    //stroke:#000000;
+}
+
+.symbol-basket-bubble {
+    font-size: 2.9rem;
+    width: 1em;
+    height: 1.1em;
+    fill:#FBF6E7;
+    stroke:#4B4B4B;
+    //stroke-miterlimit:10;
+}
+
+.symbol-holiday-decor-1 {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-holiday-decor-2 {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1.4em;
+    fill: #7f7d7c;
+}
+
+.symbol-rabbit-2 {
+    font-size: 8.1rem;
+    width: 1em;
+    height: 1.8em;
+    fill: #7f7d7c;
+}
+
+.symbol-holiday-cap {
+    font-size: 2.4rem;
+    width: 1em;
+    height: 1.4em;
+    fill: #7f7d7c;
+}
+
+.symbol-holiday-cake {
+    font-size: 2.9rem;
+    width: 1em;
+    height: 1.4em;
+    fill: #7f7d7c;
+}
+
+.symbol-holiday-saw {
+    font-size: 3.5rem;
+    width: 1em;
+    height: .5em;
+    fill: #7f7d7c;
+}
+
+.symbol-label-metro {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    margin-right: 5px;
+    position: relative;
+
+    .symbol-metro {
+        position: absolute;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%);
+        fill: #fff;
+        font-size: 1.2rem;
+    }
+}
+
+
+.symbol-unicorn {
+    font-size: 22.1rem;
+    width: 1em;
+    height: 1.2em;
+    fill: #7f7d7c;
+}
+.symbol-airplane {
+    font-size: 12.8rem;
+    width: 1em;
+    height: .8em;
+    fill: #7f7d7c;
+}
+.symbol-rabbit-3 {
+    font-size: 6.5rem;
+    width: 1em;
+    height: 2.1em;
+    fill: #7f7d7c;
+}
+.symbol-cat {
+    font-size: 7.1rem;
+    width: 1em;
+    height: 1.8em;
+    fill: #7f7d7c;
+}
+
+.symbol-decor-1 {
+    font-size: 7.7rem;
+    width: 1em;
+    height: .3em;
+    fill: #7f7d7c;
+}
+
+.symbol-bird-with-bubble {
+    font-size: 7.1rem;
+    width: 1em;
+    height: .7em;
+    fill: #7f7d7c;
+}
+
+.symbol-print {
+    font-size: 2.1rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+
+.symbol-decor-hat {
+    font-size: 14.9rem;
+    width: 1em;
+    height: .4em;
+    fill: #7f7d7c;
+}
+.symbol-magic-hat {
+    font-size: 10.3rem;
+    width: 1em;
+    height: .7em;
+    fill: #7f7d7c;
+}
+
+
+.symbol-super-dad {
+    font-size: 5.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-branch-1 {
+    font-size: 8.6rem;
+    width: 1em;
+    height: .6em;
+    fill: #7f7d7c;
+}
+
+.symbol-berries {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-corn {
+    font-size: 2.2rem;
+    width: 1em;
+    height: .8em;
+    fill: #7f7d7c;
+}
+
+
+.symbol-cake-2 {
+    font-size: 2.8rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.icon-round-cake {
+    position: relative;
+
+}
+
+.symbol-smile-ears {
+    font-size: 2.2rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-broom {
+    font-size: 2.2rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-bruin {
+    font-size: 1.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-guests-2 {
+    font-size: 2.2rem;
+    width: 1em;
+    height: .7em;
+    fill: #7f7d7c;
+}
+
+.symbol-nipple {
+    font-size: 1.4rem;
+    width: 1em;
+    height: 1.1em;
+    fill: #7f7d7c;
+}
+
+.symbol-umbrella {
+    font-size: 1.5rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-balloon {
+    font-size: 1.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-baby-bottle {
+    font-size: 1.1rem;
+    width: 1em;
+    height: 1.5em;
+    fill: #7f7d7c;
+}
+
+.symbol-alcohol {
+    font-size: 1.4rem;
+    width: 1em;
+    height: 1.1em;
+    fill: #7f7d7c;
+}
+
+.symbol-coffee-2 {
+    font-size: 2rem;
+    width: 1em;
+    height: 1.2em;
+    fill: #7f7d7c;
+}
+
+.symbol-cat-on-chair {
+    font-size: 15rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-cup {
+    font-size: 12.9rem;
+    width: 1em;
+    height: .8em;
+    fill: #7f7d7c;
+}
+
+.symbol-celebration-smile {
+    font-size: 2rem;
+    width: 1em;
+    height: 1.1em;
+    fill: #7f7d7c;
+}
+
+.symbol-cake-bird {
+    font-size: 13rem;
+    width: 1em;
+    height: 1.2em;
+    fill: #7f7d7c;
+}
+
+.symbol-celebration-kettle-left {
+    font-size: 15.7rem;
+    width: 1em;
+    height: .7em;
+    fill: #7f7d7c;
+}
+
+.symbol-cake-3 {
+    font-size: 2.6rem;
+    width: 1em;
+    height: 1.1em;
+    fill: #7f7d7c;
+}
+
+.symbol-cake-4 {
+    font-size: 2.7rem;
+    width: 1em;
+    height: .9em;
+    fill: #7f7d7c;
+}
+
+.symbol-rabbit-4 {
+    font-size: 2.4rem;
+    width: 1em;
+    height: .9em;
+    fill: #7f7d7c;
+}
+
+.symbol-magic-wand {
+    font-size: 2.2rem;
+    width: 1em;
+    height: .9em;
+    fill: #7f7d7c;
+}
+
+.symbol-clock-3 {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1.1em;
+    fill: #7f7d7c;
+}
+
+.symbol-cake-5 {
+    font-size: 5rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-cake-6 {
+    font-size: 4rem;
+    width: 1em;
+    height: 1.14em;
+    fill: #7f7d7c;
+}
+
+.symbol-clip-2 {
+    font-size: 1.7rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-book {
+    font-size: 2.2rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-camera {
+    font-size: 2rem;
+    width: 1em;
+    height: .75em;
+    fill: #7f7d7c;
+}
+
+.symbol-birthday-cake {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-line-decor {
+    font-size: 20.8rem;
+    width: 1em;
+    height: .09em;
+    fill: #7f7d7c;
+}
+
+.symbol-combo-1 {
+    font-size: 17.7rem;
+    width: 1em;
+    height: .3em;
+    fill: #7f7d7c;
+}
+
+.symbol-combo-2 {
+    font-size: 25.2rem;
+    width: 1em;
+    height: .24em;
+    fill: #7f7d7c;
+}
+
+.symbol-combo-3 {
+    font-size: 11.4rem;
+    width: 1em;
+    height: .5em;
+    fill: #7f7d7c;
+}
+
+.symbol-combo-4 {
+    font-size: 23.7rem;
+    width: 1em;
+    height: .24em;
+    fill: #7f7d7c;
+}
+
+.symbol-combo-5 {
+    font-size: 8.1rem;
+    width: 1em;
+    height: 1.3em;
+    fill: #7f7d7c;
+}
+
+.symbol-heart-horizont {
+    font-size: 2.3rem;
+    width: 1em;
+    height: .8em;
+    fill: #7f7d7c;
+}
+
+.symbol-teddy-bear {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1.4em;
+    fill: #7f7d7c;
+}
+
+.symbol-teddy-bear-2 {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1.4em;
+    fill: #7f7d7c;
+}
+
+.icon-round-cake {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 5rem;
+    background-color: #cabbaa;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon-round-cake .symbol-cake-2 {
+    position: absolute;
+    left: 35%;
+    top: 3px;
+    fill: #fff;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+
+.symbol-cake-ice {
+    font-size: 3.2rem;
+    width: 1em;
+    height: 1.3em;
+    fill: #7f7d7c;
+}
+.symbol-lollipop {
+    font-size: 3.8rem;
+    width: 1em;
+    height: 1.3em;
+    fill: #7f7d7c;
+}
+
+.symbol-arr_round {
+    font-size: 3.8rem;
+    width: 1em;
+    height: 1em;
+    fill: #7f7d7c;
+}
+
+.symbol-decoration-triangle-1 {
+    font-size: 43.3rem;
+    width: 1em;
+    height: .4em;
+    fill: #7f7d7c;
+}
+
+
+.symbol-decoration-triangle-2 {
+    font-size: 43.3rem;
+    width: 1em;
+    height: .4em;
+    fill: #7f7d7c;
+}
+
+.symbol-arrow-3 {
+    font-size: 2.3rem;
+    width: 1em;
+    height: 1.4em;
+    fill: #fff;
+}
+
+.symbol-adult {
+    font-size: 2.9rem;
+    width: 1em;
+    height: .6em;
+    fill: #fff;
+}
+.symbol-adult {
+    font-size: 1.9rem;
+    width: 1em;
+    height: 1em;
+    fill: #fff;
+}
+
+
+.symbol-cake-7 {
+    font-size: 2.7rem;
+    width: 1em;
+    height: .6em;
+    fill: #fff;
+}
+
+.symbol-paraplane {
+    font-size: 3.9rem;
+    width: 1em;
+    height: .6em;
+    fill: #fff;
+}
+
+.symbol-giraffe-on-plane {
+    font-size: 9.4rem;
+    width: 1em;
+    height: .87em;
+    fill: #fff;
+}
+.symbol-grass {
+    font-size: 6.4rem;
+    width: 1em;
+    height: 1.13em;
+    fill: #000;
+}
+.symbol-celebration-star-3 {
+    font-size: 3.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #000;
+}
+
+
+.symbol-cake-ice {
+    font-size: 7.7rem;
+    width: 1em;
+    height: 1.3em;
+    fill: #000;
+}
+
+.symbol-celebration-bear-all {
+    font-size: 6.1rem;
+    width: 1em;
+    height: .65em;
+    fill: #000;
+}
+
+.symbol-3d {
+    font-size: 3.6rem;
+    width: 1em;
+    height: .8em;
+    fill: #000;
+}
+
+.symbol-video {
+    font-size: 3.2rem;
+    width: 1em;
+    height: 1em;
+    fill: #000;
+}
+
+
+.symbol-builder-eat {
+    font-size: 4.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #000;
+}
+.symbol-builder-animation {
+    font-size: 4.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #000;
+}
+
+.symbol-builder-place {
+    font-size: 4.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #000;
+}
+.symbol-builder-calendar {
+    font-size: 4.6rem;
+    width: 1em;
+    height: 1em;
+    fill: #000;
+}

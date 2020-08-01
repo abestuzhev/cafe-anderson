@@ -1,0 +1,362 @@
+.events-calendar {
+  border-radius: 10px;
+  border: 4px solid #c44890;
+  background-color: #fff;
+  margin-bottom: 6rem;
+
+  &-banner {
+    position: relative;
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__body {
+      max-width: 580px;
+      position: absolute;
+      bottom: 21%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 6rem;
+      color: #c44890;
+      font-family: "BebasNeue", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    &__text {
+      font-family: "PT Serif Caption", serif;
+      font-size: 1.7rem;
+      color: #555451;
+    }
+
+  }
+
+
+}
+
+
+.e-calendar {
+
+  &-navigator {
+
+  }
+
+  &-period {
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c44890;
+    color: #ffffff;
+    padding: 16px;
+
+    svg {
+      fill: #ffffff;
+    }
+
+    &__left {
+    }
+
+    &__date {
+      font-family: "BebasNeue", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      font-size: 3rem;
+      color: #ffc7e8;
+    }
+
+    &__right {
+
+    }
+  }
+
+  &-days {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  &-body {
+    padding: 5.1rem;
+  }
+
+  &__grid {
+    border: 1px solid #dddddd;
+    border-top: none;
+  }
+
+  &__row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-bottom: 1px solid #dddddd;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__col {
+    width: calc(100% / 7);
+    border-right: 1px solid #dddddd;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__day {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffc7e8;
+    background-color: #c44890;
+    font-family: "BebasNeue", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    padding: 20px 8px;
+    border-right: 1px solid #9d3a73;
+  }
+
+  &-card {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 206px;
+    padding: 19px 12px 21px 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &.no-event {
+      background: #f4f4f4 url(../img/events-calendar/e-calendar-no-event.png) 0 0 no-repeat;
+      background-size: cover;
+    }
+
+    &__day {
+      color: #cacaca;
+      font-size: 6rem;
+      font-family: "BebasNeue", sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      flex: 1 0 46px;
+      letter-spacing: -4px;
+      text-align: center;
+
+      span {
+        display: block;
+        margin-left: -11px;
+      }
+    }
+
+    &-list {
+      width: 100%;
+
+      &__item {
+        margin-bottom: .3rem;
+
+        &:nth-child(1) .e-calendar-card__event {
+          background-color: #a9ca3d;
+        }
+
+        &:nth-child(2) .e-calendar-card__event {
+          background-color: #dc78b2;
+        }
+
+        &:nth-child(3) .e-calendar-card__event {
+          background-color: #55afbb;
+        }
+
+        &:nth-child(4) .e-calendar-card__event {
+          background-color: #dcdb78;
+        }
+
+        &:nth-child(5) .e-calendar-card__event {
+          background-color: #a9ca3d;
+        }
+
+        &:nth-child(6) .e-calendar-card__event {
+          background-color: #dc78b2;
+        }
+
+        &:nth-child(7) .e-calendar-card__event {
+          background-color: #55afbb;
+        }
+
+        &:nth-child(8) .e-calendar-card__event {
+          background-color: #dcdb78;
+        }
+      }
+
+    }
+
+    &__event {
+      padding: 8px 9px;
+      border-radius: 4px;
+      color: #555451;
+      font-size: 1.1rem;
+      font-family: "PT Serif Caption", serif;
+      height: 3.9rem;
+      cursor: pointer;
+      transition: transform .2s ease-in-out;
+      overflow: hidden;
+
+      &.no-event {
+        background-color: transparent !important;
+        border: 1px solid #cacaca;
+        cursor: auto;
+
+        &:hover {
+          transform: none;
+          background: transparent !important;
+          box-shadow: none;
+          border: 1px solid #cacaca;
+
+
+          span {
+            display: none;
+          }
+        }
+      }
+
+      span {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        line-height: 1.1;
+        display: inline-block;
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: none;
+        color: #81c15f;
+        font-family: "BebasNeue", sans-serif;
+        font-size: 2.3rem;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1;
+
+        &:after {
+          content: '';
+          border: none;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.15) translateY(1px);
+        z-index: 10;
+        border-radius: 4px;
+        border-color: transparent;
+        box-shadow: 0 8px 33px 0 rgba(0, 0, 0, 0.3);
+        transition: transform .1s ease-in-out;
+        background-image: url(../img/icons/icon-cat.svg);
+        background-color: #fff !important;
+        background-position: 107% 11px;
+        background-repeat: no-repeat;
+
+        a {
+          display: block;
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px){
+  //.e-calendar__day {
+  //  font-size: 2.3rem;
+  //}
+  //
+  //.e-calendar-card__day {
+  //  font-size: 5rem;
+  //}
+  //
+  //.e-calendar-card__event a {
+  //  font-size: 1.6rem;
+  //}
+  //
+  //.e-calendar-card__event {
+  //  background-image: none;
+  //  padding: 8px;
+  //}
+
+  .e-calendar-layout {
+    overflow-x: scroll;
+    cursor: move;
+  }
+
+  .e-calendar__grid {
+      width: 1444px;
+  }
+}
+
+@media (max-width: 1026px){
+  .e-calendar-layout {
+    overflow: hidden;
+    cursor: auto;
+  }
+
+  .e-calendar__grid {
+    width: 100%;
+  }
+
+  .e-calendar-days {
+    display: none;
+  }
+
+  .e-calendar-body {
+    padding: 0;
+  }
+
+  .e-calendar-period {
+    display: flex;
+  }
+
+  .e-calendar__row {
+    display: none;
+  }
+
+  .e-calendar__row:first-child {
+    display: block;
+  }
+
+  .e-calendar__col {
+    width: 100%;
+  }
+
+  .e-calendar-card {
+    height: 147px;
+  }
+
+  .e-calendar-card__event {
+    height: 2.9rem;
+  }
+
+  .e-calendar__col {
+    border-right: none;
+    border-bottom: 1px solid #dddddd;
+  }
+
+
+}

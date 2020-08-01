@@ -9267,6 +9267,7 @@ var documentHeight = (document.documentElement.clientHeight );
 
 
 $(window).on('load', function(){
+    console.log('hello world');
 
     $(document).on('click', '.promocode-table-btn', function(e){
         e.preventDefault();
@@ -9293,6 +9294,8 @@ $(window).on('load', function(){
 
         }
     });
+
+    
 
 
     if($('.holidays-grid').find('.holidays-grid__container').length > 0 ) {
@@ -9442,6 +9445,9 @@ $(window).on('load', function(){
 $(document).ready(function ($) {
     //------------------------------------------------------------custom
 
+
+    
+    
 
 
 		/*мобильные табы*/
@@ -11568,6 +11574,20 @@ $(document).ready(function ($) {
             onPopupClose(parentModal);
         }
         // console.log('popup-close!!!!');
+
+        // размеры картинки в модалке праздничное меню
+        // $(".popup-holiday-menu__img img").load(function() {
+            
+            
+        // });
+
+        // var holidayImgHeight = $('.popup-holiday-menu__img img').height();
+        //     var holidayImgWidth = $('.popup-holiday-menu__img img').width();
+        //     console.log('holidayImgWidth: ' + holidayImgWidth);
+        // $('.popup-holiday-menu__img').css({
+        //     height: holidayImgHeight,
+        //     width: holidayImgWidth
+        // });
     });
 
     $(document).on('click', '.js-popup-close', function (e) {

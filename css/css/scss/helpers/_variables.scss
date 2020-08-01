@@ -1,0 +1,73 @@
+//---------------------------------------------custom
+$img_path: "../img/";
+//---------------------------------------------cstom###
+
+//---------------------------------------------fonts
+$font_path: "../fonts/";
+$font_1: sans-serif;
+$font_size_base: 1.6rem;
+//---------------------------------------------fonts###
+
+//---------------------------------------------colors
+$white: #fff;
+$black: #555451;
+
+$color_text_bg: #9b9696;
+$color_text_base: $black;
+//$color_text_popup: #555451;
+$color_link_base: #9b806f;
+$color_link_error: #b62922;
+$color_brand: #9acc4e;
+$color_active: #67af26;
+$color_dark-active: #7e5847;
+$color_btn: #7cbd41;
+$color_line: #e9e0cb;
+$custom_bg: #fdf7e8;
+$color_halloween_title: #91C84A;
+$color_halloween_button: #CC4685;
+$color_halloween_gray: #9F9F9F;
+$color_halloween_border: #E0E0E0;
+$color_purple: #c44890;
+$color_green: #6eac45;
+
+//$home-page_bg: $white url($img_path + 'bg-page.jpg') repeat 0 0;
+//---------------------------------------------colors###
+
+//---------------------------------------------z-index
+$z-index: (
+	popap : 9999,
+	header : 100,
+	footer : 100
+);
+//---------------------------------------------z-index###
+
+//---------------------------------------------layout
+$height_footer: 10rem;
+$height_header: 10rem;
+$page_width: 96rem;
+
+//---------------------------------------------layout###
+
+//---------------------------------------------global values
+$gl_indent: 3rem;
+$gl_radius:.5rem;
+//---------------------------------------------global values###
+
+//---------------------------------------------media points
+$point_1: 1200px;
+$point_2: 1024px;
+$point_3: 768px;
+$point_4: 480px;
+$point_5: 320px;
+//---------------------------------------------media points
+
+//---------------------------------------------forms
+$input_height:4rem;
+$input_offset:0 2rem;
+$input_font_size:$font_size_base;
+$input_border_color:#ccc;
+$input_border_color_active:$black;
+$input_placeholder_color: $black;
+$input_text_color:$black;
+$input_radius:$gl_radius;
+//---------------------------------------------forms###
