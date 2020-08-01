@@ -24681,10 +24681,6 @@ a.show-more__button:hover {
 .holiday-builder .event-builder-check__body {
   margin-top: -30px; }
 
-.event-builder-check.is_stuck {
-  right: 0 !important;
-  left: auto !important; }
-
 .c-checkbox-custom input,
 .c-radio-custom input {
   display: block !important;
@@ -28465,7 +28461,14 @@ a.show-more__button:hover {
   background-size: cover;
   margin-right: 20px; }
   .popup-holiday-menu__img img {
+<<<<<<< HEAD
     display: inline-block; }
+=======
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+>>>>>>> ffdfd45f47e1a0dbbd8cbb187d8a4d35a39b194c
 
 .popup-holiday-menu__body {
   width: 60%;
@@ -33001,6 +33004,61 @@ a.show-more__button:hover {
     text-align: center;
     padding: 20px;
     color: #fff; }
+
+.holidays-grid-mobile {
+  display: none; }
+  @media screen and (max-width: 670px) {
+    .holidays-grid-mobile {
+      display: block; } }
+  .holidays-grid-mobile-block {
+    margin-bottom: 5px; }
+    .holidays-grid-mobile-block__item {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: none 50% 50% no-repeat;
+      background-size: cover;
+      height: 120px; }
+    .holidays-grid-mobile-block__button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      padding: .1rem 1.2rem;
+      border-radius: 10px;
+      border: 0;
+      -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
+              box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.33), inset 0 1px 0 0 #f9b7dd, inset 0 2px 0 0 #f0a5d1;
+      background: url(../img/holidays-button-bg.png);
+      font-family: "BebasNeue";
+      font-size: 3.7rem;
+      line-height: 3.5rem;
+      color: #fff;
+      text-transform: uppercase;
+      outline: none;
+      border: none;
+      height: 75px;
+      width: 90%;
+      margin: auto; }
 
 .popup-pie {
   /* Ручной readmore */

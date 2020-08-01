@@ -9599,14 +9599,40 @@ $(document).ready(function ($) {
     // if($('div').hasClass('event-builder-check')){
     //     $(".event-builder-check").stick_in_parent({
     //         container: $(".event-builder-grid"),
-    //         offset_top: 130,
+    //         offset_top: 140,
     //         offset_bottom: 30
     //     });
-    //
+    
     //     if($(window).width() < 960){
     //         $(".event-builder-check").trigger("sticky_kit:detach");
     //     }
-    //
+    
+    //     $(window).resize(function() {
+    //         if($(window).width() < 960){
+    //             $(".event-builder-check").trigger("sticky_kit:detach");
+    //         }
+    //     });
+    // }
+
+    // if($('div').hasClass('event-builder-check')){
+    //     $(".event-builder-check").stick_in_parent({
+    //         container: $(".event-builder-grid"),
+    //         offset_top: 140,
+    //         offset_bottom: 30
+    //     });
+
+    //     var eventBuilderWidth = $('.event-builder-tab-layout').width();
+    //     console.log(eventBuilderWidth);
+
+    //     if($('.event-builder-check').hasClass('is_stuck')){
+    //         $('.event-builder-check').css('left', eventBuilderWidth);
+    //     };
+    
+        
+    //     if($(window).width() < 960){
+    //         $(".event-builder-check").trigger("sticky_kit:detach");
+    //     }
+    
     //     $(window).resize(function() {
     //         if($(window).width() < 960){
     //             $(".event-builder-check").trigger("sticky_kit:detach");
@@ -11532,6 +11558,8 @@ $(document).ready(function ($) {
         $(this).parents('.l-button').siblings('.cafe-info__phone-number').show();
     });
 
+    var imgPopupHolidayWidth = $('.popup-holiday-menu__img img').width();
+
     /*функция показа модального окна*/
     function showPopup(icon, popup) {
         $(document).on('click', icon, function (e) {
@@ -11554,6 +11582,40 @@ $(document).ready(function ($) {
             }else {
                 // console.log('Нет полосы прокрутки');
             }
+
+            if(windowWidth > documentWidth){
+               
+            }else {
+               
+            }
+
+            var popupHolidayImg = $('.popup-holiday-menu__img img');
+                var popupHolidayImgWidth = popupHolidayImg.width();
+                var popupHolidayImgHeight = popupHolidayImg.height();
+                var addpopupHolidayImgSize = function(){
+                    $('.popup-holiday-menu .popup-holiday-menu__img').css({
+                        width: popupHolidayImgWidth,
+                        height: popupHolidayImgHeight
+                    });
+                }
+
+            if(popup === '.popup-holiday-menu' && windowWidth >= 730){                
+                addpopupHolidayImgSize();                     
+            }
+
+            $(window).resize(function(){
+                if(windowWidth >= 730){
+                    addpopupHolidayImgSize();
+                }else {
+                    $('.popup-holiday-menu .popup-holiday-menu__img').css({
+                        width: auto,
+                        height: auto
+                    });
+                }
+            });
+            
+
+            
         });
     }
 
