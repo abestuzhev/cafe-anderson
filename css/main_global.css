@@ -11246,7 +11246,7 @@ test popup
       background: -o-linear-gradient(top, #ecedf2 0%, #ffffff 100%);
       background: linear-gradient(to bottom, #ecedf2 0%, #ffffff 100%);
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecedf2', endColorstr='#ffffff',GradientType=0 );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ecedf2', endColorstr='#ffffff', GradientType=0);
       /* IE6-9 */
       -webkit-box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1), 0px -6px 0px 0px white;
       box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.1), 0px -6px 0px 0px white;
@@ -28461,86 +28461,80 @@ a.show-more__button:hover {
   background-size: cover;
   margin-right: 20px; }
   .popup-holiday-menu__img img {
-<<<<<<< HEAD
     display: inline-block; }
-=======
-    display: block;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
->>>>>>> ffdfd45f47e1a0dbbd8cbb187d8a4d35a39b194c
-
-.popup-holiday-menu__body {
-  width: 60%;
-  padding: 25px 40px 25px 40px; }
-
-.popup-holiday-menu__desc {
-  margin-bottom: 30px; }
-
-.popup-holiday-menu__price {
-  font-size: 30px;
-  color: #000000;
-  text-align: center;
-  font-family: "PT Serif Caption";
-  background-color: #f3f3f9;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  padding: 16px; }
-
-.popup-holiday-menu-composition {
-  margin-bottom: 30px; }
-  .popup-holiday-menu-composition__title {
-    font-size: 24px;
-    color: #262526;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 14px;
+    .popup-holiday-menu__img img img {
+      display: block;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .popup-holiday-menu__img__body {
+    width: 60%;
+    padding: 25px 40px 25px 40px; }
+  .popup-holiday-menu__img__desc {
+    margin-bottom: 30px; }
+  .popup-holiday-menu__img__price {
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
     font-family: "PT Serif Caption";
+    background-color: #f3f3f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
     font-weight: 700;
-    letter-spacing: 3px; }
-  .popup-holiday-menu-composition__grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-  .popup-holiday-menu-composition__col:nth-child(1) {
-    width: 30%;
-    padding-right: 30px; }
-  .popup-holiday-menu-composition__col:nth-child(2) {
-    width: 70%; }
-  .popup-holiday-menu-composition__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 8px 0;
-    border-bottom: 1px dotted #90929b; }
-    .popup-holiday-menu-composition__item:last-child {
-      border: none; }
-  .popup-holiday-menu-composition__text:nth-child(1) {
-    text-align: left;
-    padding-right: 14px; }
-  .popup-holiday-menu-composition__text:nth-child(2) {
-    text-align: right; }
+    padding: 16px; }
+  .popup-holiday-menu__img-composition {
+    margin-bottom: 30px; }
+    .popup-holiday-menu__img-composition__title {
+      font-size: 24px;
+      color: #262526;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 14px;
+      font-family: "PT Serif Caption";
+      font-weight: 700;
+      letter-spacing: 3px; }
+    .popup-holiday-menu__img-composition__grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .popup-holiday-menu__img-composition__col:nth-child(1) {
+      width: 30%;
+      padding-right: 30px; }
+    .popup-holiday-menu__img-composition__col:nth-child(2) {
+      width: 70%; }
+    .popup-holiday-menu__img-composition__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px dotted #90929b; }
+      .popup-holiday-menu__img-composition__item:last-child {
+        border: none; }
+    .popup-holiday-menu__img-composition__text:nth-child(1) {
+      text-align: left;
+      padding-right: 14px; }
+    .popup-holiday-menu__img-composition__text:nth-child(2) {
+      text-align: right; }
 
 .popup-holiday-filter .popup-title {
   background-color: #c03887;
@@ -31587,7 +31581,7 @@ a.show-more__button:hover {
           padding: 16px 0 10px; } }
     .child-holidays-2019-menu__item {
       width: calc(25% - 13px);
-      padding-top: calc((25% - 13px)*1.0814);
+      padding-top: calc((25% - 13px) * 1.0814);
       margin: 6px;
       background: url(../img/child-holiday-2019/menu-1.jpg) 50% 50% no-repeat;
       background-size: cover; }
@@ -31595,7 +31589,7 @@ a.show-more__button:hover {
         .child-holidays-2019-menu__item {
           margin: 2px;
           width: calc(25% - 5px);
-          padding-top: calc((25% - 5px)*1.0814); } }
+          padding-top: calc((25% - 5px) * 1.0814); } }
   .child-holidays-2019-cake {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -33005,14 +32999,11 @@ a.show-more__button:hover {
     padding: 20px;
     color: #fff; }
 
-.holidays-grid-mobile {
+Holidays mobile grid .holidays-grid-mobile {
   display: none; }
-  @media screen and (max-width: 670px) {
-    .holidays-grid-mobile {
-      display: block; } }
-  .holidays-grid-mobile-block {
+  Holidays mobile grid .holidays-grid-mobile-block {
     margin-bottom: 5px; }
-    .holidays-grid-mobile-block__item {
+    Holidays mobile grid .holidays-grid-mobile-block__item {
       width: 100%;
       height: 100%;
       position: relative;
@@ -33028,7 +33019,7 @@ a.show-more__button:hover {
       background: none 50% 50% no-repeat;
       background-size: cover;
       height: 120px; }
-    .holidays-grid-mobile-block__button {
+    Holidays mobile grid .holidays-grid-mobile-block__button {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
