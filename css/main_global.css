@@ -35593,7 +35593,14 @@ ul.slick-dots li.slick-active {
           align-items: center; }
   .e-calendar-card.no-event {
     background: #f4f4f4 url(../img/events-calendar/e-calendar-no-event.png) 0 0 no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    display: block; }
+    .e-calendar-card.no-event .e-calendar-card__day {
+      display: none;
+      -webkit-box-flex: 1;
+          -ms-flex: auto;
+              flex: auto;
+      width: 46px; }
   .e-calendar-card__day {
     color: #cacaca;
     font-size: 6rem;
@@ -35609,7 +35616,7 @@ ul.slick-dots li.slick-active {
     .e-calendar-card__day span {
       display: block;
       margin-left: -11px; }
-    .e-calendar-card__day--week {
+    .e-calendar-card__day span.e-calendar-card__day--week {
       display: none;
       letter-spacing: -1px; }
   .e-calendar-card-list {
@@ -35891,8 +35898,8 @@ ul.slick-dots li.slick-active {
     margin-bottom: 1rem; }
   .e-calendar-card__day {
     font-size: 5rem; }
-  .e-calendar-card__day--week {
-    display: block;
+  span.e-calendar-card__day--week {
+    display: block !important;
     font-size: 4rem; }
   .e-calendar-card-time {
     display: block; }
@@ -35927,7 +35934,9 @@ ul.slick-dots li.slick-active {
     bottom: 14%;
     left: 55%; }
   .events-calendar-banner {
-    height: 29vh; } }
+    height: 29vh; }
+  .e-calendar-card.no-event .e-calendar-card__day {
+    display: block; } }
 
 @media (max-width: 580px) {
   .events-calendar-banner__title {

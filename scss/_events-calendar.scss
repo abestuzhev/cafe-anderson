@@ -322,6 +322,13 @@
     &.no-event {
       background: #f4f4f4 url(../img/events-calendar/e-calendar-no-event.png) 0 0 no-repeat;
       background-size: cover;
+      display: block;
+
+      .e-calendar-card__day {
+        display: none;
+        flex: auto;
+        width: 46px;
+      }
     }
 
     &__day {
@@ -340,7 +347,7 @@
         margin-left: -11px;
       }
 
-      &--week {
+      span.e-calendar-card__day--week {
         display: none;
         letter-spacing: -1px;
       }
@@ -702,8 +709,8 @@
     font-size: 5rem;
   }
 
-  .e-calendar-card__day--week {
-    display: block;
+  span.e-calendar-card__day--week {
+    display: block !important;
     font-size: 4rem;
   }
 
@@ -769,6 +776,10 @@
     height: 29vh;
   }
 
+
+  .e-calendar-card.no-event .e-calendar-card__day {
+    display: block;
+  }
 
 }
 
