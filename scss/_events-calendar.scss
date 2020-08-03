@@ -17,6 +17,7 @@
     &__body {
       max-width: 580px;
       position: absolute;
+      z-index: 10;
       bottom: 21%;
       left: 50%;
       transform: translateX(-50%);
@@ -41,12 +42,182 @@
   }
 
 
+
 }
 
 
 .e-calendar {
 
   &-navigator {
+    background: url('../img/calendar-navigator-bg.png') repeat-x;
+    background-size: cover;
+    //height: 7.7rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      background: url('../img/calendar-navigator-topdecor.png') repeat-x;
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+    }
+
+    &::after {
+      content: '';
+      background: url('../img/calendar-navigator-bottomdecor.png') repeat-x;
+      position: absolute;
+      z-index: 9;
+      bottom: -0.6rem;
+      left: 0;
+      width: 100%;
+      height: 10px;
+    }
+
+    &__left {
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+
+    &__right {
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+
+    &__layout {
+      &-month {
+        display: flex;
+        flex-flow: row nowrap;
+
+        .slick-list {
+          //width: 100%;
+          //width: auto;
+          //padding: 0 !important;
+        }
+
+        .slick-track {
+          //width: 100%;
+          //width: auto;
+        }
+
+        .slick-slide {
+          //width: auto;
+          //width: 99px !important;
+        }
+
+
+        .slick-arrow {
+          display: flex !important;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          z-index: 999;
+        }
+
+        .slick-prev, .slick-next {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &__month {
+      padding: 2rem 1rem;
+      text-align: center;
+      white-space: nowrap;
+
+      svg {
+        fill: #907b6c;
+        font-size: 0.6rem;
+      }
+
+      &-arrow {
+        padding-top: 1.5rem;
+
+        a:after {
+          border: none;
+        }
+      }
+
+      &-past {
+        .e-calendar-navigator__link {
+          color: #cdbbaf;
+
+          &:hover {
+            color: #cdbbaf;
+          }
+
+          &:after {
+            border-bottom: 1px dashed #cdbbaf;
+          }
+
+        }
+
+      }
+
+      &-active {
+        background-color: #c44890;
+
+        .e-calendar-navigator__link {
+          color: #fff;
+
+          &:hover {
+            color: #fff;
+          }
+
+          &:after {
+            border-bottom: 1px dashed #fff;
+          }
+        }
+      }
+    }
+
+    &__link {
+      font-family: $font_sans-serif;
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #9b806f;
+    }
+
+    &__link:hover {
+      color: #9b806f;
+    }
+
+    &__link:after {
+      content: '';
+      color: #cdbbaf;
+      border-bottom: 1px dashed #9b806f;
+    }
+
+    &__link:hover:after {
+      content: '';
+      position: absolute;
+      bottom: 0.3rem;
+      left: 0;
+      width: 100%;
+      border-bottom: none;
+    }
+
+    &__year {
+      padding: 1rem 1rem 1rem 1rem;
+      font-family: $font_serif;
+      color: #9b806f;
+      font-size: 1.7rem;
+      z-index: 12;
+      position: relative;
+      white-space: nowrap;
+    }
 
   }
 
@@ -64,6 +235,11 @@
     }
 
     &__left {
+
+      &::after {
+        content: '';
+        display: none;
+      }
     }
 
     &__date {
@@ -76,7 +252,10 @@
     }
 
     &__right {
-
+      &::after {
+        content: '';
+        display: none;
+      }
     }
   }
 
@@ -88,7 +267,7 @@
   }
 
   &-body {
-    padding: 5.1rem;
+    padding: 2.7rem 5.1rem 5.1rem;
   }
 
   &__grid {
@@ -160,6 +339,11 @@
         display: block;
         margin-left: -11px;
       }
+
+      &--week {
+        display: none;
+        letter-spacing: -1px;
+      }
     }
 
     &-list {
@@ -200,7 +384,24 @@
           background-color: #dcdb78;
         }
       }
+    }
 
+    &-time {
+      display: none;
+      padding-left: 1rem;
+      min-width: 78px;
+
+      &__item {
+        margin-bottom: .3rem;
+        height: 2.9rem;
+
+        span {
+          font-family: $font_decor;
+          font-size: 2.5rem;
+          color: #949494;
+          white-space: nowrap;
+        }
+      }
     }
 
     &__event {
@@ -213,6 +414,10 @@
       cursor: pointer;
       transition: transform .2s ease-in-out;
       overflow: hidden;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
 
       &.no-event {
         background-color: transparent !important;
@@ -234,7 +439,7 @@
 
       span {
         width: 100%;
-        height: 100%;
+        //height: 100%;
         overflow: hidden;
         line-height: 1.1;
         display: inline-block;
@@ -281,35 +486,166 @@
       }
     }
   }
+
+  .owl-carousel .owl-nav .owl-next {
+    background: url(../img/events-calendar/event-arrow-right.png) 50% 50% no-repeat;
+  }
+
+  .owl-carousel .owl-nav .owl-prev {
+    background: url(../img/events-calendar/event-arrow-left.png) 50% 50% no-repeat;
+  }
+
+  .owl-carousel .owl-nav {
+    top: 30% !important;
+  }
+}
+
+.popup-child-holidays__cafe {
+  color: #a91f6f;
+  font-family: $font_decor;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  padding-right: 6rem;
+}
+
+.popup-child-holidays__title {
+  font-size: 5rem;
+}
+
+.popup-child-holidays-content {
+  padding: 156px 30px 44px 34px;
+}
+
+.popup-child-holidays-content__description {
+  font-style: normal;
+}
+
+.popup-child-holidays__footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+}
+.popup-child-holidays__footer .holiday-hall-sentence__btn {
+  margin: 0;
+}
+
+.popup-child-holidays .c-counter .c-counter__btn {
+  width: 5.4rem;
+  height: 5.4rem;
+  border-radius: 5.4rem;
+  font-size: 0;
+  text-align: center;
+  color: #2c2c2c;
+  background-color: #c5c5c5;
+}
+.popup-child-holidays .c-counter .c-counter__btn:hover {
+  background-color: #9acc4e;
+}
+
+.popup-child-holidays .c-counter .c-counter__field {
+  width: 4.9rem !important;
+  font-size: 4.8rem;
+  line-height: 1;
+  color: #2c2c2c;
+  background-color: transparent;
+  letter-spacing: -.2rem;
+  font-family: "SummerFont";
+  padding: 0 !important;
+}
+
+.popup-child-holidays .c-counter {
+  padding: .4rem .4rem;
+  border-radius: .8rem;
+  border: none;
+  height: 100%;
+  font-family: "SummerFont";
+  min-width: 115px !important;
+  margin-right: 3rem;
+}
+
+.popup-child-holidays .c-counter .dec {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2Rpc3BsYXk6bm9uZTt9LnN0MXtkaXNwbGF5OmlubGluZTtmaWxsOiNGRkZGRkY7fS5zdDJ7ZmlsbDojRkZGRkZGO308L3N0eWxlPjxnIGNsYXNzPSJzdDAiPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LDB2Ny4xaDd2MS44SDlWMTZIN1Y4LjlIMFY3LjFoN1YwSDl6Ii8+PC9nPjxyZWN0IHg9IjAiIHk9IjcuMSIgY2xhc3M9InN0MiIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEuOCIvPjwvc3ZnPg==);
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+.popup-child-holidays .c-counter .inc {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48Zz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNOSwwdjcuMWg3djEuOEg5VjE2SDdWOC45SDBWNy4xaDdWMEg5eiIvPjwvZz48L3N2Zz4=);
+  background-size: 23%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.popup-child-holidays .mfp-content {
+  width: 97%;
+}
+
+.child-holidays-2019-programs-element-description__features {
+  flex-flow: row wrap;
+}
+
+.child-holidays-2019-programs-element-description__item {
+  margin-right: 14px;
 }
 
 @media (max-width: 1600px){
-  //.e-calendar__day {
-  //  font-size: 2.3rem;
-  //}
-  //
-  //.e-calendar-card__day {
-  //  font-size: 5rem;
-  //}
-  //
-  //.e-calendar-card__event a {
-  //  font-size: 1.6rem;
-  //}
-  //
-  //.e-calendar-card__event {
-  //  background-image: none;
-  //  padding: 8px;
-  //}
 
   .e-calendar-layout {
     overflow-x: scroll;
     cursor: move;
   }
 
-  .e-calendar__grid {
+  .e-calendar__grid,
+  .e-calendar-days {
       width: 1444px;
   }
+
+  .events-calendar-banner__title {
+    font-size: 5rem;
+  }
+
+  .e-calendar-navigator__layout-month .slick-slide {
+    //width: 85px !important;
+  }
 }
+
+@media (max-width: 1200px){
+  .e-calendar-navigator__layout-year {
+    display: none;
+  }
+
+  .events-calendar-banner__title {
+    font-size: 4rem;
+  }
+
+  .e-calendar-navigator__layout-month {
+    width: 100%;
+  }
+
+  .e-calendar-navigator__left,
+  .e-calendar-navigator__right {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1040px) {
+  .popup-child-holidays-content {
+    width: 100%;
+    padding: 30px 16px;
+  }
+
+  .events-calendar-banner img {
+    width: 211%;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    left: -50%;
+  }
+}
+
 
 @media (max-width: 1026px){
   .e-calendar-layout {
@@ -358,5 +694,90 @@
     border-bottom: 1px solid #dddddd;
   }
 
+  .e-calendar-navigator {
+    margin-bottom: 1rem;
+  }
 
+  .e-calendar-card__day {
+    font-size: 5rem;
+  }
+
+  .e-calendar-card__day--week {
+    display: block;
+    font-size: 4rem;
+  }
+
+  .e-calendar-card-time {
+    display: block;
+  }
+
+  .e-calendar-card__event span {
+    line-height: 1;
+  }
+
+  .e-calendar-card__event {
+    padding: 3px 12px;
+  }
+
+  .popup-child-holidays__title {
+    font-size: 3.6rem;
+    line-height: 1;
+  }
+
+  .popup-child-holidays__cafe {
+    font-size: 3.5rem;
+    margin-bottom: 1.4rem;
+    line-height: .8;
+  }
+
+  .popup-child-holidays .c-counter .c-counter__btn {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+
+  .popup-child-holidays .c-counter .c-counter__field {
+    width: 3.9rem !important;
+    font-size: 3.8rem;
+  }
+
+  .popup-child-holidays .holiday-hall-sentence__btn {
+    font-weight: 400;
+    font-size: 3rem;
+    padding: 1rem 2.2rem;
+  }
+
+  .popup-child-holidays .c-counter {
+    margin-right: 2rem;
+  }
+
+  .events-calendar {
+    border: none;
+  }
+
+  .events-calendar-banner__body {
+    min-width: 300px;
+  }
+
+
+
+  .events-calendar-banner__body {
+    bottom: 14%;
+    left: 55%;
+  }
+
+  .events-calendar-banner {
+    height: 29vh;
+  }
+
+
+}
+
+@media (max-width: 580px) {
+  .events-calendar-banner__title {
+    font-size: 2.7rem;
+  }
+
+  .events-calendar-banner__text {
+    font-size: 1.2rem;
+  }
 }

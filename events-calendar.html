@@ -39,7 +39,7 @@
 
    <!--owl carousel-->
    <link rel="stylesheet" href="./js/owlcarousel/owl.carousel.css">
-   <!--<link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.green.css">-->
+   <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.theme.green.css">
 
    <!--datepicker-->
    <link href="./js/datepicker/datepicker.css" rel="stylesheet">
@@ -5545,7 +5545,67 @@
                <img src="./img/events-calendar/events-calendar-banner.jpg" alt="">
             </div>
             <div class="e-calendar">
-               <div class="e-calendar-navigator"></div>
+               <div class="e-calendar-navigator">
+                  <a href="#" class="e-calendar-navigator__left">
+                     <svg class="c-symbol symbol-arr-left"><use xlink:href="#symbol-arr-left" /></svg>
+                  </a>
+                  <div class="e-calendar-navigator__layout-month">
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Январь</a></div>
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Февраль</a></div>
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Март</a></div>
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Апрель</a></div>
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Май</a></div>
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Июнь</a></div>
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Июль</a></div>
+                     <div class="e-calendar-navigator__month e-calendar-navigator__month-active" data-hash="item"><a href="#" class="e-calendar-navigator__link">Август</a></div>
+                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Сентябрь</a></div>
+                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Октябрь</a></div>
+                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Ноябрь</a></div>
+                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Декабрь</a></div>
+
+                  </div>
+                  <div class="e-calendar-navigator__layout-year">
+                     <div class="e-calendar-selector_wrapper">
+                        <div class="e-calendar-navigator__year"><a href="#" id="hsl-year-selector-init" class="calendar-navigator__link">2020</a> год</div>
+
+                     </div>
+                  </div>
+                  <a href="#" class="e-calendar-navigator__right">
+                     <svg class="c-symbol symbol-arr-right"><use xlink:href="#symbol-arr-right" /></svg>
+                  </a>
+               </div>
+
+<!--               <div class="e-calendar-navigator">-->
+<!--                  <a href="#" class="e-calendar-navigator__left">-->
+<!--                     <svg class="c-symbol symbol-arr-left"><use xlink:href="#symbol-arr-left" /></svg>-->
+<!--                  </a>-->
+<!--                  <div class="e-calendar-navigator__layout-month owl-carousel owl-navigator">-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Январь</a></div>-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Февраль</a></div>-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Март</a></div>-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Апрель</a></div>-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Май</a></div>-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Июнь</a></div>-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-past"><a href="#" class="e-calendar-navigator__link">Июль</a></div>-->
+<!--                     <div class="e-calendar-navigator__month e-calendar-navigator__month-active"><a href="#" class="e-calendar-navigator__link">Август</a></div>-->
+<!--                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Сентябрь</a></div>-->
+<!--                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Октябрь</a></div>-->
+<!--                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Ноябрь</a></div>-->
+<!--                     <div class="e-calendar-navigator__month"><a href="#" class="e-calendar-navigator__link">Декабрь</a></div>-->
+
+<!--                  </div>-->
+<!--                  <div class="e-calendar-navigator__layout-year">-->
+<!--                     <div class="e-calendar-selector_wrapper">-->
+<!--                        <div class="e-calendar-navigator__year"><a href="#" id="hsl-year-selector-init" class="calendar-navigator__link">2020</a> год</div>-->
+
+<!--                     </div>-->
+<!--                  </div>-->
+<!--                  <a href="#" class="e-calendar-navigator__right">-->
+<!--                     <svg class="c-symbol symbol-arr-right"><use xlink:href="#symbol-arr-right" /></svg>-->
+<!--                  </a>-->
+<!--               </div>-->
+
+
                <div class="e-calendar-body">
                   <div class="e-calendar-layout">
                      <!--START e-calendar__row-->
@@ -5576,13 +5636,13 @@
 
                      <!--START e-calendar__row-->
                      <div class="e-calendar-period">
-                        <a href="#" class="calendar-period__left">
+                        <a href="#" class="e-calendar-period__left">
                            <svg class="c-symbol symbol-arr-left"><use xlink:href="#symbol-arr-left" /></svg>
                         </a>
                         <div class="e-calendar-period__date">
                            <span>03.08 - 09.08</span>
                         </div>
-                        <a href="#" class="calendar-period__right">
+                        <a href="#" class="e-calendar-period__right">
                            <svg class="c-symbol symbol-arr-right"><use xlink:href="#symbol-arr-right" /></svg>
                         </a>
                      </div>
@@ -5610,12 +5670,15 @@
                            <!--START e-calendar__col-->
                            <div class="e-calendar__col">
                               <div class="e-calendar-card">
-                                 <div class="e-calendar-card__day"><span>1</span></div>
+                                 <div class="e-calendar-card__day">
+                                    <span>1</span>
+                                    <span class="e-calendar-card__day--week">СБ</span>
+                                 </div>
                                  <div class="e-calendar-card-list">
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -5628,6 +5691,12 @@
                                        <div class="e-calendar-card__event no-event"></div>
                                     </div>
                                  </div>
+                                 <div class="e-calendar-card-time">
+                                    <div class="e-calendar-card-time__item"><span>15:00-18:00</span></div>
+                                    <div class="e-calendar-card-time__item"><span>12:00-14:00</span></div>
+                                    <div class="e-calendar-card-time__item"></div>
+                                    <div class="e-calendar-card-time__item"></div>
+                                 </div>
                               </div>
                            </div>
                            <!--END e-calendar__col-->
@@ -5635,7 +5704,10 @@
                            <!--START e-calendar__col-->
                            <div class="e-calendar__col">
                               <div class="e-calendar-card">
-                                 <div class="e-calendar-card__day"><span>2</span></div>
+                                 <div class="e-calendar-card__day">
+                                    <span>2</span>
+                                    <span class="e-calendar-card__day--week">ВС</span>
+                                 </div>
                                  <div class="e-calendar-card-list">
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event no-event"></div>
@@ -5649,6 +5721,12 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event no-event"></div>
                                     </div>
+                                 </div>
+                                 <div class="e-calendar-card-time">
+                                    <div class="e-calendar-card-time__item"></div>
+                                    <div class="e-calendar-card-time__item"></div>
+                                    <div class="e-calendar-card-time__item"></div>
+                                    <div class="e-calendar-card-time__item"></div>
                                  </div>
                               </div>
                            </div>
@@ -5667,25 +5745,25 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Делаем с детьми цветы и стрекозок</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Строим домик-городок из фетра</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                  </div>
@@ -5723,7 +5801,7 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#">Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -5814,7 +5892,7 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#">Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -5954,7 +6032,7 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#">Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -6006,13 +6084,13 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -6034,7 +6112,7 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -6059,13 +6137,13 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -6087,7 +6165,7 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -6112,19 +6190,19 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -6192,25 +6270,25 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Делаем с детьми цветы и стрекозок</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Строим домик-городок из фетра</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                  </div>
@@ -6363,19 +6441,19 @@
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Мастерим ангелов из яичной упаковки</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Создаем подарок ко Дню учителя</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
                                        <div class="e-calendar-card__event">
                                           <span>Делаем с детьми цветы и стрекозок</span>
-                                          <a href="#" >Бронировать</a>
+                                          <a href="#" class="js-show-popup-child-holidays">Бронировать</a>
                                        </div>
                                     </div>
                                     <div class="e-calendar-card-list__item">
@@ -6438,35 +6516,6 @@
    </main>
 </div>
 
-<script type="text/javascript">
-   const slider = document.querySelector('.e-calendar-layout');
-   let isDown = false;
-   let startX;
-   let scrollLeft;
-
-   slider.addEventListener('mousedown', (e) => {
-      isDown = true;
-      slider.classList.add('active');
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
-   });
-   slider.addEventListener('mouseleave', () => {
-      isDown = false;
-      slider.classList.remove('active');
-   });
-   slider.addEventListener('mouseup', () => {
-      isDown = false;
-      slider.classList.remove('active');
-   });
-   slider.addEventListener('mousemove', (e) => {
-      if(!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 3; //scroll-fast
-      slider.scrollLeft = scrollLeft - walk;
-      console.log(walk);
-   });
-</script>
 
 <footer class="footer">
    <section class="c-layout">
@@ -6576,6 +6625,84 @@
       </div>
    </section>
 </footer>
+
+
+<!--заказ программы праздника-->
+<div class="mfp-wrap popup-child-holidays" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">
+   <div class="mfp-container mfp-inline-holder">
+      <div class="mfp-content">
+         <div class="popup">
+            <div class="popup-box">
+               <div class="popup-body">
+                  <div class="popup-close">[Х]</div>
+                  <div class="popup-header">
+                     <div class="popup-child-holidays__cafe">АндерСон на Большой Семеновской</div>
+                     <div class="popup-child-holidays__title">
+                        МАСТЕР-КЛАСС «СТРОИМ ДОМИК-ГОРОДОК ИЗ ФЕТРА»
+                     </div>
+                  </div>
+               </div>
+               <div class="popup-slider">
+                  <div class="holiday-hall-card__slider">
+                     <div class="holiday-hall-fotorama" data-width="100%" data-arrows="false" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64">
+                        <div class="slider-element" data-thumb="img/child-holiday-2019/popup-slider-1.jpg" style="background-image: url(img/child-holiday-2019/popup-slider-1.jpg)">
+
+                        </div>
+
+                        <div class="slider-element" data-thumb="img/child-holiday-2019/popup-slider-2.jpg" style="background-image: url(img/child-holiday-2019/popup-slider-2.jpg)">
+
+                        </div>
+                        <div class="slider-element" data-thumb="img/child-holiday-2019/program-4.jpg" style="background-image: url(img/child-holiday-2019/program-4.jpg)">
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="popup-child-holidays-content">
+                  <div class="popup-child-holidays-content-details">
+                     <div class="child-holidays-2019-programs-element-description__price">
+                        <span class="child-holidays-2019-programs-element-description__price-text">от 20 000 РУБ</span>
+                        <img src="img/child-holiday-2019/price.png" alt="">
+                     </div>
+                     <div class="child-holidays-2019-programs-element-description__features">
+                        <div class="child-holidays-2019-programs-element-description__item">
+                           <img class="child-holidays-2019-programs-element-description__features-icon" src="img/events-calendar/track.png" alt="">
+                           <span class="child-holidays-2019-programs-element-description__features-text">15 человек</span>
+                        </div>
+                        <div class="child-holidays-2019-programs-element-description__item">
+                           <img class="child-holidays-2019-programs-element-description__features-icon" src="img/events-calendar/baby.png" alt="">
+                           <span class="child-holidays-2019-programs-element-description__features-text">2-4 года</span>
+                        </div>
+                        <div class="child-holidays-2019-programs-element-description__item">
+                           <img class="child-holidays-2019-programs-element-description__features-icon" src="img/events-calendar/clock.png" alt="">
+                           <span class="child-holidays-2019-programs-element-description__features-text">3 часа</span>
+                        </div>
+
+
+                     </div>
+                  </div>
+                  <p class="popup-child-holidays-content__description">
+                     Сегодня будем показывать, как сделать дом-городок из фетра для игры с машинками.
+                     Городок складывается в небольшой домик, который легко переносить, а также занимает
+                     мало места для хранения. А еще в него помещается много машинок. Такой домик-городок
+                     — это отличный способ усадить активного ребенка, увлечь его фантазию веселой игрой.
+                  </p>
+
+                  <div class="popup-child-holidays__footer">
+                     <div class="c-counter">
+                        <button type="button" class="but c-counter__btn dec">-</button>
+                        <input type="text" class="c-counter__field fieldCount" value="1" data-min="1" data-max="101">
+                        <button type="button" class="but c-counter__btn inc">+</button>
+                     </div>
+                     <button class="holiday-hall-sentence__btn">Купить билет</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
 
 <!----------------------------------------------START popup-->
 
@@ -8181,13 +8308,6 @@
 <!--END кнопка вверх-->
 
 
-<div class="c-reviews__item c-reviews-tree2018">
-   <a href="#" class="c-reviews__btn">
-      <i class="c-icon icon-tree2018"></i>
-      <div class="c-reviews__text">Ёлки 2018</div>
-   </a>
-</div>
-
 <!--боковые кнопки пожаловаться/похвалить-->
 <div class="c-reviews__item c-reviews-positive">
    <a href="#" class="c-reviews__btn">
@@ -8244,5 +8364,147 @@
 <!--<script src="./js/fly-to-basket.js"></script>-->
 <script async src="./js/scripts_all.js"></script>
 
+
+
+<!--new script-->
+<script >
+   $(document).ready(function () {
+
+
+
+      //owl-navigator
+
+      // $('.owl-navigator').owlCarousel({
+      //    // center: true,
+      //    items:12,
+      //    margin:10,
+      //    nav: true,
+      //    startPosition: 9,
+      //    responsive:{
+      //       1200:{
+      //          items:12
+      //       },
+      //       800:{
+      //          items:9,
+      //          margin:0
+      //       },
+      //       700:{
+      //          items:6,
+      //          margin:0
+      //       },
+      //       450:{
+      //          items:3,
+      //          margin:0,
+      //          startPosition: 6
+      //       },
+      //       0:{
+      //          items:3,
+      //          margin:0
+      //       }
+      //    }
+      // });
+
+
+
+      let windowWidth = $(window).width();
+
+      if(windowWidth < '1200'){
+         initSlider();
+      }
+
+
+
+      function initSlider(){
+         $('.e-calendar-navigator__layout-month').slick({
+            centerMode: true,
+            infinite: false,
+            slidesToShow: 12,
+            prevArrow: '<a href="#" class="e-calendar-navigator__left">\n' +
+               '                     <svg class="c-symbol symbol-arr-left"><use xlink:href="#symbol-arr-left" /></svg>\n' +
+               '                  </a>',
+            nextArrow: '<a href="#" class="e-calendar-navigator__right">\n' +
+               '                     <svg class="c-symbol symbol-arr-right"><use xlink:href="#symbol-arr-right" /></svg>\n' +
+               '                  </a>',
+            variableWidth: true,
+            responsive: [
+               {
+                  breakpoint: 1200,
+                  settings: {
+                     arrows: true,
+                     centerMode: false,
+                     slidesToScroll: 3,
+                     centerPadding: '40px',
+                     slidesToShow: 9
+                  }
+               },
+               {
+                  breakpoint: 1000,
+                  settings: {
+                     arrows: true,
+                     centerMode: true,
+                     slidesToScroll: 3,
+                     slidesToShow: 6
+                  }
+               },
+               {
+                  breakpoint: 600,
+                  settings: {
+                     arrows: false,
+                     centerMode: true,
+                     slidesToShow: 4
+                  }
+               },
+               {
+                  breakpoint: 450,
+                  settings: {
+                     arrows: true,
+                     centerMode: false,
+                     centerPadding: '40px',
+                     slidesToShow: 3
+                  }
+               }
+            ]
+         });
+      }
+
+
+   });
+</script>
+
+<script type="text/javascript">
+
+   const $btn = document.querySelector('.js-show-popup-child-holidays');
+
+   $btn.addEventListener("click", function(e){
+      e.preventDefault();
+   });
+   const slider = document.querySelector('.e-calendar-layout');
+   let isDown = false;
+   let startX;
+   let scrollLeft;
+
+   slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+   });
+   slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+   });
+   slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+   });
+   slider.addEventListener('mousemove', (e) => {
+      if(!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+      console.log(walk);
+   });
+</script>
 </body>
 </html>
