@@ -184,7 +184,7 @@
     }
 
     &__link {
-      font-family: $font_sans-serif;
+      font-family: "BebasNeue";
       font-size: 2.5rem;
       font-weight: 500;
       color: #9b806f;
@@ -211,7 +211,7 @@
 
     &__year {
       padding: 1rem 1rem 1rem 1rem;
-      font-family: $font_serif;
+     font-family: "PT Serif Caption", serif;
       color: #9b806f;
       font-size: 1.7rem;
       z-index: 12;
@@ -403,7 +403,7 @@
         height: 2.9rem;
 
         span {
-          font-family: $font_decor;
+          font-family:"SummerFont", sans-serif;
           font-size: 2.5rem;
           color: #949494;
           white-space: nowrap;
@@ -509,7 +509,7 @@
 
 .popup-child-holidays__cafe {
   color: #a91f6f;
-  font-family: $font_decor;
+  font-family:"SummerFont", sans-serif;
   font-size: 4rem;
   margin-bottom: 2rem;
   line-height: 1;

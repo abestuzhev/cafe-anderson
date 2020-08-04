@@ -35477,7 +35477,7 @@ ul.slick-dots li.slick-active {
     border-bottom: none; }
   .e-calendar-navigator__year {
     padding: 1rem 1rem 1rem 1rem;
-    font-family: "PT Serif Caption";
+    font-family: "PT Serif Caption", serif;
     color: #9b806f;
     font-size: 1.7rem;
     z-index: 12;
@@ -35647,7 +35647,7 @@ ul.slick-dots li.slick-active {
       margin-bottom: .3rem;
       height: 2.9rem; }
       .e-calendar-card-time__item span {
-        font-family: "SummerFont";
+        font-family: "SummerFont", sans-serif;
         font-size: 2.5rem;
         color: #949494;
         white-space: nowrap; }
@@ -35746,7 +35746,7 @@ ul.slick-dots li.slick-active {
 
 .popup-child-holidays__cafe {
   color: #a91f6f;
-  font-family: "SummerFont";
+  font-family: "SummerFont", sans-serif;
   font-size: 4rem;
   margin-bottom: 2rem;
   line-height: 1;
