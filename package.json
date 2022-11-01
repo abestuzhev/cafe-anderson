@@ -19,7 +19,7 @@
     "browser-sync": "^2.24.6",
     "chalk": "^2.3.0",
     "critical": "^1.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
