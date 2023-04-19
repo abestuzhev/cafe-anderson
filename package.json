@@ -20,7 +20,7 @@
     "chalk": "^2.3.0",
     "critical": "^1.0.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^2.3.0",
